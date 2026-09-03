@@ -1,0 +1,2 @@
+model_id,task,evaluation_role,family,node_count,parameter_count,gflops,model_sha256,resolved_path
+resnet50,classification,development,resnet50,,,,sha256:cebd9d5879ddd304a18f51e559ab74fba5cbd1f610b9359321bc5228acbe4f50,/home/kmika/Models/resnet50.onnx

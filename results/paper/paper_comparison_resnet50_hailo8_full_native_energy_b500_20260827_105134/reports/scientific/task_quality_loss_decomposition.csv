@@ -1,0 +1,2 @@
+backend,case_id,contract_comparison_conflicts,decomposition_source,full_onnx_Top1,full_onnx_Top5,model,reference_identity,setup_id,split_Top1,split_Top5,split_extra_loss_Top1,split_extra_loss_Top5,status,task,total_split_loss_Top1,total_split_loss_Top5,vendor_full_Top1,vendor_full_Top5,vendor_loss_Top1,vendor_loss_Top5
+tensorrt,b119,[],paired_central_quality_results,0.812,0.952,resnet50,c4436d8d3d42ba4499f0986749d3b7ae4e20ed6125bf8a2e61f16f131f3de277,orin_nx_hailo8_01,0.812,0.952,0.0,0.0,ok,classification,0.0,0.0,0.812,0.952,0.0,0.0

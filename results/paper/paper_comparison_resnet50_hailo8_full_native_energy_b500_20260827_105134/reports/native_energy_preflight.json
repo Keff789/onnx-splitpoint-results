@@ -1,0 +1,42 @@
+{
+  "admission_policy": "technical_structure_only_quality_pairing_and_claim_posthoc",
+  "energy_evidence_tier": "screening",
+  "energy_requested": true,
+  "energy_tier": "screening",
+  "errors": [],
+  "expected_row_count": 2,
+  "full_baselines_enabled": true,
+  "nonblocking_annotations": [
+    "no_theoretical_setup_local_energy_pair"
+  ],
+  "normalized_expected_row_count": 2,
+  "phase": "before_remote_or_performance_streaming",
+  "plan_viable": true,
+  "schema": "onnx-splitpoint/native-energy-phase1-preflight",
+  "schema_version": 1,
+  "setup_model_count": 1,
+  "setup_model_rows": [
+    {
+      "errors": [],
+      "model": "resnet50",
+      "nonblocking_annotations": [
+        "split_path_missing"
+      ],
+      "plan_viable": true,
+      "producer": "hailo8",
+      "setup_id": "orin_nx_hailo8_01",
+      "split_path_count": 0,
+      "status": "annotated",
+      "tensorrt_full_path_count": 1,
+      "theoretical_pair_count": 0,
+      "validation_requested": true,
+      "vendor_full_path_count": 1
+    }
+  ],
+  "started_performance_count": 0,
+  "started_remote_count": 0,
+  "status": "passed",
+  "strict_requested": false,
+  "theoretical_pair_count": 0,
+  "validation_requested": true
+}

@@ -1,0 +1,14 @@
+{
+  "phase": "energy_preflight",
+  "repeat_index": 2,
+  "status": "finished",
+  "pid": 3366234,
+  "rc": 0,
+  "started_at": 1787824595.7610545,
+  "updated_at": 1787824597.2645252,
+  "elapsed_s": 1.5034706592559814,
+  "cmd": [
+    "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_hailo8__yolov7_paper__full__orin_nx_hailo8_01__9b0225ee3618/plan_30671fc2278e429f908b23c535f15665/attempt_d3eb0b283acf4688855ac59b14156b7e/run_002/preflight/preflight_command.sh"
+  ],
+  "timeout_s": 900.0
+}

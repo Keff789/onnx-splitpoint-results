@@ -1,0 +1,83 @@
+{
+  "created_at": "2026-08-27T10:59:46+02:00",
+  "execution_success_complete": true,
+  "expected_row_count": 2,
+  "failed_expected_row_count": 0,
+  "failed_expected_rows": [],
+  "matrix_complete": true,
+  "missing_expected_row_count": 0,
+  "missing_expected_rows": [],
+  "present_expected_row_count": 2,
+  "present_expected_rows": [
+    {
+      "actual_ok": true,
+      "actual_status": "ok",
+      "backend": "native_full_hailo8",
+      "backend_key": "hailo8",
+      "case": "full",
+      "comparison_backend": "hailo8",
+      "contract_id": "hailo8:hailo8:full",
+      "error": "",
+      "execution_mode": "native_full_baseline",
+      "failure_reason": "",
+      "model": "resnet50",
+      "precision": "",
+      "setup_id": "orin_nx_hailo8_01",
+      "status_detail": ""
+    },
+    {
+      "actual_ok": true,
+      "actual_status": "ok",
+      "backend": "native_full_tensorrt",
+      "backend_key": "hailo8",
+      "case": "full",
+      "comparison_backend": "hailo8",
+      "contract_id": "hailo8:tensorrt:full",
+      "error": "",
+      "execution_mode": "native_full_baseline",
+      "failure_reason": "",
+      "model": "resnet50",
+      "precision": "",
+      "setup_id": "orin_nx_hailo8_01",
+      "status_detail": ""
+    }
+  ],
+  "row_presence_complete": true,
+  "schema": "onnx-splitpoint/native-expected-matrix",
+  "schema_version": 2,
+  "successful_expected_row_count": 2,
+  "successful_expected_rows": [
+    {
+      "actual_ok": true,
+      "actual_status": "ok",
+      "backend": "native_full_hailo8",
+      "backend_key": "hailo8",
+      "case": "full",
+      "comparison_backend": "hailo8",
+      "contract_id": "hailo8:hailo8:full",
+      "error": "",
+      "execution_mode": "native_full_baseline",
+      "failure_reason": "",
+      "model": "resnet50",
+      "precision": "",
+      "setup_id": "orin_nx_hailo8_01",
+      "status_detail": ""
+    },
+    {
+      "actual_ok": true,
+      "actual_status": "ok",
+      "backend": "native_full_tensorrt",
+      "backend_key": "hailo8",
+      "case": "full",
+      "comparison_backend": "hailo8",
+      "contract_id": "hailo8:tensorrt:full",
+      "error": "",
+      "execution_mode": "native_full_baseline",
+      "failure_reason": "",
+      "model": "resnet50",
+      "precision": "",
+      "setup_id": "orin_nx_hailo8_01",
+      "status_detail": ""
+    }
+  ]
+}

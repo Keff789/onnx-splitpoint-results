@@ -1,0 +1,14 @@
+{
+  "phase": "energy_preflight",
+  "repeat_index": 0,
+  "status": "finished",
+  "pid": 3365273,
+  "rc": 0,
+  "started_at": 1787824488.3502126,
+  "updated_at": 1787824489.8576667,
+  "elapsed_s": 1.5074541568756104,
+  "cmd": [
+    "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/preflight/preflight_command.sh"
+  ],
+  "timeout_s": 900.0
+}

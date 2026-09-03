@@ -1,0 +1,962 @@
+{
+  "campaign_id": "BiggerSet",
+  "checks": [
+    {
+      "detail": "Campaign remains development/screening.",
+      "evidence": null,
+      "id": "campaign_mode",
+      "severity": "informational",
+      "status": "development"
+    },
+    {
+      "detail": "Campaign claim_scope is evaluated_matrix or ranking_generalization.",
+      "evidence": {
+        "explicit": true,
+        "raw": "evaluated_matrix",
+        "scope": "evaluated_matrix",
+        "source": "campaign.claim_scope",
+        "valid": true
+      },
+      "id": "claim_scope_valid",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "The final claim is limited to the explicitly evaluated workload/hardware matrix.",
+      "evidence": {
+        "explicit": true,
+        "raw": "evaluated_matrix",
+        "scope": "evaluated_matrix",
+        "source": "campaign.claim_scope",
+        "valid": true
+      },
+      "id": "claim_scope",
+      "severity": "informational",
+      "status": "pass"
+    },
+    {
+      "detail": "Profile and task-quality policy are marked frozen before the final campaign.",
+      "evidence": null,
+      "id": "profile_frozen",
+      "severity": "required_for_final",
+      "status": "deferred"
+    },
+    {
+      "detail": "A prospective five-manifest protocol freeze is optional for evaluated_matrix unless explicitly requested.",
+      "evidence": null,
+      "id": "protocol_freeze_integrity",
+      "severity": "informational",
+      "status": "not_applicable"
+    },
+    {
+      "detail": "No separate post-run campaign archive is required by this profile.",
+      "evidence": {
+        "claim_scope": "evaluated_matrix"
+      },
+      "id": "campaign_freeze_artifact",
+      "severity": "informational",
+      "status": "not_applicable"
+    },
+    {
+      "detail": "classification calibration dataset manifest found: /home/kmika/.onnx_splitpoint_tool/final_datasets/manifests/imagenet_train_calibration_manifest.json",
+      "evidence": null,
+      "id": "dataset_classification_calibration",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Dataset manifest task/role/schema match.",
+      "evidence": null,
+      "id": "dataset_classification_calibration_schema",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Final manifests use per-item content hashes and a non-empty identity hash.",
+      "evidence": null,
+      "id": "dataset_classification_calibration_content_hash",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Dataset manifest verification passed in sampled mode.",
+      "evidence": {
+        "checked_item_count": 24,
+        "created_at": "2026-09-03T09:02:05+02:00",
+        "identity_hash_ok": true,
+        "item_count_ok": true,
+        "manifest_item_count": 500,
+        "mismatch_count": 0,
+        "mismatch_preview": [],
+        "missing_count": 0,
+        "missing_preview": [],
+        "ok": true,
+        "payload_hash_ok": true,
+        "sample_size_requested": 24,
+        "schema": "onnx-splitpoint/dataset-manifest-verification",
+        "schema_ok": true,
+        "schema_version": 2,
+        "verification_mode": "sampled",
+        "verify_files": true
+      },
+      "id": "dataset_classification_calibration_current_files",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "classification validation dataset manifest found: /home/kmika/.onnx_splitpoint_tool/final_datasets/manifests/imagenet_val_manifest.json",
+      "evidence": null,
+      "id": "dataset_classification_validation",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Dataset manifest task/role/schema match.",
+      "evidence": null,
+      "id": "dataset_classification_validation_schema",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Final manifests use per-item content hashes and a non-empty identity hash.",
+      "evidence": null,
+      "id": "dataset_classification_validation_content_hash",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Dataset manifest verification passed in sampled mode.",
+      "evidence": {
+        "checked_item_count": 24,
+        "created_at": "2026-09-03T09:02:07+02:00",
+        "identity_hash_ok": true,
+        "item_count_ok": true,
+        "manifest_item_count": 50000,
+        "mismatch_count": 0,
+        "mismatch_preview": [],
+        "missing_count": 0,
+        "missing_preview": [],
+        "ok": true,
+        "payload_hash_ok": true,
+        "sample_size_requested": 24,
+        "schema": "onnx-splitpoint/dataset-manifest-verification",
+        "schema_ok": true,
+        "schema_version": 2,
+        "verification_mode": "sampled",
+        "verify_files": true
+      },
+      "id": "dataset_classification_validation_current_files",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "detection calibration dataset manifest found: /home/kmika/.onnx_splitpoint_tool/final_datasets/manifests/coco2017_train_calibration_manifest.json",
+      "evidence": null,
+      "id": "dataset_detection_calibration",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Dataset manifest task/role/schema match.",
+      "evidence": null,
+      "id": "dataset_detection_calibration_schema",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Final manifests use per-item content hashes and a non-empty identity hash.",
+      "evidence": null,
+      "id": "dataset_detection_calibration_content_hash",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Dataset manifest verification passed in sampled mode.",
+      "evidence": {
+        "checked_item_count": 24,
+        "created_at": "2026-09-03T09:02:09+02:00",
+        "identity_hash_ok": true,
+        "item_count_ok": true,
+        "manifest_item_count": 500,
+        "mismatch_count": 0,
+        "mismatch_preview": [],
+        "missing_count": 0,
+        "missing_preview": [],
+        "ok": true,
+        "payload_hash_ok": true,
+        "sample_size_requested": 24,
+        "schema": "onnx-splitpoint/dataset-manifest-verification",
+        "schema_ok": true,
+        "schema_version": 2,
+        "verification_mode": "sampled",
+        "verify_files": true
+      },
+      "id": "dataset_detection_calibration_current_files",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "detection validation dataset manifest found: /home/kmika/.onnx_splitpoint_tool/final_datasets/manifests/coco2017_val_manifest.json",
+      "evidence": null,
+      "id": "dataset_detection_validation",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Dataset manifest task/role/schema match.",
+      "evidence": null,
+      "id": "dataset_detection_validation_schema",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Final manifests use per-item content hashes and a non-empty identity hash.",
+      "evidence": null,
+      "id": "dataset_detection_validation_content_hash",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Dataset manifest verification passed in sampled mode.",
+      "evidence": {
+        "checked_item_count": 24,
+        "created_at": "2026-09-03T09:02:10+02:00",
+        "identity_hash_ok": true,
+        "item_count_ok": true,
+        "manifest_item_count": 5000,
+        "mismatch_count": 0,
+        "mismatch_preview": [],
+        "missing_count": 0,
+        "missing_preview": [],
+        "ok": true,
+        "payload_hash_ok": true,
+        "sample_size_requested": 24,
+        "schema": "onnx-splitpoint/dataset-manifest-verification",
+        "schema_ok": true,
+        "schema_version": 2,
+        "verification_mode": "sampled",
+        "verify_files": true
+      },
+      "id": "dataset_detection_validation_current_files",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Calibration and validation sets are content- and ID-disjoint.",
+      "evidence": {
+        "checks": [
+          {
+            "calibration_count": 500,
+            "content_overlap_count": 0,
+            "content_overlap_preview": [],
+            "sample_id_overlap_count": 0,
+            "sample_id_overlap_preview": [],
+            "status": "pass",
+            "task": "classification",
+            "validation_count": 50000
+          },
+          {
+            "calibration_count": 500,
+            "content_overlap_count": 0,
+            "content_overlap_preview": [],
+            "sample_id_overlap_count": 0,
+            "sample_id_overlap_preview": [],
+            "status": "pass",
+            "task": "detection",
+            "validation_count": 5000
+          }
+        ],
+        "created_at": "2026-09-03T09:02:10+02:00",
+        "ok": true,
+        "schema": "onnx-splitpoint/dataset-separation-report",
+        "schema_version": 1
+      },
+      "id": "calibration_validation_disjoint",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Preprocessing/decoder/NMS contract manifest missing: ",
+      "evidence": null,
+      "id": "pipeline_contract_manifest",
+      "severity": "required_for_final",
+      "status": "deferred"
+    },
+    {
+      "detail": "At least one development model is declared.",
+      "evidence": null,
+      "id": "development_models_present",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "No model-level hold-out is required because the claim is restricted to the evaluated matrix.",
+      "evidence": {
+        "active_holdout_model_ids": []
+      },
+      "id": "holdout_models_present",
+      "severity": "informational",
+      "status": "not_applicable"
+    },
+    {
+      "detail": "Prospective hold-out adapter freezing belongs to ranking_generalization, not evaluated_matrix.",
+      "evidence": null,
+      "id": "holdout_adapter_sources_frozen",
+      "severity": "informational",
+      "status": "not_applicable"
+    },
+    {
+      "detail": "Development and hold-out model IDs are disjoint.",
+      "evidence": {
+        "overlap": []
+      },
+      "id": "model_role_disjoint",
+      "severity": "required",
+      "status": "pass"
+    },
+    {
+      "detail": "Every campaign model has a unique model ID.",
+      "evidence": {
+        "model_ids": [
+          "mobilenet_v3_large",
+          "resnet50",
+          "yolo11l",
+          "yolov7_ultralytics",
+          "yolo26m",
+          "yolo26x",
+          "yolo26s"
+        ]
+      },
+      "id": "model_ids_unique",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Model mobilenet_v3_large explicitly declares evaluation_role=development or confirmatory_holdout.",
+      "evidence": null,
+      "id": "model_role_explicit_mobilenet_v3_large",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Model-family transfer is outside the evaluated_matrix claim for mobilenet_v3_large.",
+      "evidence": null,
+      "id": "model_family_id_explicit_mobilenet_v3_large",
+      "severity": "informational",
+      "status": "not_applicable"
+    },
+    {
+      "detail": "A generalisation scope is not consumed by the evaluated_matrix claim for mobilenet_v3_large.",
+      "evidence": null,
+      "id": "model_generalization_scope_explicit_mobilenet_v3_large",
+      "severity": "informational",
+      "status": "not_applicable"
+    },
+    {
+      "detail": "Model mobilenet_v3_large explicitly declares validation_tier.",
+      "evidence": null,
+      "id": "model_validation_tier_explicit_mobilenet_v3_large",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Model mobilenet_v3_large uses the final validation tier in a final campaign.",
+      "evidence": null,
+      "id": "model_validation_tier_final_mobilenet_v3_large",
+      "severity": "required_for_final",
+      "status": "deferred"
+    },
+    {
+      "detail": "Model mobilenet_v3_large resolves to an exact local model artefact with a content hash.",
+      "evidence": {
+        "declared_model_sha256": "",
+        "exists": true,
+        "model_path": "/home/kmika/Models/mobilenet_v3_large.onnx",
+        "model_sha256": "sha256:2f5e79b1e4280251e7b6eefe1d6161c4831e2fc27858e1e9fe2fac697f44489e"
+      },
+      "id": "model_identity_mobilenet_v3_large",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Model mobilenet_v3_large explicitly declares its candidate-universe mode.",
+      "evidence": {
+        "mode": "declared_shortlist"
+      },
+      "id": "candidate_universe_mobilenet_v3_large",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Model resnet50 explicitly declares evaluation_role=development or confirmatory_holdout.",
+      "evidence": null,
+      "id": "model_role_explicit_resnet50",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Model-family transfer is outside the evaluated_matrix claim for resnet50.",
+      "evidence": null,
+      "id": "model_family_id_explicit_resnet50",
+      "severity": "informational",
+      "status": "not_applicable"
+    },
+    {
+      "detail": "A generalisation scope is not consumed by the evaluated_matrix claim for resnet50.",
+      "evidence": null,
+      "id": "model_generalization_scope_explicit_resnet50",
+      "severity": "informational",
+      "status": "not_applicable"
+    },
+    {
+      "detail": "Model resnet50 explicitly declares validation_tier.",
+      "evidence": null,
+      "id": "model_validation_tier_explicit_resnet50",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Model resnet50 uses the final validation tier in a final campaign.",
+      "evidence": null,
+      "id": "model_validation_tier_final_resnet50",
+      "severity": "required_for_final",
+      "status": "deferred"
+    },
+    {
+      "detail": "Model resnet50 resolves to an exact local model artefact with a content hash.",
+      "evidence": {
+        "declared_model_sha256": "",
+        "exists": true,
+        "model_path": "/home/kmika/Models/resnet50.onnx",
+        "model_sha256": "sha256:cebd9d5879ddd304a18f51e559ab74fba5cbd1f610b9359321bc5228acbe4f50"
+      },
+      "id": "model_identity_resnet50",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Model resnet50 explicitly declares its candidate-universe mode.",
+      "evidence": {
+        "mode": "declared_shortlist"
+      },
+      "id": "candidate_universe_resnet50",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Model yolo11l explicitly declares evaluation_role=development or confirmatory_holdout.",
+      "evidence": null,
+      "id": "model_role_explicit_yolo11l",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Model-family transfer is outside the evaluated_matrix claim for yolo11l.",
+      "evidence": null,
+      "id": "model_family_id_explicit_yolo11l",
+      "severity": "informational",
+      "status": "not_applicable"
+    },
+    {
+      "detail": "A generalisation scope is not consumed by the evaluated_matrix claim for yolo11l.",
+      "evidence": null,
+      "id": "model_generalization_scope_explicit_yolo11l",
+      "severity": "informational",
+      "status": "not_applicable"
+    },
+    {
+      "detail": "Model yolo11l explicitly declares validation_tier.",
+      "evidence": null,
+      "id": "model_validation_tier_explicit_yolo11l",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Model yolo11l uses the final validation tier in a final campaign.",
+      "evidence": null,
+      "id": "model_validation_tier_final_yolo11l",
+      "severity": "required_for_final",
+      "status": "deferred"
+    },
+    {
+      "detail": "Model yolo11l resolves to an exact local model artefact with a content hash.",
+      "evidence": {
+        "declared_model_sha256": "",
+        "exists": true,
+        "model_path": "/home/kmika/Models/yolo11l.onnx",
+        "model_sha256": "sha256:f0fcdf56a4ac24d87ec30c627170492ccad9db80486ec5694df6de65c1b3d147"
+      },
+      "id": "model_identity_yolo11l",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Model yolo11l explicitly declares its candidate-universe mode.",
+      "evidence": {
+        "mode": "declared_shortlist"
+      },
+      "id": "candidate_universe_yolo11l",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Model yolov7_ultralytics explicitly declares evaluation_role=development or confirmatory_holdout.",
+      "evidence": null,
+      "id": "model_role_explicit_yolov7_ultralytics",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Model-family transfer is outside the evaluated_matrix claim for yolov7_ultralytics.",
+      "evidence": null,
+      "id": "model_family_id_explicit_yolov7_ultralytics",
+      "severity": "informational",
+      "status": "not_applicable"
+    },
+    {
+      "detail": "A generalisation scope is not consumed by the evaluated_matrix claim for yolov7_ultralytics.",
+      "evidence": null,
+      "id": "model_generalization_scope_explicit_yolov7_ultralytics",
+      "severity": "informational",
+      "status": "not_applicable"
+    },
+    {
+      "detail": "Model yolov7_ultralytics explicitly declares validation_tier.",
+      "evidence": null,
+      "id": "model_validation_tier_explicit_yolov7_ultralytics",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Model yolov7_ultralytics uses the final validation tier in a final campaign.",
+      "evidence": null,
+      "id": "model_validation_tier_final_yolov7_ultralytics",
+      "severity": "required_for_final",
+      "status": "deferred"
+    },
+    {
+      "detail": "Model yolov7_ultralytics resolves to an exact local model artefact with a content hash.",
+      "evidence": {
+        "declared_model_sha256": "",
+        "exists": true,
+        "model_path": "/home/kmika/Models/yolov7_ultralytics.onnx",
+        "model_sha256": "sha256:b7b8a3f65d6cd047a1dc09a4ec42d7cbb2d539f4d211ada6b14b6d5d014ca6c6"
+      },
+      "id": "model_identity_yolov7_ultralytics",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Model yolov7_ultralytics explicitly declares its candidate-universe mode.",
+      "evidence": {
+        "mode": "declared_shortlist"
+      },
+      "id": "candidate_universe_yolov7_ultralytics",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Model yolo26m explicitly declares evaluation_role=development or confirmatory_holdout.",
+      "evidence": null,
+      "id": "model_role_explicit_yolo26m",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Model-family transfer is outside the evaluated_matrix claim for yolo26m.",
+      "evidence": null,
+      "id": "model_family_id_explicit_yolo26m",
+      "severity": "informational",
+      "status": "not_applicable"
+    },
+    {
+      "detail": "A generalisation scope is not consumed by the evaluated_matrix claim for yolo26m.",
+      "evidence": null,
+      "id": "model_generalization_scope_explicit_yolo26m",
+      "severity": "informational",
+      "status": "not_applicable"
+    },
+    {
+      "detail": "Model yolo26m explicitly declares validation_tier.",
+      "evidence": null,
+      "id": "model_validation_tier_explicit_yolo26m",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Model yolo26m uses the final validation tier in a final campaign.",
+      "evidence": null,
+      "id": "model_validation_tier_final_yolo26m",
+      "severity": "required_for_final",
+      "status": "deferred"
+    },
+    {
+      "detail": "Model yolo26m resolves to an exact local model artefact with a content hash.",
+      "evidence": {
+        "declared_model_sha256": "",
+        "exists": true,
+        "model_path": "/home/kmika/Models/yolo26m.onnx",
+        "model_sha256": "sha256:d1c6a922dd92f896c69e2f6767ea3ca23fac0e53e5ac69681965eb8a74cda897"
+      },
+      "id": "model_identity_yolo26m",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Model yolo26m explicitly declares its candidate-universe mode.",
+      "evidence": {
+        "mode": "declared_shortlist"
+      },
+      "id": "candidate_universe_yolo26m",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Model yolo26x explicitly declares evaluation_role=development or confirmatory_holdout.",
+      "evidence": null,
+      "id": "model_role_explicit_yolo26x",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Model-family transfer is outside the evaluated_matrix claim for yolo26x.",
+      "evidence": null,
+      "id": "model_family_id_explicit_yolo26x",
+      "severity": "informational",
+      "status": "not_applicable"
+    },
+    {
+      "detail": "A generalisation scope is not consumed by the evaluated_matrix claim for yolo26x.",
+      "evidence": null,
+      "id": "model_generalization_scope_explicit_yolo26x",
+      "severity": "informational",
+      "status": "not_applicable"
+    },
+    {
+      "detail": "Model yolo26x explicitly declares validation_tier.",
+      "evidence": null,
+      "id": "model_validation_tier_explicit_yolo26x",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Model yolo26x uses the final validation tier in a final campaign.",
+      "evidence": null,
+      "id": "model_validation_tier_final_yolo26x",
+      "severity": "required_for_final",
+      "status": "deferred"
+    },
+    {
+      "detail": "Model yolo26x resolves to an exact local model artefact with a content hash.",
+      "evidence": {
+        "declared_model_sha256": "",
+        "exists": true,
+        "model_path": "/home/kmika/Models/yolo26x.onnx",
+        "model_sha256": "sha256:2b1adb3346725c3f934b7c1d5cddee536e3c6391d4e48546586990604f2614c3"
+      },
+      "id": "model_identity_yolo26x",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Model yolo26x explicitly declares its candidate-universe mode.",
+      "evidence": {
+        "mode": "declared_shortlist"
+      },
+      "id": "candidate_universe_yolo26x",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Model yolo26s explicitly declares evaluation_role=development or confirmatory_holdout.",
+      "evidence": null,
+      "id": "model_role_explicit_yolo26s",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Model-family transfer is outside the evaluated_matrix claim for yolo26s.",
+      "evidence": null,
+      "id": "model_family_id_explicit_yolo26s",
+      "severity": "informational",
+      "status": "not_applicable"
+    },
+    {
+      "detail": "A generalisation scope is not consumed by the evaluated_matrix claim for yolo26s.",
+      "evidence": null,
+      "id": "model_generalization_scope_explicit_yolo26s",
+      "severity": "informational",
+      "status": "not_applicable"
+    },
+    {
+      "detail": "Model yolo26s explicitly declares validation_tier.",
+      "evidence": null,
+      "id": "model_validation_tier_explicit_yolo26s",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Model yolo26s uses the final validation tier in a final campaign.",
+      "evidence": null,
+      "id": "model_validation_tier_final_yolo26s",
+      "severity": "required_for_final",
+      "status": "deferred"
+    },
+    {
+      "detail": "Model yolo26s resolves to an exact local model artefact with a content hash.",
+      "evidence": {
+        "declared_model_sha256": "",
+        "exists": true,
+        "model_path": "/home/kmika/Models/yolo26s.onnx",
+        "model_sha256": "sha256:4b8ff9dce56ca7058c53e1a08feca69a59f8504a8f2ef68c85c065ae837ce04a"
+      },
+      "id": "model_identity_yolo26s",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Model yolo26s explicitly declares its candidate-universe mode.",
+      "evidence": {
+        "mode": "declared_shortlist"
+      },
+      "id": "candidate_universe_yolo26s",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "A hold-out registry is outside the evaluated_matrix claim scope.",
+      "evidence": {
+        "configured_path": "/home/kmika/ONNX-Splitpoint-Tool/profiles/campaign_inputs/holdout_registry.json"
+      },
+      "id": "holdout_registry",
+      "severity": "informational",
+      "status": "not_applicable"
+    },
+    {
+      "detail": "No hold-out registry is consumed for evaluated_matrix claims.",
+      "evidence": null,
+      "id": "holdout_registry_integrity",
+      "severity": "informational",
+      "status": "not_applicable"
+    },
+    {
+      "detail": "Ranking validation is optional diagnostic output for evaluated_matrix and cannot enlarge the final claim.",
+      "evidence": {
+        "ranking_validation_enabled": true
+      },
+      "id": "ranking_validation_enabled",
+      "severity": "informational",
+      "status": "not_applicable"
+    },
+    {
+      "detail": "A fitted ranking bundle is required only for ranking_generalization.",
+      "evidence": {
+        "configured_path": ""
+      },
+      "id": "ranking_model_bundle_integrity",
+      "severity": "informational",
+      "status": "not_applicable"
+    },
+    {
+      "detail": "A development-fitted ranking cost model is not a blocker for measured evaluated_matrix results.",
+      "evidence": null,
+      "id": "stage_time_model",
+      "severity": "informational",
+      "status": "not_applicable"
+    },
+    {
+      "detail": "Measured Native FIFO performance remains required, but a fitted handover predictor is not needed for evaluated_matrix claims.",
+      "evidence": null,
+      "id": "native_handover_model",
+      "severity": "informational",
+      "status": "not_applicable"
+    },
+    {
+      "detail": "Native full baselines are enabled and use the same runtime contract whenever Native FIFO claims are enabled.",
+      "evidence": null,
+      "id": "native_full_baselines",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "One effective energy request is configured without conflicting generic/native enablement.",
+      "evidence": {
+        "compatibility_notes": [
+          "legacy_requested_native_energy"
+        ],
+        "config_identity_sha256": "sha256:373d21c41172b27556becb23454ef03508a58af57405b88346aaaba6cccdd884",
+        "configuration_errors": [],
+        "generic_energy_enabled": false,
+        "lifecycle": {
+          "completed": false,
+          "configured": true,
+          "failed": false,
+          "reason": "",
+          "requested": true,
+          "running": false,
+          "scheduled": false,
+          "skipped": false,
+          "status": "configured"
+        },
+        "measurement_path": "native_only",
+        "native_energy_enabled": true,
+        "repeats": 1,
+        "request_source": "energy.requested_native_energy",
+        "schema": "onnx-splitpoint/effective-energy-config",
+        "schema_version": 1,
+        "window_method_ab": {
+          "auto_switch": false,
+          "baseline_method": "chapter4_baseline",
+          "candidate_eligible_for_auto_import": false,
+          "candidate_eligible_for_auto_switch": false,
+          "candidate_method": "candidate_v263",
+          "configuration_source": "legacy_window_method_validation_probe",
+          "deprecated_input_aliases": {
+            "baseline_method": "chapter4_baseline",
+            "candidate_method": "candidate_v263"
+          },
+          "enabled": true,
+          "include_raw_parquet": true,
+          "legacy_method_aliases_applied": true,
+          "mode": "shadow",
+          "primary_method": "command_marker_window",
+          "requires_picoscope": false,
+          "same_raw_capture": true,
+          "schema": "onnx-splitpoint/energy-window-ab-config",
+          "schema_version": 2,
+          "scientific_method_decision": "frozen_command_marker_primary_chapter4_shadow",
+          "scientific_primary_method": "command_marker_window",
+          "scientific_shadow_method": "chapter4_legacy_window",
+          "shadow_method": "chapter4_legacy_window",
+          "shadow_role": "same_trace_sensitivity_only",
+          "smoke_repeats": 3,
+          "strict": true,
+          "valid": true,
+          "validation_errors": []
+        }
+      },
+      "id": "effective_energy_configuration",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "The command-marker window is frozen as the scientific primary. The Chapter-4 legacy window is a same-trace, non-blocking sensitivity shadow; it never auto-switches, cannot invalidate the primary claim and requires no PicoScope rerun.",
+      "evidence": {
+        "auto_switch": false,
+        "baseline_method": "chapter4_baseline",
+        "candidate_eligible_for_auto_import": false,
+        "candidate_eligible_for_auto_switch": false,
+        "candidate_method": "candidate_v263",
+        "configuration_source": "legacy_window_method_validation_probe",
+        "deprecated_input_aliases": {
+          "baseline_method": "chapter4_baseline",
+          "candidate_method": "candidate_v263"
+        },
+        "enabled": true,
+        "include_raw_parquet": true,
+        "legacy_method_aliases_applied": true,
+        "mode": "shadow",
+        "primary_method": "command_marker_window",
+        "requires_picoscope": false,
+        "same_raw_capture": true,
+        "schema": "onnx-splitpoint/energy-window-ab-config",
+        "schema_version": 2,
+        "scientific_method_decision": "frozen_command_marker_primary_chapter4_shadow",
+        "scientific_primary_method": "command_marker_window",
+        "scientific_shadow_method": "chapter4_legacy_window",
+        "shadow_method": "chapter4_legacy_window",
+        "shadow_role": "same_trace_sensitivity_only",
+        "smoke_repeats": 3,
+        "strict": true,
+        "valid": true,
+        "validation_errors": []
+      },
+      "id": "energy_window_method_ab",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Final energy campaign uses raw full-system input energy as the primary metric.",
+      "evidence": null,
+      "id": "full_system_power_scope",
+      "severity": "required_for_final",
+      "status": "deferred"
+    },
+    {
+      "detail": "Final full-system energy is bound to the command window.",
+      "evidence": {
+        "window": null
+      },
+      "id": "energy_command_window",
+      "severity": "required_for_final",
+      "status": "deferred"
+    },
+    {
+      "detail": "Full-system energy uses at least three independent repetitions.",
+      "evidence": {
+        "repeats": 0
+      },
+      "id": "energy_repetitions",
+      "severity": "required_for_final",
+      "status": "deferred"
+    },
+    {
+      "detail": "Repeated energy windows use a pre-declared confidence level of at least 95%.",
+      "evidence": {
+        "confidence_level": 0.0
+      },
+      "id": "energy_confidence_interval",
+      "severity": "required_for_final",
+      "status": "deferred"
+    },
+    {
+      "detail": "Final energy target blocks use a recorded deterministic random order with an explicit integer seed.",
+      "evidence": {
+        "randomization_seed": null,
+        "randomize_run_order": false
+      },
+      "id": "energy_run_order",
+      "severity": "required_for_final",
+      "status": "deferred"
+    },
+    {
+      "detail": "Idle normalization reports raw and normalized values and uses a scope-compatible paired method.",
+      "evidence": null,
+      "id": "idle_normalization_policy",
+      "severity": "required_for_final",
+      "status": "pass"
+    },
+    {
+      "detail": "Full-system input-channel calibration manifest missing: ",
+      "evidence": null,
+      "id": "energy_calibration_manifest",
+      "severity": "required_for_final",
+      "status": "deferred"
+    }
+  ],
+  "claim_scope": "evaluated_matrix",
+  "claim_scope_explicit": true,
+  "claim_scope_source": "campaign.claim_scope",
+  "claim_scope_valid": true,
+  "created_at": "2026-09-03T09:02:11+02:00",
+  "deferred_final_requirement_count": 15,
+  "development_ready": true,
+  "enforcement": "warn",
+  "final_ready": false,
+  "mode": "development",
+  "post_run_requirement_count": 0,
+  "profile_sha256": "sha256:42c9d146ae82ccac0634d92021c6750d5a32e5f2ec8f28ed4919b03cf602270b",
+  "ranking_generalization_required": false,
+  "ready": false,
+  "references": {
+    "dataset_classification_calibration": "/home/kmika/.onnx_splitpoint_tool/final_datasets/manifests/imagenet_train_calibration_manifest.json",
+    "dataset_classification_validation": "/home/kmika/.onnx_splitpoint_tool/final_datasets/manifests/imagenet_val_manifest.json",
+    "dataset_detection_calibration": "/home/kmika/.onnx_splitpoint_tool/final_datasets/manifests/coco2017_train_calibration_manifest.json",
+    "dataset_detection_validation": "/home/kmika/.onnx_splitpoint_tool/final_datasets/manifests/coco2017_val_manifest.json",
+    "holdout_registry": "/home/kmika/ONNX-Splitpoint-Tool/profiles/campaign_inputs/holdout_registry.json"
+  },
+  "required_failure_count": 0,
+  "schema": "onnx-splitpoint/campaign-readiness",
+  "schema_version": 1,
+  "status": "development_ready"
+}

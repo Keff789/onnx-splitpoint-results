@@ -1,0 +1,41 @@
+{
+  "bound": [
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/manifests/imagenet_train_calibration_manifest.json",
+      "registry_key": "classification_calibration",
+      "role": "calibration",
+      "task": "classification"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/manifests/imagenet_val_manifest.json",
+      "registry_key": "classification_validation",
+      "role": "validation",
+      "task": "classification"
+    }
+  ],
+  "bound_count": 2,
+  "created_at": "2026-08-27T11:02:27+02:00",
+  "enabled": true,
+  "invalid": [],
+  "invalid_count": 0,
+  "missing": [],
+  "missing_count": 0,
+  "preserved_explicit": [
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/manifests/coco2017_train_calibration_manifest.json",
+      "role": "calibration",
+      "task": "detection"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/manifests/coco2017_val_manifest.json",
+      "role": "validation",
+      "task": "detection"
+    }
+  ],
+  "registry_exists": true,
+  "registry_path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/dataset_registry.json",
+  "registry_sha256": "sha256:9c5b72d97946c397c57463899cdda2938c458e7b8495683790a9b157ceab5bfc",
+  "schema": "onnx-splitpoint/dataset-registry-binding",
+  "schema_version": 1,
+  "status": "ok"
+}

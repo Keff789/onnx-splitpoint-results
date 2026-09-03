@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "probe_skipped": true,
+  "duration_margin_s": 1.0,
+  "measurement_suite_policy": "collector=int(duration+1), power_estimated=int(duration+2), default power_calculations trims unless complete mode is requested",
+  "workload_duration_s": 1.0,
+  "collector_duration_s": 2,
+  "power_estimated_duration_s": 3,
+  "probe_dir": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_energy_measurements/measurements/native_full_hailo8__resnet50__full__orin_nx_hailo8_01__59d5c1c9e949/plan_6544d12817564073aff492ac2e3dbae0/attempt_66ba41b82c054d82bde5969cfb0bc1ed/probe",
+  "probe_json": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_energy_measurements/measurements/native_full_hailo8__resnet50__full__orin_nx_hailo8_01__59d5c1c9e949/plan_6544d12817564073aff492ac2e3dbae0/attempt_66ba41b82c054d82bde5969cfb0bc1ed/probe/duration_probe.json"
+}

@@ -1,0 +1,46 @@
+{
+  "complete": true,
+  "counts": {
+    "cancelled": 0,
+    "completed": 0,
+    "failed": 3,
+    "not_started": 0,
+    "running": 0
+  },
+  "created_at": "2026-08-27T09:55:03+00:00",
+  "plan_hash": "bb9f27aa6b7c618539bf31124e2ee55d78d86fb6361ea03404ad27b37e7293f0",
+  "row_count": 3,
+  "rows": [
+    {
+      "attempt_count": 1,
+      "checkpoint": "rows/0000_acbf169afc93aea3.json",
+      "complete": true,
+      "identity": "hailo8_to_trt|yolov7_paper|b066|orin_nx_hailo8_01|hailo8|uint8_dequant_fp16",
+      "index": 0,
+      "row_contract_sha256": "1378e5bd6c7a02b9e7bc6a5e8c1e5e5ff01eb90c6549de77ddd009d55f436800",
+      "state": "failed"
+    },
+    {
+      "attempt_count": 1,
+      "checkpoint": "rows/0001_d4322ed0bc050393.json",
+      "complete": true,
+      "identity": "native_full_hailo8|yolov7_paper|full|orin_nx_hailo8_01|hailo8|",
+      "index": 1,
+      "row_contract_sha256": "5721a623f0402e8f6774daaf1505220337f9b9dc4023d0ead109e954ffa5af8c",
+      "state": "failed"
+    },
+    {
+      "attempt_count": 1,
+      "checkpoint": "rows/0002_187def944358be8d.json",
+      "complete": true,
+      "identity": "native_full_tensorrt|yolov7_paper|full|orin_nx_hailo8_01|hailo8|",
+      "index": 2,
+      "row_contract_sha256": "78f1b19a6ca7b292e21f0932208da4bc9af7a06cc5067deee36703d86ee5ea88",
+      "state": "failed"
+    }
+  ],
+  "schema": "onnx-splitpoint/atomic-energy-row-journal",
+  "schema_version": 1,
+  "state": "completed",
+  "updated_at": "2026-08-27T09:58:27+00:00"
+}

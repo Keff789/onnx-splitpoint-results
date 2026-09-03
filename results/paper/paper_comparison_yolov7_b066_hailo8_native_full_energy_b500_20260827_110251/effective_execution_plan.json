@@ -1,0 +1,252 @@
+{
+  "artifact_policy": "normal",
+  "automatic_reference_profiles": [
+    "ort_cpu"
+  ],
+  "batched_remote_dispatches_per_model": 1,
+  "batched_remote_dispatches_total": 1,
+  "benchmark_runs": 5,
+  "benchmark_warmup": 3,
+  "bootstrap_repetitions": 500,
+  "cache_verify_actual_plan": {},
+  "cache_verify_expected_plan": {},
+  "calibration_items": {
+    "classification": 500,
+    "detection": 500
+  },
+  "candidate_count_semantics": "ranking_candidate_population",
+  "candidate_counts_by_model": {
+    "yolov7_paper": 1
+  },
+  "cases_per_model": 1,
+  "classification_model_count": 0,
+  "cold_suite_uploads_per_model": 1,
+  "cold_suite_uploads_total": 1,
+  "compiler_dispatch_allowed": true,
+  "deepx_cache_dir": "~/Models/BackendArtifacts/deepx",
+  "deepx_classification_preprocessing": "imagenet_mean_std",
+  "deepx_classification_preprocessing_explicit": true,
+  "deepx_full_cache_contract": "v2_exact_explicit",
+  "deployment_shortlist_cases_per_model": 1,
+  "deployment_shortlist_upper_bound_by_model": {
+    "yolov7_paper": 1
+  },
+  "detection_model_count": 1,
+  "development_audit_counts": {},
+  "effective_generic_run_ids": [
+    "ort_tensorrt",
+    "hailo8",
+    "hailo8_to_trt"
+  ],
+  "effective_require_single_part2_input": true,
+  "energy_measurement_path": "native_only",
+  "estimated_validation_files_total": 1002,
+  "execution_union_candidate_count_min_total": 1,
+  "execution_union_candidate_count_upper_bound_total": 1,
+  "execution_union_candidate_counts_min_by_model": {
+    "yolov7_paper": 1
+  },
+  "execution_union_candidate_counts_upper_bound_by_model": {
+    "yolov7_paper": 1
+  },
+  "execution_union_count_semantics": "configured_range_before_audit_shortlist_deduplication; resource_estimates_use_upper_bound",
+  "expected_full_quality_identities": [],
+  "expected_full_quality_ids": [],
+  "expected_full_quality_results_per_model": 0,
+  "expected_full_quality_results_total": 0,
+  "expected_full_quality_setup_ids": [],
+  "expected_generic_result_rows_by_model": {
+    "yolov7_paper": 4
+  },
+  "expected_generic_result_rows_min_by_model": {
+    "yolov7_paper": 4
+  },
+  "expected_generic_result_rows_min_total": 4,
+  "expected_generic_result_rows_semantics": "configured_minimum_and_upper_bound; legacy total/by_model fields contain the resource-safe upper bound",
+  "expected_generic_result_rows_total": 4,
+  "generic_energy_enabled": false,
+  "generic_logical_runs_per_model": 3,
+  "generic_logical_runs_total": 3,
+  "generic_rows_per_model": 4,
+  "generic_rows_total": 4,
+  "generic_runtime_enabled": true,
+  "hailo_calibration_storage": "memmap",
+  "hailo_optimization_level": 1,
+  "hailo_preset": "balanced",
+  "holdout_audit_counts": {},
+  "holdout_audit_size_default": 20,
+  "logical_run_profiles": [
+    "ort_tensorrt",
+    "hailo8",
+    "hailo8_to_trt"
+  ],
+  "management_reference_profiles": [
+    "ort_cpu"
+  ],
+  "model_count": 1,
+  "models": [
+    "yolov7_paper"
+  ],
+  "native_default": true,
+  "native_enabled": true,
+  "native_energy_default": true,
+  "native_energy_enabled": true,
+  "native_energy_override_active": false,
+  "native_energy_override_present": true,
+  "native_energy_requested": true,
+  "native_execution_contract": {
+    "contract_sha256": "1c31fa8655d60f333a6287f954bb923b6c8542060b89f746c4721d3ea192ad68",
+    "field_sources": {
+      "frames": "profile",
+      "inflight": "profile",
+      "queue_depth": "profile",
+      "repetitions": "profile",
+      "warmup": "profile"
+    },
+    "frames": 1000,
+    "inflight": 8,
+    "queue_depth": 3,
+    "repetitions": 3,
+    "run_mode": "standard",
+    "schema": "onnx-splitpoint/native-execution-contract",
+    "schema_version": 1,
+    "warmup": 100
+  },
+  "native_execution_contract_sha256": "1c31fa8655d60f333a6287f954bb923b6c8542060b89f746c4721d3ea192ad68",
+  "native_frames": 1000,
+  "native_full_baselines": true,
+  "native_inflight": 8,
+  "native_multi_input_policy": "reject_and_backfill_from_frozen_prediction",
+  "native_override_active": false,
+  "native_override_present": true,
+  "native_performance_repetitions": 3,
+  "native_queue_depth": 3,
+  "native_split_backends": [
+    "hailo8"
+  ],
+  "native_split_plan_source": "evaluation_profile.run_profiles",
+  "native_split_requires_single_part2_input": true,
+  "native_warmup": 100,
+  "notes": [
+    "Generic-Runner energy is disabled by design; task validation and broad candidate screening remain Generic-Runner responsibilities.",
+    "Native energy is measured only after Native contract validation and with matching Native-Full baselines.",
+    "Run IDs sharing a physical setup execute in one setup-local benchmark invocation and reuse the same content-addressed suite and TensorRT cache."
+  ],
+  "official_coco_enabled": true,
+  "official_coco_required": true,
+  "performance_claims_emitted": null,
+  "quality_canary": {
+    "enabled": false,
+    "errors": [],
+    "execution_scope": "",
+    "expected_full_quality_identities": [],
+    "expected_full_quality_results": [],
+    "full_run_ids": [],
+    "ok": true,
+    "schema": "onnx-splitpoint/full-only-quality-canary",
+    "schema_version": 1,
+    "setup_local_tensorrt_companions": [],
+    "status": "not_requested"
+  },
+  "quality_canary_enabled": false,
+  "quality_canary_execution_scope": "",
+  "quality_execution_location": "central_management",
+  "quality_workers": 4,
+  "ranking_candidate_shortfall": 0,
+  "ranking_enabled": false,
+  "ranking_minimum_candidates": 3,
+  "remote_run_invocations_per_model": 1,
+  "remote_run_invocations_total": 1,
+  "requested_require_single_part2_input": true,
+  "require_single_part2_input": true,
+  "run_mode": "standard",
+  "run_mode_label": "YOLOv7 paper split b066 — Hailo-8 Native Full + Energy, B500",
+  "schema": "onnx-splitpoint/effective-execution-plan",
+  "schema_version": 1,
+  "score_independent_audit_counts": {},
+  "score_independent_audit_enabled": false,
+  "score_independent_audit_minimum_valid": 10,
+  "score_independent_audit_minimum_valid_counts": {},
+  "score_independent_audit_requested": false,
+  "score_independent_audit_size": 20,
+  "selection_strategy": "stratified_windows",
+  "setup_groups": {
+    "hailo8_setup": [
+      "hailo8",
+      "hailo8_to_trt",
+      "ort_tensorrt"
+    ]
+  },
+  "setup_local_tensorrt_quality_companion_contract": {
+    "errors": [],
+    "identities": [
+      {
+        "backend": "tensorrt",
+        "dispatch_run_id": "ort_tensorrt",
+        "execution_role": "full_quality_only",
+        "id": "tensorrt_at_hailo8_full",
+        "identity_source": "scheduler_materialized_before_remote_dispatch",
+        "logical_setup_group": "hailo8_setup",
+        "performance_claims_emitted": false,
+        "producer": "hailo8",
+        "quality_companion_endpoint_id": "tensorrt_at_hailo8_full",
+        "run_id": "native_full_tensorrt",
+        "setup_id": "orin_nx_hailo8_01",
+        "source_run_id": "native_full_tensorrt",
+        "variant": "full"
+      }
+    ],
+    "identity_authority": "effective_execution_plan",
+    "identity_count": 1,
+    "mode": "standard_quality",
+    "models": [
+      "yolov7_paper"
+    ],
+    "physical_setup_ids_by_producer": {
+      "hailo8": "orin_nx_hailo8_01"
+    },
+    "quality_companion_endpoint_ids": [
+      "tensorrt_at_hailo8_full"
+    ],
+    "requested": true,
+    "schema": "onnx-splitpoint/effective-plan-setup-local-tensorrt-quality-companions",
+    "schema_version": 1,
+    "setup_ids": [
+      "orin_nx_hailo8_01"
+    ],
+    "status": "ready"
+  },
+  "setup_local_tensorrt_quality_companion_identities": [
+    {
+      "backend": "tensorrt",
+      "dispatch_run_id": "ort_tensorrt",
+      "execution_role": "full_quality_only",
+      "id": "tensorrt_at_hailo8_full",
+      "identity_source": "scheduler_materialized_before_remote_dispatch",
+      "logical_setup_group": "hailo8_setup",
+      "performance_claims_emitted": false,
+      "producer": "hailo8",
+      "quality_companion_endpoint_id": "tensorrt_at_hailo8_full",
+      "run_id": "native_full_tensorrt",
+      "setup_id": "orin_nx_hailo8_01",
+      "source_run_id": "native_full_tensorrt",
+      "variant": "full"
+    }
+  ],
+  "setup_local_tensorrt_quality_companion_identity_ready": true,
+  "setup_local_tensorrt_quality_companions": true,
+  "setup_local_tensorrt_quality_companions_requested": true,
+  "setup_local_tensorrt_quality_only_groups": [],
+  "setup_local_tensorrt_run_id": "ort_tensorrt",
+  "shortlist": 1,
+  "tensorrt_performance_owner_group": "hailo8_setup",
+  "tensorrt_remote_cache": true,
+  "uploads_per_model_setup": 1,
+  "validation_embedding_policy": "exact_run_mode_subset",
+  "validation_items": {
+    "classification": 500,
+    "detection": 500
+  },
+  "warm_suite_uploads_total": 0,
+  "warnings": []
+}

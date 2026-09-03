@@ -1,0 +1,11 @@
+{
+  "cancel_requested": false,
+  "reason": "",
+  "remote_cancel_propagation": "enabled",
+  "run_id": "biggerset_20260903_090110",
+  "schema": "onnx-splitpoint/workflow-control",
+  "schema_version": 1,
+  "session_id": "52d266d5784443bcb12cc9d56e26f425",
+  "state": "finished",
+  "updated_at": "2026-09-03T12:15:54+02:00"
+}

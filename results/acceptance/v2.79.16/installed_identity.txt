@@ -1,0 +1,5 @@
+VERSION=2.79.16
+RELEASE=2.79.16
+BUILD_ID=v2.79.16-guided-full-system-input-calibration
+WORKFLOW_VERSION=v2.79.16-guided-full-system-input-calibration
+DISTRIBUTION=2.79.16

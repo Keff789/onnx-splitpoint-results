@@ -1,0 +1,14 @@
+{
+  "phase": "energy_preflight",
+  "repeat_index": 0,
+  "status": "finished",
+  "pid": 3338766,
+  "rc": 0,
+  "started_at": 1787821142.1992252,
+  "updated_at": 1787821143.6017551,
+  "elapsed_s": 1.4025299549102783,
+  "cmd": [
+    "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_000/preflight/preflight_command.sh"
+  ],
+  "timeout_s": 900.0
+}

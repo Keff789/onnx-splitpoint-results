@@ -1,0 +1,588 @@
+{
+  "out_dir": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5",
+  "file_count": 115,
+  "files": [
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/artifact_index.json",
+      "relative_path": "artifact_index.json",
+      "size_bytes": 57473
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/duration_probe.json",
+      "relative_path": "duration_probe.json",
+      "size_bytes": 1017
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/energy_aggregate.json",
+      "relative_path": "energy_aggregate.json",
+      "size_bytes": 92929
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/energy_command.sh",
+      "relative_path": "energy_command.sh",
+      "size_bytes": 4918
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/energy_current_status.json",
+      "relative_path": "energy_current_status.json",
+      "size_bytes": 563
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/energy_summary.json",
+      "relative_path": "energy_summary.json",
+      "size_bytes": 92929
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/probe/duration_probe.json",
+      "relative_path": "probe/duration_probe.json",
+      "size_bytes": 1017
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_000/attempt_01/artifact_index.json",
+      "relative_path": "repeat_retry_attempts/repeat_000/attempt_01/artifact_index.json",
+      "size_bytes": 11476
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_000/attempt_01/collector_reconnect_evidence.json",
+      "relative_path": "repeat_retry_attempts/repeat_000/attempt_01/collector_reconnect_evidence.json",
+      "size_bytes": 307
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_000/attempt_01/duration_probe.json",
+      "relative_path": "repeat_retry_attempts/repeat_000/attempt_01/duration_probe.json",
+      "size_bytes": 1105
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_000/attempt_01/energy_aggregate.json",
+      "relative_path": "repeat_retry_attempts/repeat_000/attempt_01/energy_aggregate.json",
+      "size_bytes": 46187
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_000/attempt_01/energy_command.sh",
+      "relative_path": "repeat_retry_attempts/repeat_000/attempt_01/energy_command.sh",
+      "size_bytes": 4918
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_000/attempt_01/energy_current_status.json",
+      "relative_path": "repeat_retry_attempts/repeat_000/attempt_01/energy_current_status.json",
+      "size_bytes": 2130
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_000/attempt_01/energy_summary.json",
+      "relative_path": "repeat_retry_attempts/repeat_000/attempt_01/energy_summary.json",
+      "size_bytes": 46187
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_000/attempt_01/probe/duration_probe.json",
+      "relative_path": "repeat_retry_attempts/repeat_000/attempt_01/probe/duration_probe.json",
+      "size_bytes": 1105
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_000/attempt_01/run_000/collector_command.txt",
+      "relative_path": "repeat_retry_attempts/repeat_000/attempt_01/run_000/collector_command.txt",
+      "size_bytes": 1153
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_000/attempt_01/run_000/collector_stderr.log",
+      "relative_path": "repeat_retry_attempts/repeat_000/attempt_01/run_000/collector_stderr.log",
+      "size_bytes": 94
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_000/attempt_01/run_000/collector_stdout.log",
+      "relative_path": "repeat_retry_attempts/repeat_000/attempt_01/run_000/collector_stdout.log",
+      "size_bytes": 1595
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_000/attempt_01/run_000/collector_storage/fast_firmware.parquet",
+      "relative_path": "repeat_retry_attempts/repeat_000/attempt_01/run_000/collector_storage/fast_firmware.parquet",
+      "size_bytes": 4
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_000/attempt_01/run_000/energy_command.sh",
+      "relative_path": "repeat_retry_attempts/repeat_000/attempt_01/run_000/energy_command.sh",
+      "size_bytes": 1762
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_000/attempt_01/run_000/energy_summary.json",
+      "relative_path": "repeat_retry_attempts/repeat_000/attempt_01/run_000/energy_summary.json",
+      "size_bytes": 16019
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_000/attempt_01/run_000/preflight/preflight_attestation.json",
+      "relative_path": "repeat_retry_attempts/repeat_000/attempt_01/run_000/preflight/preflight_attestation.json",
+      "size_bytes": 2198
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_000/attempt_01/run_000/preflight/preflight_command.sh",
+      "relative_path": "repeat_retry_attempts/repeat_000/attempt_01/run_000/preflight/preflight_command.sh",
+      "size_bytes": 6219
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_000/attempt_01/run_000/preflight/preflight_evidence.json",
+      "relative_path": "repeat_retry_attempts/repeat_000/attempt_01/run_000/preflight/preflight_evidence.json",
+      "size_bytes": 4187
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_000/attempt_01/run_000/preflight/preflight_status.json",
+      "relative_path": "repeat_retry_attempts/repeat_000/attempt_01/run_000/preflight/preflight_status.json",
+      "size_bytes": 652
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_000/attempt_01/run_000/preflight/preflight_stderr.log",
+      "relative_path": "repeat_retry_attempts/repeat_000/attempt_01/run_000/preflight/preflight_stderr.log",
+      "size_bytes": 0
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_000/attempt_01/run_000/preflight/preflight_stdout.log",
+      "relative_path": "repeat_retry_attempts/repeat_000/attempt_01/run_000/preflight/preflight_stdout.log",
+      "size_bytes": 2088
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_000/attempt_01/run_000/runtime_work_units_evidence.json",
+      "relative_path": "repeat_retry_attempts/repeat_000/attempt_01/run_000/runtime_work_units_evidence.json",
+      "size_bytes": 133
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_000/attempt_01/run_000/workload_command.sh",
+      "relative_path": "repeat_retry_attempts/repeat_000/attempt_01/run_000/workload_command.sh",
+      "size_bytes": 5444
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_001/attempt_01/artifact_index.json",
+      "relative_path": "repeat_retry_attempts/repeat_001/attempt_01/artifact_index.json",
+      "size_bytes": 11476
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_001/attempt_01/collector_reconnect_evidence.json",
+      "relative_path": "repeat_retry_attempts/repeat_001/attempt_01/collector_reconnect_evidence.json",
+      "size_bytes": 306
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_001/attempt_01/duration_probe.json",
+      "relative_path": "repeat_retry_attempts/repeat_001/attempt_01/duration_probe.json",
+      "size_bytes": 1105
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_001/attempt_01/energy_aggregate.json",
+      "relative_path": "repeat_retry_attempts/repeat_001/attempt_01/energy_aggregate.json",
+      "size_bytes": 46187
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_001/attempt_01/energy_command.sh",
+      "relative_path": "repeat_retry_attempts/repeat_001/attempt_01/energy_command.sh",
+      "size_bytes": 4918
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_001/attempt_01/energy_current_status.json",
+      "relative_path": "repeat_retry_attempts/repeat_001/attempt_01/energy_current_status.json",
+      "size_bytes": 2129
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_001/attempt_01/energy_summary.json",
+      "relative_path": "repeat_retry_attempts/repeat_001/attempt_01/energy_summary.json",
+      "size_bytes": 46187
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_001/attempt_01/probe/duration_probe.json",
+      "relative_path": "repeat_retry_attempts/repeat_001/attempt_01/probe/duration_probe.json",
+      "size_bytes": 1105
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_001/attempt_01/run_000/collector_command.txt",
+      "relative_path": "repeat_retry_attempts/repeat_001/attempt_01/run_000/collector_command.txt",
+      "size_bytes": 1153
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_001/attempt_01/run_000/collector_stderr.log",
+      "relative_path": "repeat_retry_attempts/repeat_001/attempt_01/run_000/collector_stderr.log",
+      "size_bytes": 94
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_001/attempt_01/run_000/collector_stdout.log",
+      "relative_path": "repeat_retry_attempts/repeat_001/attempt_01/run_000/collector_stdout.log",
+      "size_bytes": 1595
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_001/attempt_01/run_000/collector_storage/fast_firmware.parquet",
+      "relative_path": "repeat_retry_attempts/repeat_001/attempt_01/run_000/collector_storage/fast_firmware.parquet",
+      "size_bytes": 4
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_001/attempt_01/run_000/energy_command.sh",
+      "relative_path": "repeat_retry_attempts/repeat_001/attempt_01/run_000/energy_command.sh",
+      "size_bytes": 1762
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_001/attempt_01/run_000/energy_summary.json",
+      "relative_path": "repeat_retry_attempts/repeat_001/attempt_01/run_000/energy_summary.json",
+      "size_bytes": 16019
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_001/attempt_01/run_000/preflight/preflight_attestation.json",
+      "relative_path": "repeat_retry_attempts/repeat_001/attempt_01/run_000/preflight/preflight_attestation.json",
+      "size_bytes": 2198
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_001/attempt_01/run_000/preflight/preflight_command.sh",
+      "relative_path": "repeat_retry_attempts/repeat_001/attempt_01/run_000/preflight/preflight_command.sh",
+      "size_bytes": 6219
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_001/attempt_01/run_000/preflight/preflight_evidence.json",
+      "relative_path": "repeat_retry_attempts/repeat_001/attempt_01/run_000/preflight/preflight_evidence.json",
+      "size_bytes": 4187
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_001/attempt_01/run_000/preflight/preflight_status.json",
+      "relative_path": "repeat_retry_attempts/repeat_001/attempt_01/run_000/preflight/preflight_status.json",
+      "size_bytes": 652
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_001/attempt_01/run_000/preflight/preflight_stderr.log",
+      "relative_path": "repeat_retry_attempts/repeat_001/attempt_01/run_000/preflight/preflight_stderr.log",
+      "size_bytes": 0
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_001/attempt_01/run_000/preflight/preflight_stdout.log",
+      "relative_path": "repeat_retry_attempts/repeat_001/attempt_01/run_000/preflight/preflight_stdout.log",
+      "size_bytes": 2088
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_001/attempt_01/run_000/runtime_work_units_evidence.json",
+      "relative_path": "repeat_retry_attempts/repeat_001/attempt_01/run_000/runtime_work_units_evidence.json",
+      "size_bytes": 133
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_001/attempt_01/run_000/workload_command.sh",
+      "relative_path": "repeat_retry_attempts/repeat_001/attempt_01/run_000/workload_command.sh",
+      "size_bytes": 5444
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_002/attempt_01/artifact_index.json",
+      "relative_path": "repeat_retry_attempts/repeat_002/attempt_01/artifact_index.json",
+      "size_bytes": 11476
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_002/attempt_01/collector_reconnect_evidence.json",
+      "relative_path": "repeat_retry_attempts/repeat_002/attempt_01/collector_reconnect_evidence.json",
+      "size_bytes": 306
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_002/attempt_01/duration_probe.json",
+      "relative_path": "repeat_retry_attempts/repeat_002/attempt_01/duration_probe.json",
+      "size_bytes": 1105
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_002/attempt_01/energy_aggregate.json",
+      "relative_path": "repeat_retry_attempts/repeat_002/attempt_01/energy_aggregate.json",
+      "size_bytes": 46184
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_002/attempt_01/energy_command.sh",
+      "relative_path": "repeat_retry_attempts/repeat_002/attempt_01/energy_command.sh",
+      "size_bytes": 4918
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_002/attempt_01/energy_current_status.json",
+      "relative_path": "repeat_retry_attempts/repeat_002/attempt_01/energy_current_status.json",
+      "size_bytes": 2131
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_002/attempt_01/energy_summary.json",
+      "relative_path": "repeat_retry_attempts/repeat_002/attempt_01/energy_summary.json",
+      "size_bytes": 46184
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_002/attempt_01/probe/duration_probe.json",
+      "relative_path": "repeat_retry_attempts/repeat_002/attempt_01/probe/duration_probe.json",
+      "size_bytes": 1105
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_002/attempt_01/run_000/collector_command.txt",
+      "relative_path": "repeat_retry_attempts/repeat_002/attempt_01/run_000/collector_command.txt",
+      "size_bytes": 1153
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_002/attempt_01/run_000/collector_stderr.log",
+      "relative_path": "repeat_retry_attempts/repeat_002/attempt_01/run_000/collector_stderr.log",
+      "size_bytes": 94
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_002/attempt_01/run_000/collector_stdout.log",
+      "relative_path": "repeat_retry_attempts/repeat_002/attempt_01/run_000/collector_stdout.log",
+      "size_bytes": 1595
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_002/attempt_01/run_000/collector_storage/fast_firmware.parquet",
+      "relative_path": "repeat_retry_attempts/repeat_002/attempt_01/run_000/collector_storage/fast_firmware.parquet",
+      "size_bytes": 4
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_002/attempt_01/run_000/energy_command.sh",
+      "relative_path": "repeat_retry_attempts/repeat_002/attempt_01/run_000/energy_command.sh",
+      "size_bytes": 1762
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_002/attempt_01/run_000/energy_summary.json",
+      "relative_path": "repeat_retry_attempts/repeat_002/attempt_01/run_000/energy_summary.json",
+      "size_bytes": 16016
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_002/attempt_01/run_000/preflight/preflight_attestation.json",
+      "relative_path": "repeat_retry_attempts/repeat_002/attempt_01/run_000/preflight/preflight_attestation.json",
+      "size_bytes": 2198
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_002/attempt_01/run_000/preflight/preflight_command.sh",
+      "relative_path": "repeat_retry_attempts/repeat_002/attempt_01/run_000/preflight/preflight_command.sh",
+      "size_bytes": 6219
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_002/attempt_01/run_000/preflight/preflight_evidence.json",
+      "relative_path": "repeat_retry_attempts/repeat_002/attempt_01/run_000/preflight/preflight_evidence.json",
+      "size_bytes": 4185
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_002/attempt_01/run_000/preflight/preflight_status.json",
+      "relative_path": "repeat_retry_attempts/repeat_002/attempt_01/run_000/preflight/preflight_status.json",
+      "size_bytes": 652
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_002/attempt_01/run_000/preflight/preflight_stderr.log",
+      "relative_path": "repeat_retry_attempts/repeat_002/attempt_01/run_000/preflight/preflight_stderr.log",
+      "size_bytes": 0
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_002/attempt_01/run_000/preflight/preflight_stdout.log",
+      "relative_path": "repeat_retry_attempts/repeat_002/attempt_01/run_000/preflight/preflight_stdout.log",
+      "size_bytes": 2088
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_002/attempt_01/run_000/runtime_work_units_evidence.json",
+      "relative_path": "repeat_retry_attempts/repeat_002/attempt_01/run_000/runtime_work_units_evidence.json",
+      "size_bytes": 133
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_002/attempt_01/run_000/workload_command.sh",
+      "relative_path": "repeat_retry_attempts/repeat_002/attempt_01/run_000/workload_command.sh",
+      "size_bytes": 5444
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_000/collector_command.txt",
+      "relative_path": "run_000/collector_command.txt",
+      "size_bytes": 1023
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_000/collector_stderr.log",
+      "relative_path": "run_000/collector_stderr.log",
+      "size_bytes": 94
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_000/collector_stdout.log",
+      "relative_path": "run_000/collector_stdout.log",
+      "size_bytes": 1465
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_000/collector_storage/fast_firmware.parquet",
+      "relative_path": "run_000/collector_storage/fast_firmware.parquet",
+      "size_bytes": 4
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_000/energy_command.sh",
+      "relative_path": "run_000/energy_command.sh",
+      "size_bytes": 1586
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_000/energy_summary.json",
+      "relative_path": "run_000/energy_summary.json",
+      "size_bytes": 15145
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_000/preflight/preflight_attestation.json",
+      "relative_path": "run_000/preflight/preflight_attestation.json",
+      "size_bytes": 2198
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_000/preflight/preflight_command.sh",
+      "relative_path": "run_000/preflight/preflight_command.sh",
+      "size_bytes": 6219
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_000/preflight/preflight_evidence.json",
+      "relative_path": "run_000/preflight/preflight_evidence.json",
+      "size_bytes": 4010
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_000/preflight/preflight_status.json",
+      "relative_path": "run_000/preflight/preflight_status.json",
+      "size_bytes": 608
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_000/preflight/preflight_stderr.log",
+      "relative_path": "run_000/preflight/preflight_stderr.log",
+      "size_bytes": 0
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_000/preflight/preflight_stdout.log",
+      "relative_path": "run_000/preflight/preflight_stdout.log",
+      "size_bytes": 2088
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_000/runtime_work_units_evidence.json",
+      "relative_path": "run_000/runtime_work_units_evidence.json",
+      "size_bytes": 133
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_000/workload_command.sh",
+      "relative_path": "run_000/workload_command.sh",
+      "size_bytes": 5444
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_001/collector_command.txt",
+      "relative_path": "run_001/collector_command.txt",
+      "size_bytes": 1023
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_001/collector_stderr.log",
+      "relative_path": "run_001/collector_stderr.log",
+      "size_bytes": 94
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_001/collector_stdout.log",
+      "relative_path": "run_001/collector_stdout.log",
+      "size_bytes": 1465
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_001/collector_storage/fast_firmware.parquet",
+      "relative_path": "run_001/collector_storage/fast_firmware.parquet",
+      "size_bytes": 4
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_001/energy_command.sh",
+      "relative_path": "run_001/energy_command.sh",
+      "size_bytes": 1586
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_001/energy_summary.json",
+      "relative_path": "run_001/energy_summary.json",
+      "size_bytes": 15759
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_001/preflight/preflight_attestation.json",
+      "relative_path": "run_001/preflight/preflight_attestation.json",
+      "size_bytes": 2198
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_001/preflight/preflight_command.sh",
+      "relative_path": "run_001/preflight/preflight_command.sh",
+      "size_bytes": 6219
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_001/preflight/preflight_evidence.json",
+      "relative_path": "run_001/preflight/preflight_evidence.json",
+      "size_bytes": 4011
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_001/preflight/preflight_status.json",
+      "relative_path": "run_001/preflight/preflight_status.json",
+      "size_bytes": 608
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_001/preflight/preflight_stderr.log",
+      "relative_path": "run_001/preflight/preflight_stderr.log",
+      "size_bytes": 0
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_001/preflight/preflight_stdout.log",
+      "relative_path": "run_001/preflight/preflight_stdout.log",
+      "size_bytes": 2088
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_001/runtime_work_units_evidence.json",
+      "relative_path": "run_001/runtime_work_units_evidence.json",
+      "size_bytes": 133
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_001/workload_command.sh",
+      "relative_path": "run_001/workload_command.sh",
+      "size_bytes": 5444
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_002/collector_command.txt",
+      "relative_path": "run_002/collector_command.txt",
+      "size_bytes": 1023
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_002/collector_stderr.log",
+      "relative_path": "run_002/collector_stderr.log",
+      "size_bytes": 94
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_002/collector_stdout.log",
+      "relative_path": "run_002/collector_stdout.log",
+      "size_bytes": 1465
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_002/collector_storage/fast_firmware.parquet",
+      "relative_path": "run_002/collector_storage/fast_firmware.parquet",
+      "size_bytes": 4
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_002/energy_command.sh",
+      "relative_path": "run_002/energy_command.sh",
+      "size_bytes": 1586
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_002/energy_summary.json",
+      "relative_path": "run_002/energy_summary.json",
+      "size_bytes": 15757
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_002/preflight/preflight_attestation.json",
+      "relative_path": "run_002/preflight/preflight_attestation.json",
+      "size_bytes": 2198
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_002/preflight/preflight_command.sh",
+      "relative_path": "run_002/preflight/preflight_command.sh",
+      "size_bytes": 6219
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_002/preflight/preflight_evidence.json",
+      "relative_path": "run_002/preflight/preflight_evidence.json",
+      "size_bytes": 4011
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_002/preflight/preflight_status.json",
+      "relative_path": "run_002/preflight/preflight_status.json",
+      "size_bytes": 607
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_002/preflight/preflight_stderr.log",
+      "relative_path": "run_002/preflight/preflight_stderr.log",
+      "size_bytes": 0
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_002/preflight/preflight_stdout.log",
+      "relative_path": "run_002/preflight/preflight_stdout.log",
+      "size_bytes": 2088
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_002/runtime_work_units_evidence.json",
+      "relative_path": "run_002/runtime_work_units_evidence.json",
+      "size_bytes": 133
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_002/workload_command.sh",
+      "relative_path": "run_002/workload_command.sh",
+      "size_bytes": 5444
+    }
+  ],
+  "by_suffix": {
+    ".json": 57,
+    ".sh": 22,
+    ".txt": 6,
+    ".log": 24,
+    ".parquet": 6
+  }
+}

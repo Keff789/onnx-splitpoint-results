@@ -1,0 +1,188 @@
+{
+  "dataset_registry_binding": {
+    "bound": [],
+    "bound_count": 0,
+    "created_at": "2026-08-27T10:51:07+02:00",
+    "enabled": true,
+    "invalid": [],
+    "invalid_count": 0,
+    "missing": [],
+    "missing_count": 0,
+    "preserved_explicit": [
+      {
+        "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/manifests/imagenet_train_calibration_manifest.json",
+        "role": "calibration",
+        "task": "classification"
+      },
+      {
+        "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/manifests/imagenet_val_manifest.json",
+        "role": "validation",
+        "task": "classification"
+      },
+      {
+        "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/manifests/coco2017_train_calibration_manifest.json",
+        "role": "calibration",
+        "task": "detection"
+      },
+      {
+        "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/manifests/coco2017_val_manifest.json",
+        "role": "validation",
+        "task": "detection"
+      }
+    ],
+    "registry_exists": true,
+    "registry_path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/dataset_registry.json",
+    "registry_sha256": "sha256:9c5b72d97946c397c57463899cdda2938c458e7b8495683790a9b157ceab5bfc",
+    "schema": "onnx-splitpoint/dataset-registry-binding",
+    "schema_version": 1,
+    "status": "ok"
+  },
+  "hardware_matrix_path": "hardware_matrix.json",
+  "hardware_target_count": 1,
+  "hardware_targets": [
+    {
+      "accelerator": "hailo8",
+      "build_environment": {
+        "cache_dir": "~/Models/BackendArtifacts/hailo",
+        "host": "local",
+        "id": "hailo8_dfc_managed",
+        "kind": "hailo8_dfc",
+        "shell": "bash",
+        "venv_activate": "source ~/.onnx_splitpoint_tool/hailo/venv_hailo8/bin/activate"
+      },
+      "build_environment_id": "hailo8_dfc_managed",
+      "enabled": true,
+      "energy": {
+        "accelerator_idle_w": 1.0,
+        "enabled": true,
+        "idle_baseline_w": 5.0,
+        "urecs_address": "192.168.0.197"
+      },
+      "id": "orin_nx_hailo8_01",
+      "label": "Orin NX + Hailo-8",
+      "note": "Resolved from hardware setup registry.",
+      "provider": "hailo8",
+      "remote": {
+        "enabled": true,
+        "host": "192.168.0.104",
+        "host_copy": {
+          "host": "192.168.0.104",
+          "port": 22,
+          "remote_base_dir": "~/splitpoint_runs",
+          "user": "nx"
+        },
+        "host_id": "orin_nx_hailo8_01",
+        "iters": 50,
+        "port": 22,
+        "provider": "hailo8",
+        "remote_base_dir": "~/splitpoint_runs",
+        "remote_venv": "source ~/hailo_py/bin/activate",
+        "resume": true,
+        "reuse_bundle": true,
+        "ssh_extra_args": "",
+        "timeout_s": 0,
+        "transfer_mode": "bundle",
+        "user": "nx",
+        "warmup": 10
+      },
+      "runtime": {
+        "enabled": true,
+        "host": "192.168.0.104",
+        "host_copy": {
+          "host": "192.168.0.104",
+          "port": 22,
+          "remote_base_dir": "~/splitpoint_runs",
+          "user": "nx"
+        },
+        "host_id": "orin_nx_hailo8_01",
+        "iters": 50,
+        "port": 22,
+        "provider": "hailo8",
+        "remote_base_dir": "~/splitpoint_runs",
+        "remote_venv": "source ~/hailo_py/bin/activate",
+        "resume": true,
+        "reuse_bundle": true,
+        "ssh_extra_args": "",
+        "timeout_s": 0,
+        "transfer_mode": "bundle",
+        "user": "nx",
+        "warmup": 10
+      },
+      "setup_lock_id": "orin_nx_hailo8_01",
+      "setup_source": "/home/kmika/.onnx_splitpoint_tool/hardware_setups.yaml",
+      "tags": [
+        "remote",
+        "npu",
+        "hailo",
+        "hailo8"
+      ]
+    }
+  ],
+  "model_entries": [
+    {
+      "_tier": "primary",
+      "candidate_universe": {
+        "mode": "declared_shortlist",
+        "seed": 20260710
+      },
+      "candidate_universe_complete": false,
+      "development_subset": "imagenet_val_mini_200",
+      "evaluation_role": "development",
+      "export_metadata": {},
+      "family": "resnet50",
+      "family_id": "resnet50",
+      "generalization_scope": "development",
+      "id": "resnet50",
+      "input_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "model_sha256": "cebd9d5879ddd304a18f51e559ab74fba5cbd1f610b9359321bc5228acbe4f50",
+      "onnx": "/home/kmika/Models/resnet50.onnx",
+      "resolved": true,
+      "resolved_path": "/home/kmika/Models/resnet50.onnx",
+      "semantic_dataset": "imagenet_val",
+      "source": "torchvision",
+      "task": "classification",
+      "validation_tier": "screening"
+    }
+  ],
+  "profile_copy": "profile.yaml",
+  "profile_id": "paper_comparison_resnet50_hailo8_full_native_energy_b500",
+  "profile_path": "/home/kmika/ONNX-Splitpoint-Tool/profiles/paper_comparison_resnet50_hailo8_full_native_energy_b500.yaml",
+  "profile_selection_fingerprint": "sha256:33b8863ef078e510b68ac5c1aba04c20541555914899033c405ccd8d93e56883",
+  "profile_selection_snapshot_sha256": "sha256:0a3bc9805eaeac7e8a0f68c85e26757b5b330bb23879cb28b9add6d9f89f1da1",
+  "profile_source": "file",
+  "profile_start_snapshot": "profile_start_snapshot.json",
+  "profile_start_snapshot_sha256": "sha256:1b71be7f4a251c65cebe192869e9d8aa62356d1fb75aeb6d02790a7abbf1600d",
+  "ranking_model_bundle_resolution": {
+    "path": "",
+    "status": "not_configured"
+  },
+  "resolved_at": "2026-08-27T10:52:22+02:00",
+  "schema": "onnx-splitpoint/evaluation-profile-resolution",
+  "schema_version": 1,
+  "selection_policy": {
+    "audit_candidate_universe": "deterministic_audit",
+    "audit_seed": 20260710,
+    "audit_size": 20,
+    "candidate_search_pool": "auto",
+    "full_model_hailo_preflight_policy": "skip",
+    "keep_partial_hailo_cases": false,
+    "max_accepted_cases_per_model": 1,
+    "min_gap": 0,
+    "minimum_valid_audit_candidates": 10,
+    "preferred_shortlist": 1,
+    "report_blocked_configs": true,
+    "report_plan_adjustments": true,
+    "require_single_part2_input": false,
+    "score_independent_audit_enabled": false,
+    "selection_strategy": "stratified_windows"
+  },
+  "targets": [
+    "tensorrt",
+    "hailo8"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "artifacts": [
+    {
+      "path": "checkpoints/native_energy/journal.json",
+      "sha256": "d27cd07b15ab45debfe3f26db44fd188c5c2b2fe0e0804646eda2caa347ce6c8",
+      "size_bytes": 1487
+    },
+    {
+      "path": "native_producer_energy_results.json",
+      "sha256": "fd15801c28a0edc5ebb5cd84e36d2eb441414e51f7eb53299cf00cafd41fbf5a",
+      "size_bytes": 717024
+    },
+    {
+      "path": "native_producer_energy_results.md",
+      "sha256": "0a9c55881cb2d27f64d7ee8aa356e9bf6c359ae2af8c0c7be69bd8230d1b594c",
+      "size_bytes": 256
+    }
+  ],
+  "checkpoint_sha256": "95aa29271ed37aa1371cc0ce9076e62c3e29f3dfe41a924d7d2b16e79c4e0c40",
+  "complete": true,
+  "details": {
+    "managed_plan_hash": "bb9f27aa6b7c618539bf31124e2ee55d78d86fb6361ea03404ad27b37e7293f0",
+    "planned_row_count": 3,
+    "report_ok": false,
+    "resume_checkpoint": false,
+    "return_code": 2,
+    "row_counts": {
+      "cancelled": 0,
+      "completed": 0,
+      "failed": 3,
+      "not_started": 0,
+      "running": 0
+    }
+  },
+  "error": "failed_measurement_or_aggregate_contract",
+  "finished_at": "2026-08-27T09:58:27+00:00",
+  "input_hash": "f5ac4c087f2762713377cee39e48b2c8126481f2327478450239050f3630fa1f",
+  "schema": "onnx-splitpoint/atomic-stage-checkpoint",
+  "schema_version": 1,
+  "stage": "native_energy",
+  "started_at": "2026-08-27T09:58:27+00:00",
+  "state": "failed",
+  "updated_at": "2026-08-27T09:58:27+00:00"
+}

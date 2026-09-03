@@ -1,0 +1,27 @@
+{
+  "artifact_verification_status": "pass",
+  "attestation_sha256": "eaa7dfe9a74ec71b76120fc71e7dc581558ebb8ab510e95de76cbb10b1d009c3",
+  "command_contract_sha256": "0868aff8bd8f5b5630d52a1acd4d892d6c8b108fe432d0405feb69cc1a318009",
+  "created_at_unix_ns": 1787821143426797905,
+  "expires_at_unix_ns": 1787821443426797905,
+  "host": "nx",
+  "nonce": "70ed12c71be5c02e6f778d188d45bbdc8a39958a72c33ea9cc65e652417d96d9",
+  "ok": true,
+  "preflight_scope": "native_full_energy_hotloop_all_heavy_hashes",
+  "runner_sha256": "54b323c1dd608f511856748c2171450f7384893072385ffd7b7c259d1013026f",
+  "schema": "onnx-splitpoint/energy-preflight-attestation",
+  "schema_version": 1,
+  "verified_artifact_sha256": {
+    "build_onnx": "cebd9d5879ddd304a18f51e559ab74fba5cbd1f610b9359321bc5228acbe4f50",
+    "command_python_executable": "7b13b22842816e9accd853f2c752aab43acf2ef6e16f48376b2f61c74c6c614b",
+    "engine": "07c0ce6ac391607cf1ae399e821eada3d0dbfc5be83820bf982fec61458f843f",
+    "engine_build_receipt": "3265d7e23f4f6640f8039d0f06ae71acd5339079efa085e7ecaae34779a4ae21",
+    "input_manifest": "b38cbf912cab76821267a36c85125b2a066448c5dedbe571381013919ad7579d",
+    "performance_report": "9918ffb412959089f429995285e24ee97a626394da4d14b28d8705c018cce37a",
+    "runtime_input_tensor": "5bf2c27125ab883e1f06230b329f18a0938bc4c8c1793c3f2dba7341045aeb9d",
+    "source_onnx": "cebd9d5879ddd304a18f51e559ab74fba5cbd1f610b9359321bc5228acbe4f50",
+    "trtexec": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4"
+  },
+  "verified_input_image_sha256": "",
+  "workload_kind": "tensorrt_full_hotloop"
+}

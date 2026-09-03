@@ -1,0 +1,242 @@
+{
+  "schema": "onnx-splitpoint/window-method-validation-probe-artifact-index",
+  "schema_version": 1,
+  "screening_only": true,
+  "eligible_for_energy_results_import": false,
+  "file_count": 33,
+  "raw_parquet_count": 1,
+  "comparison_json_count": 0,
+  "files": [
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/energy_aggregate.json",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/measurement/energy_aggregate.json",
+      "size_bytes": 40768,
+      "sha256": "7d7f722274c6e15dc26f36f66c2c1c1e3febe1f1bac9c5254a89d2aa372b7570",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/artifact_index.json",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/artifact_index.json",
+      "size_bytes": 9714,
+      "sha256": "9d048a25f2d3aa03a49f218addd026da71dc3af73aa3e6124817cc735318ac10",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/duration_probe.json",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/duration_probe.json",
+      "size_bytes": 853,
+      "sha256": "f83996ffcff9390846b27beffcb8b7246c70b903f54192817cd57cb4aa838f59",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/energy_aggregate.json",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/energy_aggregate.json",
+      "size_bytes": 41032,
+      "sha256": "143c951d9fd6a9d6781e18fa5195a9943e07a9387b88c74c4db20fa239dcc1bd",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/energy_command.sh",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/energy_command.sh",
+      "size_bytes": 2012,
+      "sha256": "a1c0ec99c2d88a05ccd4c5737766f0dddbb825e5f0eacaaef9d385b4a5cbe942",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/energy_current_status.json",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/energy_current_status.json",
+      "size_bytes": 1623,
+      "sha256": "5c642a609b774a545e0546a03598f2e629e893d9fd025f78bc579ca27fa206c2",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/energy_summary.json",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/energy_summary.json",
+      "size_bytes": 41032,
+      "sha256": "143c951d9fd6a9d6781e18fa5195a9943e07a9387b88c74c4db20fa239dcc1bd",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/probe/duration_probe.json",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/probe/duration_probe.json",
+      "size_bytes": 853,
+      "sha256": "f83996ffcff9390846b27beffcb8b7246c70b903f54192817cd57cb4aa838f59",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/collector_command.txt",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/collector_command.txt",
+      "size_bytes": 815,
+      "sha256": "c415adc9d3ea41abfa5e97272bcafe2d314bc9b55cbbe1e3c5428c69d693d6b5",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/collector_stderr.log",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/collector_stderr.log",
+      "size_bytes": 55,
+      "sha256": "257f8f7971f19195880dbc767c1410a435cbcbed9e8047d322c92223c8c7a6a4",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/collector_stdout.log",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/collector_stdout.log",
+      "size_bytes": 2339,
+      "sha256": "4b5eaeb322e4c353b298bbcf83ed29a54686e12d14027ec726027965f3e84c36",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/collector_storage/command_window_markers.json",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/collector_storage/command_window_markers.json",
+      "size_bytes": 3395,
+      "sha256": "da3828374ab22961f174871ebb7e5beaffae80c87e0e8ee99a8a1156fc635cc6",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/collector_storage/fast_firmware.parquet",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/collector_storage/fast_firmware.parquet",
+      "size_bytes": 669334,
+      "sha256": "078c7e07a7e3fd1af85d99d40de0da02c577650fca50e712d7ab5f8196a6a89e",
+      "artifact_kind": "raw_trace"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/energy_command.sh",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/energy_command.sh",
+      "size_bytes": 1258,
+      "sha256": "99a3eaf61cc7f2d61c773d2490a36ed28115fa4b68b9ae75142f96d9dbd809dc",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/energy_summary.json",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/energy_summary.json",
+      "size_bytes": 14807,
+      "sha256": "f0d69aa7f49cfce47caeebe613fbb9f8e215b189ae10ac26f17493d3a5f1b605",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/preflight/preflight_attestation.json",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/preflight/preflight_attestation.json",
+      "size_bytes": 56294,
+      "sha256": "8bb8fcd9bbba0388318128e0ade0cf1760c36b298a68b1342a8137b8999a62f3",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/preflight/preflight_command.sh",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/preflight/preflight_command.sh",
+      "size_bytes": 6032,
+      "sha256": "f9e981d9b447295d8ad853a61482530613d483f179fe1b66a1beb60cbf9af30c",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/preflight/preflight_evidence.json",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/preflight/preflight_evidence.json",
+      "size_bytes": 3676,
+      "sha256": "3cd7353aabf0a50ab487c67fffa604602fce80b1c734ced338419bdf5bb3f4db",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/preflight/preflight_status.json",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/preflight/preflight_status.json",
+      "size_bytes": 526,
+      "sha256": "5bb846d6089ddd4d6f2494857eba3f4fee058c72210a3ba15495b0ac339086f6",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/preflight/preflight_stderr.log",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/preflight/preflight_stderr.log",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/preflight/preflight_stdout.log",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/preflight/preflight_stdout.log",
+      "size_bytes": 38001,
+      "sha256": "d737eebe2c16106b0aa5afb2222dba73769069ac785ca4645e87ea0c9dc17649",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/runtime_work_units_evidence.json",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/runtime_work_units_evidence.json",
+      "size_bytes": 133,
+      "sha256": "4dd3e3e06e05a1ad17354579c9c1f71a857c5383c63ace2962169c4c49bd596a",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/workload_command.sh",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/workload_command.sh",
+      "size_bytes": 2326,
+      "sha256": "ee42517d6bf2028ba1fc4c9d69f4e43e79314ccdda699397e4c9fafed5620061",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/workload_stderr.log",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/workload_stderr.log",
+      "size_bytes": 124,
+      "sha256": "95aa45a1deb206fea41fd4e36b251917cf00f818e85e7460ba84ef1b01baa1ee",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/workload_stdout.log",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/workload_stdout.log",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/workload_timing.txt",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/workload_timing.txt",
+      "size_bytes": 61,
+      "sha256": "c8ca0645aceab716bd3731ca05efabca382187051614c551cf1cc841e3f4baf5",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/workload_contract_attempt_00.sh",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/workload_contract_attempt_00.sh",
+      "size_bytes": 1974,
+      "sha256": "9c1c6de1fd81861bbdd43ca6f563504dacee63e4f7445a738efde8a70a6ed4f5",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/plan/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc.command_contract.json",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/plan/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc.command_contract.json",
+      "size_bytes": 164060,
+      "sha256": "a355c6e138521f2fad99070ac1aef645d2ea146e102e577c9c6dfc81c8089be1",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/plan/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc.preflight.sh",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/plan/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc.preflight.sh",
+      "size_bytes": 5482,
+      "sha256": "685ffbda4328b92ccac2c4d59aef80cb548a8be3bf8770edc78d591342f209c7",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/plan/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc.sh",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/plan/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc.sh",
+      "size_bytes": 5009,
+      "sha256": "910e333ce0c308b79a001a727bc6d9171df0ea6450c5441f858210df830bb0f5",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/plan/native_producer_energy_plan.json",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/plan/native_producer_energy_plan.json",
+      "size_bytes": 33739,
+      "sha256": "5cb9dead20b11a2e7786b580ad0abe297bb44229b4b163b5a6dd690967812862",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/plan/native_producer_energy_plan.md",
+      "relative_path": "attempts/20260827T095446_478761Z_97b44f361c9f/plan/native_producer_energy_plan.md",
+      "size_bytes": 2472,
+      "sha256": "da029cf7b2a0677403bf56758ab44af74e3c7ca06d1b7e33a0ed8c13ed7462cb",
+      "artifact_kind": "probe_evidence"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/window_method_validation_probe.json",
+      "relative_path": "window_method_validation_probe.json",
+      "size_bytes": 95826,
+      "sha256": "6fc500f982eb6c86e47005b459ee945aed03a6430da8a126c6af6764a567301d",
+      "artifact_kind": "probe_evidence"
+    }
+  ]
+}

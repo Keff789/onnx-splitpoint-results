@@ -1,0 +1,44 @@
+{
+  "artifacts": [
+    {
+      "path": "checkpoints/native_energy/journal.json",
+      "sha256": "c2bfcbc1c35f06a94a1382cdf8bc45cd654c899bcf47fe7249ccf01104168cf2",
+      "size_bytes": 1131
+    },
+    {
+      "path": "native_producer_energy_results.json",
+      "sha256": "399910e90887d5d9f82a01faf3d0e7e2bc2a99e69ec8343860850092807a57b4",
+      "size_bytes": 670326
+    },
+    {
+      "path": "native_producer_energy_results.md",
+      "sha256": "0677c17fd438587d6ace125b92a15b3b35e39bf7b4a98032ae0d021608df2a66",
+      "size_bytes": 195
+    }
+  ],
+  "checkpoint_sha256": "c24315c5fce58bb12871dcf0561091485f2ec3fda3b4dce1442cee96d819b8e1",
+  "complete": true,
+  "details": {
+    "managed_plan_hash": "c48875fc22146a14c931f4b6be3df44c38813efda28e8429a600a02c31eca862",
+    "planned_row_count": 2,
+    "report_ok": true,
+    "resume_checkpoint": false,
+    "return_code": 0,
+    "row_counts": {
+      "cancelled": 0,
+      "completed": 2,
+      "failed": 0,
+      "not_started": 0,
+      "running": 0
+    }
+  },
+  "error": "",
+  "finished_at": "2026-08-27T08:59:45+00:00",
+  "input_hash": "966631180e501df4837c952b399bd6b928f90360f801c9a56901fc538e444cb2",
+  "schema": "onnx-splitpoint/atomic-stage-checkpoint",
+  "schema_version": 1,
+  "stage": "native_energy",
+  "started_at": "2026-08-27T08:59:45+00:00",
+  "state": "completed",
+  "updated_at": "2026-08-27T08:59:45+00:00"
+}

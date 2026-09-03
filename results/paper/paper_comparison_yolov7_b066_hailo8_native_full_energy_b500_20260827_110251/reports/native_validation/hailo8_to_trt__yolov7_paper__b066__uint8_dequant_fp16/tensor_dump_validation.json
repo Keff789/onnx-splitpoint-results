@@ -1,0 +1,60 @@
+{
+  "schema": "onnx-splitpoint/native-tensor-dump-validation",
+  "schema_version": 1,
+  "ok": true,
+  "manifest": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/native_producers/hailo8/yolov7_paper/benchmark_set/native_pipeline/b066/hailo_to_trt/uint8_dequant_fp16/native_fifo_outputs/native_fifo_output_manifest.json",
+  "output_count": 3,
+  "outputs": [
+    {
+      "dtype": "float32",
+      "shape": [
+        1,
+        3,
+        80,
+        80,
+        85
+      ],
+      "size": 1632000,
+      "bytes": 6528000,
+      "finite": true,
+      "min": -31.796875,
+      "max": 9.078125,
+      "mean": -7.400270938873291,
+      "name": "output"
+    },
+    {
+      "dtype": "float32",
+      "shape": [
+        1,
+        3,
+        40,
+        40,
+        85
+      ],
+      "size": 408000,
+      "bytes": 1632000,
+      "finite": true,
+      "min": -29.015625,
+      "max": 9.609375,
+      "mean": -7.7173075675964355,
+      "name": "clone_1"
+    },
+    {
+      "dtype": "float32",
+      "shape": [
+        1,
+        3,
+        20,
+        20,
+        85
+      ],
+      "size": 102000,
+      "bytes": 408000,
+      "finite": true,
+      "min": -21.0,
+      "max": 8.796875,
+      "mean": -8.407490730285645,
+      "name": "clone_2"
+    }
+  ]
+}

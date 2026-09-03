@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -u
+timing_path=/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/run_000/workload_timing.txt
+start_ns=$(date +%s%N)
+printf 'start_ns=%s
+' "$start_ns" > "$timing_path"
+set +e
+/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/run_000/workload_command.sh > /home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/run_000/workload_stdout.log 2> /home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/run_000/workload_stderr.log
+rc=$?
+set -e
+end_ns=$(date +%s%N)
+printf 'end_ns=%s
+rc=%s
+' "$end_ns" "$rc" >> "$timing_path"
+exit "$rc"

@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "probe_skipped": true,
+  "duration_margin_s": 1.0,
+  "measurement_suite_policy": "collector=int(duration+1), power_estimated=int(duration+2), default power_calculations trims unless complete mode is requested",
+  "workload_duration_s": 60.0,
+  "collector_duration_s": 61,
+  "power_estimated_duration_s": 62,
+  "probe_dir": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_hailo8__yolov7_paper__full__orin_nx_hailo8_01__9b0225ee3618/plan_30671fc2278e429f908b23c535f15665/attempt_d3eb0b283acf4688855ac59b14156b7e/repeat_retry_attempts/repeat_000/attempt_01/probe",
+  "probe_json": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_hailo8__yolov7_paper__full__orin_nx_hailo8_01__9b0225ee3618/plan_30671fc2278e429f908b23c535f15665/attempt_d3eb0b283acf4688855ac59b14156b7e/repeat_retry_attempts/repeat_000/attempt_01/probe/duration_probe.json"
+}

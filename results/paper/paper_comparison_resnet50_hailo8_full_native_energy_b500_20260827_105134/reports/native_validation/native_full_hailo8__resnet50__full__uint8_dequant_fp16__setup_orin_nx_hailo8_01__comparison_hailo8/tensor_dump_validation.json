@@ -1,0 +1,22 @@
+{
+  "schema": "onnx-splitpoint/native-tensor-dump-validation",
+  "schema_version": 1,
+  "ok": true,
+  "manifest": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/native_producers/hailo8/resnet50/benchmark_set/native_full_outputs/model=resnet50/backend=native_full_hailo8/setup=orin_nx_hailo8_01/comparison=hailo8/native_full_outputs_manifest.json",
+  "output_count": 1,
+  "outputs": [
+    {
+      "dtype": "float32",
+      "shape": [
+        1000
+      ],
+      "size": 1000,
+      "bytes": 4000,
+      "finite": true,
+      "min": -0.8764759302139282,
+      "max": 5.960036277770996,
+      "mean": 0.0032721757888793945,
+      "name": "resnet50_full/fc1"
+    }
+  ]
+}

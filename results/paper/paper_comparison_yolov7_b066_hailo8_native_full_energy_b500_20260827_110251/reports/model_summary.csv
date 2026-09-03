@@ -1,0 +1,2 @@
+model_id,task,evaluation_role,family,node_count,parameter_count,gflops,model_sha256,resolved_path
+yolov7_paper,detection,development,yolov7,,,,sha256:7a13e66f91047cce0e251c05f64159646847e842af31d60441c63dcdfad7825d,/home/kmika/Models/yolov7_paper.onnx

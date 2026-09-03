@@ -1,0 +1,903 @@
+{
+  "count_semantics": "details_and_grouped_counts_count_one record per excluded claim-kind/source-row/reason assignment; excluded_count fields count source rows",
+  "dimension_exclusion_counts": [
+    {
+      "claim_kind": "performance",
+      "count": 8,
+      "dimension": "model",
+      "value": "yolov7_paper"
+    },
+    {
+      "claim_kind": "performance",
+      "count": 2,
+      "dimension": "backend",
+      "value": "hailo8"
+    },
+    {
+      "claim_kind": "performance",
+      "count": 2,
+      "dimension": "backend",
+      "value": "hailo8_to_tensorrt"
+    },
+    {
+      "claim_kind": "performance",
+      "count": 4,
+      "dimension": "backend",
+      "value": "tensorrt"
+    },
+    {
+      "claim_kind": "performance",
+      "count": 4,
+      "dimension": "setup",
+      "value": "orin_nx_hailo8_01"
+    },
+    {
+      "claim_kind": "performance",
+      "count": 4,
+      "dimension": "setup",
+      "value": "unknown_setup"
+    },
+    {
+      "claim_kind": "performance",
+      "count": 8,
+      "dimension": "reason",
+      "value": "contract_fail_or_unavailable"
+    },
+    {
+      "claim_kind": "energy",
+      "count": 28,
+      "dimension": "model",
+      "value": "yolov7_paper"
+    },
+    {
+      "claim_kind": "energy",
+      "count": 10,
+      "dimension": "backend",
+      "value": "hailo8_to_trt"
+    },
+    {
+      "claim_kind": "energy",
+      "count": 9,
+      "dimension": "backend",
+      "value": "native_full_hailo8"
+    },
+    {
+      "claim_kind": "energy",
+      "count": 9,
+      "dimension": "backend",
+      "value": "native_full_tensorrt"
+    },
+    {
+      "claim_kind": "energy",
+      "count": 28,
+      "dimension": "setup",
+      "value": "orin_nx_hailo8_01"
+    },
+    {
+      "claim_kind": "energy",
+      "count": 3,
+      "dimension": "reason",
+      "value": "effective_command_window_not_verified"
+    },
+    {
+      "claim_kind": "energy",
+      "count": 3,
+      "dimension": "reason",
+      "value": "exact_runtime_work_units_missing"
+    },
+    {
+      "claim_kind": "energy",
+      "count": 3,
+      "dimension": "reason",
+      "value": "final_energy_gate_not_passed"
+    },
+    {
+      "claim_kind": "energy",
+      "count": 3,
+      "dimension": "reason",
+      "value": "measurement_execution_failed"
+    },
+    {
+      "claim_kind": "energy",
+      "count": 1,
+      "dimension": "reason",
+      "value": "native_accuracy_gate_not_passed"
+    },
+    {
+      "claim_kind": "energy",
+      "count": 1,
+      "dimension": "reason",
+      "value": "native_output_endpoint_not_verified"
+    },
+    {
+      "claim_kind": "energy",
+      "count": 2,
+      "dimension": "reason",
+      "value": "native_quality_claim_result_not_verified"
+    },
+    {
+      "claim_kind": "energy",
+      "count": 3,
+      "dimension": "reason",
+      "value": "postprocess_not_ok"
+    },
+    {
+      "claim_kind": "energy",
+      "count": 3,
+      "dimension": "reason",
+      "value": "raw_input_energy_not_primary"
+    },
+    {
+      "claim_kind": "energy",
+      "count": 3,
+      "dimension": "reason",
+      "value": "scientific_primary_unavailable_or_unverified"
+    },
+    {
+      "claim_kind": "energy",
+      "count": 3,
+      "dimension": "reason",
+      "value": "screening_energy_policy_nonclaimable"
+    }
+  ],
+  "dimension_order": [
+    "model",
+    "backend",
+    "setup",
+    "reason"
+  ],
+  "energy_claim_eligible_count": 0,
+  "energy_excluded_count": 3,
+  "energy_exclusion_reason_counts": {
+    "effective_command_window_not_verified": 3
+  },
+  "excluded_row_count": 11,
+  "exclusion_details": [
+    {
+      "backend": "hailo8",
+      "case_id": "full",
+      "claim_kind": "performance",
+      "eligibility_status": "contract_fail_or_unavailable",
+      "model_id": "yolov7_paper",
+      "reason": "contract_fail_or_unavailable",
+      "row_status": "available",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "full"
+    },
+    {
+      "backend": "hailo8",
+      "case_id": "full",
+      "claim_kind": "performance",
+      "eligibility_status": "contract_fail_or_unavailable",
+      "model_id": "yolov7_paper",
+      "reason": "contract_fail_or_unavailable",
+      "row_status": "available",
+      "setup_id": "unknown_setup",
+      "task": "detection",
+      "variant": "full"
+    },
+    {
+      "backend": "hailo8_to_tensorrt",
+      "case_id": "b066",
+      "claim_kind": "performance",
+      "eligibility_status": "contract_fail_or_unavailable",
+      "model_id": "yolov7_paper",
+      "reason": "contract_fail_or_unavailable",
+      "row_status": "available",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "split"
+    },
+    {
+      "backend": "hailo8_to_tensorrt",
+      "case_id": "b066",
+      "claim_kind": "performance",
+      "eligibility_status": "contract_fail_or_unavailable",
+      "model_id": "yolov7_paper",
+      "reason": "contract_fail_or_unavailable",
+      "row_status": "available",
+      "setup_id": "unknown_setup",
+      "task": "detection",
+      "variant": "split"
+    },
+    {
+      "backend": "tensorrt",
+      "case_id": "b066",
+      "claim_kind": "performance",
+      "eligibility_status": "contract_fail_or_unavailable",
+      "model_id": "yolov7_paper",
+      "reason": "contract_fail_or_unavailable",
+      "row_status": "available",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "split"
+    },
+    {
+      "backend": "tensorrt",
+      "case_id": "full",
+      "claim_kind": "performance",
+      "eligibility_status": "contract_fail_or_unavailable",
+      "model_id": "yolov7_paper",
+      "reason": "contract_fail_or_unavailable",
+      "row_status": "available",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "full"
+    },
+    {
+      "backend": "tensorrt",
+      "case_id": "b066",
+      "claim_kind": "performance",
+      "eligibility_status": "contract_fail_or_unavailable",
+      "model_id": "yolov7_paper",
+      "reason": "contract_fail_or_unavailable",
+      "row_status": "available",
+      "setup_id": "unknown_setup",
+      "task": "detection",
+      "variant": "split"
+    },
+    {
+      "backend": "tensorrt",
+      "case_id": "full",
+      "claim_kind": "performance",
+      "eligibility_status": "contract_fail_or_unavailable",
+      "model_id": "yolov7_paper",
+      "reason": "contract_fail_or_unavailable",
+      "row_status": "available",
+      "setup_id": "unknown_setup",
+      "task": "detection",
+      "variant": "full"
+    },
+    {
+      "backend": "hailo8_to_trt",
+      "case_id": "b066",
+      "claim_kind": "energy",
+      "eligibility_status": "measurement_failed",
+      "model_id": "yolov7_paper",
+      "reason": "effective_command_window_not_verified",
+      "row_status": "measurement_failed",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "native_split"
+    },
+    {
+      "backend": "hailo8_to_trt",
+      "case_id": "b066",
+      "claim_kind": "energy",
+      "eligibility_status": "measurement_failed",
+      "model_id": "yolov7_paper",
+      "reason": "exact_runtime_work_units_missing",
+      "row_status": "measurement_failed",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "native_split"
+    },
+    {
+      "backend": "hailo8_to_trt",
+      "case_id": "b066",
+      "claim_kind": "energy",
+      "eligibility_status": "measurement_failed",
+      "model_id": "yolov7_paper",
+      "reason": "final_energy_gate_not_passed",
+      "row_status": "measurement_failed",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "native_split"
+    },
+    {
+      "backend": "hailo8_to_trt",
+      "case_id": "b066",
+      "claim_kind": "energy",
+      "eligibility_status": "measurement_failed",
+      "model_id": "yolov7_paper",
+      "reason": "measurement_execution_failed",
+      "row_status": "measurement_failed",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "native_split"
+    },
+    {
+      "backend": "hailo8_to_trt",
+      "case_id": "b066",
+      "claim_kind": "energy",
+      "eligibility_status": "measurement_failed",
+      "model_id": "yolov7_paper",
+      "reason": "native_output_endpoint_not_verified",
+      "row_status": "measurement_failed",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "native_split"
+    },
+    {
+      "backend": "hailo8_to_trt",
+      "case_id": "b066",
+      "claim_kind": "energy",
+      "eligibility_status": "measurement_failed",
+      "model_id": "yolov7_paper",
+      "reason": "native_quality_claim_result_not_verified",
+      "row_status": "measurement_failed",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "native_split"
+    },
+    {
+      "backend": "hailo8_to_trt",
+      "case_id": "b066",
+      "claim_kind": "energy",
+      "eligibility_status": "measurement_failed",
+      "model_id": "yolov7_paper",
+      "reason": "postprocess_not_ok",
+      "row_status": "measurement_failed",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "native_split"
+    },
+    {
+      "backend": "hailo8_to_trt",
+      "case_id": "b066",
+      "claim_kind": "energy",
+      "eligibility_status": "measurement_failed",
+      "model_id": "yolov7_paper",
+      "reason": "raw_input_energy_not_primary",
+      "row_status": "measurement_failed",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "native_split"
+    },
+    {
+      "backend": "hailo8_to_trt",
+      "case_id": "b066",
+      "claim_kind": "energy",
+      "eligibility_status": "measurement_failed",
+      "model_id": "yolov7_paper",
+      "reason": "scientific_primary_unavailable_or_unverified",
+      "row_status": "measurement_failed",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "native_split"
+    },
+    {
+      "backend": "hailo8_to_trt",
+      "case_id": "b066",
+      "claim_kind": "energy",
+      "eligibility_status": "measurement_failed",
+      "model_id": "yolov7_paper",
+      "reason": "screening_energy_policy_nonclaimable",
+      "row_status": "measurement_failed",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "native_split"
+    },
+    {
+      "backend": "native_full_hailo8",
+      "case_id": "full",
+      "claim_kind": "energy",
+      "eligibility_status": "measurement_failed",
+      "model_id": "yolov7_paper",
+      "reason": "effective_command_window_not_verified",
+      "row_status": "measurement_failed",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "native_full_baseline"
+    },
+    {
+      "backend": "native_full_hailo8",
+      "case_id": "full",
+      "claim_kind": "energy",
+      "eligibility_status": "measurement_failed",
+      "model_id": "yolov7_paper",
+      "reason": "exact_runtime_work_units_missing",
+      "row_status": "measurement_failed",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "native_full_baseline"
+    },
+    {
+      "backend": "native_full_hailo8",
+      "case_id": "full",
+      "claim_kind": "energy",
+      "eligibility_status": "measurement_failed",
+      "model_id": "yolov7_paper",
+      "reason": "final_energy_gate_not_passed",
+      "row_status": "measurement_failed",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "native_full_baseline"
+    },
+    {
+      "backend": "native_full_hailo8",
+      "case_id": "full",
+      "claim_kind": "energy",
+      "eligibility_status": "measurement_failed",
+      "model_id": "yolov7_paper",
+      "reason": "measurement_execution_failed",
+      "row_status": "measurement_failed",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "native_full_baseline"
+    },
+    {
+      "backend": "native_full_hailo8",
+      "case_id": "full",
+      "claim_kind": "energy",
+      "eligibility_status": "measurement_failed",
+      "model_id": "yolov7_paper",
+      "reason": "native_accuracy_gate_not_passed",
+      "row_status": "measurement_failed",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "native_full_baseline"
+    },
+    {
+      "backend": "native_full_hailo8",
+      "case_id": "full",
+      "claim_kind": "energy",
+      "eligibility_status": "measurement_failed",
+      "model_id": "yolov7_paper",
+      "reason": "postprocess_not_ok",
+      "row_status": "measurement_failed",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "native_full_baseline"
+    },
+    {
+      "backend": "native_full_hailo8",
+      "case_id": "full",
+      "claim_kind": "energy",
+      "eligibility_status": "measurement_failed",
+      "model_id": "yolov7_paper",
+      "reason": "raw_input_energy_not_primary",
+      "row_status": "measurement_failed",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "native_full_baseline"
+    },
+    {
+      "backend": "native_full_hailo8",
+      "case_id": "full",
+      "claim_kind": "energy",
+      "eligibility_status": "measurement_failed",
+      "model_id": "yolov7_paper",
+      "reason": "scientific_primary_unavailable_or_unverified",
+      "row_status": "measurement_failed",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "native_full_baseline"
+    },
+    {
+      "backend": "native_full_hailo8",
+      "case_id": "full",
+      "claim_kind": "energy",
+      "eligibility_status": "measurement_failed",
+      "model_id": "yolov7_paper",
+      "reason": "screening_energy_policy_nonclaimable",
+      "row_status": "measurement_failed",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "native_full_baseline"
+    },
+    {
+      "backend": "native_full_tensorrt",
+      "case_id": "full",
+      "claim_kind": "energy",
+      "eligibility_status": "measurement_failed",
+      "model_id": "yolov7_paper",
+      "reason": "effective_command_window_not_verified",
+      "row_status": "measurement_failed",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "native_full_baseline"
+    },
+    {
+      "backend": "native_full_tensorrt",
+      "case_id": "full",
+      "claim_kind": "energy",
+      "eligibility_status": "measurement_failed",
+      "model_id": "yolov7_paper",
+      "reason": "exact_runtime_work_units_missing",
+      "row_status": "measurement_failed",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "native_full_baseline"
+    },
+    {
+      "backend": "native_full_tensorrt",
+      "case_id": "full",
+      "claim_kind": "energy",
+      "eligibility_status": "measurement_failed",
+      "model_id": "yolov7_paper",
+      "reason": "final_energy_gate_not_passed",
+      "row_status": "measurement_failed",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "native_full_baseline"
+    },
+    {
+      "backend": "native_full_tensorrt",
+      "case_id": "full",
+      "claim_kind": "energy",
+      "eligibility_status": "measurement_failed",
+      "model_id": "yolov7_paper",
+      "reason": "measurement_execution_failed",
+      "row_status": "measurement_failed",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "native_full_baseline"
+    },
+    {
+      "backend": "native_full_tensorrt",
+      "case_id": "full",
+      "claim_kind": "energy",
+      "eligibility_status": "measurement_failed",
+      "model_id": "yolov7_paper",
+      "reason": "native_quality_claim_result_not_verified",
+      "row_status": "measurement_failed",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "native_full_baseline"
+    },
+    {
+      "backend": "native_full_tensorrt",
+      "case_id": "full",
+      "claim_kind": "energy",
+      "eligibility_status": "measurement_failed",
+      "model_id": "yolov7_paper",
+      "reason": "postprocess_not_ok",
+      "row_status": "measurement_failed",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "native_full_baseline"
+    },
+    {
+      "backend": "native_full_tensorrt",
+      "case_id": "full",
+      "claim_kind": "energy",
+      "eligibility_status": "measurement_failed",
+      "model_id": "yolov7_paper",
+      "reason": "raw_input_energy_not_primary",
+      "row_status": "measurement_failed",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "native_full_baseline"
+    },
+    {
+      "backend": "native_full_tensorrt",
+      "case_id": "full",
+      "claim_kind": "energy",
+      "eligibility_status": "measurement_failed",
+      "model_id": "yolov7_paper",
+      "reason": "scientific_primary_unavailable_or_unverified",
+      "row_status": "measurement_failed",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "native_full_baseline"
+    },
+    {
+      "backend": "native_full_tensorrt",
+      "case_id": "full",
+      "claim_kind": "energy",
+      "eligibility_status": "measurement_failed",
+      "model_id": "yolov7_paper",
+      "reason": "screening_energy_policy_nonclaimable",
+      "row_status": "measurement_failed",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "variant": "native_full_baseline"
+    }
+  ],
+  "exclusion_reason_assignment_count": 36,
+  "group_dimensions": [
+    "model_id",
+    "backend",
+    "setup_id",
+    "reason"
+  ],
+  "grouped_exclusion_counts": [
+    {
+      "backend": "hailo8",
+      "claim_kind": "performance",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "contract_fail_or_unavailable",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "hailo8",
+      "claim_kind": "performance",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "contract_fail_or_unavailable",
+      "setup_id": "unknown_setup"
+    },
+    {
+      "backend": "hailo8_to_tensorrt",
+      "claim_kind": "performance",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "contract_fail_or_unavailable",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "hailo8_to_tensorrt",
+      "claim_kind": "performance",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "contract_fail_or_unavailable",
+      "setup_id": "unknown_setup"
+    },
+    {
+      "backend": "tensorrt",
+      "claim_kind": "performance",
+      "count": 2,
+      "model_id": "yolov7_paper",
+      "reason": "contract_fail_or_unavailable",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "tensorrt",
+      "claim_kind": "performance",
+      "count": 2,
+      "model_id": "yolov7_paper",
+      "reason": "contract_fail_or_unavailable",
+      "setup_id": "unknown_setup"
+    },
+    {
+      "backend": "hailo8_to_trt",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "effective_command_window_not_verified",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "hailo8_to_trt",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "exact_runtime_work_units_missing",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "hailo8_to_trt",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "final_energy_gate_not_passed",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "hailo8_to_trt",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "measurement_execution_failed",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "hailo8_to_trt",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "native_output_endpoint_not_verified",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "hailo8_to_trt",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "native_quality_claim_result_not_verified",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "hailo8_to_trt",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "postprocess_not_ok",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "hailo8_to_trt",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "raw_input_energy_not_primary",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "hailo8_to_trt",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "scientific_primary_unavailable_or_unverified",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "hailo8_to_trt",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "screening_energy_policy_nonclaimable",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "native_full_hailo8",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "effective_command_window_not_verified",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "native_full_hailo8",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "exact_runtime_work_units_missing",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "native_full_hailo8",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "final_energy_gate_not_passed",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "native_full_hailo8",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "measurement_execution_failed",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "native_full_hailo8",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "native_accuracy_gate_not_passed",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "native_full_hailo8",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "postprocess_not_ok",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "native_full_hailo8",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "raw_input_energy_not_primary",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "native_full_hailo8",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "scientific_primary_unavailable_or_unverified",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "native_full_hailo8",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "screening_energy_policy_nonclaimable",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "native_full_tensorrt",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "effective_command_window_not_verified",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "native_full_tensorrt",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "exact_runtime_work_units_missing",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "native_full_tensorrt",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "final_energy_gate_not_passed",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "native_full_tensorrt",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "measurement_execution_failed",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "native_full_tensorrt",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "native_quality_claim_result_not_verified",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "native_full_tensorrt",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "postprocess_not_ok",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "native_full_tensorrt",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "raw_input_energy_not_primary",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "native_full_tensorrt",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "scientific_primary_unavailable_or_unverified",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "native_full_tensorrt",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "yolov7_paper",
+      "reason": "screening_energy_policy_nonclaimable",
+      "setup_id": "orin_nx_hailo8_01"
+    }
+  ],
+  "performance_claim_eligible_count": 0,
+  "performance_excluded_count": 8,
+  "performance_exclusion_reason_counts": {
+    "contract_fail_or_unavailable": 8
+  },
+  "schema": "onnx-splitpoint/claim-exclusion-summary",
+  "schema_version": 2,
+  "stable_sort_contract": {
+    "details": [
+      "claim_kind",
+      "model_id",
+      "backend",
+      "setup_id",
+      "reason",
+      "task",
+      "case_id",
+      "variant",
+      "row_status",
+      "eligibility_status"
+    ],
+    "dimension_counts": [
+      "claim_kind",
+      "dimension_order",
+      "value"
+    ],
+    "grouped_counts": [
+      "claim_kind",
+      "model_id",
+      "backend",
+      "setup_id",
+      "reason"
+    ]
+  }
+}

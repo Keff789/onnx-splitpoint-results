@@ -1,0 +1,8 @@
+{
+  "count": 573,
+  "source": "verified_full_energy_hotloop:tensorrt_full_hotloop",
+  "exact": true,
+  "transport": "runtime_marker",
+  "evidence_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/workload_stdout.log",
+  "status": "exact"
+}

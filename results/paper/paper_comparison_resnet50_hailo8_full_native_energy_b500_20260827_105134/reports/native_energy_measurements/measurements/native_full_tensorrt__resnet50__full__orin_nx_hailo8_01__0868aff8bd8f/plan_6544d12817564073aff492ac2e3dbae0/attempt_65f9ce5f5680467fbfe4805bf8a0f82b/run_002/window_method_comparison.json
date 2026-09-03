@@ -1,0 +1,281 @@
+{
+  "schema": "onnx-splitpoint/window-method-comparison",
+  "schema_version": 2,
+  "status": "ok",
+  "status_semantics": "execution_and_provenance_only_not_method_agreement",
+  "diagnostic_only": true,
+  "eligible_for_final_energy": false,
+  "affects_primary_result": false,
+  "affects_final_gate": false,
+  "cancelled": false,
+  "agreement_decision": "not_evaluated_no_frozen_tolerance",
+  "agreement_threshold": null,
+  "scientific_method_decision": "frozen_command_marker_primary_chapter4_shadow",
+  "scientific_primary_method_frozen": true,
+  "scientific_primary_method": "command_marker_window",
+  "scientific_shadow_method": "chapter4_legacy_window",
+  "primary_method": "command_marker_window",
+  "shadow_method": "chapter4_legacy_window",
+  "candidate_method": "candidate_v263",
+  "candidate_role": "deprecated_alias_for_command_marker_primary",
+  "shadow_role": "same_trace_sensitivity_only",
+  "candidate_eligible_for_auto_switch": false,
+  "candidate_eligible_for_scientific_primary": true,
+  "comparison_decision_diagnostic_only": true,
+  "comparison_decision_affects_method_selection": false,
+  "scientific_primary_value_source": "command_marker_window",
+  "scientific_primary_value_available": true,
+  "auto_switch": false,
+  "requires_picoscope": false,
+  "method_validation_tier": "screening",
+  "technical_canonical_result": "collector_sample_marker_crop",
+  "comparison_method": "chapter4_legacy_window",
+  "chapter4_baseline_implementation": "historical_power_edge_detection_with_estimated_duration",
+  "candidate_v263_implementation": "collector_sample_marker_crop",
+  "same_raw_trace_required": true,
+  "same_raw_trace_verified": true,
+  "same_raw_trace_verification_failure_reasons": [],
+  "raw_trace": {
+    "measurement_directory": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/collector_storage",
+    "trace_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/collector_storage/fast_firmware.parquet",
+    "request_sha256": "6c463dde4ffe34eae99c8c71afc24e289f4595fe0a80b5b0264cd2c9c934f5cd",
+    "sha256_before_legacy_postprocess": "6c463dde4ffe34eae99c8c71afc24e289f4595fe0a80b5b0264cd2c9c934f5cd",
+    "sha256_after_legacy_postprocess": "6c463dde4ffe34eae99c8c71afc24e289f4595fe0a80b5b0264cd2c9c934f5cd",
+    "collector_storage_parquet_count": 1,
+    "collector_storage_parquet_exactly_one": true,
+    "collector_storage_parquet_paths": [
+      "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/collector_storage/fast_firmware.parquet"
+    ],
+    "request_trace_matches_collector_storage_parquet": true,
+    "request_before_after_hash_chain_complete": true
+  },
+  "command_window": {
+    "result_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/processed/results.yaml",
+    "result_sha256": "ef27acfb1f46b87f329413e38cbbe5364539b94014bcf058f98a0aa42250a463",
+    "command_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/power_calculations_command.txt",
+    "command_sha256": "518433b044b4b34e500105bdb2a13a1ad94c03271959beb4764303b8e6f97d74",
+    "request_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/command_window_request.json",
+    "request_sha256": "84bbe9ffc1b291504d942fd5b394b2a978d01d10b73278138bd0ec85cfba8cc1",
+    "energy_j": 59.02006767801143,
+    "duration_s": 2.5595,
+    "average_power_w": 23.05921769017833,
+    "first_sample_index": 10048,
+    "last_sample_index": 15167,
+    "start_stop_idx": [
+      10048,
+      15167
+    ],
+    "source_key": "firmware_results",
+    "dropped_samples": 0,
+    "boundary_uncertainty_samples": 64,
+    "maximum_boundary_uncertainty_samples": 64
+  },
+  "legacy_window": {
+    "postprocessor_rc": 0,
+    "result_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/processed_legacy_window/results.yaml",
+    "result_sha256": "82a978252d82888869336e250ebdde2340cb31098c07b20074a271c1504c47e0",
+    "command_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/processed_legacy_window/power_calculations_command.txt",
+    "command_sha256": "a5e955554a2bd2d86b0d1c602c5d3bfae98f3c590afe1c80965152633f67b890",
+    "command_argv": [
+      "/home/kmika/.cargo/bin/power_calculations",
+      "-m=/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/collector_storage",
+      "-c",
+      "-r",
+      "--estimated-duration=3",
+      "--output-path=/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/processed_legacy_window",
+      "firmware",
+      "-s=2000",
+      "--environment=Jetson"
+    ],
+    "stdout_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/processed_legacy_window/power_calculations_stdout.log",
+    "stderr_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/processed_legacy_window/power_calculations_stderr.log",
+    "estimated_duration_s": 3,
+    "uses_power_edge_detection": true,
+    "uses_duration_adaptation": true,
+    "energy_j": 65.89005173842177,
+    "duration_s": 3.0005,
+    "average_power_w": 21.959690631035418,
+    "first_sample_index": 10199,
+    "last_sample_index": 16200,
+    "start_stop_idx": [
+      10199,
+      16200
+    ],
+    "source_key": "firmware_results",
+    "stdout_tail": "2026-08-27T08:59:45.348Z INFO  [power_calculations] Calculating Firmware results\n2026-08-27T08:59:45.356Z INFO  [power_calculations::data_actions] Searching maximum and idle values\n2026-08-27T08:59:45.356Z INFO  [power_calculations::data_actions] Trigger value: 2.0296676565636806\n2026-08-27T08:59:45.356Z INFO  [power_calculations::data_actions] Searching on start\n2026-08-27T08:59:45.356Z INFO  [power_calculations::data_actions] Searching on end\n2026-08-27T08:59:45.356Z INFO  [power_calculations::data_reading_types] Duration 0.7985\n2026-08-27T08:59:45.357Z INFO  [power_calculations] Firmware:\tEnergy:\t65.89J, Duration:\t3.00s\n\n",
+    "stderr_tail": ""
+  },
+  "chapter4_legacy_window": {
+    "method": "chapter4_legacy_window",
+    "scientific_role": "shadow_only",
+    "eligible_for_scientific_primary": false,
+    "eligible_for_sensitivity_analysis": true,
+    "postprocessor_rc": 0,
+    "result_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/processed_legacy_window/results.yaml",
+    "result_sha256": "82a978252d82888869336e250ebdde2340cb31098c07b20074a271c1504c47e0",
+    "energy_j": 65.89005173842177,
+    "duration_s": 3.0005,
+    "average_power_w": 21.959690631035418,
+    "first_sample_index": 10199,
+    "last_sample_index": 16200,
+    "normalized_summary": {
+      "source_key": "firmware_results",
+      "energy_total_j": 65.89005173842177,
+      "active_duration_s": 3.0005,
+      "avg_power_w": 21.959690631035418,
+      "max_frame_energy_j": 3.316772730914166,
+      "idle_frame_energy_j": 1.6006326317801853,
+      "start_stop_idx": [
+        10199,
+        16200
+      ]
+    }
+  },
+  "command_marker_window": {
+    "method": "command_marker_window",
+    "scientific_role": "primary",
+    "eligible_for_auto_switch": false,
+    "eligible_for_scientific_primary": true,
+    "result_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/processed/results.yaml",
+    "result_sha256": "ef27acfb1f46b87f329413e38cbbe5364539b94014bcf058f98a0aa42250a463",
+    "energy_j": 59.02006767801143,
+    "duration_s": 2.5595,
+    "average_power_w": 23.05921769017833,
+    "first_sample_index": 10048,
+    "last_sample_index": 15167,
+    "normalized_summary": {
+      "source_key": "firmware_results",
+      "energy_total_j": 59.02006767801143,
+      "active_duration_s": 2.5595,
+      "avg_power_w": 23.05921769017833,
+      "max_frame_energy_j": 3.316772730914166,
+      "idle_frame_energy_j": 1.6006326317801853,
+      "start_stop_idx": [
+        10048,
+        15167
+      ]
+    }
+  },
+  "legacy_minus_command_window": {
+    "energy_j": {
+      "absolute": 6.869984060410346,
+      "relative_percent": 11.640081637808478,
+      "symmetric_percent": 10.999883904532604,
+      "ln_command_window_over_legacy": -0.11010995393924387
+    },
+    "duration_s": {
+      "absolute": 0.4410000000000003,
+      "relative_percent": 17.229927720257876,
+      "symmetric_percent": 15.863309352517994,
+      "ln_command_window_over_legacy": -0.15896701453192977
+    },
+    "average_power_w": {
+      "absolute": -1.0995270591429112,
+      "relative_percent": -4.768275636736955,
+      "symmetric_percent": -4.884734437795301,
+      "ln_command_window_over_legacy": 0.04885706059268579
+    },
+    "start_sample_index": {
+      "absolute": 151,
+      "seconds": 0.0755,
+      "milliseconds": 75.5
+    },
+    "end_sample_index": {
+      "absolute": 1033,
+      "seconds": 0.5165,
+      "milliseconds": 516.5
+    }
+  },
+  "calibration_contract": {
+    "same_power_calculations_binary": true,
+    "power_calculations_binary": "/home/kmika/.cargo/bin/power_calculations",
+    "power_calculations_binary_sha256": "08c5027e6f8f9fb890f40658de2fbaff560eb2d7ed1238cc77819b887a23e4a1",
+    "same_measurement_directory": true,
+    "identical_non_window_calibration_and_filter_settings_verified": true,
+    "command_window_non_window_settings": [
+      "/home/kmika/.cargo/bin/power_calculations",
+      "-m=/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/collector_storage",
+      "-r",
+      "firmware",
+      "-s=2000",
+      "--environment=Jetson"
+    ],
+    "legacy_non_window_settings": [
+      "/home/kmika/.cargo/bin/power_calculations",
+      "-m=/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/collector_storage",
+      "-r",
+      "firmware",
+      "-s=2000",
+      "--environment=Jetson"
+    ],
+    "intentional_cli_differences": [
+      "command-window: --command-window-request and --require-command-window",
+      "legacy: -c and --estimated-duration",
+      "separate --output-path values"
+    ],
+    "sample_rate_hz": 2000,
+    "environment": "Jetson",
+    "note": "Only the window-selection method differs. Existing calibration equations and environment correction factors are unchanged."
+  },
+  "method_aliases": {
+    "candidate_v263": "command_marker_window",
+    "chapter4_baseline": "chapter4_legacy_window"
+  },
+  "interpretation": "The command-marker window is the frozen scientific primary. The Chapter-4 flank/duration method is reprocessed from the identical Parquet capture as a non-blocking sensitivity result and can neither replace nor invalidate the primary.",
+  "created_at_unix_ns": 1787821185464477279,
+  "chapter4_baseline": {
+    "method": "chapter4_baseline",
+    "scientific_role": "shadow_only",
+    "eligible_for_scientific_primary": false,
+    "eligible_for_sensitivity_analysis": true,
+    "postprocessor_rc": 0,
+    "result_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/processed_legacy_window/results.yaml",
+    "result_sha256": "82a978252d82888869336e250ebdde2340cb31098c07b20074a271c1504c47e0",
+    "energy_j": 65.89005173842177,
+    "duration_s": 3.0005,
+    "average_power_w": 21.959690631035418,
+    "first_sample_index": 10199,
+    "last_sample_index": 16200,
+    "normalized_summary": {
+      "source_key": "firmware_results",
+      "energy_total_j": 65.89005173842177,
+      "active_duration_s": 3.0005,
+      "avg_power_w": 21.959690631035418,
+      "max_frame_energy_j": 3.316772730914166,
+      "idle_frame_energy_j": 1.6006326317801853,
+      "start_stop_idx": [
+        10199,
+        16200
+      ]
+    },
+    "canonical_method": "chapter4_legacy_window",
+    "deprecated_alias": true
+  },
+  "candidate_v263": {
+    "method": "candidate_v263",
+    "scientific_role": "primary",
+    "eligible_for_auto_switch": false,
+    "eligible_for_scientific_primary": true,
+    "result_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/processed/results.yaml",
+    "result_sha256": "ef27acfb1f46b87f329413e38cbbe5364539b94014bcf058f98a0aa42250a463",
+    "energy_j": 59.02006767801143,
+    "duration_s": 2.5595,
+    "average_power_w": 23.05921769017833,
+    "first_sample_index": 10048,
+    "last_sample_index": 15167,
+    "normalized_summary": {
+      "source_key": "firmware_results",
+      "energy_total_j": 59.02006767801143,
+      "active_duration_s": 2.5595,
+      "avg_power_w": 23.05921769017833,
+      "max_frame_energy_j": 3.316772730914166,
+      "idle_frame_energy_j": 1.6006326317801853,
+      "start_stop_idx": [
+        10048,
+        15167
+      ]
+    },
+    "canonical_method": "command_marker_window",
+    "deprecated_alias": true
+  }
+}

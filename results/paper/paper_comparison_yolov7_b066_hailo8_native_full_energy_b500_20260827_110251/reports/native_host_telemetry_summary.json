@@ -1,0 +1,266 @@
+{
+  "schema": "onnx-splitpoint/native-host-telemetry-summary",
+  "schema_version": 2,
+  "created_at": "2026-08-27T11:54:40+0200",
+  "source_root": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/native_producers",
+  "capture_count": 2,
+  "setup_count": 1,
+  "capture_group_count": 1,
+  "complete_pair_count": 1,
+  "stable_pair_count": 1,
+  "all_pairs_complete_and_stable": true,
+  "all_complete_pairs_stable": true,
+  "cross_setup_configuration": [
+    {
+      "field": "nvpmodel",
+      "expected_setup_count": 1,
+      "observed_setup_count": 1,
+      "expected_pre_capture_count": 1,
+      "observed_pre_capture_count": 1,
+      "complete_across_setups_and_capture_groups": true,
+      "distinct_value_count": 1,
+      "equal_across_observed_setups": true
+    },
+    {
+      "field": "cpu_governors",
+      "expected_setup_count": 1,
+      "observed_setup_count": 1,
+      "expected_pre_capture_count": 1,
+      "observed_pre_capture_count": 1,
+      "complete_across_setups_and_capture_groups": true,
+      "distinct_value_count": 1,
+      "equal_across_observed_setups": true
+    },
+    {
+      "field": "cpu_min_max",
+      "expected_setup_count": 1,
+      "observed_setup_count": 1,
+      "expected_pre_capture_count": 1,
+      "observed_pre_capture_count": 1,
+      "complete_across_setups_and_capture_groups": true,
+      "distinct_value_count": 1,
+      "equal_across_observed_setups": true
+    },
+    {
+      "field": "device_governors",
+      "expected_setup_count": 1,
+      "observed_setup_count": 1,
+      "expected_pre_capture_count": 1,
+      "observed_pre_capture_count": 1,
+      "complete_across_setups_and_capture_groups": true,
+      "distinct_value_count": 1,
+      "equal_across_observed_setups": true
+    },
+    {
+      "field": "device_min_max",
+      "expected_setup_count": 1,
+      "observed_setup_count": 1,
+      "expected_pre_capture_count": 1,
+      "observed_pre_capture_count": 1,
+      "complete_across_setups_and_capture_groups": true,
+      "distinct_value_count": 1,
+      "equal_across_observed_setups": true
+    }
+  ],
+  "all_observed_setup_configurations_equal": true,
+  "checks": [
+    {
+      "setup_id": "orin_nx_hailo8_01",
+      "capture_group": "hailo8_performance",
+      "pre_count": 1,
+      "post_count": 1,
+      "pre_present": true,
+      "post_present": true,
+      "pair_complete_and_unambiguous": true,
+      "configuration_fields_complete": true,
+      "stable_configuration": true,
+      "missing_fields": [],
+      "changed_fields": [],
+      "pre_maximum_temperature_c": 51.718,
+      "post_maximum_temperature_c": 57.125
+    }
+  ],
+  "captures": [
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/native_producers/hailo8/host_telemetry/hailo8_performance_post.json",
+      "phase": "post",
+      "capture_group": "hailo8_performance",
+      "captured_at": "2026-08-27T11:54:38+0200",
+      "identity": {
+        "hostname": "nx",
+        "backend": "hailo8",
+        "setup_id": "orin_nx_hailo8_01",
+        "nvpmodel": "NV Power Mode: MAXN_SUPER\n0\nNVPM VERB: Config file: /etc/nvpmodel.conf\nNVPM VERB: parsing done for /etc/nvpmodel.conf\nNVPM VERB: Current mode: NV Power Mode: MAXN_SUPER\n0\nNVPM VERB: PARAM CPU_ONLINE: ARG CORE_0: PATH /sys/devices/system/cpu/cpu0/online: REAL_VAL: 1 CONF_VAL: 1\nNVPM VERB: PARAM CPU_ONLINE: ARG CORE_1: PATH /sys/devices/system/cpu/cpu1/online: REAL_VAL: 1 CONF_VAL: 1\nNVPM VERB: PARAM CPU_ONLINE: ARG CORE_2: PATH /sys/devices/system/cpu/cpu2/online: REAL_VAL: 1 CONF_VAL: 1\nNVPM VERB: PARAM CPU_ONLINE: ARG CORE_3: PATH /sys/devices/system/cpu/cpu3/online: REAL_VAL: 1 CONF_VAL: 1\nNVPM VERB: PARAM CPU_ONLINE: ARG CORE_4: PATH /sys/devices/system/cpu/cpu4/online: REAL_VAL: 1 CONF_VAL: 1\nNVPM VERB: PARAM CPU_ONLINE: ARG CORE_5: PATH /sys/devices/system/cpu/cpu5/online: REAL_VAL: 1 CONF_VAL: 1\nNVPM VERB: PARAM CPU_ONLINE: ARG CORE_6: PATH /sys/devices/system/cpu/cpu6/online: REAL_VAL: 1 CONF_VAL: 1\nNVPM VERB: PARAM CPU_ONLINE: ARG CORE_7: PATH /sys/devices/system/cpu/cpu7/online: REAL_VAL: 1 CONF_VAL: 1\nNVPM VERB: PARAM FBP_POWER_GATING: ARG FBP_PG_MASK: PATH /sys/devices/platform/gpu.0/fbp_pg_mask: REAL_VAL: 2 CONF_VAL: 2\nNVPM VERB: PARAM TPC_POWER_GATING: ARG TPC_PG_MASK: PATH /sys/devices/platform/gpu.0/tpc_pg_mask: REAL_VAL: 240 CONF_VAL: 240\nNVPM VERB: PARAM GPU_POWER_CONTROL_ENABLE: ARG GPU_PWR_CNTL_EN: PATH /sys/devices/platform/gpu.0/power/control: REAL_VAL: auto CONF_VAL: on\nNVPM VERB: PARAM CPU_A78_0: ARG MIN_FREQ: PATH /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq: REAL_VAL: 1984000 CONF_VAL: 729600\nNVPM VERB: PARAM CPU_A78_0: ARG MAX_FREQ: PATH /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: REAL_VAL: 1984000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM CPU_A78_1: ARG MIN_FREQ: PATH /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq: REAL_VAL: 1984000 CONF_VAL: 729600\nNVPM VERB: PARAM CPU_A78_1: ARG MAX_FREQ: PATH /sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq: REAL_VAL: 1984000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM CPU_A78_2: ARG MIN_FREQ: PATH /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq: REAL_VAL: 1984000 CONF_VAL: 729600\nNVPM VERB: PARAM CPU_A78_2: ARG MAX_FREQ: PATH /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq: REAL_VAL: 1984000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM CPU_A78_3: ARG MIN_FREQ: PATH /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq: REAL_VAL: 1984000 CONF_VAL: 729600\nNVPM VERB: PARAM CPU_A78_3: ARG MAX_FREQ: PATH /sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq: REAL_VAL: 1984000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM CPU_A78_4: ARG MIN_FREQ: PATH /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq: REAL_VAL: 1984000 CONF_VAL: 729600\nNVPM VERB: PARAM CPU_A78_4: ARG MAX_FREQ: PATH /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq: REAL_VAL: 1984000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM CPU_A78_5: ARG MIN_FREQ: PATH /sys/devices/system/cpu/cpu5/cpufreq/scaling_min_freq: REAL_VAL: 1984000 CONF_VAL: 729600\nNVPM VERB: PARAM CPU_A78_5: ARG MAX_FREQ: PATH /sys/devices/system/cpu/cpu5/cpufreq/scaling_max_freq: REAL_VAL: 1984000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM CPU_A78_6: ARG MIN_FREQ: PATH /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq: REAL_VAL: 1984000 CONF_VAL: 729600\nNVPM VERB: PARAM CPU_A78_6: ARG MAX_FREQ: PATH /sys/devices/system/cpu/cpu6/cpufreq/scaling_max_freq: REAL_VAL: 1984000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM CPU_A78_7: ARG MIN_FREQ: PATH /sys/devices/system/cpu/cpu7/cpufreq/scaling_min_freq: REAL_VAL: 1984000 CONF_VAL: 729600\nNVPM VERB: PARAM CPU_A78_7: ARG MAX_FREQ: PATH /sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq: REAL_VAL: 1984000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM GPU: ARG MIN_FREQ: PATH /sys/devices/platform/17000000.gpu/devfreq_dev/min_freq: REAL_VAL: 1173000000 CONF_VAL: 0\nNVPM VERB: PARAM GPU: ARG MAX_FREQ: PATH /sys/devices/platform/17000000.gpu/devfreq_dev/max_freq: REAL_VAL: 1173000000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM GPU_POWER_CONTROL_DISABLE: ARG GPU_PWR_CNTL_DIS: PATH /sys/devices/platform/gpu.0/power/control: REAL_VAL: auto CONF_VAL: auto\nNVPM VERB: PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_clk_cap/emc: REAL_VAL: 3200000000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM DLA0_CORE: ARG MAX_FREQ: PATH /sys/devices/platform/bus@0/13e00000.host1x/15880000.nvdla0/clk_cap/dla0_core: REAL_VAL: 1228800000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM DLA1_CORE: ARG MAX_FREQ: PATH /sys/devices/platform/bus@0/13e00000.host1x/158c0000.nvdla1/clk_cap/dla1_core: REAL_VAL: 1228800000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM DLA0_FALCON: ARG MAX_FREQ: PATH /sys/devices/platform/bus@0/13e00000.host1x/15880000.nvdla0/clk_cap/dla0_falcon: REAL_VAL: 652800000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM DLA1_FALCON: ARG MAX_FREQ: PATH /sys/devices/platform/bus@0/13e00000.host1x/158c0000.nvdla1/clk_cap/dla1_falcon: REAL_VAL: 652800000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM PVA0_VPS: ARG MAX_FREQ: PATH /sys/devices/platform/bus@0/13e00000.host1x/16000000.pva0/clk_cap/pva0_vps: REAL_VAL: 1190400000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM PVA0_AXI: ARG MAX_FREQ: PATH /sys/devices/platform/bus@0/13e00000.host1x/16000000.pva0/clk_cap/pva0_cpu_axi: REAL_VAL: 857600000 CONF_VAL: 9223372036854775807",
+        "jetson_clocks": "SOC family:tegra234  Machine:NVIDIA Jetson Orin NX Engineering Reference Developer Kit Super\nError: Run this script(/usr/bin/jetson_clocks) as a root user",
+        "cpu_governors": [
+          "schedutil"
+        ],
+        "cpu_min_max": [
+          [
+            "1984000",
+            "1984000"
+          ]
+        ],
+        "device_governors": [
+          [
+            "/sys/class/devfreq/15340000.vic",
+            "tegra_wmark"
+          ],
+          [
+            "/sys/class/devfreq/15380000.nvjpg",
+            "userspace"
+          ],
+          [
+            "/sys/class/devfreq/15480000.nvdec",
+            "tegra_wmark"
+          ],
+          [
+            "/sys/class/devfreq/154c0000.nvenc",
+            "tegra_wmark"
+          ],
+          [
+            "/sys/class/devfreq/15540000.nvjpg",
+            "userspace"
+          ],
+          [
+            "/sys/class/devfreq/15a50000.ofa",
+            "tegra_wmark"
+          ],
+          [
+            "/sys/class/devfreq/17000000.gpu",
+            "nvhost_podgov"
+          ]
+        ],
+        "device_min_max": [
+          [
+            "/sys/class/devfreq/15340000.vic",
+            "115200000",
+            "729600000"
+          ],
+          [
+            "/sys/class/devfreq/15380000.nvjpg",
+            "115200000",
+            "729600000"
+          ],
+          [
+            "/sys/class/devfreq/15480000.nvdec",
+            "115200000",
+            "857600000"
+          ],
+          [
+            "/sys/class/devfreq/154c0000.nvenc",
+            "115200000",
+            "793600000"
+          ],
+          [
+            "/sys/class/devfreq/15540000.nvjpg",
+            "115200000",
+            "729600000"
+          ],
+          [
+            "/sys/class/devfreq/15a50000.ofa",
+            "115200000",
+            "780800000"
+          ],
+          [
+            "/sys/class/devfreq/17000000.gpu",
+            "1173000000",
+            "1173000000"
+          ]
+        ]
+      },
+      "maximum_temperature_c": 57.125
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/native_producers/hailo8/host_telemetry/hailo8_performance_pre.json",
+      "phase": "pre",
+      "capture_group": "hailo8_performance",
+      "captured_at": "2026-08-27T11:43:00+0200",
+      "identity": {
+        "hostname": "nx",
+        "backend": "hailo8",
+        "setup_id": "orin_nx_hailo8_01",
+        "nvpmodel": "NV Power Mode: MAXN_SUPER\n0\nNVPM VERB: Config file: /etc/nvpmodel.conf\nNVPM VERB: parsing done for /etc/nvpmodel.conf\nNVPM VERB: Current mode: NV Power Mode: MAXN_SUPER\n0\nNVPM VERB: PARAM CPU_ONLINE: ARG CORE_0: PATH /sys/devices/system/cpu/cpu0/online: REAL_VAL: 1 CONF_VAL: 1\nNVPM VERB: PARAM CPU_ONLINE: ARG CORE_1: PATH /sys/devices/system/cpu/cpu1/online: REAL_VAL: 1 CONF_VAL: 1\nNVPM VERB: PARAM CPU_ONLINE: ARG CORE_2: PATH /sys/devices/system/cpu/cpu2/online: REAL_VAL: 1 CONF_VAL: 1\nNVPM VERB: PARAM CPU_ONLINE: ARG CORE_3: PATH /sys/devices/system/cpu/cpu3/online: REAL_VAL: 1 CONF_VAL: 1\nNVPM VERB: PARAM CPU_ONLINE: ARG CORE_4: PATH /sys/devices/system/cpu/cpu4/online: REAL_VAL: 1 CONF_VAL: 1\nNVPM VERB: PARAM CPU_ONLINE: ARG CORE_5: PATH /sys/devices/system/cpu/cpu5/online: REAL_VAL: 1 CONF_VAL: 1\nNVPM VERB: PARAM CPU_ONLINE: ARG CORE_6: PATH /sys/devices/system/cpu/cpu6/online: REAL_VAL: 1 CONF_VAL: 1\nNVPM VERB: PARAM CPU_ONLINE: ARG CORE_7: PATH /sys/devices/system/cpu/cpu7/online: REAL_VAL: 1 CONF_VAL: 1\nNVPM VERB: PARAM FBP_POWER_GATING: ARG FBP_PG_MASK: PATH /sys/devices/platform/gpu.0/fbp_pg_mask: REAL_VAL: 2 CONF_VAL: 2\nNVPM VERB: PARAM TPC_POWER_GATING: ARG TPC_PG_MASK: PATH /sys/devices/platform/gpu.0/tpc_pg_mask: REAL_VAL: 240 CONF_VAL: 240\nNVPM VERB: PARAM GPU_POWER_CONTROL_ENABLE: ARG GPU_PWR_CNTL_EN: PATH /sys/devices/platform/gpu.0/power/control: REAL_VAL: auto CONF_VAL: on\nNVPM VERB: PARAM CPU_A78_0: ARG MIN_FREQ: PATH /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq: REAL_VAL: 1984000 CONF_VAL: 729600\nNVPM VERB: PARAM CPU_A78_0: ARG MAX_FREQ: PATH /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: REAL_VAL: 1984000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM CPU_A78_1: ARG MIN_FREQ: PATH /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq: REAL_VAL: 1984000 CONF_VAL: 729600\nNVPM VERB: PARAM CPU_A78_1: ARG MAX_FREQ: PATH /sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq: REAL_VAL: 1984000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM CPU_A78_2: ARG MIN_FREQ: PATH /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq: REAL_VAL: 1984000 CONF_VAL: 729600\nNVPM VERB: PARAM CPU_A78_2: ARG MAX_FREQ: PATH /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq: REAL_VAL: 1984000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM CPU_A78_3: ARG MIN_FREQ: PATH /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq: REAL_VAL: 1984000 CONF_VAL: 729600\nNVPM VERB: PARAM CPU_A78_3: ARG MAX_FREQ: PATH /sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq: REAL_VAL: 1984000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM CPU_A78_4: ARG MIN_FREQ: PATH /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq: REAL_VAL: 1984000 CONF_VAL: 729600\nNVPM VERB: PARAM CPU_A78_4: ARG MAX_FREQ: PATH /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq: REAL_VAL: 1984000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM CPU_A78_5: ARG MIN_FREQ: PATH /sys/devices/system/cpu/cpu5/cpufreq/scaling_min_freq: REAL_VAL: 1984000 CONF_VAL: 729600\nNVPM VERB: PARAM CPU_A78_5: ARG MAX_FREQ: PATH /sys/devices/system/cpu/cpu5/cpufreq/scaling_max_freq: REAL_VAL: 1984000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM CPU_A78_6: ARG MIN_FREQ: PATH /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq: REAL_VAL: 1984000 CONF_VAL: 729600\nNVPM VERB: PARAM CPU_A78_6: ARG MAX_FREQ: PATH /sys/devices/system/cpu/cpu6/cpufreq/scaling_max_freq: REAL_VAL: 1984000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM CPU_A78_7: ARG MIN_FREQ: PATH /sys/devices/system/cpu/cpu7/cpufreq/scaling_min_freq: REAL_VAL: 1984000 CONF_VAL: 729600\nNVPM VERB: PARAM CPU_A78_7: ARG MAX_FREQ: PATH /sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq: REAL_VAL: 1984000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM GPU: ARG MIN_FREQ: PATH /sys/devices/platform/17000000.gpu/devfreq_dev/min_freq: REAL_VAL: 1173000000 CONF_VAL: 0\nNVPM VERB: PARAM GPU: ARG MAX_FREQ: PATH /sys/devices/platform/17000000.gpu/devfreq_dev/max_freq: REAL_VAL: 1173000000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM GPU_POWER_CONTROL_DISABLE: ARG GPU_PWR_CNTL_DIS: PATH /sys/devices/platform/gpu.0/power/control: REAL_VAL: auto CONF_VAL: auto\nNVPM VERB: PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_clk_cap/emc: REAL_VAL: 3200000000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM DLA0_CORE: ARG MAX_FREQ: PATH /sys/devices/platform/bus@0/13e00000.host1x/15880000.nvdla0/clk_cap/dla0_core: REAL_VAL: 1228800000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM DLA1_CORE: ARG MAX_FREQ: PATH /sys/devices/platform/bus@0/13e00000.host1x/158c0000.nvdla1/clk_cap/dla1_core: REAL_VAL: 1228800000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM DLA0_FALCON: ARG MAX_FREQ: PATH /sys/devices/platform/bus@0/13e00000.host1x/15880000.nvdla0/clk_cap/dla0_falcon: REAL_VAL: 652800000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM DLA1_FALCON: ARG MAX_FREQ: PATH /sys/devices/platform/bus@0/13e00000.host1x/158c0000.nvdla1/clk_cap/dla1_falcon: REAL_VAL: 652800000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM PVA0_VPS: ARG MAX_FREQ: PATH /sys/devices/platform/bus@0/13e00000.host1x/16000000.pva0/clk_cap/pva0_vps: REAL_VAL: 1190400000 CONF_VAL: 9223372036854775807\nNVPM VERB: PARAM PVA0_AXI: ARG MAX_FREQ: PATH /sys/devices/platform/bus@0/13e00000.host1x/16000000.pva0/clk_cap/pva0_cpu_axi: REAL_VAL: 857600000 CONF_VAL: 9223372036854775807",
+        "jetson_clocks": "SOC family:tegra234  Machine:NVIDIA Jetson Orin NX Engineering Reference Developer Kit Super\nError: Run this script(/usr/bin/jetson_clocks) as a root user",
+        "cpu_governors": [
+          "schedutil"
+        ],
+        "cpu_min_max": [
+          [
+            "1984000",
+            "1984000"
+          ]
+        ],
+        "device_governors": [
+          [
+            "/sys/class/devfreq/15340000.vic",
+            "tegra_wmark"
+          ],
+          [
+            "/sys/class/devfreq/15380000.nvjpg",
+            "userspace"
+          ],
+          [
+            "/sys/class/devfreq/15480000.nvdec",
+            "tegra_wmark"
+          ],
+          [
+            "/sys/class/devfreq/154c0000.nvenc",
+            "tegra_wmark"
+          ],
+          [
+            "/sys/class/devfreq/15540000.nvjpg",
+            "userspace"
+          ],
+          [
+            "/sys/class/devfreq/15a50000.ofa",
+            "tegra_wmark"
+          ],
+          [
+            "/sys/class/devfreq/17000000.gpu",
+            "nvhost_podgov"
+          ]
+        ],
+        "device_min_max": [
+          [
+            "/sys/class/devfreq/15340000.vic",
+            "115200000",
+            "729600000"
+          ],
+          [
+            "/sys/class/devfreq/15380000.nvjpg",
+            "115200000",
+            "729600000"
+          ],
+          [
+            "/sys/class/devfreq/15480000.nvdec",
+            "115200000",
+            "857600000"
+          ],
+          [
+            "/sys/class/devfreq/154c0000.nvenc",
+            "115200000",
+            "793600000"
+          ],
+          [
+            "/sys/class/devfreq/15540000.nvjpg",
+            "115200000",
+            "729600000"
+          ],
+          [
+            "/sys/class/devfreq/15a50000.ofa",
+            "115200000",
+            "780800000"
+          ],
+          [
+            "/sys/class/devfreq/17000000.gpu",
+            "1173000000",
+            "1173000000"
+          ]
+        ]
+      },
+      "maximum_temperature_c": 51.718
+    }
+  ],
+  "claim_note": "Current clocks and temperatures are observations, not equality constraints. Power mode, governors and configured min/max frequencies are checked for pre/post drift."
+}

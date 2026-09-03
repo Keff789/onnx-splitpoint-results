@@ -1,0 +1,75 @@
+{
+  "binding_errors_by_backend_model": {},
+  "binding_set_sha256": "61079e3b0c9c61be96c145a84675dd1a5d9d1102f3fa7196a91ca66c133327b9",
+  "binding_status_by_backend_model": {
+    "native_full_hailo8|resnet50": "verified_exact"
+  },
+  "bindings_by_backend_model": {
+    "native_full_hailo8|resnet50": {
+      "backend": "native_full_hailo8",
+      "binding_sha256": "567a6bf69c3e88d58b091da472df3e1e3592f28d211289c3e20eef5c4676a34c",
+      "central_quality_result_sha256": "15e9900b964683e5cb4d608d6c5fb0913c1b9a0e405b9515e99dacd4bd73d390",
+      "comparison_backend": "hailo8",
+      "decoder_contract_sha256": "",
+      "endpoint_contract_hash": "3af2122851f19c5bf2b16b9c3ef78a6ba11452db33ff8fb915b76e3461bbcb28",
+      "eval_run_id": "paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134",
+      "model_id": "resnet50",
+      "model_sha256": "cebd9d5879ddd304a18f51e559ab74fba5cbd1f610b9359321bc5228acbe4f50",
+      "nms_contract_sha256": "",
+      "preprocessing_contract": {
+        "identity": {
+          "color_space": "RGB",
+          "contract_scope": "prepared_rgb_uint8_semantics",
+          "image_scale": "imagenet",
+          "input_domain": "uint8_0_255",
+          "letterbox": false,
+          "letterbox_pad_value": 0,
+          "pad_value": 0,
+          "placement": "not_applicable",
+          "preprocess_mode": "resize",
+          "resize_interpolation": "bilinear",
+          "resize_rounding": "python_round_ties_to_even",
+          "schema": "onnx-splitpoint/image-preprocessing-contract",
+          "schema_version": 2,
+          "spatial_transform": "direct_resize",
+          "target_hw": [
+            224,
+            224
+          ],
+          "task": "classification"
+        },
+        "sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9"
+      },
+      "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+      "quality_contract_sha256": "79ef1647bf24585dc9db2708cd063148bc0e60a8a3f6fa948c5da2ecb9642493",
+      "quality_record_endpoint_contract_sha256": "e9ce4efdbc6b0eb27288f254c4fb705c667af3c1f128915abb8ae808533aac24",
+      "runtime_precision_identity": "hailo_hef_sha256:5c85fe8fd888bd99b3e31e119540322383cc308cfbb740e4df4d4babf439e912",
+      "schema": "onnx-splitpoint/native-full-quality-request-binding",
+      "schema_version": 1,
+      "setup_id": "orin_nx_hailo8_01",
+      "source_case_id": "b119",
+      "source_request": "models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b119/results_hailo8/task_quality_inputs/full_request.json",
+      "source_request_file": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b119/results_hailo8/task_quality_inputs/full_request.json",
+      "source_request_file_sha256": "888432390eb3438a5244b7095f3635b9c836c24b526cb6d4cfc797658d5b8edb",
+      "source_request_sha256": "888432390eb3438a5244b7095f3635b9c836c24b526cb6d4cfc797658d5b8edb",
+      "source_run_id": "hailo8",
+      "task": "classification",
+      "task_quality_policy_sha256": "58bf34c5760ed51e4ff35faee4055891caf624b2722cb375df9d419863efa9c4",
+      "validation_dataset_ground_truth_sha256": "87775e86ef3bcf3ec1e0d0a79696bf2f58fa215d5320ce80167bb1f417c7a177",
+      "validation_dataset_image_ids_sha256": "71032a98e158ca71711a5567de5d46fbf04f05777baa940f74f3c39fdf0c083f",
+      "validation_dataset_sha256": "64a7ef3bf55352bb39ef86f25fe73e6ff18a51ed1a02c8aca4940178f69e7b6c",
+      "variant": "full"
+    }
+  },
+  "central_quality_summary": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/quality_management/central_quality_summary.json",
+  "central_quality_summary_sha256": "2fae078dfb5472d3f06f2337b4b2052b77aa074ed7c3e7787bfc44ecfda13bbf",
+  "comparison_backend": "hailo8",
+  "complete": true,
+  "eval_run_id": "paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134",
+  "required_binding_keys": [
+    "native_full_hailo8|resnet50"
+  ],
+  "schema": "onnx-splitpoint/native-full-quality-request-binding-set",
+  "schema_version": 2,
+  "setup_id": "orin_nx_hailo8_01"
+}

@@ -1,0 +1,23 @@
+{
+  "adapter": "yolov7_stage_corpus_v1_explicit",
+  "argv": [
+    "/usr/bin/python3",
+    "/home/nx/v2796_yolov7_b066_claim_gate_32_20260901_130453/source/ONNX-Splitpoint-Tool_v2.79.6/onnx_splitpoint_tool/resources/native_concurrent_three_stage_yolov7/stage_corpus.py",
+    "--dataset-manifest",
+    "/home/nx/v2796_yolov7_b066_claim_gate_32_20260901_130453/evidence/reference/dataset_detection_validation.json",
+    "--out",
+    "/home/nx/v2796_yolov7_b066_claim_gate_32_20260901_130453/evidence/work/corpus",
+    "--count",
+    "32",
+    "--images-root",
+    "/home/nx/v2796_yolov7_b066_claim_gate_32_20260901_130453/input/images",
+    "--annotations",
+    "/home/nx/v2796_yolov7_b066_claim_gate_32_20260901_130453/input/instances_val2017.json"
+  ],
+  "dataset_manifest": "/home/nx/v2796_yolov7_b066_claim_gate_32_20260901_130453/evidence/reference/dataset_detection_validation.json",
+  "corpus_manifest": "/home/nx/v2796_yolov7_b066_claim_gate_32_20260901_130453/evidence/work/corpus/corpus_manifest.json",
+  "expected_item_count": 32,
+  "returncode": 0,
+  "console": "/home/nx/v2796_yolov7_b066_claim_gate_32_20260901_130453/evidence/work/stage_corpus_console.log",
+  "console_sha256": "2b2faf6182542c0b0f8749243a29c144ea7447921d272ab3f89aa64c6446a1ba"
+}

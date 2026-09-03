@@ -1,0 +1,88 @@
+         68421 function calls (66861 primitive calls) in 0.990 seconds
+
+   Ordered by: cumulative time
+   List reduced from 238 to 80 due to restriction <80>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+       20    0.001    0.000    0.990    0.050 native_detection_postprocess.py:4551(process)
+       20    0.001    0.000    0.786    0.039 native_detection_postprocess.py:2400(process)
+       20    0.007    0.000    0.734    0.037 yolo.py:1777(postprocess)
+       20    0.017    0.001    0.710    0.035 yolo.py:1206(_decode_multiscale_head)
+       20    0.050    0.002    0.681    0.034 yolo.py:1088(_decode_multiscale_head_once)
+      240    0.401    0.002    0.580    0.002 yolo.py:117(_sigmoid)
+      500    0.001    0.000    0.203    0.000 fromnumeric.py:53(_wrapfunc)
+      320    0.001    0.000    0.179    0.001 fromnumeric.py:2100(clip)
+      320    0.000    0.000    0.178    0.001 {method 'clip' of 'numpy.ndarray' objects}
+      320    0.178    0.001    0.178    0.001 _methods.py:90(_clip)
+       20    0.001    0.000    0.169    0.008 native_detection_postprocess.py:2975(_tensor_content_sha256)
+      400    0.137    0.000    0.137    0.000 {built-in method _hashlib.openssl_sha256}
+       20    0.002    0.000    0.042    0.002 native_detection_postprocess.py:1057(verify_frozen_postprocess_contract)
+       60    0.029    0.000    0.029    0.000 {method 'tobytes' of 'numpy.ndarray' objects}
+       20    0.001    0.000    0.026    0.001 native_detection_postprocess.py:818(_implementation_artifacts_match)
+       20    0.001    0.000    0.024    0.001 native_detection_postprocess.py:637(_implementation_artifacts)
+       60    0.000    0.000    0.024    0.000 fromnumeric.py:1140(argmax)
+       20    0.017    0.001    0.023    0.001 native_detection_postprocess.py:2657(_canonicalize_yolov7_heads)
+       60    0.023    0.000    0.023    0.000 {method 'argmax' of 'numpy.ndarray' objects}
+      280    0.001    0.000    0.019    0.000 __init__.py:183(dumps)
+      280    0.001    0.000    0.017    0.000 encoder.py:182(encode)
+      200    0.001    0.000    0.017    0.000 native_detection_postprocess.py:164(canonical_json_sha256)
+      280    0.016    0.000    0.016    0.000 encoder.py:204(iterencode)
+      200    0.001    0.000    0.015    0.000 native_detection_postprocess.py:156(canonical_json_bytes)
+       60    0.001    0.000    0.012    0.000 native_detection_postprocess.py:168(file_sha256)
+       60    0.007    0.000    0.012    0.000 yolo.py:152(_xywh_to_xyxy)
+       40    0.001    0.000    0.010    0.000 yolo.py:619(verify_yolov7_decoder_contract)
+      120    0.002    0.000    0.010    0.000 yolo.py:184(_nms_xyxy)
+       60    0.000    0.000    0.009    0.000 pathlib.py:1064(resolve)
+       60    0.001    0.000    0.008    0.000 function_base.py:5011(meshgrid)
+       40    0.002    0.000    0.007    0.000 native_detection_postprocess.py:2902(_canonical_detection_records)
+       40    0.002    0.000    0.007    0.000 yolo.py:915(_normalize_multiscale_outputs)
+       60    0.000    0.000    0.007    0.000 posixpath.py:389(realpath)
+      120    0.005    0.000    0.007    0.000 shape_base.py:372(stack)
+      160    0.006    0.000    0.006    0.000 yolo.py:163(_bbox_iou_xyxy)
+      240    0.006    0.000    0.006    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+       60    0.001    0.000    0.006    0.000 stride_tricks.py:480(broadcast_arrays)
+       40    0.001    0.000    0.005    0.000 yolo.py:453(build_yolov7_decoder_contract)
+       80    0.000    0.000    0.005    0.000 yolo.py:431(_canonical_contract_sha256)
+       60    0.001    0.000    0.005    0.000 posixpath.py:398(_joinrealpath)
+6000/4440    0.002    0.000    0.005    0.000 {built-in method builtins.isinstance}
+       80    0.000    0.000    0.005    0.000 yolo.py:421(_canonical_contract_bytes)
+      120    0.001    0.000    0.005    0.000 fromnumeric.py:71(_wrapreduction)
+       60    0.004    0.000    0.004    0.000 {method 'update' of '_hashlib.HASH' objects}
+       80    0.000    0.000    0.004    0.000 {built-in method builtins.sorted}
+      180    0.000    0.000    0.004    0.000 pathlib.py:589(_from_parts)
+       40    0.001    0.000    0.004    0.000 native_detection_postprocess.py:619(tensor_signature)
+      120    0.000    0.000    0.004    0.000 yolo.py:943(_sort_key)
+       60    0.000    0.000    0.004    0.000 stride_tricks.py:546(<listcomp>)
+      180    0.001    0.000    0.004    0.000 pathlib.py:569(_parse_args)
+      120    0.001    0.000    0.004    0.000 yolo.py:683(_yolo_multiscale_name_hint)
+      120    0.003    0.000    0.004    0.000 stride_tricks.py:340(_broadcast_to)
+      180    0.001    0.000    0.003    0.000 _dtype.py:34(__str__)
+      120    0.000    0.000    0.003    0.000 pathlib.py:957(__new__)
+      780    0.001    0.000    0.003    0.000 typing.py:993(__instancecheck__)
+     1320    0.001    0.000    0.003    0.000 re.py:197(search)
+       60    0.000    0.000    0.003    0.000 fromnumeric.py:2421(all)
+      180    0.002    0.000    0.003    0.000 pathlib.py:56(parse_parts)
+      120    0.000    0.000    0.003    0.000 {method 'all' of 'numpy.ndarray' objects}
+      120    0.000    0.000    0.003    0.000 native_detection_postprocess.py:171(<lambda>)
+      120    0.003    0.000    0.003    0.000 {method 'read' of '_io.BufferedReader' objects}
+      120    0.000    0.000    0.003    0.000 _methods.py:61(_all)
+      620    0.001    0.000    0.003    0.000 {built-in method builtins.any}
+      180    0.001    0.000    0.003    0.000 _dtype.py:346(_name_get)
+      780    0.001    0.000    0.002    0.000 typing.py:1154(__subclasscheck__)
+      380    0.002    0.000    0.002    0.000 {built-in method posix.lstat}
+       60    0.000    0.000    0.002    0.000 pathlib.py:1111(open)
+       60    0.000    0.000    0.002    0.000 fromnumeric.py:2322(any)
+       60    0.002    0.000    0.002    0.000 {built-in method io.open}
+     1680    0.001    0.000    0.002    0.000 {built-in method builtins.issubclass}
+       20    0.000    0.000    0.001    0.000 yolo.py:1628(_detect_yolo_format)
+      240    0.000    0.000    0.001    0.000 pathlib.py:631(__fspath__)
+      380    0.001    0.000    0.001    0.000 posixpath.py:71(join)
+      180    0.000    0.000    0.001    0.000 _dtype.py:330(_name_includes_bit_suffix)
+       20    0.000    0.000    0.001    0.000 yolo.py:896(_is_ultralytics_regcls)
+      180    0.001    0.000    0.001    0.000 {built-in method numpy.arange}
+      480    0.001    0.000    0.001    0.000 {method 'astype' of 'numpy.ndarray' objects}
+     1320    0.001    0.000    0.001    0.000 re.py:288(_compile)
+       20    0.001    0.000    0.001    0.000 yolo.py:770(_get_ultralytics_regcls_pairs)
+      120    0.000    0.000    0.001    0.000 pathlib.py:1092(stat)
+
+

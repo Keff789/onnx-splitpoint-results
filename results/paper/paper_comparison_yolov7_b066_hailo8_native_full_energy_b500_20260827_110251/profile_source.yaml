@@ -1,0 +1,343 @@
+name: paper_comparison_yolov7_b066_hailo8_native_full_energy_b500
+purpose: 'Reproduce the YOLOv7 paper boundary as closely as the current tool supports:
+  b066 / mul_20 / [1,512,80,80], Hailo-8 producer, native TensorRT consumer, matching
+  Hailo-8 Full and setup-local TensorRT Full baselines, B500 task validation, and
+  Native full-system energy.'
+implementation_note: Start as a fresh EvalRun, not Resume. Build caches may be reused.
+  b044 is intentionally not used because it exposes [1,256,80,80], whereas the paper
+  boundary is [1,512,80,80].
+models_root_hint: /home/kmika/Models
+campaign:
+  id: paper_comparison_yolov7_b066_hailo8_native_full_energy_b500
+  claim_scope: evaluated_matrix
+  mode: development
+  enforcement: warn
+  frozen_before_final_campaign: false
+  dataset_registry: /home/kmika/.onnx_splitpoint_tool/final_datasets/dataset_registry.json
+  auto_bind_dataset_registry: true
+  dataset_manifests:
+    detection:
+      calibration: /home/kmika/.onnx_splitpoint_tool/final_datasets/manifests/coco2017_train_calibration_manifest.json
+      validation: /home/kmika/.onnx_splitpoint_tool/final_datasets/manifests/coco2017_val_manifest.json
+official_coco_evaluation:
+  enabled: true
+  required_for_final: true
+  require_pycocotools: true
+  annotations: /home/kmika/.onnx_splitpoint_tool/final_datasets/coco2017/annotations/instances_val2017.json
+  iou_type: bbox
+  max_detections:
+  - 1
+  - 10
+  - 100
+  archive_predictions: true
+  archive_eval_tensors: false
+selection_policy:
+  max_accepted_cases_per_model: 1
+  preferred_shortlist: 1
+  min_gap: 0
+  candidate_search_pool: auto
+  require_single_part2_input: true
+  selection_strategy: stratified_windows
+  score_independent_audit_enabled: false
+  forced_cases:
+    yolov7_paper:
+    - b066
+  report_blocked_configs: true
+  report_plan_adjustments: true
+  keep_partial_hailo_cases: false
+  full_model_hailo_preflight_policy: skip
+model_suite:
+  primary:
+  - id: yolov7_paper
+    task: detection
+    family: yolov7
+    family_id: yolov7
+    source: ultralytics
+    onnx: /home/kmika/Models/yolov7_paper.onnx
+    model_sha256: 7a13e66f91047cce0e251c05f64159646847e842af31d60441c63dcdfad7825d
+    input_shape:
+    - 1
+    - 3
+    - 640
+    - 640
+    semantic_dataset: coco2017_val
+    development_subset: coco_50
+    evaluation_role: development
+    generalization_scope: development
+    validation_tier: screening
+    candidate_universe_complete: false
+    candidate_universe:
+      mode: declared_shortlist
+      seed: 20260710
+  reserve: []
+run_profiles:
+- id: ort_tensorrt
+  type: same_backend_reference
+  full: tensorrt
+  stage1: tensorrt
+  stage2: tensorrt
+  required: true
+  enabled: true
+- id: hailo8
+  type: same_backend_reference
+  full: hailo8
+  stage1: hailo8
+  stage2: hailo8
+  required: true
+  enabled: true
+  treat_preflight_block_as_result: true
+- id: hailo8_to_trt
+  type: mixed_backend
+  full_reference: cpu_full
+  stage1: hailo8
+  stage2: tensorrt
+  required: true
+  enabled: true
+  treat_preflight_block_as_result: true
+hardware:
+  selected_setups: []
+  selected_groups: []
+execution_preset:
+  id: standard
+  follow_tool_config: false
+  overrides:
+    native_enabled: true
+    energy_enabled: true
+  snapshot:
+    label: YOLOv7 paper split b066 — Hailo-8 Native Full + Energy, B500
+    description: Runs the paper-equivalent YOLOv7 boundary b066 (mul_20, [1,512,80,80])
+      as Hailo-8 to TensorRT, together with Hailo-8 Full and setup-local TensorRT
+      Full, using Native performance and Native energy.
+    recommended_for: Comparison with the YOLOv7 Hailo-8/Orin-NX partitioning paper
+      and the VEDLIoT D3.3 Hailo-8 Full baseline.
+    defaults:
+      native_enabled: true
+      energy_enabled: true
+    reproducibility:
+      level: relaxed
+      verify_model_content: true
+      verify_dataset_content: false
+      verify_remote_scripts: capabilities
+      cache_unchanged_files: true
+      dataset_sample_size: 24
+    campaign:
+      claim_scope: evaluated_matrix
+      mode: development
+      enforcement: warn
+      frozen_before_final_campaign: false
+      auto_bind_dataset_registry: true
+      require_protocol_freeze: false
+      require_fitted_stage_time: false
+      require_native_handover_model: false
+      require_campaign_freeze: false
+      require_prediction_freeze_approval: false
+      require_cryptographic_prediction_signature: false
+    data:
+      use_final_dataset_registry: true
+      calibration_items:
+        classification: 500
+        detection: 500
+      validation_items:
+        classification: 500
+        detection: 500
+    build:
+      model_preparation: current
+      hailo:
+        mode: reuse_and_build_missing
+        preset: balanced
+        optimization_level: 1
+        calibration_items: 500
+        calibration_batch_size: 8
+        calibration_storage: memmap
+        calibration_memory_cap_mb: 256
+        cache_enabled: true
+        cache_root: ~/.cache/onnx_splitpoint/hailo_hef
+        cache_integrity: relaxed
+        timeout_s: 10800
+        full_baseline_cold_build_policy: build_missing
+        deferred_full_baseline_required: true
+        cold_build_timeout_s: 10800
+        preserve_attempt_provenance: true
+        build_full: true
+        build_part1: true
+        build_part2: false
+        force_build: false
+        keep_artifacts: false
+      deepx:
+        mode: reuse_and_build_missing
+        optimization_level: 0
+        calibration_items: 500
+        calibration_method: ema
+        classification_preprocessing: imagenet_mean_std
+        force_build: false
+      artifact_store:
+        enabled: true
+        root: ~/.onnx_splitpoint_tool/artifact_store
+        verify_on_reuse: metadata
+        pin_for_campaign: false
+        register_hailo: true
+        register_deepx: true
+        register_tensorrt: false
+      scheduler:
+        enabled: true
+        max_workers: 1
+        cpu_tokens: 0
+        ram_mb: 0
+        family_limits:
+          hailo8: 1
+          hailo10: 1
+          deepx: 1
+        weights:
+          hailo8:
+            cpu_tokens: 4
+            ram_mb: 6144
+          hailo10:
+            cpu_tokens: 4
+            ram_mb: 6144
+          deepx:
+            cpu_tokens: 2
+            ram_mb: 4096
+        prefetch_deepx_full: false
+        pipeline_next_model: false
+      hardware_smoke: summary_only
+    runtime:
+      execution_mode: generate_and_run
+      skip_runtime_benchmarks: false
+      benchmark:
+        provider: auto
+        warmup: 3
+        runs: 5
+        timeout_s: 0
+      parallel:
+        remote_setups: false
+        max_setups: 1
+        max_uploads: 1
+        powercalc_workers: 1
+      remote_cache:
+        upload_once_per_model_setup: true
+        reuse_tensorrt_engines: true
+        stable_cache_root: ~/.cache/onnx_splitpoint
+        suite_cache_root: ~/.cache/onnx_splitpoint/suites
+        engine_cache_root: ~/.cache/onnx_splitpoint/tensorrt
+        copy_strategy: auto
+      native:
+        backends:
+        - hailo8
+        case_policy: all_accepted
+        precision: uint8_dequant_fp16
+        frames: 1000
+        warmup: 100
+        repetitions: 3
+        queue_depth: 3
+        inflight: 8
+        full_baselines: true
+        validation: true
+        dump_outputs: true
+        build_missing_engines: true
+        copy_benchmarksets: true
+        strict_supported_only: true
+        contract_selection: metadata_first
+        preserve_row_failures: true
+        require_contract_family_match: true
+    quality:
+      profile_id: task_quality_development_500
+      dataset_tier: screening
+      canonical_reference: canonical_full_onnx
+      classification_margin_pp: 1.0
+      classification_top5_margin_pp: 1.0
+      detection_margin_ap: 1.0
+      detection_ap50_margin: 1.0
+      detection_ap75_margin: 1.0
+      confidence_level: 0.95
+      bootstrap_repetitions: 500
+      bootstrap_seed: 20260710
+      execution_location: central_management
+      workers: 4
+      cache_task_quality: false
+      cadence: once_per_artifact
+      official_coco_enabled: true
+      official_coco_required: true
+      archive_coco_eval_tensors: false
+    holdout:
+      candidate_universe: deterministic_audit
+      audit_size: 20
+      minimum_valid_candidates: 10
+      seed: 20260710
+      prediction_freeze_enabled: false
+      require_complete_candidate_universe: false
+      require_frozen_predictions: false
+      require_unseen_attestation: false
+    ranking:
+      enabled: false
+      methods:
+      - cut_bytes_only
+      - weighted_score
+      - cycle_time_no_handover
+      - cycle_time_with_handover
+      - onnx_real_boundary_hardware_aware
+      k_values:
+      - 1
+      - 3
+      - 5
+      elite_q_values:
+      - 1
+      - 3
+      primary_k: 5
+      minimum_candidates_for_correlation: 3
+      near_optimal_relative_epsilon: 0.01
+      bootstrap_repetitions: 500
+      bootstrap_seed: 20260710
+    reporting:
+      include_decision_summary: true
+      include_backend_drift_block: true
+      include_task_specific_quality_block: true
+      canonical_scientific_report: true
+      cleanup_legacy_reports: true
+      generate_thesis_tex: true
+      generate_thesis_figures: true
+      include_campaign_readiness: true
+    energy:
+      scope: row_variant
+      repeats: 3
+      phases:
+      - streaming
+      target_policy: all
+      skip_backends:
+      - ort_cpu
+      heartbeat_s: 60
+      max_targets_per_run_id: 1
+      max_work_units_per_window: 0
+      max_window_duration_s: 0
+      timeout_s_per_window: 0
+      sizing_probe_max_work_units: 256
+      include_raw_parquet_in_debug_pack: false
+      strict: false
+      native_mode: measure
+      native_duration_s: 0
+validation:
+  split_fidelity_reference_mode: auto
+  classification_metrics:
+  - top1
+  - top5
+  - logit_cosine_similarity
+  detection_metrics:
+  - coco_ap_50_95
+  - ap50
+  - ap75
+  - semantic_proxy_match_ratio
+  backend_drift_reference: cpu_full
+  report_blocked_and_infeasible: true
+  mode: summary_only
+  require_explicit: false
+  require_task_metrics: true
+reporting:
+  include_decision_summary: true
+  include_backend_drift_block: true
+  include_task_specific_quality_block: true
+  aggregate_by_model: true
+  aggregate_by_run_profile: true
+  canonical_scientific_report: true
+  cleanup_legacy_reports: true
+  generate_thesis_tex: true
+  generate_thesis_figures: true
+  include_campaign_readiness: true

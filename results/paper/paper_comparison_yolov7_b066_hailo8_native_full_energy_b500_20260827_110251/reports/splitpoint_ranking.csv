@@ -1,0 +1,15 @@
+model_id,case_id,split_index,prediction_rank,predicted_total_latency_ms,predicted_transfer_latency_ms,predicted_hailo_feasible,source,accepted_by_generator,measured_rank,measured_total_latency_ms
+yolov7_paper,b044,44,73,10.32133804,0.0065536,,onnx_real_boundary_hardware_aware,False,,
+yolov7_paper,b009,9,220,10.32789164,0.0131072,,onnx_real_boundary_hardware_aware,False,,
+yolov7_paper,b011,11,221,10.32789164,0.0131072,,onnx_real_boundary_hardware_aware,False,,
+yolov7_paper,b063,63,231,10.32789164,0.0131072,,onnx_real_boundary_hardware_aware,False,,
+yolov7_paper,b064,64,232,10.32789164,0.0131072,,onnx_real_boundary_hardware_aware,False,,
+yolov7_paper,b066,66,233,10.32789164,0.0131072,,onnx_real_boundary_hardware_aware,True,,19.080018997192383
+yolov7_paper,b003,3,282,10.340998840000001,0.0262144,,onnx_real_boundary_hardware_aware,False,,
+yolov7_paper,b005,5,283,10.340998840000001,0.0262144,,onnx_real_boundary_hardware_aware,False,,
+yolov7_paper,b006,6,284,10.340998840000001,0.0262144,,onnx_real_boundary_hardware_aware,False,,
+yolov7_paper,b008,8,285,10.340998840000001,0.0262144,,onnx_real_boundary_hardware_aware,False,,
+yolov7_paper,b030,30,294,10.340998840000001,0.0262144,,onnx_real_boundary_hardware_aware,False,,
+yolov7_paper,b031,31,295,10.340998840000001,0.0262144,,onnx_real_boundary_hardware_aware,False,,
+yolov7_paper,b033,33,296,10.340998840000001,0.0262144,,onnx_real_boundary_hardware_aware,False,,
+yolov7_paper,b002,2,303,10.36721324,0.0524288,,onnx_real_boundary_hardware_aware,False,,

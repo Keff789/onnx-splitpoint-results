@@ -1,0 +1,15 @@
+claim_kind,dimension,value,count
+performance,model,resnet50,4
+performance,backend,hailo8,2
+performance,backend,tensorrt,2
+performance,setup,orin_nx_hailo8_01,3
+performance,setup,unknown_setup,1
+performance,reason,contract_fail_or_unavailable,2
+performance,reason,screening_only,2
+energy,model,resnet50,4
+energy,backend,native_full_hailo8,2
+energy,backend,native_full_tensorrt,2
+energy,setup,orin_nx_hailo8_01,4
+energy,reason,native_accuracy_gate_inconclusive,1
+energy,reason,native_quality_claim_result_not_verified,1
+energy,reason,screening_energy_policy_nonclaimable,2

@@ -1,0 +1,156 @@
+{
+  "schema": "onnx-splitpoint/native-classification-semantic-validation",
+  "schema_version": 2,
+  "ok": true,
+  "manifest": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/native_producers/hailo8/resnet50/benchmark_set/native_full_outputs/model=resnet50/backend=native_full_tensorrt/setup=orin_nx_hailo8_01/comparison=hailo8/native_full_outputs_manifest.json",
+  "output": "logits",
+  "topk": [
+    {
+      "index": 1,
+      "score": 6.078125
+    },
+    {
+      "index": 794,
+      "score": 1.3115234375
+    },
+    {
+      "index": 443,
+      "score": 1.27734375
+    },
+    {
+      "index": 411,
+      "score": 1.2626953125
+    },
+    {
+      "index": 4,
+      "score": 0.83642578125
+    }
+  ],
+  "reference_report": "full_onnx_self_reference",
+  "reference_topk": [
+    {
+      "index": 1,
+      "score": 6.066877841949463
+    },
+    {
+      "index": 794,
+      "score": 1.3119016885757446
+    },
+    {
+      "index": 443,
+      "score": 1.277408242225647
+    },
+    {
+      "index": 411,
+      "score": 1.2675155401229858
+    },
+    {
+      "index": 4,
+      "score": 0.8381849527359009
+    }
+  ],
+  "top1_match": true,
+  "top5_overlap": 5,
+  "semantic_available": true,
+  "semantic_ok": true,
+  "summary": {
+    "dtype": "float32",
+    "shape": [
+      1,
+      1000
+    ],
+    "size": 1000,
+    "bytes": 4000,
+    "finite": true,
+    "min": -0.8994140625,
+    "max": 6.078125,
+    "mean": 9.142303315456957e-05
+  },
+  "self_reference_report": {
+    "available": true,
+    "ok": true,
+    "semantic_ok": true,
+    "semantic_available": true,
+    "diagnosis": "native_classification_matches_full_self_reference",
+    "source": "full_onnx_self_reference",
+    "boundary_manifest": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/native_producers/hailo8/resnet50/benchmark_set/native_full_outputs/model=resnet50/backend=native_full_tensorrt/setup=orin_nx_hailo8_01/comparison=hailo8/native_full_input_manifest.json",
+    "self_reference_input_manifest_kind": "native_full_input_manifest",
+    "full_onnx": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/native_producers/hailo8/resnet50/benchmark_set/models/resnet50.onnx",
+    "full_output": "logits",
+    "native_output": "logits",
+    "preprocess_profile": "imagenet",
+    "preprocess_source": "benchmark_set_contract",
+    "reference_input_evidence": {
+      "status": "passed",
+      "reason": "",
+      "transformation_id": "sealed_runtime_identity_v1",
+      "source_runtime_input_sha256": "5bf2c27125ab883e1f06230b329f18a0938bc4c8c1793c3f2dba7341045aeb9d",
+      "source_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "source_layout": "NCHW",
+      "source_dtype": "float32",
+      "target_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "target_layout": "NCHW",
+      "target_dtype": "float32",
+      "ort_model_scale": "imagenet",
+      "derived_reference_tensor_sha256": "5bf2c27125ab883e1f06230b329f18a0938bc4c8c1793c3f2dba7341045aeb9d",
+      "c_contiguous": true
+    },
+    "reference_topk": [
+      {
+        "index": 1,
+        "score": 6.066877841949463
+      },
+      {
+        "index": 794,
+        "score": 1.3119016885757446
+      },
+      {
+        "index": 443,
+        "score": 1.277408242225647
+      },
+      {
+        "index": 411,
+        "score": 1.2675155401229858
+      },
+      {
+        "index": 4,
+        "score": 0.8381849527359009
+      }
+    ],
+    "native_topk": [
+      {
+        "index": 1,
+        "score": 6.078125
+      },
+      {
+        "index": 794,
+        "score": 1.3115234375
+      },
+      {
+        "index": 443,
+        "score": 1.27734375
+      },
+      {
+        "index": 411,
+        "score": 1.2626953125
+      },
+      {
+        "index": 4,
+        "score": 0.83642578125
+      }
+    ],
+    "top1_match": true,
+    "top5_overlap": 5
+  },
+  "semantic_reference_source": "full_onnx_self_reference"
+}

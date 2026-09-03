@@ -1,0 +1,10 @@
+{
+  "status": "retrying_invalid_repeat",
+  "logical_repeat_index": 2,
+  "retry_attempt_index": 1,
+  "retry_attempt_limit": 1,
+  "retry_reasons": [
+    "first_sample_barrier_invalid"
+  ],
+  "retry_output": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_hailo8__yolov7_paper__full__orin_nx_hailo8_01__9b0225ee3618/plan_30671fc2278e429f908b23c535f15665/attempt_d3eb0b283acf4688855ac59b14156b7e/repeat_retry_attempts/repeat_002/attempt_01"
+}

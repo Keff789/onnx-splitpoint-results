@@ -1,0 +1,150 @@
+{
+  "out_dir": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off",
+  "file_count": 27,
+  "files": [
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/artifact_index.json",
+      "relative_path": "artifact_index.json",
+      "size_bytes": 6052
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/duration_probe.json",
+      "relative_path": "duration_probe.json",
+      "size_bytes": 583
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/energy_aggregate.json",
+      "relative_path": "energy_aggregate.json",
+      "size_bytes": 42941
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/energy_command.sh",
+      "relative_path": "energy_command.sh",
+      "size_bytes": 113
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/energy_current_status.json",
+      "relative_path": "energy_current_status.json",
+      "size_bytes": 1122
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/energy_summary.json",
+      "relative_path": "energy_summary.json",
+      "size_bytes": 42941
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/probe/duration_probe.json",
+      "relative_path": "probe/duration_probe.json",
+      "size_bytes": 583
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/run_000/collector_command.txt",
+      "relative_path": "run_000/collector_command.txt",
+      "size_bytes": 481
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/run_000/collector_stderr.log",
+      "relative_path": "run_000/collector_stderr.log",
+      "size_bytes": 0
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/run_000/collector_stdout.log",
+      "relative_path": "run_000/collector_stdout.log",
+      "size_bytes": 1734
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/run_000/collector_storage/command_window_markers.json",
+      "relative_path": "run_000/collector_storage/command_window_markers.json",
+      "size_bytes": 3010
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/run_000/collector_storage/fast_firmware.parquet",
+      "relative_path": "run_000/collector_storage/fast_firmware.parquet",
+      "size_bytes": 2117836
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/run_000/command_window_binding.json",
+      "relative_path": "run_000/command_window_binding.json",
+      "size_bytes": 3047
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/run_000/command_window_request.json",
+      "relative_path": "run_000/command_window_request.json",
+      "size_bytes": 2372
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/run_000/energy_command.sh",
+      "relative_path": "run_000/energy_command.sh",
+      "size_bytes": 718
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/run_000/energy_summary.json",
+      "relative_path": "run_000/energy_summary.json",
+      "size_bytes": 16634
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/run_000/power_calculations_command.txt",
+      "relative_path": "run_000/power_calculations_command.txt",
+      "size_bytes": 512
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/run_000/power_calculations_stderr.log",
+      "relative_path": "run_000/power_calculations_stderr.log",
+      "size_bytes": 0
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/run_000/power_calculations_stdout.log",
+      "relative_path": "run_000/power_calculations_stdout.log",
+      "size_bytes": 178
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/run_000/processed/firmware_power.npy",
+      "relative_path": "run_000/processed/firmware_power.npy",
+      "size_bytes": 641664
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/run_000/processed/postprocessor_window_result.json",
+      "relative_path": "run_000/processed/postprocessor_window_result.json",
+      "size_bytes": 2879
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/run_000/processed/results.yaml",
+      "relative_path": "run_000/processed/results.yaml",
+      "size_bytes": 2865
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/run_000/runtime_work_units_evidence.json",
+      "relative_path": "run_000/runtime_work_units_evidence.json",
+      "size_bytes": 133
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/run_000/workload_command.sh",
+      "relative_path": "run_000/workload_command.sh",
+      "size_bytes": 113
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/run_000/workload_stderr.log",
+      "relative_path": "run_000/workload_stderr.log",
+      "size_bytes": 0
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/run_000/workload_stdout.log",
+      "relative_path": "run_000/workload_stdout.log",
+      "size_bytes": 45
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/run_000/workload_timing.txt",
+      "relative_path": "run_000/workload_timing.txt",
+      "size_bytes": 61
+    }
+  ],
+  "by_suffix": {
+    ".json": 12,
+    ".sh": 3,
+    ".txt": 3,
+    ".log": 6,
+    ".parquet": 1,
+    ".npy": 1,
+    ".yaml": 1
+  }
+}

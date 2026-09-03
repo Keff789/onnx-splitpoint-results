@@ -1,0 +1,5 @@
+backend,variant,model_count,case_count,mean_total_latency_ms,compile_ok_rate,runtime_ok_rate,validation_ok_rate
+hailo8,full,1,2,62.491703,,1.0,0.5
+hailo8_to_tensorrt,split,1,2,19.080019,,1.0,1.0
+tensorrt,full,1,2,18.107605,,1.0,0.5
+tensorrt,split,1,2,23.972321,,1.0,0.5

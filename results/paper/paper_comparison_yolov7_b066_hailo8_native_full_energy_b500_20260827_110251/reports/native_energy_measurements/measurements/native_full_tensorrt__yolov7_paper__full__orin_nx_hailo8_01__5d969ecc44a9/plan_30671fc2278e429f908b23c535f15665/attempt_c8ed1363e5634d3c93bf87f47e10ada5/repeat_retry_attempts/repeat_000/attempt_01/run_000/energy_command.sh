@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -u
+timing_path=/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_000/attempt_01/run_000/workload_timing.txt
+start_ns=$(date +%s%N)
+printf 'start_ns=%s
+' "$start_ns" > "$timing_path"
+set +e
+/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_000/attempt_01/run_000/workload_command.sh > /home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_000/attempt_01/run_000/workload_stdout.log 2> /home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_000/attempt_01/run_000/workload_stderr.log
+rc=$?
+set -e
+end_ns=$(date +%s%N)
+printf 'end_ns=%s
+rc=%s
+' "$end_ns" "$rc" >> "$timing_path"
+exit "$rc"

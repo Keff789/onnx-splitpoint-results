@@ -1,0 +1,27 @@
+{
+  "artifact_verification_status": "pass",
+  "attestation_sha256": "6ed487abc660cba98f4d4f641702aeb1e36cb551023c469653000fca3a0fadab",
+  "command_contract_sha256": "59d5c1c9e9498a56769948bdee4886ab0d18ee838523f5deaa8140f45dea6173",
+  "created_at_unix_ns": 1787821128461419474,
+  "expires_at_unix_ns": 1787821428461419474,
+  "host": "nx",
+  "nonce": "72384f5c874cfad61a358ef9f66b20a7598a0ee2cf7f04856264b3d5b0be48b9",
+  "ok": true,
+  "preflight_scope": "native_full_energy_hotloop_all_heavy_hashes",
+  "runner_sha256": "54b323c1dd608f511856748c2171450f7384893072385ffd7b7c259d1013026f",
+  "schema": "onnx-splitpoint/energy-preflight-attestation",
+  "schema_version": 1,
+  "verified_artifact_sha256": {
+    "command_python_executable": "7b13b22842816e9accd853f2c752aab43acf2ef6e16f48376b2f61c74c6c614b",
+    "hailo_hef_build_receipt": "6c260df96e7b8b8b18a71976c4faee80c91ffd3ead845e5994b0052565d0cda3",
+    "hef": "5c85fe8fd888bd99b3e31e119540322383cc308cfbb740e4df4d4babf439e912",
+    "hotloop_runner": "cd3875cb13ced3157711f848e04fd99fb1878fbe3556edc8c42a8251329b2fc2",
+    "input_manifest": "c803da2a2ffad3b3108f35efd89a7c8957db36144220fcaeefc2c2b05f30f855",
+    "performance_report": "1ed3b223ce4ecf3f5c85bb2bb6d728e1e24641f1fc375975ca714dfa7738736a",
+    "runtime_input_tensor": "e7bb42972d7fd1c8afbdce1a9efca5be5f76b127b111378d167c44645af41448",
+    "runtime_python": "7b13b22842816e9accd853f2c752aab43acf2ef6e16f48376b2f61c74c6c614b",
+    "source_onnx": "cebd9d5879ddd304a18f51e559ab74fba5cbd1f610b9359321bc5228acbe4f50"
+  },
+  "verified_input_image_sha256": "7fcdd3d95ff2491a2a5fe235d786026b728ffe0f88d25c4543d9a3e253f71652",
+  "workload_kind": "hailo_full_hotloop"
+}

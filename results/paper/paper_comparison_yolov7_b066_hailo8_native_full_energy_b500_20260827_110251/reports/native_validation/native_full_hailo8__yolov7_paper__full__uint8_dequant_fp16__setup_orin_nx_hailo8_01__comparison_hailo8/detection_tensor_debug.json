@@ -1,0 +1,87 @@
+{
+  "manifest": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/native_producers/hailo8/yolov7_paper/benchmark_set/native_full_outputs/model=yolov7_paper/backend=native_full_hailo8/setup=orin_nx_hailo8_01/comparison=hailo8/native_full_outputs_manifest.json",
+  "input_image": "/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set/resources/validation/detection/val2017_n500_s20260710/000000000632.jpg",
+  "outputs": [
+    {
+      "name": "output",
+      "shape": [
+        1,
+        3,
+        80,
+        80,
+        85
+      ],
+      "dtype": "float32",
+      "size": 1632000,
+      "finite": true,
+      "quantiles": [
+        -30.7305850982666,
+        -22.800111770629883,
+        -15.66268539428711,
+        -11.102663040161133,
+        -7.533949851989746,
+        -0.9913092255592346,
+        0.5947855114936829,
+        2.180880308151245,
+        8.525259017944336
+      ],
+      "min": -30.7305850982666,
+      "max": 8.525259017944336,
+      "mean": -7.315996170043945
+    },
+    {
+      "name": "clone_1",
+      "shape": [
+        1,
+        3,
+        40,
+        40,
+        85
+      ],
+      "dtype": "float32",
+      "size": 408000,
+      "finite": true,
+      "quantiles": [
+        -29.78502655029297,
+        -19.294702529907227,
+        -13.862213134765625,
+        -11.052305221557617,
+        -8.055069923400879,
+        -0.9366360306739807,
+        0.5619816184043884,
+        2.435253620147705,
+        8.991705894470215
+      ],
+      "min": -29.78502655029297,
+      "max": 8.991705894470215,
+      "mean": -7.682493686676025
+    },
+    {
+      "name": "clone_2",
+      "shape": [
+        1,
+        3,
+        20,
+        20,
+        85
+      ],
+      "dtype": "float32",
+      "size": 102000,
+      "finite": true,
+      "quantiles": [
+        -21.235898971557617,
+        -17.0583438873291,
+        -13.402984619140625,
+        -11.488272666931152,
+        -9.051366806030273,
+        -0.8703237175941467,
+        0.5221942067146301,
+        3.8294243812561035,
+        8.181042671203613
+      ],
+      "min": -21.235898971557617,
+      "max": 8.181042671203613,
+      "mean": -8.449069023132324
+    }
+  ]
+}

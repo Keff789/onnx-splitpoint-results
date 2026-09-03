@@ -1,0 +1,13 @@
+status	bytes	path
+present	1031736662	/home/kmika/Models/EnergyMeasurements
+present	1794867478	/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251
+present	1249765495	/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134
+present	63020150837	/home/kmika/Models/EvaluationRuns/v2784_7model_b500_audit20_launch_20260828_194905_185725341_1413672
+present	14323821993	/home/kmika/Models/EvaluationRuns/biggerset_20260903_090110
+present	9708	/home/kmika/Downloads/hailo10_infermodel_format_ab_20260903_122158.json
+present	13962	/home/kmika/Downloads/hailo10_input_format_ab_20260903_131242.json
+present	446613	/home/kmika/Downloads/v2794_yolov7_b066_product_normal_runner_20260901_092235.zip
+present	5653677	/home/kmika/Downloads/v2796_yolov7_b066_claim_gate_32_20260901_130453.zip
+present	258080393	/home/kmika/Downloads/v2784_seven_model_final_evidence_20260831_103034.zip
+present	2812131	/home/kmika/Downloads/biggerset_20260903_090110_debug_pack.zip
+present	22878	/home/kmika/Downloads/v27916_install_acceptance_20260903_154343_058884999_781004.zip

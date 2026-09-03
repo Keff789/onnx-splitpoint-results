@@ -1,0 +1,299 @@
+{
+  "count_semantics": "details_and_grouped_counts_count_one record per excluded claim-kind/source-row/reason assignment; excluded_count fields count source rows",
+  "dimension_exclusion_counts": [
+    {
+      "claim_kind": "performance",
+      "count": 4,
+      "dimension": "model",
+      "value": "resnet50"
+    },
+    {
+      "claim_kind": "performance",
+      "count": 2,
+      "dimension": "backend",
+      "value": "hailo8"
+    },
+    {
+      "claim_kind": "performance",
+      "count": 2,
+      "dimension": "backend",
+      "value": "tensorrt"
+    },
+    {
+      "claim_kind": "performance",
+      "count": 3,
+      "dimension": "setup",
+      "value": "orin_nx_hailo8_01"
+    },
+    {
+      "claim_kind": "performance",
+      "count": 1,
+      "dimension": "setup",
+      "value": "unknown_setup"
+    },
+    {
+      "claim_kind": "performance",
+      "count": 2,
+      "dimension": "reason",
+      "value": "contract_fail_or_unavailable"
+    },
+    {
+      "claim_kind": "performance",
+      "count": 2,
+      "dimension": "reason",
+      "value": "screening_only"
+    },
+    {
+      "claim_kind": "energy",
+      "count": 4,
+      "dimension": "model",
+      "value": "resnet50"
+    },
+    {
+      "claim_kind": "energy",
+      "count": 2,
+      "dimension": "backend",
+      "value": "native_full_hailo8"
+    },
+    {
+      "claim_kind": "energy",
+      "count": 2,
+      "dimension": "backend",
+      "value": "native_full_tensorrt"
+    },
+    {
+      "claim_kind": "energy",
+      "count": 4,
+      "dimension": "setup",
+      "value": "orin_nx_hailo8_01"
+    },
+    {
+      "claim_kind": "energy",
+      "count": 1,
+      "dimension": "reason",
+      "value": "native_accuracy_gate_inconclusive"
+    },
+    {
+      "claim_kind": "energy",
+      "count": 1,
+      "dimension": "reason",
+      "value": "native_quality_claim_result_not_verified"
+    },
+    {
+      "claim_kind": "energy",
+      "count": 2,
+      "dimension": "reason",
+      "value": "screening_energy_policy_nonclaimable"
+    }
+  ],
+  "dimension_order": [
+    "model",
+    "backend",
+    "setup",
+    "reason"
+  ],
+  "energy_claim_eligible_count": 0,
+  "energy_excluded_count": 2,
+  "energy_exclusion_reason_counts": {
+    "native_accuracy_gate_inconclusive": 1,
+    "native_quality_claim_result_not_verified": 1
+  },
+  "excluded_row_count": 6,
+  "exclusion_details": [
+    {
+      "backend": "hailo8",
+      "case_id": "full",
+      "claim_kind": "performance",
+      "eligibility_status": "contract_fail_or_unavailable",
+      "model_id": "resnet50",
+      "reason": "contract_fail_or_unavailable",
+      "row_status": "available",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "classification",
+      "variant": "full"
+    },
+    {
+      "backend": "hailo8",
+      "case_id": "full",
+      "claim_kind": "performance",
+      "eligibility_status": "contract_fail_or_unavailable",
+      "model_id": "resnet50",
+      "reason": "contract_fail_or_unavailable",
+      "row_status": "available",
+      "setup_id": "unknown_setup",
+      "task": "classification",
+      "variant": "full"
+    },
+    {
+      "backend": "tensorrt",
+      "case_id": "b119",
+      "claim_kind": "performance",
+      "eligibility_status": "screening_only",
+      "model_id": "resnet50",
+      "reason": "screening_only",
+      "row_status": "available",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "classification",
+      "variant": "split"
+    },
+    {
+      "backend": "tensorrt",
+      "case_id": "full",
+      "claim_kind": "performance",
+      "eligibility_status": "screening_only",
+      "model_id": "resnet50",
+      "reason": "screening_only",
+      "row_status": "available",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "classification",
+      "variant": "full"
+    },
+    {
+      "backend": "native_full_hailo8",
+      "case_id": "full",
+      "claim_kind": "energy",
+      "eligibility_status": "screening_only",
+      "model_id": "resnet50",
+      "reason": "native_accuracy_gate_inconclusive",
+      "row_status": "available",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "classification",
+      "variant": "native_full_baseline"
+    },
+    {
+      "backend": "native_full_hailo8",
+      "case_id": "full",
+      "claim_kind": "energy",
+      "eligibility_status": "screening_only",
+      "model_id": "resnet50",
+      "reason": "screening_energy_policy_nonclaimable",
+      "row_status": "available",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "classification",
+      "variant": "native_full_baseline"
+    },
+    {
+      "backend": "native_full_tensorrt",
+      "case_id": "full",
+      "claim_kind": "energy",
+      "eligibility_status": "screening_only",
+      "model_id": "resnet50",
+      "reason": "native_quality_claim_result_not_verified",
+      "row_status": "available",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "classification",
+      "variant": "native_full_baseline"
+    },
+    {
+      "backend": "native_full_tensorrt",
+      "case_id": "full",
+      "claim_kind": "energy",
+      "eligibility_status": "screening_only",
+      "model_id": "resnet50",
+      "reason": "screening_energy_policy_nonclaimable",
+      "row_status": "available",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "classification",
+      "variant": "native_full_baseline"
+    }
+  ],
+  "exclusion_reason_assignment_count": 8,
+  "group_dimensions": [
+    "model_id",
+    "backend",
+    "setup_id",
+    "reason"
+  ],
+  "grouped_exclusion_counts": [
+    {
+      "backend": "hailo8",
+      "claim_kind": "performance",
+      "count": 1,
+      "model_id": "resnet50",
+      "reason": "contract_fail_or_unavailable",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "hailo8",
+      "claim_kind": "performance",
+      "count": 1,
+      "model_id": "resnet50",
+      "reason": "contract_fail_or_unavailable",
+      "setup_id": "unknown_setup"
+    },
+    {
+      "backend": "tensorrt",
+      "claim_kind": "performance",
+      "count": 2,
+      "model_id": "resnet50",
+      "reason": "screening_only",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "native_full_hailo8",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "resnet50",
+      "reason": "native_accuracy_gate_inconclusive",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "native_full_hailo8",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "resnet50",
+      "reason": "screening_energy_policy_nonclaimable",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "native_full_tensorrt",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "resnet50",
+      "reason": "native_quality_claim_result_not_verified",
+      "setup_id": "orin_nx_hailo8_01"
+    },
+    {
+      "backend": "native_full_tensorrt",
+      "claim_kind": "energy",
+      "count": 1,
+      "model_id": "resnet50",
+      "reason": "screening_energy_policy_nonclaimable",
+      "setup_id": "orin_nx_hailo8_01"
+    }
+  ],
+  "performance_claim_eligible_count": 0,
+  "performance_excluded_count": 4,
+  "performance_exclusion_reason_counts": {
+    "contract_fail_or_unavailable": 2,
+    "screening_only": 2
+  },
+  "schema": "onnx-splitpoint/claim-exclusion-summary",
+  "schema_version": 2,
+  "stable_sort_contract": {
+    "details": [
+      "claim_kind",
+      "model_id",
+      "backend",
+      "setup_id",
+      "reason",
+      "task",
+      "case_id",
+      "variant",
+      "row_status",
+      "eligibility_status"
+    ],
+    "dimension_counts": [
+      "claim_kind",
+      "dimension_order",
+      "value"
+    ],
+    "grouped_counts": [
+      "claim_kind",
+      "model_id",
+      "backend",
+      "setup_id",
+      "reason"
+    ]
+  }
+}

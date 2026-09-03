@@ -1,0 +1,3483 @@
+{
+  "artifacts": [
+    {
+      "created_at": "2026-08-27T10:52:20+02:00",
+      "kind": "profile",
+      "model_id": null,
+      "path": "profile.yaml",
+      "producer_stage": "resolve_profile",
+      "sha256": "sha256:6f7bac34776a1231fca80b500f97ff6ca5eb6cd9fabd3223aef5f46ed4d1693e",
+      "size_bytes": 21455
+    },
+    {
+      "created_at": "2026-08-27T10:52:20+02:00",
+      "kind": "profile",
+      "model_id": null,
+      "path": "profile_start_snapshot.json",
+      "producer_stage": "resolve_profile",
+      "sha256": "sha256:f4023c2dcec4117f385af68267fa8ebadb6a10e2e5b6caeceffd585cc103d4a9",
+      "size_bytes": 9094
+    },
+    {
+      "created_at": "2026-08-27T10:52:20+02:00",
+      "kind": "profile",
+      "model_id": null,
+      "path": "profile_source.yaml",
+      "producer_stage": "resolve_profile",
+      "sha256": "sha256:c2cc26d0eeb07c3b5d4114bf9fad8ff7ce959756b4a8da6948b4dcf82a7baa37",
+      "size_bytes": 18761
+    },
+    {
+      "created_at": "2026-08-27T11:00:23+02:00",
+      "kind": "job_artifact",
+      "model_id": null,
+      "path": "jobs/job_plan.json",
+      "producer_stage": "workflow_job_queue",
+      "sha256": "sha256:b6e96c84ce498538cd503cf764edd12cd457c342ed4ea64b3146b53e36fe8cb5",
+      "size_bytes": 51627
+    },
+    {
+      "created_at": "2026-08-27T11:00:23+02:00",
+      "kind": "job_artifact",
+      "model_id": null,
+      "path": "jobs/job_summary.json",
+      "producer_stage": "workflow_job_queue",
+      "sha256": "sha256:9b423201214dafdaab3648e4c66d486bdbb14c5e8cb53dbf512ccb7d9771ffa7",
+      "size_bytes": 10136
+    },
+    {
+      "created_at": "2026-08-27T11:00:23+02:00",
+      "kind": "job_artifact",
+      "model_id": null,
+      "path": "jobs/job_events.jsonl",
+      "producer_stage": "workflow_job_queue",
+      "sha256": "sha256:f007243fdff24fc1eb4db065b030c678ed29049ea3ccb426d9ba3984735989ca",
+      "size_bytes": 5298853
+    },
+    {
+      "created_at": "2026-08-27T10:52:22+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "profile_resolution.json",
+      "producer_stage": "resolve_profile",
+      "sha256": "sha256:e13e843fae16e8ba20cf10e1bfb5474fc7162845a5bb3c99907265cc5394e658",
+      "size_bytes": 6133
+    },
+    {
+      "created_at": "2026-08-27T10:52:22+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "dataset_registry_binding.json",
+      "producer_stage": "resolve_profile",
+      "sha256": "sha256:36fc710d645a587586eab0d51f70168a89b107ee11049d736c9f431bb1c3710d",
+      "size_bytes": 1243
+    },
+    {
+      "created_at": "2026-08-27T10:52:22+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "hardware_matrix.json",
+      "producer_stage": "resolve_profile",
+      "sha256": "sha256:b4ccd4afdc344fd5361c569f11064584c9ec430bdb69687bb3c9f5ea87b56cb8",
+      "size_bytes": 2637
+    },
+    {
+      "created_at": "2026-08-27T10:52:22+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "effective_execution_plan.json",
+      "producer_stage": "resolve_profile",
+      "sha256": "sha256:2cf7796ffd9a6c786e4b165cbf491417f14d49ee48363717f8a48c46c1ea9817",
+      "size_bytes": 9198
+    },
+    {
+      "created_at": "2026-08-27T10:52:23+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "effective_execution_plan.md",
+      "producer_stage": "resolve_profile",
+      "sha256": "sha256:bfe78fb1986b63b783e7bd9320973f23c15f1dbba061b97e62076e7cbbaf6098",
+      "size_bytes": 1912
+    },
+    {
+      "created_at": "2026-08-27T10:52:23+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "stages/resolve_profile/stage_result.json",
+      "producer_stage": "resolve_profile",
+      "sha256": "sha256:660c459ac533256fdc881495d3869537b5ed58e1d90b317d564485647cec9611",
+      "size_bytes": 1526
+    },
+    {
+      "created_at": "2026-08-27T10:52:31+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "campaign/campaign_readiness.json",
+      "producer_stage": "campaign_preflight",
+      "sha256": "sha256:4de7883f10371dea49ffc00cdf011c72cf0ff77e663dcd01fe297bbe1145872b",
+      "size_bytes": 21991
+    },
+    {
+      "created_at": "2026-08-27T10:52:31+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "campaign/campaign_readiness.md",
+      "producer_stage": "campaign_preflight",
+      "sha256": "sha256:68ea9d5463066f1b61ed094d1e82813008e8a32491068f9245f9d9d19f1dbed6",
+      "size_bytes": 8358
+    },
+    {
+      "created_at": "2026-08-27T10:52:32+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "campaign/native_preflight_asset_contract.json",
+      "producer_stage": "campaign_preflight",
+      "sha256": "sha256:c8bcf0e0637fccf0f415f0becc4ec025717967d99532c241364e6cb9ce5e0a5c",
+      "size_bytes": 1674
+    },
+    {
+      "created_at": "2026-08-27T10:52:32+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "campaign/inputs/campaign_inputs_manifest.json",
+      "producer_stage": "campaign_preflight",
+      "sha256": "sha256:546e74f3409a7308d4ee99a1cbdaaf57c6bfcc3cc10ccdc122272432c1df3cad",
+      "size_bytes": 1741
+    },
+    {
+      "created_at": "2026-08-27T10:52:32+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "stages/campaign_preflight/stage_result.json",
+      "producer_stage": "campaign_preflight",
+      "sha256": "sha256:cd18b9e93b9aeca75456cd3aa9ccc61314af7aecf9c6608b6b6738615fbf7ef9",
+      "size_bytes": 1454
+    },
+    {
+      "created_at": "2026-08-27T10:52:33+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/model_manifest.json",
+      "producer_stage": "resolve_model",
+      "sha256": "sha256:187b474c538f19194a3ccb0bc0335cc0025f2d1314c68be2276bfd45d76efe1a",
+      "size_bytes": 1999
+    },
+    {
+      "created_at": "2026-08-27T10:52:33+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/stages/resolve_model/stage_result.json",
+      "producer_stage": "resolve_model",
+      "sha256": "sha256:9a5fdbfbe6c2cb93ed40274d800371d0b36fa2b23a229d0f66500826af9df773",
+      "size_bytes": 1307
+    },
+    {
+      "created_at": "2026-08-27T10:52:33+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/validation/assets_status.json",
+      "producer_stage": "check_validation_assets",
+      "sha256": "sha256:65e93a50b87d54d2b5c3c1979a0d4b9f7575ef0156423626d12add19ffaa570d",
+      "size_bytes": 1459
+    },
+    {
+      "created_at": "2026-08-27T10:52:33+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/stages/check_validation_assets/stage_result.json",
+      "producer_stage": "check_validation_assets",
+      "sha256": "sha256:ca4a9bc7222addc473b4e0c98498ef6e03a73b68da393f118fecf6939df90565",
+      "size_bytes": 1104
+    },
+    {
+      "created_at": "2026-08-27T10:52:34+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/model_preparation/preparation_plan.json",
+      "producer_stage": "prepare_model",
+      "sha256": "sha256:ef31afe787337a303307639f968c73ba202b4bbebb27976be28396d0d738ca48",
+      "size_bytes": 550
+    },
+    {
+      "created_at": "2026-08-27T10:52:34+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/model_preparation/prepared_artifacts.json",
+      "producer_stage": "prepare_model",
+      "sha256": "sha256:2667bbbc92dcb0c985f70c4f24480dca9882a103af217531cb22a497535eedd7",
+      "size_bytes": 532
+    },
+    {
+      "created_at": "2026-08-27T10:52:34+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/stages/prepare_model/stage_result.json",
+      "producer_stage": "prepare_model",
+      "sha256": "sha256:391bbdade2e0bbc4af94308ae89c963538e21d47c4a0a6d74e3a474bad266119",
+      "size_bytes": 1169
+    },
+    {
+      "created_at": "2026-08-27T10:52:36+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/analysis/analysis.json",
+      "producer_stage": "analyze_model",
+      "sha256": "sha256:d98a7b783e6305d4077a0d067d80d2604b3f0b1ffce12be8c88158c8e14930a2",
+      "size_bytes": 856
+    },
+    {
+      "created_at": "2026-08-27T10:52:36+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/analysis/candidate_ranking.json",
+      "producer_stage": "analyze_model",
+      "sha256": "sha256:9bbed87e3a7d37931e46b2a1693b10b6430c831ca5fcd0072c0652c797ec266d",
+      "size_bytes": 334279
+    },
+    {
+      "created_at": "2026-08-27T10:52:36+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/analysis/prediction.json",
+      "producer_stage": "analyze_model",
+      "sha256": "sha256:33431c8ffb489436cb536185ae3576608c6238f98a4790bd0f542133ec187430",
+      "size_bytes": 335088
+    },
+    {
+      "created_at": "2026-08-27T10:52:36+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/analysis/predictions_frozen.csv",
+      "producer_stage": "analyze_model",
+      "sha256": "sha256:75049cd8e81d4a8786128eac1e87b15f5b28e643e9ebff0ad39e26202de40065",
+      "size_bytes": 97074
+    },
+    {
+      "created_at": "2026-08-27T10:52:36+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/analysis/candidate_universe_manifest.json",
+      "producer_stage": "analyze_model",
+      "sha256": "sha256:a348fa6f585bd3ad6d0789345fb33205f24601940d576374063684d014e10b3c",
+      "size_bytes": 83561
+    },
+    {
+      "created_at": "2026-08-27T10:52:37+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/analysis/candidate_universe.csv",
+      "producer_stage": "analyze_model",
+      "sha256": "sha256:69b4a22558146ab243afad63737d47535f7ce87f780f130dd02b2c561fe092f5",
+      "size_bytes": 32070
+    },
+    {
+      "created_at": "2026-08-27T10:52:37+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/analysis/ranking_predictions_frozen.csv",
+      "producer_stage": "analyze_model",
+      "sha256": "sha256:fbc33777a9fde21e66b51034281e46ad10ed2ef908248203f27c9bda99286bae",
+      "size_bytes": 383786
+    },
+    {
+      "created_at": "2026-08-27T10:52:37+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/analysis/prediction_freeze_manifest.json",
+      "producer_stage": "analyze_model",
+      "sha256": "sha256:e1b4659a2518ff2fa2729e9dc34454a3d461e0a8215ff283b485b0f817c10c2b",
+      "size_bytes": 2552
+    },
+    {
+      "created_at": "2026-08-27T10:52:37+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/stages/analyze_model/stage_result.json",
+      "producer_stage": "analyze_model",
+      "sha256": "sha256:b732137ae7c92348136fd49b61f89a63e76cf7ad8aa5d470b54ed02c553b3d1a",
+      "size_bytes": 2349
+    },
+    {
+      "created_at": "2026-08-27T10:52:37+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/analysis/selection_input.json",
+      "producer_stage": "select_split_candidates",
+      "sha256": "sha256:07d15189f1b4b63c5d1c29ba32b78f9d8cd194715659f774b4ac4be84314399e",
+      "size_bytes": 1656
+    },
+    {
+      "created_at": "2026-08-27T10:52:38+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/analysis/audit_plan.json",
+      "producer_stage": "select_split_candidates",
+      "sha256": "sha256:1a17944d06f1ef86ff9e4beaa0080dc2c19b5cf03ffb791562330dd22362dae8",
+      "size_bytes": 999
+    },
+    {
+      "created_at": "2026-08-27T10:52:38+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/audit_plan.json",
+      "producer_stage": "select_split_candidates",
+      "sha256": "sha256:1a17944d06f1ef86ff9e4beaa0080dc2c19b5cf03ffb791562330dd22362dae8",
+      "size_bytes": 999
+    },
+    {
+      "created_at": "2026-08-27T10:52:38+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/analysis/final_candidate_plan.json",
+      "producer_stage": "select_split_candidates",
+      "sha256": "sha256:6c1405fb851181a5020c532f515bfd1d18424484d7e8686ee969505c65604e03",
+      "size_bytes": 339403
+    },
+    {
+      "created_at": "2026-08-27T10:52:38+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/final_candidate_plan.json",
+      "producer_stage": "select_split_candidates",
+      "sha256": "sha256:6c1405fb851181a5020c532f515bfd1d18424484d7e8686ee969505c65604e03",
+      "size_bytes": 339403
+    },
+    {
+      "created_at": "2026-08-27T10:52:38+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/stages/select_split_candidates/stage_result.json",
+      "producer_stage": "select_split_candidates",
+      "sha256": "sha256:e1671b656ae05ecc24a4940fd96dbc38276d5d9591f21bc01d68b3e9f1bc5b72",
+      "size_bytes": 2143
+    },
+    {
+      "created_at": "2026-08-27T10:52:39+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/full_baselines/full_baseline_plan.json",
+      "producer_stage": "prepare_full_baselines",
+      "sha256": "sha256:f67ceb57cb856f0ca02d440297a63c1a036a04ddc89da0401c32997dcdfbf435",
+      "size_bytes": 1575
+    },
+    {
+      "created_at": "2026-08-27T10:52:39+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/full_baselines/output_contracts.json",
+      "producer_stage": "prepare_full_baselines",
+      "sha256": "sha256:794e27822d60fa6d402663e7d98883ce96e55d88131dd37c6a5e94b97aabe889",
+      "size_bytes": 1669
+    },
+    {
+      "created_at": "2026-08-27T10:52:39+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/full_baselines/baseline_reuse_decisions.json",
+      "producer_stage": "prepare_full_baselines",
+      "sha256": "sha256:bc53a37fcbd44790b2521fda4456e13f182bb06220915c01daf8946ed3772935",
+      "size_bytes": 548
+    },
+    {
+      "created_at": "2026-08-27T10:52:39+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/stages/prepare_full_baselines/stage_result.json",
+      "producer_stage": "prepare_full_baselines",
+      "sha256": "sha256:7d346541538fe4c56ce2b0ba924adc7e1f43b9f783a248e4cfd72a162db20b18",
+      "size_bytes": 1298
+    },
+    {
+      "created_at": "2026-08-27T10:52:46+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/legacy_benchmark_set.json",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:a6f6bba07c159def630f38a02848cb9eacbf16fc43e2c7569e601118ecc09f89",
+      "size_bytes": 9596
+    },
+    {
+      "created_at": "2026-08-27T10:52:46+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/legacy_benchmark_plan.json",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:cd73f9258a7e380ef66bafcec4f9bc2d6eda2d753e73ee3848b61afdd52692fd",
+      "size_bytes": 3346
+    },
+    {
+      "created_at": "2026-08-27T10:52:46+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/legacy_generation_state.json",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:6bf4d632ed4a129697401ff56240867e71c4abeb605cecc45b1eccf714ce588a",
+      "size_bytes": 3946
+    },
+    {
+      "created_at": "2026-08-27T10:52:46+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/legacy_benchmark_generation.log",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "created_at": "2026-08-27T10:52:46+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/generator_input.json",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:e3b071f2e382b3c72c0dfc530896e28ae85db559c09d8df95996d6bbdbba0624",
+      "size_bytes": 2699
+    },
+    {
+      "created_at": "2026-08-27T10:52:46+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/generation_decisions.json",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:0ae9d94009d028ec2ae53985b8664ccdaa0b6619d8d7ec40a031b95211cd7a70",
+      "size_bytes": 6465
+    },
+    {
+      "created_at": "2026-08-27T10:52:47+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/benchmark_set.json",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:30aeeb4455ad2c3dcac512d4b840dc94e51735b6c1a868b261cdc867ca5516cc",
+      "size_bytes": 6072
+    },
+    {
+      "created_at": "2026-08-27T10:52:47+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/benchmark_plan.json",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:fffb09c873ee31b3eb7c226c87c8079f4320fe8594cbdd121f3c278fa5586143",
+      "size_bytes": 13504
+    },
+    {
+      "created_at": "2026-08-27T10:52:47+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/benchmark_cases.csv",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:3b4502e573b3c2b24ddf0665e6931090e15d6780cbdaf2c81c99a2561f0ce586",
+      "size_bytes": 120
+    },
+    {
+      "created_at": "2026-08-27T10:52:47+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/rejected_cases.csv",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:e3d8f42666012b47f2363cfdbb8f36fc84b678d262112aa4510a6b97fea4fec3",
+      "size_bytes": 56
+    },
+    {
+      "created_at": "2026-08-27T10:52:47+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/legacy_benchmarkset_binding.json",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:c4022197c4f0b47e1acf40124bd3620697335a24661634a999236e62704e1d98",
+      "size_bytes": 1270
+    },
+    {
+      "created_at": "2026-08-27T10:52:47+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/legacy_suite/benchmark_suite.py",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:cf03c87cf6d64fbc3ea7d197146d2a6d8452a747cbec5b9c7ece69121d0377c0",
+      "size_bytes": 556659
+    },
+    {
+      "created_at": "2026-08-27T10:52:47+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/legacy_suite/benchmark_set.json",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:1e944a271215f843453391293a215c2d502670a64eb290861dd40ae0a0fd77bd",
+      "size_bytes": 16443
+    },
+    {
+      "created_at": "2026-08-27T10:52:48+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/legacy_suite/benchmark_plan.json",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:fffb09c873ee31b3eb7c226c87c8079f4320fe8594cbdd121f3c278fa5586143",
+      "size_bytes": 13504
+    },
+    {
+      "created_at": "2026-08-27T10:52:48+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/legacy_suite/artifact_registry_registration.json",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:672ec68ae2c6140011ec3701004e081faba7e04e24669d4ca72e0da73f33cd08",
+      "size_bytes": 586
+    },
+    {
+      "created_at": "2026-08-27T10:52:48+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/direct_suite_cleanup.json",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:96fcaf43db0c89d52b0351413179bb4c73b24edf8308c9098497ce289bde8ae2",
+      "size_bytes": 410
+    },
+    {
+      "created_at": "2026-08-27T10:52:48+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/suite_generation_postcondition.json",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:859c5ca5dba6bf81c1723cf7515974c818780205cecf53ae1c1311b211061cb1",
+      "size_bytes": 4511
+    },
+    {
+      "created_at": "2026-08-27T10:52:48+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/stages/generate_benchmark_set/stage_result.json",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:7b934dfbf288c716de72a234fcdff025927849b490586b390b02e6f2e5c67aaf",
+      "size_bytes": 3293
+    },
+    {
+      "created_at": "2026-08-27T10:52:50+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/legacy_suite/output_contracts.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:02d1afaf1de69a1a8b29d3e7cb77c522577ba7cbd1fcaa4d003aa96ec85a4cca",
+      "size_bytes": 5037
+    },
+    {
+      "created_at": "2026-08-27T10:52:50+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/full_baselines/output_contracts.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:02d1afaf1de69a1a8b29d3e7cb77c522577ba7cbd1fcaa4d003aa96ec85a4cca",
+      "size_bytes": 5037
+    },
+    {
+      "created_at": "2026-08-27T10:52:50+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/build_backend_artifacts_request.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:9880e327ce16e6b2d43bb02e1b7490e40a595e66f8ace4390ac6213adaa016b7",
+      "size_bytes": 2594
+    },
+    {
+      "created_at": "2026-08-27T10:52:50+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/backend_artifact_decisions.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:3c75aee8d4ecd6f63a6ca3031e9cdeae6c88a5e102664c2d712a78b9da75d01f",
+      "size_bytes": 5471
+    },
+    {
+      "created_at": "2026-08-27T10:52:50+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/artifact_reuse_manifest.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:341ced3cea125d9fd69093f63ef8a9aa90d68ac9f41b67ba5e3259710e5365ef",
+      "size_bytes": 3497
+    },
+    {
+      "created_at": "2026-08-27T10:52:51+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/hailo_artifact_service_plan.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:7f7270377966b4149f79124114048bea54c82b4007d10e2466d28370db0ac5a7",
+      "size_bytes": 14987
+    },
+    {
+      "created_at": "2026-08-27T10:52:51+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/hailo_artifact_status.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:b6ae1aa9d35feda7fdd205375f25444d36fd17dfd97344ad932fd2fd5f6735ca",
+      "size_bytes": 546
+    },
+    {
+      "created_at": "2026-08-27T10:52:51+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/hailo_expected_unsupported.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:7b07d8ac61bfc73615cbc37fe2bea8edb743946dff5b26433150688525efb269",
+      "size_bytes": 732
+    },
+    {
+      "created_at": "2026-08-27T10:52:51+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/legacy_suite/hailo_artifacts_manifest.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:fe05d946705dd2e6783d0383ec0c50caba31f0f3b65459920fec2291a4b1dedf",
+      "size_bytes": 10719
+    },
+    {
+      "created_at": "2026-08-27T10:52:51+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/hailo_service_binding.md",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:b3f58e76f655e15a872806a4f7eddb855cd26c30132ba453a477fcb7450bbc9b",
+      "size_bytes": 791
+    },
+    {
+      "created_at": "2026-08-27T10:52:51+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/hailo_build_attempts.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:2e629f6846d49d4d1a0c413565ff8cfb1ca9b4282eb010a45174debf9dcdd098",
+      "size_bytes": 189
+    },
+    {
+      "created_at": "2026-08-27T10:52:51+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/hailo_build_reuse_plan.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:b829f6766a9179498e9c8609055eb0f2c4fcc48d361cb6118a7c8725f8b323c8",
+      "size_bytes": 6631
+    },
+    {
+      "created_at": "2026-08-27T10:52:52+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/hailo_build_queue.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:05f451a23bc1c7dfeec0564fa6864fbde49effc2b67eb6e31cd37a151ce20406",
+      "size_bytes": 1305
+    },
+    {
+      "created_at": "2026-08-27T10:52:52+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/hailo_service_dispatch.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:09458a0f410482f596074bba6c41afecc99f3ce8f9a316e0d5e59b1ad2988176",
+      "size_bytes": 543
+    },
+    {
+      "created_at": "2026-08-27T10:52:52+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/hailo_build_service_dispatch.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:f960845f43339d7e35cc79ec6d4b9867c826979e414574e4bd56e7422d16cafe",
+      "size_bytes": 923
+    },
+    {
+      "created_at": "2026-08-27T10:52:52+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/hailo_build_service_status.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:c6bb067a8acd6cc29e4969c6dde8f45105ae72ea8196ee465d51bd3a411200af",
+      "size_bytes": 1047
+    },
+    {
+      "created_at": "2026-08-27T10:52:52+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/stages/build_backend_artifacts/stage_result.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:4bc99b69821289fc76ff2e79d1f189871b10879e36bcb57f16ca62b7c1b3639f",
+      "size_bytes": 3011
+    },
+    {
+      "created_at": "2026-08-27T10:55:52+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/legacy_suite/benchmark_plan.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:cd7928a9d3e7522327a8a3ad5a78b21d0aaa4103a07a87a9f11ae53c5968f7c8",
+      "size_bytes": 27382
+    },
+    {
+      "created_at": "2026-08-27T10:55:52+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/legacy_suite/benchmark_set.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:ef0207623782ea7f36ca0014d5b099c73d6b9c809150fb4cb9e343a0424d5240",
+      "size_bytes": 52232
+    },
+    {
+      "created_at": "2026-08-27T10:55:52+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/benchmark_plan.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:cd7928a9d3e7522327a8a3ad5a78b21d0aaa4103a07a87a9f11ae53c5968f7c8",
+      "size_bytes": 27382
+    },
+    {
+      "created_at": "2026-08-27T10:55:52+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/benchmark_set.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:f2665a9b62c955a04ec5a54ed72a34b7bac3f988f672056195403557f45fdd34",
+      "size_bytes": 15045
+    },
+    {
+      "created_at": "2026-08-27T10:55:53+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/build_backend_artifacts_request.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:6342611a1dfe9798a682db5bd415f69fd1e71a7b5a526791ef09886f64b0237b",
+      "size_bytes": 2594
+    },
+    {
+      "created_at": "2026-08-27T10:55:53+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/backend_artifact_decisions.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:4534ea4b43e4fd5587177ab673d5459cb87c5538018e96666a9d4c71a643b2d2",
+      "size_bytes": 5534
+    },
+    {
+      "created_at": "2026-08-27T10:55:53+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/artifact_reuse_manifest.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:26d0894c315708cdc1ab1e223052cec0a8fe5f9c5073ea1f83e016ed08eeecff",
+      "size_bytes": 3497
+    },
+    {
+      "created_at": "2026-08-27T10:55:53+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_set/legacy_suite/output_contracts.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:02d1afaf1de69a1a8b29d3e7cb77c522577ba7cbd1fcaa4d003aa96ec85a4cca",
+      "size_bytes": 5037
+    },
+    {
+      "created_at": "2026-08-27T10:55:53+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/full_baselines/output_contracts.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:02d1afaf1de69a1a8b29d3e7cb77c522577ba7cbd1fcaa4d003aa96ec85a4cca",
+      "size_bytes": 5037
+    },
+    {
+      "created_at": "2026-08-27T10:55:50+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_results/run_benchmarks_request.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:e992c4684059a21b986bee92674def0db7d050a239cc8c0801e52e58b3b8e224",
+      "size_bytes": 6054
+    },
+    {
+      "created_at": "2026-08-27T10:55:51+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_results/benchmark_execution_plan.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:a8d64dad891e469dc808c54f910ccca5e00c8de1906ecbbd2a16a78b53ef6098",
+      "size_bytes": 6998
+    },
+    {
+      "created_at": "2026-08-27T10:55:51+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_results/result_ingestion_manifest.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:581d93190468c5ed560af862f3d4fd8cadb29ec22f36cd270e6c74e414efce76",
+      "size_bytes": 7286
+    },
+    {
+      "created_at": "2026-08-27T10:55:51+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_results/missing_measurements.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:d02bf82b70ec70ea7bb62d36e5e5fd2611ceffc206a26f14bf9da270bb9a60a4",
+      "size_bytes": 2861
+    },
+    {
+      "created_at": "2026-08-27T10:55:51+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_results/selected_run_completeness.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:56e1426e61507ec0dc7ad9fd619755a2fd095cb9f085428553f825e87fb2162c",
+      "size_bytes": 1431
+    },
+    {
+      "created_at": "2026-08-27T10:55:51+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_results/required_profile_matrix.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:2a8c3b905b4e94cb25ddd5476ab736def3c0071eaeb11211af84d6fe3d988fe2",
+      "size_bytes": 1800
+    },
+    {
+      "created_at": "2026-08-27T10:55:52+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_results/validation_cardinality_audit.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:4f0583d8c758be6528a2fcd97447910c4ba007fe403868b1116884207ae349ac",
+      "size_bytes": 264
+    },
+    {
+      "created_at": "2026-08-27T10:55:52+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_results/normalized_results.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:4b61eb3920138b218f0bd88987d878355e12efdafe49fa037dad6384d735f854",
+      "size_bytes": 975329
+    },
+    {
+      "created_at": "2026-08-27T10:55:52+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_results/setup_local_tensorrt_dispatch_preflight.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:57a82c12f699300871104ff682e4212cc6aa172b030c474e18a08ba0cf4a1335",
+      "size_bytes": 1431
+    },
+    {
+      "created_at": "2026-08-27T10:55:52+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_results/remote_benchmark_status_orin_nx_hailo8_01.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:63752e1698e23656a5de883079bae6d9081df54f155ad56a4298e6d0c5823414",
+      "size_bytes": 51959
+    },
+    {
+      "created_at": "2026-08-27T10:55:53+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_results/remote_benchmark_dispatch_orin_nx_hailo8_01.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:5b3e7034d28b0cf991a1da38695190244799c0d80f894e90bb47473b6fae821a",
+      "size_bytes": 7702
+    },
+    {
+      "created_at": "2026-08-27T10:55:53+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_results/remote_benchmark_stdout_orin_nx_hailo8_01.txt",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:cc06e2b5a7d8ba4efd495bf5b2159082d93aba094de86ee775abf55c29f14225",
+      "size_bytes": 97578
+    },
+    {
+      "created_at": "2026-08-27T10:55:53+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_results/remote_benchmark_stderr_orin_nx_hailo8_01.txt",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "created_at": "2026-08-27T10:55:53+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_results/remote_hardware_matrix_status.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:05140e3f9c49ed52386966cb3080e890c397466bf4bc8813bf86f937ad26ac83",
+      "size_bytes": 5694
+    },
+    {
+      "created_at": "2026-08-27T10:55:53+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_results/central_quality_queue_status.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:da07f741730589a44e03e89024e78dc920f71f08e3790286fabe69e0818d2d60",
+      "size_bytes": 379
+    },
+    {
+      "created_at": "2026-08-27T10:55:54+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/stages/run_benchmarks/stage_result.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:c28286e9f602f9fc51a812e1bd97f05bf3ff63d2d3aef32febb5def0b95f23be",
+      "size_bytes": 5069
+    },
+    {
+      "created_at": "2026-08-27T10:55:54+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/validation/validation_adapter_plan.json",
+      "producer_stage": "validate_outputs",
+      "sha256": "sha256:7a7654e3519228689842d492fbf88c6d3ea4a44726757cc6050d66a2d5bd5c04",
+      "size_bytes": 2160
+    },
+    {
+      "created_at": "2026-08-27T10:55:54+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/validation/validation_case_matrix.json",
+      "producer_stage": "validate_outputs",
+      "sha256": "sha256:0a29794546e517aa2c6d92beb6b1e58eb87b5dcb89f55d1e6bf9b3346f97fa83",
+      "size_bytes": 5314
+    },
+    {
+      "created_at": "2026-08-27T10:55:54+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/validation/validation_case_matrix.csv",
+      "producer_stage": "validate_outputs",
+      "sha256": "sha256:93640ec7b23a8fdbd6e1871f0e57bc6046e9ed93a3500767366e89fd55a30ee9",
+      "size_bytes": 2108
+    },
+    {
+      "created_at": "2026-08-27T10:55:55+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/validation/validation_gaps.json",
+      "producer_stage": "validate_outputs",
+      "sha256": "sha256:e14fd5e7c7d7e182ef813179925c96a3c5bd316f6f7b1f0095d10df9bdee5fef",
+      "size_bytes": 176
+    },
+    {
+      "created_at": "2026-08-27T10:55:55+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/validation/validation_readiness.json",
+      "producer_stage": "validate_outputs",
+      "sha256": "sha256:127f5fc61cd1ccc391340ee75851510e5938d936183c2617553166424a82851b",
+      "size_bytes": 525
+    },
+    {
+      "created_at": "2026-08-27T10:55:55+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/validation/validation_summary.json",
+      "producer_stage": "validate_outputs",
+      "sha256": "sha256:2b27240bc9660b25b9bad1d673e5fa0afb18623754f24e0529a28e9a5954f772",
+      "size_bytes": 3399
+    },
+    {
+      "created_at": "2026-08-27T10:55:55+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/validation/validation_binding.md",
+      "producer_stage": "validate_outputs",
+      "sha256": "sha256:fcbff97f66ec3fe27b301914cdff8739586a0af4d75ec73c0d968e94f753aea6",
+      "size_bytes": 565
+    },
+    {
+      "created_at": "2026-08-27T10:55:55+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/stages/validate_outputs/stage_result.json",
+      "producer_stage": "validate_outputs",
+      "sha256": "sha256:0e06ca670b82986612996a9fb6ad548cc31e9d25654fd3f3e77fe096127adbfc",
+      "size_bytes": 1784
+    },
+    {
+      "created_at": "2026-08-27T10:55:56+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/hardware/hardware_smoke_status.json",
+      "producer_stage": "hardware_smoke",
+      "sha256": "sha256:141925cb11fd6d2d9886debd19d47203579f039458d6e0ac2d2b0a13cf145ff0",
+      "size_bytes": 7415
+    },
+    {
+      "created_at": "2026-08-27T10:55:56+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/hardware/hardware_smoke_status.md",
+      "producer_stage": "hardware_smoke",
+      "sha256": "sha256:95c6d63d3514922fb0f2da354364272c31da06938ed362d456d72043ca324f79",
+      "size_bytes": 854
+    },
+    {
+      "created_at": "2026-08-27T10:55:56+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/hardware/hardware_smoke_checks.csv",
+      "producer_stage": "hardware_smoke",
+      "sha256": "sha256:1661efffd59acd3eaf27e7bef09ec7a3666221d0d7258bb7f5d84aa247a85c3b",
+      "size_bytes": 1941
+    },
+    {
+      "created_at": "2026-08-27T10:55:56+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/validation/hardware_smoke_summary.json",
+      "producer_stage": "hardware_smoke",
+      "sha256": "sha256:141925cb11fd6d2d9886debd19d47203579f039458d6e0ac2d2b0a13cf145ff0",
+      "size_bytes": 7415
+    },
+    {
+      "created_at": "2026-08-27T10:55:56+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/benchmark_results/hardware_smoke_report.json",
+      "producer_stage": "hardware_smoke",
+      "sha256": "sha256:141925cb11fd6d2d9886debd19d47203579f039458d6e0ac2d2b0a13cf145ff0",
+      "size_bytes": 7415
+    },
+    {
+      "created_at": "2026-08-27T10:55:57+02:00",
+      "kind": "stage_artifact",
+      "model_id": "resnet50",
+      "path": "models/resnet50/stages/hardware_smoke/stage_result.json",
+      "producer_stage": "hardware_smoke",
+      "sha256": "sha256:89e6bd8d9d17e333adf4ccf0b0115bf9fdf3fcc9cc53fcb78c58045a28439040",
+      "size_bytes": 2118
+    },
+    {
+      "created_at": "2026-08-27T10:55:57+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "quality_management/central_quality_summary.json",
+      "producer_stage": "evaluate_quality",
+      "sha256": "sha256:2fae078dfb5472d3f06f2337b4b2052b77aa074ed7c3e7787bfc44ecfda13bbf",
+      "size_bytes": 98857
+    },
+    {
+      "created_at": "2026-08-27T10:55:58+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "quality_management/central_quality_summary.csv",
+      "producer_stage": "evaluate_quality",
+      "sha256": "sha256:146c16c980e58428dcdba9d9a38bcdf3a168fb0008078d523df0be99352a79b4",
+      "size_bytes": 809
+    },
+    {
+      "created_at": "2026-08-27T10:55:58+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "stages/evaluate_quality/stage_result.json",
+      "producer_stage": "evaluate_quality",
+      "sha256": "sha256:dae7a0fbca5179827a66ca8b98998fc3ab4204ef88f2513cec023a693d1c517f",
+      "size_bytes": 2654
+    },
+    {
+      "created_at": "2026-08-27T10:55:58+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/summary.csv",
+      "producer_stage": "aggregate_results",
+      "sha256": "sha256:52c7c87a3f534c53f41426aecc00b2df28b215f227d8060198d58336e6cab829",
+      "size_bytes": 1649
+    },
+    {
+      "created_at": "2026-08-27T10:55:59+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/model_summary.csv",
+      "producer_stage": "aggregate_results",
+      "sha256": "sha256:52c7c87a3f534c53f41426aecc00b2df28b215f227d8060198d58336e6cab829",
+      "size_bytes": 1649
+    },
+    {
+      "created_at": "2026-08-27T10:55:59+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/prediction_vs_benchmark.csv",
+      "producer_stage": "aggregate_results",
+      "sha256": "sha256:5c5e5910ea114210ea023b10de0206c66fc8d55cff67085ae79956fe14ab6c8f",
+      "size_bytes": 725
+    },
+    {
+      "created_at": "2026-08-27T10:55:59+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/hardware_summary.csv",
+      "producer_stage": "aggregate_results",
+      "sha256": "sha256:a8891ab947f39e00053fdec85ddf6774debcdbbdc5882af4ad0b1a5308c4f710",
+      "size_bytes": 222
+    },
+    {
+      "created_at": "2026-08-27T10:55:59+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/validation_summary.csv",
+      "producer_stage": "aggregate_results",
+      "sha256": "sha256:eab81d2f8996b0cfc78629120eb84fba5d2285ef649c106652218b4d87a1df59",
+      "size_bytes": 1313
+    },
+    {
+      "created_at": "2026-08-27T10:55:59+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/hardware_smoke_summary.csv",
+      "producer_stage": "aggregate_results",
+      "sha256": "sha256:9c4a27f34945781586cb4ae132630aab5dddc4e8b147a797120486cd23931776",
+      "size_bytes": 587
+    },
+    {
+      "created_at": "2026-08-27T10:55:59+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/splitpoint_ranking.csv",
+      "producer_stage": "aggregate_results",
+      "sha256": "sha256:28f2b666c5ee22432842fef6baa6c24e9df5bbecb1b342450e348f295a1eb102",
+      "size_bytes": 10940
+    },
+    {
+      "created_at": "2026-08-27T10:55:59+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "stages/aggregate_results/stage_result.json",
+      "producer_stage": "aggregate_results",
+      "sha256": "sha256:f760f75506896a9904fa921a8e5f4561093a2fb084df6cc8185897990ba7ef50",
+      "size_bytes": 1501
+    },
+    {
+      "created_at": "2026-08-27T10:59:46+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_expected_matrix.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:5493c50c5c14e3c733a58a52f36f49a3fd548d5b8d061e821daaa926e8a10fd5",
+      "size_bytes": 2330
+    },
+    {
+      "created_at": "2026-08-27T10:59:47+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_expected_matrix_missing.csv",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:bbf07cfd5ad495d66ce1b1161c4f20e65afe2a7315be5b874d6435403b64c81e",
+      "size_bytes": 139
+    },
+    {
+      "created_at": "2026-08-27T10:59:47+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_expected_matrix_failed.csv",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:d8345b75283a67e709a8d09187693912b767cc05139d359f8391f9a461e07b90",
+      "size_bytes": 156
+    },
+    {
+      "created_at": "2026-08-27T10:59:47+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_progress.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:fe8ba94e5ade60f1b69bff4995157374c160d70c9bcfc4c3451885842bfdcdb2",
+      "size_bytes": 282
+    },
+    {
+      "created_at": "2026-08-27T10:59:47+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_progress.jsonl",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:f1d8d67b50dcd578ce994613baa0c4c41294a7e267e700677df3a0af367f4baf",
+      "size_bytes": 837559
+    },
+    {
+      "created_at": "2026-08-27T10:59:47+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_quality_first/orin_nx_hailo8_01/tensorrt_quality_producer_set.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:04895169f1e28568b2b3341b365ab3d58e8da5ea613fb31090897286c89035f6",
+      "size_bytes": 16068
+    },
+    {
+      "created_at": "2026-08-27T10:59:47+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_quality_first/orin_nx_hailo8_01/vendor_full_quality_request_binding_set.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:d6b954e67de6b966d6b4adcc872201f26a105c59e430fdd8a28d0bf4c0d08cd9",
+      "size_bytes": 4246
+    },
+    {
+      "created_at": "2026-08-27T10:59:47+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_preflight.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:d441dac2c2911acf0080b035e2b27d8d3662a02ac2d7a7784a2936e322a952de",
+      "size_bytes": 1199
+    },
+    {
+      "created_at": "2026-08-27T10:59:47+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_transfer/hailo8_resnet50_native_transfer_manifest.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:6ef2ba9dc24b4dda7ab736eb481bbaa4d2031702330a4902b36bbcd1f7555ccc",
+      "size_bytes": 153406
+    },
+    {
+      "created_at": "2026-08-27T10:59:48+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_transfer/hailo8_resnet50_native_transfer_files.txt",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:aab5c9827798f71a9e7dca82edf70ecd1875b31c3342bb7f559ab6e7f8a0d337",
+      "size_bytes": 56813
+    },
+    {
+      "created_at": "2026-08-27T10:59:48+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_host_telemetry_summary.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:9f6bd8c2607a8aa263f1c64fbb630ebbb5b2cf6f206d4ca44c0901bf5e57ba58",
+      "size_bytes": 18555
+    },
+    {
+      "created_at": "2026-08-27T10:59:48+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_producer_stage.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:11d2ae3ec15265bddd1253be1f6f59bea9b5392e29740e3817dc3343d6cfe8b2",
+      "size_bytes": 120248
+    },
+    {
+      "created_at": "2026-08-27T10:59:48+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_producer_combined_summary.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:b25c7bae585f900cfd8a52442b6b98761cc9fc8f501ee3826b631c26e891027f",
+      "size_bytes": 221794
+    },
+    {
+      "created_at": "2026-08-27T10:59:48+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_producer_combined_summary.csv",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:e7ecb8da3b1761ae032260be58f53afff7745863280ef16e80285a4e1226815d",
+      "size_bytes": 25013
+    },
+    {
+      "created_at": "2026-08-27T10:59:48+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_producer_combined_summary.md",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:b7d74d35cb68178af57d1c75908398865ebc7fc23300d5a03080ecb83da8a94b",
+      "size_bytes": 863
+    },
+    {
+      "created_at": "2026-08-27T10:59:49+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_producer_summary.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:b25c7bae585f900cfd8a52442b6b98761cc9fc8f501ee3826b631c26e891027f",
+      "size_bytes": 221794
+    },
+    {
+      "created_at": "2026-08-27T10:59:49+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_producer_summary.csv",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:e7ecb8da3b1761ae032260be58f53afff7745863280ef16e80285a4e1226815d",
+      "size_bytes": 25013
+    },
+    {
+      "created_at": "2026-08-27T10:59:49+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_producer_summary.md",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:b7d74d35cb68178af57d1c75908398865ebc7fc23300d5a03080ecb83da8a94b",
+      "size_bytes": 863
+    },
+    {
+      "created_at": "2026-08-27T10:59:49+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_validation/native_full_tensorrt__resnet50__full__uint8_dequant_fp16__setup_orin_nx_hailo8_01__comparison_hailo8/classification_validation.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:1482aa6aaae3b570f504c1a30db482b03d5ea02c9b4e859d708eeb63846cc0ab",
+      "size_bytes": 4037
+    },
+    {
+      "created_at": "2026-08-27T10:59:49+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_validation/native_full_tensorrt__resnet50__full__uint8_dequant_fp16__setup_orin_nx_hailo8_01__comparison_hailo8/classification_validation.md",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:f9614930e73c4989f4d62b1c8a9ea732370f224f9e066209a196a5232a8f195e",
+      "size_bytes": 891
+    },
+    {
+      "created_at": "2026-08-27T10:59:49+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_validation/native_full_tensorrt__resnet50__full__uint8_dequant_fp16__setup_orin_nx_hailo8_01__comparison_hailo8/tensor_dump_validation.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:f4f7851038cb9d249596f2e186c25ab6a439b109789fa9e27357a0ad0ec3edab",
+      "size_bytes": 714
+    },
+    {
+      "created_at": "2026-08-27T10:59:49+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_validation/native_producer_validation_summary.csv",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:16444258478e68e7c636de2a0879ed7e0c53564d6e6e0a1de408df899936eb7e",
+      "size_bytes": 11619
+    },
+    {
+      "created_at": "2026-08-27T10:59:50+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_validation/native_producer_validation_summary.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:dbddfdd4e66f7e3d9b493ea6f3215699bda88a17eebf25436398e11d903ff3e1",
+      "size_bytes": 141648
+    },
+    {
+      "created_at": "2026-08-27T10:59:50+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_validation/native_producer_validation_summary.md",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:e9c478f867576b5c54e97a8b89fc9aa2d70fb68d84091a6fa5d87a57dacf4344",
+      "size_bytes": 1175
+    },
+    {
+      "created_at": "2026-08-27T10:59:50+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/window_method_validation_probe.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:c3dfc3f8be10079a379242546d4becc18fa83e636b07630df5f582732013a3b9",
+      "size_bytes": 1338
+    },
+    {
+      "created_at": "2026-08-27T10:59:50+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_model_hash_map.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:e47eda4911c8f361b9a186477039bd43f25c56447e0df95d1a802681626d619c",
+      "size_bytes": 633
+    },
+    {
+      "created_at": "2026-08-27T10:59:50+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/checkpoints/native_energy/journal.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:c2bfcbc1c35f06a94a1382cdf8bc45cd654c899bcf47fe7249ccf01104168cf2",
+      "size_bytes": 1131
+    },
+    {
+      "created_at": "2026-08-27T10:59:50+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/checkpoints/native_energy/rows/0000_34526c33ea5ff7a6.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:beb867f9fed43fb5a8c44472991b908ae35f724e81c10edec7bc864ee01b4223",
+      "size_bytes": 315763
+    },
+    {
+      "created_at": "2026-08-27T10:59:50+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/checkpoints/native_energy/rows/0001_d16b00776c724949.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:6598af71e3e4f59c325eb74f350b62a2f534ac85763a0c1009648c74eb48abbf",
+      "size_bytes": 373026
+    },
+    {
+      "created_at": "2026-08-27T10:59:50+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/artifact_index.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:8d72446400c7f5ac6a2b6e7a85df4853810d5422e4ebbafa24cac80c914fc2f2",
+      "size_bytes": 48027
+    },
+    {
+      "created_at": "2026-08-27T10:59:51+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/probe/duration_probe.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:021b9be99c5bd92e360866a83b3bfffe88fb6e71d981ea3ab4380737cb956cf7",
+      "size_bytes": 1000
+    },
+    {
+      "created_at": "2026-08-27T10:59:51+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/energy_aggregate.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:6a118d67e8b2a056ec89e1dfffcaca6bb7d68fd80de7616d9f87acfec0690121",
+      "size_bytes": 200170
+    },
+    {
+      "created_at": "2026-08-27T10:59:51+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/energy_command.sh",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:eccedc1a685dc7c1accc49fcddf2ad58cbc792778569b76773e91d2e62f20078",
+      "size_bytes": 1558
+    },
+    {
+      "created_at": "2026-08-27T10:59:51+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/energy_current_status.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:69f03cac8332fd03c34ef9bcc379db29f86a4add9dadecd6724147e5a205c0ce",
+      "size_bytes": 1902
+    },
+    {
+      "created_at": "2026-08-27T10:59:51+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/energy_summary.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:4147c5c0d0ff5d1ed576a780cf6447bfe3942c32f980b16689571500dd141ac7",
+      "size_bytes": 52175
+    },
+    {
+      "created_at": "2026-08-27T10:59:51+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/collector_storage/command_window_markers.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:be9f3f7bca9f62b996ec7a1b0d4c767f15456312c2b7f964bd21e9109de801e8",
+      "size_bytes": 3529
+    },
+    {
+      "created_at": "2026-08-27T10:59:52+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/command_window_binding.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:c18043b96d19a00edf3e4afec029b092abaea1cd9d270efd10d36fb4d670ca2b",
+      "size_bytes": 4823
+    },
+    {
+      "created_at": "2026-08-27T10:59:52+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/command_window_request.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:84bbe9ffc1b291504d942fd5b394b2a978d01d10b73278138bd0ec85cfba8cc1",
+      "size_bytes": 3520
+    },
+    {
+      "created_at": "2026-08-27T10:59:52+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/preflight/preflight_attestation.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:b89c9f5dc2fd7875dae7411454febb795553cbc03f85a0f2cc09d01c8bc9f88f",
+      "size_bytes": 1602
+    },
+    {
+      "created_at": "2026-08-27T10:59:52+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/preflight/preflight_command.sh",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:ffec6f80047da7154ea6f2da46e006030d93116090133cf2a7320effc0fab441",
+      "size_bytes": 6031
+    },
+    {
+      "created_at": "2026-08-27T10:59:52+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/preflight/preflight_evidence.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:a5238c314ac11d3215d3edce20f6a5d12ab9e1356b99900d974b57b2310c47dd",
+      "size_bytes": 3976
+    },
+    {
+      "created_at": "2026-08-27T10:59:52+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/preflight/preflight_status.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:fdc42ae710e8c8802d15fb67a07d08e1c780f39a40d080f99ac0ab76efb039ba",
+      "size_bytes": 601
+    },
+    {
+      "created_at": "2026-08-27T10:59:52+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/processed/postprocessor_window_result.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:ab5938576a22412c293428488fca540febefae2914285fff948ed74f24368cd2",
+      "size_bytes": 4445
+    },
+    {
+      "created_at": "2026-08-27T10:59:53+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/runtime_work_units_evidence.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:29f9018e9ad5b09378068bba9170db2c3e306cd62f18f7153cf300c015e96518",
+      "size_bytes": 509
+    },
+    {
+      "created_at": "2026-08-27T10:59:53+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/window_method_comparison.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:53ed41e931fef2209094b330791efdc6d6156f60f4a4a19ee5dec7570d2c1ff2",
+      "size_bytes": 16900
+    },
+    {
+      "created_at": "2026-08-27T10:59:53+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f/plan_6544d12817564073aff492ac2e3dbae0/attempt_65f9ce5f5680467fbfe4805bf8a0f82b/run_002/workload_command.sh",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:9c410af143691ccec106eb0bb549e94d6ebaca66a8e1bb39e77ccec723d7d8de",
+      "size_bytes": 5282
+    },
+    {
+      "created_at": "2026-08-27T10:59:53+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/native_producer_energy_results.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:399910e90887d5d9f82a01faf3d0e7e2bc2a99e69ec8343860850092807a57b4",
+      "size_bytes": 670326
+    },
+    {
+      "created_at": "2026-08-27T10:59:53+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/native_producer_energy_results.md",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:0677c17fd438587d6ace125b92a15b3b35e39bf7b4a98032ae0d021608df2a66",
+      "size_bytes": 195
+    },
+    {
+      "created_at": "2026-08-27T10:59:53+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/plan/native_full_hailo8__resnet50__full__orin_nx_hailo8_01__59d5c1c9e949.command_contract.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:64e4abbe15872c600f86f5b6700fde2f11f77785c638c84f3eb56e181e26434a",
+      "size_bytes": 22608
+    },
+    {
+      "created_at": "2026-08-27T10:59:53+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/plan/native_full_hailo8__resnet50__full__orin_nx_hailo8_01__59d5c1c9e949.preflight.sh",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:3b397f05cce35f7f4cf8e6767bce3d7e8482b50ec1439995397e40be6bb730a8",
+      "size_bytes": 5459
+    },
+    {
+      "created_at": "2026-08-27T10:59:54+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/plan/native_full_hailo8__resnet50__full__orin_nx_hailo8_01__59d5c1c9e949.sh",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:a1c357a746502fbedb2fff11e53c44237f9ef9039ba182b752245d84ac34b4db",
+      "size_bytes": 4718
+    },
+    {
+      "created_at": "2026-08-27T10:59:54+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/plan/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f.command_contract.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:835d35d572f355349da0e14166178b40b61d2adad24429e5055afcaff1a59409",
+      "size_bytes": 25650
+    },
+    {
+      "created_at": "2026-08-27T10:59:54+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/plan/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f.preflight.sh",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:ffb0180a35af5cea62b9ab651ab1110ad0fd91913632d8bafeff38859cb7a777",
+      "size_bytes": 5481
+    },
+    {
+      "created_at": "2026-08-27T10:59:54+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/plan/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__0868aff8bd8f.sh",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:12a793aaf5af1ca409b32c8e59d71c85dd6870e0a613dbdb915909f079a2a599",
+      "size_bytes": 4732
+    },
+    {
+      "created_at": "2026-08-27T10:59:54+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/plan/native_producer_energy_plan.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:fbf3522a12c0892725e170d7f942031522beb116d5aaf43c388972238a6fc155",
+      "size_bytes": 47128
+    },
+    {
+      "created_at": "2026-08-27T10:59:54+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/plan/native_producer_energy_plan.md",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:08b3db4d525868c48587841bffd24e92216f2edeb963c881ea5f1d2b41b6b141",
+      "size_bytes": 6287
+    },
+    {
+      "created_at": "2026-08-27T10:59:54+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/stages/native_energy/stage_result.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:56a715af9595cd46626ed8cafa883151650ced9b31c2c9001168fae1ad7a36fb",
+      "size_bytes": 1377
+    },
+    {
+      "created_at": "2026-08-27T10:59:55+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_evidence_status.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:fe5641da44e43597beadf70a52f773916f244e43b5c5ba288cc84f56cf49670a",
+      "size_bytes": 4685
+    },
+    {
+      "created_at": "2026-08-27T10:59:55+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_stage_concise_summary.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:f2b33aab87d6919e0067dc90a60157221a03629736961fc961d0e18370397d0f",
+      "size_bytes": 13477
+    },
+    {
+      "created_at": "2026-08-27T10:59:55+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_stage_concise_summary.csv",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:c89100436476b06c2b89fc5c3eaafae7eba15dab93d968c5cabf6e85d955b63f",
+      "size_bytes": 7974
+    },
+    {
+      "created_at": "2026-08-27T10:59:55+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "stages/run_native_producers/stage_result.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:e91693ac9a51d3240ceb3cb350122b2039bc350178a146dbfff4b245ccfd4875",
+      "size_bytes": 21276
+    },
+    {
+      "created_at": "2026-08-27T11:00:19+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/scientific_report.md",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:dff4025a1c4ca24856312a7629a09d163e4533be1458654c19ecb29425472372",
+      "size_bytes": 21690
+    },
+    {
+      "created_at": "2026-08-27T11:00:16+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/workflow_readme.md",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:4389f95fa1d21f8f799037c705855dd55c68b094d5ab74fbe2c84c2d27561e4f",
+      "size_bytes": 3378
+    },
+    {
+      "created_at": "2026-08-27T11:00:16+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/results_bundle_manifest.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:708c01d09e1e2f7292973ad37b48011c622b7d8fc3d537afed1157c74419c9c8",
+      "size_bytes": 24740
+    },
+    {
+      "created_at": "2026-08-27T11:00:16+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/scientific_report.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:246c0615f65475d04e3d0ea3e8ff6c0162d1a3748607491f5ef86adcf86dde7c",
+      "size_bytes": 314906
+    },
+    {
+      "created_at": "2026-08-27T11:00:16+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/row_eligibility.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:0271a0f5cab2f5710f4292f3e845cd035580767405d5655fb1e6e651543eb0f3",
+      "size_bytes": 17176
+    },
+    {
+      "created_at": "2026-08-27T11:00:16+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/endpoint_lifecycle_ledger.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:606c3f5012494bfb38682bcdffd3b53f0fa4b6065b460a2a2a3e5ad0451c729f",
+      "size_bytes": 1824
+    },
+    {
+      "created_at": "2026-08-27T11:00:16+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/endpoint_lifecycle_ledger.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:21d61534d81242dcb15df975155debc36523a6271aab8c61ee5d8ce9535613e4",
+      "size_bytes": 6842
+    },
+    {
+      "created_at": "2026-08-27T11:00:16+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/endpoint_lifecycle_summary.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:d64c3523248faef72a59116375d348c41e6974d73c2b41ada7606e3adfec1720",
+      "size_bytes": 2448
+    },
+    {
+      "created_at": "2026-08-27T11:00:16+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/central_quality_results.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:ee5a9f92aab1b261dd85e36f90969e736c314b3e7e6caf9d99297043a7224123",
+      "size_bytes": 25186
+    },
+    {
+      "created_at": "2026-08-27T11:00:16+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/central_quality_results.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:e8dd2f4957b55fd31bf4c21fbe53844a26b21e88431c3e50c3d031eaa974cbf2",
+      "size_bytes": 13458
+    },
+    {
+      "created_at": "2026-08-27T11:00:16+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/task_quality.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:ee5a9f92aab1b261dd85e36f90969e736c314b3e7e6caf9d99297043a7224123",
+      "size_bytes": 25186
+    },
+    {
+      "created_at": "2026-08-27T11:00:17+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/task_quality.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:d628facd5de645a5e47e2b30337107a0b2a9cacafa09d1b97753e58b986462d7",
+      "size_bytes": 6139
+    },
+    {
+      "created_at": "2026-08-27T11:00:17+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/claim_eligible_performance.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:4d5c3e6795fd25be39242dbd2bc5fb21691c9591e700eb73bcb5f7068c7fa9a7",
+      "size_bytes": 287
+    },
+    {
+      "created_at": "2026-08-27T11:00:17+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/claim_eligible_energy.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:3aaa0d344d2ea1af4bbcb8664747ac9cd491aed0715d4437dbb6efd18b86e9c0",
+      "size_bytes": 379
+    },
+    {
+      "created_at": "2026-08-27T11:00:17+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/claim_exclusion_details.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:e1e647fb40f6e7032521bb921bf7dd1d936f90713899aaab5524a5bcd465ef2d",
+      "size_bytes": 1234
+    },
+    {
+      "created_at": "2026-08-27T11:00:17+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/claim_exclusion_grouped_counts.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:846a35a61517c21ef6d005421b4407f250f40492a001c518f7871118c8dd134d",
+      "size_bytes": 646
+    },
+    {
+      "created_at": "2026-08-27T11:00:17+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/claim_exclusion_dimension_counts.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:ffbc4d501dc2c36c6dd90d3f92018d63b443b99b575be5511d04c75ffcea4f3c",
+      "size_bytes": 586
+    },
+    {
+      "created_at": "2026-08-27T11:00:17+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/claim_exclusion_summary.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:e0a5b086297aa7808efd0ed54b7bb480d7ae802c6a8a0b077077aab9a4452685",
+      "size_bytes": 7697
+    },
+    {
+      "created_at": "2026-08-27T11:00:17+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/claim_exclusion_summary.md",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:eb47afa26255023896e1a87d0701299ae058a57386d7fc14c04dfa0bceb257bf",
+      "size_bytes": 3607
+    },
+    {
+      "created_at": "2026-08-27T11:00:17+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/performance_results.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "size_bytes": 2
+    },
+    {
+      "created_at": "2026-08-27T11:00:17+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/performance_results.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "size_bytes": 3
+    },
+    {
+      "created_at": "2026-08-27T11:00:17+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/performance_observations.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:406c3c146683b07e4f0c63de4d93edb81c62156886ef6d430ceff241cc58e503",
+      "size_bytes": 6445
+    },
+    {
+      "created_at": "2026-08-27T11:00:17+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/performance_observations.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:fceafdb05916431b88b79387d84433515815a8a162a62b08cd9c20afb487c775",
+      "size_bytes": 17464
+    },
+    {
+      "created_at": "2026-08-27T11:00:17+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/performance_cohorts.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:8ff43672835e2cf941dba0adb02fe104bd154ad0c271bf0b2d5c582aa9489617",
+      "size_bytes": 7113
+    },
+    {
+      "created_at": "2026-08-27T11:00:17+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/performance_cohorts.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:c8f561d8373abb2cf9944f3dc1327eb73b705e83ee7abad741c3376c1db9d6f1",
+      "size_bytes": 19262
+    },
+    {
+      "created_at": "2026-08-27T11:00:17+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/performance_cohort_summary.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:089722502f58dcd5fbbf8cde2709d3d28b43e071ad0302f0e4dd6af433a538a7",
+      "size_bytes": 472
+    },
+    {
+      "created_at": "2026-08-27T11:00:17+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/energy_results.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "size_bytes": 2
+    },
+    {
+      "created_at": "2026-08-27T11:00:18+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/screening_performance_observations.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:9987effe659787994fa99920aeafcf17493d1fd004c025f0aff552d955a23651",
+      "size_bytes": 6601
+    },
+    {
+      "created_at": "2026-08-27T11:00:18+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/screening_performance_observations.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:d8650871ed4f84c85f531704ff6ccb78b053b709b9d31ece09cba1af0e1d1ea2",
+      "size_bytes": 17788
+    },
+    {
+      "created_at": "2026-08-27T11:00:18+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_comparison_eligible_observations.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:15f56049b7a99fc77475d978e7c43789867bc2b7d674cfe68791b82c23275342",
+      "size_bytes": 7407
+    },
+    {
+      "created_at": "2026-08-27T11:00:18+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_comparison_eligible_observations.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:b31c4d0eee36c6eb601c0060ef6fc84d08da88e93b776747ce2ac8a572954747",
+      "size_bytes": 9004
+    },
+    {
+      "created_at": "2026-08-27T11:00:18+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/screening_energy_observations.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:09bf9e5c67f998a204dd81bbe4e77d98577c8abb9afec1f5feddd50765822458",
+      "size_bytes": 10716
+    },
+    {
+      "created_at": "2026-08-27T11:00:18+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/screening_energy_observations.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:444e7ff2e47a16af63bdf34174b418cabbaa7b06eb5d2d3673c50e643d2448fe",
+      "size_bytes": 17271
+    },
+    {
+      "created_at": "2026-08-27T11:00:18+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/ranking_method_comparison.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:fdc0cf5fa5f51fcb34ec951c13ffe1acd8c2e5e806d85a12edfb8dbfe8da1fb3",
+      "size_bytes": 6433
+    },
+    {
+      "created_at": "2026-08-27T11:00:18+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/ranking_method_macro.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:c33f599a16e7a0491e05fa4122c8e866133e2a58a103f47b21c8dc9e811cba21",
+      "size_bytes": 1582
+    },
+    {
+      "created_at": "2026-08-27T11:00:18+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/ranking_method_cohort_sensitivity.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:987b336b84361ff44f0e8374cb7785e663971ad658fd69fb56f6a64a37417946",
+      "size_bytes": 5526
+    },
+    {
+      "created_at": "2026-08-27T11:00:18+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/ranking_method_cohort_sensitivity.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:760429852674e8673118d3f39d6c21958f5cd16f02fb78ed5c8d78c660b92eb8",
+      "size_bytes": 17693
+    },
+    {
+      "created_at": "2026-08-27T11:00:18+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/ranking_method_cohort_sensitivity.md",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:3acfd95eac6bbf666eff2d4d08fec79fe6970aeb676ef5001f01a31673106d85",
+      "size_bytes": 2030
+    },
+    {
+      "created_at": "2026-08-27T11:00:18+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_ranking_audit.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "size_bytes": 2
+    },
+    {
+      "created_at": "2026-08-27T11:00:18+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_ranking_audit.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:58fd5a529ce6a92a9f040a23af369799ec40396243c2a5f2c9ee9ed0732b5d8a",
+      "size_bytes": 1224
+    },
+    {
+      "created_at": "2026-08-27T11:00:18+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_ranking_audit.md",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:75d2eb583740538bcf9ba1f42ca8d1ffcfccb06fd4de68a55842709a52238e21",
+      "size_bytes": 390
+    },
+    {
+      "created_at": "2026-08-27T11:00:18+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/cross_runner_candidate_pairs.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "size_bytes": 2
+    },
+    {
+      "created_at": "2026-08-27T11:00:18+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/cross_runner_candidate_pairs.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "size_bytes": 3
+    },
+    {
+      "created_at": "2026-08-27T11:00:18+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/cross_runner_ranking_validation.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "size_bytes": 2
+    },
+    {
+      "created_at": "2026-08-27T11:00:19+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/cross_runner_ranking_validation.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "size_bytes": 3
+    },
+    {
+      "created_at": "2026-08-27T11:00:19+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/cross_runner_ranking_macro.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:29aa218df29d731eeceb479b4c6663feab56ab8973ce1f156aeab2c077d95b4f",
+      "size_bytes": 1048
+    },
+    {
+      "created_at": "2026-08-27T11:00:19+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/cross_runner_ranking.md",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:c30ead2fd7daf662c1dbd6f46d3b5fdab7ba55b8baabaf436562e67bd9a3a066",
+      "size_bytes": 1079
+    },
+    {
+      "created_at": "2026-08-27T11:00:19+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_observations.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:47cfb80e6135b5083d31a500cd88b60d9c2f5b81fb129181f81c0032e44ad792",
+      "size_bytes": 49153
+    },
+    {
+      "created_at": "2026-08-27T11:00:19+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_observations.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:64381e644b1811be05144d15fd76fa90739ccc8172197e2c792354f0ca2b7e7a",
+      "size_bytes": 34008
+    },
+    {
+      "created_at": "2026-08-27T11:00:19+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_pair_comparison.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "size_bytes": 2
+    },
+    {
+      "created_at": "2026-08-27T11:00:19+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_pair_comparison.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "size_bytes": 3
+    },
+    {
+      "created_at": "2026-08-27T11:00:19+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_performance_matrix.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:529e31fb4fb053e6566d4e3be315e07dfb522c3a791e61b4c971896af1b6d120",
+      "size_bytes": 48573
+    },
+    {
+      "created_at": "2026-08-27T11:00:19+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_performance_observations.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:b486ad3d9c5fe17c210ec9117ed72eefb79c1085c845a876aa0350acff8a99ce",
+      "size_bytes": 11374
+    },
+    {
+      "created_at": "2026-08-27T11:00:19+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_performance_observations.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:61b743872f49fc940037f3a5bbd5bb76d325e892818ec264d5c5aa8ceed38137",
+      "size_bytes": 18322
+    },
+    {
+      "created_at": "2026-08-27T11:00:19+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_ab_aggregates.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:5b73a476b5d3929cf29681468ff60cbbb1583b6066b7ef210ff11bcd78ad2620",
+      "size_bytes": 26982
+    },
+    {
+      "created_at": "2026-08-27T11:00:19+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_ab_aggregates.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:43e9a27707dd118b596efc1b064799451c71c4b26e5c6e1896e29016f574dd0c",
+      "size_bytes": 37746
+    },
+    {
+      "created_at": "2026-08-27T11:00:19+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_pair_comparison.md",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:acf9eda02fef2c1f320e4514c0e84a28080a10f77523eb307c85bf758d6b0eae",
+      "size_bytes": 67
+    },
+    {
+      "created_at": "2026-08-27T11:00:19+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_performance_matrix.md",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:b3d4ba397c14e032d596410fa40e0e968a37f6dfc3ba9ba6d78ac4e190243da1",
+      "size_bytes": 4194
+    },
+    {
+      "created_at": "2026-08-27T11:00:19+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_ab_aggregates.md",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:de2756f6ba997bef0e1fffe1f542d88db0aefaf5afc7bdc059550ea448c74f46",
+      "size_bytes": 470
+    },
+    {
+      "created_at": "2026-08-27T11:00:19+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/campaign_readiness.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:2d6f519a56d64665daeac3ce8abd3c7114a4c85d62c95779cf3462e4e3e7f002",
+      "size_bytes": 13283
+    },
+    {
+      "created_at": "2026-08-27T11:00:20+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/task_quality_gates.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:08d923ed2bfd92223b82eef82d2fc95e22711ed6103b35f47ad9e664b7e1bd7c",
+      "size_bytes": 959
+    },
+    {
+      "created_at": "2026-08-27T11:00:20+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/ranking_method_comparison.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:d1386a3d9ef72558e154996efdcf32301a029ec06fb94454d1c7841b7b0ba914",
+      "size_bytes": 879
+    },
+    {
+      "created_at": "2026-08-27T11:00:20+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/ranking_method_cohort_sensitivity.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:64296d5f06d54d14065f559a5f832f616a7b3d3fbcbbcc8cd1471beee1ed8c29",
+      "size_bytes": 1914
+    },
+    {
+      "created_at": "2026-08-27T11:00:20+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/cross_runner_ranking_validation.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:bbe35fa26e2cc4ed7826f4211b92b640573fc91369aa69c4d334f741226f44c3",
+      "size_bytes": 497
+    },
+    {
+      "created_at": "2026-08-27T11:00:20+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/campaign_readiness.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:7e3dc7795d62d2f98d4c55ae71f2c5f3ded9a98609276ed8e28b4f6596dea5a8",
+      "size_bytes": 3769
+    },
+    {
+      "created_at": "2026-08-27T11:00:20+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/performance_results.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:262e251b6003b95e50afeb04b8bc0c1056ccae5b1e40f9e56d47feb762fdf67f",
+      "size_bytes": 378
+    },
+    {
+      "created_at": "2026-08-27T11:00:20+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/performance_observations.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:1aab155415341e98fb03cf259cb519c2ea52fd83368679c155952c4743ac4c6d",
+      "size_bytes": 673
+    },
+    {
+      "created_at": "2026-08-27T11:00:20+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/screening_performance_observations.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:7be69325a145030f4652351182148b12fb74cd80349ee307093e470f2decb0c7",
+      "size_bytes": 800
+    },
+    {
+      "created_at": "2026-08-27T11:00:20+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/native_performance_observations.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:d57f6d28612567ab864cbc1fd0aeed1d2b61c377fd1210bd1676191417004e02",
+      "size_bytes": 4369
+    },
+    {
+      "created_at": "2026-08-27T11:00:20+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/screening_energy_observations.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:67eceab13df2a03061d7e12c7698ea443b0b7aa8df1a34f60eb3dba7a032348e",
+      "size_bytes": 699
+    },
+    {
+      "created_at": "2026-08-27T11:00:20+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/energy_results.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:e46a9e35d7a876f28b60005b9ee79ac435926829d23ac4ce35caba95971f6ea3",
+      "size_bytes": 336
+    },
+    {
+      "created_at": "2026-08-27T11:00:20+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/native_energy_observations.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:98f0c49b971ac320f548e4f53c4e939411ff146734c07758622bf5043dfc68e9",
+      "size_bytes": 727
+    },
+    {
+      "created_at": "2026-08-27T11:00:20+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/native_energy_pair_comparison.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:792b57a1a844254002c7b92b5f8ba71c8634e3fa576996d4d35763d6e77de4ef",
+      "size_bytes": 330
+    },
+    {
+      "created_at": "2026-08-27T11:00:20+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/native_energy_ab_aggregates.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:730c4c9601da72a41a375637d7398474130bacfd7d03da650a91eaa0c4c8f94b",
+      "size_bytes": 707
+    },
+    {
+      "created_at": "2026-08-27T11:00:20+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/figures/task_quality_status_counts.pdf",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:b315025f91906b2e33c8549c444b0ebc1a6bde77dbfc0f0afc7b096f41515aa5",
+      "size_bytes": 12291
+    },
+    {
+      "created_at": "2026-08-27T11:00:20+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/figures/task_quality_status_counts.png",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:6cf7586eba23bac37b785c2dc690384019c53a0387c101290613a7c498f9a622",
+      "size_bytes": 66584
+    },
+    {
+      "created_at": "2026-08-27T11:00:21+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/figures/task_quality_noninferiority.pdf",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:b4bfbb3b6b3dc15c1ebb565f477a393c2b2666d2e5b50f85471341dff29645a0",
+      "size_bytes": 12691
+    },
+    {
+      "created_at": "2026-08-27T11:00:21+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/figures/task_quality_noninferiority.png",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:f7a429973489fc16f9a3fcc8a95753ad81580530b83e8fa8846441dc22a48688",
+      "size_bytes": 53579
+    },
+    {
+      "created_at": "2026-08-27T11:00:21+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/figures/screening_throughput_observations.pdf",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:d7a9ec53985668e3fae16642f7ebdd37e37b8c90a751fbf5d76fc7f63dedeac9",
+      "size_bytes": 14751
+    },
+    {
+      "created_at": "2026-08-27T11:00:21+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/figures/screening_throughput_observations.png",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:b085dc279fa1366435ceec665dc3e33eed8919c2a9f29ba8c5dbef8d6cd0b68d",
+      "size_bytes": 68504
+    },
+    {
+      "created_at": "2026-08-27T11:00:21+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/figures/screening_energy_observations.pdf",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:0cdca6969b44880de44713377c95d72fb076486005441b0277cb493c71afefb7",
+      "size_bytes": 14528
+    },
+    {
+      "created_at": "2026-08-27T11:00:21+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/figures/screening_energy_observations.png",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:5d56389eb58aa4282c7d20d6e13c6c2bde417546f375bd3a6a8b2164a27a6120",
+      "size_bytes": 64563
+    },
+    {
+      "created_at": "2026-08-27T11:00:21+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/result_dashboard.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:529abf825df3c3038b047374eda77d32f758ef56979585f4201c3e58044889ee",
+      "size_bytes": 51594
+    },
+    {
+      "created_at": "2026-08-27T11:00:21+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/result_dashboard.md",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:dff4025a1c4ca24856312a7629a09d163e4533be1458654c19ecb29425472372",
+      "size_bytes": 21690
+    },
+    {
+      "created_at": "2026-08-27T11:00:21+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/summary.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:0271a0f5cab2f5710f4292f3e845cd035580767405d5655fb1e6e651543eb0f3",
+      "size_bytes": 17176
+    },
+    {
+      "created_at": "2026-08-27T11:00:21+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/model_summary.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:eab37047dde68304855686ee9b3a77ceee00a0d651c1d8832c041565a43fca25",
+      "size_bytes": 253
+    },
+    {
+      "created_at": "2026-08-27T11:00:21+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/task_quality_reference_comparison.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:ee0506d041c10988fbe87683b6f66bd12ef0b7315771f40ad99b16a579b78a13",
+      "size_bytes": 1396
+    },
+    {
+      "created_at": "2026-08-27T11:00:21+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/task_quality_reference_comparison.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:487d62bd1afcd4b330ec5321ae2d91d8d5f316a6dc7b34b79358fdce6746b7d7",
+      "size_bytes": 3168
+    },
+    {
+      "created_at": "2026-08-27T11:00:21+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/task_quality_reference_comparison.md",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:f9aa95391f2ee8be835309b044818c42230b821bca7b19b1a444c60bb4227726",
+      "size_bytes": 937
+    },
+    {
+      "created_at": "2026-08-27T11:00:21+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/task_quality_loss_decomposition.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:fcc3241e254ec678e9c4bcb4515e1805f3aa0229ed2e4df4f63143f8bfa56a69",
+      "size_bytes": 541
+    },
+    {
+      "created_at": "2026-08-27T11:00:21+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/task_quality_loss_decomposition.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:b83d0a53463420acdb172ea88c9bf85cb4b9b9cab888f5bec1105e0ed3408771",
+      "size_bytes": 733
+    },
+    {
+      "created_at": "2026-08-27T11:00:21+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/task_quality_loss_decomposition.md",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:40fe7ddd291fcce42b9bc3bc3bafc69e89a691af0dc59bb68fc07aa9759fb865",
+      "size_bytes": 350
+    },
+    {
+      "created_at": "2026-08-27T11:00:21+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/task_quality_reference_comparison.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:b4793c171f6f99e71aec0cf86328f19dc6fa28f5651edeedc84f6a8170a241f8",
+      "size_bytes": 516
+    },
+    {
+      "created_at": "2026-08-27T11:00:22+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/task_quality_loss_decomposition.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:abdd114f1262e43e27abb581091a5909522ce156a8dab497a39487f1189ba868",
+      "size_bytes": 387
+    },
+    {
+      "created_at": "2026-08-27T11:00:22+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/quality_evidence_v61a.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:3b3c8cb68119e2e7aa441da2482fa90b1eb28666735fa3c772b962e4aaf27fdc",
+      "size_bytes": 224
+    },
+    {
+      "created_at": "2026-08-27T11:00:22+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/quality_evidence_v60z.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:3b3c8cb68119e2e7aa441da2482fa90b1eb28666735fa3c772b962e4aaf27fdc",
+      "size_bytes": 224
+    },
+    {
+      "created_at": "2026-08-27T11:00:22+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/report_manifest.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:7202a5633875b1cdb90348fcc009642d90abafe3795ea184b8c43f7ebd185379",
+      "size_bytes": 17479
+    },
+    {
+      "created_at": "2026-08-27T11:00:22+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "stages/generate_report/stage_result.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:631467ccfffee9236bc653ec77d79780ba60cc0bd2cec9bbb87bd96b3ad603fe",
+      "size_bytes": 7001
+    },
+    {
+      "created_at": "2026-08-27T11:00:23+02:00",
+      "kind": "job_artifact",
+      "model_id": null,
+      "path": "jobs/job_timeline.md",
+      "producer_stage": "workflow_job_queue",
+      "sha256": "sha256:48eefc5584c82b027c70c3f6cb80d199c0f09cd6da82c1eab71db6b616fcc8e3",
+      "size_bytes": 4661
+    },
+    {
+      "created_at": "2026-08-27T11:00:23+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/run_status_summary.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:0ebdb62b44547fad0e1cb9ee57c85876438a312fc3816f611e0924fc01345366",
+      "size_bytes": 11971
+    },
+    {
+      "created_at": "2026-08-27T11:00:23+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/run_status_summary.md",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:e71e40c9fae0d268cdd321732dc312b86be420a65ef93a768aae73e0be5772f5",
+      "size_bytes": 1117
+    },
+    {
+      "created_at": "2026-08-27T11:00:43+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/scientific_report.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:45ae1aeb84ab16d000279b36e456a156f0f2407fc01808d5e1cc5fafb59d5628",
+      "size_bytes": 314899
+    },
+    {
+      "created_at": "2026-08-27T11:00:43+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/row_eligibility.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:0271a0f5cab2f5710f4292f3e845cd035580767405d5655fb1e6e651543eb0f3",
+      "size_bytes": 17176
+    },
+    {
+      "created_at": "2026-08-27T11:00:43+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/endpoint_lifecycle_ledger.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:606c3f5012494bfb38682bcdffd3b53f0fa4b6065b460a2a2a3e5ad0451c729f",
+      "size_bytes": 1824
+    },
+    {
+      "created_at": "2026-08-27T11:00:43+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/endpoint_lifecycle_ledger.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:21d61534d81242dcb15df975155debc36523a6271aab8c61ee5d8ce9535613e4",
+      "size_bytes": 6842
+    },
+    {
+      "created_at": "2026-08-27T11:00:43+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/endpoint_lifecycle_summary.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:d64c3523248faef72a59116375d348c41e6974d73c2b41ada7606e3adfec1720",
+      "size_bytes": 2448
+    },
+    {
+      "created_at": "2026-08-27T11:00:43+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/central_quality_results.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:ee5a9f92aab1b261dd85e36f90969e736c314b3e7e6caf9d99297043a7224123",
+      "size_bytes": 25186
+    },
+    {
+      "created_at": "2026-08-27T11:00:43+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/central_quality_results.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:e8dd2f4957b55fd31bf4c21fbe53844a26b21e88431c3e50c3d031eaa974cbf2",
+      "size_bytes": 13458
+    },
+    {
+      "created_at": "2026-08-27T11:00:44+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/task_quality.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:ee5a9f92aab1b261dd85e36f90969e736c314b3e7e6caf9d99297043a7224123",
+      "size_bytes": 25186
+    },
+    {
+      "created_at": "2026-08-27T11:00:44+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/task_quality.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:d628facd5de645a5e47e2b30337107a0b2a9cacafa09d1b97753e58b986462d7",
+      "size_bytes": 6139
+    },
+    {
+      "created_at": "2026-08-27T11:00:44+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/claim_eligible_performance.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:4d5c3e6795fd25be39242dbd2bc5fb21691c9591e700eb73bcb5f7068c7fa9a7",
+      "size_bytes": 287
+    },
+    {
+      "created_at": "2026-08-27T11:00:44+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/claim_eligible_energy.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:3aaa0d344d2ea1af4bbcb8664747ac9cd491aed0715d4437dbb6efd18b86e9c0",
+      "size_bytes": 379
+    },
+    {
+      "created_at": "2026-08-27T11:00:44+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/claim_exclusion_details.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:e1e647fb40f6e7032521bb921bf7dd1d936f90713899aaab5524a5bcd465ef2d",
+      "size_bytes": 1234
+    },
+    {
+      "created_at": "2026-08-27T11:00:44+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/claim_exclusion_grouped_counts.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:846a35a61517c21ef6d005421b4407f250f40492a001c518f7871118c8dd134d",
+      "size_bytes": 646
+    },
+    {
+      "created_at": "2026-08-27T11:00:44+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/claim_exclusion_dimension_counts.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:ffbc4d501dc2c36c6dd90d3f92018d63b443b99b575be5511d04c75ffcea4f3c",
+      "size_bytes": 586
+    },
+    {
+      "created_at": "2026-08-27T11:00:44+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/claim_exclusion_summary.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:e0a5b086297aa7808efd0ed54b7bb480d7ae802c6a8a0b077077aab9a4452685",
+      "size_bytes": 7697
+    },
+    {
+      "created_at": "2026-08-27T11:00:44+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/claim_exclusion_summary.md",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:eb47afa26255023896e1a87d0701299ae058a57386d7fc14c04dfa0bceb257bf",
+      "size_bytes": 3607
+    },
+    {
+      "created_at": "2026-08-27T11:00:44+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/performance_results.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "size_bytes": 2
+    },
+    {
+      "created_at": "2026-08-27T11:00:44+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/performance_results.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "size_bytes": 3
+    },
+    {
+      "created_at": "2026-08-27T11:00:44+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/performance_observations.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:406c3c146683b07e4f0c63de4d93edb81c62156886ef6d430ceff241cc58e503",
+      "size_bytes": 6445
+    },
+    {
+      "created_at": "2026-08-27T11:00:44+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/performance_observations.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:fceafdb05916431b88b79387d84433515815a8a162a62b08cd9c20afb487c775",
+      "size_bytes": 17464
+    },
+    {
+      "created_at": "2026-08-27T11:00:44+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/performance_cohorts.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:8ff43672835e2cf941dba0adb02fe104bd154ad0c271bf0b2d5c582aa9489617",
+      "size_bytes": 7113
+    },
+    {
+      "created_at": "2026-08-27T11:00:44+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/performance_cohorts.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:c8f561d8373abb2cf9944f3dc1327eb73b705e83ee7abad741c3376c1db9d6f1",
+      "size_bytes": 19262
+    },
+    {
+      "created_at": "2026-08-27T11:00:44+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/performance_cohort_summary.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:089722502f58dcd5fbbf8cde2709d3d28b43e071ad0302f0e4dd6af433a538a7",
+      "size_bytes": 472
+    },
+    {
+      "created_at": "2026-08-27T11:00:45+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/energy_results.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "size_bytes": 2
+    },
+    {
+      "created_at": "2026-08-27T11:00:45+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/screening_performance_observations.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:9987effe659787994fa99920aeafcf17493d1fd004c025f0aff552d955a23651",
+      "size_bytes": 6601
+    },
+    {
+      "created_at": "2026-08-27T11:00:45+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/screening_performance_observations.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:d8650871ed4f84c85f531704ff6ccb78b053b709b9d31ece09cba1af0e1d1ea2",
+      "size_bytes": 17788
+    },
+    {
+      "created_at": "2026-08-27T11:00:45+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_comparison_eligible_observations.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:15f56049b7a99fc77475d978e7c43789867bc2b7d674cfe68791b82c23275342",
+      "size_bytes": 7407
+    },
+    {
+      "created_at": "2026-08-27T11:00:45+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_comparison_eligible_observations.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:b31c4d0eee36c6eb601c0060ef6fc84d08da88e93b776747ce2ac8a572954747",
+      "size_bytes": 9004
+    },
+    {
+      "created_at": "2026-08-27T11:00:45+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/screening_energy_observations.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:09bf9e5c67f998a204dd81bbe4e77d98577c8abb9afec1f5feddd50765822458",
+      "size_bytes": 10716
+    },
+    {
+      "created_at": "2026-08-27T11:00:45+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/screening_energy_observations.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:444e7ff2e47a16af63bdf34174b418cabbaa7b06eb5d2d3673c50e643d2448fe",
+      "size_bytes": 17271
+    },
+    {
+      "created_at": "2026-08-27T11:00:45+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/ranking_method_comparison.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:fdc0cf5fa5f51fcb34ec951c13ffe1acd8c2e5e806d85a12edfb8dbfe8da1fb3",
+      "size_bytes": 6433
+    },
+    {
+      "created_at": "2026-08-27T11:00:45+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/ranking_method_macro.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:c33f599a16e7a0491e05fa4122c8e866133e2a58a103f47b21c8dc9e811cba21",
+      "size_bytes": 1582
+    },
+    {
+      "created_at": "2026-08-27T11:00:45+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/ranking_method_cohort_sensitivity.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:987b336b84361ff44f0e8374cb7785e663971ad658fd69fb56f6a64a37417946",
+      "size_bytes": 5526
+    },
+    {
+      "created_at": "2026-08-27T11:00:45+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/ranking_method_cohort_sensitivity.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:760429852674e8673118d3f39d6c21958f5cd16f02fb78ed5c8d78c660b92eb8",
+      "size_bytes": 17693
+    },
+    {
+      "created_at": "2026-08-27T11:00:45+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/ranking_method_cohort_sensitivity.md",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:3acfd95eac6bbf666eff2d4d08fec79fe6970aeb676ef5001f01a31673106d85",
+      "size_bytes": 2030
+    },
+    {
+      "created_at": "2026-08-27T11:00:45+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_ranking_audit.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "size_bytes": 2
+    },
+    {
+      "created_at": "2026-08-27T11:00:45+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_ranking_audit.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:58fd5a529ce6a92a9f040a23af369799ec40396243c2a5f2c9ee9ed0732b5d8a",
+      "size_bytes": 1224
+    },
+    {
+      "created_at": "2026-08-27T11:00:45+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_ranking_audit.md",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:75d2eb583740538bcf9ba1f42ca8d1ffcfccb06fd4de68a55842709a52238e21",
+      "size_bytes": 390
+    },
+    {
+      "created_at": "2026-08-27T11:00:45+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/cross_runner_candidate_pairs.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "size_bytes": 2
+    },
+    {
+      "created_at": "2026-08-27T11:00:45+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/cross_runner_candidate_pairs.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "size_bytes": 3
+    },
+    {
+      "created_at": "2026-08-27T11:00:46+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/cross_runner_ranking_validation.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "size_bytes": 2
+    },
+    {
+      "created_at": "2026-08-27T11:00:46+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/cross_runner_ranking_validation.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "size_bytes": 3
+    },
+    {
+      "created_at": "2026-08-27T11:00:46+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/cross_runner_ranking_macro.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:29aa218df29d731eeceb479b4c6663feab56ab8973ce1f156aeab2c077d95b4f",
+      "size_bytes": 1048
+    },
+    {
+      "created_at": "2026-08-27T11:00:46+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/cross_runner_ranking.md",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:c30ead2fd7daf662c1dbd6f46d3b5fdab7ba55b8baabaf436562e67bd9a3a066",
+      "size_bytes": 1079
+    },
+    {
+      "created_at": "2026-08-27T11:00:46+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_observations.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:47cfb80e6135b5083d31a500cd88b60d9c2f5b81fb129181f81c0032e44ad792",
+      "size_bytes": 49153
+    },
+    {
+      "created_at": "2026-08-27T11:00:46+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_observations.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:64381e644b1811be05144d15fd76fa90739ccc8172197e2c792354f0ca2b7e7a",
+      "size_bytes": 34008
+    },
+    {
+      "created_at": "2026-08-27T11:00:46+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_pair_comparison.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "size_bytes": 2
+    },
+    {
+      "created_at": "2026-08-27T11:00:46+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_pair_comparison.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "size_bytes": 3
+    },
+    {
+      "created_at": "2026-08-27T11:00:46+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_performance_matrix.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:529e31fb4fb053e6566d4e3be315e07dfb522c3a791e61b4c971896af1b6d120",
+      "size_bytes": 48573
+    },
+    {
+      "created_at": "2026-08-27T11:00:46+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_performance_observations.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:b486ad3d9c5fe17c210ec9117ed72eefb79c1085c845a876aa0350acff8a99ce",
+      "size_bytes": 11374
+    },
+    {
+      "created_at": "2026-08-27T11:00:46+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_performance_observations.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:61b743872f49fc940037f3a5bbd5bb76d325e892818ec264d5c5aa8ceed38137",
+      "size_bytes": 18322
+    },
+    {
+      "created_at": "2026-08-27T11:00:46+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_ab_aggregates.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:5b73a476b5d3929cf29681468ff60cbbb1583b6066b7ef210ff11bcd78ad2620",
+      "size_bytes": 26982
+    },
+    {
+      "created_at": "2026-08-27T11:00:46+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_ab_aggregates.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:43e9a27707dd118b596efc1b064799451c71c4b26e5c6e1896e29016f574dd0c",
+      "size_bytes": 37746
+    },
+    {
+      "created_at": "2026-08-27T11:00:46+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_pair_comparison.md",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:acf9eda02fef2c1f320e4514c0e84a28080a10f77523eb307c85bf758d6b0eae",
+      "size_bytes": 67
+    },
+    {
+      "created_at": "2026-08-27T11:00:46+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_performance_matrix.md",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:b3d4ba397c14e032d596410fa40e0e968a37f6dfc3ba9ba6d78ac4e190243da1",
+      "size_bytes": 4194
+    },
+    {
+      "created_at": "2026-08-27T11:00:46+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_ab_aggregates.md",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:de2756f6ba997bef0e1fffe1f542d88db0aefaf5afc7bdc059550ea448c74f46",
+      "size_bytes": 470
+    },
+    {
+      "created_at": "2026-08-27T11:00:47+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/campaign_readiness.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:2d6f519a56d64665daeac3ce8abd3c7114a4c85d62c95779cf3462e4e3e7f002",
+      "size_bytes": 13283
+    },
+    {
+      "created_at": "2026-08-27T11:00:47+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/scientific_report.md",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:2963c8470d6ffea84bddf258dfb0c531d6659f750ad7857e10486c625a8fe63a",
+      "size_bytes": 21689
+    },
+    {
+      "created_at": "2026-08-27T11:00:47+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/task_quality_gates.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:08d923ed2bfd92223b82eef82d2fc95e22711ed6103b35f47ad9e664b7e1bd7c",
+      "size_bytes": 959
+    },
+    {
+      "created_at": "2026-08-27T11:00:47+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/ranking_method_comparison.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:d1386a3d9ef72558e154996efdcf32301a029ec06fb94454d1c7841b7b0ba914",
+      "size_bytes": 879
+    },
+    {
+      "created_at": "2026-08-27T11:00:47+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/ranking_method_cohort_sensitivity.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:64296d5f06d54d14065f559a5f832f616a7b3d3fbcbbcc8cd1471beee1ed8c29",
+      "size_bytes": 1914
+    },
+    {
+      "created_at": "2026-08-27T11:00:47+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/cross_runner_ranking_validation.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:bbe35fa26e2cc4ed7826f4211b92b640573fc91369aa69c4d334f741226f44c3",
+      "size_bytes": 497
+    },
+    {
+      "created_at": "2026-08-27T11:00:47+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/campaign_readiness.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:7e3dc7795d62d2f98d4c55ae71f2c5f3ded9a98609276ed8e28b4f6596dea5a8",
+      "size_bytes": 3769
+    },
+    {
+      "created_at": "2026-08-27T11:00:47+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/performance_results.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:262e251b6003b95e50afeb04b8bc0c1056ccae5b1e40f9e56d47feb762fdf67f",
+      "size_bytes": 378
+    },
+    {
+      "created_at": "2026-08-27T11:00:47+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/performance_observations.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:1aab155415341e98fb03cf259cb519c2ea52fd83368679c155952c4743ac4c6d",
+      "size_bytes": 673
+    },
+    {
+      "created_at": "2026-08-27T11:00:47+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/screening_performance_observations.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:7be69325a145030f4652351182148b12fb74cd80349ee307093e470f2decb0c7",
+      "size_bytes": 800
+    },
+    {
+      "created_at": "2026-08-27T11:00:47+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/native_performance_observations.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:d57f6d28612567ab864cbc1fd0aeed1d2b61c377fd1210bd1676191417004e02",
+      "size_bytes": 4369
+    },
+    {
+      "created_at": "2026-08-27T11:00:47+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/screening_energy_observations.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:67eceab13df2a03061d7e12c7698ea443b0b7aa8df1a34f60eb3dba7a032348e",
+      "size_bytes": 699
+    },
+    {
+      "created_at": "2026-08-27T11:00:47+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/energy_results.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:e46a9e35d7a876f28b60005b9ee79ac435926829d23ac4ce35caba95971f6ea3",
+      "size_bytes": 336
+    },
+    {
+      "created_at": "2026-08-27T11:00:47+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/native_energy_observations.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:98f0c49b971ac320f548e4f53c4e939411ff146734c07758622bf5043dfc68e9",
+      "size_bytes": 727
+    },
+    {
+      "created_at": "2026-08-27T11:00:47+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/native_energy_pair_comparison.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:792b57a1a844254002c7b92b5f8ba71c8634e3fa576996d4d35763d6e77de4ef",
+      "size_bytes": 330
+    },
+    {
+      "created_at": "2026-08-27T11:00:47+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/native_energy_ab_aggregates.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:730c4c9601da72a41a375637d7398474130bacfd7d03da650a91eaa0c4c8f94b",
+      "size_bytes": 707
+    },
+    {
+      "created_at": "2026-08-27T11:00:48+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/figures/task_quality_status_counts.pdf",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:e966249c6b7c936d2d30270864b9bbac61268abfdcb3845a88f3520400e15746",
+      "size_bytes": 12291
+    },
+    {
+      "created_at": "2026-08-27T11:00:48+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/figures/task_quality_status_counts.png",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:6cf7586eba23bac37b785c2dc690384019c53a0387c101290613a7c498f9a622",
+      "size_bytes": 66584
+    },
+    {
+      "created_at": "2026-08-27T11:00:48+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/figures/task_quality_noninferiority.pdf",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:46753fd9b6bc8f4ef3c724adfd81026870b8a92c4544320264aed1ffe6088089",
+      "size_bytes": 12691
+    },
+    {
+      "created_at": "2026-08-27T11:00:48+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/figures/task_quality_noninferiority.png",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:f7a429973489fc16f9a3fcc8a95753ad81580530b83e8fa8846441dc22a48688",
+      "size_bytes": 53579
+    },
+    {
+      "created_at": "2026-08-27T11:00:48+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/figures/screening_throughput_observations.pdf",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:408b1c64ceb2cc48ff7b5104c0f9ccd4fe2928942744ebf94d717116fdea6ca9",
+      "size_bytes": 14751
+    },
+    {
+      "created_at": "2026-08-27T11:00:48+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/figures/screening_throughput_observations.png",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:b085dc279fa1366435ceec665dc3e33eed8919c2a9f29ba8c5dbef8d6cd0b68d",
+      "size_bytes": 68504
+    },
+    {
+      "created_at": "2026-08-27T11:00:48+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/figures/screening_energy_observations.pdf",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:14d01727b5a4b518b0b6fdde952106a3b366a0da22ab8b47135a8ede49627ef9",
+      "size_bytes": 14528
+    },
+    {
+      "created_at": "2026-08-27T11:00:48+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/figures/screening_energy_observations.png",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:5d56389eb58aa4282c7d20d6e13c6c2bde417546f375bd3a6a8b2164a27a6120",
+      "size_bytes": 64563
+    },
+    {
+      "created_at": "2026-08-27T11:00:48+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/result_dashboard.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:fa2065df64726bae2a7ae9e7dec43201e8fa6fb1ec66335a9aff5fa4b18ffed3",
+      "size_bytes": 51588
+    },
+    {
+      "created_at": "2026-08-27T11:00:48+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/result_dashboard.md",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:2963c8470d6ffea84bddf258dfb0c531d6659f750ad7857e10486c625a8fe63a",
+      "size_bytes": 21689
+    },
+    {
+      "created_at": "2026-08-27T11:00:48+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/summary.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:0271a0f5cab2f5710f4292f3e845cd035580767405d5655fb1e6e651543eb0f3",
+      "size_bytes": 17176
+    },
+    {
+      "created_at": "2026-08-27T11:00:48+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/model_summary.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:eab37047dde68304855686ee9b3a77ceee00a0d651c1d8832c041565a43fca25",
+      "size_bytes": 253
+    },
+    {
+      "created_at": "2026-08-27T11:00:48+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/task_quality_reference_comparison.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:ee0506d041c10988fbe87683b6f66bd12ef0b7315771f40ad99b16a579b78a13",
+      "size_bytes": 1396
+    },
+    {
+      "created_at": "2026-08-27T11:00:48+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/task_quality_reference_comparison.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:487d62bd1afcd4b330ec5321ae2d91d8d5f316a6dc7b34b79358fdce6746b7d7",
+      "size_bytes": 3168
+    },
+    {
+      "created_at": "2026-08-27T11:00:48+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/task_quality_reference_comparison.md",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:f9aa95391f2ee8be835309b044818c42230b821bca7b19b1a444c60bb4227726",
+      "size_bytes": 937
+    },
+    {
+      "created_at": "2026-08-27T11:00:48+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/task_quality_loss_decomposition.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:fcc3241e254ec678e9c4bcb4515e1805f3aa0229ed2e4df4f63143f8bfa56a69",
+      "size_bytes": 541
+    },
+    {
+      "created_at": "2026-08-27T11:00:48+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/task_quality_loss_decomposition.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:b83d0a53463420acdb172ea88c9bf85cb4b9b9cab888f5bec1105e0ed3408771",
+      "size_bytes": 733
+    },
+    {
+      "created_at": "2026-08-27T11:00:49+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/task_quality_loss_decomposition.md",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:40fe7ddd291fcce42b9bc3bc3bafc69e89a691af0dc59bb68fc07aa9759fb865",
+      "size_bytes": 350
+    },
+    {
+      "created_at": "2026-08-27T11:00:49+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/task_quality_reference_comparison.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:b4793c171f6f99e71aec0cf86328f19dc6fa28f5651edeedc84f6a8170a241f8",
+      "size_bytes": 516
+    },
+    {
+      "created_at": "2026-08-27T11:00:49+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/task_quality_loss_decomposition.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:abdd114f1262e43e27abb581091a5909522ce156a8dab497a39487f1189ba868",
+      "size_bytes": 387
+    },
+    {
+      "created_at": "2026-08-27T11:00:49+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/quality_evidence_v61a.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:3b3c8cb68119e2e7aa441da2482fa90b1eb28666735fa3c772b962e4aaf27fdc",
+      "size_bytes": 224
+    },
+    {
+      "created_at": "2026-08-27T11:00:49+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/quality_evidence_v60z.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:3b3c8cb68119e2e7aa441da2482fa90b1eb28666735fa3c772b962e4aaf27fdc",
+      "size_bytes": 224
+    },
+    {
+      "created_at": "2026-08-27T11:00:49+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/report_manifest.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:3f466db26e72bcdb0d4bb586bb9e06fe3f575d53f2a458638c41bbc64999fda0",
+      "size_bytes": 17479
+    },
+    {
+      "created_at": "2026-08-27T11:00:49+02:00",
+      "kind": "run_log",
+      "model_id": null,
+      "path": "evaluation_workflow.log",
+      "producer_stage": "workflow",
+      "sha256": "sha256:f6b1c5c1bece8f3819e344764f374febf8050c015fee1634eceac0864c97767c",
+      "size_bytes": 585772
+    }
+  ],
+  "created_at": "2026-08-27T10:52:20+02:00",
+  "profile_id": "paper_comparison_resnet50_hailo8_full_native_energy_b500",
+  "run_id": "paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134",
+  "schema": "onnx-splitpoint/artifact-index",
+  "schema_version": 1
+}

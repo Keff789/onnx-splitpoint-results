@@ -1,0 +1,64 @@
+jetson_results: null
+shelly_results: null
+oscilloscope_results: null
+firmware_results:
+  energy: 268.5445272886915
+  duration: 30.0475
+  start_stop_idx:
+  - 10048
+  - 70143
+  max_frame_energy: 1.293798038799246
+  idle_frame_energy: 0.896741890614273
+command_window_binding:
+  schema: power-calculations/command-window-result
+  schema_version: 2
+  status: ok
+  binding_method: collector_sample_marker_crop
+  run_id: m2_idle_calibration_m2_off
+  window_id: m2_idle_calibration_m2_off:repeat:000
+  source: fast_firmware
+  request_path: >-
+    /home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/run_000/command_window_request.json
+  request_sha256: e99d9e4999bf13851f7704bfa0c9783d196dc468f7909d0978239142a4ee5776
+  marker_path: >-
+    /home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/run_000/collector_storage/command_window_markers.json
+  marker_sha256: 769f4c90f4fa5cf16d22160c021f67e2567d57b0cebf205ef4886b8d8e92a895
+  trace_path: >-
+    /home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/run_000/collector_storage/fast_firmware.parquet
+  trace_sha256: 0ef2f8783d0300f4dabf1b92dd1690f0a5874488570a71ea4263335964c0a410
+  command_path: >-
+    /home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/run_000/energy_command.sh
+  command_sha256: 41a6abcec911fb018808cd89e5c67290860504570d3d468874960d83ecc8e0d8
+  command_text_sha256: 7b80688f1697cc397b9052e0e7b51c991f822fb80ab63240bcd15900ad4497a8
+  command_argv0: >-
+    /home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/run_000/energy_command.sh
+  timing_path: >-
+    /home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260903_085345/m2_off/run_000/workload_timing.txt
+  timing_sha256: 2964d235e3ed45c672fe2a82d7a32ca4e927f3371f5616842b416ca505c29401
+  first_sample_index: 10048
+  last_sample_index: 70143
+  sample_count: 60096
+  interval_count: 60095
+  sample_rate_hz: 2000.0
+  duration_s: 30.0475
+  process_rc: 0
+  drop_count: 0
+  boundary_uncertainty_samples: 64
+  maximum_boundary_uncertainty_samples: 64
+  trace_covers_window: true
+  request_created_at_unix_ns: 1788418567271509726
+  command_start_realtime_ns: 1788418532083505595
+  command_end_realtime_ns: 1788418562100799954
+  command_start_monotonic_ns: 5097246087
+  command_end_monotonic_ns: 35114540429
+  command_process_id: 530265
+  command_start_clock_read_uncertainty_ns: 199
+  command_end_clock_read_uncertainty_ns: 1273
+  energy_semantics: calibrated_input_energy_unsubtracted
+  energy_field: firmware_results.energy
+  energy_j: 268.5445272886915
+  calibration_environment: Jetson
+  environment_scale_factor: 0.9705324920014426
+  lowpass_filter_applied: false
+  lowpass_cutoff_hz: null
+  postprocessor_version: 0.1.0

@@ -1,0 +1,318 @@
+{
+  "aggregate_quality_decision": "not_evaluated",
+  "blocking_reason_count": 2,
+  "blocking_reasons": [
+    {
+      "blocking": true,
+      "kind": "stage_status",
+      "model_id": "resnet50",
+      "reason": "Remote benchmark suite dispatched per hardware target/run-profile.; preserved 4 measured row(s), but the requested hardware matrix is incomplete; duplicate logical profile row(s): hailo8:full:fullx2.",
+      "stage": "run_benchmarks",
+      "stage_result_path": "models/resnet50/stages/run_benchmarks/stage_result.json",
+      "status": "partial"
+    },
+    {
+      "blocking": true,
+      "kind": "stage_status",
+      "model_id": "workflow",
+      "reason": "Central management quality: requests=4, completed=4, matched=2, summary_only_native_full=1, unmatched=1, failed=0; technical_status=failed, quality_decision=not_evaluated; workers=4. CPU reference rows remain semantic-only.",
+      "stage": "evaluate_quality",
+      "stage_result_path": "stages/evaluate_quality/stage_result.json",
+      "status": "failed"
+    }
+  ],
+  "claim_decisions_complete": true,
+  "claim_eligible_count": 1,
+  "claim_validation_complete": true,
+  "created_at": "2026-08-27T11:00:23+02:00",
+  "debug_upload_hint": {
+    "parent_latest_log": "_latest_evaluation_workflow.log",
+    "primary_log": "evaluation_workflow.log",
+    "recommended_files": [
+      "evaluation_workflow.log",
+      "run_manifest.json",
+      "reports/run_status_summary.json",
+      "reports/summary.csv",
+      "reports/prediction_vs_benchmark.csv"
+    ]
+  },
+  "decision_axes": {
+    "central_quality_reporting": {
+      "aggregate_all_full_result_count": 3,
+      "aggregate_decision_counts": {
+        "pass": 1
+      },
+      "aggregate_duplicate_expected_identity_count": 0,
+      "aggregate_duplicate_identities": [],
+      "aggregate_duplicate_identity_count": 0,
+      "aggregate_excluded_diagnostic_full_result_count": 2,
+      "aggregate_excluded_diagnostic_full_result_ids": [
+        "9a66acf540a940face0770ae8175b0cfdfb8f71d543f243b054474bb48954cbd",
+        "d782b32850de3ef1051bf8a381b5a50201cf6ce1d72c027a02db2b04845b9c8d"
+      ],
+      "aggregate_expected_full_result_count": 1,
+      "aggregate_full_result_count": 1,
+      "aggregate_identity_contract_complete": true,
+      "aggregate_identity_contract_definition_errors": [],
+      "aggregate_identity_contract_issue_count": 0,
+      "aggregate_missing_identities": [],
+      "aggregate_missing_identity_count": 0,
+      "aggregate_selection_mode": "explicit_full_only_identity_contract",
+      "aggregate_unexpected_identity_count": 0,
+      "aggregate_unexpected_identity_result_ids": [],
+      "aggregate_usable_full_result_count": 1,
+      "completed_count": 4,
+      "decision_counts": {
+        "inconclusive": 1,
+        "pass": 3
+      },
+      "failed_count": 0,
+      "missing_guardrail_count": 0,
+      "not_evaluated_count": 1,
+      "quality_acceptance_identity_contract": {
+        "contract_mode": "standard_quality_setup_local_tensorrt",
+        "execution_scope": "standard_quality_setup_local_tensorrt",
+        "expected_identities": [
+          {
+            "backend": "tensorrt",
+            "dispatch_run_id": "ort_tensorrt",
+            "execution_role": "full_quality_only",
+            "id": "tensorrt_at_hailo8_full",
+            "identity_source": "scheduler_materialized_before_remote_dispatch",
+            "logical_setup_group": "hailo8_setup",
+            "performance_claims_emitted": false,
+            "producer": "hailo8",
+            "quality_companion_endpoint_id": "tensorrt_at_hailo8_full",
+            "run_id": "native_full_tensorrt",
+            "setup_id": "orin_nx_hailo8_01",
+            "source_run_id": "native_full_tensorrt",
+            "variant": "full"
+          }
+        ],
+        "identity_key_fields": [
+          "model_id",
+          "source_run_id",
+          "setup_id",
+          "backend",
+          "variant",
+          "execution_role",
+          "performance_claims_emitted"
+        ],
+        "model_ids": [
+          "resnet50"
+        ],
+        "postcondition": {
+          "completed_count": 1,
+          "contract_error_count": 0,
+          "duplicate_count": 0,
+          "expected_count": 1,
+          "failed_count": 0,
+          "missing_count": 0,
+          "status": "verified_exact"
+        },
+        "schema": "onnx-splitpoint/standard-setup-local-tensorrt-quality-acceptance-identity-contract",
+        "schema_version": 1
+      },
+      "quality_decision": "not_evaluated",
+      "request_count": 4,
+      "result_count": 4,
+      "result_shortfall_count": 0,
+      "results_complete": false,
+      "schema": "onnx-splitpoint/central-quality-reporting-status",
+      "schema_version": 1,
+      "scientific_pass": false,
+      "scientific_status": "not_evaluated",
+      "source_present": true,
+      "source_status": "failed",
+      "status_semantics": {
+        "quality_decision": "Aggregate fail-closed scientific decision across acceptance Full results, including setup-local quality-only companions; superseded generic Full and composed rows remain diagnostics.",
+        "technical_status": "Execution/computation completeness only; metric decisions do not turn a technically completed run into a crash."
+      },
+      "technical_status": "failed",
+      "unmatched_result_count": 1
+    },
+    "quality_decision": "not_evaluated",
+    "quality_evaluation_technical_status": "failed",
+    "scientific_pass": false,
+    "scientific_status": "not_evaluated",
+    "technical_status": "failed"
+  },
+  "energy_coverage_contract_active": true,
+  "energy_coverage_contract_status": "valid",
+  "energy_coverage_contract_valid": true,
+  "energy_plan_completion_fraction": 1.0,
+  "energy_planned_matrix_coverage_fraction": 1.0,
+  "energy_successful_matrix_coverage_fraction": 1.0,
+  "native_evidence_status": {
+    "claim": {
+      "decision_complete": true,
+      "decision_count": 2,
+      "decisions_complete": true,
+      "eligible_count": 1,
+      "positive_claim_available": true,
+      "required": true,
+      "status": "ready"
+    },
+    "claim_decisions_complete": true,
+    "deprecated_aliases": {
+      "claim.ready": {
+        "deprecated": true,
+        "replacement": "claim_decisions_complete plus explicit scientific eligibility",
+        "value": true
+      },
+      "claim_ready": {
+        "deprecated": true,
+        "replacement": "claim_decisions_complete plus explicit scientific eligibility",
+        "value": true
+      },
+      "energy.complete": {
+        "deprecated": true,
+        "replacement": "energy_plan_completion_fraction, energy_planned_matrix_coverage_fraction, energy_successful_matrix_coverage_fraction and energy_coverage_contract_valid",
+        "value": true
+      },
+      "energy_complete": {
+        "deprecated": true,
+        "replacement": "energy_plan_completion_fraction, energy_planned_matrix_coverage_fraction, energy_successful_matrix_coverage_fraction and energy_coverage_contract_valid",
+        "value": true
+      }
+    },
+    "diagnostic_only": false,
+    "energy": {
+      "claim_eligible_count": 0,
+      "coverage_contract_active": true,
+      "coverage_contract_status": "valid",
+      "coverage_contract_valid": true,
+      "coverage_source": "v4_identity_plan_results_counts",
+      "excluded_identity_contract_valid": true,
+      "expected_identity_contract_valid": true,
+      "expected_plan_identity_match": true,
+      "expected_result_identity_match": true,
+      "final_all_split_complete": true,
+      "final_all_split_required": false,
+      "matrix_coverage_fraction": 1.0,
+      "matrix_expected_count": 2,
+      "matrix_measurements_complete": true,
+      "measurement_failed_count": 0,
+      "measurement_started_count": 2,
+      "measurement_success_count": 2,
+      "not_started_preflight_count": 0,
+      "plan_completion_fraction": 1.0,
+      "plan_excluded_count": 0,
+      "plan_identity_contract_valid": true,
+      "plan_included_count": 2,
+      "plan_ledger_valid": true,
+      "planned_completion_fraction": 1.0,
+      "planned_matrix_coverage_fraction": 1.0,
+      "planned_measurements_complete": true,
+      "preflight_contract_valid": true,
+      "requested": true,
+      "result_identity_contract_valid": true,
+      "result_ledger_valid": true,
+      "result_status_counts_consistent": true,
+      "status": "complete",
+      "strict": false,
+      "successful_matrix_coverage_fraction": 1.0,
+      "terminal_result_count": 2,
+      "terminal_result_ledger_valid": true
+    },
+    "energy_claim_eligible_count": 0,
+    "energy_coverage_contract_active": true,
+    "energy_coverage_contract_status": "valid",
+    "energy_coverage_contract_valid": true,
+    "energy_expected_identity_contract_valid": true,
+    "energy_expected_plan_identity_match": true,
+    "energy_expected_result_identity_match": true,
+    "energy_matrix_coverage_fraction": 1.0,
+    "energy_matrix_expected_count": 2,
+    "energy_measurement_failed_count": 0,
+    "energy_measurement_started_count": 2,
+    "energy_measurement_success_count": 2,
+    "energy_not_started_preflight_count": 0,
+    "energy_plan_completion_fraction": 1.0,
+    "energy_plan_excluded_count": 0,
+    "energy_plan_included_count": 2,
+    "energy_plan_ledger_valid": true,
+    "energy_planned_completion_fraction": 1.0,
+    "energy_planned_matrix_coverage_fraction": 1.0,
+    "energy_result_ledger_valid": true,
+    "energy_successful_matrix_coverage_fraction": 1.0,
+    "energy_terminal_result_count": 2,
+    "energy_terminal_result_ledger_valid": true,
+    "evidence_complete": true,
+    "final_all_split_energy_complete": true,
+    "final_all_split_energy_required": false,
+    "positive_energy_claim_available": false,
+    "positive_performance_claim_available": true,
+    "run_mode": "standard",
+    "runtime": {
+      "complete": true,
+      "expected_count": 2,
+      "failed_count": 0,
+      "missing_count": 0,
+      "present_count": 2,
+      "requested": true,
+      "status": "complete",
+      "successful_count": 2
+    },
+    "schema": "onnx-splitpoint/native-evidence-status",
+    "schema_version": 5,
+    "scientific_ready": true,
+    "scientific_status": "ready",
+    "semantics": {
+      "all_pass": true,
+      "available_count": 2,
+      "complete": true,
+      "fail_count": 0,
+      "pass_count": 2,
+      "requested": true,
+      "row_count": 2,
+      "status": "complete_pass",
+      "unavailable_count": 0
+    },
+    "task_quality": {
+      "alias_conflict_count": 0,
+      "complete": true,
+      "decision_count": 2,
+      "fail_count": 0,
+      "inconclusive_count": 1,
+      "pass_count": 1,
+      "reference_count": 0,
+      "requested": true,
+      "row_count": 2,
+      "status": "complete",
+      "unavailable_count": 0
+    },
+    "technical_quality_failure": false,
+    "technical_status": "complete"
+  },
+  "non_blocking_reason_count": 0,
+  "non_blocking_reasons": [],
+  "partial_reason_count": 0,
+  "partial_reasons": [],
+  "profile_id": "paper_comparison_resnet50_hailo8_full_native_energy_b500",
+  "quality_decision": "not_evaluated",
+  "quality_evaluation_technical_status": "failed",
+  "run_id": "paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134",
+  "runtime_complete": true,
+  "schema": "onnx-splitpoint/run-status-summary",
+  "schema_version": 1,
+  "scientific_pass": false,
+  "scientific_ready": true,
+  "scientific_status": "not_evaluated",
+  "semantic_validation_complete": true,
+  "stage_status_counts": {
+    "failed": 1,
+    "ok": 15,
+    "partial": 1
+  },
+  "status": "failed",
+  "status_decision": {
+    "blocking_reason_count": 2,
+    "non_blocking_reason_count": 0,
+    "note": "Non-blocking warnings, especially build_backend_artifacts queues followed by successful benchmark/validation/hardware stages, do not force the final run status to partial."
+  },
+  "technical_quality_failure": false,
+  "technical_status": "failed",
+  "tool_version": "2.78.2",
+  "workflow_version": "v2.78.2-immutable-management-reference-evidence-fixes"
+}

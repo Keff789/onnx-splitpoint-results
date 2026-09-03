@@ -1,0 +1,30 @@
+{
+  "artifact_verification_status": "pass",
+  "attestation_sha256": "be8d62c542802b6ebd923351e2aa8f7a0dfa6f41c5d1ca0562c0ba8afc80f0ff",
+  "command_contract_sha256": "9b0225ee3618724170381861c7d7151bf93b066c1fb3e38119d2db2d3dcc9178",
+  "created_at_unix_ns": 1787824597094312786,
+  "expires_at_unix_ns": 1787824897094312786,
+  "host": "nx",
+  "nonce": "a844ebc4b62b126e4066058df7741740e8d076cc9c2abff9a95ccdd5bb847de8",
+  "ok": true,
+  "preflight_scope": "native_full_energy_hotloop_all_heavy_hashes",
+  "runner_sha256": "54b323c1dd608f511856748c2171450f7384893072385ffd7b7c259d1013026f",
+  "schema": "onnx-splitpoint/energy-preflight-attestation",
+  "schema_version": 1,
+  "verified_artifact_sha256": {
+    "command_python_executable": "7b13b22842816e9accd853f2c752aab43acf2ef6e16f48376b2f61c74c6c614b",
+    "frozen_postprocess_harness_base": "938b3713f32e412dd1f57fcc07a397fa1f3b26ed30afbc945d22f1bb082db06c",
+    "frozen_postprocess_native_detection_postprocess": "e1d454faa35fa1a8d1299ce88a9ca1729edab3d6d9f5b4aec7f9a4bccd7e07a6",
+    "frozen_postprocess_yolo_harness": "31657e2717a8cb6cfda53e7de8e06b7b2286ecb430070811546fdec65327a17a",
+    "hailo_hef_build_receipt": "4c64c0c0fc4179e990e781aa75e21356861101478a8b8291d776ddab1fb05ce8",
+    "hef": "2e860dc38a585f0890a1040ca033c595e3c23e281083039f6ec93621317f7c88",
+    "hotloop_runner": "cd3875cb13ced3157711f848e04fd99fb1878fbe3556edc8c42a8251329b2fc2",
+    "input_manifest": "8525ba675e2a571aa83cd9fccc167239ac1553859f2919173421b67b0fcff6e0",
+    "performance_report": "7464f48dc4bbdc340f3b6dbc27f84430fb2036f3b5db262d599c7a77c5b3e316",
+    "runtime_input_tensor": "df599577640019eafdfad855df15b2059fd26f2f05c034b2726d318873708d9b",
+    "runtime_python": "7b13b22842816e9accd853f2c752aab43acf2ef6e16f48376b2f61c74c6c614b",
+    "source_onnx": "7a13e66f91047cce0e251c05f64159646847e842af31d60441c63dcdfad7825d"
+  },
+  "verified_input_image_sha256": "a4cd7f45ac1ce27eaafb254b23af7c0b18a064be08870ceaaf03b2147f2ce550",
+  "workload_kind": "hailo_full_hotloop"
+}

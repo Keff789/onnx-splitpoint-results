@@ -1,0 +1,25 @@
+[
+  {
+    "backend": "tensorrt",
+    "case_id": "b119",
+    "contract_comparison_conflicts": [],
+    "decomposition_source": "paired_central_quality_results",
+    "full_onnx_Top1": 0.812,
+    "full_onnx_Top5": 0.952,
+    "model": "resnet50",
+    "reference_identity": "c4436d8d3d42ba4499f0986749d3b7ae4e20ed6125bf8a2e61f16f131f3de277",
+    "setup_id": "orin_nx_hailo8_01",
+    "split_Top1": 0.812,
+    "split_Top5": 0.952,
+    "split_extra_loss_Top1": 0.0,
+    "split_extra_loss_Top5": 0.0,
+    "status": "ok",
+    "task": "classification",
+    "total_split_loss_Top1": 0.0,
+    "total_split_loss_Top5": 0.0,
+    "vendor_full_Top1": 0.812,
+    "vendor_full_Top5": 0.952,
+    "vendor_loss_Top1": 0.0,
+    "vendor_loss_Top5": 0.0
+  }
+]

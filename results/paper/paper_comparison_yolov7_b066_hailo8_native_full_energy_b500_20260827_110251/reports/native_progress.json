@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-08-27T09:58:28.399202+00:00",
+  "event": "STAGE_END",
+  "phase": "run_native_producers",
+  "status": "partial",
+  "row_count": 3,
+  "expected_row_count": 3,
+  "present_row_count": 3,
+  "successful_row_count": 3,
+  "failed_row_count": 0,
+  "missing_row_count": 0
+}

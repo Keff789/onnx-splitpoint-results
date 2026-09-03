@@ -1,0 +1,383 @@
+{
+  "algorithm_version": "v2784-evidence-reconciler-2",
+  "central_quality": {
+    "ambiguous": 0,
+    "coverage_interpretation": "386/551 is matrix Quality coverage. 407 is the generated/evaluated population and includes 21 non-performance full_quality_only companions; 407 must not be reported as 407/551 matrix coverage.",
+    "decisions": {
+      "fail": 135,
+      "inconclusive": 53,
+      "pass": 219
+    },
+    "generated_population_decomposition": {
+      "full_quality_only_companions": 21,
+      "primary_matrix_results": 386,
+      "total_generated_results": 407
+    },
+    "generated_results": 407,
+    "interpretation": "The old failed join is repairable as a read-only projection. Quality decisions and metrics are preserved verbatim; this does not promote the original workflow to PASS.",
+    "join_modes": {
+      "carried_setup": 12,
+      "exact_setup": 374
+    },
+    "materialized_matrix_primary_coverage": {
+      "coverage_fraction_of_present": 0.7018181818181818,
+      "coverage_fraction_of_required": 0.7005444646098004,
+      "covered_logical_identities": 386,
+      "materialized_present_logical_identities": 550,
+      "materialized_required_logical_identities": 551
+    },
+    "original_summary_status": "failed",
+    "original_summary_technical_status": "failed",
+    "primary_decisions": {
+      "fail": 135,
+      "inconclusive": 53,
+      "pass": 198
+    },
+    "primary_matched": 386,
+    "primary_results": 386,
+    "results": 407,
+    "summary_only_contract_complete": 21,
+    "summary_only_results": 21,
+    "technical_completed": 407,
+    "technical_failed": 0,
+    "unmatched": 0
+  },
+  "evidence_gaps_and_defects": {
+    "correction_to_v1": "YOLOv7/DeepX Full is not classified as a real semantic failure. Its legacy mini-AP result conflicts with the SHA-bound canonical Central B500 PASS and with the canonical candidate's populated x1/y1/x2/y2/score records.",
+    "frozen_scope_discrepancies": [
+      {
+        "actual_build_attempt_observed": true,
+        "actual_terminal_log_outcome": {
+          "hard_timeout_s": 9000,
+          "last_active_stage": "compile_prep",
+          "raw_detection_head_fallback_failed": true,
+          "status": "hard_timeout"
+        },
+        "authoritative_scope_resolution_required": true,
+        "classification": "frozen_scope_planning_and_provenance_discrepancy",
+        "global_effective_generic_run_ids": [
+          "hailo8",
+          "hailo8_to_trt",
+          "hailo10",
+          "hailo10_to_tensorrt",
+          "deepx_m1_full",
+          "deepx_m1_to_tensorrt",
+          "ort_tensorrt"
+        ],
+        "global_expected_minimum_rows_yolo11l": 84,
+        "global_logical_run_profiles": [
+          "hailo8",
+          "hailo8_to_trt",
+          "hailo10",
+          "hailo10_to_tensorrt",
+          "deepx_m1_full",
+          "deepx_m1_to_tensorrt"
+        ],
+        "hailo10_control": {
+          "actual_build_attempt_observed": true,
+          "hard_timeout_s": 9000,
+          "last_active_stage": "bias_correction",
+          "materialized_presence": "missing",
+          "materialized_required_matrix_contains_identity": true,
+          "terminal_log_status": "hard_timeout"
+        },
+        "identity": {
+          "backend": "hailo8",
+          "case_id": "full",
+          "model_id": "yolo11l",
+          "run_id": "hailo8",
+          "variant": "full"
+        },
+        "interpretation": "The materialized 550/551 result remains correct for its own required matrix. It is not a complete frozen-scope statement: global scope and the actual build log include YOLO11 Full/Hailo-8, while the per-model planned_runs and required matrix omit that identity.",
+        "materialized_matrix_rewritten": false,
+        "materialized_required_matrix_contains_identity": false,
+        "other_model_plans_include_hailo8": true,
+        "yolo11_benchmark_plan_path": "models/yolo11l/benchmark_set/benchmark_plan.json",
+        "yolo11_materialized_required_count": 83,
+        "yolo11_planned_run_ids": [
+          "ort_cpu",
+          "ort_tensorrt",
+          "hailo10",
+          "deepx_m1_full",
+          "deepx_m1_to_tensorrt",
+          "hailo8_to_trt",
+          "hailo10_to_trt"
+        ]
+      }
+    ],
+    "generic_energy_enabled": false,
+    "native_energy_enabled": false,
+    "official_coco_enabled": false,
+    "quality_scope": "B500 screening/development evidence, not Final-5000 Official COCO",
+    "real_missing_measurements": [
+      {
+        "backend": "hailo10",
+        "case_id": "full",
+        "model_id": "yolo11l",
+        "run_id": "hailo10",
+        "variant": "full"
+      }
+    ],
+    "real_runtime_failures": [
+      {
+        "backend": "deepx_m1",
+        "case_id": "full",
+        "compile_ok": true,
+        "error_class": "deepx_runtime_failed",
+        "execution_ok": false,
+        "model_id": "yolo11l",
+        "run_id": "deepx_m1_full",
+        "validation_ok": false,
+        "variant": "full"
+      }
+    ],
+    "real_semantic_failures": [],
+    "representation_only_mirror_groups": 537,
+    "source_identity_conflicts_requiring_provenance_repair": [
+      {
+        "backend": "deepx_m1",
+        "case_id": "full",
+        "error_class": "full_baseline_source_identity_conflict",
+        "model_id": "mobilenet_v3_large",
+        "run_id": "deepx_m1_full",
+        "runtime_artifact_sha256_values": [
+          "6649919888bf08741f640db7c34397b23754057f1434348eb9b224ca82747db4"
+        ],
+        "runtime_precision_identity_values": [
+          "deepx_dxnn_sha256:6649919888bf08741f640db7c34397b23754057f1434348eb9b224ca82747db4",
+          "{'schema':'onnx-splitpoint/deepx-runtime-precision-contract','schema_version':1,'artifact_kind':'dxnn','artifact_name':'model.dxnn','artifact_sha256':'6649919888bf08741f640db7c34397b23754057f1434348eb9b224ca82747db4','artifact_size_bytes':11850856,'precision_semantics':'opaque_vendor_compiled_artifact_identity','declared_precision':none}"
+        ],
+        "variant": "full"
+      },
+      {
+        "backend": "deepx_m1",
+        "case_id": "full",
+        "error_class": "full_baseline_source_identity_conflict",
+        "model_id": "regnet_x_1_6gf",
+        "run_id": "deepx_m1_full",
+        "runtime_artifact_sha256_values": [
+          "9f0357ea240e88648422da46554dd0e2766e833beefcf1492381051e0adfe959"
+        ],
+        "runtime_precision_identity_values": [
+          "deepx_dxnn_sha256:9f0357ea240e88648422da46554dd0e2766e833beefcf1492381051e0adfe959",
+          "{'schema':'onnx-splitpoint/deepx-runtime-precision-contract','schema_version':1,'artifact_kind':'dxnn','artifact_name':'model.dxnn','artifact_sha256':'9f0357ea240e88648422da46554dd0e2766e833beefcf1492381051e0adfe959','artifact_size_bytes':81844411,'precision_semantics':'opaque_vendor_compiled_artifact_identity','declared_precision':none}"
+        ],
+        "variant": "full"
+      },
+      {
+        "backend": "deepx_m1",
+        "case_id": "full",
+        "error_class": "full_baseline_source_identity_conflict",
+        "model_id": "resnet50",
+        "run_id": "deepx_m1_full",
+        "runtime_artifact_sha256_values": [
+          "5aeede24838f39d86c082c1efa5fdf2498d023e1cf20998b83ad995666babd80"
+        ],
+        "runtime_precision_identity_values": [
+          "deepx_dxnn_sha256:5aeede24838f39d86c082c1efa5fdf2498d023e1cf20998b83ad995666babd80",
+          "{'schema':'onnx-splitpoint/deepx-runtime-precision-contract','schema_version':1,'artifact_kind':'dxnn','artifact_name':'model.dxnn','artifact_sha256':'5aeede24838f39d86c082c1efa5fdf2498d023e1cf20998b83ad995666babd80','artifact_size_bytes':51729418,'precision_semantics':'opaque_vendor_compiled_artifact_identity','declared_precision':none}"
+        ],
+        "variant": "full"
+      },
+      {
+        "backend": "deepx_m1",
+        "case_id": "full",
+        "error_class": "full_baseline_source_identity_conflict",
+        "model_id": "yolo26m",
+        "run_id": "deepx_m1_full",
+        "runtime_artifact_sha256_values": [
+          "bfb75ad829ed5c4003b43be7c733252035fa4aaf02dd23766db2b775773063ac"
+        ],
+        "runtime_precision_identity_values": [
+          "deepx_dxnn_sha256:bfb75ad829ed5c4003b43be7c733252035fa4aaf02dd23766db2b775773063ac",
+          "{'schema':'onnx-splitpoint/deepx-runtime-precision-contract','schema_version':1,'artifact_kind':'dxnn','artifact_name':'model.dxnn','artifact_sha256':'bfb75ad829ed5c4003b43be7c733252035fa4aaf02dd23766db2b775773063ac','artifact_size_bytes':43477633,'precision_semantics':'opaque_vendor_compiled_artifact_identity','declared_precision':none}"
+        ],
+        "variant": "full"
+      },
+      {
+        "backend": "deepx_m1",
+        "case_id": "full",
+        "error_class": "full_baseline_source_identity_conflict",
+        "model_id": "yolo26s",
+        "run_id": "deepx_m1_full",
+        "runtime_artifact_sha256_values": [
+          "a3421a676a4243232d1c0296fe5024a98b12cdf8114e0cd90e6f19aa4648f59e"
+        ],
+        "runtime_precision_identity_values": [
+          "deepx_dxnn_sha256:a3421a676a4243232d1c0296fe5024a98b12cdf8114e0cd90e6f19aa4648f59e",
+          "{'schema':'onnx-splitpoint/deepx-runtime-precision-contract','schema_version':1,'artifact_kind':'dxnn','artifact_name':'model.dxnn','artifact_sha256':'a3421a676a4243232d1c0296fe5024a98b12cdf8114e0cd90e6f19aa4648f59e','artifact_size_bytes':21363746,'precision_semantics':'opaque_vendor_compiled_artifact_identity','declared_precision':none}"
+        ],
+        "variant": "full"
+      },
+      {
+        "backend": "deepx_m1",
+        "case_id": "full",
+        "error_class": "full_baseline_source_identity_conflict",
+        "model_id": "yolov7_paper",
+        "run_id": "deepx_m1_full",
+        "runtime_artifact_sha256_values": [
+          "840f96fa7bd6cebf6db5272231aac9d84a69851424cc9cddcfaed7835423fa99"
+        ],
+        "runtime_precision_identity_values": [
+          "deepx_dxnn_sha256:840f96fa7bd6cebf6db5272231aac9d84a69851424cc9cddcfaed7835423fa99",
+          "{'schema':'onnx-splitpoint/deepx-runtime-precision-contract','schema_version':1,'artifact_kind':'dxnn','artifact_name':'model.dxnn','artifact_sha256':'840f96fa7bd6cebf6db5272231aac9d84a69851424cc9cddcfaed7835423fa99','artifact_size_bytes':77513507,'precision_semantics':'opaque_vendor_compiled_artifact_identity','declared_precision':none}"
+        ],
+        "variant": "full"
+      }
+    ],
+    "validator_schema_conflicts": [
+      {
+        "backend": "deepx_m1",
+        "canonical_candidate": {
+          "canonical_required_fields": [
+            "x1",
+            "y1",
+            "x2",
+            "y2",
+            "score",
+            "class_id"
+          ],
+          "legacy_mini_ap_fields": [
+            "box_xyxy",
+            "confidence",
+            "class_id"
+          ],
+          "nonempty_records": 496,
+          "observed_detection_key_sets": [
+            [
+              "class_id",
+              "class_name",
+              "score",
+              "x1",
+              "x2",
+              "y1",
+              "y2"
+            ]
+          ],
+          "path": "models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/deepx_m1_full/task_quality_inputs/full_candidate.json",
+          "record_count": 500,
+          "sha256": "e7ac56e9edfbe6282bed91107ae9084980b4ac7c5dd2efb29cde8b1a608f4665",
+          "total_detections": 3753
+        },
+        "case_id": "full",
+        "central_b500": {
+          "candidate": 0.45629326666562375,
+          "ci_high": 0.010466757800677714,
+          "ci_low": 0.00030419767863843486,
+          "decision": "pass",
+          "delta": 0.004274475012795154,
+          "metric": "coco_ap_50_95",
+          "reference": 0.4520187916528286,
+          "sample_count": 500,
+          "scientific_status": "pass",
+          "source_request": "models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/deepx_m1_full/task_quality_inputs/full_request.json",
+          "source_request_sha256": "1a84307a0c029a4cb4b52e8bf3743831f730baf03d83268658910ef0cd215374",
+          "technical_status": "completed"
+        },
+        "classification": "validator_schema_conflict_not_hardware_semantic_failure",
+        "deepx_full_runtime_ok": true,
+        "execution_ok": true,
+        "interpretation": "The legacy mini-AP path accepted zero predictions because its legacy box_xyxy/confidence parser did not consume the canonical x1/y1/x2/y2/score records. The exact SHA-bound Central B500 evaluation consumed 500 canonical records and passed. This is a validator/schema conflict; it is not evidence of a DeepX hardware semantic failure.",
+        "legacy_mini_ap": {
+          "ap50": 0.0,
+          "gt_instances": 3615,
+          "old_semantic_validation_ok": false,
+          "parser_schema": "box_xyxy/confidence/class_id",
+          "predictions_accepted": 0
+        },
+        "model_id": "yolov7_paper",
+        "normalized_detection_count_per_image": 7.506,
+        "run_id": "deepx_m1_full",
+        "variant": "full"
+      }
+    ]
+  },
+  "matrix": {
+    "extra_representation_rows": 537,
+    "mirror_groups": 537,
+    "mirror_policy": "group_only; primary and setup-specific rows are retained separately and never field-merged",
+    "missing": 1,
+    "missing_identities": [
+      {
+        "backend": "hailo10",
+        "case_id": "full",
+        "model_id": "yolo11l",
+        "run_id": "hailo10",
+        "variant": "full"
+      }
+    ],
+    "per_model": {
+      "mobilenet_v3_large": {
+        "mirror_groups": 81,
+        "missing": 0,
+        "present": 84,
+        "required": 84
+      },
+      "regnet_x_1_6gf": {
+        "mirror_groups": 81,
+        "missing": 0,
+        "present": 84,
+        "required": 84
+      },
+      "resnet50": {
+        "mirror_groups": 81,
+        "missing": 0,
+        "present": 84,
+        "required": 84
+      },
+      "yolo11l": {
+        "mirror_groups": 81,
+        "missing": 1,
+        "present": 82,
+        "required": 83
+      },
+      "yolo26m": {
+        "mirror_groups": 67,
+        "missing": 0,
+        "present": 68,
+        "required": 68
+      },
+      "yolo26s": {
+        "mirror_groups": 63,
+        "missing": 0,
+        "present": 64,
+        "required": 64
+      },
+      "yolov7_paper": {
+        "mirror_groups": 83,
+        "missing": 0,
+        "present": 84,
+        "required": 84
+      }
+    },
+    "present": 550,
+    "raw_rows": 1087,
+    "required": 551,
+    "single_groups": 13
+  },
+  "schema": "onnx-splitpoint/v2784-read-only-evidence-reconciliation",
+  "schema_version": 2,
+  "scope": {
+    "compiler_or_hardware_invoked": false,
+    "inference_executed": false,
+    "mode": "read_only_evidence_projection",
+    "quality_recomputed": false,
+    "source_run_modified": false
+  },
+  "source_run": {
+    "original_scientific_status": "not_evaluated",
+    "original_status": "failed",
+    "original_technical_status": "failed",
+    "path": "/home/kmika/Models/EvaluationRuns/v2784_7model_b500_audit20_launch_20260828_194905_185725341_1413672/runs/complete_set_7models_v2784_b500_audit20_20260828_214941",
+    "run_id": "complete_set_7models_v2784_b500_audit20_20260828_214941",
+    "run_manifest_sha256": "35abb891515e169617e97c573e7416cc6d740fad0846bc34cfe360047338f2fd",
+    "workflow_version": "v2.78.4-gate-a-planned-stop-audit-launch"
+  },
+  "verdict": {
+    "claim_eligible": false,
+    "final_evaluation_complete": false,
+    "official_workflow_status_changed": false,
+    "reason": "The old Quality join is fully reconstructable, but the original workflow remains failed and not claim-eligible: the materialized matrix has one missing identity, YOLO11/DeepX has a real runtime failure, and the frozen scope has an unresolved YOLO11 Full/Hailo-8 planning/provenance discrepancy. The earlier YOLOv7/DeepX semantic-failure label is corrected to a validator/schema conflict. Energy and Final-5000 Official COCO were not measured.",
+    "status": "RECONCILED_WITH_REAL_GAPS"
+  }
+}

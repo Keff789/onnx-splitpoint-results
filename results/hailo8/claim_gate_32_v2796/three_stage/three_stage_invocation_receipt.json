@@ -1,0 +1,23 @@
+{
+  "schema": "onnx-splitpoint/three-stage-invocation",
+  "schema_version": 1,
+  "benchmark_set": "/home/nx/v2796_yolov7_b066_claim_gate_32_20260901_130453/benchmark_set",
+  "case_id": "b066",
+  "setup_id": "orin_nx_hailo8_01",
+  "corpus_manifest": "/home/nx/v2796_yolov7_b066_claim_gate_32_20260901_130453/evidence/work/corpus/corpus_manifest.json",
+  "dataset_manifest": "/home/nx/v2796_yolov7_b066_claim_gate_32_20260901_130453/evidence/reference/dataset_detection_validation.json",
+  "reference_report": "/home/nx/v2796_yolov7_b066_claim_gate_32_20260901_130453/evidence/reference/multi_image_fast_decode_canary_report.json",
+  "quality_binding": "/home/nx/v2796_yolov7_b066_claim_gate_32_20260901_130453/evidence/reference/native_split_quality_binding.json",
+  "out_root": "/home/nx/v2796_yolov7_b066_claim_gate_32_20260901_130453/evidence/three_stage",
+  "expected_item_count": 32,
+  "model_id": "yolov7_paper",
+  "precision": "uint8_dequant_fp16",
+  "execution_scope": "claim_gate_32",
+  "claim_eligible": true,
+  "corpus_manifest_sha256": "d9f03548ec615b8512c70c15749f9dae87eb545a4e64b6e285887c5d30bd6e09",
+  "dataset_manifest_sha256": "2de36f0f8949e4f1fcbd0eefbda1f4d18b411208fa91e2dd2bf985a56d0f22e2",
+  "reference_report_sha256": "4f4aff24452f5833bdcec8de31fa1f3173ccabc2a78372744f8bf59cd5ee0cc9",
+  "quality_binding_sha256": "a5af2b4c0b8544208c7c7f7ad944bdce91844897c77564169efcb2c741d6ae62",
+  "out_root_binding_sha256": "63b99eae5c6987d3048e3cf0a9ee5e4293d39456e2b46bcaae25de6f3889d164",
+  "invocation_sha256": "8007f68733476317c42807605a5ac468096cd91f3b074912b95e8b984b470db8"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "onnx-splitpoint/native-tensor-dump-validation",
+  "schema_version": 1,
+  "ok": true,
+  "manifest": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/native_producers/hailo8/yolov7_paper/benchmark_set/native_full_outputs/model=yolov7_paper/backend=native_full_tensorrt/setup=orin_nx_hailo8_01/comparison=hailo8/native_full_outputs_manifest.json",
+  "output_count": 3,
+  "outputs": [
+    {
+      "dtype": "float32",
+      "shape": [
+        1,
+        3,
+        80,
+        80,
+        85
+      ],
+      "size": 1632000,
+      "bytes": 6528000,
+      "finite": true,
+      "min": -29.375,
+      "max": 9.203125,
+      "mean": -7.460124969482422,
+      "name": "output"
+    },
+    {
+      "dtype": "float32",
+      "shape": [
+        1,
+        3,
+        40,
+        40,
+        85
+      ],
+      "size": 408000,
+      "bytes": 1632000,
+      "finite": true,
+      "min": -30.796875,
+      "max": 9.6875,
+      "mean": -7.728445529937744,
+      "name": "clone_1"
+    },
+    {
+      "dtype": "float32",
+      "shape": [
+        1,
+        3,
+        20,
+        20,
+        85
+      ],
+      "size": 102000,
+      "bytes": 408000,
+      "finite": true,
+      "min": -20.203125,
+      "max": 8.640625,
+      "mean": -8.421255111694336,
+      "name": "clone_2"
+    }
+  ]
+}

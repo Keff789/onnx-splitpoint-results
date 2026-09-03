@@ -1,0 +1,3780 @@
+{
+  "artifacts": [
+    {
+      "created_at": "2026-08-27T11:03:39+02:00",
+      "kind": "profile",
+      "model_id": null,
+      "path": "profile.yaml",
+      "producer_stage": "resolve_profile",
+      "sha256": "sha256:a75b86acb96b89d8b9d43f06eb3c4395aef1d021fa14033e818e255f79af8bd0",
+      "size_bytes": 21685
+    },
+    {
+      "created_at": "2026-08-27T11:03:39+02:00",
+      "kind": "profile",
+      "model_id": null,
+      "path": "profile_start_snapshot.json",
+      "producer_stage": "resolve_profile",
+      "sha256": "sha256:6b5df49e45fddc84f3f3befd7cd388043e7ad582591457a53fc4d13b1cb17bcc",
+      "size_bytes": 8876
+    },
+    {
+      "created_at": "2026-08-27T11:03:39+02:00",
+      "kind": "profile",
+      "model_id": null,
+      "path": "profile_source.yaml",
+      "producer_stage": "resolve_profile",
+      "sha256": "sha256:174599f8b489121b625280e0b950b280dc3badf9b45dcc2394c57718678d5fb2",
+      "size_bytes": 10319
+    },
+    {
+      "created_at": "2026-08-27T11:59:11+02:00",
+      "kind": "job_artifact",
+      "model_id": null,
+      "path": "jobs/job_plan.json",
+      "producer_stage": "workflow_job_queue",
+      "sha256": "sha256:e51d2c4b2a705e7d5f0261c013370ade7ceea6287d00526456b09225ff2e042a",
+      "size_bytes": 58026
+    },
+    {
+      "created_at": "2026-08-27T11:59:11+02:00",
+      "kind": "job_artifact",
+      "model_id": null,
+      "path": "jobs/job_summary.json",
+      "producer_stage": "workflow_job_queue",
+      "sha256": "sha256:5a080bf2e19452dbb80dae2ec6de3f6dd29385db7da1bbac600e966e6826e2c1",
+      "size_bytes": 26103
+    },
+    {
+      "created_at": "2026-08-27T11:59:11+02:00",
+      "kind": "job_artifact",
+      "model_id": null,
+      "path": "jobs/job_events.jsonl",
+      "producer_stage": "workflow_job_queue",
+      "sha256": "sha256:da56b8b35095cf8ac2ccc238c57629b2390a53e1a92c327b412e1b777697ffff",
+      "size_bytes": 8773052
+    },
+    {
+      "created_at": "2026-08-27T11:03:41+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "profile_resolution.json",
+      "producer_stage": "resolve_profile",
+      "sha256": "sha256:85b087cc84abf7ee751ff2c07ba34df5cd32f3173bb9a7ff85e459ee8674b5c5",
+      "size_bytes": 6182
+    },
+    {
+      "created_at": "2026-08-27T11:03:41+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "dataset_registry_binding.json",
+      "producer_stage": "resolve_profile",
+      "sha256": "sha256:192be3895f25d7501dec376dac696ccdc7c37d2b39ec6072e2f1eb9d3668c9fd",
+      "size_bytes": 1348
+    },
+    {
+      "created_at": "2026-08-27T11:03:41+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "hardware_matrix.json",
+      "producer_stage": "resolve_profile",
+      "sha256": "sha256:b4ccd4afdc344fd5361c569f11064584c9ec430bdb69687bb3c9f5ea87b56cb8",
+      "size_bytes": 2637
+    },
+    {
+      "created_at": "2026-08-27T11:03:41+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "effective_execution_plan.json",
+      "producer_stage": "resolve_profile",
+      "sha256": "sha256:f9c36f4aa7078a6a21cb878513c31cae45462566d3eeaf8ac16a333217a1e812",
+      "size_bytes": 8648
+    },
+    {
+      "created_at": "2026-08-27T11:03:42+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "effective_execution_plan.md",
+      "producer_stage": "resolve_profile",
+      "sha256": "sha256:cfee31b4b752c087608f2d4a1f0873f4ea1b99ebb197a2818f53017b575ab9a3",
+      "size_bytes": 1614
+    },
+    {
+      "created_at": "2026-08-27T11:03:42+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "stages/resolve_profile/stage_result.json",
+      "producer_stage": "resolve_profile",
+      "sha256": "sha256:6675e9407390ca3d51afc2025477bb4ba1343b30909065cd22c52bb807ef231f",
+      "size_bytes": 1529
+    },
+    {
+      "created_at": "2026-08-27T11:03:50+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "campaign/campaign_readiness.json",
+      "producer_stage": "campaign_preflight",
+      "sha256": "sha256:466e71b3d90659e991f7ece27bd8ae9299652e5d5e0493e1fb379cec8205612a",
+      "size_bytes": 21873
+    },
+    {
+      "created_at": "2026-08-27T11:03:50+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "campaign/campaign_readiness.md",
+      "producer_stage": "campaign_preflight",
+      "sha256": "sha256:8eb4c93e75331e65eaaf469b77d51aeb37b4f5228d3160e3bd8d715c68672e9f",
+      "size_bytes": 8417
+    },
+    {
+      "created_at": "2026-08-27T11:03:50+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "campaign/native_preflight_asset_contract.json",
+      "producer_stage": "campaign_preflight",
+      "sha256": "sha256:0838bc5a7834417e1c3da5e62b1420437e217db5c6963a18ada7253b44e11463",
+      "size_bytes": 1674
+    },
+    {
+      "created_at": "2026-08-27T11:03:50+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "campaign/inputs/campaign_inputs_manifest.json",
+      "producer_stage": "campaign_preflight",
+      "sha256": "sha256:2676e5cbcf8d92ab78f00aa4f8ddb09698d8b67f97dbfd40938accd2d5e23feb",
+      "size_bytes": 1741
+    },
+    {
+      "created_at": "2026-08-27T11:03:51+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "stages/campaign_preflight/stage_result.json",
+      "producer_stage": "campaign_preflight",
+      "sha256": "sha256:335ef6962994e725b5776e60344f797e0f5b67ac734234e2586452abebd68818",
+      "size_bytes": 1457
+    },
+    {
+      "created_at": "2026-08-27T11:03:51+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/model_manifest.json",
+      "producer_stage": "resolve_model",
+      "sha256": "sha256:d55d6f2a731d3c10ff6746ed34c8c15836b989ae0d90c16215586bbc5b207eea",
+      "size_bytes": 1991
+    },
+    {
+      "created_at": "2026-08-27T11:03:51+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/stages/resolve_model/stage_result.json",
+      "producer_stage": "resolve_model",
+      "sha256": "sha256:fe731b4a2e7bc5024d5f2a009cacd6ebaa3e602ed6def1408236428e8a8dbe8d",
+      "size_bytes": 1327
+    },
+    {
+      "created_at": "2026-08-27T11:03:52+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/validation/assets_status.json",
+      "producer_stage": "check_validation_assets",
+      "sha256": "sha256:4c5cd68d7a19673981b4affe7e79167e09d5d0f49cea126a30129222455e9158",
+      "size_bytes": 1458
+    },
+    {
+      "created_at": "2026-08-27T11:03:52+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/stages/check_validation_assets/stage_result.json",
+      "producer_stage": "check_validation_assets",
+      "sha256": "sha256:09c1e0e5d2a1ac024b11b04c755612eaf15c43a4a7eb8b66e60226595260c4f3",
+      "size_bytes": 1125
+    },
+    {
+      "created_at": "2026-08-27T11:03:53+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/model_preparation/preparation_plan.json",
+      "producer_stage": "prepare_model",
+      "sha256": "sha256:6ef2d44874ae8eb5adb986eebb4ed0d22d61df42e2c8bc0b4065f876cb33ab5b",
+      "size_bytes": 565
+    },
+    {
+      "created_at": "2026-08-27T11:03:53+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/model_preparation/prepared_artifacts.json",
+      "producer_stage": "prepare_model",
+      "sha256": "sha256:25cb1f6f27bbe087ed0b9fe97ff7452d9801c444fb239ac4195281fbae8b1283",
+      "size_bytes": 536
+    },
+    {
+      "created_at": "2026-08-27T11:03:53+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/stages/prepare_model/stage_result.json",
+      "producer_stage": "prepare_model",
+      "sha256": "sha256:7cedc06ff0cacd29fb149f9ca370079b2941df834d6d45a629424912bf26bbc5",
+      "size_bytes": 1192
+    },
+    {
+      "created_at": "2026-08-27T11:03:55+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/analysis/analysis.json",
+      "producer_stage": "analyze_model",
+      "sha256": "sha256:91a01005f0f25ac3e4ab576498cf34a6771791d400de208b1c5afa143e4c11ef",
+      "size_bytes": 890107
+    },
+    {
+      "created_at": "2026-08-27T11:03:55+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/analysis/candidate_ranking.json",
+      "producer_stage": "analyze_model",
+      "sha256": "sha256:b32dc912dffe1d87e6cc939b088174f3bb5f9b4db2c243ff03b98152d932aba7",
+      "size_bytes": 39176
+    },
+    {
+      "created_at": "2026-08-27T11:03:55+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/analysis/prediction.json",
+      "producer_stage": "analyze_model",
+      "sha256": "sha256:5972b87c23b8bc6574f46b6a0d8838b99badb8ae32646ce08e32e62acc3b86ea",
+      "size_bytes": 929233
+    },
+    {
+      "created_at": "2026-08-27T11:03:55+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/stages/analyze_model/stage_result.json",
+      "producer_stage": "analyze_model",
+      "sha256": "sha256:03514aa7ce6df05f24ed375b5ee004940a09d40be7a16fae5f4b111c8e723a4b",
+      "size_bytes": 1725
+    },
+    {
+      "created_at": "2026-08-27T11:03:56+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/analysis/selection_input.json",
+      "producer_stage": "select_split_candidates",
+      "sha256": "sha256:980f0a99d1c310cb5f16f18b327cd1fbd2c8fc5b89c8bbe8fc02c6151bdefc0e",
+      "size_bytes": 1511
+    },
+    {
+      "created_at": "2026-08-27T11:03:56+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/analysis/audit_plan.json",
+      "producer_stage": "select_split_candidates",
+      "sha256": "sha256:62fd4410877df3580df29524f7f1252adf911d0dcb5539103ba30330705d6338",
+      "size_bytes": 890
+    },
+    {
+      "created_at": "2026-08-27T11:03:56+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/audit_plan.json",
+      "producer_stage": "select_split_candidates",
+      "sha256": "sha256:62fd4410877df3580df29524f7f1252adf911d0dcb5539103ba30330705d6338",
+      "size_bytes": 890
+    },
+    {
+      "created_at": "2026-08-27T11:03:56+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/analysis/final_candidate_plan.json",
+      "producer_stage": "select_split_candidates",
+      "sha256": "sha256:c0ca3a1376464dd77de3c876563a186335d5ced20ca710f45fe9f8ecdb93b5bf",
+      "size_bytes": 930314
+    },
+    {
+      "created_at": "2026-08-27T11:03:56+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/final_candidate_plan.json",
+      "producer_stage": "select_split_candidates",
+      "sha256": "sha256:c0ca3a1376464dd77de3c876563a186335d5ced20ca710f45fe9f8ecdb93b5bf",
+      "size_bytes": 930314
+    },
+    {
+      "created_at": "2026-08-27T11:03:56+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/stages/select_split_candidates/stage_result.json",
+      "producer_stage": "select_split_candidates",
+      "sha256": "sha256:0bc6f469104542fbd44da99fece8959fc494f00f1e37c3ce38eba6f062b4666e",
+      "size_bytes": 2159
+    },
+    {
+      "created_at": "2026-08-27T11:03:57+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/full_baselines/full_baseline_plan.json",
+      "producer_stage": "prepare_full_baselines",
+      "sha256": "sha256:4eb884de37497efa8e87e08056d455165e17dfef09e0c5122a90dd168323a0c7",
+      "size_bytes": 2011
+    },
+    {
+      "created_at": "2026-08-27T11:03:57+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/full_baselines/output_contracts.json",
+      "producer_stage": "prepare_full_baselines",
+      "sha256": "sha256:3d6d69c37318764986c7d3593cd0191f5eb2eec31f9d9acba523fc7825a73e55",
+      "size_bytes": 3565
+    },
+    {
+      "created_at": "2026-08-27T11:03:57+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/full_baselines/baseline_reuse_decisions.json",
+      "producer_stage": "prepare_full_baselines",
+      "sha256": "sha256:a364c942accd67a4bff8dd50e874058f014283af6e09fb25c82ecc7acf2d70c4",
+      "size_bytes": 759
+    },
+    {
+      "created_at": "2026-08-27T11:03:57+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/stages/prepare_full_baselines/stage_result.json",
+      "producer_stage": "prepare_full_baselines",
+      "sha256": "sha256:24cf7ef0fe2e95bd57783cd069720d9d8b14be96fc763b7af96e5e8c98f18a69",
+      "size_bytes": 1327
+    },
+    {
+      "created_at": "2026-08-27T11:04:04+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/legacy_benchmark_set.json",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:4998b5f5e96bc1953295df5ac9f15baf3ede48e3c5a5440d2486ee058eda1186",
+      "size_bytes": 11833
+    },
+    {
+      "created_at": "2026-08-27T11:04:04+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/legacy_benchmark_plan.json",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:cdba81cdeecd8dc3892ece4b5bca18516a855a3e9919a67f530424d5a90daa6f",
+      "size_bytes": 4238
+    },
+    {
+      "created_at": "2026-08-27T11:04:05+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/legacy_generation_state.json",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:cf622573e209632e0c2ad08b77794aeb8c7b10b83d134d281ee40172fe2139ee",
+      "size_bytes": 4233
+    },
+    {
+      "created_at": "2026-08-27T11:04:05+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/legacy_benchmark_generation.log",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "created_at": "2026-08-27T11:04:05+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/generator_input.json",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:50d4f3e0401ab3dfa0a6095b71b97f1125948d1a53d98b086d9ae2d33a67cf52",
+      "size_bytes": 1758
+    },
+    {
+      "created_at": "2026-08-27T11:04:05+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/generation_decisions.json",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:4cd0cbbc4c96175139760c76a1c0d950621b9e66d65cad8458749493767eba2c",
+      "size_bytes": 7574
+    },
+    {
+      "created_at": "2026-08-27T11:04:05+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/benchmark_set.json",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:ec581117a6badc7819f8de0ce220befc716b6316fc4c438fb16e812a2d668caf",
+      "size_bytes": 8005
+    },
+    {
+      "created_at": "2026-08-27T11:04:05+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/benchmark_plan.json",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:d915b9804de3efb81bdaf837f7034b5007d0b070479563c80490c7852db2e019",
+      "size_bytes": 14956
+    },
+    {
+      "created_at": "2026-08-27T11:04:05+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/benchmark_cases.csv",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:743b0f66d60de00e4a98efc45fad4ce11c8d45dd183beba40559deae482c57e7",
+      "size_bytes": 123
+    },
+    {
+      "created_at": "2026-08-27T11:04:06+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/rejected_cases.csv",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:e3d8f42666012b47f2363cfdbb8f36fc84b678d262112aa4510a6b97fea4fec3",
+      "size_bytes": 56
+    },
+    {
+      "created_at": "2026-08-27T11:04:06+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/legacy_benchmarkset_binding.json",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:a1436810fa6a6f3f07b48d392cc9e8d4f87b530445aa9e6d91ea19e5b8c39b14",
+      "size_bytes": 1306
+    },
+    {
+      "created_at": "2026-08-27T11:04:06+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/legacy_suite/benchmark_suite.py",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:cf03c87cf6d64fbc3ea7d197146d2a6d8452a747cbec5b9c7ece69121d0377c0",
+      "size_bytes": 556659
+    },
+    {
+      "created_at": "2026-08-27T11:04:06+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/legacy_suite/benchmark_set.json",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:a51faee7fe5940f315937643c576f6bcb64ca50038bf3c9ef32ed843e8b3d8ec",
+      "size_bytes": 20518
+    },
+    {
+      "created_at": "2026-08-27T11:04:06+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/legacy_suite/benchmark_plan.json",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:d915b9804de3efb81bdaf837f7034b5007d0b070479563c80490c7852db2e019",
+      "size_bytes": 14956
+    },
+    {
+      "created_at": "2026-08-27T11:04:06+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/legacy_suite/artifact_registry_registration.json",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:41ac5753c7bbdb6184a21f8349a25dc95a3ff60a92224d1805bec55f328e384f",
+      "size_bytes": 1053
+    },
+    {
+      "created_at": "2026-08-27T11:04:07+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/direct_suite_cleanup.json",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:b2bde7491a73cd9683a76c0fca8aa152b05c59c715c2c9c684bb7fd6ae7f217b",
+      "size_bytes": 414
+    },
+    {
+      "created_at": "2026-08-27T11:04:07+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/suite_generation_postcondition.json",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:23f45c692cd6695923bd52f25bf68a9fa1374d78c077c14ff210a62a2261c59e",
+      "size_bytes": 4630
+    },
+    {
+      "created_at": "2026-08-27T11:04:07+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/stages/generate_benchmark_set/stage_result.json",
+      "producer_stage": "generate_benchmark_set",
+      "sha256": "sha256:c7fcffb9e98014fb1c998853e7eada439aaa81a5dafd61181a14eaba49b7a3ce",
+      "size_bytes": 3383
+    },
+    {
+      "created_at": "2026-08-27T11:04:09+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/legacy_suite/output_contracts.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:05264ef9f8000256a036776f36594ef7a06e5873f404570c91256df2f6844f78",
+      "size_bytes": 6966
+    },
+    {
+      "created_at": "2026-08-27T11:04:09+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/full_baselines/output_contracts.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:05264ef9f8000256a036776f36594ef7a06e5873f404570c91256df2f6844f78",
+      "size_bytes": 6966
+    },
+    {
+      "created_at": "2026-08-27T11:04:09+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/build_backend_artifacts_request.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:92d29f8453e9b5f6e10abfae48318c79465f97fc3595cc3afa2eae377108506a",
+      "size_bytes": 4030
+    },
+    {
+      "created_at": "2026-08-27T11:04:09+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/backend_artifact_decisions.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:ac4a7f56a73831b03369e4540ff922550aecdbc9716cda50c6374f1d756aa951",
+      "size_bytes": 6406
+    },
+    {
+      "created_at": "2026-08-27T11:04:09+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/artifact_reuse_manifest.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:133faef8c53857772bfc6691d69cff8fa1a9d02c4f79d31d59b8506233a04438",
+      "size_bytes": 3534
+    },
+    {
+      "created_at": "2026-08-27T11:04:10+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/hailo_artifact_service_plan.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:af64bb12933b0807c2a35c1bacf9c2ce1288a06dc8d6b390872950860c76893c",
+      "size_bytes": 23266
+    },
+    {
+      "created_at": "2026-08-27T11:04:10+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/hailo_artifact_status.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:9d63deccc8a6385a0ee0a7ff31cbcc85fc9bba3351d53c2a6780ac6a216399cc",
+      "size_bytes": 554
+    },
+    {
+      "created_at": "2026-08-27T11:04:10+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/hailo_expected_unsupported.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:f9a11bc50536058843da66024b496c13f8c7eb5f05e263102df1139a9ace1a81",
+      "size_bytes": 735
+    },
+    {
+      "created_at": "2026-08-27T11:04:10+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/legacy_suite/hailo_artifacts_manifest.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:23380b6390a7048fb64a225ae6e2a2dc513b48aa0ce389340837638757128c9c",
+      "size_bytes": 17446
+    },
+    {
+      "created_at": "2026-08-27T11:04:10+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/hailo_service_binding.md",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:8916183f742831c857bbf0921e700c14acd47b89de170d89b394f1a646f1235b",
+      "size_bytes": 799
+    },
+    {
+      "created_at": "2026-08-27T11:04:10+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/hailo_build_attempts.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:431233df00ffca8264e8cb8a3bce723470f3aa75c063dafe3b82d1ed42d166ee",
+      "size_bytes": 193
+    },
+    {
+      "created_at": "2026-08-27T11:04:11+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/hailo_build_reuse_plan.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:56a292236d35dd2a4ec87d016702145d05cf7b6aa9d0013ecdb85bafaabe3eec",
+      "size_bytes": 12406
+    },
+    {
+      "created_at": "2026-08-27T11:04:11+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/hailo_build_queue.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:0d821eed03016ad2ff3665520841b37d776778495be46eb9bb0e9f23cc9cfdc8",
+      "size_bytes": 1310
+    },
+    {
+      "created_at": "2026-08-27T11:04:11+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/hailo_service_dispatch.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:81bbbd8add62dd4d7268006a37ac0d87da562d96d4a07ab12c21bc2fd093bc37",
+      "size_bytes": 547
+    },
+    {
+      "created_at": "2026-08-27T11:04:11+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/hailo_build_service_dispatch.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:3ef60d1b4b05b0e734bbb3b2abafbf4065d432ded3a5e9c55ce34be2f42823c7",
+      "size_bytes": 929
+    },
+    {
+      "created_at": "2026-08-27T11:04:11+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/hailo_build_service_status.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:9a7376bb12d603ec9817540c14447b3ca07bc634711fa990901e716c23633400",
+      "size_bytes": 1053
+    },
+    {
+      "created_at": "2026-08-27T11:04:11+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/stages/build_backend_artifacts/stage_result.json",
+      "producer_stage": "build_backend_artifacts",
+      "sha256": "sha256:66b2128b19129b133ef8dd3e06293091c538536f620d901ecdada9e0001e8f3f",
+      "size_bytes": 3091
+    },
+    {
+      "created_at": "2026-08-27T11:33:03+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/legacy_suite/benchmark_plan.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:d321bf42ccc784014cb358493bfa2b7f777243c245a2e167ebd9c587b13266e7",
+      "size_bytes": 33315
+    },
+    {
+      "created_at": "2026-08-27T11:33:03+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/legacy_suite/benchmark_set.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:e7671d66e854e75acca5fc8044c911b6ad80e87923f1df5ac8ec065fd28ddb0c",
+      "size_bytes": 64294
+    },
+    {
+      "created_at": "2026-08-27T11:33:03+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/benchmark_plan.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:d321bf42ccc784014cb358493bfa2b7f777243c245a2e167ebd9c587b13266e7",
+      "size_bytes": 33315
+    },
+    {
+      "created_at": "2026-08-27T11:33:04+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/benchmark_set.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:af9207418981b6402958ffb56714e0daaf137056f5b419c9a4ddc07e5429cdf7",
+      "size_bytes": 19211
+    },
+    {
+      "created_at": "2026-08-27T11:33:05+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/build_backend_artifacts_request.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:75763ee15a65a34908efaa96da411f370ef0d8d4f31eeb96af34fde185a749a1",
+      "size_bytes": 4030
+    },
+    {
+      "created_at": "2026-08-27T11:33:06+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/backend_artifact_decisions.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:cd94d8af48f10023f0dfbdd9052c113bffd31c1636e0c201e396b673879189fc",
+      "size_bytes": 6501
+    },
+    {
+      "created_at": "2026-08-27T11:33:06+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/artifact_reuse_manifest.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:c9427d3fde1426a63a4889586a496e540afc887ba2f365b019b1168681ea9ff4",
+      "size_bytes": 3566
+    },
+    {
+      "created_at": "2026-08-27T11:33:06+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_set/legacy_suite/output_contracts.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:614a3a5a74ca3ff459e679995bc956b97777594708136e0669272dd9fc261c1b",
+      "size_bytes": 7410
+    },
+    {
+      "created_at": "2026-08-27T11:33:06+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/full_baselines/output_contracts.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:614a3a5a74ca3ff459e679995bc956b97777594708136e0669272dd9fc261c1b",
+      "size_bytes": 7410
+    },
+    {
+      "created_at": "2026-08-27T11:32:59+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_results/run_benchmarks_request.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:c0361fc13b9a00ee26f8ed4f6008405a0cdc477415632073d3f5de1b83c31f29",
+      "size_bytes": 8659
+    },
+    {
+      "created_at": "2026-08-27T11:33:00+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_results/benchmark_execution_plan.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:d6cecff192c90c18578d2a44bb8266e964f4d167fcb03a104b7420bac7f2f0ba",
+      "size_bytes": 10531
+    },
+    {
+      "created_at": "2026-08-27T11:33:01+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_results/result_ingestion_manifest.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:b3f9565c9c3ebd08b51347967a6487ecabdcf62a1f9b2433be28d891efaa6290",
+      "size_bytes": 11008
+    },
+    {
+      "created_at": "2026-08-27T11:33:02+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_results/missing_measurements.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:68bc2a246042a5730c5b5f8a85d1c960ef513af111fa1ddca34ab21ed8c84587",
+      "size_bytes": 5396
+    },
+    {
+      "created_at": "2026-08-27T11:33:02+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_results/selected_run_completeness.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:d56fd9267a2a1418d2ceab40cf20f97c1b80f5cfa852986fc9f88357b9921598",
+      "size_bytes": 1878
+    },
+    {
+      "created_at": "2026-08-27T11:33:02+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_results/required_profile_matrix.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:2d50146d708605fe29b4f585c26d1529e99f7de9bb81f5fa9c8b99c7817ee7bb",
+      "size_bytes": 4146
+    },
+    {
+      "created_at": "2026-08-27T11:33:03+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_results/validation_cardinality_audit.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:b4c02759c77a7f5a3e9c08289f8a7c70ef524ce839a6baa6c492ac0e10eff57e",
+      "size_bytes": 268
+    },
+    {
+      "created_at": "2026-08-27T11:33:03+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_results/normalized_results.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:782c68cbfe5ab9de5a493e16ef89ed093caee1a42436bb3be04161a6b9923a7f",
+      "size_bytes": 1990713
+    },
+    {
+      "created_at": "2026-08-27T11:33:04+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_results/setup_local_tensorrt_dispatch_preflight.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:948a1f05fbcb19f0eb1a72cf7d59b06638387420fbf26ce30f9a9be3191f2be6",
+      "size_bytes": 1456
+    },
+    {
+      "created_at": "2026-08-27T11:33:04+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_results/remote_benchmark_status_orin_nx_hailo8_01.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:53403bfcff39d61e11e5dd5275770d41983dc8d15bed5c67cb0d050d4a30cfe4",
+      "size_bytes": 60107
+    },
+    {
+      "created_at": "2026-08-27T11:33:04+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_results/remote_benchmark_dispatch_orin_nx_hailo8_01.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:532377ad0fc736b904a7b7b7888e00eb10a0664e0626fd071035dbbdee33a28b",
+      "size_bytes": 7825
+    },
+    {
+      "created_at": "2026-08-27T11:33:05+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_results/remote_benchmark_stdout_orin_nx_hailo8_01.txt",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:9ecd74e8b3014488b2940f321862854899cd346c4a6331646926d75bf852a4af",
+      "size_bytes": 75939
+    },
+    {
+      "created_at": "2026-08-27T11:33:05+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_results/remote_benchmark_stderr_orin_nx_hailo8_01.txt",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "created_at": "2026-08-27T11:33:05+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_results/remote_hardware_matrix_status.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:1cccd8b839263f06511e540bfb5c69754b52607454f32778465c70b7eaa69a14",
+      "size_bytes": 8295
+    },
+    {
+      "created_at": "2026-08-27T11:33:06+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_results/central_quality_queue_status.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:dc68b5047f67fa56f51f7ba465dc109c6cc07ebf69e37a8dc1a203ee6d9b383e",
+      "size_bytes": 383
+    },
+    {
+      "created_at": "2026-08-27T11:33:06+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/stages/run_benchmarks/stage_result.json",
+      "producer_stage": "run_benchmarks",
+      "sha256": "sha256:cf9622a620db2ddc82567646403181f2315af459b39878bfd9d9604fba9cfdb6",
+      "size_bytes": 5261
+    },
+    {
+      "created_at": "2026-08-27T11:33:08+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/validation/validation_adapter_plan.json",
+      "producer_stage": "validate_outputs",
+      "sha256": "sha256:91207cc87d63edca533f314e0db60fa956e7e001ac775e310548ff2989dbde75",
+      "size_bytes": 2209
+    },
+    {
+      "created_at": "2026-08-27T11:33:08+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/validation/validation_case_matrix.json",
+      "producer_stage": "validate_outputs",
+      "sha256": "sha256:432132486dbf6b28d40bea3b72b8143007ae0c7afd75801012675bb0802c784d",
+      "size_bytes": 10693
+    },
+    {
+      "created_at": "2026-08-27T11:33:08+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/validation/validation_case_matrix.csv",
+      "producer_stage": "validate_outputs",
+      "sha256": "sha256:2edd2e841638960392ef610e3762027f89e5fe958e764fb722ad4354cf4dd365",
+      "size_bytes": 3765
+    },
+    {
+      "created_at": "2026-08-27T11:33:08+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/validation/validation_gaps.json",
+      "producer_stage": "validate_outputs",
+      "sha256": "sha256:124c0b18dab7bfb7e4ecacc12bfeae33e65b3f5cb8a84190b0c0b6bd244d3452",
+      "size_bytes": 2864
+    },
+    {
+      "created_at": "2026-08-27T11:33:09+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/validation/validation_readiness.json",
+      "producer_stage": "validate_outputs",
+      "sha256": "sha256:be02972f124d331a121e78aba53e8127e518b6106900ed1410619668f36e9b96",
+      "size_bytes": 541
+    },
+    {
+      "created_at": "2026-08-27T11:33:09+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/validation/validation_summary.json",
+      "producer_stage": "validate_outputs",
+      "sha256": "sha256:e770dcda97cd31d2d082a8108d7d0c149e7020e35995e03aa0937534fbac3a81",
+      "size_bytes": 3418
+    },
+    {
+      "created_at": "2026-08-27T11:33:09+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/validation/validation_binding.md",
+      "producer_stage": "validate_outputs",
+      "sha256": "sha256:aa6ee2da72e08eb0cf7335b41b022fd1bb18581857abc75d4d92d4203087c86f",
+      "size_bytes": 538
+    },
+    {
+      "created_at": "2026-08-27T11:33:09+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/stages/validate_outputs/stage_result.json",
+      "producer_stage": "validate_outputs",
+      "sha256": "sha256:640948a3b9dd68619274cdf61ad2cbf3696dbc149e95458c189ce53836bdd539",
+      "size_bytes": 1828
+    },
+    {
+      "created_at": "2026-08-27T11:33:10+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/hardware/hardware_smoke_status.json",
+      "producer_stage": "hardware_smoke",
+      "sha256": "sha256:aac0be29b6e5ff1e411d94fd893b58fedf9414fd438c16ae8be861fc11cd9afd",
+      "size_bytes": 7498
+    },
+    {
+      "created_at": "2026-08-27T11:33:11+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/hardware/hardware_smoke_status.md",
+      "producer_stage": "hardware_smoke",
+      "sha256": "sha256:3ff410e7db017681808fee3d75f15c52450e0023ad363822101c3154186d882a",
+      "size_bytes": 857
+    },
+    {
+      "created_at": "2026-08-27T11:33:11+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/hardware/hardware_smoke_checks.csv",
+      "producer_stage": "hardware_smoke",
+      "sha256": "sha256:0527c2182a80df90f8b0f9e27f200d39177e2f9d25f17ce04a784ee36a3de783",
+      "size_bytes": 1979
+    },
+    {
+      "created_at": "2026-08-27T11:33:11+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/validation/hardware_smoke_summary.json",
+      "producer_stage": "hardware_smoke",
+      "sha256": "sha256:aac0be29b6e5ff1e411d94fd893b58fedf9414fd438c16ae8be861fc11cd9afd",
+      "size_bytes": 7498
+    },
+    {
+      "created_at": "2026-08-27T11:33:11+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/benchmark_results/hardware_smoke_report.json",
+      "producer_stage": "hardware_smoke",
+      "sha256": "sha256:aac0be29b6e5ff1e411d94fd893b58fedf9414fd438c16ae8be861fc11cd9afd",
+      "size_bytes": 7498
+    },
+    {
+      "created_at": "2026-08-27T11:33:12+02:00",
+      "kind": "stage_artifact",
+      "model_id": "yolov7_paper",
+      "path": "models/yolov7_paper/stages/hardware_smoke/stage_result.json",
+      "producer_stage": "hardware_smoke",
+      "sha256": "sha256:0686233c008f6de86676e27314a098ca029a8cd76012cf5383edfb54502ab11d",
+      "size_bytes": 2153
+    },
+    {
+      "created_at": "2026-08-27T11:41:46+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "quality_management/central_quality_summary.json",
+      "producer_stage": "evaluate_quality",
+      "sha256": "sha256:fbfed1f5c01fd178b2751f03c8f70f00ae84ec46b50900d3dc46d82a46ad5bc0",
+      "size_bytes": 409100
+    },
+    {
+      "created_at": "2026-08-27T11:41:47+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "quality_management/central_quality_summary.csv",
+      "producer_stage": "evaluate_quality",
+      "sha256": "sha256:ef27f6845f2ce96ec34499157adb374e3b4fd80d57cb5afef61797979c831e95",
+      "size_bytes": 1093
+    },
+    {
+      "created_at": "2026-08-27T11:41:47+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "stages/evaluate_quality/stage_result.json",
+      "producer_stage": "evaluate_quality",
+      "sha256": "sha256:492d95f98ea887873f9ae44ef6d5ea19b02372e00af411bd0f73328d268a650e",
+      "size_bytes": 2659
+    },
+    {
+      "created_at": "2026-08-27T11:41:47+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/summary.csv",
+      "producer_stage": "aggregate_results",
+      "sha256": "sha256:221fd72daba9bd44901a65fa0196410a3277744d53f7c0848d471cb14b25bbb2",
+      "size_bytes": 1607
+    },
+    {
+      "created_at": "2026-08-27T11:41:48+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/model_summary.csv",
+      "producer_stage": "aggregate_results",
+      "sha256": "sha256:221fd72daba9bd44901a65fa0196410a3277744d53f7c0848d471cb14b25bbb2",
+      "size_bytes": 1607
+    },
+    {
+      "created_at": "2026-08-27T11:41:48+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/prediction_vs_benchmark.csv",
+      "producer_stage": "aggregate_results",
+      "sha256": "sha256:dc97571fba9017a180127b33aa23361f0e6a41fe6de7a5bdf7456a80e78fe91c",
+      "size_bytes": 720
+    },
+    {
+      "created_at": "2026-08-27T11:41:48+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/hardware_summary.csv",
+      "producer_stage": "aggregate_results",
+      "sha256": "sha256:dc872440393717e2714658fdc2358ddc04ed2a73a783662b3219eefdf816c3a1",
+      "size_bytes": 275
+    },
+    {
+      "created_at": "2026-08-27T11:41:48+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/validation_summary.csv",
+      "producer_stage": "aggregate_results",
+      "sha256": "sha256:b296168026a1ffcb337b958354381526c3fac7d12468741b2389bff16475e0a1",
+      "size_bytes": 1279
+    },
+    {
+      "created_at": "2026-08-27T11:41:48+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/hardware_smoke_summary.csv",
+      "producer_stage": "aggregate_results",
+      "sha256": "sha256:363aa842c73f1a0d0de71d35c7a254309bd6bc57777515ebb17164c79a76e9e4",
+      "size_bytes": 590
+    },
+    {
+      "created_at": "2026-08-27T11:41:48+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/splitpoint_ranking.csv",
+      "producer_stage": "aggregate_results",
+      "sha256": "sha256:fd2d2d8eaaf4c49735b25b095138dfc2262b69fabab32e44824f89e978769529",
+      "size_bytes": 1530
+    },
+    {
+      "created_at": "2026-08-27T11:41:48+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "stages/aggregate_results/stage_result.json",
+      "producer_stage": "aggregate_results",
+      "sha256": "sha256:a7c5b0e7161d6590ead4ae84f9735054d0f635506a773e68fc0b9820375e5f1e",
+      "size_bytes": 1504
+    },
+    {
+      "created_at": "2026-08-27T11:58:28+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_expected_matrix.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:865056c4af654f7b25b33364b30a48ab2e1f4a7175376aa0dda9aaab02ab4d22",
+      "size_bytes": 3326
+    },
+    {
+      "created_at": "2026-08-27T11:58:28+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_expected_matrix_missing.csv",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:bbf07cfd5ad495d66ce1b1161c4f20e65afe2a7315be5b874d6435403b64c81e",
+      "size_bytes": 139
+    },
+    {
+      "created_at": "2026-08-27T11:58:28+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_expected_matrix_failed.csv",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:d8345b75283a67e709a8d09187693912b767cc05139d359f8391f9a461e07b90",
+      "size_bytes": 156
+    },
+    {
+      "created_at": "2026-08-27T11:58:29+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_progress.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:0bba639dcf2945a50290e88c7835727b8ed2341dd1fbc7fbbcfb9dda97923338",
+      "size_bytes": 287
+    },
+    {
+      "created_at": "2026-08-27T11:58:29+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_progress.jsonl",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:7f54584c82dd6f3588343999d453f23d834c3acf6a611e7ba9b56762d4135e51",
+      "size_bytes": 1014351
+    },
+    {
+      "created_at": "2026-08-27T11:58:29+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_quality_first/orin_nx_hailo8_01/tensorrt_quality_producer_set.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:e22f45b8b23b0bf5fc95773bec76f7c331551488eb61fb18b755c422afab17df",
+      "size_bytes": 19034
+    },
+    {
+      "created_at": "2026-08-27T11:58:29+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_quality_first/orin_nx_hailo8_01/vendor_full_quality_request_binding_set.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:912b605cb4bd427d91161b2089de7d2846c5f115133abb25e53693740e55a2e8",
+      "size_bytes": 4430
+    },
+    {
+      "created_at": "2026-08-27T11:58:29+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_quality_first/orin_nx_hailo8_01/native_split_quality_binding_set.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:0cb5479e57b54a962edbd9e617d72b16b48e551aac052b80bf843549fc0bd50d",
+      "size_bytes": 104098
+    },
+    {
+      "created_at": "2026-08-27T11:58:29+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_preflight.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:d021d184ef34a9016b53c9760ee025b2792ebc6827403a9581ca2ca2fdcb8d22",
+      "size_bytes": 1116
+    },
+    {
+      "created_at": "2026-08-27T11:58:29+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_transfer/hailo8_yolov7_paper_native_transfer_manifest.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:77895fe5cc395f0aeb0277b56c78e475dc3a7586cfb88ba4917c14003b66bb04",
+      "size_bytes": 218571
+    },
+    {
+      "created_at": "2026-08-27T11:58:29+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_transfer/hailo8_yolov7_paper_native_transfer_files.txt",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:02190c0ff3fd67c6984ef008a17ad7ef100e6ab715cd540a2f6a9b9487645fd5",
+      "size_bytes": 73951
+    },
+    {
+      "created_at": "2026-08-27T11:58:30+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_known_contract_checkpoints/hailo8/hailo8_yolov7_paper_selected_single_part2_input.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:31374a43d9a42fd4cf9adc145b7be44f61c138d24799d249d0492f287414bd96",
+      "size_bytes": 4442
+    },
+    {
+      "created_at": "2026-08-27T11:58:30+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_host_telemetry_summary.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:4557cdf55dc654ff9281eed261a81650cfd23bba347096ccbba2e47f81f60c7e",
+      "size_bytes": 18564
+    },
+    {
+      "created_at": "2026-08-27T11:58:30+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_producer_stage.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:24f9e2fdefdebca07dee629efb7120789ea2b65e4f24e3b6dad2fb650bbdf8a2",
+      "size_bytes": 1143135
+    },
+    {
+      "created_at": "2026-08-27T11:58:30+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_producer_combined_summary.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:eba1989b4648a58a4a61083776a47f20c31978dde95095a4dbb2a0bee61dda5f",
+      "size_bytes": 1726111
+    },
+    {
+      "created_at": "2026-08-27T11:58:30+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_producer_combined_summary.csv",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:6b9ec3ea4a32973a591a829756bcc8a4738b9fee966c08e99f71894ef3c652c7",
+      "size_bytes": 105485
+    },
+    {
+      "created_at": "2026-08-27T11:58:30+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_producer_combined_summary.md",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:50528d36a2089060b6e2d634bf138a7f75f6de3069037eb5ab608420c6ee810b",
+      "size_bytes": 1641
+    },
+    {
+      "created_at": "2026-08-27T11:58:30+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_producer_summary.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:eba1989b4648a58a4a61083776a47f20c31978dde95095a4dbb2a0bee61dda5f",
+      "size_bytes": 1726111
+    },
+    {
+      "created_at": "2026-08-27T11:58:31+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_producer_summary.csv",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:6b9ec3ea4a32973a591a829756bcc8a4738b9fee966c08e99f71894ef3c652c7",
+      "size_bytes": 105485
+    },
+    {
+      "created_at": "2026-08-27T11:58:31+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_producer_summary.md",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:50528d36a2089060b6e2d634bf138a7f75f6de3069037eb5ab608420c6ee810b",
+      "size_bytes": 1641
+    },
+    {
+      "created_at": "2026-08-27T11:58:31+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_validation/native_full_tensorrt__yolov7_paper__full__uint8_dequant_fp16__setup_orin_nx_hailo8_01__comparison_hailo8/detection_boxes_overlay.png",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:98b7c7dde8895a7155724716b3b26b5d83fcb62df53580e423c1c67a3ff03514",
+      "size_bytes": 619686
+    },
+    {
+      "created_at": "2026-08-27T11:58:31+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_validation/native_full_tensorrt__yolov7_paper__full__uint8_dequant_fp16__setup_orin_nx_hailo8_01__comparison_hailo8/detection_reference_overlay.png",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:cfc6ffa772f6199363e0c02bbc281754ff2fedfd8cc3c5f17f7e061ec7f29f4d",
+      "size_bytes": 619563
+    },
+    {
+      "created_at": "2026-08-27T11:58:31+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_validation/native_full_tensorrt__yolov7_paper__full__uint8_dequant_fp16__setup_orin_nx_hailo8_01__comparison_hailo8/detection_scoremap_00_output.png",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:70f9847ec8811630bf52a1688b448f7410ffa821f2ae27b6c13e9f5543b321d9",
+      "size_bytes": 10103
+    },
+    {
+      "created_at": "2026-08-27T11:58:31+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_validation/native_full_tensorrt__yolov7_paper__full__uint8_dequant_fp16__setup_orin_nx_hailo8_01__comparison_hailo8/detection_scoremap_01_clone_1.png",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:83acf120fbe55e81b0ca4c0a4920467e7c08b624cbc2021d6393effacbd8f90a",
+      "size_bytes": 3601
+    },
+    {
+      "created_at": "2026-08-27T11:58:32+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_validation/native_full_tensorrt__yolov7_paper__full__uint8_dequant_fp16__setup_orin_nx_hailo8_01__comparison_hailo8/detection_scoremap_02_clone_2.png",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:59bed782f2e8cf8ebeb438487328c5baf8a2a7cafea4408d67046da0d723f7a4",
+      "size_bytes": 1088
+    },
+    {
+      "created_at": "2026-08-27T11:58:32+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_validation/native_full_tensorrt__yolov7_paper__full__uint8_dequant_fp16__setup_orin_nx_hailo8_01__comparison_hailo8/detection_tensor_debug.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:e94d63b868c3a78572b6b38375e22f465b94af6774aaa7763014ef22af8665a9",
+      "size_bytes": 2025
+    },
+    {
+      "created_at": "2026-08-27T11:58:32+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_validation/native_full_tensorrt__yolov7_paper__full__uint8_dequant_fp16__setup_orin_nx_hailo8_01__comparison_hailo8/detection_visual_validation.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:6c7cc36e118f93dd912ee6960ec21df8d441a5c3f049a0a3e9a15c926519fa2a",
+      "size_bytes": 29187
+    },
+    {
+      "created_at": "2026-08-27T11:58:32+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_validation/native_full_tensorrt__yolov7_paper__full__uint8_dequant_fp16__setup_orin_nx_hailo8_01__comparison_hailo8/detection_visual_validation.md",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:68e3f24a14a8764707edfe742f695882d411517d41cb2a09d0f426d9b35071b9",
+      "size_bytes": 1924
+    },
+    {
+      "created_at": "2026-08-27T11:58:32+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_validation/native_full_tensorrt__yolov7_paper__full__uint8_dequant_fp16__setup_orin_nx_hailo8_01__comparison_hailo8/tensor_dump_validation.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:4665fd459fa09d73706f1236d06b4a08fe7b4e83895fa2f4dfbb5d4105d1ff7c",
+      "size_bytes": 1344
+    },
+    {
+      "created_at": "2026-08-27T11:58:32+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_validation/native_producer_validation_summary.csv",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:d39899d97b810cc9eed96203eab01ae15fe838e2be827508186beb48dc782883",
+      "size_bytes": 19276
+    },
+    {
+      "created_at": "2026-08-27T11:58:32+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_validation/native_producer_validation_summary.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:84b8913daf15a2b0f4307fb537fc298e41c7240805179a8e6e64bb1eebddb807",
+      "size_bytes": 700709
+    },
+    {
+      "created_at": "2026-08-27T11:58:33+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_validation/native_producer_validation_summary.md",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:9bdea4daa347f75c17da9ff9e14e439fc6cf94b44bae933acfd76fa6299e26d0",
+      "size_bytes": 1600
+    },
+    {
+      "created_at": "2026-08-27T11:58:33+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/artifact_index.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:0603cdc57c5cf0a88a77ba52784951b80c5e989fda011905a121023413c71a0f",
+      "size_bytes": 19112
+    },
+    {
+      "created_at": "2026-08-27T11:58:33+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/energy_aggregate.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:7d7f722274c6e15dc26f36f66c2c1c1e3febe1f1bac9c5254a89d2aa372b7570",
+      "size_bytes": 40768
+    },
+    {
+      "created_at": "2026-08-27T11:58:33+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/artifact_index.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:9d048a25f2d3aa03a49f218addd026da71dc3af73aa3e6124817cc735318ac10",
+      "size_bytes": 9714
+    },
+    {
+      "created_at": "2026-08-27T11:58:33+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/duration_probe.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:f83996ffcff9390846b27beffcb8b7246c70b903f54192817cd57cb4aa838f59",
+      "size_bytes": 853
+    },
+    {
+      "created_at": "2026-08-27T11:58:33+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/energy_aggregate.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:143c951d9fd6a9d6781e18fa5195a9943e07a9387b88c74c4db20fa239dcc1bd",
+      "size_bytes": 41032
+    },
+    {
+      "created_at": "2026-08-27T11:58:34+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/energy_command.sh",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:a1c0ec99c2d88a05ccd4c5737766f0dddbb825e5f0eacaaef9d385b4a5cbe942",
+      "size_bytes": 2012
+    },
+    {
+      "created_at": "2026-08-27T11:58:34+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/energy_current_status.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:5c642a609b774a545e0546a03598f2e629e893d9fd025f78bc579ca27fa206c2",
+      "size_bytes": 1623
+    },
+    {
+      "created_at": "2026-08-27T11:58:34+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/energy_summary.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:143c951d9fd6a9d6781e18fa5195a9943e07a9387b88c74c4db20fa239dcc1bd",
+      "size_bytes": 41032
+    },
+    {
+      "created_at": "2026-08-27T11:58:34+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/probe/duration_probe.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:f83996ffcff9390846b27beffcb8b7246c70b903f54192817cd57cb4aa838f59",
+      "size_bytes": 853
+    },
+    {
+      "created_at": "2026-08-27T11:58:34+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/collector_command.txt",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:c415adc9d3ea41abfa5e97272bcafe2d314bc9b55cbbe1e3c5428c69d693d6b5",
+      "size_bytes": 815
+    },
+    {
+      "created_at": "2026-08-27T11:58:34+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/collector_stderr.log",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:257f8f7971f19195880dbc767c1410a435cbcbed9e8047d322c92223c8c7a6a4",
+      "size_bytes": 55
+    },
+    {
+      "created_at": "2026-08-27T11:58:34+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/collector_stdout.log",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:4b5eaeb322e4c353b298bbcf83ed29a54686e12d14027ec726027965f3e84c36",
+      "size_bytes": 2339
+    },
+    {
+      "created_at": "2026-08-27T11:58:35+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/collector_storage/command_window_markers.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:da3828374ab22961f174871ebb7e5beaffae80c87e0e8ee99a8a1156fc635cc6",
+      "size_bytes": 3395
+    },
+    {
+      "created_at": "2026-08-27T11:58:35+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/collector_storage/fast_firmware.parquet",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:078c7e07a7e3fd1af85d99d40de0da02c577650fca50e712d7ab5f8196a6a89e",
+      "size_bytes": 669334
+    },
+    {
+      "created_at": "2026-08-27T11:58:35+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/energy_command.sh",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:99a3eaf61cc7f2d61c773d2490a36ed28115fa4b68b9ae75142f96d9dbd809dc",
+      "size_bytes": 1258
+    },
+    {
+      "created_at": "2026-08-27T11:58:35+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/energy_summary.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:f0d69aa7f49cfce47caeebe613fbb9f8e215b189ae10ac26f17493d3a5f1b605",
+      "size_bytes": 14807
+    },
+    {
+      "created_at": "2026-08-27T11:58:35+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/preflight/preflight_attestation.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:8bb8fcd9bbba0388318128e0ade0cf1760c36b298a68b1342a8137b8999a62f3",
+      "size_bytes": 56294
+    },
+    {
+      "created_at": "2026-08-27T11:58:35+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/preflight/preflight_command.sh",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:f9e981d9b447295d8ad853a61482530613d483f179fe1b66a1beb60cbf9af30c",
+      "size_bytes": 6032
+    },
+    {
+      "created_at": "2026-08-27T11:58:36+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/preflight/preflight_evidence.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:3cd7353aabf0a50ab487c67fffa604602fce80b1c734ced338419bdf5bb3f4db",
+      "size_bytes": 3676
+    },
+    {
+      "created_at": "2026-08-27T11:58:36+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/preflight/preflight_status.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:5bb846d6089ddd4d6f2494857eba3f4fee058c72210a3ba15495b0ac339086f6",
+      "size_bytes": 526
+    },
+    {
+      "created_at": "2026-08-27T11:58:36+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/preflight/preflight_stderr.log",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "created_at": "2026-08-27T11:58:36+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/preflight/preflight_stdout.log",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:d737eebe2c16106b0aa5afb2222dba73769069ac785ca4645e87ea0c9dc17649",
+      "size_bytes": 38001
+    },
+    {
+      "created_at": "2026-08-27T11:58:36+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/runtime_work_units_evidence.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:4dd3e3e06e05a1ad17354579c9c1f71a857c5383c63ace2962169c4c49bd596a",
+      "size_bytes": 133
+    },
+    {
+      "created_at": "2026-08-27T11:58:36+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/workload_command.sh",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:ee42517d6bf2028ba1fc4c9d69f4e43e79314ccdda699397e4c9fafed5620061",
+      "size_bytes": 2326
+    },
+    {
+      "created_at": "2026-08-27T11:58:36+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/workload_stderr.log",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:95aa45a1deb206fea41fd4e36b251917cf00f818e85e7460ba84ef1b01baa1ee",
+      "size_bytes": 124
+    },
+    {
+      "created_at": "2026-08-27T11:58:37+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/workload_stdout.log",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "created_at": "2026-08-27T11:58:37+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/workload_timing.txt",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:c8ca0645aceab716bd3731ca05efabca382187051614c551cf1cc841e3f4baf5",
+      "size_bytes": 61
+    },
+    {
+      "created_at": "2026-08-27T11:58:37+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/workload_contract_attempt_00.sh",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:9c1c6de1fd81861bbdd43ca6f563504dacee63e4f7445a738efde8a70a6ed4f5",
+      "size_bytes": 1974
+    },
+    {
+      "created_at": "2026-08-27T11:58:37+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/plan/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc.command_contract.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:a355c6e138521f2fad99070ac1aef645d2ea146e102e577c9c6dfc81c8089be1",
+      "size_bytes": 164060
+    },
+    {
+      "created_at": "2026-08-27T11:58:37+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/plan/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc.preflight.sh",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:685ffbda4328b92ccac2c4d59aef80cb548a8be3bf8770edc78d591342f209c7",
+      "size_bytes": 5482
+    },
+    {
+      "created_at": "2026-08-27T11:58:37+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/plan/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc.sh",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:910e333ce0c308b79a001a727bc6d9171df0ea6450c5441f858210df830bb0f5",
+      "size_bytes": 5009
+    },
+    {
+      "created_at": "2026-08-27T11:58:38+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/plan/native_producer_energy_plan.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:5cb9dead20b11a2e7786b580ad0abe297bb44229b4b163b5a6dd690967812862",
+      "size_bytes": 33739
+    },
+    {
+      "created_at": "2026-08-27T11:58:38+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/plan/native_producer_energy_plan.md",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:da029cf7b2a0677403bf56758ab44af74e3c7ca06d1b7e33a0ed8c13ed7462cb",
+      "size_bytes": 2472
+    },
+    {
+      "created_at": "2026-08-27T11:58:38+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/window_method_validation_probe/window_method_validation_probe.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:6fc500f982eb6c86e47005b459ee945aed03a6430da8a126c6af6764a567301d",
+      "size_bytes": 95826
+    },
+    {
+      "created_at": "2026-08-27T11:58:38+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_model_hash_map.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:041d6557fdf6af55ed82af2e0b86d2c0879dd9cd88fe79d8d73fcc950b5637da",
+      "size_bytes": 648
+    },
+    {
+      "created_at": "2026-08-27T11:58:38+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/checkpoints/native_energy/journal.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:d27cd07b15ab45debfe3f26db44fd188c5c2b2fe0e0804646eda2caa347ce6c8",
+      "size_bytes": 1487
+    },
+    {
+      "created_at": "2026-08-27T11:58:38+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/checkpoints/native_energy/rows/0000_acbf169afc93aea3.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:340ac8e85d89389167c977a7b091ef383a9c804efe25b6d02b6186ac884d511d",
+      "size_bytes": 266337
+    },
+    {
+      "created_at": "2026-08-27T11:58:38+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/checkpoints/native_energy/rows/0001_d4322ed0bc050393.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:36ab829d4fe59d3d156707cd58499c6db8f96a832153eb9b8db482f85bc48f17",
+      "size_bytes": 248311
+    },
+    {
+      "created_at": "2026-08-27T11:58:39+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/checkpoints/native_energy/rows/0002_187def944358be8d.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:6e05bb02fb47806e44a75653e87d99a83315cc319faa13849b583af1686225ea",
+      "size_bytes": 248273
+    },
+    {
+      "created_at": "2026-08-27T11:58:39+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_002/attempt_01/artifact_index.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:1f67195e6ca9ccab5bbfc644f1d574886425ad5e744ff0377dd0d3f062fd7ad6",
+      "size_bytes": 11476
+    },
+    {
+      "created_at": "2026-08-27T11:58:39+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_002/attempt_01/probe/duration_probe.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:bf0398ca10fcae152150183ec8cdaf8564ca6c7d08ed03129a3f987a23b90004",
+      "size_bytes": 1105
+    },
+    {
+      "created_at": "2026-08-27T11:58:39+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_002/attempt_01/energy_aggregate.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:75e50c34baffe6d9328ce7e8acf2ba400ce940d12393eb97e1560895ad641cc2",
+      "size_bytes": 46184
+    },
+    {
+      "created_at": "2026-08-27T11:58:39+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_002/energy_command.sh",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:d2a2ab972d08739453cb4ebe38aef58ac3b48ab8351a2bea926732190a1a99c4",
+      "size_bytes": 1586
+    },
+    {
+      "created_at": "2026-08-27T11:58:39+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_002/attempt_01/energy_current_status.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:fdde790130b334ff604b7cb7b70fdb8fa2d1862ad3f55e7f1263d51ad1d4df67",
+      "size_bytes": 2131
+    },
+    {
+      "created_at": "2026-08-27T11:58:39+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_002/energy_summary.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:2b8d14a92105907cdafdef26c483fdf35b63efb0e1f88e2c20f40369bd4e0bd2",
+      "size_bytes": 15757
+    },
+    {
+      "created_at": "2026-08-27T11:58:40+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/repeat_retry_attempts/repeat_002/attempt_01/collector_reconnect_evidence.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:02e8e796815099b4cd45a18f90bc9dc4646b1d7a7d5ae828cbda55934de0de09",
+      "size_bytes": 306
+    },
+    {
+      "created_at": "2026-08-27T11:58:40+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_002/preflight/preflight_attestation.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:5530389638721b139795921436193bd4f6ff7bfd9b776afe9055b2003ddba479",
+      "size_bytes": 2198
+    },
+    {
+      "created_at": "2026-08-27T11:58:40+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_002/preflight/preflight_command.sh",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:f41a7de1687bf61c7ebeea5f67597593c80fc6434368207cecde8ad40ae5eb55",
+      "size_bytes": 6219
+    },
+    {
+      "created_at": "2026-08-27T11:58:40+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_002/preflight/preflight_evidence.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:9740154c2fa24232e851bc79f8887aefc40589021c168c34cf0e9bf52ac5d03e",
+      "size_bytes": 4011
+    },
+    {
+      "created_at": "2026-08-27T11:58:40+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_002/preflight/preflight_status.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:bc636b4e7347d9d995ebc5ac9633d8883e14dd501e891d1000c0e26fa5778a7a",
+      "size_bytes": 607
+    },
+    {
+      "created_at": "2026-08-27T11:58:40+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_002/runtime_work_units_evidence.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:4dd3e3e06e05a1ad17354579c9c1f71a857c5383c63ace2962169c4c49bd596a",
+      "size_bytes": 133
+    },
+    {
+      "created_at": "2026-08-27T11:58:41+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9/plan_30671fc2278e429f908b23c535f15665/attempt_c8ed1363e5634d3c93bf87f47e10ada5/run_002/workload_command.sh",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:fde8033e856881b7da21032e810614690c5b8a0ce82735744f0217f0c87c3a6e",
+      "size_bytes": 5444
+    },
+    {
+      "created_at": "2026-08-27T11:58:41+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/native_producer_energy_results.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:fd15801c28a0edc5ebb5cd84e36d2eb441414e51f7eb53299cf00cafd41fbf5a",
+      "size_bytes": 717024
+    },
+    {
+      "created_at": "2026-08-27T11:58:41+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/native_producer_energy_results.md",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:0a9c55881cb2d27f64d7ee8aa356e9bf6c359ae2af8c0c7be69bd8230d1b594c",
+      "size_bytes": 256
+    },
+    {
+      "created_at": "2026-08-27T11:58:41+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/native_producer_energy_results.partial.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:10713126c6732e834b790a5e5ddd2ae5cbf6d07f127cf80f8b0d25bd458dbe5b",
+      "size_bytes": 715411
+    },
+    {
+      "created_at": "2026-08-27T11:58:41+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/plan/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc.command_contract.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:a355c6e138521f2fad99070ac1aef645d2ea146e102e577c9c6dfc81c8089be1",
+      "size_bytes": 164060
+    },
+    {
+      "created_at": "2026-08-27T11:58:41+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/plan/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc.preflight.sh",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:ac5031d1aa585886aa15c0d22ac1167b7d43d0ecb12ebde9d7862a6469fe3204",
+      "size_bytes": 5382
+    },
+    {
+      "created_at": "2026-08-27T11:58:41+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/plan/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc.sh",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:910e333ce0c308b79a001a727bc6d9171df0ea6450c5441f858210df830bb0f5",
+      "size_bytes": 5009
+    },
+    {
+      "created_at": "2026-08-27T11:58:42+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/plan/native_full_hailo8__yolov7_paper__full__orin_nx_hailo8_01__9b0225ee3618.command_contract.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:1a12030df77ec97e7f006ecb38ec316197d6748d069304d745e7c4831125b38a",
+      "size_bytes": 30281
+    },
+    {
+      "created_at": "2026-08-27T11:58:42+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/plan/native_full_hailo8__yolov7_paper__full__orin_nx_hailo8_01__9b0225ee3618.preflight.sh",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:c5d5efd1692fbeb98b6e90cdfd128a827a56a43b3055275e169b4881866d801b",
+      "size_bytes": 5633
+    },
+    {
+      "created_at": "2026-08-27T11:58:42+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/plan/native_full_hailo8__yolov7_paper__full__orin_nx_hailo8_01__9b0225ee3618.sh",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:00ee74bd13e56187db6a41195b1b77ce89445c48a3e1e55df2e6f6655a1fc5b4",
+      "size_bytes": 4866
+    },
+    {
+      "created_at": "2026-08-27T11:58:42+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/plan/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9.command_contract.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:081c92f7310f23efc62f7e79087755c58cdb7dcdf43064f28b86bf504496ccdc",
+      "size_bytes": 35329
+    },
+    {
+      "created_at": "2026-08-27T11:58:42+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/plan/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9.preflight.sh",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:505993b75b7376482ddf81abae8b05c0b24bed125c4a2e2ffcbc4b84445cc877",
+      "size_bytes": 5655
+    },
+    {
+      "created_at": "2026-08-27T11:58:42+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/plan/native_full_tensorrt__yolov7_paper__full__orin_nx_hailo8_01__5d969ecc44a9.sh",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:3d1acbf932f8246f032935eb09d4dcde9c3b7be56397c1bdda39954b7eca67d8",
+      "size_bytes": 4880
+    },
+    {
+      "created_at": "2026-08-27T11:58:43+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/plan/native_producer_energy_plan.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:9a46a9f42d82973937687c9894f5f465b29ab77c5217a44e427c55caa128e4aa",
+      "size_bytes": 74360
+    },
+    {
+      "created_at": "2026-08-27T11:58:43+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/plan/native_producer_energy_plan.md",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:a362ba4445e59f1204f637f45dffe9de11b84f14f2ce82deedfb088c9896924a",
+      "size_bytes": 9300
+    },
+    {
+      "created_at": "2026-08-27T11:58:43+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_energy_measurements/stages/native_energy/stage_result.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:91efc2472ddf4f71ef6975baea3f92f6750c83327411d65f9e63047a6fdd6e8c",
+      "size_bytes": 1415
+    },
+    {
+      "created_at": "2026-08-27T11:58:43+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_evidence_status.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:4e05cfce13ff35319a39827cacd0b0a63d9410cc03706a7c94c1c5ca1d7fe917",
+      "size_bytes": 4709
+    },
+    {
+      "created_at": "2026-08-27T11:58:43+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_stage_concise_summary.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:f38e75d86ec9b6e7140cd6f724833fc086394c32c2a814ee7ed73e9283f6ce92",
+      "size_bytes": 131575
+    },
+    {
+      "created_at": "2026-08-27T11:58:43+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/native_stage_concise_summary.csv",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:17043a370931b1e17137e4c62c845018c43474ae8e862991c15271ffdfd503d2",
+      "size_bytes": 76104
+    },
+    {
+      "created_at": "2026-08-27T11:58:44+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "stages/run_native_producers/stage_result.json",
+      "producer_stage": "run_native_producers",
+      "sha256": "sha256:6a33ada4b1501d978ccdfdce53d8979f915eab95d2b449759a86d70c26d37f08",
+      "size_bytes": 29692
+    },
+    {
+      "created_at": "2026-08-27T11:59:08+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/scientific_report.md",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:758cc25e1b4ec5ba15e24b52caa9e3057afc40d3bc71927fdfbf4414a6eea101",
+      "size_bytes": 31903
+    },
+    {
+      "created_at": "2026-08-27T11:59:04+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/workflow_readme.md",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:349298ffaa9712abc0ac3cef5fa4280968063f60fae4ec008600d2390f26119c",
+      "size_bytes": 3384
+    },
+    {
+      "created_at": "2026-08-27T11:59:04+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/results_bundle_manifest.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:8a4a1d33a9b3604de245bb4b9e24edda7001fba137138e7d4bf9c97a2eaf4560",
+      "size_bytes": 30618
+    },
+    {
+      "created_at": "2026-08-27T11:59:05+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/scientific_report.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:d47ffdc732d4b3239894cb9cf4dabb492acbcad19c9fea8ee4c3d49bb99e75c9",
+      "size_bytes": 666946
+    },
+    {
+      "created_at": "2026-08-27T11:59:05+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/row_eligibility.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:24a602d188320107f9d38cba65b739ab355f6682539474a000ef689ca261b7c7",
+      "size_bytes": 27872
+    },
+    {
+      "created_at": "2026-08-27T11:59:05+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/endpoint_lifecycle_ledger.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:0fe4ebef65be00842feae7995c5d492da8d99290dbd0a3a1acf0905cfcf7e84f",
+      "size_bytes": 2388
+    },
+    {
+      "created_at": "2026-08-27T11:59:05+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/endpoint_lifecycle_ledger.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:49d63a687308efb4bcac73563a1bbdfd579893192771bf897da3595bacab054a",
+      "size_bytes": 8399
+    },
+    {
+      "created_at": "2026-08-27T11:59:05+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/endpoint_lifecycle_summary.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:bbdf74d5a80de465f267f602c3b6720e3b9a0563a92fc9e1bd2add754fd53239",
+      "size_bytes": 2503
+    },
+    {
+      "created_at": "2026-08-27T11:59:05+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/central_quality_results.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:f70a9e8756ae7176bff2ad4a796c22a2b95b612bdd67a7fe06b48b17bf64334b",
+      "size_bytes": 37435
+    },
+    {
+      "created_at": "2026-08-27T11:59:05+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/central_quality_results.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:0c1785c324a1dbcc575079373d33964791ca9eb9fe04919b7041013e92fb15c7",
+      "size_bytes": 22115
+    },
+    {
+      "created_at": "2026-08-27T11:59:05+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/task_quality.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:f70a9e8756ae7176bff2ad4a796c22a2b95b612bdd67a7fe06b48b17bf64334b",
+      "size_bytes": 37435
+    },
+    {
+      "created_at": "2026-08-27T11:59:05+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/task_quality.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:3aa9b602d61bc677747fab202b3c9b446b66b7048848980c986910e696be0d4e",
+      "size_bytes": 8454
+    },
+    {
+      "created_at": "2026-08-27T11:59:05+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/claim_eligible_performance.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:4d5c3e6795fd25be39242dbd2bc5fb21691c9591e700eb73bcb5f7068c7fa9a7",
+      "size_bytes": 287
+    },
+    {
+      "created_at": "2026-08-27T11:59:05+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/claim_eligible_energy.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:3aaa0d344d2ea1af4bbcb8664747ac9cd491aed0715d4437dbb6efd18b86e9c0",
+      "size_bytes": 379
+    },
+    {
+      "created_at": "2026-08-27T11:59:05+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/claim_exclusion_details.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:ef48582c0a5dc040676e3bcb6cc074ac013ff33181ec85545eb65ee837bd8cdc",
+      "size_bytes": 5739
+    },
+    {
+      "created_at": "2026-08-27T11:59:05+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/claim_exclusion_grouped_counts.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:685106bd47deeadcb03e8c23e9ae360d41dc0e076a39eecc731f07530ab0cf20",
+      "size_bytes": 3134
+    },
+    {
+      "created_at": "2026-08-27T11:59:05+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/claim_exclusion_dimension_counts.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:091a32cb980db78d5548b8e577fa6a14f57f42e1e63818d0b0be9463a4dfc70a",
+      "size_bytes": 1026
+    },
+    {
+      "created_at": "2026-08-27T11:59:05+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/claim_exclusion_summary.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:05203527682e3bfee709a6049a1779b2a3d5ecf016a48c84dc3ea9ff88bf72dd",
+      "size_bytes": 25735
+    },
+    {
+      "created_at": "2026-08-27T11:59:05+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/claim_exclusion_summary.md",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:6add95bf0f24634f3e8342154e25dc714b4fcc63ed79c87e9764fad04b32ae47",
+      "size_bytes": 11994
+    },
+    {
+      "created_at": "2026-08-27T11:59:06+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/performance_results.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "size_bytes": 2
+    },
+    {
+      "created_at": "2026-08-27T11:59:06+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/performance_results.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "size_bytes": 3
+    },
+    {
+      "created_at": "2026-08-27T11:59:06+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/performance_observations.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:a5f420a33c197464cd6169da48222173b8dabbfcd8e0e86edf9db825e9216965",
+      "size_bytes": 10286
+    },
+    {
+      "created_at": "2026-08-27T11:59:06+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/performance_observations.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:dab61d3a5045a3dc4f944dd0bc5f6851c38646c0898869d29aa2ac8c39b226c8",
+      "size_bytes": 34610
+    },
+    {
+      "created_at": "2026-08-27T11:59:06+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/performance_cohorts.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:dd1adaafb2035f487ad94c4ff7086dc85ae3b5900c27cb3c0638984eb9baa759",
+      "size_bytes": 11520
+    },
+    {
+      "created_at": "2026-08-27T11:59:06+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/performance_cohorts.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:702bff4b82788d5cad1861e7f2559f3b066c0d39f2dbe82c188680b82526db46",
+      "size_bytes": 38361
+    },
+    {
+      "created_at": "2026-08-27T11:59:06+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/performance_cohort_summary.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:c7d054ef8d2d0722641f7808bb80f85d87d3b1a6f37214d1f1ee8ce2d8af4de2",
+      "size_bytes": 472
+    },
+    {
+      "created_at": "2026-08-27T11:59:06+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/energy_results.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "size_bytes": 2
+    },
+    {
+      "created_at": "2026-08-27T11:59:06+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/screening_performance_observations.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:3bf33b3b12b6c5b00fef81255bd2f0ab291c293cc731bab9dd12cdc1325f9154",
+      "size_bytes": 10566
+    },
+    {
+      "created_at": "2026-08-27T11:59:06+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/screening_performance_observations.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:5f4124f92d88442b78e6e39d87a4303bbcb621a545d90d4a517267eb035aaff9",
+      "size_bytes": 35258
+    },
+    {
+      "created_at": "2026-08-27T11:59:06+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_comparison_eligible_observations.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:93f811b5dfc393a27c308a88fd203f2f8e7a203251917907d560b6077f4d2b6f",
+      "size_bytes": 31306
+    },
+    {
+      "created_at": "2026-08-27T11:59:06+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_comparison_eligible_observations.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:41fea5fe518dd532bd0d9f8f5560864964c4dbe3737fa0839939e0f5adad1b0b",
+      "size_bytes": 48422
+    },
+    {
+      "created_at": "2026-08-27T11:59:06+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/screening_energy_observations.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:b8c9872d16f759701f942a290ab06fe1c78a1d42a75c2e484fc497d5cce7d62d",
+      "size_bytes": 17047
+    },
+    {
+      "created_at": "2026-08-27T11:59:06+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/screening_energy_observations.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:63049930b62bd7df188084b27a688a207e9ed8fca459d8a9bc4930cc32fd1f1a",
+      "size_bytes": 29007
+    },
+    {
+      "created_at": "2026-08-27T11:59:06+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/ranking_method_comparison.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "size_bytes": 2
+    },
+    {
+      "created_at": "2026-08-27T11:59:06+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/ranking_method_macro.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "size_bytes": 2
+    },
+    {
+      "created_at": "2026-08-27T11:59:07+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/ranking_method_cohort_sensitivity.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "size_bytes": 2
+    },
+    {
+      "created_at": "2026-08-27T11:59:07+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/ranking_method_cohort_sensitivity.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "size_bytes": 3
+    },
+    {
+      "created_at": "2026-08-27T11:59:07+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/ranking_method_cohort_sensitivity.md",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:eca469ff961477b48726483dcb6a4f821011959e01c5121e89a552d38acbeb67",
+      "size_bytes": 305
+    },
+    {
+      "created_at": "2026-08-27T11:59:07+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_ranking_audit.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "size_bytes": 2
+    },
+    {
+      "created_at": "2026-08-27T11:59:07+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_ranking_audit.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:58fd5a529ce6a92a9f040a23af369799ec40396243c2a5f2c9ee9ed0732b5d8a",
+      "size_bytes": 1224
+    },
+    {
+      "created_at": "2026-08-27T11:59:07+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_ranking_audit.md",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:75d2eb583740538bcf9ba1f42ca8d1ffcfccb06fd4de68a55842709a52238e21",
+      "size_bytes": 390
+    },
+    {
+      "created_at": "2026-08-27T11:59:07+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/cross_runner_candidate_pairs.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:029e564ed867695d34bda77600041c75a98554adb5413399efedb690782fa4a3",
+      "size_bytes": 5130
+    },
+    {
+      "created_at": "2026-08-27T11:59:07+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/cross_runner_candidate_pairs.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:772d811d8e6023d9ace2a2e626b88ca604553065a8ccbb02f6ef3145a6125a87",
+      "size_bytes": 6058
+    },
+    {
+      "created_at": "2026-08-27T11:59:07+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/cross_runner_ranking_validation.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:3161b185a29988f55a5e55e2a5a67aa5ca24bd8f2f24e649fcf9131981012dde",
+      "size_bytes": 1614
+    },
+    {
+      "created_at": "2026-08-27T11:59:07+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/cross_runner_ranking_validation.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:46574025dc4453941a0ea39780d755a4ca3d3692e8abbb208c67b1d2057ef405",
+      "size_bytes": 2205
+    },
+    {
+      "created_at": "2026-08-27T11:59:07+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/cross_runner_ranking_macro.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:f2a633a04bafab82df3da22974ca30245936fc65fbd51920c40036936e117d05",
+      "size_bytes": 1048
+    },
+    {
+      "created_at": "2026-08-27T11:59:07+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/cross_runner_ranking.md",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:f76ab9889183c9dcc51b94240707a40debb02f977fc817478f497a83164e6b3a",
+      "size_bytes": 1268
+    },
+    {
+      "created_at": "2026-08-27T11:59:07+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_observations.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:46fe67188d9468875c96250a1817f368b0667e512dceab03fb12873c861b342a",
+      "size_bytes": 62582
+    },
+    {
+      "created_at": "2026-08-27T11:59:07+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_observations.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:88c6fd3a67e4a17580d20dd962df6c8bedee64d444176beedb3b611b12a11c35",
+      "size_bytes": 38387
+    },
+    {
+      "created_at": "2026-08-27T11:59:07+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_pair_comparison.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "size_bytes": 2
+    },
+    {
+      "created_at": "2026-08-27T11:59:08+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_pair_comparison.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "size_bytes": 3
+    },
+    {
+      "created_at": "2026-08-27T11:59:08+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_performance_matrix.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:f711ed427a4ee795f71f914fed8e79d39d984ad7d06aa3927f7d1ae94c5f1c56",
+      "size_bytes": 333107
+    },
+    {
+      "created_at": "2026-08-27T11:59:08+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_performance_observations.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:168659fe70bdd2d1f01492eeaa3c8f8dca72e9b0b48a88858b98cdd6af79f217",
+      "size_bytes": 80509
+    },
+    {
+      "created_at": "2026-08-27T11:59:08+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_performance_observations.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:b282b78cb624b0914a088c6516bce8b3e494b800ad3280e2d427b6fd2b418347",
+      "size_bytes": 132082
+    },
+    {
+      "created_at": "2026-08-27T11:59:08+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_ab_aggregates.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:14e3a33ed3fe506328cb413379e59a5a9d730c9bd0dab39b56e342a6dda5e03f",
+      "size_bytes": 28810
+    },
+    {
+      "created_at": "2026-08-27T11:59:08+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_ab_aggregates.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:64c89dfbca076978ba005a05e4917b71871f8bccf48dfde0a8e2e27927e8ec8a",
+      "size_bytes": 44998
+    },
+    {
+      "created_at": "2026-08-27T11:59:08+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_pair_comparison.md",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:c739002f4e8c1b03e3363dc73749f8139f72374a0d1e24e2efb0af969d960010",
+      "size_bytes": 67
+    },
+    {
+      "created_at": "2026-08-27T11:59:08+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_performance_matrix.md",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:30c8e3d3b9aec6e411464898c69e9a751740e7b263b3386f4f41ce285d21ebeb",
+      "size_bytes": 6319
+    },
+    {
+      "created_at": "2026-08-27T11:59:08+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_ab_aggregates.md",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:ec8bd356c1ff5509d436dc3606615db6af49d083dfb78e27e963fca5cefc839c",
+      "size_bytes": 592
+    },
+    {
+      "created_at": "2026-08-27T11:59:08+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/campaign_readiness.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:a2aa2f461a15270d8d2231be5b4be07d693ab9a661107c881bc28082c63e0b08",
+      "size_bytes": 13269
+    },
+    {
+      "created_at": "2026-08-27T11:59:08+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/task_quality_gates.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:a8958b4222c04416d099e3adaf19409ee38638c1bb1734ab10270140c6917c39",
+      "size_bytes": 1107
+    },
+    {
+      "created_at": "2026-08-27T11:59:08+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/ranking_method_comparison.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:6d57de123beb7b36c30a699acedde248f068ca4663f3ba978853e797d714d529",
+      "size_bytes": 515
+    },
+    {
+      "created_at": "2026-08-27T11:59:08+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/ranking_method_cohort_sensitivity.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:780e543792ff60283a91e1e98aae170b92f85727980bd6ab5d26a16f7fa2aed3",
+      "size_bytes": 490
+    },
+    {
+      "created_at": "2026-08-27T11:59:08+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/cross_runner_ranking_validation.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:cb43157b7185dcb025065a7f79bce1b7a9fe51b554d41d3410df1d14c44879a6",
+      "size_bytes": 627
+    },
+    {
+      "created_at": "2026-08-27T11:59:08+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/campaign_readiness.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:a5eae5b33274ea6c924570b5d6c7c76f0ccb8c099e867de80b5076e1496b0c58",
+      "size_bytes": 3804
+    },
+    {
+      "created_at": "2026-08-27T11:59:09+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/performance_results.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:262e251b6003b95e50afeb04b8bc0c1056ccae5b1e40f9e56d47feb762fdf67f",
+      "size_bytes": 378
+    },
+    {
+      "created_at": "2026-08-27T11:59:09+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/performance_observations.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:9eb8bec8b3e680381fc65095e247cd35d42fc48392cd8291d75c33aa99f31a6b",
+      "size_bytes": 1100
+    },
+    {
+      "created_at": "2026-08-27T11:59:09+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/screening_performance_observations.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:852b85490101f44faf5fd970afcd6bc7f146b8b3f27e8435b3f6513e15498f7c",
+      "size_bytes": 1395
+    },
+    {
+      "created_at": "2026-08-27T11:59:09+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/native_performance_observations.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:02d94d631db1e80e99801425ee83b74c45ee29aa081fdcbba044b6eecd668ca3",
+      "size_bytes": 6571
+    },
+    {
+      "created_at": "2026-08-27T11:59:09+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/screening_energy_observations.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:677bf33c12c4e083cac3eff57a778f9d23e660de4ea5dd9f400377edc39dcae5",
+      "size_bytes": 2429
+    },
+    {
+      "created_at": "2026-08-27T11:59:09+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/energy_results.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:e46a9e35d7a876f28b60005b9ee79ac435926829d23ac4ce35caba95971f6ea3",
+      "size_bytes": 336
+    },
+    {
+      "created_at": "2026-08-27T11:59:09+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/native_energy_observations.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:5c57f392ec98516f8cd17573cedbf16970dc32efe5b1fe73d77a295ec57421f7",
+      "size_bytes": 2458
+    },
+    {
+      "created_at": "2026-08-27T11:59:09+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/native_energy_pair_comparison.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:792b57a1a844254002c7b92b5f8ba71c8634e3fa576996d4d35763d6e77de4ef",
+      "size_bytes": 330
+    },
+    {
+      "created_at": "2026-08-27T11:59:09+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/native_energy_ab_aggregates.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:c62e563ad2f58c7619aea9a67d5266bfe4bab117f8c5e68f44cff88896acb581",
+      "size_bytes": 842
+    },
+    {
+      "created_at": "2026-08-27T11:59:09+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/figures/task_quality_status_counts.pdf",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:6b8d8091c0d4620dfb84151c022410a83b3de098fe1be6f3a2874f7ab339ad15",
+      "size_bytes": 13055
+    },
+    {
+      "created_at": "2026-08-27T11:59:09+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/figures/task_quality_status_counts.png",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:baf7e5de944354b12321f84eec2d1d61c8b5200918fea6e181462c92f671cdec",
+      "size_bytes": 64405
+    },
+    {
+      "created_at": "2026-08-27T11:59:09+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/figures/task_quality_noninferiority.pdf",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:f52bfc4e8753d22c670edcb5524ea15e9284c38117d5c1255902516774d90424",
+      "size_bytes": 13625
+    },
+    {
+      "created_at": "2026-08-27T11:59:09+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/figures/task_quality_noninferiority.png",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:03ebd8f8dbdee3cf5496005828700fcf2125c48554ab709aa88c2eafd65b4029",
+      "size_bytes": 54572
+    },
+    {
+      "created_at": "2026-08-27T11:59:09+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/figures/screening_throughput_observations.pdf",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:706607c236b8dd1d194671505c4dc9f8df87bc708c7125108928111c91ea8308",
+      "size_bytes": 15648
+    },
+    {
+      "created_at": "2026-08-27T11:59:09+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/figures/screening_throughput_observations.png",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:881b289c32dbcb70c5f0d6d00cea2553db26a7cef3a04d6656e29d898e17c5ac",
+      "size_bytes": 116935
+    },
+    {
+      "created_at": "2026-08-27T11:59:09+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/result_dashboard.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:4be388c5ce29d58048affb7a21a604cd055f39208e3fd9aea009dd5a9e05e410",
+      "size_bytes": 82177
+    },
+    {
+      "created_at": "2026-08-27T11:59:10+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/result_dashboard.md",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:758cc25e1b4ec5ba15e24b52caa9e3057afc40d3bc71927fdfbf4414a6eea101",
+      "size_bytes": 31903
+    },
+    {
+      "created_at": "2026-08-27T11:59:10+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/summary.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:24a602d188320107f9d38cba65b739ab355f6682539474a000ef689ca261b7c7",
+      "size_bytes": 27872
+    },
+    {
+      "created_at": "2026-08-27T11:59:10+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/model_summary.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:2c92c63f12f0b058c50e752c1d260e190bf48b0e54d1abce76d64983f65d9a83",
+      "size_bytes": 254
+    },
+    {
+      "created_at": "2026-08-27T11:59:10+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/task_quality_reference_comparison.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:b90ddbfeb16867475ba6343231b7bf568b1bdfb912bd17b90f1deb6d4fc5f636",
+      "size_bytes": 2423
+    },
+    {
+      "created_at": "2026-08-27T11:59:10+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/task_quality_reference_comparison.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:d343311e94d4b326054a595700596d1cb56fc05a6d8d38dbbb362f0ea5dbe8a2",
+      "size_bytes": 5485
+    },
+    {
+      "created_at": "2026-08-27T11:59:10+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/task_quality_reference_comparison.md",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:7e9ac2fbd1a560c4e168cedcca4685a00e3619ae50cc68bffafacbd480a82dde",
+      "size_bytes": 1411
+    },
+    {
+      "created_at": "2026-08-27T11:59:10+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/task_quality_loss_decomposition.csv",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:d2401bd57b7cc43cd0f8d30b34cda290be0fcd2c8154b467d888a52b691986a5",
+      "size_bytes": 1516
+    },
+    {
+      "created_at": "2026-08-27T11:59:10+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/task_quality_loss_decomposition.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:b8215497e229363f9970fd1d4447cb61e1a5a8850fe3c44406ed67baba3144c3",
+      "size_bytes": 2474
+    },
+    {
+      "created_at": "2026-08-27T11:59:10+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/task_quality_loss_decomposition.md",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:146f36f2bed802ce4da6eb3f7210e0681dbd66b4da1b5edf7e57545d3c9b70c4",
+      "size_bytes": 885
+    },
+    {
+      "created_at": "2026-08-27T11:59:10+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/task_quality_reference_comparison.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:46333d9a53a6c83bda675485fcfabf28d6f1a99a5c474459ce84b0593c352710",
+      "size_bytes": 573
+    },
+    {
+      "created_at": "2026-08-27T11:59:10+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/task_quality_loss_decomposition.tex",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:6ce10b5e5f0d3bb42f1b7d0479200d4ebe076ed7376f7c5e8f9f65a73b69b8da",
+      "size_bytes": 431
+    },
+    {
+      "created_at": "2026-08-27T11:59:10+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/quality_evidence_v61a.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:1902d23cc8a6cd5f4cc1c73feb06af937ffb54c6001d68d1bae711c01a1d1392",
+      "size_bytes": 291
+    },
+    {
+      "created_at": "2026-08-27T11:59:10+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/quality_evidence_v60z.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:1902d23cc8a6cd5f4cc1c73feb06af937ffb54c6001d68d1bae711c01a1d1392",
+      "size_bytes": 291
+    },
+    {
+      "created_at": "2026-08-27T11:59:10+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "reports/scientific/report_manifest.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:3151a8beedf5a68a06f5aeb7ad273418c4f2cdeabc02988928577f092c4ebd3d",
+      "size_bytes": 17130
+    },
+    {
+      "created_at": "2026-08-27T11:59:11+02:00",
+      "kind": "stage_artifact",
+      "model_id": null,
+      "path": "stages/generate_report/stage_result.json",
+      "producer_stage": "generate_report",
+      "sha256": "sha256:2dab60e8c3f91d260d45b132f030c002dd9a075fbc62a5784ade6fc4e6516aa9",
+      "size_bytes": 6869
+    },
+    {
+      "created_at": "2026-08-27T11:59:12+02:00",
+      "kind": "job_artifact",
+      "model_id": null,
+      "path": "jobs/job_timeline.md",
+      "producer_stage": "workflow_job_queue",
+      "sha256": "sha256:6c876e0e62b1a78d6abe716341bbdca3243c32c3f95314a0b4bd7948c71c01a8",
+      "size_bytes": 4874
+    },
+    {
+      "created_at": "2026-08-27T11:59:12+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/run_status_summary.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:b3e7f588d618c2adb56679b0645b5584c43b7d4a806def4b866e14907fa9d80d",
+      "size_bytes": 18917
+    },
+    {
+      "created_at": "2026-08-27T11:59:12+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/run_status_summary.md",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:5e87f00c9119d4390e7515f45d727d53dff2ff9e1d7b089664fbd0c3675d5816",
+      "size_bytes": 1607
+    },
+    {
+      "created_at": "2026-08-27T11:59:32+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/scientific_report.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:a2fb62a693357cf834b922da88b33fb70afb009319461f99ffb10aaa4c72e448",
+      "size_bytes": 666939
+    },
+    {
+      "created_at": "2026-08-27T11:59:32+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/row_eligibility.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:24a602d188320107f9d38cba65b739ab355f6682539474a000ef689ca261b7c7",
+      "size_bytes": 27872
+    },
+    {
+      "created_at": "2026-08-27T11:59:32+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/endpoint_lifecycle_ledger.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:0fe4ebef65be00842feae7995c5d492da8d99290dbd0a3a1acf0905cfcf7e84f",
+      "size_bytes": 2388
+    },
+    {
+      "created_at": "2026-08-27T11:59:32+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/endpoint_lifecycle_ledger.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:49d63a687308efb4bcac73563a1bbdfd579893192771bf897da3595bacab054a",
+      "size_bytes": 8399
+    },
+    {
+      "created_at": "2026-08-27T11:59:32+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/endpoint_lifecycle_summary.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:bbdf74d5a80de465f267f602c3b6720e3b9a0563a92fc9e1bd2add754fd53239",
+      "size_bytes": 2503
+    },
+    {
+      "created_at": "2026-08-27T11:59:32+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/central_quality_results.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:f70a9e8756ae7176bff2ad4a796c22a2b95b612bdd67a7fe06b48b17bf64334b",
+      "size_bytes": 37435
+    },
+    {
+      "created_at": "2026-08-27T11:59:32+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/central_quality_results.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:0c1785c324a1dbcc575079373d33964791ca9eb9fe04919b7041013e92fb15c7",
+      "size_bytes": 22115
+    },
+    {
+      "created_at": "2026-08-27T11:59:32+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/task_quality.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:f70a9e8756ae7176bff2ad4a796c22a2b95b612bdd67a7fe06b48b17bf64334b",
+      "size_bytes": 37435
+    },
+    {
+      "created_at": "2026-08-27T11:59:32+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/task_quality.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:3aa9b602d61bc677747fab202b3c9b446b66b7048848980c986910e696be0d4e",
+      "size_bytes": 8454
+    },
+    {
+      "created_at": "2026-08-27T11:59:32+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/claim_eligible_performance.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:4d5c3e6795fd25be39242dbd2bc5fb21691c9591e700eb73bcb5f7068c7fa9a7",
+      "size_bytes": 287
+    },
+    {
+      "created_at": "2026-08-27T11:59:32+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/claim_eligible_energy.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:3aaa0d344d2ea1af4bbcb8664747ac9cd491aed0715d4437dbb6efd18b86e9c0",
+      "size_bytes": 379
+    },
+    {
+      "created_at": "2026-08-27T11:59:32+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/claim_exclusion_details.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:ef48582c0a5dc040676e3bcb6cc074ac013ff33181ec85545eb65ee837bd8cdc",
+      "size_bytes": 5739
+    },
+    {
+      "created_at": "2026-08-27T11:59:33+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/claim_exclusion_grouped_counts.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:685106bd47deeadcb03e8c23e9ae360d41dc0e076a39eecc731f07530ab0cf20",
+      "size_bytes": 3134
+    },
+    {
+      "created_at": "2026-08-27T11:59:33+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/claim_exclusion_dimension_counts.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:091a32cb980db78d5548b8e577fa6a14f57f42e1e63818d0b0be9463a4dfc70a",
+      "size_bytes": 1026
+    },
+    {
+      "created_at": "2026-08-27T11:59:33+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/claim_exclusion_summary.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:05203527682e3bfee709a6049a1779b2a3d5ecf016a48c84dc3ea9ff88bf72dd",
+      "size_bytes": 25735
+    },
+    {
+      "created_at": "2026-08-27T11:59:33+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/claim_exclusion_summary.md",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:6add95bf0f24634f3e8342154e25dc714b4fcc63ed79c87e9764fad04b32ae47",
+      "size_bytes": 11994
+    },
+    {
+      "created_at": "2026-08-27T11:59:33+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/performance_results.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "size_bytes": 2
+    },
+    {
+      "created_at": "2026-08-27T11:59:33+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/performance_results.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "size_bytes": 3
+    },
+    {
+      "created_at": "2026-08-27T11:59:33+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/performance_observations.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:a5f420a33c197464cd6169da48222173b8dabbfcd8e0e86edf9db825e9216965",
+      "size_bytes": 10286
+    },
+    {
+      "created_at": "2026-08-27T11:59:33+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/performance_observations.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:dab61d3a5045a3dc4f944dd0bc5f6851c38646c0898869d29aa2ac8c39b226c8",
+      "size_bytes": 34610
+    },
+    {
+      "created_at": "2026-08-27T11:59:33+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/performance_cohorts.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:dd1adaafb2035f487ad94c4ff7086dc85ae3b5900c27cb3c0638984eb9baa759",
+      "size_bytes": 11520
+    },
+    {
+      "created_at": "2026-08-27T11:59:33+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/performance_cohorts.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:702bff4b82788d5cad1861e7f2559f3b066c0d39f2dbe82c188680b82526db46",
+      "size_bytes": 38361
+    },
+    {
+      "created_at": "2026-08-27T11:59:33+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/performance_cohort_summary.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:c7d054ef8d2d0722641f7808bb80f85d87d3b1a6f37214d1f1ee8ce2d8af4de2",
+      "size_bytes": 472
+    },
+    {
+      "created_at": "2026-08-27T11:59:33+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/energy_results.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "size_bytes": 2
+    },
+    {
+      "created_at": "2026-08-27T11:59:33+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/screening_performance_observations.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:3bf33b3b12b6c5b00fef81255bd2f0ab291c293cc731bab9dd12cdc1325f9154",
+      "size_bytes": 10566
+    },
+    {
+      "created_at": "2026-08-27T11:59:33+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/screening_performance_observations.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:5f4124f92d88442b78e6e39d87a4303bbcb621a545d90d4a517267eb035aaff9",
+      "size_bytes": 35258
+    },
+    {
+      "created_at": "2026-08-27T11:59:33+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_comparison_eligible_observations.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:93f811b5dfc393a27c308a88fd203f2f8e7a203251917907d560b6077f4d2b6f",
+      "size_bytes": 31306
+    },
+    {
+      "created_at": "2026-08-27T11:59:33+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_comparison_eligible_observations.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:41fea5fe518dd532bd0d9f8f5560864964c4dbe3737fa0839939e0f5adad1b0b",
+      "size_bytes": 48422
+    },
+    {
+      "created_at": "2026-08-27T11:59:34+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/screening_energy_observations.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:b8c9872d16f759701f942a290ab06fe1c78a1d42a75c2e484fc497d5cce7d62d",
+      "size_bytes": 17047
+    },
+    {
+      "created_at": "2026-08-27T11:59:34+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/screening_energy_observations.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:63049930b62bd7df188084b27a688a207e9ed8fca459d8a9bc4930cc32fd1f1a",
+      "size_bytes": 29007
+    },
+    {
+      "created_at": "2026-08-27T11:59:34+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/ranking_method_comparison.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "size_bytes": 2
+    },
+    {
+      "created_at": "2026-08-27T11:59:34+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/ranking_method_macro.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "size_bytes": 2
+    },
+    {
+      "created_at": "2026-08-27T11:59:34+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/ranking_method_cohort_sensitivity.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "size_bytes": 2
+    },
+    {
+      "created_at": "2026-08-27T11:59:34+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/ranking_method_cohort_sensitivity.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "size_bytes": 3
+    },
+    {
+      "created_at": "2026-08-27T11:59:34+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/ranking_method_cohort_sensitivity.md",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:eca469ff961477b48726483dcb6a4f821011959e01c5121e89a552d38acbeb67",
+      "size_bytes": 305
+    },
+    {
+      "created_at": "2026-08-27T11:59:34+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_ranking_audit.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "size_bytes": 2
+    },
+    {
+      "created_at": "2026-08-27T11:59:34+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_ranking_audit.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:58fd5a529ce6a92a9f040a23af369799ec40396243c2a5f2c9ee9ed0732b5d8a",
+      "size_bytes": 1224
+    },
+    {
+      "created_at": "2026-08-27T11:59:34+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_ranking_audit.md",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:75d2eb583740538bcf9ba1f42ca8d1ffcfccb06fd4de68a55842709a52238e21",
+      "size_bytes": 390
+    },
+    {
+      "created_at": "2026-08-27T11:59:34+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/cross_runner_candidate_pairs.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:029e564ed867695d34bda77600041c75a98554adb5413399efedb690782fa4a3",
+      "size_bytes": 5130
+    },
+    {
+      "created_at": "2026-08-27T11:59:34+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/cross_runner_candidate_pairs.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:772d811d8e6023d9ace2a2e626b88ca604553065a8ccbb02f6ef3145a6125a87",
+      "size_bytes": 6058
+    },
+    {
+      "created_at": "2026-08-27T11:59:34+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/cross_runner_ranking_validation.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:3161b185a29988f55a5e55e2a5a67aa5ca24bd8f2f24e649fcf9131981012dde",
+      "size_bytes": 1614
+    },
+    {
+      "created_at": "2026-08-27T11:59:34+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/cross_runner_ranking_validation.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:46574025dc4453941a0ea39780d755a4ca3d3692e8abbb208c67b1d2057ef405",
+      "size_bytes": 2205
+    },
+    {
+      "created_at": "2026-08-27T11:59:34+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/cross_runner_ranking_macro.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:f2a633a04bafab82df3da22974ca30245936fc65fbd51920c40036936e117d05",
+      "size_bytes": 1048
+    },
+    {
+      "created_at": "2026-08-27T11:59:34+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/cross_runner_ranking.md",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:f76ab9889183c9dcc51b94240707a40debb02f977fc817478f497a83164e6b3a",
+      "size_bytes": 1268
+    },
+    {
+      "created_at": "2026-08-27T11:59:34+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_observations.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:46fe67188d9468875c96250a1817f368b0667e512dceab03fb12873c861b342a",
+      "size_bytes": 62582
+    },
+    {
+      "created_at": "2026-08-27T11:59:35+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_observations.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:88c6fd3a67e4a17580d20dd962df6c8bedee64d444176beedb3b611b12a11c35",
+      "size_bytes": 38387
+    },
+    {
+      "created_at": "2026-08-27T11:59:35+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_pair_comparison.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "size_bytes": 2
+    },
+    {
+      "created_at": "2026-08-27T11:59:35+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_pair_comparison.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "size_bytes": 3
+    },
+    {
+      "created_at": "2026-08-27T11:59:35+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_performance_matrix.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:f711ed427a4ee795f71f914fed8e79d39d984ad7d06aa3927f7d1ae94c5f1c56",
+      "size_bytes": 333107
+    },
+    {
+      "created_at": "2026-08-27T11:59:35+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_performance_observations.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:168659fe70bdd2d1f01492eeaa3c8f8dca72e9b0b48a88858b98cdd6af79f217",
+      "size_bytes": 80509
+    },
+    {
+      "created_at": "2026-08-27T11:59:35+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_performance_observations.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:b282b78cb624b0914a088c6516bce8b3e494b800ad3280e2d427b6fd2b418347",
+      "size_bytes": 132082
+    },
+    {
+      "created_at": "2026-08-27T11:59:35+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_ab_aggregates.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:14e3a33ed3fe506328cb413379e59a5a9d730c9bd0dab39b56e342a6dda5e03f",
+      "size_bytes": 28810
+    },
+    {
+      "created_at": "2026-08-27T11:59:35+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_ab_aggregates.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:64c89dfbca076978ba005a05e4917b71871f8bccf48dfde0a8e2e27927e8ec8a",
+      "size_bytes": 44998
+    },
+    {
+      "created_at": "2026-08-27T11:59:35+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_pair_comparison.md",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:c739002f4e8c1b03e3363dc73749f8139f72374a0d1e24e2efb0af969d960010",
+      "size_bytes": 67
+    },
+    {
+      "created_at": "2026-08-27T11:59:35+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_performance_matrix.md",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:30c8e3d3b9aec6e411464898c69e9a751740e7b263b3386f4f41ce285d21ebeb",
+      "size_bytes": 6319
+    },
+    {
+      "created_at": "2026-08-27T11:59:35+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/native_energy_ab_aggregates.md",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:ec8bd356c1ff5509d436dc3606615db6af49d083dfb78e27e963fca5cefc839c",
+      "size_bytes": 592
+    },
+    {
+      "created_at": "2026-08-27T11:59:35+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/campaign_readiness.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:a2aa2f461a15270d8d2231be5b4be07d693ab9a661107c881bc28082c63e0b08",
+      "size_bytes": 13269
+    },
+    {
+      "created_at": "2026-08-27T11:59:35+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/scientific_report.md",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:42003842acba8823c248b1895349047867748c982ab236eb9f06c72ffb4aa738",
+      "size_bytes": 31902
+    },
+    {
+      "created_at": "2026-08-27T11:59:35+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/task_quality_gates.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:a8958b4222c04416d099e3adaf19409ee38638c1bb1734ab10270140c6917c39",
+      "size_bytes": 1107
+    },
+    {
+      "created_at": "2026-08-27T11:59:35+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/ranking_method_comparison.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:6d57de123beb7b36c30a699acedde248f068ca4663f3ba978853e797d714d529",
+      "size_bytes": 515
+    },
+    {
+      "created_at": "2026-08-27T11:59:35+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/ranking_method_cohort_sensitivity.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:780e543792ff60283a91e1e98aae170b92f85727980bd6ab5d26a16f7fa2aed3",
+      "size_bytes": 490
+    },
+    {
+      "created_at": "2026-08-27T11:59:36+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/cross_runner_ranking_validation.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:cb43157b7185dcb025065a7f79bce1b7a9fe51b554d41d3410df1d14c44879a6",
+      "size_bytes": 627
+    },
+    {
+      "created_at": "2026-08-27T11:59:36+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/campaign_readiness.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:a5eae5b33274ea6c924570b5d6c7c76f0ccb8c099e867de80b5076e1496b0c58",
+      "size_bytes": 3804
+    },
+    {
+      "created_at": "2026-08-27T11:59:36+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/performance_results.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:262e251b6003b95e50afeb04b8bc0c1056ccae5b1e40f9e56d47feb762fdf67f",
+      "size_bytes": 378
+    },
+    {
+      "created_at": "2026-08-27T11:59:36+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/performance_observations.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:9eb8bec8b3e680381fc65095e247cd35d42fc48392cd8291d75c33aa99f31a6b",
+      "size_bytes": 1100
+    },
+    {
+      "created_at": "2026-08-27T11:59:36+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/screening_performance_observations.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:852b85490101f44faf5fd970afcd6bc7f146b8b3f27e8435b3f6513e15498f7c",
+      "size_bytes": 1395
+    },
+    {
+      "created_at": "2026-08-27T11:59:36+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/native_performance_observations.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:02d94d631db1e80e99801425ee83b74c45ee29aa081fdcbba044b6eecd668ca3",
+      "size_bytes": 6571
+    },
+    {
+      "created_at": "2026-08-27T11:59:36+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/screening_energy_observations.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:677bf33c12c4e083cac3eff57a778f9d23e660de4ea5dd9f400377edc39dcae5",
+      "size_bytes": 2429
+    },
+    {
+      "created_at": "2026-08-27T11:59:36+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/energy_results.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:e46a9e35d7a876f28b60005b9ee79ac435926829d23ac4ce35caba95971f6ea3",
+      "size_bytes": 336
+    },
+    {
+      "created_at": "2026-08-27T11:59:36+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/native_energy_observations.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:5c57f392ec98516f8cd17573cedbf16970dc32efe5b1fe73d77a295ec57421f7",
+      "size_bytes": 2458
+    },
+    {
+      "created_at": "2026-08-27T11:59:36+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/native_energy_pair_comparison.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:792b57a1a844254002c7b92b5f8ba71c8634e3fa576996d4d35763d6e77de4ef",
+      "size_bytes": 330
+    },
+    {
+      "created_at": "2026-08-27T11:59:36+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/native_energy_ab_aggregates.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:c62e563ad2f58c7619aea9a67d5266bfe4bab117f8c5e68f44cff88896acb581",
+      "size_bytes": 842
+    },
+    {
+      "created_at": "2026-08-27T11:59:36+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/figures/task_quality_status_counts.pdf",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:5fc35d1cb2902d310b0114634dee76fbb3d949aee1762aa84c98f0585eb741f3",
+      "size_bytes": 13055
+    },
+    {
+      "created_at": "2026-08-27T11:59:36+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/figures/task_quality_status_counts.png",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:baf7e5de944354b12321f84eec2d1d61c8b5200918fea6e181462c92f671cdec",
+      "size_bytes": 64405
+    },
+    {
+      "created_at": "2026-08-27T11:59:36+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/figures/task_quality_noninferiority.pdf",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:10e5e4218e0ee89d9ccf3f3efaacb66aae36ca318cf18582e51f923c25f8f87a",
+      "size_bytes": 13625
+    },
+    {
+      "created_at": "2026-08-27T11:59:36+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/figures/task_quality_noninferiority.png",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:03ebd8f8dbdee3cf5496005828700fcf2125c48554ab709aa88c2eafd65b4029",
+      "size_bytes": 54572
+    },
+    {
+      "created_at": "2026-08-27T11:59:36+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/figures/screening_throughput_observations.pdf",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:1dc2e56900153d501ae23aa5391802a5428c2d79d00cc4d5b3f85a66cd6f89df",
+      "size_bytes": 15648
+    },
+    {
+      "created_at": "2026-08-27T11:59:37+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/figures/screening_throughput_observations.png",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:881b289c32dbcb70c5f0d6d00cea2553db26a7cef3a04d6656e29d898e17c5ac",
+      "size_bytes": 116935
+    },
+    {
+      "created_at": "2026-08-27T11:59:37+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/result_dashboard.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:8db3c206cb29e64e387bd65d4eaecdaffea04448ad1012a27dc1852a26cc1dbc",
+      "size_bytes": 82171
+    },
+    {
+      "created_at": "2026-08-27T11:59:37+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/result_dashboard.md",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:42003842acba8823c248b1895349047867748c982ab236eb9f06c72ffb4aa738",
+      "size_bytes": 31902
+    },
+    {
+      "created_at": "2026-08-27T11:59:37+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/summary.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:24a602d188320107f9d38cba65b739ab355f6682539474a000ef689ca261b7c7",
+      "size_bytes": 27872
+    },
+    {
+      "created_at": "2026-08-27T11:59:37+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/model_summary.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:2c92c63f12f0b058c50e752c1d260e190bf48b0e54d1abce76d64983f65d9a83",
+      "size_bytes": 254
+    },
+    {
+      "created_at": "2026-08-27T11:59:37+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/task_quality_reference_comparison.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:b90ddbfeb16867475ba6343231b7bf568b1bdfb912bd17b90f1deb6d4fc5f636",
+      "size_bytes": 2423
+    },
+    {
+      "created_at": "2026-08-27T11:59:37+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/task_quality_reference_comparison.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:d343311e94d4b326054a595700596d1cb56fc05a6d8d38dbbb362f0ea5dbe8a2",
+      "size_bytes": 5485
+    },
+    {
+      "created_at": "2026-08-27T11:59:37+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/task_quality_reference_comparison.md",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:7e9ac2fbd1a560c4e168cedcca4685a00e3619ae50cc68bffafacbd480a82dde",
+      "size_bytes": 1411
+    },
+    {
+      "created_at": "2026-08-27T11:59:37+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/task_quality_loss_decomposition.csv",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:d2401bd57b7cc43cd0f8d30b34cda290be0fcd2c8154b467d888a52b691986a5",
+      "size_bytes": 1516
+    },
+    {
+      "created_at": "2026-08-27T11:59:37+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/task_quality_loss_decomposition.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:b8215497e229363f9970fd1d4447cb61e1a5a8850fe3c44406ed67baba3144c3",
+      "size_bytes": 2474
+    },
+    {
+      "created_at": "2026-08-27T11:59:37+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/task_quality_loss_decomposition.md",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:146f36f2bed802ce4da6eb3f7210e0681dbd66b4da1b5edf7e57545d3c9b70c4",
+      "size_bytes": 885
+    },
+    {
+      "created_at": "2026-08-27T11:59:37+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/task_quality_reference_comparison.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:46333d9a53a6c83bda675485fcfabf28d6f1a99a5c474459ce84b0593c352710",
+      "size_bytes": 573
+    },
+    {
+      "created_at": "2026-08-27T11:59:37+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/thesis_tables/task_quality_loss_decomposition.tex",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:6ce10b5e5f0d3bb42f1b7d0479200d4ebe076ed7376f7c5e8f9f65a73b69b8da",
+      "size_bytes": 431
+    },
+    {
+      "created_at": "2026-08-27T11:59:37+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/quality_evidence_v61a.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:1902d23cc8a6cd5f4cc1c73feb06af937ffb54c6001d68d1bae711c01a1d1392",
+      "size_bytes": 291
+    },
+    {
+      "created_at": "2026-08-27T11:59:37+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/quality_evidence_v60z.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:1902d23cc8a6cd5f4cc1c73feb06af937ffb54c6001d68d1bae711c01a1d1392",
+      "size_bytes": 291
+    },
+    {
+      "created_at": "2026-08-27T11:59:38+02:00",
+      "kind": "report",
+      "model_id": null,
+      "path": "reports/scientific/report_manifest.json",
+      "producer_stage": "workflow_status_summary",
+      "sha256": "sha256:17211e37b203ddf3123cc6e4e15f449366be0087b95e83e6acb414ab91d5979f",
+      "size_bytes": 17130
+    },
+    {
+      "created_at": "2026-08-27T11:59:38+02:00",
+      "kind": "run_log",
+      "model_id": null,
+      "path": "evaluation_workflow.log",
+      "producer_stage": "workflow",
+      "sha256": "sha256:6e86d323a88307c0cc8f74a6144bac0c92e260f39d49d132b1f9188e3cde503a",
+      "size_bytes": 859271
+    }
+  ],
+  "created_at": "2026-08-27T11:03:39+02:00",
+  "profile_id": "paper_comparison_yolov7_b066_hailo8_native_full_energy_b500",
+  "run_id": "paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251",
+  "schema": "onnx-splitpoint/artifact-index",
+  "schema_version": 1
+}

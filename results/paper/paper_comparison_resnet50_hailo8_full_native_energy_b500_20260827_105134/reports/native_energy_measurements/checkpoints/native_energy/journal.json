@@ -1,0 +1,37 @@
+{
+  "complete": true,
+  "counts": {
+    "cancelled": 0,
+    "completed": 2,
+    "failed": 0,
+    "not_started": 0,
+    "running": 0
+  },
+  "created_at": "2026-08-27T08:58:18+00:00",
+  "plan_hash": "c48875fc22146a14c931f4b6be3df44c38813efda28e8429a600a02c31eca862",
+  "row_count": 2,
+  "rows": [
+    {
+      "attempt_count": 1,
+      "checkpoint": "rows/0000_34526c33ea5ff7a6.json",
+      "complete": true,
+      "identity": "native_full_hailo8|resnet50|full|orin_nx_hailo8_01|hailo8|",
+      "index": 0,
+      "row_contract_sha256": "cdc966e6dc41e06184c2d8899749f05383b8da282feff2fb4bf16e600e979283",
+      "state": "completed"
+    },
+    {
+      "attempt_count": 1,
+      "checkpoint": "rows/0001_d16b00776c724949.json",
+      "complete": true,
+      "identity": "native_full_tensorrt|resnet50|full|orin_nx_hailo8_01|hailo8|",
+      "index": 1,
+      "row_contract_sha256": "417af4e8afa9531b9d82c0bee65f7de286593aeadb772dbadf42040575054490",
+      "state": "completed"
+    }
+  ],
+  "schema": "onnx-splitpoint/atomic-energy-row-journal",
+  "schema_version": 1,
+  "state": "completed",
+  "updated_at": "2026-08-27T08:59:45+00:00"
+}

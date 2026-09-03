@@ -1,0 +1,88 @@
+{
+  "schema": "onnx-splitpoint/evaluation-hardware-matrix",
+  "schema_version": 1,
+  "hardware_target_count": 1,
+  "hardware_targets": [
+    {
+      "id": "orin_nx_hailo8_01",
+      "label": "Orin NX + Hailo-8",
+      "accelerator": "hailo8",
+      "provider": "hailo8",
+      "enabled": true,
+      "runtime": {
+        "enabled": true,
+        "host_id": "orin_nx_hailo8_01",
+        "host": "192.168.0.104",
+        "user": "nx",
+        "port": 22,
+        "remote_base_dir": "~/splitpoint_runs",
+        "remote_venv": "source ~/hailo_py/bin/activate",
+        "provider": "hailo8",
+        "transfer_mode": "bundle",
+        "reuse_bundle": true,
+        "resume": true,
+        "warmup": 10,
+        "iters": 50,
+        "timeout_s": 0,
+        "ssh_extra_args": "",
+        "host_copy": {
+          "host": "192.168.0.104",
+          "user": "nx",
+          "port": 22,
+          "remote_base_dir": "~/splitpoint_runs"
+        }
+      },
+      "remote": {
+        "enabled": true,
+        "host_id": "orin_nx_hailo8_01",
+        "host": "192.168.0.104",
+        "user": "nx",
+        "port": 22,
+        "remote_base_dir": "~/splitpoint_runs",
+        "remote_venv": "source ~/hailo_py/bin/activate",
+        "provider": "hailo8",
+        "transfer_mode": "bundle",
+        "reuse_bundle": true,
+        "resume": true,
+        "warmup": 10,
+        "iters": 50,
+        "timeout_s": 0,
+        "ssh_extra_args": "",
+        "host_copy": {
+          "host": "192.168.0.104",
+          "user": "nx",
+          "port": 22,
+          "remote_base_dir": "~/splitpoint_runs"
+        }
+      },
+      "build_environment_id": "hailo8_dfc_managed",
+      "build_environment": {
+        "id": "hailo8_dfc_managed",
+        "kind": "hailo8_dfc",
+        "host": "local",
+        "shell": "bash",
+        "venv_activate": "source ~/.onnx_splitpoint_tool/hailo/venv_hailo8/bin/activate",
+        "cache_dir": "~/Models/BackendArtifacts/hailo"
+      },
+      "energy": {
+        "enabled": true,
+        "urecs_address": "192.168.0.197",
+        "idle_baseline_w": 5.0,
+        "accelerator_idle_w": 1.0
+      },
+      "setup_source": "/home/kmika/.onnx_splitpoint_tool/hardware_setups.yaml",
+      "setup_lock_id": "orin_nx_hailo8_01",
+      "tags": [
+        "remote",
+        "npu",
+        "hailo",
+        "hailo8"
+      ],
+      "note": "Resolved from hardware setup registry."
+    }
+  ],
+  "notes": [
+    "Each hardware target is a deploy/run setup: accelerator token, build environment, and remote runtime host.",
+    "The Evaluation Workflow can use this artifact to dispatch the same benchmarkset to multiple Orin NX setups."
+  ]
+}

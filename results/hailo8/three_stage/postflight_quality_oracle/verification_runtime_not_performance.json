@@ -1,0 +1,32 @@
+{
+  "schema": "onnx-splitpoint/yolov7-native-three-stage-runtime",
+  "schema_version": 1,
+  "ok": true,
+  "mode": "hailo8_cpp_fifo_trt_ctypes_fast_numpy_three_stage",
+  "measurement_endpoint_raw": "raw_model_outputs",
+  "measurement_endpoint_completed": "completed_detection",
+  "frames": 32,
+  "warmup": 0,
+  "warmup_fully_drained_before_measurement": true,
+  "image_count": 32,
+  "p1_queue_depth": 3,
+  "post_queue_depth": 4,
+  "callback_abi": "ctypes_zero_copy_pinned_host_raw_heads_v1",
+  "runtime_artifacts": {"hef":"/home/nx/onnx_splitpoint_yolov7_three_stage_canary_v1/staged_inputs/part1.hef","engine":"/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/yolov7_paper-78dcf9bd33084c0c/native_split_quality/orin_nx_hailo8_01/yolov7_paper/b066/hailo8_to_trt/7d5d3e2943f6d344f9f5eb90e81c392b736d77457ff8480e40ffbd5e6fb157a0/engine_cache/b066/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine"},
+  "output_contract": {"head_stride8_elements":1632000,"head_stride16_elements":408000,"head_stride32_elements":102000,"dtype":"float32"},
+  "warmup_result": {"requested":0,"raw_completed":0,"completed":0,"callback_failures":0},
+  "raw_model_outputs": {"completed_frames":32,"makespan_ms":1344.057979000,"throughput_fps":23.808496732},
+  "completed_detection": {"completed_frames":32,"makespan_ms":1533.779862000,"throughput_fps":20.863489470,"raw_ratio":0.876304359},
+  "stage_metrics": {
+    "P1": {"preprocess":{"count":32,"mean_ms":4.604245156,"median_ms":4.510803000,"p05_ms":2.709325050,"p95_ms":7.084987100,"min_ms":1.779968000,"max_ms":8.466322000},"inference":{"count":32,"mean_ms":5.932504844,"median_ms":5.837234500,"p05_ms":5.810530000,"p95_ms":5.892367750,"min_ms":5.805105000,"max_ms":8.786397000},"stage":{"count":32,"mean_ms":10.536750000,"median_ms":10.348405500,"p05_ms":8.533550950,"p95_ms":13.601794200,"min_ms":7.611922000,"max_ms":14.302916000}},
+    "P2": {"handoff":{"count":32,"mean_ms":0.372721469,"median_ms":0.351117000,"p05_ms":0.319031200,"p95_ms":0.375523950,"min_ms":0.308331000,"max_ms":0.969026000},"inference_and_raw_output_d2h":{"count":32,"mean_ms":8.744591344,"median_ms":8.765564000,"p05_ms":8.581718600,"p95_ms":8.792320650,"min_ms":8.481234000,"max_ms":8.893121000},"stage":{"count":32,"mean_ms":9.117312812,"median_ms":9.119960500,"p05_ms":8.900749800,"p95_ms":9.159888850,"min_ms":8.789565000,"max_ms":9.862147000}},
+    "postprocessing": {"fast_decode_nms_inverse_letterbox_records":{"count":32,"mean_ms":47.194282062,"median_ms":46.494701000,"p05_ms":45.655739550,"p95_ms":51.346010350,"min_ms":45.313634000,"max_ms":55.589333000}}
+  },
+  "queue_waits": {"P1_free_boundary":{"count":32,"mean_ms":27.475852844,"median_ms":35.717367500,"p05_ms":0.000512000,"p95_ms":38.104684650,"min_ms":0.000416000,"max_ms":40.002306000},"P2_free_post_slot":{"count":32,"mean_ms":32.278321188,"median_ms":37.181757000,"p05_ms":0.000408000,"p95_ms":38.663816550,"min_ms":0.000288000,"max_ms":40.070341000}},
+  "detection_count":{"count":32,"mean":8.687500000,"median":5.000000000,"p05":1.000000000,"p95":24.450000000,"min":1.000000000,"max":67.000000000},
+  "theoretical_raw_cycle_ms": 10.536750000,
+  "theoretical_raw_fps": 94.905924502,
+  "theoretical_three_stage_cycle_ms": 47.194282062,
+  "theoretical_three_stage_fps": 21.189007572,
+  "callback_failures": 0
+}

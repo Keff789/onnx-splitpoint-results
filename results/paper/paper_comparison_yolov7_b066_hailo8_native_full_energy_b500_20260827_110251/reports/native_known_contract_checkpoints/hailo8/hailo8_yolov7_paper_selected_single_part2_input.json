@@ -1,0 +1,46 @@
+{
+  "backend": "hailo8",
+  "cmd": [
+    "ssh",
+    "-o",
+    "BatchMode=yes",
+    "-o",
+    "StrictHostKeyChecking=accept-new",
+    "nx@192.168.0.104",
+    "source ~/hailo_py/bin/activate && cd /home/nx/ONNX-Splitpoint-Tool && ONNX_SPLITPOINT_NATIVE_SPLIT_BINDING_SET=/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/quality_first/native_split_quality_binding_set.json ONNX_SPLITPOINT_SETUP_ID=orin_nx_hailo8_01 python -u scripts/native_fifo_eval_runner.py --root /home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251 --models yolov7_paper --case-map '{\"yolov7_paper\":[\"b066\"]}' --hw-arch hailo8 --precision uint8_dequant_fp16 --frames 1000 --warmup 100 --repetitions 3 --queue-depth 3 --hailo-format uint8 --mixed-runtime-python /usr/bin/python3 --analysis-tag hailo8_yolov7_paper_selected_single_part2_input --image-map '{\"yolov7_paper\":{\"b066\":\"resources/validation/detection/val2017_n500_s20260710/000000000632.jpg\"}}' --preprocess-mode auto --letterbox-pad-value 114 --boundary-layout memory_nhwc_to_nchw --engine-build-python auto --dump-outputs --dump-boundary"
+  ],
+  "collected_artifacts": [
+    {
+      "path": "analysis_tables/native_fifo_eval_runner__hailo8_yolov7_paper_selected_single_part2_input.json",
+      "sha256": "sha256:59a65311e0934f4e08bddc09f7588ff99d9c4694f3bf9976bfd6892b257b6b26",
+      "size_bytes": 908935
+    },
+    {
+      "path": "analysis_tables/native_fifo_eval_runner__hailo8_yolov7_paper_selected_single_part2_input.csv",
+      "sha256": "sha256:2858f70eb2ce0f80e2a4f40d7a06c6b51e2ac57f1579b01c7b22b4e55c0207e9",
+      "size_bytes": 3401
+    },
+    {
+      "path": "analysis_tables/native_fifo_eval_runner__hailo8_yolov7_paper_selected_single_part2_input.md",
+      "sha256": "sha256:17f67ac5c3a36432e8882d2b0bfed01732fb4262316abaea8cafa9c0640ffc16",
+      "size_bytes": 355
+    }
+  ],
+  "collection_returncode": 0,
+  "collection_status": "collected",
+  "collection_stderr_tail": "",
+  "created_at": "2026-08-27T11:46:43+02:00",
+  "failure_reason": "",
+  "models": [
+    "yolov7_paper"
+  ],
+  "native_execution_contract_sha256": "1c31fa8655d60f333a6287f954bb923b6c8542060b89f746c4721d3ea192ad68",
+  "runner_returncode": 0,
+  "runner_status": "completed",
+  "schema": "onnx-splitpoint/native-known-contract-checkpoint",
+  "schema_version": 2,
+  "stderr_tail": "",
+  "stdout_tail": "[native-fifo-eval] yolov7_paper: /home/nx/hailo_py/bin/python /home/nx/ONNX-Splitpoint-Tool/scripts/native_fifo_smoke_matrix.py --benchmark-set /home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set --model-id yolov7_paper --setup-id orin_nx_hailo8_01 --hw-arch hailo8 --precision uint8_dequant_fp16 --frames 1000 --warmup 100 --repetitions 3 --queue-depth 3 --hailo-format uint8 --task detection --mixed-runtime-python /usr/bin/python3 --preprocess-mode auto --letterbox-pad-value 114 --timeout 3600 --native-split-quality-binding-set /home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/quality_first/native_split_quality_binding_set.json --engine-build-python auto --dequant-zero-point 0.0 --boundary-layout memory_nhwc_to_nchw --dump-outputs --dump-boundary --image-map {\"yolov7_paper\":{\"b066\":\"resources/validation/detection/val2017_n500_s20260710/000000000632.jpg\"}} --validate-dumps --case b066\n{\n  \"ok\": true,\n  \"orchestration_status\": \"ok\",\n  \"evidence_status\": \"complete\",\n  \"rows\": 1,\n  \"ok_count\": 1,\n  \"failed_count\": 0,\n  \"json\": \"/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/analysis_tables/native_fifo_eval_runner__hailo8_yolov7_paper_selected_single_part2_input.json\",\n  \"csv\": \"/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/analysis_tables/native_fifo_eval_runner__hailo8_yolov7_paper_selected_single_part2_input.csv\",\n  \"md\": \"/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/analysis_tables/native_fifo_eval_runner__hailo8_yolov7_paper_selected_single_part2_input.md\",\n  \"analysis_tag\": \"hailo8_yolov7_paper_selected_single_part2_input\"\n}",
+  "terminal": true,
+  "variant": "hailo8_yolov7_paper_selected_single_part2_input"
+}

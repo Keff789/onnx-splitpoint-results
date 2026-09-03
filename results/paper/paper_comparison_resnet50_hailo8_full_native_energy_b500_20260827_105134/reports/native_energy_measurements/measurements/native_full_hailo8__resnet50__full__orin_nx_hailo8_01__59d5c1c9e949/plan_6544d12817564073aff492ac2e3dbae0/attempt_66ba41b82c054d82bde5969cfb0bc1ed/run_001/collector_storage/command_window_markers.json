@@ -1,0 +1,68 @@
+{
+  "schema": "urecs-data-collector/command-window-markers",
+  "schema_version": 2,
+  "run_id": "native_native_full_hailo8__resnet50__full__orin_nx_hailo8_01__59d5c1c9e949",
+  "window_id": "native_native_full_hailo8__resnet50__full__orin_nx_hailo8_01__59d5c1c9e949:repeat:001",
+  "command": {
+    "text": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_energy_measurements/measurements/native_full_hailo8__resnet50__full__orin_nx_hailo8_01__59d5c1c9e949/plan_6544d12817564073aff492ac2e3dbae0/attempt_66ba41b82c054d82bde5969cfb0bc1ed/run_001/energy_command.sh",
+    "argv": [
+      "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_energy_measurements/measurements/native_full_hailo8__resnet50__full__orin_nx_hailo8_01__59d5c1c9e949/plan_6544d12817564073aff492ac2e3dbae0/attempt_66ba41b82c054d82bde5969cfb0bc1ed/run_001/energy_command.sh"
+    ],
+    "start_definition": "collector timestamp immediately before std::process::Command::spawn",
+    "end_definition": "collector timestamp immediately after std::process::Child::wait returned",
+    "process_rc": 0,
+    "process_id": 3338542,
+    "process_error": null,
+    "start_realtime_ns": 1787821119436141816,
+    "end_realtime_ns": 1787821121988276483,
+    "start_monotonic_ns": 5097877513,
+    "end_monotonic_ns": 7650012145,
+    "start_clock_read_uncertainty_ns": 572,
+    "end_clock_read_uncertainty_ns": 290
+  },
+  "stream": {
+    "source": "fast_firmware",
+    "trace_path": "fast_firmware.parquet",
+    "trace_path_base": "directory containing command_window_markers.json",
+    "sample_rate_hz": 2000,
+    "first_sample_index": 10048,
+    "last_sample_index": 15231,
+    "total_samples": 24000,
+    "boundary_uncertainty_samples": 64,
+    "start_boundary_uncertainty_samples": 64,
+    "end_boundary_uncertainty_samples": 64,
+    "boundary_uncertainty_description": "start uncertainty is one UDP packet plus rows received while spawning; end uncertainty is the number of rows in the first complete post-exit packet update; device-to-host transport latency is not independently calibrated",
+    "dropped_samples": 0,
+    "total_dropped_samples": 0,
+    "drop_count_at_start": 0,
+    "drop_count_at_end": 0,
+    "dropped_samples_in_window": 0,
+    "duplicate_count_in_window": 0,
+    "reorder_count_in_window": 0,
+    "trace_covers_window": true,
+    "first_sample_monotonic_ns": 97594771,
+    "last_sample_monotonic_ns": 12065354996,
+    "counter_diagnostics": {
+      "reconstruction": "strictly monotonic u64 index reconstructed from wrapping u16 counter; forward gaps count as drops; duplicate/reordered rows remain monotonic but invalidate final use",
+      "raw_first_counter_u16": 1,
+      "raw_last_counter_u16": 24000,
+      "wrap_count": 0,
+      "discontinuity_count": 0,
+      "duplicate_count": 0,
+      "reorder_count": 0
+    }
+  },
+  "clock": {
+    "realtime": "CLOCK_REALTIME via std::time::SystemTime, nanoseconds since Unix epoch",
+    "monotonic": "relative std::time::Instant, nanoseconds since collector start",
+    "monotonic_origin_realtime_ns": 1787821114338264880
+  },
+  "integrity": {
+    "marker_path": "command_window_markers.json",
+    "trace_path": "fast_firmware.parquet",
+    "trace_sha256": null,
+    "hashing_responsibility": "ONNX-Splitpoint-Tool or postprocessor must hash both files before accepting final evidence"
+  },
+  "valid_for_final_energy": true,
+  "validation_errors": []
+}

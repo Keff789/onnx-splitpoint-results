@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-08-27T11:55:02+02:00",
+  "excluded": [],
+  "rows": [
+    {
+      "model": "yolov7_paper",
+      "model_manifest": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/models/yolov7_paper/model_manifest.json",
+      "model_manifest_sha256": "sha256:d55d6f2a731d3c10ff6746ed34c8c15836b989ae0d90c16215586bbc5b207eea",
+      "model_path": "/home/kmika/Models/yolov7_paper.onnx",
+      "model_sha256": "sha256:7a13e66f91047cce0e251c05f64159646847e842af31d60441c63dcdfad7825d"
+    }
+  ],
+  "schema": "onnx-splitpoint/native-energy-model-hash-map",
+  "schema_version": 1
+}

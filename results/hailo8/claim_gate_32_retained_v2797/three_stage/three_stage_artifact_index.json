@@ -1,0 +1,35 @@
+{
+  "schema": "onnx-splitpoint/three-stage-artifact-index",
+  "schema_version": 1,
+  "out_root": "/home/nx/v2796_yolov7_b066_claim_gate_32_20260901_130453/evidence/three_stage",
+  "out_root_binding_sha256": "63b99eae5c6987d3048e3cf0a9ee5e4293d39456e2b46bcaae25de6f3889d164",
+  "invocation_sha256": "8007f68733476317c42807605a5ac468096cd91f3b074912b95e8b984b470db8",
+  "artifacts": {
+    "invocation_receipt": {
+      "path": "/home/nx/v2796_yolov7_b066_claim_gate_32_20260901_130453/evidence/three_stage/three_stage_invocation_receipt.json",
+      "sha256": "089911c38ec47eed12bb241c2819d31436b8b1c190bf54fb2a28291afe17f907",
+      "size_bytes": 1594
+    },
+    "remote_command_receipt": {
+      "path": "/home/nx/v2796_yolov7_b066_claim_gate_32_20260901_130453/evidence/three_stage/three_stage_remote_command_receipt.json",
+      "sha256": "95b3d6b4fb9ed2086e34dab7f856014528585924e1c20a3d831d91ccc2de773f",
+      "size_bytes": 1559
+    },
+    "canonical_result": {
+      "path": "/home/nx/v2796_yolov7_b066_claim_gate_32_20260901_130453/evidence/native_three_stage_result.json",
+      "sha256": "1026d9e2cdf960e45d286ffb9ad2e8a7d64cf5ccc8908836e3c3d05c257a34ff",
+      "size_bytes": 40999
+    },
+    "child_report": {
+      "path": "/home/nx/v2796_yolov7_b066_claim_gate_32_20260901_130453/evidence/three_stage/yolov7_three_stage_v1_20260901_130501/three_stage_canary_report.json",
+      "sha256": "6578150bb35e062dd980aa984cce689265a21f7c3081db8845d0a5e8fee6fa8c",
+      "size_bytes": 136837
+    },
+    "child_console": {
+      "path": "/home/nx/v2796_yolov7_b066_claim_gate_32_20260901_130453/evidence/three_stage/vendored_canary_console.log",
+      "sha256": "53600b37699b18ad4650f0d616e8e935b5749029019fc315f2b84b6f2c88889e",
+      "size_bytes": 1484
+    },
+    "failure_receipt": null
+  }
+}

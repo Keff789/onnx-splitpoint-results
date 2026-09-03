@@ -1,0 +1,20 @@
+{
+  "schema": "onnx-splitpoint/yolov7-claim-gate-32-capture/v1",
+  "schema_version": 1,
+  "original_evidence_root": "/home/nx/v2796_yolov7_b066_claim_gate_32_20260901_130453/evidence",
+  "run_id": "v2796_yolov7_b066_claim_gate_32_20260901_130453",
+  "source_release_sha256": "fb59de5546d8bbca134050f96d3fdb6e1503c6daea53046d6c7187a9272ad147",
+  "source_manifest_sha256": "ab735dbe738e45ff46a40e572e2a7d53b343a08ff765df7a181fd227c1c40d9d",
+  "external_runtime_artifacts": {
+    "part1_runtime": {
+      "sha256": "e733652e523cbc6b51d696fd9ef62913f809e07b1d9137ca1e1e5413591cd70f",
+      "size_bytes": 4447123,
+      "verified_at_capture": true
+    },
+    "engine": {
+      "sha256": "ddf2e26a2e784f87d2b20c4e19dd6576bcb4da33f0b86afb32ef0a9dfda65088",
+      "size_bytes": 74695868,
+      "verified_at_capture": true
+    }
+  }
+}

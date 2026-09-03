@@ -1,0 +1,797 @@
+{
+  "aggregate_quality_decision": "not_evaluated",
+  "blocking_reason_count": 23,
+  "blocking_reasons": [
+    {
+      "blocking": true,
+      "kind": "stage_status",
+      "model_id": "mobilenet_v3_large",
+      "reason": "Remote benchmark suite dispatched per hardware target/run-profile.; preserved 9 measured row(s), but the requested hardware matrix is incomplete; missing selected run(s): deepx_m1_to_tensorrt, hailo8_to_trt, hailo10_to_tensorrt; missing required profile row(s): tensorrt:full:full, tensorrt:split:b135, hailo8:full:full, hailo8_to_tensorrt:split:b135, hailo10:full:full, hailo10_to_tensorrt:split:b135, deepx_m1:full:full, deepx_m1_to_tensorrt:split:b135.",
+      "stage": "run_benchmarks",
+      "stage_result_path": "models/mobilenet_v3_large/stages/run_benchmarks/stage_result.json",
+      "status": "partial"
+    },
+    {
+      "blocking": true,
+      "kind": "stage_status",
+      "model_id": "resnet50",
+      "reason": "Remote benchmark suite dispatched per hardware target/run-profile.; preserved 13 measured row(s), but the requested hardware matrix is incomplete; missing required profile row(s): tensorrt:full:full, tensorrt:split:b119, hailo8:full:full, hailo8_to_tensorrt:split:b119, hailo10:full:full, hailo10_to_tensorrt:split:b119, deepx_m1:full:full, deepx_m1_to_tensorrt:split:b119.",
+      "stage": "run_benchmarks",
+      "stage_result_path": "models/resnet50/stages/run_benchmarks/stage_result.json",
+      "status": "partial"
+    },
+    {
+      "blocking": true,
+      "kind": "stage_status",
+      "model_id": "yolo11l",
+      "reason": "Backend build/reuse decisions recorded; reusable full-baseline artifacts copied when present. Hailo HEF reuse/build service plan recorded; existing HEFs were detected and missing heavy builds are structured. Hailo build queue: 2 item(s); dispatch status: pending_remote_configuration. DeepX full DXNN artifact ready.",
+      "stage": "build_backend_artifacts",
+      "stage_result_path": "models/yolo11l/stages/build_backend_artifacts/stage_result.json",
+      "status": "warn"
+    },
+    {
+      "blocking": true,
+      "kind": "stage_status",
+      "model_id": "yolo11l",
+      "reason": "Remote benchmark suite dispatched per hardware target/run-profile.; preserved 9 measured row(s), but the requested hardware matrix is incomplete; missing selected full baseline(s): hailo8, hailo10; missing required profile row(s): tensorrt:full:full, tensorrt:split:b062, hailo8:full:full, hailo8_to_tensorrt:split:b062, hailo10:full:full, hailo10_to_tensorrt:split:b062, deepx_m1:full:full, deepx_m1_to_tensorrt:split:b062.",
+      "stage": "run_benchmarks",
+      "stage_result_path": "models/yolo11l/stages/run_benchmarks/stage_result.json",
+      "status": "partial"
+    },
+    {
+      "blocking": true,
+      "kind": "stage_status",
+      "model_id": "yolo11l",
+      "reason": "Validation produced invalid measured rows; recorded as case-level quality failures, non-blocking in summary_only mode. Use validation.mode=strict to make this a blocking gate.",
+      "stage": "validate_outputs",
+      "stage_result_path": "models/yolo11l/stages/validate_outputs/stage_result.json",
+      "status": "warn"
+    },
+    {
+      "blocking": true,
+      "kind": "stage_status",
+      "model_id": "yolov7_ultralytics",
+      "reason": "Final candidate plan written with stratified graph-window coverage and mirrored into benchmark_set/. Part-2 single-input policy retained 0/1 requested deployment cases; shortfall=1.",
+      "stage": "select_split_candidates",
+      "stage_result_path": "models/yolov7_ultralytics/stages/select_split_candidates/stage_result.json",
+      "status": "partial"
+    },
+    {
+      "blocking": true,
+      "kind": "stage_status",
+      "model_id": "yolov7_ultralytics",
+      "reason": "BenchmarkSet generator produced the authoritative suite. BenchmarkSet postcondition failed: benchmark_set_has_no_cases.",
+      "stage": "generate_benchmark_set",
+      "stage_result_path": "models/yolov7_ultralytics/stages/generate_benchmark_set/stage_result.json",
+      "status": "failed"
+    },
+    {
+      "blocking": true,
+      "kind": "stage_status",
+      "model_id": "yolo26m",
+      "reason": "Remote benchmark suite dispatched per hardware target/run-profile.; preserved 13 measured row(s), but the requested hardware matrix is incomplete; missing required profile row(s): tensorrt:full:full, tensorrt:split:b398, hailo8:full:full, hailo8_to_tensorrt:split:b398, hailo10:full:full, hailo10_to_tensorrt:split:b398, deepx_m1:full:full, deepx_m1_to_tensorrt:split:b398.",
+      "stage": "run_benchmarks",
+      "stage_result_path": "models/yolo26m/stages/run_benchmarks/stage_result.json",
+      "status": "partial"
+    },
+    {
+      "blocking": true,
+      "kind": "stage_status",
+      "model_id": "yolo26m",
+      "reason": "Validation produced invalid measured rows; recorded as case-level quality failures, non-blocking in summary_only mode. Use validation.mode=strict to make this a blocking gate.",
+      "stage": "validate_outputs",
+      "stage_result_path": "models/yolo26m/stages/validate_outputs/stage_result.json",
+      "status": "warn"
+    },
+    {
+      "blocking": true,
+      "kind": "stage_status",
+      "model_id": "yolo26x",
+      "reason": "Backend build/reuse decisions recorded; reusable full-baseline artifacts copied when present. Hailo HEF reuse/build service plan recorded; existing HEFs were detected and missing heavy builds are structured. Hailo build queue: 6 item(s); dispatch status: pending_remote_configuration. DeepX full DXNN artifact ready.",
+      "stage": "build_backend_artifacts",
+      "stage_result_path": "models/yolo26x/stages/build_backend_artifacts/stage_result.json",
+      "status": "warn"
+    },
+    {
+      "blocking": true,
+      "kind": "stage_status",
+      "model_id": "yolo26x",
+      "reason": "Remote benchmark suite dispatched per hardware target/run-profile.; preserved 6 measured row(s), but the requested hardware matrix is incomplete; missing required profile row(s): tensorrt:full:full, tensorrt:split:b586, hailo8:full:full, hailo8_to_tensorrt:split:b586, hailo10:full:full, hailo10_to_tensorrt:split:b586, deepx_m1:full:full, deepx_m1_to_tensorrt:split:b586.",
+      "stage": "run_benchmarks",
+      "stage_result_path": "models/yolo26x/stages/run_benchmarks/stage_result.json",
+      "status": "partial"
+    },
+    {
+      "blocking": true,
+      "kind": "stage_status",
+      "model_id": "yolo26x",
+      "reason": "Validation produced invalid measured rows; recorded as case-level quality failures, non-blocking in summary_only mode. Use validation.mode=strict to make this a blocking gate.",
+      "stage": "validate_outputs",
+      "stage_result_path": "models/yolo26x/stages/validate_outputs/stage_result.json",
+      "status": "warn"
+    },
+    {
+      "blocking": true,
+      "kind": "stage_status",
+      "model_id": "yolo26s",
+      "reason": "Remote benchmark suite dispatched per hardware target/run-profile.; preserved 13 measured row(s), but the requested hardware matrix is incomplete; missing required profile row(s): tensorrt:full:full, tensorrt:split:b364, hailo8:full:full, hailo8_to_tensorrt:split:b364, hailo10:full:full, hailo10_to_tensorrt:split:b364, deepx_m1:full:full, deepx_m1_to_tensorrt:split:b364.",
+      "stage": "run_benchmarks",
+      "stage_result_path": "models/yolo26s/stages/run_benchmarks/stage_result.json",
+      "status": "partial"
+    },
+    {
+      "blocking": true,
+      "kind": "stage_status",
+      "model_id": "yolo26s",
+      "reason": "Validation produced invalid measured rows; recorded as case-level quality failures, non-blocking in summary_only mode. Use validation.mode=strict to make this a blocking gate.",
+      "stage": "validate_outputs",
+      "stage_result_path": "models/yolo26s/stages/validate_outputs/stage_result.json",
+      "status": "warn"
+    },
+    {
+      "blocking": true,
+      "kind": "stage_status",
+      "model_id": "workflow",
+      "reason": "Central management quality: requests=53, completed=44, matched=29, summary_only_native_full=15, unmatched=12, failed=9; matrix_required=52, matrix_present=23, quality_applicable=52, quality_completed=20, quality_blocked=0, quality_not_applicable=0, companions=15; technical_status=failed, quality_decision=not_evaluated; workers=4. CPU reference rows remain semantic-only.",
+      "stage": "evaluate_quality",
+      "stage_result_path": "stages/evaluate_quality/stage_result.json",
+      "status": "failed"
+    },
+    {
+      "kind": "native_evidence",
+      "model_id": "workflow",
+      "native_evidence_status": {},
+      "reason": "Native runtime, semantic, claim or energy evidence is not technically complete",
+      "stage": "run_native_producers",
+      "status": "failed",
+      "technical_quality_failure": true
+    },
+    {
+      "artifact": "models/yolo11l/benchmark_results/normalized_results.json",
+      "blocking": true,
+      "kind": "benchmark_results",
+      "missing_measurement_class": "blocking_missing",
+      "model_id": "yolo11l",
+      "reason": "measured_results=9, missing_measurements=4; normalized_results contains incomplete or optional-missing benchmark rows",
+      "stage": "run_benchmarks",
+      "status": "partial_measured",
+      "valid_complete_split_present": false
+    },
+    {
+      "actionable_queue_count": 2,
+      "artifact": "models/yolo11l/benchmark_set/hailo_build_service_status.json",
+      "blocking": true,
+      "deferred_queue_count": 0,
+      "kind": "hailo_build",
+      "model_id": "yolo11l",
+      "queue_count": 2,
+      "reason": "one or more Hailo builds were attempted and failed",
+      "stage": "build_backend_artifacts",
+      "status": "attempted_failed"
+    },
+    {
+      "artifact": "models/yolo26m/benchmark_results/normalized_results.json",
+      "blocking": true,
+      "kind": "benchmark_results",
+      "missing_measurement_class": "blocking_missing",
+      "model_id": "yolo26m",
+      "reason": "measured_results=13, missing_measurements=4; normalized_results contains incomplete or optional-missing benchmark rows",
+      "stage": "run_benchmarks",
+      "status": "partial_measured",
+      "valid_complete_split_present": false
+    },
+    {
+      "artifact": "models/yolo26s/benchmark_results/normalized_results.json",
+      "blocking": true,
+      "kind": "benchmark_results",
+      "missing_measurement_class": "blocking_missing",
+      "model_id": "yolo26s",
+      "reason": "measured_results=13, missing_measurements=4; normalized_results contains incomplete or optional-missing benchmark rows",
+      "stage": "run_benchmarks",
+      "status": "partial_measured",
+      "valid_complete_split_present": false
+    },
+    {
+      "artifact": "models/yolo26x/benchmark_results/normalized_results.json",
+      "blocking": true,
+      "kind": "benchmark_results",
+      "missing_measurement_class": "blocking_missing",
+      "model_id": "yolo26x",
+      "reason": "measured_results=6, missing_measurements=7; normalized_results contains incomplete or optional-missing benchmark rows",
+      "stage": "run_benchmarks",
+      "status": "partial_measured",
+      "valid_complete_split_present": false
+    },
+    {
+      "actionable_queue_count": 6,
+      "artifact": "models/yolo26x/benchmark_set/hailo_build_service_status.json",
+      "blocking": true,
+      "deferred_queue_count": 0,
+      "kind": "hailo_build",
+      "model_id": "yolo26x",
+      "queue_count": 6,
+      "reason": "one or more Hailo builds were attempted and failed",
+      "stage": "build_backend_artifacts",
+      "status": "attempted_failed"
+    },
+    {
+      "artifact": "models/yolov7_ultralytics/validation/validation_summary.json",
+      "kind": "validation",
+      "model_id": "yolov7_ultralytics",
+      "reason": "validation was not complete or invalid rows exist",
+      "stage": "validate_outputs",
+      "status": "skipped"
+    }
+  ],
+  "claim_decisions_complete": null,
+  "claim_eligible_count": null,
+  "claim_validation_complete": null,
+  "created_at": "2026-09-03T12:15:54+02:00",
+  "debug_upload_hint": {
+    "parent_latest_log": "_latest_evaluation_workflow.log",
+    "primary_log": "evaluation_workflow.log",
+    "recommended_files": [
+      "evaluation_workflow.log",
+      "run_manifest.json",
+      "reports/run_status_summary.json",
+      "reports/summary.csv",
+      "reports/prediction_vs_benchmark.csv"
+    ]
+  },
+  "decision_axes": {
+    "central_quality_reporting": {
+      "aggregate_all_full_result_count": 36,
+      "aggregate_decision_counts": {
+        "pass": 15
+      },
+      "aggregate_duplicate_expected_identity_count": 0,
+      "aggregate_duplicate_identities": [],
+      "aggregate_duplicate_identity_count": 0,
+      "aggregate_excluded_diagnostic_full_result_count": 21,
+      "aggregate_excluded_diagnostic_full_result_ids": [
+        "fde6726aceb0948b968a1b428e979a2548b62d25699471ef175cb543abce001c",
+        "8c771a9befec61b42b2995e44100670483bf487c281bf52631e8655792b590d0",
+        "a55c7647cd3a2986988b75bd24f9e60d4109c8979cf5e6bdaffb3b57c203c687",
+        "f4588a421d75dfae217f8cf9e24c75f415712b808f867ab9a09eb7121120618d",
+        "c325b33aec6b3ee1d79056997d89ce8a3c3103e7d287b5f4096c07faea499a98",
+        "1ceddbf32d04d3e034e920ec6cbbf5576d1c52697dd435ffef063b0d2ba5aa06",
+        "b84d3ca40e140f0a7dbd2f7e77ceb5605265a56ff30efdf3e4401df7c9216c0b",
+        "07d62ae9fea0eb84e98e64b56e2fad44094fdff2fff9bbc9fc3d1d2041b47f59",
+        "2e168b99598d771a13d93981d202770dc57762ab479e4eee9148a2e2413db4e7",
+        "f7d5a9911ec783f7186be87dd1f9d7293c0442cdc74146a99fe39c4eef38b8ec",
+        "c31309feaecfb1205b72d4fea60e040dc983a8abf30c7b2ca57da54e7a7cec59",
+        "342fdfba55da80b1e7d8da19284da037634278d50b2826634502221963861773",
+        "179f33cfde81e35364868f208ef64966b9805e226014888a2d2be175338c4ac2",
+        "f830d4608110a6ff8bfd0436cb6baa57fc57770e7e30d817ed04dd4932c53181",
+        "a5dcd6d367d76bb32cbec3283cbab2910fc3bf5bc975cdb1c5a1ded089e8c9b7",
+        "047aed7460c106eac98a7adfa5b81cb774b56f9bd3e67b267e1e750d0203b379",
+        "931794839773306d78d83c1fc80752c26e21982b8ef02f1aed2266f548a6bc8a",
+        "sha256:d54ec2b114304583627e26a70a464531b2373ff5d00dcdd418ef54407a7197b2",
+        "sha256:6950f377885348fbbdf75ca5e4d171f341450e21918592fb77e0a9289efafb5b",
+        "sha256:82b1b7343471a5605deccb9428ca1b61a365a5ef5f924c5d2eff91c13ffae10c",
+        "sha256:9e1bda8269866829c24dd28227fa997fe3180b7a50ab94fdc6094e381ae8f637"
+      ],
+      "aggregate_expected_full_result_count": 21,
+      "aggregate_full_result_count": 15,
+      "aggregate_identity_contract_complete": false,
+      "aggregate_identity_contract_definition_errors": [],
+      "aggregate_identity_contract_issue_count": 6,
+      "aggregate_missing_identities": [
+        {
+          "backend": "tensorrt",
+          "dispatch_run_id": "ort_tensorrt",
+          "execution_role": "full_quality_only",
+          "id": "tensorrt_at_hailo8_full",
+          "identity_source": "scheduler_materialized_before_remote_dispatch",
+          "logical_setup_group": "hailo8_setup",
+          "model_id": "yolov7_ultralytics",
+          "performance_claims_emitted": false,
+          "producer": "hailo8",
+          "quality_companion_endpoint_id": "tensorrt_at_hailo8_full",
+          "run_id": "native_full_tensorrt",
+          "setup_id": "orin_nx_hailo8_01",
+          "source_run_id": "native_full_tensorrt",
+          "variant": "full"
+        },
+        {
+          "backend": "tensorrt",
+          "dispatch_run_id": "ort_tensorrt",
+          "execution_role": "full_quality_only",
+          "id": "tensorrt_at_hailo10h_full",
+          "identity_source": "scheduler_materialized_before_remote_dispatch",
+          "logical_setup_group": "hailo10h_setup",
+          "model_id": "yolov7_ultralytics",
+          "performance_claims_emitted": false,
+          "producer": "hailo10h",
+          "quality_companion_endpoint_id": "tensorrt_at_hailo10h_full",
+          "run_id": "native_full_tensorrt",
+          "setup_id": "orin_nx_hailo10_01",
+          "source_run_id": "native_full_tensorrt",
+          "variant": "full"
+        },
+        {
+          "backend": "tensorrt",
+          "dispatch_run_id": "ort_tensorrt",
+          "execution_role": "full_quality_only",
+          "id": "tensorrt_at_deepx_m1_full",
+          "identity_source": "scheduler_materialized_before_remote_dispatch",
+          "logical_setup_group": "deepx_setup",
+          "model_id": "yolov7_ultralytics",
+          "performance_claims_emitted": false,
+          "producer": "deepx",
+          "quality_companion_endpoint_id": "tensorrt_at_deepx_m1_full",
+          "run_id": "native_full_tensorrt",
+          "setup_id": "orin_nx_deepx_m1_01",
+          "source_run_id": "native_full_tensorrt",
+          "variant": "full"
+        },
+        {
+          "backend": "tensorrt",
+          "dispatch_run_id": "ort_tensorrt",
+          "execution_role": "full_quality_only",
+          "id": "tensorrt_at_hailo8_full",
+          "identity_source": "scheduler_materialized_before_remote_dispatch",
+          "logical_setup_group": "hailo8_setup",
+          "model_id": "yolo26x",
+          "performance_claims_emitted": false,
+          "producer": "hailo8",
+          "quality_companion_endpoint_id": "tensorrt_at_hailo8_full",
+          "run_id": "native_full_tensorrt",
+          "setup_id": "orin_nx_hailo8_01",
+          "source_run_id": "native_full_tensorrt",
+          "variant": "full"
+        },
+        {
+          "backend": "tensorrt",
+          "dispatch_run_id": "ort_tensorrt",
+          "execution_role": "full_quality_only",
+          "id": "tensorrt_at_hailo10h_full",
+          "identity_source": "scheduler_materialized_before_remote_dispatch",
+          "logical_setup_group": "hailo10h_setup",
+          "model_id": "yolo26x",
+          "performance_claims_emitted": false,
+          "producer": "hailo10h",
+          "quality_companion_endpoint_id": "tensorrt_at_hailo10h_full",
+          "run_id": "native_full_tensorrt",
+          "setup_id": "orin_nx_hailo10_01",
+          "source_run_id": "native_full_tensorrt",
+          "variant": "full"
+        },
+        {
+          "backend": "tensorrt",
+          "dispatch_run_id": "ort_tensorrt",
+          "execution_role": "full_quality_only",
+          "id": "tensorrt_at_deepx_m1_full",
+          "identity_source": "scheduler_materialized_before_remote_dispatch",
+          "logical_setup_group": "deepx_setup",
+          "model_id": "yolo26x",
+          "performance_claims_emitted": false,
+          "producer": "deepx",
+          "quality_companion_endpoint_id": "tensorrt_at_deepx_m1_full",
+          "run_id": "native_full_tensorrt",
+          "setup_id": "orin_nx_deepx_m1_01",
+          "source_run_id": "native_full_tensorrt",
+          "variant": "full"
+        }
+      ],
+      "aggregate_missing_identity_count": 6,
+      "aggregate_selection_mode": "explicit_full_only_identity_contract",
+      "aggregate_unexpected_identity_count": 0,
+      "aggregate_unexpected_identity_result_ids": [],
+      "aggregate_usable_full_result_count": 15,
+      "completed_count": 44,
+      "decision_counts": {
+        "fail": 14,
+        "inconclusive": 6,
+        "not_evaluated": 9,
+        "pass": 24
+      },
+      "failed_count": 9,
+      "missing_guardrail_count": 0,
+      "not_evaluated_count": 21,
+      "quality_acceptance_identity_contract": {
+        "contract_mode": "standard_quality_setup_local_tensorrt",
+        "execution_scope": "standard_quality_setup_local_tensorrt",
+        "expected_identities": [
+          {
+            "backend": "tensorrt",
+            "dispatch_run_id": "ort_tensorrt",
+            "execution_role": "full_quality_only",
+            "id": "tensorrt_at_hailo8_full",
+            "identity_source": "scheduler_materialized_before_remote_dispatch",
+            "logical_setup_group": "hailo8_setup",
+            "performance_claims_emitted": false,
+            "producer": "hailo8",
+            "quality_companion_endpoint_id": "tensorrt_at_hailo8_full",
+            "run_id": "native_full_tensorrt",
+            "setup_id": "orin_nx_hailo8_01",
+            "source_run_id": "native_full_tensorrt",
+            "variant": "full"
+          },
+          {
+            "backend": "tensorrt",
+            "dispatch_run_id": "ort_tensorrt",
+            "execution_role": "full_quality_only",
+            "id": "tensorrt_at_hailo10h_full",
+            "identity_source": "scheduler_materialized_before_remote_dispatch",
+            "logical_setup_group": "hailo10h_setup",
+            "performance_claims_emitted": false,
+            "producer": "hailo10h",
+            "quality_companion_endpoint_id": "tensorrt_at_hailo10h_full",
+            "run_id": "native_full_tensorrt",
+            "setup_id": "orin_nx_hailo10_01",
+            "source_run_id": "native_full_tensorrt",
+            "variant": "full"
+          },
+          {
+            "backend": "tensorrt",
+            "dispatch_run_id": "ort_tensorrt",
+            "execution_role": "full_quality_only",
+            "id": "tensorrt_at_deepx_m1_full",
+            "identity_source": "scheduler_materialized_before_remote_dispatch",
+            "logical_setup_group": "deepx_setup",
+            "performance_claims_emitted": false,
+            "producer": "deepx",
+            "quality_companion_endpoint_id": "tensorrt_at_deepx_m1_full",
+            "run_id": "native_full_tensorrt",
+            "setup_id": "orin_nx_deepx_m1_01",
+            "source_run_id": "native_full_tensorrt",
+            "variant": "full"
+          }
+        ],
+        "identity_key_fields": [
+          "model_id",
+          "source_run_id",
+          "setup_id",
+          "backend",
+          "variant",
+          "execution_role",
+          "performance_claims_emitted"
+        ],
+        "model_ids": [
+          "mobilenet_v3_large",
+          "resnet50",
+          "yolo11l",
+          "yolov7_ultralytics",
+          "yolo26m",
+          "yolo26x",
+          "yolo26s"
+        ],
+        "postcondition": {
+          "completed_count": 15,
+          "contract_error_count": 0,
+          "duplicate_count": 0,
+          "expected_count": 21,
+          "failed_count": 0,
+          "missing_count": 3,
+          "status": "blocked"
+        },
+        "schema": "onnx-splitpoint/standard-setup-local-tensorrt-quality-acceptance-identity-contract",
+        "schema_version": 1
+      },
+      "quality_decision": "not_evaluated",
+      "request_count": 53,
+      "result_count": 53,
+      "result_shortfall_count": 0,
+      "results_complete": false,
+      "schema": "onnx-splitpoint/central-quality-reporting-status",
+      "schema_version": 1,
+      "scientific_pass": false,
+      "scientific_status": "not_evaluated",
+      "source_present": true,
+      "source_status": "failed",
+      "status_semantics": {
+        "quality_decision": "Aggregate fail-closed scientific decision across acceptance Full results, including setup-local quality-only companions; superseded generic Full and composed rows remain diagnostics.",
+        "technical_status": "Execution/computation completeness only; metric decisions do not turn a technically completed run into a crash."
+      },
+      "technical_status": "failed",
+      "unmatched_result_count": 12
+    },
+    "quality_decision": "not_evaluated",
+    "quality_evaluation_technical_status": "failed",
+    "scientific_pass": false,
+    "scientific_status": "not_evaluated",
+    "technical_status": "failed"
+  },
+  "energy_coverage_contract_active": null,
+  "energy_coverage_contract_status": null,
+  "energy_coverage_contract_valid": null,
+  "energy_plan_completion_fraction": null,
+  "energy_planned_matrix_coverage_fraction": null,
+  "energy_successful_matrix_coverage_fraction": null,
+  "native_evidence_status": {},
+  "non_blocking_reason_count": 14,
+  "non_blocking_reasons": [
+    {
+      "blocking": false,
+      "kind": "stage_status",
+      "model_id": "yolov7_ultralytics",
+      "reason": "Skipped because a required upstream artifact stage failed.",
+      "stage": "build_backend_artifacts",
+      "stage_result_path": "models/yolov7_ultralytics/stages/build_backend_artifacts/stage_result.json",
+      "status": "skipped"
+    },
+    {
+      "blocking": false,
+      "kind": "stage_status",
+      "model_id": "yolov7_ultralytics",
+      "reason": "Skipped because a required upstream artifact stage failed.",
+      "stage": "run_benchmarks",
+      "stage_result_path": "models/yolov7_ultralytics/stages/run_benchmarks/stage_result.json",
+      "status": "skipped"
+    },
+    {
+      "blocking": false,
+      "kind": "stage_status",
+      "model_id": "yolov7_ultralytics",
+      "reason": "Skipped because a required upstream artifact stage failed.",
+      "stage": "validate_outputs",
+      "stage_result_path": "models/yolov7_ultralytics/stages/validate_outputs/stage_result.json",
+      "status": "skipped"
+    },
+    {
+      "blocking": false,
+      "kind": "stage_status",
+      "model_id": "yolov7_ultralytics",
+      "reason": "Skipped because a required upstream artifact stage failed.",
+      "stage": "hardware_smoke",
+      "stage_result_path": "models/yolov7_ultralytics/stages/hardware_smoke/stage_result.json",
+      "status": "skipped"
+    },
+    {
+      "artifact": "models/mobilenet_v3_large/benchmark_results/normalized_results.json",
+      "blocking": false,
+      "kind": "benchmark_results",
+      "missing_measurement_class": "optional_missing",
+      "model_id": "mobilenet_v3_large",
+      "reason": "measured_results=9, missing_measurements=4; normalized_results contains incomplete or optional-missing benchmark rows",
+      "stage": "run_benchmarks",
+      "status": "partial_measured",
+      "valid_complete_split_present": true
+    },
+    {
+      "artifact": "models/mobilenet_v3_large/validation/validation_summary.json",
+      "blocking": false,
+      "kind": "validation",
+      "model_id": "mobilenet_v3_large",
+      "reason": "1 measured row(s) failed validation. The workflow completed; invalid cases are kept in validation_summary.json and excluded/marked by reports. Use validation.mode=strict to make this blocking.",
+      "stage": "validate_outputs",
+      "status": "valid_complete_splits_present"
+    },
+    {
+      "artifact": "models/resnet50/benchmark_results/normalized_results.json",
+      "blocking": false,
+      "kind": "benchmark_results",
+      "missing_measurement_class": "optional_missing",
+      "model_id": "resnet50",
+      "reason": "measured_results=13, missing_measurements=4; normalized_results contains incomplete or optional-missing benchmark rows",
+      "stage": "run_benchmarks",
+      "status": "partial_measured",
+      "valid_complete_split_present": true
+    },
+    {
+      "artifact": "models/resnet50/validation/validation_summary.json",
+      "blocking": false,
+      "kind": "validation",
+      "model_id": "resnet50",
+      "reason": "2 measured row(s) failed validation. The workflow completed; invalid cases are kept in validation_summary.json and excluded/marked by reports. Use validation.mode=strict to make this blocking.",
+      "stage": "validate_outputs",
+      "status": "valid_complete_splits_present"
+    },
+    {
+      "artifact": "models/yolo11l/validation/validation_summary.json",
+      "blocking": false,
+      "kind": "validation",
+      "model_id": "yolo11l",
+      "reason": "7 measured row(s) failed validation. The workflow completed; invalid cases are kept in validation_summary.json and excluded/marked by reports. Use validation.mode=strict to make this blocking.",
+      "stage": "validate_outputs",
+      "status": "validation_failed"
+    },
+    {
+      "artifact": "models/yolo26m/validation/validation_summary.json",
+      "blocking": false,
+      "kind": "validation",
+      "model_id": "yolo26m",
+      "reason": "7 measured row(s) failed validation. The workflow completed; invalid cases are kept in validation_summary.json and excluded/marked by reports. Use validation.mode=strict to make this blocking.",
+      "stage": "validate_outputs",
+      "status": "validation_failed"
+    },
+    {
+      "artifact": "models/yolo26s/validation/validation_summary.json",
+      "blocking": false,
+      "kind": "validation",
+      "model_id": "yolo26s",
+      "reason": "7 measured row(s) failed validation. The workflow completed; invalid cases are kept in validation_summary.json and excluded/marked by reports. Use validation.mode=strict to make this blocking.",
+      "stage": "validate_outputs",
+      "status": "validation_failed"
+    },
+    {
+      "artifact": "models/yolo26x/hardware/hardware_smoke_status.json",
+      "blocking": false,
+      "kind": "hailo_runtime",
+      "model_id": "yolo26x",
+      "reason": "Generic remote/CUDA/TensorRT hardware ran, but no complete Hailo runtime row was verified; Hailo build/reuse/runtime remains a separate follow-up.",
+      "stage": "hardware_smoke",
+      "status": "hardware_verified"
+    },
+    {
+      "artifact": "models/yolo26x/benchmark_results/normalized_results.json",
+      "blocking": false,
+      "kind": "prediction_vs_benchmark",
+      "model_id": "yolo26x",
+      "reason": "Split candidate rows exist, but no complete split total latency is available; prediction-vs-benchmark metrics are withheld instead of using full-baseline timings.",
+      "stage": "aggregate_results",
+      "status": "split_total_latency_missing"
+    },
+    {
+      "artifact": "models/yolo26x/validation/validation_summary.json",
+      "blocking": false,
+      "kind": "validation",
+      "model_id": "yolo26x",
+      "reason": "6 measured row(s) failed validation. The workflow completed; invalid cases are kept in validation_summary.json and excluded/marked by reports. Use validation.mode=strict to make this blocking.",
+      "stage": "validate_outputs",
+      "status": "validation_failed"
+    }
+  ],
+  "partial_reason_count": 14,
+  "partial_reasons": [
+    {
+      "blocking": false,
+      "kind": "stage_status",
+      "model_id": "yolov7_ultralytics",
+      "reason": "Skipped because a required upstream artifact stage failed.",
+      "stage": "build_backend_artifacts",
+      "stage_result_path": "models/yolov7_ultralytics/stages/build_backend_artifacts/stage_result.json",
+      "status": "skipped"
+    },
+    {
+      "blocking": false,
+      "kind": "stage_status",
+      "model_id": "yolov7_ultralytics",
+      "reason": "Skipped because a required upstream artifact stage failed.",
+      "stage": "run_benchmarks",
+      "stage_result_path": "models/yolov7_ultralytics/stages/run_benchmarks/stage_result.json",
+      "status": "skipped"
+    },
+    {
+      "blocking": false,
+      "kind": "stage_status",
+      "model_id": "yolov7_ultralytics",
+      "reason": "Skipped because a required upstream artifact stage failed.",
+      "stage": "validate_outputs",
+      "stage_result_path": "models/yolov7_ultralytics/stages/validate_outputs/stage_result.json",
+      "status": "skipped"
+    },
+    {
+      "blocking": false,
+      "kind": "stage_status",
+      "model_id": "yolov7_ultralytics",
+      "reason": "Skipped because a required upstream artifact stage failed.",
+      "stage": "hardware_smoke",
+      "stage_result_path": "models/yolov7_ultralytics/stages/hardware_smoke/stage_result.json",
+      "status": "skipped"
+    },
+    {
+      "artifact": "models/mobilenet_v3_large/benchmark_results/normalized_results.json",
+      "blocking": false,
+      "kind": "benchmark_results",
+      "missing_measurement_class": "optional_missing",
+      "model_id": "mobilenet_v3_large",
+      "reason": "measured_results=9, missing_measurements=4; normalized_results contains incomplete or optional-missing benchmark rows",
+      "stage": "run_benchmarks",
+      "status": "partial_measured",
+      "valid_complete_split_present": true
+    },
+    {
+      "artifact": "models/mobilenet_v3_large/validation/validation_summary.json",
+      "blocking": false,
+      "kind": "validation",
+      "model_id": "mobilenet_v3_large",
+      "reason": "1 measured row(s) failed validation. The workflow completed; invalid cases are kept in validation_summary.json and excluded/marked by reports. Use validation.mode=strict to make this blocking.",
+      "stage": "validate_outputs",
+      "status": "valid_complete_splits_present"
+    },
+    {
+      "artifact": "models/resnet50/benchmark_results/normalized_results.json",
+      "blocking": false,
+      "kind": "benchmark_results",
+      "missing_measurement_class": "optional_missing",
+      "model_id": "resnet50",
+      "reason": "measured_results=13, missing_measurements=4; normalized_results contains incomplete or optional-missing benchmark rows",
+      "stage": "run_benchmarks",
+      "status": "partial_measured",
+      "valid_complete_split_present": true
+    },
+    {
+      "artifact": "models/resnet50/validation/validation_summary.json",
+      "blocking": false,
+      "kind": "validation",
+      "model_id": "resnet50",
+      "reason": "2 measured row(s) failed validation. The workflow completed; invalid cases are kept in validation_summary.json and excluded/marked by reports. Use validation.mode=strict to make this blocking.",
+      "stage": "validate_outputs",
+      "status": "valid_complete_splits_present"
+    },
+    {
+      "artifact": "models/yolo11l/validation/validation_summary.json",
+      "blocking": false,
+      "kind": "validation",
+      "model_id": "yolo11l",
+      "reason": "7 measured row(s) failed validation. The workflow completed; invalid cases are kept in validation_summary.json and excluded/marked by reports. Use validation.mode=strict to make this blocking.",
+      "stage": "validate_outputs",
+      "status": "validation_failed"
+    },
+    {
+      "artifact": "models/yolo26m/validation/validation_summary.json",
+      "blocking": false,
+      "kind": "validation",
+      "model_id": "yolo26m",
+      "reason": "7 measured row(s) failed validation. The workflow completed; invalid cases are kept in validation_summary.json and excluded/marked by reports. Use validation.mode=strict to make this blocking.",
+      "stage": "validate_outputs",
+      "status": "validation_failed"
+    },
+    {
+      "artifact": "models/yolo26s/validation/validation_summary.json",
+      "blocking": false,
+      "kind": "validation",
+      "model_id": "yolo26s",
+      "reason": "7 measured row(s) failed validation. The workflow completed; invalid cases are kept in validation_summary.json and excluded/marked by reports. Use validation.mode=strict to make this blocking.",
+      "stage": "validate_outputs",
+      "status": "validation_failed"
+    },
+    {
+      "artifact": "models/yolo26x/hardware/hardware_smoke_status.json",
+      "blocking": false,
+      "kind": "hailo_runtime",
+      "model_id": "yolo26x",
+      "reason": "Generic remote/CUDA/TensorRT hardware ran, but no complete Hailo runtime row was verified; Hailo build/reuse/runtime remains a separate follow-up.",
+      "stage": "hardware_smoke",
+      "status": "hardware_verified"
+    },
+    {
+      "artifact": "models/yolo26x/benchmark_results/normalized_results.json",
+      "blocking": false,
+      "kind": "prediction_vs_benchmark",
+      "model_id": "yolo26x",
+      "reason": "Split candidate rows exist, but no complete split total latency is available; prediction-vs-benchmark metrics are withheld instead of using full-baseline timings.",
+      "stage": "aggregate_results",
+      "status": "split_total_latency_missing"
+    },
+    {
+      "artifact": "models/yolo26x/validation/validation_summary.json",
+      "blocking": false,
+      "kind": "validation",
+      "model_id": "yolo26x",
+      "reason": "6 measured row(s) failed validation. The workflow completed; invalid cases are kept in validation_summary.json and excluded/marked by reports. Use validation.mode=strict to make this blocking.",
+      "stage": "validate_outputs",
+      "status": "validation_failed"
+    }
+  ],
+  "profile_id": "biggerset",
+  "quality_decision": "not_evaluated",
+  "quality_evaluation_technical_status": "failed",
+  "run_id": "biggerset_20260903_090110",
+  "runtime_complete": null,
+  "schema": "onnx-splitpoint/run-status-summary",
+  "schema_version": 1,
+  "scientific_pass": false,
+  "scientific_ready": null,
+  "scientific_status": "not_evaluated",
+  "semantic_validation_complete": null,
+  "stage_status_counts": {
+    "failed": 3,
+    "ok": 63,
+    "partial": 7,
+    "skipped": 4,
+    "warn": 6
+  },
+  "status": "failed",
+  "status_decision": {
+    "blocking_reason_count": 23,
+    "non_blocking_reason_count": 14,
+    "note": "Non-blocking warnings, especially build_backend_artifacts queues followed by successful benchmark/validation/hardware stages, do not force the final run status to partial."
+  },
+  "technical_quality_failure": null,
+  "technical_status": "failed",
+  "tool_version": "2.79.14",
+  "workflow_version": "v2.79.14-simple-full-system-m2-idle-calibration"
+}

@@ -1,0 +1,282 @@
+SOURCE_ZIP=/home/kmika/Downloads/v27916_updated_20260903_154342/ONNX-Splitpoint-Tool_v2.79.16_COMPLETE_DELIVERY_BUNDLE/ONNX-Splitpoint-Tool_v2.79.16_SOURCE.zip
+SOURCE_SHA256=2f0b2ee8432a2cde1db59326967acdc6fd51fa7339490739d9cb74b9f948e375
+{
+  "ok": true,
+  "checks": {
+    "schema_ok": true,
+    "manifest_shape_ok": true,
+    "manifest_paths_ok": true,
+    "package_version_ok": true,
+    "workflow_version_ok": true,
+    "file_count_ok": true,
+    "files_ok": true,
+    "sha256sums_ok": true,
+    "unexpected_extras_ok": true,
+    "symlinks_ok": true
+  },
+  "file_count": 1264,
+  "invalid_paths": [],
+  "unexpected_extra_count": 0,
+  "unexpected_extras": [],
+  "symlinks": []
+}
+{
+  "archive": "/home/kmika/Downloads/v27916_updated_20260903_154342/ONNX-Splitpoint-Tool_v2.79.16_COMPLETE_DELIVERY_BUNDLE/ONNX-Splitpoint-Tool_v2.79.16_SOURCE.zip",
+  "archive_sha256": "2f0b2ee8432a2cde1db59326967acdc6fd51fa7339490739d9cb74b9f948e375",
+  "archive_size_bytes": 8684002,
+  "checks": {
+    "archive_comment_empty": true,
+    "archive_exists": true,
+    "content_matches_source": true,
+    "crc_clean": true,
+    "deterministic_metadata": true,
+    "member_names_unique": true,
+    "member_order_and_set": true
+  },
+  "manifest_file_count": 1264,
+  "member_count": 1266,
+  "ok": true,
+  "package_version": "2.79.16",
+  "prefix": "ONNX-Splitpoint-Tool_v2.79.16",
+  "schema": "onnx-splitpoint/source-release-verification",
+  "schema_version": 1,
+  "workflow_version": "v2.79.16-guided-full-system-input-calibration"
+}
+V27916_SOURCE_IDENTITY=PASS
+{
+  "dependencies_preserved": true,
+  "distribution": "onnx-splitpoint-tool",
+  "entry_point_count": 159,
+  "installer": "stdlib-only-pep376-editable",
+  "ok": true,
+  "replaced_artifact_count": 157,
+  "version": "2.79.16"
+}
+YOLOv7 probe dependencies: available; pycocotools 2.0.11
+PASS source release synchronized
+Venv erhalten: /home/kmika/ONNX-Splitpoint-Tool/.venv
+Distribution aktualisiert: onnx-splitpoint-tool==2.79.16
+YOLOv7-Probe-Abhängigkeiten: available (pycocotools>=2.0.7)
+Eigene Profile erhalten: 26
+Backup geänderter/entfernter Dateien: /home/kmika/ONNX-Splitpoint-Tool_update_backups/20260903_174346_781037_720962473
+EMPTY_LEGACY_DIST_INFO_REMOVED=0
+V27916_IDENTITY=PASS
+{
+  "build_id": "v2.79.16-guided-full-system-input-calibration",
+  "checks": {
+    "actual_current_gui_contract": true,
+    "build": true,
+    "calibration_backend_functions": true,
+    "collector_pre_collection_admission": true,
+    "configuration_binding": true,
+    "current_aliases": true,
+    "current_files": true,
+    "defaults_and_example": true,
+    "energy_row_isolation_contract": true,
+    "entrypoints": true,
+    "focused_features": true,
+    "gui_surface_and_fail_closed_recovery": true,
+    "guided_sequence_and_recovery": true,
+    "hailo10_native_uint8_contract": true,
+    "hardware_boundary_and_fit_model": true,
+    "lineage": true,
+    "updater": true,
+    "verified_scale_functions": true,
+    "version": true
+  },
+  "failed": [],
+  "status": "PASS",
+  "version": "2.79.16"
+}
+PASS v2.79.16 smoke
+........................................................................ [ 15%]
+........................................................................ [ 30%]
+........................................................................ [ 46%]
+........................................................................ [ 61%]
+........................................................................ [ 76%]
+........................................................................ [ 92%]
+....................................                                     [100%]
+=============================== warnings summary ===============================
+.venv/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:91
+  /home/kmika/ONNX-Splitpoint-Tool/.venv/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:91: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+    _EPOCH_DATETIME_NAIVE = datetime.datetime.utcfromtimestamp(0)
+
+tests/test_v27916_energy_row_isolation.py::test_gui_extracts_concrete_energy_not_started_reason
+  /home/kmika/ONNX-Splitpoint-Tool/.venv/lib/python3.12/site-packages/pyparsing.py:108: DeprecationWarning: module 'sre_constants' is deprecated
+    import sre_constants
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+468 passed, 2 warnings in 22.60s
+{
+  "ok": true,
+  "scope": "installed",
+  "checks": {
+    "schema_ok": true,
+    "manifest_shape_ok": true,
+    "package_version_ok": true,
+    "workflow_version_ok": true,
+    "manifest_rows_ok": true,
+    "file_count_ok": true,
+    "files_ok": true,
+    "sha256sums_ok": true,
+    "unexpected_extras_ok": true,
+    "symlinks_ok": true
+  },
+  "file_count": 1264,
+  "release_file_count": 1264,
+  "actual_allowlisted_file_count": 1290,
+  "user_profile_count": 26,
+  "user_profiles": [
+    {
+      "path": "profiles/BiggerSet.yaml",
+      "size": 22832,
+      "sha256": "cc3457a32698ba347db98d04dcd9d9e0c7bb93aec60df4a5c33d63da57167ae9"
+    },
+    {
+      "path": "profiles/Complet_set.yaml",
+      "size": 22378,
+      "sha256": "821568a465f2e2fa84496732c1e085b045924a78d626d108c4646394112c7227"
+    },
+    {
+      "path": "profiles/Complete_Set_v2782_canary_b5.yaml",
+      "size": 21232,
+      "sha256": "13f486b0e53e335dfb4407bc09f364a116a3cfc774757e3a46bfd3c7c86da91f"
+    },
+    {
+      "path": "profiles/ResNet&Yolo26m.yaml",
+      "size": 5658,
+      "sha256": "2c5a7b03060787f468f317e378ce7e3a32f6c4838dbd7f1e5feb876fb62fb34d"
+    },
+    {
+      "path": "profiles/ResNet&Yolo26s&yolo7.yaml",
+      "size": 20338,
+      "sha256": "d62eb7b9e8c00e94519e57e335d4e397ef2513e3221525e7359d25c4e389e7f0"
+    },
+    {
+      "path": "profiles/ResNet&Yolo26s.yaml",
+      "size": 18106,
+      "sha256": "2df2414ab78d92f0ba6fc838e6bb6915b34140a22af87444b0bc7ec201ba5425"
+    },
+    {
+      "path": "profiles/ResNetOnly.yaml",
+      "size": 19477,
+      "sha256": "d00939de6114b0f863e8ce0a0721e8f8abfa6d23f9cc056a6806dec77ad10dc2"
+    },
+    {
+      "path": "profiles/SmallSet.yaml",
+      "size": 4979,
+      "sha256": "da4513052ffd15685f6d0c97845d892c534d6b06603665183275a2f86c2a1e09"
+    },
+    {
+      "path": "profiles/campaign_gate_hailo8_yolo26s.yaml",
+      "size": 1428,
+      "sha256": "bc6218df97442186540f91b4320e54faa151ab0d1d8ba89995e19faed3c02b0a"
+    },
+    {
+      "path": "profiles/deepx_contract_smoke.yaml",
+      "size": 965,
+      "sha256": "cdda6b25571d74a4753bae529f698642cb12e0d9b89265566ce6350f5f378e03"
+    },
+    {
+      "path": "profiles/main_eval_fast_v58p.yaml",
+      "size": 684,
+      "sha256": "2372343b4cde21a56b57d9d168bca1bd362e726fdebf241bdbdc7d61a31747cb"
+    },
+    {
+      "path": "profiles/paper_comparison_resnet50_hailo8_full_native_energy_b500.yaml",
+      "size": 18761,
+      "sha256": "c2cc26d0eeb07c3b5d4114bf9fad8ff7ce959756b4a8da6948b4dcf82a7baa37"
+    },
+    {
+      "path": "profiles/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500.yaml",
+      "size": 10315,
+      "sha256": "4075f8320791be51e10fa418934ba39af51a57724d1b87f238d56cd1bb6eb7d3"
+    },
+    {
+      "path": "profiles/resnet50_v27536_deepx_full_quality_canary.yaml",
+      "size": 9517,
+      "sha256": "ae15e352eb762c76a6feb4473587378b40cec1ab51f43430840fe43f197cd22b"
+    },
+    {
+      "path": "profiles/resnet50_v2771_hailo_parallel_build_canary.yaml",
+      "size": 9883,
+      "sha256": "3254ddb850081bac23299157eb597522d74e91f54607b9ad582a5f8e543214f0"
+    },
+    {
+      "path": "profiles/resnet_yolo26s_yolov7_v27544_standard_anchor_b500.yaml",
+      "size": 11505,
+      "sha256": "d05f7ec575ec9a233d7e9069138764d594728a703513174dd078a45359c2d917"
+    },
+    {
+      "path": "profiles/resnet_yolo26s_yolov7_v27549_phase2_ranking_audit_b500.yaml",
+      "size": 11825,
+      "sha256": "741be7517ea6826332354aa5187742403120fa6773241fe98d4856593ddf0c8d"
+    },
+    {
+      "path": "profiles/v27549_native_ranking_supplement.yaml",
+      "size": 2262,
+      "sha256": "68af6db9804eef4714616bbe2864d087cd47d50bc4af74c3f7c1d0c0cd702b47"
+    },
+    {
+      "path": "profiles/yolo11l_energy_final_v58p.yaml",
+      "size": 660,
+      "sha256": "1a7e3ab54a570a2049a43e4a164da1f03b91d732c25596d8ffa4213c91e1b109"
+    },
+    {
+      "path": "profiles/yolo11l_smoke_v58p.yaml",
+      "size": 647,
+      "sha256": "b95720b1957e156019caa09d61b2e76fe4ececed26e749ac5487034c6a4f7e5b"
+    },
+    {
+      "path": "profiles/yolo26x_energy_final_v58w.yaml",
+      "size": 703,
+      "sha256": "f35709d391655eda9ad191ceb54331d1068a9472d553be8917830d9ee358396f"
+    },
+    {
+      "path": "profiles/yolo26x_smoke_v58w.yaml",
+      "size": 697,
+      "sha256": "95daf40faa781b43f52f27b68302f548b897d92a530812a5255fc04590cedd62"
+    },
+    {
+      "path": "profiles/yolov7_26m_26x.yaml",
+      "size": 5329,
+      "sha256": "69c733800fc9a0cbf0e70387c52214f36257099922e5cbbffa48cef8ba43be8f"
+    },
+    {
+      "path": "profiles/yolov7_paper_v27549_hailo_full_opt2_canary_b500(1).yaml",
+      "size": 9891,
+      "sha256": "50366add37da821f4c98287e42a4586561e705733bf69a008002c07cde4655b3"
+    },
+    {
+      "path": "profiles/yolov7_paper_v27549_hailo_full_opt2_canary_b500.yaml",
+      "size": 9635,
+      "sha256": "23d9168d834b249af7d95a3ab4f525e71d0677d5e9fd3050c8422fd2d0871f04"
+    },
+    {
+      "path": "profiles/yolov7only.yaml",
+      "size": 4739,
+      "sha256": "bc37068e7fa888bc73cd4fc26c81f5e855f9910c3dd6039a2c5c4ceb7c54fd4c"
+    }
+  ],
+  "unexpected_extra_count": 0,
+  "unexpected_extras": [],
+  "symlink_count": 0,
+  "symlinks": [],
+  "missing": [],
+  "changed": []
+}
+PASS v2.79.16 small acceptance
+V27916_ACCEPTANCE_REPORT=/home/kmika/Downloads/v27916_install_acceptance_20260903_154343_058884999_781004/v27916_small_acceptance.json
+V27916_DEDICATED_ACCEPTANCE=PASS
+V27916_GENERIC_ALIAS_AND_INSTALLED_MANIFEST=PASS_VIA_DEDICATED_ACCEPTANCE
+V27916_INSTALL_ACCEPTANCE=PASS
+HARDWARE_ACTIONS=NOT_RUN
+V27916_SOFTWARE_ACCEPTANCE=PASS
+V27916_FINAL_CAMPAIGN_READY=PENDING_SHORT_HARDWARE_SMOKES
+
+NEXT_STEP:
+Restart the GUI and refresh the three Platform-power cards. For each physical
+u.RECS setup, run "Calibrate full-system input" with the electronic load on
+9V_20V_IN after R16. Saving the new scale intentionally invalidates old idle
+baselines, so repeat the setup's M.2 idle calibration afterwards. Follow the
+hardware smoke in TESTANLEITUNG_2.79.16.md before the final campaign.

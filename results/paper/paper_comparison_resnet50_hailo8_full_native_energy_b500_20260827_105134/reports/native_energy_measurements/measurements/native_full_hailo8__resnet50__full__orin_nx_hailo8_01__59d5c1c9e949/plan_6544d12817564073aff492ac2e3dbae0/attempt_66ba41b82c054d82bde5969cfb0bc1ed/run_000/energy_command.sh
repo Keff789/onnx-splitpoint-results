@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -u
+timing_path=/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_energy_measurements/measurements/native_full_hailo8__resnet50__full__orin_nx_hailo8_01__59d5c1c9e949/plan_6544d12817564073aff492ac2e3dbae0/attempt_66ba41b82c054d82bde5969cfb0bc1ed/run_000/workload_timing.txt
+start_ns=$(date +%s%N)
+printf 'start_ns=%s
+' "$start_ns" > "$timing_path"
+set +e
+/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_energy_measurements/measurements/native_full_hailo8__resnet50__full__orin_nx_hailo8_01__59d5c1c9e949/plan_6544d12817564073aff492ac2e3dbae0/attempt_66ba41b82c054d82bde5969cfb0bc1ed/run_000/workload_command.sh > /home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_energy_measurements/measurements/native_full_hailo8__resnet50__full__orin_nx_hailo8_01__59d5c1c9e949/plan_6544d12817564073aff492ac2e3dbae0/attempt_66ba41b82c054d82bde5969cfb0bc1ed/run_000/workload_stdout.log 2> /home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_energy_measurements/measurements/native_full_hailo8__resnet50__full__orin_nx_hailo8_01__59d5c1c9e949/plan_6544d12817564073aff492ac2e3dbae0/attempt_66ba41b82c054d82bde5969cfb0bc1ed/run_000/workload_stderr.log
+rc=$?
+set -e
+end_ns=$(date +%s%N)
+printf 'end_ns=%s
+rc=%s
+' "$end_ns" "$rc" >> "$timing_path"
+exit "$rc"

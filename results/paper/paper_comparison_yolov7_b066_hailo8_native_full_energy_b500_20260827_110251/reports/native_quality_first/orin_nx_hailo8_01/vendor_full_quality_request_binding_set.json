@@ -1,0 +1,75 @@
+{
+  "binding_errors_by_backend_model": {},
+  "binding_set_sha256": "154d5993d630a05d14dbd3ad6d23e5be7022cc445d336152ad827d9b54aee0bc",
+  "binding_status_by_backend_model": {
+    "native_full_hailo8|yolov7_paper": "verified_exact"
+  },
+  "bindings_by_backend_model": {
+    "native_full_hailo8|yolov7_paper": {
+      "backend": "native_full_hailo8",
+      "binding_sha256": "730f87d8d6ce6ac1feb4667e6a91418880f4029cdaa14bd447a5876d7592c3a5",
+      "central_quality_result_sha256": "6786e729f9ecabbf044a9f3729a31fd1d1c365a19429bdabb924ac2d2312cde9",
+      "comparison_backend": "hailo8",
+      "decoder_contract_sha256": "2b9ae68fa7a30f5390e496360aabc7a96052420c221c521ec423268d340a1506",
+      "endpoint_contract_hash": "051f0d9e489355d312ad656532acf3ed8a2719774d8ef9843278818f5bd15adc",
+      "eval_run_id": "paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251",
+      "model_id": "yolov7_paper",
+      "model_sha256": "7a13e66f91047cce0e251c05f64159646847e842af31d60441c63dcdfad7825d",
+      "nms_contract_sha256": "6e0496a40fa27ee48850b74bb8f469d98aa542100a9451fc3c50526ffb7df28f",
+      "preprocessing_contract": {
+        "identity": {
+          "color_space": "RGB",
+          "contract_scope": "prepared_rgb_uint8_semantics",
+          "image_scale": "norm",
+          "input_domain": "uint8_0_255",
+          "letterbox": true,
+          "letterbox_pad_value": 114,
+          "pad_value": 114,
+          "placement": "floor_top_left_remainder_bottom_right",
+          "preprocess_mode": "letterbox",
+          "resize_interpolation": "bilinear",
+          "resize_rounding": "python_round_ties_to_even",
+          "schema": "onnx-splitpoint/image-preprocessing-contract",
+          "schema_version": 2,
+          "spatial_transform": "centered_letterbox",
+          "target_hw": [
+            640,
+            640
+          ],
+          "task": "detection"
+        },
+        "sha256": "411898b92628e2a769a2b8ea7aa35faff35373cfacb863c3ab34b243c105b70e"
+      },
+      "preprocessing_contract_sha256": "411898b92628e2a769a2b8ea7aa35faff35373cfacb863c3ab34b243c105b70e",
+      "quality_contract_sha256": "c7138b4f50b8424cd8165c3c6148d56becbdc39da6226305498c60b9af6045c9",
+      "quality_record_endpoint_contract_sha256": "ab3c81185cc9c972b23eae5ed7961d5085a1b6a677d078e8bfb34735fab94873",
+      "runtime_precision_identity": "hailo_hef_sha256:2e860dc38a585f0890a1040ca033c595e3c23e281083039f6ec93621317f7c88",
+      "schema": "onnx-splitpoint/native-full-quality-request-binding",
+      "schema_version": 1,
+      "setup_id": "orin_nx_hailo8_01",
+      "source_case_id": "b066",
+      "source_request": "models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b066/results_hailo8/task_quality_inputs/full_request.json",
+      "source_request_file": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b066/results_hailo8/task_quality_inputs/full_request.json",
+      "source_request_file_sha256": "03f695e8f6b72faedfe92e5cb976b0160f9b637b0b165696daaea0b58a482732",
+      "source_request_sha256": "03f695e8f6b72faedfe92e5cb976b0160f9b637b0b165696daaea0b58a482732",
+      "source_run_id": "hailo8",
+      "task": "detection",
+      "task_quality_policy_sha256": "58bf34c5760ed51e4ff35faee4055891caf624b2722cb375df9d419863efa9c4",
+      "validation_dataset_ground_truth_sha256": "38a3ecae14dfcb4c2555e2f7377578cba90de63ed4a9f74f523f914ebce35a61",
+      "validation_dataset_image_ids_sha256": "b8ac329f5d3e7e201a3938d36c63bfe96a13c8a2be6e4fe6ddfab89cbc135e45",
+      "validation_dataset_sha256": "4badbe579a8fd40a5e49104ab0d8138325041561cd6c1ffa2642b0f288d14e59",
+      "variant": "full"
+    }
+  },
+  "central_quality_summary": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/quality_management/central_quality_summary.json",
+  "central_quality_summary_sha256": "fbfed1f5c01fd178b2751f03c8f70f00ae84ec46b50900d3dc46d82a46ad5bc0",
+  "comparison_backend": "hailo8",
+  "complete": true,
+  "eval_run_id": "paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251",
+  "required_binding_keys": [
+    "native_full_hailo8|yolov7_paper"
+  ],
+  "schema": "onnx-splitpoint/native-full-quality-request-binding-set",
+  "schema_version": 2,
+  "setup_id": "orin_nx_hailo8_01"
+}

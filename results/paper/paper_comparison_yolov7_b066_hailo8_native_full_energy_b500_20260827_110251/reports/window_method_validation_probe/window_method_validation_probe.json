@@ -1,0 +1,1622 @@
+{
+  "schema": "onnx-splitpoint/window-method-validation-probe",
+  "schema_version": 2,
+  "requested": true,
+  "screening_only": true,
+  "diagnostic_only": true,
+  "eligible_for_energy_results_import": false,
+  "eligible_for_scientific_report_import": false,
+  "eligible_for_scientific_claim": false,
+  "affects_native_energy_pairing": false,
+  "affects_primary_energy_result": false,
+  "affects_final_energy_gate": false,
+  "scientific_method_decision": "frozen_command_marker_primary_chapter4_shadow",
+  "scientific_primary_method_frozen": true,
+  "scientific_primary_method": "command_marker_window",
+  "scientific_shadow_method": "chapter4_legacy_window",
+  "primary_method": "command_marker_window",
+  "shadow_method": "chapter4_legacy_window",
+  "shadow_role": "same_trace_sensitivity_only",
+  "shadow_affects_primary_result": false,
+  "shadow_affects_final_gate": false,
+  "primary_implementation": "collector_sample_marker_crop",
+  "shadow_implementation": "historical_power_edge_detection_with_estimated_duration",
+  "comparison_method": "chapter4_legacy_window",
+  "same_raw_trace_required": true,
+  "raw_parquet_required": true,
+  "raw_parquet_debug_pack_requested": true,
+  "minimum_sensitivity_repeats": 3,
+  "minimum_decision_repeats": 3,
+  "requested_repeat_count": 3,
+  "strict_requested_validation": true,
+  "attempt_id": "20260827T095446_478761Z_97b44f361c9f",
+  "attempt_directory": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f",
+  "fresh_attempt_directory": true,
+  "stale_measurement_reuse_allowed": false,
+  "report_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/window_method_validation_probe.json",
+  "plan_process": {
+    "rc": 0,
+    "stdout_tail": "{\n  \"ok\": true,\n  \"rows\": 1,\n  \"excluded\": 2,\n  \"deduplicated\": 0,\n  \"json\": \"/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/plan/native_producer_energy_plan.json\"\n}\n",
+    "stderr_tail": ""
+  },
+  "plan_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/plan/native_producer_energy_plan.json",
+  "plan_sha256": "5cb9dead20b11a2e7786b580ad0abe297bb44229b4b163b5a6dd690967812862",
+  "representative_target_count": 1,
+  "representative_target": {
+    "backend": "hailo8_to_trt",
+    "model": "yolov7_paper",
+    "case": "b066",
+    "precision": "uint8_dequant_fp16",
+    "precision_role": "split_boundary_precision",
+    "execution_precision": "uint8_dequant_fp16",
+    "split_boundary_precision": "uint8_dequant_fp16",
+    "full_runtime_precision": "",
+    "comparison_precision": "",
+    "legacy_comparison_precision": "",
+    "runtime_precision_status": "verified_explicit",
+    "setup_id": "orin_nx_hailo8_01",
+    "comparison_backend": "hailo8",
+    "runtime_success": true,
+    "energy_command_preflight_ok": true,
+    "full_baseline": false,
+    "split_has_valid_part2_input": true,
+    "native_energy_planner_admission": {
+      "schema": "onnx-splitpoint/native-energy-planner-admission",
+      "schema_version": 1,
+      "runtime_success": true,
+      "energy_command_preflight_ok": true,
+      "energy_command_preflight_scope": "planner_time_verified_contract_ssh_runtime_and_preflight_command_constructibility",
+      "full_baseline": false,
+      "split_has_valid_part2_input": true,
+      "split_part2_input_status": "verified_single_static_part2_input_technical_proof",
+      "effective_part2_input_count": 1,
+      "selected": true,
+      "predicate": "runtime_success AND energy_command_preflight_ok AND (full_baseline OR split_has_valid_part2_input)"
+    },
+    "semantic_gate": "screening_only_not_claimable",
+    "semantic_claim_ok": false,
+    "semantic_validation_ok": true,
+    "claim_ok": false,
+    "screening_comparable": false,
+    "claim_comparable": false,
+    "final_all_split_energy": false,
+    "screening_only": true,
+    "screening_energy": false,
+    "energy_evidence_tier": "window_probe",
+    "energy_tier": "window_probe",
+    "smoke_diagnostic": false,
+    "diagnostic_only": true,
+    "claim_eligible": false,
+    "prospective_detection_claim_exclusion": false,
+    "prospective_detection_claim_exclusion_reason": "",
+    "detection_diagnostic_sha256": "",
+    "detection_claim_exclusion_entry_sha256": "",
+    "detection_claim_exclusions_contract_sha256": "",
+    "detection_claim_annotation_invalid": false,
+    "detection_claim_annotation_status": "",
+    "historical_diagnostic_only": false,
+    "scientific_claim_exclusion_reasons": [],
+    "eligible_for_energy_results_import": false,
+    "eligible_for_scientific_claim": false,
+    "energy_claim_eligible": false,
+    "contract_consistent": true,
+    "central_quality_evidence_verified": false,
+    "precision_quality_verified": true,
+    "precision_quality_binding_verified": false,
+    "task_quality_observation_valid": false,
+    "accuracy_gate_pass": false,
+    "quality_provenance_complete": false,
+    "quality_claim_result_verified": false,
+    "energy_quality_admission": {
+      "schema": "onnx-splitpoint/native-energy-quality-admission",
+      "schema_version": 1,
+      "admission_scope": "native_runtime_observation",
+      "backend": "hailo8_to_trt",
+      "model": "yolov7_paper",
+      "case": "b066",
+      "setup_id": "orin_nx_hailo8_01",
+      "precision": "uint8_dequant_fp16",
+      "comparison_backend": "hailo8",
+      "successful_command_contract_sha256": "b4a9dc5882cc60c8196a9c6584f14707f3de88fb4c9cb1240b954608c76c8d1a",
+      "central_quality_evidence_verified": false,
+      "precision_quality_binding_verified": false,
+      "task_quality_observation_valid": false,
+      "accuracy_gate_pass": false,
+      "quality_provenance_complete": false,
+      "quality_claim_result_verified": false,
+      "diagnostic_only": true,
+      "screening_comparable": false,
+      "claim_comparable": false,
+      "energy_claim_eligible": false,
+      "runtime_observation_reason": "energy_quality_admission_central_quality_evidence_verified_drift",
+      "admission_sha256": "87260418504b25119e01061975fa27d698c2c782155558e6aab982332b5399ec"
+    },
+    "energy_quality_admission_sha256": "87260418504b25119e01061975fa27d698c2c782155558e6aab982332b5399ec",
+    "quality_gate_status": "screening_only",
+    "task": "detection",
+    "prepared_feed_task": "detection",
+    "prepared_feed_preprocess_mode": "letterbox",
+    "prepared_feed_letterbox_pad_value": "114",
+    "prepared_feed_source_image_sha256": "a4cd7f45ac1ce27eaafb254b23af7c0b18a064be08870ceaaf03b2147f2ce550",
+    "prepared_feed_identity_source": "successful_split_prepared_input_contract",
+    "evaluation_role": "",
+    "runner_regime": "native_fifo",
+    "direction": "hailo8_to_trt",
+    "contract_hash": "c7138b4f50b8424cd8165c3c6148d56becbdc39da6226305498c60b9af6045c9",
+    "preprocessing_hash": "411898b92628e2a769a2b8ea7aa35faff35373cfacb863c3ab34b243c105b70e",
+    "decoder_hash": "2b9ae68fa7a30f5390e496360aabc7a96052420c221c521ec423268d340a1506",
+    "nms_hash": "6e0496a40fa27ee48850b74bb8f469d98aa542100a9451fc3c50526ffb7df28f",
+    "pipeline_contract_sha256": "",
+    "pipeline_preprocessing_sha256": "",
+    "pipeline_decoder_sha256": "",
+    "pipeline_nms_sha256": "",
+    "quality_contract_sha256": "c7138b4f50b8424cd8165c3c6148d56becbdc39da6226305498c60b9af6045c9",
+    "preprocessing_contract_sha256": "411898b92628e2a769a2b8ea7aa35faff35373cfacb863c3ab34b243c105b70e",
+    "decoder_contract_sha256": "2b9ae68fa7a30f5390e496360aabc7a96052420c221c521ec423268d340a1506",
+    "nms_contract_sha256": "6e0496a40fa27ee48850b74bb8f469d98aa542100a9451fc3c50526ffb7df28f",
+    "physical_output_endpoint_id": "detection:raw_head:051f0d9e489355d312ad656532acf3ed8a2719774d8ef9843278818f5bd15adc",
+    "physical_endpoint_contract_hash": "051f0d9e489355d312ad656532acf3ed8a2719774d8ef9843278818f5bd15adc",
+    "physical_endpoint_stage": "raw_head",
+    "physical_endpoint_contract_complete": true,
+    "comparison_output_endpoint_id": "detection:decoded_nms:comparison:43612439aff99a683e0c32f17d9bc70074301ae7445e83c8307439856fbf8a08",
+    "comparison_endpoint_contract_hash": "43612439aff99a683e0c32f17d9bc70074301ae7445e83c8307439856fbf8a08",
+    "comparison_endpoint_stage": "decoded_nms",
+    "output_endpoint_id": "detection:decoded_nms:comparison:43612439aff99a683e0c32f17d9bc70074301ae7445e83c8307439856fbf8a08",
+    "endpoint_contract_hash": "43612439aff99a683e0c32f17d9bc70074301ae7445e83c8307439856fbf8a08",
+    "endpoint_stage": "decoded_nms",
+    "endpoint_contract_complete": true,
+    "output_endpoint_match": true,
+    "completion_pairing_eligible": true,
+    "completion_pairing_status": "strict_completed_detection_endpoint_verified",
+    "model_sha256": "7a13e66f91047cce0e251c05f64159646847e842af31d60441c63dcdfad7825d",
+    "source_request_sha256": "0b92f121049ccd014fa2c0476b14840383946efdfbd2065fb22a1e291546c1c2",
+    "validation_dataset_sha256": "4badbe579a8fd40a5e49104ab0d8138325041561cd6c1ffa2642b0f288d14e59",
+    "validation_dataset_image_ids_sha256": "b8ac329f5d3e7e201a3938d36c63bfe96a13c8a2be6e4fe6ddfab89cbc135e45",
+    "validation_dataset_ground_truth_sha256": "38a3ecae14dfcb4c2555e2f7377578cba90de63ed4a9f74f523f914ebce35a61",
+    "accuracy_gate_policy_sha256": "58bf34c5760ed51e4ff35faee4055891caf624b2722cb375df9d419863efa9c4",
+    "task_quality_policy_sha256": "58bf34c5760ed51e4ff35faee4055891caf624b2722cb375df9d419863efa9c4",
+    "runtime_quality_gate_policy_sha256": "58bf34c5760ed51e4ff35faee4055891caf624b2722cb375df9d419863efa9c4",
+    "validation_input_or_image_sha256": "a4cd7f45ac1ce27eaafb254b23af7c0b18a064be08870ceaaf03b2147f2ce550",
+    "successful_command_contract_status": "hash_schema_identity_and_artifacts_verified",
+    "successful_command_contract_sha256": "b4a9dc5882cc60c8196a9c6584f14707f3de88fb4c9cb1240b954608c76c8d1a",
+    "native_split_energy_quality_binding": {
+      "schema": "onnx-splitpoint/native-split-energy-quality-binding",
+      "schema_version": 1,
+      "native_split_quality_required": true,
+      "native_split_energy_binding_valid": true,
+      "native_split_energy_binding_status": "portable_join_and_semantic_payload_bytes_rehashed",
+      "native_command_contract_sha256": "b4a9dc5882cc60c8196a9c6584f14707f3de88fb4c9cb1240b954608c76c8d1a",
+      "native_split_quality_binding_sha256": "3f46de52b7bf039d901e5269ee29600efa50b9b26e882ad8b3ae18acb9dde742",
+      "native_split_quality_preselection_sha256": "edbb7ab87f6694cd2e005d51c4e8129ff57a7128070337db035f18a8a6099249",
+      "native_split_quality_source_request_sha256": "0b92f121049ccd014fa2c0476b14840383946efdfbd2065fb22a1e291546c1c2",
+      "native_split_quality_central_result_sha256": "cab449cddfc9228b2bb6eefe9015222db37b680e0f9281198c0a65a50ee80bba",
+      "native_split_quality_selection_sha256": "c31dcbd37affe016edc7268c706948bfd636bb030efce3f7f2cb4a1d629d681e",
+      "native_split_quality_eval_run_id": "paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251",
+      "native_split_quality_source_run_id": "hailo8_to_trt",
+      "native_split_quality_source_run_id_canonical": "hailo8_to_trt",
+      "native_split_quality_source_run_id_raw": {
+        "binding": "hailo8_to_trt",
+        "native_result": "hailo8_to_trt",
+        "native_command": "hailo8_to_trt"
+      },
+      "native_split_quality_consumer_attestation_sha256": "8eb2492c654a0cca4e5bb2696026cb8f7c3ef7ad8f5960276da460e87589a625",
+      "native_split_quality_portable_binding_status": "portable_binding_command_and_consumer_attestation_exact_match",
+      "native_split_quality_authority_workflow_version": "v2.78.2-immutable-management-reference-evidence-fixes",
+      "native_split_quality_authority_run_id": "paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251",
+      "native_split_semantic_output_manifest": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/native_producers/hailo8/yolov7_paper/benchmark_set/native_pipeline/b066/hailo_to_trt/uint8_dequant_fp16/native_fifo_outputs/native_fifo_output_manifest.json",
+      "native_split_semantic_output_manifest_sha256": "64b51e8a2723d0b5a6147ee98ab724bae7a11f768c1f7909e862565231fd6f8b",
+      "native_split_semantic_boundary_manifest": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/native_producers/hailo8/yolov7_paper/benchmark_set/native_pipeline/b066/hailo_to_trt/uint8_dequant_fp16/native_fifo_boundary/native_fifo_boundary_manifest.json",
+      "native_split_semantic_boundary_manifest_sha256": "bd9f16056e40eb24de3c97229b30d31a2d621052a422eb6b7265e9f0778997a7",
+      "evidence_sha256": "c44f880351afbdb871505b9bb9051d817cd02c8fd434914e3fc205eac35388df"
+    },
+    "native_split_energy_quality_binding_sha256": "c44f880351afbdb871505b9bb9051d817cd02c8fd434914e3fc205eac35388df",
+    "native_split_quality_required": true,
+    "native_split_energy_binding_valid": true,
+    "native_split_energy_binding_status": "portable_join_and_semantic_payload_bytes_rehashed",
+    "native_split_quality_binding_sha256": "3f46de52b7bf039d901e5269ee29600efa50b9b26e882ad8b3ae18acb9dde742",
+    "native_split_quality_preselection_sha256": "edbb7ab87f6694cd2e005d51c4e8129ff57a7128070337db035f18a8a6099249",
+    "native_split_quality_source_request_sha256": "0b92f121049ccd014fa2c0476b14840383946efdfbd2065fb22a1e291546c1c2",
+    "native_split_quality_central_result_sha256": "cab449cddfc9228b2bb6eefe9015222db37b680e0f9281198c0a65a50ee80bba",
+    "native_split_quality_selection_sha256": "c31dcbd37affe016edc7268c706948bfd636bb030efce3f7f2cb4a1d629d681e",
+    "native_split_quality_eval_run_id": "paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251",
+    "native_split_quality_source_run_id": "hailo8_to_trt",
+    "native_split_quality_consumer_attestation": {
+      "schema": "onnx-splitpoint/native-split-quality-consumer-attestation",
+      "schema_version": 1,
+      "status": "local_files_rehashed_and_exact_command_join_verified",
+      "binding_sha256": "3f46de52b7bf039d901e5269ee29600efa50b9b26e882ad8b3ae18acb9dde742",
+      "command_contract_sha256": "b4a9dc5882cc60c8196a9c6584f14707f3de88fb4c9cb1240b954608c76c8d1a",
+      "eval_run_id": "paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251",
+      "source_run_id": "hailo8_to_trt",
+      "backend": "hailo8_to_trt",
+      "model_id": "yolov7_paper",
+      "case_id": "b066",
+      "setup_id": "orin_nx_hailo8_01",
+      "task": "detection",
+      "precision": "uint8_dequant_fp16",
+      "local_artifact_verification_sha256": "da0630f840a21d68050cc31770b0ee919d22166ae8ade81b8fae28609c585e9e",
+      "semantic_output_manifest_sha256": "64b51e8a2723d0b5a6147ee98ab724bae7a11f768c1f7909e862565231fd6f8b",
+      "semantic_boundary_manifest_sha256": "bd9f16056e40eb24de3c97229b30d31a2d621052a422eb6b7265e9f0778997a7",
+      "source_request_sha256": "0b92f121049ccd014fa2c0476b14840383946efdfbd2065fb22a1e291546c1c2",
+      "native_split_quality_source_request_sha256": "0b92f121049ccd014fa2c0476b14840383946efdfbd2065fb22a1e291546c1c2",
+      "native_split_quality_central_result_sha256": "cab449cddfc9228b2bb6eefe9015222db37b680e0f9281198c0a65a50ee80bba",
+      "native_split_quality_selection_sha256": "c31dcbd37affe016edc7268c706948bfd636bb030efce3f7f2cb4a1d629d681e",
+      "attestation_sha256": "8eb2492c654a0cca4e5bb2696026cb8f7c3ef7ad8f5960276da460e87589a625"
+    },
+    "native_split_quality_consumer_attestation_sha256": "8eb2492c654a0cca4e5bb2696026cb8f7c3ef7ad8f5960276da460e87589a625",
+    "native_split_quality_portable_binding_status": "portable_binding_command_and_consumer_attestation_exact_match",
+    "native_split_quality_authority_workflow_version": "v2.78.2-immutable-management-reference-evidence-fixes",
+    "native_split_quality_authority_run_id": "paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251",
+    "native_split_semantic_output_manifest": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/native_producers/hailo8/yolov7_paper/benchmark_set/native_pipeline/b066/hailo_to_trt/uint8_dequant_fp16/native_fifo_outputs/native_fifo_output_manifest.json",
+    "native_split_semantic_output_manifest_sha256": "64b51e8a2723d0b5a6147ee98ab724bae7a11f768c1f7909e862565231fd6f8b",
+    "native_split_semantic_boundary_manifest": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/native_producers/hailo8/yolov7_paper/benchmark_set/native_pipeline/b066/hailo_to_trt/uint8_dequant_fp16/native_fifo_boundary/native_fifo_boundary_manifest.json",
+    "native_split_semantic_boundary_manifest_sha256": "bd9f16056e40eb24de3c97229b30d31a2d621052a422eb6b7265e9f0778997a7",
+    "fresh_output_policy": "remote_mktemp_unique_per_measurement_invocation",
+    "fresh_report_relative_path": "native_fifo_results.json",
+    "contract_evidence_ok": false,
+    "contract_evidence_status": "missing_conflicting_or_unverified",
+    "contract_evidence_source": "exact_native_central_quality_bridge",
+    "contract_evidence_conflicts": [],
+    "pipeline_contract_manifest_status": "path_or_sha256_missing",
+    "task_contract_status": "task_contract_missing_or_ambiguous",
+    "model_hash_map_status": "path_or_sha256_missing",
+    "command_file": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/plan/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc.sh",
+    "command_contract_file": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/plan/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc.command_contract.json",
+    "command_contract_file_sha256": "a355c6e138521f2fad99070ac1aef645d2ea146e102e577c9c6dfc81c8089be1",
+    "remote_command_contract_file": "/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/.energy_replays/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/command_contract_a355c6e138521f2fad99070ac1aef645d2ea146e102e577c9c6dfc81c8089be1.json",
+    "command_contract_transport": "ssh_stdin_to_hash_verified_remote_file",
+    "process_local_runtime_environment": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "SPLITPOINT_EXTRA_SITES": "/home/nx/hailo_py/lib/python3.10/site-packages"
+    },
+    "process_local_runtime_site_policy": "site.addsitedir_after_system_defaults",
+    "preflight_command_file": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/plan/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc.preflight.sh",
+    "preflight_required": true,
+    "preflight_runtime_attestation_path_template": "/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/.energy_replays/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/preflight___ONNX_SPLITPOINT_PREFLIGHT_NONCE__.json",
+    "preflight_nonce_binding": "collector_fresh_nonce_per_repeat",
+    "fps": 15.872171169677971,
+    "duration_s": 60.0,
+    "configured_fallback_work_units": 1,
+    "configured_fallback_work_units_source": "duration_driven_minimum_one",
+    "work_units_source": "exact_runtime_marker_required_duration_driven",
+    "duration_controlled_workload": true,
+    "historical_fps_used_for_work_count": false,
+    "historical_fps_context_available": true,
+    "require_runtime_work_units": false,
+    "require_command_window_alignment": false,
+    "energy_scope": "",
+    "energy_window": "command",
+    "energy_calibration_manifest": "",
+    "energy_calibration_sha256": "",
+    "measurement_output_dir": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement",
+    "measurement_output_base_dir": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement",
+    "measurement_output_policy": "runner_materialized_unique_attempt_child",
+    "measurement_plan_attempt_id": "d1a51844acd143218b8bb05f13828782",
+    "measurement_setup_id": "orin_nx_hailo8_01",
+    "measurement_run_id": "native_hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc",
+    "measurement_requested_repeats": 3,
+    "measurement_profile_requested_repeats": 3,
+    "measurement_effective_repeats": 3,
+    "measurement_repeat_expansion_applied": false,
+    "measurement_repeat_expansion_reason": "none",
+    "measure_command": "/home/kmika/ONNX-Splitpoint-Tool/.venv/bin/python -u /home/kmika/ONNX-Splitpoint-Tool/scripts/energy_measurement_cli.py measure --setup-id orin_nx_hailo8_01 --run-id native_hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc --command-file /home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/plan/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc.sh --duration 60 --inference-count 1 --pipeline-fps 15.872171 --timeout 900 --runs 3 --physical-scope '' --window-label command --diagnostic-only --claim-exclusion-reason quality_or_pairing_not_claim_eligible --out /home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement --preflight-command-file /home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/plan/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc.preflight.sh --preflight-runtime-attestation-path /home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/.energy_replays/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/preflight___ONNX_SPLITPOINT_PREFLIGHT_NONCE__.json --preflight-timeout-s 900 --preflight-attestation-max-age-s 300 --preflight-expected-command-contract-sha256 b4a9dc5882cc60c8196a9c6584f14707f3de88fb4c9cb1240b954608c76c8d1a --compare-legacy-window",
+    "window_method_ab": {},
+    "quality_annotation_downgrade_reason": "energy_quality_admission_central_quality_evidence_verified_drift"
+  },
+  "pairing_policy": "screening_probe_one_successful_native_target_no_pairing",
+  "exact_native_command_binding": {
+    "source_summary": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_producer_summary.json",
+    "source_summary_sha256": "eba1989b4648a58a4a61083776a47f20c31978dde95095a4dbb2a0bee61dda5f",
+    "source_row_status": "exact_identity_match",
+    "contract_status": "hash_schema_identity_artifacts_and_quality_first_crosslinks_verified",
+    "contract_sha256": "b4a9dc5882cc60c8196a9c6584f14707f3de88fb4c9cb1240b954608c76c8d1a",
+    "plan_generated_command_executed": false,
+    "duration_and_fresh_output_paths_are_the_only_controlled_runtime_changes": true
+  },
+  "ok": false,
+  "complete": false,
+  "status": "incomplete_probe_measurement_or_comparison_failed",
+  "blocked_reason": "one_or_more_repeats_lack_a_hash_verified_A/B_comparison_and_raw_trace",
+  "decision_capable": false,
+  "sensitivity_summary_capable": false,
+  "method_selection_pending": false,
+  "method_selection_affected": false,
+  "decision_capability_reason": "probe_incomplete",
+  "measurement_processes": [
+    {
+      "repeat_index": 0,
+      "attempt_index": 0,
+      "rc": 1,
+      "stdout_tail": "\": true,\n          \"bytes\": 55,\n          \"sha256\": \"257f8f7971f19195880dbc767c1410a435cbcbed9e8047d322c92223c8c7a6a4\",\n          \"tail\": \"Error: Command process exited unsuccessfully with rc=9\\n\"\n        },\n        \"workload_stdout\": {\n          \"path\": \"/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/workload_stdout.log\",\n          \"available\": true,\n          \"bytes\": 0,\n          \"sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n          \"tail\": \"\"\n        },\n        \"workload_stderr\": {\n          \"path\": \"/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/workload_stderr.log\",\n          \"available\": true,\n          \"bytes\": 124,\n          \"sha256\": \"95aa45a1deb206fea41fd4e36b251917cf00f818e85e7460ba84ef1b01baa1ee\",\n          \"tail\": \"split_energy_completed_detection_failed:RuntimeError:Cannot import hailo_platform/hailort. Install HailoRT python bindings.\\n\"\n        }\n      },\n      \"workload_timing\": {\n        \"start_ns\": 1787824494975165981,\n        \"end_ns\": 1787824497327471514,\n        \"duration_s\": 2.352305533,\n        \"rc\": 9,\n        \"path\": \"/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/workload_timing.txt\",\n        \"status\": \"ok\"\n      },\n      \"workload_execution_duration_s\": 2.352305533,\n      \"workload_command_rc\": 9,\n      \"runtime_work_unit_evidence\": {\n        \"count\": null,\n        \"source\": \"\",\n        \"exact\": false,\n        \"transport\": \"unavailable\",\n        \"evidence_path\": \"\",\n        \"status\": \"unavailable\"\n      },\n      \"runtime_work_unit_gate_status\": \"screening_only\",\n      \"runtime_work_unit_gate_reason\": \"exact_runtime_completed_work_units_missing\",\n      \"parquet_files\": [\n        \"/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/collector_storage/fast_firmware.parquet\"\n      ],\n      \"parquet_file_sizes\": {\n        \"/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/collector_storage/fast_firmware.parquet\": 669334\n      },\n      \"postprocess_status\": \"collector_failed\",\n      \"legacy_window_comparison_status\": \"not_run_collector_failed\",\n      \"energy_efficiency_claim_eligible\": false,\n      \"final_energy_gate_status\": \"fail\",\n      \"final_energy_gate_reasons\": [\n        \"collector_rc_nonzero\"\n      ],\n      \"logical_repeat_index\": 0,\n      \"selected_repeat_attempt_index\": 0,\n      \"repeat_attempt_count\": 1,\n      \"repeat_retry_attempted\": false,\n      \"repeat_retry_recovered\": false,\n      \"repeat_attempt_history\": [\n        {\n          \"attempt_index\": 0,\n          \"selected\": true,\n          \"run_directory\": \"/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000\",\n          \"final_energy_gate_status\": \"fail\",\n          \"window_method_comparison_status\": \"\",\n          \"retry_reasons\": []\n        }\n      ]\n    }\n  ],\n  \"diagnostic_only\": true,\n  \"claim_eligible\": false,\n  \"scientific_claim_exclusion_reasons\": [\n    \"quality_or_pairing_not_claim_eligible\"\n  ]\n}\n",
+      "stderr_tail": ""
+    }
+  ],
+  "exact_replay_bindings": [
+    {
+      "repeat_index": 0,
+      "attempt_index": 0,
+      "command_file": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/workload_contract_attempt_00.sh",
+      "command_file_sha256": "9c1c6de1fd81861bbdd43ca6f563504dacee63e4f7445a738efde8a70a6ed4f5",
+      "remote_output_root": "/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set/window_method_validation_probe/20260827T095446_478761Z_97b44f361c9f/repeat_000/attempt_00/capture___ONNX_SPLITPOINT_PREFLIGHT_NONCE__",
+      "source_contract_sha256": "b4a9dc5882cc60c8196a9c6584f14707f3de88fb4c9cb1240b954608c76c8d1a",
+      "runtime_contract_preserved": {
+        "image": "/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set/resources/validation/detection/val2017_n500_s20260710/000000000632.jpg",
+        "image_sha256": "a4cd7f45ac1ce27eaafb254b23af7c0b18a064be08870ceaaf03b2147f2ce550",
+        "queue_depth": 3,
+        "source_warmup": 100,
+        "effective_energy_warmup": 0,
+        "boundary_layout": "memory_nhwc_to_nchw",
+        "precision": "uint8_dequant_fp16",
+        "backend_specific_runtime_options": {
+          "frames": 1000,
+          "duration_s": 0.0,
+          "warmup": 100,
+          "repetitions": 3,
+          "queue_depth": 3,
+          "hailo_format": "uint8",
+          "task": "detection",
+          "preprocess_mode_requested": "letterbox",
+          "preprocess_mode_effective": "letterbox",
+          "letterbox_pad_value_requested": 114,
+          "letterbox_pad_value_effective": 114,
+          "letterbox_pad_value": 114,
+          "copy_outputs": true,
+          "dump_outputs": true,
+          "dump_boundary": true,
+          "device_id": "",
+          "build": true,
+          "energy_prepared_feed_capable": true,
+          "prepared_feed_policy": "exact_prepared_feed_reused_for_every_work_unit",
+          "producer_impl": "hailo8_python_vstreams_fifo",
+          "completion_execution_contract": {
+            "schema": "onnx-splitpoint/detection-completion-execution-contract",
+            "schema_version": 2,
+            "task": "detection",
+            "model_id": "yolov7_paper",
+            "model_family": "yolov7",
+            "completion_mode": "raw_head_frozen_decode_nms",
+            "execution_policy": "async_drain_then_completion_tail_then_count_and_timestamp_v1",
+            "performance_energy_contract_identity": "same_completion_execution_contract_sha256",
+            "source_endpoint": {
+              "task": "detection",
+              "stage": "raw_head",
+              "contract_family": "raw_head",
+              "endpoint_contract_hash": "051f0d9e489355d312ad656532acf3ed8a2719774d8ef9843278818f5bd15adc",
+              "output_endpoint_id": "detection:raw_head:051f0d9e489355d312ad656532acf3ed8a2719774d8ef9843278818f5bd15adc",
+              "tensor_signature": {
+                "tensor_count": 3,
+                "tensors": [
+                  {
+                    "index": 0,
+                    "name": "output",
+                    "rank": 5,
+                    "shape": [
+                      1,
+                      3,
+                      80,
+                      80,
+                      85
+                    ],
+                    "dtype": "float32"
+                  },
+                  {
+                    "index": 1,
+                    "name": "clone_1",
+                    "rank": 5,
+                    "shape": [
+                      1,
+                      3,
+                      40,
+                      40,
+                      85
+                    ],
+                    "dtype": "float32"
+                  },
+                  {
+                    "index": 2,
+                    "name": "clone_2",
+                    "rank": 5,
+                    "shape": [
+                      1,
+                      3,
+                      20,
+                      20,
+                      85
+                    ],
+                    "dtype": "float32"
+                  }
+                ]
+              },
+              "output_endpoint_attestation_sha256": "c5e3cb42bb1f4f0cb935d1872141cb4a0c2586c8b8ae4f23728c14024fc0afbe"
+            },
+            "processor_contract": {
+              "schema": "onnx-splitpoint/frozen-native-detection-postprocess",
+              "schema_version": 2,
+              "task": "detection",
+              "source_contract_family": "raw_head",
+              "output_contract_family": "decoded_nms",
+              "model_id": "yolov7_paper",
+              "model_family": "yolov7",
+              "decoder_id": "yolov7_paper_standard_anchor_classaware_nms_v2",
+              "decoder_format": "multiscale_head",
+              "multiscale_activation_mode": "logits",
+              "nms_implementation": "numpy_class_aware_nms_xyxy_v1",
+              "class_aware": true,
+              "confidence_threshold": 0.25,
+              "iou_threshold": 0.45,
+              "max_detections": 300,
+              "input_hw": [
+                640,
+                640
+              ],
+              "original_wh": [
+                640,
+                483
+              ],
+              "raw_output_tensor_signature": {
+                "tensor_count": 3,
+                "tensors": [
+                  {
+                    "index": 0,
+                    "name": "yolov7_stride_8",
+                    "rank": 5,
+                    "shape": [
+                      1,
+                      3,
+                      80,
+                      80,
+                      85
+                    ],
+                    "dtype": "float32"
+                  },
+                  {
+                    "index": 1,
+                    "name": "yolov7_stride_16",
+                    "rank": 5,
+                    "shape": [
+                      1,
+                      3,
+                      40,
+                      40,
+                      85
+                    ],
+                    "dtype": "float32"
+                  },
+                  {
+                    "index": 2,
+                    "name": "yolov7_stride_32",
+                    "rank": 5,
+                    "shape": [
+                      1,
+                      3,
+                      20,
+                      20,
+                      85
+                    ],
+                    "dtype": "float32"
+                  }
+                ]
+              },
+              "implementation_artifacts": {
+                "native_detection_postprocess": {
+                  "relative_path": "onnx_splitpoint_tool/native_detection_postprocess.py",
+                  "sha256": "e1d454faa35fa1a8d1299ce88a9ca1729edab3d6d9f5b4aec7f9a4bccd7e07a6"
+                },
+                "yolo_harness": {
+                  "relative_path": "onnx_splitpoint_tool/runners/harness/yolo.py",
+                  "sha256": "31657e2717a8cb6cfda53e7de8e06b7b2286ecb430070811546fdec65327a17a"
+                },
+                "harness_base": {
+                  "relative_path": "onnx_splitpoint_tool/runners/harness/base.py",
+                  "sha256": "938b3713f32e412dd1f57fcc07a397fa1f3b26ed30afbc945d22f1bb082db06c"
+                }
+              },
+              "execution_policy": "one_serial_host_tail_per_successful_accelerator_output",
+              "performance_scope": "prepared_input_to_post_nms_detections",
+              "energy_scope": "same_frozen_prepared_input_to_post_nms_hotloop",
+              "host_postprocess_frozen": true,
+              "postprocess_included": true,
+              "model_bound_decoder_contract": {
+                "schema": "onnx-splitpoint/yolov7-model-bound-decoder",
+                "schema_version": 1,
+                "model_id": "yolov7_paper",
+                "model_sha256": "7a13e66f91047cce0e251c05f64159646847e842af31d60441c63dcdfad7825d",
+                "model_family": "yolov7",
+                "decoder_id": "yolov7_paper_standard_anchor_classaware_nms_v2",
+                "postprocess_policy_id": "retained_v27546_conf025_iou045_max300_policy_v1",
+                "output_format": "multiscale_head",
+                "input_hw": [
+                  640,
+                  640
+                ],
+                "anchor_table_id": "yolov7_paper_standard_anchors_640_v1",
+                "anchors_by_stride": [
+                  {
+                    "head_role": "p3",
+                    "stride": 8,
+                    "grid_hw": [
+                      80,
+                      80
+                    ],
+                    "anchors_wh": [
+                      [
+                        12,
+                        16
+                      ],
+                      [
+                        19,
+                        36
+                      ],
+                      [
+                        40,
+                        28
+                      ]
+                    ]
+                  },
+                  {
+                    "head_role": "p4",
+                    "stride": 16,
+                    "grid_hw": [
+                      40,
+                      40
+                    ],
+                    "anchors_wh": [
+                      [
+                        36,
+                        75
+                      ],
+                      [
+                        76,
+                        55
+                      ],
+                      [
+                        72,
+                        146
+                      ]
+                    ]
+                  },
+                  {
+                    "head_role": "p5",
+                    "stride": 32,
+                    "grid_hw": [
+                      20,
+                      20
+                    ],
+                    "anchors_wh": [
+                      [
+                        142,
+                        110
+                      ],
+                      [
+                        192,
+                        243
+                      ],
+                      [
+                        459,
+                        401
+                      ]
+                    ]
+                  }
+                ],
+                "head_to_stride_policy": "validated_grid_geometry_p3_s8_p4_s16_p5_s32_v1",
+                "raw_record_semantics": "xywh_objectness_coco80_class_channels",
+                "activation_mode": "logits",
+                "decode_equations_id": "yolov5_yolov7_xywh_2x_square_v1",
+                "objectness_class_combination": "objectness_probability_times_class_probability",
+                "preprocess_identity": {
+                  "contract_id": "centered_letterbox_rgb_float32_0_1_pad114_v1",
+                  "resize": "bilinear_preserve_aspect_round",
+                  "placement": "centered_integer_floor_remainder_right_bottom",
+                  "color_space": "RGB",
+                  "pad_value": 114,
+                  "input_layout": "NCHW",
+                  "input_dtype": "float32",
+                  "input_scale": "divide_by_255",
+                  "inverse_geometry": "remove_centered_padding_then_divide_gain_v1"
+                },
+                "nms_identity": {
+                  "implementation": "numpy_class_aware_nms_xyxy_v1",
+                  "class_aware": true,
+                  "confidence_threshold": 0.25,
+                  "iou_threshold": 0.45,
+                  "max_detections": 300,
+                  "multi_label": false
+                },
+                "use_scope": "production",
+                "decoder_contract_sha256": "725286e3e6be337b4cfdb0f20c5cd81647c9b2fdb37ac288afbc22cedb143b3f"
+              },
+              "model_bound_decoder_contract_sha256": "725286e3e6be337b4cfdb0f20c5cd81647c9b2fdb37ac288afbc22cedb143b3f",
+              "anchor_table_id": "yolov7_paper_standard_anchors_640_v1",
+              "anchors_by_stride": [
+                {
+                  "head_role": "p3",
+                  "stride": 8,
+                  "grid_hw": [
+                    80,
+                    80
+                  ],
+                  "anchors_wh": [
+                    [
+                      12,
+                      16
+                    ],
+                    [
+                      19,
+                      36
+                    ],
+                    [
+                      40,
+                      28
+                    ]
+                  ]
+                },
+                {
+                  "head_role": "p4",
+                  "stride": 16,
+                  "grid_hw": [
+                    40,
+                    40
+                  ],
+                  "anchors_wh": [
+                    [
+                      36,
+                      75
+                    ],
+                    [
+                      76,
+                      55
+                    ],
+                    [
+                      72,
+                      146
+                    ]
+                  ]
+                },
+                {
+                  "head_role": "p5",
+                  "stride": 32,
+                  "grid_hw": [
+                    20,
+                    20
+                  ],
+                  "anchors_wh": [
+                    [
+                      142,
+                      110
+                    ],
+                    [
+                      192,
+                      243
+                    ],
+                    [
+                      459,
+                      401
+                    ]
+                  ]
+                }
+              ],
+              "model_sha256": "7a13e66f91047cce0e251c05f64159646847e842af31d60441c63dcdfad7825d",
+              "invariant_identity": {
+                "schema": "onnx-splitpoint/frozen-native-detection-postprocess",
+                "schema_version": 2,
+                "task": "detection",
+                "source_contract_family": "raw_head",
+                "output_contract_family": "decoded_nms",
+                "model_id": "yolov7_paper",
+                "model_family": "yolov7",
+                "decoder_id": "yolov7_paper_standard_anchor_classaware_nms_v2",
+                "decoder_format": "multiscale_head",
+                "model_bound_decoder_contract_sha256": "725286e3e6be337b4cfdb0f20c5cd81647c9b2fdb37ac288afbc22cedb143b3f",
+                "anchor_table_id": "yolov7_paper_standard_anchors_640_v1",
+                "anchors_by_stride": [
+                  {
+                    "head_role": "p3",
+                    "stride": 8,
+                    "grid_hw": [
+                      80,
+                      80
+                    ],
+                    "anchors_wh": [
+                      [
+                        12,
+                        16
+                      ],
+                      [
+                        19,
+                        36
+                      ],
+                      [
+                        40,
+                        28
+                      ]
+                    ]
+                  },
+                  {
+                    "head_role": "p4",
+                    "stride": 16,
+                    "grid_hw": [
+                      40,
+                      40
+                    ],
+                    "anchors_wh": [
+                      [
+                        36,
+                        75
+                      ],
+                      [
+                        76,
+                        55
+                      ],
+                      [
+                        72,
+                        146
+                      ]
+                    ]
+                  },
+                  {
+                    "head_role": "p5",
+                    "stride": 32,
+                    "grid_hw": [
+                      20,
+                      20
+                    ],
+                    "anchors_wh": [
+                      [
+                        142,
+                        110
+                      ],
+                      [
+                        192,
+                        243
+                      ],
+                      [
+                        459,
+                        401
+                      ]
+                    ]
+                  }
+                ],
+                "model_sha256": "7a13e66f91047cce0e251c05f64159646847e842af31d60441c63dcdfad7825d",
+                "nms_implementation": "numpy_class_aware_nms_xyxy_v1",
+                "class_aware": true,
+                "multiscale_activation_mode": "logits",
+                "confidence_threshold": 0.25,
+                "iou_threshold": 0.45,
+                "max_detections": 300,
+                "input_hw": [
+                  640,
+                  640
+                ],
+                "raw_output_tensor_signature": {
+                  "tensor_count": 3,
+                  "tensors": [
+                    {
+                      "index": 0,
+                      "name": "yolov7_stride_8",
+                      "rank": 5,
+                      "shape": [
+                        1,
+                        3,
+                        80,
+                        80,
+                        85
+                      ],
+                      "dtype": "float32"
+                    },
+                    {
+                      "index": 1,
+                      "name": "yolov7_stride_16",
+                      "rank": 5,
+                      "shape": [
+                        1,
+                        3,
+                        40,
+                        40,
+                        85
+                      ],
+                      "dtype": "float32"
+                    },
+                    {
+                      "index": 2,
+                      "name": "yolov7_stride_32",
+                      "rank": 5,
+                      "shape": [
+                        1,
+                        3,
+                        20,
+                        20,
+                        85
+                      ],
+                      "dtype": "float32"
+                    }
+                  ]
+                },
+                "implementation_artifacts": {
+                  "native_detection_postprocess": {
+                    "relative_path": "onnx_splitpoint_tool/native_detection_postprocess.py",
+                    "sha256": "e1d454faa35fa1a8d1299ce88a9ca1729edab3d6d9f5b4aec7f9a4bccd7e07a6"
+                  },
+                  "yolo_harness": {
+                    "relative_path": "onnx_splitpoint_tool/runners/harness/yolo.py",
+                    "sha256": "31657e2717a8cb6cfda53e7de8e06b7b2286ecb430070811546fdec65327a17a"
+                  },
+                  "harness_base": {
+                    "relative_path": "onnx_splitpoint_tool/runners/harness/base.py",
+                    "sha256": "938b3713f32e412dd1f57fcc07a397fa1f3b26ed30afbc945d22f1bb082db06c"
+                  }
+                },
+                "execution_policy": "one_serial_host_tail_per_successful_accelerator_output",
+                "performance_scope": "prepared_input_to_post_nms_detections",
+                "energy_scope": "same_frozen_prepared_input_to_post_nms_hotloop",
+                "host_postprocess_frozen": true,
+                "postprocess_included": true
+              },
+              "invariant_contract_sha256": "14001ac806053f1335b72168501883033464f747d726e294ba5fb73dd2a9a3d0",
+              "contract_sha256": "f17899b4a4833a95a7b600f3c218cd700126caf94a98451844a99b25f6a56d63"
+            },
+            "yolov7_head_mapping": {
+              "schema": "onnx-splitpoint/yolov7-stride-head-mapping",
+              "schema_version": 2,
+              "model_family": "yolov7",
+              "mapping_policy": "validated_grid_and_stride_without_name_or_index_v1",
+              "input_hw": [
+                640,
+                640
+              ],
+              "expected_strides": [
+                8,
+                16,
+                32
+              ],
+              "anchor_table_id": "yolov7_paper_standard_anchors_640_v1",
+              "activation_mode": "logits",
+              "head_record_semantics": "batch_anchor_grid_y_grid_x_xywh_objectness_class_logits",
+              "objectness_class_combination": "sigmoid_objectness_times_sigmoid_class",
+              "heads": [
+                {
+                  "role": "p3",
+                  "stride": 8,
+                  "grid_hw": [
+                    80,
+                    80
+                  ],
+                  "canonical_shape": [
+                    1,
+                    3,
+                    80,
+                    80,
+                    85
+                  ],
+                  "anchor_wh": [
+                    [
+                      12,
+                      16
+                    ],
+                    [
+                      19,
+                      36
+                    ],
+                    [
+                      40,
+                      28
+                    ]
+                  ]
+                },
+                {
+                  "role": "p4",
+                  "stride": 16,
+                  "grid_hw": [
+                    40,
+                    40
+                  ],
+                  "canonical_shape": [
+                    1,
+                    3,
+                    40,
+                    40,
+                    85
+                  ],
+                  "anchor_wh": [
+                    [
+                      36,
+                      75
+                    ],
+                    [
+                      76,
+                      55
+                    ],
+                    [
+                      72,
+                      146
+                    ]
+                  ]
+                },
+                {
+                  "role": "p5",
+                  "stride": 32,
+                  "grid_hw": [
+                    20,
+                    20
+                  ],
+                  "canonical_shape": [
+                    1,
+                    3,
+                    20,
+                    20,
+                    85
+                  ],
+                  "anchor_wh": [
+                    [
+                      142,
+                      110
+                    ],
+                    [
+                      192,
+                      243
+                    ],
+                    [
+                      459,
+                      401
+                    ]
+                  ]
+                }
+              ],
+              "head_mapping_sha256": "7ec9018f774b76267d3b0a1edfe6bfca1e6236863a458161f7c45a599b0891e4"
+            },
+            "completed_endpoint_contract": {
+              "schema": "onnx-splitpoint/frozen-native-detection-completed-endpoint",
+              "schema_version": 2,
+              "task": "detection",
+              "source_stage": "raw_head",
+              "completed_stage": "decoded_nms",
+              "contract_source": "frozen_host_decode_nms_inside_measured_interval:v1",
+              "source_endpoint_contract_hash": "051f0d9e489355d312ad656532acf3ed8a2719774d8ef9843278818f5bd15adc",
+              "raw_output_tensor_signature": {
+                "tensor_count": 3,
+                "tensors": [
+                  {
+                    "index": 0,
+                    "name": "yolov7_stride_8",
+                    "rank": 5,
+                    "shape": [
+                      1,
+                      3,
+                      80,
+                      80,
+                      85
+                    ],
+                    "dtype": "float32"
+                  },
+                  {
+                    "index": 1,
+                    "name": "yolov7_stride_16",
+                    "rank": 5,
+                    "shape": [
+                      1,
+                      3,
+                      40,
+                      40,
+                      85
+                    ],
+                    "dtype": "float32"
+                  },
+                  {
+                    "index": 2,
+                    "name": "yolov7_stride_32",
+                    "rank": 5,
+                    "shape": [
+                      1,
+                      3,
+                      20,
+                      20,
+                      85
+                    ],
+                    "dtype": "float32"
+                  }
+                ]
+              },
+              "frozen_postprocess_contract_sha256": "f17899b4a4833a95a7b600f3c218cd700126caf94a98451844a99b25f6a56d63",
+              "frozen_postprocess_invariant_contract_sha256": "14001ac806053f1335b72168501883033464f747d726e294ba5fb73dd2a9a3d0",
+              "decoder_id": "yolov7_paper_standard_anchor_classaware_nms_v2",
+              "decoder_format": "multiscale_head",
+              "nms_implementation": "numpy_class_aware_nms_xyxy_v1",
+              "class_aware": true,
+              "confidence_threshold": 0.25,
+              "iou_threshold": 0.45,
+              "max_detections": 300,
+              "input_hw": [
+                640,
+                640
+              ],
+              "original_wh": [
+                640,
+                483
+              ],
+              "performance_scope": "prepared_input_to_post_nms_detections",
+              "energy_scope": "same_frozen_prepared_input_to_post_nms_hotloop",
+              "model_sha256": "7a13e66f91047cce0e251c05f64159646847e842af31d60441c63dcdfad7825d",
+              "model_bound_decoder_contract_sha256": "725286e3e6be337b4cfdb0f20c5cd81647c9b2fdb37ac288afbc22cedb143b3f",
+              "anchor_table_id": "yolov7_paper_standard_anchors_640_v1",
+              "anchors_by_stride": [
+                {
+                  "head_role": "p3",
+                  "stride": 8,
+                  "grid_hw": [
+                    80,
+                    80
+                  ],
+                  "anchors_wh": [
+                    [
+                      12,
+                      16
+                    ],
+                    [
+                      19,
+                      36
+                    ],
+                    [
+                      40,
+                      28
+                    ]
+                  ]
+                },
+                {
+                  "head_role": "p4",
+                  "stride": 16,
+                  "grid_hw": [
+                    40,
+                    40
+                  ],
+                  "anchors_wh": [
+                    [
+                      36,
+                      75
+                    ],
+                    [
+                      76,
+                      55
+                    ],
+                    [
+                      72,
+                      146
+                    ]
+                  ]
+                },
+                {
+                  "head_role": "p5",
+                  "stride": 32,
+                  "grid_hw": [
+                    20,
+                    20
+                  ],
+                  "anchors_wh": [
+                    [
+                      142,
+                      110
+                    ],
+                    [
+                      192,
+                      243
+                    ],
+                    [
+                      459,
+                      401
+                    ]
+                  ]
+                }
+              ],
+              "endpoint_contract_complete": true,
+              "endpoint_contract_hash": "7932660305f4258664f0577a85f65b85f889f9ff1a6616d70687bbe1bba0c3b9",
+              "output_endpoint_id": "detection:decoded_nms:7932660305f4258664f0577a85f65b85f889f9ff1a6616d70687bbe1bba0c3b9"
+            },
+            "comparison_endpoint_contract": {
+              "schema": "onnx-splitpoint/completed-task-comparison-endpoint",
+              "schema_version": 2,
+              "task": "detection",
+              "stage": "decoded_nms",
+              "contract_family": "decoded_nms",
+              "model_id": "yolov7_paper",
+              "model_family": "yolov7",
+              "output_record_format": "xyxy_score_class",
+              "coordinate_space": "original_image_xyxy_pixels",
+              "score_semantics": "probability_0_1",
+              "class_id_semantics": "integer_model_label_index",
+              "class_aware": true,
+              "score_threshold": 0.25,
+              "iou_threshold": 0.45,
+              "max_detections": 300,
+              "input_hw": [
+                640,
+                640
+              ],
+              "canonical_completion_policy_id": "decoded_nms_xyxy_original_classaware_postfilter_v2",
+              "nms_semantics_id": "class_aware_nms_xyxy_v1",
+              "endpoint_contract_complete": true,
+              "endpoint_contract_hash": "43612439aff99a683e0c32f17d9bc70074301ae7445e83c8307439856fbf8a08",
+              "output_endpoint_id": "detection:decoded_nms:comparison:43612439aff99a683e0c32f17d9bc70074301ae7445e83c8307439856fbf8a08"
+            },
+            "hash_layers": {
+              "implementation": {
+                "schema": "onnx-splitpoint/detection-completion-hash-layer",
+                "schema_version": 1,
+                "kind": "implementation",
+                "identity": {
+                  "processor_contract_sha256": "f17899b4a4833a95a7b600f3c218cd700126caf94a98451844a99b25f6a56d63",
+                  "implementation_artifacts": {
+                    "native_detection_postprocess": {
+                      "relative_path": "onnx_splitpoint_tool/native_detection_postprocess.py",
+                      "sha256": "e1d454faa35fa1a8d1299ce88a9ca1729edab3d6d9f5b4aec7f9a4bccd7e07a6"
+                    },
+                    "yolo_harness": {
+                      "relative_path": "onnx_splitpoint_tool/runners/harness/yolo.py",
+                      "sha256": "31657e2717a8cb6cfda53e7de8e06b7b2286ecb430070811546fdec65327a17a"
+                    },
+                    "harness_base": {
+                      "relative_path": "onnx_splitpoint_tool/runners/harness/base.py",
+                      "sha256": "938b3713f32e412dd1f57fcc07a397fa1f3b26ed30afbc945d22f1bb082db06c"
+                    }
+                  }
+                },
+                "sha256": "be770fe20440130178135804f74291f541d6ec414f7b9db83fad93a5384708ed"
+              },
+              "schema": {
+                "schema": "onnx-splitpoint/detection-completion-hash-layer",
+                "schema_version": 1,
+                "kind": "schema",
+                "identity": {
+                  "task": "detection",
+                  "completion_mode": "raw_head_frozen_decode_nms",
+                  "source_stage": "raw_head",
+                  "source_tensor_signature": {
+                    "tensor_count": 3,
+                    "tensors": [
+                      {
+                        "index": 0,
+                        "name": "output",
+                        "rank": 5,
+                        "shape": [
+                          1,
+                          3,
+                          80,
+                          80,
+                          85
+                        ],
+                        "dtype": "float32"
+                      },
+                      {
+                        "index": 1,
+                        "name": "clone_1",
+                        "rank": 5,
+                        "shape": [
+                          1,
+                          3,
+                          40,
+                          40,
+                          85
+                        ],
+                        "dtype": "float32"
+                      },
+                      {
+                        "index": 2,
+                        "name": "clone_2",
+                        "rank": 5,
+                        "shape": [
+                          1,
+                          3,
+                          20,
+                          20,
+                          85
+                        ],
+                        "dtype": "float32"
+                      }
+                    ]
+                  },
+                  "processor_contract_schema": "onnx-splitpoint/frozen-native-detection-postprocess",
+                  "processor_contract_schema_version": 2,
+                  "processor_contract_sha256": "f17899b4a4833a95a7b600f3c218cd700126caf94a98451844a99b25f6a56d63",
+                  "yolov7_head_mapping_sha256": "7ec9018f774b76267d3b0a1edfe6bfca1e6236863a458161f7c45a599b0891e4",
+                  "completed_record_schema": "xyxy_score_class_id_v1",
+                  "completed_coordinate_space": "original_image_xyxy_pixels",
+                  "canonical_sort_policy": "score_desc_class_id_asc_xyxy_lexicographic_v1"
+                },
+                "sha256": "346cafed33d3ef7501ebfa61a672766ef6d32178b2df8e72df5ac389d14e4919"
+              },
+              "relation": {
+                "schema": "onnx-splitpoint/detection-completion-hash-layer",
+                "schema_version": 1,
+                "kind": "relation",
+                "identity": {
+                  "relation": "physical_source_to_completed_task_to_comparison",
+                  "source_endpoint_contract_hash": "051f0d9e489355d312ad656532acf3ed8a2719774d8ef9843278818f5bd15adc",
+                  "source_output_endpoint_id": "detection:raw_head:051f0d9e489355d312ad656532acf3ed8a2719774d8ef9843278818f5bd15adc",
+                  "completed_endpoint_contract_hash": "7932660305f4258664f0577a85f65b85f889f9ff1a6616d70687bbe1bba0c3b9",
+                  "completed_output_endpoint_id": "detection:decoded_nms:7932660305f4258664f0577a85f65b85f889f9ff1a6616d70687bbe1bba0c3b9",
+                  "comparison_endpoint_contract_hash": "43612439aff99a683e0c32f17d9bc70074301ae7445e83c8307439856fbf8a08",
+                  "comparison_output_endpoint_id": "detection:decoded_nms:comparison:43612439aff99a683e0c32f17d9bc70074301ae7445e83c8307439856fbf8a08"
+                },
+                "sha256": "6f940e222b2e1b5676036c3c65552c36ebb4b2a5a15f2b9b469cc75df5c70045"
+              }
+            },
+            "implementation_sha256": "be770fe20440130178135804f74291f541d6ec414f7b9db83fad93a5384708ed",
+            "schema_sha256": "346cafed33d3ef7501ebfa61a672766ef6d32178b2df8e72df5ac389d14e4919",
+            "relation_sha256": "6f940e222b2e1b5676036c3c65552c36ebb4b2a5a15f2b9b469cc75df5c70045",
+            "artifact_hash_policy": "sha256_over_canonical_same_invocation_result_artifact_v1",
+            "content_hash_policy": "canonical_materialized_detection_records_without_ui_labels_v1",
+            "invocation_hash_policy": "execution_contract_observation_source_result_ordinal_v1",
+            "observation_relation_policy": [
+              "same_hotloop_sentinel",
+              "independent_replay"
+            ],
+            "contract_sha256": "f43da08f96e7c8900808beabf5f44a6bbbb97a12ca13b6989be0befe54f39a70"
+          },
+          "completion_execution_contract_sha256": "f43da08f96e7c8900808beabf5f44a6bbbb97a12ca13b6989be0befe54f39a70",
+          "process_local_extra_sites": [
+            "/home/nx/hailo_py/lib/python3.10/site-packages"
+          ],
+          "mixed_runtime_site_policy": "site.addsitedir_after_system_defaults",
+          "prepared_input_bound": true
+        },
+        "preflight_attested": true,
+        "preflight_nonce_template_present": true
+      },
+      "controlled_changes": {
+        "duration_s": 60.0,
+        "fresh_remote_output_root": "/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set/window_method_validation_probe/20260827T095446_478761Z_97b44f361c9f/repeat_000/attempt_00/capture___ONNX_SPLITPOINT_PREFLIGHT_NONCE__",
+        "reconnect_attempt": 0,
+        "preexisting_remote_output_rejected": true,
+        "build_disabled_during_measurement": true
+      },
+      "ssh_command": [
+        "ssh",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "StrictHostKeyChecking=accept-new",
+        "nx@192.168.0.104",
+        "source ~/hailo_py/bin/activate && cd /home/nx/ONNX-Splitpoint-Tool && test ! -e /home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set/window_method_validation_probe/20260827T095446_478761Z_97b44f361c9f/repeat_000/attempt_00/capture___ONNX_SPLITPOINT_PREFLIGHT_NONCE__ && /usr/bin/python3.10 /home/nx/ONNX-Splitpoint-Tool/scripts/run_and_report_work_units.py -- /usr/bin/python3.10 -u /home/nx/ONNX-Splitpoint-Tool/scripts/native_hailo_trt_fifo_from_benchmarkset.py --benchmark-set /home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set --case b066 --precision uint8_dequant_fp16 --image /home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set/resources/validation/detection/val2017_n500_s20260710/000000000632.jpg --frames 1000 --duration-s 60.0 --warmup 0 --queue-depth 3 --source-contract-sha256 b4a9dc5882cc60c8196a9c6584f14707f3de88fb4c9cb1240b954608c76c8d1a --energy-workload-only --energy-preflight-attestation __ONNX_SPLITPOINT_PREFLIGHT_ATTESTATION__ --energy-preflight-nonce __ONNX_SPLITPOINT_PREFLIGHT_NONCE__ --hw-arch hailo8 --hailo-format uint8 --task detection --preprocess-mode letterbox --letterbox-pad-value 114 --result-json /home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set/window_method_validation_probe/20260827T095446_478761Z_97b44f361c9f/repeat_000/attempt_00/capture___ONNX_SPLITPOINT_PREFLIGHT_NONCE__/native_fifo_results.json --no-build --copy-outputs"
+      ],
+      "lease_broker_command": [
+        "/home/kmika/ONNX-Splitpoint-Tool/.venv/bin/python",
+        "-m",
+        "onnx_splitpoint_tool.remote.process_lease_cli",
+        "exec",
+        "--label",
+        "window-probe-repeat-0-attempt-0",
+        "--timeout-s",
+        "883.0",
+        "--",
+        "ssh",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "StrictHostKeyChecking=accept-new",
+        "nx@192.168.0.104",
+        "source ~/hailo_py/bin/activate && cd /home/nx/ONNX-Splitpoint-Tool && test ! -e /home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set/window_method_validation_probe/20260827T095446_478761Z_97b44f361c9f/repeat_000/attempt_00/capture___ONNX_SPLITPOINT_PREFLIGHT_NONCE__ && /usr/bin/python3.10 /home/nx/ONNX-Splitpoint-Tool/scripts/run_and_report_work_units.py -- /usr/bin/python3.10 -u /home/nx/ONNX-Splitpoint-Tool/scripts/native_hailo_trt_fifo_from_benchmarkset.py --benchmark-set /home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set --case b066 --precision uint8_dequant_fp16 --image /home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set/resources/validation/detection/val2017_n500_s20260710/000000000632.jpg --frames 1000 --duration-s 60.0 --warmup 0 --queue-depth 3 --source-contract-sha256 b4a9dc5882cc60c8196a9c6584f14707f3de88fb4c9cb1240b954608c76c8d1a --energy-workload-only --energy-preflight-attestation __ONNX_SPLITPOINT_PREFLIGHT_ATTESTATION__ --energy-preflight-nonce __ONNX_SPLITPOINT_PREFLIGHT_NONCE__ --hw-arch hailo8 --hailo-format uint8 --task detection --preprocess-mode letterbox --letterbox-pad-value 114 --result-json /home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set/window_method_validation_probe/20260827T095446_478761Z_97b44f361c9f/repeat_000/attempt_00/capture___ONNX_SPLITPOINT_PREFLIGHT_NONCE__/native_fifo_results.json --no-build --copy-outputs"
+      ]
+    }
+  ],
+  "repeat_execution_policy": {
+    "mode": "sequential_exact_repeat_bounded_outer_acquisition_retry",
+    "repeat_control": "caller_managed_exact",
+    "collector_runs_per_outer_repeat": 1,
+    "collector_runs_per_physical_attempt": 1,
+    "max_physical_collector_attempts_per_outer_repeat": 2,
+    "valid_capture_count_required_per_outer_repeat": 1,
+    "collector_invalid_repeat_retries": 0,
+    "unique_remote_output_root_required": true,
+    "unique_remote_output_root_count": 1,
+    "requested_reconnect_retries": 1,
+    "max_reconnect_retries": 1,
+    "reconnect_retry_clamped_to_one": false,
+    "reconnect_retry_suppressed_by_exact_repeat_contract": false,
+    "reconnect_backoff_s": 5.0,
+    "outer_retry_attempt_count": 0,
+    "outer_retry_recovered_count": 0,
+    "outer_retry_failure_allowlist": [
+      "first_sample_barrier_invalid",
+      "marker_dropped_samples_nonzero",
+      "marker_trace_does_not_cover_window"
+    ],
+    "abort_reason": "non_retryable_collector_workload_or_comparison_failure",
+    "skipped_repeat_count": 2,
+    "blind_followup_repeats_allowed": false
+  },
+  "measurement_directory": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement",
+  "measurement_aggregate_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/energy_aggregate.json",
+  "measurement_aggregate_sha256": "7d7f722274c6e15dc26f36f66c2c1c1e3febe1f1bac9c5254a89d2aa372b7570",
+  "started_repeat_count": 1,
+  "materialized_repeat_count": 1,
+  "skipped_repeat_count": 2,
+  "successful_comparison_count": 0,
+  "raw_trace_evidence_complete": false,
+  "per_repeat": [
+    {
+      "repeat_index": 0,
+      "collector_started": true,
+      "collector_rc": 1,
+      "workload_command_rc": 9,
+      "comparison_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/window_method_comparison.json",
+      "comparison_relative_path": "measurement/repeat_000/attempt_00/run_000/window_method_comparison.json",
+      "comparison_sha256": "",
+      "comparison_status": "missing",
+      "same_raw_trace_verified": false,
+      "trace_path": "",
+      "trace_sha256": "",
+      "request_before_after_hash_chain_complete": false,
+      "raw_parquet": [
+        {
+          "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/collector_storage/fast_firmware.parquet",
+          "relative_path": "repeat_000/attempt_00/run_000/collector_storage/fast_firmware.parquet",
+          "size_bytes": 669334,
+          "sha256": "078c7e07a7e3fd1af85d99d40de0da02c577650fca50e712d7ab5f8196a6a89e",
+          "valid_parquet_container": true,
+          "parquet_validation_status": "valid_parquet_container"
+        }
+      ],
+      "raw_parquet_count": 1,
+      "raw_parquet_valid_count": 1,
+      "raw_parquet_exactly_one": true,
+      "raw_parquet_matches_comparison_trace_path": false,
+      "raw_parquet_present": false,
+      "attempt_history": [
+        {
+          "attempt_index": 0,
+          "remote_preflight": {
+            "rc": 0,
+            "stdout_tail": "{\"ok\": true, \"files\": 17, \"failures\": []}\n",
+            "stderr_tail": ""
+          },
+          "measurement_process": {
+            "rc": 1,
+            "stdout_tail": "\": true,\n          \"bytes\": 55,\n          \"sha256\": \"257f8f7971f19195880dbc767c1410a435cbcbed9e8047d322c92223c8c7a6a4\",\n          \"tail\": \"Error: Command process exited unsuccessfully with rc=9\\n\"\n        },\n        \"workload_stdout\": {\n          \"path\": \"/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/workload_stdout.log\",\n          \"available\": true,\n          \"bytes\": 0,\n          \"sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n          \"tail\": \"\"\n        },\n        \"workload_stderr\": {\n          \"path\": \"/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/workload_stderr.log\",\n          \"available\": true,\n          \"bytes\": 124,\n          \"sha256\": \"95aa45a1deb206fea41fd4e36b251917cf00f818e85e7460ba84ef1b01baa1ee\",\n          \"tail\": \"split_energy_completed_detection_failed:RuntimeError:Cannot import hailo_platform/hailort. Install HailoRT python bindings.\\n\"\n        }\n      },\n      \"workload_timing\": {\n        \"start_ns\": 1787824494975165981,\n        \"end_ns\": 1787824497327471514,\n        \"duration_s\": 2.352305533,\n        \"rc\": 9,\n        \"path\": \"/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/workload_timing.txt\",\n        \"status\": \"ok\"\n      },\n      \"workload_execution_duration_s\": 2.352305533,\n      \"workload_command_rc\": 9,\n      \"runtime_work_unit_evidence\": {\n        \"count\": null,\n        \"source\": \"\",\n        \"exact\": false,\n        \"transport\": \"unavailable\",\n        \"evidence_path\": \"\",\n        \"status\": \"unavailable\"\n      },\n      \"runtime_work_unit_gate_status\": \"screening_only\",\n      \"runtime_work_unit_gate_reason\": \"exact_runtime_completed_work_units_missing\",\n      \"parquet_files\": [\n        \"/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/collector_storage/fast_firmware.parquet\"\n      ],\n      \"parquet_file_sizes\": {\n        \"/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/collector_storage/fast_firmware.parquet\": 669334\n      },\n      \"postprocess_status\": \"collector_failed\",\n      \"legacy_window_comparison_status\": \"not_run_collector_failed\",\n      \"energy_efficiency_claim_eligible\": false,\n      \"final_energy_gate_status\": \"fail\",\n      \"final_energy_gate_reasons\": [\n        \"collector_rc_nonzero\"\n      ],\n      \"logical_repeat_index\": 0,\n      \"selected_repeat_attempt_index\": 0,\n      \"repeat_attempt_count\": 1,\n      \"repeat_retry_attempted\": false,\n      \"repeat_retry_recovered\": false,\n      \"repeat_attempt_history\": [\n        {\n          \"attempt_index\": 0,\n          \"selected\": true,\n          \"run_directory\": \"/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000\",\n          \"final_energy_gate_status\": \"fail\",\n          \"window_method_comparison_status\": \"\",\n          \"retry_reasons\": []\n        }\n      ]\n    }\n  ],\n  \"diagnostic_only\": true,\n  \"claim_eligible\": false,\n  \"scientific_claim_exclusion_reasons\": [\n    \"quality_or_pairing_not_claim_eligible\"\n  ]\n}\n",
+            "stderr_tail": ""
+          },
+          "measurement_directory": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00",
+          "run_directory": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000",
+          "comparison_complete": false,
+          "acquisition_integrity_retry_reasons": [],
+          "retryable_acquisition_integrity_failure": false,
+          "retry_backoff_before_attempt": null,
+          "physical_attempt_result": {
+            "run_index": 0,
+            "collector_run_id": "window_probe_20260827T095446_478761Z_97b44f361c9f_r000_a00",
+            "collector_window_id": "window_probe_20260827T095446_478761Z_97b44f361c9f_r000_a00:repeat:000",
+            "collector_cmd": [
+              "/home/kmika/.cargo/bin/urecs-data-collector",
+              "-s=/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/collector_storage",
+              "-d=61s",
+              "-b=5s",
+              "-e=5s",
+              "-c=/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/energy_command.sh",
+              "--run-id",
+              "window_probe_20260827T095446_478761Z_97b44f361c9f_r000_a00",
+              "--window-id",
+              "window_probe_20260827T095446_478761Z_97b44f361c9f_r000_a00:repeat:000",
+              "fast-firmware",
+              "--address=192.168.0.197",
+              "--data-port=3000",
+              "--channel=0",
+              "--sample-rate=2000"
+            ],
+            "collector_transport_session_policy": "fresh_collector_process_and_fresh_storage_per_physical_attempt",
+            "collector_recovery_before_start": null,
+            "storage_dir": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/collector_storage",
+            "measurement_suite_policy": "collector=int(duration+1), power_estimated=int(duration+2)",
+            "workload_duration_s": 60.0,
+            "collector_measurement_duration_s": 61.0,
+            "power_estimated_duration_s": 62.0,
+            "power_window_mode_configured": "trimmed",
+            "power_window_mode_requested": "trimmed",
+            "power_window_mode_effective_override": "",
+            "energy_window_requested": "command_window",
+            "runtime_work_units_required": false,
+            "command_window_alignment_required": false,
+            "legacy_window_comparison_requested": true,
+            "scientific_method_decision": "frozen_command_marker_primary_chapter4_shadow",
+            "scientific_primary_method_frozen": true,
+            "scientific_primary_method": "command_marker_window",
+            "scientific_shadow_method": "chapter4_legacy_window",
+            "candidate_method": "candidate_v263",
+            "candidate_role": "deprecated_alias_for_command_marker_primary",
+            "shadow_role": "same_trace_sensitivity_only",
+            "candidate_eligible_for_auto_switch": false,
+            "candidate_eligible_for_scientific_primary": false,
+            "energy_window_method_ab": {
+              "schema": "onnx-splitpoint/energy-window-method-ab-runtime",
+              "schema_version": 2,
+              "enabled": true,
+              "valid": true,
+              "primary_method": "command_marker_window",
+              "shadow_method": "chapter4_legacy_window",
+              "scientific_method_decision": "frozen_command_marker_primary_chapter4_shadow",
+              "scientific_primary_method": "command_marker_window",
+              "scientific_shadow_method": "chapter4_legacy_window",
+              "shadow_role": "same_trace_sensitivity_only",
+              "baseline_method": "chapter4_baseline",
+              "candidate_method": "candidate_v263",
+              "legacy_method_aliases": {
+                "candidate_v263": "command_marker_window",
+                "chapter4_baseline": "chapter4_legacy_window"
+              },
+              "candidate_role": "deprecated_alias_for_command_marker_primary",
+              "mode": "shadow",
+              "same_raw_capture_required": true,
+              "auto_switch": false,
+              "configured_auto_switch": false,
+              "requires_picoscope": false,
+              "smoke_repeats_required": 3,
+              "requested_run_count": 1,
+              "effective_run_count": 1,
+              "repeat_control": "caller_managed_exact",
+              "exact_run_count_requested": true,
+              "minimum_repeat_expansion_applied": false,
+              "candidate_eligible_for_auto_switch": false,
+              "candidate_eligible_for_scientific_primary": false
+            },
+            "technical_canonical_window_method": "collector_sample_marker_crop",
+            "window_method_validation_tier": "screening",
+            "energy_calibration_verification": {
+              "path": "",
+              "declared_sha256": "",
+              "declared_sha256_input": "",
+              "actual_sha256": "",
+              "verified": false,
+              "status": "missing",
+              "evidence_mode": "",
+              "runtime_fail_closed_required": false,
+              "inherited_content_verified": false,
+              "inherited_binding_verified": false,
+              "runtime_binding_id": "",
+              "runtime_binding_errors": []
+            },
+            "collector_expected_duration_s": 71.0,
+            "collector_timeout_s": 900.0,
+            "preflight_requested": true,
+            "preflight_evidence": {
+              "schema": "onnx-splitpoint/energy-preflight-evidence",
+              "schema_version": 1,
+              "requested": true,
+              "ok": true,
+              "status": "verified",
+              "cancelled": false,
+              "repeat_index": 0,
+              "nonce": "f02428ff663f88e4acccf17aaa7798193389472d47d148ab3dc6a786c6c95765",
+              "nonce_sha256": "24c614e7f87a6bf39f4ad25c22e997e82d5db661de54b6fab86c77f502f76635",
+              "command_template_sha256": "5968cedfc3cdd66c6a0de2c916f25f40f20f5647bc64ab03530f33a0b88e4e22",
+              "rendered_command_sha256": "e0227fa79e622693f2f567f50176356eeb90c1ca22bef454331c67291a249b81",
+              "workload_template_sha256": "1823f6cfdcca3753fda7a3fe08af49fffb78e4234f22e4cfb772f9ceba7146f6",
+              "rendered_workload_sha256": "8ad072c1500b74ec7ca3e164a0c795916fcb445f6e8f2d429a76cda4de77a439",
+              "command_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/preflight/preflight_command.sh",
+              "command_file_sha256": "f9e981d9b447295d8ad853a61482530613d483f179fe1b66a1beb60cbf9af30c",
+              "stdout_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/preflight/preflight_stdout.log",
+              "stdout_sha256": "d737eebe2c16106b0aa5afb2222dba73769069ac785ca4645e87ea0c9dc17649",
+              "stderr_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/preflight/preflight_stderr.log",
+              "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "attestation_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/preflight/preflight_attestation.json",
+              "runtime_attestation_path": "/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/.energy_replays/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/preflight_f02428ff663f88e4acccf17aaa7798193389472d47d148ab3dc6a786c6c95765.json",
+              "runtime_attestation_path_scope": "caller_supplied_runtime_host",
+              "attestation_file_sha256": "8bb8fcd9bbba0388318128e0ade0cf1760c36b298a68b1342a8137b8999a62f3",
+              "rc": 0,
+              "duration_s": 1.5085539817810059,
+              "started_at_unix_ns": 1787824488350085302,
+              "ended_at_unix_ns": 1787824489858958733,
+              "timeout_s": 900.0,
+              "expected_command_contract_sha256": "b4a9dc5882cc60c8196a9c6584f14707f3de88fb4c9cb1240b954608c76c8d1a",
+              "validation": {
+                "ok": true,
+                "status": "verified",
+                "reasons": [],
+                "schema": "onnx-splitpoint/energy-preflight-attestation",
+                "schema_version": 1,
+                "command_contract_sha256": "b4a9dc5882cc60c8196a9c6584f14707f3de88fb4c9cb1240b954608c76c8d1a",
+                "expected_command_contract_sha256": "b4a9dc5882cc60c8196a9c6584f14707f3de88fb4c9cb1240b954608c76c8d1a",
+                "created_at_unix_ns": 1787824489223305818,
+                "expires_at_unix_ns": 1787824789223305818,
+                "attestation_sha256": "91ae8afc9c77404a971d8f6dd62926d18395bd68c9d76833661534cd7a25b88c",
+                "expected_attestation_sha256": "91ae8afc9c77404a971d8f6dd62926d18395bd68c9d76833661534cd7a25b88c",
+                "max_age_s": 300.0
+              },
+              "collector_started": false
+            },
+            "preflight_status": "verified",
+            "status": "collector_failed",
+            "started_at": 1787824489.866437,
+            "diagnostic_only": true,
+            "claim_eligible": false,
+            "scientific_claim_exclusion_reasons": [
+              "quality_or_pairing_not_claim_eligible"
+            ],
+            "collector_started": true,
+            "collector_started_at_unix_ns": 1787824489866579265,
+            "collector_rc": 1,
+            "collector_duration_s": 12.622478008270264,
+            "cancelled": false,
+            "ended_at": 1787824502.4897914,
+            "collector_and_workload_log_diagnostics": {
+              "collector_stdout": {
+                "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/collector_stdout.log",
+                "available": true,
+                "bytes": 2339,
+                "sha256": "4b5eaeb322e4c353b298bbcf83ed29a54686e12d14027ec726027965f3e84c36",
+                "tail": "2026-08-27T09:54:49.870Z INFO  [urecs_data_collector] Arguments { storage_path: Some(\"/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/collector_storage\"), duration: Ok(61s), pre_duration: Ok(5s), post_duration: Ok(5s), command: Some(\"/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/energy_command.sh\"), run_id: Some(\"window_probe_20260827T095446_478761Z_97b44f361c9f_r000_a00\"), window_id: Some(\"window_probe_20260827T095446_478761Z_97b44f361c9f_r000_a00:repeat:000\"), sources: [FastFirmware { address: \"192.168.0.197\", data_port: 3000, channel: 0, sample_rate: 2000 }] }\n2026-08-27T09:54:49.871Z INFO  [urecs_data_collector] Starting measurement\n2026-08-27T09:54:54.968Z INFO  [urecs_data_collector] Running command: /home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/energy_command.sh\n2026-08-27T09:54:54.969Z INFO  [urecs_data_collector] Waiting for command process 3365367 to finish\n2026-08-27T09:55:02.359Z INFO  [urecs_data_collector] Shutting down...\n2026-08-27T09:55:02.359Z INFO  [urecs_data_collector::network_firmware_fast] Shutting down Fast Firmware Interface\n2026-08-27T09:55:02.359Z INFO  [urecs_data_collector] Waiting for threads to stop...\n2026-08-27T09:55:02.383Z INFO  [urecs_data_collector::network_firmware_fast] Finishing Fast Firmware thread\n2026-08-27T09:55:02.390Z INFO  [urecs_data_collector] Flushing Writer\n2026-08-27T09:55:02.391Z INFO  [urecs_data_collector] Writer Flushed\n2026-08-27T09:55:02.395Z INFO  [urecs_data_collector] Wrote command-window evidence to /home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/collector_storage/command_window_markers.json\n"
+              },
+              "collector_stderr": {
+                "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/collector_stderr.log",
+                "available": true,
+                "bytes": 55,
+                "sha256": "257f8f7971f19195880dbc767c1410a435cbcbed9e8047d322c92223c8c7a6a4",
+                "tail": "Error: Command process exited unsuccessfully with rc=9\n"
+              },
+              "workload_stdout": {
+                "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/workload_stdout.log",
+                "available": true,
+                "bytes": 0,
+                "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "tail": ""
+              },
+              "workload_stderr": {
+                "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/workload_stderr.log",
+                "available": true,
+                "bytes": 124,
+                "sha256": "95aa45a1deb206fea41fd4e36b251917cf00f818e85e7460ba84ef1b01baa1ee",
+                "tail": "split_energy_completed_detection_failed:RuntimeError:Cannot import hailo_platform/hailort. Install HailoRT python bindings.\n"
+              }
+            },
+            "workload_timing": {
+              "start_ns": 1787824494975165981,
+              "end_ns": 1787824497327471514,
+              "duration_s": 2.352305533,
+              "rc": 9,
+              "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/workload_timing.txt",
+              "status": "ok"
+            },
+            "workload_execution_duration_s": 2.352305533,
+            "workload_command_rc": 9,
+            "runtime_work_unit_evidence": {
+              "count": null,
+              "source": "",
+              "exact": false,
+              "transport": "unavailable",
+              "evidence_path": "",
+              "status": "unavailable"
+            },
+            "runtime_work_unit_gate_status": "screening_only",
+            "runtime_work_unit_gate_reason": "exact_runtime_completed_work_units_missing",
+            "parquet_files": [
+              "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/collector_storage/fast_firmware.parquet"
+            ],
+            "parquet_file_sizes": {
+              "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000/collector_storage/fast_firmware.parquet": 669334
+            },
+            "postprocess_status": "collector_failed",
+            "legacy_window_comparison_status": "not_run_collector_failed",
+            "energy_efficiency_claim_eligible": false,
+            "final_energy_gate_status": "fail",
+            "final_energy_gate_reasons": [
+              "collector_rc_nonzero"
+            ],
+            "logical_repeat_index": 0,
+            "selected_repeat_attempt_index": 0,
+            "repeat_attempt_count": 1,
+            "repeat_retry_attempted": false,
+            "repeat_retry_recovered": false,
+            "repeat_attempt_history": [
+              {
+                "attempt_index": 0,
+                "selected": true,
+                "run_directory": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000",
+                "final_energy_gate_status": "fail",
+                "window_method_comparison_status": "",
+                "retry_reasons": []
+              }
+            ],
+            "_probe_run_dir": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/window_method_validation_probe/attempts/20260827T095446_478761Z_97b44f361c9f/measurement/repeat_000/attempt_00/run_000"
+          }
+        }
+      ],
+      "legacy_minus_command_window": null,
+      "command_window": null,
+      "legacy_window": null
+    }
+  ]
+}

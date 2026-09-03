@@ -1,0 +1,47 @@
+{
+  "authoritative_kind": "source_and_packaged_mirror",
+  "authoritative_path": "/home/kmika/ONNX-Splitpoint-Tool/scripts/native_split_energy_preflight.py",
+  "created_at": "2026-09-03T09:02:04+02:00",
+  "errors": [],
+  "ok": true,
+  "packaged": {
+    "capability_ok": true,
+    "missing_tokens": [],
+    "path": "/home/kmika/ONNX-Splitpoint-Tool/onnx_splitpoint_tool/resources/remote_scripts/native_split_energy_preflight.py",
+    "present": true,
+    "read_error": "",
+    "required_tokens": [
+      "--contract-json-payload",
+      "--expected-command-contract-sha256",
+      "--expected-preflight-script-sha256",
+      "SPLIT_ENERGY_PREFLIGHT_STDOUT_MARKER"
+    ],
+    "sha256": "sha256:987eef79791fb0ff536e54ce300b60050e5100df36f92e162b9ff3108400a80b"
+  },
+  "required_tokens": [
+    "--contract-json-payload",
+    "--expected-command-contract-sha256",
+    "--expected-preflight-script-sha256",
+    "SPLIT_ENERGY_PREFLIGHT_STDOUT_MARKER"
+  ],
+  "schema": "onnx-splitpoint/native-preflight-asset-contract",
+  "schema_version": 1,
+  "script_name": "native_split_energy_preflight.py",
+  "source": {
+    "capability_ok": true,
+    "missing_tokens": [],
+    "path": "/home/kmika/ONNX-Splitpoint-Tool/scripts/native_split_energy_preflight.py",
+    "present": true,
+    "read_error": "",
+    "required_tokens": [
+      "--contract-json-payload",
+      "--expected-command-contract-sha256",
+      "--expected-preflight-script-sha256",
+      "SPLIT_ENERGY_PREFLIGHT_STDOUT_MARKER"
+    ],
+    "sha256": "sha256:987eef79791fb0ff536e54ce300b60050e5100df36f92e162b9ff3108400a80b"
+  },
+  "source_packaged_bytes_equal": true,
+  "source_packaged_compare_error": "",
+  "status": "ok"
+}

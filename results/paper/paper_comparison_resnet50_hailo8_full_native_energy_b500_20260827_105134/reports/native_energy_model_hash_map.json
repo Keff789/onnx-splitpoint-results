@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-08-27T10:58:17+02:00",
+  "excluded": [],
+  "rows": [
+    {
+      "model": "resnet50",
+      "model_manifest": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/models/resnet50/model_manifest.json",
+      "model_manifest_sha256": "sha256:187b474c538f19194a3ccb0bc0335cc0025f2d1314c68be2276bfd45d76efe1a",
+      "model_path": "/home/kmika/Models/resnet50.onnx",
+      "model_sha256": "sha256:cebd9d5879ddd304a18f51e559ab74fba5cbd1f610b9359321bc5228acbe4f50"
+    }
+  ],
+  "schema": "onnx-splitpoint/native-energy-model-hash-map",
+  "schema_version": 1
+}

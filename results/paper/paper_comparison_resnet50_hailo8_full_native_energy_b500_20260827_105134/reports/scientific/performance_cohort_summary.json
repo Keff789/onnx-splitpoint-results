@@ -1,0 +1,14 @@
+{
+  "claim_cohort_count": 0,
+  "cohort_consistency_error_count": 0,
+  "performance_row_count": 4,
+  "quality_cohort_count": 2,
+  "schema": "onnx-splitpoint/performance-cohort-summary",
+  "schema_version": 1,
+  "semantics": {
+    "claim": "existing performance-claim eligibility predicate",
+    "quality": "technical cohort and task-quality decision pass",
+    "technical": "runtime_executable with a latency or throughput observation"
+  },
+  "technical_cohort_count": 4
+}

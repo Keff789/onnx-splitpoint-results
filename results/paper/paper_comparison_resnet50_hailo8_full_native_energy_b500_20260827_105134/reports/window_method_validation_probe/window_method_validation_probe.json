@@ -1,0 +1,39 @@
+{
+  "blocked_reason": "native_command_contract_probe_backend_unsupported",
+  "complete": false,
+  "created_at": "2026-08-27T10:58:17+02:00",
+  "decision_capable": false,
+  "native_summary_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/reports/native_producer_summary.json",
+  "native_summary_present": true,
+  "native_summary_row_count": 2,
+  "ok": false,
+  "replay_capable_native_row_count": 0,
+  "replay_contract_rejections": [
+    {
+      "backend": "native_full_hailo8",
+      "case": "full",
+      "model": "resnet50",
+      "reason": "native_command_contract_probe_backend_unsupported"
+    },
+    {
+      "backend": "native_full_tensorrt",
+      "case": "full",
+      "model": "resnet50",
+      "reason": "native_command_contract_probe_backend_unsupported"
+    }
+  ],
+  "schema": "onnx-splitpoint/window-method-validation-probe",
+  "schema_version": 2,
+  "started_repeat_count": 0,
+  "status": "blocked_by_upstream",
+  "strict_failure": false,
+  "strict_requested": true,
+  "successful_comparison_count": 0,
+  "successful_native_row_count": 2,
+  "upstream_backend_failures": [],
+  "upstream_blocked": true,
+  "upstream_condition": "no_replay_capable_native_split_rows",
+  "upstream_failure_reasons": [
+    "native_command_contract_probe_backend_unsupported"
+  ]
+}

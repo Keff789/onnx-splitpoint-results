@@ -1,0 +1,1378 @@
+{
+  "artifact_verification": [
+    {
+      "actual_sha256": "987eef79791fb0ff536e54ce300b60050e5100df36f92e162b9ff3108400a80b",
+      "expected_sha256": "987eef79791fb0ff536e54ce300b60050e5100df36f92e162b9ff3108400a80b",
+      "label": "preflight_script",
+      "path": "/home/nx/ONNX-Splitpoint-Tool/scripts/native_split_energy_preflight.py",
+      "status": "pass"
+    },
+    {
+      "actual_sha256": "f7e4db29a1311a4b6b5ccd166e2ff83b979f912d0b0cffd61b7e8e17eb040d48",
+      "expected_sha256": "f7e4db29a1311a4b6b5ccd166e2ff83b979f912d0b0cffd61b7e8e17eb040d48",
+      "label": "runner",
+      "path": "/home/nx/ONNX-Splitpoint-Tool/scripts/native_hailo_trt_fifo_from_benchmarkset.py",
+      "status": "pass"
+    },
+    {
+      "actual_sha256": "a4cd7f45ac1ce27eaafb254b23af7c0b18a064be08870ceaaf03b2147f2ce550",
+      "expected_sha256": "a4cd7f45ac1ce27eaafb254b23af7c0b18a064be08870ceaaf03b2147f2ce550",
+      "label": "input_image",
+      "path": "/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set/resources/validation/detection/val2017_n500_s20260710/000000000632.jpg",
+      "status": "pass"
+    },
+    {
+      "actual_sha256": "acd8544484487b93ad44588b6a698eaf3c2500e07551fd5ab824c75cab9d311a",
+      "expected_sha256": "acd8544484487b93ad44588b6a698eaf3c2500e07551fd5ab824c75cab9d311a",
+      "label": "artifact:boundary_metadata",
+      "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/yolov7_paper-78dcf9bd33084c0c/native_split_quality/orin_nx_hailo8_01/yolov7_paper/b066/hailo8_to_trt/7d5d3e2943f6d344f9f5eb90e81c392b736d77457ff8480e40ffbd5e6fb157a0/part1_boundary_metadata.json",
+      "status": "pass"
+    },
+    {
+      "actual_sha256": "f2d9eb20e63e249fe56a44bccb31c533dea26e97985273f90c4b554adf9477fb",
+      "expected_sha256": "f2d9eb20e63e249fe56a44bccb31c533dea26e97985273f90c4b554adf9477fb",
+      "label": "artifact:build_part2_onnx",
+      "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/yolov7_paper-78dcf9bd33084c0c/native_split_quality/orin_nx_hailo8_01/yolov7_paper/b066/hailo8_to_trt/7d5d3e2943f6d344f9f5eb90e81c392b736d77457ff8480e40ffbd5e6fb157a0/engine_cache/b066/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+      "status": "pass"
+    },
+    {
+      "actual_sha256": "a6734f5ccd8f08d2fabd2bdef17bbaa2a567e16a5e8e264ef0d0c128c582cae3",
+      "expected_sha256": "a6734f5ccd8f08d2fabd2bdef17bbaa2a567e16a5e8e264ef0d0c128c582cae3",
+      "label": "artifact:cmake",
+      "path": "/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set/native_pipeline/b066/hailo_to_trt/uint8_dequant_fp16/CMakeLists.txt",
+      "status": "pass"
+    },
+    {
+      "actual_sha256": "ddf2e26a2e784f87d2b20c4e19dd6576bcb4da33f0b86afb32ef0a9dfda65088",
+      "expected_sha256": "ddf2e26a2e784f87d2b20c4e19dd6576bcb4da33f0b86afb32ef0a9dfda65088",
+      "label": "artifact:engine",
+      "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/yolov7_paper-78dcf9bd33084c0c/native_split_quality/orin_nx_hailo8_01/yolov7_paper/b066/hailo8_to_trt/7d5d3e2943f6d344f9f5eb90e81c392b736d77457ff8480e40ffbd5e6fb157a0/engine_cache/b066/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+      "status": "pass"
+    },
+    {
+      "actual_sha256": "d8e75042aee254cc9e575933b58c9aa468e7a8c061b24009f3a67e84da1b2561",
+      "expected_sha256": "d8e75042aee254cc9e575933b58c9aa468e7a8c061b24009f3a67e84da1b2561",
+      "label": "artifact:engine_build_receipt",
+      "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/yolov7_paper-78dcf9bd33084c0c/native_split_quality/orin_nx_hailo8_01/yolov7_paper/b066/hailo8_to_trt/7d5d3e2943f6d344f9f5eb90e81c392b736d77457ff8480e40ffbd5e6fb157a0/engine_cache/b066/part2/uint8_dequant_fp16/engine_build_receipt.json",
+      "status": "pass"
+    },
+    {
+      "actual_sha256": "99dfa223ac4aa4ec2500ad4b5e032396e26abec197b7dd20e647eff314aa22ae",
+      "expected_sha256": "99dfa223ac4aa4ec2500ad4b5e032396e26abec197b7dd20e647eff314aa22ae",
+      "label": "artifact:generated_cpp",
+      "path": "/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set/native_pipeline/b066/hailo_to_trt/uint8_dequant_fp16/main.cpp",
+      "status": "pass"
+    },
+    {
+      "actual_sha256": "e733652e523cbc6b51d696fd9ef62913f809e07b1d9137ca1e1e5413591cd70f",
+      "expected_sha256": "e733652e523cbc6b51d696fd9ef62913f809e07b1d9137ca1e1e5413591cd70f",
+      "label": "artifact:hef",
+      "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/yolov7_paper-78dcf9bd33084c0c/native_split_quality/orin_nx_hailo8_01/yolov7_paper/b066/hailo8_to_trt/7d5d3e2943f6d344f9f5eb90e81c392b736d77457ff8480e40ffbd5e6fb157a0/part1.hef",
+      "status": "pass"
+    },
+    {
+      "actual_sha256": "7b13b22842816e9accd853f2c752aab43acf2ef6e16f48376b2f61c74c6c614b",
+      "expected_sha256": "7b13b22842816e9accd853f2c752aab43acf2ef6e16f48376b2f61c74c6c614b",
+      "label": "artifact:native_executable",
+      "path": "/usr/bin/python3.10",
+      "status": "pass"
+    },
+    {
+      "actual_sha256": "f14339e34fe837e26801fdb36bb17d3512f63b3b8afd891469fec71206e854c0",
+      "expected_sha256": "f14339e34fe837e26801fdb36bb17d3512f63b3b8afd891469fec71206e854c0",
+      "label": "artifact:native_trt_consumer_source",
+      "path": "/home/nx/ONNX-Splitpoint-Tool/scripts/native_hailo10_trt_e2e_from_benchmarkset.py",
+      "status": "pass"
+    },
+    {
+      "actual_sha256": "efac583d8af85aa1860c6be2d2f591068fef594ca799762bab8766a2427a6d2d",
+      "expected_sha256": "efac583d8af85aa1860c6be2d2f591068fef594ca799762bab8766a2427a6d2d",
+      "label": "artifact:native_trt_meta",
+      "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/yolov7_paper-78dcf9bd33084c0c/native_split_quality/orin_nx_hailo8_01/yolov7_paper/b066/hailo8_to_trt/7d5d3e2943f6d344f9f5eb90e81c392b736d77457ff8480e40ffbd5e6fb157a0/engine_cache/b066/part2/uint8_dequant_fp16/native_trt_meta.json",
+      "status": "pass"
+    },
+    {
+      "actual_sha256": "df599577640019eafdfad855df15b2059fd26f2f05c034b2726d318873708d9b",
+      "expected_sha256": "df599577640019eafdfad855df15b2059fd26f2f05c034b2726d318873708d9b",
+      "label": "artifact:prepared_input",
+      "path": "/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set/native_pipeline/b066/hailo_to_trt/uint8_dequant_fp16/contract_artifacts/hailo8_prepared_input_python.bin",
+      "status": "pass"
+    },
+    {
+      "actual_sha256": "7b13b22842816e9accd853f2c752aab43acf2ef6e16f48376b2f61c74c6c614b",
+      "expected_sha256": "7b13b22842816e9accd853f2c752aab43acf2ef6e16f48376b2f61c74c6c614b",
+      "label": "artifact:python_executable",
+      "path": "/usr/bin/python3.10",
+      "status": "pass"
+    },
+    {
+      "actual_sha256": "f068ef8f1927c0e2426b84e462f3d9f5a2481f8f2a35aef92c7ba64f85e8ad38",
+      "expected_sha256": "f068ef8f1927c0e2426b84e462f3d9f5a2481f8f2a35aef92c7ba64f85e8ad38",
+      "label": "artifact:source_part2_onnx",
+      "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/yolov7_paper-78dcf9bd33084c0c/native_split_quality/orin_nx_hailo8_01/yolov7_paper/b066/hailo8_to_trt/7d5d3e2943f6d344f9f5eb90e81c392b736d77457ff8480e40ffbd5e6fb157a0/benchmark_set/b066/source_part2.onnx",
+      "status": "pass"
+    },
+    {
+      "actual_sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4",
+      "expected_sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4",
+      "label": "artifact:trtexec",
+      "path": "/usr/src/tensorrt/bin/trtexec",
+      "status": "pass"
+    },
+    {
+      "actual_sha256": "efac583d8af85aa1860c6be2d2f591068fef594ca799762bab8766a2427a6d2d",
+      "expected_sha256": "efac583d8af85aa1860c6be2d2f591068fef594ca799762bab8766a2427a6d2d",
+      "label": "boundary_metadata",
+      "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/yolov7_paper-78dcf9bd33084c0c/native_split_quality/orin_nx_hailo8_01/yolov7_paper/b066/hailo8_to_trt/7d5d3e2943f6d344f9f5eb90e81c392b736d77457ff8480e40ffbd5e6fb157a0/engine_cache/b066/part2/uint8_dequant_fp16/native_trt_meta.json",
+      "status": "pass"
+    }
+  ],
+  "artifact_verification_status": "pass",
+  "attestation_sha256": "91ae8afc9c77404a971d8f6dd62926d18395bd68c9d76833661534cd7a25b88c",
+  "command_contract_payload_sha256": "9ff1d48fafc73623ef04349428a266469065aad0b9001fb811f9dca064ad3fab",
+  "command_contract_sha256": "b4a9dc5882cc60c8196a9c6584f14707f3de88fb4c9cb1240b954608c76c8d1a",
+  "command_contract_source": "file:/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/.energy_replays/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/command_contract_a355c6e138521f2fad99070ac1aef645d2ea146e102e577c9c6dfc81c8089be1.json",
+  "created_at_unix_ns": 1787824489223305818,
+  "expires_at_unix_ns": 1787824789223305818,
+  "failure_reason": "",
+  "nonce": "f02428ff663f88e4acccf17aaa7798193389472d47d148ab3dc6a786c6c95765",
+  "ok": true,
+  "preflight_script_path": "/home/nx/ONNX-Splitpoint-Tool/scripts/native_split_energy_preflight.py",
+  "preflight_script_sha256": "987eef79791fb0ff536e54ce300b60050e5100df36f92e162b9ff3108400a80b",
+  "schema": "onnx-splitpoint/energy-preflight-attestation",
+  "schema_version": 1,
+  "semantic_payload_verification_status": "downstream_annotation_not_preflighted",
+  "verified_part2_input_count": 1,
+  "workload_binding": {
+    "artifacts": {
+      "boundary_metadata": {
+        "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/yolov7_paper-78dcf9bd33084c0c/native_split_quality/orin_nx_hailo8_01/yolov7_paper/b066/hailo8_to_trt/7d5d3e2943f6d344f9f5eb90e81c392b736d77457ff8480e40ffbd5e6fb157a0/part1_boundary_metadata.json",
+        "sha256": "acd8544484487b93ad44588b6a698eaf3c2500e07551fd5ab824c75cab9d311a",
+        "size_bytes": 984
+      },
+      "build_part2_onnx": {
+        "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/yolov7_paper-78dcf9bd33084c0c/native_split_quality/orin_nx_hailo8_01/yolov7_paper/b066/hailo8_to_trt/7d5d3e2943f6d344f9f5eb90e81c392b736d77457ff8480e40ffbd5e6fb157a0/engine_cache/b066/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+        "sha256": "f2d9eb20e63e249fe56a44bccb31c533dea26e97985273f90c4b554adf9477fb",
+        "size_bytes": 144752795
+      },
+      "cmake": {
+        "path": "/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set/native_pipeline/b066/hailo_to_trt/uint8_dequant_fp16/CMakeLists.txt",
+        "sha256": "a6734f5ccd8f08d2fabd2bdef17bbaa2a567e16a5e8e264ef0d0c128c582cae3"
+      },
+      "engine": {
+        "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/yolov7_paper-78dcf9bd33084c0c/native_split_quality/orin_nx_hailo8_01/yolov7_paper/b066/hailo8_to_trt/7d5d3e2943f6d344f9f5eb90e81c392b736d77457ff8480e40ffbd5e6fb157a0/engine_cache/b066/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+        "sha256": "ddf2e26a2e784f87d2b20c4e19dd6576bcb4da33f0b86afb32ef0a9dfda65088",
+        "size_bytes": 74695868
+      },
+      "engine_build_receipt": {
+        "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/yolov7_paper-78dcf9bd33084c0c/native_split_quality/orin_nx_hailo8_01/yolov7_paper/b066/hailo8_to_trt/7d5d3e2943f6d344f9f5eb90e81c392b736d77457ff8480e40ffbd5e6fb157a0/engine_cache/b066/part2/uint8_dequant_fp16/engine_build_receipt.json",
+        "sha256": "d8e75042aee254cc9e575933b58c9aa468e7a8c061b24009f3a67e84da1b2561",
+        "size_bytes": 2292
+      },
+      "generated_cpp": {
+        "path": "/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set/native_pipeline/b066/hailo_to_trt/uint8_dequant_fp16/main.cpp",
+        "sha256": "99dfa223ac4aa4ec2500ad4b5e032396e26abec197b7dd20e647eff314aa22ae"
+      },
+      "hef": {
+        "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/yolov7_paper-78dcf9bd33084c0c/native_split_quality/orin_nx_hailo8_01/yolov7_paper/b066/hailo8_to_trt/7d5d3e2943f6d344f9f5eb90e81c392b736d77457ff8480e40ffbd5e6fb157a0/part1.hef",
+        "sha256": "e733652e523cbc6b51d696fd9ef62913f809e07b1d9137ca1e1e5413591cd70f",
+        "size_bytes": 4447123
+      },
+      "native_executable": {
+        "path": "/usr/bin/python3.10",
+        "sha256": "7b13b22842816e9accd853f2c752aab43acf2ef6e16f48376b2f61c74c6c614b"
+      },
+      "native_trt_consumer_source": {
+        "path": "/home/nx/ONNX-Splitpoint-Tool/scripts/native_hailo10_trt_e2e_from_benchmarkset.py",
+        "sha256": "f14339e34fe837e26801fdb36bb17d3512f63b3b8afd891469fec71206e854c0"
+      },
+      "native_trt_meta": {
+        "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/yolov7_paper-78dcf9bd33084c0c/native_split_quality/orin_nx_hailo8_01/yolov7_paper/b066/hailo8_to_trt/7d5d3e2943f6d344f9f5eb90e81c392b736d77457ff8480e40ffbd5e6fb157a0/engine_cache/b066/part2/uint8_dequant_fp16/native_trt_meta.json",
+        "sha256": "efac583d8af85aa1860c6be2d2f591068fef594ca799762bab8766a2427a6d2d",
+        "size_bytes": 22967
+      },
+      "prepared_input": {
+        "path": "/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set/native_pipeline/b066/hailo_to_trt/uint8_dequant_fp16/contract_artifacts/hailo8_prepared_input_python.bin",
+        "sha256": "df599577640019eafdfad855df15b2059fd26f2f05c034b2726d318873708d9b"
+      },
+      "python_executable": {
+        "path": "/usr/bin/python3.10",
+        "sha256": "7b13b22842816e9accd853f2c752aab43acf2ef6e16f48376b2f61c74c6c614b"
+      },
+      "semantic_boundary_manifest": {
+        "path": "/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set/native_pipeline/b066/hailo_to_trt/uint8_dequant_fp16/native_fifo_boundary/native_fifo_boundary_manifest.json",
+        "sha256": "bd9f16056e40eb24de3c97229b30d31a2d621052a422eb6b7265e9f0778997a7",
+        "size_bytes": 2180
+      },
+      "semantic_output_manifest": {
+        "path": "/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set/native_pipeline/b066/hailo_to_trt/uint8_dequant_fp16/native_fifo_outputs/native_fifo_output_manifest.json",
+        "sha256": "64b51e8a2723d0b5a6147ee98ab724bae7a11f768c1f7909e862565231fd6f8b",
+        "size_bytes": 5802
+      },
+      "source_part2_onnx": {
+        "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/yolov7_paper-78dcf9bd33084c0c/native_split_quality/orin_nx_hailo8_01/yolov7_paper/b066/hailo8_to_trt/7d5d3e2943f6d344f9f5eb90e81c392b736d77457ff8480e40ffbd5e6fb157a0/benchmark_set/b066/source_part2.onnx",
+        "sha256": "f068ef8f1927c0e2426b84e462f3d9f5a2481f8f2a35aef92c7ba64f85e8ad38",
+        "size_bytes": 144752023
+      },
+      "trtexec": {
+        "path": "/usr/src/tensorrt/bin/trtexec",
+        "sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4",
+        "size_bytes": 1695696
+      }
+    },
+    "backend": "hailo8_to_trt",
+    "benchmark_set": "/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set",
+    "boundary_contract": {
+      "boundary_layout_effective": "memory_nhwc_to_nchw",
+      "boundary_layout_requested": "memory_nhwc_to_nchw",
+      "bridge_schema": "onnx-splitpoint/uint8-dequant-bridge",
+      "dequant_scale": 0.06533566862344742,
+      "dequant_zero_point": 5.0,
+      "metadata_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/yolov7_paper-78dcf9bd33084c0c/native_split_quality/orin_nx_hailo8_01/yolov7_paper/b066/hailo8_to_trt/7d5d3e2943f6d344f9f5eb90e81c392b736d77457ff8480e40ffbd5e6fb157a0/engine_cache/b066/part2/uint8_dequant_fp16/native_trt_meta.json",
+      "metadata_sha256": "efac583d8af85aa1860c6be2d2f591068fef594ca799762bab8766a2427a6d2d"
+    },
+    "case": "b066",
+    "command_contract_sha256": "b4a9dc5882cc60c8196a9c6584f14707f3de88fb4c9cb1240b954608c76c8d1a",
+    "completed_work_units_contract": {
+      "completion_boundary": "same_hotloop_completed_task_sentinel",
+      "exact": true,
+      "source": "runtime_completed_detection_counter",
+      "warmup_counted": false
+    },
+    "energy_overrides": {
+      "effective_build": false,
+      "effective_dump_boundary": false,
+      "effective_dump_outputs": false,
+      "effective_warmup": 0,
+      "rationale": "exclude uncounted warmup/build/dump work from collector window",
+      "source_build": true,
+      "source_dump_boundary": true,
+      "source_dump_outputs": true,
+      "source_warmup": 100
+    },
+    "execution_mode": "bound_python_vstreams_completed_detection",
+    "hw_arch": "hailo8",
+    "input_image": "/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set/resources/validation/detection/val2017_n500_s20260710/000000000632.jpg",
+    "input_image_sha256": "a4cd7f45ac1ce27eaafb254b23af7c0b18a064be08870ceaaf03b2147f2ce550",
+    "precision": "uint8_dequant_fp16",
+    "prepared_input_contract": {
+      "dtype": "uint8",
+      "format": "raw_runtime_tensor",
+      "layout": "HWC",
+      "letterbox_pad_value": 114,
+      "letterbox_pad_value_effective": 114,
+      "letterbox_pad_value_requested": 114,
+      "name": "yolov7_paper_part1_b66/input_layer1",
+      "pad_value_effective": 114,
+      "preprocess": "pillow_letterbox_rgb_uint8",
+      "preprocess_mode_effective": "letterbox",
+      "preprocess_mode_requested": "letterbox",
+      "shape": [
+        640,
+        640,
+        3
+      ],
+      "source_image": "/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set/resources/validation/detection/val2017_n500_s20260710/000000000632.jpg",
+      "source_image_sha256": "a4cd7f45ac1ce27eaafb254b23af7c0b18a064be08870ceaaf03b2147f2ce550",
+      "task": "detection"
+    },
+    "python_executable": "/usr/bin/python3.10",
+    "runner": "/home/nx/ONNX-Splitpoint-Tool/scripts/native_hailo_trt_fifo_from_benchmarkset.py",
+    "runtime_boundary_evidence": {
+      "output_count": 1,
+      "output_dtype": "uint8",
+      "output_frame_bytes": 3276800,
+      "output_name": "yolov7_paper_part1_b66/conv21",
+      "output_shape": [
+        80,
+        80,
+        512
+      ],
+      "status": "exact_runtime_boundary_verified",
+      "trt_input_name": "mul_20",
+      "trt_input_shape": [
+        1,
+        512,
+        80,
+        80
+      ]
+    },
+    "runtime_options": {
+      "build": false,
+      "completion_execution_contract": {
+        "artifact_hash_policy": "sha256_over_canonical_same_invocation_result_artifact_v1",
+        "comparison_endpoint_contract": {
+          "canonical_completion_policy_id": "decoded_nms_xyxy_original_classaware_postfilter_v2",
+          "class_aware": true,
+          "class_id_semantics": "integer_model_label_index",
+          "contract_family": "decoded_nms",
+          "coordinate_space": "original_image_xyxy_pixels",
+          "endpoint_contract_complete": true,
+          "endpoint_contract_hash": "43612439aff99a683e0c32f17d9bc70074301ae7445e83c8307439856fbf8a08",
+          "input_hw": [
+            640,
+            640
+          ],
+          "iou_threshold": 0.45,
+          "max_detections": 300,
+          "model_family": "yolov7",
+          "model_id": "yolov7_paper",
+          "nms_semantics_id": "class_aware_nms_xyxy_v1",
+          "output_endpoint_id": "detection:decoded_nms:comparison:43612439aff99a683e0c32f17d9bc70074301ae7445e83c8307439856fbf8a08",
+          "output_record_format": "xyxy_score_class",
+          "schema": "onnx-splitpoint/completed-task-comparison-endpoint",
+          "schema_version": 2,
+          "score_semantics": "probability_0_1",
+          "score_threshold": 0.25,
+          "stage": "decoded_nms",
+          "task": "detection"
+        },
+        "completed_endpoint_contract": {
+          "anchor_table_id": "yolov7_paper_standard_anchors_640_v1",
+          "anchors_by_stride": [
+            {
+              "anchors_wh": [
+                [
+                  12,
+                  16
+                ],
+                [
+                  19,
+                  36
+                ],
+                [
+                  40,
+                  28
+                ]
+              ],
+              "grid_hw": [
+                80,
+                80
+              ],
+              "head_role": "p3",
+              "stride": 8
+            },
+            {
+              "anchors_wh": [
+                [
+                  36,
+                  75
+                ],
+                [
+                  76,
+                  55
+                ],
+                [
+                  72,
+                  146
+                ]
+              ],
+              "grid_hw": [
+                40,
+                40
+              ],
+              "head_role": "p4",
+              "stride": 16
+            },
+            {
+              "anchors_wh": [
+                [
+                  142,
+                  110
+                ],
+                [
+                  192,
+                  243
+                ],
+                [
+                  459,
+                  401
+                ]
+              ],
+              "grid_hw": [
+                20,
+                20
+              ],
+              "head_role": "p5",
+              "stride": 32
+            }
+          ],
+          "class_aware": true,
+          "completed_stage": "decoded_nms",
+          "confidence_threshold": 0.25,
+          "contract_source": "frozen_host_decode_nms_inside_measured_interval:v1",
+          "decoder_format": "multiscale_head",
+          "decoder_id": "yolov7_paper_standard_anchor_classaware_nms_v2",
+          "endpoint_contract_complete": true,
+          "endpoint_contract_hash": "7932660305f4258664f0577a85f65b85f889f9ff1a6616d70687bbe1bba0c3b9",
+          "energy_scope": "same_frozen_prepared_input_to_post_nms_hotloop",
+          "frozen_postprocess_contract_sha256": "f17899b4a4833a95a7b600f3c218cd700126caf94a98451844a99b25f6a56d63",
+          "frozen_postprocess_invariant_contract_sha256": "14001ac806053f1335b72168501883033464f747d726e294ba5fb73dd2a9a3d0",
+          "input_hw": [
+            640,
+            640
+          ],
+          "iou_threshold": 0.45,
+          "max_detections": 300,
+          "model_bound_decoder_contract_sha256": "725286e3e6be337b4cfdb0f20c5cd81647c9b2fdb37ac288afbc22cedb143b3f",
+          "model_sha256": "7a13e66f91047cce0e251c05f64159646847e842af31d60441c63dcdfad7825d",
+          "nms_implementation": "numpy_class_aware_nms_xyxy_v1",
+          "original_wh": [
+            640,
+            483
+          ],
+          "output_endpoint_id": "detection:decoded_nms:7932660305f4258664f0577a85f65b85f889f9ff1a6616d70687bbe1bba0c3b9",
+          "performance_scope": "prepared_input_to_post_nms_detections",
+          "raw_output_tensor_signature": {
+            "tensor_count": 3,
+            "tensors": [
+              {
+                "dtype": "float32",
+                "index": 0,
+                "name": "yolov7_stride_8",
+                "rank": 5,
+                "shape": [
+                  1,
+                  3,
+                  80,
+                  80,
+                  85
+                ]
+              },
+              {
+                "dtype": "float32",
+                "index": 1,
+                "name": "yolov7_stride_16",
+                "rank": 5,
+                "shape": [
+                  1,
+                  3,
+                  40,
+                  40,
+                  85
+                ]
+              },
+              {
+                "dtype": "float32",
+                "index": 2,
+                "name": "yolov7_stride_32",
+                "rank": 5,
+                "shape": [
+                  1,
+                  3,
+                  20,
+                  20,
+                  85
+                ]
+              }
+            ]
+          },
+          "schema": "onnx-splitpoint/frozen-native-detection-completed-endpoint",
+          "schema_version": 2,
+          "source_endpoint_contract_hash": "051f0d9e489355d312ad656532acf3ed8a2719774d8ef9843278818f5bd15adc",
+          "source_stage": "raw_head",
+          "task": "detection"
+        },
+        "completion_mode": "raw_head_frozen_decode_nms",
+        "content_hash_policy": "canonical_materialized_detection_records_without_ui_labels_v1",
+        "contract_sha256": "f43da08f96e7c8900808beabf5f44a6bbbb97a12ca13b6989be0befe54f39a70",
+        "execution_policy": "async_drain_then_completion_tail_then_count_and_timestamp_v1",
+        "hash_layers": {
+          "implementation": {
+            "identity": {
+              "implementation_artifacts": {
+                "harness_base": {
+                  "relative_path": "onnx_splitpoint_tool/runners/harness/base.py",
+                  "sha256": "938b3713f32e412dd1f57fcc07a397fa1f3b26ed30afbc945d22f1bb082db06c"
+                },
+                "native_detection_postprocess": {
+                  "relative_path": "onnx_splitpoint_tool/native_detection_postprocess.py",
+                  "sha256": "e1d454faa35fa1a8d1299ce88a9ca1729edab3d6d9f5b4aec7f9a4bccd7e07a6"
+                },
+                "yolo_harness": {
+                  "relative_path": "onnx_splitpoint_tool/runners/harness/yolo.py",
+                  "sha256": "31657e2717a8cb6cfda53e7de8e06b7b2286ecb430070811546fdec65327a17a"
+                }
+              },
+              "processor_contract_sha256": "f17899b4a4833a95a7b600f3c218cd700126caf94a98451844a99b25f6a56d63"
+            },
+            "kind": "implementation",
+            "schema": "onnx-splitpoint/detection-completion-hash-layer",
+            "schema_version": 1,
+            "sha256": "be770fe20440130178135804f74291f541d6ec414f7b9db83fad93a5384708ed"
+          },
+          "relation": {
+            "identity": {
+              "comparison_endpoint_contract_hash": "43612439aff99a683e0c32f17d9bc70074301ae7445e83c8307439856fbf8a08",
+              "comparison_output_endpoint_id": "detection:decoded_nms:comparison:43612439aff99a683e0c32f17d9bc70074301ae7445e83c8307439856fbf8a08",
+              "completed_endpoint_contract_hash": "7932660305f4258664f0577a85f65b85f889f9ff1a6616d70687bbe1bba0c3b9",
+              "completed_output_endpoint_id": "detection:decoded_nms:7932660305f4258664f0577a85f65b85f889f9ff1a6616d70687bbe1bba0c3b9",
+              "relation": "physical_source_to_completed_task_to_comparison",
+              "source_endpoint_contract_hash": "051f0d9e489355d312ad656532acf3ed8a2719774d8ef9843278818f5bd15adc",
+              "source_output_endpoint_id": "detection:raw_head:051f0d9e489355d312ad656532acf3ed8a2719774d8ef9843278818f5bd15adc"
+            },
+            "kind": "relation",
+            "schema": "onnx-splitpoint/detection-completion-hash-layer",
+            "schema_version": 1,
+            "sha256": "6f940e222b2e1b5676036c3c65552c36ebb4b2a5a15f2b9b469cc75df5c70045"
+          },
+          "schema": {
+            "identity": {
+              "canonical_sort_policy": "score_desc_class_id_asc_xyxy_lexicographic_v1",
+              "completed_coordinate_space": "original_image_xyxy_pixels",
+              "completed_record_schema": "xyxy_score_class_id_v1",
+              "completion_mode": "raw_head_frozen_decode_nms",
+              "processor_contract_schema": "onnx-splitpoint/frozen-native-detection-postprocess",
+              "processor_contract_schema_version": 2,
+              "processor_contract_sha256": "f17899b4a4833a95a7b600f3c218cd700126caf94a98451844a99b25f6a56d63",
+              "source_stage": "raw_head",
+              "source_tensor_signature": {
+                "tensor_count": 3,
+                "tensors": [
+                  {
+                    "dtype": "float32",
+                    "index": 0,
+                    "name": "output",
+                    "rank": 5,
+                    "shape": [
+                      1,
+                      3,
+                      80,
+                      80,
+                      85
+                    ]
+                  },
+                  {
+                    "dtype": "float32",
+                    "index": 1,
+                    "name": "clone_1",
+                    "rank": 5,
+                    "shape": [
+                      1,
+                      3,
+                      40,
+                      40,
+                      85
+                    ]
+                  },
+                  {
+                    "dtype": "float32",
+                    "index": 2,
+                    "name": "clone_2",
+                    "rank": 5,
+                    "shape": [
+                      1,
+                      3,
+                      20,
+                      20,
+                      85
+                    ]
+                  }
+                ]
+              },
+              "task": "detection",
+              "yolov7_head_mapping_sha256": "7ec9018f774b76267d3b0a1edfe6bfca1e6236863a458161f7c45a599b0891e4"
+            },
+            "kind": "schema",
+            "schema": "onnx-splitpoint/detection-completion-hash-layer",
+            "schema_version": 1,
+            "sha256": "346cafed33d3ef7501ebfa61a672766ef6d32178b2df8e72df5ac389d14e4919"
+          }
+        },
+        "implementation_sha256": "be770fe20440130178135804f74291f541d6ec414f7b9db83fad93a5384708ed",
+        "invocation_hash_policy": "execution_contract_observation_source_result_ordinal_v1",
+        "model_family": "yolov7",
+        "model_id": "yolov7_paper",
+        "observation_relation_policy": [
+          "same_hotloop_sentinel",
+          "independent_replay"
+        ],
+        "performance_energy_contract_identity": "same_completion_execution_contract_sha256",
+        "processor_contract": {
+          "anchor_table_id": "yolov7_paper_standard_anchors_640_v1",
+          "anchors_by_stride": [
+            {
+              "anchors_wh": [
+                [
+                  12,
+                  16
+                ],
+                [
+                  19,
+                  36
+                ],
+                [
+                  40,
+                  28
+                ]
+              ],
+              "grid_hw": [
+                80,
+                80
+              ],
+              "head_role": "p3",
+              "stride": 8
+            },
+            {
+              "anchors_wh": [
+                [
+                  36,
+                  75
+                ],
+                [
+                  76,
+                  55
+                ],
+                [
+                  72,
+                  146
+                ]
+              ],
+              "grid_hw": [
+                40,
+                40
+              ],
+              "head_role": "p4",
+              "stride": 16
+            },
+            {
+              "anchors_wh": [
+                [
+                  142,
+                  110
+                ],
+                [
+                  192,
+                  243
+                ],
+                [
+                  459,
+                  401
+                ]
+              ],
+              "grid_hw": [
+                20,
+                20
+              ],
+              "head_role": "p5",
+              "stride": 32
+            }
+          ],
+          "class_aware": true,
+          "confidence_threshold": 0.25,
+          "contract_sha256": "f17899b4a4833a95a7b600f3c218cd700126caf94a98451844a99b25f6a56d63",
+          "decoder_format": "multiscale_head",
+          "decoder_id": "yolov7_paper_standard_anchor_classaware_nms_v2",
+          "energy_scope": "same_frozen_prepared_input_to_post_nms_hotloop",
+          "execution_policy": "one_serial_host_tail_per_successful_accelerator_output",
+          "host_postprocess_frozen": true,
+          "implementation_artifacts": {
+            "harness_base": {
+              "relative_path": "onnx_splitpoint_tool/runners/harness/base.py",
+              "sha256": "938b3713f32e412dd1f57fcc07a397fa1f3b26ed30afbc945d22f1bb082db06c"
+            },
+            "native_detection_postprocess": {
+              "relative_path": "onnx_splitpoint_tool/native_detection_postprocess.py",
+              "sha256": "e1d454faa35fa1a8d1299ce88a9ca1729edab3d6d9f5b4aec7f9a4bccd7e07a6"
+            },
+            "yolo_harness": {
+              "relative_path": "onnx_splitpoint_tool/runners/harness/yolo.py",
+              "sha256": "31657e2717a8cb6cfda53e7de8e06b7b2286ecb430070811546fdec65327a17a"
+            }
+          },
+          "input_hw": [
+            640,
+            640
+          ],
+          "invariant_contract_sha256": "14001ac806053f1335b72168501883033464f747d726e294ba5fb73dd2a9a3d0",
+          "invariant_identity": {
+            "anchor_table_id": "yolov7_paper_standard_anchors_640_v1",
+            "anchors_by_stride": [
+              {
+                "anchors_wh": [
+                  [
+                    12,
+                    16
+                  ],
+                  [
+                    19,
+                    36
+                  ],
+                  [
+                    40,
+                    28
+                  ]
+                ],
+                "grid_hw": [
+                  80,
+                  80
+                ],
+                "head_role": "p3",
+                "stride": 8
+              },
+              {
+                "anchors_wh": [
+                  [
+                    36,
+                    75
+                  ],
+                  [
+                    76,
+                    55
+                  ],
+                  [
+                    72,
+                    146
+                  ]
+                ],
+                "grid_hw": [
+                  40,
+                  40
+                ],
+                "head_role": "p4",
+                "stride": 16
+              },
+              {
+                "anchors_wh": [
+                  [
+                    142,
+                    110
+                  ],
+                  [
+                    192,
+                    243
+                  ],
+                  [
+                    459,
+                    401
+                  ]
+                ],
+                "grid_hw": [
+                  20,
+                  20
+                ],
+                "head_role": "p5",
+                "stride": 32
+              }
+            ],
+            "class_aware": true,
+            "confidence_threshold": 0.25,
+            "decoder_format": "multiscale_head",
+            "decoder_id": "yolov7_paper_standard_anchor_classaware_nms_v2",
+            "energy_scope": "same_frozen_prepared_input_to_post_nms_hotloop",
+            "execution_policy": "one_serial_host_tail_per_successful_accelerator_output",
+            "host_postprocess_frozen": true,
+            "implementation_artifacts": {
+              "harness_base": {
+                "relative_path": "onnx_splitpoint_tool/runners/harness/base.py",
+                "sha256": "938b3713f32e412dd1f57fcc07a397fa1f3b26ed30afbc945d22f1bb082db06c"
+              },
+              "native_detection_postprocess": {
+                "relative_path": "onnx_splitpoint_tool/native_detection_postprocess.py",
+                "sha256": "e1d454faa35fa1a8d1299ce88a9ca1729edab3d6d9f5b4aec7f9a4bccd7e07a6"
+              },
+              "yolo_harness": {
+                "relative_path": "onnx_splitpoint_tool/runners/harness/yolo.py",
+                "sha256": "31657e2717a8cb6cfda53e7de8e06b7b2286ecb430070811546fdec65327a17a"
+              }
+            },
+            "input_hw": [
+              640,
+              640
+            ],
+            "iou_threshold": 0.45,
+            "max_detections": 300,
+            "model_bound_decoder_contract_sha256": "725286e3e6be337b4cfdb0f20c5cd81647c9b2fdb37ac288afbc22cedb143b3f",
+            "model_family": "yolov7",
+            "model_id": "yolov7_paper",
+            "model_sha256": "7a13e66f91047cce0e251c05f64159646847e842af31d60441c63dcdfad7825d",
+            "multiscale_activation_mode": "logits",
+            "nms_implementation": "numpy_class_aware_nms_xyxy_v1",
+            "output_contract_family": "decoded_nms",
+            "performance_scope": "prepared_input_to_post_nms_detections",
+            "postprocess_included": true,
+            "raw_output_tensor_signature": {
+              "tensor_count": 3,
+              "tensors": [
+                {
+                  "dtype": "float32",
+                  "index": 0,
+                  "name": "yolov7_stride_8",
+                  "rank": 5,
+                  "shape": [
+                    1,
+                    3,
+                    80,
+                    80,
+                    85
+                  ]
+                },
+                {
+                  "dtype": "float32",
+                  "index": 1,
+                  "name": "yolov7_stride_16",
+                  "rank": 5,
+                  "shape": [
+                    1,
+                    3,
+                    40,
+                    40,
+                    85
+                  ]
+                },
+                {
+                  "dtype": "float32",
+                  "index": 2,
+                  "name": "yolov7_stride_32",
+                  "rank": 5,
+                  "shape": [
+                    1,
+                    3,
+                    20,
+                    20,
+                    85
+                  ]
+                }
+              ]
+            },
+            "schema": "onnx-splitpoint/frozen-native-detection-postprocess",
+            "schema_version": 2,
+            "source_contract_family": "raw_head",
+            "task": "detection"
+          },
+          "iou_threshold": 0.45,
+          "max_detections": 300,
+          "model_bound_decoder_contract": {
+            "activation_mode": "logits",
+            "anchor_table_id": "yolov7_paper_standard_anchors_640_v1",
+            "anchors_by_stride": [
+              {
+                "anchors_wh": [
+                  [
+                    12,
+                    16
+                  ],
+                  [
+                    19,
+                    36
+                  ],
+                  [
+                    40,
+                    28
+                  ]
+                ],
+                "grid_hw": [
+                  80,
+                  80
+                ],
+                "head_role": "p3",
+                "stride": 8
+              },
+              {
+                "anchors_wh": [
+                  [
+                    36,
+                    75
+                  ],
+                  [
+                    76,
+                    55
+                  ],
+                  [
+                    72,
+                    146
+                  ]
+                ],
+                "grid_hw": [
+                  40,
+                  40
+                ],
+                "head_role": "p4",
+                "stride": 16
+              },
+              {
+                "anchors_wh": [
+                  [
+                    142,
+                    110
+                  ],
+                  [
+                    192,
+                    243
+                  ],
+                  [
+                    459,
+                    401
+                  ]
+                ],
+                "grid_hw": [
+                  20,
+                  20
+                ],
+                "head_role": "p5",
+                "stride": 32
+              }
+            ],
+            "decode_equations_id": "yolov5_yolov7_xywh_2x_square_v1",
+            "decoder_contract_sha256": "725286e3e6be337b4cfdb0f20c5cd81647c9b2fdb37ac288afbc22cedb143b3f",
+            "decoder_id": "yolov7_paper_standard_anchor_classaware_nms_v2",
+            "head_to_stride_policy": "validated_grid_geometry_p3_s8_p4_s16_p5_s32_v1",
+            "input_hw": [
+              640,
+              640
+            ],
+            "model_family": "yolov7",
+            "model_id": "yolov7_paper",
+            "model_sha256": "7a13e66f91047cce0e251c05f64159646847e842af31d60441c63dcdfad7825d",
+            "nms_identity": {
+              "class_aware": true,
+              "confidence_threshold": 0.25,
+              "implementation": "numpy_class_aware_nms_xyxy_v1",
+              "iou_threshold": 0.45,
+              "max_detections": 300,
+              "multi_label": false
+            },
+            "objectness_class_combination": "objectness_probability_times_class_probability",
+            "output_format": "multiscale_head",
+            "postprocess_policy_id": "retained_v27546_conf025_iou045_max300_policy_v1",
+            "preprocess_identity": {
+              "color_space": "RGB",
+              "contract_id": "centered_letterbox_rgb_float32_0_1_pad114_v1",
+              "input_dtype": "float32",
+              "input_layout": "NCHW",
+              "input_scale": "divide_by_255",
+              "inverse_geometry": "remove_centered_padding_then_divide_gain_v1",
+              "pad_value": 114,
+              "placement": "centered_integer_floor_remainder_right_bottom",
+              "resize": "bilinear_preserve_aspect_round"
+            },
+            "raw_record_semantics": "xywh_objectness_coco80_class_channels",
+            "schema": "onnx-splitpoint/yolov7-model-bound-decoder",
+            "schema_version": 1,
+            "use_scope": "production"
+          },
+          "model_bound_decoder_contract_sha256": "725286e3e6be337b4cfdb0f20c5cd81647c9b2fdb37ac288afbc22cedb143b3f",
+          "model_family": "yolov7",
+          "model_id": "yolov7_paper",
+          "model_sha256": "7a13e66f91047cce0e251c05f64159646847e842af31d60441c63dcdfad7825d",
+          "multiscale_activation_mode": "logits",
+          "nms_implementation": "numpy_class_aware_nms_xyxy_v1",
+          "original_wh": [
+            640,
+            483
+          ],
+          "output_contract_family": "decoded_nms",
+          "performance_scope": "prepared_input_to_post_nms_detections",
+          "postprocess_included": true,
+          "raw_output_tensor_signature": {
+            "tensor_count": 3,
+            "tensors": [
+              {
+                "dtype": "float32",
+                "index": 0,
+                "name": "yolov7_stride_8",
+                "rank": 5,
+                "shape": [
+                  1,
+                  3,
+                  80,
+                  80,
+                  85
+                ]
+              },
+              {
+                "dtype": "float32",
+                "index": 1,
+                "name": "yolov7_stride_16",
+                "rank": 5,
+                "shape": [
+                  1,
+                  3,
+                  40,
+                  40,
+                  85
+                ]
+              },
+              {
+                "dtype": "float32",
+                "index": 2,
+                "name": "yolov7_stride_32",
+                "rank": 5,
+                "shape": [
+                  1,
+                  3,
+                  20,
+                  20,
+                  85
+                ]
+              }
+            ]
+          },
+          "schema": "onnx-splitpoint/frozen-native-detection-postprocess",
+          "schema_version": 2,
+          "source_contract_family": "raw_head",
+          "task": "detection"
+        },
+        "relation_sha256": "6f940e222b2e1b5676036c3c65552c36ebb4b2a5a15f2b9b469cc75df5c70045",
+        "schema": "onnx-splitpoint/detection-completion-execution-contract",
+        "schema_sha256": "346cafed33d3ef7501ebfa61a672766ef6d32178b2df8e72df5ac389d14e4919",
+        "schema_version": 2,
+        "source_endpoint": {
+          "contract_family": "raw_head",
+          "endpoint_contract_hash": "051f0d9e489355d312ad656532acf3ed8a2719774d8ef9843278818f5bd15adc",
+          "output_endpoint_attestation_sha256": "c5e3cb42bb1f4f0cb935d1872141cb4a0c2586c8b8ae4f23728c14024fc0afbe",
+          "output_endpoint_id": "detection:raw_head:051f0d9e489355d312ad656532acf3ed8a2719774d8ef9843278818f5bd15adc",
+          "stage": "raw_head",
+          "task": "detection",
+          "tensor_signature": {
+            "tensor_count": 3,
+            "tensors": [
+              {
+                "dtype": "float32",
+                "index": 0,
+                "name": "output",
+                "rank": 5,
+                "shape": [
+                  1,
+                  3,
+                  80,
+                  80,
+                  85
+                ]
+              },
+              {
+                "dtype": "float32",
+                "index": 1,
+                "name": "clone_1",
+                "rank": 5,
+                "shape": [
+                  1,
+                  3,
+                  40,
+                  40,
+                  85
+                ]
+              },
+              {
+                "dtype": "float32",
+                "index": 2,
+                "name": "clone_2",
+                "rank": 5,
+                "shape": [
+                  1,
+                  3,
+                  20,
+                  20,
+                  85
+                ]
+              }
+            ]
+          }
+        },
+        "task": "detection",
+        "yolov7_head_mapping": {
+          "activation_mode": "logits",
+          "anchor_table_id": "yolov7_paper_standard_anchors_640_v1",
+          "expected_strides": [
+            8,
+            16,
+            32
+          ],
+          "head_mapping_sha256": "7ec9018f774b76267d3b0a1edfe6bfca1e6236863a458161f7c45a599b0891e4",
+          "head_record_semantics": "batch_anchor_grid_y_grid_x_xywh_objectness_class_logits",
+          "heads": [
+            {
+              "anchor_wh": [
+                [
+                  12,
+                  16
+                ],
+                [
+                  19,
+                  36
+                ],
+                [
+                  40,
+                  28
+                ]
+              ],
+              "canonical_shape": [
+                1,
+                3,
+                80,
+                80,
+                85
+              ],
+              "grid_hw": [
+                80,
+                80
+              ],
+              "role": "p3",
+              "stride": 8
+            },
+            {
+              "anchor_wh": [
+                [
+                  36,
+                  75
+                ],
+                [
+                  76,
+                  55
+                ],
+                [
+                  72,
+                  146
+                ]
+              ],
+              "canonical_shape": [
+                1,
+                3,
+                40,
+                40,
+                85
+              ],
+              "grid_hw": [
+                40,
+                40
+              ],
+              "role": "p4",
+              "stride": 16
+            },
+            {
+              "anchor_wh": [
+                [
+                  142,
+                  110
+                ],
+                [
+                  192,
+                  243
+                ],
+                [
+                  459,
+                  401
+                ]
+              ],
+              "canonical_shape": [
+                1,
+                3,
+                20,
+                20,
+                85
+              ],
+              "grid_hw": [
+                20,
+                20
+              ],
+              "role": "p5",
+              "stride": 32
+            }
+          ],
+          "input_hw": [
+            640,
+            640
+          ],
+          "mapping_policy": "validated_grid_and_stride_without_name_or_index_v1",
+          "model_family": "yolov7",
+          "objectness_class_combination": "sigmoid_objectness_times_sigmoid_class",
+          "schema": "onnx-splitpoint/yolov7-stride-head-mapping",
+          "schema_version": 2
+        }
+      },
+      "completion_execution_contract_sha256": "f43da08f96e7c8900808beabf5f44a6bbbb97a12ca13b6989be0befe54f39a70",
+      "copy_outputs": true,
+      "device_id": "",
+      "dump_boundary": false,
+      "dump_outputs": false,
+      "duration_s": 0.0,
+      "energy_prepared_feed_capable": true,
+      "frames": 1000,
+      "hailo_format": "uint8",
+      "letterbox_pad_value": 114,
+      "letterbox_pad_value_effective": 114,
+      "letterbox_pad_value_requested": 114,
+      "mixed_runtime_site_policy": "site.addsitedir_after_system_defaults",
+      "prepared_feed_policy": "exact_prepared_feed_reused_for_every_work_unit",
+      "prepared_input_bound": true,
+      "preprocess_mode_effective": "letterbox",
+      "preprocess_mode_requested": "letterbox",
+      "process_local_extra_sites": [
+        "/home/nx/hailo_py/lib/python3.10/site-packages"
+      ],
+      "producer_impl": "hailo8_python_vstreams_fifo",
+      "queue_depth": 3,
+      "repetitions": 3,
+      "reuse_preprocessed_input": true,
+      "task": "detection",
+      "warmup": 0
+    },
+    "schema": "onnx-splitpoint/split-energy-workload-binding",
+    "schema_version": 1,
+    "verified_files": [
+      {
+        "device": 66305,
+        "inode": 306510,
+        "labels": [
+          "artifact:native_trt_consumer_source"
+        ],
+        "mtime_ns": 315529200000000000,
+        "path": "/home/nx/ONNX-Splitpoint-Tool/scripts/native_hailo10_trt_e2e_from_benchmarkset.py",
+        "size_bytes": 117796
+      },
+      {
+        "device": 66305,
+        "inode": 306696,
+        "labels": [
+          "runner"
+        ],
+        "mtime_ns": 315529200000000000,
+        "path": "/home/nx/ONNX-Splitpoint-Tool/scripts/native_hailo_trt_fifo_from_benchmarkset.py",
+        "size_bytes": 179626
+      },
+      {
+        "device": 66305,
+        "inode": 306681,
+        "labels": [
+          "preflight_script"
+        ],
+        "mtime_ns": 315529200000000000,
+        "path": "/home/nx/ONNX-Splitpoint-Tool/scripts/native_split_energy_preflight.py",
+        "size_bytes": 25404
+      },
+      {
+        "device": 66305,
+        "inode": 6326436,
+        "labels": [
+          "artifact:cmake"
+        ],
+        "mtime_ns": 1787823786048220441,
+        "path": "/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set/native_pipeline/b066/hailo_to_trt/uint8_dequant_fp16/CMakeLists.txt",
+        "size_bytes": 1665
+      },
+      {
+        "device": 66305,
+        "inode": 6326450,
+        "labels": [
+          "artifact:prepared_input"
+        ],
+        "mtime_ns": 1787823786828252414,
+        "path": "/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set/native_pipeline/b066/hailo_to_trt/uint8_dequant_fp16/contract_artifacts/hailo8_prepared_input_python.bin",
+        "size_bytes": 1228800
+      },
+      {
+        "device": 66305,
+        "inode": 6326435,
+        "labels": [
+          "artifact:generated_cpp"
+        ],
+        "mtime_ns": 1787823786048220441,
+        "path": "/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set/native_pipeline/b066/hailo_to_trt/uint8_dequant_fp16/main.cpp",
+        "size_bytes": 41485
+      },
+      {
+        "device": 66305,
+        "inode": 6325387,
+        "labels": [
+          "input_image"
+        ],
+        "mtime_ns": 1783790453739004651,
+        "path": "/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set/resources/validation/detection/val2017_n500_s20260710/000000000632.jpg",
+        "size_bytes": 155667
+      },
+      {
+        "device": 66305,
+        "inode": 6326506,
+        "labels": [
+          "artifact:source_part2_onnx"
+        ],
+        "mtime_ns": 0,
+        "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/yolov7_paper-78dcf9bd33084c0c/native_split_quality/orin_nx_hailo8_01/yolov7_paper/b066/hailo8_to_trt/7d5d3e2943f6d344f9f5eb90e81c392b736d77457ff8480e40ffbd5e6fb157a0/benchmark_set/b066/source_part2.onnx",
+        "size_bytes": 144752023
+      },
+      {
+        "device": 66305,
+        "inode": 6326518,
+        "labels": [
+          "artifact:engine_build_receipt"
+        ],
+        "mtime_ns": 1787823106111506345,
+        "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/yolov7_paper-78dcf9bd33084c0c/native_split_quality/orin_nx_hailo8_01/yolov7_paper/b066/hailo8_to_trt/7d5d3e2943f6d344f9f5eb90e81c392b736d77457ff8480e40ffbd5e6fb157a0/engine_cache/b066/part2/uint8_dequant_fp16/engine_build_receipt.json",
+        "size_bytes": 2292
+      },
+      {
+        "device": 66305,
+        "inode": 6326519,
+        "labels": [
+          "artifact:native_trt_meta",
+          "boundary_metadata"
+        ],
+        "mtime_ns": 1787823106111506345,
+        "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/yolov7_paper-78dcf9bd33084c0c/native_split_quality/orin_nx_hailo8_01/yolov7_paper/b066/hailo8_to_trt/7d5d3e2943f6d344f9f5eb90e81c392b736d77457ff8480e40ffbd5e6fb157a0/engine_cache/b066/part2/uint8_dequant_fp16/native_trt_meta.json",
+        "size_bytes": 22967
+      },
+      {
+        "device": 66305,
+        "inode": 6326516,
+        "labels": [
+          "artifact:engine"
+        ],
+        "mtime_ns": 1787823102003359642,
+        "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/yolov7_paper-78dcf9bd33084c0c/native_split_quality/orin_nx_hailo8_01/yolov7_paper/b066/hailo8_to_trt/7d5d3e2943f6d344f9f5eb90e81c392b736d77457ff8480e40ffbd5e6fb157a0/engine_cache/b066/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+        "size_bytes": 74695868
+      },
+      {
+        "device": 66305,
+        "inode": 6326512,
+        "labels": [
+          "artifact:build_part2_onnx"
+        ],
+        "mtime_ns": 1787822728358031536,
+        "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/yolov7_paper-78dcf9bd33084c0c/native_split_quality/orin_nx_hailo8_01/yolov7_paper/b066/hailo8_to_trt/7d5d3e2943f6d344f9f5eb90e81c392b736d77457ff8480e40ffbd5e6fb157a0/engine_cache/b066/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+        "size_bytes": 144752795
+      },
+      {
+        "device": 66305,
+        "inode": 6326503,
+        "labels": [
+          "artifact:hef"
+        ],
+        "mtime_ns": 0,
+        "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/yolov7_paper-78dcf9bd33084c0c/native_split_quality/orin_nx_hailo8_01/yolov7_paper/b066/hailo8_to_trt/7d5d3e2943f6d344f9f5eb90e81c392b736d77457ff8480e40ffbd5e6fb157a0/part1.hef",
+        "size_bytes": 4447123
+      },
+      {
+        "device": 66305,
+        "inode": 6326507,
+        "labels": [
+          "artifact:boundary_metadata"
+        ],
+        "mtime_ns": 1787822727838013013,
+        "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/yolov7_paper-78dcf9bd33084c0c/native_split_quality/orin_nx_hailo8_01/yolov7_paper/b066/hailo8_to_trt/7d5d3e2943f6d344f9f5eb90e81c392b736d77457ff8480e40ffbd5e6fb157a0/part1_boundary_metadata.json",
+        "size_bytes": 984
+      },
+      {
+        "device": 66305,
+        "inode": 2622999,
+        "labels": [
+          "artifact:native_executable",
+          "artifact:python_executable"
+        ],
+        "mtime_ns": 1767855139000000000,
+        "path": "/usr/bin/python3.10",
+        "size_bytes": 5672088
+      },
+      {
+        "device": 66305,
+        "inode": 3150163,
+        "labels": [
+          "artifact:trtexec"
+        ],
+        "mtime_ns": 1726342628000000000,
+        "path": "/usr/src/tensorrt/bin/trtexec",
+        "size_bytes": 1695696
+      }
+    ],
+    "workload_supported": true
+  }
+}

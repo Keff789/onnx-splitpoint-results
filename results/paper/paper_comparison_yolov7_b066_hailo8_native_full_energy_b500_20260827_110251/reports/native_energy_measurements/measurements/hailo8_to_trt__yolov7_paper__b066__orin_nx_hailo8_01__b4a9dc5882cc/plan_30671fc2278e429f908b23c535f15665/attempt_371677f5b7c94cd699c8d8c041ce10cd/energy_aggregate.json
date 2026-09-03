@@ -1,0 +1,1554 @@
+{
+  "ok": false,
+  "status": "acquisition_integrity_failed_no_valid_runs",
+  "cancelled": false,
+  "collector_any_ok": false,
+  "raw_energy_stream_issue_count": 0,
+  "raw_energy_stream_issue": null,
+  "acquisition_integrity_failure_reasons": [
+    "first_sample_barrier_invalid"
+  ],
+  "setup_id": "orin_nx_hailo8_01",
+  "run_id": "native_hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc",
+  "out_dir": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd",
+  "artifact_index": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/artifact_index.json",
+  "artifact_count": 115,
+  "urecs_address": "192.168.0.197",
+  "defaults": {
+    "enabled": false,
+    "collector_binary": "urecs-data-collector",
+    "power_calculations_binary": "power_calculations",
+    "mode": "fast_firmware",
+    "data_port": 3000,
+    "channel": 0,
+    "sample_rate": 2000,
+    "environment": "Jetson",
+    "pre_duration_s": 5.0,
+    "post_duration_s": 5.0,
+    "duration_margin_s": 1.0,
+    "min_active_duration_s": 30.0,
+    "power_estimated_duration_margin_s": 2.0,
+    "measurement_duration_s": 60.0,
+    "native_measurement_duration_s": 60.0,
+    "power_window_mode": "trimmed",
+    "run_count": 3,
+    "confidence_level": 0.95,
+    "physical_scope": "MB",
+    "window_label": "command",
+    "keep_raw_parquet": true,
+    "postprocess_with_power_calculations": true,
+    "compare_legacy_window": true,
+    "window_method_validation_probe_enabled": true,
+    "window_method_validation_probe_repeats": 3,
+    "window_method_validation_probe_include_raw_parquet": true,
+    "window_method_validation_probe_strict": true,
+    "window_ab_enabled": true,
+    "window_ab_primary_method": "command_marker_window",
+    "window_ab_shadow_method": "chapter4_legacy_window",
+    "window_ab_baseline_method": "chapter4_baseline",
+    "window_ab_candidate_method": "candidate_v263",
+    "window_ab_same_raw_capture": true,
+    "window_ab_mode": "shadow",
+    "window_ab_auto_switch": false,
+    "window_ab_smoke_repeats": 3,
+    "window_ab_include_raw_parquet": true,
+    "window_ab_strict": true,
+    "window_ab_requires_picoscope": false,
+    "invalid_repeat_max_retries": 1,
+    "invalid_repeat_reconnect_backoff_s": 5.0,
+    "include_raw_parquet_in_debug_pack": false,
+    "complete_measurement_window": true,
+    "heartbeat_s": 60,
+    "native_energy_duration_s": 60.0,
+    "generic_energy_duration_s": 60.0
+  },
+  "setup": {
+    "enabled": true,
+    "urecs_address": "192.168.0.197",
+    "idle_baseline_w": 5.0,
+    "accelerator_idle_w": 1.0
+  },
+  "duration_probe": {
+    "ok": true,
+    "probe_skipped": true,
+    "duration_margin_s": 1.0,
+    "measurement_suite_policy": "collector=int(duration+1), power_estimated=int(duration+2), default power_calculations trims unless complete mode is requested",
+    "workload_duration_s": 60.0,
+    "collector_duration_s": 61,
+    "power_estimated_duration_s": 62,
+    "probe_dir": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/probe",
+    "probe_json": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/probe/duration_probe.json"
+  },
+  "command": "#!/usr/bin/env bash\nset -euo pipefail\nif [[ -n \"${ONNX_SPLITPOINT_REMOTE_LEASE_RUN_ID:-}\" ]] || [[ -n \"${ONNX_SPLITPOINT_REMOTE_LEASE_SESSION_ID:-}\" ]] || [[ -n \"${ONNX_SPLITPOINT_REMOTE_LEASE_JOURNAL_DIR:-}\" ]]; then\n    if ! ( [[ -n \"${ONNX_SPLITPOINT_REMOTE_LEASE_RUN_ID:-}\" ]] && [[ -n \"${ONNX_SPLITPOINT_REMOTE_LEASE_SESSION_ID:-}\" ]] && [[ -n \"${ONNX_SPLITPOINT_REMOTE_LEASE_JOURNAL_DIR:-}\" ]] ); then\n        printf '%s\\n' 'incomplete Native Energy remote lease environment: ONNX_SPLITPOINT_REMOTE_LEASE_RUN_ID, ONNX_SPLITPOINT_REMOTE_LEASE_SESSION_ID, ONNX_SPLITPOINT_REMOTE_LEASE_JOURNAL_DIR' >&2\n        exit 64\n    fi\n    exec /home/kmika/ONNX-Splitpoint-Tool/.venv/bin/python -m onnx_splitpoint_tool.remote.process_lease_cli exec --label native-energy-workload-hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc --timeout-s 883.0 -- ssh -o BatchMode=yes -o StrictHostKeyChecking=accept-new nx@192.168.0.104 'source ~/hailo_py/bin/activate && export PYTHONDONTWRITEBYTECODE=1 && export SPLITPOINT_EXTRA_SITES=/home/nx/hailo_py/lib/python3.10/site-packages && mkdir -p /home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/.energy_replays/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc && fresh_output_root=$(mktemp -d /home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/.energy_replays/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/replay.XXXXXX) && touch \"$fresh_output_root/.started\" && cd /home/nx/ONNX-Splitpoint-Tool && /usr/bin/python3.10 -u /home/nx/ONNX-Splitpoint-Tool/scripts/native_hailo_trt_fifo_from_benchmarkset.py --benchmark-set /home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set --case b066 --precision uint8_dequant_fp16 --image /home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set/resources/validation/detection/val2017_n500_s20260710/000000000632.jpg --frames 1000 --duration-s 60.0 --warmup 0 --queue-depth 3 --source-contract-sha256 b4a9dc5882cc60c8196a9c6584f14707f3de88fb4c9cb1240b954608c76c8d1a --energy-workload-only --energy-preflight-attestation __ONNX_SPLITPOINT_PREFLIGHT_ATTESTATION__ --energy-preflight-nonce __ONNX_SPLITPOINT_PREFLIGHT_NONCE__ --hw-arch hailo8 --hailo-format uint8 --task detection --preprocess-mode letterbox --letterbox-pad-value 114 --result-json \"${fresh_output_root}/native_fifo_results.json\" --no-build --copy-outputs && test -s \"$fresh_output_root/native_fifo_results.json\" && test \"$fresh_output_root/native_fifo_results.json\" -nt \"$fresh_output_root/.started\" && printf \"[native-energy] FRESH_REPORT path=%s sha_contract=b4a9dc5882cc60c8196a9c6584f14707f3de88fb4c9cb1240b954608c76c8d1a\\n\" \"$fresh_output_root/native_fifo_results.json\"'\nfi\nexec ssh -o BatchMode=yes -o StrictHostKeyChecking=accept-new nx@192.168.0.104 'source ~/hailo_py/bin/activate && export PYTHONDONTWRITEBYTECODE=1 && export SPLITPOINT_EXTRA_SITES=/home/nx/hailo_py/lib/python3.10/site-packages && mkdir -p /home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/.energy_replays/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc && fresh_output_root=$(mktemp -d /home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/.energy_replays/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/replay.XXXXXX) && touch \"$fresh_output_root/.started\" && cd /home/nx/ONNX-Splitpoint-Tool && /usr/bin/python3.10 -u /home/nx/ONNX-Splitpoint-Tool/scripts/native_hailo_trt_fifo_from_benchmarkset.py --benchmark-set /home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set --case b066 --precision uint8_dequant_fp16 --image /home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/yolov7_paper/benchmark_set/resources/validation/detection/val2017_n500_s20260710/000000000632.jpg --frames 1000 --duration-s 60.0 --warmup 0 --queue-depth 3 --source-contract-sha256 b4a9dc5882cc60c8196a9c6584f14707f3de88fb4c9cb1240b954608c76c8d1a --energy-workload-only --energy-preflight-attestation __ONNX_SPLITPOINT_PREFLIGHT_ATTESTATION__ --energy-preflight-nonce __ONNX_SPLITPOINT_PREFLIGHT_NONCE__ --hw-arch hailo8 --hailo-format uint8 --task detection --preprocess-mode letterbox --letterbox-pad-value 114 --result-json \"${fresh_output_root}/native_fifo_results.json\" --no-build --copy-outputs && test -s \"$fresh_output_root/native_fifo_results.json\" && test \"$fresh_output_root/native_fifo_results.json\" -nt \"$fresh_output_root/.started\" && printf \"[native-energy] FRESH_REPORT path=%s sha_contract=b4a9dc5882cc60c8196a9c6584f14707f3de88fb4c9cb1240b954608c76c8d1a\\n\" \"$fresh_output_root/native_fifo_results.json\"'",
+  "run_count": 3,
+  "requested_valid_repeat_count": 3,
+  "materialized_logical_repeat_count": 3,
+  "repeat_contract_complete": false,
+  "repeat_contract_status": "incomplete",
+  "caller_managed_repeat_capture_complete": false,
+  "caller_managed_shadow_capture_complete": false,
+  "invalid_repeat_max_retries": 1,
+  "invalid_repeat_max_retries_requested": 1,
+  "invalid_repeat_retry_suppressed_by_exact_run_count": false,
+  "repeat_retry_attempt_count": 3,
+  "repeat_retry_recovered_count": 0,
+  "repeat_retry_history": [
+    {
+      "logical_repeat_index": 0,
+      "initial_retry_reasons": [
+        "first_sample_barrier_invalid"
+      ],
+      "selected_attempt_index": 1,
+      "recovered": false,
+      "attempts": [
+        {
+          "attempt_index": 0,
+          "selected": false,
+          "run_directory": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/run_000",
+          "final_energy_gate_status": "fail",
+          "window_method_comparison_status": "",
+          "retry_reasons": [
+            "first_sample_barrier_invalid"
+          ]
+        },
+        {
+          "attempt_index": 1,
+          "selected": false,
+          "run_directory": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_000/attempt_01/run_000",
+          "aggregate_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_000/attempt_01/energy_aggregate.json",
+          "aggregate_status": "acquisition_integrity_failed_no_valid_runs",
+          "final_energy_gate_status": "fail",
+          "window_method_comparison_status": "",
+          "retry_reasons": [
+            "first_sample_barrier_invalid"
+          ],
+          "accepted_for_logical_repeat": false,
+          "collector_reconnect_evidence": {
+            "requested_backoff_s": 5.0,
+            "elapsed_backoff_s": 5.000142758945003,
+            "cancelled": false,
+            "transport_policy": "fresh_collector_process_fresh_storage_reconnect_after_quiescence",
+            "logical_repeat_index": 0,
+            "retry_attempt_index": 1,
+            "trigger_reasons": [
+              "first_sample_barrier_invalid"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "logical_repeat_index": 1,
+      "initial_retry_reasons": [
+        "first_sample_barrier_invalid"
+      ],
+      "selected_attempt_index": 1,
+      "recovered": false,
+      "attempts": [
+        {
+          "attempt_index": 0,
+          "selected": false,
+          "run_directory": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/run_001",
+          "final_energy_gate_status": "fail",
+          "window_method_comparison_status": "",
+          "retry_reasons": [
+            "first_sample_barrier_invalid"
+          ]
+        },
+        {
+          "attempt_index": 1,
+          "selected": false,
+          "run_directory": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_001/attempt_01/run_000",
+          "aggregate_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_001/attempt_01/energy_aggregate.json",
+          "aggregate_status": "acquisition_integrity_failed_no_valid_runs",
+          "final_energy_gate_status": "fail",
+          "window_method_comparison_status": "",
+          "retry_reasons": [
+            "first_sample_barrier_invalid"
+          ],
+          "accepted_for_logical_repeat": false,
+          "collector_reconnect_evidence": {
+            "requested_backoff_s": 5.0,
+            "elapsed_backoff_s": 5.0001411370467395,
+            "cancelled": false,
+            "transport_policy": "fresh_collector_process_fresh_storage_reconnect_after_quiescence",
+            "logical_repeat_index": 1,
+            "retry_attempt_index": 1,
+            "trigger_reasons": [
+              "first_sample_barrier_invalid"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "logical_repeat_index": 2,
+      "initial_retry_reasons": [
+        "first_sample_barrier_invalid"
+      ],
+      "selected_attempt_index": 1,
+      "recovered": false,
+      "attempts": [
+        {
+          "attempt_index": 0,
+          "selected": false,
+          "run_directory": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/run_002",
+          "final_energy_gate_status": "fail",
+          "window_method_comparison_status": "",
+          "retry_reasons": [
+            "first_sample_barrier_invalid"
+          ]
+        },
+        {
+          "attempt_index": 1,
+          "selected": false,
+          "run_directory": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_002/attempt_01/run_000",
+          "aggregate_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_002/attempt_01/energy_aggregate.json",
+          "aggregate_status": "acquisition_integrity_failed_no_valid_runs",
+          "final_energy_gate_status": "fail",
+          "window_method_comparison_status": "",
+          "retry_reasons": [
+            "first_sample_barrier_invalid"
+          ],
+          "accepted_for_logical_repeat": false,
+          "collector_reconnect_evidence": {
+            "requested_backoff_s": 5.0,
+            "elapsed_backoff_s": 5.000143897952512,
+            "cancelled": false,
+            "transport_policy": "fresh_collector_process_fresh_storage_reconnect_after_quiescence",
+            "logical_repeat_index": 2,
+            "retry_attempt_index": 1,
+            "trigger_reasons": [
+              "first_sample_barrier_invalid"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "preflight_requested": true,
+  "preflight_timeout_s": 900.0,
+  "preflight_attestation_max_age_s": 300.0,
+  "preflight_runtime_attestation_path_template": "/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/.energy_replays/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/preflight___ONNX_SPLITPOINT_PREFLIGHT_NONCE__.json",
+  "preflight_expected_command_contract_sha256": "b4a9dc5882cc60c8196a9c6584f14707f3de88fb4c9cb1240b954608c76c8d1a",
+  "preflight_verified_run_count": 3,
+  "preflight_failure_count": 0,
+  "raw_postprocessed_run_count": 0,
+  "valid_postprocessed_runs": 0,
+  "postprocess_status": "postprocess_failed_no_valid_repeats",
+  "final_energy_gate_status": "fail",
+  "energy_physical_scope": "MB",
+  "energy_physical_scope_canonical": "MB",
+  "energy_scope_label_preserved": true,
+  "energy_window_label": "command_window",
+  "energy_window_requested": "command_window",
+  "energy_window_effective_values": [],
+  "power_window_mode_configured": "trimmed",
+  "power_window_mode_effective": "trimmed",
+  "runtime_work_units_required": false,
+  "command_window_alignment_required": false,
+  "legacy_window_comparison_requested": true,
+  "scientific_method_decision": "frozen_command_marker_primary_chapter4_shadow",
+  "scientific_primary_method_frozen": true,
+  "scientific_primary_method": "command_marker_window",
+  "scientific_shadow_method": "chapter4_legacy_window",
+  "primary_method": "command_marker_window",
+  "shadow_method": "chapter4_legacy_window",
+  "candidate_method": "candidate_v263",
+  "candidate_role": "deprecated_alias_for_command_marker_primary",
+  "shadow_role": "same_trace_sensitivity_only",
+  "candidate_eligible_for_auto_switch": false,
+  "candidate_eligible_for_scientific_primary": false,
+  "method_aliases": {
+    "candidate_v263": "command_marker_window",
+    "chapter4_baseline": "chapter4_legacy_window"
+  },
+  "energy_window_method_ab": {
+    "schema": "onnx-splitpoint/energy-window-method-ab-runtime",
+    "schema_version": 2,
+    "enabled": true,
+    "valid": true,
+    "primary_method": "command_marker_window",
+    "shadow_method": "chapter4_legacy_window",
+    "scientific_method_decision": "frozen_command_marker_primary_chapter4_shadow",
+    "scientific_primary_method": "command_marker_window",
+    "scientific_shadow_method": "chapter4_legacy_window",
+    "shadow_role": "same_trace_sensitivity_only",
+    "baseline_method": "chapter4_baseline",
+    "candidate_method": "candidate_v263",
+    "legacy_method_aliases": {
+      "candidate_v263": "command_marker_window",
+      "chapter4_baseline": "chapter4_legacy_window"
+    },
+    "candidate_role": "deprecated_alias_for_command_marker_primary",
+    "mode": "shadow",
+    "same_raw_capture_required": true,
+    "auto_switch": false,
+    "configured_auto_switch": false,
+    "requires_picoscope": false,
+    "smoke_repeats_required": 3,
+    "requested_run_count": 3,
+    "effective_run_count": 3,
+    "repeat_control": "collector_managed_ab_minimum",
+    "exact_run_count_requested": false,
+    "minimum_repeat_expansion_applied": false,
+    "candidate_eligible_for_auto_switch": false,
+    "candidate_eligible_for_scientific_primary": false,
+    "shadow_observed_repeat_count": 0,
+    "shadow_same_raw_capture_verified_repeat_count": 0,
+    "shadow_repeat_contract_attested": false,
+    "shadow_status": "unavailable",
+    "shadow_affects_primary_result": false,
+    "shadow_affects_final_gate": false,
+    "observed_repeat_count": 0,
+    "same_raw_capture_verified_repeat_count": 0,
+    "smoke_repeat_contract_attested": false,
+    "status": "incomplete"
+  },
+  "technical_canonical_window_method": "collector_sample_marker_crop",
+  "window_method_validation_tier": "screening",
+  "legacy_window_comparison_attempted_runs": 0,
+  "legacy_window_comparison_successful_runs": 0,
+  "legacy_window_comparison_diagnostic_only": true,
+  "scientific_primary_energy_status": "incomplete_or_unverified",
+  "scientific_primary_valid_run_count": 0,
+  "scientific_primary_claim_eligible": false,
+  "scientific_primary_energy_total_j": null,
+  "scientific_primary_energy_per_work_unit_j": null,
+  "scientific_primary_active_duration_s": null,
+  "scientific_primary_avg_power_w": null,
+  "scientific_primary_energy_statistics": {
+    "method": "command_marker_window",
+    "scientific_role": "primary",
+    "energy_j": {
+      "n": 0,
+      "confidence_level": 0.95,
+      "mean": null,
+      "sample_stddev": null,
+      "standard_error": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_half_width": null,
+      "coefficient_of_variation_percent": null,
+      "method": "student_t_two_sided"
+    },
+    "energy_per_work_unit_j": {
+      "n": 0,
+      "confidence_level": 0.95,
+      "mean": null,
+      "sample_stddev": null,
+      "standard_error": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_half_width": null,
+      "coefficient_of_variation_percent": null,
+      "method": "student_t_two_sided"
+    },
+    "active_duration_s": {
+      "n": 0,
+      "confidence_level": 0.95,
+      "mean": null,
+      "sample_stddev": null,
+      "standard_error": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_half_width": null,
+      "coefficient_of_variation_percent": null,
+      "method": "student_t_two_sided"
+    },
+    "avg_power_w": {
+      "n": 0,
+      "confidence_level": 0.95,
+      "mean": null,
+      "sample_stddev": null,
+      "standard_error": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_half_width": null,
+      "coefficient_of_variation_percent": null,
+      "method": "student_t_two_sided"
+    }
+  },
+  "scientific_shadow_energy_status": "unavailable",
+  "scientific_shadow_valid_run_count": 0,
+  "scientific_shadow_claim_eligible": false,
+  "scientific_shadow_affects_primary_result": false,
+  "scientific_shadow_affects_final_gate": false,
+  "chapter4_legacy_shadow_energy_total_j": null,
+  "chapter4_legacy_shadow_energy_per_work_unit_j": null,
+  "chapter4_legacy_shadow_statistics": {
+    "method": "chapter4_legacy_window",
+    "scientific_role": "shadow_only",
+    "affects_primary_result": false,
+    "affects_final_gate": false,
+    "energy_j": {
+      "n": 0,
+      "confidence_level": 0.95,
+      "mean": null,
+      "sample_stddev": null,
+      "standard_error": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_half_width": null,
+      "coefficient_of_variation_percent": null,
+      "method": "student_t_two_sided"
+    },
+    "energy_per_work_unit_j": {
+      "n": 0,
+      "confidence_level": 0.95,
+      "mean": null,
+      "sample_stddev": null,
+      "standard_error": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_half_width": null,
+      "coefficient_of_variation_percent": null,
+      "method": "student_t_two_sided"
+    }
+  },
+  "window_method_comparison_statistics": {
+    "diagnostic_only": true,
+    "agreement_decision": "not_evaluated_no_frozen_tolerance",
+    "agreement_threshold": null,
+    "difference_direction": "legacy_minus_command_window",
+    "energy_j": {
+      "absolute": {
+        "n": 0,
+        "confidence_level": 0.95,
+        "mean": null,
+        "sample_stddev": null,
+        "standard_error": null,
+        "ci_low": null,
+        "ci_high": null,
+        "ci_half_width": null,
+        "coefficient_of_variation_percent": null,
+        "method": "student_t_two_sided"
+      },
+      "relative_percent": {
+        "n": 0,
+        "confidence_level": 0.95,
+        "mean": null,
+        "sample_stddev": null,
+        "standard_error": null,
+        "ci_low": null,
+        "ci_high": null,
+        "ci_half_width": null,
+        "coefficient_of_variation_percent": null,
+        "method": "student_t_two_sided"
+      },
+      "symmetric_percent": {
+        "n": 0,
+        "confidence_level": 0.95,
+        "mean": null,
+        "sample_stddev": null,
+        "standard_error": null,
+        "ci_low": null,
+        "ci_high": null,
+        "ci_half_width": null,
+        "coefficient_of_variation_percent": null,
+        "method": "student_t_two_sided"
+      },
+      "ln_command_window_over_legacy": {
+        "n": 0,
+        "confidence_level": 0.95,
+        "mean": null,
+        "sample_stddev": null,
+        "standard_error": null,
+        "ci_low": null,
+        "ci_high": null,
+        "ci_half_width": null,
+        "coefficient_of_variation_percent": null,
+        "method": "student_t_two_sided"
+      }
+    },
+    "duration_s": {
+      "absolute": {
+        "n": 0,
+        "confidence_level": 0.95,
+        "mean": null,
+        "sample_stddev": null,
+        "standard_error": null,
+        "ci_low": null,
+        "ci_high": null,
+        "ci_half_width": null,
+        "coefficient_of_variation_percent": null,
+        "method": "student_t_two_sided"
+      },
+      "relative_percent": {
+        "n": 0,
+        "confidence_level": 0.95,
+        "mean": null,
+        "sample_stddev": null,
+        "standard_error": null,
+        "ci_low": null,
+        "ci_high": null,
+        "ci_half_width": null,
+        "coefficient_of_variation_percent": null,
+        "method": "student_t_two_sided"
+      },
+      "symmetric_percent": {
+        "n": 0,
+        "confidence_level": 0.95,
+        "mean": null,
+        "sample_stddev": null,
+        "standard_error": null,
+        "ci_low": null,
+        "ci_high": null,
+        "ci_half_width": null,
+        "coefficient_of_variation_percent": null,
+        "method": "student_t_two_sided"
+      }
+    },
+    "average_power_w": {
+      "absolute": {
+        "n": 0,
+        "confidence_level": 0.95,
+        "mean": null,
+        "sample_stddev": null,
+        "standard_error": null,
+        "ci_low": null,
+        "ci_high": null,
+        "ci_half_width": null,
+        "coefficient_of_variation_percent": null,
+        "method": "student_t_two_sided"
+      },
+      "relative_percent": {
+        "n": 0,
+        "confidence_level": 0.95,
+        "mean": null,
+        "sample_stddev": null,
+        "standard_error": null,
+        "ci_low": null,
+        "ci_high": null,
+        "ci_half_width": null,
+        "coefficient_of_variation_percent": null,
+        "method": "student_t_two_sided"
+      },
+      "symmetric_percent": {
+        "n": 0,
+        "confidence_level": 0.95,
+        "mean": null,
+        "sample_stddev": null,
+        "standard_error": null,
+        "ci_low": null,
+        "ci_high": null,
+        "ci_half_width": null,
+        "coefficient_of_variation_percent": null,
+        "method": "student_t_two_sided"
+      }
+    },
+    "start_boundary": {
+      "samples": {
+        "n": 0,
+        "confidence_level": 0.95,
+        "mean": null,
+        "sample_stddev": null,
+        "standard_error": null,
+        "ci_low": null,
+        "ci_high": null,
+        "ci_half_width": null,
+        "coefficient_of_variation_percent": null,
+        "method": "student_t_two_sided"
+      },
+      "milliseconds": {
+        "n": 0,
+        "confidence_level": 0.95,
+        "mean": null,
+        "sample_stddev": null,
+        "standard_error": null,
+        "ci_low": null,
+        "ci_high": null,
+        "ci_half_width": null,
+        "coefficient_of_variation_percent": null,
+        "method": "student_t_two_sided"
+      }
+    },
+    "end_boundary": {
+      "samples": {
+        "n": 0,
+        "confidence_level": 0.95,
+        "mean": null,
+        "sample_stddev": null,
+        "standard_error": null,
+        "ci_low": null,
+        "ci_high": null,
+        "ci_half_width": null,
+        "coefficient_of_variation_percent": null,
+        "method": "student_t_two_sided"
+      },
+      "milliseconds": {
+        "n": 0,
+        "confidence_level": 0.95,
+        "mean": null,
+        "sample_stddev": null,
+        "standard_error": null,
+        "ci_low": null,
+        "ci_high": null,
+        "ci_half_width": null,
+        "coefficient_of_variation_percent": null,
+        "method": "student_t_two_sided"
+      }
+    }
+  },
+  "legacy_minus_command_window_energy_percent_mean": null,
+  "legacy_minus_command_window_duration_percent_mean": null,
+  "final_energy_gate_failure_count": 3,
+  "final_energy_gate_failures": [
+    {
+      "run_index": 0,
+      "reasons": [
+        "collector_rc_nonzero"
+      ]
+    },
+    {
+      "run_index": 1,
+      "reasons": [
+        "collector_rc_nonzero"
+      ]
+    },
+    {
+      "run_index": 2,
+      "reasons": [
+        "collector_rc_nonzero"
+      ]
+    }
+  ],
+  "energy_primary_metric": "unverified_postprocessor_energy",
+  "energy_calibrated_input_unsubtracted": false,
+  "energy_raw_primary": false,
+  "raw_input_energy_provenance_status": "input_energy_provenance_unverified",
+  "energy_calibration_manifest": "",
+  "energy_calibration_sha256": "",
+  "energy_calibration_verification": {
+    "path": "",
+    "declared_sha256": "",
+    "declared_sha256_input": "",
+    "actual_sha256": "",
+    "verified": false,
+    "status": "missing",
+    "evidence_mode": "",
+    "runtime_fail_closed_required": false,
+    "inherited_content_verified": false,
+    "inherited_binding_verified": false,
+    "runtime_binding_id": "",
+    "runtime_binding_errors": []
+  },
+  "full_system_scope_calibration_status": "not_full_system",
+  "confidence_level": 0.95,
+  "avg_energy_total_j": null,
+  "energy_total_j_sample_stddev": null,
+  "energy_total_j_ci_low": null,
+  "energy_total_j_ci_high": null,
+  "avg_power_w": null,
+  "avg_power_w_sample_stddev": null,
+  "avg_power_w_ci_low": null,
+  "avg_power_w_ci_high": null,
+  "avg_energy_dynamic_j": null,
+  "avg_host_normalized_energy_est_j": null,
+  "avg_energy_per_inference_j": null,
+  "avg_energy_dynamic_per_inference_j": null,
+  "avg_energy_per_pipeline_frame_j": null,
+  "energy_per_pipeline_frame_j_sample_stddev": null,
+  "energy_per_pipeline_frame_j_ci_low": null,
+  "energy_per_pipeline_frame_j_ci_high": null,
+  "avg_pipeline_fps_per_watt": null,
+  "avg_energy_measured_work_units_per_s": null,
+  "avg_energy_active_work_units_per_s": null,
+  "avg_energy_per_work_unit_j": null,
+  "energy_per_work_unit_j_sample_stddev": null,
+  "energy_per_work_unit_j_ci_low": null,
+  "energy_per_work_unit_j_ci_high": null,
+  "avg_energy_work_units_per_j": null,
+  "avg_energy_work_units_used": null,
+  "energy_work_unit_sources": [],
+  "runtime_completed_work_unit_run_count": 0,
+  "energy_efficiency_claim_eligible_run_count": 0,
+  "energy_efficiency_claim_eligible": false,
+  "avg_window_duration_s": null,
+  "avg_active_duration_s": null,
+  "avg_workload_duration_s": null,
+  "avg_collector_measurement_duration_s": null,
+  "energy_efficiency_source": null,
+  "repeat_statistics": {
+    "energy_total_j": {
+      "n": 0,
+      "confidence_level": 0.95,
+      "mean": null,
+      "sample_stddev": null,
+      "standard_error": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_half_width": null,
+      "coefficient_of_variation_percent": null,
+      "method": "student_t_two_sided"
+    },
+    "avg_power_w": {
+      "n": 0,
+      "confidence_level": 0.95,
+      "mean": null,
+      "sample_stddev": null,
+      "standard_error": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_half_width": null,
+      "coefficient_of_variation_percent": null,
+      "method": "student_t_two_sided"
+    },
+    "energy_dynamic_j": {
+      "n": 0,
+      "confidence_level": 0.95,
+      "mean": null,
+      "sample_stddev": null,
+      "standard_error": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_half_width": null,
+      "coefficient_of_variation_percent": null,
+      "method": "student_t_two_sided"
+    },
+    "host_normalized_energy_est_j": {
+      "n": 0,
+      "confidence_level": 0.95,
+      "mean": null,
+      "sample_stddev": null,
+      "standard_error": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_half_width": null,
+      "coefficient_of_variation_percent": null,
+      "method": "student_t_two_sided"
+    },
+    "energy_per_inference_j": {
+      "n": 0,
+      "confidence_level": 0.95,
+      "mean": null,
+      "sample_stddev": null,
+      "standard_error": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_half_width": null,
+      "coefficient_of_variation_percent": null,
+      "method": "student_t_two_sided"
+    },
+    "energy_per_pipeline_frame_j": {
+      "n": 0,
+      "confidence_level": 0.95,
+      "mean": null,
+      "sample_stddev": null,
+      "standard_error": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_half_width": null,
+      "coefficient_of_variation_percent": null,
+      "method": "student_t_two_sided"
+    },
+    "energy_per_work_unit_j": {
+      "n": 0,
+      "confidence_level": 0.95,
+      "mean": null,
+      "sample_stddev": null,
+      "standard_error": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_half_width": null,
+      "coefficient_of_variation_percent": null,
+      "method": "student_t_two_sided"
+    },
+    "energy_work_units_per_j": {
+      "n": 0,
+      "confidence_level": 0.95,
+      "mean": null,
+      "sample_stddev": null,
+      "standard_error": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_half_width": null,
+      "coefficient_of_variation_percent": null,
+      "method": "student_t_two_sided"
+    },
+    "energy_dynamic_per_work_unit_j": {
+      "n": 0,
+      "confidence_level": 0.95,
+      "mean": null,
+      "sample_stddev": null,
+      "standard_error": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_half_width": null,
+      "coefficient_of_variation_percent": null,
+      "method": "student_t_two_sided"
+    },
+    "energy_work_units_used": {
+      "n": 0,
+      "confidence_level": 0.95,
+      "mean": null,
+      "sample_stddev": null,
+      "standard_error": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_half_width": null,
+      "coefficient_of_variation_percent": null,
+      "method": "student_t_two_sided"
+    }
+  },
+  "runs": [
+    {
+      "run_index": 0,
+      "collector_run_id": "native_hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc:logical:000:retry:01",
+      "collector_window_id": "native_hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc:logical:000:retry:01:repeat:000",
+      "collector_cmd": [
+        "/home/kmika/.cargo/bin/urecs-data-collector",
+        "-s=/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_000/attempt_01/run_000/collector_storage",
+        "-d=61s",
+        "-b=5s",
+        "-e=5s",
+        "-c=/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_000/attempt_01/run_000/energy_command.sh",
+        "--run-id",
+        "native_hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc:logical:000:retry:01",
+        "--window-id",
+        "native_hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc:logical:000:retry:01:repeat:000",
+        "fast-firmware",
+        "--address=192.168.0.197",
+        "--data-port=3000",
+        "--channel=0",
+        "--sample-rate=2000"
+      ],
+      "collector_transport_session_policy": "fresh_collector_process_and_fresh_storage_per_physical_attempt",
+      "collector_recovery_before_start": null,
+      "storage_dir": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_000/attempt_01/run_000/collector_storage",
+      "measurement_suite_policy": "collector=int(duration+1), power_estimated=int(duration+2)",
+      "workload_duration_s": 60.0,
+      "collector_measurement_duration_s": 61.0,
+      "power_estimated_duration_s": 62.0,
+      "power_window_mode_configured": "trimmed",
+      "power_window_mode_requested": "trimmed",
+      "power_window_mode_effective_override": "",
+      "energy_window_requested": "command_window",
+      "runtime_work_units_required": false,
+      "command_window_alignment_required": false,
+      "legacy_window_comparison_requested": true,
+      "scientific_method_decision": "frozen_command_marker_primary_chapter4_shadow",
+      "scientific_primary_method_frozen": true,
+      "scientific_primary_method": "command_marker_window",
+      "scientific_shadow_method": "chapter4_legacy_window",
+      "candidate_method": "candidate_v263",
+      "candidate_role": "deprecated_alias_for_command_marker_primary",
+      "shadow_role": "same_trace_sensitivity_only",
+      "candidate_eligible_for_auto_switch": false,
+      "candidate_eligible_for_scientific_primary": false,
+      "energy_window_method_ab": {
+        "schema": "onnx-splitpoint/energy-window-method-ab-runtime",
+        "schema_version": 2,
+        "enabled": true,
+        "valid": true,
+        "primary_method": "command_marker_window",
+        "shadow_method": "chapter4_legacy_window",
+        "scientific_method_decision": "frozen_command_marker_primary_chapter4_shadow",
+        "scientific_primary_method": "command_marker_window",
+        "scientific_shadow_method": "chapter4_legacy_window",
+        "shadow_role": "same_trace_sensitivity_only",
+        "baseline_method": "chapter4_baseline",
+        "candidate_method": "candidate_v263",
+        "legacy_method_aliases": {
+          "candidate_v263": "command_marker_window",
+          "chapter4_baseline": "chapter4_legacy_window"
+        },
+        "candidate_role": "deprecated_alias_for_command_marker_primary",
+        "mode": "shadow",
+        "same_raw_capture_required": true,
+        "auto_switch": false,
+        "configured_auto_switch": false,
+        "requires_picoscope": false,
+        "smoke_repeats_required": 1,
+        "requested_run_count": 1,
+        "effective_run_count": 1,
+        "repeat_control": "collector_managed_ab_minimum",
+        "exact_run_count_requested": false,
+        "minimum_repeat_expansion_applied": false,
+        "candidate_eligible_for_auto_switch": false,
+        "candidate_eligible_for_scientific_primary": false
+      },
+      "technical_canonical_window_method": "collector_sample_marker_crop",
+      "window_method_validation_tier": "screening",
+      "energy_calibration_verification": {
+        "path": "",
+        "declared_sha256": "",
+        "declared_sha256_input": "",
+        "actual_sha256": "",
+        "verified": false,
+        "status": "missing",
+        "evidence_mode": "",
+        "runtime_fail_closed_required": false,
+        "inherited_content_verified": false,
+        "inherited_binding_verified": false,
+        "runtime_binding_id": "",
+        "runtime_binding_errors": []
+      },
+      "collector_expected_duration_s": 71.0,
+      "collector_timeout_s": 900.0,
+      "preflight_requested": true,
+      "preflight_evidence": {
+        "schema": "onnx-splitpoint/energy-preflight-evidence",
+        "schema_version": 1,
+        "requested": true,
+        "ok": true,
+        "status": "verified",
+        "cancelled": false,
+        "repeat_index": 0,
+        "nonce": "f971e5690e73b94911fdec92af368933cf1e0c8ee19d13ad4bcbbd0429d87c38",
+        "nonce_sha256": "53710f5478de395baeccd0321ae4ee0e4a029abd4639e9aa43f65834062b71a5",
+        "command_template_sha256": "61b4f95387f6c0020e82ad69ae18f26d8b583c19765f465f81a625d1a7f4ca39",
+        "rendered_command_sha256": "6f2b360386f3f29cb90a9a0273cb3f68347cfeffd1f32dac80ada0f8c1815134",
+        "workload_template_sha256": "63d7b6e4235c0cec60b6fd4981a8974d0e80365f9df0ae2c3f0588d6fa867b04",
+        "rendered_workload_sha256": "3e81fe637d388cec46445b409a0f10e40c858da76e777f09094f764f127e1651",
+        "command_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_000/attempt_01/run_000/preflight/preflight_command.sh",
+        "command_file_sha256": "8278b744cde1ad2777d5938e2a6e6d1e427983a11baa159a6765184a7a1604a7",
+        "stdout_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_000/attempt_01/run_000/preflight/preflight_stdout.log",
+        "stdout_sha256": "8505bd1cd19db9fb1fd2bb0c68cdc12713406b6ffc4464a372e6c78a4fea1e16",
+        "stderr_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_000/attempt_01/run_000/preflight/preflight_stderr.log",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "attestation_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_000/attempt_01/run_000/preflight/preflight_attestation.json",
+        "runtime_attestation_path": "/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/.energy_replays/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/preflight_f971e5690e73b94911fdec92af368933cf1e0c8ee19d13ad4bcbbd0429d87c38.json",
+        "runtime_attestation_path_scope": "caller_supplied_runtime_host",
+        "attestation_file_sha256": "60190d9ca50b403e137e55b67ca957abd47d81dbb54e88c97d6ea8b75caa412c",
+        "rc": 0,
+        "duration_s": 1.7096076011657715,
+        "started_at_unix_ns": 1787824540207698146,
+        "ended_at_unix_ns": 1787824541917722118,
+        "timeout_s": 900.0,
+        "expected_command_contract_sha256": "b4a9dc5882cc60c8196a9c6584f14707f3de88fb4c9cb1240b954608c76c8d1a",
+        "validation": {
+          "ok": true,
+          "status": "verified",
+          "reasons": [],
+          "schema": "onnx-splitpoint/energy-preflight-attestation",
+          "schema_version": 1,
+          "command_contract_sha256": "b4a9dc5882cc60c8196a9c6584f14707f3de88fb4c9cb1240b954608c76c8d1a",
+          "expected_command_contract_sha256": "b4a9dc5882cc60c8196a9c6584f14707f3de88fb4c9cb1240b954608c76c8d1a",
+          "created_at_unix_ns": 1787824541301563477,
+          "expires_at_unix_ns": 1787824841301563477,
+          "attestation_sha256": "a340dcf9d22b892d28fe33d02e43fcc288fd4005898645c83774eddf39feb7b8",
+          "expected_attestation_sha256": "a340dcf9d22b892d28fe33d02e43fcc288fd4005898645c83774eddf39feb7b8",
+          "max_age_s": 300.0
+        },
+        "collector_started": false
+      },
+      "preflight_status": "verified",
+      "status": "collector_failed",
+      "started_at": 1787824541.9329932,
+      "diagnostic_only": true,
+      "claim_eligible": false,
+      "scientific_claim_exclusion_reasons": [
+        "development_screening_energy_only"
+      ],
+      "collector_started": true,
+      "collector_started_at_unix_ns": 1787824541933633431,
+      "collector_rc": 1,
+      "collector_duration_s": 5.315332651138306,
+      "cancelled": false,
+      "ended_at": 1787824547.2523115,
+      "collector_and_workload_log_diagnostics": {
+        "collector_stdout": {
+          "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_000/attempt_01/run_000/collector_stdout.log",
+          "available": true,
+          "bytes": 1567,
+          "sha256": "973611d137021fab9478f40aa5a13c6c25b8236085cd6455304cedd3b23f0cab",
+          "tail": "2026-08-27T09:55:41.946Z INFO  [urecs_data_collector] Arguments { storage_path: Some(\"/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_000/attempt_01/run_000/collector_storage\"), duration: Ok(61s), pre_duration: Ok(5s), post_duration: Ok(5s), command: Some(\"/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_000/attempt_01/run_000/energy_command.sh\"), run_id: Some(\"native_hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc:logical:000:retry:01\"), window_id: Some(\"native_hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc:logical:000:retry:01:repeat:000\"), sources: [FastFirmware { address: \"192.168.0.197\", data_port: 3000, channel: 0, sample_rate: 2000 }] }\n2026-08-27T09:55:41.946Z INFO  [urecs_data_collector] Starting measurement\n2026-08-27T09:55:47.158Z WARN  [urecs_data_collector::network_firmware_fast] Could not read from Socket, stopping recording\n2026-08-27T09:55:47.158Z INFO  [urecs_data_collector::network_firmware_fast] Finishing Fast Firmware thread\n"
+        },
+        "collector_stderr": {
+          "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_000/attempt_01/run_000/collector_stderr.log",
+          "available": true,
+          "bytes": 94,
+          "sha256": "f9a731bfc6fc4b32146dcc0d2e20023c89df15c21a0f8d03be984d0a461cfa59",
+          "tail": "Error: fast-firmware first-sample barrier failed: channel is empty and sending half is closed\n"
+        },
+        "workload_stdout": {
+          "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_000/attempt_01/run_000/workload_stdout.log",
+          "available": false
+        },
+        "workload_stderr": {
+          "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_000/attempt_01/run_000/workload_stderr.log",
+          "available": false
+        }
+      },
+      "workload_timing": {
+        "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_000/attempt_01/run_000/workload_timing.txt",
+        "status": "unavailable",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_000/attempt_01/run_000/workload_timing.txt'"
+      },
+      "workload_execution_duration_s": null,
+      "workload_command_rc": null,
+      "runtime_work_unit_evidence": {
+        "count": null,
+        "source": "",
+        "exact": false,
+        "transport": "unavailable",
+        "evidence_path": "",
+        "status": "unavailable"
+      },
+      "runtime_work_unit_gate_status": "screening_only",
+      "runtime_work_unit_gate_reason": "exact_runtime_completed_work_units_missing",
+      "parquet_files": [
+        "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_000/attempt_01/run_000/collector_storage/fast_firmware.parquet"
+      ],
+      "parquet_file_sizes": {
+        "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_000/attempt_01/run_000/collector_storage/fast_firmware.parquet": 4
+      },
+      "postprocess_status": "collector_failed",
+      "legacy_window_comparison_status": "not_run_collector_failed",
+      "energy_efficiency_claim_eligible": false,
+      "final_energy_gate_status": "fail",
+      "final_energy_gate_reasons": [
+        "collector_rc_nonzero"
+      ],
+      "logical_repeat_index": 0,
+      "selected_repeat_attempt_index": 1,
+      "repeat_attempt_count": 2,
+      "repeat_retry_attempted": true,
+      "repeat_retry_recovered": false,
+      "repeat_attempt_history": [
+        {
+          "attempt_index": 0,
+          "selected": false,
+          "run_directory": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/run_000",
+          "final_energy_gate_status": "fail",
+          "window_method_comparison_status": "",
+          "retry_reasons": [
+            "first_sample_barrier_invalid"
+          ]
+        },
+        {
+          "attempt_index": 1,
+          "selected": false,
+          "run_directory": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_000/attempt_01/run_000",
+          "aggregate_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_000/attempt_01/energy_aggregate.json",
+          "aggregate_status": "acquisition_integrity_failed_no_valid_runs",
+          "final_energy_gate_status": "fail",
+          "window_method_comparison_status": "",
+          "retry_reasons": [
+            "first_sample_barrier_invalid"
+          ],
+          "accepted_for_logical_repeat": false,
+          "collector_reconnect_evidence": {
+            "requested_backoff_s": 5.0,
+            "elapsed_backoff_s": 5.000142758945003,
+            "cancelled": false,
+            "transport_policy": "fresh_collector_process_fresh_storage_reconnect_after_quiescence",
+            "logical_repeat_index": 0,
+            "retry_attempt_index": 1,
+            "trigger_reasons": [
+              "first_sample_barrier_invalid"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "run_index": 1,
+      "collector_run_id": "native_hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc:logical:001:retry:01",
+      "collector_window_id": "native_hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc:logical:001:retry:01:repeat:000",
+      "collector_cmd": [
+        "/home/kmika/.cargo/bin/urecs-data-collector",
+        "-s=/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_001/attempt_01/run_000/collector_storage",
+        "-d=61s",
+        "-b=5s",
+        "-e=5s",
+        "-c=/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_001/attempt_01/run_000/energy_command.sh",
+        "--run-id",
+        "native_hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc:logical:001:retry:01",
+        "--window-id",
+        "native_hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc:logical:001:retry:01:repeat:000",
+        "fast-firmware",
+        "--address=192.168.0.197",
+        "--data-port=3000",
+        "--channel=0",
+        "--sample-rate=2000"
+      ],
+      "collector_transport_session_policy": "fresh_collector_process_and_fresh_storage_per_physical_attempt",
+      "collector_recovery_before_start": null,
+      "storage_dir": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_001/attempt_01/run_000/collector_storage",
+      "measurement_suite_policy": "collector=int(duration+1), power_estimated=int(duration+2)",
+      "workload_duration_s": 60.0,
+      "collector_measurement_duration_s": 61.0,
+      "power_estimated_duration_s": 62.0,
+      "power_window_mode_configured": "trimmed",
+      "power_window_mode_requested": "trimmed",
+      "power_window_mode_effective_override": "",
+      "energy_window_requested": "command_window",
+      "runtime_work_units_required": false,
+      "command_window_alignment_required": false,
+      "legacy_window_comparison_requested": true,
+      "scientific_method_decision": "frozen_command_marker_primary_chapter4_shadow",
+      "scientific_primary_method_frozen": true,
+      "scientific_primary_method": "command_marker_window",
+      "scientific_shadow_method": "chapter4_legacy_window",
+      "candidate_method": "candidate_v263",
+      "candidate_role": "deprecated_alias_for_command_marker_primary",
+      "shadow_role": "same_trace_sensitivity_only",
+      "candidate_eligible_for_auto_switch": false,
+      "candidate_eligible_for_scientific_primary": false,
+      "energy_window_method_ab": {
+        "schema": "onnx-splitpoint/energy-window-method-ab-runtime",
+        "schema_version": 2,
+        "enabled": true,
+        "valid": true,
+        "primary_method": "command_marker_window",
+        "shadow_method": "chapter4_legacy_window",
+        "scientific_method_decision": "frozen_command_marker_primary_chapter4_shadow",
+        "scientific_primary_method": "command_marker_window",
+        "scientific_shadow_method": "chapter4_legacy_window",
+        "shadow_role": "same_trace_sensitivity_only",
+        "baseline_method": "chapter4_baseline",
+        "candidate_method": "candidate_v263",
+        "legacy_method_aliases": {
+          "candidate_v263": "command_marker_window",
+          "chapter4_baseline": "chapter4_legacy_window"
+        },
+        "candidate_role": "deprecated_alias_for_command_marker_primary",
+        "mode": "shadow",
+        "same_raw_capture_required": true,
+        "auto_switch": false,
+        "configured_auto_switch": false,
+        "requires_picoscope": false,
+        "smoke_repeats_required": 1,
+        "requested_run_count": 1,
+        "effective_run_count": 1,
+        "repeat_control": "collector_managed_ab_minimum",
+        "exact_run_count_requested": false,
+        "minimum_repeat_expansion_applied": false,
+        "candidate_eligible_for_auto_switch": false,
+        "candidate_eligible_for_scientific_primary": false
+      },
+      "technical_canonical_window_method": "collector_sample_marker_crop",
+      "window_method_validation_tier": "screening",
+      "energy_calibration_verification": {
+        "path": "",
+        "declared_sha256": "",
+        "declared_sha256_input": "",
+        "actual_sha256": "",
+        "verified": false,
+        "status": "missing",
+        "evidence_mode": "",
+        "runtime_fail_closed_required": false,
+        "inherited_content_verified": false,
+        "inherited_binding_verified": false,
+        "runtime_binding_id": "",
+        "runtime_binding_errors": []
+      },
+      "collector_expected_duration_s": 71.0,
+      "collector_timeout_s": 900.0,
+      "preflight_requested": true,
+      "preflight_evidence": {
+        "schema": "onnx-splitpoint/energy-preflight-evidence",
+        "schema_version": 1,
+        "requested": true,
+        "ok": true,
+        "status": "verified",
+        "cancelled": false,
+        "repeat_index": 0,
+        "nonce": "c2d4a63992912e1bb94999b0c0a9d41f16655271c15b549a15d5f46a682cc7e7",
+        "nonce_sha256": "80f4c3347ef216664f55da0753521d5d5c8a3ed1fed13777609703546c8b1cd0",
+        "command_template_sha256": "61b4f95387f6c0020e82ad69ae18f26d8b583c19765f465f81a625d1a7f4ca39",
+        "rendered_command_sha256": "253c85b7487be68b573b4ba2f18c0c84670e28711c8e0a82ed190cda4e4ca72e",
+        "workload_template_sha256": "63d7b6e4235c0cec60b6fd4981a8974d0e80365f9df0ae2c3f0588d6fa867b04",
+        "rendered_workload_sha256": "dc037a87a27e0ef825b7f3df6789d10caba74460b7683cf89dba4ccf970bdba6",
+        "command_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_001/attempt_01/run_000/preflight/preflight_command.sh",
+        "command_file_sha256": "56de04669b7d686c5422aa08178cd718426c49e02b0309bf3eec84d8497029bf",
+        "stdout_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_001/attempt_01/run_000/preflight/preflight_stdout.log",
+        "stdout_sha256": "2a06b5221ccaa3a9a33fb58716706aeefbca2b5cec875f2899c8ba9bd622b97f",
+        "stderr_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_001/attempt_01/run_000/preflight/preflight_stderr.log",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "attestation_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_001/attempt_01/run_000/preflight/preflight_attestation.json",
+        "runtime_attestation_path": "/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/.energy_replays/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/preflight_c2d4a63992912e1bb94999b0c0a9d41f16655271c15b549a15d5f46a682cc7e7.json",
+        "runtime_attestation_path_scope": "caller_supplied_runtime_host",
+        "attestation_file_sha256": "1df3ba114c259627fe81227268b795e7044637ed716895f379c85d5f400ddc4c",
+        "rc": 0,
+        "duration_s": 1.6049530506134033,
+        "started_at_unix_ns": 1787824552524912913,
+        "ended_at_unix_ns": 1787824554130086156,
+        "timeout_s": 900.0,
+        "expected_command_contract_sha256": "b4a9dc5882cc60c8196a9c6584f14707f3de88fb4c9cb1240b954608c76c8d1a",
+        "validation": {
+          "ok": true,
+          "status": "verified",
+          "reasons": [],
+          "schema": "onnx-splitpoint/energy-preflight-attestation",
+          "schema_version": 1,
+          "command_contract_sha256": "b4a9dc5882cc60c8196a9c6584f14707f3de88fb4c9cb1240b954608c76c8d1a",
+          "expected_command_contract_sha256": "b4a9dc5882cc60c8196a9c6584f14707f3de88fb4c9cb1240b954608c76c8d1a",
+          "created_at_unix_ns": 1787824553551424887,
+          "expires_at_unix_ns": 1787824853551424887,
+          "attestation_sha256": "ffb0080ee9313dc3c3fb4ec1fae0701c8346b207f80a5532edbc06f657a987a1",
+          "expected_attestation_sha256": "ffb0080ee9313dc3c3fb4ec1fae0701c8346b207f80a5532edbc06f657a987a1",
+          "max_age_s": 300.0
+        },
+        "collector_started": false
+      },
+      "preflight_status": "verified",
+      "status": "collector_failed",
+      "started_at": 1787824554.1371043,
+      "diagnostic_only": true,
+      "claim_eligible": false,
+      "scientific_claim_exclusion_reasons": [
+        "development_screening_energy_only"
+      ],
+      "collector_started": true,
+      "collector_started_at_unix_ns": 1787824554137438562,
+      "collector_rc": 1,
+      "collector_duration_s": 5.413275480270386,
+      "cancelled": false,
+      "ended_at": 1787824559.552281,
+      "collector_and_workload_log_diagnostics": {
+        "collector_stdout": {
+          "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_001/attempt_01/run_000/collector_stdout.log",
+          "available": true,
+          "bytes": 1567,
+          "sha256": "d8591d5c10afef5e4c84ecedfd9df9d97d7254332e0f5f68f0738bbf0b569f78",
+          "tail": "2026-08-27T09:55:54.152Z INFO  [urecs_data_collector] Arguments { storage_path: Some(\"/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_001/attempt_01/run_000/collector_storage\"), duration: Ok(61s), pre_duration: Ok(5s), post_duration: Ok(5s), command: Some(\"/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_001/attempt_01/run_000/energy_command.sh\"), run_id: Some(\"native_hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc:logical:001:retry:01\"), window_id: Some(\"native_hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc:logical:001:retry:01:repeat:000\"), sources: [FastFirmware { address: \"192.168.0.197\", data_port: 3000, channel: 0, sample_rate: 2000 }] }\n2026-08-27T09:55:54.153Z INFO  [urecs_data_collector] Starting measurement\n2026-08-27T09:55:59.446Z WARN  [urecs_data_collector::network_firmware_fast] Could not read from Socket, stopping recording\n2026-08-27T09:55:59.446Z INFO  [urecs_data_collector::network_firmware_fast] Finishing Fast Firmware thread\n"
+        },
+        "collector_stderr": {
+          "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_001/attempt_01/run_000/collector_stderr.log",
+          "available": true,
+          "bytes": 94,
+          "sha256": "f9a731bfc6fc4b32146dcc0d2e20023c89df15c21a0f8d03be984d0a461cfa59",
+          "tail": "Error: fast-firmware first-sample barrier failed: channel is empty and sending half is closed\n"
+        },
+        "workload_stdout": {
+          "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_001/attempt_01/run_000/workload_stdout.log",
+          "available": false
+        },
+        "workload_stderr": {
+          "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_001/attempt_01/run_000/workload_stderr.log",
+          "available": false
+        }
+      },
+      "workload_timing": {
+        "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_001/attempt_01/run_000/workload_timing.txt",
+        "status": "unavailable",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_001/attempt_01/run_000/workload_timing.txt'"
+      },
+      "workload_execution_duration_s": null,
+      "workload_command_rc": null,
+      "runtime_work_unit_evidence": {
+        "count": null,
+        "source": "",
+        "exact": false,
+        "transport": "unavailable",
+        "evidence_path": "",
+        "status": "unavailable"
+      },
+      "runtime_work_unit_gate_status": "screening_only",
+      "runtime_work_unit_gate_reason": "exact_runtime_completed_work_units_missing",
+      "parquet_files": [
+        "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_001/attempt_01/run_000/collector_storage/fast_firmware.parquet"
+      ],
+      "parquet_file_sizes": {
+        "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_001/attempt_01/run_000/collector_storage/fast_firmware.parquet": 4
+      },
+      "postprocess_status": "collector_failed",
+      "legacy_window_comparison_status": "not_run_collector_failed",
+      "energy_efficiency_claim_eligible": false,
+      "final_energy_gate_status": "fail",
+      "final_energy_gate_reasons": [
+        "collector_rc_nonzero"
+      ],
+      "logical_repeat_index": 1,
+      "selected_repeat_attempt_index": 1,
+      "repeat_attempt_count": 2,
+      "repeat_retry_attempted": true,
+      "repeat_retry_recovered": false,
+      "repeat_attempt_history": [
+        {
+          "attempt_index": 0,
+          "selected": false,
+          "run_directory": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/run_001",
+          "final_energy_gate_status": "fail",
+          "window_method_comparison_status": "",
+          "retry_reasons": [
+            "first_sample_barrier_invalid"
+          ]
+        },
+        {
+          "attempt_index": 1,
+          "selected": false,
+          "run_directory": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_001/attempt_01/run_000",
+          "aggregate_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_001/attempt_01/energy_aggregate.json",
+          "aggregate_status": "acquisition_integrity_failed_no_valid_runs",
+          "final_energy_gate_status": "fail",
+          "window_method_comparison_status": "",
+          "retry_reasons": [
+            "first_sample_barrier_invalid"
+          ],
+          "accepted_for_logical_repeat": false,
+          "collector_reconnect_evidence": {
+            "requested_backoff_s": 5.0,
+            "elapsed_backoff_s": 5.0001411370467395,
+            "cancelled": false,
+            "transport_policy": "fresh_collector_process_fresh_storage_reconnect_after_quiescence",
+            "logical_repeat_index": 1,
+            "retry_attempt_index": 1,
+            "trigger_reasons": [
+              "first_sample_barrier_invalid"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "run_index": 2,
+      "collector_run_id": "native_hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc:logical:002:retry:01",
+      "collector_window_id": "native_hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc:logical:002:retry:01:repeat:000",
+      "collector_cmd": [
+        "/home/kmika/.cargo/bin/urecs-data-collector",
+        "-s=/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_002/attempt_01/run_000/collector_storage",
+        "-d=61s",
+        "-b=5s",
+        "-e=5s",
+        "-c=/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_002/attempt_01/run_000/energy_command.sh",
+        "--run-id",
+        "native_hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc:logical:002:retry:01",
+        "--window-id",
+        "native_hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc:logical:002:retry:01:repeat:000",
+        "fast-firmware",
+        "--address=192.168.0.197",
+        "--data-port=3000",
+        "--channel=0",
+        "--sample-rate=2000"
+      ],
+      "collector_transport_session_policy": "fresh_collector_process_and_fresh_storage_per_physical_attempt",
+      "collector_recovery_before_start": null,
+      "storage_dir": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_002/attempt_01/run_000/collector_storage",
+      "measurement_suite_policy": "collector=int(duration+1), power_estimated=int(duration+2)",
+      "workload_duration_s": 60.0,
+      "collector_measurement_duration_s": 61.0,
+      "power_estimated_duration_s": 62.0,
+      "power_window_mode_configured": "trimmed",
+      "power_window_mode_requested": "trimmed",
+      "power_window_mode_effective_override": "",
+      "energy_window_requested": "command_window",
+      "runtime_work_units_required": false,
+      "command_window_alignment_required": false,
+      "legacy_window_comparison_requested": true,
+      "scientific_method_decision": "frozen_command_marker_primary_chapter4_shadow",
+      "scientific_primary_method_frozen": true,
+      "scientific_primary_method": "command_marker_window",
+      "scientific_shadow_method": "chapter4_legacy_window",
+      "candidate_method": "candidate_v263",
+      "candidate_role": "deprecated_alias_for_command_marker_primary",
+      "shadow_role": "same_trace_sensitivity_only",
+      "candidate_eligible_for_auto_switch": false,
+      "candidate_eligible_for_scientific_primary": false,
+      "energy_window_method_ab": {
+        "schema": "onnx-splitpoint/energy-window-method-ab-runtime",
+        "schema_version": 2,
+        "enabled": true,
+        "valid": true,
+        "primary_method": "command_marker_window",
+        "shadow_method": "chapter4_legacy_window",
+        "scientific_method_decision": "frozen_command_marker_primary_chapter4_shadow",
+        "scientific_primary_method": "command_marker_window",
+        "scientific_shadow_method": "chapter4_legacy_window",
+        "shadow_role": "same_trace_sensitivity_only",
+        "baseline_method": "chapter4_baseline",
+        "candidate_method": "candidate_v263",
+        "legacy_method_aliases": {
+          "candidate_v263": "command_marker_window",
+          "chapter4_baseline": "chapter4_legacy_window"
+        },
+        "candidate_role": "deprecated_alias_for_command_marker_primary",
+        "mode": "shadow",
+        "same_raw_capture_required": true,
+        "auto_switch": false,
+        "configured_auto_switch": false,
+        "requires_picoscope": false,
+        "smoke_repeats_required": 1,
+        "requested_run_count": 1,
+        "effective_run_count": 1,
+        "repeat_control": "collector_managed_ab_minimum",
+        "exact_run_count_requested": false,
+        "minimum_repeat_expansion_applied": false,
+        "candidate_eligible_for_auto_switch": false,
+        "candidate_eligible_for_scientific_primary": false
+      },
+      "technical_canonical_window_method": "collector_sample_marker_crop",
+      "window_method_validation_tier": "screening",
+      "energy_calibration_verification": {
+        "path": "",
+        "declared_sha256": "",
+        "declared_sha256_input": "",
+        "actual_sha256": "",
+        "verified": false,
+        "status": "missing",
+        "evidence_mode": "",
+        "runtime_fail_closed_required": false,
+        "inherited_content_verified": false,
+        "inherited_binding_verified": false,
+        "runtime_binding_id": "",
+        "runtime_binding_errors": []
+      },
+      "collector_expected_duration_s": 71.0,
+      "collector_timeout_s": 900.0,
+      "preflight_requested": true,
+      "preflight_evidence": {
+        "schema": "onnx-splitpoint/energy-preflight-evidence",
+        "schema_version": 1,
+        "requested": true,
+        "ok": true,
+        "status": "verified",
+        "cancelled": false,
+        "repeat_index": 0,
+        "nonce": "691310d688f684c11f882a0ddc9e4a232b4283e4bb489012e9a5b1b252274f81",
+        "nonce_sha256": "1b19a1777d5bf15a55b3d64d31bc4ca240f501aae8023d0a70719b79176a4d7a",
+        "command_template_sha256": "61b4f95387f6c0020e82ad69ae18f26d8b583c19765f465f81a625d1a7f4ca39",
+        "rendered_command_sha256": "9e790292f22e2397fed4429eed3567a149064d27a82d932009d7c287d1fc9724",
+        "workload_template_sha256": "63d7b6e4235c0cec60b6fd4981a8974d0e80365f9df0ae2c3f0588d6fa867b04",
+        "rendered_workload_sha256": "960ad2ad510a22abf409879d59888b8ed8c25ad355ad503894c14eede5da0918",
+        "command_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_002/attempt_01/run_000/preflight/preflight_command.sh",
+        "command_file_sha256": "741de26bd9c89cf09f6383589aad4873636c81e9b7f5b80525a7acbce30ec605",
+        "stdout_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_002/attempt_01/run_000/preflight/preflight_stdout.log",
+        "stdout_sha256": "2f62c61dc58452ad4dbed9bcddbc44037cf3ec64d83301ed48fb988d52d3ed29",
+        "stderr_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_002/attempt_01/run_000/preflight/preflight_stderr.log",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "attestation_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_002/attempt_01/run_000/preflight/preflight_attestation.json",
+        "runtime_attestation_path": "/home/nx/native_fifo_evalsets/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/.energy_replays/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/preflight_691310d688f684c11f882a0ddc9e4a232b4283e4bb489012e9a5b1b252274f81.json",
+        "runtime_attestation_path_scope": "caller_supplied_runtime_host",
+        "attestation_file_sha256": "49aeeab1a688e806f7939df59cc7329e5f76d59c3fc8aa6b16dfc4a207c4ab8c",
+        "rc": 0,
+        "duration_s": 1.6050288677215576,
+        "started_at_unix_ns": 1787824564813722087,
+        "ended_at_unix_ns": 1787824566418926872,
+        "timeout_s": 900.0,
+        "expected_command_contract_sha256": "b4a9dc5882cc60c8196a9c6584f14707f3de88fb4c9cb1240b954608c76c8d1a",
+        "validation": {
+          "ok": true,
+          "status": "verified",
+          "reasons": [],
+          "schema": "onnx-splitpoint/energy-preflight-attestation",
+          "schema_version": 1,
+          "command_contract_sha256": "b4a9dc5882cc60c8196a9c6584f14707f3de88fb4c9cb1240b954608c76c8d1a",
+          "expected_command_contract_sha256": "b4a9dc5882cc60c8196a9c6584f14707f3de88fb4c9cb1240b954608c76c8d1a",
+          "created_at_unix_ns": 1787824565843921714,
+          "expires_at_unix_ns": 1787824865843921714,
+          "attestation_sha256": "0799a4b22f333cd25b6e392be64e2a132ce862ec65f60d4bee02026141cffd1e",
+          "expected_attestation_sha256": "0799a4b22f333cd25b6e392be64e2a132ce862ec65f60d4bee02026141cffd1e",
+          "max_age_s": 300.0
+        },
+        "collector_started": false
+      },
+      "preflight_status": "verified",
+      "status": "collector_failed",
+      "started_at": 1787824566.4216511,
+      "diagnostic_only": true,
+      "claim_eligible": false,
+      "scientific_claim_exclusion_reasons": [
+        "development_screening_energy_only"
+      ],
+      "collector_started": true,
+      "collector_started_at_unix_ns": 1787824566421766768,
+      "collector_rc": 1,
+      "collector_duration_s": 5.411245822906494,
+      "cancelled": false,
+      "ended_at": 1787824571.8336623,
+      "collector_and_workload_log_diagnostics": {
+        "collector_stdout": {
+          "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_002/attempt_01/run_000/collector_stdout.log",
+          "available": true,
+          "bytes": 1567,
+          "sha256": "ab73a20cfc34a8b1d6eb6cf938467c2fa8bd361609e7f37f3f0ae44587a7e421",
+          "tail": "2026-08-27T09:56:06.425Z INFO  [urecs_data_collector] Arguments { storage_path: Some(\"/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_002/attempt_01/run_000/collector_storage\"), duration: Ok(61s), pre_duration: Ok(5s), post_duration: Ok(5s), command: Some(\"/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_002/attempt_01/run_000/energy_command.sh\"), run_id: Some(\"native_hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc:logical:002:retry:01\"), window_id: Some(\"native_hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc:logical:002:retry:01:repeat:000\"), sources: [FastFirmware { address: \"192.168.0.197\", data_port: 3000, channel: 0, sample_rate: 2000 }] }\n2026-08-27T09:56:06.426Z INFO  [urecs_data_collector] Starting measurement\n2026-08-27T09:56:11.734Z WARN  [urecs_data_collector::network_firmware_fast] Could not read from Socket, stopping recording\n2026-08-27T09:56:11.734Z INFO  [urecs_data_collector::network_firmware_fast] Finishing Fast Firmware thread\n"
+        },
+        "collector_stderr": {
+          "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_002/attempt_01/run_000/collector_stderr.log",
+          "available": true,
+          "bytes": 94,
+          "sha256": "f9a731bfc6fc4b32146dcc0d2e20023c89df15c21a0f8d03be984d0a461cfa59",
+          "tail": "Error: fast-firmware first-sample barrier failed: channel is empty and sending half is closed\n"
+        },
+        "workload_stdout": {
+          "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_002/attempt_01/run_000/workload_stdout.log",
+          "available": false
+        },
+        "workload_stderr": {
+          "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_002/attempt_01/run_000/workload_stderr.log",
+          "available": false
+        }
+      },
+      "workload_timing": {
+        "path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_002/attempt_01/run_000/workload_timing.txt",
+        "status": "unavailable",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_002/attempt_01/run_000/workload_timing.txt'"
+      },
+      "workload_execution_duration_s": null,
+      "workload_command_rc": null,
+      "runtime_work_unit_evidence": {
+        "count": null,
+        "source": "",
+        "exact": false,
+        "transport": "unavailable",
+        "evidence_path": "",
+        "status": "unavailable"
+      },
+      "runtime_work_unit_gate_status": "screening_only",
+      "runtime_work_unit_gate_reason": "exact_runtime_completed_work_units_missing",
+      "parquet_files": [
+        "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_002/attempt_01/run_000/collector_storage/fast_firmware.parquet"
+      ],
+      "parquet_file_sizes": {
+        "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_002/attempt_01/run_000/collector_storage/fast_firmware.parquet": 4
+      },
+      "postprocess_status": "collector_failed",
+      "legacy_window_comparison_status": "not_run_collector_failed",
+      "energy_efficiency_claim_eligible": false,
+      "final_energy_gate_status": "fail",
+      "final_energy_gate_reasons": [
+        "collector_rc_nonzero"
+      ],
+      "logical_repeat_index": 2,
+      "selected_repeat_attempt_index": 1,
+      "repeat_attempt_count": 2,
+      "repeat_retry_attempted": true,
+      "repeat_retry_recovered": false,
+      "repeat_attempt_history": [
+        {
+          "attempt_index": 0,
+          "selected": false,
+          "run_directory": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/run_002",
+          "final_energy_gate_status": "fail",
+          "window_method_comparison_status": "",
+          "retry_reasons": [
+            "first_sample_barrier_invalid"
+          ]
+        },
+        {
+          "attempt_index": 1,
+          "selected": false,
+          "run_directory": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_002/attempt_01/run_000",
+          "aggregate_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251/reports/native_energy_measurements/measurements/hailo8_to_trt__yolov7_paper__b066__orin_nx_hailo8_01__b4a9dc5882cc/plan_30671fc2278e429f908b23c535f15665/attempt_371677f5b7c94cd699c8d8c041ce10cd/repeat_retry_attempts/repeat_002/attempt_01/energy_aggregate.json",
+          "aggregate_status": "acquisition_integrity_failed_no_valid_runs",
+          "final_energy_gate_status": "fail",
+          "window_method_comparison_status": "",
+          "retry_reasons": [
+            "first_sample_barrier_invalid"
+          ],
+          "accepted_for_logical_repeat": false,
+          "collector_reconnect_evidence": {
+            "requested_backoff_s": 5.0,
+            "elapsed_backoff_s": 5.000143897952512,
+            "cancelled": false,
+            "transport_policy": "fresh_collector_process_fresh_storage_reconnect_after_quiescence",
+            "logical_repeat_index": 2,
+            "retry_attempt_index": 1,
+            "trigger_reasons": [
+              "first_sample_barrier_invalid"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "diagnostic_only": true,
+  "claim_eligible": false,
+  "scientific_claim_exclusion_reasons": [
+    "development_screening_energy_only"
+  ]
+}

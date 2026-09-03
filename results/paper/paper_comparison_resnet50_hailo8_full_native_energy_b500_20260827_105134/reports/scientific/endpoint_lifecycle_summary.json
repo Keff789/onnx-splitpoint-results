@@ -1,0 +1,67 @@
+{
+  "adapter": {
+    "candidate_plan_paths": {
+      "resnet50": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/models/resnet50/analysis/final_candidate_plan.json"
+    },
+    "constructed_planned_endpoint_count": 3,
+    "effective_execution_plan_path": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/effective_execution_plan.json",
+    "errors": [],
+    "evidence_completeness_reasons": [],
+    "evidence_completeness_status": "complete",
+    "expected_count_matches": true,
+    "expected_generic_result_rows_total": 3,
+    "generation_decision_paths": {
+      "resnet50": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134/models/resnet50/benchmark_set/generation_decisions.json"
+    },
+    "mapped_run_profiles": [
+      "ort_tensorrt",
+      "hailo8"
+    ],
+    "measurement_completeness_status": "complete",
+    "profile_supplied": true,
+    "projected_normalized_row_count": 4,
+    "read_only": true,
+    "run_dir": "/home/kmika/Models/EvaluationRuns/paper_comparison_resnet50_hailo8_full_native_energy_b500_20260827_105134",
+    "run_profile_source": "effective_generic_run_ids",
+    "runtime_failure_diagnostics": [],
+    "runtime_failure_evidence": [],
+    "runtime_failure_evidence_count": 0,
+    "schema": "onnx-splitpoint/evalrun-endpoint-lifecycle-adapter",
+    "schema_version": 1,
+    "status": "ok",
+    "unknown_run_profiles": [],
+    "unprojected_normalized_row_count": 0,
+    "unprojected_normalized_rows": []
+  },
+  "audit_coverage": {
+    "resnet50": {
+      "missing_payload_case_ids": [],
+      "missing_valid_measurement_case_ids": [],
+      "observed": 0,
+      "payload_observed": 0,
+      "planned": 0,
+      "valid_observed_any_backend": 0
+    }
+  },
+  "diagnostics": {
+    "invalid_evidence": [],
+    "unmatched_evidence_count": 0,
+    "unmatched_evidence_identities": []
+  },
+  "invalid_measurement_count": 0,
+  "invalid_measurement_terminal": 0,
+  "materialized": 3,
+  "measured": 3,
+  "measurement_payload_present": 3,
+  "missing_measurement_payload_count": 0,
+  "nonmeasured": 0,
+  "nonterminal": 0,
+  "payload_missing": 0,
+  "planned": 3,
+  "schema": "onnx-splitpoint/endpoint-lifecycle-summary",
+  "schema_version": 1,
+  "terminal": 3,
+  "valid_measurement": 3,
+  "valid_measurement_count": 3,
+  "without_valid_measurement_count": 0
+}

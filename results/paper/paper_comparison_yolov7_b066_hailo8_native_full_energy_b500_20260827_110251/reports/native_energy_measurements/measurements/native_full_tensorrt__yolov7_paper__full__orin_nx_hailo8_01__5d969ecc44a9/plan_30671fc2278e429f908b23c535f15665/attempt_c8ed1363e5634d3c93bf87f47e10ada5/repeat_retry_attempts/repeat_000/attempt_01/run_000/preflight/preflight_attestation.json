@@ -1,0 +1,32 @@
+{
+  "artifact_verification_status": "pass",
+  "attestation_sha256": "b65437df8c309fd6fdbe0cb18c0e2af7c102bb6928bffdd6a910048fc6d16e1b",
+  "command_contract_sha256": "5d969ecc44a9299a273680c44950ed60073f88715175438f42054fca369497d7",
+  "created_at_unix_ns": 1787824676918382510,
+  "expires_at_unix_ns": 1787824976918382510,
+  "host": "nx",
+  "nonce": "927d34f59026b4ac4b0222b22573046fe8d6a1a582595afe74a091093c69f19b",
+  "ok": true,
+  "preflight_scope": "native_full_energy_hotloop_all_heavy_hashes",
+  "runner_sha256": "54b323c1dd608f511856748c2171450f7384893072385ffd7b7c259d1013026f",
+  "schema": "onnx-splitpoint/energy-preflight-attestation",
+  "schema_version": 1,
+  "verified_artifact_sha256": {
+    "build_onnx": "7a13e66f91047cce0e251c05f64159646847e842af31d60441c63dcdfad7825d",
+    "command_python_executable": "7b13b22842816e9accd853f2c752aab43acf2ef6e16f48376b2f61c74c6c614b",
+    "engine": "b3a2bec0720e6ce9312fc1aa13f75789aecbc52a35fad334a33204d4d7100dbc",
+    "engine_build_receipt": "cbafbb54c0e748db3dcbbf152c7757360b4da7900e0a6ab9cfd77d95bd57dca9",
+    "frozen_postprocess_harness_base": "938b3713f32e412dd1f57fcc07a397fa1f3b26ed30afbc945d22f1bb082db06c",
+    "frozen_postprocess_native_detection_postprocess": "e1d454faa35fa1a8d1299ce88a9ca1729edab3d6d9f5b4aec7f9a4bccd7e07a6",
+    "frozen_postprocess_yolo_harness": "31657e2717a8cb6cfda53e7de8e06b7b2286ecb430070811546fdec65327a17a",
+    "hotloop_runner": "e0837192fec514261450b1fd05e893337ac6f73c6703a1f7e34cfa945108da1a",
+    "input_manifest": "9f7ae2f483775420948bd69423d9044e2ead5d106e94cb17f58a9f0ed677fdd8",
+    "performance_report": "9865d55aed3e6929a20c8ab96b5bd9075dd6737b45c707e177a9ccb0e74f2d39",
+    "runtime_input_tensor": "d5adcba5ea6e5f4fbe18f62d2f2e70b11cd790953f491db8f17fd88175cca463",
+    "runtime_python": "7b13b22842816e9accd853f2c752aab43acf2ef6e16f48376b2f61c74c6c614b",
+    "source_onnx": "7a13e66f91047cce0e251c05f64159646847e842af31d60441c63dcdfad7825d",
+    "trtexec": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4"
+  },
+  "verified_input_image_sha256": "a4cd7f45ac1ce27eaafb254b23af7c0b18a064be08870ceaaf03b2147f2ce550",
+  "workload_kind": "tensorrt_full_completed_task_hotloop"
+}

@@ -1,0 +1,54 @@
+# Local collection and review state
+.collection-work/
+inventory/*.tmp
+inventory/private-review-*.txt
+
+# Python/editor noise
+__pycache__/
+*.py[cod]
+*.swp
+*.bak
+*~
+
+# Models, compiled accelerator artefacts and raw tensors
+*.onnx
+*.pt
+*.hef
+*.engine
+*.plan
+*.dxm
+*.bin
+*.npy
+*.npz
+*.prof
+*.o
+*.so
+*.pid
+*.lock
+**/build/
+**/CMakeFiles/
+**/_onnx_splitpoint_cache/
+**/BackendArtifacts/
+**/SplitNetworks/
+**/BenchmarkSets/
+**/RemoteBenchmarkRuns/
+**/raw_outputs/
+
+# Archives belong in the separate raw archive or GitHub Releases
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.tar.zst
+
+# Potential credential material
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+
+# OS metadata
+.DS_Store
+Thumbs.db

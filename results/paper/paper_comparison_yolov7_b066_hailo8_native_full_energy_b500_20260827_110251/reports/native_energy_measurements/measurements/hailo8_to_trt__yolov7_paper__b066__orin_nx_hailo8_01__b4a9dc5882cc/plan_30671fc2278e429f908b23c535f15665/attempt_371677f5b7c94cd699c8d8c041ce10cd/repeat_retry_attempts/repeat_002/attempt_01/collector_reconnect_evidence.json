@@ -1,0 +1,11 @@
+{
+  "requested_backoff_s": 5.0,
+  "elapsed_backoff_s": 5.000143897952512,
+  "cancelled": false,
+  "transport_policy": "fresh_collector_process_fresh_storage_reconnect_after_quiescence",
+  "logical_repeat_index": 2,
+  "retry_attempt_index": 1,
+  "trigger_reasons": [
+    "first_sample_barrier_invalid"
+  ]
+}
