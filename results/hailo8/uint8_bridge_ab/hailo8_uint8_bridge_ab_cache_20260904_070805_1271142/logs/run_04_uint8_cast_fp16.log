@@ -1,0 +1,5 @@
+[native-fifo][hailo] input_shape=640x640x3 input_frame_size=1228800 output_frame_size=1638400
+[native-fifo][trt] input=/model.4/cv2/act/Mul_output_0 dtype=uint8 bytes=1638400
+[native-fifo] frames=1000 warmup=100 duration_s=0 queue_depth=3
+[native-fifo] pre=0.000523762 ms p1=2.08272 ms handoff=0.202833 ms p2_run=4.54154 ms
+[native-fifo] p1_thread=2.08324 ms p2_thread=4.74437 ms paper_fps=210.776 fps_makespan=210.494

@@ -1,0 +1,1035 @@
+{
+  "schema": "onnx-splitpoint/hailo8-uint8-cast-vs-dequant-ab",
+  "schema_version": 2,
+  "measurement_status": "PASS",
+  "measurement_kind": "new_remeasurement_not_exact_historical_reproduction",
+  "comparison_scope": "serial_cpp_pipeline_performance_diagnostic_not_quality_equivalence",
+  "scientific_quality_comparison": false,
+  "started_utc": "2026-09-04T07:19:10Z",
+  "finished_utc": "2026-09-04T07:20:36Z",
+  "identity": {
+    "model_id": "yolo26s",
+    "case_id": "b038",
+    "setup_id": "orin_nx_hailo8_01",
+    "hardware": "Hailo-8 plus Jetson Orin NX TensorRT",
+    "endpoint": "p2_output"
+  },
+  "protocol": {
+    "serial_execution": true,
+    "additional_parallelism": false,
+    "sequence": [
+      "uint8_cast_fp16",
+      "uint8_dequant_fp16",
+      "uint8_dequant_fp16",
+      "uint8_cast_fp16",
+      "uint8_dequant_fp16",
+      "uint8_cast_fp16",
+      "uint8_cast_fp16",
+      "uint8_dequant_fp16"
+    ],
+    "frames_per_run": 1000,
+    "warmup_frames_per_run": 100,
+    "runs_per_variant": 4,
+    "queue_depth": 3,
+    "pre_measurement_stabilize_seconds": 15.0,
+    "hailo_format": "uint8",
+    "preprocess": "letterbox_rgb_uint8_pad_114",
+    "prepared_feed": "same_exact_image_prepared_outside_counted_loop",
+    "copy_outputs": true,
+    "input_kind": "synthetic_performance_input",
+    "dequant_contract": {
+      "scale": 0.027023514732718468,
+      "zero_point": 11.0,
+      "boundary_layout": "memory_nhwc_to_nchw"
+    },
+    "runtime_boundary_contract": {
+      "output_count": 1,
+      "output_name": "yolo26s_part1_b38/conv11",
+      "output_bytes": 1638400,
+      "runtime_verified_in_every_run": true
+    }
+  },
+  "fairness_checks": {
+    "status": "PASS",
+    "same_benchmark_set": true,
+    "same_case": true,
+    "same_source_part2": true,
+    "same_hef": true,
+    "same_input_image": true,
+    "same_native_executable": true,
+    "same_runtime_parameters": true,
+    "engines_intentionally_different": true,
+    "note": "The intended A/B difference is the TensorRT bridge graph: the dequant arm includes dequantization plus HWC-to-NCHW layout conversion."
+  },
+  "artifacts": {
+    "benchmark_set": "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set",
+    "source_part2": {
+      "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt/yolo26s-f5342b1cdbe0343f/native_split_quality/orin_nx_hailo8_01/yolo26s/b038/hailo8_to_trt/2f23be01e394bcda6679e87b833f8c2f0aed9c804ca86fff3fa7195c7a4657bb/benchmark_set/b038/source_part2.onnx",
+      "size_bytes": 37097082,
+      "mtime_ns": 0
+    },
+    "hef": {
+      "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt/yolo26s-f5342b1cdbe0343f/native_split_quality/orin_nx_hailo8_01/yolo26s/b038/hailo8_to_trt/2f23be01e394bcda6679e87b833f8c2f0aed9c804ca86fff3fa7195c7a4657bb/part1.hef",
+      "size_bytes": 2689464,
+      "mtime_ns": 0
+    },
+    "input_image": {
+      "path": "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/synthetic_performance_input_640x640.ppm",
+      "size_bytes": 1228815,
+      "mtime_ns": 1788505687705911989
+    },
+    "runner_source": {
+      "path": "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/tool/native_hailo_trt_fifo_from_benchmarkset.py",
+      "size_bytes": 221782,
+      "mtime_ns": 315529200000000000
+    },
+    "native_executable": {
+      "path": "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/native_runtime/build/split_native_hailo_trt_fifo",
+      "size_bytes": 135144,
+      "mtime_ns": 1788506360445591045
+    },
+    "engines": {
+      "uint8_cast_fp16": {
+        "path": "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/part2_uint8_cast_fp16.engine",
+        "size_bytes": 21744700,
+        "mtime_ns": 1788506015297487869
+      },
+      "uint8_dequant_fp16": {
+        "path": "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+        "size_bytes": 21432652,
+        "mtime_ns": 1788506346805110324
+      }
+    },
+    "bridge_contracts": {
+      "uint8_cast_fp16": {
+        "schema": "onnx-splitpoint/uint8-cast-bridge",
+        "input_name": "/model.4/cv2/act/Mul_output_0",
+        "input_dtype": "UINT8",
+        "source": "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/b038/source_part2.onnx",
+        "scale": null,
+        "zero_point": null,
+        "params_source": null,
+        "boundary_layout": null
+      },
+      "uint8_dequant_fp16": {
+        "schema": "onnx-splitpoint/uint8-dequant-bridge",
+        "input_name": "/model.4/cv2/act/Mul_output_0",
+        "input_dtype": "UINT8",
+        "source": "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/b038/source_part2.onnx",
+        "scale": 0.027023514732718468,
+        "zero_point": 11.0,
+        "params_source": "explicit",
+        "boundary_layout": {
+          "applied": true,
+          "effective": "memory_nhwc_to_nchw",
+          "memory_shape": [
+            1,
+            80,
+            80,
+            256
+          ],
+          "output": "/model.4/cv2/act/Mul_output_0__boundary_to_nchw",
+          "perm": [
+            0,
+            3,
+            1,
+            2
+          ],
+          "requested": "memory_nhwc_to_nchw"
+        }
+      }
+    }
+  },
+  "variants": {
+    "uint8_cast_fp16": {
+      "valid_runs": 4,
+      "quality_eligible": false,
+      "measurement_quality_qualified": false,
+      "quality_note": "diagnostic_only_raw_uint8_cast_omits_dequantization_and_layout_transform",
+      "quality_revalidated_by_this_ab": false,
+      "metrics": {
+        "fps_makespan": {
+          "median": 211.1664715,
+          "mean": 211.52113925,
+          "min": 210.493571,
+          "max": 213.258043,
+          "population_stdev": 1.0430667925397565
+        },
+        "paper_equivalent_fps": {
+          "median": 211.4596555,
+          "mean": 211.81686,
+          "min": 210.775978,
+          "max": 213.572151,
+          "population_stdev": 1.0549454087830752
+        },
+        "paper_equivalent_cycle_ms": {
+          "median": 4.729036499999999,
+          "mean": 4.72117625,
+          "min": 4.682258,
+          "max": 4.744374,
+          "population_stdev": 0.02341112107925407
+        },
+        "preprocess_ms": {
+          "median": 0.0005250000000000001,
+          "mean": 0.00053075,
+          "min": 0.000523,
+          "max": 0.00055,
+          "population_stdev": 1.116635571706365e-05
+        },
+        "p1_ms": {
+          "median": 2.056368,
+          "mean": 2.0515635,
+          "min": 2.010801,
+          "max": 2.082717,
+          "population_stdev": 0.030767863798938026
+        },
+        "handoff_ms": {
+          "median": 0.1790285,
+          "mean": 0.1752975,
+          "min": 0.1403,
+          "max": 0.202833,
+          "population_stdev": 0.025754408015910602
+        },
+        "trt_input_copy_ms": {
+          "median": 0.1790285,
+          "mean": 0.1752975,
+          "min": 0.1403,
+          "max": 0.202833,
+          "population_stdev": 0.025754408015910602
+        },
+        "p2_run_ms": {
+          "median": 4.54175,
+          "mean": 4.545879,
+          "min": 4.534915,
+          "max": 4.565101,
+          "population_stdev": 0.011444204035231293
+        },
+        "p1_thread_ms": {
+          "median": 2.056892,
+          "mean": 2.052094,
+          "min": 2.011351,
+          "max": 2.083241,
+          "population_stdev": 0.030758870533555138
+        },
+        "p2_thread_ms": {
+          "median": 4.729036499999999,
+          "mean": 4.72117625,
+          "min": 4.682258,
+          "max": 4.744374,
+          "population_stdev": 0.02341112107925407
+        },
+        "makespan_ms": {
+          "median": 4735.6017475,
+          "mean": 4727.7743265,
+          "min": 4689.154903,
+          "max": 4750.738908,
+          "population_stdev": 23.212451202946436
+        },
+        "single_latency_model_ms": {
+          "median": 6.785928,
+          "mean": 6.77327,
+          "min": 6.693609,
+          "max": 6.827615,
+          "population_stdev": 0.05246461010052373
+        }
+      }
+    },
+    "uint8_dequant_fp16": {
+      "valid_runs": 4,
+      "quality_eligible": true,
+      "measurement_quality_qualified": false,
+      "quality_note": "matches_the_preserved_cache_dequant_and_layout_runtime_contract",
+      "quality_revalidated_by_this_ab": false,
+      "metrics": {
+        "fps_makespan": {
+          "median": 213.06424800000002,
+          "mean": 213.026327,
+          "min": 211.704682,
+          "max": 214.27213,
+          "population_stdev": 1.1533695675935798
+        },
+        "paper_equivalent_fps": {
+          "median": 213.359936,
+          "mean": 213.33130925,
+          "min": 211.988418,
+          "max": 214.616947,
+          "population_stdev": 1.1789974068233544
+        },
+        "paper_equivalent_cycle_ms": {
+          "median": 4.6870235,
+          "mean": 4.6876875,
+          "min": 4.659464,
+          "max": 4.717239,
+          "population_stdev": 0.02590977088378061
+        },
+        "preprocess_ms": {
+          "median": 0.0005455,
+          "mean": 0.0005305,
+          "min": 0.000449,
+          "max": 0.000582,
+          "population_stdev": 5.254759747124507e-05
+        },
+        "p1_ms": {
+          "median": 2.0392665,
+          "mean": 2.03671275,
+          "min": 1.991214,
+          "max": 2.077104,
+          "population_stdev": 0.036948816999837694
+        },
+        "handoff_ms": {
+          "median": 0.16376200000000002,
+          "mean": 0.16747375,
+          "min": 0.137351,
+          "max": 0.20502,
+          "population_stdev": 0.029918620709977594
+        },
+        "trt_input_copy_ms": {
+          "median": 0.16376200000000002,
+          "mean": 0.16747375,
+          "min": 0.137351,
+          "max": 0.20502,
+          "population_stdev": 0.029918620709977594
+        },
+        "p2_run_ms": {
+          "median": 4.5238555,
+          "mean": 4.52021375,
+          "min": 4.504526,
+          "max": 4.528618,
+          "population_stdev": 0.009345242328987306
+        },
+        "p1_thread_ms": {
+          "median": 2.0398120000000004,
+          "mean": 2.03724325,
+          "min": 1.991663,
+          "max": 2.077686,
+          "population_stdev": 0.03697832888581498
+        },
+        "p2_thread_ms": {
+          "median": 4.6870235,
+          "mean": 4.6876875,
+          "min": 4.659464,
+          "max": 4.717239,
+          "population_stdev": 0.02590977088378061
+        },
+        "makespan_ms": {
+          "median": 4693.524377,
+          "mean": 4694.393092249999,
+          "min": 4666.962524,
+          "max": 4723.561091,
+          "population_stdev": 25.419756364652034
+        },
+        "single_latency_model_ms": {
+          "median": 6.730682,
+          "mean": 6.72493125,
+          "min": 6.651128,
+          "max": 6.787233,
+          "population_stdev": 0.06253479300107655
+        }
+      }
+    }
+  },
+  "comparison_dequant_vs_cast": {
+    "fps_makespan": {
+      "cast_median": 211.1664715,
+      "dequant_median": 213.06424800000002,
+      "dequant_minus_cast": 1.8977765000000204,
+      "dequant_over_cast": 1.0089871109107396,
+      "dequant_percent_change": 0.898711091073956
+    },
+    "paper_equivalent_fps": {
+      "cast_median": 211.4596555,
+      "dequant_median": 213.359936,
+      "dequant_minus_cast": 1.900280500000008,
+      "dequant_over_cast": 1.0089864919883027,
+      "dequant_percent_change": 0.8986491988302703
+    },
+    "paper_equivalent_cycle_ms": {
+      "cast_median": 4.729036499999999,
+      "dequant_median": 4.6870235,
+      "dequant_minus_cast": -0.042012999999999856,
+      "dequant_over_cast": 0.9911159493059527,
+      "dequant_percent_change": -0.8884050694047296
+    },
+    "preprocess_ms": {
+      "cast_median": 0.0005250000000000001,
+      "dequant_median": 0.0005455,
+      "dequant_minus_cast": 2.0499999999999902e-05,
+      "dequant_over_cast": 1.0390476190476188,
+      "dequant_percent_change": 3.9047619047618776
+    },
+    "p1_ms": {
+      "cast_median": 2.056368,
+      "dequant_median": 2.0392665,
+      "dequant_minus_cast": -0.01710149999999988,
+      "dequant_over_cast": 0.991683638337107,
+      "dequant_percent_change": -0.8316361662892957
+    },
+    "handoff_ms": {
+      "cast_median": 0.1790285,
+      "dequant_median": 0.16376200000000002,
+      "dequant_minus_cast": -0.015266499999999988,
+      "dequant_over_cast": 0.9147258676691142,
+      "dequant_percent_change": -8.527413233088577
+    },
+    "trt_input_copy_ms": {
+      "cast_median": 0.1790285,
+      "dequant_median": 0.16376200000000002,
+      "dequant_minus_cast": -0.015266499999999988,
+      "dequant_over_cast": 0.9147258676691142,
+      "dequant_percent_change": -8.527413233088577
+    },
+    "p2_run_ms": {
+      "cast_median": 4.54175,
+      "dequant_median": 4.5238555,
+      "dequant_minus_cast": -0.01789450000000059,
+      "dequant_over_cast": 0.9960599988991027,
+      "dequant_percent_change": -0.3940001100897317
+    },
+    "p1_thread_ms": {
+      "cast_median": 2.056892,
+      "dequant_median": 2.0398120000000004,
+      "dequant_minus_cast": -0.01707999999999954,
+      "dequant_over_cast": 0.9916962096211179,
+      "dequant_percent_change": -0.830379037888207
+    },
+    "p2_thread_ms": {
+      "cast_median": 4.729036499999999,
+      "dequant_median": 4.6870235,
+      "dequant_minus_cast": -0.042012999999999856,
+      "dequant_over_cast": 0.9911159493059527,
+      "dequant_percent_change": -0.8884050694047296
+    },
+    "makespan_ms": {
+      "cast_median": 4735.6017475,
+      "dequant_median": 4693.524377,
+      "dequant_minus_cast": -42.07737050000014,
+      "dequant_over_cast": 0.9911146729088414,
+      "dequant_percent_change": -0.8885327091158635
+    },
+    "single_latency_model_ms": {
+      "cast_median": 6.785928,
+      "dequant_median": 6.730682,
+      "dequant_minus_cast": -0.05524600000000035,
+      "dequant_over_cast": 0.9918587406173481,
+      "dequant_percent_change": -0.8141259382651866
+    }
+  },
+  "runs": [
+    {
+      "order": 1,
+      "variant": "uint8_cast_fp16",
+      "raw_result": "raw/run_01_uint8_cast_fp16.json",
+      "metrics": {
+        "fps_makespan": 211.048905,
+        "paper_equivalent_fps": 211.333229,
+        "paper_equivalent_cycle_ms": 4.731864,
+        "preprocess_ms": 0.000523,
+        "p1_ms": 2.079909,
+        "handoff_ms": 0.196949,
+        "trt_input_copy_ms": 0.196949,
+        "p2_run_ms": 4.534915,
+        "p1_thread_ms": 2.080432,
+        "p2_thread_ms": 4.731864,
+        "makespan_ms": 4738.238284,
+        "single_latency_model_ms": 6.812295
+      },
+      "command": [
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/native_runtime/build/split_native_hailo_trt_fifo",
+        "--hef",
+        "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt/yolo26s-f5342b1cdbe0343f/native_split_quality/orin_nx_hailo8_01/yolo26s/b038/hailo8_to_trt/2f23be01e394bcda6679e87b833f8c2f0aed9c804ca86fff3fa7195c7a4657bb/part1.hef",
+        "--engine",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/part2_uint8_cast_fp16.engine",
+        "--image",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/synthetic_performance_input_640x640.ppm",
+        "--out",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/evidence/raw/run_01_uint8_cast_fp16.json",
+        "--frames",
+        "1000",
+        "--warmup",
+        "100",
+        "--queue-depth",
+        "3",
+        "--hailo-format",
+        "uint8",
+        "--task",
+        "detection",
+        "--preprocess-mode",
+        "letterbox",
+        "--copy-outputs",
+        "1",
+        "--dump-outputs",
+        "0",
+        "--dump-boundary",
+        "0",
+        "--letterbox-pad-value",
+        "114",
+        "--output-dir",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_outputs",
+        "--boundary-dir",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_boundary",
+        "--prepared-input-out",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/prepared_input_rgb_uint8.bin",
+        "--reuse-preprocessed-input",
+        "1",
+        "--expected-output-count",
+        "1",
+        "--expected-output-name",
+        "yolo26s_part1_b38/conv11",
+        "--expected-output-bytes",
+        "1638400"
+      ]
+    },
+    {
+      "order": 2,
+      "variant": "uint8_dequant_fp16",
+      "raw_result": "raw/run_02_uint8_dequant_fp16.json",
+      "metrics": {
+        "fps_makespan": 211.704682,
+        "paper_equivalent_fps": 211.988418,
+        "paper_equivalent_cycle_ms": 4.717239,
+        "preprocess_ms": 0.00052,
+        "p1_ms": 2.068815,
+        "handoff_ms": 0.18862,
+        "trt_input_copy_ms": 0.18862,
+        "p2_run_ms": 4.528618,
+        "p1_thread_ms": 2.069335,
+        "p2_thread_ms": 4.717239,
+        "makespan_ms": 4723.561091,
+        "single_latency_model_ms": 6.786574
+      },
+      "command": [
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/native_runtime/build/split_native_hailo_trt_fifo",
+        "--hef",
+        "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt/yolo26s-f5342b1cdbe0343f/native_split_quality/orin_nx_hailo8_01/yolo26s/b038/hailo8_to_trt/2f23be01e394bcda6679e87b833f8c2f0aed9c804ca86fff3fa7195c7a4657bb/part1.hef",
+        "--engine",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+        "--image",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/synthetic_performance_input_640x640.ppm",
+        "--out",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/evidence/raw/run_02_uint8_dequant_fp16.json",
+        "--frames",
+        "1000",
+        "--warmup",
+        "100",
+        "--queue-depth",
+        "3",
+        "--hailo-format",
+        "uint8",
+        "--task",
+        "detection",
+        "--preprocess-mode",
+        "letterbox",
+        "--copy-outputs",
+        "1",
+        "--dump-outputs",
+        "0",
+        "--dump-boundary",
+        "0",
+        "--letterbox-pad-value",
+        "114",
+        "--output-dir",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_outputs",
+        "--boundary-dir",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_boundary",
+        "--prepared-input-out",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/prepared_input_rgb_uint8.bin",
+        "--reuse-preprocessed-input",
+        "1",
+        "--expected-output-count",
+        "1",
+        "--expected-output-name",
+        "yolo26s_part1_b38/conv11",
+        "--expected-output-bytes",
+        "1638400"
+      ]
+    },
+    {
+      "order": 3,
+      "variant": "uint8_dequant_fp16",
+      "raw_result": "raw/run_03_uint8_dequant_fp16.json",
+      "metrics": {
+        "fps_makespan": 212.05941,
+        "paper_equivalent_fps": 212.334685,
+        "paper_equivalent_cycle_ms": 4.709546,
+        "preprocess_ms": 0.000582,
+        "p1_ms": 2.077104,
+        "handoff_ms": 0.20502,
+        "trt_input_copy_ms": 0.20502,
+        "p2_run_ms": 4.504526,
+        "p1_thread_ms": 2.077686,
+        "p2_thread_ms": 4.709546,
+        "makespan_ms": 4715.659626,
+        "single_latency_model_ms": 6.787233
+      },
+      "command": [
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/native_runtime/build/split_native_hailo_trt_fifo",
+        "--hef",
+        "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt/yolo26s-f5342b1cdbe0343f/native_split_quality/orin_nx_hailo8_01/yolo26s/b038/hailo8_to_trt/2f23be01e394bcda6679e87b833f8c2f0aed9c804ca86fff3fa7195c7a4657bb/part1.hef",
+        "--engine",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+        "--image",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/synthetic_performance_input_640x640.ppm",
+        "--out",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/evidence/raw/run_03_uint8_dequant_fp16.json",
+        "--frames",
+        "1000",
+        "--warmup",
+        "100",
+        "--queue-depth",
+        "3",
+        "--hailo-format",
+        "uint8",
+        "--task",
+        "detection",
+        "--preprocess-mode",
+        "letterbox",
+        "--copy-outputs",
+        "1",
+        "--dump-outputs",
+        "0",
+        "--dump-boundary",
+        "0",
+        "--letterbox-pad-value",
+        "114",
+        "--output-dir",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_outputs",
+        "--boundary-dir",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_boundary",
+        "--prepared-input-out",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/prepared_input_rgb_uint8.bin",
+        "--reuse-preprocessed-input",
+        "1",
+        "--expected-output-count",
+        "1",
+        "--expected-output-name",
+        "yolo26s_part1_b38/conv11",
+        "--expected-output-bytes",
+        "1638400"
+      ]
+    },
+    {
+      "order": 4,
+      "variant": "uint8_cast_fp16",
+      "raw_result": "raw/run_04_uint8_cast_fp16.json",
+      "metrics": {
+        "fps_makespan": 210.493571,
+        "paper_equivalent_fps": 210.775978,
+        "paper_equivalent_cycle_ms": 4.744374,
+        "preprocess_ms": 0.000524,
+        "p1_ms": 2.082717,
+        "handoff_ms": 0.202833,
+        "trt_input_copy_ms": 0.202833,
+        "p2_run_ms": 4.541541,
+        "p1_thread_ms": 2.083241,
+        "p2_thread_ms": 4.744374,
+        "makespan_ms": 4750.738908,
+        "single_latency_model_ms": 6.827615
+      },
+      "command": [
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/native_runtime/build/split_native_hailo_trt_fifo",
+        "--hef",
+        "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt/yolo26s-f5342b1cdbe0343f/native_split_quality/orin_nx_hailo8_01/yolo26s/b038/hailo8_to_trt/2f23be01e394bcda6679e87b833f8c2f0aed9c804ca86fff3fa7195c7a4657bb/part1.hef",
+        "--engine",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/part2_uint8_cast_fp16.engine",
+        "--image",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/synthetic_performance_input_640x640.ppm",
+        "--out",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/evidence/raw/run_04_uint8_cast_fp16.json",
+        "--frames",
+        "1000",
+        "--warmup",
+        "100",
+        "--queue-depth",
+        "3",
+        "--hailo-format",
+        "uint8",
+        "--task",
+        "detection",
+        "--preprocess-mode",
+        "letterbox",
+        "--copy-outputs",
+        "1",
+        "--dump-outputs",
+        "0",
+        "--dump-boundary",
+        "0",
+        "--letterbox-pad-value",
+        "114",
+        "--output-dir",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_outputs",
+        "--boundary-dir",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_boundary",
+        "--prepared-input-out",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/prepared_input_rgb_uint8.bin",
+        "--reuse-preprocessed-input",
+        "1",
+        "--expected-output-count",
+        "1",
+        "--expected-output-name",
+        "yolo26s_part1_b38/conv11",
+        "--expected-output-bytes",
+        "1638400"
+      ]
+    },
+    {
+      "order": 5,
+      "variant": "uint8_dequant_fp16",
+      "raw_result": "raw/run_05_uint8_dequant_fp16.json",
+      "metrics": {
+        "fps_makespan": 214.069086,
+        "paper_equivalent_fps": 214.385187,
+        "paper_equivalent_cycle_ms": 4.664501,
+        "preprocess_ms": 0.000571,
+        "p1_ms": 2.009718,
+        "handoff_ms": 0.138904,
+        "trt_input_copy_ms": 0.138904,
+        "p2_run_ms": 4.525598,
+        "p1_thread_ms": 2.010289,
+        "p2_thread_ms": 4.664501,
+        "makespan_ms": 4671.389128,
+        "single_latency_model_ms": 6.67479
+      },
+      "command": [
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/native_runtime/build/split_native_hailo_trt_fifo",
+        "--hef",
+        "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt/yolo26s-f5342b1cdbe0343f/native_split_quality/orin_nx_hailo8_01/yolo26s/b038/hailo8_to_trt/2f23be01e394bcda6679e87b833f8c2f0aed9c804ca86fff3fa7195c7a4657bb/part1.hef",
+        "--engine",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+        "--image",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/synthetic_performance_input_640x640.ppm",
+        "--out",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/evidence/raw/run_05_uint8_dequant_fp16.json",
+        "--frames",
+        "1000",
+        "--warmup",
+        "100",
+        "--queue-depth",
+        "3",
+        "--hailo-format",
+        "uint8",
+        "--task",
+        "detection",
+        "--preprocess-mode",
+        "letterbox",
+        "--copy-outputs",
+        "1",
+        "--dump-outputs",
+        "0",
+        "--dump-boundary",
+        "0",
+        "--letterbox-pad-value",
+        "114",
+        "--output-dir",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_outputs",
+        "--boundary-dir",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_boundary",
+        "--prepared-input-out",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/prepared_input_rgb_uint8.bin",
+        "--reuse-preprocessed-input",
+        "1",
+        "--expected-output-count",
+        "1",
+        "--expected-output-name",
+        "yolo26s_part1_b38/conv11",
+        "--expected-output-bytes",
+        "1638400"
+      ]
+    },
+    {
+      "order": 6,
+      "variant": "uint8_cast_fp16",
+      "raw_result": "raw/run_06_uint8_cast_fp16.json",
+      "metrics": {
+        "fps_makespan": 213.258043,
+        "paper_equivalent_fps": 213.572151,
+        "paper_equivalent_cycle_ms": 4.682258,
+        "preprocess_ms": 0.00055,
+        "p1_ms": 2.010801,
+        "handoff_ms": 0.1403,
+        "trt_input_copy_ms": 0.1403,
+        "p2_run_ms": 4.541959,
+        "p1_thread_ms": 2.011351,
+        "p2_thread_ms": 4.682258,
+        "makespan_ms": 4689.154903,
+        "single_latency_model_ms": 6.693609
+      },
+      "command": [
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/native_runtime/build/split_native_hailo_trt_fifo",
+        "--hef",
+        "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt/yolo26s-f5342b1cdbe0343f/native_split_quality/orin_nx_hailo8_01/yolo26s/b038/hailo8_to_trt/2f23be01e394bcda6679e87b833f8c2f0aed9c804ca86fff3fa7195c7a4657bb/part1.hef",
+        "--engine",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/part2_uint8_cast_fp16.engine",
+        "--image",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/synthetic_performance_input_640x640.ppm",
+        "--out",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/evidence/raw/run_06_uint8_cast_fp16.json",
+        "--frames",
+        "1000",
+        "--warmup",
+        "100",
+        "--queue-depth",
+        "3",
+        "--hailo-format",
+        "uint8",
+        "--task",
+        "detection",
+        "--preprocess-mode",
+        "letterbox",
+        "--copy-outputs",
+        "1",
+        "--dump-outputs",
+        "0",
+        "--dump-boundary",
+        "0",
+        "--letterbox-pad-value",
+        "114",
+        "--output-dir",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_outputs",
+        "--boundary-dir",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_boundary",
+        "--prepared-input-out",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/prepared_input_rgb_uint8.bin",
+        "--reuse-preprocessed-input",
+        "1",
+        "--expected-output-count",
+        "1",
+        "--expected-output-name",
+        "yolo26s_part1_b38/conv11",
+        "--expected-output-bytes",
+        "1638400"
+      ]
+    },
+    {
+      "order": 7,
+      "variant": "uint8_cast_fp16",
+      "raw_result": "raw/run_07_uint8_cast_fp16.json",
+      "metrics": {
+        "fps_makespan": 211.284038,
+        "paper_equivalent_fps": 211.586082,
+        "paper_equivalent_cycle_ms": 4.726209,
+        "preprocess_ms": 0.000526,
+        "p1_ms": 2.032827,
+        "handoff_ms": 0.161108,
+        "trt_input_copy_ms": 0.161108,
+        "p2_run_ms": 4.565101,
+        "p1_thread_ms": 2.033352,
+        "p2_thread_ms": 4.726209,
+        "makespan_ms": 4732.965211,
+        "single_latency_model_ms": 6.759561
+      },
+      "command": [
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/native_runtime/build/split_native_hailo_trt_fifo",
+        "--hef",
+        "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt/yolo26s-f5342b1cdbe0343f/native_split_quality/orin_nx_hailo8_01/yolo26s/b038/hailo8_to_trt/2f23be01e394bcda6679e87b833f8c2f0aed9c804ca86fff3fa7195c7a4657bb/part1.hef",
+        "--engine",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/part2_uint8_cast_fp16.engine",
+        "--image",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/synthetic_performance_input_640x640.ppm",
+        "--out",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/evidence/raw/run_07_uint8_cast_fp16.json",
+        "--frames",
+        "1000",
+        "--warmup",
+        "100",
+        "--queue-depth",
+        "3",
+        "--hailo-format",
+        "uint8",
+        "--task",
+        "detection",
+        "--preprocess-mode",
+        "letterbox",
+        "--copy-outputs",
+        "1",
+        "--dump-outputs",
+        "0",
+        "--dump-boundary",
+        "0",
+        "--letterbox-pad-value",
+        "114",
+        "--output-dir",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_outputs",
+        "--boundary-dir",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_boundary",
+        "--prepared-input-out",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/prepared_input_rgb_uint8.bin",
+        "--reuse-preprocessed-input",
+        "1",
+        "--expected-output-count",
+        "1",
+        "--expected-output-name",
+        "yolo26s_part1_b38/conv11",
+        "--expected-output-bytes",
+        "1638400"
+      ]
+    },
+    {
+      "order": 8,
+      "variant": "uint8_dequant_fp16",
+      "raw_result": "raw/run_08_uint8_dequant_fp16.json",
+      "metrics": {
+        "fps_makespan": 214.27213,
+        "paper_equivalent_fps": 214.616947,
+        "paper_equivalent_cycle_ms": 4.659464,
+        "preprocess_ms": 0.000449,
+        "p1_ms": 1.991214,
+        "handoff_ms": 0.137351,
+        "trt_input_copy_ms": 0.137351,
+        "p2_run_ms": 4.522113,
+        "p1_thread_ms": 1.991663,
+        "p2_thread_ms": 4.659464,
+        "makespan_ms": 4666.962524,
+        "single_latency_model_ms": 6.651128
+      },
+      "command": [
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/native_runtime/build/split_native_hailo_trt_fifo",
+        "--hef",
+        "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt/yolo26s-f5342b1cdbe0343f/native_split_quality/orin_nx_hailo8_01/yolo26s/b038/hailo8_to_trt/2f23be01e394bcda6679e87b833f8c2f0aed9c804ca86fff3fa7195c7a4657bb/part1.hef",
+        "--engine",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+        "--image",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/synthetic_performance_input_640x640.ppm",
+        "--out",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/evidence/raw/run_08_uint8_dequant_fp16.json",
+        "--frames",
+        "1000",
+        "--warmup",
+        "100",
+        "--queue-depth",
+        "3",
+        "--hailo-format",
+        "uint8",
+        "--task",
+        "detection",
+        "--preprocess-mode",
+        "letterbox",
+        "--copy-outputs",
+        "1",
+        "--dump-outputs",
+        "0",
+        "--dump-boundary",
+        "0",
+        "--letterbox-pad-value",
+        "114",
+        "--output-dir",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_outputs",
+        "--boundary-dir",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_boundary",
+        "--prepared-input-out",
+        "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/prepared_input_rgb_uint8.bin",
+        "--reuse-preprocessed-input",
+        "1",
+        "--expected-output-count",
+        "1",
+        "--expected-output-name",
+        "yolo26s_part1_b38/conv11",
+        "--expected-output-bytes",
+        "1638400"
+      ]
+    }
+  ],
+  "historical_reference": {
+    "raw_report_available": false,
+    "documented_approximate_fps_both_variants": 146.259,
+    "documented_approximate_handoff_ms_both_variants": 0.147,
+    "used_as_acceptance_threshold": false
+  },
+  "environment_before": {
+    "hostname": "nx",
+    "platform": "Linux-5.15.148-tegra-aarch64-with-glibc2.35",
+    "python": "3.10.12",
+    "uname": {
+      "command": [
+        "uname",
+        "-a"
+      ],
+      "returncode": 0,
+      "output": "Linux nx 5.15.148-tegra #1 SMP PREEMPT Thu Sep 18 15:08:33 PDT 2025 aarch64 aarch64 aarch64 GNU/Linux"
+    },
+    "jetson_release": {
+      "command": [
+        "sh",
+        "-c",
+        "cat /etc/nv_tegra_release 2>/dev/null"
+      ],
+      "returncode": 0,
+      "output": "# R36 (release), REVISION: 4.7, GCID: 42132812, BOARD: generic, EABI: aarch64, DATE: Thu Sep 18 22:54:44 UTC 2025\n# KERNEL_VARIANT: oot\nTARGET_USERSPACE_LIB_DIR=nvidia\nTARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia"
+    },
+    "nvpmodel": {
+      "command": [
+        "nvpmodel",
+        "-q"
+      ],
+      "returncode": 0,
+      "output": "NV Power Mode: MAXN_SUPER\n0"
+    },
+    "jetson_clocks": {
+      "command": [
+        "jetson_clocks",
+        "--show"
+      ],
+      "returncode": 1,
+      "output": "SOC family:tegra234  Machine:NVIDIA Jetson Orin NX Engineering Reference Developer Kit Super\nError: Run this script(/usr/bin/jetson_clocks) as a root user"
+    },
+    "tegrastats_sample": {
+      "command": [
+        "tegrastats",
+        "--interval",
+        "1000",
+        "--count",
+        "1"
+      ],
+      "returncode": 0,
+      "output": "Unknown command: --count. Please try again or see --help"
+    }
+  },
+  "environment_after": {
+    "hostname": "nx",
+    "platform": "Linux-5.15.148-tegra-aarch64-with-glibc2.35",
+    "python": "3.10.12",
+    "uname": {
+      "command": [
+        "uname",
+        "-a"
+      ],
+      "returncode": 0,
+      "output": "Linux nx 5.15.148-tegra #1 SMP PREEMPT Thu Sep 18 15:08:33 PDT 2025 aarch64 aarch64 aarch64 GNU/Linux"
+    },
+    "jetson_release": {
+      "command": [
+        "sh",
+        "-c",
+        "cat /etc/nv_tegra_release 2>/dev/null"
+      ],
+      "returncode": 0,
+      "output": "# R36 (release), REVISION: 4.7, GCID: 42132812, BOARD: generic, EABI: aarch64, DATE: Thu Sep 18 22:54:44 UTC 2025\n# KERNEL_VARIANT: oot\nTARGET_USERSPACE_LIB_DIR=nvidia\nTARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia"
+    },
+    "nvpmodel": {
+      "command": [
+        "nvpmodel",
+        "-q"
+      ],
+      "returncode": 0,
+      "output": "NV Power Mode: MAXN_SUPER\n0"
+    },
+    "jetson_clocks": {
+      "command": [
+        "jetson_clocks",
+        "--show"
+      ],
+      "returncode": 1,
+      "output": "SOC family:tegra234  Machine:NVIDIA Jetson Orin NX Engineering Reference Developer Kit Super\nError: Run this script(/usr/bin/jetson_clocks) as a root user"
+    },
+    "tegrastats_sample": {
+      "command": [
+        "tegrastats",
+        "--interval",
+        "1000",
+        "--count",
+        "1"
+      ],
+      "returncode": 0,
+      "output": "Unknown command: --count. Please try again or see --help"
+    }
+  }
+}

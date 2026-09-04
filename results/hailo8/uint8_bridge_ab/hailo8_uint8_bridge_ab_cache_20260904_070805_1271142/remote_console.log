@@ -1,0 +1,95 @@
+NATIVE_RUNTIME_SOURCE_PREFLIGHT=PASS
+CACHE_CONTRACT=PASS
+DEQUANT_SCALE=0.027023514732718468
+DEQUANT_ZERO_POINT=11
+BOUNDARY_LAYOUT=memory_nhwc_to_nchw
+BOUNDARY_RUNTIME_NAME=yolo26s_part1_b38/conv11
+BOUNDARY_BYTES=1638400
+=== BUILD uint8_cast_fp16 ===
+{"build_ok": true, "case": "b038", "engine": "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/part2_uint8_cast_fp16.engine", "run_ok": null, "variant": "part2"}
+[native-trt] wrote /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/evidence/build_uint8_cast_fp16.json
+=== BUILD uint8_dequant_fp16 ===
+{"build_ok": true, "case": "b038", "engine": "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine", "run_ok": null, "variant": "part2"}
+[native-trt] wrote /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/evidence/build_uint8_dequant_fp16.json
+FRESH_ENGINE_BUILDS=PASS
+HAILO8_UINT8_BRIDGE_AB_PREFLIGHT=PASS
++ cmake -S /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/native_runtime -B /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/native_runtime/build -DCMAKE_BUILD_TYPE=Release
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found CUDA: /usr/local/cuda (found suitable exact version "12.6") 
+-- Found OpenCV: /usr/local (found version "4.10.0") 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/native_runtime/build
++ cmake --build /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/native_runtime/build -j
+[ 50%] Building CXX object CMakeFiles/split_native_hailo_trt_fifo.dir/main.cpp.o
+[100%] Linking CXX executable split_native_hailo_trt_fifo
+[100%] Built target split_native_hailo_trt_fifo
+=== STABILIZE 15 seconds before measurement ===
+=== RUN 1/8: uint8_cast_fp16 ===
++ /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/native_runtime/build/split_native_hailo_trt_fifo --hef /home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt/yolo26s-f5342b1cdbe0343f/native_split_quality/orin_nx_hailo8_01/yolo26s/b038/hailo8_to_trt/2f23be01e394bcda6679e87b833f8c2f0aed9c804ca86fff3fa7195c7a4657bb/part1.hef --engine /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/part2_uint8_cast_fp16.engine --image /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/synthetic_performance_input_640x640.ppm --out /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/evidence/raw/run_01_uint8_cast_fp16.json --frames 1000 --warmup 100 --queue-depth 3 --hailo-format uint8 --task detection --preprocess-mode letterbox --copy-outputs 1 --dump-outputs 0 --dump-boundary 0 --letterbox-pad-value 114 --output-dir /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_outputs --boundary-dir /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_boundary --prepared-input-out /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/prepared_input_rgb_uint8.bin --reuse-preprocessed-input 1 --expected-output-count 1 --expected-output-name yolo26s_part1_b38/conv11 --expected-output-bytes 1638400
+[native-fifo][hailo] input_shape=640x640x3 input_frame_size=1228800 output_frame_size=1638400
+[native-fifo][trt] input=/model.4/cv2/act/Mul_output_0 dtype=uint8 bytes=1638400
+[native-fifo] frames=1000 warmup=100 duration_s=0 queue_depth=3
+[native-fifo] pre=0.000522676 ms p1=2.07991 ms handoff=0.196949 ms p2_run=4.53491 ms
+[native-fifo] p1_thread=2.08043 ms p2_thread=4.73186 ms paper_fps=211.333 fps_makespan=211.049
+=== RUN 2/8: uint8_dequant_fp16 ===
++ /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/native_runtime/build/split_native_hailo_trt_fifo --hef /home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt/yolo26s-f5342b1cdbe0343f/native_split_quality/orin_nx_hailo8_01/yolo26s/b038/hailo8_to_trt/2f23be01e394bcda6679e87b833f8c2f0aed9c804ca86fff3fa7195c7a4657bb/part1.hef --engine /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine --image /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/synthetic_performance_input_640x640.ppm --out /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/evidence/raw/run_02_uint8_dequant_fp16.json --frames 1000 --warmup 100 --queue-depth 3 --hailo-format uint8 --task detection --preprocess-mode letterbox --copy-outputs 1 --dump-outputs 0 --dump-boundary 0 --letterbox-pad-value 114 --output-dir /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_outputs --boundary-dir /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_boundary --prepared-input-out /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/prepared_input_rgb_uint8.bin --reuse-preprocessed-input 1 --expected-output-count 1 --expected-output-name yolo26s_part1_b38/conv11 --expected-output-bytes 1638400
+[native-fifo][hailo] input_shape=640x640x3 input_frame_size=1228800 output_frame_size=1638400
+[native-fifo][trt] input=/model.4/cv2/act/Mul_output_0 dtype=uint8 bytes=1638400
+[native-fifo] frames=1000 warmup=100 duration_s=0 queue_depth=3
+[native-fifo] pre=0.000519728 ms p1=2.06882 ms handoff=0.18862 ms p2_run=4.52862 ms
+[native-fifo] p1_thread=2.06934 ms p2_thread=4.71724 ms paper_fps=211.988 fps_makespan=211.705
+=== RUN 3/8: uint8_dequant_fp16 ===
++ /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/native_runtime/build/split_native_hailo_trt_fifo --hef /home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt/yolo26s-f5342b1cdbe0343f/native_split_quality/orin_nx_hailo8_01/yolo26s/b038/hailo8_to_trt/2f23be01e394bcda6679e87b833f8c2f0aed9c804ca86fff3fa7195c7a4657bb/part1.hef --engine /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine --image /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/synthetic_performance_input_640x640.ppm --out /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/evidence/raw/run_03_uint8_dequant_fp16.json --frames 1000 --warmup 100 --queue-depth 3 --hailo-format uint8 --task detection --preprocess-mode letterbox --copy-outputs 1 --dump-outputs 0 --dump-boundary 0 --letterbox-pad-value 114 --output-dir /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_outputs --boundary-dir /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_boundary --prepared-input-out /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/prepared_input_rgb_uint8.bin --reuse-preprocessed-input 1 --expected-output-count 1 --expected-output-name yolo26s_part1_b38/conv11 --expected-output-bytes 1638400
+[native-fifo][hailo] input_shape=640x640x3 input_frame_size=1228800 output_frame_size=1638400
+[native-fifo][trt] input=/model.4/cv2/act/Mul_output_0 dtype=uint8 bytes=1638400
+[native-fifo] frames=1000 warmup=100 duration_s=0 queue_depth=3
+[native-fifo] pre=0.000581965 ms p1=2.0771 ms handoff=0.20502 ms p2_run=4.50453 ms
+[native-fifo] p1_thread=2.07769 ms p2_thread=4.70955 ms paper_fps=212.335 fps_makespan=212.059
+=== RUN 4/8: uint8_cast_fp16 ===
++ /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/native_runtime/build/split_native_hailo_trt_fifo --hef /home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt/yolo26s-f5342b1cdbe0343f/native_split_quality/orin_nx_hailo8_01/yolo26s/b038/hailo8_to_trt/2f23be01e394bcda6679e87b833f8c2f0aed9c804ca86fff3fa7195c7a4657bb/part1.hef --engine /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/part2_uint8_cast_fp16.engine --image /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/synthetic_performance_input_640x640.ppm --out /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/evidence/raw/run_04_uint8_cast_fp16.json --frames 1000 --warmup 100 --queue-depth 3 --hailo-format uint8 --task detection --preprocess-mode letterbox --copy-outputs 1 --dump-outputs 0 --dump-boundary 0 --letterbox-pad-value 114 --output-dir /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_outputs --boundary-dir /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_boundary --prepared-input-out /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/prepared_input_rgb_uint8.bin --reuse-preprocessed-input 1 --expected-output-count 1 --expected-output-name yolo26s_part1_b38/conv11 --expected-output-bytes 1638400
+[native-fifo][hailo] input_shape=640x640x3 input_frame_size=1228800 output_frame_size=1638400
+[native-fifo][trt] input=/model.4/cv2/act/Mul_output_0 dtype=uint8 bytes=1638400
+[native-fifo] frames=1000 warmup=100 duration_s=0 queue_depth=3
+[native-fifo] pre=0.000523762 ms p1=2.08272 ms handoff=0.202833 ms p2_run=4.54154 ms
+[native-fifo] p1_thread=2.08324 ms p2_thread=4.74437 ms paper_fps=210.776 fps_makespan=210.494
+=== RUN 5/8: uint8_dequant_fp16 ===
++ /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/native_runtime/build/split_native_hailo_trt_fifo --hef /home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt/yolo26s-f5342b1cdbe0343f/native_split_quality/orin_nx_hailo8_01/yolo26s/b038/hailo8_to_trt/2f23be01e394bcda6679e87b833f8c2f0aed9c804ca86fff3fa7195c7a4657bb/part1.hef --engine /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine --image /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/synthetic_performance_input_640x640.ppm --out /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/evidence/raw/run_05_uint8_dequant_fp16.json --frames 1000 --warmup 100 --queue-depth 3 --hailo-format uint8 --task detection --preprocess-mode letterbox --copy-outputs 1 --dump-outputs 0 --dump-boundary 0 --letterbox-pad-value 114 --output-dir /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_outputs --boundary-dir /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_boundary --prepared-input-out /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/prepared_input_rgb_uint8.bin --reuse-preprocessed-input 1 --expected-output-count 1 --expected-output-name yolo26s_part1_b38/conv11 --expected-output-bytes 1638400
+[native-fifo][hailo] input_shape=640x640x3 input_frame_size=1228800 output_frame_size=1638400
+[native-fifo][trt] input=/model.4/cv2/act/Mul_output_0 dtype=uint8 bytes=1638400
+[native-fifo] frames=1000 warmup=100 duration_s=0 queue_depth=3
+[native-fifo] pre=0.00057072 ms p1=2.00972 ms handoff=0.138904 ms p2_run=4.5256 ms
+[native-fifo] p1_thread=2.01029 ms p2_thread=4.6645 ms paper_fps=214.385 fps_makespan=214.069
+=== RUN 6/8: uint8_cast_fp16 ===
++ /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/native_runtime/build/split_native_hailo_trt_fifo --hef /home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt/yolo26s-f5342b1cdbe0343f/native_split_quality/orin_nx_hailo8_01/yolo26s/b038/hailo8_to_trt/2f23be01e394bcda6679e87b833f8c2f0aed9c804ca86fff3fa7195c7a4657bb/part1.hef --engine /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/part2_uint8_cast_fp16.engine --image /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/synthetic_performance_input_640x640.ppm --out /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/evidence/raw/run_06_uint8_cast_fp16.json --frames 1000 --warmup 100 --queue-depth 3 --hailo-format uint8 --task detection --preprocess-mode letterbox --copy-outputs 1 --dump-outputs 0 --dump-boundary 0 --letterbox-pad-value 114 --output-dir /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_outputs --boundary-dir /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_boundary --prepared-input-out /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/prepared_input_rgb_uint8.bin --reuse-preprocessed-input 1 --expected-output-count 1 --expected-output-name yolo26s_part1_b38/conv11 --expected-output-bytes 1638400
+[native-fifo][hailo] input_shape=640x640x3 input_frame_size=1228800 output_frame_size=1638400
+[native-fifo][trt] input=/model.4/cv2/act/Mul_output_0 dtype=uint8 bytes=1638400
+[native-fifo] frames=1000 warmup=100 duration_s=0 queue_depth=3
+[native-fifo] pre=0.000550132 ms p1=2.0108 ms handoff=0.1403 ms p2_run=4.54196 ms
+[native-fifo] p1_thread=2.01135 ms p2_thread=4.68226 ms paper_fps=213.572 fps_makespan=213.258
+=== RUN 7/8: uint8_cast_fp16 ===
++ /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/native_runtime/build/split_native_hailo_trt_fifo --hef /home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt/yolo26s-f5342b1cdbe0343f/native_split_quality/orin_nx_hailo8_01/yolo26s/b038/hailo8_to_trt/2f23be01e394bcda6679e87b833f8c2f0aed9c804ca86fff3fa7195c7a4657bb/part1.hef --engine /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/part2_uint8_cast_fp16.engine --image /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/synthetic_performance_input_640x640.ppm --out /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/evidence/raw/run_07_uint8_cast_fp16.json --frames 1000 --warmup 100 --queue-depth 3 --hailo-format uint8 --task detection --preprocess-mode letterbox --copy-outputs 1 --dump-outputs 0 --dump-boundary 0 --letterbox-pad-value 114 --output-dir /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_outputs --boundary-dir /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_boundary --prepared-input-out /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/prepared_input_rgb_uint8.bin --reuse-preprocessed-input 1 --expected-output-count 1 --expected-output-name yolo26s_part1_b38/conv11 --expected-output-bytes 1638400
+[native-fifo][hailo] input_shape=640x640x3 input_frame_size=1228800 output_frame_size=1638400
+[native-fifo][trt] input=/model.4/cv2/act/Mul_output_0 dtype=uint8 bytes=1638400
+[native-fifo] frames=1000 warmup=100 duration_s=0 queue_depth=3
+[native-fifo] pre=0.000525838 ms p1=2.03283 ms handoff=0.161108 ms p2_run=4.5651 ms
+[native-fifo] p1_thread=2.03335 ms p2_thread=4.72621 ms paper_fps=211.586 fps_makespan=211.284
+=== RUN 8/8: uint8_dequant_fp16 ===
++ /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/native_runtime/build/split_native_hailo_trt_fifo --hef /home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt/yolo26s-f5342b1cdbe0343f/native_split_quality/orin_nx_hailo8_01/yolo26s/b038/hailo8_to_trt/2f23be01e394bcda6679e87b833f8c2f0aed9c804ca86fff3fa7195c7a4657bb/part1.hef --engine /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine --image /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/synthetic_performance_input_640x640.ppm --out /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/evidence/raw/run_08_uint8_dequant_fp16.json --frames 1000 --warmup 100 --queue-depth 3 --hailo-format uint8 --task detection --preprocess-mode letterbox --copy-outputs 1 --dump-outputs 0 --dump-boundary 0 --letterbox-pad-value 114 --output-dir /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_outputs --boundary-dir /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/unused_boundary --prepared-input-out /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/work/prepared_input_rgb_uint8.bin --reuse-preprocessed-input 1 --expected-output-count 1 --expected-output-name yolo26s_part1_b38/conv11 --expected-output-bytes 1638400
+[native-fifo][hailo] input_shape=640x640x3 input_frame_size=1228800 output_frame_size=1638400
+[native-fifo][trt] input=/model.4/cv2/act/Mul_output_0 dtype=uint8 bytes=1638400
+[native-fifo] frames=1000 warmup=100 duration_s=0 queue_depth=3
+[native-fifo] pre=0.00044942 ms p1=1.99121 ms handoff=0.137351 ms p2_run=4.52211 ms
+[native-fifo] p1_thread=1.99166 ms p2_thread=4.65946 ms paper_fps=214.617 fps_makespan=214.272
+MEASUREMENT_STATUS=PASS
+SUMMARY_JSON=/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/evidence/hailo8_uint8_bridge_ab_summary.json

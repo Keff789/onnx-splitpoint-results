@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "mode": "full_measurement",
+  "case": "b038",
+  "model": "yolo26s",
+  "cache_access": "read_only_by_design",
+  "original_cache": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt/yolo26s-f5342b1cdbe0343f/native_split_quality/orin_nx_hailo8_01/yolo26s/b038/hailo8_to_trt/2f23be01e394bcda6679e87b833f8c2f0aed9c804ca86fff3fa7195c7a4657bb",
+  "minimal_overlay": "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set",
+  "source_part2": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt/yolo26s-f5342b1cdbe0343f/native_split_quality/orin_nx_hailo8_01/yolo26s/b038/hailo8_to_trt/2f23be01e394bcda6679e87b833f8c2f0aed9c804ca86fff3fa7195c7a4657bb/benchmark_set/b038/source_part2.onnx",
+  "part1_hef": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt/yolo26s-f5342b1cdbe0343f/native_split_quality/orin_nx_hailo8_01/yolo26s/b038/hailo8_to_trt/2f23be01e394bcda6679e87b833f8c2f0aed9c804ca86fff3fa7195c7a4657bb/part1.hef",
+  "input": "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/synthetic_performance_input_640x640.ppm",
+  "input_kind": "synthetic_performance_input",
+  "engine_action": "fresh_build_both_arms_inside_overlay",
+  "comparison_scope": "performance_diagnostic_not_quality_equivalence",
+  "dequant_contract": {
+    "scale": 0.027023514732718468,
+    "zero_point": 11.0,
+    "boundary_layout": "memory_nhwc_to_nchw"
+  },
+  "runtime_boundary_contract": {
+    "output_count": 1,
+    "output_name": "yolo26s_part1_b38/conv11",
+    "output_bytes": 1638400
+  }
+}

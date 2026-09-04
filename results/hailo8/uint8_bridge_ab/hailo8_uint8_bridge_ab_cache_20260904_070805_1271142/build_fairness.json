@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "build_signatures": {
+    "uint8_cast_fp16": {
+      "shapes_arg": "",
+      "workspace_mode": "auto"
+    },
+    "uint8_dequant_fp16": {
+      "shapes_arg": "",
+      "workspace_mode": "auto"
+    }
+  }
+}

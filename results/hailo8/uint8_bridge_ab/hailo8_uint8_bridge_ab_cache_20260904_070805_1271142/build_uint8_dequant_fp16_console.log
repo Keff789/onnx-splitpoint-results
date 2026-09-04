@@ -1,0 +1,2 @@
+{"build_ok": true, "case": "b038", "engine": "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine", "run_ok": null, "variant": "part2"}
+[native-trt] wrote /home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/evidence/build_uint8_dequant_fp16.json

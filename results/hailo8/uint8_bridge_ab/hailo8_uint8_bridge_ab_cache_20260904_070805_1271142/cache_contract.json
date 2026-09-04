@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "contract_source": "preserved_quality_binding_cross_checked_with_dequant_meta",
+  "dequant_scale": 0.027023514732718468,
+  "dequant_zero_point": 11.0,
+  "boundary_layout": "memory_nhwc_to_nchw",
+  "runtime_boundary": {
+    "output_count": 1,
+    "output_name": "yolo26s_part1_b38/conv11",
+    "output_bytes": 1638400
+  },
+  "checks": {
+    "identity_model": true,
+    "identity_case": true,
+    "identity_setup": true,
+    "identity_backend": true,
+    "boundary_count": true,
+    "meta_case": true,
+    "meta_variant": true,
+    "meta_precision": true,
+    "meta_build_ok": true,
+    "scale_matches": true,
+    "zero_point_matches": true,
+    "layout_matches": true,
+    "layout_applied": true,
+    "source_matches": true,
+    "boundary_scale_matches": true,
+    "boundary_zero_point_matches": true,
+    "boundary_layout_matches": true,
+    "boundary_dtype_matches": true,
+    "boundary_name_matches": true,
+    "boundary_shape_matches": true
+  },
+  "paths": {
+    "quality_binding": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt/yolo26s-f5342b1cdbe0343f/native_split_quality/orin_nx_hailo8_01/yolo26s/b038/hailo8_to_trt/2f23be01e394bcda6679e87b833f8c2f0aed9c804ca86fff3fa7195c7a4657bb/native_split_quality_binding.json",
+    "preserved_dequant_meta": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt/yolo26s-f5342b1cdbe0343f/native_split_quality/orin_nx_hailo8_01/yolo26s/b038/hailo8_to_trt/2f23be01e394bcda6679e87b833f8c2f0aed9c804ca86fff3fa7195c7a4657bb/engine_cache/b038/part2/uint8_dequant_fp16/native_trt_meta.json",
+    "boundary_metadata": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt/yolo26s-f5342b1cdbe0343f/native_split_quality/orin_nx_hailo8_01/yolo26s/b038/hailo8_to_trt/2f23be01e394bcda6679e87b833f8c2f0aed9c804ca86fff3fa7195c7a4657bb/part1_boundary_metadata.json",
+    "source_part2": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt/yolo26s-f5342b1cdbe0343f/native_split_quality/orin_nx_hailo8_01/yolo26s/b038/hailo8_to_trt/2f23be01e394bcda6679e87b833f8c2f0aed9c804ca86fff3fa7195c7a4657bb/benchmark_set/b038/source_part2.onnx"
+  }
+}

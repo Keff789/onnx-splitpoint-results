@@ -1,0 +1,136 @@
+{
+  "build": {
+    "attempt": 1,
+    "cmd": [
+      "/usr/src/tensorrt/bin/trtexec",
+      "--onnx=/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/source_part2_uint8_cast_bridge.onnx",
+      "--saveEngine=/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/part2_uint8_cast_fp16.engine",
+      "--fp16",
+      "--timingCacheFile=/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/timing.cache",
+      "--memPoolSize=workspace:4096"
+    ],
+    "cwd": "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16",
+    "dry_run": false,
+    "elapsed_s": 330.8941286830086,
+    "failure_hint": "see build_trtexec.log tail.",
+    "latency_ms": {
+      "max": 4.56445,
+      "mean": 4.52903,
+      "min": 4.49561
+    },
+    "log_path": "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/build_trtexec.log",
+    "log_tail": "38] [I] Average on 10 runs - GPU latency: 4.42156 ms - Host latency: 4.53245 ms (enqueue 1.31981 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41646 ms - Host latency: 4.52791 ms (enqueue 1.32056 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41932 ms - Host latency: 4.53126 ms (enqueue 1.31696 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.4196 ms - Host latency: 4.52831 ms (enqueue 1.3178 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41663 ms - Host latency: 4.52662 ms (enqueue 1.31477 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.42108 ms - Host latency: 4.53124 ms (enqueue 1.32571 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41759 ms - Host latency: 4.52657 ms (enqueue 1.32784 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41736 ms - Host latency: 4.52625 ms (enqueue 1.33232 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41777 ms - Host latency: 4.52483 ms (enqueue 1.32415 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.42358 ms - Host latency: 4.53386 ms (enqueue 1.33628 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41841 ms - Host latency: 4.52588 ms (enqueue 1.31704 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41816 ms - Host latency: 4.52993 ms (enqueue 1.32148 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.42078 ms - Host latency: 4.53113 ms (enqueue 1.32495 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41814 ms - Host latency: 4.52898 ms (enqueue 1.3166 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41855 ms - Host latency: 4.52908 ms (enqueue 1.32061 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41865 ms - Host latency: 4.52798 ms (enqueue 1.32224 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.42075 ms - Host latency: 4.53084 ms (enqueue 1.32759 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41848 ms - Host latency: 4.52983 ms (enqueue 1.32239 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.42095 ms - Host latency: 4.53171 ms (enqueue 1.31765 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41987 ms - Host latency: 4.53103 ms (enqueue 1.32278 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41831 ms - Host latency: 4.52803 ms (enqueue 1.32341 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.42146 ms - Host latency: 4.53381 ms (enqueue 1.32273 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.42217 ms - Host latency: 4.52971 ms (enqueue 1.32004 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.42039 ms - Host latency: 4.53193 ms (enqueue 1.31833 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.4186 ms - Host latency: 4.52805 ms (enqueue 1.31929 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.42083 ms - Host latency: 4.53274 ms (enqueue 1.32026 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41885 ms - Host latency: 4.52852 ms (enqueue 1.3146 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.4189 ms - Host latency: 4.52773 ms (enqueue 1.32224 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.42024 ms - Host latency: 4.53066 ms (enqueue 1.32449 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41777 ms - Host latency: 4.52822 ms (enqueue 1.32468 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41982 ms - Host latency: 4.52717 ms (enqueue 1.31562 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.42039 ms - Host latency: 4.52839 ms (enqueue 1.31809 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41895 ms - Host latency: 4.52788 ms (enqueue 1.33792 ms)\n[09/04/2026-09:13:38] [I] \n[09/04/2026-09:13:38] [I] === Performance summary ===\n[09/04/2026-09:13:38] [I] Throughput: 225.821 qps\n[09/04/2026-09:13:38] [I] Latency: min = 4.49561 ms, max = 4.56445 ms, mean = 4.52903 ms, median = 4.52837 ms, percentile(90%) = 4.54199 ms, percentile(95%) = 4.54614 ms, percentile(99%) = 4.55225 ms\n[09/04/2026-09:13:38] [I] Enqueue Time: min = 1.28149 ms, max = 1.50342 ms, mean = 1.32535 ms, median = 1.31927 ms, percentile(90%) = 1.35449 ms, percentile(95%) = 1.3642 ms, percentile(99%) = 1.37976 ms\n[09/04/2026-09:13:38] [I] H2D Latency: min = 0.085083 ms, max = 0.123047 ms, mean = 0.0992424 ms, median = 0.0983887 ms, percentile(90%) = 0.107117 ms, percentile(95%) = 0.108887 ms, percentile(99%) = 0.111328 ms\n[09/04/2026-09:13:38] [I] GPU Compute Time: min = 4.39478 ms, max = 4.448 ms, mean = 4.4194 ms, median = 4.41916 ms, percentile(90%) = 4.42743 ms, percentile(95%) = 4.42969 ms, percentile(99%) = 4.43506 ms\n[09/04/2026-09:13:38] [I] D2H Latency: min = 0.00317383 ms, max = 0.0192871 ms, mean = 0.0103876 ms, median = 0.00878906 ms, percentile(90%) = 0.017334 ms, percentile(95%) = 0.0178223 ms, percentile(99%) = 0.0185547 ms\n[09/04/2026-09:13:38] [I] Total Host Walltime: 3.01124 s\n[09/04/2026-09:13:38] [I] Total GPU Compute Time: 3.00519 s\n[09/04/2026-09:13:38] [I] Explanations of the performance metrics are printed in the verbose logs.\n[09/04/2026-09:13:38] [I] \n&&&& PASSED TensorRT.trtexec [TensorRT v100300] # /usr/src/tensorrt/bin/trtexec --onnx=/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/source_part2_uint8_cast_bridge.onnx --saveEngine=/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/part2_uint8_cast_fp16.engine --fp16 --timingCacheFile=/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/timing.cache --memPoolSize=workspace:4096",
+    "reason": "initial",
+    "returncode": 0,
+    "shapes_arg": "",
+    "throughput_qps": 225.821,
+    "workspace_mode": "auto"
+  },
+  "build_attempts": [
+    {
+      "attempt": 1,
+      "cmd": [
+        "/usr/src/tensorrt/bin/trtexec",
+        "--onnx=/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/source_part2_uint8_cast_bridge.onnx",
+        "--saveEngine=/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/part2_uint8_cast_fp16.engine",
+        "--fp16",
+        "--timingCacheFile=/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/timing.cache",
+        "--memPoolSize=workspace:4096"
+      ],
+      "cwd": "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16",
+      "dry_run": false,
+      "elapsed_s": 330.8941286830086,
+      "failure_hint": "see build_trtexec.log tail.",
+      "latency_ms": {
+        "max": 4.56445,
+        "mean": 4.52903,
+        "min": 4.49561
+      },
+      "log_path": "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/build_trtexec.log",
+      "log_tail": "38] [I] Average on 10 runs - GPU latency: 4.42156 ms - Host latency: 4.53245 ms (enqueue 1.31981 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41646 ms - Host latency: 4.52791 ms (enqueue 1.32056 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41932 ms - Host latency: 4.53126 ms (enqueue 1.31696 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.4196 ms - Host latency: 4.52831 ms (enqueue 1.3178 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41663 ms - Host latency: 4.52662 ms (enqueue 1.31477 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.42108 ms - Host latency: 4.53124 ms (enqueue 1.32571 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41759 ms - Host latency: 4.52657 ms (enqueue 1.32784 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41736 ms - Host latency: 4.52625 ms (enqueue 1.33232 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41777 ms - Host latency: 4.52483 ms (enqueue 1.32415 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.42358 ms - Host latency: 4.53386 ms (enqueue 1.33628 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41841 ms - Host latency: 4.52588 ms (enqueue 1.31704 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41816 ms - Host latency: 4.52993 ms (enqueue 1.32148 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.42078 ms - Host latency: 4.53113 ms (enqueue 1.32495 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41814 ms - Host latency: 4.52898 ms (enqueue 1.3166 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41855 ms - Host latency: 4.52908 ms (enqueue 1.32061 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41865 ms - Host latency: 4.52798 ms (enqueue 1.32224 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.42075 ms - Host latency: 4.53084 ms (enqueue 1.32759 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41848 ms - Host latency: 4.52983 ms (enqueue 1.32239 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.42095 ms - Host latency: 4.53171 ms (enqueue 1.31765 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41987 ms - Host latency: 4.53103 ms (enqueue 1.32278 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41831 ms - Host latency: 4.52803 ms (enqueue 1.32341 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.42146 ms - Host latency: 4.53381 ms (enqueue 1.32273 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.42217 ms - Host latency: 4.52971 ms (enqueue 1.32004 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.42039 ms - Host latency: 4.53193 ms (enqueue 1.31833 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.4186 ms - Host latency: 4.52805 ms (enqueue 1.31929 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.42083 ms - Host latency: 4.53274 ms (enqueue 1.32026 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41885 ms - Host latency: 4.52852 ms (enqueue 1.3146 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.4189 ms - Host latency: 4.52773 ms (enqueue 1.32224 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.42024 ms - Host latency: 4.53066 ms (enqueue 1.32449 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41777 ms - Host latency: 4.52822 ms (enqueue 1.32468 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41982 ms - Host latency: 4.52717 ms (enqueue 1.31562 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.42039 ms - Host latency: 4.52839 ms (enqueue 1.31809 ms)\n[09/04/2026-09:13:38] [I] Average on 10 runs - GPU latency: 4.41895 ms - Host latency: 4.52788 ms (enqueue 1.33792 ms)\n[09/04/2026-09:13:38] [I] \n[09/04/2026-09:13:38] [I] === Performance summary ===\n[09/04/2026-09:13:38] [I] Throughput: 225.821 qps\n[09/04/2026-09:13:38] [I] Latency: min = 4.49561 ms, max = 4.56445 ms, mean = 4.52903 ms, median = 4.52837 ms, percentile(90%) = 4.54199 ms, percentile(95%) = 4.54614 ms, percentile(99%) = 4.55225 ms\n[09/04/2026-09:13:38] [I] Enqueue Time: min = 1.28149 ms, max = 1.50342 ms, mean = 1.32535 ms, median = 1.31927 ms, percentile(90%) = 1.35449 ms, percentile(95%) = 1.3642 ms, percentile(99%) = 1.37976 ms\n[09/04/2026-09:13:38] [I] H2D Latency: min = 0.085083 ms, max = 0.123047 ms, mean = 0.0992424 ms, median = 0.0983887 ms, percentile(90%) = 0.107117 ms, percentile(95%) = 0.108887 ms, percentile(99%) = 0.111328 ms\n[09/04/2026-09:13:38] [I] GPU Compute Time: min = 4.39478 ms, max = 4.448 ms, mean = 4.4194 ms, median = 4.41916 ms, percentile(90%) = 4.42743 ms, percentile(95%) = 4.42969 ms, percentile(99%) = 4.43506 ms\n[09/04/2026-09:13:38] [I] D2H Latency: min = 0.00317383 ms, max = 0.0192871 ms, mean = 0.0103876 ms, median = 0.00878906 ms, percentile(90%) = 0.017334 ms, percentile(95%) = 0.0178223 ms, percentile(99%) = 0.0185547 ms\n[09/04/2026-09:13:38] [I] Total Host Walltime: 3.01124 s\n[09/04/2026-09:13:38] [I] Total GPU Compute Time: 3.00519 s\n[09/04/2026-09:13:38] [I] Explanations of the performance metrics are printed in the verbose logs.\n[09/04/2026-09:13:38] [I] \n&&&& PASSED TensorRT.trtexec [TensorRT v100300] # /usr/src/tensorrt/bin/trtexec --onnx=/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/source_part2_uint8_cast_bridge.onnx --saveEngine=/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/part2_uint8_cast_fp16.engine --fp16 --timingCacheFile=/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/timing.cache --memPoolSize=workspace:4096",
+      "reason": "initial",
+      "returncode": 0,
+      "shapes_arg": "",
+      "throughput_qps": 225.821,
+      "workspace_mode": "auto"
+    }
+  ],
+  "build_ok": true,
+  "build_success_shapes_arg": "",
+  "build_success_workspace_mode": "auto",
+  "case": "b038",
+  "engine": "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/part2_uint8_cast_fp16.engine",
+  "engine_build_receipt": {
+    "build_returncode": 0,
+    "command": [
+      "/usr/src/tensorrt/bin/trtexec",
+      "--onnx=/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/source_part2_uint8_cast_bridge.onnx",
+      "--saveEngine=/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/part2_uint8_cast_fp16.engine",
+      "--fp16",
+      "--timingCacheFile=/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/timing.cache",
+      "--memPoolSize=workspace:4096"
+    ],
+    "dry_run": false,
+    "engine": "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/part2_uint8_cast_fp16.engine",
+    "engine_sha256": "5f4542ae46ccf6f8c6e2603084da28b433b2d678b6ffdb36397ea665e200f1cf",
+    "receipt_sha256": "ff0976c0ed26838a82485f50ac2603addf6929d16e4650c087b9b53ae8056d5f",
+    "schema": "onnx-splitpoint/tensorrt-engine-build-receipt",
+    "schema_version": 1,
+    "source_onnx": "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/source_part2_uint8_cast_bridge.onnx",
+    "source_onnx_sha256": "c83785a8b4484e896ed15d308f7fda8bdb5a3b582f21c651454fedaff6111cd2",
+    "trtexec": "/usr/src/tensorrt/bin/trtexec",
+    "trtexec_sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4"
+  },
+  "engine_build_receipt_path": "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/engine_build_receipt.json",
+  "engine_build_receipt_status": "engine_build_receipt_verified",
+  "inputs": [
+    {
+      "elem_type": "UINT8",
+      "has_dynamic": false,
+      "name": "/model.4/cv2/act/Mul_output_0",
+      "shape": [
+        1,
+        256,
+        80,
+        80
+      ]
+    }
+  ],
+  "inputs_static": true,
+  "onnx": "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/source_part2_uint8_cast_bridge.onnx",
+  "outputs": [
+    {
+      "elem_type": "FLOAT",
+      "has_dynamic": false,
+      "name": "output0",
+      "shape": [
+        1,
+        300,
+        6
+      ]
+    }
+  ],
+  "precision": "uint8_cast_fp16",
+  "quality_first_identity": {},
+  "requested_precision": "uint8_cast_fp16",
+  "schema": "onnx-splitpoint/native-trt-meta",
+  "schema_version": 1,
+  "shapes_arg": "",
+  "shapes_policy_effective": "auto_static_omit",
+  "source_onnx": "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/source_part2_uint8_cast_bridge.onnx",
+  "uint8_cast_bridge": {
+    "bridge": "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/native_trt/b038/part2/uint8_cast_fp16/source_part2_uint8_cast_bridge.onnx",
+    "bridge_sha256": "c83785a8b4484e896ed15d308f7fda8bdb5a3b582f21c651454fedaff6111cd2",
+    "cast_output": "/model.4/cv2/act/Mul_output_0__uint8_cast_to_float",
+    "cast_to": "FLOAT",
+    "input_dtype": "UINT8",
+    "input_name": "/model.4/cv2/act/Mul_output_0",
+    "replaced_uses": 2,
+    "schema": "onnx-splitpoint/uint8-cast-bridge",
+    "schema_version": 1,
+    "source": "/home/nx/hailo8_uint8_bridge_ab_runs/hailo8_uint8_bridge_ab_cache_20260904_070805_1271142/minimal_benchmark_set/b038/source_part2.onnx",
+    "source_mtime": 0.0,
+    "source_sha256": "edd8485dfecd521ce0d20aefc358986ffba5e7cf5f4a52433d5fa99a9104f7b8"
+  },
+  "variant": "part2"
+}
