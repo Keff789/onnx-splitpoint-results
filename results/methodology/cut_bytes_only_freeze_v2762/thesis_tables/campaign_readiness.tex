@@ -1,0 +1,78 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Software-side preflight for the frozen final measurement campaign. Hardware measurements remain separate evidence.}
+\label{tab:campaign-readiness}
+\begin{tabular}{lrr}
+\toprule
+Requirement & Status & Severity \\
+\midrule
+campaign\_mode & development & informational \\
+claim\_scope\_valid & pass & required\_for\_final \\
+claim\_scope & pass & informational \\
+profile\_frozen & deferred & required\_for\_final \\
+protocol\_freeze\_integrity & not\_applicable & informational \\
+campaign\_freeze\_artifact & not\_applicable & informational \\
+dataset\_classification\_calibration & pass & required\_for\_final \\
+dataset\_classification\_calibration\_schema & pass & required\_for\_final \\
+dataset\_classification\_calibration\_content\_hash & pass & required\_for\_final \\
+dataset\_classification\_calibration\_current\_files & pass & required\_for\_final \\
+dataset\_classification\_validation & pass & required\_for\_final \\
+dataset\_classification\_validation\_schema & pass & required\_for\_final \\
+dataset\_classification\_validation\_content\_hash & pass & required\_for\_final \\
+dataset\_classification\_validation\_current\_files & pass & required\_for\_final \\
+dataset\_detection\_calibration & pass & required\_for\_final \\
+dataset\_detection\_calibration\_schema & pass & required\_for\_final \\
+dataset\_detection\_calibration\_content\_hash & pass & required\_for\_final \\
+dataset\_detection\_calibration\_current\_files & pass & required\_for\_final \\
+dataset\_detection\_validation & pass & required\_for\_final \\
+dataset\_detection\_validation\_schema & pass & required\_for\_final \\
+dataset\_detection\_validation\_content\_hash & pass & required\_for\_final \\
+dataset\_detection\_validation\_current\_files & pass & required\_for\_final \\
+calibration\_validation\_disjoint & pass & required\_for\_final \\
+pipeline\_contract\_manifest & deferred & required\_for\_final \\
+development\_models\_present & pass & required\_for\_final \\
+holdout\_models\_present & not\_applicable & informational \\
+holdout\_adapter\_sources\_frozen & not\_applicable & informational \\
+model\_role\_disjoint & pass & required \\
+model\_ids\_unique & pass & required\_for\_final \\
+model\_role\_explicit\_resnet50 & pass & required\_for\_final \\
+model\_family\_id\_explicit\_resnet50 & not\_applicable & informational \\
+model\_generalization\_scope\_explicit\_resnet50 & not\_applicable & informational \\
+model\_validation\_tier\_explicit\_resnet50 & pass & required\_for\_final \\
+model\_validation\_tier\_final\_resnet50 & deferred & required\_for\_final \\
+model\_identity\_resnet50 & pass & required\_for\_final \\
+candidate\_universe\_resnet50 & pass & required\_for\_final \\
+model\_role\_explicit\_yolo26s & pass & required\_for\_final \\
+model\_family\_id\_explicit\_yolo26s & not\_applicable & informational \\
+model\_generalization\_scope\_explicit\_yolo26s & not\_applicable & informational \\
+model\_validation\_tier\_explicit\_yolo26s & pass & required\_for\_final \\
+model\_validation\_tier\_final\_yolo26s & deferred & required\_for\_final \\
+model\_identity\_yolo26s & pass & required\_for\_final \\
+candidate\_universe\_yolo26s & pass & required\_for\_final \\
+model\_role\_explicit\_yolov7\_paper & pass & required\_for\_final \\
+model\_family\_id\_explicit\_yolov7\_paper & not\_applicable & informational \\
+model\_generalization\_scope\_explicit\_yolov7\_paper & not\_applicable & informational \\
+model\_validation\_tier\_explicit\_yolov7\_paper & pass & required\_for\_final \\
+model\_validation\_tier\_final\_yolov7\_paper & deferred & required\_for\_final \\
+model\_identity\_yolov7\_paper & pass & required\_for\_final \\
+candidate\_universe\_yolov7\_paper & pass & required\_for\_final \\
+holdout\_registry & not\_applicable & informational \\
+holdout\_registry\_integrity & not\_applicable & informational \\
+ranking\_validation\_enabled & not\_applicable & informational \\
+ranking\_model\_bundle\_integrity & not\_applicable & informational \\
+stage\_time\_model & not\_applicable & informational \\
+native\_handover\_model & not\_applicable & informational \\
+native\_full\_baselines & pass & required\_for\_final \\
+effective\_energy\_configuration & deferred & required\_for\_final \\
+energy\_window\_method\_ab & deferred & required\_for\_final \\
+full\_system\_power\_scope & deferred & required\_for\_final \\
+energy\_command\_window & deferred & required\_for\_final \\
+energy\_repetitions & deferred & required\_for\_final \\
+energy\_confidence\_interval & deferred & required\_for\_final \\
+energy\_run\_order & deferred & required\_for\_final \\
+idle\_normalization\_policy & pass & required\_for\_final \\
+energy\_calibration\_manifest & deferred & required\_for\_final \\
+\bottomrule
+\end{tabular}
+\end{table}

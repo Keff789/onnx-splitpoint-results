@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Comparison of four pre-registered split-candidate ranking baselines plus the workflow selector. Top-k and regret are audit-relative for deterministic-audit universes. Absolute error is reported only for cycle-time predictors.}
+\label{tab:ranking-method-comparison}
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+Method & $n_{HO}$ & MAE [ms] & MAPE [percent] & $\rho$ & $\tau_b$ & Hit@5 & Elite R@5 & Regret@5 & Status \\
+\midrule
+Cut bytes only & 0.000 & -- & -- & 0.256 & 0.223 & -- & -- & -- & development\_only \\
+Weighted score & 0.000 & -- & -- & 0.777 & 0.591 & -- & -- & -- & development\_only \\
+Cycle time without handover & 0.000 & 1.110 & 34.990 & 0.811 & 0.614 & -- & -- & -- & development\_only \\
+Cycle time with runner/direction handover & 0.000 & 1.573 & 50.699 & 0.846 & 0.661 & -- & -- & -- & development\_only \\
+Actual hardware-aware ONNX-boundary selector & 0.000 & -- & -- & 0.589 & 0.446 & -- & -- & -- & development\_only \\
+\bottomrule
+\end{tabular}
+\end{table}

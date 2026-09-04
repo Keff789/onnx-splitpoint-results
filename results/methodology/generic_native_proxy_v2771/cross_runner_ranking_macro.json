@@ -1,0 +1,63 @@
+{
+  "group_count": 9,
+  "macro_kendall_tau_b": null,
+  "macro_native_best_hit_at_1": null,
+  "macro_native_regret_at_1": null,
+  "macro_native_regret_at_5": null,
+  "macro_pairwise_concordance": null,
+  "macro_quality_native_best_hit_at_1": 1.0,
+  "macro_quality_native_regret_at_1": 0.0,
+  "macro_quality_spearman_rho": 1.0,
+  "macro_spearman_rho": null,
+  "macro_technical_native_best_hit_at_1": 1.0,
+  "macro_technical_native_regret_at_1": 0.0,
+  "macro_technical_spearman_rho": 1.0,
+  "quality_group_count": 1,
+  "status": "quality_screening_only",
+  "technical_group_count": 6,
+  "technical_hit_at_1_comparable_group_count": 6,
+  "technical_hit_at_1_count": 6,
+  "technical_hit_at_1_fraction": 1.0,
+  "technical_metrics_by_backend": {
+    "deepx_m1": {
+      "comparable_pair_count": 6,
+      "concordance_fraction": 1.0,
+      "concordant_pair_count": 6,
+      "hit_at_1_comparable_group_count": 2,
+      "hit_at_1_count": 2,
+      "hit_at_1_fraction": 1.0,
+      "qualified_group_count": 2,
+      "regret_at_1_mean": 0.0,
+      "regret_at_1_median": 0.0
+    },
+    "hailo10h": {
+      "comparable_pair_count": 6,
+      "concordance_fraction": 1.0,
+      "concordant_pair_count": 6,
+      "hit_at_1_comparable_group_count": 2,
+      "hit_at_1_count": 2,
+      "hit_at_1_fraction": 1.0,
+      "qualified_group_count": 2,
+      "regret_at_1_mean": 0.0,
+      "regret_at_1_median": 0.0
+    },
+    "hailo8": {
+      "comparable_pair_count": 6,
+      "concordance_fraction": 0.8333333333333334,
+      "concordant_pair_count": 5,
+      "hit_at_1_comparable_group_count": 2,
+      "hit_at_1_count": 2,
+      "hit_at_1_fraction": 1.0,
+      "qualified_group_count": 2,
+      "regret_at_1_mean": 0.0,
+      "regret_at_1_median": 0.0
+    }
+  },
+  "technical_micro_pairwise_comparable_count": 18,
+  "technical_micro_pairwise_concordance": 0.9444444444444444,
+  "technical_micro_pairwise_concordant_count": 17,
+  "technical_regret_at_1_mean": 0.0,
+  "technical_regret_at_1_median": 0.0,
+  "technical_subminimum_group_count": 3,
+  "validated_group_count": 0
+}

@@ -1,0 +1,165 @@
+{
+  "adapter": {
+    "candidate_plan_paths": {
+      "resnet50": "/home/kmika/Models/EvaluationRuns/resnet_yolo26s_yolov7_v27549_phase2_ranking_audit_b500_20260820_070324/models/resnet50/analysis/final_candidate_plan.json",
+      "yolo26s": "/home/kmika/Models/EvaluationRuns/resnet_yolo26s_yolov7_v27549_phase2_ranking_audit_b500_20260820_070324/models/yolo26s/analysis/final_candidate_plan.json",
+      "yolov7_paper": "/home/kmika/Models/EvaluationRuns/resnet_yolo26s_yolov7_v27549_phase2_ranking_audit_b500_20260820_070324/models/yolov7_paper/analysis/final_candidate_plan.json"
+    },
+    "constructed_planned_endpoint_count": 264,
+    "effective_execution_plan_path": "/home/kmika/Models/EvaluationRuns/resnet_yolo26s_yolov7_v27549_phase2_ranking_audit_b500_20260820_070324/effective_execution_plan.json",
+    "errors": [],
+    "evidence_completeness_reasons": [],
+    "evidence_completeness_status": "complete",
+    "expected_count_matches": true,
+    "expected_generic_result_rows_total": 264,
+    "generation_decision_paths": {
+      "resnet50": "/home/kmika/Models/EvaluationRuns/resnet_yolo26s_yolov7_v27549_phase2_ranking_audit_b500_20260820_070324/models/resnet50/benchmark_set/generation_decisions.json",
+      "yolo26s": "/home/kmika/Models/EvaluationRuns/resnet_yolo26s_yolov7_v27549_phase2_ranking_audit_b500_20260820_070324/models/yolo26s/benchmark_set/generation_decisions.json",
+      "yolov7_paper": "/home/kmika/Models/EvaluationRuns/resnet_yolo26s_yolov7_v27549_phase2_ranking_audit_b500_20260820_070324/models/yolov7_paper/benchmark_set/generation_decisions.json"
+    },
+    "mapped_run_profiles": [
+      "ort_tensorrt",
+      "hailo8",
+      "hailo8_to_trt",
+      "hailo10",
+      "hailo10_to_trt",
+      "deepx_m1_full",
+      "deepx_m1_to_tensorrt"
+    ],
+    "measurement_completeness_status": "incomplete_but_terminally_accounted",
+    "profile_supplied": true,
+    "projected_normalized_row_count": 208,
+    "read_only": true,
+    "run_dir": "/home/kmika/Models/EvaluationRuns/resnet_yolo26s_yolov7_v27549_phase2_ranking_audit_b500_20260820_070324",
+    "run_profile_source": "effective_generic_run_ids",
+    "runtime_failure_diagnostics": [],
+    "runtime_failure_evidence": [
+      {
+        "case_id": "b306",
+        "endpoint_id": "generic:yolov7_paper:hailo8_to_trt:b306",
+        "error_class": "case_runner_signal_sigsegv",
+        "evidence_line_number": 250,
+        "evidence_source": "/home/kmika/Models/EvaluationRuns/resnet_yolo26s_yolov7_v27549_phase2_ranking_audit_b500_20260820_070324/models/yolov7_paper/benchmark_results/remote_benchmark_stdout_orin_nx_hailo8_01.txt",
+        "evidence_status_path": "/home/kmika/Models/EvaluationRuns/resnet_yolo26s_yolov7_v27549_phase2_ranking_audit_b500_20260820_070324/models/yolov7_paper/benchmark_results/remote_benchmark_status_orin_nx_hailo8_01.json",
+        "measurement_valid": false,
+        "model_id": "yolov7_paper",
+        "raw_evidence_line": "[warn] case failed: b306 (rc=-11)",
+        "run_profile_id": "hailo8_to_trt",
+        "runner_returncode": -11,
+        "runner_signal_number": 11,
+        "setup_id": "orin_nx_hailo8_01",
+        "terminal": true,
+        "terminal_failure": true,
+        "terminal_reason": "case_runner_nonzero_rc:-11",
+        "terminal_reason_scope": "case_runtime_process"
+      },
+      {
+        "case_id": "b013",
+        "endpoint_id": "generic:yolov7_paper:hailo8_to_trt:b013",
+        "error_class": "case_runner_signal_sigsegv",
+        "evidence_line_number": 596,
+        "evidence_source": "/home/kmika/Models/EvaluationRuns/resnet_yolo26s_yolov7_v27549_phase2_ranking_audit_b500_20260820_070324/models/yolov7_paper/benchmark_results/remote_benchmark_stdout_orin_nx_hailo8_01.txt",
+        "evidence_status_path": "/home/kmika/Models/EvaluationRuns/resnet_yolo26s_yolov7_v27549_phase2_ranking_audit_b500_20260820_070324/models/yolov7_paper/benchmark_results/remote_benchmark_status_orin_nx_hailo8_01.json",
+        "measurement_valid": false,
+        "model_id": "yolov7_paper",
+        "raw_evidence_line": "[warn] case failed: b013 (rc=-11)",
+        "run_profile_id": "hailo8_to_trt",
+        "runner_returncode": -11,
+        "runner_signal_number": 11,
+        "setup_id": "orin_nx_hailo8_01",
+        "terminal": true,
+        "terminal_failure": true,
+        "terminal_reason": "case_runner_nonzero_rc:-11",
+        "terminal_reason_scope": "case_runtime_process"
+      }
+    ],
+    "runtime_failure_evidence_count": 2,
+    "schema": "onnx-splitpoint/evalrun-endpoint-lifecycle-adapter",
+    "schema_version": 1,
+    "status": "ok",
+    "unknown_run_profiles": [],
+    "unprojected_normalized_row_count": 0,
+    "unprojected_normalized_rows": []
+  },
+  "audit_coverage": {
+    "resnet50": {
+      "missing_payload_case_ids": [
+        "b050"
+      ],
+      "missing_valid_measurement_case_ids": [
+        "b050"
+      ],
+      "observed": 19,
+      "payload_observed": 19,
+      "planned": 20,
+      "valid_observed_any_backend": 19
+    },
+    "yolo26s": {
+      "missing_payload_case_ids": [
+        "b066",
+        "b088",
+        "b104",
+        "b199",
+        "b259",
+        "b280",
+        "b313",
+        "b316",
+        "b351",
+        "b362",
+        "b377",
+        "b382"
+      ],
+      "missing_valid_measurement_case_ids": [
+        "b066",
+        "b088",
+        "b104",
+        "b199",
+        "b259",
+        "b280",
+        "b313",
+        "b316",
+        "b351",
+        "b362",
+        "b377",
+        "b382"
+      ],
+      "observed": 8,
+      "payload_observed": 8,
+      "planned": 20,
+      "valid_observed_any_backend": 8
+    },
+    "yolov7_paper": {
+      "missing_payload_case_ids": [
+        "b031"
+      ],
+      "missing_valid_measurement_case_ids": [
+        "b031"
+      ],
+      "observed": 19,
+      "payload_observed": 19,
+      "planned": 20,
+      "valid_observed_any_backend": 19
+    }
+  },
+  "diagnostics": {
+    "invalid_evidence": [],
+    "unmatched_evidence_count": 0,
+    "unmatched_evidence_identities": []
+  },
+  "invalid_measurement_count": 2,
+  "invalid_measurement_terminal": 2,
+  "materialized": 208,
+  "measured": 208,
+  "measurement_payload_present": 208,
+  "missing_measurement_payload_count": 56,
+  "nonmeasured": 56,
+  "nonterminal": 0,
+  "payload_missing": 56,
+  "planned": 264,
+  "schema": "onnx-splitpoint/endpoint-lifecycle-summary",
+  "schema_version": 1,
+  "terminal": 264,
+  "valid_measurement": 206,
+  "valid_measurement_count": 206,
+  "without_valid_measurement_count": 58
+}

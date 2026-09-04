@@ -1,0 +1,17 @@
+claim_kind,dimension,value,count
+performance,model,resnet50,84
+performance,model,yolo26s,40
+performance,model,yolov7_paper,84
+performance,backend,deepx_m1,3
+performance,backend,deepx_m1_to_tensorrt,49
+performance,backend,hailo10,3
+performance,backend,hailo10_to_tensorrt,49
+performance,backend,hailo8,3
+performance,backend,hailo8_to_tensorrt,49
+performance,backend,tensorrt,52
+performance,setup,orin_nx_deepx_m1_01,104
+performance,setup,orin_nx_hailo10_01,52
+performance,setup,orin_nx_hailo8_01,52
+performance,reason,contract_fail_or_unavailable,185
+performance,reason,screening_only,21
+performance,reason,terminal_process_failure,2

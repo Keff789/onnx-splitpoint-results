@@ -1,0 +1,552 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Ranking-method sensitivity on identical technical, quality-pass, and pass-or-inconclusive cohorts. Subset correlations are diagnostic; global top-1 metrics require the complete declared technical universe.}
+\label{tab:ranking-method-cohort-sensitivity}
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+Model & Direction & Method & Cohort & $n$ & Coverage & $\rho$ & $\tau_b$ & Global Hit@1 & Global Regret@1 \\
+\midrule
+resnet50 & deepx\_m1\_to\_tensorrt & Cut bytes only & technical & 19.000 & 0.950 & 0.981 & 0.934 &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cut bytes only & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Weighted score & technical & 19.000 & 0.950 & 0.281 & 0.170 &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Weighted score & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cycle time without handover & technical & 19.000 & 0.950 & -0.065 & -0.041 &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cycle time without handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & technical & 19.000 & 0.950 & 0.398 & 0.240 &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 19.000 & 0.950 & -0.154 & -0.106 &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cut bytes only & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cut bytes only & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Weighted score & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Weighted score & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cycle time without handover & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cycle time without handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cut bytes only & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cut bytes only & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Weighted score & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Weighted score & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cycle time without handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cycle time without handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cut bytes only & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cut bytes only & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Weighted score & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Weighted score & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cycle time without handover & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cycle time without handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cut bytes only & technical & 19.000 & 0.950 & 0.968 & 0.898 &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cut bytes only & quality\_pass & 2.000 & 0.100 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 16.000 & 0.800 & 0.950 & 0.867 &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Weighted score & technical & 19.000 & 0.950 & 0.298 & 0.228 &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Weighted score & quality\_pass & 2.000 & 0.100 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 16.000 & 0.800 & 0.097 & 0.133 &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cycle time without handover & technical & 19.000 & 0.950 & -0.021 & 0.018 &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cycle time without handover & quality\_pass & 2.000 & 0.100 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 16.000 & 0.800 & -0.209 & -0.067 &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & technical & 19.000 & 0.950 & -0.075 & -0.029 &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 2.000 & 0.100 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 16.000 & 0.800 & -0.247 & -0.117 &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 19.000 & 0.950 & -0.370 & -0.235 &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 2.000 & 0.100 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 16.000 & 0.800 & -0.421 & -0.259 &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cut bytes only & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cut bytes only & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Weighted score & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Weighted score & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cycle time without handover & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cycle time without handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cut bytes only & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cut bytes only & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Weighted score & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Weighted score & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cycle time without handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cycle time without handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cut bytes only & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cut bytes only & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Weighted score & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Weighted score & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cycle time without handover & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cycle time without handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cut bytes only & technical & 19.000 & 0.950 & 0.550 & 0.440 &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cut bytes only & quality\_pass & 3.000 & 0.150 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 17.000 & 0.850 & 0.553 & 0.445 &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Weighted score & technical & 19.000 & 0.950 & 0.563 & 0.404 &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Weighted score & quality\_pass & 3.000 & 0.150 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 17.000 & 0.850 & 0.593 & 0.426 &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cycle time without handover & technical & 19.000 & 0.950 & 0.474 & 0.310 &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cycle time without handover & quality\_pass & 3.000 & 0.150 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 17.000 & 0.850 & 0.493 & 0.309 &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & technical & 19.000 & 0.950 & 0.418 & 0.287 &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 3.000 & 0.150 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 17.000 & 0.850 & 0.424 & 0.279 &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 19.000 & 0.950 & -0.273 & -0.106 &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 3.000 & 0.150 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 17.000 & 0.850 & -0.281 & -0.125 &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cut bytes only & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cut bytes only & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Weighted score & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Weighted score & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cycle time without handover & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cycle time without handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cut bytes only & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cut bytes only & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Weighted score & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Weighted score & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cycle time without handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cycle time without handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cut bytes only & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cut bytes only & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Weighted score & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Weighted score & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cycle time without handover & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cycle time without handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+resnet50 & tensorrt\_to\_tensorrt & Cut bytes only & technical & 19.000 & 0.950 & 0.256 & 0.223 &  & -- \\
+resnet50 & tensorrt\_to\_tensorrt & Cut bytes only & quality\_pass & 19.000 & 0.950 & 0.256 & 0.223 &  & -- \\
+resnet50 & tensorrt\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 19.000 & 0.950 & 0.256 & 0.223 &  & -- \\
+resnet50 & tensorrt\_to\_tensorrt & Weighted score & technical & 19.000 & 0.950 & 0.777 & 0.591 &  & -- \\
+resnet50 & tensorrt\_to\_tensorrt & Weighted score & quality\_pass & 19.000 & 0.950 & 0.777 & 0.591 &  & -- \\
+resnet50 & tensorrt\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 19.000 & 0.950 & 0.777 & 0.591 &  & -- \\
+resnet50 & tensorrt\_to\_tensorrt & Cycle time without handover & technical & 19.000 & 0.950 & 0.811 & 0.614 &  & -- \\
+resnet50 & tensorrt\_to\_tensorrt & Cycle time without handover & quality\_pass & 19.000 & 0.950 & 0.811 & 0.614 &  & -- \\
+resnet50 & tensorrt\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 19.000 & 0.950 & 0.811 & 0.614 &  & -- \\
+resnet50 & tensorrt\_to\_tensorrt & Cycle time with runner/direction handover & technical & 19.000 & 0.950 & 0.846 & 0.661 &  & -- \\
+resnet50 & tensorrt\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 19.000 & 0.950 & 0.846 & 0.661 &  & -- \\
+resnet50 & tensorrt\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 19.000 & 0.950 & 0.846 & 0.661 &  & -- \\
+resnet50 & tensorrt\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 19.000 & 0.950 & 0.589 & 0.446 &  & -- \\
+resnet50 & tensorrt\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 19.000 & 0.950 & 0.589 & 0.446 &  & -- \\
+resnet50 & tensorrt\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 19.000 & 0.950 & 0.589 & 0.446 &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cut bytes only & technical & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cut bytes only & quality\_pass & 6.000 & 0.300 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Weighted score & technical & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Weighted score & quality\_pass & 6.000 & 0.300 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cycle time without handover & technical & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cycle time without handover & quality\_pass & 6.000 & 0.300 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & technical & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 6.000 & 0.300 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 6.000 & 0.300 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cut bytes only & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cut bytes only & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Weighted score & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Weighted score & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cycle time without handover & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cycle time without handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cut bytes only & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cut bytes only & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Weighted score & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Weighted score & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cycle time without handover & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cycle time without handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cut bytes only & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cut bytes only & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Weighted score & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Weighted score & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cycle time without handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cycle time without handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cut bytes only & technical & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cut bytes only & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Weighted score & technical & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Weighted score & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cycle time without handover & technical & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cycle time without handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & technical & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cut bytes only & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cut bytes only & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Weighted score & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Weighted score & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cycle time without handover & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cycle time without handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cut bytes only & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cut bytes only & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Weighted score & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Weighted score & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cycle time without handover & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cycle time without handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cut bytes only & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cut bytes only & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Weighted score & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Weighted score & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cycle time without handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cycle time without handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cut bytes only & technical & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cut bytes only & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 2.000 & 0.100 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Weighted score & technical & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Weighted score & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 2.000 & 0.100 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cycle time without handover & technical & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cycle time without handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 2.000 & 0.100 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & technical & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 2.000 & 0.100 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 2.000 & 0.100 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cut bytes only & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cut bytes only & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Weighted score & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Weighted score & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cycle time without handover & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cycle time without handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cut bytes only & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cut bytes only & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Weighted score & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Weighted score & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cycle time without handover & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cycle time without handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cut bytes only & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cut bytes only & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Weighted score & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Weighted score & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cycle time without handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cycle time without handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolo26s & tensorrt\_to\_tensorrt & Cut bytes only & technical & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & tensorrt\_to\_tensorrt & Cut bytes only & quality\_pass & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & tensorrt\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & tensorrt\_to\_tensorrt & Weighted score & technical & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & tensorrt\_to\_tensorrt & Weighted score & quality\_pass & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & tensorrt\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & tensorrt\_to\_tensorrt & Cycle time without handover & technical & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & tensorrt\_to\_tensorrt & Cycle time without handover & quality\_pass & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & tensorrt\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & tensorrt\_to\_tensorrt & Cycle time with runner/direction handover & technical & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & tensorrt\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & tensorrt\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & tensorrt\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & tensorrt\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 8.000 & 0.400 & -- & -- &  & -- \\
+yolo26s & tensorrt\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 8.000 & 0.400 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Cut bytes only & technical & 19.000 & 0.950 & 0.969 & 0.885 &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Cut bytes only & quality\_pass & 19.000 & 0.950 & 0.969 & 0.885 &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 19.000 & 0.950 & 0.969 & 0.885 &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Weighted score & technical & 19.000 & 0.950 & 0.366 & 0.270 &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Weighted score & quality\_pass & 19.000 & 0.950 & 0.366 & 0.270 &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 19.000 & 0.950 & 0.366 & 0.270 &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Cycle time without handover & technical & 19.000 & 0.950 & 0.171 & 0.141 &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Cycle time without handover & quality\_pass & 19.000 & 0.950 & 0.171 & 0.141 &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 19.000 & 0.950 & 0.171 & 0.141 &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & technical & 19.000 & 0.950 & 0.664 & 0.446 &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 19.000 & 0.950 & 0.664 & 0.446 &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 19.000 & 0.950 & 0.664 & 0.446 &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 19.000 & 0.950 & 0.626 & 0.387 &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 19.000 & 0.950 & 0.626 & 0.387 &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 19.000 & 0.950 & 0.626 & 0.387 &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Cut bytes only & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Cut bytes only & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Weighted score & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Weighted score & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Cycle time without handover & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Cycle time without handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Cut bytes only & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Cut bytes only & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Weighted score & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Weighted score & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Cycle time without handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Cycle time without handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & deepx\_m1\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Cut bytes only & technical & 19.000 & 0.950 & 0.912 & 0.791 &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Cut bytes only & quality\_pass & 10.000 & 0.500 & 0.936 & 0.809 &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 10.000 & 0.500 & 0.936 & 0.809 &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Weighted score & technical & 19.000 & 0.950 & 0.355 & 0.282 &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Weighted score & quality\_pass & 10.000 & 0.500 & 0.770 & 0.600 &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 10.000 & 0.500 & 0.770 & 0.600 &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Cycle time without handover & technical & 19.000 & 0.950 & 0.185 & 0.152 &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Cycle time without handover & quality\_pass & 10.000 & 0.500 & 0.709 & 0.511 &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 10.000 & 0.500 & 0.709 & 0.511 &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & technical & 19.000 & 0.950 & 0.348 & 0.258 &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 10.000 & 0.500 & 0.709 & 0.511 &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 10.000 & 0.500 & 0.709 & 0.511 &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 19.000 & 0.950 & 0.615 & 0.457 &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 10.000 & 0.500 & 0.624 & 0.556 &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 10.000 & 0.500 & 0.624 & 0.556 &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Cut bytes only & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Cut bytes only & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Weighted score & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Weighted score & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Cycle time without handover & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Cycle time without handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Cut bytes only & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Cut bytes only & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Weighted score & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Weighted score & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Cycle time without handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Cycle time without handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo10h\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Cut bytes only & technical & 17.000 & 0.850 & 0.670 & 0.504 &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Cut bytes only & quality\_pass & 8.000 & 0.400 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 9.000 & 0.450 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Weighted score & technical & 17.000 & 0.850 & 0.650 & 0.471 &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Weighted score & quality\_pass & 8.000 & 0.400 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 9.000 & 0.450 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Cycle time without handover & technical & 17.000 & 0.850 & 0.591 & 0.412 &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Cycle time without handover & quality\_pass & 8.000 & 0.400 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 9.000 & 0.450 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & technical & 17.000 & 0.850 & 0.743 & 0.500 &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 8.000 & 0.400 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 9.000 & 0.450 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 17.000 & 0.850 & 0.767 & 0.544 &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 8.000 & 0.400 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 9.000 & 0.450 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Cut bytes only & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Cut bytes only & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Weighted score & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Weighted score & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Cycle time without handover & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Cycle time without handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 1.000 & 0.050 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Cut bytes only & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Cut bytes only & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Weighted score & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Weighted score & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Cycle time without handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Cycle time without handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & hailo8\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 0.000 & 0.000 & -- & -- &  & -- \\
+yolov7\_paper & tensorrt\_to\_tensorrt & Cut bytes only & technical & 19.000 & 0.950 & 0.689 & 0.519 &  & -- \\
+yolov7\_paper & tensorrt\_to\_tensorrt & Cut bytes only & quality\_pass & 19.000 & 0.950 & 0.689 & 0.519 &  & -- \\
+yolov7\_paper & tensorrt\_to\_tensorrt & Cut bytes only & quality\_pass\_or\_inconclusive & 19.000 & 0.950 & 0.689 & 0.519 &  & -- \\
+yolov7\_paper & tensorrt\_to\_tensorrt & Weighted score & technical & 19.000 & 0.950 & 0.780 & 0.657 &  & -- \\
+yolov7\_paper & tensorrt\_to\_tensorrt & Weighted score & quality\_pass & 19.000 & 0.950 & 0.780 & 0.657 &  & -- \\
+yolov7\_paper & tensorrt\_to\_tensorrt & Weighted score & quality\_pass\_or\_inconclusive & 19.000 & 0.950 & 0.780 & 0.657 &  & -- \\
+yolov7\_paper & tensorrt\_to\_tensorrt & Cycle time without handover & technical & 19.000 & 0.950 & 0.684 & 0.528 &  & -- \\
+yolov7\_paper & tensorrt\_to\_tensorrt & Cycle time without handover & quality\_pass & 19.000 & 0.950 & 0.684 & 0.528 &  & -- \\
+yolov7\_paper & tensorrt\_to\_tensorrt & Cycle time without handover & quality\_pass\_or\_inconclusive & 19.000 & 0.950 & 0.684 & 0.528 &  & -- \\
+yolov7\_paper & tensorrt\_to\_tensorrt & Cycle time with runner/direction handover & technical & 19.000 & 0.950 & 0.945 & 0.833 &  & -- \\
+yolov7\_paper & tensorrt\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass & 19.000 & 0.950 & 0.945 & 0.833 &  & -- \\
+yolov7\_paper & tensorrt\_to\_tensorrt & Cycle time with runner/direction handover & quality\_pass\_or\_inconclusive & 19.000 & 0.950 & 0.945 & 0.833 &  & -- \\
+yolov7\_paper & tensorrt\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & technical & 19.000 & 0.950 & 0.856 & 0.692 &  & -- \\
+yolov7\_paper & tensorrt\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass & 19.000 & 0.950 & 0.856 & 0.692 &  & -- \\
+yolov7\_paper & tensorrt\_to\_tensorrt & Actual hardware-aware ONNX-boundary selector & quality\_pass\_or\_inconclusive & 19.000 & 0.950 & 0.856 & 0.692 &  & -- \\
+\bottomrule
+\end{tabular}
+\end{table}

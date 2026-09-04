@@ -1,0 +1,13 @@
+{
+  "native_energy": {
+    "pair_count": 0,
+    "row_count": 0
+  },
+  "official_coco": {
+    "status": "disabled"
+  },
+  "quality_decomposition": {
+    "loss_decomposition_count": 196,
+    "reference_comparison_count": 217
+  }
+}
