@@ -1,0 +1,19 @@
+[three-stage][hailo] input_shape=640x640x3 input_bytes=1228800 boundary_bytes=3276800
+[three-stage][trt] input=mul_20 dtype=uint8 bytes=3276800 outputs=output:1x3x80x80x85,clone_1:1x3x40x40x85,clone_2:1x3x20x20x85
+[three-stage][hailo] input_shape=640x640x3 input_bytes=1228800 boundary_bytes=3276800
+[three-stage][trt] input=mul_20 dtype=uint8 bytes=3276800 outputs=output:1x3x80x80x85,clone_1:1x3x40x40x85,clone_2:1x3x20x20x85
+[three-stage][hailo] input_shape=640x640x3 input_bytes=1228800 boundary_bytes=3276800
+[three-stage][trt] input=mul_20 dtype=uint8 bytes=3276800 outputs=output:1x3x80x80x85,clone_1:1x3x40x40x85,clone_2:1x3x20x20x85
+[three-stage][hailo] input_shape=640x640x3 input_bytes=1228800 boundary_bytes=3276800
+[three-stage][trt] input=mul_20 dtype=uint8 bytes=3276800 outputs=output:1x3x80x80x85,clone_1:1x3x40x40x85,clone_2:1x3x20x20x85
+{
+  "status": "PASS_THREE_STAGE_TARGET_MET",
+  "report": "/home/nx/v2794_yolov7_b066_product_normal_runner_20260901_092235/evidence/work/concurrent_three_stage/three_stage_result/yolov7_three_stage_v1_20260901_092240/three_stage_canary_report.json",
+  "markdown": "/home/nx/v2794_yolov7_b066_product_normal_runner_20260901_092235/evidence/work/concurrent_three_stage/three_stage_result/yolov7_three_stage_v1_20260901_092240/three_stage_canary_report.md",
+  "raw_fps_median": 97.018171689,
+  "completed_fps_median": 96.999823097,
+  "completed_raw_ratio_median": 0.999812703,
+  "post_p95_guard_ms": 2.1113362,
+  "postflight_exact": 1,
+  "next": "integrate_contract_bound_three_stage_native_runner_once_in_v2_79"
+}

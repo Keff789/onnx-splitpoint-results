@@ -1,0 +1,65 @@
+jetson_results: null
+shelly_results: null
+oscilloscope_results: null
+firmware_results:
+  energy: 856.8374352629285
+  duration: 60.1915
+  start_stop_idx:
+  - 10048
+  - 130431
+  max_frame_energy: 1.5807021193498276
+  idle_frame_energy: 1.2015363830484225
+command_window_binding:
+  schema: power-calculations/command-window-result
+  schema_version: 2
+  status: ok
+  binding_method: collector_sample_marker_crop
+  run_id: native_native_full_deepx__resnet50__full__orin_nx_deepx_m1_01__645bd3bd6f22
+  window_id: >-
+    native_native_full_deepx__resnet50__full__orin_nx_deepx_m1_01__645bd3bd6f22:repeat:002
+  source: fast_firmware
+  request_path: >-
+    /home/kmika/Models/EnergyMeasurements/Manual/orin_nx_deepx_m1_01/native_native_full_deepx__resnet50__full__orin_nx_deepx_m1_01__645bd3bd6f22/20260719_193847/run_002/command_window_request.json
+  request_sha256: aace02704be62a4ccd224b866c528c30f06391fe931abd971dd58fb98da01cfe
+  marker_path: >-
+    /home/kmika/Models/EnergyMeasurements/Manual/orin_nx_deepx_m1_01/native_native_full_deepx__resnet50__full__orin_nx_deepx_m1_01__645bd3bd6f22/20260719_193847/run_002/collector_storage/command_window_markers.json
+  marker_sha256: e16242879c434a72c8b4f9218a27a54c86b1b0a8b47b53fab0631eb7989dc04b
+  trace_path: >-
+    /home/kmika/Models/EnergyMeasurements/Manual/orin_nx_deepx_m1_01/native_native_full_deepx__resnet50__full__orin_nx_deepx_m1_01__645bd3bd6f22/20260719_193847/run_002/collector_storage/fast_firmware.parquet
+  trace_sha256: fe7e9bd055e589010c9680da628a99445b70b88ac0070d68f31de33a335ce7c0
+  command_path: >-
+    /home/kmika/Models/EnergyMeasurements/Manual/orin_nx_deepx_m1_01/native_native_full_deepx__resnet50__full__orin_nx_deepx_m1_01__645bd3bd6f22/20260719_193847/run_002/energy_command.sh
+  command_sha256: b8bd84bc5b65e97e19e1febf5513b4b98cd3fc7cc6b0a342ed8b65cbe51a8b31
+  command_text_sha256: dc8638c3974f667a22667f8c3abbb93a84d18a0993a6113a8138a9b0cea3d430
+  command_argv0: >-
+    /home/kmika/Models/EnergyMeasurements/Manual/orin_nx_deepx_m1_01/native_native_full_deepx__resnet50__full__orin_nx_deepx_m1_01__645bd3bd6f22/20260719_193847/run_002/energy_command.sh
+  timing_path: >-
+    /home/kmika/Models/EnergyMeasurements/Manual/orin_nx_deepx_m1_01/native_native_full_deepx__resnet50__full__orin_nx_deepx_m1_01__645bd3bd6f22/20260719_193847/run_002/workload_timing.txt
+  timing_sha256: 6772c9ab5085d6b598f279f33a2860fc64fdcf51fbc67372507924a4c9181869
+  first_sample_index: 10048
+  last_sample_index: 130431
+  sample_count: 120384
+  interval_count: 120383
+  sample_rate_hz: 2000.0
+  duration_s: 60.1915
+  process_rc: 0
+  drop_count: 0
+  boundary_uncertainty_samples: 64
+  maximum_boundary_uncertainty_samples: 64
+  trace_covers_window: true
+  request_created_at_unix_ns: 1784482941188246786
+  command_start_realtime_ns: 1784482875871642543
+  command_end_realtime_ns: 1784482936049855719
+  command_start_monotonic_ns: 5096800007
+  command_end_monotonic_ns: 65275013076
+  command_process_id: 3380289
+  command_start_clock_read_uncertainty_ns: 139
+  command_end_clock_read_uncertainty_ns: 917
+  energy_semantics: calibrated_input_energy_unsubtracted
+  energy_field: firmware_results.energy
+  energy_j: 856.8374352629285
+  calibration_environment: Jetson
+  environment_scale_factor: 0.9705324920014426
+  lowpass_filter_applied: false
+  lowpass_cutoff_hz: null
+  postprocessor_version: 0.1.0

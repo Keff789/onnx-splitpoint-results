@@ -1,0 +1,10 @@
+2026-07-17T16:34:23.396Z INFO  [urecs_data_collector] Arguments { storage_path: Some("/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_001/collector_storage"), duration: Ok(61s), pre_duration: Ok(5s), post_duration: Ok(5s), command: Some("/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/energy_command.sh"), sources: [FastFirmware { address: "192.168.0.197", data_port: 3000, channel: 0, sample_rate: 2000 }] }
+2026-07-17T16:34:23.396Z INFO  [urecs_data_collector] Starting measurement
+2026-07-17T16:34:28.396Z INFO  [urecs_data_collector] Running command: /home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/energy_command.sh
+2026-07-17T16:35:34.397Z INFO  [urecs_data_collector] Waiting for command to finish
+2026-07-17T16:35:34.397Z INFO  [urecs_data_collector] Shutting down...
+2026-07-17T16:35:34.397Z INFO  [urecs_data_collector::network_firmware_fast] Shutting down Fast Firmware Interface
+2026-07-17T16:35:34.397Z INFO  [urecs_data_collector] Waiting for threads to stop...
+2026-07-17T16:35:34.404Z INFO  [urecs_data_collector::network_firmware_fast] Finishing thread
+2026-07-17T16:35:34.416Z INFO  [urecs_data_collector] Flushing Writer
+2026-07-17T16:35:34.417Z INFO  [urecs_data_collector] Writer Flushed

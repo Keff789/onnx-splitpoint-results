@@ -1,0 +1,8 @@
+{
+  "count": 18274,
+  "source": "verified_full_energy_hotloop:deepx_full_prepared_feed_hotloop",
+  "exact": true,
+  "transport": "runtime_marker",
+  "evidence_path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_deepx_m1_01/native_native_full_deepx__resnet50__full__orin_nx_deepx_m1_01__645bd3bd6f22/20260719_193847/run_002/workload_stdout.log",
+  "status": "exact"
+}

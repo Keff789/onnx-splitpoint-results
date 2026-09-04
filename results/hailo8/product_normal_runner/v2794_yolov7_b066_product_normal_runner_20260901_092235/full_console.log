@@ -1,0 +1,273 @@
+V2793_ISOLATED_SOURCE_PATCH=NOT_REQUIRED
+VERSION=2.79.4
+BUILD_ID=v2.79.4-native-productized-three-stage-release-consistency
+NUMPY_VERSION=2.2.3
+TENSORRT_VERSION=10.3.0
+MIXED_RUNTIME_IMPORT=PASS
+SOURCE_MANIFEST_IDENTITY=PASS
+CONCURRENT_DISPATCH=PASS
+DUAL_BINDING_PROPAGATION=PASS
+[three-stage][hailo] input_shape=640x640x3 input_bytes=1228800 boundary_bytes=3276800
+[three-stage][trt] input=mul_20 dtype=uint8 bytes=3276800 outputs=output:1x3x80x80x85,clone_1:1x3x40x40x85,clone_2:1x3x20x20x85
+[three-stage][hailo] input_shape=640x640x3 input_bytes=1228800 boundary_bytes=3276800
+[three-stage][trt] input=mul_20 dtype=uint8 bytes=3276800 outputs=output:1x3x80x80x85,clone_1:1x3x40x40x85,clone_2:1x3x20x20x85
+[three-stage][hailo] input_shape=640x640x3 input_bytes=1228800 boundary_bytes=3276800
+[three-stage][trt] input=mul_20 dtype=uint8 bytes=3276800 outputs=output:1x3x80x80x85,clone_1:1x3x40x40x85,clone_2:1x3x20x20x85
+[three-stage][hailo] input_shape=640x640x3 input_bytes=1228800 boundary_bytes=3276800
+[three-stage][trt] input=mul_20 dtype=uint8 bytes=3276800 outputs=output:1x3x80x80x85,clone_1:1x3x40x40x85,clone_2:1x3x20x20x85
+{
+  "status": "PASS_THREE_STAGE_TARGET_MET",
+  "report": "/home/nx/v2794_yolov7_b066_product_normal_runner_20260901_092235/evidence/work/concurrent_three_stage/three_stage_result/yolov7_three_stage_v1_20260901_092240/three_stage_canary_report.json",
+  "markdown": "/home/nx/v2794_yolov7_b066_product_normal_runner_20260901_092235/evidence/work/concurrent_three_stage/three_stage_result/yolov7_three_stage_v1_20260901_092240/three_stage_canary_report.md",
+  "raw_fps_median": 97.018171689,
+  "completed_fps_median": 96.999823097,
+  "completed_raw_ratio_median": 0.999812703,
+  "post_p95_guard_ms": 2.1113362,
+  "postflight_exact": 1,
+  "next": "integrate_contract_bound_three_stage_native_runner_once_in_v2_79"
+}
+[native-fifo] work_dir: /home/nx/v2794_yolov7_b066_product_normal_runner_20260901_092235/evidence/work
+[native-fifo] hef: /home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/yolov7_paper-78dcf9bd33084c0c/native_split_quality/orin_nx_hailo8_01/yolov7_paper/b066/hailo8_to_trt/7d5d3e2943f6d344f9f5eb90e81c392b736d77457ff8480e40ffbd5e6fb157a0/part1.hef
+[native-fifo] engine: /home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/yolov7_paper-78dcf9bd33084c0c/native_split_quality/orin_nx_hailo8_01/yolov7_paper/b066/hailo8_to_trt/7d5d3e2943f6d344f9f5eb90e81c392b736d77457ff8480e40ffbd5e6fb157a0/engine_cache/b066/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine
+[native-fifo] image: /home/nx/onnx_splitpoint_resurrection_canary_v3/staged_inputs/000000000632.jpg
+[native-fifo][v2.79.2][concurrent] /usr/bin/python3 /home/nx/v2794_yolov7_b066_product_normal_runner_20260901_092235/source/ONNX-Splitpoint-Tool_v2.79.4/scripts/native_hailo_trt_concurrent_three_stage_from_benchmarkset.py --benchmark-set /home/nx/v2794_yolov7_b066_product_normal_runner_20260901_092235/benchmark_set --case b066 --hw-arch hailo8 --precision uint8_dequant_fp16 --image /home/nx/onnx_splitpoint_resurrection_canary_v3/staged_inputs/000000000632.jpg --frames 1000 --warmup 100 --repetitions 3 --queue-depth 3 --post-queue-depth 4 --duration-s 0.0 --setup-id orin_nx_hailo8_01 --eval-run-id paper_comparison_yolov7_b066_hailo8_native_full_energy_b500_20260827_110251 --source-run-id hailo8_to_trt --model-id yolov7_paper --native-split-quality-binding /home/nx/v2794_yolov7_b066_product_normal_runner_20260901_092235/native_split_quality_binding.json --work-dir /home/nx/v2794_yolov7_b066_product_normal_runner_20260901_092235/evidence/work/concurrent_three_stage --result-json /home/nx/v2794_yolov7_b066_product_normal_runner_20260901_092235/evidence/native_fifo_results.json --timeout-s 3600.0 --expected-image-sha256 a4cd7f45ac1ce27eaafb254b23af7c0b18a064be08870ceaaf03b2147f2ce550 --expected-hef-sha256 e733652e523cbc6b51d696fd9ef62913f809e07b1d9137ca1e1e5413591cd70f --expected-engine-sha256 ddf2e26a2e784f87d2b20c4e19dd6576bcb4da33f0b86afb32ef0a9dfda65088 --expected-boundary-layout memory_nhwc_to_nchw
+[native-fifo][v2.79.2][concurrent] results: /home/nx/v2794_yolov7_b066_product_normal_runner_20260901_092235/evidence/native_fifo_results.json
+[native-fifo][v2.79.2][concurrent] benchmark results row: /home/nx/v2794_yolov7_b066_product_normal_runner_20260901_092235/benchmark_set/benchmark_results_native_fifo_b066.json
+{
+  "ok": true,
+  "schema": "onnx-splitpoint/native-dual-endpoint-result",
+  "mode": "native_hailort_tensorrt_concurrent_three_stage_fifo",
+  "failure_reason": "",
+  "performance_endpoint": "p2_output",
+  "application_performance_endpoint": "completed_detection",
+  "endpoint_execution_policy": "concurrent_three_stage_single_invocation",
+  "three_stage_concurrency_directly_measured": true,
+  "three_stage_hardware_integration_status": "directly_measured",
+  "p2_output_contract_family": "yolov7_anchor_multiscale_raw",
+  "postprocess_adapter_id": "yolov7_anchor_multiscale_sparse",
+  "postprocess_location": "host_cpu_numpy_inprocess_callback",
+  "quality_oracle_location": "outside_performance_timing",
+  "quality_oracle_status": "passed",
+  "p2_output_fps": 97.018171689,
+  "completed_detection_fps": 96.999823097,
+  "completed_to_p2_ratio": 0.999812703,
+  "endpoint_relation_verified": true,
+  "directly_measured": true,
+  "stage_timings": {
+    "schema": "onnx-splitpoint/native-three-stage-timing-projection",
+    "schema_version": 1,
+    "P1": {
+      "semantics": "image_read_letterbox_hailo8_part1",
+      "mean_ms_by_repetition": [
+        10.290872832,
+        10.289720251,
+        10.306228974
+      ]
+    },
+    "P2": {
+      "semantics": "boundary_handoff_tensorrt_part2_raw_heads_d2h",
+      "mean_ms_by_repetition": [
+        8.770629617,
+        8.745635434,
+        8.769156958
+      ]
+    },
+    "Post": {
+      "semantics": "exact_sparse_numpy_decode_classaware_nms_inverse_letterbox_canonical_records",
+      "location": "orin_nx_host_cpu_numpy_inprocess_callback",
+      "mean_ms_by_repetition": [
+        2.048706764,
+        1.981801611,
+        1.979274082
+      ],
+      "median_ms_by_repetition": [
+        2.051114,
+        1.9816385,
+        1.976774
+      ],
+      "p95_ms_by_repetition": [
+        2.1113362,
+        2.03197215,
+        2.0333376
+      ],
+      "max_ms_by_repetition": [
+        2.837117,
+        2.448779,
+        2.454602
+      ],
+      "aggregate_p95_guard_ms": 2.1113362,
+      "aggregate_max_guard_ms": 2.837117
+    },
+    "repetitions": [
+      {
+        "repetition": 1,
+        "p1_stage_mean_ms": 10.290872832,
+        "p2_stage_mean_ms": 8.770629617,
+        "post_mean_ms": 2.048706764,
+        "post_median_ms": 2.051114,
+        "post_p95_ms": 2.1113362,
+        "post_max_ms": 2.837117,
+        "raw_fps": 97.018171689,
+        "completed_fps": 96.999823097,
+        "completed_raw_ratio": 0.999810875,
+        "theoretical_raw_fps": 97.173487257,
+        "theoretical_three_stage_fps": 97.173487257,
+        "callback_failures": 0
+      },
+      {
+        "repetition": 2,
+        "p1_stage_mean_ms": 10.289720251,
+        "p2_stage_mean_ms": 8.745635434,
+        "post_mean_ms": 1.981801611,
+        "post_median_ms": 1.9816385,
+        "post_p95_ms": 2.03197215,
+        "post_max_ms": 2.448779,
+        "raw_fps": 97.026287753,
+        "completed_fps": 97.008114977,
+        "completed_raw_ratio": 0.999812703,
+        "theoretical_raw_fps": 97.184371937,
+        "theoretical_three_stage_fps": 97.184371937,
+        "callback_failures": 0
+      },
+      {
+        "repetition": 3,
+        "p1_stage_mean_ms": 10.306228974,
+        "p2_stage_mean_ms": 8.769156958,
+        "post_mean_ms": 1.979274082,
+        "post_median_ms": 1.976774,
+        "post_p95_ms": 2.0333376,
+        "post_max_ms": 2.454602,
+        "raw_fps": 96.873960453,
+        "completed_fps": 96.856060246,
+        "completed_raw_ratio": 0.999815222,
+        "theoretical_raw_fps": 97.028700073,
+        "theoretical_three_stage_fps": 97.028700073,
+        "callback_failures": 0
+      }
+    ],
+    "aggregate": {
+      "repetitions_requested": 3,
+      "repetitions_valid": 3,
+      "raw_fps": {
+        "count": 3,
+        "mean": 96.97280663166667,
+        "median": 97.018171689,
+        "p05": 96.88838157660001,
+        "p95": 97.0254761466,
+        "min": 96.873960453,
+        "max": 97.026287753
+      },
+      "completed_detection_fps": {
+        "count": 3,
+        "mean": 96.95466610666666,
+        "median": 96.999823097,
+        "p05": 96.87043653110001,
+        "p95": 97.007285789,
+        "min": 96.856060246,
+        "max": 97.008114977
+      },
+      "completed_raw_ratio": {
+        "count": 3,
+        "mean": 0.9998129333333333,
+        "median": 0.999812703,
+        "p05": 0.9998110578,
+        "p95": 0.9998149700999999,
+        "min": 0.999810875,
+        "max": 0.999815222
+      },
+      "post_p95_ms_across_repetitions": {
+        "count": 3,
+        "mean": 2.0588819833333334,
+        "median": 2.0333376,
+        "p05": 2.0321086950000002,
+        "p95": 2.1035363400000002,
+        "min": 2.03197215,
+        "max": 2.1113362
+      },
+      "post_max_ms_across_repetitions": {
+        "count": 3,
+        "mean": 2.580166,
+        "median": 2.454602,
+        "p05": 2.4493613,
+        "p95": 2.7988655,
+        "min": 2.448779,
+        "max": 2.837117
+      },
+      "raw_fps_median": 97.018171689,
+      "completed_fps_median": 96.999823097,
+      "completed_raw_ratio_median": 0.999812703,
+      "post_p95_guard_ms": 2.1113362,
+      "post_max_guard_ms": 2.837117
+    }
+  },
+  "oracle_parity": {
+    "schema": "onnx-splitpoint/native-three-stage-oracle-parity",
+    "schema_version": 1,
+    "status": "passed",
+    "inside_performance_timing": false,
+    "postflight": {
+      "performance_interpretation": "forbidden_verification_only",
+      "return_code": 0,
+      "error": "",
+      "callback_errors": [],
+      "requested_images": 1,
+      "verified_images": 1,
+      "exact_images": 1,
+      "all_exact": true,
+      "rows": [
+        {
+          "sequence": 0,
+          "image_index": 0,
+          "image_id": 632,
+          "raw_head_sha256_exact": true,
+          "raw_head_actual_sha256_by_grid": {
+            "80": "38582a5e2a5958a5dff166e8c2877bb947923789a4abaa3cfe5b5a2e725b7d6c",
+            "40": "4ee180feb247d0be56d7b9d14d741a901035aab732543d69b34bb9280e5d41eb",
+            "20": "8512a8767a8e935922903497000d72ab2b06c05c59a4bd2be6f2dde549ff952a"
+          },
+          "raw_head_expected_sha256_by_grid": {
+            "80": "38582a5e2a5958a5dff166e8c2877bb947923789a4abaa3cfe5b5a2e725b7d6c",
+            "40": "4ee180feb247d0be56d7b9d14d741a901035aab732543d69b34bb9280e5d41eb",
+            "20": "8512a8767a8e935922903497000d72ab2b06c05c59a4bd2be6f2dde549ff952a"
+          },
+          "oracle_fast_exact": true,
+          "current_oracle_equals_prior_oracle": true,
+          "detection_count": 9,
+          "exact": true
+        }
+      ]
+    },
+    "measurement_repetitions": [
+      {
+        "repetition": 1,
+        "requested_images": 1,
+        "exact_images": 1,
+        "all_exact": true
+      },
+      {
+        "repetition": 2,
+        "requested_images": 1,
+        "exact_images": 1,
+        "all_exact": true
+      },
+      {
+        "repetition": 3,
+        "requested_images": 1,
+        "exact_images": 1,
+        "all_exact": true
+      }
+    ]
+  },
+  "phases": {
+    "concurrent_three_stage": {
+      "directly_measured": true,
+      "report": "/home/nx/v2794_yolov7_b066_product_normal_runner_20260901_092235/evidence/work/concurrent_three_stage/three_stage_result/yolov7_three_stage_v1_20260901_092240/three_stage_canary_report.json"
+    },
+    "quality_oracle": {
+      "inside_performance_timing": false,
+      "status": "passed"
+    }
+  }
+}
+V2793_PRODUCT_RESULT_CONTRACT=PASS
+RUNNER_RC=0

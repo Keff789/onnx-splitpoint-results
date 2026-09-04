@@ -1,0 +1,54 @@
+{
+  "generated_at_stamp": "20260904_143304",
+  "git_commit_push_performed": false,
+  "manual_all_valid": false,
+  "manual_energy": {
+    "manual_root_exists": true,
+    "missing_required_families": [],
+    "packages_scanned": 185,
+    "ready": false,
+    "selected_bytes": 37747176,
+    "selected_files": 296,
+    "selected_packages": 5,
+    "unresolved_review_items": 116,
+    "unscoped_valid_parquets": 0
+  },
+  "mode": "apply",
+  "models_root": "/home/kmika/Models",
+  "no_files_deleted": true,
+  "product_normal_runner": {
+    "actual_sha256": "b7a983509ce5d31023a8d5be1336552416eae40b0625f10bc570809cc7be3f16",
+    "archive_bytes": 446613,
+    "expected_sha256": "b7a983509ce5d31023a8d5be1336552416eae40b0625f10bc570809cc7be3f16",
+    "selected_bytes": 131259,
+    "selected_files": 21,
+    "semantic_validation": "PASS",
+    "source": "/home/kmika/Downloads/v2794_yolov7_b066_product_normal_runner_20260901_092235.zip",
+    "status": "validated_and_staged"
+  },
+  "product_zip": "/home/kmika/Downloads/v2794_yolov7_b066_product_normal_runner_20260901_092235.zip",
+  "readiness": {
+    "large_paper_and_calibration_raw_sources": true,
+    "manual_energy_root": false,
+    "product_normal_runner": true,
+    "referenced_report_parquets": true
+  },
+  "referenced_urecs_parquets": {
+    "bytes": 19350680,
+    "differing": 0,
+    "hash_bound": 14,
+    "missing": 0,
+    "nontrivial": 14,
+    "ready": true,
+    "referenced": 32,
+    "secured_or_planned": 32,
+    "small_or_empty": 18
+  },
+  "repo_root": "/home/kmika/onnx-splitpoint-results",
+  "schema": "onnx_splitpoint_dissertation_evidence_completion_v1",
+  "stage": {
+    "already_identical_files": 0,
+    "planned_bytes": 57318462,
+    "planned_new_files": 354
+  }
+}

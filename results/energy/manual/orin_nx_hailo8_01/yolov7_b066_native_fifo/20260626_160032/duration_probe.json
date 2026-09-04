@@ -1,0 +1,16 @@
+{
+  "command": "#!/usr/bin/env bash\nset -euo pipefail\nssh -o BatchMode=yes -o StrictHostKeyChecking=accept-new nx@192.168.0.104 'cd /home/nx/ONNX-Splitpoint-Tool && python scripts/native_hailo_trt_fifo_from_benchmarkset.py --benchmark-set /home/nx/yolov7_paper_benchmark_20260625_070717 --case b066 --hw-arch hailo8 --precision uint8_cast_fp16 --frames 5000 --warmup 200 --queue-depth 3 --hailo-format uint8  --no-build'",
+  "cwd": "",
+  "probe_rc": 0,
+  "probe_duration_s": 56.366050004959106,
+  "duration_margin_s": 1.0,
+  "measurement_suite_policy": "collector=int(duration+1), power_estimated=int(duration+2), default power_calculations trims unless complete mode is requested",
+  "workload_duration_s": 56.366050004959106,
+  "collector_duration_s": 57,
+  "power_estimated_duration_s": 58,
+  "ok": true,
+  "started_at": 1782482432.0102165,
+  "ended_at": 1782482488.3762665,
+  "probe_dir": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/probe",
+  "probe_json": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/probe/duration_probe.json"
+}

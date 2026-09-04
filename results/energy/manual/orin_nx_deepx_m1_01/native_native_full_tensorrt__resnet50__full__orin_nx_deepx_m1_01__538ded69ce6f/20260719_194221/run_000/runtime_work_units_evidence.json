@@ -1,0 +1,8 @@
+{
+  "count": 34536,
+  "source": "verified_full_energy_hotloop:tensorrt_full_hotloop",
+  "exact": true,
+  "transport": "runtime_marker",
+  "evidence_path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_deepx_m1_01/native_native_full_tensorrt__resnet50__full__orin_nx_deepx_m1_01__538ded69ce6f/20260719_194221/run_000/workload_stdout.log",
+  "status": "exact"
+}

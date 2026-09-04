@@ -1,0 +1,32 @@
+{
+  "performance_interpretation": "forbidden_verification_only",
+  "return_code": 0,
+  "error": "",
+  "callback_errors": [],
+  "requested_images": 1,
+  "verified_images": 1,
+  "exact_images": 1,
+  "all_exact": true,
+  "rows": [
+    {
+      "sequence": 0,
+      "image_index": 0,
+      "image_id": 632,
+      "raw_head_sha256_exact": true,
+      "raw_head_actual_sha256_by_grid": {
+        "80": "38582a5e2a5958a5dff166e8c2877bb947923789a4abaa3cfe5b5a2e725b7d6c",
+        "40": "4ee180feb247d0be56d7b9d14d741a901035aab732543d69b34bb9280e5d41eb",
+        "20": "8512a8767a8e935922903497000d72ab2b06c05c59a4bd2be6f2dde549ff952a"
+      },
+      "raw_head_expected_sha256_by_grid": {
+        "80": "38582a5e2a5958a5dff166e8c2877bb947923789a4abaa3cfe5b5a2e725b7d6c",
+        "40": "4ee180feb247d0be56d7b9d14d741a901035aab732543d69b34bb9280e5d41eb",
+        "20": "8512a8767a8e935922903497000d72ab2b06c05c59a4bd2be6f2dde549ff952a"
+      },
+      "oracle_fast_exact": true,
+      "current_oracle_equals_prior_oracle": true,
+      "detection_count": 9,
+      "exact": true
+    }
+  ]
+}

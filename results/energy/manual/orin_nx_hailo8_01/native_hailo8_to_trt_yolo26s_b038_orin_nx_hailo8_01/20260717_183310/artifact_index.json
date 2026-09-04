@@ -1,0 +1,200 @@
+{
+  "out_dir": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310",
+  "file_count": 37,
+  "files": [
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/artifact_index.json",
+      "relative_path": "artifact_index.json",
+      "size_bytes": 9778
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/duration_probe.json",
+      "relative_path": "duration_probe.json",
+      "size_bytes": 657
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/energy_aggregate.json",
+      "relative_path": "energy_aggregate.json",
+      "size_bytes": 23372
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/energy_command.sh",
+      "relative_path": "energy_command.sh",
+      "size_bytes": 594
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/energy_current_status.json",
+      "relative_path": "energy_current_status.json",
+      "size_bytes": 1136
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/energy_summary.json",
+      "relative_path": "energy_summary.json",
+      "size_bytes": 23372
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/probe/duration_probe.json",
+      "relative_path": "probe/duration_probe.json",
+      "size_bytes": 657
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_000/collector_command.txt",
+      "relative_path": "run_000/collector_command.txt",
+      "size_bytes": 461
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_000/collector_stderr.log",
+      "relative_path": "run_000/collector_stderr.log",
+      "size_bytes": 175
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_000/collector_stdout.log",
+      "relative_path": "run_000/collector_stdout.log",
+      "size_bytes": 1463
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_000/collector_storage/fast_firmware.parquet",
+      "relative_path": "run_000/collector_storage/fast_firmware.parquet",
+      "size_bytes": 758839
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_000/energy_summary.json",
+      "relative_path": "run_000/energy_summary.json",
+      "size_bytes": 4254
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_000/power_calculations_command.txt",
+      "relative_path": "run_000/power_calculations_command.txt",
+      "size_bytes": 433
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_000/power_calculations_stderr.log",
+      "relative_path": "run_000/power_calculations_stderr.log",
+      "size_bytes": 0
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_000/power_calculations_stdout.log",
+      "relative_path": "run_000/power_calculations_stdout.log",
+      "size_bytes": 635
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_000/processed/firmware_power.npy",
+      "relative_path": "run_000/processed/firmware_power.npy",
+      "size_bytes": 1135232
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_000/processed/results.yaml",
+      "relative_path": "run_000/processed/results.yaml",
+      "size_bytes": 248
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_001/collector_command.txt",
+      "relative_path": "run_001/collector_command.txt",
+      "size_bytes": 461
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_001/collector_stderr.log",
+      "relative_path": "run_001/collector_stderr.log",
+      "size_bytes": 175
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_001/collector_stdout.log",
+      "relative_path": "run_001/collector_stdout.log",
+      "size_bytes": 1463
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_001/collector_storage/fast_firmware.parquet",
+      "relative_path": "run_001/collector_storage/fast_firmware.parquet",
+      "size_bytes": 758827
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_001/energy_summary.json",
+      "relative_path": "run_001/energy_summary.json",
+      "size_bytes": 4254
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_001/power_calculations_command.txt",
+      "relative_path": "run_001/power_calculations_command.txt",
+      "size_bytes": 433
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_001/power_calculations_stderr.log",
+      "relative_path": "run_001/power_calculations_stderr.log",
+      "size_bytes": 0
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_001/power_calculations_stdout.log",
+      "relative_path": "run_001/power_calculations_stdout.log",
+      "size_bytes": 635
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_001/processed/firmware_power.npy",
+      "relative_path": "run_001/processed/firmware_power.npy",
+      "size_bytes": 1135232
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_001/processed/results.yaml",
+      "relative_path": "run_001/processed/results.yaml",
+      "size_bytes": 249
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_002/collector_command.txt",
+      "relative_path": "run_002/collector_command.txt",
+      "size_bytes": 461
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_002/collector_stderr.log",
+      "relative_path": "run_002/collector_stderr.log",
+      "size_bytes": 175
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_002/collector_stdout.log",
+      "relative_path": "run_002/collector_stdout.log",
+      "size_bytes": 1463
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_002/collector_storage/fast_firmware.parquet",
+      "relative_path": "run_002/collector_storage/fast_firmware.parquet",
+      "size_bytes": 758819
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_002/energy_summary.json",
+      "relative_path": "run_002/energy_summary.json",
+      "size_bytes": 4243
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_002/power_calculations_command.txt",
+      "relative_path": "run_002/power_calculations_command.txt",
+      "size_bytes": 433
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_002/power_calculations_stderr.log",
+      "relative_path": "run_002/power_calculations_stderr.log",
+      "size_bytes": 0
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_002/power_calculations_stdout.log",
+      "relative_path": "run_002/power_calculations_stdout.log",
+      "size_bytes": 634
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_002/processed/firmware_power.npy",
+      "relative_path": "run_002/processed/firmware_power.npy",
+      "size_bytes": 1135232
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/run_002/processed/results.yaml",
+      "relative_path": "run_002/processed/results.yaml",
+      "size_bytes": 247
+    }
+  ],
+  "by_suffix": {
+    ".json": 9,
+    ".sh": 1,
+    ".txt": 6,
+    ".log": 12,
+    ".parquet": 3,
+    ".npy": 3,
+    ".yaml": 3
+  }
+}

@@ -1,0 +1,11 @@
+2026-07-19T17:38:47.971Z INFO  [urecs_data_collector] Arguments { storage_path: Some("/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_deepx_m1_01/native_native_full_deepx__resnet50__full__orin_nx_deepx_m1_01__645bd3bd6f22/20260719_193847/run_000/collector_storage"), duration: Ok(61s), pre_duration: Ok(5s), post_duration: Ok(5s), command: Some("/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_deepx_m1_01/native_native_full_deepx__resnet50__full__orin_nx_deepx_m1_01__645bd3bd6f22/20260719_193847/run_000/energy_command.sh"), run_id: Some("native_native_full_deepx__resnet50__full__orin_nx_deepx_m1_01__645bd3bd6f22"), window_id: Some("native_native_full_deepx__resnet50__full__orin_nx_deepx_m1_01__645bd3bd6f22:repeat:000"), sources: [FastFirmware { address: "192.168.0.185", data_port: 3000, channel: 0, sample_rate: 2000 }] }
+2026-07-19T17:38:47.971Z INFO  [urecs_data_collector] Starting measurement
+2026-07-19T17:38:53.068Z INFO  [urecs_data_collector] Running command: /home/kmika/Models/EnergyMeasurements/Manual/orin_nx_deepx_m1_01/native_native_full_deepx__resnet50__full__orin_nx_deepx_m1_01__645bd3bd6f22/20260719_193847/run_000/energy_command.sh
+2026-07-19T17:38:53.068Z INFO  [urecs_data_collector] Waiting for command process 3379121 to finish
+2026-07-19T17:39:58.605Z INFO  [urecs_data_collector] Shutting down...
+2026-07-19T17:39:58.606Z INFO  [urecs_data_collector::network_firmware_fast] Shutting down Fast Firmware Interface
+2026-07-19T17:39:58.606Z INFO  [urecs_data_collector] Waiting for threads to stop...
+2026-07-19T17:39:58.628Z INFO  [urecs_data_collector::network_firmware_fast] Finishing Fast Firmware thread
+2026-07-19T17:39:58.653Z INFO  [urecs_data_collector] Flushing Writer
+2026-07-19T17:39:58.655Z INFO  [urecs_data_collector] Writer Flushed
+2026-07-19T17:39:58.660Z INFO  [urecs_data_collector] Wrote command-window evidence to /home/kmika/Models/EnergyMeasurements/Manual/orin_nx_deepx_m1_01/native_native_full_deepx__resnet50__full__orin_nx_deepx_m1_01__645bd3bd6f22/20260719_193847/run_000/collector_storage/command_window_markers.json

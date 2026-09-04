@@ -1,0 +1,11 @@
+jetson_results: null
+shelly_results: null
+oscilloscope_results: null
+firmware_results:
+  energy: 1018.1913915477279
+  duration: 62.0005
+  start_stop_idx:
+  - 9207
+  - 133208
+  max_frame_energy: 1.8490724054190457
+  idle_frame_energy: 1.1926932678846272

@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "probe_skipped": true,
+  "duration_margin_s": 1.0,
+  "measurement_suite_policy": "collector=int(duration+1), power_estimated=int(duration+2), default power_calculations trims unless complete mode is requested",
+  "workload_duration_s": 60.0,
+  "collector_duration_s": 61,
+  "power_estimated_duration_s": 62,
+  "probe_dir": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/probe",
+  "probe_json": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/native_hailo8_to_trt_yolo26s_b038_orin_nx_hailo8_01/20260717_183310/probe/duration_probe.json"
+}

@@ -1,0 +1,8 @@
+{
+  "count": 9574,
+  "source": "completed_frames",
+  "exact": true,
+  "transport": "runtime_marker",
+  "evidence_path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_deepx_m1_01/native_deepx_to_trt__resnet50__b052__orin_nx_deepx_m1_01__16e4c5d9ea3b/20260719_193510/run_001/workload_stdout.log",
+  "status": "exact"
+}

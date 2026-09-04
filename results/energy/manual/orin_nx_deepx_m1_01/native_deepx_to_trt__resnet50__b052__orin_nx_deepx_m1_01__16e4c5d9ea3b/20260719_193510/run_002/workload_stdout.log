@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "fps_makespan": 155.07810166433111,
+  "paper_fps": 160.51731965923582,
+  "report": "/home/nx/native_fifo_evalsets/resnet_yolo26s_20260719_180601/.energy_replays/deepx_to_trt__resnet50__b052__orin_nx_deepx_m1_01__16e4c5d9ea3b/replay.WFP0D8/deepx_native_fifo_e2e_results.json",
+  "error": ""
+}
+__SPLITPOINT_WORK_UNITS__=9306
+__SPLITPOINT_WORK_UNITS_SOURCE__=completed_frames
+__SPLITPOINT_WORK_UNITS_EXACT__=1
+[native-energy] FRESH_REPORT path=/home/nx/native_fifo_evalsets/resnet_yolo26s_20260719_180601/.energy_replays/deepx_to_trt__resnet50__b052__orin_nx_deepx_m1_01__16e4c5d9ea3b/replay.WFP0D8/deepx_native_fifo_e2e_results.json sha_contract=16e4c5d9ea3bffc8eacb45a4748d13446273df272592f0f74a3c230357b9b5b4

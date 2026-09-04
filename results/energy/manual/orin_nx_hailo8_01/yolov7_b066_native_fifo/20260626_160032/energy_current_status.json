@@ -1,0 +1,30 @@
+{
+  "phase": "collector",
+  "run_index": 2,
+  "run_count": 3,
+  "collector_expected_duration_s": 67.0,
+  "collector_timeout_s": 900.0,
+  "run_dir": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_002",
+  "setup_id": "orin_nx_hailo8_01",
+  "benchmark_run_id": "yolov7_b066_native_fifo",
+  "status": "finished",
+  "pid": 3285247,
+  "rc": 0,
+  "started_at": 1782482626.3971176,
+  "updated_at": 1782482694.4090827,
+  "elapsed_s": 68.01196503639221,
+  "cmd": [
+    "/home/kmika/.cargo/bin/urecs-data-collector",
+    "-s=/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_002/collector_storage",
+    "-d=57s",
+    "-b=5s",
+    "-e=5s",
+    "-c=/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/energy_command.sh",
+    "fast-firmware",
+    "--address=192.168.0.197",
+    "--data-port=3000",
+    "--channel=2",
+    "--sample-rate=2000"
+  ],
+  "timeout_s": 900.0
+}

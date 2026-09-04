@@ -1,0 +1,8 @@
+2026-07-19T17:46:00.130Z INFO  [power_calculations] Calculating Firmware results
+2026-07-19T17:46:00.170Z INFO  [power_calculations::data_actions] Searching maximum and idle values
+2026-07-19T17:46:00.170Z INFO  [power_calculations::data_actions] Trigger value: 1.7665575198736372
+2026-07-19T17:46:00.170Z INFO  [power_calculations::data_actions] Searching on start
+2026-07-19T17:46:00.170Z INFO  [power_calculations::data_actions] Searching on end
+2026-07-19T17:46:00.170Z INFO  [power_calculations::data_reading_types] Duration 59.6065
+2026-07-19T17:46:00.171Z INFO  [power_calculations] Firmware:	Energy:	1935.88J, Duration:	62.00s
+

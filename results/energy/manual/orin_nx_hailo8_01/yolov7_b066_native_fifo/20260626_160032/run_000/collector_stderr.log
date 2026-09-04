@@ -1,0 +1,2 @@
+[native-fifo][hailo] input_shape=640x640x3 input_frame_size=1228800 output_frame_size=3276800
+[native-fifo][trt] input=mul_20 dtype=uint8 bytes=3276800

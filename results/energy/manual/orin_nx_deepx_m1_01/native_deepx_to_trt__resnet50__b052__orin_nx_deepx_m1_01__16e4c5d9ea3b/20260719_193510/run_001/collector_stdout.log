@@ -1,0 +1,12 @@
+2026-07-19T17:36:23.308Z INFO  [urecs_data_collector] Arguments { storage_path: Some("/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_deepx_m1_01/native_deepx_to_trt__resnet50__b052__orin_nx_deepx_m1_01__16e4c5d9ea3b/20260719_193510/run_001/collector_storage"), duration: Ok(61s), pre_duration: Ok(5s), post_duration: Ok(5s), command: Some("/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_deepx_m1_01/native_deepx_to_trt__resnet50__b052__orin_nx_deepx_m1_01__16e4c5d9ea3b/20260719_193510/run_001/energy_command.sh"), run_id: Some("native_deepx_to_trt__resnet50__b052__orin_nx_deepx_m1_01__16e4c5d9ea3b"), window_id: Some("native_deepx_to_trt__resnet50__b052__orin_nx_deepx_m1_01__16e4c5d9ea3b:repeat:001"), sources: [FastFirmware { address: "192.168.0.185", data_port: 3000, channel: 0, sample_rate: 2000 }] }
+2026-07-19T17:36:23.309Z INFO  [urecs_data_collector] Starting measurement
+2026-07-19T17:36:28.405Z INFO  [urecs_data_collector] Running command: /home/kmika/Models/EnergyMeasurements/Manual/orin_nx_deepx_m1_01/native_deepx_to_trt__resnet50__b052__orin_nx_deepx_m1_01__16e4c5d9ea3b/20260719_193510/run_001/energy_command.sh
+2026-07-19T17:36:28.406Z INFO  [urecs_data_collector] Waiting for command process 3377820 to finish
+2026-07-19T17:37:34.381Z INFO  [urecs_data_collector::network_firmware_fast] Fast Firmware measurement complete
+2026-07-19T17:37:34.381Z INFO  [urecs_data_collector::network_firmware_fast] Finishing Fast Firmware thread
+2026-07-19T17:37:34.549Z INFO  [urecs_data_collector] Shutting down...
+2026-07-19T17:37:34.549Z INFO  [urecs_data_collector::network_firmware_fast] Shutting down Fast Firmware Interface
+2026-07-19T17:37:34.549Z INFO  [urecs_data_collector] Waiting for threads to stop...
+2026-07-19T17:37:34.549Z INFO  [urecs_data_collector] Flushing Writer
+2026-07-19T17:37:34.555Z INFO  [urecs_data_collector] Writer Flushed
+2026-07-19T17:37:34.574Z INFO  [urecs_data_collector] Wrote command-window evidence to /home/kmika/Models/EnergyMeasurements/Manual/orin_nx_deepx_m1_01/native_deepx_to_trt__resnet50__b052__orin_nx_deepx_m1_01__16e4c5d9ea3b/20260719_193510/run_001/collector_storage/command_window_markers.json

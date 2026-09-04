@@ -1,0 +1,215 @@
+{
+  "out_dir": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032",
+  "file_count": 40,
+  "files": [
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/artifact_index.json",
+      "relative_path": "artifact_index.json",
+      "size_bytes": 9541
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/duration_probe.json",
+      "relative_path": "duration_probe.json",
+      "size_bytes": 1155
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/energy_aggregate.json",
+      "relative_path": "energy_aggregate.json",
+      "size_bytes": 15796
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/energy_command.sh",
+      "relative_path": "energy_command.sh",
+      "size_bytes": 443
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/energy_current_status.json",
+      "relative_path": "energy_current_status.json",
+      "size_bytes": 1024
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/energy_summary.json",
+      "relative_path": "energy_summary.json",
+      "size_bytes": 15796
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/probe/duration_probe.json",
+      "relative_path": "probe/duration_probe.json",
+      "size_bytes": 880
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/probe/duration_probe_command.sh",
+      "relative_path": "probe/duration_probe_command.sh",
+      "size_bytes": 443
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/probe/duration_probe_stderr.log",
+      "relative_path": "probe/duration_probe_stderr.log",
+      "size_bytes": 152
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/probe/duration_probe_stdout.log",
+      "relative_path": "probe/duration_probe_stdout.log",
+      "size_bytes": 2561
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_000/collector_command.txt",
+      "relative_path": "run_000/collector_command.txt",
+      "size_bytes": 405
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_000/collector_stderr.log",
+      "relative_path": "run_000/collector_stderr.log",
+      "size_bytes": 152
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_000/collector_stdout.log",
+      "relative_path": "run_000/collector_stdout.log",
+      "size_bytes": 1379
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_000/collector_storage/fast_firmware.parquet",
+      "relative_path": "run_000/collector_storage/fast_firmware.parquet",
+      "size_bytes": 742667
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_000/energy_summary.json",
+      "relative_path": "run_000/energy_summary.json",
+      "size_bytes": 3728
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_000/power_calculations_command.txt",
+      "relative_path": "run_000/power_calculations_command.txt",
+      "size_bytes": 377
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_000/power_calculations_stderr.log",
+      "relative_path": "run_000/power_calculations_stderr.log",
+      "size_bytes": 0
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_000/power_calculations_stdout.log",
+      "relative_path": "run_000/power_calculations_stdout.log",
+      "size_bytes": 635
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_000/processed/firmware_power.npy",
+      "relative_path": "run_000/processed/firmware_power.npy",
+      "size_bytes": 1071232
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_000/processed/results.yaml",
+      "relative_path": "run_000/processed/results.yaml",
+      "size_bytes": 249
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_001/collector_command.txt",
+      "relative_path": "run_001/collector_command.txt",
+      "size_bytes": 405
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_001/collector_stderr.log",
+      "relative_path": "run_001/collector_stderr.log",
+      "size_bytes": 524
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_001/collector_stdout.log",
+      "relative_path": "run_001/collector_stdout.log",
+      "size_bytes": 1379
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_001/collector_storage/fast_firmware.parquet",
+      "relative_path": "run_001/collector_storage/fast_firmware.parquet",
+      "size_bytes": 717781
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_001/energy_summary.json",
+      "relative_path": "run_001/energy_summary.json",
+      "size_bytes": 3720
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_001/power_calculations_command.txt",
+      "relative_path": "run_001/power_calculations_command.txt",
+      "size_bytes": 377
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_001/power_calculations_stderr.log",
+      "relative_path": "run_001/power_calculations_stderr.log",
+      "size_bytes": 0
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_001/power_calculations_stdout.log",
+      "relative_path": "run_001/power_calculations_stdout.log",
+      "size_bytes": 633
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_001/processed/firmware_power.npy",
+      "relative_path": "run_001/processed/firmware_power.npy",
+      "size_bytes": 1071232
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_001/processed/results.yaml",
+      "relative_path": "run_001/processed/results.yaml",
+      "size_bytes": 246
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_002/collector_command.txt",
+      "relative_path": "run_002/collector_command.txt",
+      "size_bytes": 405
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_002/collector_stderr.log",
+      "relative_path": "run_002/collector_stderr.log",
+      "size_bytes": 524
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_002/collector_stdout.log",
+      "relative_path": "run_002/collector_stdout.log",
+      "size_bytes": 1379
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_002/collector_storage/fast_firmware.parquet",
+      "relative_path": "run_002/collector_storage/fast_firmware.parquet",
+      "size_bytes": 707633
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_002/energy_summary.json",
+      "relative_path": "run_002/energy_summary.json",
+      "size_bytes": 3728
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_002/power_calculations_command.txt",
+      "relative_path": "run_002/power_calculations_command.txt",
+      "size_bytes": 377
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_002/power_calculations_stderr.log",
+      "relative_path": "run_002/power_calculations_stderr.log",
+      "size_bytes": 0
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_002/power_calculations_stdout.log",
+      "relative_path": "run_002/power_calculations_stdout.log",
+      "size_bytes": 633
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_002/processed/firmware_power.npy",
+      "relative_path": "run_002/processed/firmware_power.npy",
+      "size_bytes": 1071232
+    },
+    {
+      "path": "/home/kmika/Models/EnergyMeasurements/Manual/orin_nx_hailo8_01/yolov7_b066_native_fifo/20260626_160032/run_002/processed/results.yaml",
+      "relative_path": "run_002/processed/results.yaml",
+      "size_bytes": 251
+    }
+  ],
+  "by_suffix": {
+    ".json": 9,
+    ".sh": 2,
+    ".log": 14,
+    ".txt": 6,
+    ".parquet": 3,
+    ".npy": 3,
+    ".yaml": 3
+  }
+}
