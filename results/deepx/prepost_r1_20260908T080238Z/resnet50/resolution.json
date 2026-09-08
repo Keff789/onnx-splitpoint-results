@@ -1,0 +1,272 @@
+{
+  "onnx_candidates": [
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/resnet50/benchmark_set/legacy_suite/models/resnet50.onnx",
+      "sha256": "cebd9d5879ddd304a18f51e559ab74fba5cbd1f610b9359321bc5228acbe4f50",
+      "size_bytes": 102356918
+    }
+  ],
+  "dxnn_candidates": [
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/resnet50/benchmark_set/legacy_suite/deepx/deepx_m1/full/model.dxnn",
+      "sha256": "4381d0818d6f73bab0d4b381d1229483e62e3035a80c7ba1bad4df114b96dc62",
+      "size_bytes": 51728153
+    }
+  ],
+  "validation_manifest": {
+    "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/resnet50/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/manifest.json",
+    "sha256": "64a7ef3bf55352bb39ef86f25fe73e6ff18a51ed1a02c8aca4940178f69e7b6c",
+    "status": "resolved",
+    "selection_policy": "first_N_in_original_quality_request"
+  },
+  "calibration_manifest": {
+    "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/campaign/inputs/dataset_classification_calibration.json",
+    "sha256": "6d6978cafd1b828d6fa9438b232120f2a769311c28492bea5a141af586c3d58c",
+    "status": "resolved",
+    "selection_policy": "first_4_manifest_records"
+  },
+  "source_provenance": [
+    {
+      "relative_path": "benchmark_suite.py",
+      "origin": "archived_suite",
+      "source_path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/resnet50/benchmark_set/legacy_suite/benchmark_suite.py",
+      "sha256": "54e0cf7bacbc8cc6f9adde0982aece3ee91a7fe3396326eb918a14e5ff50bacd",
+      "matches_v30_reference": false
+    },
+    {
+      "relative_path": "run_split_onnxruntime.py",
+      "origin": "archived_suite",
+      "source_path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/resnet50/benchmark_set/legacy_suite/b119/run_split_onnxruntime.py",
+      "sha256": "162cfd5bbadb5b290f55fb24028f5bca8ac6990f83f98d745909c0f062860ad6",
+      "matches_v30_reference": false
+    },
+    {
+      "relative_path": "native_full_semantic_dump.py",
+      "origin": "installed_tool",
+      "source_path": "/home/kmika/ONNX-Splitpoint-Tool/scripts/native_full_semantic_dump.py",
+      "sha256": "3004f93afe17cf32af8fb939cf6bb58ce09aeee5cba4417e2dbef0b58a2e1e41",
+      "matches_v30_reference": true
+    },
+    {
+      "relative_path": "splitpoint_runners/native_full_input.py",
+      "origin": "archived_suite",
+      "source_path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/resnet50/benchmark_set/legacy_suite/splitpoint_runners/native_full_input.py",
+      "sha256": "dd86f51a923a273d8e00b3c4c263c8539b32e34c39615a2acc96330be8e80656",
+      "matches_v30_reference": true
+    },
+    {
+      "relative_path": "splitpoint_runners/preprocessing_contract.py",
+      "origin": "archived_suite",
+      "source_path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/resnet50/benchmark_set/legacy_suite/splitpoint_runners/preprocessing_contract.py",
+      "sha256": "ae96e75e4043d063783345b2d2d034da6942051c2873114d5fff110917ba6f66",
+      "matches_v30_reference": true
+    },
+    {
+      "relative_path": "splitpoint_runners/_types.py",
+      "origin": "archived_suite",
+      "source_path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/resnet50/benchmark_set/legacy_suite/splitpoint_runners/_types.py",
+      "sha256": "50251a53b4de0c3bb5ac4e28bba7101691a88b412fe8703c51b47f050af87232",
+      "matches_v30_reference": true
+    },
+    {
+      "relative_path": "splitpoint_runners/harness/base.py",
+      "origin": "archived_suite",
+      "source_path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/resnet50/benchmark_set/legacy_suite/splitpoint_runners/harness/base.py",
+      "sha256": "938b3713f32e412dd1f57fcc07a397fa1f3b26ed30afbc945d22f1bb082db06c",
+      "matches_v30_reference": true
+    },
+    {
+      "relative_path": "splitpoint_runners/harness/classification.py",
+      "origin": "archived_suite",
+      "source_path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/resnet50/benchmark_set/legacy_suite/splitpoint_runners/harness/classification.py",
+      "sha256": "249a52ae9e5eb2b23bbd2d754edfc0709795a933442aed3344664c22e37ef4f7",
+      "matches_v30_reference": true
+    }
+  ],
+  "source_contract": {
+    "artifact_kind": "dxnn",
+    "artifact_path": "/home/kmika/Models/BackendArtifacts/deepx/deepx_m1_full_current_scale_only_v2_ae37b460e4731eb051f4cdc73908aaa2/model.dxnn",
+    "artifact_sha256": "4381d0818d6f73bab0d4b381d1229483e62e3035a80c7ba1bad4df114b96dc62",
+    "artifact_size_bytes": 51728153,
+    "backend": "deepx_m1",
+    "build_onnx_sha256": "cebd9d5879ddd304a18f51e559ab74fba5cbd1f610b9359321bc5228acbe4f50",
+    "cache_contract_sha256": "a5f739d2a743b786eb3417b08a978331793f3f7ae9301f169a6e281dd0d820d8",
+    "cache_key": "deepx_m1_full_current_scale_only_v2_ae37b460e4731eb051f4cdc73908aaa2",
+    "calibration_manifest_identity_sha256": "913d753f34e6ab545ec38c5dcd27177b748eecf0c200625d579b7e6a6413efef",
+    "classification_preprocessing": "current_scale_only",
+    "compiler_identity_sha256": "298a0f8649edb95255129db076f3ffbee8a804698386b1f46077a3c0e4b970c2",
+    "contract_complete_enough_for_reports": true,
+    "contract_family": "classification_logits",
+    "endpoint_contract_complete_enough_for_quality": true,
+    "endpoint_mode": "decoded",
+    "endpoint_semantic_attestation": {
+      "authoritative_contract": {
+        "artifact_path": "",
+        "backend": "deepx_m1",
+        "contract_status": "recorded",
+        "endpoint_mode": "decoded",
+        "full_end_node_names": [],
+        "host_tail_required": false,
+        "model_id": "resnet50",
+        "postprocessing_required": false,
+        "requires_external_postprocess": false,
+        "schema": "onnx-splitpoint/output-contract",
+        "schema_version": 1,
+        "source_onnx_detection_endpoint": {
+          "multiscale_raw_head": false,
+          "output_shapes": [],
+          "sidecar_status": "not_applicable",
+          "stage": "not_detection"
+        },
+        "source_onnx_multiscale_raw_head": false,
+        "task": "classification",
+        "variant": "full",
+        "warning": ""
+      },
+      "authoritative_contract_sha256": "48b2014542cc7343fc14e309d6d6545099791b5a44da60fe7832ac337751d692",
+      "backend": "deepx_m1",
+      "endpoint_mode": "decoded",
+      "host_tail_required": false,
+      "model_id": "resnet50",
+      "pass": true,
+      "postprocessing_required": false,
+      "reason": "authoritative_recorded_output_contract_bound",
+      "schema": "onnx-splitpoint/deepx-endpoint-semantic-attestation",
+      "schema_version": 1,
+      "source_endpoint_has_integrated_nms": true,
+      "source_endpoint_semantics": "decoded_final_output",
+      "sources": [
+        {
+          "file_sha256": "c66c670168c9a041ba2ffe14cf8def6b62c080d2483791d52aa06448504730c2",
+          "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/resnet50/benchmark_set/legacy_suite/output_contracts.json",
+          "schema": "onnx-splitpoint/output-contracts"
+        },
+        {
+          "file_sha256": "c66c670168c9a041ba2ffe14cf8def6b62c080d2483791d52aa06448504730c2",
+          "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/resnet50/full_baselines/output_contracts.json",
+          "schema": "onnx-splitpoint/output-contracts"
+        }
+      ],
+      "status": "attested",
+      "variant": "full"
+    },
+    "full_cache_contract_mode": "v2_exact_explicit",
+    "host_tail_required": false,
+    "input": {
+      "classification_preprocessing": "current_scale_only",
+      "color_space": "RGB",
+      "contract_source": "task_bound_dxcom_image_loader_preprocessing",
+      "dtype": "uint8",
+      "embedded_numeric_path": "dxcom_div255_only",
+      "layout": "HWC",
+      "letterbox_pad_value": 0,
+      "letterbox_pad_value_effective": 0,
+      "letterbox_pad_value_requested": 114,
+      "name": "input",
+      "normalization": "embedded_dxcom_preprocessing",
+      "preprocess_mode": "resize",
+      "preprocess_mode_effective": "resize",
+      "preprocess_mode_requested": "auto",
+      "shape": [
+        224,
+        224,
+        3
+      ],
+      "task": "classification"
+    },
+    "model_id": "resnet50",
+    "output": {
+      "source": "runtime_report_or_model_output",
+      "status": "declared_no_parse_model_pending_placeholder"
+    },
+    "outputs": [
+      {
+        "contract_source": "runtime_report_or_model_output",
+        "dtype": "float32",
+        "name": "logits",
+        "shape": null
+      }
+    ],
+    "postprocessing": {
+      "host_required": false,
+      "nms_on_host": null,
+      "type": "classification_topk"
+    },
+    "postprocessing_required": false,
+    "preprocessing_contract": {
+      "contract_sha256": "ad8ec9c9fbae34bc06955096baa7523ff59f796989831e812755b1b1f0d8d8b0",
+      "numeric_preprocessing": {
+        "build_onnx_adapter": {
+          "broadcast_shape": [],
+          "implementation": "source_onnx_unchanged",
+          "input_domain": "rgb_float32_0_1",
+          "kind": "identity",
+          "mean": [],
+          "std": []
+        },
+        "dxcom_loader": {
+          "color_space": "RGB",
+          "operations_contract": "resize_div255_bgr2rgb_transpose_expanddim",
+          "output_dtype": "float32",
+          "output_layout": "NCHW",
+          "scale_divisor": 255.0
+        },
+        "mode": "current_scale_only",
+        "runtime_image": {
+          "color_space": "RGB",
+          "dtype": "uint8",
+          "layout": "HWC",
+          "value_range": [
+            0,
+            255
+          ]
+        },
+        "schema": "onnx-splitpoint/deepx-classification-preprocessing",
+        "schema_version": 1,
+        "source_model_input_domain": "rgb_float32_0_1"
+      },
+      "runtime_input": {
+        "classification_preprocessing": "current_scale_only",
+        "color_space": "RGB",
+        "contract_source": "task_bound_dxcom_image_loader_preprocessing",
+        "dtype": "uint8",
+        "embedded_numeric_path": "dxcom_div255_only",
+        "layout": "HWC",
+        "letterbox_pad_value": 0,
+        "letterbox_pad_value_effective": 0,
+        "letterbox_pad_value_requested": 114,
+        "name": "input",
+        "normalization": "embedded_dxcom_preprocessing",
+        "preprocess_mode": "resize",
+        "preprocess_mode_effective": "resize",
+        "preprocess_mode_requested": "auto",
+        "shape": [
+          224,
+          224,
+          3
+        ],
+        "task": "classification"
+      },
+      "schema": "onnx-splitpoint/deepx-full-preprocessing-contract",
+      "schema_version": 1,
+      "task": "classification"
+    },
+    "source_model_input": {
+      "dtype": "float32",
+      "layout": "NCHW",
+      "name": "input",
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ]
+    },
+    "source_onnx_sha256": "cebd9d5879ddd304a18f51e559ab74fba5cbd1f610b9359321bc5228acbe4f50",
+    "suite_artifact_path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/resnet50/benchmark_set/legacy_suite/deepx/deepx_m1/full/model.dxnn",
+    "suite_artifact_sha256": "4381d0818d6f73bab0d4b381d1229483e62e3035a80c7ba1bad4df114b96dc62",
+    "suite_artifact_size_bytes": 51728153,
+    "variant": "full"
+  },
+  "export_metadata": {}
+}

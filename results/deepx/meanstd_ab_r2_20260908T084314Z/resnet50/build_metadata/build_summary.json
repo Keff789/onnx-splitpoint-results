@@ -1,0 +1,269 @@
+{
+  "status": "built",
+  "model_id": "resnet50",
+  "product_source_verification": [
+    {
+      "relative_path": "onnx_splitpoint_tool/deepx/config.py",
+      "sha256": "550c5e51a957bd8a58abff098a96ed5afde3852d87aa1b7cc18b6bce01cffbe0",
+      "expected_sha256": "550c5e51a957bd8a58abff098a96ed5afde3852d87aa1b7cc18b6bce01cffbe0",
+      "match": true
+    },
+    {
+      "relative_path": "onnx_splitpoint_tool/deepx/compiler.py",
+      "sha256": "64507133cbc17fd24f8a9b6518b45eb8bc6f1ee68b022fbfe7efdb4efcebf267",
+      "expected_sha256": "64507133cbc17fd24f8a9b6518b45eb8bc6f1ee68b022fbfe7efdb4efcebf267",
+      "match": true
+    },
+    {
+      "relative_path": "onnx_splitpoint_tool/deepx/env_status.py",
+      "sha256": "524c3db240a6641e2acba8dd302ad8f1384f3bd2b07d93bed18f133a1c96d47f",
+      "expected_sha256": "524c3db240a6641e2acba8dd302ad8f1384f3bd2b07d93bed18f133a1c96d47f",
+      "match": true
+    },
+    {
+      "relative_path": "onnx_splitpoint_tool/runners/native_full_input.py",
+      "sha256": "dd86f51a923a273d8e00b3c4c263c8539b32e34c39615a2acc96330be8e80656",
+      "expected_sha256": "dd86f51a923a273d8e00b3c4c263c8539b32e34c39615a2acc96330be8e80656",
+      "match": true
+    },
+    {
+      "relative_path": "onnx_splitpoint_tool/preprocessing_contract.py",
+      "sha256": "ae96e75e4043d063783345b2d2d034da6942051c2873114d5fff110917ba6f66",
+      "expected_sha256": "ae96e75e4043d063783345b2d2d034da6942051c2873114d5fff110917ba6f66",
+      "match": true
+    }
+  ],
+  "arm_b_artifact": {
+    "path": "/home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/resnet50/build/compile/imagenet_mean_std_b5921d9f75da27c05b6a70fda31f4a0b119383eaf1ddc263fa5e20ec6bd61528.dxnn",
+    "sha256": "40b372eedbd53a0a2fc4916732bc773b61868bf66f92bbb2c69d0babc4abc6fa",
+    "size_bytes": 51729419,
+    "source_onnx_sha256": "cebd9d5879ddd304a18f51e559ab74fba5cbd1f610b9359321bc5228acbe4f50",
+    "build_onnx_sha256": "b5921d9f75da27c05b6a70fda31f4a0b119383eaf1ddc263fa5e20ec6bd61528",
+    "dxcom_config_sha256": "65b18a1721afea8432f2ac01631655bece6b8fb81326f78462491cb6aa771f9f",
+    "classification_preprocessing": "imagenet_mean_std",
+    "cache_published": false,
+    "production_cache_modified": false,
+    "diagnostic_build_only": true
+  },
+  "adapter_receipt": {
+    "schema": "onnx-splitpoint/deepx-build-onnx-adapter",
+    "schema_version": 1,
+    "source_onnx_sha256": "cebd9d5879ddd304a18f51e559ab74fba5cbd1f610b9359321bc5228acbe4f50",
+    "input_name": "input",
+    "consumer_count": 1,
+    "preprocessing": {
+      "schema": "onnx-splitpoint/deepx-classification-preprocessing",
+      "schema_version": 1,
+      "mode": "imagenet_mean_std",
+      "runtime_image": {
+        "dtype": "uint8",
+        "layout": "HWC",
+        "color_space": "RGB",
+        "value_range": [
+          0,
+          255
+        ]
+      },
+      "dxcom_loader": {
+        "scale_divisor": 255.0,
+        "output_layout": "NCHW",
+        "output_dtype": "float32",
+        "color_space": "RGB",
+        "operations_contract": "resize_div255_bgr2rgb_transpose_expanddim"
+      },
+      "build_onnx_adapter": {
+        "kind": "imagenet_rgb_mean_std",
+        "implementation": "onnx_sub_then_div_before_original_graph",
+        "input_domain": "rgb_float32_0_1",
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "broadcast_shape": [
+          1,
+          3,
+          1,
+          1
+        ]
+      },
+      "source_model_input_domain": "rgb_float32_imagenet_mean_std"
+    },
+    "adapter_contract_sha256": "f0aab0e2f601cb4275b78d35d9096d4d69733e1861fe3c4dc763cda6b6576917",
+    "build_onnx_path": "/home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/resnet50/build/adapter/imagenet_mean_std_b5921d9f75da27c05b6a70fda31f4a0b119383eaf1ddc263fa5e20ec6bd61528.onnx",
+    "build_onnx_sha256": "b5921d9f75da27c05b6a70fda31f4a0b119383eaf1ddc263fa5e20ec6bd61528",
+    "build_onnx_bytes": 102357428
+  },
+  "adapter_parity": {
+    "status": "pass",
+    "max_abs": 0.0,
+    "min_cosine": 0.9999999999999998,
+    "rows": [
+      {
+        "cpu_npz": "/home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/_r1/resnet50/cpu/cpu_000.npz",
+        "outputs": [
+          {
+            "shape": [
+              1,
+              1000
+            ],
+            "max_abs": 0.0,
+            "mean_abs": 0.0,
+            "cosine": 0.9999999999999999,
+            "expected": {
+              "shape": [
+                1,
+                1000
+              ],
+              "dtype": "float32",
+              "size": 1000,
+              "finite": true,
+              "min": -0.5842689275741577,
+              "max": 5.827268600463867,
+              "mean": 8.145465701818466e-05,
+              "sha256_bytes": "64400aa9b0a958ceb2346d1017e4544e5ca7be9d7014bb6de4234ef977f7e65e"
+            },
+            "observed": {
+              "shape": [
+                1,
+                1000
+              ],
+              "dtype": "float32",
+              "size": 1000,
+              "finite": true,
+              "min": -0.5842689275741577,
+              "max": 5.827268600463867,
+              "mean": 8.145465701818466e-05,
+              "sha256_bytes": "64400aa9b0a958ceb2346d1017e4544e5ca7be9d7014bb6de4234ef977f7e65e"
+            }
+          }
+        ]
+      },
+      {
+        "cpu_npz": "/home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/_r1/resnet50/cpu/cpu_001.npz",
+        "outputs": [
+          {
+            "shape": [
+              1,
+              1000
+            ],
+            "max_abs": 0.0,
+            "mean_abs": 0.0,
+            "cosine": 0.9999999999999998,
+            "expected": {
+              "shape": [
+                1,
+                1000
+              ],
+              "dtype": "float32",
+              "size": 1000,
+              "finite": true,
+              "min": -1.4765186309814453,
+              "max": 8.153488159179688,
+              "mean": 0.00018517854157835246,
+              "sha256_bytes": "c3de87d919c4cf03a1deb9cc443c66c6b1997e7195479b488db9d2096213ba71"
+            },
+            "observed": {
+              "shape": [
+                1,
+                1000
+              ],
+              "dtype": "float32",
+              "size": 1000,
+              "finite": true,
+              "min": -1.4765186309814453,
+              "max": 8.153488159179688,
+              "mean": 0.00018517854157835246,
+              "sha256_bytes": "c3de87d919c4cf03a1deb9cc443c66c6b1997e7195479b488db9d2096213ba71"
+            }
+          }
+        ]
+      },
+      {
+        "cpu_npz": "/home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/_r1/resnet50/cpu/cpu_002.npz",
+        "outputs": [
+          {
+            "shape": [
+              1,
+              1000
+            ],
+            "max_abs": 0.0,
+            "mean_abs": 0.0,
+            "cosine": 1.0,
+            "expected": {
+              "shape": [
+                1,
+                1000
+              ],
+              "dtype": "float32",
+              "size": 1000,
+              "finite": true,
+              "min": -1.1991407871246338,
+              "max": 5.955399990081787,
+              "mean": 0.00016747954161837697,
+              "sha256_bytes": "32b1a11fc0fdcf72de7ce2ccda6a7a9990158787740eb18f7c4da2758d3d6202"
+            },
+            "observed": {
+              "shape": [
+                1,
+                1000
+              ],
+              "dtype": "float32",
+              "size": 1000,
+              "finite": true,
+              "min": -1.1991407871246338,
+              "max": 5.955399990081787,
+              "mean": 0.00016747954161837697,
+              "sha256_bytes": "32b1a11fc0fdcf72de7ce2ccda6a7a9990158787740eb18f7c4da2758d3d6202"
+            }
+          }
+        ]
+      },
+      {
+        "cpu_npz": "/home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/_r1/resnet50/cpu/cpu_003.npz",
+        "outputs": [
+          {
+            "shape": [
+              1,
+              1000
+            ],
+            "max_abs": 0.0,
+            "mean_abs": 0.0,
+            "cosine": 1.0,
+            "expected": {
+              "shape": [
+                1,
+                1000
+              ],
+              "dtype": "float32",
+              "size": 1000,
+              "finite": true,
+              "min": -1.1546181440353394,
+              "max": 4.4440412521362305,
+              "mean": 0.00015730699780397116,
+              "sha256_bytes": "d693e096f363d22c986a464426e7a55fcfe5b06d5d65eb9a077895bf27aca07a"
+            },
+            "observed": {
+              "shape": [
+                1,
+                1000
+              ],
+              "dtype": "float32",
+              "size": 1000,
+              "finite": true,
+              "min": -1.1546181440353394,
+              "max": 4.4440412521362305,
+              "mean": 0.00015730699780397116,
+              "sha256_bytes": "d693e096f363d22c986a464426e7a55fcfe5b06d5d65eb9a077895bf27aca07a"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

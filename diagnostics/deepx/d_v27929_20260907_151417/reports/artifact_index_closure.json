@@ -1,0 +1,18 @@
+{
+  "artifact_index_path": "artifact_index.json",
+  "artifact_record_count": 2928,
+  "finalized_at": "2026-09-07T16:04:21+02:00",
+  "hash_mismatch_count": 0,
+  "missing_file_count": 0,
+  "required_coverage_path_count": 2928,
+  "run_id": "v27929_acceptance_d_yolo11l_b003_deepx_gpu_20260907_151417",
+  "schema": "onnx-splitpoint/artifact-index-terminal-closure",
+  "schema_version": 1,
+  "self_hash_excluded": true,
+  "session_id": "64bb38008a124a7698c2fa3acaa98140",
+  "status": "pass",
+  "unindexed_required_path_count": 0,
+  "unique_indexed_path_count": 2928,
+  "verification_error_count": 0,
+  "workflow_status": "failed"
+}

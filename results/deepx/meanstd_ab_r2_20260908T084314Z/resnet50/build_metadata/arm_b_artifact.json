@@ -1,0 +1,12 @@
+{
+  "path": "/home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/resnet50/build/compile/imagenet_mean_std_b5921d9f75da27c05b6a70fda31f4a0b119383eaf1ddc263fa5e20ec6bd61528.dxnn",
+  "sha256": "40b372eedbd53a0a2fc4916732bc773b61868bf66f92bbb2c69d0babc4abc6fa",
+  "size_bytes": 51729419,
+  "source_onnx_sha256": "cebd9d5879ddd304a18f51e559ab74fba5cbd1f610b9359321bc5228acbe4f50",
+  "build_onnx_sha256": "b5921d9f75da27c05b6a70fda31f4a0b119383eaf1ddc263fa5e20ec6bd61528",
+  "dxcom_config_sha256": "65b18a1721afea8432f2ac01631655bece6b8fb81326f78462491cb6aa771f9f",
+  "classification_preprocessing": "imagenet_mean_std",
+  "cache_published": false,
+  "production_cache_modified": false,
+  "diagnostic_build_only": true
+}

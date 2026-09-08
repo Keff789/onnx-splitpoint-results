@@ -1,0 +1,54 @@
+{
+  "schema": "deepx-meanstd-ab-smoke/r2",
+  "status": "evidence_collected",
+  "models": [
+    {
+      "model_id": "mobilenet_v3_large",
+      "status": "evidence_collected",
+      "build_process": {
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_s": 20.412,
+        "log": "/home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/mobilenet_v3_large/build_console.log"
+      },
+      "remote_transport_status": "collected",
+      "analysis_process": {
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_s": 0.201,
+        "log": "/home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/mobilenet_v3_large/analysis.log"
+      },
+      "diagnostic_interpretation": "supports_imagenet_mean_std_build_path",
+      "top1_delta_b_minus_a": 0.0625
+    },
+    {
+      "model_id": "resnet50",
+      "status": "evidence_collected",
+      "build_process": {
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_s": 21.411,
+        "log": "/home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/resnet50/build_console.log"
+      },
+      "remote_transport_status": "collected",
+      "analysis_process": {
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_s": 0.2,
+        "log": "/home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/resnet50/analysis.log"
+      },
+      "diagnostic_interpretation": "supports_imagenet_mean_std_build_path",
+      "top1_delta_b_minus_a": 0.1875
+    }
+  ],
+  "model_acceptance": "NOT_EVALUATED",
+  "output_dir": "/home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm",
+  "r1_evidence": "/home/kmika/Downloads/deepx_prepost_smokes_r1_20260908T080238Z_vo3whdeu.zip",
+  "r1_evidence_sha256": "6815e833a17423b01291a399401497676bc7fd16530b4543e411d57ca6ed121b",
+  "tool_dir": "/home/kmika/ONNX-Splitpoint-Tool",
+  "overlay": "/home/kmika/dx-all-suite/dx-compiler/pytorch-2.12.0-cu126-overlay",
+  "compiler_invoked": true,
+  "compiler_dispatch_requested": true,
+  "production_cache_modified": false,
+  "tool_installation_modified": false
+}

@@ -1,0 +1,139 @@
+{
+  "nonce": "8725ffc8ee154376be17a03270f35f99",
+  "model_id": "mobilenet_v3_large",
+  "setup_id": "orin_nx_deepx_m1_01",
+  "runtime_venv": "~/venvs/deepx-runtime",
+  "arm_a_sha256": "c2153dd819105e58efc5742d613ff9d51c92cdcbc52046741b423cc6a1149e04",
+  "arm_b_sha256": "5d778ee8332dae509273f4fea71559e4ae283190fbc345e199ecddbe9b3d2a92",
+  "samples": [
+    {
+      "ordinal": 0,
+      "image_id": "ILSVRC2012_val_00000080.JPEG",
+      "label_id": 461,
+      "image_sha256": "f7b5059cb7db6963a9029b978a104da43d0125f30ba3489bc13e0ee5db28e4fa",
+      "r1_feed_sha256": "4566dc50e0f9611fe092f2aaebd369ec04910b89c8058f858404e6b98c123cb8",
+      "r1_output_sha256": "676ad2044931dbfa8c869813e806cc54148c7b636b515d05478e87b31388be12"
+    },
+    {
+      "ordinal": 1,
+      "image_id": "ILSVRC2012_val_00000152.JPEG",
+      "label_id": 637,
+      "image_sha256": "ec34e41072057ba7288532da8818cea460a6b35081655071e23fd966846c460a",
+      "r1_feed_sha256": "7cd477bf58d9c099c843c3af1d529e378afd0603b51d53088c71eb25e4ee9d7c",
+      "r1_output_sha256": "df0707d9f001c75a6af2e6dbb9ee987934ad182ac781fb86564b7926d9206eff"
+    },
+    {
+      "ordinal": 2,
+      "image_id": "ILSVRC2012_val_00000210.JPEG",
+      "label_id": 516,
+      "image_sha256": "a5dae0191593b211ce2f472d0f70aae7e382682384d0a418d8cd8bfa38680eaf",
+      "r1_feed_sha256": "9c32b150cc7d3a654de150cddad4dfe91d88fe01c628da03fdb630c52ba867ff",
+      "r1_output_sha256": "641178550f3d39c7f6d68b8f1a0d4b2615f0e5aee121cce1e6855f3213a58547"
+    },
+    {
+      "ordinal": 3,
+      "image_id": "ILSVRC2012_val_00000285.JPEG",
+      "label_id": 906,
+      "image_sha256": "bcc4379a3ee70e05703ccfbdf3d265f7d29d8c2f2c23d5cde8fe384d557e9b29",
+      "r1_feed_sha256": "d231b363fb65567afef1369bb075f7260f1c84b0bf20977cd4421e02592cc03d",
+      "r1_output_sha256": "97dc4a72d362d987831cb8e1a4e0715216d023a54d902f014b01caedfa971749"
+    },
+    {
+      "ordinal": 4,
+      "image_id": "ILSVRC2012_val_00000347.JPEG",
+      "label_id": 472,
+      "image_sha256": "cc92faeae7903a7fb73a1c3f976dffad6d6bacec8570bd46b652262d51fa5e29",
+      "r1_feed_sha256": "ff9db0205cdc0d081f56391fabe57bd9fb3e5c8255f700aed31ab71ff7a2c02f",
+      "r1_output_sha256": "6604d464fc1801e3107a063224b1e9c374c4b786cb56add9c0555f75f867a788"
+    },
+    {
+      "ordinal": 5,
+      "image_id": "ILSVRC2012_val_00000390.JPEG",
+      "label_id": 133,
+      "image_sha256": "9c84ab4d72d7adbecf37adc82a039f446e7be4d1da042bb2fdf014a4dbb1ec6a",
+      "r1_feed_sha256": "3af128cb7450075425a79a69d805ea1c373692e411e23c580185b662a805f4b6",
+      "r1_output_sha256": "da229dc1d575c14f880902c68f2eb834854d3eb2a8942e7c8a691ab325b87ac9"
+    },
+    {
+      "ordinal": 6,
+      "image_id": "ILSVRC2012_val_00000395.JPEG",
+      "label_id": 74,
+      "image_sha256": "ae9ca54dd30964d4854d9d7d8aa750ff72a4666b74ffce9a099d9544751a1625",
+      "r1_feed_sha256": "e5a220f0ce31d0cda68d5da4c9ad1340fe8f7938d9b97ee8edce0b68e9dea53b",
+      "r1_output_sha256": "4411be80143acc9a043df5f611db725d087a2b1423deead77bdb437f0df23c25"
+    },
+    {
+      "ordinal": 7,
+      "image_id": "ILSVRC2012_val_00000410.JPEG",
+      "label_id": 598,
+      "image_sha256": "7df285f8043557358d25b81d50f919f4c1faa378fc9bb13403713f5875b3b392",
+      "r1_feed_sha256": "fa313049993dbe7778002c23e123a5dcffe4eb3144d0bd6726183c76fc392162",
+      "r1_output_sha256": "f73b5489ce551494697fe79a038b3f8c4a2ad66f05a7546c870e6b5a9715517d"
+    },
+    {
+      "ordinal": 8,
+      "image_id": "ILSVRC2012_val_00000465.JPEG",
+      "label_id": 712,
+      "image_sha256": "1671dac1c1e76dbe21ca8cc8334d43cae57b75a027b99930fba6a9bd0090c260",
+      "r1_feed_sha256": "723da161f515f131688a9dc36f74ae5e3f31f9802250fd748feaa9a3459a76e5",
+      "r1_output_sha256": "c67c2bed585449b88a8d0c6dff745ac90c6e197b582289efe85b8b1adac736d8"
+    },
+    {
+      "ordinal": 9,
+      "image_id": "ILSVRC2012_val_00000515.JPEG",
+      "label_id": 744,
+      "image_sha256": "5d4e6ea9fa74911550bd4d22db2e9b0adb0f348ddce6c233c90af5b43c8e0f3a",
+      "r1_feed_sha256": "e17d4ddedccfca5912a82ad2ee5eb746d6b2dc963c55048edbf0cc56100bca20",
+      "r1_output_sha256": "59b3f131ad9d781f93e466f82d4b1c9d5f2e81669e2a48c3980844ce5e1bf88e"
+    },
+    {
+      "ordinal": 10,
+      "image_id": "ILSVRC2012_val_00000526.JPEG",
+      "label_id": 868,
+      "image_sha256": "c80e50766003ee2fc17a82007b98b7f2687942cb8783e16f7fd25f471f4510bb",
+      "r1_feed_sha256": "8cd2199514a5d9aaee359dbe40f5ce293c71ff5e6269637b9276119dfa11a8c4",
+      "r1_output_sha256": "a5fb2977e3af9d9e416b5236c5735ecd4752668970707a6fd49bc72fa21880d0"
+    },
+    {
+      "ordinal": 11,
+      "image_id": "ILSVRC2012_val_00000705.JPEG",
+      "label_id": 994,
+      "image_sha256": "645608078bfa7a6f98b6d27ef85a4cb8d16cfb67adb7a9c4943790f33c0d2b78",
+      "r1_feed_sha256": "c4da2a6944aca1f52e672416cbfd57d646c9ebb2750903afa39f0fdf1452718d",
+      "r1_output_sha256": "17262d73719012bad8ae0beac1326820a807e5f7da1bac0c8a429bf7d59355ae"
+    },
+    {
+      "ordinal": 12,
+      "image_id": "ILSVRC2012_val_00000744.JPEG",
+      "label_id": 97,
+      "image_sha256": "4f7f16fba8e8261dc06247925471b6e87cedb96914190f6f20aeeb769fc54c41",
+      "r1_feed_sha256": "5463fedcccf2e800cab8e0780a2d1648fdfb23f4709e0f9f35d9060ef93437c4",
+      "r1_output_sha256": "189bfd8a1ae304368a093fff0e12ec70ca7eba6ae6cc955ba2d634bf7e7538ba"
+    },
+    {
+      "ordinal": 13,
+      "image_id": "ILSVRC2012_val_00001020.JPEG",
+      "label_id": 803,
+      "image_sha256": "d5ab9b3cbdb0c66146c7785a5ecd1f7cf17ed0ba28cd170bcb8df8955fa868e6",
+      "r1_feed_sha256": "af0a1f5d57fbb6adee349b19bcd34b9d2cf3f808f68bc275fe6b2ec1ffc35aae",
+      "r1_output_sha256": "7af26d8593025e471a2884a36b8e62171916e635a762b9e6ec14b59eb05e58a6"
+    },
+    {
+      "ordinal": 14,
+      "image_id": "ILSVRC2012_val_00001237.JPEG",
+      "label_id": 335,
+      "image_sha256": "802b3e5c7e97b8590a9569a3a5f554533d52667beef5fd1303cd432cebd8405d",
+      "r1_feed_sha256": "1608422dc7082eada2e91b97957135bc0dbeed24ef15ebf5c40c490234bcd695",
+      "r1_output_sha256": "f41cf7ff89f0718549beeee6587f1bb2ebd34cec95112531b33bc2fa97120b95"
+    },
+    {
+      "ordinal": 15,
+      "image_id": "ILSVRC2012_val_00001362.JPEG",
+      "label_id": 997,
+      "image_sha256": "3b9f93320f6c3e44b627da1428b2b302bdffa7cd672d74c9920f60c82b2ff00e",
+      "r1_feed_sha256": "5d1fe52d64bc54cf67d8288da5ef033404ad776c5d7f692cbb55331a6ac39aed",
+      "r1_output_sha256": "d807850459ced03b9e37681b7bbd83c0948bb0bb23019390d3fc59a0ae90f745"
+    }
+  ],
+  "diagnostic_only": true
+}

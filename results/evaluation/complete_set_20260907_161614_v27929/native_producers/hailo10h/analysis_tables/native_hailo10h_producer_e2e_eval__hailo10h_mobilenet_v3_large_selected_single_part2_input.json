@@ -1,0 +1,1987 @@
+{
+  "schema": "onnx-splitpoint/native-producer-e2e-eval-summary",
+  "schema_version": 2,
+  "root": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614",
+  "backend": "hailo10h",
+  "analysis_tag": "hailo10h_mobilenet_v3_large_selected_single_part2_input",
+  "performance_repetitions": 3,
+  "rows": [
+    {
+      "backend": "hailo10h",
+      "model": "mobilenet_v3_large",
+      "case": "b135",
+      "precision": "uint8_dequant_fp16",
+      "ok": true,
+      "status": "ok",
+      "runtime_success": true,
+      "failure_reason": "",
+      "status_detail": "ok",
+      "error": "",
+      "returncode": 0,
+      "rc": 0,
+      "timed_out": false,
+      "result_fresh": true,
+      "stdout_tail": "{\n  \"ok\": true,\n  \"fps_makespan\": 311.92684212767296,\n  \"paper_fps\": 311.95238532809987,\n  \"producer_impl\": \"hailo10_infermodel_async_fifo\",\n  \"report\": \"/home/nx/native_fifo_evalsets/complete_set_20260907_161614/mobilenet_v3_large/benchmark_set/native_pipeline/b135/hailo10h_to_trt/uint8_dequant_fp16/hailo10_native_fifo_e2e_results.json\",\n  \"error\": \"\"\n}\n",
+      "stderr_tail": "",
+      "input_image": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/mobilenet_v3_large/benchmark_set/resources/validation/classification/val_by_wnid_n500_s20260710/images/n01443537/ILSVRC2012_val_00013623.JPEG",
+      "input_image_source": "generic_validation_image_map",
+      "input_image_sha256": "7fcdd3d95ff2491a2a5fe235d786026b728ffe0f88d25c4543d9a3e253f71652",
+      "fps_makespan": 311.92684212767296,
+      "paper_fps": 311.95238532809987,
+      "fps_median": 311.92684212767296,
+      "fps_ci95_low": 311.87800006619943,
+      "fps_ci95_high": 312.0631572195015,
+      "repetition_count_requested": 3,
+      "repetition_count_attempted": 3,
+      "repetition_count_valid": 3,
+      "repetition_status": "complete",
+      "repetition_aggregation": "median_never_best_of",
+      "repetition_records": [
+        {
+          "producer_impl": "hailo10_infermodel_async_fifo",
+          "frames": 1000,
+          "requested_frames": 1000,
+          "duration_s": 0.0,
+          "warmup": 100,
+          "inflight": 8,
+          "queue_depth": 3,
+          "produced_frames": 1000,
+          "consumed_frames": 1000,
+          "hailo_latency_ms": 25.429291526932502,
+          "p1_ms": 25.429291526932502,
+          "producer_makespan_ms": 3204.2234939872287,
+          "consumer_makespan_ms": 3204.363305005245,
+          "p1_effective_cycle_ms": 3.2042234939872287,
+          "consumer_effective_cycle_ms": 3.204363305005245,
+          "output_extract_ms": 0.08736936718923971,
+          "payload_copy_ms": 0.0,
+          "boundary_copy_count": 1,
+          "boundary_copy_policy": "single_owned_contiguous_copy_from_reusable_accelerator_binding",
+          "fifo_put_block_ms": 0.013309706322615966,
+          "queue_wait_ms": 0.058382868650369346,
+          "trt_input_copy_ms": 0.015456905763130635,
+          "handoff_ms": 0.11613597927498631,
+          "p2_run_ms": 0.22194973778096028,
+          "completion_tail_ms": 0.0,
+          "postprocess_ms": 0.0,
+          "p1_thread_ms": 3.2042234939872287,
+          "p2_thread_ms": 0.2374066435440909,
+          "paper_equivalent_cycle_ms": 3.2042234939872287,
+          "paper_equivalent_fps": 312.0880930673264,
+          "makespan_ms": 3204.479531996185,
+          "fps_makespan": 312.0631572195015,
+          "measurement_boundary": "workers_ready_to_last_completed_trt_frame",
+          "last_completion_source": "native_trt_synchronized_output",
+          "warmup_contract": "fully_drained_before_worker_start",
+          "trt_host_memory_policy": "cuda_pinned_all_bindings",
+          "trt_output_materialization_policy": "synchronized_d2h_pinned_view_no_post_copy",
+          "trt_copy_outputs": true,
+          "completed_frames": 1000,
+          "completed_work_units": 1000,
+          "completed_work_units_source": "trt_consumer_successful_completion_counter",
+          "completed_work_units_status": "exact_runtime_counter",
+          "metric_note": "For async_fifo, queue_wait_ms is backlog wait and is not counted as handoff work. Detection p2_thread_ms and makespan include the serial completed-task tail.",
+          "postprocess_included": false,
+          "postprocess_completed_frames": 0,
+          "postprocess_completion_verified": false,
+          "repetition_index": 1,
+          "runtime_instance_id": "fresh_runtime:3740f0b8c28334b4dcc4bb6d8d981669c5239a3ab173a773ab0a977c0d77086b",
+          "ok": true,
+          "status": "ok",
+          "workload_contract_sha256": "11ef3f47506a4fd1b2498eb8ff8637b567d31d81e93f848685fe90973080776b"
+        },
+        {
+          "producer_impl": "hailo10_infermodel_async_fifo",
+          "frames": 1000,
+          "requested_frames": 1000,
+          "duration_s": 0.0,
+          "warmup": 100,
+          "inflight": 8,
+          "queue_depth": 3,
+          "produced_frames": 1000,
+          "consumed_frames": 1000,
+          "hailo_latency_ms": 25.444055000465596,
+          "p1_ms": 25.444055000465596,
+          "producer_makespan_ms": 3205.617418017937,
+          "consumer_makespan_ms": 3205.7706699997652,
+          "p1_effective_cycle_ms": 3.205617418017937,
+          "consumer_effective_cycle_ms": 3.2057706699997652,
+          "output_extract_ms": 0.08561260291025974,
+          "payload_copy_ms": 0.0,
+          "boundary_copy_count": 1,
+          "boundary_copy_policy": "single_owned_contiguous_copy_from_reusable_accelerator_binding",
+          "fifo_put_block_ms": 0.012706387264188379,
+          "queue_wait_ms": 0.05621600634185597,
+          "trt_input_copy_ms": 0.01556739181978628,
+          "handoff_ms": 0.1138863819942344,
+          "p2_run_ms": 0.160466024215566,
+          "completion_tail_ms": 0.0,
+          "postprocess_ms": 0.0,
+          "p1_thread_ms": 3.205617418017937,
+          "p2_thread_ms": 0.17603341603535227,
+          "paper_equivalent_cycle_ms": 3.205617418017937,
+          "paper_equivalent_fps": 311.95238532809987,
+          "makespan_ms": 3205.8799210062716,
+          "fps_makespan": 311.92684212767296,
+          "measurement_boundary": "workers_ready_to_last_completed_trt_frame",
+          "last_completion_source": "native_trt_synchronized_output",
+          "warmup_contract": "fully_drained_before_worker_start",
+          "trt_host_memory_policy": "cuda_pinned_all_bindings",
+          "trt_output_materialization_policy": "synchronized_d2h_pinned_view_no_post_copy",
+          "trt_copy_outputs": true,
+          "completed_frames": 1000,
+          "completed_work_units": 1000,
+          "completed_work_units_source": "trt_consumer_successful_completion_counter",
+          "completed_work_units_status": "exact_runtime_counter",
+          "metric_note": "For async_fifo, queue_wait_ms is backlog wait and is not counted as handoff work. Detection p2_thread_ms and makespan include the serial completed-task tail.",
+          "postprocess_included": false,
+          "postprocess_completed_frames": 0,
+          "postprocess_completion_verified": false,
+          "repetition_index": 2,
+          "runtime_instance_id": "fresh_runtime:37d12c85c8e1aa8418dfddeba7cb9da2d1d97b1e9cc68c8443617fb5d8503f36",
+          "ok": true,
+          "status": "ok",
+          "workload_contract_sha256": "11ef3f47506a4fd1b2498eb8ff8637b567d31d81e93f848685fe90973080776b"
+        },
+        {
+          "producer_impl": "hailo10_infermodel_async_fifo",
+          "frames": 1000,
+          "requested_frames": 1000,
+          "duration_s": 0.0,
+          "warmup": 100,
+          "inflight": 8,
+          "queue_depth": 3,
+          "produced_frames": 1000,
+          "consumed_frames": 1000,
+          "hailo_latency_ms": 25.445982931298204,
+          "p1_ms": 25.445982931298204,
+          "producer_makespan_ms": 3206.1299759952817,
+          "consumer_makespan_ms": 3206.271322997054,
+          "p1_effective_cycle_ms": 3.2061299759952817,
+          "consumer_effective_cycle_ms": 3.206271322997054,
+          "output_extract_ms": 0.08570935175521299,
+          "payload_copy_ms": 0.0,
+          "boundary_copy_count": 1,
+          "boundary_copy_policy": "single_owned_contiguous_copy_from_reusable_accelerator_binding",
+          "fifo_put_block_ms": 0.013474349776515737,
+          "queue_wait_ms": 0.05840128130512312,
+          "trt_input_copy_ms": 0.015617253229720518,
+          "handoff_ms": 0.11480095476144925,
+          "p2_run_ms": 0.1507167523377575,
+          "completion_tail_ms": 0.0,
+          "postprocess_ms": 0.0,
+          "p1_thread_ms": 3.2061299759952817,
+          "p2_thread_ms": 0.16633400556747802,
+          "paper_equivalent_cycle_ms": 3.2061299759952817,
+          "paper_equivalent_fps": 311.9025140861824,
+          "makespan_ms": 3206.381982017774,
+          "fps_makespan": 311.87800006619943,
+          "measurement_boundary": "workers_ready_to_last_completed_trt_frame",
+          "last_completion_source": "native_trt_synchronized_output",
+          "warmup_contract": "fully_drained_before_worker_start",
+          "trt_host_memory_policy": "cuda_pinned_all_bindings",
+          "trt_output_materialization_policy": "synchronized_d2h_pinned_view_no_post_copy",
+          "trt_copy_outputs": true,
+          "completed_frames": 1000,
+          "completed_work_units": 1000,
+          "completed_work_units_source": "trt_consumer_successful_completion_counter",
+          "completed_work_units_status": "exact_runtime_counter",
+          "metric_note": "For async_fifo, queue_wait_ms is backlog wait and is not counted as handoff work. Detection p2_thread_ms and makespan include the serial completed-task tail.",
+          "postprocess_included": false,
+          "postprocess_completed_frames": 0,
+          "postprocess_completion_verified": false,
+          "repetition_index": 3,
+          "runtime_instance_id": "fresh_runtime:15a8faaf0be38511ebbab8a322031a29d9fb08a44c6b33a38849c99a472d5047",
+          "ok": true,
+          "status": "ok",
+          "workload_contract_sha256": "11ef3f47506a4fd1b2498eb8ff8637b567d31d81e93f848685fe90973080776b"
+        }
+      ],
+      "repetition_evidence": [
+        {
+          "producer_impl": "hailo10_infermodel_async_fifo",
+          "frames": 1000,
+          "requested_frames": 1000,
+          "duration_s": 0.0,
+          "warmup": 100,
+          "inflight": 8,
+          "queue_depth": 3,
+          "produced_frames": 1000,
+          "consumed_frames": 1000,
+          "hailo_latency_ms": 25.429291526932502,
+          "p1_ms": 25.429291526932502,
+          "producer_makespan_ms": 3204.2234939872287,
+          "consumer_makespan_ms": 3204.363305005245,
+          "p1_effective_cycle_ms": 3.2042234939872287,
+          "consumer_effective_cycle_ms": 3.204363305005245,
+          "output_extract_ms": 0.08736936718923971,
+          "payload_copy_ms": 0.0,
+          "boundary_copy_count": 1,
+          "boundary_copy_policy": "single_owned_contiguous_copy_from_reusable_accelerator_binding",
+          "fifo_put_block_ms": 0.013309706322615966,
+          "queue_wait_ms": 0.058382868650369346,
+          "trt_input_copy_ms": 0.015456905763130635,
+          "handoff_ms": 0.11613597927498631,
+          "p2_run_ms": 0.22194973778096028,
+          "completion_tail_ms": 0.0,
+          "postprocess_ms": 0.0,
+          "p1_thread_ms": 3.2042234939872287,
+          "p2_thread_ms": 0.2374066435440909,
+          "paper_equivalent_cycle_ms": 3.2042234939872287,
+          "paper_equivalent_fps": 312.0880930673264,
+          "makespan_ms": 3204.479531996185,
+          "fps_makespan": 312.0631572195015,
+          "measurement_boundary": "workers_ready_to_last_completed_trt_frame",
+          "last_completion_source": "native_trt_synchronized_output",
+          "warmup_contract": "fully_drained_before_worker_start",
+          "trt_host_memory_policy": "cuda_pinned_all_bindings",
+          "trt_output_materialization_policy": "synchronized_d2h_pinned_view_no_post_copy",
+          "trt_copy_outputs": true,
+          "completed_frames": 1000,
+          "completed_work_units": 1000,
+          "completed_work_units_source": "trt_consumer_successful_completion_counter",
+          "completed_work_units_status": "exact_runtime_counter",
+          "metric_note": "For async_fifo, queue_wait_ms is backlog wait and is not counted as handoff work. Detection p2_thread_ms and makespan include the serial completed-task tail.",
+          "postprocess_included": false,
+          "postprocess_completed_frames": 0,
+          "postprocess_completion_verified": false,
+          "repetition_index": 1,
+          "runtime_instance_id": "fresh_runtime:3740f0b8c28334b4dcc4bb6d8d981669c5239a3ab173a773ab0a977c0d77086b",
+          "ok": true,
+          "status": "ok",
+          "workload_contract_sha256": "11ef3f47506a4fd1b2498eb8ff8637b567d31d81e93f848685fe90973080776b"
+        },
+        {
+          "producer_impl": "hailo10_infermodel_async_fifo",
+          "frames": 1000,
+          "requested_frames": 1000,
+          "duration_s": 0.0,
+          "warmup": 100,
+          "inflight": 8,
+          "queue_depth": 3,
+          "produced_frames": 1000,
+          "consumed_frames": 1000,
+          "hailo_latency_ms": 25.444055000465596,
+          "p1_ms": 25.444055000465596,
+          "producer_makespan_ms": 3205.617418017937,
+          "consumer_makespan_ms": 3205.7706699997652,
+          "p1_effective_cycle_ms": 3.205617418017937,
+          "consumer_effective_cycle_ms": 3.2057706699997652,
+          "output_extract_ms": 0.08561260291025974,
+          "payload_copy_ms": 0.0,
+          "boundary_copy_count": 1,
+          "boundary_copy_policy": "single_owned_contiguous_copy_from_reusable_accelerator_binding",
+          "fifo_put_block_ms": 0.012706387264188379,
+          "queue_wait_ms": 0.05621600634185597,
+          "trt_input_copy_ms": 0.01556739181978628,
+          "handoff_ms": 0.1138863819942344,
+          "p2_run_ms": 0.160466024215566,
+          "completion_tail_ms": 0.0,
+          "postprocess_ms": 0.0,
+          "p1_thread_ms": 3.205617418017937,
+          "p2_thread_ms": 0.17603341603535227,
+          "paper_equivalent_cycle_ms": 3.205617418017937,
+          "paper_equivalent_fps": 311.95238532809987,
+          "makespan_ms": 3205.8799210062716,
+          "fps_makespan": 311.92684212767296,
+          "measurement_boundary": "workers_ready_to_last_completed_trt_frame",
+          "last_completion_source": "native_trt_synchronized_output",
+          "warmup_contract": "fully_drained_before_worker_start",
+          "trt_host_memory_policy": "cuda_pinned_all_bindings",
+          "trt_output_materialization_policy": "synchronized_d2h_pinned_view_no_post_copy",
+          "trt_copy_outputs": true,
+          "completed_frames": 1000,
+          "completed_work_units": 1000,
+          "completed_work_units_source": "trt_consumer_successful_completion_counter",
+          "completed_work_units_status": "exact_runtime_counter",
+          "metric_note": "For async_fifo, queue_wait_ms is backlog wait and is not counted as handoff work. Detection p2_thread_ms and makespan include the serial completed-task tail.",
+          "postprocess_included": false,
+          "postprocess_completed_frames": 0,
+          "postprocess_completion_verified": false,
+          "repetition_index": 2,
+          "runtime_instance_id": "fresh_runtime:37d12c85c8e1aa8418dfddeba7cb9da2d1d97b1e9cc68c8443617fb5d8503f36",
+          "ok": true,
+          "status": "ok",
+          "workload_contract_sha256": "11ef3f47506a4fd1b2498eb8ff8637b567d31d81e93f848685fe90973080776b"
+        },
+        {
+          "producer_impl": "hailo10_infermodel_async_fifo",
+          "frames": 1000,
+          "requested_frames": 1000,
+          "duration_s": 0.0,
+          "warmup": 100,
+          "inflight": 8,
+          "queue_depth": 3,
+          "produced_frames": 1000,
+          "consumed_frames": 1000,
+          "hailo_latency_ms": 25.445982931298204,
+          "p1_ms": 25.445982931298204,
+          "producer_makespan_ms": 3206.1299759952817,
+          "consumer_makespan_ms": 3206.271322997054,
+          "p1_effective_cycle_ms": 3.2061299759952817,
+          "consumer_effective_cycle_ms": 3.206271322997054,
+          "output_extract_ms": 0.08570935175521299,
+          "payload_copy_ms": 0.0,
+          "boundary_copy_count": 1,
+          "boundary_copy_policy": "single_owned_contiguous_copy_from_reusable_accelerator_binding",
+          "fifo_put_block_ms": 0.013474349776515737,
+          "queue_wait_ms": 0.05840128130512312,
+          "trt_input_copy_ms": 0.015617253229720518,
+          "handoff_ms": 0.11480095476144925,
+          "p2_run_ms": 0.1507167523377575,
+          "completion_tail_ms": 0.0,
+          "postprocess_ms": 0.0,
+          "p1_thread_ms": 3.2061299759952817,
+          "p2_thread_ms": 0.16633400556747802,
+          "paper_equivalent_cycle_ms": 3.2061299759952817,
+          "paper_equivalent_fps": 311.9025140861824,
+          "makespan_ms": 3206.381982017774,
+          "fps_makespan": 311.87800006619943,
+          "measurement_boundary": "workers_ready_to_last_completed_trt_frame",
+          "last_completion_source": "native_trt_synchronized_output",
+          "warmup_contract": "fully_drained_before_worker_start",
+          "trt_host_memory_policy": "cuda_pinned_all_bindings",
+          "trt_output_materialization_policy": "synchronized_d2h_pinned_view_no_post_copy",
+          "trt_copy_outputs": true,
+          "completed_frames": 1000,
+          "completed_work_units": 1000,
+          "completed_work_units_source": "trt_consumer_successful_completion_counter",
+          "completed_work_units_status": "exact_runtime_counter",
+          "metric_note": "For async_fifo, queue_wait_ms is backlog wait and is not counted as handoff work. Detection p2_thread_ms and makespan include the serial completed-task tail.",
+          "postprocess_included": false,
+          "postprocess_completed_frames": 0,
+          "postprocess_completion_verified": false,
+          "repetition_index": 3,
+          "runtime_instance_id": "fresh_runtime:15a8faaf0be38511ebbab8a322031a29d9fb08a44c6b33a38849c99a472d5047",
+          "ok": true,
+          "status": "ok",
+          "workload_contract_sha256": "11ef3f47506a4fd1b2498eb8ff8637b567d31d81e93f848685fe90973080776b"
+        }
+      ],
+      "handoff_ms": 0.11480095476144925,
+      "p1_ms": 25.444055000465596,
+      "p2_run_ms": 0.160466024215566,
+      "producer_ready": null,
+      "consumer_ready": null,
+      "report": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/mobilenet_v3_large/benchmark_set/native_pipeline/b135/hailo10h_to_trt/uint8_dequant_fp16/hailo10_native_fifo_e2e_results.json",
+      "setup_id": "orin_nx_hailo10_01",
+      "eval_run_id": "complete_set_20260907_161614",
+      "source_run_id": "hailo10h_to_trt",
+      "native_split_quality_required": true,
+      "native_split_quality_available": true,
+      "technical_quality_error": "",
+      "energy_quality_qualified": true,
+      "energy_quality_status": "quality_qualified",
+      "native_energy_after_technical_error": "not_applicable_quality_qualified",
+      "performance_claims_emitted": true,
+      "execution_role": "quality_first_native_split",
+      "native_command_contract": {
+        "backend": "hailo10h_to_trt",
+        "model": "mobilenet_v3_large",
+        "setup_id": "orin_nx_hailo10_01",
+        "comparison_backend": "hailo10h",
+        "runner": "scripts/native_hailo10_trt_e2e_from_benchmarkset.py",
+        "python_executable": "/home/nx/venvs/hailo10/bin/python",
+        "interpreter_identity": {
+          "executable": "/home/nx/venvs/hailo10/bin/python",
+          "resolved_executable": "/usr/bin/python3.10",
+          "executable_sha256": "e6bd3bd6d16c69ffda0d87aac09a2ed202119004805568b3d1b9b2b47763ca26",
+          "prefix": "/home/nx/venvs/hailo10",
+          "base_prefix": "/usr",
+          "version": "3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0]"
+        },
+        "runner_sha256": "4e4352d0632c22726d45dcaf63320af12b9f04a64c298a6b4a45882b737bc498",
+        "benchmark_set": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/mobilenet_v3_large/benchmark_set",
+        "case": "b135",
+        "hw_arch": "hailo10h",
+        "precision": "uint8_dequant_fp16",
+        "input_image": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/mobilenet_v3_large/benchmark_set/resources/validation/classification/val_by_wnid_n500_s20260710/images/n01443537/ILSVRC2012_val_00013623.JPEG",
+        "input_image_source": "exact_file",
+        "input_image_sha256": "7fcdd3d95ff2491a2a5fe235d786026b728ffe0f88d25c4543d9a3e253f71652",
+        "artifacts": {
+          "python_executable": {
+            "path": "/home/nx/venvs/hailo10/bin/python",
+            "sha256": "e6bd3bd6d16c69ffda0d87aac09a2ed202119004805568b3d1b9b2b47763ca26"
+          },
+          "hef": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/part1.hef",
+            "sha256": "8929b57718f4c35751ea1d2b74eed97332a0582fe956b7c00c32eeb659d1912c",
+            "size_bytes": 3903488
+          },
+          "engine": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+            "sha256": "d455dbde2ae906f8755ecb5d17e06be67a6375f9d4e5abdaefc0129dc6a92188",
+            "size_bytes": 5134468
+          },
+          "prepared_input_00": {
+            "path": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/mobilenet_v3_large/benchmark_set/native_pipeline/b135/hailo10h_to_trt/uint8_dequant_fp16/contract_artifacts/hailo10_prepared_input_00_input.npy",
+            "sha256": "6b102dbc748b10e4e14ef92795c98c703d30b6e80d142ec7dbee7740791d9b0f"
+          },
+          "native_trt_meta": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/native_trt_meta.json",
+            "sha256": "02bef57c21e568029a3d1c8122095ee2aa1cb06dd3905bbd635cc5ee37f01690",
+            "size_bytes": 8449
+          },
+          "part1_onnx": {
+            "path": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/mobilenet_v3_large/benchmark_set/b135/mobilenet_v3_large_part1_b135.onnx",
+            "sha256": "f7e9070291e34eda03e89df185a92a0a843724a2b12e8c212d9d7b0e8463ef48"
+          },
+          "boundary_metadata": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/part1_boundary_metadata.json",
+            "sha256": "c0f91800f3e2f2324a6a8cd29ebc44a3d478c0037afa29150feee3b3eee9f08e",
+            "size_bytes": 1062
+          },
+          "source_part2_onnx": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/benchmark_set/b135/source_part2.onnx",
+            "sha256": "789cf35875ab925fcab4f8f1d5b8f10959a2e66039cd1b868f11fd326019b7bd",
+            "size_bytes": 10050649
+          },
+          "build_part2_onnx": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+            "sha256": "a995acfeb77c3cf9619758f2ede1f1f5cd4392c0394628d1f2ba00e3f81df510",
+            "size_bytes": 10051057
+          },
+          "engine_build_receipt": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/engine_build_receipt.json",
+            "sha256": "60a459d739a016ffc33cd7dee721ff6517126289c6ff3bb972b57a012a110b3e",
+            "size_bytes": 2367
+          },
+          "trtexec": {
+            "path": "/usr/src/tensorrt/bin/trtexec",
+            "sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4",
+            "size_bytes": 1695696
+          },
+          "semantic_output_manifest": {
+            "path": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/mobilenet_v3_large/benchmark_set/native_pipeline/b135/hailo10h_to_trt/uint8_dequant_fp16/native_outputs/native_outputs_manifest.json",
+            "sha256": "b3e4215fdba80136e73c6aaf748d09e81bfa969a8e9710292c3541ff065ab107",
+            "size_bytes": 4206
+          },
+          "semantic_boundary_manifest": {
+            "path": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/mobilenet_v3_large/benchmark_set/native_pipeline/b135/hailo10h_to_trt/uint8_dequant_fp16/native_fifo_boundary/native_fifo_boundary_manifest.json",
+            "sha256": "2ee30f1c0614dea12749e1be37a484af0887a0ba90dbaba11eebd4f22713a716",
+            "size_bytes": 3318
+          }
+        },
+        "prepared_input_contract": {
+          "format": "numpy_npy_v1",
+          "entries": [
+            {
+              "name": "input",
+              "artifact_name": "prepared_input_00",
+              "shape": [
+                224,
+                224,
+                3
+              ],
+              "dtype": "uint8",
+              "c_contiguous": true
+            }
+          ],
+          "slot_order": [
+            "input"
+          ],
+          "preprocess": "exact_performance_prepared_tensor_persisted",
+          "task": "classification",
+          "preprocess_mode_requested": "resize",
+          "preprocess_mode": "resize",
+          "preprocess_mode_effective": "resize",
+          "normalization": "hef_quant_info_from_imagenet_float32",
+          "letterbox": false,
+          "pad_value": null,
+          "letterbox_pad_value_requested": 0,
+          "letterbox_pad_value_effective": 0,
+          "letterbox_pad_value": 0,
+          "pad_value_effective": 0,
+          "source_image": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/mobilenet_v3_large/benchmark_set/resources/validation/classification/val_by_wnid_n500_s20260710/images/n01443537/ILSVRC2012_val_00013623.JPEG",
+          "source_image_sha256": "7fcdd3d95ff2491a2a5fe235d786026b728ffe0f88d25c4543d9a3e253f71652"
+        },
+        "runtime_options": {
+          "frames": 1000,
+          "duration_s": 0.0,
+          "warmup": 100,
+          "queue_depth": 3,
+          "repetitions": 3,
+          "inflight": 8,
+          "producer_impl": "auto",
+          "quantized_inputs": true,
+          "quantized_outputs": true,
+          "copy_outputs": true,
+          "dump_outputs": true,
+          "dump_boundary": true,
+          "build": false,
+          "part1_onnx_used": true,
+          "canonical_input_slot_names": [
+            "input"
+          ],
+          "canonical_output_slot_names": [
+            "mean_8"
+          ],
+          "runtime_input_shapes": {
+            "input": [
+              224,
+              224,
+              3
+            ]
+          },
+          "runtime_output_shapes": {
+            "mean_8": [
+              1,
+              1,
+              960
+            ]
+          },
+          "prepared_input_bound": true,
+          "task": "classification",
+          "preprocess_mode_requested": "resize",
+          "preprocess_mode_effective": "resize",
+          "letterbox_pad_value_requested": 0,
+          "letterbox_pad_value_effective": 0,
+          "letterbox_pad_value": 0,
+          "completion_execution_contract": null,
+          "completion_execution_contract_sha256": ""
+        },
+        "boundary_contract": {
+          "metadata_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/native_trt_meta.json",
+          "metadata_sha256": "02bef57c21e568029a3d1c8122095ee2aa1cb06dd3905bbd635cc5ee37f01690",
+          "boundary_layout_requested": "as_input",
+          "boundary_layout_effective": "as_input",
+          "dequant_scale": 0.03917791321873665,
+          "dequant_zero_point": 9.0,
+          "bridge_schema": "onnx-splitpoint/uint8-dequant-bridge"
+        },
+        "source_contract_sha256": "",
+        "runtime_boundary_evidence": {
+          "status": "exact_runtime_boundary_verified",
+          "runtime_name": "mean_8",
+          "shape": [
+            1,
+            1,
+            960
+          ],
+          "dtype": "uint8",
+          "element_count": 960,
+          "trt_input_name": "mean_8",
+          "trt_input_shape": [
+            1,
+            960,
+            1,
+            1
+          ],
+          "binding_boundary_metadata_sha256": "14c3bcddc12b00cac1cabae75cf1514be860e329fe2a3374f238e5fcbf16566b"
+        },
+        "eval_run_id": "complete_set_20260907_161614",
+        "source_run_id": "hailo10h_to_trt",
+        "native_split_quality_binding": {
+          "artifacts": {
+            "boundary_metadata": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/part1_boundary_metadata.json",
+              "sha256": "c0f91800f3e2f2324a6a8cd29ebc44a3d478c0037afa29150feee3b3eee9f08e",
+              "size_bytes": 1062
+            },
+            "build_part2_onnx": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+              "sha256": "a995acfeb77c3cf9619758f2ede1f1f5cd4392c0394628d1f2ba00e3f81df510",
+              "size_bytes": 10051057
+            },
+            "engine": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+              "sha256": "d455dbde2ae906f8755ecb5d17e06be67a6375f9d4e5abdaefc0129dc6a92188",
+              "size_bytes": 5134468
+            },
+            "engine_build_receipt": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/engine_build_receipt.json",
+              "sha256": "60a459d739a016ffc33cd7dee721ff6517126289c6ff3bb972b57a012a110b3e",
+              "size_bytes": 2367
+            },
+            "native_trt_meta": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/native_trt_meta.json",
+              "sha256": "02bef57c21e568029a3d1c8122095ee2aa1cb06dd3905bbd635cc5ee37f01690",
+              "size_bytes": 8449
+            },
+            "part1_runtime": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/part1.hef",
+              "sha256": "8929b57718f4c35751ea1d2b74eed97332a0582fe956b7c00c32eeb659d1912c",
+              "size_bytes": 3903488
+            },
+            "source_part2_onnx": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/benchmark_set/b135/source_part2.onnx",
+              "sha256": "789cf35875ab925fcab4f8f1d5b8f10959a2e66039cd1b868f11fd326019b7bd",
+              "size_bytes": 10050649
+            },
+            "trtexec": {
+              "path": "/usr/src/tensorrt/bin/trtexec",
+              "sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4",
+              "size_bytes": 1695696
+            }
+          },
+          "boundary_contract": {
+            "boundary_layout": "as_input",
+            "boundary_metadata_file_sha256": "c0f91800f3e2f2324a6a8cd29ebc44a3d478c0037afa29150feee3b3eee9f08e",
+            "boundary_metadata_sha256": "14c3bcddc12b00cac1cabae75cf1514be860e329fe2a3374f238e5fcbf16566b",
+            "boundary_tensor_dtype": "uint8",
+            "boundary_tensor_name": "mean_8",
+            "boundary_tensor_shape": [
+              1,
+              1,
+              960
+            ],
+            "boundary_transform": "uint8_dequant",
+            "dequant_scale": 0.03917791321873665,
+            "dequant_zero_point": 9.0,
+            "precision": "uint8_dequant_fp16"
+          },
+          "boundary_contract_sha256": "b472556011ddd0076c96d43c9695be273181b9846135fcc4cd703b05ba15992f",
+          "boundary_metadata_payload": {
+            "backend": "hailo10h_to_trt",
+            "boundary_layout": "as_input",
+            "boundary_tensor": {
+              "canonical_part2_shape": [
+                1,
+                960,
+                1,
+                1
+              ],
+              "dtype": "uint8",
+              "hef_native_storage_dtype": "uint8",
+              "hef_vstream_format_type": "uint8",
+              "name": "mean_8",
+              "quantization": {
+                "scale": 0.03917791321873665,
+                "source": "hailort_hef_output_vstream_info",
+                "zero_point": 9.0
+              },
+              "runtime_name": "mobilenet_v3_large_part1_b135/avgpool9",
+              "shape": [
+                1,
+                1,
+                960
+              ]
+            },
+            "boundary_tensor_count": 1,
+            "boundary_transform": "uint8_dequant",
+            "case_id": "b135",
+            "metadata_sha256": "14c3bcddc12b00cac1cabae75cf1514be860e329fe2a3374f238e5fcbf16566b",
+            "model_id": "mobilenet_v3_large",
+            "part1_artifact_sha256": "8929b57718f4c35751ea1d2b74eed97332a0582fe956b7c00c32eeb659d1912c",
+            "part1_artifact_size_bytes": 3903488,
+            "schema": "onnx-splitpoint/native-part1-boundary-metadata",
+            "schema_version": 1,
+            "setup_id": "orin_nx_hailo10_01",
+            "source_run_id": "hailo10_to_tensorrt"
+          },
+          "boundary_metadata_value_sha256": "545216c193983cb59f09c63c573e046c458361bd817c36606171b00bf1379b25",
+          "central_quality_selection": {
+            "backend": "hailo10h_to_trt",
+            "case_id": "b135",
+            "central_result_sha256": "d7cf4bef448a032c199e58fef233a408956929dc9851cbaefab98133b0a00210",
+            "eval_run_id": "complete_set_20260907_161614",
+            "model_id": "mobilenet_v3_large",
+            "precision": "uint8_dequant_fp16",
+            "producer_binding_sha256": "fbeae9f1751aae7f030de840ffe898f9b26ade76d3351b89cebcdc8cd6f5ea6a",
+            "receipt_sha256": "1f29f61576c860eba249b1a521f2ecdacd93dd5bd9a9576b6501ed7b00a39d80",
+            "runtime_precision_identity": "uint8_dequant_fp16",
+            "schema": "onnx-splitpoint/native-split-quality-central-selection",
+            "schema_version": 1,
+            "setup_id": "orin_nx_hailo10_01",
+            "source_request_sha256": "c1e9c5ed9f3292095722574faf75562c8f8eccae4525e65fa5ad05cabeb1ec35",
+            "source_run_id": "hailo10h_to_trt",
+            "task": "classification",
+            "variant": "composed"
+          },
+          "central_quality_selection_sha256": "1f29f61576c860eba249b1a521f2ecdacd93dd5bd9a9576b6501ed7b00a39d80",
+          "central_result_sha256": "d7cf4bef448a032c199e58fef233a408956929dc9851cbaefab98133b0a00210",
+          "engine_build_receipt": {
+            "build_returncode": 0,
+            "command": [
+              "/usr/src/tensorrt/bin/trtexec",
+              "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+              "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+              "--fp16",
+              "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/timing.cache",
+              "--memPoolSize=workspace:4096"
+            ],
+            "dry_run": false,
+            "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+            "engine_sha256": "d455dbde2ae906f8755ecb5d17e06be67a6375f9d4e5abdaefc0129dc6a92188",
+            "receipt_sha256": "8d10032c953c2564ef46ed6b6eb258ef26190cadd07ae648e295e0d611903a10",
+            "schema": "onnx-splitpoint/tensorrt-engine-build-receipt",
+            "schema_version": 1,
+            "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+            "source_onnx_sha256": "a995acfeb77c3cf9619758f2ede1f1f5cd4392c0394628d1f2ba00e3f81df510",
+            "trtexec": "/usr/src/tensorrt/bin/trtexec",
+            "trtexec_sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4"
+          },
+          "engine_build_receipt_canonical_size_bytes": 2285,
+          "engine_build_receipt_file_sha256": "60a459d739a016ffc33cd7dee721ff6517126289c6ff3bb972b57a012a110b3e",
+          "engine_build_receipt_file_size_bytes": 2367,
+          "engine_build_receipt_outer_sha256": "5e26340ad97ce2346268e16467841166ed6c3d90188088f32458a35e263bf2db",
+          "engine_build_receipt_sha256": "8d10032c953c2564ef46ed6b6eb258ef26190cadd07ae648e295e0d611903a10",
+          "eval_run_id": "complete_set_20260907_161614",
+          "local_artifact_verification": {
+            "artifact_names": [
+              "part1_runtime",
+              "boundary_metadata",
+              "source_part2_onnx",
+              "build_part2_onnx",
+              "engine",
+              "native_trt_meta",
+              "engine_build_receipt",
+              "trtexec"
+            ],
+            "artifact_set_sha256": "0fe4fe67f57fcfccd6855ec9d91404cd184325d7304a0885263b19a1307bba33",
+            "artifacts": {
+              "boundary_metadata": {
+                "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/part1_boundary_metadata.json",
+                "sha256": "c0f91800f3e2f2324a6a8cd29ebc44a3d478c0037afa29150feee3b3eee9f08e",
+                "size_bytes": 1062
+              },
+              "build_part2_onnx": {
+                "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+                "sha256": "a995acfeb77c3cf9619758f2ede1f1f5cd4392c0394628d1f2ba00e3f81df510",
+                "size_bytes": 10051057
+              },
+              "engine": {
+                "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+                "sha256": "d455dbde2ae906f8755ecb5d17e06be67a6375f9d4e5abdaefc0129dc6a92188",
+                "size_bytes": 5134468
+              },
+              "engine_build_receipt": {
+                "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/engine_build_receipt.json",
+                "sha256": "60a459d739a016ffc33cd7dee721ff6517126289c6ff3bb972b57a012a110b3e",
+                "size_bytes": 2367
+              },
+              "native_trt_meta": {
+                "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/native_trt_meta.json",
+                "sha256": "02bef57c21e568029a3d1c8122095ee2aa1cb06dd3905bbd635cc5ee37f01690",
+                "size_bytes": 8449
+              },
+              "part1_runtime": {
+                "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/part1.hef",
+                "sha256": "8929b57718f4c35751ea1d2b74eed97332a0582fe956b7c00c32eeb659d1912c",
+                "size_bytes": 3903488
+              },
+              "source_part2_onnx": {
+                "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/benchmark_set/b135/source_part2.onnx",
+                "sha256": "789cf35875ab925fcab4f8f1d5b8f10959a2e66039cd1b868f11fd326019b7bd",
+                "size_bytes": 10050649
+              },
+              "trtexec": {
+                "path": "/usr/src/tensorrt/bin/trtexec",
+                "sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4",
+                "size_bytes": 1695696
+              }
+            },
+            "boundary_metadata_value_sha256": "545216c193983cb59f09c63c573e046c458361bd817c36606171b00bf1379b25",
+            "build_summary_row_sha256": "81466e9f51d009003f488ed7e57405c37cb6f59c537321898429d3565448223f",
+            "embedded_json_files": {
+              "boundary_metadata": {
+                "canonical_value_sha256": "545216c193983cb59f09c63c573e046c458361bd817c36606171b00bf1379b25",
+                "content_base64": "ewogICJiYWNrZW5kIjogImhhaWxvMTBoX3RvX3RydCIsCiAgImJvdW5kYXJ5X2xheW91dCI6ICJhc19pbnB1dCIsCiAgImJvdW5kYXJ5X3RlbnNvciI6IHsKICAgICJjYW5vbmljYWxfcGFydDJfc2hhcGUiOiBbCiAgICAgIDEsCiAgICAgIDk2MCwKICAgICAgMSwKICAgICAgMQogICAgXSwKICAgICJkdHlwZSI6ICJ1aW50OCIsCiAgICAiaGVmX25hdGl2ZV9zdG9yYWdlX2R0eXBlIjogInVpbnQ4IiwKICAgICJoZWZfdnN0cmVhbV9mb3JtYXRfdHlwZSI6ICJ1aW50OCIsCiAgICAibmFtZSI6ICJtZWFuXzgiLAogICAgInF1YW50aXphdGlvbiI6IHsKICAgICAgInNjYWxlIjogMC4wMzkxNzc5MTMyMTg3MzY2NSwKICAgICAgInNvdXJjZSI6ICJoYWlsb3J0X2hlZl9vdXRwdXRfdnN0cmVhbV9pbmZvIiwKICAgICAgInplcm9fcG9pbnQiOiA5LjAKICAgIH0sCiAgICAicnVudGltZV9uYW1lIjogIm1vYmlsZW5ldF92M19sYXJnZV9wYXJ0MV9iMTM1L2F2Z3Bvb2w5IiwKICAgICJzaGFwZSI6IFsKICAgICAgMSwKICAgICAgMSwKICAgICAgOTYwCiAgICBdCiAgfSwKICAiYm91bmRhcnlfdGVuc29yX2NvdW50IjogMSwKICAiYm91bmRhcnlfdHJhbnNmb3JtIjogInVpbnQ4X2RlcXVhbnQiLAogICJjYXNlX2lkIjogImIxMzUiLAogICJtZXRhZGF0YV9zaGEyNTYiOiAiMTRjM2JjZGRjMTJiMDBjYWMxY2FiYWU3NWNmMTUxNGJlODYwZTMyOWZlMmEzMzc0ZjIzOGU1ZmNiZjE2NTY2YiIsCiAgIm1vZGVsX2lkIjogIm1vYmlsZW5ldF92M19sYXJnZSIsCiAgInBhcnQxX2FydGlmYWN0X3NoYTI1NiI6ICI4OTI5YjU3NzE4ZjRjMzU3NTFlYTFkMmI3NGVlZDk3MzMyYTA1ODJmZTk1NmI3YzAwYzMyZWViNjU5ZDE5MTJjIiwKICAicGFydDFfYXJ0aWZhY3Rfc2l6ZV9ieXRlcyI6IDM5MDM0ODgsCiAgInNjaGVtYSI6ICJvbm54LXNwbGl0cG9pbnQvbmF0aXZlLXBhcnQxLWJvdW5kYXJ5LW1ldGFkYXRhIiwKICAic2NoZW1hX3ZlcnNpb24iOiAxLAogICJzZXR1cF9pZCI6ICJvcmluX254X2hhaWxvMTBfMDEiLAogICJzb3VyY2VfcnVuX2lkIjogImhhaWxvMTBfdG9fdGVuc29ycnQiCn0K",
+                "encoding": "base64",
+                "file_sha256": "c0f91800f3e2f2324a6a8cd29ebc44a3d478c0037afa29150feee3b3eee9f08e",
+                "file_size_bytes": 1062
+              },
+              "engine_build_receipt": {
+                "canonical_value_sha256": "5e26340ad97ce2346268e16467841166ed6c3d90188088f32458a35e263bf2db",
+                "content_base64": "ewogICJidWlsZF9yZXR1cm5jb2RlIjogMCwKICAiY29tbWFuZCI6IFsKICAgICIvdXNyL3NyYy90ZW5zb3JydC9iaW4vdHJ0ZXhlYyIsCiAgICAiLS1vbm54PS9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L21vYmlsZW5ldF92M19sYXJnZS1hMzYwMzA1NzE1MGUwZjZkL25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9tb2JpbGVuZXRfdjNfbGFyZ2UvYjEzNS9oYWlsbzEwaF90b190cnQvNDI3OTFkMmY5OGY3YTZkNGFhNTYxMWQ4ODFkN2ZmZjAzZTk5MDE1ZDdkZDJlZTg3MDQ2NjAxYmYyNjNhOWY3NC9lbmdpbmVfY2FjaGUvYjEzNS9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvc291cmNlX3BhcnQyX3VpbnQ4X2RlcXVhbnRfYnJpZGdlLm9ubngiLAogICAgIi0tc2F2ZUVuZ2luZT0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9tb2JpbGVuZXRfdjNfbGFyZ2UtYTM2MDMwNTcxNTBlMGY2ZC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvbW9iaWxlbmV0X3YzX2xhcmdlL2IxMzUvaGFpbG8xMGhfdG9fdHJ0LzQyNzkxZDJmOThmN2E2ZDRhYTU2MTFkODgxZDdmZmYwM2U5OTAxNWQ3ZGQyZWU4NzA0NjYwMWJmMjYzYTlmNzQvZW5naW5lX2NhY2hlL2IxMzUvcGFydDIvdWludDhfZGVxdWFudF9mcDE2L3BhcnQyX3VpbnQ4X2RlcXVhbnRfZnAxNi5lbmdpbmUiLAogICAgIi0tZnAxNiIsCiAgICAiLS10aW1pbmdDYWNoZUZpbGU9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvbW9iaWxlbmV0X3YzX2xhcmdlLWEzNjAzMDU3MTUwZTBmNmQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL21vYmlsZW5ldF92M19sYXJnZS9iMTM1L2hhaWxvMTBoX3RvX3RydC80Mjc5MWQyZjk4ZjdhNmQ0YWE1NjExZDg4MWQ3ZmZmMDNlOTkwMTVkN2RkMmVlODcwNDY2MDFiZjI2M2E5Zjc0L2VuZ2luZV9jYWNoZS9iMTM1L3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi90aW1pbmcuY2FjaGUiLAogICAgIi0tbWVtUG9vbFNpemU9d29ya3NwYWNlOjQwOTYiCiAgXSwKICAiZHJ5X3J1biI6IGZhbHNlLAogICJlbmdpbmUiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvbW9iaWxlbmV0X3YzX2xhcmdlLWEzNjAzMDU3MTUwZTBmNmQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL21vYmlsZW5ldF92M19sYXJnZS9iMTM1L2hhaWxvMTBoX3RvX3RydC80Mjc5MWQyZjk4ZjdhNmQ0YWE1NjExZDg4MWQ3ZmZmMDNlOTkwMTVkN2RkMmVlODcwNDY2MDFiZjI2M2E5Zjc0L2VuZ2luZV9jYWNoZS9iMTM1L3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9wYXJ0Ml91aW50OF9kZXF1YW50X2ZwMTYuZW5naW5lIiwKICAiZW5naW5lX3NoYTI1NiI6ICJkNDU1ZGJkZTJhZTkwNmY4NzU1ZWNiNWQxN2UwNmJlNjdhNjM3NWY5ZDRlNWFiZGFlZmMwMTI5ZGM2YTkyMTg4IiwKICAicmVjZWlwdF9zaGEyNTYiOiAiOGQxMDAzMmM5NTNjMjU2NGVmNDZlZDZiNmViMjU4ZWYyNjE5MGNhZGQwN2FlNjQ4ZTI5NWUwZDYxMTkwM2ExMCIsCiAgInNjaGVtYSI6ICJvbm54LXNwbGl0cG9pbnQvdGVuc29ycnQtZW5naW5lLWJ1aWxkLXJlY2VpcHQiLAogICJzY2hlbWFfdmVyc2lvbiI6IDEsCiAgInNvdXJjZV9vbm54IjogIi9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L21vYmlsZW5ldF92M19sYXJnZS1hMzYwMzA1NzE1MGUwZjZkL25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9tb2JpbGVuZXRfdjNfbGFyZ2UvYjEzNS9oYWlsbzEwaF90b190cnQvNDI3OTFkMmY5OGY3YTZkNGFhNTYxMWQ4ODFkN2ZmZjAzZTk5MDE1ZDdkZDJlZTg3MDQ2NjAxYmYyNjNhOWY3NC9lbmdpbmVfY2FjaGUvYjEzNS9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvc291cmNlX3BhcnQyX3VpbnQ4X2RlcXVhbnRfYnJpZGdlLm9ubngiLAogICJzb3VyY2Vfb25ueF9zaGEyNTYiOiAiYTk5NWFjZmViNzdjM2NmOTYxOTc1OGYyZWRlMWYxZjVjZDQzOTJjMDM5NDYyOGQxZjJiYTAwZTNmODFkZjUxMCIsCiAgInRydGV4ZWMiOiAiL3Vzci9zcmMvdGVuc29ycnQvYmluL3RydGV4ZWMiLAogICJ0cnRleGVjX3NoYTI1NiI6ICJiODAwOTkwNTA4NzkzYTliZjUwNzEzZDc4ZDRmZWRmZTQ3NTM4MWQ4Y2Q3NDlhYmRhODA5MDliOTE5N2ZhMWM0Igp9",
+                "encoding": "base64",
+                "file_sha256": "60a459d739a016ffc33cd7dee721ff6517126289c6ff3bb972b57a012a110b3e",
+                "file_size_bytes": 2367
+              },
+              "native_trt_meta": {
+                "canonical_value_sha256": "81466e9f51d009003f488ed7e57405c37cb6f59c537321898429d3565448223f",
+                "content_base64": "ewogICJidWlsZCI6IHsKICAgICJjYWNoZV9oaXQiOiB0cnVlLAogICAgImNtZCI6IFsKICAgICAgIi91c3Ivc3JjL3RlbnNvcnJ0L2Jpbi90cnRleGVjIiwKICAgICAgIi0tb25ueD0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9tb2JpbGVuZXRfdjNfbGFyZ2UtYTM2MDMwNTcxNTBlMGY2ZC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvbW9iaWxlbmV0X3YzX2xhcmdlL2IxMzUvaGFpbG8xMGhfdG9fdHJ0LzQyNzkxZDJmOThmN2E2ZDRhYTU2MTFkODgxZDdmZmYwM2U5OTAxNWQ3ZGQyZWU4NzA0NjYwMWJmMjYzYTlmNzQvZW5naW5lX2NhY2hlL2IxMzUvcGFydDIvdWludDhfZGVxdWFudF9mcDE2L3NvdXJjZV9wYXJ0Ml91aW50OF9kZXF1YW50X2JyaWRnZS5vbm54IiwKICAgICAgIi0tc2F2ZUVuZ2luZT0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9tb2JpbGVuZXRfdjNfbGFyZ2UtYTM2MDMwNTcxNTBlMGY2ZC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvbW9iaWxlbmV0X3YzX2xhcmdlL2IxMzUvaGFpbG8xMGhfdG9fdHJ0LzQyNzkxZDJmOThmN2E2ZDRhYTU2MTFkODgxZDdmZmYwM2U5OTAxNWQ3ZGQyZWU4NzA0NjYwMWJmMjYzYTlmNzQvZW5naW5lX2NhY2hlL2IxMzUvcGFydDIvdWludDhfZGVxdWFudF9mcDE2L3BhcnQyX3VpbnQ4X2RlcXVhbnRfZnAxNi5lbmdpbmUiLAogICAgICAiLS1mcDE2IiwKICAgICAgIi0tdGltaW5nQ2FjaGVGaWxlPS9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L21vYmlsZW5ldF92M19sYXJnZS1hMzYwMzA1NzE1MGUwZjZkL25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9tb2JpbGVuZXRfdjNfbGFyZ2UvYjEzNS9oYWlsbzEwaF90b190cnQvNDI3OTFkMmY5OGY3YTZkNGFhNTYxMWQ4ODFkN2ZmZjAzZTk5MDE1ZDdkZDJlZTg3MDQ2NjAxYmYyNjNhOWY3NC9lbmdpbmVfY2FjaGUvYjEzNS9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvdGltaW5nLmNhY2hlIiwKICAgICAgIi0tbWVtUG9vbFNpemU9d29ya3NwYWNlOjQwOTYiCiAgICBdLAogICAgImNvbXBpbGVyX2Rpc3BhdGNoZWQiOiBmYWxzZSwKICAgICJkcnlfcnVuIjogZmFsc2UsCiAgICAiZXZpZGVuY2Vfc291cmNlIjogInZlcmlmaWVkX2VuZ2luZV9idWlsZF9yZWNlaXB0IiwKICAgICJyZXR1cm5jb2RlIjogMAogIH0sCiAgImJ1aWxkX2F0dGVtcHRzIjogW10sCiAgImJ1aWxkX29rIjogdHJ1ZSwKICAiY2FzZSI6ICJiMTM1IiwKICAiZW5naW5lIjogIi9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L21vYmlsZW5ldF92M19sYXJnZS1hMzYwMzA1NzE1MGUwZjZkL25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9tb2JpbGVuZXRfdjNfbGFyZ2UvYjEzNS9oYWlsbzEwaF90b190cnQvNDI3OTFkMmY5OGY3YTZkNGFhNTYxMWQ4ODFkN2ZmZjAzZTk5MDE1ZDdkZDJlZTg3MDQ2NjAxYmYyNjNhOWY3NC9lbmdpbmVfY2FjaGUvYjEzNS9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvcGFydDJfdWludDhfZGVxdWFudF9mcDE2LmVuZ2luZSIsCiAgImVuZ2luZV9idWlsZF9yZWNlaXB0IjogewogICAgImJ1aWxkX3JldHVybmNvZGUiOiAwLAogICAgImNvbW1hbmQiOiBbCiAgICAgICIvdXNyL3NyYy90ZW5zb3JydC9iaW4vdHJ0ZXhlYyIsCiAgICAgICItLW9ubng9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvbW9iaWxlbmV0X3YzX2xhcmdlLWEzNjAzMDU3MTUwZTBmNmQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL21vYmlsZW5ldF92M19sYXJnZS9iMTM1L2hhaWxvMTBoX3RvX3RydC80Mjc5MWQyZjk4ZjdhNmQ0YWE1NjExZDg4MWQ3ZmZmMDNlOTkwMTVkN2RkMmVlODcwNDY2MDFiZjI2M2E5Zjc0L2VuZ2luZV9jYWNoZS9iMTM1L3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9zb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2Uub25ueCIsCiAgICAgICItLXNhdmVFbmdpbmU9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvbW9iaWxlbmV0X3YzX2xhcmdlLWEzNjAzMDU3MTUwZTBmNmQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL21vYmlsZW5ldF92M19sYXJnZS9iMTM1L2hhaWxvMTBoX3RvX3RydC80Mjc5MWQyZjk4ZjdhNmQ0YWE1NjExZDg4MWQ3ZmZmMDNlOTkwMTVkN2RkMmVlODcwNDY2MDFiZjI2M2E5Zjc0L2VuZ2luZV9jYWNoZS9iMTM1L3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9wYXJ0Ml91aW50OF9kZXF1YW50X2ZwMTYuZW5naW5lIiwKICAgICAgIi0tZnAxNiIsCiAgICAgICItLXRpbWluZ0NhY2hlRmlsZT0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9tb2JpbGVuZXRfdjNfbGFyZ2UtYTM2MDMwNTcxNTBlMGY2ZC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvbW9iaWxlbmV0X3YzX2xhcmdlL2IxMzUvaGFpbG8xMGhfdG9fdHJ0LzQyNzkxZDJmOThmN2E2ZDRhYTU2MTFkODgxZDdmZmYwM2U5OTAxNWQ3ZGQyZWU4NzA0NjYwMWJmMjYzYTlmNzQvZW5naW5lX2NhY2hlL2IxMzUvcGFydDIvdWludDhfZGVxdWFudF9mcDE2L3RpbWluZy5jYWNoZSIsCiAgICAgICItLW1lbVBvb2xTaXplPXdvcmtzcGFjZTo0MDk2IgogICAgXSwKICAgICJkcnlfcnVuIjogZmFsc2UsCiAgICAiZW5naW5lIjogIi9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L21vYmlsZW5ldF92M19sYXJnZS1hMzYwMzA1NzE1MGUwZjZkL25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9tb2JpbGVuZXRfdjNfbGFyZ2UvYjEzNS9oYWlsbzEwaF90b190cnQvNDI3OTFkMmY5OGY3YTZkNGFhNTYxMWQ4ODFkN2ZmZjAzZTk5MDE1ZDdkZDJlZTg3MDQ2NjAxYmYyNjNhOWY3NC9lbmdpbmVfY2FjaGUvYjEzNS9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvcGFydDJfdWludDhfZGVxdWFudF9mcDE2LmVuZ2luZSIsCiAgICAiZW5naW5lX3NoYTI1NiI6ICJkNDU1ZGJkZTJhZTkwNmY4NzU1ZWNiNWQxN2UwNmJlNjdhNjM3NWY5ZDRlNWFiZGFlZmMwMTI5ZGM2YTkyMTg4IiwKICAgICJyZWNlaXB0X3NoYTI1NiI6ICI4ZDEwMDMyYzk1M2MyNTY0ZWY0NmVkNmI2ZWIyNThlZjI2MTkwY2FkZDA3YWU2NDhlMjk1ZTBkNjExOTAzYTEwIiwKICAgICJzY2hlbWEiOiAib25ueC1zcGxpdHBvaW50L3RlbnNvcnJ0LWVuZ2luZS1idWlsZC1yZWNlaXB0IiwKICAgICJzY2hlbWFfdmVyc2lvbiI6IDEsCiAgICAic291cmNlX29ubngiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvbW9iaWxlbmV0X3YzX2xhcmdlLWEzNjAzMDU3MTUwZTBmNmQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL21vYmlsZW5ldF92M19sYXJnZS9iMTM1L2hhaWxvMTBoX3RvX3RydC80Mjc5MWQyZjk4ZjdhNmQ0YWE1NjExZDg4MWQ3ZmZmMDNlOTkwMTVkN2RkMmVlODcwNDY2MDFiZjI2M2E5Zjc0L2VuZ2luZV9jYWNoZS9iMTM1L3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9zb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2Uub25ueCIsCiAgICAic291cmNlX29ubnhfc2hhMjU2IjogImE5OTVhY2ZlYjc3YzNjZjk2MTk3NThmMmVkZTFmMWY1Y2Q0MzkyYzAzOTQ2MjhkMWYyYmEwMGUzZjgxZGY1MTAiLAogICAgInRydGV4ZWMiOiAiL3Vzci9zcmMvdGVuc29ycnQvYmluL3RydGV4ZWMiLAogICAgInRydGV4ZWNfc2hhMjU2IjogImI4MDA5OTA1MDg3OTNhOWJmNTA3MTNkNzhkNGZlZGZlNDc1MzgxZDhjZDc0OWFiZGE4MDkwOWI5MTk3ZmExYzQiCiAgfSwKICAiZW5naW5lX2J1aWxkX3JlY2VpcHRfcGF0aCI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9tb2JpbGVuZXRfdjNfbGFyZ2UtYTM2MDMwNTcxNTBlMGY2ZC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvbW9iaWxlbmV0X3YzX2xhcmdlL2IxMzUvaGFpbG8xMGhfdG9fdHJ0LzQyNzkxZDJmOThmN2E2ZDRhYTU2MTFkODgxZDdmZmYwM2U5OTAxNWQ3ZGQyZWU4NzA0NjYwMWJmMjYzYTlmNzQvZW5naW5lX2NhY2hlL2IxMzUvcGFydDIvdWludDhfZGVxdWFudF9mcDE2L2VuZ2luZV9idWlsZF9yZWNlaXB0Lmpzb24iLAogICJlbmdpbmVfYnVpbGRfcmVjZWlwdF9zdGF0dXMiOiAiZW5naW5lX2J1aWxkX3JlY2VpcHRfdmVyaWZpZWQiLAogICJpbnB1dHMiOiBbCiAgICB7CiAgICAgICJlbGVtX3R5cGUiOiAiVUlOVDgiLAogICAgICAiaGFzX2R5bmFtaWMiOiBmYWxzZSwKICAgICAgIm5hbWUiOiAibWVhbl84IiwKICAgICAgInNoYXBlIjogWwogICAgICAgIDEsCiAgICAgICAgOTYwLAogICAgICAgIDEsCiAgICAgICAgMQogICAgICBdCiAgICB9CiAgXSwKICAiaW5wdXRzX3N0YXRpYyI6IHRydWUsCiAgIm9ubngiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvbW9iaWxlbmV0X3YzX2xhcmdlLWEzNjAzMDU3MTUwZTBmNmQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL21vYmlsZW5ldF92M19sYXJnZS9iMTM1L2hhaWxvMTBoX3RvX3RydC80Mjc5MWQyZjk4ZjdhNmQ0YWE1NjExZDg4MWQ3ZmZmMDNlOTkwMTVkN2RkMmVlODcwNDY2MDFiZjI2M2E5Zjc0L2VuZ2luZV9jYWNoZS9iMTM1L3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9zb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2Uub25ueCIsCiAgIm91dHB1dHMiOiBbCiAgICB7CiAgICAgICJlbGVtX3R5cGUiOiAiRkxPQVQiLAogICAgICAiaGFzX2R5bmFtaWMiOiBmYWxzZSwKICAgICAgIm5hbWUiOiAibG9naXRzIiwKICAgICAgInNoYXBlIjogWwogICAgICAgIDEsCiAgICAgICAgMTAwMAogICAgICBdCiAgICB9CiAgXSwKICAicHJlY2lzaW9uIjogInVpbnQ4X2RlcXVhbnRfZnAxNiIsCiAgInF1YWxpdHlfZmlyc3RfaWRlbnRpdHkiOiB7fSwKICAicmVxdWVzdGVkX3ByZWNpc2lvbiI6ICJ1aW50OF9kZXF1YW50X2ZwMTYiLAogICJzY2hlbWEiOiAib25ueC1zcGxpdHBvaW50L25hdGl2ZS10cnQtbWV0YSIsCiAgInNjaGVtYV92ZXJzaW9uIjogMSwKICAic2hhcGVzX2FyZyI6ICIiLAogICJzaGFwZXNfcG9saWN5X2VmZmVjdGl2ZSI6ICJhdXRvX3N0YXRpY19vbWl0IiwKICAic291cmNlX29ubngiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvbW9iaWxlbmV0X3YzX2xhcmdlLWEzNjAzMDU3MTUwZTBmNmQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL21vYmlsZW5ldF92M19sYXJnZS9iMTM1L2hhaWxvMTBoX3RvX3RydC80Mjc5MWQyZjk4ZjdhNmQ0YWE1NjExZDg4MWQ3ZmZmMDNlOTkwMTVkN2RkMmVlODcwNDY2MDFiZjI2M2E5Zjc0L2VuZ2luZV9jYWNoZS9iMTM1L3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9zb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2Uub25ueCIsCiAgInRydF9jYWNoZSI6IHsKICAgICJhcnRpZmFjdF9wYXRoIjogIi9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L21vYmlsZW5ldF92M19sYXJnZS1hMzYwMzA1NzE1MGUwZjZkL25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9tb2JpbGVuZXRfdjNfbGFyZ2UvYjEzNS9oYWlsbzEwaF90b190cnQvNDI3OTFkMmY5OGY3YTZkNGFhNTYxMWQ4ODFkN2ZmZjAzZTk5MDE1ZDdkZDJlZTg3MDQ2NjAxYmYyNjNhOWY3NC9lbmdpbmVfY2FjaGUvYjEzNS9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvcGFydDJfdWludDhfZGVxdWFudF9mcDE2LmVuZ2luZSIsCiAgICAiY2FzZV9pZCI6ICJiMTM1IiwKICAgICJjb21waWxlcl9kaXNwYXRjaGVkIjogZmFsc2UsCiAgICAiaWRlbnRpdHkiOiAiOGQxMDAzMmM5NTNjMjU2NGVmNDZlZDZiNmViMjU4ZWYyNjE5MGNhZGQwN2FlNjQ4ZTI5NWUwZDYxMTkwM2ExMCIsCiAgICAibW9kZWxfaWQiOiAic291cmNlX3BhcnQyX3VpbnQ4X2RlcXVhbnRfYnJpZGdlIiwKICAgICJvdXRjb21lIjogInJldXNlZCIsCiAgICAicmVhc29uIjogImNvbXBhdGlibGVfcmVjZWlwdCIsCiAgICAicmVjZWlwdF9wYXRoIjogIi9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L21vYmlsZW5ldF92M19sYXJnZS1hMzYwMzA1NzE1MGUwZjZkL25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9tb2JpbGVuZXRfdjNfbGFyZ2UvYjEzNS9oYWlsbzEwaF90b190cnQvNDI3OTFkMmY5OGY3YTZkNGFhNTYxMWQ4ODFkN2ZmZjAzZTk5MDE1ZDdkZDJlZTg3MDQ2NjAxYmYyNjNhOWY3NC9lbmdpbmVfY2FjaGUvYjEzNS9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvZW5naW5lX2J1aWxkX3JlY2VpcHQuanNvbiIsCiAgICAicm9sZSI6ICJwYXJ0MiIsCiAgICAic3RhdHVzIjogIkhJVCIKICB9LAogICJ1aW50OF9jYXN0X2JyaWRnZSI6IHsKICAgICJib3VuZGFyeV9sYXlvdXQiOiB7CiAgICAgICJhcHBsaWVkIjogZmFsc2UsCiAgICAgICJlZmZlY3RpdmUiOiAiYXNfaW5wdXQiLAogICAgICAicmVxdWVzdGVkIjogImFzX2lucHV0IgogICAgfSwKICAgICJicmlkZ2UiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvbW9iaWxlbmV0X3YzX2xhcmdlLWEzNjAzMDU3MTUwZTBmNmQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL21vYmlsZW5ldF92M19sYXJnZS9iMTM1L2hhaWxvMTBoX3RvX3RydC80Mjc5MWQyZjk4ZjdhNmQ0YWE1NjExZDg4MWQ3ZmZmMDNlOTkwMTVkN2RkMmVlODcwNDY2MDFiZjI2M2E5Zjc0L2VuZ2luZV9jYWNoZS9iMTM1L3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9zb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2Uub25ueCIsCiAgICAiYnJpZGdlX291dHB1dCI6ICJtZWFuXzhfX2RlcXVhbnRfZmxvYXQiLAogICAgImJyaWRnZV9zaGEyNTYiOiAiYTk5NWFjZmViNzdjM2NmOTYxOTc1OGYyZWRlMWYxZjVjZDQzOTJjMDM5NDYyOGQxZjJiYTAwZTNmODFkZjUxMCIsCiAgICAiZGVxdWFudF9vdXRwdXQiOiAibWVhbl84X19kZXF1YW50X2Zsb2F0IiwKICAgICJpbnB1dF9kdHlwZSI6ICJVSU5UOCIsCiAgICAiaW5wdXRfbmFtZSI6ICJtZWFuXzgiLAogICAgImlucHV0X3NoYXBlIjogWwogICAgICAxLAogICAgICA5NjAsCiAgICAgIDEsCiAgICAgIDEKICAgIF0sCiAgICAicGFyYW1zIjogewogICAgICAic2NhbGUiOiAwLjAzOTE3NzkxMzIxODczNjY1LAogICAgICAic291cmNlIjogImV4cGxpY2l0IiwKICAgICAgInplcm9fcG9pbnQiOiA5LjAKICAgIH0sCiAgICAicGFyYW1zX3NvdXJjZSI6ICJleHBsaWNpdCIsCiAgICAicmVwbGFjZWRfdXNlcyI6IDEsCiAgICAic2NhbGUiOiAwLjAzOTE3NzkxMzIxODczNjY1LAogICAgInNjaGVtYSI6ICJvbm54LXNwbGl0cG9pbnQvdWludDgtZGVxdWFudC1icmlkZ2UiLAogICAgInNjaGVtYV92ZXJzaW9uIjogMiwKICAgICJzb3VyY2UiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvbW9iaWxlbmV0X3YzX2xhcmdlLWEzNjAzMDU3MTUwZTBmNmQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL21vYmlsZW5ldF92M19sYXJnZS9iMTM1L2hhaWxvMTBoX3RvX3RydC80Mjc5MWQyZjk4ZjdhNmQ0YWE1NjExZDg4MWQ3ZmZmMDNlOTkwMTVkN2RkMmVlODcwNDY2MDFiZjI2M2E5Zjc0L2JlbmNobWFya19zZXQvYjEzNS9zb3VyY2VfcGFydDIub25ueCIsCiAgICAic291cmNlX3NoYTI1NiI6ICI3ODljZjM1ODc1YWI5MjVmY2FiNGY4ZjFkNWI4ZjEwOTU5YTJlNjYwMzljZDFiODY4ZjExZmQzMjYwMTliN2JkIiwKICAgICJ6ZXJvX3BvaW50IjogOS4wCiAgfSwKICAidmFyaWFudCI6ICJwYXJ0MiIKfQ==",
+                "encoding": "base64",
+                "file_sha256": "02bef57c21e568029a3d1c8122095ee2aa1cb06dd3905bbd635cc5ee37f01690",
+                "file_size_bytes": 8449
+              }
+            },
+            "engine_build_receipt_canonical_size_bytes": 2285,
+            "engine_build_receipt_inner_sha256": "8d10032c953c2564ef46ed6b6eb258ef26190cadd07ae648e295e0d611903a10",
+            "engine_build_receipt_outer_sha256": "5e26340ad97ce2346268e16467841166ed6c3d90188088f32458a35e263bf2db",
+            "native_trt_meta_payload_sha256": "81466e9f51d009003f488ed7e57405c37cb6f59c537321898429d3565448223f",
+            "proof_sha256": "44f01997741a815cdb1dc8f29b12c42b91fd05067328e6f2de84f924263a6a10",
+            "schema": "onnx-splitpoint/native-split-local-artifact-verification",
+            "schema_version": 1,
+            "trt_build_command_sha256": "a8efc0438eb555cac3e1c5edac232aadbd185e8b8eb705673cf82b7618945c2f",
+            "verification_kind": "producer_local_file_rehash"
+          },
+          "native_trt_meta": {
+            "build": {
+              "cache_hit": true,
+              "cmd": [
+                "/usr/src/tensorrt/bin/trtexec",
+                "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+                "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+                "--fp16",
+                "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/timing.cache",
+                "--memPoolSize=workspace:4096"
+              ],
+              "compiler_dispatched": false,
+              "dry_run": false,
+              "evidence_source": "verified_engine_build_receipt",
+              "returncode": 0
+            },
+            "build_attempts": [],
+            "build_ok": true,
+            "case": "b135",
+            "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+            "engine_build_receipt": {
+              "build_returncode": 0,
+              "command": [
+                "/usr/src/tensorrt/bin/trtexec",
+                "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+                "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+                "--fp16",
+                "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/timing.cache",
+                "--memPoolSize=workspace:4096"
+              ],
+              "dry_run": false,
+              "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+              "engine_sha256": "d455dbde2ae906f8755ecb5d17e06be67a6375f9d4e5abdaefc0129dc6a92188",
+              "receipt_sha256": "8d10032c953c2564ef46ed6b6eb258ef26190cadd07ae648e295e0d611903a10",
+              "schema": "onnx-splitpoint/tensorrt-engine-build-receipt",
+              "schema_version": 1,
+              "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+              "source_onnx_sha256": "a995acfeb77c3cf9619758f2ede1f1f5cd4392c0394628d1f2ba00e3f81df510",
+              "trtexec": "/usr/src/tensorrt/bin/trtexec",
+              "trtexec_sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4"
+            },
+            "engine_build_receipt_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/engine_build_receipt.json",
+            "engine_build_receipt_status": "engine_build_receipt_verified",
+            "inputs": [
+              {
+                "elem_type": "UINT8",
+                "has_dynamic": false,
+                "name": "mean_8",
+                "shape": [
+                  1,
+                  960,
+                  1,
+                  1
+                ]
+              }
+            ],
+            "inputs_static": true,
+            "onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+            "outputs": [
+              {
+                "elem_type": "FLOAT",
+                "has_dynamic": false,
+                "name": "logits",
+                "shape": [
+                  1,
+                  1000
+                ]
+              }
+            ],
+            "precision": "uint8_dequant_fp16",
+            "quality_first_identity": {},
+            "requested_precision": "uint8_dequant_fp16",
+            "schema": "onnx-splitpoint/native-trt-meta",
+            "schema_version": 1,
+            "shapes_arg": "",
+            "shapes_policy_effective": "auto_static_omit",
+            "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+            "trt_cache": {
+              "artifact_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+              "case_id": "b135",
+              "compiler_dispatched": false,
+              "identity": "8d10032c953c2564ef46ed6b6eb258ef26190cadd07ae648e295e0d611903a10",
+              "model_id": "source_part2_uint8_dequant_bridge",
+              "outcome": "reused",
+              "reason": "compatible_receipt",
+              "receipt_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/engine_build_receipt.json",
+              "role": "part2",
+              "status": "HIT"
+            },
+            "uint8_cast_bridge": {
+              "boundary_layout": {
+                "applied": false,
+                "effective": "as_input",
+                "requested": "as_input"
+              },
+              "bridge": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+              "bridge_output": "mean_8__dequant_float",
+              "bridge_sha256": "a995acfeb77c3cf9619758f2ede1f1f5cd4392c0394628d1f2ba00e3f81df510",
+              "dequant_output": "mean_8__dequant_float",
+              "input_dtype": "UINT8",
+              "input_name": "mean_8",
+              "input_shape": [
+                1,
+                960,
+                1,
+                1
+              ],
+              "params": {
+                "scale": 0.03917791321873665,
+                "source": "explicit",
+                "zero_point": 9.0
+              },
+              "params_source": "explicit",
+              "replaced_uses": 1,
+              "scale": 0.03917791321873665,
+              "schema": "onnx-splitpoint/uint8-dequant-bridge",
+              "schema_version": 2,
+              "source": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/benchmark_set/b135/source_part2.onnx",
+              "source_sha256": "789cf35875ab925fcab4f8f1d5b8f10959a2e66039cd1b868f11fd326019b7bd",
+              "zero_point": 9.0
+            },
+            "variant": "part2"
+          },
+          "native_trt_meta_file_sha256": "02bef57c21e568029a3d1c8122095ee2aa1cb06dd3905bbd635cc5ee37f01690",
+          "native_trt_meta_file_size_bytes": 8449,
+          "native_trt_meta_payload": {
+            "build": {
+              "cache_hit": true,
+              "cmd": [
+                "/usr/src/tensorrt/bin/trtexec",
+                "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+                "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+                "--fp16",
+                "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/timing.cache",
+                "--memPoolSize=workspace:4096"
+              ],
+              "compiler_dispatched": false,
+              "dry_run": false,
+              "evidence_source": "verified_engine_build_receipt",
+              "returncode": 0
+            },
+            "build_attempts": [],
+            "build_ok": true,
+            "case": "b135",
+            "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+            "engine_build_receipt": {
+              "build_returncode": 0,
+              "command": [
+                "/usr/src/tensorrt/bin/trtexec",
+                "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+                "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+                "--fp16",
+                "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/timing.cache",
+                "--memPoolSize=workspace:4096"
+              ],
+              "dry_run": false,
+              "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+              "engine_sha256": "d455dbde2ae906f8755ecb5d17e06be67a6375f9d4e5abdaefc0129dc6a92188",
+              "receipt_sha256": "8d10032c953c2564ef46ed6b6eb258ef26190cadd07ae648e295e0d611903a10",
+              "schema": "onnx-splitpoint/tensorrt-engine-build-receipt",
+              "schema_version": 1,
+              "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+              "source_onnx_sha256": "a995acfeb77c3cf9619758f2ede1f1f5cd4392c0394628d1f2ba00e3f81df510",
+              "trtexec": "/usr/src/tensorrt/bin/trtexec",
+              "trtexec_sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4"
+            },
+            "engine_build_receipt_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/engine_build_receipt.json",
+            "engine_build_receipt_status": "engine_build_receipt_verified",
+            "inputs": [
+              {
+                "elem_type": "UINT8",
+                "has_dynamic": false,
+                "name": "mean_8",
+                "shape": [
+                  1,
+                  960,
+                  1,
+                  1
+                ]
+              }
+            ],
+            "inputs_static": true,
+            "onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+            "outputs": [
+              {
+                "elem_type": "FLOAT",
+                "has_dynamic": false,
+                "name": "logits",
+                "shape": [
+                  1,
+                  1000
+                ]
+              }
+            ],
+            "precision": "uint8_dequant_fp16",
+            "quality_first_identity": {},
+            "requested_precision": "uint8_dequant_fp16",
+            "schema": "onnx-splitpoint/native-trt-meta",
+            "schema_version": 1,
+            "shapes_arg": "",
+            "shapes_policy_effective": "auto_static_omit",
+            "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+            "trt_cache": {
+              "artifact_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+              "case_id": "b135",
+              "compiler_dispatched": false,
+              "identity": "8d10032c953c2564ef46ed6b6eb258ef26190cadd07ae648e295e0d611903a10",
+              "model_id": "source_part2_uint8_dequant_bridge",
+              "outcome": "reused",
+              "reason": "compatible_receipt",
+              "receipt_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/engine_build_receipt.json",
+              "role": "part2",
+              "status": "HIT"
+            },
+            "uint8_cast_bridge": {
+              "boundary_layout": {
+                "applied": false,
+                "effective": "as_input",
+                "requested": "as_input"
+              },
+              "bridge": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+              "bridge_output": "mean_8__dequant_float",
+              "bridge_sha256": "a995acfeb77c3cf9619758f2ede1f1f5cd4392c0394628d1f2ba00e3f81df510",
+              "dequant_output": "mean_8__dequant_float",
+              "input_dtype": "UINT8",
+              "input_name": "mean_8",
+              "input_shape": [
+                1,
+                960,
+                1,
+                1
+              ],
+              "params": {
+                "scale": 0.03917791321873665,
+                "source": "explicit",
+                "zero_point": 9.0
+              },
+              "params_source": "explicit",
+              "replaced_uses": 1,
+              "scale": 0.03917791321873665,
+              "schema": "onnx-splitpoint/uint8-dequant-bridge",
+              "schema_version": 2,
+              "source": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/benchmark_set/b135/source_part2.onnx",
+              "source_sha256": "789cf35875ab925fcab4f8f1d5b8f10959a2e66039cd1b868f11fd326019b7bd",
+              "zero_point": 9.0
+            },
+            "variant": "part2"
+          },
+          "native_trt_meta_payload_sha256": "81466e9f51d009003f488ed7e57405c37cb6f59c537321898429d3565448223f",
+          "native_trt_meta_sha256": "81466e9f51d009003f488ed7e57405c37cb6f59c537321898429d3565448223f",
+          "performance_claims_emitted": false,
+          "preselection": {
+            "backend": "hailo10h_to_trt",
+            "boundary_dtype": "uint8",
+            "boundary_layout": "as_input",
+            "boundary_metadata_file_sha256": "c0f91800f3e2f2324a6a8cd29ebc44a3d478c0037afa29150feee3b3eee9f08e",
+            "boundary_metadata_file_size_bytes": 1062,
+            "boundary_metadata_sha256": "14c3bcddc12b00cac1cabae75cf1514be860e329fe2a3374f238e5fcbf16566b",
+            "boundary_tensor_dtype": "uint8",
+            "boundary_tensor_name": "mean_8",
+            "boundary_tensor_shape": [
+              1,
+              1,
+              960
+            ],
+            "boundary_transform": "uint8_dequant",
+            "canonical_part2_shape": [
+              1,
+              960,
+              1,
+              1
+            ],
+            "case_id": "b135",
+            "case_scope": "any_generated_split_case",
+            "dequant_scale": 0.03917791321873665,
+            "dequant_zero_point": 9.0,
+            "engine_rebuild_allowed_after_quality": false,
+            "hailo_format": "uint8",
+            "letterbox_pad_value": 0,
+            "model_family": "mobilenet",
+            "model_id": "mobilenet_v3_large",
+            "part1_artifact_sha256": "8929b57718f4c35751ea1d2b74eed97332a0582fe956b7c00c32eeb659d1912c",
+            "part1_artifact_size_bytes": 3903488,
+            "policy_sha256": "5f673a36aa36cf49217ebbde011d49cb4193979f019a4f42709ae3c7c8cc4ed8",
+            "precision": "uint8_dequant_fp16",
+            "preprocess_mode": "resize",
+            "quantization_policy": "from_exact_part1_boundary_metadata",
+            "schema": "onnx-splitpoint/native-split-quality-preselection",
+            "schema_version": 1,
+            "selection_sha256": "30560fe7e1b9c7669e4a14086df04b029b8ad087de12648cf716e9b77da65c23",
+            "setup_id": "orin_nx_hailo10_01",
+            "stage2_backend": "native_tensorrt",
+            "task": "classification"
+          },
+          "preselection_sha256": "30560fe7e1b9c7669e4a14086df04b029b8ad087de12648cf716e9b77da65c23",
+          "producer_binding_sha256": "fbeae9f1751aae7f030de840ffe898f9b26ade76d3351b89cebcdc8cd6f5ea6a",
+          "producer_command": [
+            "/home/nx/venvs/hailo10/bin/python3",
+            "/home/nx/splitpoint_runs/legacy_suite/complete_set_20260907_161614_mobilenet_v3_large_orin_nx_hailo10_01/1/suite/splitpoint_runners/native_trt_from_benchmarkset.py",
+            "--benchmark-set",
+            "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/benchmark_set",
+            "--case",
+            "b135",
+            "--variants",
+            "part2",
+            "--precision",
+            "uint8_dequant_fp16",
+            "--out-dir",
+            "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache",
+            "--boundary-layout",
+            "as_input",
+            "--workspace-mb",
+            "4096",
+            "--workspace-mode",
+            "auto",
+            "--no-run-smoke",
+            "--json-out",
+            "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/native_trt_summary.json",
+            "--dequant-scale",
+            "0.03917791321873665",
+            "--dequant-zero-point",
+            "9.0",
+            "--no-build"
+          ],
+          "quality_completed": true,
+          "schema": "onnx-splitpoint/native-split-quality-binding",
+          "schema_version": 1,
+          "source_request_sha256": "c1e9c5ed9f3292095722574faf75562c8f8eccae4525e65fa5ad05cabeb1ec35",
+          "source_run_id": "hailo10_to_tensorrt",
+          "trt_build_command_sha256": "a8efc0438eb555cac3e1c5edac232aadbd185e8b8eb705673cf82b7618945c2f",
+          "binding_sha256": "95e04a937ac49a92227bd7821ff50f4a4c1d16f4d9be9844e2598fd9a8b28e0f"
+        },
+        "native_split_quality_binding_sha256": "95e04a937ac49a92227bd7821ff50f4a4c1d16f4d9be9844e2598fd9a8b28e0f",
+        "native_split_quality_eval_run_id": "complete_set_20260907_161614",
+        "native_split_quality_source_run_id": "hailo10h_to_trt",
+        "source_request_sha256": "c1e9c5ed9f3292095722574faf75562c8f8eccae4525e65fa5ad05cabeb1ec35",
+        "native_split_quality_source_request_sha256": "c1e9c5ed9f3292095722574faf75562c8f8eccae4525e65fa5ad05cabeb1ec35",
+        "native_split_quality_central_result_sha256": "d7cf4bef448a032c199e58fef233a408956929dc9851cbaefab98133b0a00210",
+        "native_split_quality_selection_sha256": "1f29f61576c860eba249b1a521f2ecdacd93dd5bd9a9576b6501ed7b00a39d80",
+        "native_split_quality_local_verification": {
+          "artifact_names": [
+            "part1_runtime",
+            "boundary_metadata",
+            "source_part2_onnx",
+            "build_part2_onnx",
+            "engine",
+            "native_trt_meta",
+            "engine_build_receipt",
+            "trtexec"
+          ],
+          "artifact_set_sha256": "0fe4fe67f57fcfccd6855ec9d91404cd184325d7304a0885263b19a1307bba33",
+          "artifacts": {
+            "boundary_metadata": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/part1_boundary_metadata.json",
+              "sha256": "c0f91800f3e2f2324a6a8cd29ebc44a3d478c0037afa29150feee3b3eee9f08e",
+              "size_bytes": 1062
+            },
+            "build_part2_onnx": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+              "sha256": "a995acfeb77c3cf9619758f2ede1f1f5cd4392c0394628d1f2ba00e3f81df510",
+              "size_bytes": 10051057
+            },
+            "engine": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+              "sha256": "d455dbde2ae906f8755ecb5d17e06be67a6375f9d4e5abdaefc0129dc6a92188",
+              "size_bytes": 5134468
+            },
+            "engine_build_receipt": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/engine_build_receipt.json",
+              "sha256": "60a459d739a016ffc33cd7dee721ff6517126289c6ff3bb972b57a012a110b3e",
+              "size_bytes": 2367
+            },
+            "native_trt_meta": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/native_trt_meta.json",
+              "sha256": "02bef57c21e568029a3d1c8122095ee2aa1cb06dd3905bbd635cc5ee37f01690",
+              "size_bytes": 8449
+            },
+            "part1_runtime": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/part1.hef",
+              "sha256": "8929b57718f4c35751ea1d2b74eed97332a0582fe956b7c00c32eeb659d1912c",
+              "size_bytes": 3903488
+            },
+            "source_part2_onnx": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/benchmark_set/b135/source_part2.onnx",
+              "sha256": "789cf35875ab925fcab4f8f1d5b8f10959a2e66039cd1b868f11fd326019b7bd",
+              "size_bytes": 10050649
+            },
+            "trtexec": {
+              "path": "/usr/src/tensorrt/bin/trtexec",
+              "sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4",
+              "size_bytes": 1695696
+            }
+          },
+          "boundary_metadata_value_sha256": "545216c193983cb59f09c63c573e046c458361bd817c36606171b00bf1379b25",
+          "build_summary_row_sha256": "81466e9f51d009003f488ed7e57405c37cb6f59c537321898429d3565448223f",
+          "embedded_json_files": {
+            "boundary_metadata": {
+              "canonical_value_sha256": "545216c193983cb59f09c63c573e046c458361bd817c36606171b00bf1379b25",
+              "content_base64": "ewogICJiYWNrZW5kIjogImhhaWxvMTBoX3RvX3RydCIsCiAgImJvdW5kYXJ5X2xheW91dCI6ICJhc19pbnB1dCIsCiAgImJvdW5kYXJ5X3RlbnNvciI6IHsKICAgICJjYW5vbmljYWxfcGFydDJfc2hhcGUiOiBbCiAgICAgIDEsCiAgICAgIDk2MCwKICAgICAgMSwKICAgICAgMQogICAgXSwKICAgICJkdHlwZSI6ICJ1aW50OCIsCiAgICAiaGVmX25hdGl2ZV9zdG9yYWdlX2R0eXBlIjogInVpbnQ4IiwKICAgICJoZWZfdnN0cmVhbV9mb3JtYXRfdHlwZSI6ICJ1aW50OCIsCiAgICAibmFtZSI6ICJtZWFuXzgiLAogICAgInF1YW50aXphdGlvbiI6IHsKICAgICAgInNjYWxlIjogMC4wMzkxNzc5MTMyMTg3MzY2NSwKICAgICAgInNvdXJjZSI6ICJoYWlsb3J0X2hlZl9vdXRwdXRfdnN0cmVhbV9pbmZvIiwKICAgICAgInplcm9fcG9pbnQiOiA5LjAKICAgIH0sCiAgICAicnVudGltZV9uYW1lIjogIm1vYmlsZW5ldF92M19sYXJnZV9wYXJ0MV9iMTM1L2F2Z3Bvb2w5IiwKICAgICJzaGFwZSI6IFsKICAgICAgMSwKICAgICAgMSwKICAgICAgOTYwCiAgICBdCiAgfSwKICAiYm91bmRhcnlfdGVuc29yX2NvdW50IjogMSwKICAiYm91bmRhcnlfdHJhbnNmb3JtIjogInVpbnQ4X2RlcXVhbnQiLAogICJjYXNlX2lkIjogImIxMzUiLAogICJtZXRhZGF0YV9zaGEyNTYiOiAiMTRjM2JjZGRjMTJiMDBjYWMxY2FiYWU3NWNmMTUxNGJlODYwZTMyOWZlMmEzMzc0ZjIzOGU1ZmNiZjE2NTY2YiIsCiAgIm1vZGVsX2lkIjogIm1vYmlsZW5ldF92M19sYXJnZSIsCiAgInBhcnQxX2FydGlmYWN0X3NoYTI1NiI6ICI4OTI5YjU3NzE4ZjRjMzU3NTFlYTFkMmI3NGVlZDk3MzMyYTA1ODJmZTk1NmI3YzAwYzMyZWViNjU5ZDE5MTJjIiwKICAicGFydDFfYXJ0aWZhY3Rfc2l6ZV9ieXRlcyI6IDM5MDM0ODgsCiAgInNjaGVtYSI6ICJvbm54LXNwbGl0cG9pbnQvbmF0aXZlLXBhcnQxLWJvdW5kYXJ5LW1ldGFkYXRhIiwKICAic2NoZW1hX3ZlcnNpb24iOiAxLAogICJzZXR1cF9pZCI6ICJvcmluX254X2hhaWxvMTBfMDEiLAogICJzb3VyY2VfcnVuX2lkIjogImhhaWxvMTBfdG9fdGVuc29ycnQiCn0K",
+              "encoding": "base64",
+              "file_sha256": "c0f91800f3e2f2324a6a8cd29ebc44a3d478c0037afa29150feee3b3eee9f08e",
+              "file_size_bytes": 1062
+            },
+            "engine_build_receipt": {
+              "canonical_value_sha256": "5e26340ad97ce2346268e16467841166ed6c3d90188088f32458a35e263bf2db",
+              "content_base64": "ewogICJidWlsZF9yZXR1cm5jb2RlIjogMCwKICAiY29tbWFuZCI6IFsKICAgICIvdXNyL3NyYy90ZW5zb3JydC9iaW4vdHJ0ZXhlYyIsCiAgICAiLS1vbm54PS9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L21vYmlsZW5ldF92M19sYXJnZS1hMzYwMzA1NzE1MGUwZjZkL25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9tb2JpbGVuZXRfdjNfbGFyZ2UvYjEzNS9oYWlsbzEwaF90b190cnQvNDI3OTFkMmY5OGY3YTZkNGFhNTYxMWQ4ODFkN2ZmZjAzZTk5MDE1ZDdkZDJlZTg3MDQ2NjAxYmYyNjNhOWY3NC9lbmdpbmVfY2FjaGUvYjEzNS9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvc291cmNlX3BhcnQyX3VpbnQ4X2RlcXVhbnRfYnJpZGdlLm9ubngiLAogICAgIi0tc2F2ZUVuZ2luZT0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9tb2JpbGVuZXRfdjNfbGFyZ2UtYTM2MDMwNTcxNTBlMGY2ZC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvbW9iaWxlbmV0X3YzX2xhcmdlL2IxMzUvaGFpbG8xMGhfdG9fdHJ0LzQyNzkxZDJmOThmN2E2ZDRhYTU2MTFkODgxZDdmZmYwM2U5OTAxNWQ3ZGQyZWU4NzA0NjYwMWJmMjYzYTlmNzQvZW5naW5lX2NhY2hlL2IxMzUvcGFydDIvdWludDhfZGVxdWFudF9mcDE2L3BhcnQyX3VpbnQ4X2RlcXVhbnRfZnAxNi5lbmdpbmUiLAogICAgIi0tZnAxNiIsCiAgICAiLS10aW1pbmdDYWNoZUZpbGU9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvbW9iaWxlbmV0X3YzX2xhcmdlLWEzNjAzMDU3MTUwZTBmNmQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL21vYmlsZW5ldF92M19sYXJnZS9iMTM1L2hhaWxvMTBoX3RvX3RydC80Mjc5MWQyZjk4ZjdhNmQ0YWE1NjExZDg4MWQ3ZmZmMDNlOTkwMTVkN2RkMmVlODcwNDY2MDFiZjI2M2E5Zjc0L2VuZ2luZV9jYWNoZS9iMTM1L3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi90aW1pbmcuY2FjaGUiLAogICAgIi0tbWVtUG9vbFNpemU9d29ya3NwYWNlOjQwOTYiCiAgXSwKICAiZHJ5X3J1biI6IGZhbHNlLAogICJlbmdpbmUiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvbW9iaWxlbmV0X3YzX2xhcmdlLWEzNjAzMDU3MTUwZTBmNmQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL21vYmlsZW5ldF92M19sYXJnZS9iMTM1L2hhaWxvMTBoX3RvX3RydC80Mjc5MWQyZjk4ZjdhNmQ0YWE1NjExZDg4MWQ3ZmZmMDNlOTkwMTVkN2RkMmVlODcwNDY2MDFiZjI2M2E5Zjc0L2VuZ2luZV9jYWNoZS9iMTM1L3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9wYXJ0Ml91aW50OF9kZXF1YW50X2ZwMTYuZW5naW5lIiwKICAiZW5naW5lX3NoYTI1NiI6ICJkNDU1ZGJkZTJhZTkwNmY4NzU1ZWNiNWQxN2UwNmJlNjdhNjM3NWY5ZDRlNWFiZGFlZmMwMTI5ZGM2YTkyMTg4IiwKICAicmVjZWlwdF9zaGEyNTYiOiAiOGQxMDAzMmM5NTNjMjU2NGVmNDZlZDZiNmViMjU4ZWYyNjE5MGNhZGQwN2FlNjQ4ZTI5NWUwZDYxMTkwM2ExMCIsCiAgInNjaGVtYSI6ICJvbm54LXNwbGl0cG9pbnQvdGVuc29ycnQtZW5naW5lLWJ1aWxkLXJlY2VpcHQiLAogICJzY2hlbWFfdmVyc2lvbiI6IDEsCiAgInNvdXJjZV9vbm54IjogIi9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L21vYmlsZW5ldF92M19sYXJnZS1hMzYwMzA1NzE1MGUwZjZkL25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9tb2JpbGVuZXRfdjNfbGFyZ2UvYjEzNS9oYWlsbzEwaF90b190cnQvNDI3OTFkMmY5OGY3YTZkNGFhNTYxMWQ4ODFkN2ZmZjAzZTk5MDE1ZDdkZDJlZTg3MDQ2NjAxYmYyNjNhOWY3NC9lbmdpbmVfY2FjaGUvYjEzNS9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvc291cmNlX3BhcnQyX3VpbnQ4X2RlcXVhbnRfYnJpZGdlLm9ubngiLAogICJzb3VyY2Vfb25ueF9zaGEyNTYiOiAiYTk5NWFjZmViNzdjM2NmOTYxOTc1OGYyZWRlMWYxZjVjZDQzOTJjMDM5NDYyOGQxZjJiYTAwZTNmODFkZjUxMCIsCiAgInRydGV4ZWMiOiAiL3Vzci9zcmMvdGVuc29ycnQvYmluL3RydGV4ZWMiLAogICJ0cnRleGVjX3NoYTI1NiI6ICJiODAwOTkwNTA4NzkzYTliZjUwNzEzZDc4ZDRmZWRmZTQ3NTM4MWQ4Y2Q3NDlhYmRhODA5MDliOTE5N2ZhMWM0Igp9",
+              "encoding": "base64",
+              "file_sha256": "60a459d739a016ffc33cd7dee721ff6517126289c6ff3bb972b57a012a110b3e",
+              "file_size_bytes": 2367
+            },
+            "native_trt_meta": {
+              "canonical_value_sha256": "81466e9f51d009003f488ed7e57405c37cb6f59c537321898429d3565448223f",
+              "content_base64": "ewogICJidWlsZCI6IHsKICAgICJjYWNoZV9oaXQiOiB0cnVlLAogICAgImNtZCI6IFsKICAgICAgIi91c3Ivc3JjL3RlbnNvcnJ0L2Jpbi90cnRleGVjIiwKICAgICAgIi0tb25ueD0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9tb2JpbGVuZXRfdjNfbGFyZ2UtYTM2MDMwNTcxNTBlMGY2ZC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvbW9iaWxlbmV0X3YzX2xhcmdlL2IxMzUvaGFpbG8xMGhfdG9fdHJ0LzQyNzkxZDJmOThmN2E2ZDRhYTU2MTFkODgxZDdmZmYwM2U5OTAxNWQ3ZGQyZWU4NzA0NjYwMWJmMjYzYTlmNzQvZW5naW5lX2NhY2hlL2IxMzUvcGFydDIvdWludDhfZGVxdWFudF9mcDE2L3NvdXJjZV9wYXJ0Ml91aW50OF9kZXF1YW50X2JyaWRnZS5vbm54IiwKICAgICAgIi0tc2F2ZUVuZ2luZT0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9tb2JpbGVuZXRfdjNfbGFyZ2UtYTM2MDMwNTcxNTBlMGY2ZC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvbW9iaWxlbmV0X3YzX2xhcmdlL2IxMzUvaGFpbG8xMGhfdG9fdHJ0LzQyNzkxZDJmOThmN2E2ZDRhYTU2MTFkODgxZDdmZmYwM2U5OTAxNWQ3ZGQyZWU4NzA0NjYwMWJmMjYzYTlmNzQvZW5naW5lX2NhY2hlL2IxMzUvcGFydDIvdWludDhfZGVxdWFudF9mcDE2L3BhcnQyX3VpbnQ4X2RlcXVhbnRfZnAxNi5lbmdpbmUiLAogICAgICAiLS1mcDE2IiwKICAgICAgIi0tdGltaW5nQ2FjaGVGaWxlPS9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L21vYmlsZW5ldF92M19sYXJnZS1hMzYwMzA1NzE1MGUwZjZkL25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9tb2JpbGVuZXRfdjNfbGFyZ2UvYjEzNS9oYWlsbzEwaF90b190cnQvNDI3OTFkMmY5OGY3YTZkNGFhNTYxMWQ4ODFkN2ZmZjAzZTk5MDE1ZDdkZDJlZTg3MDQ2NjAxYmYyNjNhOWY3NC9lbmdpbmVfY2FjaGUvYjEzNS9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvdGltaW5nLmNhY2hlIiwKICAgICAgIi0tbWVtUG9vbFNpemU9d29ya3NwYWNlOjQwOTYiCiAgICBdLAogICAgImNvbXBpbGVyX2Rpc3BhdGNoZWQiOiBmYWxzZSwKICAgICJkcnlfcnVuIjogZmFsc2UsCiAgICAiZXZpZGVuY2Vfc291cmNlIjogInZlcmlmaWVkX2VuZ2luZV9idWlsZF9yZWNlaXB0IiwKICAgICJyZXR1cm5jb2RlIjogMAogIH0sCiAgImJ1aWxkX2F0dGVtcHRzIjogW10sCiAgImJ1aWxkX29rIjogdHJ1ZSwKICAiY2FzZSI6ICJiMTM1IiwKICAiZW5naW5lIjogIi9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L21vYmlsZW5ldF92M19sYXJnZS1hMzYwMzA1NzE1MGUwZjZkL25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9tb2JpbGVuZXRfdjNfbGFyZ2UvYjEzNS9oYWlsbzEwaF90b190cnQvNDI3OTFkMmY5OGY3YTZkNGFhNTYxMWQ4ODFkN2ZmZjAzZTk5MDE1ZDdkZDJlZTg3MDQ2NjAxYmYyNjNhOWY3NC9lbmdpbmVfY2FjaGUvYjEzNS9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvcGFydDJfdWludDhfZGVxdWFudF9mcDE2LmVuZ2luZSIsCiAgImVuZ2luZV9idWlsZF9yZWNlaXB0IjogewogICAgImJ1aWxkX3JldHVybmNvZGUiOiAwLAogICAgImNvbW1hbmQiOiBbCiAgICAgICIvdXNyL3NyYy90ZW5zb3JydC9iaW4vdHJ0ZXhlYyIsCiAgICAgICItLW9ubng9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvbW9iaWxlbmV0X3YzX2xhcmdlLWEzNjAzMDU3MTUwZTBmNmQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL21vYmlsZW5ldF92M19sYXJnZS9iMTM1L2hhaWxvMTBoX3RvX3RydC80Mjc5MWQyZjk4ZjdhNmQ0YWE1NjExZDg4MWQ3ZmZmMDNlOTkwMTVkN2RkMmVlODcwNDY2MDFiZjI2M2E5Zjc0L2VuZ2luZV9jYWNoZS9iMTM1L3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9zb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2Uub25ueCIsCiAgICAgICItLXNhdmVFbmdpbmU9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvbW9iaWxlbmV0X3YzX2xhcmdlLWEzNjAzMDU3MTUwZTBmNmQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL21vYmlsZW5ldF92M19sYXJnZS9iMTM1L2hhaWxvMTBoX3RvX3RydC80Mjc5MWQyZjk4ZjdhNmQ0YWE1NjExZDg4MWQ3ZmZmMDNlOTkwMTVkN2RkMmVlODcwNDY2MDFiZjI2M2E5Zjc0L2VuZ2luZV9jYWNoZS9iMTM1L3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9wYXJ0Ml91aW50OF9kZXF1YW50X2ZwMTYuZW5naW5lIiwKICAgICAgIi0tZnAxNiIsCiAgICAgICItLXRpbWluZ0NhY2hlRmlsZT0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9tb2JpbGVuZXRfdjNfbGFyZ2UtYTM2MDMwNTcxNTBlMGY2ZC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvbW9iaWxlbmV0X3YzX2xhcmdlL2IxMzUvaGFpbG8xMGhfdG9fdHJ0LzQyNzkxZDJmOThmN2E2ZDRhYTU2MTFkODgxZDdmZmYwM2U5OTAxNWQ3ZGQyZWU4NzA0NjYwMWJmMjYzYTlmNzQvZW5naW5lX2NhY2hlL2IxMzUvcGFydDIvdWludDhfZGVxdWFudF9mcDE2L3RpbWluZy5jYWNoZSIsCiAgICAgICItLW1lbVBvb2xTaXplPXdvcmtzcGFjZTo0MDk2IgogICAgXSwKICAgICJkcnlfcnVuIjogZmFsc2UsCiAgICAiZW5naW5lIjogIi9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L21vYmlsZW5ldF92M19sYXJnZS1hMzYwMzA1NzE1MGUwZjZkL25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9tb2JpbGVuZXRfdjNfbGFyZ2UvYjEzNS9oYWlsbzEwaF90b190cnQvNDI3OTFkMmY5OGY3YTZkNGFhNTYxMWQ4ODFkN2ZmZjAzZTk5MDE1ZDdkZDJlZTg3MDQ2NjAxYmYyNjNhOWY3NC9lbmdpbmVfY2FjaGUvYjEzNS9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvcGFydDJfdWludDhfZGVxdWFudF9mcDE2LmVuZ2luZSIsCiAgICAiZW5naW5lX3NoYTI1NiI6ICJkNDU1ZGJkZTJhZTkwNmY4NzU1ZWNiNWQxN2UwNmJlNjdhNjM3NWY5ZDRlNWFiZGFlZmMwMTI5ZGM2YTkyMTg4IiwKICAgICJyZWNlaXB0X3NoYTI1NiI6ICI4ZDEwMDMyYzk1M2MyNTY0ZWY0NmVkNmI2ZWIyNThlZjI2MTkwY2FkZDA3YWU2NDhlMjk1ZTBkNjExOTAzYTEwIiwKICAgICJzY2hlbWEiOiAib25ueC1zcGxpdHBvaW50L3RlbnNvcnJ0LWVuZ2luZS1idWlsZC1yZWNlaXB0IiwKICAgICJzY2hlbWFfdmVyc2lvbiI6IDEsCiAgICAic291cmNlX29ubngiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvbW9iaWxlbmV0X3YzX2xhcmdlLWEzNjAzMDU3MTUwZTBmNmQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL21vYmlsZW5ldF92M19sYXJnZS9iMTM1L2hhaWxvMTBoX3RvX3RydC80Mjc5MWQyZjk4ZjdhNmQ0YWE1NjExZDg4MWQ3ZmZmMDNlOTkwMTVkN2RkMmVlODcwNDY2MDFiZjI2M2E5Zjc0L2VuZ2luZV9jYWNoZS9iMTM1L3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9zb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2Uub25ueCIsCiAgICAic291cmNlX29ubnhfc2hhMjU2IjogImE5OTVhY2ZlYjc3YzNjZjk2MTk3NThmMmVkZTFmMWY1Y2Q0MzkyYzAzOTQ2MjhkMWYyYmEwMGUzZjgxZGY1MTAiLAogICAgInRydGV4ZWMiOiAiL3Vzci9zcmMvdGVuc29ycnQvYmluL3RydGV4ZWMiLAogICAgInRydGV4ZWNfc2hhMjU2IjogImI4MDA5OTA1MDg3OTNhOWJmNTA3MTNkNzhkNGZlZGZlNDc1MzgxZDhjZDc0OWFiZGE4MDkwOWI5MTk3ZmExYzQiCiAgfSwKICAiZW5naW5lX2J1aWxkX3JlY2VpcHRfcGF0aCI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9tb2JpbGVuZXRfdjNfbGFyZ2UtYTM2MDMwNTcxNTBlMGY2ZC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvbW9iaWxlbmV0X3YzX2xhcmdlL2IxMzUvaGFpbG8xMGhfdG9fdHJ0LzQyNzkxZDJmOThmN2E2ZDRhYTU2MTFkODgxZDdmZmYwM2U5OTAxNWQ3ZGQyZWU4NzA0NjYwMWJmMjYzYTlmNzQvZW5naW5lX2NhY2hlL2IxMzUvcGFydDIvdWludDhfZGVxdWFudF9mcDE2L2VuZ2luZV9idWlsZF9yZWNlaXB0Lmpzb24iLAogICJlbmdpbmVfYnVpbGRfcmVjZWlwdF9zdGF0dXMiOiAiZW5naW5lX2J1aWxkX3JlY2VpcHRfdmVyaWZpZWQiLAogICJpbnB1dHMiOiBbCiAgICB7CiAgICAgICJlbGVtX3R5cGUiOiAiVUlOVDgiLAogICAgICAiaGFzX2R5bmFtaWMiOiBmYWxzZSwKICAgICAgIm5hbWUiOiAibWVhbl84IiwKICAgICAgInNoYXBlIjogWwogICAgICAgIDEsCiAgICAgICAgOTYwLAogICAgICAgIDEsCiAgICAgICAgMQogICAgICBdCiAgICB9CiAgXSwKICAiaW5wdXRzX3N0YXRpYyI6IHRydWUsCiAgIm9ubngiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvbW9iaWxlbmV0X3YzX2xhcmdlLWEzNjAzMDU3MTUwZTBmNmQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL21vYmlsZW5ldF92M19sYXJnZS9iMTM1L2hhaWxvMTBoX3RvX3RydC80Mjc5MWQyZjk4ZjdhNmQ0YWE1NjExZDg4MWQ3ZmZmMDNlOTkwMTVkN2RkMmVlODcwNDY2MDFiZjI2M2E5Zjc0L2VuZ2luZV9jYWNoZS9iMTM1L3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9zb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2Uub25ueCIsCiAgIm91dHB1dHMiOiBbCiAgICB7CiAgICAgICJlbGVtX3R5cGUiOiAiRkxPQVQiLAogICAgICAiaGFzX2R5bmFtaWMiOiBmYWxzZSwKICAgICAgIm5hbWUiOiAibG9naXRzIiwKICAgICAgInNoYXBlIjogWwogICAgICAgIDEsCiAgICAgICAgMTAwMAogICAgICBdCiAgICB9CiAgXSwKICAicHJlY2lzaW9uIjogInVpbnQ4X2RlcXVhbnRfZnAxNiIsCiAgInF1YWxpdHlfZmlyc3RfaWRlbnRpdHkiOiB7fSwKICAicmVxdWVzdGVkX3ByZWNpc2lvbiI6ICJ1aW50OF9kZXF1YW50X2ZwMTYiLAogICJzY2hlbWEiOiAib25ueC1zcGxpdHBvaW50L25hdGl2ZS10cnQtbWV0YSIsCiAgInNjaGVtYV92ZXJzaW9uIjogMSwKICAic2hhcGVzX2FyZyI6ICIiLAogICJzaGFwZXNfcG9saWN5X2VmZmVjdGl2ZSI6ICJhdXRvX3N0YXRpY19vbWl0IiwKICAic291cmNlX29ubngiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvbW9iaWxlbmV0X3YzX2xhcmdlLWEzNjAzMDU3MTUwZTBmNmQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL21vYmlsZW5ldF92M19sYXJnZS9iMTM1L2hhaWxvMTBoX3RvX3RydC80Mjc5MWQyZjk4ZjdhNmQ0YWE1NjExZDg4MWQ3ZmZmMDNlOTkwMTVkN2RkMmVlODcwNDY2MDFiZjI2M2E5Zjc0L2VuZ2luZV9jYWNoZS9iMTM1L3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9zb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2Uub25ueCIsCiAgInRydF9jYWNoZSI6IHsKICAgICJhcnRpZmFjdF9wYXRoIjogIi9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L21vYmlsZW5ldF92M19sYXJnZS1hMzYwMzA1NzE1MGUwZjZkL25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9tb2JpbGVuZXRfdjNfbGFyZ2UvYjEzNS9oYWlsbzEwaF90b190cnQvNDI3OTFkMmY5OGY3YTZkNGFhNTYxMWQ4ODFkN2ZmZjAzZTk5MDE1ZDdkZDJlZTg3MDQ2NjAxYmYyNjNhOWY3NC9lbmdpbmVfY2FjaGUvYjEzNS9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvcGFydDJfdWludDhfZGVxdWFudF9mcDE2LmVuZ2luZSIsCiAgICAiY2FzZV9pZCI6ICJiMTM1IiwKICAgICJjb21waWxlcl9kaXNwYXRjaGVkIjogZmFsc2UsCiAgICAiaWRlbnRpdHkiOiAiOGQxMDAzMmM5NTNjMjU2NGVmNDZlZDZiNmViMjU4ZWYyNjE5MGNhZGQwN2FlNjQ4ZTI5NWUwZDYxMTkwM2ExMCIsCiAgICAibW9kZWxfaWQiOiAic291cmNlX3BhcnQyX3VpbnQ4X2RlcXVhbnRfYnJpZGdlIiwKICAgICJvdXRjb21lIjogInJldXNlZCIsCiAgICAicmVhc29uIjogImNvbXBhdGlibGVfcmVjZWlwdCIsCiAgICAicmVjZWlwdF9wYXRoIjogIi9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L21vYmlsZW5ldF92M19sYXJnZS1hMzYwMzA1NzE1MGUwZjZkL25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9tb2JpbGVuZXRfdjNfbGFyZ2UvYjEzNS9oYWlsbzEwaF90b190cnQvNDI3OTFkMmY5OGY3YTZkNGFhNTYxMWQ4ODFkN2ZmZjAzZTk5MDE1ZDdkZDJlZTg3MDQ2NjAxYmYyNjNhOWY3NC9lbmdpbmVfY2FjaGUvYjEzNS9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvZW5naW5lX2J1aWxkX3JlY2VpcHQuanNvbiIsCiAgICAicm9sZSI6ICJwYXJ0MiIsCiAgICAic3RhdHVzIjogIkhJVCIKICB9LAogICJ1aW50OF9jYXN0X2JyaWRnZSI6IHsKICAgICJib3VuZGFyeV9sYXlvdXQiOiB7CiAgICAgICJhcHBsaWVkIjogZmFsc2UsCiAgICAgICJlZmZlY3RpdmUiOiAiYXNfaW5wdXQiLAogICAgICAicmVxdWVzdGVkIjogImFzX2lucHV0IgogICAgfSwKICAgICJicmlkZ2UiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvbW9iaWxlbmV0X3YzX2xhcmdlLWEzNjAzMDU3MTUwZTBmNmQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL21vYmlsZW5ldF92M19sYXJnZS9iMTM1L2hhaWxvMTBoX3RvX3RydC80Mjc5MWQyZjk4ZjdhNmQ0YWE1NjExZDg4MWQ3ZmZmMDNlOTkwMTVkN2RkMmVlODcwNDY2MDFiZjI2M2E5Zjc0L2VuZ2luZV9jYWNoZS9iMTM1L3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9zb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2Uub25ueCIsCiAgICAiYnJpZGdlX291dHB1dCI6ICJtZWFuXzhfX2RlcXVhbnRfZmxvYXQiLAogICAgImJyaWRnZV9zaGEyNTYiOiAiYTk5NWFjZmViNzdjM2NmOTYxOTc1OGYyZWRlMWYxZjVjZDQzOTJjMDM5NDYyOGQxZjJiYTAwZTNmODFkZjUxMCIsCiAgICAiZGVxdWFudF9vdXRwdXQiOiAibWVhbl84X19kZXF1YW50X2Zsb2F0IiwKICAgICJpbnB1dF9kdHlwZSI6ICJVSU5UOCIsCiAgICAiaW5wdXRfbmFtZSI6ICJtZWFuXzgiLAogICAgImlucHV0X3NoYXBlIjogWwogICAgICAxLAogICAgICA5NjAsCiAgICAgIDEsCiAgICAgIDEKICAgIF0sCiAgICAicGFyYW1zIjogewogICAgICAic2NhbGUiOiAwLjAzOTE3NzkxMzIxODczNjY1LAogICAgICAic291cmNlIjogImV4cGxpY2l0IiwKICAgICAgInplcm9fcG9pbnQiOiA5LjAKICAgIH0sCiAgICAicGFyYW1zX3NvdXJjZSI6ICJleHBsaWNpdCIsCiAgICAicmVwbGFjZWRfdXNlcyI6IDEsCiAgICAic2NhbGUiOiAwLjAzOTE3NzkxMzIxODczNjY1LAogICAgInNjaGVtYSI6ICJvbm54LXNwbGl0cG9pbnQvdWludDgtZGVxdWFudC1icmlkZ2UiLAogICAgInNjaGVtYV92ZXJzaW9uIjogMiwKICAgICJzb3VyY2UiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvbW9iaWxlbmV0X3YzX2xhcmdlLWEzNjAzMDU3MTUwZTBmNmQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL21vYmlsZW5ldF92M19sYXJnZS9iMTM1L2hhaWxvMTBoX3RvX3RydC80Mjc5MWQyZjk4ZjdhNmQ0YWE1NjExZDg4MWQ3ZmZmMDNlOTkwMTVkN2RkMmVlODcwNDY2MDFiZjI2M2E5Zjc0L2JlbmNobWFya19zZXQvYjEzNS9zb3VyY2VfcGFydDIub25ueCIsCiAgICAic291cmNlX3NoYTI1NiI6ICI3ODljZjM1ODc1YWI5MjVmY2FiNGY4ZjFkNWI4ZjEwOTU5YTJlNjYwMzljZDFiODY4ZjExZmQzMjYwMTliN2JkIiwKICAgICJ6ZXJvX3BvaW50IjogOS4wCiAgfSwKICAidmFyaWFudCI6ICJwYXJ0MiIKfQ==",
+              "encoding": "base64",
+              "file_sha256": "02bef57c21e568029a3d1c8122095ee2aa1cb06dd3905bbd635cc5ee37f01690",
+              "file_size_bytes": 8449
+            }
+          },
+          "engine_build_receipt_canonical_size_bytes": 2285,
+          "engine_build_receipt_inner_sha256": "8d10032c953c2564ef46ed6b6eb258ef26190cadd07ae648e295e0d611903a10",
+          "engine_build_receipt_outer_sha256": "5e26340ad97ce2346268e16467841166ed6c3d90188088f32458a35e263bf2db",
+          "native_trt_meta_payload_sha256": "81466e9f51d009003f488ed7e57405c37cb6f59c537321898429d3565448223f",
+          "proof_sha256": "44f01997741a815cdb1dc8f29b12c42b91fd05067328e6f2de84f924263a6a10",
+          "schema": "onnx-splitpoint/native-split-local-artifact-verification",
+          "schema_version": 1,
+          "trt_build_command_sha256": "a8efc0438eb555cac3e1c5edac232aadbd185e8b8eb705673cf82b7618945c2f",
+          "verification_kind": "producer_local_file_rehash"
+        },
+        "quality_preselection": {
+          "backend": "hailo10h_to_trt",
+          "boundary_dtype": "uint8",
+          "boundary_layout": "as_input",
+          "boundary_metadata_file_sha256": "c0f91800f3e2f2324a6a8cd29ebc44a3d478c0037afa29150feee3b3eee9f08e",
+          "boundary_metadata_file_size_bytes": 1062,
+          "boundary_metadata_sha256": "14c3bcddc12b00cac1cabae75cf1514be860e329fe2a3374f238e5fcbf16566b",
+          "boundary_tensor_dtype": "uint8",
+          "boundary_tensor_name": "mean_8",
+          "boundary_tensor_shape": [
+            1,
+            1,
+            960
+          ],
+          "boundary_transform": "uint8_dequant",
+          "canonical_part2_shape": [
+            1,
+            960,
+            1,
+            1
+          ],
+          "case_id": "b135",
+          "case_scope": "any_generated_split_case",
+          "dequant_scale": 0.03917791321873665,
+          "dequant_zero_point": 9.0,
+          "engine_rebuild_allowed_after_quality": false,
+          "hailo_format": "uint8",
+          "letterbox_pad_value": 0,
+          "model_family": "mobilenet",
+          "model_id": "mobilenet_v3_large",
+          "part1_artifact_sha256": "8929b57718f4c35751ea1d2b74eed97332a0582fe956b7c00c32eeb659d1912c",
+          "part1_artifact_size_bytes": 3903488,
+          "policy_sha256": "5f673a36aa36cf49217ebbde011d49cb4193979f019a4f42709ae3c7c8cc4ed8",
+          "precision": "uint8_dequant_fp16",
+          "preprocess_mode": "resize",
+          "quantization_policy": "from_exact_part1_boundary_metadata",
+          "schema": "onnx-splitpoint/native-split-quality-preselection",
+          "schema_version": 1,
+          "selection_sha256": "30560fe7e1b9c7669e4a14086df04b029b8ad087de12648cf716e9b77da65c23",
+          "setup_id": "orin_nx_hailo10_01",
+          "stage2_backend": "native_tensorrt",
+          "task": "classification"
+        },
+        "quality_preselection_sha256": "30560fe7e1b9c7669e4a14086df04b029b8ad087de12648cf716e9b77da65c23",
+        "quality_boundary_contract": {
+          "boundary_layout": "as_input",
+          "boundary_metadata_file_sha256": "c0f91800f3e2f2324a6a8cd29ebc44a3d478c0037afa29150feee3b3eee9f08e",
+          "boundary_metadata_sha256": "14c3bcddc12b00cac1cabae75cf1514be860e329fe2a3374f238e5fcbf16566b",
+          "boundary_tensor_dtype": "uint8",
+          "boundary_tensor_name": "mean_8",
+          "boundary_tensor_shape": [
+            1,
+            1,
+            960
+          ],
+          "boundary_transform": "uint8_dequant",
+          "dequant_scale": 0.03917791321873665,
+          "dequant_zero_point": 9.0,
+          "precision": "uint8_dequant_fp16"
+        },
+        "quality_boundary_contract_sha256": "b472556011ddd0076c96d43c9695be273181b9846135fcc4cd703b05ba15992f",
+        "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+        "engine_sha256": "d455dbde2ae906f8755ecb5d17e06be67a6375f9d4e5abdaefc0129dc6a92188",
+        "complete": true,
+        "schema": "onnx-splitpoint/native-command-contract",
+        "schema_version": 1,
+        "contract_sha256": "11ef3f47506a4fd1b2498eb8ff8637b567d31d81e93f848685fe90973080776b"
+      },
+      "native_command_contract_sha256": "11ef3f47506a4fd1b2498eb8ff8637b567d31d81e93f848685fe90973080776b",
+      "workload_contract_sha256": "11ef3f47506a4fd1b2498eb8ff8637b567d31d81e93f848685fe90973080776b",
+      "native_split_quality_binding": {
+        "artifacts": {
+          "boundary_metadata": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/part1_boundary_metadata.json",
+            "sha256": "c0f91800f3e2f2324a6a8cd29ebc44a3d478c0037afa29150feee3b3eee9f08e",
+            "size_bytes": 1062
+          },
+          "build_part2_onnx": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+            "sha256": "a995acfeb77c3cf9619758f2ede1f1f5cd4392c0394628d1f2ba00e3f81df510",
+            "size_bytes": 10051057
+          },
+          "engine": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+            "sha256": "d455dbde2ae906f8755ecb5d17e06be67a6375f9d4e5abdaefc0129dc6a92188",
+            "size_bytes": 5134468
+          },
+          "engine_build_receipt": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/engine_build_receipt.json",
+            "sha256": "60a459d739a016ffc33cd7dee721ff6517126289c6ff3bb972b57a012a110b3e",
+            "size_bytes": 2367
+          },
+          "native_trt_meta": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/native_trt_meta.json",
+            "sha256": "02bef57c21e568029a3d1c8122095ee2aa1cb06dd3905bbd635cc5ee37f01690",
+            "size_bytes": 8449
+          },
+          "part1_runtime": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/part1.hef",
+            "sha256": "8929b57718f4c35751ea1d2b74eed97332a0582fe956b7c00c32eeb659d1912c",
+            "size_bytes": 3903488
+          },
+          "source_part2_onnx": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/benchmark_set/b135/source_part2.onnx",
+            "sha256": "789cf35875ab925fcab4f8f1d5b8f10959a2e66039cd1b868f11fd326019b7bd",
+            "size_bytes": 10050649
+          },
+          "trtexec": {
+            "path": "/usr/src/tensorrt/bin/trtexec",
+            "sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4",
+            "size_bytes": 1695696
+          }
+        },
+        "boundary_contract": {
+          "boundary_layout": "as_input",
+          "boundary_metadata_file_sha256": "c0f91800f3e2f2324a6a8cd29ebc44a3d478c0037afa29150feee3b3eee9f08e",
+          "boundary_metadata_sha256": "14c3bcddc12b00cac1cabae75cf1514be860e329fe2a3374f238e5fcbf16566b",
+          "boundary_tensor_dtype": "uint8",
+          "boundary_tensor_name": "mean_8",
+          "boundary_tensor_shape": [
+            1,
+            1,
+            960
+          ],
+          "boundary_transform": "uint8_dequant",
+          "dequant_scale": 0.03917791321873665,
+          "dequant_zero_point": 9.0,
+          "precision": "uint8_dequant_fp16"
+        },
+        "boundary_contract_sha256": "b472556011ddd0076c96d43c9695be273181b9846135fcc4cd703b05ba15992f",
+        "boundary_metadata_payload": {
+          "backend": "hailo10h_to_trt",
+          "boundary_layout": "as_input",
+          "boundary_tensor": {
+            "canonical_part2_shape": [
+              1,
+              960,
+              1,
+              1
+            ],
+            "dtype": "uint8",
+            "hef_native_storage_dtype": "uint8",
+            "hef_vstream_format_type": "uint8",
+            "name": "mean_8",
+            "quantization": {
+              "scale": 0.03917791321873665,
+              "source": "hailort_hef_output_vstream_info",
+              "zero_point": 9.0
+            },
+            "runtime_name": "mobilenet_v3_large_part1_b135/avgpool9",
+            "shape": [
+              1,
+              1,
+              960
+            ]
+          },
+          "boundary_tensor_count": 1,
+          "boundary_transform": "uint8_dequant",
+          "case_id": "b135",
+          "metadata_sha256": "14c3bcddc12b00cac1cabae75cf1514be860e329fe2a3374f238e5fcbf16566b",
+          "model_id": "mobilenet_v3_large",
+          "part1_artifact_sha256": "8929b57718f4c35751ea1d2b74eed97332a0582fe956b7c00c32eeb659d1912c",
+          "part1_artifact_size_bytes": 3903488,
+          "schema": "onnx-splitpoint/native-part1-boundary-metadata",
+          "schema_version": 1,
+          "setup_id": "orin_nx_hailo10_01",
+          "source_run_id": "hailo10_to_tensorrt"
+        },
+        "boundary_metadata_value_sha256": "545216c193983cb59f09c63c573e046c458361bd817c36606171b00bf1379b25",
+        "central_quality_selection": {
+          "backend": "hailo10h_to_trt",
+          "case_id": "b135",
+          "central_result_sha256": "d7cf4bef448a032c199e58fef233a408956929dc9851cbaefab98133b0a00210",
+          "eval_run_id": "complete_set_20260907_161614",
+          "model_id": "mobilenet_v3_large",
+          "precision": "uint8_dequant_fp16",
+          "producer_binding_sha256": "fbeae9f1751aae7f030de840ffe898f9b26ade76d3351b89cebcdc8cd6f5ea6a",
+          "receipt_sha256": "1f29f61576c860eba249b1a521f2ecdacd93dd5bd9a9576b6501ed7b00a39d80",
+          "runtime_precision_identity": "uint8_dequant_fp16",
+          "schema": "onnx-splitpoint/native-split-quality-central-selection",
+          "schema_version": 1,
+          "setup_id": "orin_nx_hailo10_01",
+          "source_request_sha256": "c1e9c5ed9f3292095722574faf75562c8f8eccae4525e65fa5ad05cabeb1ec35",
+          "source_run_id": "hailo10h_to_trt",
+          "task": "classification",
+          "variant": "composed"
+        },
+        "central_quality_selection_sha256": "1f29f61576c860eba249b1a521f2ecdacd93dd5bd9a9576b6501ed7b00a39d80",
+        "central_result_sha256": "d7cf4bef448a032c199e58fef233a408956929dc9851cbaefab98133b0a00210",
+        "engine_build_receipt": {
+          "build_returncode": 0,
+          "command": [
+            "/usr/src/tensorrt/bin/trtexec",
+            "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+            "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+            "--fp16",
+            "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/timing.cache",
+            "--memPoolSize=workspace:4096"
+          ],
+          "dry_run": false,
+          "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+          "engine_sha256": "d455dbde2ae906f8755ecb5d17e06be67a6375f9d4e5abdaefc0129dc6a92188",
+          "receipt_sha256": "8d10032c953c2564ef46ed6b6eb258ef26190cadd07ae648e295e0d611903a10",
+          "schema": "onnx-splitpoint/tensorrt-engine-build-receipt",
+          "schema_version": 1,
+          "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+          "source_onnx_sha256": "a995acfeb77c3cf9619758f2ede1f1f5cd4392c0394628d1f2ba00e3f81df510",
+          "trtexec": "/usr/src/tensorrt/bin/trtexec",
+          "trtexec_sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4"
+        },
+        "engine_build_receipt_canonical_size_bytes": 2285,
+        "engine_build_receipt_file_sha256": "60a459d739a016ffc33cd7dee721ff6517126289c6ff3bb972b57a012a110b3e",
+        "engine_build_receipt_file_size_bytes": 2367,
+        "engine_build_receipt_outer_sha256": "5e26340ad97ce2346268e16467841166ed6c3d90188088f32458a35e263bf2db",
+        "engine_build_receipt_sha256": "8d10032c953c2564ef46ed6b6eb258ef26190cadd07ae648e295e0d611903a10",
+        "eval_run_id": "complete_set_20260907_161614",
+        "local_artifact_verification": {
+          "artifact_names": [
+            "part1_runtime",
+            "boundary_metadata",
+            "source_part2_onnx",
+            "build_part2_onnx",
+            "engine",
+            "native_trt_meta",
+            "engine_build_receipt",
+            "trtexec"
+          ],
+          "artifact_set_sha256": "0fe4fe67f57fcfccd6855ec9d91404cd184325d7304a0885263b19a1307bba33",
+          "artifacts": {
+            "boundary_metadata": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/part1_boundary_metadata.json",
+              "sha256": "c0f91800f3e2f2324a6a8cd29ebc44a3d478c0037afa29150feee3b3eee9f08e",
+              "size_bytes": 1062
+            },
+            "build_part2_onnx": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+              "sha256": "a995acfeb77c3cf9619758f2ede1f1f5cd4392c0394628d1f2ba00e3f81df510",
+              "size_bytes": 10051057
+            },
+            "engine": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+              "sha256": "d455dbde2ae906f8755ecb5d17e06be67a6375f9d4e5abdaefc0129dc6a92188",
+              "size_bytes": 5134468
+            },
+            "engine_build_receipt": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/engine_build_receipt.json",
+              "sha256": "60a459d739a016ffc33cd7dee721ff6517126289c6ff3bb972b57a012a110b3e",
+              "size_bytes": 2367
+            },
+            "native_trt_meta": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/native_trt_meta.json",
+              "sha256": "02bef57c21e568029a3d1c8122095ee2aa1cb06dd3905bbd635cc5ee37f01690",
+              "size_bytes": 8449
+            },
+            "part1_runtime": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/part1.hef",
+              "sha256": "8929b57718f4c35751ea1d2b74eed97332a0582fe956b7c00c32eeb659d1912c",
+              "size_bytes": 3903488
+            },
+            "source_part2_onnx": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/benchmark_set/b135/source_part2.onnx",
+              "sha256": "789cf35875ab925fcab4f8f1d5b8f10959a2e66039cd1b868f11fd326019b7bd",
+              "size_bytes": 10050649
+            },
+            "trtexec": {
+              "path": "/usr/src/tensorrt/bin/trtexec",
+              "sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4",
+              "size_bytes": 1695696
+            }
+          },
+          "boundary_metadata_value_sha256": "545216c193983cb59f09c63c573e046c458361bd817c36606171b00bf1379b25",
+          "build_summary_row_sha256": "81466e9f51d009003f488ed7e57405c37cb6f59c537321898429d3565448223f",
+          "embedded_json_files": {
+            "boundary_metadata": {
+              "canonical_value_sha256": "545216c193983cb59f09c63c573e046c458361bd817c36606171b00bf1379b25",
+              "content_base64": "ewogICJiYWNrZW5kIjogImhhaWxvMTBoX3RvX3RydCIsCiAgImJvdW5kYXJ5X2xheW91dCI6ICJhc19pbnB1dCIsCiAgImJvdW5kYXJ5X3RlbnNvciI6IHsKICAgICJjYW5vbmljYWxfcGFydDJfc2hhcGUiOiBbCiAgICAgIDEsCiAgICAgIDk2MCwKICAgICAgMSwKICAgICAgMQogICAgXSwKICAgICJkdHlwZSI6ICJ1aW50OCIsCiAgICAiaGVmX25hdGl2ZV9zdG9yYWdlX2R0eXBlIjogInVpbnQ4IiwKICAgICJoZWZfdnN0cmVhbV9mb3JtYXRfdHlwZSI6ICJ1aW50OCIsCiAgICAibmFtZSI6ICJtZWFuXzgiLAogICAgInF1YW50aXphdGlvbiI6IHsKICAgICAgInNjYWxlIjogMC4wMzkxNzc5MTMyMTg3MzY2NSwKICAgICAgInNvdXJjZSI6ICJoYWlsb3J0X2hlZl9vdXRwdXRfdnN0cmVhbV9pbmZvIiwKICAgICAgInplcm9fcG9pbnQiOiA5LjAKICAgIH0sCiAgICAicnVudGltZV9uYW1lIjogIm1vYmlsZW5ldF92M19sYXJnZV9wYXJ0MV9iMTM1L2F2Z3Bvb2w5IiwKICAgICJzaGFwZSI6IFsKICAgICAgMSwKICAgICAgMSwKICAgICAgOTYwCiAgICBdCiAgfSwKICAiYm91bmRhcnlfdGVuc29yX2NvdW50IjogMSwKICAiYm91bmRhcnlfdHJhbnNmb3JtIjogInVpbnQ4X2RlcXVhbnQiLAogICJjYXNlX2lkIjogImIxMzUiLAogICJtZXRhZGF0YV9zaGEyNTYiOiAiMTRjM2JjZGRjMTJiMDBjYWMxY2FiYWU3NWNmMTUxNGJlODYwZTMyOWZlMmEzMzc0ZjIzOGU1ZmNiZjE2NTY2YiIsCiAgIm1vZGVsX2lkIjogIm1vYmlsZW5ldF92M19sYXJnZSIsCiAgInBhcnQxX2FydGlmYWN0X3NoYTI1NiI6ICI4OTI5YjU3NzE4ZjRjMzU3NTFlYTFkMmI3NGVlZDk3MzMyYTA1ODJmZTk1NmI3YzAwYzMyZWViNjU5ZDE5MTJjIiwKICAicGFydDFfYXJ0aWZhY3Rfc2l6ZV9ieXRlcyI6IDM5MDM0ODgsCiAgInNjaGVtYSI6ICJvbm54LXNwbGl0cG9pbnQvbmF0aXZlLXBhcnQxLWJvdW5kYXJ5LW1ldGFkYXRhIiwKICAic2NoZW1hX3ZlcnNpb24iOiAxLAogICJzZXR1cF9pZCI6ICJvcmluX254X2hhaWxvMTBfMDEiLAogICJzb3VyY2VfcnVuX2lkIjogImhhaWxvMTBfdG9fdGVuc29ycnQiCn0K",
+              "encoding": "base64",
+              "file_sha256": "c0f91800f3e2f2324a6a8cd29ebc44a3d478c0037afa29150feee3b3eee9f08e",
+              "file_size_bytes": 1062
+            },
+            "engine_build_receipt": {
+              "canonical_value_sha256": "5e26340ad97ce2346268e16467841166ed6c3d90188088f32458a35e263bf2db",
+              "content_base64": "ewogICJidWlsZF9yZXR1cm5jb2RlIjogMCwKICAiY29tbWFuZCI6IFsKICAgICIvdXNyL3NyYy90ZW5zb3JydC9iaW4vdHJ0ZXhlYyIsCiAgICAiLS1vbm54PS9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L21vYmlsZW5ldF92M19sYXJnZS1hMzYwMzA1NzE1MGUwZjZkL25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9tb2JpbGVuZXRfdjNfbGFyZ2UvYjEzNS9oYWlsbzEwaF90b190cnQvNDI3OTFkMmY5OGY3YTZkNGFhNTYxMWQ4ODFkN2ZmZjAzZTk5MDE1ZDdkZDJlZTg3MDQ2NjAxYmYyNjNhOWY3NC9lbmdpbmVfY2FjaGUvYjEzNS9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvc291cmNlX3BhcnQyX3VpbnQ4X2RlcXVhbnRfYnJpZGdlLm9ubngiLAogICAgIi0tc2F2ZUVuZ2luZT0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9tb2JpbGVuZXRfdjNfbGFyZ2UtYTM2MDMwNTcxNTBlMGY2ZC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvbW9iaWxlbmV0X3YzX2xhcmdlL2IxMzUvaGFpbG8xMGhfdG9fdHJ0LzQyNzkxZDJmOThmN2E2ZDRhYTU2MTFkODgxZDdmZmYwM2U5OTAxNWQ3ZGQyZWU4NzA0NjYwMWJmMjYzYTlmNzQvZW5naW5lX2NhY2hlL2IxMzUvcGFydDIvdWludDhfZGVxdWFudF9mcDE2L3BhcnQyX3VpbnQ4X2RlcXVhbnRfZnAxNi5lbmdpbmUiLAogICAgIi0tZnAxNiIsCiAgICAiLS10aW1pbmdDYWNoZUZpbGU9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvbW9iaWxlbmV0X3YzX2xhcmdlLWEzNjAzMDU3MTUwZTBmNmQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL21vYmlsZW5ldF92M19sYXJnZS9iMTM1L2hhaWxvMTBoX3RvX3RydC80Mjc5MWQyZjk4ZjdhNmQ0YWE1NjExZDg4MWQ3ZmZmMDNlOTkwMTVkN2RkMmVlODcwNDY2MDFiZjI2M2E5Zjc0L2VuZ2luZV9jYWNoZS9iMTM1L3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi90aW1pbmcuY2FjaGUiLAogICAgIi0tbWVtUG9vbFNpemU9d29ya3NwYWNlOjQwOTYiCiAgXSwKICAiZHJ5X3J1biI6IGZhbHNlLAogICJlbmdpbmUiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvbW9iaWxlbmV0X3YzX2xhcmdlLWEzNjAzMDU3MTUwZTBmNmQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL21vYmlsZW5ldF92M19sYXJnZS9iMTM1L2hhaWxvMTBoX3RvX3RydC80Mjc5MWQyZjk4ZjdhNmQ0YWE1NjExZDg4MWQ3ZmZmMDNlOTkwMTVkN2RkMmVlODcwNDY2MDFiZjI2M2E5Zjc0L2VuZ2luZV9jYWNoZS9iMTM1L3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9wYXJ0Ml91aW50OF9kZXF1YW50X2ZwMTYuZW5naW5lIiwKICAiZW5naW5lX3NoYTI1NiI6ICJkNDU1ZGJkZTJhZTkwNmY4NzU1ZWNiNWQxN2UwNmJlNjdhNjM3NWY5ZDRlNWFiZGFlZmMwMTI5ZGM2YTkyMTg4IiwKICAicmVjZWlwdF9zaGEyNTYiOiAiOGQxMDAzMmM5NTNjMjU2NGVmNDZlZDZiNmViMjU4ZWYyNjE5MGNhZGQwN2FlNjQ4ZTI5NWUwZDYxMTkwM2ExMCIsCiAgInNjaGVtYSI6ICJvbm54LXNwbGl0cG9pbnQvdGVuc29ycnQtZW5naW5lLWJ1aWxkLXJlY2VpcHQiLAogICJzY2hlbWFfdmVyc2lvbiI6IDEsCiAgInNvdXJjZV9vbm54IjogIi9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L21vYmlsZW5ldF92M19sYXJnZS1hMzYwMzA1NzE1MGUwZjZkL25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9tb2JpbGVuZXRfdjNfbGFyZ2UvYjEzNS9oYWlsbzEwaF90b190cnQvNDI3OTFkMmY5OGY3YTZkNGFhNTYxMWQ4ODFkN2ZmZjAzZTk5MDE1ZDdkZDJlZTg3MDQ2NjAxYmYyNjNhOWY3NC9lbmdpbmVfY2FjaGUvYjEzNS9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvc291cmNlX3BhcnQyX3VpbnQ4X2RlcXVhbnRfYnJpZGdlLm9ubngiLAogICJzb3VyY2Vfb25ueF9zaGEyNTYiOiAiYTk5NWFjZmViNzdjM2NmOTYxOTc1OGYyZWRlMWYxZjVjZDQzOTJjMDM5NDYyOGQxZjJiYTAwZTNmODFkZjUxMCIsCiAgInRydGV4ZWMiOiAiL3Vzci9zcmMvdGVuc29ycnQvYmluL3RydGV4ZWMiLAogICJ0cnRleGVjX3NoYTI1NiI6ICJiODAwOTkwNTA4NzkzYTliZjUwNzEzZDc4ZDRmZWRmZTQ3NTM4MWQ4Y2Q3NDlhYmRhODA5MDliOTE5N2ZhMWM0Igp9",
+              "encoding": "base64",
+              "file_sha256": "60a459d739a016ffc33cd7dee721ff6517126289c6ff3bb972b57a012a110b3e",
+              "file_size_bytes": 2367
+            },
+            "native_trt_meta": {
+              "canonical_value_sha256": "81466e9f51d009003f488ed7e57405c37cb6f59c537321898429d3565448223f",
+              "content_base64": "ewogICJidWlsZCI6IHsKICAgICJjYWNoZV9oaXQiOiB0cnVlLAogICAgImNtZCI6IFsKICAgICAgIi91c3Ivc3JjL3RlbnNvcnJ0L2Jpbi90cnRleGVjIiwKICAgICAgIi0tb25ueD0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9tb2JpbGVuZXRfdjNfbGFyZ2UtYTM2MDMwNTcxNTBlMGY2ZC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvbW9iaWxlbmV0X3YzX2xhcmdlL2IxMzUvaGFpbG8xMGhfdG9fdHJ0LzQyNzkxZDJmOThmN2E2ZDRhYTU2MTFkODgxZDdmZmYwM2U5OTAxNWQ3ZGQyZWU4NzA0NjYwMWJmMjYzYTlmNzQvZW5naW5lX2NhY2hlL2IxMzUvcGFydDIvdWludDhfZGVxdWFudF9mcDE2L3NvdXJjZV9wYXJ0Ml91aW50OF9kZXF1YW50X2JyaWRnZS5vbm54IiwKICAgICAgIi0tc2F2ZUVuZ2luZT0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9tb2JpbGVuZXRfdjNfbGFyZ2UtYTM2MDMwNTcxNTBlMGY2ZC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvbW9iaWxlbmV0X3YzX2xhcmdlL2IxMzUvaGFpbG8xMGhfdG9fdHJ0LzQyNzkxZDJmOThmN2E2ZDRhYTU2MTFkODgxZDdmZmYwM2U5OTAxNWQ3ZGQyZWU4NzA0NjYwMWJmMjYzYTlmNzQvZW5naW5lX2NhY2hlL2IxMzUvcGFydDIvdWludDhfZGVxdWFudF9mcDE2L3BhcnQyX3VpbnQ4X2RlcXVhbnRfZnAxNi5lbmdpbmUiLAogICAgICAiLS1mcDE2IiwKICAgICAgIi0tdGltaW5nQ2FjaGVGaWxlPS9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L21vYmlsZW5ldF92M19sYXJnZS1hMzYwMzA1NzE1MGUwZjZkL25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9tb2JpbGVuZXRfdjNfbGFyZ2UvYjEzNS9oYWlsbzEwaF90b190cnQvNDI3OTFkMmY5OGY3YTZkNGFhNTYxMWQ4ODFkN2ZmZjAzZTk5MDE1ZDdkZDJlZTg3MDQ2NjAxYmYyNjNhOWY3NC9lbmdpbmVfY2FjaGUvYjEzNS9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvdGltaW5nLmNhY2hlIiwKICAgICAgIi0tbWVtUG9vbFNpemU9d29ya3NwYWNlOjQwOTYiCiAgICBdLAogICAgImNvbXBpbGVyX2Rpc3BhdGNoZWQiOiBmYWxzZSwKICAgICJkcnlfcnVuIjogZmFsc2UsCiAgICAiZXZpZGVuY2Vfc291cmNlIjogInZlcmlmaWVkX2VuZ2luZV9idWlsZF9yZWNlaXB0IiwKICAgICJyZXR1cm5jb2RlIjogMAogIH0sCiAgImJ1aWxkX2F0dGVtcHRzIjogW10sCiAgImJ1aWxkX29rIjogdHJ1ZSwKICAiY2FzZSI6ICJiMTM1IiwKICAiZW5naW5lIjogIi9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L21vYmlsZW5ldF92M19sYXJnZS1hMzYwMzA1NzE1MGUwZjZkL25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9tb2JpbGVuZXRfdjNfbGFyZ2UvYjEzNS9oYWlsbzEwaF90b190cnQvNDI3OTFkMmY5OGY3YTZkNGFhNTYxMWQ4ODFkN2ZmZjAzZTk5MDE1ZDdkZDJlZTg3MDQ2NjAxYmYyNjNhOWY3NC9lbmdpbmVfY2FjaGUvYjEzNS9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvcGFydDJfdWludDhfZGVxdWFudF9mcDE2LmVuZ2luZSIsCiAgImVuZ2luZV9idWlsZF9yZWNlaXB0IjogewogICAgImJ1aWxkX3JldHVybmNvZGUiOiAwLAogICAgImNvbW1hbmQiOiBbCiAgICAgICIvdXNyL3NyYy90ZW5zb3JydC9iaW4vdHJ0ZXhlYyIsCiAgICAgICItLW9ubng9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvbW9iaWxlbmV0X3YzX2xhcmdlLWEzNjAzMDU3MTUwZTBmNmQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL21vYmlsZW5ldF92M19sYXJnZS9iMTM1L2hhaWxvMTBoX3RvX3RydC80Mjc5MWQyZjk4ZjdhNmQ0YWE1NjExZDg4MWQ3ZmZmMDNlOTkwMTVkN2RkMmVlODcwNDY2MDFiZjI2M2E5Zjc0L2VuZ2luZV9jYWNoZS9iMTM1L3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9zb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2Uub25ueCIsCiAgICAgICItLXNhdmVFbmdpbmU9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvbW9iaWxlbmV0X3YzX2xhcmdlLWEzNjAzMDU3MTUwZTBmNmQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL21vYmlsZW5ldF92M19sYXJnZS9iMTM1L2hhaWxvMTBoX3RvX3RydC80Mjc5MWQyZjk4ZjdhNmQ0YWE1NjExZDg4MWQ3ZmZmMDNlOTkwMTVkN2RkMmVlODcwNDY2MDFiZjI2M2E5Zjc0L2VuZ2luZV9jYWNoZS9iMTM1L3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9wYXJ0Ml91aW50OF9kZXF1YW50X2ZwMTYuZW5naW5lIiwKICAgICAgIi0tZnAxNiIsCiAgICAgICItLXRpbWluZ0NhY2hlRmlsZT0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9tb2JpbGVuZXRfdjNfbGFyZ2UtYTM2MDMwNTcxNTBlMGY2ZC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvbW9iaWxlbmV0X3YzX2xhcmdlL2IxMzUvaGFpbG8xMGhfdG9fdHJ0LzQyNzkxZDJmOThmN2E2ZDRhYTU2MTFkODgxZDdmZmYwM2U5OTAxNWQ3ZGQyZWU4NzA0NjYwMWJmMjYzYTlmNzQvZW5naW5lX2NhY2hlL2IxMzUvcGFydDIvdWludDhfZGVxdWFudF9mcDE2L3RpbWluZy5jYWNoZSIsCiAgICAgICItLW1lbVBvb2xTaXplPXdvcmtzcGFjZTo0MDk2IgogICAgXSwKICAgICJkcnlfcnVuIjogZmFsc2UsCiAgICAiZW5naW5lIjogIi9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L21vYmlsZW5ldF92M19sYXJnZS1hMzYwMzA1NzE1MGUwZjZkL25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9tb2JpbGVuZXRfdjNfbGFyZ2UvYjEzNS9oYWlsbzEwaF90b190cnQvNDI3OTFkMmY5OGY3YTZkNGFhNTYxMWQ4ODFkN2ZmZjAzZTk5MDE1ZDdkZDJlZTg3MDQ2NjAxYmYyNjNhOWY3NC9lbmdpbmVfY2FjaGUvYjEzNS9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvcGFydDJfdWludDhfZGVxdWFudF9mcDE2LmVuZ2luZSIsCiAgICAiZW5naW5lX3NoYTI1NiI6ICJkNDU1ZGJkZTJhZTkwNmY4NzU1ZWNiNWQxN2UwNmJlNjdhNjM3NWY5ZDRlNWFiZGFlZmMwMTI5ZGM2YTkyMTg4IiwKICAgICJyZWNlaXB0X3NoYTI1NiI6ICI4ZDEwMDMyYzk1M2MyNTY0ZWY0NmVkNmI2ZWIyNThlZjI2MTkwY2FkZDA3YWU2NDhlMjk1ZTBkNjExOTAzYTEwIiwKICAgICJzY2hlbWEiOiAib25ueC1zcGxpdHBvaW50L3RlbnNvcnJ0LWVuZ2luZS1idWlsZC1yZWNlaXB0IiwKICAgICJzY2hlbWFfdmVyc2lvbiI6IDEsCiAgICAic291cmNlX29ubngiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvbW9iaWxlbmV0X3YzX2xhcmdlLWEzNjAzMDU3MTUwZTBmNmQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL21vYmlsZW5ldF92M19sYXJnZS9iMTM1L2hhaWxvMTBoX3RvX3RydC80Mjc5MWQyZjk4ZjdhNmQ0YWE1NjExZDg4MWQ3ZmZmMDNlOTkwMTVkN2RkMmVlODcwNDY2MDFiZjI2M2E5Zjc0L2VuZ2luZV9jYWNoZS9iMTM1L3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9zb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2Uub25ueCIsCiAgICAic291cmNlX29ubnhfc2hhMjU2IjogImE5OTVhY2ZlYjc3YzNjZjk2MTk3NThmMmVkZTFmMWY1Y2Q0MzkyYzAzOTQ2MjhkMWYyYmEwMGUzZjgxZGY1MTAiLAogICAgInRydGV4ZWMiOiAiL3Vzci9zcmMvdGVuc29ycnQvYmluL3RydGV4ZWMiLAogICAgInRydGV4ZWNfc2hhMjU2IjogImI4MDA5OTA1MDg3OTNhOWJmNTA3MTNkNzhkNGZlZGZlNDc1MzgxZDhjZDc0OWFiZGE4MDkwOWI5MTk3ZmExYzQiCiAgfSwKICAiZW5naW5lX2J1aWxkX3JlY2VpcHRfcGF0aCI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9tb2JpbGVuZXRfdjNfbGFyZ2UtYTM2MDMwNTcxNTBlMGY2ZC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvbW9iaWxlbmV0X3YzX2xhcmdlL2IxMzUvaGFpbG8xMGhfdG9fdHJ0LzQyNzkxZDJmOThmN2E2ZDRhYTU2MTFkODgxZDdmZmYwM2U5OTAxNWQ3ZGQyZWU4NzA0NjYwMWJmMjYzYTlmNzQvZW5naW5lX2NhY2hlL2IxMzUvcGFydDIvdWludDhfZGVxdWFudF9mcDE2L2VuZ2luZV9idWlsZF9yZWNlaXB0Lmpzb24iLAogICJlbmdpbmVfYnVpbGRfcmVjZWlwdF9zdGF0dXMiOiAiZW5naW5lX2J1aWxkX3JlY2VpcHRfdmVyaWZpZWQiLAogICJpbnB1dHMiOiBbCiAgICB7CiAgICAgICJlbGVtX3R5cGUiOiAiVUlOVDgiLAogICAgICAiaGFzX2R5bmFtaWMiOiBmYWxzZSwKICAgICAgIm5hbWUiOiAibWVhbl84IiwKICAgICAgInNoYXBlIjogWwogICAgICAgIDEsCiAgICAgICAgOTYwLAogICAgICAgIDEsCiAgICAgICAgMQogICAgICBdCiAgICB9CiAgXSwKICAiaW5wdXRzX3N0YXRpYyI6IHRydWUsCiAgIm9ubngiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvbW9iaWxlbmV0X3YzX2xhcmdlLWEzNjAzMDU3MTUwZTBmNmQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL21vYmlsZW5ldF92M19sYXJnZS9iMTM1L2hhaWxvMTBoX3RvX3RydC80Mjc5MWQyZjk4ZjdhNmQ0YWE1NjExZDg4MWQ3ZmZmMDNlOTkwMTVkN2RkMmVlODcwNDY2MDFiZjI2M2E5Zjc0L2VuZ2luZV9jYWNoZS9iMTM1L3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9zb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2Uub25ueCIsCiAgIm91dHB1dHMiOiBbCiAgICB7CiAgICAgICJlbGVtX3R5cGUiOiAiRkxPQVQiLAogICAgICAiaGFzX2R5bmFtaWMiOiBmYWxzZSwKICAgICAgIm5hbWUiOiAibG9naXRzIiwKICAgICAgInNoYXBlIjogWwogICAgICAgIDEsCiAgICAgICAgMTAwMAogICAgICBdCiAgICB9CiAgXSwKICAicHJlY2lzaW9uIjogInVpbnQ4X2RlcXVhbnRfZnAxNiIsCiAgInF1YWxpdHlfZmlyc3RfaWRlbnRpdHkiOiB7fSwKICAicmVxdWVzdGVkX3ByZWNpc2lvbiI6ICJ1aW50OF9kZXF1YW50X2ZwMTYiLAogICJzY2hlbWEiOiAib25ueC1zcGxpdHBvaW50L25hdGl2ZS10cnQtbWV0YSIsCiAgInNjaGVtYV92ZXJzaW9uIjogMSwKICAic2hhcGVzX2FyZyI6ICIiLAogICJzaGFwZXNfcG9saWN5X2VmZmVjdGl2ZSI6ICJhdXRvX3N0YXRpY19vbWl0IiwKICAic291cmNlX29ubngiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvbW9iaWxlbmV0X3YzX2xhcmdlLWEzNjAzMDU3MTUwZTBmNmQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL21vYmlsZW5ldF92M19sYXJnZS9iMTM1L2hhaWxvMTBoX3RvX3RydC80Mjc5MWQyZjk4ZjdhNmQ0YWE1NjExZDg4MWQ3ZmZmMDNlOTkwMTVkN2RkMmVlODcwNDY2MDFiZjI2M2E5Zjc0L2VuZ2luZV9jYWNoZS9iMTM1L3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9zb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2Uub25ueCIsCiAgInRydF9jYWNoZSI6IHsKICAgICJhcnRpZmFjdF9wYXRoIjogIi9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L21vYmlsZW5ldF92M19sYXJnZS1hMzYwMzA1NzE1MGUwZjZkL25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9tb2JpbGVuZXRfdjNfbGFyZ2UvYjEzNS9oYWlsbzEwaF90b190cnQvNDI3OTFkMmY5OGY3YTZkNGFhNTYxMWQ4ODFkN2ZmZjAzZTk5MDE1ZDdkZDJlZTg3MDQ2NjAxYmYyNjNhOWY3NC9lbmdpbmVfY2FjaGUvYjEzNS9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvcGFydDJfdWludDhfZGVxdWFudF9mcDE2LmVuZ2luZSIsCiAgICAiY2FzZV9pZCI6ICJiMTM1IiwKICAgICJjb21waWxlcl9kaXNwYXRjaGVkIjogZmFsc2UsCiAgICAiaWRlbnRpdHkiOiAiOGQxMDAzMmM5NTNjMjU2NGVmNDZlZDZiNmViMjU4ZWYyNjE5MGNhZGQwN2FlNjQ4ZTI5NWUwZDYxMTkwM2ExMCIsCiAgICAibW9kZWxfaWQiOiAic291cmNlX3BhcnQyX3VpbnQ4X2RlcXVhbnRfYnJpZGdlIiwKICAgICJvdXRjb21lIjogInJldXNlZCIsCiAgICAicmVhc29uIjogImNvbXBhdGlibGVfcmVjZWlwdCIsCiAgICAicmVjZWlwdF9wYXRoIjogIi9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L21vYmlsZW5ldF92M19sYXJnZS1hMzYwMzA1NzE1MGUwZjZkL25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9tb2JpbGVuZXRfdjNfbGFyZ2UvYjEzNS9oYWlsbzEwaF90b190cnQvNDI3OTFkMmY5OGY3YTZkNGFhNTYxMWQ4ODFkN2ZmZjAzZTk5MDE1ZDdkZDJlZTg3MDQ2NjAxYmYyNjNhOWY3NC9lbmdpbmVfY2FjaGUvYjEzNS9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvZW5naW5lX2J1aWxkX3JlY2VpcHQuanNvbiIsCiAgICAicm9sZSI6ICJwYXJ0MiIsCiAgICAic3RhdHVzIjogIkhJVCIKICB9LAogICJ1aW50OF9jYXN0X2JyaWRnZSI6IHsKICAgICJib3VuZGFyeV9sYXlvdXQiOiB7CiAgICAgICJhcHBsaWVkIjogZmFsc2UsCiAgICAgICJlZmZlY3RpdmUiOiAiYXNfaW5wdXQiLAogICAgICAicmVxdWVzdGVkIjogImFzX2lucHV0IgogICAgfSwKICAgICJicmlkZ2UiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvbW9iaWxlbmV0X3YzX2xhcmdlLWEzNjAzMDU3MTUwZTBmNmQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL21vYmlsZW5ldF92M19sYXJnZS9iMTM1L2hhaWxvMTBoX3RvX3RydC80Mjc5MWQyZjk4ZjdhNmQ0YWE1NjExZDg4MWQ3ZmZmMDNlOTkwMTVkN2RkMmVlODcwNDY2MDFiZjI2M2E5Zjc0L2VuZ2luZV9jYWNoZS9iMTM1L3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9zb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2Uub25ueCIsCiAgICAiYnJpZGdlX291dHB1dCI6ICJtZWFuXzhfX2RlcXVhbnRfZmxvYXQiLAogICAgImJyaWRnZV9zaGEyNTYiOiAiYTk5NWFjZmViNzdjM2NmOTYxOTc1OGYyZWRlMWYxZjVjZDQzOTJjMDM5NDYyOGQxZjJiYTAwZTNmODFkZjUxMCIsCiAgICAiZGVxdWFudF9vdXRwdXQiOiAibWVhbl84X19kZXF1YW50X2Zsb2F0IiwKICAgICJpbnB1dF9kdHlwZSI6ICJVSU5UOCIsCiAgICAiaW5wdXRfbmFtZSI6ICJtZWFuXzgiLAogICAgImlucHV0X3NoYXBlIjogWwogICAgICAxLAogICAgICA5NjAsCiAgICAgIDEsCiAgICAgIDEKICAgIF0sCiAgICAicGFyYW1zIjogewogICAgICAic2NhbGUiOiAwLjAzOTE3NzkxMzIxODczNjY1LAogICAgICAic291cmNlIjogImV4cGxpY2l0IiwKICAgICAgInplcm9fcG9pbnQiOiA5LjAKICAgIH0sCiAgICAicGFyYW1zX3NvdXJjZSI6ICJleHBsaWNpdCIsCiAgICAicmVwbGFjZWRfdXNlcyI6IDEsCiAgICAic2NhbGUiOiAwLjAzOTE3NzkxMzIxODczNjY1LAogICAgInNjaGVtYSI6ICJvbm54LXNwbGl0cG9pbnQvdWludDgtZGVxdWFudC1icmlkZ2UiLAogICAgInNjaGVtYV92ZXJzaW9uIjogMiwKICAgICJzb3VyY2UiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvbW9iaWxlbmV0X3YzX2xhcmdlLWEzNjAzMDU3MTUwZTBmNmQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL21vYmlsZW5ldF92M19sYXJnZS9iMTM1L2hhaWxvMTBoX3RvX3RydC80Mjc5MWQyZjk4ZjdhNmQ0YWE1NjExZDg4MWQ3ZmZmMDNlOTkwMTVkN2RkMmVlODcwNDY2MDFiZjI2M2E5Zjc0L2JlbmNobWFya19zZXQvYjEzNS9zb3VyY2VfcGFydDIub25ueCIsCiAgICAic291cmNlX3NoYTI1NiI6ICI3ODljZjM1ODc1YWI5MjVmY2FiNGY4ZjFkNWI4ZjEwOTU5YTJlNjYwMzljZDFiODY4ZjExZmQzMjYwMTliN2JkIiwKICAgICJ6ZXJvX3BvaW50IjogOS4wCiAgfSwKICAidmFyaWFudCI6ICJwYXJ0MiIKfQ==",
+              "encoding": "base64",
+              "file_sha256": "02bef57c21e568029a3d1c8122095ee2aa1cb06dd3905bbd635cc5ee37f01690",
+              "file_size_bytes": 8449
+            }
+          },
+          "engine_build_receipt_canonical_size_bytes": 2285,
+          "engine_build_receipt_inner_sha256": "8d10032c953c2564ef46ed6b6eb258ef26190cadd07ae648e295e0d611903a10",
+          "engine_build_receipt_outer_sha256": "5e26340ad97ce2346268e16467841166ed6c3d90188088f32458a35e263bf2db",
+          "native_trt_meta_payload_sha256": "81466e9f51d009003f488ed7e57405c37cb6f59c537321898429d3565448223f",
+          "proof_sha256": "44f01997741a815cdb1dc8f29b12c42b91fd05067328e6f2de84f924263a6a10",
+          "schema": "onnx-splitpoint/native-split-local-artifact-verification",
+          "schema_version": 1,
+          "trt_build_command_sha256": "a8efc0438eb555cac3e1c5edac232aadbd185e8b8eb705673cf82b7618945c2f",
+          "verification_kind": "producer_local_file_rehash"
+        },
+        "native_trt_meta": {
+          "build": {
+            "cache_hit": true,
+            "cmd": [
+              "/usr/src/tensorrt/bin/trtexec",
+              "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+              "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+              "--fp16",
+              "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/timing.cache",
+              "--memPoolSize=workspace:4096"
+            ],
+            "compiler_dispatched": false,
+            "dry_run": false,
+            "evidence_source": "verified_engine_build_receipt",
+            "returncode": 0
+          },
+          "build_attempts": [],
+          "build_ok": true,
+          "case": "b135",
+          "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+          "engine_build_receipt": {
+            "build_returncode": 0,
+            "command": [
+              "/usr/src/tensorrt/bin/trtexec",
+              "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+              "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+              "--fp16",
+              "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/timing.cache",
+              "--memPoolSize=workspace:4096"
+            ],
+            "dry_run": false,
+            "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+            "engine_sha256": "d455dbde2ae906f8755ecb5d17e06be67a6375f9d4e5abdaefc0129dc6a92188",
+            "receipt_sha256": "8d10032c953c2564ef46ed6b6eb258ef26190cadd07ae648e295e0d611903a10",
+            "schema": "onnx-splitpoint/tensorrt-engine-build-receipt",
+            "schema_version": 1,
+            "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+            "source_onnx_sha256": "a995acfeb77c3cf9619758f2ede1f1f5cd4392c0394628d1f2ba00e3f81df510",
+            "trtexec": "/usr/src/tensorrt/bin/trtexec",
+            "trtexec_sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4"
+          },
+          "engine_build_receipt_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/engine_build_receipt.json",
+          "engine_build_receipt_status": "engine_build_receipt_verified",
+          "inputs": [
+            {
+              "elem_type": "UINT8",
+              "has_dynamic": false,
+              "name": "mean_8",
+              "shape": [
+                1,
+                960,
+                1,
+                1
+              ]
+            }
+          ],
+          "inputs_static": true,
+          "onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+          "outputs": [
+            {
+              "elem_type": "FLOAT",
+              "has_dynamic": false,
+              "name": "logits",
+              "shape": [
+                1,
+                1000
+              ]
+            }
+          ],
+          "precision": "uint8_dequant_fp16",
+          "quality_first_identity": {},
+          "requested_precision": "uint8_dequant_fp16",
+          "schema": "onnx-splitpoint/native-trt-meta",
+          "schema_version": 1,
+          "shapes_arg": "",
+          "shapes_policy_effective": "auto_static_omit",
+          "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+          "trt_cache": {
+            "artifact_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+            "case_id": "b135",
+            "compiler_dispatched": false,
+            "identity": "8d10032c953c2564ef46ed6b6eb258ef26190cadd07ae648e295e0d611903a10",
+            "model_id": "source_part2_uint8_dequant_bridge",
+            "outcome": "reused",
+            "reason": "compatible_receipt",
+            "receipt_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/engine_build_receipt.json",
+            "role": "part2",
+            "status": "HIT"
+          },
+          "uint8_cast_bridge": {
+            "boundary_layout": {
+              "applied": false,
+              "effective": "as_input",
+              "requested": "as_input"
+            },
+            "bridge": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+            "bridge_output": "mean_8__dequant_float",
+            "bridge_sha256": "a995acfeb77c3cf9619758f2ede1f1f5cd4392c0394628d1f2ba00e3f81df510",
+            "dequant_output": "mean_8__dequant_float",
+            "input_dtype": "UINT8",
+            "input_name": "mean_8",
+            "input_shape": [
+              1,
+              960,
+              1,
+              1
+            ],
+            "params": {
+              "scale": 0.03917791321873665,
+              "source": "explicit",
+              "zero_point": 9.0
+            },
+            "params_source": "explicit",
+            "replaced_uses": 1,
+            "scale": 0.03917791321873665,
+            "schema": "onnx-splitpoint/uint8-dequant-bridge",
+            "schema_version": 2,
+            "source": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/benchmark_set/b135/source_part2.onnx",
+            "source_sha256": "789cf35875ab925fcab4f8f1d5b8f10959a2e66039cd1b868f11fd326019b7bd",
+            "zero_point": 9.0
+          },
+          "variant": "part2"
+        },
+        "native_trt_meta_file_sha256": "02bef57c21e568029a3d1c8122095ee2aa1cb06dd3905bbd635cc5ee37f01690",
+        "native_trt_meta_file_size_bytes": 8449,
+        "native_trt_meta_payload": {
+          "build": {
+            "cache_hit": true,
+            "cmd": [
+              "/usr/src/tensorrt/bin/trtexec",
+              "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+              "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+              "--fp16",
+              "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/timing.cache",
+              "--memPoolSize=workspace:4096"
+            ],
+            "compiler_dispatched": false,
+            "dry_run": false,
+            "evidence_source": "verified_engine_build_receipt",
+            "returncode": 0
+          },
+          "build_attempts": [],
+          "build_ok": true,
+          "case": "b135",
+          "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+          "engine_build_receipt": {
+            "build_returncode": 0,
+            "command": [
+              "/usr/src/tensorrt/bin/trtexec",
+              "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+              "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+              "--fp16",
+              "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/timing.cache",
+              "--memPoolSize=workspace:4096"
+            ],
+            "dry_run": false,
+            "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+            "engine_sha256": "d455dbde2ae906f8755ecb5d17e06be67a6375f9d4e5abdaefc0129dc6a92188",
+            "receipt_sha256": "8d10032c953c2564ef46ed6b6eb258ef26190cadd07ae648e295e0d611903a10",
+            "schema": "onnx-splitpoint/tensorrt-engine-build-receipt",
+            "schema_version": 1,
+            "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+            "source_onnx_sha256": "a995acfeb77c3cf9619758f2ede1f1f5cd4392c0394628d1f2ba00e3f81df510",
+            "trtexec": "/usr/src/tensorrt/bin/trtexec",
+            "trtexec_sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4"
+          },
+          "engine_build_receipt_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/engine_build_receipt.json",
+          "engine_build_receipt_status": "engine_build_receipt_verified",
+          "inputs": [
+            {
+              "elem_type": "UINT8",
+              "has_dynamic": false,
+              "name": "mean_8",
+              "shape": [
+                1,
+                960,
+                1,
+                1
+              ]
+            }
+          ],
+          "inputs_static": true,
+          "onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+          "outputs": [
+            {
+              "elem_type": "FLOAT",
+              "has_dynamic": false,
+              "name": "logits",
+              "shape": [
+                1,
+                1000
+              ]
+            }
+          ],
+          "precision": "uint8_dequant_fp16",
+          "quality_first_identity": {},
+          "requested_precision": "uint8_dequant_fp16",
+          "schema": "onnx-splitpoint/native-trt-meta",
+          "schema_version": 1,
+          "shapes_arg": "",
+          "shapes_policy_effective": "auto_static_omit",
+          "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+          "trt_cache": {
+            "artifact_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+            "case_id": "b135",
+            "compiler_dispatched": false,
+            "identity": "8d10032c953c2564ef46ed6b6eb258ef26190cadd07ae648e295e0d611903a10",
+            "model_id": "source_part2_uint8_dequant_bridge",
+            "outcome": "reused",
+            "reason": "compatible_receipt",
+            "receipt_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/engine_build_receipt.json",
+            "role": "part2",
+            "status": "HIT"
+          },
+          "uint8_cast_bridge": {
+            "boundary_layout": {
+              "applied": false,
+              "effective": "as_input",
+              "requested": "as_input"
+            },
+            "bridge": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache/b135/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+            "bridge_output": "mean_8__dequant_float",
+            "bridge_sha256": "a995acfeb77c3cf9619758f2ede1f1f5cd4392c0394628d1f2ba00e3f81df510",
+            "dequant_output": "mean_8__dequant_float",
+            "input_dtype": "UINT8",
+            "input_name": "mean_8",
+            "input_shape": [
+              1,
+              960,
+              1,
+              1
+            ],
+            "params": {
+              "scale": 0.03917791321873665,
+              "source": "explicit",
+              "zero_point": 9.0
+            },
+            "params_source": "explicit",
+            "replaced_uses": 1,
+            "scale": 0.03917791321873665,
+            "schema": "onnx-splitpoint/uint8-dequant-bridge",
+            "schema_version": 2,
+            "source": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/benchmark_set/b135/source_part2.onnx",
+            "source_sha256": "789cf35875ab925fcab4f8f1d5b8f10959a2e66039cd1b868f11fd326019b7bd",
+            "zero_point": 9.0
+          },
+          "variant": "part2"
+        },
+        "native_trt_meta_payload_sha256": "81466e9f51d009003f488ed7e57405c37cb6f59c537321898429d3565448223f",
+        "native_trt_meta_sha256": "81466e9f51d009003f488ed7e57405c37cb6f59c537321898429d3565448223f",
+        "performance_claims_emitted": false,
+        "preselection": {
+          "backend": "hailo10h_to_trt",
+          "boundary_dtype": "uint8",
+          "boundary_layout": "as_input",
+          "boundary_metadata_file_sha256": "c0f91800f3e2f2324a6a8cd29ebc44a3d478c0037afa29150feee3b3eee9f08e",
+          "boundary_metadata_file_size_bytes": 1062,
+          "boundary_metadata_sha256": "14c3bcddc12b00cac1cabae75cf1514be860e329fe2a3374f238e5fcbf16566b",
+          "boundary_tensor_dtype": "uint8",
+          "boundary_tensor_name": "mean_8",
+          "boundary_tensor_shape": [
+            1,
+            1,
+            960
+          ],
+          "boundary_transform": "uint8_dequant",
+          "canonical_part2_shape": [
+            1,
+            960,
+            1,
+            1
+          ],
+          "case_id": "b135",
+          "case_scope": "any_generated_split_case",
+          "dequant_scale": 0.03917791321873665,
+          "dequant_zero_point": 9.0,
+          "engine_rebuild_allowed_after_quality": false,
+          "hailo_format": "uint8",
+          "letterbox_pad_value": 0,
+          "model_family": "mobilenet",
+          "model_id": "mobilenet_v3_large",
+          "part1_artifact_sha256": "8929b57718f4c35751ea1d2b74eed97332a0582fe956b7c00c32eeb659d1912c",
+          "part1_artifact_size_bytes": 3903488,
+          "policy_sha256": "5f673a36aa36cf49217ebbde011d49cb4193979f019a4f42709ae3c7c8cc4ed8",
+          "precision": "uint8_dequant_fp16",
+          "preprocess_mode": "resize",
+          "quantization_policy": "from_exact_part1_boundary_metadata",
+          "schema": "onnx-splitpoint/native-split-quality-preselection",
+          "schema_version": 1,
+          "selection_sha256": "30560fe7e1b9c7669e4a14086df04b029b8ad087de12648cf716e9b77da65c23",
+          "setup_id": "orin_nx_hailo10_01",
+          "stage2_backend": "native_tensorrt",
+          "task": "classification"
+        },
+        "preselection_sha256": "30560fe7e1b9c7669e4a14086df04b029b8ad087de12648cf716e9b77da65c23",
+        "producer_binding_sha256": "fbeae9f1751aae7f030de840ffe898f9b26ade76d3351b89cebcdc8cd6f5ea6a",
+        "producer_command": [
+          "/home/nx/venvs/hailo10/bin/python3",
+          "/home/nx/splitpoint_runs/legacy_suite/complete_set_20260907_161614_mobilenet_v3_large_orin_nx_hailo10_01/1/suite/splitpoint_runners/native_trt_from_benchmarkset.py",
+          "--benchmark-set",
+          "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/benchmark_set",
+          "--case",
+          "b135",
+          "--variants",
+          "part2",
+          "--precision",
+          "uint8_dequant_fp16",
+          "--out-dir",
+          "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/engine_cache",
+          "--boundary-layout",
+          "as_input",
+          "--workspace-mb",
+          "4096",
+          "--workspace-mode",
+          "auto",
+          "--no-run-smoke",
+          "--json-out",
+          "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/mobilenet_v3_large-a3603057150e0f6d/native_split_quality/orin_nx_hailo10_01/mobilenet_v3_large/b135/hailo10h_to_trt/42791d2f98f7a6d4aa5611d881d7fff03e99015d7dd2ee87046601bf263a9f74/native_trt_summary.json",
+          "--dequant-scale",
+          "0.03917791321873665",
+          "--dequant-zero-point",
+          "9.0",
+          "--no-build"
+        ],
+        "quality_completed": true,
+        "schema": "onnx-splitpoint/native-split-quality-binding",
+        "schema_version": 1,
+        "source_request_sha256": "c1e9c5ed9f3292095722574faf75562c8f8eccae4525e65fa5ad05cabeb1ec35",
+        "source_run_id": "hailo10_to_tensorrt",
+        "trt_build_command_sha256": "a8efc0438eb555cac3e1c5edac232aadbd185e8b8eb705673cf82b7618945c2f",
+        "binding_sha256": "95e04a937ac49a92227bd7821ff50f4a4c1d16f4d9be9844e2598fd9a8b28e0f"
+      },
+      "native_split_quality_binding_sha256": "95e04a937ac49a92227bd7821ff50f4a4c1d16f4d9be9844e2598fd9a8b28e0f",
+      "native_split_quality_eval_run_id": "complete_set_20260907_161614",
+      "native_split_quality_source_run_id": "hailo10h_to_trt",
+      "source_request_sha256": "c1e9c5ed9f3292095722574faf75562c8f8eccae4525e65fa5ad05cabeb1ec35",
+      "native_split_quality_source_request_sha256": "c1e9c5ed9f3292095722574faf75562c8f8eccae4525e65fa5ad05cabeb1ec35",
+      "native_split_quality_central_result_sha256": "d7cf4bef448a032c199e58fef233a408956929dc9851cbaefab98133b0a00210",
+      "native_split_quality_selection_sha256": "1f29f61576c860eba249b1a521f2ecdacd93dd5bd9a9576b6501ed7b00a39d80",
+      "native_split_quality_consumer_attestation": {
+        "schema": "onnx-splitpoint/native-split-quality-consumer-attestation",
+        "schema_version": 1,
+        "status": "local_files_rehashed_and_exact_command_join_verified",
+        "binding_sha256": "95e04a937ac49a92227bd7821ff50f4a4c1d16f4d9be9844e2598fd9a8b28e0f",
+        "command_contract_sha256": "11ef3f47506a4fd1b2498eb8ff8637b567d31d81e93f848685fe90973080776b",
+        "eval_run_id": "complete_set_20260907_161614",
+        "source_run_id": "hailo10h_to_trt",
+        "backend": "hailo10h_to_trt",
+        "model_id": "mobilenet_v3_large",
+        "case_id": "b135",
+        "setup_id": "orin_nx_hailo10_01",
+        "task": "classification",
+        "precision": "uint8_dequant_fp16",
+        "local_artifact_verification_sha256": "e36d43cd7c5dec4e7c8fb8401aec9d6e0b76ffbaab5ad947ae422d4176899239",
+        "semantic_output_manifest_sha256": "b3e4215fdba80136e73c6aaf748d09e81bfa969a8e9710292c3541ff065ab107",
+        "semantic_boundary_manifest_sha256": "2ee30f1c0614dea12749e1be37a484af0887a0ba90dbaba11eebd4f22713a716",
+        "source_request_sha256": "c1e9c5ed9f3292095722574faf75562c8f8eccae4525e65fa5ad05cabeb1ec35",
+        "native_split_quality_source_request_sha256": "c1e9c5ed9f3292095722574faf75562c8f8eccae4525e65fa5ad05cabeb1ec35",
+        "native_split_quality_central_result_sha256": "d7cf4bef448a032c199e58fef233a408956929dc9851cbaefab98133b0a00210",
+        "native_split_quality_selection_sha256": "1f29f61576c860eba249b1a521f2ecdacd93dd5bd9a9576b6501ed7b00a39d80",
+        "attestation_sha256": "f4f57d91aa93eb6689a90e415d0e1e6a60a3b1c481c2ce7abc24f90dad6dbd40"
+      },
+      "native_split_quality_consumer_status": "exact_quality_native_engine_command_and_boundary_match",
+      "native_fifo_output_manifest": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/mobilenet_v3_large/benchmark_set/native_pipeline/b135/hailo10h_to_trt/uint8_dequant_fp16/native_outputs/native_outputs_manifest.json",
+      "native_fifo_boundary_manifest": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/mobilenet_v3_large/benchmark_set/native_pipeline/b135/hailo10h_to_trt/uint8_dequant_fp16/native_fifo_boundary/native_fifo_boundary_manifest.json",
+      "steps": [
+        {
+          "name": "native_producer_e2e",
+          "cmd": [
+            "/home/nx/venvs/hailo10/bin/python",
+            "/home/nx/ONNX-Splitpoint-Tool/scripts/native_hailo10_trt_e2e_from_benchmarkset.py",
+            "--benchmark-set",
+            "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/mobilenet_v3_large/benchmark_set",
+            "--case",
+            "b135",
+            "--precision",
+            "uint8_dequant_fp16",
+            "--frames",
+            "1000",
+            "--warmup",
+            "100",
+            "--repetitions",
+            "3",
+            "--queue-depth",
+            "3",
+            "--inflight",
+            "8",
+            "--preprocess-mode",
+            "auto",
+            "--letterbox-pad-value",
+            "114",
+            "--setup-id",
+            "orin_nx_hailo10_01",
+            "--model-id",
+            "mobilenet_v3_large",
+            "--quantized-inputs",
+            "--eval-run-id",
+            "complete_set_20260907_161614",
+            "--source-run-id",
+            "hailo10h_to_trt",
+            "--native-split-quality-binding",
+            "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/quality_first/consumed_bindings/hailo10h/mobilenet_v3_large/b135.json",
+            "--task",
+            "classification",
+            "--dump-outputs",
+            "--dump-boundary",
+            "--boundary-layout",
+            "memory_nhwc_to_nchw",
+            "--dequant-zero-point",
+            "0.0",
+            "--quantized-outputs",
+            "--engine-build-python",
+            "auto",
+            "--image",
+            "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/mobilenet_v3_large/benchmark_set/resources/validation/classification/val_by_wnid_n500_s20260710/images/n01443537/ILSVRC2012_val_00013623.JPEG"
+          ],
+          "rc": 0,
+          "timed_out": false,
+          "stdout_tail": "{\n  \"ok\": true,\n  \"fps_makespan\": 311.92684212767296,\n  \"paper_fps\": 311.95238532809987,\n  \"producer_impl\": \"hailo10_infermodel_async_fifo\",\n  \"report\": \"/home/nx/native_fifo_evalsets/complete_set_20260907_161614/mobilenet_v3_large/benchmark_set/native_pipeline/b135/hailo10h_to_trt/uint8_dequant_fp16/hailo10_native_fifo_e2e_results.json\",\n  \"error\": \"\"\n}\n",
+          "stderr_tail": ""
+        }
+      ],
+      "completion_tail_ms": 0.0,
+      "postprocess_ms": 0.0,
+      "measurement_boundary": "workers_ready_to_last_completed_trt_frame",
+      "last_completion_source": "native_trt_synchronized_output",
+      "completed_frames": 1000,
+      "completed_work_units": 1000,
+      "postprocess_included": false,
+      "postprocess_completed_frames": 0,
+      "postprocess_completion_verified": false,
+      "task": "classification",
+      "contract_family": "classification_logits",
+      "stage": "classification_logits",
+      "endpoint_contract_complete": true,
+      "endpoint_contract_hash": "3af2122851f19c5bf2b16b9c3ef78a6ba11452db33ff8fb915b76e3461bbcb28"
+    }
+  ],
+  "row_count": 1,
+  "ok_count": 1,
+  "failed_count": 0,
+  "ok": true,
+  "orchestration_status": "ok",
+  "evidence_status": "complete",
+  "failure_reasons": []
+}

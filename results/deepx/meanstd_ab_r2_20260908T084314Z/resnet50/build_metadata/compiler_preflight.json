@@ -1,0 +1,26 @@
+{
+  "compiler_python": "/home/kmika/dx-all-suite/dx-compiler/venv-dx-compiler-local/bin/python",
+  "compiler_overlay": "/home/kmika/dx-all-suite/dx-compiler/pytorch-2.12.0-cu126-overlay",
+  "compiled_architectures": [
+    "sm_50",
+    "sm_60",
+    "sm_70",
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90"
+  ],
+  "cuda_available": true,
+  "cuda_visible_devices": null,
+  "device_capability": [
+    6,
+    1
+  ],
+  "device_index": 0,
+  "device_name": "NVIDIA GeForce GTX 1080 Ti",
+  "torch_cuda_version": "12.6",
+  "torch_module_file": "/home/kmika/dx-all-suite/dx-compiler/pytorch-2.12.0-cu126-overlay/torch/__init__.py",
+  "torch_version": "2.12.0+cu126",
+  "status": "compatible",
+  "reason": "deepx_compiler_cuda_architecture_compatible"
+}

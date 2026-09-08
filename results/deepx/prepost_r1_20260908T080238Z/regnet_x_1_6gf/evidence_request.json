@@ -1,0 +1,524 @@
+{
+  "schema": "deepx-prepost-evidence-smoke/r1",
+  "nonce": "38ad59f7b7b74dc6acb5c7be2b994239",
+  "original_run_id": "complete_set_20260907_161614",
+  "model_id": "regnet_x_1_6gf",
+  "setup_id": "orin_nx_deepx_m1_01",
+  "runtime_venv": "~/venvs/deepx-runtime",
+  "original_full_run": {
+    "backend": "deepx_m1",
+    "benchmark_task": "classification",
+    "contract_path": "deepx/deepx_m1/full/output_contract.json",
+    "dxnn_path": "deepx/deepx_m1/full/model.dxnn",
+    "expected_setup_id": "orin_nx_deepx_m1_01",
+    "full": "deepx_m1",
+    "full_provider": "deepx_m1",
+    "id": "deepx_m1_full",
+    "image_scale": "auto",
+    "measurement_endpoint": "classification_logits",
+    "mini_classification_eval": true,
+    "mini_coco_ap50": false,
+    "physical_identity_descriptors": [
+      {
+        "backend": "deepx_m1",
+        "endpoint_contract_id": "canonical_run_endpoint_v1:deepx_m1_full:classification:full",
+        "endpoint_contract_source": "canonical_run_endpoint_registry_v1",
+        "expected_setup_id": "orin_nx_deepx_m1_01",
+        "global_run_descriptor_sha256": "5f7d9832db3252a2dac4113a13e7292edc9b275df3e8ac3c9ffe3a1d73b190d1",
+        "measurement_endpoint": "classification_logits",
+        "model_id": "regnet_x_1_6gf",
+        "quality_endpoint": "classification_logits",
+        "requested": true,
+        "run_id": "deepx_m1_full",
+        "scope_source": "effective_plan_physical_descriptor",
+        "success_required": false,
+        "task": "classification",
+        "terminal_outcome_required": true,
+        "variant": "full"
+      }
+    ],
+    "provider": "deepx_m1",
+    "quality_endpoint": "classification_logits",
+    "quality_gate_policy_sha256": "58bf34c5760ed51e4ff35faee4055891caf624b2722cb375df9d419863efa9c4",
+    "setup_id": "orin_nx_deepx_m1_01",
+    "stage1": {
+      "backend": "deepx_m1",
+      "type": "deepx"
+    },
+    "stage2": {
+      "backend": "deepx_m1",
+      "type": "deepx"
+    },
+    "task": "classification",
+    "task_quality_gate": {
+      "canonical_reference": "canonical_full_onnx",
+      "claim_eligible": null,
+      "classification": {
+        "guardrails": {
+          "top5_accuracy_margin": 0.01
+        },
+        "non_inferiority_margin": 0.01,
+        "primary_metric": "top1_accuracy"
+      },
+      "dataset_tier": "screening",
+      "detection": {
+        "guardrails": {
+          "ap50_margin": 0.01,
+          "ap75_margin": 0.01
+        },
+        "non_inferiority_margin": 0.01,
+        "primary_metric": "coco_ap_50_95"
+      },
+      "diagnostic_only": false,
+      "enforcement": {
+        "claim_eligibility": "complete_valid_evidence_only",
+        "metric_threshold_miss": "enforced_quality_decision",
+        "native_energy_after_technical_error": "collect_raw_quality_unqualified",
+        "technical_quality_error": "hard_fail"
+      },
+      "frozen_before_final_campaign": false,
+      "legacy_point_estimate_eligible_for_ranking": false,
+      "name": "task_quality_development_500",
+      "native_contract": {
+        "detection_self_reference": {
+          "class_aware": true,
+          "confidence_threshold": 0.25,
+          "denominator": "reference_detections",
+          "iou_threshold": 0.5,
+          "min_mean_matched_iou": 0.85,
+          "min_reference_match_ratio": 0.8,
+          "policy_id": "class_aware_iou50_postnms_v2"
+        },
+        "detection_self_reference_min_match_ratio": 0.8,
+        "numerical_similarity_required_for_claim": true,
+        "self_reference_counts_as_task_accuracy": false
+      },
+      "profile_id": "task_quality_development_500",
+      "schema": "onnx-splitpoint/task-quality-policy",
+      "schema_version": 3,
+      "screening_eligible_for_ranking": false,
+      "statistics": {
+        "bootstrap_repetitions": 500,
+        "confidence_level": 0.95,
+        "decision": "lower_one_sided_bound",
+        "execution_location": "central_management",
+        "method": "paired_bootstrap",
+        "seed": 20260710,
+        "workers": 4
+      }
+    },
+    "type": "deepx",
+    "validation_budget_authoritative": true,
+    "validation_images": "resources/validation/classification/val_by_wnid_n500_s20260710",
+    "validation_items_requested": 500,
+    "validation_manifest": "/home/kmika/.onnx_splitpoint_tool/final_datasets/manifests/imagenet_val_manifest.json",
+    "validation_max_images": 500,
+    "validation_reference_mode": "auto",
+    "validation_source_kind": "content_addressed_manifest",
+    "variants": [
+      "full"
+    ]
+  },
+  "input_hw": [
+    224,
+    224
+  ],
+  "local_onnx": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/models/regnet_x_1_6gf.onnx",
+  "expected_onnx_sha256": "fba2c5b46ff63bd4b4bc65f1cf60fd86fa84e16e7432fcaa60d5efbd2c99b8f3",
+  "expected_dxnn_sha256": "b33734218e188e6b79de16f2cb714859a595d7e24a17ad81ef2efce02db1f1a6",
+  "onnx_output_names": [
+    "logits"
+  ],
+  "samples": [
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n02895154/ILSVRC2012_val_00000080.JPEG",
+      "image_id": "ILSVRC2012_val_00000080.JPEG",
+      "label_id": 461,
+      "sha256": "f7b5059cb7db6963a9029b978a104da43d0125f30ba3489bc13e0ee5db28e4fa",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00000080.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n03710193/ILSVRC2012_val_00000152.JPEG",
+      "image_id": "ILSVRC2012_val_00000152.JPEG",
+      "label_id": 637,
+      "sha256": "ec34e41072057ba7288532da8818cea460a6b35081655071e23fd966846c460a",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00000152.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n03125729/ILSVRC2012_val_00000210.JPEG",
+      "image_id": "ILSVRC2012_val_00000210.JPEG",
+      "label_id": 516,
+      "sha256": "a5dae0191593b211ce2f472d0f70aae7e382682384d0a418d8cd8bfa38680eaf",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00000210.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n04591157/ILSVRC2012_val_00000285.JPEG",
+      "image_id": "ILSVRC2012_val_00000285.JPEG",
+      "label_id": 906,
+      "sha256": "bcc4379a3ee70e05703ccfbdf3d265f7d29d8c2f2c23d5cde8fe384d557e9b29",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00000285.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n02951358/ILSVRC2012_val_00000347.JPEG",
+      "image_id": "ILSVRC2012_val_00000347.JPEG",
+      "label_id": 472,
+      "sha256": "cc92faeae7903a7fb73a1c3f976dffad6d6bacec8570bd46b652262d51fa5e29",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00000347.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n02011460/ILSVRC2012_val_00000390.JPEG",
+      "image_id": "ILSVRC2012_val_00000390.JPEG",
+      "label_id": 133,
+      "sha256": "9c84ab4d72d7adbecf37adc82a039f446e7be4d1da042bb2fdf014a4dbb1ec6a",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00000390.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n01773797/ILSVRC2012_val_00000395.JPEG",
+      "image_id": "ILSVRC2012_val_00000395.JPEG",
+      "label_id": 74,
+      "sha256": "ae9ca54dd30964d4854d9d7d8aa750ff72a4666b74ffce9a099d9544751a1625",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00000395.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n03529860/ILSVRC2012_val_00000410.JPEG",
+      "image_id": "ILSVRC2012_val_00000410.JPEG",
+      "label_id": 598,
+      "sha256": "7df285f8043557358d25b81d50f919f4c1faa378fc9bb13403713f5875b3b392",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00000410.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n03920288/ILSVRC2012_val_00000465.JPEG",
+      "image_id": "ILSVRC2012_val_00000465.JPEG",
+      "label_id": 712,
+      "sha256": "1671dac1c1e76dbe21ca8cc8334d43cae57b75a027b99930fba6a9bd0090c260",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00000465.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n04008634/ILSVRC2012_val_00000515.JPEG",
+      "image_id": "ILSVRC2012_val_00000515.JPEG",
+      "label_id": 744,
+      "sha256": "5d4e6ea9fa74911550bd4d22db2e9b0adb0f348ddce6c233c90af5b43c8e0f3a",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00000515.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n04476259/ILSVRC2012_val_00000526.JPEG",
+      "image_id": "ILSVRC2012_val_00000526.JPEG",
+      "label_id": 868,
+      "sha256": "c80e50766003ee2fc17a82007b98b7f2687942cb8783e16f7fd25f471f4510bb",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00000526.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n13040303/ILSVRC2012_val_00000705.JPEG",
+      "image_id": "ILSVRC2012_val_00000705.JPEG",
+      "label_id": 994,
+      "sha256": "645608078bfa7a6f98b6d27ef85a4cb8d16cfb67adb7a9c4943790f33c0d2b78",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00000705.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n01847000/ILSVRC2012_val_00000744.JPEG",
+      "image_id": "ILSVRC2012_val_00000744.JPEG",
+      "label_id": 97,
+      "sha256": "4f7f16fba8e8261dc06247925471b6e87cedb96914190f6f20aeeb769fc54c41",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00000744.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n04252225/ILSVRC2012_val_00001020.JPEG",
+      "image_id": "ILSVRC2012_val_00001020.JPEG",
+      "label_id": 803,
+      "sha256": "d5ab9b3cbdb0c66146c7785a5ecd1f7cf17ed0ba28cd170bcb8df8955fa868e6",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00001020.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n02356798/ILSVRC2012_val_00001237.JPEG",
+      "image_id": "ILSVRC2012_val_00001237.JPEG",
+      "label_id": 335,
+      "sha256": "802b3e5c7e97b8590a9569a3a5f554533d52667beef5fd1303cd432cebd8405d",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00001237.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n13054560/ILSVRC2012_val_00001362.JPEG",
+      "image_id": "ILSVRC2012_val_00001362.JPEG",
+      "label_id": 997,
+      "sha256": "3b9f93320f6c3e44b627da1428b2b302bdffa7cd672d74c9920f60c82b2ff00e",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00001362.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n04604644/ILSVRC2012_val_00001427.JPEG",
+      "image_id": "ILSVRC2012_val_00001427.JPEG",
+      "label_id": 912,
+      "sha256": "297b0c289f2d679588704d5fcdd0468bc6ad4885156bfa7414fda61a9687727e",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00001427.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n03450230/ILSVRC2012_val_00001627.JPEG",
+      "image_id": "ILSVRC2012_val_00001627.JPEG",
+      "label_id": 578,
+      "sha256": "9916331b4108a5c93ca6a3eded52bf7fde7046d631cca4461a908d035044e1c3",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00001627.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n04540053/ILSVRC2012_val_00001680.JPEG",
+      "image_id": "ILSVRC2012_val_00001680.JPEG",
+      "label_id": 890,
+      "sha256": "44f00a2b478226c9cd83e13b6c2c3099c0cc9971c4acb2a8e125dbf96430338b",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00001680.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n03290653/ILSVRC2012_val_00001694.JPEG",
+      "image_id": "ILSVRC2012_val_00001694.JPEG",
+      "label_id": 548,
+      "sha256": "be2dad2e8891629b5f14579ca115be98fa0a67c3cc835be5bad54ac9de2c5b56",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00001694.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n03590841/ILSVRC2012_val_00001707.JPEG",
+      "image_id": "ILSVRC2012_val_00001707.JPEG",
+      "label_id": 607,
+      "sha256": "579099f56e4c712b1222a2929d8cd86be6098dd04ac5303eebc6f8dff3bc810a",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00001707.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n04344873/ILSVRC2012_val_00001811.JPEG",
+      "image_id": "ILSVRC2012_val_00001811.JPEG",
+      "label_id": 831,
+      "sha256": "5cfc95ffad20c05a9bb62260e214568c7e1681dbc3393b0192e1273b134f05a3",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00001811.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n12267677/ILSVRC2012_val_00002139.JPEG",
+      "image_id": "ILSVRC2012_val_00002139.JPEG",
+      "label_id": 988,
+      "sha256": "39e8b280195ec1d699b8dd027cd20744615c4e9cab8bed6e8cb08d37ade1d989",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00002139.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n02804610/ILSVRC2012_val_00002180.JPEG",
+      "image_id": "ILSVRC2012_val_00002180.JPEG",
+      "label_id": 432,
+      "sha256": "83ecfb6f86410cbd1655643e1a7f9c3371aed09a887374d5a96b4583cca5b928",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00002180.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n01530575/ILSVRC2012_val_00002191.JPEG",
+      "image_id": "ILSVRC2012_val_00002191.JPEG",
+      "label_id": 10,
+      "sha256": "b5db38c582211abb4b317677fa158debb70f03533d6af51f86e6d138ea60b975",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00002191.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n09246464/ILSVRC2012_val_00002337.JPEG",
+      "image_id": "ILSVRC2012_val_00002337.JPEG",
+      "label_id": 972,
+      "sha256": "6c7dfdcb04281180a9355760a3b2afbb1fe83c58c9f50156a444fb025e0abf3d",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00002337.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n03476991/ILSVRC2012_val_00002442.JPEG",
+      "image_id": "ILSVRC2012_val_00002442.JPEG",
+      "label_id": 585,
+      "sha256": "f2b5b1116f6013a3469f0a5af1ae94106d8e6b1e8f7b0b7202ebb847d9de96fb",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00002442.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n02834397/ILSVRC2012_val_00002482.JPEG",
+      "image_id": "ILSVRC2012_val_00002482.JPEG",
+      "label_id": 443,
+      "sha256": "67e8a1a2fd76a397ae8c44c8b25be2e6f652c19a24aeec9fc795b352216fc06d",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00002482.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n04136333/ILSVRC2012_val_00002581.JPEG",
+      "image_id": "ILSVRC2012_val_00002581.JPEG",
+      "label_id": 775,
+      "sha256": "8ba9154e2130065ec2b68383228c5f96c276f1533addc8b2c104736dfaf271c2",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00002581.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n04560804/ILSVRC2012_val_00002597.JPEG",
+      "image_id": "ILSVRC2012_val_00002597.JPEG",
+      "label_id": 899,
+      "sha256": "f2a233617f41b173dbf6398d5e977479dde363b850886bd68208be743d6517a7",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00002597.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n02408429/ILSVRC2012_val_00002726.JPEG",
+      "image_id": "ILSVRC2012_val_00002726.JPEG",
+      "label_id": 346,
+      "sha256": "71112fae76f26aec217fff481801c23c62493a18baab9d66c0ad111bf88a2b64",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00002726.JPEG"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/regnet_x_1_6gf/benchmark_set/legacy_suite/resources/validation/classification/val_by_wnid_n500_s20260710/images/n02099267/ILSVRC2012_val_00002764.JPEG",
+      "image_id": "ILSVRC2012_val_00002764.JPEG",
+      "label_id": 205,
+      "sha256": "6e1aad1604f05dd2351bbf18f1047ad2dde700ce8f4b38ead5711d16ddd61e8e",
+      "original_content_hash_verified": true,
+      "image": "images/ILSVRC2012_val_00002764.JPEG"
+    }
+  ],
+  "hardware_samples": 16,
+  "calibration_samples": [
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01443537/n01443537_3614.JPEG",
+      "image_id": "n01443537_3614.JPEG",
+      "label_id": 1,
+      "sha256": "148568c435635fa8dcf33617a70ba8c39f519e317b25c6883acb5998c52d0e25",
+      "original_content_hash_verified": true,
+      "image": "calibration/n01443537_3614.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01484850/n01484850_276.JPEG",
+      "image_id": "n01484850_276.JPEG",
+      "label_id": 2,
+      "sha256": "088d13ea656d0143b5ce8d4f8ff8e776c47ac4b8408c9b88c45d8860ade2fa3b",
+      "original_content_hash_verified": true,
+      "image": "calibration/n01484850_276.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01494475/n01494475_17410.JPEG",
+      "image_id": "n01494475_17410.JPEG",
+      "label_id": 4,
+      "sha256": "db2aafd1e679c4a45eb07ea5ac6a3c0ed74548f908756a64a212d4b3c6a75b86",
+      "original_content_hash_verified": true,
+      "image": "calibration/n01494475_17410.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01496331/n01496331_3543.JPEG",
+      "image_id": "n01496331_3543.JPEG",
+      "label_id": 5,
+      "sha256": "9d4b8cef011b541c420c35288c33b8f50b14c01133abee1d05458b7f01a4bd7b",
+      "original_content_hash_verified": true,
+      "image": "calibration/n01496331_3543.JPEG"
+    }
+  ],
+  "calibration_config": {
+    "inputs": {
+      "input": [
+        1,
+        3,
+        224,
+        224
+      ]
+    },
+    "calibration_num": 500,
+    "calibration_method": "ema",
+    "default_loader": {
+      "dataset_path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710",
+      "file_extensions": [
+        "jpg",
+        "jpeg",
+        "png",
+        "JPG",
+        "JPEG",
+        "PNG"
+      ],
+      "preprocessings": [
+        {
+          "resize": {
+            "width": 224,
+            "height": 224
+          }
+        },
+        {
+          "div": {
+            "x": 255.0
+          }
+        },
+        {
+          "convertColor": {
+            "form": "BGR2RGB"
+          }
+        },
+        {
+          "transpose": {
+            "axis": [
+              2,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "expandDim": {
+            "axis": 0
+          }
+        }
+      ]
+    }
+  },
+  "export_preprocess": {
+    "antialias": [
+      true
+    ],
+    "crop_size": [
+      224
+    ],
+    "interpolation": "BILINEAR",
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "resize_size": [
+      232
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "split": {
+    "status": "ready",
+    "case_id": "b132",
+    "sha256": "d805160a5529b7ca9f62448c2d6f50303d59168e81350600389f294296e481dc",
+    "local_dxnn": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/native_producers/deepx/regnet_x_1_6gf/benchmark_set/b132/deepx/deepx_m1/part1/model.dxnn",
+    "output_names": [
+      "mean"
+    ],
+    "checked": [
+      {
+        "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/native_producers/deepx/regnet_x_1_6gf/benchmark_set/b132/deepx/deepx_m1/part1/model.dxnn",
+        "sha256": "d805160a5529b7ca9f62448c2d6f50303d59168e81350600389f294296e481dc",
+        "size_bytes": 79942131
+      }
+    ],
+    "source_onnx_sha256": "0ad1b5bca67360f83178c9d69192d999c9eb9d32cde80598ccf31e10a45a2a72",
+    "local_part1": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/native_producers/deepx/regnet_x_1_6gf/benchmark_set/b132/regnet_x_1_6gf_part1_b132.onnx",
+    "local_part2": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/native_producers/deepx/regnet_x_1_6gf/benchmark_set/b132/regnet_x_1_6gf_part2_b132.onnx",
+    "part2_sha256_observed": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d"
+  },
+  "diagnostic_only": true,
+  "counts_as_benchmark": false
+}

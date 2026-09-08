@@ -1,0 +1,286 @@
+{
+  "ok": true,
+  "output_manifest": "/home/nx/native_fifo_evalsets/v27926_acceptance_d_yolo11l_b003_deepx_gpu_20260907_101443/yolo11l/benchmark_set/native_full_outputs/model=yolo11l/backend=native_full_tensorrt/setup=orin_nx_deepx_m1_01/comparison=deepx/native_full_outputs_manifest.json",
+  "input_manifest": "/home/nx/native_fifo_evalsets/v27926_acceptance_d_yolo11l_b003_deepx_gpu_20260907_101443/yolo11l/benchmark_set/native_full_outputs/model=yolo11l/backend=native_full_tensorrt/setup=orin_nx_deepx_m1_01/comparison=deepx/native_full_input_manifest.json",
+  "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/yolo11l-b479a219175b061f/full/f0fcdf56a4ac24d87ec30c627170492ccad9db80486ec5694df6de65c1b3d147/fp16/full_fp16.engine",
+  "quality_first_producer_identity_sha256": "c42b4b9f31fded2e9e10247d0a614e31cc5db042a20f02dd66de5c4129883330",
+  "frozen_host_postprocess_contract": {
+    "schema": "onnx-splitpoint/frozen-native-detection-postprocess",
+    "schema_version": 1,
+    "task": "detection",
+    "source_contract_family": "decoded_pre_nms",
+    "output_contract_family": "decoded_nms",
+    "model_id": "yolo11l",
+    "model_family": "yolo11",
+    "decoder_id": "ultralytics_decoded_classaware_nms_v1",
+    "decoder_format": "ultralytics_decoded",
+    "multiscale_activation_mode": null,
+    "nms_implementation": "numpy_class_aware_nms_xyxy_v1",
+    "class_aware": true,
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45,
+    "max_detections": 300,
+    "input_hw": [
+      640,
+      640
+    ],
+    "original_wh": [
+      640,
+      483
+    ],
+    "raw_output_tensor_signature": {
+      "tensor_count": 1,
+      "tensors": [
+        {
+          "index": 0,
+          "name": "output0",
+          "rank": 3,
+          "shape": [
+            1,
+            84,
+            8400
+          ],
+          "dtype": "float32"
+        }
+      ]
+    },
+    "implementation_artifacts": {
+      "native_detection_postprocess": {
+        "relative_path": "onnx_splitpoint_tool/native_detection_postprocess.py",
+        "sha256": "00f0ad986c8021b864ddff3f7697dfc50e93fda8e9adf4e243fcd2f6b2164eed"
+      },
+      "yolo_harness": {
+        "relative_path": "onnx_splitpoint_tool/runners/harness/yolo.py",
+        "sha256": "31657e2717a8cb6cfda53e7de8e06b7b2286ecb430070811546fdec65327a17a"
+      },
+      "harness_base": {
+        "relative_path": "onnx_splitpoint_tool/runners/harness/base.py",
+        "sha256": "938b3713f32e412dd1f57fcc07a397fa1f3b26ed30afbc945d22f1bb082db06c"
+      }
+    },
+    "execution_policy": "one_serial_host_tail_per_successful_accelerator_output",
+    "performance_scope": "prepared_input_to_post_nms_detections",
+    "energy_scope": "same_frozen_prepared_input_to_post_nms_hotloop",
+    "host_postprocess_frozen": true,
+    "postprocess_included": true,
+    "invariant_identity": {
+      "schema": "onnx-splitpoint/frozen-native-detection-postprocess",
+      "schema_version": 1,
+      "task": "detection",
+      "source_contract_family": "decoded_pre_nms",
+      "output_contract_family": "decoded_nms",
+      "model_id": "yolo11l",
+      "model_family": "yolo11",
+      "decoder_id": "ultralytics_decoded_classaware_nms_v1",
+      "decoder_format": "ultralytics_decoded",
+      "nms_implementation": "numpy_class_aware_nms_xyxy_v1",
+      "class_aware": true,
+      "confidence_threshold": 0.25,
+      "iou_threshold": 0.45,
+      "max_detections": 300,
+      "input_hw": [
+        640,
+        640
+      ],
+      "raw_output_tensor_signature": {
+        "tensor_count": 1,
+        "tensors": [
+          {
+            "index": 0,
+            "name": "output0",
+            "rank": 3,
+            "shape": [
+              1,
+              84,
+              8400
+            ],
+            "dtype": "float32"
+          }
+        ]
+      },
+      "implementation_artifacts": {
+        "native_detection_postprocess": {
+          "relative_path": "onnx_splitpoint_tool/native_detection_postprocess.py",
+          "sha256": "00f0ad986c8021b864ddff3f7697dfc50e93fda8e9adf4e243fcd2f6b2164eed"
+        },
+        "yolo_harness": {
+          "relative_path": "onnx_splitpoint_tool/runners/harness/yolo.py",
+          "sha256": "31657e2717a8cb6cfda53e7de8e06b7b2286ecb430070811546fdec65327a17a"
+        },
+        "harness_base": {
+          "relative_path": "onnx_splitpoint_tool/runners/harness/base.py",
+          "sha256": "938b3713f32e412dd1f57fcc07a397fa1f3b26ed30afbc945d22f1bb082db06c"
+        }
+      },
+      "execution_policy": "one_serial_host_tail_per_successful_accelerator_output",
+      "performance_scope": "prepared_input_to_post_nms_detections",
+      "energy_scope": "same_frozen_prepared_input_to_post_nms_hotloop",
+      "host_postprocess_frozen": true,
+      "postprocess_included": true
+    },
+    "invariant_contract_sha256": "dfa9a53e5521a39db02061457d8d54c5a1ab9a13908be36e9b8504e68ee3089a",
+    "contract_sha256": "ebe805093de3ca6397966ac9c187ed8e0e45697337b6b09b7bee159f9ee0dbbe"
+  },
+  "frozen_host_postprocess_contract_sha256": "ebe805093de3ca6397966ac9c187ed8e0e45697337b6b09b7bee159f9ee0dbbe",
+  "frozen_host_postprocess_result": {
+    "task": "detection",
+    "contract_family": "decoded_nms",
+    "decoder_format": "ultralytics_decoded",
+    "coordinate_space": "original_image_xyxy_pixels",
+    "record_schema": "xyxy_score_class_id_v1",
+    "canonical_sort_policy": "score_desc_class_id_asc_xyxy_lexicographic_v1",
+    "detection_count": 8,
+    "detections_sha256": "c0217ed4825dbb762f82d462202966943b245b832a4e456052e4135040e18c73",
+    "detections": [
+      {
+        "class_id": 59,
+        "score": 0.9420797824859619,
+        "x1": 0.625,
+        "y1": 272.9375,
+        "x2": 400.25,
+        "y2": 477.8125
+      },
+      {
+        "class_id": 58,
+        "score": 0.8895261287689209,
+        "x1": 342.0625,
+        "y1": 213.5625,
+        "x2": 430.40625,
+        "y2": 351.625
+      },
+      {
+        "class_id": 56,
+        "score": 0.8697161674499512,
+        "x1": 247.0,
+        "y1": 231.9375,
+        "x2": 348.09375,
+        "y2": 318.21875
+      },
+      {
+        "class_id": 58,
+        "score": 0.7704628705978394,
+        "x1": 183.625,
+        "y1": 131.375,
+        "x2": 242.421875,
+        "y2": 229.0
+      },
+      {
+        "class_id": 39,
+        "score": 0.5832034945487976,
+        "x1": 97.328125,
+        "y1": 192.0703125,
+        "x2": 114.3828125,
+        "y2": 232.84375
+      },
+      {
+        "class_id": 75,
+        "score": 0.4167965054512024,
+        "x1": 205.3671875,
+        "y1": 205.421875,
+        "x2": 232.078125,
+        "y2": 228.796875
+      },
+      {
+        "class_id": 73,
+        "score": 0.3867633044719696,
+        "x1": 427.8125,
+        "y1": 236.15625,
+        "x2": 553.0625,
+        "y2": 288.90625
+      },
+      {
+        "class_id": 73,
+        "score": 0.27513012290000916,
+        "x1": 430.625,
+        "y1": 189.828125,
+        "x2": 554.9375,
+        "y2": 227.7109375
+      }
+    ],
+    "completed_result_artifact": {
+      "schema": "onnx-splitpoint/frozen-completed-detection-result-artifact",
+      "schema_version": 1,
+      "record_schema": "xyxy_score_class_id_v1",
+      "coordinate_space": "original_image_xyxy_pixels",
+      "sort_policy": "score_desc_class_id_asc_xyxy_lexicographic_v1",
+      "detections": [
+        {
+          "class_id": 59,
+          "score": 0.9420797824859619,
+          "x1": 0.625,
+          "y1": 272.9375,
+          "x2": 400.25,
+          "y2": 477.8125
+        },
+        {
+          "class_id": 58,
+          "score": 0.8895261287689209,
+          "x1": 342.0625,
+          "y1": 213.5625,
+          "x2": 430.40625,
+          "y2": 351.625
+        },
+        {
+          "class_id": 56,
+          "score": 0.8697161674499512,
+          "x1": 247.0,
+          "y1": 231.9375,
+          "x2": 348.09375,
+          "y2": 318.21875
+        },
+        {
+          "class_id": 58,
+          "score": 0.7704628705978394,
+          "x1": 183.625,
+          "y1": 131.375,
+          "x2": 242.421875,
+          "y2": 229.0
+        },
+        {
+          "class_id": 39,
+          "score": 0.5832034945487976,
+          "x1": 97.328125,
+          "y1": 192.0703125,
+          "x2": 114.3828125,
+          "y2": 232.84375
+        },
+        {
+          "class_id": 75,
+          "score": 0.4167965054512024,
+          "x1": 205.3671875,
+          "y1": 205.421875,
+          "x2": 232.078125,
+          "y2": 228.796875
+        },
+        {
+          "class_id": 73,
+          "score": 0.3867633044719696,
+          "x1": 427.8125,
+          "y1": 236.15625,
+          "x2": 553.0625,
+          "y2": 288.90625
+        },
+        {
+          "class_id": 73,
+          "score": 0.27513012290000916,
+          "x1": 430.625,
+          "y1": 189.828125,
+          "x2": 554.9375,
+          "y2": 227.7109375
+        }
+      ]
+    },
+    "completed_result_artifact_sha256": "c2d7b5dac7b7deb814b198b80b188bf08822b86cbc1f26ac5bf92ceb738999ab",
+    "postprocess_contract_sha256": "ebe805093de3ca6397966ac9c187ed8e0e45697337b6b09b7bee159f9ee0dbbe"
+  },
+  "frozen_decoded_nms_normalization_contract": {},
+  "frozen_decoded_nms_normalization_contract_sha256": "",
+  "frozen_decoded_nms_normalization_result": {},
+  "backend": "native_full_tensorrt",
+  "model": "yolo11l",
+  "setup_id": "orin_nx_deepx_m1_01",
+  "comparison_backend": "deepx",
+  "task": "detection",
+  "image": "/home/nx/native_fifo_evalsets/v27926_acceptance_d_yolo11l_b003_deepx_gpu_20260907_101443/yolo11l/benchmark_set/resources/validation/detection/val2017_n500_s20260710/000000000632.jpg",
+  "image_sha256": "a4cd7f45ac1ce27eaafb254b23af7c0b18a064be08870ceaaf03b2147f2ce550"
+}

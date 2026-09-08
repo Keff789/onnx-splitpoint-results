@@ -1,0 +1,51 @@
+{
+  "schema": "onnx-splitpoint/native-producer-e2e-eval-summary",
+  "schema_version": 2,
+  "root": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614",
+  "backend": "deepx",
+  "analysis_tag": "deepx_yolo26m_selected_single_part2_input",
+  "performance_repetitions": 3,
+  "rows": [
+    {
+      "backend": "deepx",
+      "model": "yolo26m",
+      "case": "b398",
+      "precision": "float32_layout_fp16",
+      "ok": false,
+      "status": "missing_deepx_part1_artifact",
+      "failure_reason": "missing_deepx_part1_artifact:/home/nx/native_fifo_evalsets/complete_set_20260907_161614/yolo26m/benchmark_set/b398/deepx/deepx_m1/part1/model.dxnn",
+      "status_detail": "missing_deepx_part1_artifact:/home/nx/native_fifo_evalsets/complete_set_20260907_161614/yolo26m/benchmark_set/b398/deepx/deepx_m1/part1/model.dxnn",
+      "error": "missing_deepx_part1_artifact:/home/nx/native_fifo_evalsets/complete_set_20260907_161614/yolo26m/benchmark_set/b398/deepx/deepx_m1/part1/model.dxnn",
+      "returncode": null,
+      "rc": null,
+      "timed_out": false,
+      "stdout_tail": "",
+      "stderr_tail": "",
+      "fps_makespan": null,
+      "paper_fps": null,
+      "handoff_ms": null,
+      "p1_ms": null,
+      "p2_run_ms": null,
+      "producer_ready": false,
+      "consumer_ready": false,
+      "report": "",
+      "steps": [
+        {
+          "name": "deepx_part1_preflight",
+          "rc": 2,
+          "artifact": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/yolo26m/benchmark_set/b398/deepx/deepx_m1/part1/model.dxnn",
+          "status": "missing"
+        }
+      ]
+    }
+  ],
+  "row_count": 1,
+  "ok_count": 0,
+  "failed_count": 1,
+  "ok": false,
+  "orchestration_status": "failed",
+  "evidence_status": "unavailable",
+  "failure_reasons": [
+    "missing_deepx_part1_artifact:/home/nx/native_fifo_evalsets/complete_set_20260907_161614/yolo26m/benchmark_set/b398/deepx/deepx_m1/part1/model.dxnn"
+  ]
+}

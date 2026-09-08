@@ -1,0 +1,22 @@
+{
+  "archive": "/home/kmika/Downloads/ONNX-Splitpoint-Tool_v2.79.29_COMPLETE_DELIVERY_BUNDLE/ONNX-Splitpoint-Tool_v2.79.29_SOURCE.zip",
+  "archive_sha256": "4b4a4718f436b4ea355e1f069f648797517921f4c7737ed5a12db0f8cb964bcd",
+  "archive_size_bytes": 9232009,
+  "checks": {
+    "archive_comment_empty": true,
+    "archive_exists": true,
+    "content_matches_source": true,
+    "crc_clean": true,
+    "deterministic_metadata": true,
+    "member_names_unique": true,
+    "member_order_and_set": true
+  },
+  "manifest_file_count": 1409,
+  "member_count": 1411,
+  "ok": true,
+  "package_version": "2.79.29",
+  "prefix": "ONNX-Splitpoint-Tool_v2.79.29",
+  "schema": "onnx-splitpoint/source-release-verification",
+  "schema_version": 1,
+  "workflow_version": "v2.79.29-deepx-prepared-full-without-opencv"
+}

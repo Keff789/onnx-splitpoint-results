@@ -1,0 +1,595 @@
+{
+  "enabled": true,
+  "status": "diagnostic_pass",
+  "diagnostic_only": true,
+  "counts_as_benchmark": false,
+  "engine_call_count": 2,
+  "diagnostic_phase": "untimed_completion_probe",
+  "model_id": "yolo11l",
+  "setup_id": "orin_nx_deepx_m1_01",
+  "input_size": 640,
+  "image": "/tmp/onnx-v27929-full-probe-wOHUJBaU8p/suite/resources/validation/detection/val2017_n500_s20260710/000000212226.jpg",
+  "image_source": "explicit_prepared_feed_image",
+  "input_contract": {
+    "artifact_kind": "dxnn",
+    "artifact_path": "/home/kmika/Models/BackendArtifacts/deepx/deepx_m1_full_f0fcdf56a4ac24d8_958dacf708b58fc3/model.dxnn",
+    "artifact_sha256": "045c40d2250ab528822ef83c37c9842bb1a85bb0ca212d8dba20278ae21b797e",
+    "artifact_size_bytes": 54112354,
+    "backend": "deepx_m1",
+    "build_onnx_sha256": "f0fcdf56a4ac24d87ec30c627170492ccad9db80486ec5694df6de65c1b3d147",
+    "cache_contract_sha256": null,
+    "cache_key": "deepx_m1_full_f0fcdf56a4ac24d8_958dacf708b58fc3",
+    "calibration_manifest_identity_sha256": null,
+    "classification_preprocessing": "not_applicable",
+    "compiler_identity_sha256": null,
+    "contract_complete_enough_for_reports": true,
+    "contract_family": "decoded_pre_nms",
+    "endpoint_contract_complete_enough_for_quality": true,
+    "endpoint_mode": "decoded_pre_nms",
+    "endpoint_semantic_attestation": {
+      "schema": "onnx-splitpoint/deepx-endpoint-semantic-attestation",
+      "schema_version": 1,
+      "status": "attested",
+      "pass": true,
+      "reason": "authoritative_recorded_output_contract_bound",
+      "model_id": "yolo11l",
+      "backend": "deepx_m1",
+      "variant": "full",
+      "endpoint_mode": "decoded_pre_nms",
+      "host_tail_required": true,
+      "postprocessing_required": true,
+      "source_endpoint_semantics": "decoded_pre_nms",
+      "source_endpoint_has_integrated_nms": false,
+      "authoritative_contract": {
+        "artifact_path": "",
+        "backend": "deepx_m1",
+        "contract_family": "decoded_pre_nms",
+        "contract_status": "recorded",
+        "endpoint_mode": "decoded_pre_nms",
+        "full_end_node_names": [],
+        "host_tail_required": true,
+        "model_id": "yolo11l",
+        "output_format": "ultralytics_decoded",
+        "postprocessing_required": true,
+        "requires_external_postprocess": true,
+        "schema": "onnx-splitpoint/output-contract",
+        "schema_version": 1,
+        "source_endpoint_semantics": "decoded_pre_nms",
+        "source_onnx_detection_endpoint": {
+          "multiscale_raw_head": false,
+          "output_shapes": [
+            [
+              1,
+              84,
+              8400
+            ]
+          ],
+          "sidecar_status": "onnx_sha256_mismatch",
+          "stage": "decoded_pre_nms"
+        },
+        "source_onnx_multiscale_raw_head": false,
+        "stage": "decoded_pre_nms",
+        "task": "detection",
+        "variant": "full",
+        "warning": "Do not compare a pre-NMS detection endpoint as if it were decoded/NMS output."
+      },
+      "authoritative_contract_sha256": "c57830b8f650dbe68c443b5379c2694580dc705f0921d0ca676240f069665f5f",
+      "source_path": "/tmp/onnx-v27929-full-probe-wOHUJBaU8p/suite/output_contracts.json",
+      "source_file_sha256": "d5eff8720b9a4c2237bb717682cd6f75f2f31c022f11de06eae6d1fd05363246",
+      "stage": "decoded_pre_nms",
+      "output_format": "ultralytics_decoded",
+      "declared_output_semantics": "xywh_class_scores_pre_nms",
+      "semantic_attestation_policy": "recorded_endpoint_plus_runtime_structure_validation"
+    },
+    "full_cache_contract_mode": "legacy_implicit",
+    "host_tail_required": true,
+    "input": {
+      "classification_preprocessing": "not_applicable",
+      "color_space": "RGB",
+      "contract_source": "task_bound_dxcom_image_loader_preprocessing",
+      "dtype": "uint8",
+      "embedded_numeric_path": "dxcom_div255_detection_default",
+      "layout": "HWC",
+      "letterbox_pad_value": 114,
+      "letterbox_pad_value_effective": 114,
+      "letterbox_pad_value_requested": 114,
+      "name": "images",
+      "normalization": "embedded_dxcom_preprocessing",
+      "preprocess_mode": "letterbox",
+      "preprocess_mode_effective": "letterbox",
+      "preprocess_mode_requested": "auto",
+      "shape": [
+        640,
+        640,
+        3
+      ],
+      "task": "detection"
+    },
+    "model_id": "yolo11l",
+    "output": {
+      "source": "runtime_report_or_model_output",
+      "status": "declared_no_parse_model_pending_placeholder"
+    },
+    "outputs": [
+      {
+        "contract_source": "runtime_report_or_model_output",
+        "dtype": "float32",
+        "name": "model_outputs",
+        "shape": null
+      }
+    ],
+    "postprocessing": {
+      "type": "ultralytics_decoded_classaware_nms",
+      "host_required": true,
+      "nms_on_host": true
+    },
+    "postprocessing_required": true,
+    "preprocessing_contract": {
+      "contract_sha256": "59d7c7aa7ff879883cb6bf94aa7fe0e1972ef39407eb4cf2a22ab066f6fd61f9",
+      "numeric_preprocessing": {
+        "build_onnx_adapter": {
+          "kind": "identity"
+        },
+        "dxcom_loader": {
+          "color_space": "RGB",
+          "letterbox_pad_value": 114,
+          "operations_contract": "letterbox_div255_bgr2rgb_transpose_expanddim",
+          "output_dtype": "float32",
+          "output_layout": "NCHW",
+          "scale_divisor": 255.0
+        },
+        "mode": "task_default_letterbox_scale_only",
+        "schema": "onnx-splitpoint/deepx-detection-preprocessing",
+        "schema_version": 1
+      },
+      "runtime_input": {
+        "classification_preprocessing": "not_applicable",
+        "color_space": "RGB",
+        "contract_source": "task_bound_dxcom_image_loader_preprocessing",
+        "dtype": "uint8",
+        "embedded_numeric_path": "dxcom_div255_detection_default",
+        "layout": "HWC",
+        "letterbox_pad_value": 114,
+        "letterbox_pad_value_effective": 114,
+        "letterbox_pad_value_requested": 114,
+        "name": "images",
+        "normalization": "embedded_dxcom_preprocessing",
+        "preprocess_mode": "letterbox",
+        "preprocess_mode_effective": "letterbox",
+        "preprocess_mode_requested": "auto",
+        "shape": [
+          640,
+          640,
+          3
+        ],
+        "task": "detection"
+      },
+      "schema": "onnx-splitpoint/deepx-full-preprocessing-contract",
+      "schema_version": 1,
+      "task": "detection"
+    },
+    "source_model_input": {
+      "dtype": "float32",
+      "layout": "NCHW",
+      "name": "images",
+      "shape": [
+        1,
+        3,
+        640,
+        640
+      ]
+    },
+    "source_onnx_sha256": "f0fcdf56a4ac24d87ec30c627170492ccad9db80486ec5694df6de65c1b3d147",
+    "suite_artifact_path": "/home/kmika/Models/EvaluationRuns/v27926_acceptance_d_yolo11l_b003_deepx_gpu_20260907_101443/models/yolo11l/benchmark_set/legacy_suite/deepx/deepx_m1/full/model.dxnn",
+    "suite_artifact_sha256": "045c40d2250ab528822ef83c37c9842bb1a85bb0ca212d8dba20278ae21b797e",
+    "suite_artifact_size_bytes": 54112354,
+    "variant": "full",
+    "source_path": "/tmp/onnx-v27929-full-probe-wOHUJBaU8p/suite/deepx/deepx_m1/full/output_contract.json",
+    "source_label": "run.contract_path",
+    "contract_resolution_status": "resolved",
+    "resolved_input_geometry": {
+      "shape": [
+        640,
+        640,
+        3
+      ],
+      "layout": "HWC",
+      "height": 640,
+      "width": 640,
+      "channels": 3,
+      "batch": null,
+      "batch_shape": [
+        1,
+        640,
+        640,
+        3
+      ]
+    },
+    "endpoint_contract_binding_status": "attested",
+    "endpoint_contract_binding_reason": "authoritative_recorded_output_contract_bound"
+  },
+  "prepared_feed_shape": [
+    640,
+    640,
+    3
+  ],
+  "preprocessing_contract_audit": {
+    "shape": [
+      640,
+      640,
+      3
+    ],
+    "dtype": "uint8",
+    "layout": "HWC",
+    "color_space": "RGB",
+    "preprocess_mode": "letterbox",
+    "normalization": "embedded_dxcom_preprocessing",
+    "letterbox_pad_value": 114,
+    "source_shape_hw": [
+      335,
+      500
+    ],
+    "contract_source": "task_bound_dxcom_image_loader_preprocessing",
+    "prepared_input_binding_verified": true,
+    "prepared_input_source": "sealed_semantic_dump_runtime_tensor",
+    "image_decode_used_for_numeric_input": false,
+    "sealed_preprocess": {
+      "mode": "letterbox_rgb_uint8",
+      "pad_value": 114,
+      "rgb": true,
+      "ort_model_scale": "norm",
+      "layout": "HWC",
+      "runtime_dtype": "uint8",
+      "normalization": "embedded_dxcom_preprocessing",
+      "color_space": "RGB",
+      "input_domain": "uint8_0_255",
+      "resize_interpolation": "bilinear",
+      "resize_rounding": "python_round_ties_to_even",
+      "placement": "floor_top_left_remainder_bottom_right"
+    }
+  },
+  "prepared_input_manifest": "/tmp/onnx-v27929-full-probe-wOHUJBaU8p/results/prepared_input/native_full_input_manifest.json",
+  "prepared_input_manifest_sha256": "abb1dff2697c36e4dc96bb9b7fb869e65887cfa055e8838bdeac20cf1e209ddd",
+  "prepared_input_file": "/tmp/onnx-v27929-full-probe-wOHUJBaU8p/results/prepared_input/runtime_input.bin",
+  "prepared_input_sha256": "06d2c2858d34bf69e66e3805b4b5f60984ecc895c8b681eb007bfc61334509be",
+  "prepared_input_file_sha256": "06d2c2858d34bf69e66e3805b4b5f60984ecc895c8b681eb007bfc61334509be",
+  "prepared_input_bytes": 1228800,
+  "prepared_input_name": "images",
+  "prepared_input_shape": [
+    640,
+    640,
+    3
+  ],
+  "prepared_input_dtype": "uint8",
+  "prepared_input_layout": "HWC",
+  "prepared_input_source_image_id": "000000212226.jpg",
+  "prepared_input_source_image_sha256": "261ba1b81c768f47b8452cd8fc7866a354a69c336a927032486d129b8684eb44",
+  "runtime_color_space": "RGB",
+  "runtime_normalization": "embedded_dxcom_preprocessing",
+  "runtime_preprocess_mode": "letterbox",
+  "runtime_preprocessing_identity": {
+    "schema": "onnx-splitpoint/image-preprocessing-contract",
+    "schema_version": 2,
+    "contract_scope": "prepared_rgb_uint8_semantics",
+    "task": "detection",
+    "preprocess_mode": "letterbox",
+    "spatial_transform": "centered_letterbox",
+    "target_hw": [
+      640,
+      640
+    ],
+    "color_space": "RGB",
+    "input_domain": "uint8_0_255",
+    "resize_interpolation": "bilinear",
+    "resize_rounding": "python_round_ties_to_even",
+    "placement": "floor_top_left_remainder_bottom_right",
+    "pad_value": 114,
+    "letterbox_pad_value": 114,
+    "image_scale": "norm",
+    "letterbox": true
+  },
+  "runtime_preprocessing_sha256": "411898b92628e2a769a2b8ea7aa35faff35373cfacb863c3ab34b243c105b70e",
+  "runtime_numeric_input_identity": {
+    "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+    "schema_version": 1,
+    "backend": "native_full_deepx",
+    "task": "detection",
+    "preprocessing_contract_sha256": "411898b92628e2a769a2b8ea7aa35faff35373cfacb863c3ab34b243c105b70e",
+    "runtime_input_name": "images",
+    "runtime_input_shape": [
+      640,
+      640,
+      3
+    ],
+    "runtime_input_dtype": "uint8",
+    "runtime_input_layout": "HWC",
+    "runtime_color_space": "RGB",
+    "runtime_normalization": "embedded_dxcom_preprocessing",
+    "runtime_numeric_domain": "uint8_0_255"
+  },
+  "runtime_numeric_input_sha256": "6b7720ffcaf322c96dc6b83ec3e879033777335e6f07730a1a1dd4441869ebc2",
+  "prepared_input_binding_verified": true,
+  "prepared_input_source": "sealed_semantic_dump_runtime_tensor",
+  "preprocess": {
+    "mode": "letterbox_rgb_uint8",
+    "pad_value": 114,
+    "rgb": true,
+    "ort_model_scale": "norm",
+    "layout": "HWC",
+    "runtime_dtype": "uint8",
+    "normalization": "embedded_dxcom_preprocessing",
+    "color_space": "RGB",
+    "input_domain": "uint8_0_255",
+    "resize_interpolation": "bilinear",
+    "resize_rounding": "python_round_ties_to_even",
+    "placement": "floor_top_left_remainder_bottom_right"
+  },
+  "runtime_endpoint_contract_family": "decoded_pre_nms",
+  "runtime_endpoint_contract_complete": true,
+  "output_value_diagnostics": {
+    "schema": "onnx-splitpoint/decoded-pre-nms-value-diagnostics",
+    "schema_version": 1,
+    "sample_limit_per_violation": 8,
+    "tensor_count": 1,
+    "tensors": [
+      {
+        "name": "model_outputs",
+        "shape": [
+          1,
+          84,
+          8400
+        ],
+        "dtype": "float32",
+        "element_count": 705600,
+        "finite_count": 705600,
+        "all_finite": true,
+        "nan_count": 0,
+        "positive_inf_count": 0,
+        "negative_inf_count": 0,
+        "finite_min": -7.3125,
+        "finite_max": 652.015625,
+        "inspection_status": "inspected",
+        "canonical_shape_channels_anchors": [
+          84,
+          8400
+        ],
+        "channel_axis": 1,
+        "xywh": {
+          "x": {
+            "element_count": 8400,
+            "finite_count": 8400,
+            "all_finite": true,
+            "nan_count": 0,
+            "positive_inf_count": 0,
+            "negative_inf_count": 0,
+            "finite_min": 4.1640625,
+            "finite_max": 636.1484375
+          },
+          "y": {
+            "element_count": 8400,
+            "finite_count": 8400,
+            "all_finite": true,
+            "nan_count": 0,
+            "positive_inf_count": 0,
+            "negative_inf_count": 0,
+            "finite_min": -7.3125,
+            "finite_max": 652.015625
+          },
+          "width": {
+            "element_count": 8400,
+            "finite_count": 8400,
+            "all_finite": true,
+            "nan_count": 0,
+            "positive_inf_count": 0,
+            "negative_inf_count": 0,
+            "finite_min": 6.640625,
+            "finite_max": 622.375
+          },
+          "height": {
+            "element_count": 8400,
+            "finite_count": 8400,
+            "all_finite": true,
+            "nan_count": 0,
+            "positive_inf_count": 0,
+            "negative_inf_count": 0,
+            "finite_min": 5.9375,
+            "finite_max": 427.125
+          }
+        },
+        "class_scores": {
+          "element_count": 672000,
+          "finite_count": 672000,
+          "all_finite": true,
+          "nan_count": 0,
+          "positive_inf_count": 0,
+          "negative_inf_count": 0,
+          "finite_min": -5.960464477539063e-08,
+          "finite_max": 0.9233853816986084
+        },
+        "violations": {
+          "negative_width": {
+            "count": 0,
+            "examples": []
+          },
+          "negative_height": {
+            "count": 0,
+            "examples": []
+          },
+          "scores_below_zero": {
+            "count": 21,
+            "examples": [
+              {
+                "index": [
+                  0,
+                  4,
+                  7408
+                ],
+                "channel": 4,
+                "anchor": 7408,
+                "value": -5.960464477539063e-08,
+                "class_id": 0
+              },
+              {
+                "index": [
+                  0,
+                  4,
+                  8227
+                ],
+                "channel": 4,
+                "anchor": 8227,
+                "value": -5.960464477539063e-08,
+                "class_id": 0
+              },
+              {
+                "index": [
+                  0,
+                  26,
+                  4663
+                ],
+                "channel": 26,
+                "anchor": 4663,
+                "value": -5.960464477539063e-08,
+                "class_id": 22
+              },
+              {
+                "index": [
+                  0,
+                  26,
+                  4743
+                ],
+                "channel": 26,
+                "anchor": 4743,
+                "value": -5.960464477539063e-08,
+                "class_id": 22
+              },
+              {
+                "index": [
+                  0,
+                  27,
+                  4742
+                ],
+                "channel": 27,
+                "anchor": 4742,
+                "value": -5.960464477539063e-08,
+                "class_id": 23
+              },
+              {
+                "index": [
+                  0,
+                  27,
+                  4743
+                ],
+                "channel": 27,
+                "anchor": 4743,
+                "value": -5.960464477539063e-08,
+                "class_id": 23
+              },
+              {
+                "index": [
+                  0,
+                  27,
+                  4823
+                ],
+                "channel": 27,
+                "anchor": 4823,
+                "value": -5.960464477539063e-08,
+                "class_id": 23
+              },
+              {
+                "index": [
+                  0,
+                  27,
+                  4825
+                ],
+                "channel": 27,
+                "anchor": 4825,
+                "value": -5.960464477539063e-08,
+                "class_id": 23
+              }
+            ]
+          },
+          "scores_above_one": {
+            "count": 0,
+            "examples": []
+          },
+          "nan": {
+            "count": 0,
+            "examples": []
+          },
+          "positive_inf": {
+            "count": 0,
+            "examples": []
+          },
+          "negative_inf": {
+            "count": 0,
+            "examples": []
+          }
+        }
+      }
+    ],
+    "values_modified": false,
+    "range_rule": "finite; width>=0; height>=0; 0<=class_scores<=1",
+    "geometry_and_semantics_attested_by_this_diagnostic": false
+  },
+  "runtime_output_name_source": "declared_output_contract_by_position_with_index_fallback",
+  "output_diagnostic_observation": "untimed_completion_probe",
+  "raw_output_snapshot": {
+    "status": "saved",
+    "phase": "untimed_completion_probe",
+    "unmodified": true,
+    "source_bytes": 2822400,
+    "max_source_bytes": 16777216,
+    "tensors": [
+      {
+        "key": "tensor_000",
+        "name": "model_outputs",
+        "shape": [
+          1,
+          84,
+          8400
+        ],
+        "dtype": "float32"
+      }
+    ],
+    "file": "deepx_output_value_probe_outputs.npz"
+  },
+  "postprocess_completion_verified": true,
+  "completed_detection_count": 2,
+  "decoded_pre_nms_score_normalization": {
+    "policy_id": "float32_probability_edges_abs_2pow_minus23_v1",
+    "absolute_tolerance": 1.1920928955078125e-07,
+    "scores_below_zero": 21,
+    "scores_above_one": 0,
+    "corrected_score_count": 21,
+    "maximum_absolute_correction": 5.960464477539063e-08,
+    "source_modified": false,
+    "processing_copy_created": true
+  },
+  "decoded_pre_nms_score_policy": {
+    "policy_id": "float32_probability_edges_abs_2pow_minus23_v1",
+    "dtype": "float32",
+    "absolute_tolerance": 1.1920928955078125e-07,
+    "action": "normalize_probability_edges_on_processing_copy"
+  },
+  "probe_schema": "onnx-splitpoint/deepx-output-value-probe-v1",
+  "dxnn_path": "/tmp/onnx-v27929-full-probe-wOHUJBaU8p/suite/deepx/deepx_m1/full/model.dxnn",
+  "suite_path": "/tmp/onnx-v27929-full-probe-wOHUJBaU8p/suite",
+  "probe_source": {
+    "probe_fix": "v27929",
+    "staging_mode": "local_files_to_fresh_remote_directory",
+    "original_run_id": "v27926_acceptance_d_yolo11l_b003_deepx_gpu_20260907_101443",
+    "model_id": "yolo11l",
+    "setup_id": "orin_nx_deepx_m1_01",
+    "original_remote_suite": "/home/nx/splitpoint_runs/legacy_suite/v27926_acceptance_d_yolo11l_b003_deepx_gpu_20260907_101443_yolo11l_orin_nx_deepx_m1_01/1/suite",
+    "remote_suite": "/tmp/onnx-v27929-full-probe-wOHUJBaU8p/suite",
+    "dxnn_path": "/tmp/onnx-v27929-full-probe-wOHUJBaU8p/suite/deepx/deepx_m1/full/model.dxnn",
+    "dxnn_sha256": "045c40d2250ab528822ef83c37c9842bb1a85bb0ca212d8dba20278ae21b797e",
+    "image_path": "/tmp/onnx-v27929-full-probe-wOHUJBaU8p/suite/resources/validation/detection/val2017_n500_s20260710/000000212226.jpg",
+    "image_sha256": "261ba1b81c768f47b8452cd8fc7866a354a69c336a927032486d129b8684eb44",
+    "runtime_python": "/home/nx/venvs/deepx-runtime/bin/python",
+    "source_results_modified": false,
+    "compiler_invoked": false,
+    "quality_policy_changed": false,
+    "decoded_score_numeric_policy": "float32_probability_edges_abs_2pow_minus23_v1"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "path": "/home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/mobilenet_v3_large/build/compile/imagenet_mean_std_e6a9bcfb1de750ad91b2c66e51d3acac40c5a0cb6c5cf1bb92f519fdb8cc0ab3.dxnn",
+  "sha256": "5d778ee8332dae509273f4fea71559e4ae283190fbc345e199ecddbe9b3d2a92",
+  "size_bytes": 11850857,
+  "source_onnx_sha256": "2f5e79b1e4280251e7b6eefe1d6161c4831e2fc27858e1e9fe2fac697f44489e",
+  "build_onnx_sha256": "e6a9bcfb1de750ad91b2c66e51d3acac40c5a0cb6c5cf1bb92f519fdb8cc0ab3",
+  "dxcom_config_sha256": "65b18a1721afea8432f2ac01631655bece6b8fb81326f78462491cb6aa771f9f",
+  "classification_preprocessing": "imagenet_mean_std",
+  "cache_published": false,
+  "production_cache_modified": false,
+  "diagnostic_build_only": true
+}

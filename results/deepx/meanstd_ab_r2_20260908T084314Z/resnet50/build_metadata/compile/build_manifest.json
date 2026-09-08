@@ -1,0 +1,39 @@
+{
+  "ok": true,
+  "status": "ok",
+  "onnx_path": "/home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/resnet50/build/adapter/imagenet_mean_std_b5921d9f75da27c05b6a70fda31f4a0b119383eaf1ddc263fa5e20ec6bd61528.onnx",
+  "config_path": "/home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/resnet50/build/config_deepx.json",
+  "output_dir": "/home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/resnet50/build/compile",
+  "dxnn_path": "/home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/resnet50/build/compile/imagenet_mean_std_b5921d9f75da27c05b6a70fda31f4a0b119383eaf1ddc263fa5e20ec6bd61528.dxnn",
+  "log_path": "/home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/resnet50/build/compile/deepx_build.log",
+  "returncode": 0,
+  "command": "set -e; source /home/kmika/dx-all-suite/dx-compiler/venv-dx-compiler-local/bin/activate; export PYTHONPATH=/home/kmika/dx-all-suite/dx-compiler/pytorch-2.12.0-cu126-overlay; /home/kmika/dx-all-suite/dx-compiler/venv-dx-compiler-local/bin/dxcom -m /home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/resnet50/build/adapter/imagenet_mean_std_b5921d9f75da27c05b6a70fda31f4a0b119383eaf1ddc263fa5e20ec6bd61528.onnx -c /home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/resnet50/build/config_deepx.json -o /home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/resnet50/build/compile --opt_level=0",
+  "message": "DXNN built",
+  "compiler_cuda_preflight": {
+    "compiler_python": "/home/kmika/dx-all-suite/dx-compiler/venv-dx-compiler-local/bin/python",
+    "compiler_overlay": "/home/kmika/dx-all-suite/dx-compiler/pytorch-2.12.0-cu126-overlay",
+    "compiled_architectures": [
+      "sm_50",
+      "sm_60",
+      "sm_70",
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90"
+    ],
+    "cuda_available": true,
+    "cuda_visible_devices": null,
+    "device_capability": [
+      6,
+      1
+    ],
+    "device_index": 0,
+    "device_name": "NVIDIA GeForce GTX 1080 Ti",
+    "torch_cuda_version": "12.6",
+    "torch_module_file": "/home/kmika/dx-all-suite/dx-compiler/pytorch-2.12.0-cu126-overlay/torch/__init__.py",
+    "torch_version": "2.12.0+cu126",
+    "status": "compatible",
+    "reason": "deepx_compiler_cuda_architecture_compatible"
+  },
+  "elapsed_s": 15.904
+}

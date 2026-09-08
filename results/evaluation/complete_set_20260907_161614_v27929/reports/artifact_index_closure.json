@@ -1,0 +1,18 @@
+{
+  "artifact_index_path": "artifact_index.json",
+  "artifact_record_count": 34773,
+  "finalized_at": "2026-09-07T21:57:06+02:00",
+  "hash_mismatch_count": 0,
+  "missing_file_count": 0,
+  "required_coverage_path_count": 34773,
+  "run_id": "complete_set_20260907_161614",
+  "schema": "onnx-splitpoint/artifact-index-terminal-closure",
+  "schema_version": 1,
+  "self_hash_excluded": true,
+  "session_id": "582a6e4715124e81957a04416b781196",
+  "status": "pass",
+  "unindexed_required_path_count": 0,
+  "unique_indexed_path_count": 34773,
+  "verification_error_count": 0,
+  "workflow_status": "failed"
+}

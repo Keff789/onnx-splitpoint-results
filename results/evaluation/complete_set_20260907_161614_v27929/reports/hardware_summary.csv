@@ -1,0 +1,9 @@
+backend,variant,model_count,case_count,mean_total_latency_ms,compile_ok_rate,runtime_ok_rate,validation_ok_rate
+deepx_m1,full,7,7,27.602895,1.0,1.0,1.0
+deepx_m1_to_tensorrt,split,4,4,14.112341,,1.0,0.75
+hailo10,full,7,14,73.870856,,1.0,0.428571
+hailo10_to_tensorrt,split,7,7,21.961566,,1.0,0.0
+hailo8,full,7,14,40.113435,,1.0,0.428571
+hailo8_to_tensorrt,split,7,9,11.217918,,1.0,0.555556
+tensorrt,full,7,7,9.673916,,1.0,1.0
+tensorrt,split,7,7,11.128753,,1.0,0.428571

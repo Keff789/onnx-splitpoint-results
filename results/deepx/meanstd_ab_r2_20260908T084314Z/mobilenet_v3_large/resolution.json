@@ -1,0 +1,26 @@
+{
+  "source_checked": [
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/mobilenet_v3_large/benchmark_set/legacy_suite/models/mobilenet_v3_large.onnx",
+      "sha256": "2f5e79b1e4280251e7b6eefe1d6161c4831e2fc27858e1e9fe2fac697f44489e",
+      "size_bytes": 22243154
+    }
+  ],
+  "arm_a_checked": [
+    {
+      "path": "/home/kmika/Models/BackendArtifacts/deepx/deepx_m1_full_current_scale_only_v2_40af1af3fecfb3bfbd7dd87051ecb2bf/model.dxnn",
+      "sha256": "c2153dd819105e58efc5742d613ff9d51c92cdcbc52046741b423cc6a1149e04",
+      "size_bytes": 11849591
+    }
+  ],
+  "run_dir": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614",
+  "setup_id": "orin_nx_deepx_m1_01",
+  "status_path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/mobilenet_v3_large/benchmark_set/deepx/deepx_artifact_status.json",
+  "compiler_venv": "~/dx-all-suite/dx-compiler/venv-dx-compiler-local",
+  "compiler_root": "~/dx-all-suite",
+  "opt_level": 0,
+  "calibration_num": 500,
+  "calibration_method": "ema",
+  "classification_arm_a": "current_scale_only",
+  "classification_arm_b": "imagenet_mean_std"
+}

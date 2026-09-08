@@ -1,0 +1,2276 @@
+{
+  "images": [
+    {
+      "image": "/tmp/onnx-deepx-prepost-r1-0r3Ho1Dmvq/suite/images/ILSVRC2012_val_00000080.JPEG",
+      "label_id": 461,
+      "label_name": null,
+      "top1": 461,
+      "top5": [
+        461,
+        524,
+        787,
+        469,
+        753
+      ],
+      "scores": [
+        7.910400390625,
+        5.8572998046875,
+        5.687255859375,
+        3.84368896484375,
+        3.78460693359375
+      ],
+      "top1_correct": true,
+      "top5_correct": true,
+      "preprocessing_audit": {
+        "shape": [
+          224,
+          224,
+          3
+        ],
+        "dtype": "uint8",
+        "layout": "HWC",
+        "color_space": "RGB",
+        "preprocess_mode": "resize",
+        "normalization": "embedded_dxcom_preprocessing",
+        "scale": 0.448,
+        "pad_x": 0,
+        "pad_y": 0,
+        "letterbox_pad_value": 0,
+        "source_shape_hw": [
+          500,
+          332
+        ],
+        "contract_source": "task_bound_dxcom_image_loader_preprocessing",
+        "runtime_preprocessing_identity": {
+          "schema": "onnx-splitpoint/image-preprocessing-contract",
+          "schema_version": 2,
+          "contract_scope": "prepared_rgb_uint8_semantics",
+          "task": "classification",
+          "preprocess_mode": "resize",
+          "spatial_transform": "direct_resize",
+          "target_hw": [
+            224,
+            224
+          ],
+          "color_space": "RGB",
+          "input_domain": "uint8_0_255",
+          "resize_interpolation": "bilinear",
+          "resize_rounding": "python_round_ties_to_even",
+          "placement": "not_applicable",
+          "pad_value": 0,
+          "letterbox_pad_value": 0,
+          "image_scale": "imagenet",
+          "letterbox": false
+        },
+        "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+        "runtime_numeric_input_identity": {
+          "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+          "schema_version": 1,
+          "backend": "native_full_deepx",
+          "task": "classification",
+          "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_input_name": "input",
+          "runtime_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "runtime_input_dtype": "uint8",
+          "runtime_input_layout": "HWC",
+          "runtime_color_space": "RGB",
+          "runtime_normalization": "embedded_dxcom_preprocessing",
+          "runtime_numeric_domain": "uint8_0_255"
+        },
+        "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+        "prepared_tensor_binding": {
+          "prepared_input_sha256": "4566dc50e0f9611fe092f2aaebd369ec04910b89c8058f858404e6b98c123cb8",
+          "prepared_input_bytes": 150528,
+          "prepared_input_name": "input",
+          "prepared_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "prepared_input_dtype": "uint8",
+          "prepared_input_layout": "HWC",
+          "prepared_rgb_uint8_sha256": "4566dc50e0f9611fe092f2aaebd369ec04910b89c8058f858404e6b98c123cb8",
+          "prepared_rgb_uint8_bytes": 150528,
+          "runtime_preprocessing_identity": {
+            "schema": "onnx-splitpoint/image-preprocessing-contract",
+            "schema_version": 2,
+            "contract_scope": "prepared_rgb_uint8_semantics",
+            "task": "classification",
+            "preprocess_mode": "resize",
+            "spatial_transform": "direct_resize",
+            "target_hw": [
+              224,
+              224
+            ],
+            "color_space": "RGB",
+            "input_domain": "uint8_0_255",
+            "resize_interpolation": "bilinear",
+            "resize_rounding": "python_round_ties_to_even",
+            "placement": "not_applicable",
+            "pad_value": 0,
+            "letterbox_pad_value": 0,
+            "image_scale": "imagenet",
+            "letterbox": false
+          },
+          "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_numeric_input_identity": {
+            "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+            "schema_version": 1,
+            "backend": "native_full_deepx",
+            "task": "classification",
+            "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+            "runtime_input_name": "input",
+            "runtime_input_shape": [
+              224,
+              224,
+              3
+            ],
+            "runtime_input_dtype": "uint8",
+            "runtime_input_layout": "HWC",
+            "runtime_color_space": "RGB",
+            "runtime_normalization": "embedded_dxcom_preprocessing",
+            "runtime_numeric_domain": "uint8_0_255"
+          },
+          "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+          "binding_verified": true,
+          "source_image_id": "ILSVRC2012_val_00000080.JPEG",
+          "source_image_sha256": "f7b5059cb7db6963a9029b978a104da43d0125f30ba3489bc13e0ee5db28e4fa"
+        }
+      }
+    },
+    {
+      "image": "/tmp/onnx-deepx-prepost-r1-0r3Ho1Dmvq/suite/images/ILSVRC2012_val_00000152.JPEG",
+      "label_id": 637,
+      "label_name": null,
+      "top1": 637,
+      "top5": [
+        637,
+        710,
+        859,
+        902,
+        412
+      ],
+      "scores": [
+        10.22216796875,
+        7.4508056640625,
+        7.0335693359375,
+        5.1153564453125,
+        5.0177001953125
+      ],
+      "top1_correct": true,
+      "top5_correct": true,
+      "preprocessing_audit": {
+        "shape": [
+          224,
+          224,
+          3
+        ],
+        "dtype": "uint8",
+        "layout": "HWC",
+        "color_space": "RGB",
+        "preprocess_mode": "resize",
+        "normalization": "embedded_dxcom_preprocessing",
+        "scale": 0.448,
+        "pad_x": 0,
+        "pad_y": 0,
+        "letterbox_pad_value": 0,
+        "source_shape_hw": [
+          500,
+          333
+        ],
+        "contract_source": "task_bound_dxcom_image_loader_preprocessing",
+        "runtime_preprocessing_identity": {
+          "schema": "onnx-splitpoint/image-preprocessing-contract",
+          "schema_version": 2,
+          "contract_scope": "prepared_rgb_uint8_semantics",
+          "task": "classification",
+          "preprocess_mode": "resize",
+          "spatial_transform": "direct_resize",
+          "target_hw": [
+            224,
+            224
+          ],
+          "color_space": "RGB",
+          "input_domain": "uint8_0_255",
+          "resize_interpolation": "bilinear",
+          "resize_rounding": "python_round_ties_to_even",
+          "placement": "not_applicable",
+          "pad_value": 0,
+          "letterbox_pad_value": 0,
+          "image_scale": "imagenet",
+          "letterbox": false
+        },
+        "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+        "runtime_numeric_input_identity": {
+          "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+          "schema_version": 1,
+          "backend": "native_full_deepx",
+          "task": "classification",
+          "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_input_name": "input",
+          "runtime_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "runtime_input_dtype": "uint8",
+          "runtime_input_layout": "HWC",
+          "runtime_color_space": "RGB",
+          "runtime_normalization": "embedded_dxcom_preprocessing",
+          "runtime_numeric_domain": "uint8_0_255"
+        },
+        "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+        "prepared_tensor_binding": {
+          "prepared_input_sha256": "7cd477bf58d9c099c843c3af1d529e378afd0603b51d53088c71eb25e4ee9d7c",
+          "prepared_input_bytes": 150528,
+          "prepared_input_name": "input",
+          "prepared_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "prepared_input_dtype": "uint8",
+          "prepared_input_layout": "HWC",
+          "prepared_rgb_uint8_sha256": "7cd477bf58d9c099c843c3af1d529e378afd0603b51d53088c71eb25e4ee9d7c",
+          "prepared_rgb_uint8_bytes": 150528,
+          "runtime_preprocessing_identity": {
+            "schema": "onnx-splitpoint/image-preprocessing-contract",
+            "schema_version": 2,
+            "contract_scope": "prepared_rgb_uint8_semantics",
+            "task": "classification",
+            "preprocess_mode": "resize",
+            "spatial_transform": "direct_resize",
+            "target_hw": [
+              224,
+              224
+            ],
+            "color_space": "RGB",
+            "input_domain": "uint8_0_255",
+            "resize_interpolation": "bilinear",
+            "resize_rounding": "python_round_ties_to_even",
+            "placement": "not_applicable",
+            "pad_value": 0,
+            "letterbox_pad_value": 0,
+            "image_scale": "imagenet",
+            "letterbox": false
+          },
+          "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_numeric_input_identity": {
+            "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+            "schema_version": 1,
+            "backend": "native_full_deepx",
+            "task": "classification",
+            "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+            "runtime_input_name": "input",
+            "runtime_input_shape": [
+              224,
+              224,
+              3
+            ],
+            "runtime_input_dtype": "uint8",
+            "runtime_input_layout": "HWC",
+            "runtime_color_space": "RGB",
+            "runtime_normalization": "embedded_dxcom_preprocessing",
+            "runtime_numeric_domain": "uint8_0_255"
+          },
+          "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+          "binding_verified": true,
+          "source_image_id": "ILSVRC2012_val_00000152.JPEG",
+          "source_image_sha256": "ec34e41072057ba7288532da8818cea460a6b35081655071e23fd966846c460a"
+        }
+      }
+    },
+    {
+      "image": "/tmp/onnx-deepx-prepost-r1-0r3Ho1Dmvq/suite/images/ILSVRC2012_val_00000210.JPEG",
+      "label_id": 516,
+      "label_name": null,
+      "top1": 431,
+      "top5": [
+        431,
+        516,
+        529,
+        793,
+        797
+      ],
+      "scores": [
+        6.9803466796875,
+        6.686279296875,
+        6.1400146484375,
+        4.887451171875,
+        4.6669921875
+      ],
+      "top1_correct": false,
+      "top5_correct": true,
+      "preprocessing_audit": {
+        "shape": [
+          224,
+          224,
+          3
+        ],
+        "dtype": "uint8",
+        "layout": "HWC",
+        "color_space": "RGB",
+        "preprocess_mode": "resize",
+        "normalization": "embedded_dxcom_preprocessing",
+        "scale": 0.448,
+        "pad_x": 0,
+        "pad_y": 0,
+        "letterbox_pad_value": 0,
+        "source_shape_hw": [
+          339,
+          500
+        ],
+        "contract_source": "task_bound_dxcom_image_loader_preprocessing",
+        "runtime_preprocessing_identity": {
+          "schema": "onnx-splitpoint/image-preprocessing-contract",
+          "schema_version": 2,
+          "contract_scope": "prepared_rgb_uint8_semantics",
+          "task": "classification",
+          "preprocess_mode": "resize",
+          "spatial_transform": "direct_resize",
+          "target_hw": [
+            224,
+            224
+          ],
+          "color_space": "RGB",
+          "input_domain": "uint8_0_255",
+          "resize_interpolation": "bilinear",
+          "resize_rounding": "python_round_ties_to_even",
+          "placement": "not_applicable",
+          "pad_value": 0,
+          "letterbox_pad_value": 0,
+          "image_scale": "imagenet",
+          "letterbox": false
+        },
+        "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+        "runtime_numeric_input_identity": {
+          "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+          "schema_version": 1,
+          "backend": "native_full_deepx",
+          "task": "classification",
+          "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_input_name": "input",
+          "runtime_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "runtime_input_dtype": "uint8",
+          "runtime_input_layout": "HWC",
+          "runtime_color_space": "RGB",
+          "runtime_normalization": "embedded_dxcom_preprocessing",
+          "runtime_numeric_domain": "uint8_0_255"
+        },
+        "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+        "prepared_tensor_binding": {
+          "prepared_input_sha256": "9c32b150cc7d3a654de150cddad4dfe91d88fe01c628da03fdb630c52ba867ff",
+          "prepared_input_bytes": 150528,
+          "prepared_input_name": "input",
+          "prepared_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "prepared_input_dtype": "uint8",
+          "prepared_input_layout": "HWC",
+          "prepared_rgb_uint8_sha256": "9c32b150cc7d3a654de150cddad4dfe91d88fe01c628da03fdb630c52ba867ff",
+          "prepared_rgb_uint8_bytes": 150528,
+          "runtime_preprocessing_identity": {
+            "schema": "onnx-splitpoint/image-preprocessing-contract",
+            "schema_version": 2,
+            "contract_scope": "prepared_rgb_uint8_semantics",
+            "task": "classification",
+            "preprocess_mode": "resize",
+            "spatial_transform": "direct_resize",
+            "target_hw": [
+              224,
+              224
+            ],
+            "color_space": "RGB",
+            "input_domain": "uint8_0_255",
+            "resize_interpolation": "bilinear",
+            "resize_rounding": "python_round_ties_to_even",
+            "placement": "not_applicable",
+            "pad_value": 0,
+            "letterbox_pad_value": 0,
+            "image_scale": "imagenet",
+            "letterbox": false
+          },
+          "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_numeric_input_identity": {
+            "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+            "schema_version": 1,
+            "backend": "native_full_deepx",
+            "task": "classification",
+            "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+            "runtime_input_name": "input",
+            "runtime_input_shape": [
+              224,
+              224,
+              3
+            ],
+            "runtime_input_dtype": "uint8",
+            "runtime_input_layout": "HWC",
+            "runtime_color_space": "RGB",
+            "runtime_normalization": "embedded_dxcom_preprocessing",
+            "runtime_numeric_domain": "uint8_0_255"
+          },
+          "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+          "binding_verified": true,
+          "source_image_id": "ILSVRC2012_val_00000210.JPEG",
+          "source_image_sha256": "a5dae0191593b211ce2f472d0f70aae7e382682384d0a418d8cd8bfa38680eaf"
+        }
+      }
+    },
+    {
+      "image": "/tmp/onnx-deepx-prepost-r1-0r3Ho1Dmvq/suite/images/ILSVRC2012_val_00000285.JPEG",
+      "label_id": 906,
+      "label_name": null,
+      "top1": 457,
+      "top5": [
+        457,
+        617,
+        906,
+        834,
+        903
+      ],
+      "scores": [
+        5.9456787109375,
+        5.654541015625,
+        4.9110107421875,
+        4.6082763671875,
+        4.2052001953125
+      ],
+      "top1_correct": false,
+      "top5_correct": true,
+      "preprocessing_audit": {
+        "shape": [
+          224,
+          224,
+          3
+        ],
+        "dtype": "uint8",
+        "layout": "HWC",
+        "color_space": "RGB",
+        "preprocess_mode": "resize",
+        "normalization": "embedded_dxcom_preprocessing",
+        "scale": 0.448,
+        "pad_x": 0,
+        "pad_y": 0,
+        "letterbox_pad_value": 0,
+        "source_shape_hw": [
+          500,
+          306
+        ],
+        "contract_source": "task_bound_dxcom_image_loader_preprocessing",
+        "runtime_preprocessing_identity": {
+          "schema": "onnx-splitpoint/image-preprocessing-contract",
+          "schema_version": 2,
+          "contract_scope": "prepared_rgb_uint8_semantics",
+          "task": "classification",
+          "preprocess_mode": "resize",
+          "spatial_transform": "direct_resize",
+          "target_hw": [
+            224,
+            224
+          ],
+          "color_space": "RGB",
+          "input_domain": "uint8_0_255",
+          "resize_interpolation": "bilinear",
+          "resize_rounding": "python_round_ties_to_even",
+          "placement": "not_applicable",
+          "pad_value": 0,
+          "letterbox_pad_value": 0,
+          "image_scale": "imagenet",
+          "letterbox": false
+        },
+        "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+        "runtime_numeric_input_identity": {
+          "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+          "schema_version": 1,
+          "backend": "native_full_deepx",
+          "task": "classification",
+          "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_input_name": "input",
+          "runtime_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "runtime_input_dtype": "uint8",
+          "runtime_input_layout": "HWC",
+          "runtime_color_space": "RGB",
+          "runtime_normalization": "embedded_dxcom_preprocessing",
+          "runtime_numeric_domain": "uint8_0_255"
+        },
+        "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+        "prepared_tensor_binding": {
+          "prepared_input_sha256": "d231b363fb65567afef1369bb075f7260f1c84b0bf20977cd4421e02592cc03d",
+          "prepared_input_bytes": 150528,
+          "prepared_input_name": "input",
+          "prepared_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "prepared_input_dtype": "uint8",
+          "prepared_input_layout": "HWC",
+          "prepared_rgb_uint8_sha256": "d231b363fb65567afef1369bb075f7260f1c84b0bf20977cd4421e02592cc03d",
+          "prepared_rgb_uint8_bytes": 150528,
+          "runtime_preprocessing_identity": {
+            "schema": "onnx-splitpoint/image-preprocessing-contract",
+            "schema_version": 2,
+            "contract_scope": "prepared_rgb_uint8_semantics",
+            "task": "classification",
+            "preprocess_mode": "resize",
+            "spatial_transform": "direct_resize",
+            "target_hw": [
+              224,
+              224
+            ],
+            "color_space": "RGB",
+            "input_domain": "uint8_0_255",
+            "resize_interpolation": "bilinear",
+            "resize_rounding": "python_round_ties_to_even",
+            "placement": "not_applicable",
+            "pad_value": 0,
+            "letterbox_pad_value": 0,
+            "image_scale": "imagenet",
+            "letterbox": false
+          },
+          "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_numeric_input_identity": {
+            "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+            "schema_version": 1,
+            "backend": "native_full_deepx",
+            "task": "classification",
+            "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+            "runtime_input_name": "input",
+            "runtime_input_shape": [
+              224,
+              224,
+              3
+            ],
+            "runtime_input_dtype": "uint8",
+            "runtime_input_layout": "HWC",
+            "runtime_color_space": "RGB",
+            "runtime_normalization": "embedded_dxcom_preprocessing",
+            "runtime_numeric_domain": "uint8_0_255"
+          },
+          "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+          "binding_verified": true,
+          "source_image_id": "ILSVRC2012_val_00000285.JPEG",
+          "source_image_sha256": "bcc4379a3ee70e05703ccfbdf3d265f7d29d8c2f2c23d5cde8fe384d557e9b29"
+        }
+      }
+    },
+    {
+      "image": "/tmp/onnx-deepx-prepost-r1-0r3Ho1Dmvq/suite/images/ILSVRC2012_val_00000347.JPEG",
+      "label_id": 472,
+      "label_name": null,
+      "top1": 472,
+      "top5": [
+        472,
+        693,
+        814,
+        975,
+        892
+      ],
+      "scores": [
+        9.595703125,
+        6.5272216796875,
+        4.2540283203125,
+        3.5272216796875,
+        3.05389404296875
+      ],
+      "top1_correct": true,
+      "top5_correct": true,
+      "preprocessing_audit": {
+        "shape": [
+          224,
+          224,
+          3
+        ],
+        "dtype": "uint8",
+        "layout": "HWC",
+        "color_space": "RGB",
+        "preprocess_mode": "resize",
+        "normalization": "embedded_dxcom_preprocessing",
+        "scale": 0.448,
+        "pad_x": 0,
+        "pad_y": 0,
+        "letterbox_pad_value": 0,
+        "source_shape_hw": [
+          375,
+          500
+        ],
+        "contract_source": "task_bound_dxcom_image_loader_preprocessing",
+        "runtime_preprocessing_identity": {
+          "schema": "onnx-splitpoint/image-preprocessing-contract",
+          "schema_version": 2,
+          "contract_scope": "prepared_rgb_uint8_semantics",
+          "task": "classification",
+          "preprocess_mode": "resize",
+          "spatial_transform": "direct_resize",
+          "target_hw": [
+            224,
+            224
+          ],
+          "color_space": "RGB",
+          "input_domain": "uint8_0_255",
+          "resize_interpolation": "bilinear",
+          "resize_rounding": "python_round_ties_to_even",
+          "placement": "not_applicable",
+          "pad_value": 0,
+          "letterbox_pad_value": 0,
+          "image_scale": "imagenet",
+          "letterbox": false
+        },
+        "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+        "runtime_numeric_input_identity": {
+          "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+          "schema_version": 1,
+          "backend": "native_full_deepx",
+          "task": "classification",
+          "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_input_name": "input",
+          "runtime_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "runtime_input_dtype": "uint8",
+          "runtime_input_layout": "HWC",
+          "runtime_color_space": "RGB",
+          "runtime_normalization": "embedded_dxcom_preprocessing",
+          "runtime_numeric_domain": "uint8_0_255"
+        },
+        "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+        "prepared_tensor_binding": {
+          "prepared_input_sha256": "ff9db0205cdc0d081f56391fabe57bd9fb3e5c8255f700aed31ab71ff7a2c02f",
+          "prepared_input_bytes": 150528,
+          "prepared_input_name": "input",
+          "prepared_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "prepared_input_dtype": "uint8",
+          "prepared_input_layout": "HWC",
+          "prepared_rgb_uint8_sha256": "ff9db0205cdc0d081f56391fabe57bd9fb3e5c8255f700aed31ab71ff7a2c02f",
+          "prepared_rgb_uint8_bytes": 150528,
+          "runtime_preprocessing_identity": {
+            "schema": "onnx-splitpoint/image-preprocessing-contract",
+            "schema_version": 2,
+            "contract_scope": "prepared_rgb_uint8_semantics",
+            "task": "classification",
+            "preprocess_mode": "resize",
+            "spatial_transform": "direct_resize",
+            "target_hw": [
+              224,
+              224
+            ],
+            "color_space": "RGB",
+            "input_domain": "uint8_0_255",
+            "resize_interpolation": "bilinear",
+            "resize_rounding": "python_round_ties_to_even",
+            "placement": "not_applicable",
+            "pad_value": 0,
+            "letterbox_pad_value": 0,
+            "image_scale": "imagenet",
+            "letterbox": false
+          },
+          "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_numeric_input_identity": {
+            "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+            "schema_version": 1,
+            "backend": "native_full_deepx",
+            "task": "classification",
+            "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+            "runtime_input_name": "input",
+            "runtime_input_shape": [
+              224,
+              224,
+              3
+            ],
+            "runtime_input_dtype": "uint8",
+            "runtime_input_layout": "HWC",
+            "runtime_color_space": "RGB",
+            "runtime_normalization": "embedded_dxcom_preprocessing",
+            "runtime_numeric_domain": "uint8_0_255"
+          },
+          "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+          "binding_verified": true,
+          "source_image_id": "ILSVRC2012_val_00000347.JPEG",
+          "source_image_sha256": "cc92faeae7903a7fb73a1c3f976dffad6d6bacec8570bd46b652262d51fa5e29"
+        }
+      }
+    },
+    {
+      "image": "/tmp/onnx-deepx-prepost-r1-0r3Ho1Dmvq/suite/images/ILSVRC2012_val_00000390.JPEG",
+      "label_id": 133,
+      "label_name": null,
+      "top1": 133,
+      "top5": [
+        133,
+        135,
+        131,
+        47,
+        138
+      ],
+      "scores": [
+        7.8739013671875,
+        4.017578125,
+        2.54248046875,
+        2.19769287109375,
+        2.07708740234375
+      ],
+      "top1_correct": true,
+      "top5_correct": true,
+      "preprocessing_audit": {
+        "shape": [
+          224,
+          224,
+          3
+        ],
+        "dtype": "uint8",
+        "layout": "HWC",
+        "color_space": "RGB",
+        "preprocess_mode": "resize",
+        "normalization": "embedded_dxcom_preprocessing",
+        "scale": 0.448,
+        "pad_x": 0,
+        "pad_y": 0,
+        "letterbox_pad_value": 0,
+        "source_shape_hw": [
+          400,
+          500
+        ],
+        "contract_source": "task_bound_dxcom_image_loader_preprocessing",
+        "runtime_preprocessing_identity": {
+          "schema": "onnx-splitpoint/image-preprocessing-contract",
+          "schema_version": 2,
+          "contract_scope": "prepared_rgb_uint8_semantics",
+          "task": "classification",
+          "preprocess_mode": "resize",
+          "spatial_transform": "direct_resize",
+          "target_hw": [
+            224,
+            224
+          ],
+          "color_space": "RGB",
+          "input_domain": "uint8_0_255",
+          "resize_interpolation": "bilinear",
+          "resize_rounding": "python_round_ties_to_even",
+          "placement": "not_applicable",
+          "pad_value": 0,
+          "letterbox_pad_value": 0,
+          "image_scale": "imagenet",
+          "letterbox": false
+        },
+        "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+        "runtime_numeric_input_identity": {
+          "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+          "schema_version": 1,
+          "backend": "native_full_deepx",
+          "task": "classification",
+          "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_input_name": "input",
+          "runtime_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "runtime_input_dtype": "uint8",
+          "runtime_input_layout": "HWC",
+          "runtime_color_space": "RGB",
+          "runtime_normalization": "embedded_dxcom_preprocessing",
+          "runtime_numeric_domain": "uint8_0_255"
+        },
+        "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+        "prepared_tensor_binding": {
+          "prepared_input_sha256": "3af128cb7450075425a79a69d805ea1c373692e411e23c580185b662a805f4b6",
+          "prepared_input_bytes": 150528,
+          "prepared_input_name": "input",
+          "prepared_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "prepared_input_dtype": "uint8",
+          "prepared_input_layout": "HWC",
+          "prepared_rgb_uint8_sha256": "3af128cb7450075425a79a69d805ea1c373692e411e23c580185b662a805f4b6",
+          "prepared_rgb_uint8_bytes": 150528,
+          "runtime_preprocessing_identity": {
+            "schema": "onnx-splitpoint/image-preprocessing-contract",
+            "schema_version": 2,
+            "contract_scope": "prepared_rgb_uint8_semantics",
+            "task": "classification",
+            "preprocess_mode": "resize",
+            "spatial_transform": "direct_resize",
+            "target_hw": [
+              224,
+              224
+            ],
+            "color_space": "RGB",
+            "input_domain": "uint8_0_255",
+            "resize_interpolation": "bilinear",
+            "resize_rounding": "python_round_ties_to_even",
+            "placement": "not_applicable",
+            "pad_value": 0,
+            "letterbox_pad_value": 0,
+            "image_scale": "imagenet",
+            "letterbox": false
+          },
+          "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_numeric_input_identity": {
+            "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+            "schema_version": 1,
+            "backend": "native_full_deepx",
+            "task": "classification",
+            "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+            "runtime_input_name": "input",
+            "runtime_input_shape": [
+              224,
+              224,
+              3
+            ],
+            "runtime_input_dtype": "uint8",
+            "runtime_input_layout": "HWC",
+            "runtime_color_space": "RGB",
+            "runtime_normalization": "embedded_dxcom_preprocessing",
+            "runtime_numeric_domain": "uint8_0_255"
+          },
+          "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+          "binding_verified": true,
+          "source_image_id": "ILSVRC2012_val_00000390.JPEG",
+          "source_image_sha256": "9c84ab4d72d7adbecf37adc82a039f446e7be4d1da042bb2fdf014a4dbb1ec6a"
+        }
+      }
+    },
+    {
+      "image": "/tmp/onnx-deepx-prepost-r1-0r3Ho1Dmvq/suite/images/ILSVRC2012_val_00000395.JPEG",
+      "label_id": 74,
+      "label_name": null,
+      "top1": 74,
+      "top5": [
+        74,
+        73,
+        319,
+        72,
+        78
+      ],
+      "scores": [
+        7.791748046875,
+        7.771484375,
+        5.7801513671875,
+        5.5804443359375,
+        4.4697265625
+      ],
+      "top1_correct": true,
+      "top5_correct": true,
+      "preprocessing_audit": {
+        "shape": [
+          224,
+          224,
+          3
+        ],
+        "dtype": "uint8",
+        "layout": "HWC",
+        "color_space": "RGB",
+        "preprocess_mode": "resize",
+        "normalization": "embedded_dxcom_preprocessing",
+        "scale": 0.448,
+        "pad_x": 0,
+        "pad_y": 0,
+        "letterbox_pad_value": 0,
+        "source_shape_hw": [
+          500,
+          377
+        ],
+        "contract_source": "task_bound_dxcom_image_loader_preprocessing",
+        "runtime_preprocessing_identity": {
+          "schema": "onnx-splitpoint/image-preprocessing-contract",
+          "schema_version": 2,
+          "contract_scope": "prepared_rgb_uint8_semantics",
+          "task": "classification",
+          "preprocess_mode": "resize",
+          "spatial_transform": "direct_resize",
+          "target_hw": [
+            224,
+            224
+          ],
+          "color_space": "RGB",
+          "input_domain": "uint8_0_255",
+          "resize_interpolation": "bilinear",
+          "resize_rounding": "python_round_ties_to_even",
+          "placement": "not_applicable",
+          "pad_value": 0,
+          "letterbox_pad_value": 0,
+          "image_scale": "imagenet",
+          "letterbox": false
+        },
+        "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+        "runtime_numeric_input_identity": {
+          "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+          "schema_version": 1,
+          "backend": "native_full_deepx",
+          "task": "classification",
+          "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_input_name": "input",
+          "runtime_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "runtime_input_dtype": "uint8",
+          "runtime_input_layout": "HWC",
+          "runtime_color_space": "RGB",
+          "runtime_normalization": "embedded_dxcom_preprocessing",
+          "runtime_numeric_domain": "uint8_0_255"
+        },
+        "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+        "prepared_tensor_binding": {
+          "prepared_input_sha256": "e5a220f0ce31d0cda68d5da4c9ad1340fe8f7938d9b97ee8edce0b68e9dea53b",
+          "prepared_input_bytes": 150528,
+          "prepared_input_name": "input",
+          "prepared_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "prepared_input_dtype": "uint8",
+          "prepared_input_layout": "HWC",
+          "prepared_rgb_uint8_sha256": "e5a220f0ce31d0cda68d5da4c9ad1340fe8f7938d9b97ee8edce0b68e9dea53b",
+          "prepared_rgb_uint8_bytes": 150528,
+          "runtime_preprocessing_identity": {
+            "schema": "onnx-splitpoint/image-preprocessing-contract",
+            "schema_version": 2,
+            "contract_scope": "prepared_rgb_uint8_semantics",
+            "task": "classification",
+            "preprocess_mode": "resize",
+            "spatial_transform": "direct_resize",
+            "target_hw": [
+              224,
+              224
+            ],
+            "color_space": "RGB",
+            "input_domain": "uint8_0_255",
+            "resize_interpolation": "bilinear",
+            "resize_rounding": "python_round_ties_to_even",
+            "placement": "not_applicable",
+            "pad_value": 0,
+            "letterbox_pad_value": 0,
+            "image_scale": "imagenet",
+            "letterbox": false
+          },
+          "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_numeric_input_identity": {
+            "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+            "schema_version": 1,
+            "backend": "native_full_deepx",
+            "task": "classification",
+            "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+            "runtime_input_name": "input",
+            "runtime_input_shape": [
+              224,
+              224,
+              3
+            ],
+            "runtime_input_dtype": "uint8",
+            "runtime_input_layout": "HWC",
+            "runtime_color_space": "RGB",
+            "runtime_normalization": "embedded_dxcom_preprocessing",
+            "runtime_numeric_domain": "uint8_0_255"
+          },
+          "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+          "binding_verified": true,
+          "source_image_id": "ILSVRC2012_val_00000395.JPEG",
+          "source_image_sha256": "ae9ca54dd30964d4854d9d7d8aa750ff72a4666b74ffce9a099d9544751a1625"
+        }
+      }
+    },
+    {
+      "image": "/tmp/onnx-deepx-prepost-r1-0r3Ho1Dmvq/suite/images/ILSVRC2012_val_00000410.JPEG",
+      "label_id": 598,
+      "label_name": null,
+      "top1": 598,
+      "top5": [
+        598,
+        532,
+        831,
+        846,
+        905
+      ],
+      "scores": [
+        5.8812255859375,
+        5.0440673828125,
+        4.8663330078125,
+        4.4879150390625,
+        4.42822265625
+      ],
+      "top1_correct": true,
+      "top5_correct": true,
+      "preprocessing_audit": {
+        "shape": [
+          224,
+          224,
+          3
+        ],
+        "dtype": "uint8",
+        "layout": "HWC",
+        "color_space": "RGB",
+        "preprocess_mode": "resize",
+        "normalization": "embedded_dxcom_preprocessing",
+        "scale": 0.448,
+        "pad_x": 0,
+        "pad_y": 0,
+        "letterbox_pad_value": 0,
+        "source_shape_hw": [
+          334,
+          500
+        ],
+        "contract_source": "task_bound_dxcom_image_loader_preprocessing",
+        "runtime_preprocessing_identity": {
+          "schema": "onnx-splitpoint/image-preprocessing-contract",
+          "schema_version": 2,
+          "contract_scope": "prepared_rgb_uint8_semantics",
+          "task": "classification",
+          "preprocess_mode": "resize",
+          "spatial_transform": "direct_resize",
+          "target_hw": [
+            224,
+            224
+          ],
+          "color_space": "RGB",
+          "input_domain": "uint8_0_255",
+          "resize_interpolation": "bilinear",
+          "resize_rounding": "python_round_ties_to_even",
+          "placement": "not_applicable",
+          "pad_value": 0,
+          "letterbox_pad_value": 0,
+          "image_scale": "imagenet",
+          "letterbox": false
+        },
+        "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+        "runtime_numeric_input_identity": {
+          "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+          "schema_version": 1,
+          "backend": "native_full_deepx",
+          "task": "classification",
+          "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_input_name": "input",
+          "runtime_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "runtime_input_dtype": "uint8",
+          "runtime_input_layout": "HWC",
+          "runtime_color_space": "RGB",
+          "runtime_normalization": "embedded_dxcom_preprocessing",
+          "runtime_numeric_domain": "uint8_0_255"
+        },
+        "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+        "prepared_tensor_binding": {
+          "prepared_input_sha256": "fa313049993dbe7778002c23e123a5dcffe4eb3144d0bd6726183c76fc392162",
+          "prepared_input_bytes": 150528,
+          "prepared_input_name": "input",
+          "prepared_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "prepared_input_dtype": "uint8",
+          "prepared_input_layout": "HWC",
+          "prepared_rgb_uint8_sha256": "fa313049993dbe7778002c23e123a5dcffe4eb3144d0bd6726183c76fc392162",
+          "prepared_rgb_uint8_bytes": 150528,
+          "runtime_preprocessing_identity": {
+            "schema": "onnx-splitpoint/image-preprocessing-contract",
+            "schema_version": 2,
+            "contract_scope": "prepared_rgb_uint8_semantics",
+            "task": "classification",
+            "preprocess_mode": "resize",
+            "spatial_transform": "direct_resize",
+            "target_hw": [
+              224,
+              224
+            ],
+            "color_space": "RGB",
+            "input_domain": "uint8_0_255",
+            "resize_interpolation": "bilinear",
+            "resize_rounding": "python_round_ties_to_even",
+            "placement": "not_applicable",
+            "pad_value": 0,
+            "letterbox_pad_value": 0,
+            "image_scale": "imagenet",
+            "letterbox": false
+          },
+          "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_numeric_input_identity": {
+            "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+            "schema_version": 1,
+            "backend": "native_full_deepx",
+            "task": "classification",
+            "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+            "runtime_input_name": "input",
+            "runtime_input_shape": [
+              224,
+              224,
+              3
+            ],
+            "runtime_input_dtype": "uint8",
+            "runtime_input_layout": "HWC",
+            "runtime_color_space": "RGB",
+            "runtime_normalization": "embedded_dxcom_preprocessing",
+            "runtime_numeric_domain": "uint8_0_255"
+          },
+          "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+          "binding_verified": true,
+          "source_image_id": "ILSVRC2012_val_00000410.JPEG",
+          "source_image_sha256": "7df285f8043557358d25b81d50f919f4c1faa378fc9bb13403713f5875b3b392"
+        }
+      }
+    },
+    {
+      "image": "/tmp/onnx-deepx-prepost-r1-0r3Ho1Dmvq/suite/images/ILSVRC2012_val_00000465.JPEG",
+      "label_id": 712,
+      "label_name": null,
+      "top1": 898,
+      "top5": [
+        898,
+        712,
+        773,
+        720,
+        455
+      ],
+      "scores": [
+        7.104736328125,
+        6.6036376953125,
+        5.6419677734375,
+        5.36572265625,
+        4.8079833984375
+      ],
+      "top1_correct": false,
+      "top5_correct": true,
+      "preprocessing_audit": {
+        "shape": [
+          224,
+          224,
+          3
+        ],
+        "dtype": "uint8",
+        "layout": "HWC",
+        "color_space": "RGB",
+        "preprocess_mode": "resize",
+        "normalization": "embedded_dxcom_preprocessing",
+        "scale": 0.448,
+        "pad_x": 0,
+        "pad_y": 0,
+        "letterbox_pad_value": 0,
+        "source_shape_hw": [
+          313,
+          500
+        ],
+        "contract_source": "task_bound_dxcom_image_loader_preprocessing",
+        "runtime_preprocessing_identity": {
+          "schema": "onnx-splitpoint/image-preprocessing-contract",
+          "schema_version": 2,
+          "contract_scope": "prepared_rgb_uint8_semantics",
+          "task": "classification",
+          "preprocess_mode": "resize",
+          "spatial_transform": "direct_resize",
+          "target_hw": [
+            224,
+            224
+          ],
+          "color_space": "RGB",
+          "input_domain": "uint8_0_255",
+          "resize_interpolation": "bilinear",
+          "resize_rounding": "python_round_ties_to_even",
+          "placement": "not_applicable",
+          "pad_value": 0,
+          "letterbox_pad_value": 0,
+          "image_scale": "imagenet",
+          "letterbox": false
+        },
+        "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+        "runtime_numeric_input_identity": {
+          "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+          "schema_version": 1,
+          "backend": "native_full_deepx",
+          "task": "classification",
+          "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_input_name": "input",
+          "runtime_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "runtime_input_dtype": "uint8",
+          "runtime_input_layout": "HWC",
+          "runtime_color_space": "RGB",
+          "runtime_normalization": "embedded_dxcom_preprocessing",
+          "runtime_numeric_domain": "uint8_0_255"
+        },
+        "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+        "prepared_tensor_binding": {
+          "prepared_input_sha256": "723da161f515f131688a9dc36f74ae5e3f31f9802250fd748feaa9a3459a76e5",
+          "prepared_input_bytes": 150528,
+          "prepared_input_name": "input",
+          "prepared_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "prepared_input_dtype": "uint8",
+          "prepared_input_layout": "HWC",
+          "prepared_rgb_uint8_sha256": "723da161f515f131688a9dc36f74ae5e3f31f9802250fd748feaa9a3459a76e5",
+          "prepared_rgb_uint8_bytes": 150528,
+          "runtime_preprocessing_identity": {
+            "schema": "onnx-splitpoint/image-preprocessing-contract",
+            "schema_version": 2,
+            "contract_scope": "prepared_rgb_uint8_semantics",
+            "task": "classification",
+            "preprocess_mode": "resize",
+            "spatial_transform": "direct_resize",
+            "target_hw": [
+              224,
+              224
+            ],
+            "color_space": "RGB",
+            "input_domain": "uint8_0_255",
+            "resize_interpolation": "bilinear",
+            "resize_rounding": "python_round_ties_to_even",
+            "placement": "not_applicable",
+            "pad_value": 0,
+            "letterbox_pad_value": 0,
+            "image_scale": "imagenet",
+            "letterbox": false
+          },
+          "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_numeric_input_identity": {
+            "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+            "schema_version": 1,
+            "backend": "native_full_deepx",
+            "task": "classification",
+            "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+            "runtime_input_name": "input",
+            "runtime_input_shape": [
+              224,
+              224,
+              3
+            ],
+            "runtime_input_dtype": "uint8",
+            "runtime_input_layout": "HWC",
+            "runtime_color_space": "RGB",
+            "runtime_normalization": "embedded_dxcom_preprocessing",
+            "runtime_numeric_domain": "uint8_0_255"
+          },
+          "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+          "binding_verified": true,
+          "source_image_id": "ILSVRC2012_val_00000465.JPEG",
+          "source_image_sha256": "1671dac1c1e76dbe21ca8cc8334d43cae57b75a027b99930fba6a9bd0090c260"
+        }
+      }
+    },
+    {
+      "image": "/tmp/onnx-deepx-prepost-r1-0r3Ho1Dmvq/suite/images/ILSVRC2012_val_00000515.JPEG",
+      "label_id": 744,
+      "label_name": null,
+      "top1": 744,
+      "top5": [
+        744,
+        657,
+        908,
+        895,
+        559
+      ],
+      "scores": [
+        6.27490234375,
+        6.224609375,
+        5.69189453125,
+        5.5640869140625,
+        4.1085205078125
+      ],
+      "top1_correct": true,
+      "top5_correct": true,
+      "preprocessing_audit": {
+        "shape": [
+          224,
+          224,
+          3
+        ],
+        "dtype": "uint8",
+        "layout": "HWC",
+        "color_space": "RGB",
+        "preprocess_mode": "resize",
+        "normalization": "embedded_dxcom_preprocessing",
+        "scale": 0.448,
+        "pad_x": 0,
+        "pad_y": 0,
+        "letterbox_pad_value": 0,
+        "source_shape_hw": [
+          375,
+          500
+        ],
+        "contract_source": "task_bound_dxcom_image_loader_preprocessing",
+        "runtime_preprocessing_identity": {
+          "schema": "onnx-splitpoint/image-preprocessing-contract",
+          "schema_version": 2,
+          "contract_scope": "prepared_rgb_uint8_semantics",
+          "task": "classification",
+          "preprocess_mode": "resize",
+          "spatial_transform": "direct_resize",
+          "target_hw": [
+            224,
+            224
+          ],
+          "color_space": "RGB",
+          "input_domain": "uint8_0_255",
+          "resize_interpolation": "bilinear",
+          "resize_rounding": "python_round_ties_to_even",
+          "placement": "not_applicable",
+          "pad_value": 0,
+          "letterbox_pad_value": 0,
+          "image_scale": "imagenet",
+          "letterbox": false
+        },
+        "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+        "runtime_numeric_input_identity": {
+          "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+          "schema_version": 1,
+          "backend": "native_full_deepx",
+          "task": "classification",
+          "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_input_name": "input",
+          "runtime_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "runtime_input_dtype": "uint8",
+          "runtime_input_layout": "HWC",
+          "runtime_color_space": "RGB",
+          "runtime_normalization": "embedded_dxcom_preprocessing",
+          "runtime_numeric_domain": "uint8_0_255"
+        },
+        "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+        "prepared_tensor_binding": {
+          "prepared_input_sha256": "e17d4ddedccfca5912a82ad2ee5eb746d6b2dc963c55048edbf0cc56100bca20",
+          "prepared_input_bytes": 150528,
+          "prepared_input_name": "input",
+          "prepared_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "prepared_input_dtype": "uint8",
+          "prepared_input_layout": "HWC",
+          "prepared_rgb_uint8_sha256": "e17d4ddedccfca5912a82ad2ee5eb746d6b2dc963c55048edbf0cc56100bca20",
+          "prepared_rgb_uint8_bytes": 150528,
+          "runtime_preprocessing_identity": {
+            "schema": "onnx-splitpoint/image-preprocessing-contract",
+            "schema_version": 2,
+            "contract_scope": "prepared_rgb_uint8_semantics",
+            "task": "classification",
+            "preprocess_mode": "resize",
+            "spatial_transform": "direct_resize",
+            "target_hw": [
+              224,
+              224
+            ],
+            "color_space": "RGB",
+            "input_domain": "uint8_0_255",
+            "resize_interpolation": "bilinear",
+            "resize_rounding": "python_round_ties_to_even",
+            "placement": "not_applicable",
+            "pad_value": 0,
+            "letterbox_pad_value": 0,
+            "image_scale": "imagenet",
+            "letterbox": false
+          },
+          "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_numeric_input_identity": {
+            "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+            "schema_version": 1,
+            "backend": "native_full_deepx",
+            "task": "classification",
+            "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+            "runtime_input_name": "input",
+            "runtime_input_shape": [
+              224,
+              224,
+              3
+            ],
+            "runtime_input_dtype": "uint8",
+            "runtime_input_layout": "HWC",
+            "runtime_color_space": "RGB",
+            "runtime_normalization": "embedded_dxcom_preprocessing",
+            "runtime_numeric_domain": "uint8_0_255"
+          },
+          "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+          "binding_verified": true,
+          "source_image_id": "ILSVRC2012_val_00000515.JPEG",
+          "source_image_sha256": "5d4e6ea9fa74911550bd4d22db2e9b0adb0f348ddce6c233c90af5b43c8e0f3a"
+        }
+      }
+    },
+    {
+      "image": "/tmp/onnx-deepx-prepost-r1-0r3Ho1Dmvq/suite/images/ILSVRC2012_val_00000526.JPEG",
+      "label_id": 868,
+      "label_name": null,
+      "top1": 492,
+      "top5": [
+        492,
+        868,
+        711,
+        519,
+        883
+      ],
+      "scores": [
+        6.6072998046875,
+        6.41796875,
+        6.296142578125,
+        5.2177734375,
+        5.210205078125
+      ],
+      "top1_correct": false,
+      "top5_correct": true,
+      "preprocessing_audit": {
+        "shape": [
+          224,
+          224,
+          3
+        ],
+        "dtype": "uint8",
+        "layout": "HWC",
+        "color_space": "RGB",
+        "preprocess_mode": "resize",
+        "normalization": "embedded_dxcom_preprocessing",
+        "scale": 0.448,
+        "pad_x": 0,
+        "pad_y": 0,
+        "letterbox_pad_value": 0,
+        "source_shape_hw": [
+          375,
+          500
+        ],
+        "contract_source": "task_bound_dxcom_image_loader_preprocessing",
+        "runtime_preprocessing_identity": {
+          "schema": "onnx-splitpoint/image-preprocessing-contract",
+          "schema_version": 2,
+          "contract_scope": "prepared_rgb_uint8_semantics",
+          "task": "classification",
+          "preprocess_mode": "resize",
+          "spatial_transform": "direct_resize",
+          "target_hw": [
+            224,
+            224
+          ],
+          "color_space": "RGB",
+          "input_domain": "uint8_0_255",
+          "resize_interpolation": "bilinear",
+          "resize_rounding": "python_round_ties_to_even",
+          "placement": "not_applicable",
+          "pad_value": 0,
+          "letterbox_pad_value": 0,
+          "image_scale": "imagenet",
+          "letterbox": false
+        },
+        "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+        "runtime_numeric_input_identity": {
+          "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+          "schema_version": 1,
+          "backend": "native_full_deepx",
+          "task": "classification",
+          "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_input_name": "input",
+          "runtime_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "runtime_input_dtype": "uint8",
+          "runtime_input_layout": "HWC",
+          "runtime_color_space": "RGB",
+          "runtime_normalization": "embedded_dxcom_preprocessing",
+          "runtime_numeric_domain": "uint8_0_255"
+        },
+        "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+        "prepared_tensor_binding": {
+          "prepared_input_sha256": "8cd2199514a5d9aaee359dbe40f5ce293c71ff5e6269637b9276119dfa11a8c4",
+          "prepared_input_bytes": 150528,
+          "prepared_input_name": "input",
+          "prepared_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "prepared_input_dtype": "uint8",
+          "prepared_input_layout": "HWC",
+          "prepared_rgb_uint8_sha256": "8cd2199514a5d9aaee359dbe40f5ce293c71ff5e6269637b9276119dfa11a8c4",
+          "prepared_rgb_uint8_bytes": 150528,
+          "runtime_preprocessing_identity": {
+            "schema": "onnx-splitpoint/image-preprocessing-contract",
+            "schema_version": 2,
+            "contract_scope": "prepared_rgb_uint8_semantics",
+            "task": "classification",
+            "preprocess_mode": "resize",
+            "spatial_transform": "direct_resize",
+            "target_hw": [
+              224,
+              224
+            ],
+            "color_space": "RGB",
+            "input_domain": "uint8_0_255",
+            "resize_interpolation": "bilinear",
+            "resize_rounding": "python_round_ties_to_even",
+            "placement": "not_applicable",
+            "pad_value": 0,
+            "letterbox_pad_value": 0,
+            "image_scale": "imagenet",
+            "letterbox": false
+          },
+          "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_numeric_input_identity": {
+            "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+            "schema_version": 1,
+            "backend": "native_full_deepx",
+            "task": "classification",
+            "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+            "runtime_input_name": "input",
+            "runtime_input_shape": [
+              224,
+              224,
+              3
+            ],
+            "runtime_input_dtype": "uint8",
+            "runtime_input_layout": "HWC",
+            "runtime_color_space": "RGB",
+            "runtime_normalization": "embedded_dxcom_preprocessing",
+            "runtime_numeric_domain": "uint8_0_255"
+          },
+          "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+          "binding_verified": true,
+          "source_image_id": "ILSVRC2012_val_00000526.JPEG",
+          "source_image_sha256": "c80e50766003ee2fc17a82007b98b7f2687942cb8783e16f7fd25f471f4510bb"
+        }
+      }
+    },
+    {
+      "image": "/tmp/onnx-deepx-prepost-r1-0r3Ho1Dmvq/suite/images/ILSVRC2012_val_00000705.JPEG",
+      "label_id": 994,
+      "label_name": null,
+      "top1": 994,
+      "top5": [
+        994,
+        470,
+        929,
+        942,
+        947
+      ],
+      "scores": [
+        7.460693359375,
+        5.4443359375,
+        4.7637939453125,
+        4.262939453125,
+        4.091064453125
+      ],
+      "top1_correct": true,
+      "top5_correct": true,
+      "preprocessing_audit": {
+        "shape": [
+          224,
+          224,
+          3
+        ],
+        "dtype": "uint8",
+        "layout": "HWC",
+        "color_space": "RGB",
+        "preprocess_mode": "resize",
+        "normalization": "embedded_dxcom_preprocessing",
+        "scale": 0.448,
+        "pad_x": 0,
+        "pad_y": 0,
+        "letterbox_pad_value": 0,
+        "source_shape_hw": [
+          375,
+          500
+        ],
+        "contract_source": "task_bound_dxcom_image_loader_preprocessing",
+        "runtime_preprocessing_identity": {
+          "schema": "onnx-splitpoint/image-preprocessing-contract",
+          "schema_version": 2,
+          "contract_scope": "prepared_rgb_uint8_semantics",
+          "task": "classification",
+          "preprocess_mode": "resize",
+          "spatial_transform": "direct_resize",
+          "target_hw": [
+            224,
+            224
+          ],
+          "color_space": "RGB",
+          "input_domain": "uint8_0_255",
+          "resize_interpolation": "bilinear",
+          "resize_rounding": "python_round_ties_to_even",
+          "placement": "not_applicable",
+          "pad_value": 0,
+          "letterbox_pad_value": 0,
+          "image_scale": "imagenet",
+          "letterbox": false
+        },
+        "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+        "runtime_numeric_input_identity": {
+          "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+          "schema_version": 1,
+          "backend": "native_full_deepx",
+          "task": "classification",
+          "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_input_name": "input",
+          "runtime_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "runtime_input_dtype": "uint8",
+          "runtime_input_layout": "HWC",
+          "runtime_color_space": "RGB",
+          "runtime_normalization": "embedded_dxcom_preprocessing",
+          "runtime_numeric_domain": "uint8_0_255"
+        },
+        "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+        "prepared_tensor_binding": {
+          "prepared_input_sha256": "c4da2a6944aca1f52e672416cbfd57d646c9ebb2750903afa39f0fdf1452718d",
+          "prepared_input_bytes": 150528,
+          "prepared_input_name": "input",
+          "prepared_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "prepared_input_dtype": "uint8",
+          "prepared_input_layout": "HWC",
+          "prepared_rgb_uint8_sha256": "c4da2a6944aca1f52e672416cbfd57d646c9ebb2750903afa39f0fdf1452718d",
+          "prepared_rgb_uint8_bytes": 150528,
+          "runtime_preprocessing_identity": {
+            "schema": "onnx-splitpoint/image-preprocessing-contract",
+            "schema_version": 2,
+            "contract_scope": "prepared_rgb_uint8_semantics",
+            "task": "classification",
+            "preprocess_mode": "resize",
+            "spatial_transform": "direct_resize",
+            "target_hw": [
+              224,
+              224
+            ],
+            "color_space": "RGB",
+            "input_domain": "uint8_0_255",
+            "resize_interpolation": "bilinear",
+            "resize_rounding": "python_round_ties_to_even",
+            "placement": "not_applicable",
+            "pad_value": 0,
+            "letterbox_pad_value": 0,
+            "image_scale": "imagenet",
+            "letterbox": false
+          },
+          "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_numeric_input_identity": {
+            "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+            "schema_version": 1,
+            "backend": "native_full_deepx",
+            "task": "classification",
+            "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+            "runtime_input_name": "input",
+            "runtime_input_shape": [
+              224,
+              224,
+              3
+            ],
+            "runtime_input_dtype": "uint8",
+            "runtime_input_layout": "HWC",
+            "runtime_color_space": "RGB",
+            "runtime_normalization": "embedded_dxcom_preprocessing",
+            "runtime_numeric_domain": "uint8_0_255"
+          },
+          "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+          "binding_verified": true,
+          "source_image_id": "ILSVRC2012_val_00000705.JPEG",
+          "source_image_sha256": "645608078bfa7a6f98b6d27ef85a4cb8d16cfb67adb7a9c4943790f33c0d2b78"
+        }
+      }
+    },
+    {
+      "image": "/tmp/onnx-deepx-prepost-r1-0r3Ho1Dmvq/suite/images/ILSVRC2012_val_00000744.JPEG",
+      "label_id": 97,
+      "label_name": null,
+      "top1": 97,
+      "top5": [
+        97,
+        98,
+        889,
+        855,
+        774
+      ],
+      "scores": [
+        8.899658203125,
+        4.8701171875,
+        4.453857421875,
+        4.4462890625,
+        4.3922119140625
+      ],
+      "top1_correct": true,
+      "top5_correct": true,
+      "preprocessing_audit": {
+        "shape": [
+          224,
+          224,
+          3
+        ],
+        "dtype": "uint8",
+        "layout": "HWC",
+        "color_space": "RGB",
+        "preprocess_mode": "resize",
+        "normalization": "embedded_dxcom_preprocessing",
+        "scale": 0.448,
+        "pad_x": 0,
+        "pad_y": 0,
+        "letterbox_pad_value": 0,
+        "source_shape_hw": [
+          406,
+          500
+        ],
+        "contract_source": "task_bound_dxcom_image_loader_preprocessing",
+        "runtime_preprocessing_identity": {
+          "schema": "onnx-splitpoint/image-preprocessing-contract",
+          "schema_version": 2,
+          "contract_scope": "prepared_rgb_uint8_semantics",
+          "task": "classification",
+          "preprocess_mode": "resize",
+          "spatial_transform": "direct_resize",
+          "target_hw": [
+            224,
+            224
+          ],
+          "color_space": "RGB",
+          "input_domain": "uint8_0_255",
+          "resize_interpolation": "bilinear",
+          "resize_rounding": "python_round_ties_to_even",
+          "placement": "not_applicable",
+          "pad_value": 0,
+          "letterbox_pad_value": 0,
+          "image_scale": "imagenet",
+          "letterbox": false
+        },
+        "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+        "runtime_numeric_input_identity": {
+          "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+          "schema_version": 1,
+          "backend": "native_full_deepx",
+          "task": "classification",
+          "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_input_name": "input",
+          "runtime_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "runtime_input_dtype": "uint8",
+          "runtime_input_layout": "HWC",
+          "runtime_color_space": "RGB",
+          "runtime_normalization": "embedded_dxcom_preprocessing",
+          "runtime_numeric_domain": "uint8_0_255"
+        },
+        "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+        "prepared_tensor_binding": {
+          "prepared_input_sha256": "5463fedcccf2e800cab8e0780a2d1648fdfb23f4709e0f9f35d9060ef93437c4",
+          "prepared_input_bytes": 150528,
+          "prepared_input_name": "input",
+          "prepared_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "prepared_input_dtype": "uint8",
+          "prepared_input_layout": "HWC",
+          "prepared_rgb_uint8_sha256": "5463fedcccf2e800cab8e0780a2d1648fdfb23f4709e0f9f35d9060ef93437c4",
+          "prepared_rgb_uint8_bytes": 150528,
+          "runtime_preprocessing_identity": {
+            "schema": "onnx-splitpoint/image-preprocessing-contract",
+            "schema_version": 2,
+            "contract_scope": "prepared_rgb_uint8_semantics",
+            "task": "classification",
+            "preprocess_mode": "resize",
+            "spatial_transform": "direct_resize",
+            "target_hw": [
+              224,
+              224
+            ],
+            "color_space": "RGB",
+            "input_domain": "uint8_0_255",
+            "resize_interpolation": "bilinear",
+            "resize_rounding": "python_round_ties_to_even",
+            "placement": "not_applicable",
+            "pad_value": 0,
+            "letterbox_pad_value": 0,
+            "image_scale": "imagenet",
+            "letterbox": false
+          },
+          "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_numeric_input_identity": {
+            "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+            "schema_version": 1,
+            "backend": "native_full_deepx",
+            "task": "classification",
+            "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+            "runtime_input_name": "input",
+            "runtime_input_shape": [
+              224,
+              224,
+              3
+            ],
+            "runtime_input_dtype": "uint8",
+            "runtime_input_layout": "HWC",
+            "runtime_color_space": "RGB",
+            "runtime_normalization": "embedded_dxcom_preprocessing",
+            "runtime_numeric_domain": "uint8_0_255"
+          },
+          "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+          "binding_verified": true,
+          "source_image_id": "ILSVRC2012_val_00000744.JPEG",
+          "source_image_sha256": "4f7f16fba8e8261dc06247925471b6e87cedb96914190f6f20aeeb769fc54c41"
+        }
+      }
+    },
+    {
+      "image": "/tmp/onnx-deepx-prepost-r1-0r3Ho1Dmvq/suite/images/ILSVRC2012_val_00001020.JPEG",
+      "label_id": 803,
+      "label_name": null,
+      "top1": 803,
+      "top5": [
+        803,
+        864,
+        470,
+        609,
+        575
+      ],
+      "scores": [
+        10.69482421875,
+        5.724853515625,
+        5.1336669921875,
+        4.6593017578125,
+        4.57080078125
+      ],
+      "top1_correct": true,
+      "top5_correct": true,
+      "preprocessing_audit": {
+        "shape": [
+          224,
+          224,
+          3
+        ],
+        "dtype": "uint8",
+        "layout": "HWC",
+        "color_space": "RGB",
+        "preprocess_mode": "resize",
+        "normalization": "embedded_dxcom_preprocessing",
+        "scale": 0.448,
+        "pad_x": 0,
+        "pad_y": 0,
+        "letterbox_pad_value": 0,
+        "source_shape_hw": [
+          334,
+          500
+        ],
+        "contract_source": "task_bound_dxcom_image_loader_preprocessing",
+        "runtime_preprocessing_identity": {
+          "schema": "onnx-splitpoint/image-preprocessing-contract",
+          "schema_version": 2,
+          "contract_scope": "prepared_rgb_uint8_semantics",
+          "task": "classification",
+          "preprocess_mode": "resize",
+          "spatial_transform": "direct_resize",
+          "target_hw": [
+            224,
+            224
+          ],
+          "color_space": "RGB",
+          "input_domain": "uint8_0_255",
+          "resize_interpolation": "bilinear",
+          "resize_rounding": "python_round_ties_to_even",
+          "placement": "not_applicable",
+          "pad_value": 0,
+          "letterbox_pad_value": 0,
+          "image_scale": "imagenet",
+          "letterbox": false
+        },
+        "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+        "runtime_numeric_input_identity": {
+          "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+          "schema_version": 1,
+          "backend": "native_full_deepx",
+          "task": "classification",
+          "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_input_name": "input",
+          "runtime_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "runtime_input_dtype": "uint8",
+          "runtime_input_layout": "HWC",
+          "runtime_color_space": "RGB",
+          "runtime_normalization": "embedded_dxcom_preprocessing",
+          "runtime_numeric_domain": "uint8_0_255"
+        },
+        "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+        "prepared_tensor_binding": {
+          "prepared_input_sha256": "af0a1f5d57fbb6adee349b19bcd34b9d2cf3f808f68bc275fe6b2ec1ffc35aae",
+          "prepared_input_bytes": 150528,
+          "prepared_input_name": "input",
+          "prepared_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "prepared_input_dtype": "uint8",
+          "prepared_input_layout": "HWC",
+          "prepared_rgb_uint8_sha256": "af0a1f5d57fbb6adee349b19bcd34b9d2cf3f808f68bc275fe6b2ec1ffc35aae",
+          "prepared_rgb_uint8_bytes": 150528,
+          "runtime_preprocessing_identity": {
+            "schema": "onnx-splitpoint/image-preprocessing-contract",
+            "schema_version": 2,
+            "contract_scope": "prepared_rgb_uint8_semantics",
+            "task": "classification",
+            "preprocess_mode": "resize",
+            "spatial_transform": "direct_resize",
+            "target_hw": [
+              224,
+              224
+            ],
+            "color_space": "RGB",
+            "input_domain": "uint8_0_255",
+            "resize_interpolation": "bilinear",
+            "resize_rounding": "python_round_ties_to_even",
+            "placement": "not_applicable",
+            "pad_value": 0,
+            "letterbox_pad_value": 0,
+            "image_scale": "imagenet",
+            "letterbox": false
+          },
+          "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_numeric_input_identity": {
+            "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+            "schema_version": 1,
+            "backend": "native_full_deepx",
+            "task": "classification",
+            "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+            "runtime_input_name": "input",
+            "runtime_input_shape": [
+              224,
+              224,
+              3
+            ],
+            "runtime_input_dtype": "uint8",
+            "runtime_input_layout": "HWC",
+            "runtime_color_space": "RGB",
+            "runtime_normalization": "embedded_dxcom_preprocessing",
+            "runtime_numeric_domain": "uint8_0_255"
+          },
+          "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+          "binding_verified": true,
+          "source_image_id": "ILSVRC2012_val_00001020.JPEG",
+          "source_image_sha256": "d5ab9b3cbdb0c66146c7785a5ecd1f7cf17ed0ba28cd170bcb8df8955fa868e6"
+        }
+      }
+    },
+    {
+      "image": "/tmp/onnx-deepx-prepost-r1-0r3Ho1Dmvq/suite/images/ILSVRC2012_val_00001237.JPEG",
+      "label_id": 335,
+      "label_name": null,
+      "top1": 13,
+      "top5": [
+        13,
+        10,
+        15,
+        19,
+        989
+      ],
+      "scores": [
+        7.9046630859375,
+        6.5814208984375,
+        6.409912109375,
+        6.1695556640625,
+        6.0682373046875
+      ],
+      "top1_correct": false,
+      "top5_correct": false,
+      "preprocessing_audit": {
+        "shape": [
+          224,
+          224,
+          3
+        ],
+        "dtype": "uint8",
+        "layout": "HWC",
+        "color_space": "RGB",
+        "preprocess_mode": "resize",
+        "normalization": "embedded_dxcom_preprocessing",
+        "scale": 0.448,
+        "pad_x": 0,
+        "pad_y": 0,
+        "letterbox_pad_value": 0,
+        "source_shape_hw": [
+          500,
+          333
+        ],
+        "contract_source": "task_bound_dxcom_image_loader_preprocessing",
+        "runtime_preprocessing_identity": {
+          "schema": "onnx-splitpoint/image-preprocessing-contract",
+          "schema_version": 2,
+          "contract_scope": "prepared_rgb_uint8_semantics",
+          "task": "classification",
+          "preprocess_mode": "resize",
+          "spatial_transform": "direct_resize",
+          "target_hw": [
+            224,
+            224
+          ],
+          "color_space": "RGB",
+          "input_domain": "uint8_0_255",
+          "resize_interpolation": "bilinear",
+          "resize_rounding": "python_round_ties_to_even",
+          "placement": "not_applicable",
+          "pad_value": 0,
+          "letterbox_pad_value": 0,
+          "image_scale": "imagenet",
+          "letterbox": false
+        },
+        "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+        "runtime_numeric_input_identity": {
+          "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+          "schema_version": 1,
+          "backend": "native_full_deepx",
+          "task": "classification",
+          "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_input_name": "input",
+          "runtime_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "runtime_input_dtype": "uint8",
+          "runtime_input_layout": "HWC",
+          "runtime_color_space": "RGB",
+          "runtime_normalization": "embedded_dxcom_preprocessing",
+          "runtime_numeric_domain": "uint8_0_255"
+        },
+        "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+        "prepared_tensor_binding": {
+          "prepared_input_sha256": "1608422dc7082eada2e91b97957135bc0dbeed24ef15ebf5c40c490234bcd695",
+          "prepared_input_bytes": 150528,
+          "prepared_input_name": "input",
+          "prepared_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "prepared_input_dtype": "uint8",
+          "prepared_input_layout": "HWC",
+          "prepared_rgb_uint8_sha256": "1608422dc7082eada2e91b97957135bc0dbeed24ef15ebf5c40c490234bcd695",
+          "prepared_rgb_uint8_bytes": 150528,
+          "runtime_preprocessing_identity": {
+            "schema": "onnx-splitpoint/image-preprocessing-contract",
+            "schema_version": 2,
+            "contract_scope": "prepared_rgb_uint8_semantics",
+            "task": "classification",
+            "preprocess_mode": "resize",
+            "spatial_transform": "direct_resize",
+            "target_hw": [
+              224,
+              224
+            ],
+            "color_space": "RGB",
+            "input_domain": "uint8_0_255",
+            "resize_interpolation": "bilinear",
+            "resize_rounding": "python_round_ties_to_even",
+            "placement": "not_applicable",
+            "pad_value": 0,
+            "letterbox_pad_value": 0,
+            "image_scale": "imagenet",
+            "letterbox": false
+          },
+          "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_numeric_input_identity": {
+            "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+            "schema_version": 1,
+            "backend": "native_full_deepx",
+            "task": "classification",
+            "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+            "runtime_input_name": "input",
+            "runtime_input_shape": [
+              224,
+              224,
+              3
+            ],
+            "runtime_input_dtype": "uint8",
+            "runtime_input_layout": "HWC",
+            "runtime_color_space": "RGB",
+            "runtime_normalization": "embedded_dxcom_preprocessing",
+            "runtime_numeric_domain": "uint8_0_255"
+          },
+          "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+          "binding_verified": true,
+          "source_image_id": "ILSVRC2012_val_00001237.JPEG",
+          "source_image_sha256": "802b3e5c7e97b8590a9569a3a5f554533d52667beef5fd1303cd432cebd8405d"
+        }
+      }
+    },
+    {
+      "image": "/tmp/onnx-deepx-prepost-r1-0r3Ho1Dmvq/suite/images/ILSVRC2012_val_00001362.JPEG",
+      "label_id": 997,
+      "label_name": null,
+      "top1": 997,
+      "top5": [
+        997,
+        947,
+        363,
+        5,
+        995
+      ],
+      "scores": [
+        9.0771484375,
+        6.53271484375,
+        5.579345703125,
+        4.5224609375,
+        4.5015869140625
+      ],
+      "top1_correct": true,
+      "top5_correct": true,
+      "preprocessing_audit": {
+        "shape": [
+          224,
+          224,
+          3
+        ],
+        "dtype": "uint8",
+        "layout": "HWC",
+        "color_space": "RGB",
+        "preprocess_mode": "resize",
+        "normalization": "embedded_dxcom_preprocessing",
+        "scale": 0.448,
+        "pad_x": 0,
+        "pad_y": 0,
+        "letterbox_pad_value": 0,
+        "source_shape_hw": [
+          425,
+          500
+        ],
+        "contract_source": "task_bound_dxcom_image_loader_preprocessing",
+        "runtime_preprocessing_identity": {
+          "schema": "onnx-splitpoint/image-preprocessing-contract",
+          "schema_version": 2,
+          "contract_scope": "prepared_rgb_uint8_semantics",
+          "task": "classification",
+          "preprocess_mode": "resize",
+          "spatial_transform": "direct_resize",
+          "target_hw": [
+            224,
+            224
+          ],
+          "color_space": "RGB",
+          "input_domain": "uint8_0_255",
+          "resize_interpolation": "bilinear",
+          "resize_rounding": "python_round_ties_to_even",
+          "placement": "not_applicable",
+          "pad_value": 0,
+          "letterbox_pad_value": 0,
+          "image_scale": "imagenet",
+          "letterbox": false
+        },
+        "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+        "runtime_numeric_input_identity": {
+          "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+          "schema_version": 1,
+          "backend": "native_full_deepx",
+          "task": "classification",
+          "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_input_name": "input",
+          "runtime_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "runtime_input_dtype": "uint8",
+          "runtime_input_layout": "HWC",
+          "runtime_color_space": "RGB",
+          "runtime_normalization": "embedded_dxcom_preprocessing",
+          "runtime_numeric_domain": "uint8_0_255"
+        },
+        "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+        "prepared_tensor_binding": {
+          "prepared_input_sha256": "5d1fe52d64bc54cf67d8288da5ef033404ad776c5d7f692cbb55331a6ac39aed",
+          "prepared_input_bytes": 150528,
+          "prepared_input_name": "input",
+          "prepared_input_shape": [
+            224,
+            224,
+            3
+          ],
+          "prepared_input_dtype": "uint8",
+          "prepared_input_layout": "HWC",
+          "prepared_rgb_uint8_sha256": "5d1fe52d64bc54cf67d8288da5ef033404ad776c5d7f692cbb55331a6ac39aed",
+          "prepared_rgb_uint8_bytes": 150528,
+          "runtime_preprocessing_identity": {
+            "schema": "onnx-splitpoint/image-preprocessing-contract",
+            "schema_version": 2,
+            "contract_scope": "prepared_rgb_uint8_semantics",
+            "task": "classification",
+            "preprocess_mode": "resize",
+            "spatial_transform": "direct_resize",
+            "target_hw": [
+              224,
+              224
+            ],
+            "color_space": "RGB",
+            "input_domain": "uint8_0_255",
+            "resize_interpolation": "bilinear",
+            "resize_rounding": "python_round_ties_to_even",
+            "placement": "not_applicable",
+            "pad_value": 0,
+            "letterbox_pad_value": 0,
+            "image_scale": "imagenet",
+            "letterbox": false
+          },
+          "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+          "runtime_numeric_input_identity": {
+            "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+            "schema_version": 1,
+            "backend": "native_full_deepx",
+            "task": "classification",
+            "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+            "runtime_input_name": "input",
+            "runtime_input_shape": [
+              224,
+              224,
+              3
+            ],
+            "runtime_input_dtype": "uint8",
+            "runtime_input_layout": "HWC",
+            "runtime_color_space": "RGB",
+            "runtime_normalization": "embedded_dxcom_preprocessing",
+            "runtime_numeric_domain": "uint8_0_255"
+          },
+          "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+          "binding_verified": true,
+          "source_image_id": "ILSVRC2012_val_00001362.JPEG",
+          "source_image_sha256": "3b9f93320f6c3e44b627da1428b2b302bdffa7cd672d74c9920f60c82b2ff00e"
+        }
+      }
+    }
+  ]
+}

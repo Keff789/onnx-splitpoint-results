@@ -1,0 +1,1170 @@
+{
+  "dataset_registry_binding": {
+    "bound": [],
+    "bound_count": 0,
+    "created_at": "2026-09-07T16:15:42+02:00",
+    "enabled": true,
+    "invalid": [],
+    "invalid_count": 0,
+    "missing": [],
+    "missing_count": 0,
+    "preserved_explicit": [
+      {
+        "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/manifests/imagenet_train_calibration_manifest.json",
+        "role": "calibration",
+        "task": "classification"
+      },
+      {
+        "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/manifests/imagenet_val_manifest.json",
+        "role": "validation",
+        "task": "classification"
+      },
+      {
+        "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/manifests/coco2017_train_calibration_manifest.json",
+        "role": "calibration",
+        "task": "detection"
+      },
+      {
+        "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/manifests/coco2017_val_manifest.json",
+        "role": "validation",
+        "task": "detection"
+      }
+    ],
+    "registry_exists": true,
+    "registry_path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/dataset_registry.json",
+    "registry_sha256": "sha256:9c5b72d97946c397c57463899cdda2938c458e7b8495683790a9b157ceab5bfc",
+    "schema": "onnx-splitpoint/dataset-registry-binding",
+    "schema_version": 1,
+    "status": "ok"
+  },
+  "hardware_matrix_path": "hardware_matrix.json",
+  "hardware_target_count": 3,
+  "hardware_targets": [
+    {
+      "accelerator": "hailo8",
+      "build_environment": {
+        "cache_dir": "~/Models/BackendArtifacts/hailo",
+        "host": "local",
+        "id": "hailo8_dfc_managed",
+        "kind": "hailo8_dfc",
+        "shell": "bash",
+        "venv_activate": "source ~/.onnx_splitpoint_tool/hailo/venv_hailo8/bin/activate"
+      },
+      "build_environment_id": "hailo8_dfc_managed",
+      "enabled": true,
+      "energy": {
+        "accelerator_idle_calibrated_at": "2026-09-04T20:24:41.188331+00:00",
+        "accelerator_idle_calibration_evidence": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_hailo8_01/20260904_221941/m2_idle_power_calibration.json",
+        "accelerator_idle_w": 2.0079536423414304,
+        "calibration_manifest": "",
+        "calibration_sha256": "",
+        "enabled": true,
+        "full_system_current_scale_calibrated_at": "2026-09-04T20:08:48.231301+00:00",
+        "full_system_current_scale_calibration_evidence": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_hailo8_01/20260904_215950_full_system_input_scale/full_system_input_scale_calibration.json",
+        "full_system_current_scale_calibration_sha256": "90a559f5467c0fef13409d472f14b797f4cf44b1038f0e491f62c5436ea2b5f6",
+        "full_system_current_scale_factor": 0.9136343897390969,
+        "idle_baseline_w": null,
+        "urecs_address": "192.168.0.197"
+      },
+      "id": "orin_nx_hailo8_01",
+      "label": "Orin NX + Hailo-8",
+      "note": "Resolved from hardware setup registry.",
+      "provider": "hailo8",
+      "remote": {
+        "enabled": true,
+        "host": "192.168.0.104",
+        "host_copy": {
+          "host": "192.168.0.104",
+          "port": 22,
+          "remote_base_dir": "~/splitpoint_runs",
+          "user": "nx"
+        },
+        "host_id": "orin_nx_hailo8_01",
+        "iters": 50,
+        "port": 22,
+        "provider": "hailo8",
+        "remote_base_dir": "~/splitpoint_runs",
+        "remote_venv": "source ~/hailo_py/bin/activate",
+        "resume": true,
+        "reuse_bundle": true,
+        "ssh_extra_args": "",
+        "timeout_s": 0,
+        "transfer_mode": "bundle",
+        "user": "nx",
+        "warmup": 10
+      },
+      "runtime": {
+        "enabled": true,
+        "host": "192.168.0.104",
+        "host_copy": {
+          "host": "192.168.0.104",
+          "port": 22,
+          "remote_base_dir": "~/splitpoint_runs",
+          "user": "nx"
+        },
+        "host_id": "orin_nx_hailo8_01",
+        "iters": 50,
+        "port": 22,
+        "provider": "hailo8",
+        "remote_base_dir": "~/splitpoint_runs",
+        "remote_venv": "source ~/hailo_py/bin/activate",
+        "resume": true,
+        "reuse_bundle": true,
+        "ssh_extra_args": "",
+        "timeout_s": 0,
+        "transfer_mode": "bundle",
+        "user": "nx",
+        "warmup": 10
+      },
+      "setup_lock_id": "orin_nx_hailo8_01",
+      "setup_source": "/home/kmika/.onnx_splitpoint_tool/hardware_setups.yaml",
+      "tags": [
+        "remote",
+        "npu",
+        "hailo",
+        "hailo8"
+      ]
+    },
+    {
+      "accelerator": "hailo10",
+      "build_environment": {
+        "cache_dir": "~/Models/BackendArtifacts/hailo",
+        "host": "local",
+        "id": "hailo10_dfc_managed",
+        "kind": "hailo10_dfc",
+        "shell": "bash",
+        "venv_activate": "source ~/.onnx_splitpoint_tool/hailo/venv_hailo10/bin/activate"
+      },
+      "build_environment_id": "hailo10_dfc_managed",
+      "enabled": true,
+      "energy": {
+        "accelerator_idle_calibrated_at": "2026-09-04T20:29:47.725981+00:00",
+        "accelerator_idle_calibration_evidence": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_hailo10_01/20260904_222453/m2_idle_power_calibration.json",
+        "accelerator_idle_w": 0.9667883102777299,
+        "calibration_manifest": "",
+        "calibration_sha256": "",
+        "enabled": true,
+        "full_system_current_scale_calibrated_at": "2026-09-04T20:15:15.094688+00:00",
+        "full_system_current_scale_calibration_evidence": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_hailo10_01/20260904_220910_full_system_input_scale/full_system_input_scale_calibration.json",
+        "full_system_current_scale_calibration_sha256": "b3fe9eb8c7ac6e7ffc78edabf834910b699bed0f766d9d7b2eddddde9ce8e946",
+        "full_system_current_scale_factor": 0.8963972779781232,
+        "idle_baseline_w": null,
+        "urecs_address": "192.168.0.176"
+      },
+      "id": "orin_nx_hailo10_01",
+      "label": "Orin NX + Hailo-10",
+      "note": "Resolved from hardware setup registry.",
+      "provider": "hailo10",
+      "remote": {
+        "enabled": true,
+        "host": "192.168.0.145",
+        "host_copy": {
+          "host": "192.168.0.145",
+          "port": 22,
+          "remote_base_dir": "~/splitpoint_runs",
+          "user": "nx"
+        },
+        "host_id": "orin_nx_hailo10_01",
+        "iters": 50,
+        "port": 22,
+        "provider": "hailo10",
+        "remote_base_dir": "~/splitpoint_runs",
+        "remote_venv": "source ~/venvs/hailo10/bin/activate",
+        "resume": true,
+        "reuse_bundle": true,
+        "ssh_extra_args": "",
+        "timeout_s": 0,
+        "transfer_mode": "bundle",
+        "user": "nx",
+        "warmup": 10
+      },
+      "runtime": {
+        "enabled": true,
+        "host": "192.168.0.145",
+        "host_copy": {
+          "host": "192.168.0.145",
+          "port": 22,
+          "remote_base_dir": "~/splitpoint_runs",
+          "user": "nx"
+        },
+        "host_id": "orin_nx_hailo10_01",
+        "iters": 50,
+        "port": 22,
+        "provider": "hailo10",
+        "remote_base_dir": "~/splitpoint_runs",
+        "remote_venv": "source ~/venvs/hailo10/bin/activate",
+        "resume": true,
+        "reuse_bundle": true,
+        "ssh_extra_args": "",
+        "timeout_s": 0,
+        "transfer_mode": "bundle",
+        "user": "nx",
+        "warmup": 10
+      },
+      "setup_lock_id": "orin_nx_hailo10_01",
+      "setup_source": "/home/kmika/.onnx_splitpoint_tool/hardware_setups.yaml",
+      "tags": [
+        "remote",
+        "npu",
+        "hailo",
+        "hailo10"
+      ]
+    },
+    {
+      "accelerator": "deepx_m1",
+      "build_environment": {
+        "cache_dir": "~/Models/BackendArtifacts/deepx",
+        "compiler_venv": "~/dx-all-suite/dx-compiler/venv-dx-compiler-local",
+        "dx_all_suite_root": "~/dx-all-suite",
+        "host": "local",
+        "id": "deepx_dxcom_x86",
+        "kind": "deepx_dxcom",
+        "runtime_venv": "~/venvs/deepx-runtime",
+        "shell": "bash",
+        "venv_activate": "source ~/dx-all-suite/dx-compiler/venv-dx-compiler-local/bin/activate"
+      },
+      "build_environment_id": "deepx_dxcom_x86",
+      "enabled": true,
+      "energy": {
+        "accelerator_idle_calibrated_at": "2026-09-04T20:34:45.786158+00:00",
+        "accelerator_idle_calibration_evidence": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260904_222957/m2_idle_power_calibration.json",
+        "accelerator_idle_w": 2.4350704536000034,
+        "calibration_manifest": "",
+        "calibration_sha256": "",
+        "enabled": true,
+        "full_system_current_scale_calibrated_at": "2026-09-04T19:59:27.536313+00:00",
+        "full_system_current_scale_calibration_evidence": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260904_215309_full_system_input_scale/full_system_input_scale_calibration.json",
+        "full_system_current_scale_calibration_sha256": "9494eea7de1d18167f73854e276bf6f9bba0066c51ff2c81c49737486235cfd1",
+        "full_system_current_scale_factor": 0.9035075097142278,
+        "idle_baseline_w": null,
+        "urecs_address": "192.168.0.185"
+      },
+      "id": "orin_nx_deepx_m1_01",
+      "label": "Orin NX + DeepX DX-M1",
+      "note": "Resolved from hardware setup registry.",
+      "provider": "deepx_m1",
+      "remote": {
+        "enabled": true,
+        "host": "192.168.0.102",
+        "host_copy": {
+          "host": "192.168.0.102",
+          "port": 22,
+          "remote_base_dir": "~/splitpoint_runs",
+          "user": "nx"
+        },
+        "host_id": "orin_nx_deepx_m1_01",
+        "iters": 50,
+        "port": 22,
+        "provider": "deepx_m1",
+        "remote_base_dir": "~/splitpoint_runs",
+        "remote_venv": "source ~/venvs/deepx-runtime/bin/activate",
+        "resume": true,
+        "reuse_bundle": true,
+        "ssh_extra_args": "",
+        "timeout_s": 0,
+        "transfer_mode": "bundle",
+        "user": "nx",
+        "warmup": 10
+      },
+      "runtime": {
+        "enabled": true,
+        "host": "192.168.0.102",
+        "host_copy": {
+          "host": "192.168.0.102",
+          "port": 22,
+          "remote_base_dir": "~/splitpoint_runs",
+          "user": "nx"
+        },
+        "host_id": "orin_nx_deepx_m1_01",
+        "iters": 50,
+        "port": 22,
+        "provider": "deepx_m1",
+        "remote_base_dir": "~/splitpoint_runs",
+        "remote_venv": "source ~/venvs/deepx-runtime/bin/activate",
+        "resume": true,
+        "reuse_bundle": true,
+        "ssh_extra_args": "",
+        "timeout_s": 0,
+        "transfer_mode": "bundle",
+        "user": "nx",
+        "warmup": 10
+      },
+      "setup_lock_id": "orin_nx_deepx_m1_01",
+      "setup_source": "/home/kmika/.onnx_splitpoint_tool/hardware_setups.yaml",
+      "tags": [
+        "remote",
+        "npu",
+        "deepx",
+        "dx_m1"
+      ]
+    }
+  ],
+  "model_entries": [
+    {
+      "_tier": "primary",
+      "candidate_universe": {
+        "mode": "declared_shortlist"
+      },
+      "development_subset": "imagenet_val_mini_200",
+      "evaluation_role": "development",
+      "export_metadata": {},
+      "family": "resnet",
+      "family_id": "resnet",
+      "generalization_scope": "development",
+      "id": "resnet50",
+      "input_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "note": "smoke anchor for classification",
+      "onnx": "/home/kmika/Models/resnet50.onnx",
+      "resolved": true,
+      "resolved_path": "/home/kmika/Models/resnet50.onnx",
+      "semantic_dataset": "imagenet_val",
+      "source": "torchvision",
+      "task": "classification",
+      "validation_tier": "screening"
+    },
+    {
+      "_tier": "primary",
+      "candidate_universe": {
+        "mode": "declared_shortlist"
+      },
+      "development_subset": "imagenet_val_mini_200",
+      "evaluation_role": "development",
+      "export_metadata": {
+        "categories_path": "/home/kmika/Models/mobilenet_v3_large.categories.json",
+        "export": {
+          "device": "unattested",
+          "dynamic_batch": false,
+          "exporter": "historical_export_unknown_source_reverified",
+          "opset": 18,
+          "path": "/home/kmika/Models/mobilenet_v3_large.onnx"
+        },
+        "input_name": "input",
+        "input_shape": [
+          1,
+          3,
+          224,
+          224
+        ],
+        "model_name": "mobilenet_v3_large",
+        "num_classes": 1000,
+        "onnx_io": {
+          "inputs": [
+            {
+              "name": "input",
+              "shape": [
+                1,
+                3,
+                224,
+                224
+              ]
+            }
+          ],
+          "outputs": [
+            {
+              "name": "logits",
+              "shape": [
+                1,
+                1000
+              ]
+            }
+          ]
+        },
+        "output_name": "logits",
+        "preprocess": {
+          "antialias": [
+            true
+          ],
+          "crop_size": [
+            224
+          ],
+          "interpolation": "BILINEAR",
+          "mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "resize_size": [
+            232
+          ],
+          "std": [
+            0.229,
+            0.224,
+            0.225
+          ]
+        },
+        "source": "torchvision",
+        "source_reverification": {
+          "categories_sha256": "47eed8c870ca7ed0258cb04301612ed3bcb3eddf78ecd24f37eb58d799eddea7",
+          "claim_scope": "canonical_full_onnx_adapter_screening_only",
+          "hardware_used": false,
+          "onnx_mutated": false,
+          "onnx_sha256": "2f5e79b1e4280251e7b6eefe1d6161c4831e2fc27858e1e9fe2fac697f44489e",
+          "original_export_runtime_unknown": true,
+          "preprocess_sha256": "3e8c7d168023cc19dcc957ac1d1cdd01160a9dd4852112c2eafcd202b5425845",
+          "receipt_path": "/home/kmika/Models/phase5_source_reverification.json",
+          "reference_state_dict_checksum_enforced": true,
+          "reference_state_dict_sha256": "8f79a8320ccdcb2e65f67eba5fb4de5b97d7004f587f1398bf44a598a7fa2c64",
+          "reference_state_dict_strict_load": true,
+          "reference_weights": "MobileNet_V3_Large_Weights.IMAGENET1K_V2",
+          "reference_weights_url": "https://download.pytorch.org/models/mobilenet_v3_large-5c1a4163.pth",
+          "runtime_versions": {
+            "jsonschema": "4.26.0",
+            "numpy": "1.26.4",
+            "onnx": "1.22.0",
+            "onnxruntime": "1.23.2",
+            "pillow": "12.3.0",
+            "pyyaml": "6.0.3",
+            "torch": "2.11.0+cpu",
+            "torchvision": "0.26.0+cpu",
+            "ultralytics": "8.4.45"
+          },
+          "schema": "onnx-splitpoint/phase5-source-reverification/v1",
+          "status": "PASS"
+        },
+        "task_type": "classification",
+        "verification": {
+          "max_abs": 1.71661376953125e-05,
+          "mean_abs": 2.0822840269829612e-06,
+          "mean_cosine": 1.0,
+          "mode": "deterministic_torchvision_source_reverification_v1",
+          "probe_count": 2,
+          "probes": [
+            {
+              "checks": {
+                "allclose": true,
+                "cosine": true,
+                "max_abs": true,
+                "mean_abs": true,
+                "top1": true,
+                "top5": true
+              },
+              "cosine": 1.0,
+              "input_sha256": "d4c76b7dca073e8553b1650e2419ac564ba5d5a362ab9eff87c5f60fb0eb2530",
+              "max_abs": 1.71661376953125e-05,
+              "mean_abs": 2.0822840269829612e-06,
+              "ort_top1": [
+                [
+                  490
+                ]
+              ],
+              "ort_top5": [
+                [
+                  490,
+                  904,
+                  539,
+                  107,
+                  111
+                ]
+              ],
+              "probe_id": "seeded_gaussian_v1",
+              "status": "PASS",
+              "torch_top1": [
+                [
+                  490
+                ]
+              ],
+              "torch_top5": [
+                [
+                  490,
+                  904,
+                  539,
+                  107,
+                  111
+                ]
+              ]
+            },
+            {
+              "checks": {
+                "allclose": true,
+                "cosine": true,
+                "max_abs": true,
+                "mean_abs": true,
+                "top1": true,
+                "top5": true
+              },
+              "cosine": 1.0000001108472945,
+              "input_sha256": "359e699c0135fe402d7bbde130da855ef85d7c3dae0d26060f5a46aff4d14fb7",
+              "max_abs": 1.049041748046875e-05,
+              "mean_abs": 1.8846271814254578e-06,
+              "ort_top1": [
+                [
+                  904
+                ]
+              ],
+              "ort_top5": [
+                [
+                  904,
+                  632,
+                  556,
+                  727,
+                  794
+                ]
+              ],
+              "probe_id": "normalized_rgb_grid_v1",
+              "status": "PASS",
+              "torch_top1": [
+                [
+                  904
+                ]
+              ],
+              "torch_top5": [
+                [
+                  904,
+                  632,
+                  556,
+                  727,
+                  794
+                ]
+              ]
+            }
+          ],
+          "providers": [
+            "CPUExecutionProvider"
+          ],
+          "thresholds": {
+            "atol": 0.001,
+            "max_abs": 0.001,
+            "mean_abs": 0.0001,
+            "min_cosine": 0.999,
+            "rtol": 0.0001
+          },
+          "top1_match": true,
+          "top5_match": true
+        },
+        "weights": "MobileNet_V3_Large_Weights.IMAGENET1K_V2"
+      },
+      "family": "mobilenet",
+      "family_id": "mobilenet",
+      "generalization_scope": "development",
+      "id": "mobilenet_v3_large",
+      "input_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "onnx": "/home/kmika/Models/mobilenet_v3_large.onnx",
+      "resolved": true,
+      "resolved_path": "/home/kmika/Models/mobilenet_v3_large.onnx",
+      "semantic_dataset": "imagenet_val",
+      "source": "torchvision",
+      "task": "classification",
+      "validation_tier": "screening"
+    },
+    {
+      "_tier": "primary",
+      "candidate_universe": {
+        "mode": "declared_shortlist"
+      },
+      "development_subset": "imagenet_val_mini_200",
+      "evaluation_role": "development",
+      "export_metadata": {
+        "categories_path": "/home/kmika/Models/regnet_x_1_6gf.categories.json",
+        "export": {
+          "device": "unattested",
+          "dynamic_batch": false,
+          "exporter": "historical_export_unknown_source_reverified",
+          "opset": 18,
+          "path": "/home/kmika/Models/regnet_x_1_6gf.onnx"
+        },
+        "input_name": "input",
+        "input_shape": [
+          1,
+          3,
+          224,
+          224
+        ],
+        "model_name": "regnet_x_1_6gf",
+        "num_classes": 1000,
+        "onnx_io": {
+          "inputs": [
+            {
+              "name": "input",
+              "shape": [
+                1,
+                3,
+                224,
+                224
+              ]
+            }
+          ],
+          "outputs": [
+            {
+              "name": "logits",
+              "shape": [
+                1,
+                1000
+              ]
+            }
+          ]
+        },
+        "output_name": "logits",
+        "preprocess": {
+          "antialias": [
+            true
+          ],
+          "crop_size": [
+            224
+          ],
+          "interpolation": "BILINEAR",
+          "mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "resize_size": [
+            232
+          ],
+          "std": [
+            0.229,
+            0.224,
+            0.225
+          ]
+        },
+        "source": "torchvision",
+        "source_reverification": {
+          "categories_sha256": "47eed8c870ca7ed0258cb04301612ed3bcb3eddf78ecd24f37eb58d799eddea7",
+          "claim_scope": "canonical_full_onnx_adapter_screening_only",
+          "hardware_used": false,
+          "onnx_mutated": false,
+          "onnx_sha256": "fba2c5b46ff63bd4b4bc65f1cf60fd86fa84e16e7432fcaa60d5efbd2c99b8f3",
+          "original_export_runtime_unknown": true,
+          "preprocess_sha256": "3e8c7d168023cc19dcc957ac1d1cdd01160a9dd4852112c2eafcd202b5425845",
+          "receipt_path": "/home/kmika/Models/phase5_source_reverification.json",
+          "reference_state_dict_checksum_enforced": true,
+          "reference_state_dict_sha256": "ddc8907a8367b4e62e89f7ff179c6a89ff5d40d2417b7ae4cd96eb60b526b4a8",
+          "reference_state_dict_strict_load": true,
+          "reference_weights": "RegNet_X_1_6GF_Weights.IMAGENET1K_V2",
+          "reference_weights_url": "https://download.pytorch.org/models/regnet_x_1_6gf-a12f2b72.pth",
+          "runtime_versions": {
+            "jsonschema": "4.26.0",
+            "numpy": "1.26.4",
+            "onnx": "1.22.0",
+            "onnxruntime": "1.23.2",
+            "pillow": "12.3.0",
+            "pyyaml": "6.0.3",
+            "torch": "2.11.0+cpu",
+            "torchvision": "0.26.0+cpu",
+            "ultralytics": "8.4.45"
+          },
+          "schema": "onnx-splitpoint/phase5-source-reverification/v1",
+          "status": "PASS"
+        },
+        "task_type": "classification",
+        "verification": {
+          "max_abs": 1.0967254638671875e-05,
+          "mean_abs": 9.925337280947133e-07,
+          "mean_cosine": 1.0000000600177017,
+          "mode": "deterministic_torchvision_source_reverification_v1",
+          "probe_count": 2,
+          "probes": [
+            {
+              "checks": {
+                "allclose": true,
+                "cosine": true,
+                "max_abs": true,
+                "mean_abs": true,
+                "top1": true,
+                "top5": true
+              },
+              "cosine": 1.0000000600177017,
+              "input_sha256": "d4c76b7dca073e8553b1650e2419ac564ba5d5a362ab9eff87c5f60fb0eb2530",
+              "max_abs": 9.03010368347168e-06,
+              "mean_abs": 9.925337280947133e-07,
+              "ort_top1": [
+                [
+                  21
+                ]
+              ],
+              "ort_top5": [
+                [
+                  21,
+                  22,
+                  23,
+                  92,
+                  128
+                ]
+              ],
+              "probe_id": "seeded_gaussian_v1",
+              "status": "PASS",
+              "torch_top1": [
+                [
+                  21
+                ]
+              ],
+              "torch_top5": [
+                [
+                  21,
+                  22,
+                  23,
+                  92,
+                  128
+                ]
+              ]
+            },
+            {
+              "checks": {
+                "allclose": true,
+                "cosine": true,
+                "max_abs": true,
+                "mean_abs": true,
+                "top1": true,
+                "top5": true
+              },
+              "cosine": 1.0000001079835825,
+              "input_sha256": "359e699c0135fe402d7bbde130da855ef85d7c3dae0d26060f5a46aff4d14fb7",
+              "max_abs": 1.0967254638671875e-05,
+              "mean_abs": 8.692483106642612e-07,
+              "ort_top1": [
+                [
+                  904
+                ]
+              ],
+              "ort_top5": [
+                [
+                  904,
+                  556,
+                  828,
+                  490,
+                  650
+                ]
+              ],
+              "probe_id": "normalized_rgb_grid_v1",
+              "status": "PASS",
+              "torch_top1": [
+                [
+                  904
+                ]
+              ],
+              "torch_top5": [
+                [
+                  904,
+                  556,
+                  828,
+                  490,
+                  650
+                ]
+              ]
+            }
+          ],
+          "providers": [
+            "CPUExecutionProvider"
+          ],
+          "thresholds": {
+            "atol": 0.001,
+            "max_abs": 0.001,
+            "mean_abs": 0.0001,
+            "min_cosine": 0.999,
+            "rtol": 0.0001
+          },
+          "top1_match": true,
+          "top5_match": true
+        },
+        "weights": "RegNet_X_1_6GF_Weights.IMAGENET1K_V2"
+      },
+      "family": "regnet",
+      "family_id": "regnet",
+      "generalization_scope": "development",
+      "id": "regnet_x_1_6gf",
+      "input_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "onnx": "/home/kmika/Models/regnet_x_1_6gf.onnx",
+      "resolved": true,
+      "resolved_path": "/home/kmika/Models/regnet_x_1_6gf.onnx",
+      "semantic_dataset": "imagenet_val",
+      "source": "torchvision",
+      "task": "classification",
+      "validation_tier": "screening"
+    },
+    {
+      "_tier": "primary",
+      "candidate_universe": {
+        "mode": "declared_shortlist"
+      },
+      "development_subset": "coco_50",
+      "evaluation_role": "development",
+      "export_metadata": {
+        "categories_path": "/home/kmika/Models/yolo11l.categories.json",
+        "export": {
+          "batch": 1,
+          "device": "unattested",
+          "dynamic_batch": false,
+          "end2end": null,
+          "end2end_effective": false,
+          "end2end_request_attested": false,
+          "exporter": "ultralytics",
+          "half": false,
+          "imgsz": 640,
+          "nms": false,
+          "opset": 18,
+          "path": "/home/kmika/Models/yolo11l.onnx",
+          "simplify": true
+        },
+        "input_shape": [
+          1,
+          3,
+          640,
+          640
+        ],
+        "model_name": "yolo11l.pt",
+        "model_ref": "yolo11l.pt",
+        "num_classes": 80,
+        "onnx_io": {
+          "inputs": [
+            {
+              "name": "images",
+              "shape": [
+                1,
+                3,
+                640,
+                640
+              ]
+            }
+          ],
+          "outputs": [
+            {
+              "name": "output0",
+              "shape": [
+                1,
+                84,
+                8400
+              ]
+            }
+          ]
+        },
+        "preprocess": {
+          "crop_size": [
+            640,
+            640
+          ],
+          "interpolation": "BILINEAR",
+          "mean": null,
+          "note": "Ultralytics export expects BCHW float input; letterbox/resize is handled upstream.",
+          "resize_size": [
+            640,
+            640
+          ],
+          "std": null
+        },
+        "source": "ultralytics",
+        "source_reverification": {
+          "categories_sha256": "f52d209dc4dd09886523b78d23735b3c6126a021fa5793e2504b335ed92524eb",
+          "claim_scope": "canonical_full_onnx_adapter_screening_only",
+          "embedded_torch_producer_version": "2.10.0",
+          "embedded_ultralytics_version": "8.4.45",
+          "end2end_effective": false,
+          "end2end_request_attested": false,
+          "hardware_used": false,
+          "onnx_mutated": false,
+          "onnx_sha256": "f0fcdf56a4ac24d87ec30c627170492ccad9db80486ec5694df6de65c1b3d147",
+          "pt_sha256": "9ebd0e09d59811db4b1d61e2bc6730649608b1ac47f8dd01e2da6bca7c20023f",
+          "receipt_path": "/home/kmika/Models/phase5_source_reverification.json",
+          "runtime_versions": {
+            "jsonschema": "4.26.0",
+            "numpy": "1.26.4",
+            "onnx": "1.22.0",
+            "onnxruntime": "1.23.2",
+            "pillow": "12.3.0",
+            "pyyaml": "6.0.3",
+            "torch": "2.11.0+cpu",
+            "torchvision": "0.26.0+cpu",
+            "ultralytics": "8.4.45"
+          },
+          "schema": "onnx-splitpoint/phase5-source-reverification/v1",
+          "status": "READY_FOR_DETECTION_PARITY"
+        },
+        "task_type": "detection",
+        "ultralytics_task": "detect",
+        "ultralytics_version": "8.4.45",
+        "verification": {
+          "input_name": "images",
+          "input_shape_used": [
+            1,
+            3,
+            640,
+            640
+          ],
+          "mode": "posthoc_existing_onnx_ort_smoke_v1",
+          "onnx_sha256": "f0fcdf56a4ac24d87ec30c627170492ccad9db80486ec5694df6de65c1b3d147",
+          "outputs": [
+            {
+              "dtype": "float32",
+              "name": "output0",
+              "shape": [
+                1,
+                84,
+                8400
+              ]
+            }
+          ],
+          "providers": [
+            "CPUExecutionProvider"
+          ]
+        },
+        "weights": null
+      },
+      "family": "yolo11",
+      "family_id": "yolo11",
+      "generalization_scope": "development",
+      "id": "yolo11l",
+      "input_shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "onnx": "/home/kmika/Models/yolo11l.onnx",
+      "resolved": true,
+      "resolved_path": "/home/kmika/Models/yolo11l.onnx",
+      "semantic_dataset": "coco2017_val",
+      "source": "ultralytics",
+      "task": "detection",
+      "validation_tier": "screening"
+    },
+    {
+      "_tier": "primary",
+      "candidate_universe": {
+        "mode": "declared_shortlist"
+      },
+      "development_subset": "coco_50",
+      "evaluation_role": "development",
+      "export_metadata": {
+        "categories_path": "/home/kmika/Models/yolo26m.categories.json",
+        "export": {
+          "batch": 1,
+          "device": "unattested",
+          "dynamic_batch": false,
+          "end2end": null,
+          "end2end_effective": true,
+          "end2end_request_attested": false,
+          "exporter": "ultralytics",
+          "half": false,
+          "imgsz": 640,
+          "nms": false,
+          "opset": 18,
+          "path": "/home/kmika/Models/yolo26m.onnx",
+          "simplify": true
+        },
+        "input_shape": [
+          1,
+          3,
+          640,
+          640
+        ],
+        "model_name": "yolo26m.pt",
+        "model_ref": "yolo26m.pt",
+        "num_classes": 80,
+        "onnx_io": {
+          "inputs": [
+            {
+              "name": "images",
+              "shape": [
+                1,
+                3,
+                640,
+                640
+              ]
+            }
+          ],
+          "outputs": [
+            {
+              "name": "output0",
+              "shape": [
+                1,
+                300,
+                6
+              ]
+            }
+          ]
+        },
+        "preprocess": {
+          "crop_size": [
+            640,
+            640
+          ],
+          "interpolation": "BILINEAR",
+          "mean": null,
+          "note": "Ultralytics export expects BCHW float input; letterbox/resize is handled upstream.",
+          "resize_size": [
+            640,
+            640
+          ],
+          "std": null
+        },
+        "source": "ultralytics",
+        "source_reverification": {
+          "categories_sha256": "f52d209dc4dd09886523b78d23735b3c6126a021fa5793e2504b335ed92524eb",
+          "claim_scope": "canonical_full_onnx_adapter_screening_only",
+          "embedded_torch_producer_version": "2.11.0",
+          "embedded_ultralytics_version": "8.4.45",
+          "end2end_effective": true,
+          "end2end_request_attested": false,
+          "hardware_used": false,
+          "onnx_mutated": false,
+          "onnx_sha256": "d1c6a922dd92f896c69e2f6767ea3ca23fac0e53e5ac69681965eb8a74cda897",
+          "pt_sha256": "401cea9ab23ad19246ff7744859816bc599f350e93c9dd30367b6f0a0745d0b7",
+          "receipt_path": "/home/kmika/Models/phase5_source_reverification.json",
+          "runtime_versions": {
+            "jsonschema": "4.26.0",
+            "numpy": "1.26.4",
+            "onnx": "1.22.0",
+            "onnxruntime": "1.23.2",
+            "pillow": "12.3.0",
+            "pyyaml": "6.0.3",
+            "torch": "2.11.0+cpu",
+            "torchvision": "0.26.0+cpu",
+            "ultralytics": "8.4.45"
+          },
+          "schema": "onnx-splitpoint/phase5-source-reverification/v1",
+          "status": "READY_FOR_DETECTION_PARITY"
+        },
+        "task_type": "detection",
+        "ultralytics_task": "detect",
+        "ultralytics_version": "8.4.45",
+        "verification": {
+          "input_name": "images",
+          "input_shape_used": [
+            1,
+            3,
+            640,
+            640
+          ],
+          "mode": "posthoc_existing_onnx_ort_smoke_v1",
+          "onnx_sha256": "d1c6a922dd92f896c69e2f6767ea3ca23fac0e53e5ac69681965eb8a74cda897",
+          "outputs": [
+            {
+              "dtype": "float32",
+              "name": "output0",
+              "shape": [
+                1,
+                300,
+                6
+              ]
+            }
+          ],
+          "providers": [
+            "CPUExecutionProvider"
+          ]
+        },
+        "weights": null
+      },
+      "family": "yolo26",
+      "family_id": "yolo26",
+      "generalization_scope": "development",
+      "id": "yolo26m",
+      "input_shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "onnx": "/home/kmika/Models/yolo26m.onnx",
+      "resolved": true,
+      "resolved_path": "/home/kmika/Models/yolo26m.onnx",
+      "semantic_dataset": "coco2017_val",
+      "source": "ultralytics",
+      "task": "detection",
+      "validation_tier": "screening"
+    },
+    {
+      "_tier": "primary",
+      "candidate_universe": {
+        "mode": "declared_shortlist"
+      },
+      "development_subset": "coco_50",
+      "evaluation_role": "development",
+      "export_metadata": {},
+      "family": "yolo26",
+      "family_id": "yolo26",
+      "generalization_scope": "development",
+      "id": "yolo26s",
+      "input_shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "onnx": "/home/kmika/Models/yolo26s.onnx",
+      "resolved": true,
+      "resolved_path": "/home/kmika/Models/yolo26s.onnx",
+      "semantic_dataset": "coco2017_val",
+      "source": "ultralytics",
+      "task": "detection",
+      "validation_tier": "screening"
+    },
+    {
+      "_tier": "primary",
+      "candidate_universe": {
+        "mode": "declared_shortlist"
+      },
+      "development_subset": "coco_50",
+      "evaluation_role": "development",
+      "export_metadata": {},
+      "family": "yolov7",
+      "family_id": "yolov7",
+      "generalization_scope": "development",
+      "id": "yolov7_paper",
+      "input_shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "onnx": "/home/kmika/Models/yolov7_paper.onnx",
+      "resolved": true,
+      "resolved_path": "/home/kmika/Models/yolov7_paper.onnx",
+      "semantic_dataset": "coco2017_val",
+      "source": "ultralytics",
+      "task": "detection",
+      "validation_tier": "screening"
+    }
+  ],
+  "profile_copy": "profile.yaml",
+  "profile_id": "complete_set",
+  "profile_path": "/home/kmika/ONNX-Splitpoint-Tool/profiles/Complet_set.yaml",
+  "profile_selection_fingerprint": "sha256:d82cecdeddf0c33183b7b43aac96926d319d2a779ccce19094e871989fa46412",
+  "profile_selection_snapshot_sha256": "sha256:2fd187f53ecfd47c6b5cb149c128c2016e029f49b275ed33aa58bc545f2c99a4",
+  "profile_source": "file",
+  "profile_start_snapshot": "profile_start_snapshot.json",
+  "profile_start_snapshot_sha256": "sha256:51a7e7ab8380669d416ddf17d7dfb3b6d1c303931fbc254597203ecc5ebc5b69",
+  "ranking_model_bundle_resolution": {
+    "path": "",
+    "status": "not_configured"
+  },
+  "resolved_at": "2026-09-07T16:17:17+02:00",
+  "schema": "onnx-splitpoint/evaluation-profile-resolution",
+  "schema_version": 1,
+  "selection_policy": {
+    "audit_candidate_universe": "deterministic_audit",
+    "audit_seed": 20260710,
+    "audit_size": 20,
+    "candidate_search_pool": 10,
+    "full_model_hailo_preflight_policy": "enabled",
+    "keep_partial_hailo_cases": true,
+    "max_accepted_cases_per_model": 1,
+    "min_gap": 3,
+    "minimum_valid_audit_candidates": 1,
+    "preferred_shortlist": 5,
+    "report_blocked_configs": true,
+    "report_plan_adjustments": true,
+    "require_single_part2_input": false,
+    "score_independent_audit_enabled": false,
+    "selection_strategy": "stratified_windows"
+  },
+  "targets": [
+    "tensorrt",
+    "hailo8",
+    "cpu_ort",
+    "hailo10",
+    "deepx_m1"
+  ]
+}

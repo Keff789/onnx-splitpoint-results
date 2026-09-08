@@ -1,0 +1,135 @@
+{
+  "schema": "deepx-prepost-evidence-smoke/r1",
+  "status": "evidence_collected",
+  "output_dir": "/home/kmika/Downloads/deepx_prepost_smokes_r1_20260908T080238Z_vo3whdeu",
+  "run_dir": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614",
+  "models": [
+    {
+      "model_id": "mobilenet_v3_large",
+      "status": "evidence_collected",
+      "cpu_process": {
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_s": 4.404,
+        "log": "/home/kmika/Downloads/deepx_prepost_smokes_r1_20260908T080238Z_vo3whdeu/mobilenet_v3_large/cpu_console.log"
+      },
+      "remote_transport": {
+        "execution": {
+          "returncode": 0,
+          "timed_out": false,
+          "elapsed_s": 4.708,
+          "log": "/home/kmika/Downloads/deepx_prepost_smokes_r1_20260908T080238Z_vo3whdeu/mobilenet_v3_large/remote_console.log"
+        },
+        "stop_returncode": 0,
+        "stop_output": "{'cleanup_confirmed': True, 'reason': 'owned_worker_already_gone'}\n",
+        "collection": {
+          "returncode": 0,
+          "timed_out": false,
+          "elapsed_s": 0.602,
+          "log": "/home/kmika/Downloads/deepx_prepost_smokes_r1_20260908T080238Z_vo3whdeu/mobilenet_v3_large/collection.log"
+        },
+        "request_binding_verified": true,
+        "cleanup_confirmed": true,
+        "remote_directory": "/tmp/onnx-deepx-prepost-r1-0r3Ho1Dmvq",
+        "remote_temporary_removed": true
+      },
+      "analysis_process": {
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_s": 0.401,
+        "log": "/home/kmika/Downloads/deepx_prepost_smokes_r1_20260908T080238Z_vo3whdeu/mobilenet_v3_large/analysis.log"
+      },
+      "cpu_status": "complete",
+      "remote_status": "complete"
+    },
+    {
+      "model_id": "resnet50",
+      "status": "evidence_collected",
+      "cpu_process": {
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_s": 8.309,
+        "log": "/home/kmika/Downloads/deepx_prepost_smokes_r1_20260908T080238Z_vo3whdeu/resnet50/cpu_console.log"
+      },
+      "remote_transport": {
+        "execution": {
+          "returncode": 0,
+          "timed_out": false,
+          "elapsed_s": 4.908,
+          "log": "/home/kmika/Downloads/deepx_prepost_smokes_r1_20260908T080238Z_vo3whdeu/resnet50/remote_console.log"
+        },
+        "stop_returncode": 0,
+        "stop_output": "{'cleanup_confirmed': True, 'reason': 'owned_worker_already_gone'}\n",
+        "collection": {
+          "returncode": 0,
+          "timed_out": false,
+          "elapsed_s": 0.903,
+          "log": "/home/kmika/Downloads/deepx_prepost_smokes_r1_20260908T080238Z_vo3whdeu/resnet50/collection.log"
+        },
+        "request_binding_verified": true,
+        "cleanup_confirmed": true,
+        "remote_directory": "/tmp/onnx-deepx-prepost-r1-zwUPQohaHO",
+        "remote_temporary_removed": true
+      },
+      "analysis_process": {
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_s": 0.902,
+        "log": "/home/kmika/Downloads/deepx_prepost_smokes_r1_20260908T080238Z_vo3whdeu/resnet50/analysis.log"
+      },
+      "cpu_status": "complete",
+      "remote_status": "complete"
+    },
+    {
+      "model_id": "regnet_x_1_6gf",
+      "status": "evidence_collected",
+      "cpu_process": {
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_s": 6.006,
+        "log": "/home/kmika/Downloads/deepx_prepost_smokes_r1_20260908T080238Z_vo3whdeu/regnet_x_1_6gf/cpu_console.log"
+      },
+      "remote_transport": {
+        "execution": {
+          "returncode": 0,
+          "timed_out": false,
+          "elapsed_s": 5.21,
+          "log": "/home/kmika/Downloads/deepx_prepost_smokes_r1_20260908T080238Z_vo3whdeu/regnet_x_1_6gf/remote_console.log"
+        },
+        "stop_returncode": 0,
+        "stop_output": "{'cleanup_confirmed': True, 'reason': 'owned_worker_already_gone'}\n",
+        "collection": {
+          "returncode": 0,
+          "timed_out": false,
+          "elapsed_s": 0.903,
+          "log": "/home/kmika/Downloads/deepx_prepost_smokes_r1_20260908T080238Z_vo3whdeu/regnet_x_1_6gf/collection.log"
+        },
+        "request_binding_verified": true,
+        "cleanup_confirmed": true,
+        "remote_directory": "/tmp/onnx-deepx-prepost-r1-z4PIkhmsFj",
+        "remote_temporary_removed": true
+      },
+      "analysis_process": {
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_s": 0.502,
+        "log": "/home/kmika/Downloads/deepx_prepost_smokes_r1_20260908T080238Z_vo3whdeu/regnet_x_1_6gf/analysis.log"
+      },
+      "cpu_status": "complete",
+      "remote_status": "complete"
+    }
+  ],
+  "mode": "local_CPU_and_remote_DeepX",
+  "counts_as_benchmark": false,
+  "model_acceptance": "NOT_EVALUATED",
+  "compiler_invoked": false,
+  "tool_installation_modified": false,
+  "quality_thresholds_modified": false,
+  "setup_id": "orin_nx_deepx_m1_01",
+  "remote": {
+    "host": "192.168.0.102",
+    "user": "nx",
+    "port": 22,
+    "runtime_venv": "~/venvs/deepx-runtime"
+  }
+}

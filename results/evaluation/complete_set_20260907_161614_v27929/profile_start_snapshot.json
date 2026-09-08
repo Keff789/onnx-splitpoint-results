@@ -1,0 +1,445 @@
+{
+  "cache_verify_attestation": {},
+  "consistency": {
+    "mismatches": [],
+    "status": "ok"
+  },
+  "profile_id": "Complete_Set",
+  "profile_path": "/home/kmika/ONNX-Splitpoint-Tool/profiles/Complet_set.yaml",
+  "profile_request": "/home/kmika/ONNX-Splitpoint-Tool/profiles/Complet_set.yaml",
+  "profile_source": "file",
+  "requested_selection": {
+    "campaign_id": "Complete_Set",
+    "config_sha256": "15919a1020541b0f2e268bc2fe7514df6bb1e32fb73937963b26ef347299ec60",
+    "energy_enabled": true,
+    "execution_guard": null,
+    "follow_tool_config": true,
+    "models": [
+      "resnet50",
+      "mobilenet_v3_large",
+      "regnet_x_1_6gf",
+      "yolo11l",
+      "yolo26m",
+      "yolo26s",
+      "yolov7_paper"
+    ],
+    "native_enabled": true,
+    "profile_name": "Complete_Set",
+    "run_mode": "standard",
+    "run_profiles": [
+      "ort_tensorrt",
+      "hailo8",
+      "hailo8_to_trt",
+      "hailo10",
+      "hailo10_to_tensorrt",
+      "deepx_m1_full",
+      "deepx_m1_to_tensorrt"
+    ],
+    "selection_policy": {
+      "audit_candidate_universe": "deterministic_audit",
+      "audit_seed": 20260710,
+      "audit_size": 20,
+      "candidate_search_pool": 10,
+      "max_accepted_cases_per_model": 1,
+      "min_gap": 3,
+      "minimum_valid_audit_candidates": 1,
+      "preferred_shortlist": 5,
+      "require_single_part2_input": false,
+      "score_independent_audit_enabled": false,
+      "selection_strategy": "stratified_windows"
+    },
+    "selection_snapshot_sha256": "sha256:2fd187f53ecfd47c6b5cb149c128c2016e029f49b275ed33aa58bc545f2c99a4",
+    "snapshot_sha256": "b3ce4ee4436b6cf7fff45ee23dd7e179a2ff4abe61cef68f9010f34fabf4c999"
+  },
+  "resolved_execution_sha256": "sha256:cc5dc9b745c3f5448b509e720eb63c6e56cc921fc35d2a0d13c0d9b9e15278df",
+  "resolved_profile_sha256": "sha256:606261ab45384dad5d1d4e9681ecff13487ab20a4f4e941a44f823b8580e1a78",
+  "resolved_selection": {
+    "campaign_id": "Complete_Set",
+    "config_sha256": "15919a1020541b0f2e268bc2fe7514df6bb1e32fb73937963b26ef347299ec60",
+    "energy_enabled": true,
+    "execution_guard": null,
+    "follow_tool_config": true,
+    "models": [
+      "resnet50",
+      "mobilenet_v3_large",
+      "regnet_x_1_6gf",
+      "yolo11l",
+      "yolo26m",
+      "yolo26s",
+      "yolov7_paper"
+    ],
+    "native_enabled": true,
+    "profile_name": "Complete_Set",
+    "run_mode": "standard",
+    "run_profiles": [
+      "ort_tensorrt",
+      "hailo8",
+      "hailo8_to_trt",
+      "hailo10",
+      "hailo10_to_tensorrt",
+      "deepx_m1_full",
+      "deepx_m1_to_tensorrt"
+    ],
+    "selection_policy": {
+      "audit_candidate_universe": "deterministic_audit",
+      "audit_seed": 20260710,
+      "audit_size": 20,
+      "candidate_search_pool": 10,
+      "max_accepted_cases_per_model": 1,
+      "min_gap": 3,
+      "minimum_valid_audit_candidates": 1,
+      "preferred_shortlist": 5,
+      "require_single_part2_input": false,
+      "score_independent_audit_enabled": false,
+      "selection_strategy": "stratified_windows"
+    },
+    "selection_snapshot_sha256": "sha256:2fd187f53ecfd47c6b5cb149c128c2016e029f49b275ed33aa58bc545f2c99a4",
+    "snapshot_sha256": "b3ce4ee4436b6cf7fff45ee23dd7e179a2ff4abe61cef68f9010f34fabf4c999"
+  },
+  "runtime_bindings": {
+    "cache_verify_attestation": {},
+    "dataset_registry_binding": {
+      "bound": [],
+      "bound_count": 0,
+      "created_at": "2026-09-07T16:15:42+02:00",
+      "enabled": true,
+      "invalid": [],
+      "invalid_count": 0,
+      "missing": [],
+      "missing_count": 0,
+      "preserved_explicit": [
+        {
+          "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/manifests/imagenet_train_calibration_manifest.json",
+          "role": "calibration",
+          "task": "classification"
+        },
+        {
+          "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/manifests/imagenet_val_manifest.json",
+          "role": "validation",
+          "task": "classification"
+        },
+        {
+          "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/manifests/coco2017_train_calibration_manifest.json",
+          "role": "calibration",
+          "task": "detection"
+        },
+        {
+          "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/manifests/coco2017_val_manifest.json",
+          "role": "validation",
+          "task": "detection"
+        }
+      ],
+      "registry_exists": true,
+      "registry_path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/dataset_registry.json",
+      "registry_sha256": "sha256:9c5b72d97946c397c57463899cdda2938c458e7b8495683790a9b157ceab5bfc",
+      "schema": "onnx-splitpoint/dataset-registry-binding",
+      "schema_version": 1,
+      "status": "ok"
+    },
+    "hardware_targets": [
+      {
+        "accelerator": "hailo8",
+        "build_environment": {
+          "cache_dir": "~/Models/BackendArtifacts/hailo",
+          "host": "local",
+          "id": "hailo8_dfc_managed",
+          "kind": "hailo8_dfc",
+          "shell": "bash",
+          "venv_activate": "source ~/.onnx_splitpoint_tool/hailo/venv_hailo8/bin/activate"
+        },
+        "build_environment_id": "hailo8_dfc_managed",
+        "enabled": true,
+        "energy": {
+          "accelerator_idle_calibrated_at": "2026-09-04T20:24:41.188331+00:00",
+          "accelerator_idle_calibration_evidence": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_hailo8_01/20260904_221941/m2_idle_power_calibration.json",
+          "accelerator_idle_w": 2.0079536423414304,
+          "calibration_manifest": "",
+          "calibration_sha256": "",
+          "enabled": true,
+          "full_system_current_scale_calibrated_at": "2026-09-04T20:08:48.231301+00:00",
+          "full_system_current_scale_calibration_evidence": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_hailo8_01/20260904_215950_full_system_input_scale/full_system_input_scale_calibration.json",
+          "full_system_current_scale_calibration_sha256": "90a559f5467c0fef13409d472f14b797f4cf44b1038f0e491f62c5436ea2b5f6",
+          "full_system_current_scale_factor": 0.9136343897390969,
+          "idle_baseline_w": null,
+          "urecs_address": "192.168.0.197"
+        },
+        "id": "orin_nx_hailo8_01",
+        "label": "Orin NX + Hailo-8",
+        "note": "Resolved from hardware setup registry.",
+        "provider": "hailo8",
+        "remote": {
+          "enabled": true,
+          "host": "192.168.0.104",
+          "host_copy": {
+            "host": "192.168.0.104",
+            "port": 22,
+            "remote_base_dir": "~/splitpoint_runs",
+            "user": "nx"
+          },
+          "host_id": "orin_nx_hailo8_01",
+          "iters": 50,
+          "port": 22,
+          "provider": "hailo8",
+          "remote_base_dir": "~/splitpoint_runs",
+          "remote_venv": "source ~/hailo_py/bin/activate",
+          "resume": true,
+          "reuse_bundle": true,
+          "ssh_extra_args": "",
+          "timeout_s": 0,
+          "transfer_mode": "bundle",
+          "user": "nx",
+          "warmup": 10
+        },
+        "runtime": {
+          "enabled": true,
+          "host": "192.168.0.104",
+          "host_copy": {
+            "host": "192.168.0.104",
+            "port": 22,
+            "remote_base_dir": "~/splitpoint_runs",
+            "user": "nx"
+          },
+          "host_id": "orin_nx_hailo8_01",
+          "iters": 50,
+          "port": 22,
+          "provider": "hailo8",
+          "remote_base_dir": "~/splitpoint_runs",
+          "remote_venv": "source ~/hailo_py/bin/activate",
+          "resume": true,
+          "reuse_bundle": true,
+          "ssh_extra_args": "",
+          "timeout_s": 0,
+          "transfer_mode": "bundle",
+          "user": "nx",
+          "warmup": 10
+        },
+        "setup_lock_id": "orin_nx_hailo8_01",
+        "setup_source": "/home/kmika/.onnx_splitpoint_tool/hardware_setups.yaml",
+        "tags": [
+          "remote",
+          "npu",
+          "hailo",
+          "hailo8"
+        ]
+      },
+      {
+        "accelerator": "hailo10",
+        "build_environment": {
+          "cache_dir": "~/Models/BackendArtifacts/hailo",
+          "host": "local",
+          "id": "hailo10_dfc_managed",
+          "kind": "hailo10_dfc",
+          "shell": "bash",
+          "venv_activate": "source ~/.onnx_splitpoint_tool/hailo/venv_hailo10/bin/activate"
+        },
+        "build_environment_id": "hailo10_dfc_managed",
+        "enabled": true,
+        "energy": {
+          "accelerator_idle_calibrated_at": "2026-09-04T20:29:47.725981+00:00",
+          "accelerator_idle_calibration_evidence": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_hailo10_01/20260904_222453/m2_idle_power_calibration.json",
+          "accelerator_idle_w": 0.9667883102777299,
+          "calibration_manifest": "",
+          "calibration_sha256": "",
+          "enabled": true,
+          "full_system_current_scale_calibrated_at": "2026-09-04T20:15:15.094688+00:00",
+          "full_system_current_scale_calibration_evidence": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_hailo10_01/20260904_220910_full_system_input_scale/full_system_input_scale_calibration.json",
+          "full_system_current_scale_calibration_sha256": "b3fe9eb8c7ac6e7ffc78edabf834910b699bed0f766d9d7b2eddddde9ce8e946",
+          "full_system_current_scale_factor": 0.8963972779781232,
+          "idle_baseline_w": null,
+          "urecs_address": "192.168.0.176"
+        },
+        "id": "orin_nx_hailo10_01",
+        "label": "Orin NX + Hailo-10",
+        "note": "Resolved from hardware setup registry.",
+        "provider": "hailo10",
+        "remote": {
+          "enabled": true,
+          "host": "192.168.0.145",
+          "host_copy": {
+            "host": "192.168.0.145",
+            "port": 22,
+            "remote_base_dir": "~/splitpoint_runs",
+            "user": "nx"
+          },
+          "host_id": "orin_nx_hailo10_01",
+          "iters": 50,
+          "port": 22,
+          "provider": "hailo10",
+          "remote_base_dir": "~/splitpoint_runs",
+          "remote_venv": "source ~/venvs/hailo10/bin/activate",
+          "resume": true,
+          "reuse_bundle": true,
+          "ssh_extra_args": "",
+          "timeout_s": 0,
+          "transfer_mode": "bundle",
+          "user": "nx",
+          "warmup": 10
+        },
+        "runtime": {
+          "enabled": true,
+          "host": "192.168.0.145",
+          "host_copy": {
+            "host": "192.168.0.145",
+            "port": 22,
+            "remote_base_dir": "~/splitpoint_runs",
+            "user": "nx"
+          },
+          "host_id": "orin_nx_hailo10_01",
+          "iters": 50,
+          "port": 22,
+          "provider": "hailo10",
+          "remote_base_dir": "~/splitpoint_runs",
+          "remote_venv": "source ~/venvs/hailo10/bin/activate",
+          "resume": true,
+          "reuse_bundle": true,
+          "ssh_extra_args": "",
+          "timeout_s": 0,
+          "transfer_mode": "bundle",
+          "user": "nx",
+          "warmup": 10
+        },
+        "setup_lock_id": "orin_nx_hailo10_01",
+        "setup_source": "/home/kmika/.onnx_splitpoint_tool/hardware_setups.yaml",
+        "tags": [
+          "remote",
+          "npu",
+          "hailo",
+          "hailo10"
+        ]
+      },
+      {
+        "accelerator": "deepx_m1",
+        "build_environment": {
+          "cache_dir": "~/Models/BackendArtifacts/deepx",
+          "compiler_venv": "~/dx-all-suite/dx-compiler/venv-dx-compiler-local",
+          "dx_all_suite_root": "~/dx-all-suite",
+          "host": "local",
+          "id": "deepx_dxcom_x86",
+          "kind": "deepx_dxcom",
+          "runtime_venv": "~/venvs/deepx-runtime",
+          "shell": "bash",
+          "venv_activate": "source ~/dx-all-suite/dx-compiler/venv-dx-compiler-local/bin/activate"
+        },
+        "build_environment_id": "deepx_dxcom_x86",
+        "enabled": true,
+        "energy": {
+          "accelerator_idle_calibrated_at": "2026-09-04T20:34:45.786158+00:00",
+          "accelerator_idle_calibration_evidence": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260904_222957/m2_idle_power_calibration.json",
+          "accelerator_idle_w": 2.4350704536000034,
+          "calibration_manifest": "",
+          "calibration_sha256": "",
+          "enabled": true,
+          "full_system_current_scale_calibrated_at": "2026-09-04T19:59:27.536313+00:00",
+          "full_system_current_scale_calibration_evidence": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260904_215309_full_system_input_scale/full_system_input_scale_calibration.json",
+          "full_system_current_scale_calibration_sha256": "9494eea7de1d18167f73854e276bf6f9bba0066c51ff2c81c49737486235cfd1",
+          "full_system_current_scale_factor": 0.9035075097142278,
+          "idle_baseline_w": null,
+          "urecs_address": "192.168.0.185"
+        },
+        "id": "orin_nx_deepx_m1_01",
+        "label": "Orin NX + DeepX DX-M1",
+        "note": "Resolved from hardware setup registry.",
+        "provider": "deepx_m1",
+        "remote": {
+          "enabled": true,
+          "host": "192.168.0.102",
+          "host_copy": {
+            "host": "192.168.0.102",
+            "port": 22,
+            "remote_base_dir": "~/splitpoint_runs",
+            "user": "nx"
+          },
+          "host_id": "orin_nx_deepx_m1_01",
+          "iters": 50,
+          "port": 22,
+          "provider": "deepx_m1",
+          "remote_base_dir": "~/splitpoint_runs",
+          "remote_venv": "source ~/venvs/deepx-runtime/bin/activate",
+          "resume": true,
+          "reuse_bundle": true,
+          "ssh_extra_args": "",
+          "timeout_s": 0,
+          "transfer_mode": "bundle",
+          "user": "nx",
+          "warmup": 10
+        },
+        "runtime": {
+          "enabled": true,
+          "host": "192.168.0.102",
+          "host_copy": {
+            "host": "192.168.0.102",
+            "port": 22,
+            "remote_base_dir": "~/splitpoint_runs",
+            "user": "nx"
+          },
+          "host_id": "orin_nx_deepx_m1_01",
+          "iters": 50,
+          "port": 22,
+          "provider": "deepx_m1",
+          "remote_base_dir": "~/splitpoint_runs",
+          "remote_venv": "source ~/venvs/deepx-runtime/bin/activate",
+          "resume": true,
+          "reuse_bundle": true,
+          "ssh_extra_args": "",
+          "timeout_s": 0,
+          "transfer_mode": "bundle",
+          "user": "nx",
+          "warmup": 10
+        },
+        "setup_lock_id": "orin_nx_deepx_m1_01",
+        "setup_source": "/home/kmika/.onnx_splitpoint_tool/hardware_setups.yaml",
+        "tags": [
+          "remote",
+          "npu",
+          "deepx",
+          "dx_m1"
+        ]
+      }
+    ],
+    "hardware_targets_sha256": "sha256:89774e3a674a3af4ed26f83e27dea5d23a49df31aa2e9d23038f8bebd7ddd31b",
+    "native_energy_duration_s": 1.0,
+    "native_energy_duration_source": "profile.native_producers.energy.duration_s",
+    "ranking_model_bundle_resolution": {
+      "path": "",
+      "status": "not_configured"
+    },
+    "runtime_materialized": true,
+    "window_method_validation_probe": {
+      "acquisition_retry_backoff_s": 5.0,
+      "acquisition_retry_backoff_source": "energy_defaults.invalid_repeat_reconnect_backoff_s",
+      "activation_reason": "native_energy_measure_requested",
+      "affects_final_energy_gate": false,
+      "collector_invalid_repeat_retries": 0,
+      "configured_enabled": true,
+      "decision_capable_repeat_count": true,
+      "diagnostic_only": true,
+      "duration_s": 1.0,
+      "duration_source": "profile.native_producers.energy.duration_s",
+      "eligible_for_energy_results_import": false,
+      "eligible_for_scientific_claim": false,
+      "enabled": true,
+      "enabled_source": "profile",
+      "include_raw_parquet": true,
+      "include_raw_parquet_source": "profile",
+      "max_acquisition_retries": 1,
+      "max_acquisition_retries_source": "energy_defaults.invalid_repeat_max_retries",
+      "minimum_decision_repeats": 3,
+      "minimum_sensitivity_repeats": 3,
+      "raw_parquet_required_for_probe": true,
+      "repeats": 3,
+      "repeats_source": "profile",
+      "retry_scope": "fresh_outer_collector_attempt_acquisition_integrity_only",
+      "screening_only": true,
+      "sensitivity_summary_capable_repeat_count": true,
+      "strict": true,
+      "strict_source": "profile",
+      "workflow_blocking_requested": false,
+      "workflow_blocking_scope": "none"
+    }
+  },
+  "schema": "onnx-splitpoint/evaluation-start-snapshot",
+  "schema_version": 2,
+  "selection_fingerprint": "sha256:d82cecdeddf0c33183b7b43aac96926d319d2a779ccce19094e871989fa46412",
+  "snapshot_sha256": "sha256:51a7e7ab8380669d416ddf17d7dfb3b6d1c303931fbc254597203ecc5ebc5b69",
+  "source_profile_sha256": "sha256:944ba06d0e3c1e73080bb2a33ddf6f9aab7b15ec618a4ac8470f661d20e63318"
+}

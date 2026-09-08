@@ -1,0 +1,21 @@
+{
+  "ok": true,
+  "output_manifest": "/home/nx/native_fifo_evalsets/v27929_acceptance_d_yolo11l_b003_deepx_gpu_20260907_151417/yolo11l/benchmark_set/native_full_outputs/model=yolo11l/backend=native_full_deepx/setup=orin_nx_deepx_m1_01/comparison=deepx/native_full_outputs_manifest.json",
+  "input_manifest": "/home/nx/native_fifo_evalsets/v27929_acceptance_d_yolo11l_b003_deepx_gpu_20260907_151417/yolo11l/benchmark_set/native_full_outputs/model=yolo11l/backend=native_full_deepx/setup=orin_nx_deepx_m1_01/comparison=deepx/native_full_input_manifest.json",
+  "dxnn": "/home/nx/native_fifo_evalsets/v27929_acceptance_d_yolo11l_b003_deepx_gpu_20260907_151417/yolo11l/benchmark_set/deepx/deepx_m1/full/model.dxnn",
+  "input_candidate": "shared_pre_timing_sealed_manifest",
+  "attempt_errors": [],
+  "frozen_host_postprocess_contract": {},
+  "frozen_host_postprocess_contract_sha256": "",
+  "frozen_host_postprocess_result": {},
+  "frozen_decoded_nms_normalization_contract": {},
+  "frozen_decoded_nms_normalization_contract_sha256": "",
+  "frozen_decoded_nms_normalization_result": {},
+  "backend": "native_full_deepx",
+  "model": "yolo11l",
+  "setup_id": "orin_nx_deepx_m1_01",
+  "comparison_backend": "deepx",
+  "task": "detection",
+  "image": "/home/nx/native_fifo_evalsets/v27929_acceptance_d_yolo11l_b003_deepx_gpu_20260907_151417/yolo11l/benchmark_set/resources/validation/detection/val2017_n500_s20260710/000000212226.jpg",
+  "image_sha256": "261ba1b81c768f47b8452cd8fc7866a354a69c336a927032486d129b8684eb44"
+}

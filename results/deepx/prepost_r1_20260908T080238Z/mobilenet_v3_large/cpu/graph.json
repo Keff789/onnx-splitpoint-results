@@ -1,0 +1,218 @@
+{
+  "status": "observed",
+  "inputs": [
+    {
+      "name": "input",
+      "elem_type": 1,
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "name": "logits",
+      "elem_type": 1,
+      "shape": [
+        1,
+        1000
+      ]
+    }
+  ],
+  "node_count": 140,
+  "input_dataflow": [
+    {
+      "depth": 0,
+      "name": "node_Conv_671",
+      "op_type": "Conv",
+      "inputs": [
+        "input",
+        "features.0.0.weight",
+        "features.0.0.weight_bias"
+      ],
+      "outputs": [
+        "getitem"
+      ],
+      "small_initializer_values": {
+        "features.0.0.weight_bias": [
+          -0.18746249377727509,
+          2.6754374504089355,
+          0.8109572529792786,
+          2.6814942359924316,
+          2.7073371410369873,
+          1.384796380996704,
+          2.789780378341675,
+          5.672684192657471,
+          2.732422113418579,
+          2.639586925506592,
+          2.7376036643981934,
+          2.6435554027557373,
+          2.6652326583862305,
+          2.7000362873077393,
+          0.08859105408191681,
+          0.07959946990013123
+        ]
+      }
+    },
+    {
+      "depth": 1,
+      "name": "n0",
+      "op_type": "HardSwish",
+      "inputs": [
+        "getitem"
+      ],
+      "outputs": [
+        "hardswish"
+      ],
+      "small_initializer_values": {}
+    },
+    {
+      "depth": 2,
+      "name": "node_Conv_673",
+      "op_type": "Conv",
+      "inputs": [
+        "hardswish",
+        "features.1.block.0.0.weight",
+        "features.1.block.0.0.weight_bias"
+      ],
+      "outputs": [
+        "getitem_3"
+      ],
+      "small_initializer_values": {
+        "features.1.block.0.0.weight_bias": [
+          6.005919933319092,
+          5.904294013977051,
+          0.7254832983016968,
+          9.99442195892334,
+          3.640620708465576,
+          0.2901034355163574,
+          -0.4801297187805176,
+          3.7925565242767334,
+          1.9345308542251587,
+          10.157869338989258,
+          7.429844856262207,
+          1.2792730331420898,
+          8.88615608215332,
+          0.1410527229309082,
+          9.598512649536133,
+          3.0099539756774902
+        ]
+      }
+    },
+    {
+      "depth": 2,
+      "name": "node_add",
+      "op_type": "Add",
+      "inputs": [
+        "getitem_6",
+        "hardswish"
+      ],
+      "outputs": [
+        "add"
+      ],
+      "small_initializer_values": {}
+    },
+    {
+      "depth": 3,
+      "name": "node_relu",
+      "op_type": "Relu",
+      "inputs": [
+        "getitem_3"
+      ],
+      "outputs": [
+        "relu"
+      ],
+      "small_initializer_values": {}
+    },
+    {
+      "depth": 3,
+      "name": "node_Conv_677",
+      "op_type": "Conv",
+      "inputs": [
+        "add",
+        "features.2.block.0.0.weight",
+        "features.2.block.0.0.weight_bias"
+      ],
+      "outputs": [
+        "getitem_9"
+      ],
+      "small_initializer_values": {}
+    },
+    {
+      "depth": 4,
+      "name": "node_Conv_675",
+      "op_type": "Conv",
+      "inputs": [
+        "relu",
+        "features.1.block.1.0.weight",
+        "features.1.block.1.0.weight_bias"
+      ],
+      "outputs": [
+        "getitem_6"
+      ],
+      "small_initializer_values": {
+        "features.1.block.1.0.weight_bias": [
+          -0.1330745965242386,
+          -2.8026225566864014,
+          -5.138095378875732,
+          -0.24013051390647888,
+          -0.6988844871520996,
+          0.021815286949276924,
+          5.992025852203369,
+          -0.24687166512012482,
+          0.39067286252975464,
+          -3.064143657684326,
+          -1.944654107093811,
+          -3.3086862564086914,
+          0.09465134143829346,
+          0.41159436106681824,
+          -7.161174774169922,
+          3.497072696685791
+        ]
+      }
+    },
+    {
+      "depth": 4,
+      "name": "node_relu_1",
+      "op_type": "Relu",
+      "inputs": [
+        "getitem_9"
+      ],
+      "outputs": [
+        "relu_1"
+      ],
+      "small_initializer_values": {}
+    },
+    {
+      "depth": 5,
+      "name": "node_Conv_679",
+      "op_type": "Conv",
+      "inputs": [
+        "relu_1",
+        "features.2.block.1.0.weight",
+        "features.2.block.1.0.weight_bias"
+      ],
+      "outputs": [
+        "getitem_12"
+      ],
+      "small_initializer_values": {}
+    }
+  ],
+  "metadata": {
+    "task_type": "classification",
+    "source": "torchvision",
+    "model_name": "mobilenet_v3_large",
+    "weights": "MobileNet_V3_Large_Weights.IMAGENET1K_V2",
+    "resize_size": "[232]",
+    "crop_size": "[224]",
+    "mean": "[0.485, 0.456, 0.406]",
+    "std": "[0.229, 0.224, 0.225]",
+    "interpolation": "BILINEAR",
+    "num_classes": "1000"
+  },
+  "external_initializers": [],
+  "claim": "bounded_graph_observation_not_a_proof_of_absent_folded_normalization"
+}

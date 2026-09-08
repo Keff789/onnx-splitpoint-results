@@ -1,0 +1,319 @@
+SOURCE_ZIP=/home/kmika/Downloads/ONNX-Splitpoint-Tool_v2.79.29_COMPLETE_DELIVERY_BUNDLE/ONNX-Splitpoint-Tool_v2.79.29_SOURCE.zip
+SOURCE_SHA256=4b4a4718f436b4ea355e1f069f648797517921f4c7737ed5a12db0f8cb964bcd
+{
+  "ok": true,
+  "checks": {
+    "schema_ok": true,
+    "manifest_shape_ok": true,
+    "manifest_paths_ok": true,
+    "package_version_ok": true,
+    "workflow_version_ok": true,
+    "file_count_ok": true,
+    "files_ok": true,
+    "sha256sums_ok": true,
+    "unexpected_extras_ok": true,
+    "symlinks_ok": true
+  },
+  "file_count": 1409,
+  "invalid_paths": [],
+  "unexpected_extra_count": 0,
+  "unexpected_extras": [],
+  "symlinks": []
+}
+{
+  "archive": "/home/kmika/Downloads/ONNX-Splitpoint-Tool_v2.79.29_COMPLETE_DELIVERY_BUNDLE/ONNX-Splitpoint-Tool_v2.79.29_SOURCE.zip",
+  "archive_sha256": "4b4a4718f436b4ea355e1f069f648797517921f4c7737ed5a12db0f8cb964bcd",
+  "archive_size_bytes": 9232009,
+  "checks": {
+    "archive_comment_empty": true,
+    "archive_exists": true,
+    "content_matches_source": true,
+    "crc_clean": true,
+    "deterministic_metadata": true,
+    "member_names_unique": true,
+    "member_order_and_set": true
+  },
+  "manifest_file_count": 1409,
+  "member_count": 1411,
+  "ok": true,
+  "package_version": "2.79.29",
+  "prefix": "ONNX-Splitpoint-Tool_v2.79.29",
+  "schema": "onnx-splitpoint/source-release-verification",
+  "schema_version": 1,
+  "workflow_version": "v2.79.29-deepx-prepared-full-without-opencv"
+}
+V27929_SOURCE_IDENTITY=PASS
+{
+  "dependencies_preserved": true,
+  "distribution": "onnx-splitpoint-tool",
+  "entry_point_count": 185,
+  "installer": "stdlib-only-pep376-editable",
+  "ok": true,
+  "replaced_artifact_count": 185,
+  "version": "2.79.29"
+}
+YOLOv7 probe dependencies: available; pycocotools 2.0.11
+PASS source release synchronized
+Venv erhalten: /home/kmika/ONNX-Splitpoint-Tool/.venv
+Distribution aktualisiert: onnx-splitpoint-tool==2.79.29
+Release-Scope: Artifact-Reuse-Closure für Hailo, TensorRT und DeepX
+Hardware-Kalibrierung: NOT_RUN (Updater führt keine Hardwareaktion aus)
+YOLOv7-Probe-Abhängigkeiten: available (pycocotools>=2.0.7)
+Eigene Profile erhalten: 26
+Backup geänderter/entfernter Dateien: /home/kmika/ONNX-Splitpoint-Tool_update_backups/20260907_145803_2858863_433159692
+EMPTY_LEGACY_DIST_INFO_REMOVED=0
+V27929_IDENTITY=PASS
+V27929_ENTRYPOINT_METADATA=PASS
+{
+  "build_id": "v2.79.29-deepx-prepared-full-without-opencv",
+  "checks": {
+    "build": true,
+    "cold_build_reason_and_boundary": true,
+    "current_aliases": true,
+    "entrypoints": true,
+    "focused_features": true,
+    "infrastructure_failure_is_retryable": true,
+    "lineage": true,
+    "mapping_infeasible_is_negative": true,
+    "unknown_is_not_a_cold_build_or_hit": true,
+    "version": true
+  },
+  "failed": [],
+  "hardware_execution": "NOT_RUN",
+  "status": "PASS",
+  "version": "2.79.29"
+}
+PASS v2.79.29 smoke
+{
+  "build_id": "v2.79.29-deepx-prepared-full-without-opencv",
+  "checks": {
+    "build": true,
+    "cold_build_reason_and_boundary": true,
+    "current_aliases": true,
+    "entrypoints": true,
+    "focused_features": true,
+    "infrastructure_failure_is_retryable": true,
+    "lineage": true,
+    "mapping_infeasible_is_negative": true,
+    "unknown_is_not_a_cold_build_or_hit": true,
+    "version": true
+  },
+  "failed": [],
+  "hardware_execution": "NOT_RUN",
+  "status": "PASS",
+  "version": "2.79.29"
+}
+PASS v2.79.29 smoke
+.                                                                        [100%]
+=============================== warnings summary ===============================
+tests/test_v27912_energy_setup_claim_admission.py::test_gui_energy_matrix_preflight_blocks_primary_workload
+  /home/kmika/ONNX-Splitpoint-Tool/.venv/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:91: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+    _EPOCH_DATETIME_NAIVE = datetime.datetime.utcfromtimestamp(0)
+
+tests/test_v27912_energy_setup_claim_admission.py::test_gui_energy_matrix_preflight_blocks_primary_workload
+  /home/kmika/ONNX-Splitpoint-Tool/.venv/lib/python3.12/site-packages/pyparsing.py:108: DeprecationWarning: module 'sre_constants' is deprecated
+    import sre_constants
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+1 passed, 2 warnings in 3.76s
+........................................................................ [  6%]
+........................................................................ [ 12%]
+........................................................................ [ 19%]
+........................................................................ [ 25%]
+........................................................................ [ 31%]
+........................................................................ [ 38%]
+........................................................................ [ 44%]
+........................................................................ [ 50%]
+........................................................................ [ 57%]
+........................................................................ [ 63%]
+........................................................................ [ 70%]
+........................................................................ [ 76%]
+........................................................................ [ 82%]
+........................................................................ [ 89%]
+........................................................................ [ 95%]
+..................................................                       [100%]
+=============================== warnings summary ===============================
+.venv/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:91
+  /home/kmika/ONNX-Splitpoint-Tool/.venv/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:91: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+    _EPOCH_DATETIME_NAIVE = datetime.datetime.utcfromtimestamp(0)
+
+.venv/lib/python3.12/site-packages/pyparsing.py:108
+  /home/kmika/ONNX-Splitpoint-Tool/.venv/lib/python3.12/site-packages/pyparsing.py:108: DeprecationWarning: module 'sre_constants' is deprecated
+    import sre_constants
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+1130 passed, 1 deselected, 2 warnings in 112.01s (0:01:52)
+{
+  "ok": true,
+  "scope": "installed",
+  "checks": {
+    "schema_ok": true,
+    "manifest_shape_ok": true,
+    "package_version_ok": true,
+    "workflow_version_ok": true,
+    "manifest_rows_ok": true,
+    "file_count_ok": true,
+    "files_ok": true,
+    "sha256sums_ok": true,
+    "unexpected_extras_ok": true,
+    "symlinks_ok": true
+  },
+  "file_count": 1409,
+  "release_file_count": 1409,
+  "actual_allowlisted_file_count": 1435,
+  "user_profile_count": 26,
+  "user_profiles": [
+    {
+      "path": "profiles/BiggerSet.yaml",
+      "size": 22832,
+      "sha256": "cc3457a32698ba347db98d04dcd9d9e0c7bb93aec60df4a5c33d63da57167ae9"
+    },
+    {
+      "path": "profiles/Complet_set.yaml",
+      "size": 22577,
+      "sha256": "0480216297140be0b0bdf7133230bc2b5f68f46c8a5c32d893d88ee49ad01bbc"
+    },
+    {
+      "path": "profiles/Complete_Set_v2782_canary_b5.yaml",
+      "size": 21232,
+      "sha256": "13f486b0e53e335dfb4407bc09f364a116a3cfc774757e3a46bfd3c7c86da91f"
+    },
+    {
+      "path": "profiles/ResNet&Yolo26m.yaml",
+      "size": 5658,
+      "sha256": "2c5a7b03060787f468f317e378ce7e3a32f6c4838dbd7f1e5feb876fb62fb34d"
+    },
+    {
+      "path": "profiles/ResNet&Yolo26s&yolo7.yaml",
+      "size": 20338,
+      "sha256": "d62eb7b9e8c00e94519e57e335d4e397ef2513e3221525e7359d25c4e389e7f0"
+    },
+    {
+      "path": "profiles/ResNet&Yolo26s.yaml",
+      "size": 18106,
+      "sha256": "2df2414ab78d92f0ba6fc838e6bb6915b34140a22af87444b0bc7ec201ba5425"
+    },
+    {
+      "path": "profiles/ResNetOnly.yaml",
+      "size": 19477,
+      "sha256": "d00939de6114b0f863e8ce0a0721e8f8abfa6d23f9cc056a6806dec77ad10dc2"
+    },
+    {
+      "path": "profiles/SmallSet.yaml",
+      "size": 4979,
+      "sha256": "da4513052ffd15685f6d0c97845d892c534d6b06603665183275a2f86c2a1e09"
+    },
+    {
+      "path": "profiles/campaign_gate_hailo8_yolo26s.yaml",
+      "size": 1428,
+      "sha256": "bc6218df97442186540f91b4320e54faa151ab0d1d8ba89995e19faed3c02b0a"
+    },
+    {
+      "path": "profiles/deepx_contract_smoke.yaml",
+      "size": 965,
+      "sha256": "cdda6b25571d74a4753bae529f698642cb12e0d9b89265566ce6350f5f378e03"
+    },
+    {
+      "path": "profiles/main_eval_fast_v58p.yaml",
+      "size": 684,
+      "sha256": "2372343b4cde21a56b57d9d168bca1bd362e726fdebf241bdbdc7d61a31747cb"
+    },
+    {
+      "path": "profiles/paper_comparison_resnet50_hailo8_full_native_energy_b500.yaml",
+      "size": 18761,
+      "sha256": "c2cc26d0eeb07c3b5d4114bf9fad8ff7ce959756b4a8da6948b4dcf82a7baa37"
+    },
+    {
+      "path": "profiles/paper_comparison_yolov7_b066_hailo8_native_full_energy_b500.yaml",
+      "size": 10315,
+      "sha256": "4075f8320791be51e10fa418934ba39af51a57724d1b87f238d56cd1bb6eb7d3"
+    },
+    {
+      "path": "profiles/resnet50_v27536_deepx_full_quality_canary.yaml",
+      "size": 9517,
+      "sha256": "ae15e352eb762c76a6feb4473587378b40cec1ab51f43430840fe43f197cd22b"
+    },
+    {
+      "path": "profiles/resnet50_v2771_hailo_parallel_build_canary.yaml",
+      "size": 9883,
+      "sha256": "3254ddb850081bac23299157eb597522d74e91f54607b9ad582a5f8e543214f0"
+    },
+    {
+      "path": "profiles/resnet_yolo26s_yolov7_v27544_standard_anchor_b500.yaml",
+      "size": 11505,
+      "sha256": "d05f7ec575ec9a233d7e9069138764d594728a703513174dd078a45359c2d917"
+    },
+    {
+      "path": "profiles/resnet_yolo26s_yolov7_v27549_phase2_ranking_audit_b500.yaml",
+      "size": 11825,
+      "sha256": "741be7517ea6826332354aa5187742403120fa6773241fe98d4856593ddf0c8d"
+    },
+    {
+      "path": "profiles/v27549_native_ranking_supplement.yaml",
+      "size": 2262,
+      "sha256": "68af6db9804eef4714616bbe2864d087cd47d50bc4af74c3f7c1d0c0cd702b47"
+    },
+    {
+      "path": "profiles/yolo11l_energy_final_v58p.yaml",
+      "size": 660,
+      "sha256": "1a7e3ab54a570a2049a43e4a164da1f03b91d732c25596d8ffa4213c91e1b109"
+    },
+    {
+      "path": "profiles/yolo11l_smoke_v58p.yaml",
+      "size": 647,
+      "sha256": "b95720b1957e156019caa09d61b2e76fe4ececed26e749ac5487034c6a4f7e5b"
+    },
+    {
+      "path": "profiles/yolo26x_energy_final_v58w.yaml",
+      "size": 703,
+      "sha256": "f35709d391655eda9ad191ceb54331d1068a9472d553be8917830d9ee358396f"
+    },
+    {
+      "path": "profiles/yolo26x_smoke_v58w.yaml",
+      "size": 697,
+      "sha256": "95daf40faa781b43f52f27b68302f548b897d92a530812a5255fc04590cedd62"
+    },
+    {
+      "path": "profiles/yolov7_26m_26x.yaml",
+      "size": 5329,
+      "sha256": "69c733800fc9a0cbf0e70387c52214f36257099922e5cbbffa48cef8ba43be8f"
+    },
+    {
+      "path": "profiles/yolov7_paper_v27549_hailo_full_opt2_canary_b500(1).yaml",
+      "size": 9891,
+      "sha256": "50366add37da821f4c98287e42a4586561e705733bf69a008002c07cde4655b3"
+    },
+    {
+      "path": "profiles/yolov7_paper_v27549_hailo_full_opt2_canary_b500.yaml",
+      "size": 9635,
+      "sha256": "23d9168d834b249af7d95a3ab4f525e71d0677d5e9fd3050c8422fd2d0871f04"
+    },
+    {
+      "path": "profiles/yolov7only.yaml",
+      "size": 4739,
+      "sha256": "bc37068e7fa888bc73cd4fc26c81f5e855f9910c3dd6039a2c5c4ceb7c54fd4c"
+    }
+  ],
+  "unexpected_extra_count": 0,
+  "unexpected_extras": [],
+  "symlink_count": 0,
+  "symlinks": [],
+  "missing": [],
+  "changed": []
+}
+PASS v2.79.29 small acceptance (real cache preflight and hardware EvalRun: NOT_RUN)
+V27929_ACCEPTANCE_REPORT=/home/kmika/Downloads/v27929_install_acceptance_20260907_125759_497558239_2858752/v27929_small_acceptance.json
+V27929_FOCUSED_ACCEPTANCE_REPORT=PASS
+V27929_DEDICATED_ACCEPTANCE=PASS
+V27929_INSTALL_ACCEPTANCE=PASS
+HARDWARE_ACTIONS=NOT_RUN
+V27929_SOFTWARE_ACCEPTANCE=PASS
+V27929_VENV_AND_CUSTOM_USER_PROFILES=PRESERVED
+V27929_REAL_SEVEN_MODEL_CACHE_PREFLIGHT=NOT_RUN
+V27929_REAL_MULTI_HOST_EVALRUN=NOT_RUN
+V27929_HARDWARE_CACHE_REUSE_GATES=NOT_RUN
+
+NEXT_STEP:
+Use the bounded run checks from TESTANLEITUNG_2.79.29.md before another
+multi-hour EvaluationRun. This installer performs no hardware action and
+makes no real-hardware reuse, quality or energy plausibility claim.

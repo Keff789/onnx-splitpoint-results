@@ -1,0 +1,23 @@
+{
+  "status": "collected",
+  "transfer": {
+    "returncode": 0,
+    "timed_out": false,
+    "elapsed_s": 0.802,
+    "log": "/home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/mobilenet_v3_large/transfer.log"
+  },
+  "execution": {
+    "returncode": 0,
+    "timed_out": false,
+    "elapsed_s": 1.603,
+    "log": "/home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/mobilenet_v3_large/remote_console.log"
+  },
+  "collection": {
+    "returncode": 0,
+    "timed_out": false,
+    "elapsed_s": 0.602,
+    "log": "/home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/mobilenet_v3_large/collection.log"
+  },
+  "request_binding_verified": true,
+  "remote_temporary_removed": true
+}

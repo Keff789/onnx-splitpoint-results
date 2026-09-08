@@ -1,0 +1,92 @@
+{
+  "schema": "onnx-splitpoint/native-full-input-dump",
+  "schema_version": 2,
+  "backend": "native_full_deepx",
+  "model": "mobilenet_v3_large",
+  "setup_id": "orin_nx_deepx_m1_01",
+  "comparison_backend": "deepx",
+  "case": "full",
+  "task": "classification",
+  "image": "/tmp/onnx-deepx-prepost-r1-0r3Ho1Dmvq/suite/images/ILSVRC2012_val_00000515.JPEG",
+  "image_sha256": "5d4e6ea9fa74911550bd4d22db2e9b0adb0f348ddce6c233c90af5b43c8e0f3a",
+  "input_image": "/tmp/onnx-deepx-prepost-r1-0r3Ho1Dmvq/suite/images/ILSVRC2012_val_00000515.JPEG",
+  "input_image_sha256": "5d4e6ea9fa74911550bd4d22db2e9b0adb0f348ddce6c233c90af5b43c8e0f3a",
+  "input_dump": "input_rgb_uint8.bin",
+  "input_dump_sha256": "e17d4ddedccfca5912a82ad2ee5eb746d6b2dc963c55048edbf0cc56100bca20",
+  "input_dump_bytes": 150528,
+  "input_shape_hwc": [
+    224,
+    224,
+    3
+  ],
+  "runtime_input_name": "input",
+  "runtime_input_shape": [
+    224,
+    224,
+    3
+  ],
+  "runtime_input_dtype": "uint8",
+  "runtime_input_file": "runtime_input.bin",
+  "runtime_input_sha256": "e17d4ddedccfca5912a82ad2ee5eb746d6b2dc963c55048edbf0cc56100bca20",
+  "runtime_input_bytes": 150528,
+  "preprocess": {
+    "mode": "resize_rgb_uint8",
+    "pad_value": 0,
+    "rgb": true,
+    "ort_model_scale": "imagenet",
+    "layout": "HWC",
+    "runtime_dtype": "uint8",
+    "normalization": "embedded_dxcom_preprocessing",
+    "color_space": "RGB",
+    "input_domain": "uint8_0_255",
+    "resize_interpolation": "bilinear",
+    "resize_rounding": "python_round_ties_to_even",
+    "placement": "not_applicable"
+  },
+  "runtime_preprocess_mode": "resize_rgb_uint8",
+  "runtime_input_layout": "HWC",
+  "runtime_color_space": "RGB",
+  "runtime_normalization": "embedded_dxcom_preprocessing",
+  "runtime_preprocessing_identity": {
+    "schema": "onnx-splitpoint/image-preprocessing-contract",
+    "schema_version": 2,
+    "contract_scope": "prepared_rgb_uint8_semantics",
+    "task": "classification",
+    "preprocess_mode": "resize",
+    "spatial_transform": "direct_resize",
+    "target_hw": [
+      224,
+      224
+    ],
+    "color_space": "RGB",
+    "input_domain": "uint8_0_255",
+    "resize_interpolation": "bilinear",
+    "resize_rounding": "python_round_ties_to_even",
+    "placement": "not_applicable",
+    "pad_value": 0,
+    "letterbox_pad_value": 0,
+    "image_scale": "imagenet",
+    "letterbox": false
+  },
+  "runtime_preprocessing_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+  "runtime_numeric_input_identity": {
+    "schema": "onnx-splitpoint/runtime-numeric-input-identity",
+    "schema_version": 1,
+    "backend": "native_full_deepx",
+    "task": "classification",
+    "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+    "runtime_input_name": "input",
+    "runtime_input_shape": [
+      224,
+      224,
+      3
+    ],
+    "runtime_input_dtype": "uint8",
+    "runtime_input_layout": "HWC",
+    "runtime_color_space": "RGB",
+    "runtime_normalization": "embedded_dxcom_preprocessing",
+    "runtime_numeric_domain": "uint8_0_255"
+  },
+  "runtime_numeric_input_sha256": "2dbfe98b1b2fabdc22c56318e1ec36018aee025250565c3519a91e87e8527cff",
+  "contract_source": "shared_pre_timing_deepx_input_sealer"
+}

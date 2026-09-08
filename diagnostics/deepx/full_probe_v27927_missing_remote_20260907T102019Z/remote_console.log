@@ -1,0 +1,2 @@
+PROBE_STATUS=probe_setup_failed
+PROBE_ERROR=FileNotFoundError: [Errno 2] No such file or directory: '/home/nx/splitpoint_runs/legacy_suite/v27926_acceptance_d_yolo11l_b003_deepx_gpu_20260907_101443_yolo11l_orin_nx_deepx_m1_01/1'

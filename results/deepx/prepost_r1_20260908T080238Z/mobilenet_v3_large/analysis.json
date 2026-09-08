@@ -1,0 +1,3677 @@
+{
+  "schema": "deepx-prepost-evidence-smoke/r1",
+  "model_id": "mobilenet_v3_large",
+  "model_acceptance": "NOT_EVALUATED",
+  "counts_as_benchmark": false,
+  "purpose": "evidence_for_later_root_cause_review; no automatic_production_fix",
+  "cpu_controls": {
+    "scale_only": {
+      "sample_count": 32,
+      "top1_accuracy": 0.65625,
+      "top5_accuracy": 0.84375
+    },
+    "imagenet_mean_std": {
+      "sample_count": 32,
+      "top1_accuracy": 0.8125,
+      "top5_accuracy": 0.9375
+    },
+    "canonical_reference": {
+      "sample_count": 32,
+      "top1_accuracy": 0.8125,
+      "top5_accuracy": 0.9375
+    },
+    "harness_crop256": {
+      "sample_count": 32,
+      "top1_accuracy": 0.8125,
+      "top5_accuracy": 0.96875
+    },
+    "export_metadata_geometry": {
+      "sample_count": 32,
+      "top1_accuracy": 0.75,
+      "top5_accuracy": 0.96875
+    }
+  },
+  "paired_hardware": [
+    {
+      "image_id": "ILSVRC2012_val_00000080.JPEG",
+      "label_id": 461,
+      "native_top1": 461,
+      "quality_top1": 461,
+      "cpu_top1": {
+        "scale_only": 461,
+        "imagenet_mean_std": 461,
+        "canonical_reference": 461,
+        "harness_crop256": 461,
+        "export_metadata_geometry": 461
+      },
+      "native_vs_quality_feed": {
+        "left_shape": [
+          224,
+          224,
+          3
+        ],
+        "right_shape": [
+          224,
+          224,
+          3
+        ],
+        "left_dtype": "uint8",
+        "right_dtype": "uint8",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 0.9999999999999999
+      },
+      "native_vs_quality_output": {
+        "left_shape": [
+          1,
+          1000
+        ],
+        "right_shape": [
+          1,
+          1000
+        ],
+        "left_dtype": "float32",
+        "right_dtype": "float32",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 1.0
+      },
+      "quality_export_checks": {
+        "export_image_matches": true,
+        "export_label_matches": true,
+        "export_top1_matches_independent": true,
+        "export_top5_set_matches_independent": true
+      },
+      "output_comparisons": {
+        "output_scale_only_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 1.803884744644165,
+          "mean_abs": 0.2539578188606538,
+          "changed_elements": 1000,
+          "cosine": 0.903606935957604
+        },
+        "output_imagenet_mean_std_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 2.741011768579483,
+          "mean_abs": 0.3345019216425717,
+          "changed_elements": 1000,
+          "cosine": 0.8134242338874615
+        },
+        "output_canonical_reference_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 2.741011768579483,
+          "mean_abs": 0.3345019216425717,
+          "changed_elements": 1000,
+          "cosine": 0.8134242338874615
+        },
+        "output_harness_crop256_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 4.3954176902771,
+          "mean_abs": 0.44327406025491656,
+          "changed_elements": 1000,
+          "cosine": 0.6293867564442267
+        },
+        "output_export_metadata_geometry_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 4.817406058311462,
+          "mean_abs": 0.4730703546558507,
+          "changed_elements": 1000,
+          "cosine": 0.5837603722811459
+        }
+      }
+    },
+    {
+      "image_id": "ILSVRC2012_val_00000152.JPEG",
+      "label_id": 637,
+      "native_top1": 637,
+      "quality_top1": 637,
+      "cpu_top1": {
+        "scale_only": 637,
+        "imagenet_mean_std": 637,
+        "canonical_reference": 637,
+        "harness_crop256": 637,
+        "export_metadata_geometry": 637
+      },
+      "native_vs_quality_feed": {
+        "left_shape": [
+          224,
+          224,
+          3
+        ],
+        "right_shape": [
+          224,
+          224,
+          3
+        ],
+        "left_dtype": "uint8",
+        "right_dtype": "uint8",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 1.0
+      },
+      "native_vs_quality_output": {
+        "left_shape": [
+          1,
+          1000
+        ],
+        "right_shape": [
+          1,
+          1000
+        ],
+        "left_dtype": "float32",
+        "right_dtype": "float32",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 0.9999999999999999
+      },
+      "quality_export_checks": {
+        "export_image_matches": true,
+        "export_label_matches": true,
+        "export_top1_matches_independent": true,
+        "export_top5_set_matches_independent": true
+      },
+      "output_comparisons": {
+        "output_scale_only_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 2.2538939714431763,
+          "mean_abs": 0.37342441916652025,
+          "changed_elements": 1000,
+          "cosine": 0.9362802260572745
+        },
+        "output_imagenet_mean_std_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.707441031932831,
+          "mean_abs": 0.6544183715283871,
+          "changed_elements": 1000,
+          "cosine": 0.7834871573645729
+        },
+        "output_canonical_reference_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.707441031932831,
+          "mean_abs": 0.6544183715283871,
+          "changed_elements": 1000,
+          "cosine": 0.7834871573645729
+        },
+        "output_harness_crop256_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.9865931421518326,
+          "mean_abs": 0.885313559807837,
+          "changed_elements": 1000,
+          "cosine": 0.617028698356577
+        },
+        "output_export_metadata_geometry_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 4.1501946449279785,
+          "mean_abs": 0.8392340109404176,
+          "changed_elements": 1000,
+          "cosine": 0.653747277802693
+        }
+      }
+    },
+    {
+      "image_id": "ILSVRC2012_val_00000210.JPEG",
+      "label_id": 516,
+      "native_top1": 431,
+      "quality_top1": 431,
+      "cpu_top1": {
+        "scale_only": 431,
+        "imagenet_mean_std": 431,
+        "canonical_reference": 431,
+        "harness_crop256": 431,
+        "export_metadata_geometry": 431
+      },
+      "native_vs_quality_feed": {
+        "left_shape": [
+          224,
+          224,
+          3
+        ],
+        "right_shape": [
+          224,
+          224,
+          3
+        ],
+        "left_dtype": "uint8",
+        "right_dtype": "uint8",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 1.0000000000000002
+      },
+      "native_vs_quality_output": {
+        "left_shape": [
+          1,
+          1000
+        ],
+        "right_shape": [
+          1,
+          1000
+        ],
+        "left_dtype": "float32",
+        "right_dtype": "float32",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 1.0000000000000002
+      },
+      "quality_export_checks": {
+        "export_image_matches": true,
+        "export_label_matches": true,
+        "export_top1_matches_independent": true,
+        "export_top5_set_matches_independent": true
+      },
+      "output_comparisons": {
+        "output_scale_only_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 1.9301939010620117,
+          "mean_abs": 0.37476121258176864,
+          "changed_elements": 1000,
+          "cosine": 0.8548994611201698
+        },
+        "output_imagenet_mean_std_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.1648120880126953,
+          "mean_abs": 0.5234205325189978,
+          "changed_elements": 1000,
+          "cosine": 0.6870339128877265
+        },
+        "output_canonical_reference_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.1648120880126953,
+          "mean_abs": 0.5234205325189978,
+          "changed_elements": 1000,
+          "cosine": 0.6870339128877265
+        },
+        "output_harness_crop256_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.6913254261016846,
+          "mean_abs": 0.499923768369481,
+          "changed_elements": 1000,
+          "cosine": 0.6468782787014853
+        },
+        "output_export_metadata_geometry_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 2.6718828678131104,
+          "mean_abs": 0.48500573813822123,
+          "changed_elements": 1000,
+          "cosine": 0.6984536932580038
+        }
+      }
+    },
+    {
+      "image_id": "ILSVRC2012_val_00000285.JPEG",
+      "label_id": 906,
+      "native_top1": 457,
+      "quality_top1": 457,
+      "cpu_top1": {
+        "scale_only": 982,
+        "imagenet_mean_std": 457,
+        "canonical_reference": 457,
+        "harness_crop256": 457,
+        "export_metadata_geometry": 457
+      },
+      "native_vs_quality_feed": {
+        "left_shape": [
+          224,
+          224,
+          3
+        ],
+        "right_shape": [
+          224,
+          224,
+          3
+        ],
+        "left_dtype": "uint8",
+        "right_dtype": "uint8",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 1.0
+      },
+      "native_vs_quality_output": {
+        "left_shape": [
+          1,
+          1000
+        ],
+        "right_shape": [
+          1,
+          1000
+        ],
+        "left_dtype": "float32",
+        "right_dtype": "float32",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 1.0000000000000002
+      },
+      "quality_export_checks": {
+        "export_image_matches": true,
+        "export_label_matches": true,
+        "export_top1_matches_independent": true,
+        "export_top5_set_matches_independent": true
+      },
+      "output_comparisons": {
+        "output_scale_only_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 2.2834737300872803,
+          "mean_abs": 0.31650188588909806,
+          "changed_elements": 1000,
+          "cosine": 0.9043208335228607
+        },
+        "output_imagenet_mean_std_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 2.505002975463867,
+          "mean_abs": 0.4137350089298561,
+          "changed_elements": 1000,
+          "cosine": 0.8310081543261476
+        },
+        "output_canonical_reference_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 2.505002975463867,
+          "mean_abs": 0.4137350089298561,
+          "changed_elements": 1000,
+          "cosine": 0.8310081543261476
+        },
+        "output_harness_crop256_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 2.890739321708679,
+          "mean_abs": 0.4997148628067225,
+          "changed_elements": 1000,
+          "cosine": 0.7523328659653595
+        },
+        "output_export_metadata_geometry_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.1857378482818604,
+          "mean_abs": 0.46458529328834264,
+          "changed_elements": 1000,
+          "cosine": 0.7734521815706312
+        }
+      }
+    },
+    {
+      "image_id": "ILSVRC2012_val_00000347.JPEG",
+      "label_id": 472,
+      "native_top1": 472,
+      "quality_top1": 472,
+      "cpu_top1": {
+        "scale_only": 472,
+        "imagenet_mean_std": 472,
+        "canonical_reference": 472,
+        "harness_crop256": 472,
+        "export_metadata_geometry": 472
+      },
+      "native_vs_quality_feed": {
+        "left_shape": [
+          224,
+          224,
+          3
+        ],
+        "right_shape": [
+          224,
+          224,
+          3
+        ],
+        "left_dtype": "uint8",
+        "right_dtype": "uint8",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 1.0
+      },
+      "native_vs_quality_output": {
+        "left_shape": [
+          1,
+          1000
+        ],
+        "right_shape": [
+          1,
+          1000
+        ],
+        "left_dtype": "float32",
+        "right_dtype": "float32",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 1.0
+      },
+      "quality_export_checks": {
+        "export_image_matches": true,
+        "export_label_matches": true,
+        "export_top1_matches_independent": true,
+        "export_top5_set_matches_independent": true
+      },
+      "output_comparisons": {
+        "output_scale_only_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 1.1548044681549072,
+          "mean_abs": 0.24988526549562812,
+          "changed_elements": 1000,
+          "cosine": 0.9182957034036203
+        },
+        "output_imagenet_mean_std_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 1.6343615055084229,
+          "mean_abs": 0.3725969430990517,
+          "changed_elements": 1000,
+          "cosine": 0.81745835101188
+        },
+        "output_canonical_reference_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 1.6343615055084229,
+          "mean_abs": 0.3725969430990517,
+          "changed_elements": 1000,
+          "cosine": 0.81745835101188
+        },
+        "output_harness_crop256_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 1.9147745370864868,
+          "mean_abs": 0.43933931728452447,
+          "changed_elements": 1000,
+          "cosine": 0.7526804069966468
+        },
+        "output_export_metadata_geometry_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 1.5809977650642395,
+          "mean_abs": 0.38718450295738877,
+          "changed_elements": 1000,
+          "cosine": 0.8014865469483405
+        }
+      }
+    },
+    {
+      "image_id": "ILSVRC2012_val_00000390.JPEG",
+      "label_id": 133,
+      "native_top1": 133,
+      "quality_top1": 133,
+      "cpu_top1": {
+        "scale_only": 133,
+        "imagenet_mean_std": 133,
+        "canonical_reference": 133,
+        "harness_crop256": 133,
+        "export_metadata_geometry": 133
+      },
+      "native_vs_quality_feed": {
+        "left_shape": [
+          224,
+          224,
+          3
+        ],
+        "right_shape": [
+          224,
+          224,
+          3
+        ],
+        "left_dtype": "uint8",
+        "right_dtype": "uint8",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 1.0
+      },
+      "native_vs_quality_output": {
+        "left_shape": [
+          1,
+          1000
+        ],
+        "right_shape": [
+          1,
+          1000
+        ],
+        "left_dtype": "float32",
+        "right_dtype": "float32",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 0.9999999999999999
+      },
+      "quality_export_checks": {
+        "export_image_matches": true,
+        "export_label_matches": true,
+        "export_top1_matches_independent": true,
+        "export_top5_set_matches_independent": true
+      },
+      "output_comparisons": {
+        "output_scale_only_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 0.8878552913665771,
+          "mean_abs": 0.18692697171121836,
+          "changed_elements": 1000,
+          "cosine": 0.9187345298193972
+        },
+        "output_imagenet_mean_std_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 1.5609171390533447,
+          "mean_abs": 0.2813179966509342,
+          "changed_elements": 1000,
+          "cosine": 0.812442491390224
+        },
+        "output_canonical_reference_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 1.5609171390533447,
+          "mean_abs": 0.2813179966509342,
+          "changed_elements": 1000,
+          "cosine": 0.812442491390224
+        },
+        "output_harness_crop256_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 1.6249857544898987,
+          "mean_abs": 0.32183261697925625,
+          "changed_elements": 1000,
+          "cosine": 0.7412563572997376
+        },
+        "output_export_metadata_geometry_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 1.7634838223457336,
+          "mean_abs": 0.3408115374958143,
+          "changed_elements": 1000,
+          "cosine": 0.7201694318058643
+        }
+      }
+    },
+    {
+      "image_id": "ILSVRC2012_val_00000395.JPEG",
+      "label_id": 74,
+      "native_top1": 74,
+      "quality_top1": 74,
+      "cpu_top1": {
+        "scale_only": 74,
+        "imagenet_mean_std": 74,
+        "canonical_reference": 74,
+        "harness_crop256": 74,
+        "export_metadata_geometry": 74
+      },
+      "native_vs_quality_feed": {
+        "left_shape": [
+          224,
+          224,
+          3
+        ],
+        "right_shape": [
+          224,
+          224,
+          3
+        ],
+        "left_dtype": "uint8",
+        "right_dtype": "uint8",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 1.0000000000000002
+      },
+      "native_vs_quality_output": {
+        "left_shape": [
+          1,
+          1000
+        ],
+        "right_shape": [
+          1,
+          1000
+        ],
+        "left_dtype": "float32",
+        "right_dtype": "float32",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 0.9999999999999998
+      },
+      "quality_export_checks": {
+        "export_image_matches": true,
+        "export_label_matches": true,
+        "export_top1_matches_independent": true,
+        "export_top5_set_matches_independent": true
+      },
+      "output_comparisons": {
+        "output_scale_only_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 2.6836163997650146,
+          "mean_abs": 0.40613492610119284,
+          "changed_elements": 1000,
+          "cosine": 0.85388000344673
+        },
+        "output_imagenet_mean_std_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.404429852962494,
+          "mean_abs": 0.4913832894656807,
+          "changed_elements": 1000,
+          "cosine": 0.7501847472327994
+        },
+        "output_canonical_reference_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.404429852962494,
+          "mean_abs": 0.4913832894656807,
+          "changed_elements": 1000,
+          "cosine": 0.7501847472327994
+        },
+        "output_harness_crop256_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 5.299537658691406,
+          "mean_abs": 0.6001951100006699,
+          "changed_elements": 1000,
+          "cosine": 0.5754304902169975
+        },
+        "output_export_metadata_geometry_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 4.549098014831543,
+          "mean_abs": 0.5637131691407412,
+          "changed_elements": 1000,
+          "cosine": 0.6475893755875185
+        }
+      }
+    },
+    {
+      "image_id": "ILSVRC2012_val_00000410.JPEG",
+      "label_id": 598,
+      "native_top1": 598,
+      "quality_top1": 598,
+      "cpu_top1": {
+        "scale_only": 598,
+        "imagenet_mean_std": 598,
+        "canonical_reference": 598,
+        "harness_crop256": 598,
+        "export_metadata_geometry": 598
+      },
+      "native_vs_quality_feed": {
+        "left_shape": [
+          224,
+          224,
+          3
+        ],
+        "right_shape": [
+          224,
+          224,
+          3
+        ],
+        "left_dtype": "uint8",
+        "right_dtype": "uint8",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 1.0
+      },
+      "native_vs_quality_output": {
+        "left_shape": [
+          1,
+          1000
+        ],
+        "right_shape": [
+          1,
+          1000
+        ],
+        "left_dtype": "float32",
+        "right_dtype": "float32",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 1.0
+      },
+      "quality_export_checks": {
+        "export_image_matches": true,
+        "export_label_matches": true,
+        "export_top1_matches_independent": true,
+        "export_top5_set_matches_independent": true
+      },
+      "output_comparisons": {
+        "output_scale_only_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 1.6113144159317017,
+          "mean_abs": 0.33059890967374667,
+          "changed_elements": 1000,
+          "cosine": 0.903483776906094
+        },
+        "output_imagenet_mean_std_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.0311665534973145,
+          "mean_abs": 0.47647016975469886,
+          "changed_elements": 1000,
+          "cosine": 0.7543225623077583
+        },
+        "output_canonical_reference_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.0311665534973145,
+          "mean_abs": 0.47647016975469886,
+          "changed_elements": 1000,
+          "cosine": 0.7543225623077583
+        },
+        "output_harness_crop256_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.861945152282715,
+          "mean_abs": 0.5993630785867572,
+          "changed_elements": 1000,
+          "cosine": 0.5912035786463883
+        },
+        "output_export_metadata_geometry_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.4277000427246094,
+          "mean_abs": 0.533751622476615,
+          "changed_elements": 1000,
+          "cosine": 0.6733638122352524
+        }
+      }
+    },
+    {
+      "image_id": "ILSVRC2012_val_00000465.JPEG",
+      "label_id": 712,
+      "native_top1": 898,
+      "quality_top1": 898,
+      "cpu_top1": {
+        "scale_only": 967,
+        "imagenet_mean_std": 712,
+        "canonical_reference": 712,
+        "harness_crop256": 622,
+        "export_metadata_geometry": 622
+      },
+      "native_vs_quality_feed": {
+        "left_shape": [
+          224,
+          224,
+          3
+        ],
+        "right_shape": [
+          224,
+          224,
+          3
+        ],
+        "left_dtype": "uint8",
+        "right_dtype": "uint8",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 1.0
+      },
+      "native_vs_quality_output": {
+        "left_shape": [
+          1,
+          1000
+        ],
+        "right_shape": [
+          1,
+          1000
+        ],
+        "left_dtype": "float32",
+        "right_dtype": "float32",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 1.0000000000000002
+      },
+      "quality_export_checks": {
+        "export_image_matches": true,
+        "export_label_matches": true,
+        "export_top1_matches_independent": true,
+        "export_top5_set_matches_independent": true
+      },
+      "output_comparisons": {
+        "output_scale_only_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 2.618990421295166,
+          "mean_abs": 0.38510951859643683,
+          "changed_elements": 1000,
+          "cosine": 0.902151171953417
+        },
+        "output_imagenet_mean_std_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.3958029747009277,
+          "mean_abs": 0.5864534146785736,
+          "changed_elements": 1000,
+          "cosine": 0.7769533323468256
+        },
+        "output_canonical_reference_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.3958029747009277,
+          "mean_abs": 0.5864534146785736,
+          "changed_elements": 1000,
+          "cosine": 0.7769533323468256
+        },
+        "output_harness_crop256_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.0528178215026855,
+          "mean_abs": 0.6226976109873503,
+          "changed_elements": 1000,
+          "cosine": 0.7130036535651477
+        },
+        "output_export_metadata_geometry_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.2802575174719095,
+          "mean_abs": 0.6460604676213115,
+          "changed_elements": 1000,
+          "cosine": 0.6834374877937055
+        }
+      }
+    },
+    {
+      "image_id": "ILSVRC2012_val_00000515.JPEG",
+      "label_id": 744,
+      "native_top1": 744,
+      "quality_top1": 744,
+      "cpu_top1": {
+        "scale_only": 744,
+        "imagenet_mean_std": 744,
+        "canonical_reference": 744,
+        "harness_crop256": 744,
+        "export_metadata_geometry": 744
+      },
+      "native_vs_quality_feed": {
+        "left_shape": [
+          224,
+          224,
+          3
+        ],
+        "right_shape": [
+          224,
+          224,
+          3
+        ],
+        "left_dtype": "uint8",
+        "right_dtype": "uint8",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 1.0
+      },
+      "native_vs_quality_output": {
+        "left_shape": [
+          1,
+          1000
+        ],
+        "right_shape": [
+          1,
+          1000
+        ],
+        "left_dtype": "float32",
+        "right_dtype": "float32",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 1.0
+      },
+      "quality_export_checks": {
+        "export_image_matches": true,
+        "export_label_matches": true,
+        "export_top1_matches_independent": true,
+        "export_top5_set_matches_independent": true
+      },
+      "output_comparisons": {
+        "output_scale_only_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 1.916121244430542,
+          "mean_abs": 0.2499221733994782,
+          "changed_elements": 1000,
+          "cosine": 0.915979292010327
+        },
+        "output_imagenet_mean_std_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.0066404342651367,
+          "mean_abs": 0.38361176500376315,
+          "changed_elements": 1000,
+          "cosine": 0.8009120637885448
+        },
+        "output_canonical_reference_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.0066404342651367,
+          "mean_abs": 0.38361176500376315,
+          "changed_elements": 1000,
+          "cosine": 0.8009120637885448
+        },
+        "output_harness_crop256_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 2.2517781257629395,
+          "mean_abs": 0.42361935154534874,
+          "changed_elements": 1000,
+          "cosine": 0.7871125266943041
+        },
+        "output_export_metadata_geometry_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 2.7769088745117188,
+          "mean_abs": 0.4400659005818889,
+          "changed_elements": 1000,
+          "cosine": 0.7313182538357772
+        }
+      }
+    },
+    {
+      "image_id": "ILSVRC2012_val_00000526.JPEG",
+      "label_id": 868,
+      "native_top1": 492,
+      "quality_top1": 492,
+      "cpu_top1": {
+        "scale_only": 711,
+        "imagenet_mean_std": 868,
+        "canonical_reference": 868,
+        "harness_crop256": 868,
+        "export_metadata_geometry": 868
+      },
+      "native_vs_quality_feed": {
+        "left_shape": [
+          224,
+          224,
+          3
+        ],
+        "right_shape": [
+          224,
+          224,
+          3
+        ],
+        "left_dtype": "uint8",
+        "right_dtype": "uint8",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 1.0
+      },
+      "native_vs_quality_output": {
+        "left_shape": [
+          1,
+          1000
+        ],
+        "right_shape": [
+          1,
+          1000
+        ],
+        "left_dtype": "float32",
+        "right_dtype": "float32",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 1.0
+      },
+      "quality_export_checks": {
+        "export_image_matches": true,
+        "export_label_matches": true,
+        "export_top1_matches_independent": true,
+        "export_top5_set_matches_independent": true
+      },
+      "output_comparisons": {
+        "output_scale_only_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 2.340210199356079,
+          "mean_abs": 0.41034762852452694,
+          "changed_elements": 1000,
+          "cosine": 0.9094756475703853
+        },
+        "output_imagenet_mean_std_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 2.9442116618156433,
+          "mean_abs": 0.5366153815314174,
+          "changed_elements": 1000,
+          "cosine": 0.8401879497137145
+        },
+        "output_canonical_reference_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 2.9442116618156433,
+          "mean_abs": 0.5366153815314174,
+          "changed_elements": 1000,
+          "cosine": 0.8401879497137145
+        },
+        "output_harness_crop256_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.611309051513672,
+          "mean_abs": 0.688035898130387,
+          "changed_elements": 1000,
+          "cosine": 0.742366913105459
+        },
+        "output_export_metadata_geometry_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.6113297939300537,
+          "mean_abs": 0.6632233713585883,
+          "changed_elements": 1000,
+          "cosine": 0.7451886528546185
+        }
+      }
+    },
+    {
+      "image_id": "ILSVRC2012_val_00000705.JPEG",
+      "label_id": 994,
+      "native_top1": 994,
+      "quality_top1": 994,
+      "cpu_top1": {
+        "scale_only": 994,
+        "imagenet_mean_std": 994,
+        "canonical_reference": 994,
+        "harness_crop256": 994,
+        "export_metadata_geometry": 994
+      },
+      "native_vs_quality_feed": {
+        "left_shape": [
+          224,
+          224,
+          3
+        ],
+        "right_shape": [
+          224,
+          224,
+          3
+        ],
+        "left_dtype": "uint8",
+        "right_dtype": "uint8",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 0.9999999999999999
+      },
+      "native_vs_quality_output": {
+        "left_shape": [
+          1,
+          1000
+        ],
+        "right_shape": [
+          1,
+          1000
+        ],
+        "left_dtype": "float32",
+        "right_dtype": "float32",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 0.9999999999999999
+      },
+      "quality_export_checks": {
+        "export_image_matches": true,
+        "export_label_matches": true,
+        "export_top1_matches_independent": true,
+        "export_top5_set_matches_independent": true
+      },
+      "output_comparisons": {
+        "output_scale_only_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 2.1610581278800964,
+          "mean_abs": 0.32718875001836567,
+          "changed_elements": 1000,
+          "cosine": 0.8939872294217517
+        },
+        "output_imagenet_mean_std_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.2455849647521973,
+          "mean_abs": 0.4754091037604958,
+          "changed_elements": 1000,
+          "cosine": 0.7566092863369062
+        },
+        "output_canonical_reference_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.2455849647521973,
+          "mean_abs": 0.4754091037604958,
+          "changed_elements": 1000,
+          "cosine": 0.7566092863369062
+        },
+        "output_harness_crop256_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 4.515002727508545,
+          "mean_abs": 0.5575334147028626,
+          "changed_elements": 1000,
+          "cosine": 0.6387025892004766
+        },
+        "output_export_metadata_geometry_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 4.4566028118133545,
+          "mean_abs": 0.5486703206403181,
+          "changed_elements": 1000,
+          "cosine": 0.6438341402855005
+        }
+      }
+    },
+    {
+      "image_id": "ILSVRC2012_val_00000744.JPEG",
+      "label_id": 97,
+      "native_top1": 97,
+      "quality_top1": 97,
+      "cpu_top1": {
+        "scale_only": 97,
+        "imagenet_mean_std": 97,
+        "canonical_reference": 97,
+        "harness_crop256": 97,
+        "export_metadata_geometry": 97
+      },
+      "native_vs_quality_feed": {
+        "left_shape": [
+          224,
+          224,
+          3
+        ],
+        "right_shape": [
+          224,
+          224,
+          3
+        ],
+        "left_dtype": "uint8",
+        "right_dtype": "uint8",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 1.0
+      },
+      "native_vs_quality_output": {
+        "left_shape": [
+          1,
+          1000
+        ],
+        "right_shape": [
+          1,
+          1000
+        ],
+        "left_dtype": "float32",
+        "right_dtype": "float32",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 0.9999999999999999
+      },
+      "quality_export_checks": {
+        "export_image_matches": true,
+        "export_label_matches": true,
+        "export_top1_matches_independent": true,
+        "export_top5_set_matches_independent": true
+      },
+      "output_comparisons": {
+        "output_scale_only_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 2.388227343559265,
+          "mean_abs": 0.43662131535075605,
+          "changed_elements": 1000,
+          "cosine": 0.8839547132592456
+        },
+        "output_imagenet_mean_std_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 4.45451557636261,
+          "mean_abs": 0.7291211153324694,
+          "changed_elements": 1000,
+          "cosine": 0.6166953565391307
+        },
+        "output_canonical_reference_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 4.45451557636261,
+          "mean_abs": 0.7291211153324694,
+          "changed_elements": 1000,
+          "cosine": 0.6166953565391307
+        },
+        "output_harness_crop256_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.9057337939739227,
+          "mean_abs": 0.7501466500703245,
+          "changed_elements": 1000,
+          "cosine": 0.5806570193069435
+        },
+        "output_export_metadata_geometry_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.6853668093681335,
+          "mean_abs": 0.6946002455991693,
+          "changed_elements": 1000,
+          "cosine": 0.6546159203922787
+        }
+      }
+    },
+    {
+      "image_id": "ILSVRC2012_val_00001020.JPEG",
+      "label_id": 803,
+      "native_top1": 803,
+      "quality_top1": 803,
+      "cpu_top1": {
+        "scale_only": 803,
+        "imagenet_mean_std": 803,
+        "canonical_reference": 803,
+        "harness_crop256": 803,
+        "export_metadata_geometry": 803
+      },
+      "native_vs_quality_feed": {
+        "left_shape": [
+          224,
+          224,
+          3
+        ],
+        "right_shape": [
+          224,
+          224,
+          3
+        ],
+        "left_dtype": "uint8",
+        "right_dtype": "uint8",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 1.0000000000000002
+      },
+      "native_vs_quality_output": {
+        "left_shape": [
+          1,
+          1000
+        ],
+        "right_shape": [
+          1,
+          1000
+        ],
+        "left_dtype": "float32",
+        "right_dtype": "float32",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 1.0000000000000002
+      },
+      "quality_export_checks": {
+        "export_image_matches": true,
+        "export_label_matches": true,
+        "export_top1_matches_independent": true,
+        "export_top5_set_matches_independent": true
+      },
+      "output_comparisons": {
+        "output_scale_only_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 2.4663853757083416,
+          "mean_abs": 0.43858915389701725,
+          "changed_elements": 1000,
+          "cosine": 0.8559470773744741
+        },
+        "output_imagenet_mean_std_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.81118381023407,
+          "mean_abs": 0.6001813439493999,
+          "changed_elements": 1000,
+          "cosine": 0.7130075781092621
+        },
+        "output_canonical_reference_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.81118381023407,
+          "mean_abs": 0.6001813439493999,
+          "changed_elements": 1000,
+          "cosine": 0.7130075781092621
+        },
+        "output_harness_crop256_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.8402645587921143,
+          "mean_abs": 0.669045473093167,
+          "changed_elements": 1000,
+          "cosine": 0.6326620379229417
+        },
+        "output_export_metadata_geometry_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 4.330506801605225,
+          "mean_abs": 0.6579651221921667,
+          "changed_elements": 1000,
+          "cosine": 0.6334103228468082
+        }
+      }
+    },
+    {
+      "image_id": "ILSVRC2012_val_00001237.JPEG",
+      "label_id": 335,
+      "native_top1": 13,
+      "quality_top1": 13,
+      "cpu_top1": {
+        "scale_only": 13,
+        "imagenet_mean_std": 10,
+        "canonical_reference": 10,
+        "harness_crop256": 335,
+        "export_metadata_geometry": 335
+      },
+      "native_vs_quality_feed": {
+        "left_shape": [
+          224,
+          224,
+          3
+        ],
+        "right_shape": [
+          224,
+          224,
+          3
+        ],
+        "left_dtype": "uint8",
+        "right_dtype": "uint8",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 1.0
+      },
+      "native_vs_quality_output": {
+        "left_shape": [
+          1,
+          1000
+        ],
+        "right_shape": [
+          1,
+          1000
+        ],
+        "left_dtype": "float32",
+        "right_dtype": "float32",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 1.0
+      },
+      "quality_export_checks": {
+        "export_image_matches": true,
+        "export_label_matches": true,
+        "export_top1_matches_independent": true,
+        "export_top5_set_matches_independent": true
+      },
+      "output_comparisons": {
+        "output_scale_only_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 1.4811813533306122,
+          "mean_abs": 0.29957064972259106,
+          "changed_elements": 1000,
+          "cosine": 0.9168027061829295
+        },
+        "output_imagenet_mean_std_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.8710994720458984,
+          "mean_abs": 0.581923518743366,
+          "changed_elements": 1000,
+          "cosine": 0.7018920756998498
+        },
+        "output_canonical_reference_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.8710994720458984,
+          "mean_abs": 0.581923518743366,
+          "changed_elements": 1000,
+          "cosine": 0.7018920756998498
+        },
+        "output_harness_crop256_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 6.453016757965088,
+          "mean_abs": 0.698690614609979,
+          "changed_elements": 1000,
+          "cosine": 0.4097898099899969
+        },
+        "output_export_metadata_geometry_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 6.433687210083008,
+          "mean_abs": 0.684105079986155,
+          "changed_elements": 1000,
+          "cosine": 0.49985749880978336
+        }
+      }
+    },
+    {
+      "image_id": "ILSVRC2012_val_00001362.JPEG",
+      "label_id": 997,
+      "native_top1": 997,
+      "quality_top1": 997,
+      "cpu_top1": {
+        "scale_only": 997,
+        "imagenet_mean_std": 997,
+        "canonical_reference": 997,
+        "harness_crop256": 997,
+        "export_metadata_geometry": 997
+      },
+      "native_vs_quality_feed": {
+        "left_shape": [
+          224,
+          224,
+          3
+        ],
+        "right_shape": [
+          224,
+          224,
+          3
+        ],
+        "left_dtype": "uint8",
+        "right_dtype": "uint8",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 0.9999999999999999
+      },
+      "native_vs_quality_output": {
+        "left_shape": [
+          1,
+          1000
+        ],
+        "right_shape": [
+          1,
+          1000
+        ],
+        "left_dtype": "float32",
+        "right_dtype": "float32",
+        "same_shape": true,
+        "exact_equal": true,
+        "dtype_equal": true,
+        "finite": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "changed_elements": 0,
+        "cosine": 1.0
+      },
+      "quality_export_checks": {
+        "export_image_matches": true,
+        "export_label_matches": true,
+        "export_top1_matches_independent": true,
+        "export_top5_set_matches_independent": true
+      },
+      "output_comparisons": {
+        "output_scale_only_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 2.645167052745819,
+          "mean_abs": 0.3822190269101411,
+          "changed_elements": 1000,
+          "cosine": 0.8904636571154921
+        },
+        "output_imagenet_mean_std_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.2241829335689545,
+          "mean_abs": 0.46470659206528214,
+          "changed_elements": 1000,
+          "cosine": 0.8271999032955478
+        },
+        "output_canonical_reference_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 3.2241829335689545,
+          "mean_abs": 0.46470659206528214,
+          "changed_elements": 1000,
+          "cosine": 0.8271999032955478
+        },
+        "output_harness_crop256_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 5.338065207004547,
+          "mean_abs": 0.5922150789108127,
+          "changed_elements": 1000,
+          "cosine": 0.6828534643400929
+        },
+        "output_export_metadata_geometry_00": {
+          "left_shape": [
+            1,
+            1000
+          ],
+          "right_shape": [
+            1,
+            1000
+          ],
+          "left_dtype": "float32",
+          "right_dtype": "float32",
+          "same_shape": true,
+          "exact_equal": false,
+          "dtype_equal": true,
+          "finite": true,
+          "max_abs": 4.459460616111755,
+          "mean_abs": 0.5409828651621937,
+          "changed_elements": 1000,
+          "cosine": 0.7429067199486913
+        }
+      }
+    }
+  ],
+  "full_runtime_vs_quality_findings": [],
+  "not_established": [
+    "DXNN_internal_preprocessing",
+    "quantization_as_cause",
+    "B500_quality_acceptance",
+    "FPS_or_energy",
+    "full_TensorRT_hardware_parity"
+  ],
+  "hardware_native": {
+    "sample_count": 16,
+    "top1_accuracy": 0.6875,
+    "top5_accuracy": 0.9375
+  },
+  "hardware_quality": {
+    "sample_count": 16,
+    "top1_accuracy": 0.6875,
+    "top5_accuracy": 0.9375
+  },
+  "split_control": {
+    "status": "observed",
+    "rows": [
+      {
+        "image_id": "ILSVRC2012_val_00000080.JPEG",
+        "layout_mapping": "identity",
+        "deepx_part1_CPU_tail": {
+          "output_name": "logits",
+          "raw": {
+            "shape": [
+              1,
+              1000
+            ],
+            "dtype": "float32",
+            "size": 1000,
+            "finite_count": 1000,
+            "nan_count": 0,
+            "inf_count": 0,
+            "min": -1.9988622665405273,
+            "max": 9.110867500305176,
+            "mean": -2.9553567990660666e-05,
+            "sha256_bytes": "5a4f6b27d07376b94a9aeae85eb31b8c5a9bc55868862551b2c813529d00d3e3"
+          },
+          "top1": 461,
+          "top5": [
+            461,
+            524,
+            787,
+            469,
+            753
+          ],
+          "top5_raw_values": [
+            9.110867500305176,
+            6.967392921447754,
+            5.893292427062988,
+            3.9650423526763916,
+            3.4311509132385254
+          ],
+          "label_id": 461,
+          "top1_correct": true,
+          "top5_correct": true,
+          "probability_like": false,
+          "top5_tie_present": false
+        },
+        "float_controls": {
+          "scale_only": {
+            "interface_comparison": {
+              "left_shape": [
+                1,
+                960,
+                1,
+                1
+              ],
+              "right_shape": [
+                1,
+                960,
+                1,
+                1
+              ],
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "same_shape": true,
+              "exact_equal": false,
+              "dtype_equal": true,
+              "finite": true,
+              "max_abs": 0.567658469080925,
+              "mean_abs": 0.06606532703884985,
+              "changed_elements": 960,
+              "cosine": 0.9657945426450995
+            },
+            "tail_comparison": {
+              "left_shape": [
+                1,
+                1000
+              ],
+              "right_shape": [
+                1,
+                1000
+              ],
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "same_shape": true,
+              "exact_equal": false,
+              "dtype_equal": true,
+              "finite": true,
+              "max_abs": 1.1901533603668213,
+              "mean_abs": 0.18136209937231615,
+              "changed_elements": 1000,
+              "cosine": 0.9542639434880813
+            },
+            "prediction": {
+              "output_name": "logits",
+              "raw": {
+                "shape": [
+                  1,
+                  1000
+                ],
+                "dtype": "float32",
+                "size": 1000,
+                "finite_count": 1000,
+                "nan_count": 0,
+                "inf_count": 0,
+                "min": -2.2168569564819336,
+                "max": 8.916544914245605,
+                "mean": -2.2827882785350083e-05,
+                "sha256_bytes": "e442bfa2cdc40afc7496db291135db7b5588b99f6bd78cacc6306d02fb9e5330"
+              },
+              "top1": 461,
+              "top5": [
+                461,
+                524,
+                787,
+                469,
+                490
+              ],
+              "top5_raw_values": [
+                8.916544914245605,
+                7.181479454040527,
+                5.52463436126709,
+                4.042806148529053,
+                2.9300320148468018
+              ],
+              "label_id": 461,
+              "top1_correct": true,
+              "top5_correct": true,
+              "probability_like": false,
+              "top5_tie_present": false
+            },
+            "float_split_vs_original_full": {
+              "left_shape": [
+                1,
+                1000
+              ],
+              "right_shape": [
+                1,
+                1000
+              ],
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "same_shape": true,
+              "exact_equal": true,
+              "dtype_equal": true,
+              "finite": true,
+              "max_abs": 0.0,
+              "mean_abs": 0.0,
+              "changed_elements": 0,
+              "cosine": 1.0
+            }
+          },
+          "imagenet_mean_std": {
+            "interface_comparison": {
+              "left_shape": [
+                1,
+                960,
+                1,
+                1
+              ],
+              "right_shape": [
+                1,
+                960,
+                1,
+                1
+              ],
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "same_shape": true,
+              "exact_equal": false,
+              "dtype_equal": true,
+              "finite": true,
+              "max_abs": 1.1817818731069565,
+              "mean_abs": 0.09156146106640033,
+              "changed_elements": 960,
+              "cosine": 0.9148766376512928
+            },
+            "tail_comparison": {
+              "left_shape": [
+                1,
+                1000
+              ],
+              "right_shape": [
+                1,
+                1000
+              ],
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "same_shape": true,
+              "exact_equal": false,
+              "dtype_equal": true,
+              "finite": true,
+              "max_abs": 2.2950950860977173,
+              "mean_abs": 0.28099165840260687,
+              "changed_elements": 1000,
+              "cosine": 0.8784173953671113
+            },
+            "prediction": {
+              "output_name": "logits",
+              "raw": {
+                "shape": [
+                  1,
+                  1000
+                ],
+                "dtype": "float32",
+                "size": 1000,
+                "finite_count": 1000,
+                "nan_count": 0,
+                "inf_count": 0,
+                "min": -1.9855822324752808,
+                "max": 8.88919734954834,
+                "mean": -2.5379233062267302e-05,
+                "sha256_bytes": "ab2ba4637a203f2ac120a7b8f87aea5868900cdebcd62a5640f1353c2bcc32fe"
+              },
+              "top1": 461,
+              "top5": [
+                461,
+                524,
+                787,
+                469,
+                490
+              ],
+              "top5_raw_values": [
+                8.88919734954834,
+                7.592799186706543,
+                5.225769996643066,
+                3.679788112640381,
+                3.265695571899414
+              ],
+              "label_id": 461,
+              "top1_correct": true,
+              "top5_correct": true,
+              "probability_like": false,
+              "top5_tie_present": false
+            },
+            "float_split_vs_original_full": {
+              "left_shape": [
+                1,
+                1000
+              ],
+              "right_shape": [
+                1,
+                1000
+              ],
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "same_shape": true,
+              "exact_equal": true,
+              "dtype_equal": true,
+              "finite": true,
+              "max_abs": 0.0,
+              "mean_abs": 0.0,
+              "changed_elements": 0,
+              "cosine": 1.0000000000000002
+            }
+          }
+        }
+      },
+      {
+        "image_id": "ILSVRC2012_val_00000152.JPEG",
+        "layout_mapping": "identity",
+        "deepx_part1_CPU_tail": {
+          "output_name": "logits",
+          "raw": {
+            "shape": [
+              1,
+              1000
+            ],
+            "dtype": "float32",
+            "size": 1000,
+            "finite_count": 1000,
+            "nan_count": 0,
+            "inf_count": 0,
+            "min": -3.3038065433502197,
+            "max": 10.708030700683594,
+            "mean": -6.32924623787403e-05,
+            "sha256_bytes": "746743d789dd3ee111132f4fdf16607503eeeef65c5e8fdc14686463e73d4a34"
+          },
+          "top1": 637,
+          "top5": [
+            637,
+            710,
+            859,
+            412,
+            902
+          ],
+          "top5_raw_values": [
+            10.708030700683594,
+            7.641547679901123,
+            7.334216117858887,
+            5.1198201179504395,
+            5.112426280975342
+          ],
+          "label_id": 637,
+          "top1_correct": true,
+          "top5_correct": true,
+          "probability_like": false,
+          "top5_tie_present": false
+        },
+        "float_controls": {
+          "scale_only": {
+            "interface_comparison": {
+              "left_shape": [
+                1,
+                960,
+                1,
+                1
+              ],
+              "right_shape": [
+                1,
+                960,
+                1,
+                1
+              ],
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "same_shape": true,
+              "exact_equal": false,
+              "dtype_equal": true,
+              "finite": true,
+              "max_abs": 1.0408288836479187,
+              "mean_abs": 0.12992934079063617,
+              "changed_elements": 960,
+              "cosine": 0.9641912240824124
+            },
+            "tail_comparison": {
+              "left_shape": [
+                1,
+                1000
+              ],
+              "right_shape": [
+                1,
+                1000
+              ],
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "same_shape": true,
+              "exact_equal": false,
+              "dtype_equal": true,
+              "finite": true,
+              "max_abs": 2.385296940803528,
+              "mean_abs": 0.3650023813974112,
+              "changed_elements": 1000,
+              "cosine": 0.9421519288343859
+            },
+            "prediction": {
+              "output_name": "logits",
+              "raw": {
+                "shape": [
+                  1,
+                  1000
+                ],
+                "dtype": "float32",
+                "size": 1000,
+                "finite_count": 1000,
+                "nan_count": 0,
+                "inf_count": 0,
+                "min": -3.4121716022491455,
+                "max": 10.48118782043457,
+                "mean": -5.183424241840839e-05,
+                "sha256_bytes": "033c10015b4fdae3cacb92945f9f1692fec6a5403a839889707e5c4a316171d8"
+              },
+              "top1": 637,
+              "top5": [
+                637,
+                710,
+                859,
+                471,
+                844
+              ],
+              "top5_raw_values": [
+                10.48118782043457,
+                8.245421409606934,
+                6.197009563446045,
+                5.254225254058838,
+                4.508953094482422
+              ],
+              "label_id": 637,
+              "top1_correct": true,
+              "top5_correct": true,
+              "probability_like": false,
+              "top5_tie_present": false
+            },
+            "float_split_vs_original_full": {
+              "left_shape": [
+                1,
+                1000
+              ],
+              "right_shape": [
+                1,
+                1000
+              ],
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "same_shape": true,
+              "exact_equal": true,
+              "dtype_equal": true,
+              "finite": true,
+              "max_abs": 0.0,
+              "mean_abs": 0.0,
+              "changed_elements": 0,
+              "cosine": 1.0
+            }
+          },
+          "imagenet_mean_std": {
+            "interface_comparison": {
+              "left_shape": [
+                1,
+                960,
+                1,
+                1
+              ],
+              "right_shape": [
+                1,
+                960,
+                1,
+                1
+              ],
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "same_shape": true,
+              "exact_equal": false,
+              "dtype_equal": true,
+              "finite": true,
+              "max_abs": 1.2838351726531982,
+              "mean_abs": 0.2147112006445847,
+              "changed_elements": 960,
+              "cosine": 0.8879478114650114
+            },
+            "tail_comparison": {
+              "left_shape": [
+                1,
+                1000
+              ],
+              "right_shape": [
+                1,
+                1000
+              ],
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "same_shape": true,
+              "exact_equal": false,
+              "dtype_equal": true,
+              "finite": true,
+              "max_abs": 3.7025219798088074,
+              "mean_abs": 0.6523462266288698,
+              "changed_elements": 1000,
+              "cosine": 0.7950948141218935
+            },
+            "prediction": {
+              "output_name": "logits",
+              "raw": {
+                "shape": [
+                  1,
+                  1000
+                ],
+                "dtype": "float32",
+                "size": 1000,
+                "finite_count": 1000,
+                "nan_count": 0,
+                "inf_count": 0,
+                "min": -3.278460741043091,
+                "max": 9.227147102355957,
+                "mean": -3.835852444171906e-05,
+                "sha256_bytes": "e5e25beeffef0823cc7fd922fd3550e207766988ff3ba1f0ec56240473429876"
+              },
+              "top1": 637,
+              "top5": [
+                637,
+                710,
+                844,
+                859,
+                471
+              ],
+              "top5_raw_values": [
+                9.227147102355957,
+                6.879749298095703,
+                5.505266189575195,
+                5.345521926879883,
+                5.095623016357422
+              ],
+              "label_id": 637,
+              "top1_correct": true,
+              "top5_correct": true,
+              "probability_like": false,
+              "top5_tie_present": false
+            },
+            "float_split_vs_original_full": {
+              "left_shape": [
+                1,
+                1000
+              ],
+              "right_shape": [
+                1,
+                1000
+              ],
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "same_shape": true,
+              "exact_equal": true,
+              "dtype_equal": true,
+              "finite": true,
+              "max_abs": 0.0,
+              "mean_abs": 0.0,
+              "changed_elements": 0,
+              "cosine": 1.0
+            }
+          }
+        }
+      },
+      {
+        "image_id": "ILSVRC2012_val_00000210.JPEG",
+        "layout_mapping": "identity",
+        "deepx_part1_CPU_tail": {
+          "output_name": "logits",
+          "raw": {
+            "shape": [
+              1,
+              1000
+            ],
+            "dtype": "float32",
+            "size": 1000,
+            "finite_count": 1000,
+            "nan_count": 0,
+            "inf_count": 0,
+            "min": -1.8003942966461182,
+            "max": 6.994943141937256,
+            "mean": -5.994478054344654e-05,
+            "sha256_bytes": "f4fbfaa6da25999dec56cef8f798ac1d8db07c721e07ef86b81ced7defe470fa"
+          },
+          "top1": 431,
+          "top5": [
+            431,
+            516,
+            529,
+            793,
+            797
+          ],
+          "top5_raw_values": [
+            6.994943141937256,
+            6.764074325561523,
+            6.144787788391113,
+            4.8170623779296875,
+            4.6107401847839355
+          ],
+          "label_id": 516,
+          "top1_correct": false,
+          "top5_correct": true,
+          "probability_like": false,
+          "top5_tie_present": false
+        },
+        "float_controls": {
+          "scale_only": {
+            "interface_comparison": {
+              "left_shape": [
+                1,
+                960,
+                1,
+                1
+              ],
+              "right_shape": [
+                1,
+                960,
+                1,
+                1
+              ],
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "same_shape": true,
+              "exact_equal": false,
+              "dtype_equal": true,
+              "finite": true,
+              "max_abs": 1.0475316047668457,
+              "mean_abs": 0.10909401989398854,
+              "changed_elements": 960,
+              "cosine": 0.9159389403867368
+            },
+            "tail_comparison": {
+              "left_shape": [
+                1,
+                1000
+              ],
+              "right_shape": [
+                1,
+                1000
+              ],
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "same_shape": true,
+              "exact_equal": false,
+              "dtype_equal": true,
+              "finite": true,
+              "max_abs": 1.9111838936805725,
+              "mean_abs": 0.37420078295469283,
+              "changed_elements": 1000,
+              "cosine": 0.8555294335963745
+            },
+            "prediction": {
+              "output_name": "logits",
+              "raw": {
+                "shape": [
+                  1,
+                  1000
+                ],
+                "dtype": "float32",
+                "size": 1000,
+                "finite_count": 1000,
+                "nan_count": 0,
+                "inf_count": 0,
+                "min": -2.2315001487731934,
+                "max": 7.186384201049805,
+                "mean": -6.783662922680378e-05,
+                "sha256_bytes": "036dead55391d77b53585a2e68820a1ffb535ce7646c3a8a5d5ab1587472dd1d"
+              },
+              "top1": 431,
+              "top5": [
+                431,
+                529,
+                516,
+                793,
+                797
+              ],
+              "top5_raw_values": [
+                7.186384201049805,
+                6.78170108795166,
+                6.569766998291016,
+                5.863223552703857,
+                4.725662708282471
+              ],
+              "label_id": 516,
+              "top1_correct": false,
+              "top5_correct": true,
+              "probability_like": false,
+              "top5_tie_present": false
+            },
+            "float_split_vs_original_full": {
+              "left_shape": [
+                1,
+                1000
+              ],
+              "right_shape": [
+                1,
+                1000
+              ],
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "same_shape": true,
+              "exact_equal": true,
+              "dtype_equal": true,
+              "finite": true,
+              "max_abs": 0.0,
+              "mean_abs": 0.0,
+              "changed_elements": 0,
+              "cosine": 1.0000000000000002
+            }
+          },
+          "imagenet_mean_std": {
+            "interface_comparison": {
+              "left_shape": [
+                1,
+                960,
+                1,
+                1
+              ],
+              "right_shape": [
+                1,
+                960,
+                1,
+                1
+              ],
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "same_shape": true,
+              "exact_equal": false,
+              "dtype_equal": true,
+              "finite": true,
+              "max_abs": 1.2610331773757935,
+              "mean_abs": 0.14174629415128948,
+              "changed_elements": 960,
+              "cosine": 0.8530041103771349
+            },
+            "tail_comparison": {
+              "left_shape": [
+                1,
+                1000
+              ],
+              "right_shape": [
+                1,
+                1000
+              ],
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "same_shape": true,
+              "exact_equal": false,
+              "dtype_equal": true,
+              "finite": true,
+              "max_abs": 3.1678286343812943,
+              "mean_abs": 0.5160251297242939,
+              "changed_elements": 1000,
+              "cosine": 0.6946096617492336
+            },
+            "prediction": {
+              "output_name": "logits",
+              "raw": {
+                "shape": [
+                  1,
+                  1000
+                ],
+                "dtype": "float32",
+                "size": 1000,
+                "finite_count": 1000,
+                "nan_count": 0,
+                "inf_count": 0,
+                "min": -1.9535799026489258,
+                "max": 7.18780517578125,
+                "mean": -7.032870687544345e-05,
+                "sha256_bytes": "5fbf7f3f961fa87bd8cd1b776749b1a15720095fc67dbd102b6972fa91ab068a"
+              },
+              "top1": 431,
+              "top5": [
+                431,
+                516,
+                529,
+                797,
+                793
+              ],
+              "top5_raw_values": [
+                7.18780517578125,
+                6.590272903442383,
+                6.398998737335205,
+                5.486491680145264,
+                4.838290214538574
+              ],
+              "label_id": 516,
+              "top1_correct": false,
+              "top5_correct": true,
+              "probability_like": false,
+              "top5_tie_present": false
+            },
+            "float_split_vs_original_full": {
+              "left_shape": [
+                1,
+                1000
+              ],
+              "right_shape": [
+                1,
+                1000
+              ],
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "same_shape": true,
+              "exact_equal": true,
+              "dtype_equal": true,
+              "finite": true,
+              "max_abs": 0.0,
+              "mean_abs": 0.0,
+              "changed_elements": 0,
+              "cosine": 1.0
+            }
+          }
+        }
+      },
+      {
+        "image_id": "ILSVRC2012_val_00000285.JPEG",
+        "layout_mapping": "identity",
+        "deepx_part1_CPU_tail": {
+          "output_name": "logits",
+          "raw": {
+            "shape": [
+              1,
+              1000
+            ],
+            "dtype": "float32",
+            "size": 1000,
+            "finite_count": 1000,
+            "nan_count": 0,
+            "inf_count": 0,
+            "min": -2.488265037536621,
+            "max": 5.94584846496582,
+            "mean": -6.0017550364136695e-05,
+            "sha256_bytes": "b81d1083eca907da705c6aeffe27028073cd5e85cd8b743bc3e7565021690f36"
+          },
+          "top1": 457,
+          "top5": [
+            457,
+            617,
+            906,
+            834,
+            903
+          ],
+          "top5_raw_values": [
+            5.94584846496582,
+            5.636332988739014,
+            4.91542387008667,
+            4.607280731201172,
+            4.1801862716674805
+          ],
+          "label_id": 906,
+          "top1_correct": false,
+          "top5_correct": true,
+          "probability_like": false,
+          "top5_tie_present": false
+        },
+        "float_controls": {
+          "scale_only": {
+            "interface_comparison": {
+              "left_shape": [
+                1,
+                960,
+                1,
+                1
+              ],
+              "right_shape": [
+                1,
+                960,
+                1,
+                1
+              ],
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "same_shape": true,
+              "exact_equal": false,
+              "dtype_equal": true,
+              "finite": true,
+              "max_abs": 1.2618080377578735,
+              "mean_abs": 0.10063637824135162,
+              "changed_elements": 960,
+              "cosine": 0.9163032623675044
+            },
+            "tail_comparison": {
+              "left_shape": [
+                1,
+                1000
+              ],
+              "right_shape": [
+                1,
+                1000
+              ],
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "same_shape": true,
+              "exact_equal": false,
+              "dtype_equal": true,
+              "finite": true,
+              "max_abs": 2.276561737060547,
+              "mean_abs": 0.3146314150989056,
+              "changed_elements": 1000,
+              "cosine": 0.9046565982279822
+            },
+            "prediction": {
+              "output_name": "logits",
+              "raw": {
+                "shape": [
+                  1,
+                  1000
+                ],
+                "dtype": "float32",
+                "size": 1000,
+                "finite_count": 1000,
+                "nan_count": 0,
+                "inf_count": 0,
+                "min": -1.9787070751190186,
+                "max": 5.663545608520508,
+                "mean": -5.455314554274082e-05,
+                "sha256_bytes": "dd2847edfc18868ec987ce3a04f14f82278d0dcfa1ca3b1b722a3058feb0d6be"
+              },
+              "top1": 982,
+              "top5": [
+                982,
+                457,
+                617,
+                667,
+                400
+              ],
+              "top5_raw_values": [
+                5.663545608520508,
+                5.493946552276611,
+                4.609967231750488,
+                4.284409523010254,
+                4.132943630218506
+              ],
+              "label_id": 906,
+              "top1_correct": false,
+              "top5_correct": false,
+              "probability_like": false,
+              "top5_tie_present": false
+            },
+            "float_split_vs_original_full": {
+              "left_shape": [
+                1,
+                1000
+              ],
+              "right_shape": [
+                1,
+                1000
+              ],
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "same_shape": true,
+              "exact_equal": true,
+              "dtype_equal": true,
+              "finite": true,
+              "max_abs": 0.0,
+              "mean_abs": 0.0,
+              "changed_elements": 0,
+              "cosine": 1.0
+            }
+          },
+          "imagenet_mean_std": {
+            "interface_comparison": {
+              "left_shape": [
+                1,
+                960,
+                1,
+                1
+              ],
+              "right_shape": [
+                1,
+                960,
+                1,
+                1
+              ],
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "same_shape": true,
+              "exact_equal": false,
+              "dtype_equal": true,
+              "finite": true,
+              "max_abs": 1.660938322544098,
+              "mean_abs": 0.13225559740305168,
+              "changed_elements": 960,
+              "cosine": 0.8341438448271419
+            },
+            "tail_comparison": {
+              "left_shape": [
+                1,
+                1000
+              ],
+              "right_shape": [
+                1,
+                1000
+              ],
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "same_shape": true,
+              "exact_equal": false,
+              "dtype_equal": true,
+              "finite": true,
+              "max_abs": 2.498090982437134,
+              "mean_abs": 0.4108709676554427,
+              "changed_elements": 1000,
+              "cosine": 0.831838287057461
+            },
+            "prediction": {
+              "output_name": "logits",
+              "raw": {
+                "shape": [
+                  1,
+                  1000
+                ],
+                "dtype": "float32",
+                "size": 1000,
+                "finite_count": 1000,
+                "nan_count": 0,
+                "inf_count": 0,
+                "min": -1.9081990718841553,
+                "max": 7.276125907897949,
+                "mean": -5.141413677483797e-05,
+                "sha256_bytes": "a465d1517fb8f6a7bcd227af4d7342d7e1e45dfe572c7b1251378099f4915853"
+              },
+              "top1": 457,
+              "top5": [
+                457,
+                982,
+                834,
+                617,
+                906
+              ],
+              "top5_raw_values": [
+                7.276125907897949,
+                5.729803085327148,
+                4.950681686401367,
+                4.841929912567139,
+                4.542284965515137
+              ],
+              "label_id": 906,
+              "top1_correct": false,
+              "top5_correct": true,
+              "probability_like": false,
+              "top5_tie_present": false
+            },
+            "float_split_vs_original_full": {
+              "left_shape": [
+                1,
+                1000
+              ],
+              "right_shape": [
+                1,
+                1000
+              ],
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "same_shape": true,
+              "exact_equal": true,
+              "dtype_equal": true,
+              "finite": true,
+              "max_abs": 0.0,
+              "mean_abs": 0.0,
+              "changed_elements": 0,
+              "cosine": 1.0
+            }
+          }
+        }
+      }
+    ],
+    "scope": "DeepX_part1_plus_existing_FLOAT_ONNX_CPU_tail; NOT TensorRT_pipeline_acceptance",
+    "part2_hash_scope": "observed_current_declared_run_file; no historical_hash_claim"
+  }
+}

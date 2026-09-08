@@ -1,0 +1,269 @@
+{
+  "schema": "onnx-splitpoint/evaluation-hardware-matrix",
+  "schema_version": 1,
+  "hardware_target_count": 3,
+  "hardware_targets": [
+    {
+      "id": "orin_nx_hailo8_01",
+      "label": "Orin NX + Hailo-8",
+      "accelerator": "hailo8",
+      "provider": "hailo8",
+      "enabled": true,
+      "runtime": {
+        "enabled": true,
+        "host_id": "orin_nx_hailo8_01",
+        "host": "192.168.0.104",
+        "user": "nx",
+        "port": 22,
+        "remote_base_dir": "~/splitpoint_runs",
+        "remote_venv": "source ~/hailo_py/bin/activate",
+        "provider": "hailo8",
+        "transfer_mode": "bundle",
+        "reuse_bundle": true,
+        "resume": true,
+        "warmup": 10,
+        "iters": 50,
+        "timeout_s": 0,
+        "ssh_extra_args": "",
+        "host_copy": {
+          "host": "192.168.0.104",
+          "user": "nx",
+          "port": 22,
+          "remote_base_dir": "~/splitpoint_runs"
+        }
+      },
+      "remote": {
+        "enabled": true,
+        "host_id": "orin_nx_hailo8_01",
+        "host": "192.168.0.104",
+        "user": "nx",
+        "port": 22,
+        "remote_base_dir": "~/splitpoint_runs",
+        "remote_venv": "source ~/hailo_py/bin/activate",
+        "provider": "hailo8",
+        "transfer_mode": "bundle",
+        "reuse_bundle": true,
+        "resume": true,
+        "warmup": 10,
+        "iters": 50,
+        "timeout_s": 0,
+        "ssh_extra_args": "",
+        "host_copy": {
+          "host": "192.168.0.104",
+          "user": "nx",
+          "port": 22,
+          "remote_base_dir": "~/splitpoint_runs"
+        }
+      },
+      "build_environment_id": "hailo8_dfc_managed",
+      "build_environment": {
+        "id": "hailo8_dfc_managed",
+        "kind": "hailo8_dfc",
+        "host": "local",
+        "shell": "bash",
+        "venv_activate": "source ~/.onnx_splitpoint_tool/hailo/venv_hailo8/bin/activate",
+        "cache_dir": "~/Models/BackendArtifacts/hailo"
+      },
+      "energy": {
+        "enabled": true,
+        "urecs_address": "192.168.0.197",
+        "idle_baseline_w": null,
+        "accelerator_idle_w": 2.0079536423414304,
+        "full_system_current_scale_factor": 0.9136343897390969,
+        "full_system_current_scale_calibrated_at": "2026-09-04T20:08:48.231301+00:00",
+        "full_system_current_scale_calibration_evidence": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_hailo8_01/20260904_215950_full_system_input_scale/full_system_input_scale_calibration.json",
+        "full_system_current_scale_calibration_sha256": "90a559f5467c0fef13409d472f14b797f4cf44b1038f0e491f62c5436ea2b5f6",
+        "calibration_manifest": "",
+        "calibration_sha256": "",
+        "accelerator_idle_calibrated_at": "2026-09-04T20:24:41.188331+00:00",
+        "accelerator_idle_calibration_evidence": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_hailo8_01/20260904_221941/m2_idle_power_calibration.json"
+      },
+      "setup_source": "/home/kmika/.onnx_splitpoint_tool/hardware_setups.yaml",
+      "setup_lock_id": "orin_nx_hailo8_01",
+      "tags": [
+        "remote",
+        "npu",
+        "hailo",
+        "hailo8"
+      ],
+      "note": "Resolved from hardware setup registry."
+    },
+    {
+      "id": "orin_nx_hailo10_01",
+      "label": "Orin NX + Hailo-10",
+      "accelerator": "hailo10",
+      "provider": "hailo10",
+      "enabled": true,
+      "runtime": {
+        "enabled": true,
+        "host_id": "orin_nx_hailo10_01",
+        "host": "192.168.0.145",
+        "user": "nx",
+        "port": 22,
+        "remote_base_dir": "~/splitpoint_runs",
+        "remote_venv": "source ~/venvs/hailo10/bin/activate",
+        "provider": "hailo10",
+        "transfer_mode": "bundle",
+        "reuse_bundle": true,
+        "resume": true,
+        "warmup": 10,
+        "iters": 50,
+        "timeout_s": 0,
+        "ssh_extra_args": "",
+        "host_copy": {
+          "host": "192.168.0.145",
+          "user": "nx",
+          "port": 22,
+          "remote_base_dir": "~/splitpoint_runs"
+        }
+      },
+      "remote": {
+        "enabled": true,
+        "host_id": "orin_nx_hailo10_01",
+        "host": "192.168.0.145",
+        "user": "nx",
+        "port": 22,
+        "remote_base_dir": "~/splitpoint_runs",
+        "remote_venv": "source ~/venvs/hailo10/bin/activate",
+        "provider": "hailo10",
+        "transfer_mode": "bundle",
+        "reuse_bundle": true,
+        "resume": true,
+        "warmup": 10,
+        "iters": 50,
+        "timeout_s": 0,
+        "ssh_extra_args": "",
+        "host_copy": {
+          "host": "192.168.0.145",
+          "user": "nx",
+          "port": 22,
+          "remote_base_dir": "~/splitpoint_runs"
+        }
+      },
+      "build_environment_id": "hailo10_dfc_managed",
+      "build_environment": {
+        "id": "hailo10_dfc_managed",
+        "kind": "hailo10_dfc",
+        "host": "local",
+        "shell": "bash",
+        "venv_activate": "source ~/.onnx_splitpoint_tool/hailo/venv_hailo10/bin/activate",
+        "cache_dir": "~/Models/BackendArtifacts/hailo"
+      },
+      "energy": {
+        "enabled": true,
+        "urecs_address": "192.168.0.176",
+        "idle_baseline_w": null,
+        "accelerator_idle_w": 0.9667883102777299,
+        "full_system_current_scale_factor": 0.8963972779781232,
+        "full_system_current_scale_calibrated_at": "2026-09-04T20:15:15.094688+00:00",
+        "full_system_current_scale_calibration_evidence": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_hailo10_01/20260904_220910_full_system_input_scale/full_system_input_scale_calibration.json",
+        "full_system_current_scale_calibration_sha256": "b3fe9eb8c7ac6e7ffc78edabf834910b699bed0f766d9d7b2eddddde9ce8e946",
+        "calibration_manifest": "",
+        "calibration_sha256": "",
+        "accelerator_idle_calibrated_at": "2026-09-04T20:29:47.725981+00:00",
+        "accelerator_idle_calibration_evidence": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_hailo10_01/20260904_222453/m2_idle_power_calibration.json"
+      },
+      "setup_source": "/home/kmika/.onnx_splitpoint_tool/hardware_setups.yaml",
+      "setup_lock_id": "orin_nx_hailo10_01",
+      "tags": [
+        "remote",
+        "npu",
+        "hailo",
+        "hailo10"
+      ],
+      "note": "Resolved from hardware setup registry."
+    },
+    {
+      "id": "orin_nx_deepx_m1_01",
+      "label": "Orin NX + DeepX DX-M1",
+      "accelerator": "deepx_m1",
+      "provider": "deepx_m1",
+      "enabled": true,
+      "runtime": {
+        "enabled": true,
+        "host_id": "orin_nx_deepx_m1_01",
+        "host": "192.168.0.102",
+        "user": "nx",
+        "port": 22,
+        "remote_base_dir": "~/splitpoint_runs",
+        "remote_venv": "source ~/venvs/deepx-runtime/bin/activate",
+        "provider": "deepx_m1",
+        "transfer_mode": "bundle",
+        "reuse_bundle": true,
+        "resume": true,
+        "warmup": 10,
+        "iters": 50,
+        "timeout_s": 0,
+        "ssh_extra_args": "",
+        "host_copy": {
+          "host": "192.168.0.102",
+          "user": "nx",
+          "port": 22,
+          "remote_base_dir": "~/splitpoint_runs"
+        }
+      },
+      "remote": {
+        "enabled": true,
+        "host_id": "orin_nx_deepx_m1_01",
+        "host": "192.168.0.102",
+        "user": "nx",
+        "port": 22,
+        "remote_base_dir": "~/splitpoint_runs",
+        "remote_venv": "source ~/venvs/deepx-runtime/bin/activate",
+        "provider": "deepx_m1",
+        "transfer_mode": "bundle",
+        "reuse_bundle": true,
+        "resume": true,
+        "warmup": 10,
+        "iters": 50,
+        "timeout_s": 0,
+        "ssh_extra_args": "",
+        "host_copy": {
+          "host": "192.168.0.102",
+          "user": "nx",
+          "port": 22,
+          "remote_base_dir": "~/splitpoint_runs"
+        }
+      },
+      "build_environment_id": "deepx_dxcom_x86",
+      "build_environment": {
+        "id": "deepx_dxcom_x86",
+        "kind": "deepx_dxcom",
+        "host": "local",
+        "shell": "bash",
+        "dx_all_suite_root": "~/dx-all-suite",
+        "venv_activate": "source ~/dx-all-suite/dx-compiler/venv-dx-compiler-local/bin/activate",
+        "compiler_venv": "~/dx-all-suite/dx-compiler/venv-dx-compiler-local",
+        "runtime_venv": "~/venvs/deepx-runtime",
+        "cache_dir": "~/Models/BackendArtifacts/deepx"
+      },
+      "energy": {
+        "enabled": true,
+        "urecs_address": "192.168.0.185",
+        "idle_baseline_w": null,
+        "accelerator_idle_w": 2.4350704536000034,
+        "full_system_current_scale_factor": 0.9035075097142278,
+        "full_system_current_scale_calibrated_at": "2026-09-04T19:59:27.536313+00:00",
+        "full_system_current_scale_calibration_evidence": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260904_215309_full_system_input_scale/full_system_input_scale_calibration.json",
+        "full_system_current_scale_calibration_sha256": "9494eea7de1d18167f73854e276bf6f9bba0066c51ff2c81c49737486235cfd1",
+        "calibration_manifest": "",
+        "calibration_sha256": "",
+        "accelerator_idle_calibrated_at": "2026-09-04T20:34:45.786158+00:00",
+        "accelerator_idle_calibration_evidence": "/home/kmika/Models/EnergyMeasurements/Calibrations/orin_nx_deepx_m1_01/20260904_222957/m2_idle_power_calibration.json"
+      },
+      "setup_source": "/home/kmika/.onnx_splitpoint_tool/hardware_setups.yaml",
+      "setup_lock_id": "orin_nx_deepx_m1_01",
+      "tags": [
+        "remote",
+        "npu",
+        "deepx",
+        "dx_m1"
+      ],
+      "note": "Resolved from hardware setup registry."
+    }
+  ],
+  "notes": [
+    "Each hardware target is a deploy/run setup: accelerator token, build environment, and remote runtime host.",
+    "The Evaluation Workflow can use this artifact to dispatch the same benchmarkset to multiple Orin NX setups."
+  ]
+}

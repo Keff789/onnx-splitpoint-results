@@ -1,0 +1,54 @@
+{
+  "schema": "onnx-splitpoint/deepx-build-onnx-adapter",
+  "schema_version": 1,
+  "source_onnx_sha256": "cebd9d5879ddd304a18f51e559ab74fba5cbd1f610b9359321bc5228acbe4f50",
+  "input_name": "input",
+  "consumer_count": 1,
+  "preprocessing": {
+    "schema": "onnx-splitpoint/deepx-classification-preprocessing",
+    "schema_version": 1,
+    "mode": "imagenet_mean_std",
+    "runtime_image": {
+      "dtype": "uint8",
+      "layout": "HWC",
+      "color_space": "RGB",
+      "value_range": [
+        0,
+        255
+      ]
+    },
+    "dxcom_loader": {
+      "scale_divisor": 255.0,
+      "output_layout": "NCHW",
+      "output_dtype": "float32",
+      "color_space": "RGB",
+      "operations_contract": "resize_div255_bgr2rgb_transpose_expanddim"
+    },
+    "build_onnx_adapter": {
+      "kind": "imagenet_rgb_mean_std",
+      "implementation": "onnx_sub_then_div_before_original_graph",
+      "input_domain": "rgb_float32_0_1",
+      "mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "broadcast_shape": [
+        1,
+        3,
+        1,
+        1
+      ]
+    },
+    "source_model_input_domain": "rgb_float32_imagenet_mean_std"
+  },
+  "adapter_contract_sha256": "f0aab0e2f601cb4275b78d35d9096d4d69733e1861fe3c4dc763cda6b6576917",
+  "build_onnx_path": "/home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/resnet50/build/adapter/imagenet_mean_std_b5921d9f75da27c05b6a70fda31f4a0b119383eaf1ddc263fa5e20ec6bd61528.onnx",
+  "build_onnx_sha256": "b5921d9f75da27c05b6a70fda31f4a0b119383eaf1ddc263fa5e20ec6bd61528",
+  "build_onnx_bytes": 102357428
+}

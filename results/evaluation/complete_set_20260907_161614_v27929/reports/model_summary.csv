@@ -1,0 +1,8 @@
+model_id,task,evaluation_role,family,node_count,parameter_count,gflops,model_sha256,resolved_path
+mobilenet_v3_large,classification,development,mobilenet,,,,sha256:2f5e79b1e4280251e7b6eefe1d6161c4831e2fc27858e1e9fe2fac697f44489e,/home/kmika/Models/mobilenet_v3_large.onnx
+regnet_x_1_6gf,classification,development,regnet,,,,sha256:fba2c5b46ff63bd4b4bc65f1cf60fd86fa84e16e7432fcaa60d5efbd2c99b8f3,/home/kmika/Models/regnet_x_1_6gf.onnx
+resnet50,classification,development,resnet,,,,sha256:cebd9d5879ddd304a18f51e559ab74fba5cbd1f610b9359321bc5228acbe4f50,/home/kmika/Models/resnet50.onnx
+yolo11l,detection,development,yolo11,,,,sha256:f0fcdf56a4ac24d87ec30c627170492ccad9db80486ec5694df6de65c1b3d147,/home/kmika/Models/yolo11l.onnx
+yolo26m,detection,development,yolo26,,,,sha256:d1c6a922dd92f896c69e2f6767ea3ca23fac0e53e5ac69681965eb8a74cda897,/home/kmika/Models/yolo26m.onnx
+yolo26s,detection,development,yolo26,,,,sha256:4b8ff9dce56ca7058c53e1a08feca69a59f8504a8f2ef68c85c065ae837ce04a,/home/kmika/Models/yolo26s.onnx
+yolov7_paper,detection,development,yolov7,,,,sha256:7a13e66f91047cce0e251c05f64159646847e842af31d60441c63dcdfad7825d,/home/kmika/Models/yolov7_paper.onnx

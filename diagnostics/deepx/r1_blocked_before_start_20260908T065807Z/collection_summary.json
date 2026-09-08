@@ -1,0 +1,15 @@
+{
+  "schema": "deepx-prepost-evidence-smoke/r1",
+  "status": "failed",
+  "output_dir": "/home/kmika/Downloads/deepx_prepost_smokes_r1_20260908T065807Z_dct6j689",
+  "run_dir": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614",
+  "models": [],
+  "mode": "local_CPU_and_remote_DeepX",
+  "counts_as_benchmark": false,
+  "model_acceptance": "NOT_EVALUATED",
+  "compiler_invoked": false,
+  "tool_installation_modified": false,
+  "quality_thresholds_modified": false,
+  "error": "RuntimeError: workflow_or_platform_operation_active; close running measurements first",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/kmika/Downloads/DeepX_PrePost_Smokes_R1/lib/collect_smokes.py\", line 33, in workflow_gate\n    try:fcntl.flock(fd,fcntl.LOCK_EX|fcntl.LOCK_NB)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nBlockingIOError: [Errno 11] Resource temporarily unavailable\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/kmika/Downloads/DeepX_PrePost_Smokes_R1/lib/collect_smokes.py\", line 319, in main\n    with workflow_gate(Path.home()/'.onnx_splitpoint_tool/locks/workflow_platform_interlock.lock'):\n  File \"/usr/lib/python3.12/contextlib.py\", line 137, in __enter__\n    return next(self.gen)\n           ^^^^^^^^^^^^^^\n  File \"/home/kmika/Downloads/DeepX_PrePost_Smokes_R1/lib/collect_smokes.py\", line 34, in workflow_gate\n    except BlockingIOError:raise RuntimeError('workflow_or_platform_operation_active; close running measurements first')\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: workflow_or_platform_operation_active; close running measurements first\n"
+}

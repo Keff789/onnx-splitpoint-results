@@ -1,0 +1,14 @@
+{
+  "diagnostic_only": true,
+  "probe_fix": "v27927_fix1",
+  "status": "collected",
+  "remote_returncode": 0,
+  "source_results_modified": false,
+  "compiler_invoked": false,
+  "model_acceptance": "not_evaluated_by_diagnostic",
+  "remote_probe_dir": "/tmp/onnx-v27927-full-probe-fix1-OfdAr77KeE",
+  "probe_status": "runtime_failed",
+  "probe_error": "FrozenPostprocessError: decoded_pre_nms_values_invalid",
+  "remote_temporary_directory_removed": true,
+  "collector_exit_code": 0
+}

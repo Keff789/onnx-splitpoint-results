@@ -1,0 +1,28 @@
+{
+  "schema": "onnx-splitpoint/deepx-full-output-probe-request/v1",
+  "staging_mode": "local_files_to_fresh_remote_directory",
+  "probe_fix": "v27929",
+  "original_run_id": "v27926_acceptance_d_yolo11l_b003_deepx_gpu_20260907_101443",
+  "model_id": "yolo11l",
+  "setup_id": "orin_nx_deepx_m1_01",
+  "original_remote_suite": "/home/nx/splitpoint_runs/legacy_suite/v27926_acceptance_d_yolo11l_b003_deepx_gpu_20260907_101443_yolo11l_orin_nx_deepx_m1_01/1/suite",
+  "original_dxnn_path": "/home/nx/splitpoint_runs/legacy_suite/v27926_acceptance_d_yolo11l_b003_deepx_gpu_20260907_101443_yolo11l_orin_nx_deepx_m1_01/1/suite/deepx/deepx_m1/full/model.dxnn",
+  "original_image_path": "/home/nx/splitpoint_runs/legacy_suite/v27926_acceptance_d_yolo11l_b003_deepx_gpu_20260907_101443_yolo11l_orin_nx_deepx_m1_01/1/suite/resources/validation/detection/val2017_n500_s20260710/000000212226.jpg",
+  "staged_dxnn_relative": "deepx/deepx_m1/full/model.dxnn",
+  "staged_image_relative": "resources/validation/detection/val2017_n500_s20260710/000000212226.jpg",
+  "expected_dxnn_sha256": "045c40d2250ab528822ef83c37c9842bb1a85bb0ca212d8dba20278ae21b797e",
+  "runtime_venv": "~/venvs/deepx-runtime",
+  "original_error": "FrozenPostprocessError: decoded_pre_nms_values_invalid",
+  "model_acceptance": "not_evaluated_by_diagnostic",
+  "expected_image_sha256": "261ba1b81c768f47b8452cd8fc7866a354a69c336a927032486d129b8684eb44",
+  "image_identity_source": "original_validation_manifest",
+  "local_sources": {
+    "suite": "/home/kmika/Models/EvaluationRuns/v27926_acceptance_d_yolo11l_b003_deepx_gpu_20260907_101443/models/yolo11l/benchmark_set/legacy_suite",
+    "dxnn": "/home/kmika/Models/EvaluationRuns/v27926_acceptance_d_yolo11l_b003_deepx_gpu_20260907_101443/models/yolo11l/benchmark_set/legacy_suite/deepx/deepx_m1/full/model.dxnn",
+    "image": "/home/kmika/Models/EvaluationRuns/v27926_acceptance_d_yolo11l_b003_deepx_gpu_20260907_101443/models/yolo11l/benchmark_set/legacy_suite/resources/validation/detection/val2017_n500_s20260710/000000212226.jpg",
+    "package": "/home/kmika/Models/EvaluationRuns/v27926_acceptance_d_yolo11l_b003_deepx_gpu_20260907_101443/models/yolo11l/benchmark_set/legacy_suite/splitpoint_runners",
+    "template": "/home/kmika/Downloads/ONNX-Splitpoint-Tool_v2.79.29_COMPLETE_DELIVERY_BUNDLE/probe/benchmark_suite.py.txt",
+    "worker": "/home/kmika/Downloads/ONNX-Splitpoint-Tool_v2.79.29_COMPLETE_DELIVERY_BUNDLE/probe/deepx_full_output_probe_worker_v27929.py",
+    "postprocess": "/home/kmika/Downloads/ONNX-Splitpoint-Tool_v2.79.29_COMPLETE_DELIVERY_BUNDLE/probe/native_detection_postprocess.py"
+  }
+}

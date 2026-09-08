@@ -1,0 +1,8 @@
+{
+  "diagnostic_only": true,
+  "status": "collected",
+  "remote_returncode": 2,
+  "probe_status": "probe_setup_failed",
+  "probe_error": "FileNotFoundError: [Errno 2] No such file or directory: '/home/nx/splitpoint_runs/legacy_suite/v27926_acceptance_d_yolo11l_b003_deepx_gpu_20260907_101443_yolo11l_orin_nx_deepx_m1_01/1'",
+  "remote_temporary_directory_removed": true
+}

@@ -1,0 +1,26 @@
+{
+  "source_checked": [
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/resnet50/benchmark_set/legacy_suite/models/resnet50.onnx",
+      "sha256": "cebd9d5879ddd304a18f51e559ab74fba5cbd1f610b9359321bc5228acbe4f50",
+      "size_bytes": 102356918
+    }
+  ],
+  "arm_a_checked": [
+    {
+      "path": "/home/kmika/Models/BackendArtifacts/deepx/deepx_m1_full_current_scale_only_v2_ae37b460e4731eb051f4cdc73908aaa2/model.dxnn",
+      "sha256": "4381d0818d6f73bab0d4b381d1229483e62e3035a80c7ba1bad4df114b96dc62",
+      "size_bytes": 51728153
+    }
+  ],
+  "run_dir": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614",
+  "setup_id": "orin_nx_deepx_m1_01",
+  "status_path": "/home/kmika/Models/EvaluationRuns/complete_set_20260907_161614/models/resnet50/benchmark_set/deepx/deepx_artifact_status.json",
+  "compiler_venv": "~/dx-all-suite/dx-compiler/venv-dx-compiler-local",
+  "compiler_root": "~/dx-all-suite",
+  "opt_level": 0,
+  "calibration_num": 500,
+  "calibration_method": "ema",
+  "classification_arm_a": "current_scale_only",
+  "classification_arm_b": "imagenet_mean_std"
+}

@@ -1,0 +1,5 @@
+VERSION=2.79.29
+RELEASE=2.79.29
+BUILD_ID=v2.79.29-deepx-prepared-full-without-opencv
+WORKFLOW_VERSION=v2.79.29-deepx-prepared-full-without-opencv
+DISTRIBUTION=2.79.29

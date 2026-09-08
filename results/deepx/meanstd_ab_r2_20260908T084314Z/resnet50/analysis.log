@@ -1,0 +1,1 @@
+R2_ANALYSIS=resnet50:supports_imagenet_mean_std_build_path

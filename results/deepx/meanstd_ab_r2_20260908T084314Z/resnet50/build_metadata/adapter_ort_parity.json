@@ -1,0 +1,167 @@
+{
+  "status": "pass",
+  "max_abs": 0.0,
+  "min_cosine": 0.9999999999999998,
+  "rows": [
+    {
+      "cpu_npz": "/home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/_r1/resnet50/cpu/cpu_000.npz",
+      "outputs": [
+        {
+          "shape": [
+            1,
+            1000
+          ],
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "cosine": 0.9999999999999999,
+          "expected": {
+            "shape": [
+              1,
+              1000
+            ],
+            "dtype": "float32",
+            "size": 1000,
+            "finite": true,
+            "min": -0.5842689275741577,
+            "max": 5.827268600463867,
+            "mean": 8.145465701818466e-05,
+            "sha256_bytes": "64400aa9b0a958ceb2346d1017e4544e5ca7be9d7014bb6de4234ef977f7e65e"
+          },
+          "observed": {
+            "shape": [
+              1,
+              1000
+            ],
+            "dtype": "float32",
+            "size": 1000,
+            "finite": true,
+            "min": -0.5842689275741577,
+            "max": 5.827268600463867,
+            "mean": 8.145465701818466e-05,
+            "sha256_bytes": "64400aa9b0a958ceb2346d1017e4544e5ca7be9d7014bb6de4234ef977f7e65e"
+          }
+        }
+      ]
+    },
+    {
+      "cpu_npz": "/home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/_r1/resnet50/cpu/cpu_001.npz",
+      "outputs": [
+        {
+          "shape": [
+            1,
+            1000
+          ],
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "cosine": 0.9999999999999998,
+          "expected": {
+            "shape": [
+              1,
+              1000
+            ],
+            "dtype": "float32",
+            "size": 1000,
+            "finite": true,
+            "min": -1.4765186309814453,
+            "max": 8.153488159179688,
+            "mean": 0.00018517854157835246,
+            "sha256_bytes": "c3de87d919c4cf03a1deb9cc443c66c6b1997e7195479b488db9d2096213ba71"
+          },
+          "observed": {
+            "shape": [
+              1,
+              1000
+            ],
+            "dtype": "float32",
+            "size": 1000,
+            "finite": true,
+            "min": -1.4765186309814453,
+            "max": 8.153488159179688,
+            "mean": 0.00018517854157835246,
+            "sha256_bytes": "c3de87d919c4cf03a1deb9cc443c66c6b1997e7195479b488db9d2096213ba71"
+          }
+        }
+      ]
+    },
+    {
+      "cpu_npz": "/home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/_r1/resnet50/cpu/cpu_002.npz",
+      "outputs": [
+        {
+          "shape": [
+            1,
+            1000
+          ],
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "cosine": 1.0,
+          "expected": {
+            "shape": [
+              1,
+              1000
+            ],
+            "dtype": "float32",
+            "size": 1000,
+            "finite": true,
+            "min": -1.1991407871246338,
+            "max": 5.955399990081787,
+            "mean": 0.00016747954161837697,
+            "sha256_bytes": "32b1a11fc0fdcf72de7ce2ccda6a7a9990158787740eb18f7c4da2758d3d6202"
+          },
+          "observed": {
+            "shape": [
+              1,
+              1000
+            ],
+            "dtype": "float32",
+            "size": 1000,
+            "finite": true,
+            "min": -1.1991407871246338,
+            "max": 5.955399990081787,
+            "mean": 0.00016747954161837697,
+            "sha256_bytes": "32b1a11fc0fdcf72de7ce2ccda6a7a9990158787740eb18f7c4da2758d3d6202"
+          }
+        }
+      ]
+    },
+    {
+      "cpu_npz": "/home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/_r1/resnet50/cpu/cpu_003.npz",
+      "outputs": [
+        {
+          "shape": [
+            1,
+            1000
+          ],
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "cosine": 1.0,
+          "expected": {
+            "shape": [
+              1,
+              1000
+            ],
+            "dtype": "float32",
+            "size": 1000,
+            "finite": true,
+            "min": -1.1546181440353394,
+            "max": 4.4440412521362305,
+            "mean": 0.00015730699780397116,
+            "sha256_bytes": "d693e096f363d22c986a464426e7a55fcfe5b06d5d65eb9a077895bf27aca07a"
+          },
+          "observed": {
+            "shape": [
+              1,
+              1000
+            ],
+            "dtype": "float32",
+            "size": 1000,
+            "finite": true,
+            "min": -1.1546181440353394,
+            "max": 4.4440412521362305,
+            "mean": 0.00015730699780397116,
+            "sha256_bytes": "d693e096f363d22c986a464426e7a55fcfe5b06d5d65eb9a077895bf27aca07a"
+          }
+        }
+      ]
+    }
+  ]
+}

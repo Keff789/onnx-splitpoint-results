@@ -1,0 +1,18 @@
+backend_key,backend,model,case,precision,contract_id,execution_mode,setup_id,comparison_backend,actual_status,actual_ok,failure_reason,status_detail,error
+hailo8,hailo8_to_trt,yolo26m,b398,uint8_dequant_fp16,hailo8_yolo26m_selected_single_part2_input,native_split,orin_nx_hailo8_01,hailo8,partial_repetitions,False,native_repetition_set_incomplete:missing_hailo_part1_hef; missing_native_trt_part2_engine; boundary_tensor_count=0,missing_hailo_part1_hef; missing_native_trt_part2_engine; boundary_tensor_count=0,"{
+  ""ok"": true,
+  ""cases"": 1,
+  ""supported"": 0,
+  ""json"": ""/home/nx/native_fifo_evalsets/complete_set_20260907_161614/yolo26m/benchmark_set/analysis_tables/native_fifo_capability_report.json"",
+  ""csv"": ""/home/nx/native_fifo_evalsets/complete_set_20260907_161614/yolo26m/benchmark_set/analysis_tables/native_fifo_capability_report.csv"",
+  ""md"": ""/home/nx/native_fifo_evalsets/complete_set_20260907_161614/yolo26m/benchmark_set/analysis_tables/native_fifo_capability_report.md""
+}"
+hailo8,hailo8_to_trt,yolo26s,b364,uint8_dequant_fp16,hailo8_yolo26s_selected_single_part2_input,native_split,orin_nx_hailo8_01,hailo8,partial_repetitions,False,native_repetition_set_incomplete:missing_hailo_part1_hef; missing_native_trt_part2_engine; boundary_tensor_count=0,missing_hailo_part1_hef; missing_native_trt_part2_engine; boundary_tensor_count=0,"{
+  ""ok"": true,
+  ""cases"": 1,
+  ""supported"": 0,
+  ""json"": ""/home/nx/native_fifo_evalsets/complete_set_20260907_161614/yolo26s/benchmark_set/analysis_tables/native_fifo_capability_report.json"",
+  ""csv"": ""/home/nx/native_fifo_evalsets/complete_set_20260907_161614/yolo26s/benchmark_set/analysis_tables/native_fifo_capability_report.csv"",
+  ""md"": ""/home/nx/native_fifo_evalsets/complete_set_20260907_161614/yolo26s/benchmark_set/analysis_tables/native_fifo_capability_report.md""
+}"
+deepx,native_full_deepx,yolo11l,full,,deepx:deepx:full,native_full_baseline,orin_nx_deepx_m1_01,deepx,partial_repetitions,False,native_repetition_set_incomplete:native_full_repetition_set_incomplete,examined_result_files=2;current_result_files=2;result_run_id=deepx_m1_full;result_runtime_ok=True;result_identity_ok=True;prepared_feed_contract_version=deepx-sealed-runtime-input-v3;prepared_feed_contract_binding_ok=True;prepared_feed_image_binding_ok=True;prepared_input_binding_ok=True;completed_result_persistence=verified_exact,

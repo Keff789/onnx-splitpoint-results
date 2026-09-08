@@ -1,0 +1,20 @@
+{
+  "execution": {
+    "returncode": 0,
+    "timed_out": false,
+    "elapsed_s": 5.21,
+    "log": "/home/kmika/Downloads/deepx_prepost_smokes_r1_20260908T080238Z_vo3whdeu/regnet_x_1_6gf/remote_console.log"
+  },
+  "stop_returncode": 0,
+  "stop_output": "{'cleanup_confirmed': True, 'reason': 'owned_worker_already_gone'}\n",
+  "collection": {
+    "returncode": 0,
+    "timed_out": false,
+    "elapsed_s": 0.903,
+    "log": "/home/kmika/Downloads/deepx_prepost_smokes_r1_20260908T080238Z_vo3whdeu/regnet_x_1_6gf/collection.log"
+  },
+  "request_binding_verified": true,
+  "cleanup_confirmed": true,
+  "remote_directory": "/tmp/onnx-deepx-prepost-r1-z4PIkhmsFj",
+  "remote_temporary_removed": true
+}

@@ -1,0 +1,18 @@
+{
+  "dependencies_preserved": true,
+  "distribution": "onnx-splitpoint-tool",
+  "entry_point_count": 185,
+  "installer": "stdlib-only-pep376-editable",
+  "ok": true,
+  "replaced_artifact_count": 185,
+  "version": "2.79.29"
+}
+YOLOv7 probe dependencies: available; pycocotools 2.0.11
+PASS source release synchronized
+Venv erhalten: /home/kmika/ONNX-Splitpoint-Tool/.venv
+Distribution aktualisiert: onnx-splitpoint-tool==2.79.29
+Release-Scope: Artifact-Reuse-Closure für Hailo, TensorRT und DeepX
+Hardware-Kalibrierung: NOT_RUN (Updater führt keine Hardwareaktion aus)
+YOLOv7-Probe-Abhängigkeiten: available (pycocotools>=2.0.7)
+Eigene Profile erhalten: 26
+Backup geänderter/entfernter Dateien: /home/kmika/ONNX-Splitpoint-Tool_update_backups/20260907_145803_2858863_433159692

@@ -1,0 +1,54 @@
+{
+  "schema": "onnx-splitpoint/deepx-build-onnx-adapter",
+  "schema_version": 1,
+  "source_onnx_sha256": "2f5e79b1e4280251e7b6eefe1d6161c4831e2fc27858e1e9fe2fac697f44489e",
+  "input_name": "input",
+  "consumer_count": 1,
+  "preprocessing": {
+    "schema": "onnx-splitpoint/deepx-classification-preprocessing",
+    "schema_version": 1,
+    "mode": "imagenet_mean_std",
+    "runtime_image": {
+      "dtype": "uint8",
+      "layout": "HWC",
+      "color_space": "RGB",
+      "value_range": [
+        0,
+        255
+      ]
+    },
+    "dxcom_loader": {
+      "scale_divisor": 255.0,
+      "output_layout": "NCHW",
+      "output_dtype": "float32",
+      "color_space": "RGB",
+      "operations_contract": "resize_div255_bgr2rgb_transpose_expanddim"
+    },
+    "build_onnx_adapter": {
+      "kind": "imagenet_rgb_mean_std",
+      "implementation": "onnx_sub_then_div_before_original_graph",
+      "input_domain": "rgb_float32_0_1",
+      "mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "broadcast_shape": [
+        1,
+        3,
+        1,
+        1
+      ]
+    },
+    "source_model_input_domain": "rgb_float32_imagenet_mean_std"
+  },
+  "adapter_contract_sha256": "eba03c08cf87eb582b47a0780cd428da0833b57bc1e8f473260236b313d77446",
+  "build_onnx_path": "/home/kmika/Downloads/deepx_meanstd_ab_r2_20260908T084314Z_wwtqdejm/mobilenet_v3_large/build/adapter/imagenet_mean_std_e6a9bcfb1de750ad91b2c66e51d3acac40c5a0cb6c5cf1bb92f519fdb8cc0ab3.onnx",
+  "build_onnx_sha256": "e6a9bcfb1de750ad91b2c66e51d3acac40c5a0cb6c5cf1bb92f519fdb8cc0ab3",
+  "build_onnx_bytes": 22243664
+}

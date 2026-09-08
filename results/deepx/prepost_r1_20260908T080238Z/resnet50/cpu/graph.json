@@ -1,0 +1,159 @@
+{
+  "status": "observed",
+  "inputs": [
+    {
+      "name": "input",
+      "elem_type": 1,
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "name": "logits",
+      "elem_type": 1,
+      "shape": [
+        1,
+        1000
+      ]
+    }
+  ],
+  "node_count": 122,
+  "input_dataflow": [
+    {
+      "depth": 0,
+      "name": "node_Conv_753",
+      "op_type": "Conv",
+      "inputs": [
+        "input",
+        "conv1.weight",
+        "conv1.weight_bias"
+      ],
+      "outputs": [
+        "getitem"
+      ],
+      "small_initializer_values": {}
+    },
+    {
+      "depth": 1,
+      "name": "node_relu",
+      "op_type": "Relu",
+      "inputs": [
+        "getitem"
+      ],
+      "outputs": [
+        "relu"
+      ],
+      "small_initializer_values": {}
+    },
+    {
+      "depth": 2,
+      "name": "node_max_pool2d",
+      "op_type": "MaxPool",
+      "inputs": [
+        "relu"
+      ],
+      "outputs": [
+        "max_pool2d"
+      ],
+      "small_initializer_values": {}
+    },
+    {
+      "depth": 3,
+      "name": "node_Conv_755",
+      "op_type": "Conv",
+      "inputs": [
+        "max_pool2d",
+        "layer1.0.conv1.weight",
+        "layer1.0.conv1.weight_bias"
+      ],
+      "outputs": [
+        "getitem_3"
+      ],
+      "small_initializer_values": {}
+    },
+    {
+      "depth": 3,
+      "name": "node_Conv_761",
+      "op_type": "Conv",
+      "inputs": [
+        "max_pool2d",
+        "layer1.0.downsample.0.weight",
+        "layer1.0.downsample.0.weight_bias"
+      ],
+      "outputs": [
+        "getitem_12"
+      ],
+      "small_initializer_values": {}
+    },
+    {
+      "depth": 4,
+      "name": "node_relu_1",
+      "op_type": "Relu",
+      "inputs": [
+        "getitem_3"
+      ],
+      "outputs": [
+        "relu_1"
+      ],
+      "small_initializer_values": {}
+    },
+    {
+      "depth": 4,
+      "name": "node_add",
+      "op_type": "Add",
+      "inputs": [
+        "getitem_9",
+        "getitem_12"
+      ],
+      "outputs": [
+        "add"
+      ],
+      "small_initializer_values": {}
+    },
+    {
+      "depth": 5,
+      "name": "node_Conv_757",
+      "op_type": "Conv",
+      "inputs": [
+        "relu_1",
+        "layer1.0.conv2.weight",
+        "layer1.0.conv2.weight_bias"
+      ],
+      "outputs": [
+        "getitem_6"
+      ],
+      "small_initializer_values": {}
+    },
+    {
+      "depth": 5,
+      "name": "node_relu_3",
+      "op_type": "Relu",
+      "inputs": [
+        "add"
+      ],
+      "outputs": [
+        "relu_3"
+      ],
+      "small_initializer_values": {}
+    }
+  ],
+  "metadata": {
+    "task_type": "classification",
+    "source": "torchvision",
+    "model_name": "resnet50",
+    "weights": "ResNet50_Weights.IMAGENET1K_V2",
+    "resize_size": "[232]",
+    "crop_size": "[224]",
+    "mean": "[0.485, 0.456, 0.406]",
+    "std": "[0.229, 0.224, 0.225]",
+    "interpolation": "BILINEAR",
+    "num_classes": "1000"
+  },
+  "external_initializers": [],
+  "claim": "bounded_graph_observation_not_a_proof_of_absent_folded_normalization"
+}

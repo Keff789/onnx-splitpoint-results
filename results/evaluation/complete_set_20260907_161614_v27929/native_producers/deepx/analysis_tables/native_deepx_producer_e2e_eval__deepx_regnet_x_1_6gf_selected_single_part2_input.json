@@ -1,0 +1,1993 @@
+{
+  "schema": "onnx-splitpoint/native-producer-e2e-eval-summary",
+  "schema_version": 2,
+  "root": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614",
+  "backend": "deepx",
+  "analysis_tag": "deepx_regnet_x_1_6gf_selected_single_part2_input",
+  "performance_repetitions": 3,
+  "rows": [
+    {
+      "backend": "deepx",
+      "model": "regnet_x_1_6gf",
+      "case": "b132",
+      "precision": "float32_layout_fp16",
+      "ok": true,
+      "status": "ok",
+      "runtime_success": true,
+      "failure_reason": "",
+      "status_detail": "ok",
+      "error": "",
+      "returncode": 0,
+      "rc": 0,
+      "timed_out": false,
+      "result_fresh": true,
+      "stdout_tail": "{\n  \"ok\": true,\n  \"fps_makespan\": 223.25914425699193,\n  \"paper_fps\": 228.64673380186403,\n  \"report\": \"/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set/native_pipeline/b132/deepx_to_trt/float32_layout_fp16/deepx_native_fifo_e2e_results.json\",\n  \"error\": \"\"\n}\n",
+      "stderr_tail": "",
+      "input_image": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set/resources/validation/classification/val_by_wnid_n500_s20260710/images/n01443537/ILSVRC2012_val_00013623.JPEG",
+      "input_image_source": "generic_validation_image_map",
+      "input_image_sha256": "7fcdd3d95ff2491a2a5fe235d786026b728ffe0f88d25c4543d9a3e253f71652",
+      "fps_makespan": 223.25914425699193,
+      "paper_fps": 228.64673380186403,
+      "fps_median": 223.25914425699193,
+      "fps_ci95_low": 223.00204819349685,
+      "fps_ci95_high": 223.51145721742523,
+      "repetition_count_requested": 3,
+      "repetition_count_attempted": 3,
+      "repetition_count_valid": 3,
+      "repetition_status": "complete",
+      "repetition_aggregation": "median_never_best_of",
+      "repetition_records": [
+        {
+          "frames": 1000,
+          "completed_frames": 1000,
+          "completed_work_units": 1000,
+          "requested_frames": 1000,
+          "duration_s": 0.0,
+          "warmup": 100,
+          "queue_depth": 3,
+          "p1_ms": 4.371495024293661,
+          "deepx_run_ms": 4.371495024293661,
+          "output_map_ms": 0.08790262389183044,
+          "fifo_put_block_ms": 0.01377625036239624,
+          "trt_input_copy_ms": 0.010757144063711166,
+          "handoff_ms": 0.11243601831793786,
+          "p2_run_ms": 0.11282450601458549,
+          "completion_tail_ms": 0.0,
+          "postprocess_ms": 0.0,
+          "p1_thread_ms": 4.371495024293661,
+          "p2_thread_ms": 0.12358165007829666,
+          "paper_equivalent_cycle_ms": 4.371495024293661,
+          "paper_equivalent_fps": 228.75469248911668,
+          "makespan_ms": 4479.099852003856,
+          "fps_makespan": 223.25914425699193,
+          "measurement_boundary": "workers_ready_to_last_completed_trt_frame",
+          "last_completion_source": "native_trt_synchronized_output",
+          "warmup_contract": "fully_drained_before_worker_start",
+          "trt_host_memory_policy": "cuda_pinned_all_bindings",
+          "trt_output_materialization_policy": "synchronized_d2h_pinned_view_no_post_copy",
+          "trt_copy_outputs": true,
+          "boundary_copy_count": 1,
+          "boundary_copy_total": 1000,
+          "boundary_copy_policy": "one_owned_contiguous_typed_copy_before_fifo_enqueue",
+          "fifo_payload_ownership": "owned_no_alias_to_deepx_runtime_output",
+          "strict_quality_boundary": {
+            "status": "exact_runtime_boundary_verified",
+            "runtime_name": "mean",
+            "output_index": 0,
+            "output_count": 1,
+            "shape": [
+              1,
+              912,
+              1,
+              1
+            ],
+            "dtype": "float32",
+            "element_count": 912,
+            "binding_boundary_metadata_sha256": "ebc5918be080b4f8fbc83ad819678b8cf9003b11cd351a8e8cc77ce702b1254f"
+          },
+          "postprocess_included": false,
+          "postprocess_completed_frames": 0,
+          "postprocess_completion_verified": false,
+          "repetition_index": 1,
+          "runtime_instance_id": "fresh_runtime:246b49f13ce513a25af0ba2468ad8a1bfa1c077eae2f26cd12e6d9a1f6176240",
+          "ok": true,
+          "status": "ok",
+          "workload_contract_sha256": "9002827324a35d93eaa6a22c23e4693f56622bd1b36ca632e81ec4b1696eb6d0"
+        },
+        {
+          "frames": 1000,
+          "completed_frames": 1000,
+          "completed_work_units": 1000,
+          "requested_frames": 1000,
+          "duration_s": 0.0,
+          "warmup": 100,
+          "queue_depth": 3,
+          "p1_ms": 4.373559085547924,
+          "deepx_run_ms": 4.373559085547924,
+          "output_map_ms": 0.0826183987557888,
+          "fifo_put_block_ms": 0.01213581132888794,
+          "trt_input_copy_ms": 0.009719388008117676,
+          "handoff_ms": 0.10447359809279441,
+          "p2_run_ms": 0.09395672497153282,
+          "completion_tail_ms": 0.0,
+          "postprocess_ms": 0.0,
+          "p1_thread_ms": 4.373559085547924,
+          "p2_thread_ms": 0.10367611297965049,
+          "paper_equivalent_cycle_ms": 4.373559085547924,
+          "paper_equivalent_fps": 228.64673380186403,
+          "makespan_ms": 4474.043579015415,
+          "fps_makespan": 223.51145721742523,
+          "measurement_boundary": "workers_ready_to_last_completed_trt_frame",
+          "last_completion_source": "native_trt_synchronized_output",
+          "warmup_contract": "fully_drained_before_worker_start",
+          "trt_host_memory_policy": "cuda_pinned_all_bindings",
+          "trt_output_materialization_policy": "synchronized_d2h_pinned_view_no_post_copy",
+          "trt_copy_outputs": true,
+          "boundary_copy_count": 1,
+          "boundary_copy_total": 1000,
+          "boundary_copy_policy": "one_owned_contiguous_typed_copy_before_fifo_enqueue",
+          "fifo_payload_ownership": "owned_no_alias_to_deepx_runtime_output",
+          "strict_quality_boundary": {
+            "status": "exact_runtime_boundary_verified",
+            "runtime_name": "mean",
+            "output_index": 0,
+            "output_count": 1,
+            "shape": [
+              1,
+              912,
+              1,
+              1
+            ],
+            "dtype": "float32",
+            "element_count": 912,
+            "binding_boundary_metadata_sha256": "ebc5918be080b4f8fbc83ad819678b8cf9003b11cd351a8e8cc77ce702b1254f"
+          },
+          "postprocess_included": false,
+          "postprocess_completed_frames": 0,
+          "postprocess_completion_verified": false,
+          "repetition_index": 2,
+          "runtime_instance_id": "fresh_runtime:53b23c9ec8934254ccbcc308a7ff5358d42c5e7e5219397d07d573ec8b7c8b27",
+          "ok": true,
+          "status": "ok",
+          "workload_contract_sha256": "9002827324a35d93eaa6a22c23e4693f56622bd1b36ca632e81ec4b1696eb6d0"
+        },
+        {
+          "frames": 1000,
+          "completed_frames": 1000,
+          "completed_work_units": 1000,
+          "requested_frames": 1000,
+          "duration_s": 0.0,
+          "warmup": 100,
+          "queue_depth": 3,
+          "p1_ms": 4.381825415223837,
+          "deepx_run_ms": 4.381825415223837,
+          "output_map_ms": 0.08281276071071625,
+          "fifo_put_block_ms": 0.014042575687170029,
+          "trt_input_copy_ms": 0.011977187126874924,
+          "handoff_ms": 0.10883252352476121,
+          "p2_run_ms": 0.11155975496768951,
+          "completion_tail_ms": 0.0,
+          "postprocess_ms": 0.0,
+          "p1_thread_ms": 4.381825415223837,
+          "p2_thread_ms": 0.12353694209456444,
+          "paper_equivalent_cycle_ms": 4.381825415223837,
+          "paper_equivalent_fps": 228.21539090208526,
+          "makespan_ms": 4484.263746009674,
+          "fps_makespan": 223.00204819349685,
+          "measurement_boundary": "workers_ready_to_last_completed_trt_frame",
+          "last_completion_source": "native_trt_synchronized_output",
+          "warmup_contract": "fully_drained_before_worker_start",
+          "trt_host_memory_policy": "cuda_pinned_all_bindings",
+          "trt_output_materialization_policy": "synchronized_d2h_pinned_view_no_post_copy",
+          "trt_copy_outputs": true,
+          "boundary_copy_count": 1,
+          "boundary_copy_total": 1000,
+          "boundary_copy_policy": "one_owned_contiguous_typed_copy_before_fifo_enqueue",
+          "fifo_payload_ownership": "owned_no_alias_to_deepx_runtime_output",
+          "strict_quality_boundary": {
+            "status": "exact_runtime_boundary_verified",
+            "runtime_name": "mean",
+            "output_index": 0,
+            "output_count": 1,
+            "shape": [
+              1,
+              912,
+              1,
+              1
+            ],
+            "dtype": "float32",
+            "element_count": 912,
+            "binding_boundary_metadata_sha256": "ebc5918be080b4f8fbc83ad819678b8cf9003b11cd351a8e8cc77ce702b1254f"
+          },
+          "postprocess_included": false,
+          "postprocess_completed_frames": 0,
+          "postprocess_completion_verified": false,
+          "repetition_index": 3,
+          "runtime_instance_id": "fresh_runtime:87c97d3c1221ed99b8821ab8a25bff76ccb3c7fc258a2ec3e777b92bf3361d68",
+          "ok": true,
+          "status": "ok",
+          "workload_contract_sha256": "9002827324a35d93eaa6a22c23e4693f56622bd1b36ca632e81ec4b1696eb6d0"
+        }
+      ],
+      "repetition_evidence": [
+        {
+          "frames": 1000,
+          "completed_frames": 1000,
+          "completed_work_units": 1000,
+          "requested_frames": 1000,
+          "duration_s": 0.0,
+          "warmup": 100,
+          "queue_depth": 3,
+          "p1_ms": 4.371495024293661,
+          "deepx_run_ms": 4.371495024293661,
+          "output_map_ms": 0.08790262389183044,
+          "fifo_put_block_ms": 0.01377625036239624,
+          "trt_input_copy_ms": 0.010757144063711166,
+          "handoff_ms": 0.11243601831793786,
+          "p2_run_ms": 0.11282450601458549,
+          "completion_tail_ms": 0.0,
+          "postprocess_ms": 0.0,
+          "p1_thread_ms": 4.371495024293661,
+          "p2_thread_ms": 0.12358165007829666,
+          "paper_equivalent_cycle_ms": 4.371495024293661,
+          "paper_equivalent_fps": 228.75469248911668,
+          "makespan_ms": 4479.099852003856,
+          "fps_makespan": 223.25914425699193,
+          "measurement_boundary": "workers_ready_to_last_completed_trt_frame",
+          "last_completion_source": "native_trt_synchronized_output",
+          "warmup_contract": "fully_drained_before_worker_start",
+          "trt_host_memory_policy": "cuda_pinned_all_bindings",
+          "trt_output_materialization_policy": "synchronized_d2h_pinned_view_no_post_copy",
+          "trt_copy_outputs": true,
+          "boundary_copy_count": 1,
+          "boundary_copy_total": 1000,
+          "boundary_copy_policy": "one_owned_contiguous_typed_copy_before_fifo_enqueue",
+          "fifo_payload_ownership": "owned_no_alias_to_deepx_runtime_output",
+          "strict_quality_boundary": {
+            "status": "exact_runtime_boundary_verified",
+            "runtime_name": "mean",
+            "output_index": 0,
+            "output_count": 1,
+            "shape": [
+              1,
+              912,
+              1,
+              1
+            ],
+            "dtype": "float32",
+            "element_count": 912,
+            "binding_boundary_metadata_sha256": "ebc5918be080b4f8fbc83ad819678b8cf9003b11cd351a8e8cc77ce702b1254f"
+          },
+          "postprocess_included": false,
+          "postprocess_completed_frames": 0,
+          "postprocess_completion_verified": false,
+          "repetition_index": 1,
+          "runtime_instance_id": "fresh_runtime:246b49f13ce513a25af0ba2468ad8a1bfa1c077eae2f26cd12e6d9a1f6176240",
+          "ok": true,
+          "status": "ok",
+          "workload_contract_sha256": "9002827324a35d93eaa6a22c23e4693f56622bd1b36ca632e81ec4b1696eb6d0"
+        },
+        {
+          "frames": 1000,
+          "completed_frames": 1000,
+          "completed_work_units": 1000,
+          "requested_frames": 1000,
+          "duration_s": 0.0,
+          "warmup": 100,
+          "queue_depth": 3,
+          "p1_ms": 4.373559085547924,
+          "deepx_run_ms": 4.373559085547924,
+          "output_map_ms": 0.0826183987557888,
+          "fifo_put_block_ms": 0.01213581132888794,
+          "trt_input_copy_ms": 0.009719388008117676,
+          "handoff_ms": 0.10447359809279441,
+          "p2_run_ms": 0.09395672497153282,
+          "completion_tail_ms": 0.0,
+          "postprocess_ms": 0.0,
+          "p1_thread_ms": 4.373559085547924,
+          "p2_thread_ms": 0.10367611297965049,
+          "paper_equivalent_cycle_ms": 4.373559085547924,
+          "paper_equivalent_fps": 228.64673380186403,
+          "makespan_ms": 4474.043579015415,
+          "fps_makespan": 223.51145721742523,
+          "measurement_boundary": "workers_ready_to_last_completed_trt_frame",
+          "last_completion_source": "native_trt_synchronized_output",
+          "warmup_contract": "fully_drained_before_worker_start",
+          "trt_host_memory_policy": "cuda_pinned_all_bindings",
+          "trt_output_materialization_policy": "synchronized_d2h_pinned_view_no_post_copy",
+          "trt_copy_outputs": true,
+          "boundary_copy_count": 1,
+          "boundary_copy_total": 1000,
+          "boundary_copy_policy": "one_owned_contiguous_typed_copy_before_fifo_enqueue",
+          "fifo_payload_ownership": "owned_no_alias_to_deepx_runtime_output",
+          "strict_quality_boundary": {
+            "status": "exact_runtime_boundary_verified",
+            "runtime_name": "mean",
+            "output_index": 0,
+            "output_count": 1,
+            "shape": [
+              1,
+              912,
+              1,
+              1
+            ],
+            "dtype": "float32",
+            "element_count": 912,
+            "binding_boundary_metadata_sha256": "ebc5918be080b4f8fbc83ad819678b8cf9003b11cd351a8e8cc77ce702b1254f"
+          },
+          "postprocess_included": false,
+          "postprocess_completed_frames": 0,
+          "postprocess_completion_verified": false,
+          "repetition_index": 2,
+          "runtime_instance_id": "fresh_runtime:53b23c9ec8934254ccbcc308a7ff5358d42c5e7e5219397d07d573ec8b7c8b27",
+          "ok": true,
+          "status": "ok",
+          "workload_contract_sha256": "9002827324a35d93eaa6a22c23e4693f56622bd1b36ca632e81ec4b1696eb6d0"
+        },
+        {
+          "frames": 1000,
+          "completed_frames": 1000,
+          "completed_work_units": 1000,
+          "requested_frames": 1000,
+          "duration_s": 0.0,
+          "warmup": 100,
+          "queue_depth": 3,
+          "p1_ms": 4.381825415223837,
+          "deepx_run_ms": 4.381825415223837,
+          "output_map_ms": 0.08281276071071625,
+          "fifo_put_block_ms": 0.014042575687170029,
+          "trt_input_copy_ms": 0.011977187126874924,
+          "handoff_ms": 0.10883252352476121,
+          "p2_run_ms": 0.11155975496768951,
+          "completion_tail_ms": 0.0,
+          "postprocess_ms": 0.0,
+          "p1_thread_ms": 4.381825415223837,
+          "p2_thread_ms": 0.12353694209456444,
+          "paper_equivalent_cycle_ms": 4.381825415223837,
+          "paper_equivalent_fps": 228.21539090208526,
+          "makespan_ms": 4484.263746009674,
+          "fps_makespan": 223.00204819349685,
+          "measurement_boundary": "workers_ready_to_last_completed_trt_frame",
+          "last_completion_source": "native_trt_synchronized_output",
+          "warmup_contract": "fully_drained_before_worker_start",
+          "trt_host_memory_policy": "cuda_pinned_all_bindings",
+          "trt_output_materialization_policy": "synchronized_d2h_pinned_view_no_post_copy",
+          "trt_copy_outputs": true,
+          "boundary_copy_count": 1,
+          "boundary_copy_total": 1000,
+          "boundary_copy_policy": "one_owned_contiguous_typed_copy_before_fifo_enqueue",
+          "fifo_payload_ownership": "owned_no_alias_to_deepx_runtime_output",
+          "strict_quality_boundary": {
+            "status": "exact_runtime_boundary_verified",
+            "runtime_name": "mean",
+            "output_index": 0,
+            "output_count": 1,
+            "shape": [
+              1,
+              912,
+              1,
+              1
+            ],
+            "dtype": "float32",
+            "element_count": 912,
+            "binding_boundary_metadata_sha256": "ebc5918be080b4f8fbc83ad819678b8cf9003b11cd351a8e8cc77ce702b1254f"
+          },
+          "postprocess_included": false,
+          "postprocess_completed_frames": 0,
+          "postprocess_completion_verified": false,
+          "repetition_index": 3,
+          "runtime_instance_id": "fresh_runtime:87c97d3c1221ed99b8821ab8a25bff76ccb3c7fc258a2ec3e777b92bf3361d68",
+          "ok": true,
+          "status": "ok",
+          "workload_contract_sha256": "9002827324a35d93eaa6a22c23e4693f56622bd1b36ca632e81ec4b1696eb6d0"
+        }
+      ],
+      "handoff_ms": 0.10883252352476121,
+      "p1_ms": 4.373559085547924,
+      "p2_run_ms": 0.11155975496768951,
+      "producer_ready": null,
+      "consumer_ready": null,
+      "report": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set/native_pipeline/b132/deepx_to_trt/float32_layout_fp16/deepx_native_fifo_e2e_results.json",
+      "setup_id": "orin_nx_deepx_m1_01",
+      "eval_run_id": "complete_set_20260907_161614",
+      "source_run_id": "deepx_to_trt",
+      "native_split_quality_required": true,
+      "native_split_quality_available": true,
+      "technical_quality_error": "",
+      "energy_quality_qualified": true,
+      "energy_quality_status": "quality_qualified",
+      "native_energy_after_technical_error": "not_applicable_quality_qualified",
+      "performance_claims_emitted": true,
+      "execution_role": "quality_first_native_split",
+      "native_command_contract": {
+        "backend": "deepx_to_trt",
+        "model": "regnet_x_1_6gf",
+        "setup_id": "orin_nx_deepx_m1_01",
+        "comparison_backend": "deepx",
+        "runner": "scripts/native_deepx_trt_e2e_from_benchmarkset.py",
+        "python_executable": "/home/nx/venvs/deepx-runtime/bin/python",
+        "interpreter_identity": {
+          "executable": "/home/nx/venvs/deepx-runtime/bin/python",
+          "resolved_executable": "/usr/bin/python3.10",
+          "executable_sha256": "03bb5d246e83c44204ef38044b062fdc46c2835881874e763c44c48b4304c490",
+          "prefix": "/home/nx/venvs/deepx-runtime",
+          "base_prefix": "/usr",
+          "version": "3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]"
+        },
+        "runner_sha256": "eafb263250136c25875e72061da60912a2583382fb4bd892757135a899f4a959",
+        "benchmark_set": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set",
+        "case": "b132",
+        "precision": "float32_layout_fp16",
+        "input_image": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set/resources/validation/classification/val_by_wnid_n500_s20260710/images/n01443537/ILSVRC2012_val_00013623.JPEG",
+        "input_image_source": "exact_file",
+        "input_image_sha256": "7fcdd3d95ff2491a2a5fe235d786026b728ffe0f88d25c4543d9a3e253f71652",
+        "artifacts": {
+          "python_executable": {
+            "path": "/home/nx/venvs/deepx-runtime/bin/python",
+            "sha256": "03bb5d246e83c44204ef38044b062fdc46c2835881874e763c44c48b4304c490"
+          },
+          "dxnn": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/part1.dxnn",
+            "sha256": "d805160a5529b7ca9f62448c2d6f50303d59168e81350600389f294296e481dc",
+            "size_bytes": 79942131
+          },
+          "engine": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+            "sha256": "b246da69aec647fbb71bd58a625b01e1757a606a86c31a9564a7d348973da3be",
+            "size_bytes": 1838612
+          },
+          "prepared_input": {
+            "path": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set/native_pipeline/b132/deepx_to_trt/float32_layout_fp16/contract_artifacts/deepx_selected_input.npy",
+            "sha256": "f2ca1c3f856716a195f896a18b1c367d21739ddd1534cde82c0ed5060ad9ab86"
+          },
+          "part1_input_contract": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/part1_boundary_metadata.json",
+            "sha256": "41df7f1b5eaeb0a650a906ba64f5292c409104505bce24daedad04f80ffee622"
+          },
+          "boundary_metadata": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/part1_boundary_metadata.json",
+            "sha256": "41df7f1b5eaeb0a650a906ba64f5292c409104505bce24daedad04f80ffee622",
+            "size_bytes": 2050
+          },
+          "source_part2_onnx": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/benchmark_set/b132/source_part2.onnx",
+            "sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+            "size_bytes": 3654704
+          },
+          "build_part2_onnx": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+            "sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+            "size_bytes": 3654704
+          },
+          "native_trt_meta": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/native_trt_meta.json",
+            "sha256": "76a0d0691b0cf1dea6df419349d3346c797b19a97096668e2ca95fe9ff9a7d60",
+            "size_bytes": 8098
+          },
+          "engine_build_receipt": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/engine_build_receipt.json",
+            "sha256": "6c61e761e0fb66e8b735f6267e9bf739011cc808836b086d3b25d9a6c2610cfa",
+            "size_bytes": 2326
+          },
+          "trtexec": {
+            "path": "/usr/src/tensorrt/bin/trtexec",
+            "sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4",
+            "size_bytes": 1695696
+          },
+          "semantic_output_manifest": {
+            "path": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set/native_pipeline/b132/deepx_to_trt/float32_layout_fp16/native_outputs/native_outputs_manifest.json",
+            "sha256": "aeaabd9b44ba4b6beda17c11e814a4bfdbad5602aee6f0ff26a3d9d50f1a4037",
+            "size_bytes": 4177
+          },
+          "semantic_boundary_manifest": {
+            "path": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set/native_pipeline/b132/deepx_to_trt/float32_layout_fp16/native_fifo_boundary/native_fifo_boundary_manifest.json",
+            "sha256": "2c698118175031f25566a1537659094df9bff158f3de29ddcb3842628821961c",
+            "size_bytes": 4141
+          }
+        },
+        "prepared_input_contract": {
+          "format": "numpy_npy_v1",
+          "shape": [
+            224,
+            224,
+            3
+          ],
+          "dtype": "uint8",
+          "c_contiguous": true,
+          "candidate_index": 0,
+          "selection_method": "quality_bound_exact_input_contract_no_probe_or_fallback",
+          "task": "classification",
+          "preprocess_mode_requested": "resize",
+          "preprocess_mode_effective": "resize",
+          "letterbox_pad_value_requested": 0,
+          "letterbox_pad_value_effective": 0,
+          "letterbox_pad_value": 0,
+          "preprocess": "exact_performance_resize_rgb_tensor_persisted_after_candidate_validation",
+          "source_image": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set/resources/validation/classification/val_by_wnid_n500_s20260710/images/n01443537/ILSVRC2012_val_00013623.JPEG",
+          "source_image_sha256": "7fcdd3d95ff2491a2a5fe235d786026b728ffe0f88d25c4543d9a3e253f71652",
+          "source_contract_shape": [
+            224,
+            224,
+            3
+          ],
+          "source_input_contract": {
+            "classification_preprocessing": "current_scale_only",
+            "color_space": "RGB",
+            "contract_source": "task_bound_dxcom_image_loader_preprocessing",
+            "dtype": "uint8",
+            "embedded_numeric_path": "dxcom_div255_only",
+            "layout": "HWC",
+            "letterbox_pad_value": 0,
+            "letterbox_pad_value_effective": 0,
+            "letterbox_pad_value_requested": 114,
+            "name": "input",
+            "normalization": "embedded_dxcom_preprocessing",
+            "preprocess_mode": "resize",
+            "preprocess_mode_effective": "resize",
+            "preprocess_mode_requested": "auto",
+            "shape": [
+              224,
+              224,
+              3
+            ],
+            "task": "classification"
+          },
+          "source_input_contract_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/part1_boundary_metadata.json",
+          "source_input_contract_sha256": "41df7f1b5eaeb0a650a906ba64f5292c409104505bce24daedad04f80ffee622"
+        },
+        "runtime_options": {
+          "frames": 1000,
+          "duration_s": 0.0,
+          "warmup": 100,
+          "queue_depth": 3,
+          "repetitions": 3,
+          "dump_outputs": true,
+          "dump_boundary": true,
+          "build": false,
+          "prepared_input_bound": true,
+          "task": "classification",
+          "preprocess_mode_requested": "resize",
+          "preprocess_mode_effective": "resize",
+          "letterbox_pad_value_requested": 0,
+          "letterbox_pad_value_effective": 0,
+          "letterbox_pad_value": 0,
+          "completion_execution_contract": null,
+          "completion_execution_contract_sha256": ""
+        },
+        "boundary_contract": {
+          "boundary_layout_requested": "as_input",
+          "boundary_layout_effective": "as_input",
+          "dequant_scale": null,
+          "dequant_zero_point": null,
+          "metadata_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/native_trt_meta.json",
+          "metadata_sha256": "76a0d0691b0cf1dea6df419349d3346c797b19a97096668e2ca95fe9ff9a7d60"
+        },
+        "source_contract_sha256": "",
+        "eval_run_id": "complete_set_20260907_161614",
+        "source_run_id": "deepx_to_trt",
+        "native_split_quality_binding": {
+          "artifacts": {
+            "boundary_metadata": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/part1_boundary_metadata.json",
+              "sha256": "41df7f1b5eaeb0a650a906ba64f5292c409104505bce24daedad04f80ffee622",
+              "size_bytes": 2050
+            },
+            "build_part2_onnx": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+              "sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+              "size_bytes": 3654704
+            },
+            "engine": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+              "sha256": "b246da69aec647fbb71bd58a625b01e1757a606a86c31a9564a7d348973da3be",
+              "size_bytes": 1838612
+            },
+            "engine_build_receipt": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/engine_build_receipt.json",
+              "sha256": "6c61e761e0fb66e8b735f6267e9bf739011cc808836b086d3b25d9a6c2610cfa",
+              "size_bytes": 2326
+            },
+            "native_trt_meta": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/native_trt_meta.json",
+              "sha256": "76a0d0691b0cf1dea6df419349d3346c797b19a97096668e2ca95fe9ff9a7d60",
+              "size_bytes": 8098
+            },
+            "part1_runtime": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/part1.dxnn",
+              "sha256": "d805160a5529b7ca9f62448c2d6f50303d59168e81350600389f294296e481dc",
+              "size_bytes": 79942131
+            },
+            "source_part2_onnx": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/benchmark_set/b132/source_part2.onnx",
+              "sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+              "size_bytes": 3654704
+            },
+            "trtexec": {
+              "path": "/usr/src/tensorrt/bin/trtexec",
+              "sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4",
+              "size_bytes": 1695696
+            }
+          },
+          "boundary_contract": {
+            "boundary_layout": "as_input",
+            "boundary_metadata_file_sha256": "41df7f1b5eaeb0a650a906ba64f5292c409104505bce24daedad04f80ffee622",
+            "boundary_metadata_sha256": "ebc5918be080b4f8fbc83ad819678b8cf9003b11cd351a8e8cc77ce702b1254f",
+            "boundary_tensor_dtype": "float32",
+            "boundary_tensor_name": "mean",
+            "boundary_tensor_shape": [
+              1,
+              912,
+              1,
+              1
+            ],
+            "boundary_transform": "identity",
+            "dequant_scale": null,
+            "dequant_zero_point": null,
+            "precision": "float32_layout_fp16"
+          },
+          "boundary_contract_sha256": "bb973ffd2080e59938914808a3ce184f35bb1b043e89fd97506048d3861d1def",
+          "boundary_metadata_payload": {
+            "backend": "deepx_to_trt",
+            "boundary_layout": "as_input",
+            "boundary_tensor": {
+              "canonical_part2_shape": [
+                1,
+                912,
+                1,
+                1
+              ],
+              "contract_source": "deepx_part1_output_contract_plus_source_part2_input",
+              "deepx_input_contract": {
+                "classification_preprocessing": "current_scale_only",
+                "color_space": "RGB",
+                "contract_source": "task_bound_dxcom_image_loader_preprocessing",
+                "dtype": "uint8",
+                "embedded_numeric_path": "dxcom_div255_only",
+                "layout": "HWC",
+                "letterbox_pad_value": 0,
+                "letterbox_pad_value_effective": 0,
+                "letterbox_pad_value_requested": 114,
+                "name": "input",
+                "normalization": "embedded_dxcom_preprocessing",
+                "preprocess_mode": "resize",
+                "preprocess_mode_effective": "resize",
+                "preprocess_mode_requested": "auto",
+                "shape": [
+                  224,
+                  224,
+                  3
+                ],
+                "task": "classification"
+              },
+              "deepx_output_contract_sha256": "895686dbb019b7093b241d0c09c4daee86c9e3ea95badbfb673e4dba304dbf46",
+              "dtype": "float32",
+              "name": "mean",
+              "output_names": [
+                "mean"
+              ],
+              "runtime_name": "mean",
+              "shape": [
+                1,
+                912,
+                1,
+                1
+              ]
+            },
+            "boundary_tensor_count": 1,
+            "boundary_transform": "identity",
+            "case_id": "b132",
+            "deepx_output_contract": {
+              "path": "/home/nx/splitpoint_runs/legacy_suite/complete_set_20260907_161614_regnet_x_1_6gf_orin_nx_deepx_m1_01/1/suite/b132/deepx/deepx_m1/part1/output_contract.json",
+              "sha256": "895686dbb019b7093b241d0c09c4daee86c9e3ea95badbfb673e4dba304dbf46",
+              "size_bytes": 2540
+            },
+            "metadata_sha256": "ebc5918be080b4f8fbc83ad819678b8cf9003b11cd351a8e8cc77ce702b1254f",
+            "model_id": "regnet_x_1_6gf",
+            "part1_artifact_sha256": "d805160a5529b7ca9f62448c2d6f50303d59168e81350600389f294296e481dc",
+            "part1_artifact_size_bytes": 79942131,
+            "schema": "onnx-splitpoint/native-part1-boundary-metadata",
+            "schema_version": 1,
+            "setup_id": "orin_nx_deepx_m1_01",
+            "source_run_id": "deepx_m1_to_tensorrt"
+          },
+          "boundary_metadata_value_sha256": "3245e3302e1909eb5457740c63a521342f227cb86b3436078b9807ef528c8e9e",
+          "central_quality_selection": {
+            "backend": "deepx_to_trt",
+            "case_id": "b132",
+            "central_result_sha256": "99687b02561af01d914cd403a8265f5e40e38b13d2f6cdf0d57941a6e46a86f3",
+            "eval_run_id": "complete_set_20260907_161614",
+            "model_id": "regnet_x_1_6gf",
+            "precision": "float32_layout_fp16",
+            "producer_binding_sha256": "b29535e1ded05efb432d5f373cb45c4afe9a5adab200ec3b102951fd6b0299be",
+            "receipt_sha256": "408d691bfa8ff6a8c5fae656eed1af78ca59d3bbe05b28fc601a87e77850e5c0",
+            "runtime_precision_identity": "float32_layout_fp16",
+            "schema": "onnx-splitpoint/native-split-quality-central-selection",
+            "schema_version": 1,
+            "setup_id": "orin_nx_deepx_m1_01",
+            "source_request_sha256": "acf82350b42f6af11cf8d7467670cec03c438e118c7ae60456b016ab5512afef",
+            "source_run_id": "deepx_to_trt",
+            "task": "classification",
+            "variant": "composed"
+          },
+          "central_quality_selection_sha256": "408d691bfa8ff6a8c5fae656eed1af78ca59d3bbe05b28fc601a87e77850e5c0",
+          "central_result_sha256": "99687b02561af01d914cd403a8265f5e40e38b13d2f6cdf0d57941a6e46a86f3",
+          "engine_build_receipt": {
+            "build_returncode": 0,
+            "command": [
+              "/usr/src/tensorrt/bin/trtexec",
+              "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+              "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+              "--fp16",
+              "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/timing.cache",
+              "--memPoolSize=workspace:4096"
+            ],
+            "dry_run": false,
+            "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+            "engine_sha256": "b246da69aec647fbb71bd58a625b01e1757a606a86c31a9564a7d348973da3be",
+            "receipt_sha256": "9d9850405f4c6ceb7f70734c8ce30c6c8591658b83ce92e668e19fd337cd75f0",
+            "schema": "onnx-splitpoint/tensorrt-engine-build-receipt",
+            "schema_version": 1,
+            "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+            "source_onnx_sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+            "trtexec": "/usr/src/tensorrt/bin/trtexec",
+            "trtexec_sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4"
+          },
+          "engine_build_receipt_canonical_size_bytes": 2244,
+          "engine_build_receipt_file_sha256": "6c61e761e0fb66e8b735f6267e9bf739011cc808836b086d3b25d9a6c2610cfa",
+          "engine_build_receipt_file_size_bytes": 2326,
+          "engine_build_receipt_outer_sha256": "f7a228eb93290b3964a6a90cd05483e72f363a89635df699ac2e2cd5c6565379",
+          "engine_build_receipt_sha256": "9d9850405f4c6ceb7f70734c8ce30c6c8591658b83ce92e668e19fd337cd75f0",
+          "eval_run_id": "complete_set_20260907_161614",
+          "local_artifact_verification": {
+            "artifact_names": [
+              "part1_runtime",
+              "boundary_metadata",
+              "source_part2_onnx",
+              "build_part2_onnx",
+              "engine",
+              "native_trt_meta",
+              "engine_build_receipt",
+              "trtexec"
+            ],
+            "artifact_set_sha256": "7f117ee0fdc89571490b6bfd9765a187cc5138d3d7dcfdc90a4a666cf88c758c",
+            "artifacts": {
+              "boundary_metadata": {
+                "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/part1_boundary_metadata.json",
+                "sha256": "41df7f1b5eaeb0a650a906ba64f5292c409104505bce24daedad04f80ffee622",
+                "size_bytes": 2050
+              },
+              "build_part2_onnx": {
+                "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+                "sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+                "size_bytes": 3654704
+              },
+              "engine": {
+                "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+                "sha256": "b246da69aec647fbb71bd58a625b01e1757a606a86c31a9564a7d348973da3be",
+                "size_bytes": 1838612
+              },
+              "engine_build_receipt": {
+                "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/engine_build_receipt.json",
+                "sha256": "6c61e761e0fb66e8b735f6267e9bf739011cc808836b086d3b25d9a6c2610cfa",
+                "size_bytes": 2326
+              },
+              "native_trt_meta": {
+                "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/native_trt_meta.json",
+                "sha256": "76a0d0691b0cf1dea6df419349d3346c797b19a97096668e2ca95fe9ff9a7d60",
+                "size_bytes": 8098
+              },
+              "part1_runtime": {
+                "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/part1.dxnn",
+                "sha256": "d805160a5529b7ca9f62448c2d6f50303d59168e81350600389f294296e481dc",
+                "size_bytes": 79942131
+              },
+              "source_part2_onnx": {
+                "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/benchmark_set/b132/source_part2.onnx",
+                "sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+                "size_bytes": 3654704
+              },
+              "trtexec": {
+                "path": "/usr/src/tensorrt/bin/trtexec",
+                "sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4",
+                "size_bytes": 1695696
+              }
+            },
+            "boundary_metadata_value_sha256": "3245e3302e1909eb5457740c63a521342f227cb86b3436078b9807ef528c8e9e",
+            "build_summary_row_sha256": "336afc978fb9ec4adaf3a5d371a22f68ff4d7b4d8710289252e2d93313da10b6",
+            "embedded_json_files": {
+              "boundary_metadata": {
+                "canonical_value_sha256": "3245e3302e1909eb5457740c63a521342f227cb86b3436078b9807ef528c8e9e",
+                "content_base64": "ewogICJiYWNrZW5kIjogImRlZXB4X3RvX3RydCIsCiAgImJvdW5kYXJ5X2xheW91dCI6ICJhc19pbnB1dCIsCiAgImJvdW5kYXJ5X3RlbnNvciI6IHsKICAgICJjYW5vbmljYWxfcGFydDJfc2hhcGUiOiBbCiAgICAgIDEsCiAgICAgIDkxMiwKICAgICAgMSwKICAgICAgMQogICAgXSwKICAgICJjb250cmFjdF9zb3VyY2UiOiAiZGVlcHhfcGFydDFfb3V0cHV0X2NvbnRyYWN0X3BsdXNfc291cmNlX3BhcnQyX2lucHV0IiwKICAgICJkZWVweF9pbnB1dF9jb250cmFjdCI6IHsKICAgICAgImNsYXNzaWZpY2F0aW9uX3ByZXByb2Nlc3NpbmciOiAiY3VycmVudF9zY2FsZV9vbmx5IiwKICAgICAgImNvbG9yX3NwYWNlIjogIlJHQiIsCiAgICAgICJjb250cmFjdF9zb3VyY2UiOiAidGFza19ib3VuZF9keGNvbV9pbWFnZV9sb2FkZXJfcHJlcHJvY2Vzc2luZyIsCiAgICAgICJkdHlwZSI6ICJ1aW50OCIsCiAgICAgICJlbWJlZGRlZF9udW1lcmljX3BhdGgiOiAiZHhjb21fZGl2MjU1X29ubHkiLAogICAgICAibGF5b3V0IjogIkhXQyIsCiAgICAgICJsZXR0ZXJib3hfcGFkX3ZhbHVlIjogMCwKICAgICAgImxldHRlcmJveF9wYWRfdmFsdWVfZWZmZWN0aXZlIjogMCwKICAgICAgImxldHRlcmJveF9wYWRfdmFsdWVfcmVxdWVzdGVkIjogMTE0LAogICAgICAibmFtZSI6ICJpbnB1dCIsCiAgICAgICJub3JtYWxpemF0aW9uIjogImVtYmVkZGVkX2R4Y29tX3ByZXByb2Nlc3NpbmciLAogICAgICAicHJlcHJvY2Vzc19tb2RlIjogInJlc2l6ZSIsCiAgICAgICJwcmVwcm9jZXNzX21vZGVfZWZmZWN0aXZlIjogInJlc2l6ZSIsCiAgICAgICJwcmVwcm9jZXNzX21vZGVfcmVxdWVzdGVkIjogImF1dG8iLAogICAgICAic2hhcGUiOiBbCiAgICAgICAgMjI0LAogICAgICAgIDIyNCwKICAgICAgICAzCiAgICAgIF0sCiAgICAgICJ0YXNrIjogImNsYXNzaWZpY2F0aW9uIgogICAgfSwKICAgICJkZWVweF9vdXRwdXRfY29udHJhY3Rfc2hhMjU2IjogIjg5NTY4NmRiYjAxOWI3MDkzYjI0MWQwYzA5YzRkYWVlODZjOWUzZWE5NWJhZGJmYjY3M2U0ZGJhMzA0ZGJmNDYiLAogICAgImR0eXBlIjogImZsb2F0MzIiLAogICAgIm5hbWUiOiAibWVhbiIsCiAgICAib3V0cHV0X25hbWVzIjogWwogICAgICAibWVhbiIKICAgIF0sCiAgICAicnVudGltZV9uYW1lIjogIm1lYW4iLAogICAgInNoYXBlIjogWwogICAgICAxLAogICAgICA5MTIsCiAgICAgIDEsCiAgICAgIDEKICAgIF0KICB9LAogICJib3VuZGFyeV90ZW5zb3JfY291bnQiOiAxLAogICJib3VuZGFyeV90cmFuc2Zvcm0iOiAiaWRlbnRpdHkiLAogICJjYXNlX2lkIjogImIxMzIiLAogICJkZWVweF9vdXRwdXRfY29udHJhY3QiOiB7CiAgICAicGF0aCI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvbGVnYWN5X3N1aXRlL2NvbXBsZXRlX3NldF8yMDI2MDkwN18xNjE2MTRfcmVnbmV0X3hfMV82Z2Zfb3Jpbl9ueF9kZWVweF9tMV8wMS8xL3N1aXRlL2IxMzIvZGVlcHgvZGVlcHhfbTEvcGFydDEvb3V0cHV0X2NvbnRyYWN0Lmpzb24iLAogICAgInNoYTI1NiI6ICI4OTU2ODZkYmIwMTliNzA5M2IyNDFkMGMwOWM0ZGFlZTg2YzllM2VhOTViYWRiZmI2NzNlNGRiYTMwNGRiZjQ2IiwKICAgICJzaXplX2J5dGVzIjogMjU0MAogIH0sCiAgIm1ldGFkYXRhX3NoYTI1NiI6ICJlYmM1OTE4YmUwODBiNGY4ZmJjODNhZDgxOTY3OGI4Y2Y5MDAzYjExY2QzNTFhOGU4Y2M3N2NlNzAyYjEyNTRmIiwKICAibW9kZWxfaWQiOiAicmVnbmV0X3hfMV82Z2YiLAogICJwYXJ0MV9hcnRpZmFjdF9zaGEyNTYiOiAiZDgwNTE2MGE1NTI5YjdjYTlmNjI0NDhjMmQ2ZjUwMzAzZDU5MTY4ZTgxMzUwNjAwMzg5ZjI5NDI5NmU0ODFkYyIsCiAgInBhcnQxX2FydGlmYWN0X3NpemVfYnl0ZXMiOiA3OTk0MjEzMSwKICAic2NoZW1hIjogIm9ubngtc3BsaXRwb2ludC9uYXRpdmUtcGFydDEtYm91bmRhcnktbWV0YWRhdGEiLAogICJzY2hlbWFfdmVyc2lvbiI6IDEsCiAgInNldHVwX2lkIjogIm9yaW5fbnhfZGVlcHhfbTFfMDEiLAogICJzb3VyY2VfcnVuX2lkIjogImRlZXB4X20xX3RvX3RlbnNvcnJ0Igp9Cg==",
+                "encoding": "base64",
+                "file_sha256": "41df7f1b5eaeb0a650a906ba64f5292c409104505bce24daedad04f80ffee622",
+                "file_size_bytes": 2050
+              },
+              "engine_build_receipt": {
+                "canonical_value_sha256": "f7a228eb93290b3964a6a90cd05483e72f363a89635df699ac2e2cd5c6565379",
+                "content_base64": "ewogICJidWlsZF9yZXR1cm5jb2RlIjogMCwKICAiY29tbWFuZCI6IFsKICAgICIvdXNyL3NyYy90ZW5zb3JydC9iaW4vdHJ0ZXhlYyIsCiAgICAiLS1vbm54PS9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L3JlZ25ldF94XzFfNmdmLWFhMzUzMzlkMDNjOWViZjQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9kZWVweF9tMV8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2RlZXB4X3RvX3RydC85ODExYTg4MDczYzA3MTc0Nzg2MTU2ZGQ3NTlhYTIyZmVlNWM5YjcxN2FlZTAwNTQxZjYwOTAxZTJkY2ViMDA4L2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL2Zsb2F0MzJfbGF5b3V0X2ZwMTYvc291cmNlX3BhcnQyX2Zsb2F0MzJfbGF5b3V0X2JyaWRnZS5vbm54IiwKICAgICItLXNhdmVFbmdpbmU9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvZmxvYXQzMl9sYXlvdXRfZnAxNi9wYXJ0Ml9mbG9hdDMyX2xheW91dF9mcDE2LmVuZ2luZSIsCiAgICAiLS1mcDE2IiwKICAgICItLXRpbWluZ0NhY2hlRmlsZT0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfZGVlcHhfbTFfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9kZWVweF90b190cnQvOTgxMWE4ODA3M2MwNzE3NDc4NjE1NmRkNzU5YWEyMmZlZTVjOWI3MTdhZWUwMDU0MWY2MDkwMWUyZGNlYjAwOC9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi9mbG9hdDMyX2xheW91dF9mcDE2L3RpbWluZy5jYWNoZSIsCiAgICAiLS1tZW1Qb29sU2l6ZT13b3Jrc3BhY2U6NDA5NiIKICBdLAogICJkcnlfcnVuIjogZmFsc2UsCiAgImVuZ2luZSI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfZGVlcHhfbTFfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9kZWVweF90b190cnQvOTgxMWE4ODA3M2MwNzE3NDc4NjE1NmRkNzU5YWEyMmZlZTVjOWI3MTdhZWUwMDU0MWY2MDkwMWUyZGNlYjAwOC9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi9mbG9hdDMyX2xheW91dF9mcDE2L3BhcnQyX2Zsb2F0MzJfbGF5b3V0X2ZwMTYuZW5naW5lIiwKICAiZW5naW5lX3NoYTI1NiI6ICJiMjQ2ZGE2OWFlYzY0N2ZiYjcxYmQ1OGE2MjViMDFlMTc1N2E2MDZhODZjMzFhOTU2NGE3ZDM0ODk3M2RhM2JlIiwKICAicmVjZWlwdF9zaGEyNTYiOiAiOWQ5ODUwNDA1ZjRjNmNlYjdmNzA3MzRjOGNlMzBjNmM4NTkxNjU4YjgzY2U5MmU2NjhlMTlmZDMzN2NkNzVmMCIsCiAgInNjaGVtYSI6ICJvbm54LXNwbGl0cG9pbnQvdGVuc29ycnQtZW5naW5lLWJ1aWxkLXJlY2VpcHQiLAogICJzY2hlbWFfdmVyc2lvbiI6IDEsCiAgInNvdXJjZV9vbm54IjogIi9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L3JlZ25ldF94XzFfNmdmLWFhMzUzMzlkMDNjOWViZjQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9kZWVweF9tMV8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2RlZXB4X3RvX3RydC85ODExYTg4MDczYzA3MTc0Nzg2MTU2ZGQ3NTlhYTIyZmVlNWM5YjcxN2FlZTAwNTQxZjYwOTAxZTJkY2ViMDA4L2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL2Zsb2F0MzJfbGF5b3V0X2ZwMTYvc291cmNlX3BhcnQyX2Zsb2F0MzJfbGF5b3V0X2JyaWRnZS5vbm54IiwKICAic291cmNlX29ubnhfc2hhMjU2IjogIjBjNGNhMzFlYjZhZjQ0MDM1NjJiMWYwNGRmNzEwMzc0M2IxNzM2NzdmOGVhMzNiMDEzYTQzZDE5OGZkMDIxMGQiLAogICJ0cnRleGVjIjogIi91c3Ivc3JjL3RlbnNvcnJ0L2Jpbi90cnRleGVjIiwKICAidHJ0ZXhlY19zaGEyNTYiOiAiYjgwMDk5MDUwODc5M2E5YmY1MDcxM2Q3OGQ0ZmVkZmU0NzUzODFkOGNkNzQ5YWJkYTgwOTA5YjkxOTdmYTFjNCIKfQ==",
+                "encoding": "base64",
+                "file_sha256": "6c61e761e0fb66e8b735f6267e9bf739011cc808836b086d3b25d9a6c2610cfa",
+                "file_size_bytes": 2326
+              },
+              "native_trt_meta": {
+                "canonical_value_sha256": "336afc978fb9ec4adaf3a5d371a22f68ff4d7b4d8710289252e2d93313da10b6",
+                "content_base64": "ewogICJidWlsZCI6IHsKICAgICJjYWNoZV9oaXQiOiB0cnVlLAogICAgImNtZCI6IFsKICAgICAgIi91c3Ivc3JjL3RlbnNvcnJ0L2Jpbi90cnRleGVjIiwKICAgICAgIi0tb25ueD0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfZGVlcHhfbTFfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9kZWVweF90b190cnQvOTgxMWE4ODA3M2MwNzE3NDc4NjE1NmRkNzU5YWEyMmZlZTVjOWI3MTdhZWUwMDU0MWY2MDkwMWUyZGNlYjAwOC9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi9mbG9hdDMyX2xheW91dF9mcDE2L3NvdXJjZV9wYXJ0Ml9mbG9hdDMyX2xheW91dF9icmlkZ2Uub25ueCIsCiAgICAgICItLXNhdmVFbmdpbmU9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvZmxvYXQzMl9sYXlvdXRfZnAxNi9wYXJ0Ml9mbG9hdDMyX2xheW91dF9mcDE2LmVuZ2luZSIsCiAgICAgICItLWZwMTYiLAogICAgICAiLS10aW1pbmdDYWNoZUZpbGU9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvZmxvYXQzMl9sYXlvdXRfZnAxNi90aW1pbmcuY2FjaGUiLAogICAgICAiLS1tZW1Qb29sU2l6ZT13b3Jrc3BhY2U6NDA5NiIKICAgIF0sCiAgICAiY29tcGlsZXJfZGlzcGF0Y2hlZCI6IGZhbHNlLAogICAgImRyeV9ydW4iOiBmYWxzZSwKICAgICJldmlkZW5jZV9zb3VyY2UiOiAidmVyaWZpZWRfZW5naW5lX2J1aWxkX3JlY2VpcHQiLAogICAgInJldHVybmNvZGUiOiAwCiAgfSwKICAiYnVpbGRfYXR0ZW1wdHMiOiBbXSwKICAiYnVpbGRfb2siOiB0cnVlLAogICJjYXNlIjogImIxMzIiLAogICJlbmdpbmUiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvZmxvYXQzMl9sYXlvdXRfZnAxNi9wYXJ0Ml9mbG9hdDMyX2xheW91dF9mcDE2LmVuZ2luZSIsCiAgImVuZ2luZV9idWlsZF9yZWNlaXB0IjogewogICAgImJ1aWxkX3JldHVybmNvZGUiOiAwLAogICAgImNvbW1hbmQiOiBbCiAgICAgICIvdXNyL3NyYy90ZW5zb3JydC9iaW4vdHJ0ZXhlYyIsCiAgICAgICItLW9ubng9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvZmxvYXQzMl9sYXlvdXRfZnAxNi9zb3VyY2VfcGFydDJfZmxvYXQzMl9sYXlvdXRfYnJpZGdlLm9ubngiLAogICAgICAiLS1zYXZlRW5naW5lPS9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L3JlZ25ldF94XzFfNmdmLWFhMzUzMzlkMDNjOWViZjQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9kZWVweF9tMV8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2RlZXB4X3RvX3RydC85ODExYTg4MDczYzA3MTc0Nzg2MTU2ZGQ3NTlhYTIyZmVlNWM5YjcxN2FlZTAwNTQxZjYwOTAxZTJkY2ViMDA4L2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL2Zsb2F0MzJfbGF5b3V0X2ZwMTYvcGFydDJfZmxvYXQzMl9sYXlvdXRfZnAxNi5lbmdpbmUiLAogICAgICAiLS1mcDE2IiwKICAgICAgIi0tdGltaW5nQ2FjaGVGaWxlPS9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L3JlZ25ldF94XzFfNmdmLWFhMzUzMzlkMDNjOWViZjQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9kZWVweF9tMV8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2RlZXB4X3RvX3RydC85ODExYTg4MDczYzA3MTc0Nzg2MTU2ZGQ3NTlhYTIyZmVlNWM5YjcxN2FlZTAwNTQxZjYwOTAxZTJkY2ViMDA4L2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL2Zsb2F0MzJfbGF5b3V0X2ZwMTYvdGltaW5nLmNhY2hlIiwKICAgICAgIi0tbWVtUG9vbFNpemU9d29ya3NwYWNlOjQwOTYiCiAgICBdLAogICAgImRyeV9ydW4iOiBmYWxzZSwKICAgICJlbmdpbmUiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvZmxvYXQzMl9sYXlvdXRfZnAxNi9wYXJ0Ml9mbG9hdDMyX2xheW91dF9mcDE2LmVuZ2luZSIsCiAgICAiZW5naW5lX3NoYTI1NiI6ICJiMjQ2ZGE2OWFlYzY0N2ZiYjcxYmQ1OGE2MjViMDFlMTc1N2E2MDZhODZjMzFhOTU2NGE3ZDM0ODk3M2RhM2JlIiwKICAgICJyZWNlaXB0X3NoYTI1NiI6ICI5ZDk4NTA0MDVmNGM2Y2ViN2Y3MDczNGM4Y2UzMGM2Yzg1OTE2NThiODNjZTkyZTY2OGUxOWZkMzM3Y2Q3NWYwIiwKICAgICJzY2hlbWEiOiAib25ueC1zcGxpdHBvaW50L3RlbnNvcnJ0LWVuZ2luZS1idWlsZC1yZWNlaXB0IiwKICAgICJzY2hlbWFfdmVyc2lvbiI6IDEsCiAgICAic291cmNlX29ubngiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvZmxvYXQzMl9sYXlvdXRfZnAxNi9zb3VyY2VfcGFydDJfZmxvYXQzMl9sYXlvdXRfYnJpZGdlLm9ubngiLAogICAgInNvdXJjZV9vbm54X3NoYTI1NiI6ICIwYzRjYTMxZWI2YWY0NDAzNTYyYjFmMDRkZjcxMDM3NDNiMTczNjc3ZjhlYTMzYjAxM2E0M2QxOThmZDAyMTBkIiwKICAgICJ0cnRleGVjIjogIi91c3Ivc3JjL3RlbnNvcnJ0L2Jpbi90cnRleGVjIiwKICAgICJ0cnRleGVjX3NoYTI1NiI6ICJiODAwOTkwNTA4NzkzYTliZjUwNzEzZDc4ZDRmZWRmZTQ3NTM4MWQ4Y2Q3NDlhYmRhODA5MDliOTE5N2ZhMWM0IgogIH0sCiAgImVuZ2luZV9idWlsZF9yZWNlaXB0X3BhdGgiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvZmxvYXQzMl9sYXlvdXRfZnAxNi9lbmdpbmVfYnVpbGRfcmVjZWlwdC5qc29uIiwKICAiZW5naW5lX2J1aWxkX3JlY2VpcHRfc3RhdHVzIjogImVuZ2luZV9idWlsZF9yZWNlaXB0X3ZlcmlmaWVkIiwKICAiaW5wdXRzIjogWwogICAgewogICAgICAiZWxlbV90eXBlIjogIkZMT0FUIiwKICAgICAgImhhc19keW5hbWljIjogZmFsc2UsCiAgICAgICJuYW1lIjogIm1lYW4iLAogICAgICAic2hhcGUiOiBbCiAgICAgICAgMSwKICAgICAgICA5MTIsCiAgICAgICAgMSwKICAgICAgICAxCiAgICAgIF0KICAgIH0KICBdLAogICJpbnB1dHNfc3RhdGljIjogdHJ1ZSwKICAib25ueCI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfZGVlcHhfbTFfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9kZWVweF90b190cnQvOTgxMWE4ODA3M2MwNzE3NDc4NjE1NmRkNzU5YWEyMmZlZTVjOWI3MTdhZWUwMDU0MWY2MDkwMWUyZGNlYjAwOC9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi9mbG9hdDMyX2xheW91dF9mcDE2L3NvdXJjZV9wYXJ0Ml9mbG9hdDMyX2xheW91dF9icmlkZ2Uub25ueCIsCiAgIm91dHB1dHMiOiBbCiAgICB7CiAgICAgICJlbGVtX3R5cGUiOiAiRkxPQVQiLAogICAgICAiaGFzX2R5bmFtaWMiOiBmYWxzZSwKICAgICAgIm5hbWUiOiAibG9naXRzIiwKICAgICAgInNoYXBlIjogWwogICAgICAgIDEsCiAgICAgICAgMTAwMAogICAgICBdCiAgICB9CiAgXSwKICAicHJlY2lzaW9uIjogImZsb2F0MzJfbGF5b3V0X2ZwMTYiLAogICJxdWFsaXR5X2ZpcnN0X2lkZW50aXR5Ijoge30sCiAgInJlcXVlc3RlZF9wcmVjaXNpb24iOiAiZmxvYXQzMl9sYXlvdXRfZnAxNiIsCiAgInNjaGVtYSI6ICJvbm54LXNwbGl0cG9pbnQvbmF0aXZlLXRydC1tZXRhIiwKICAic2NoZW1hX3ZlcnNpb24iOiAxLAogICJzaGFwZXNfYXJnIjogIiIsCiAgInNoYXBlc19wb2xpY3lfZWZmZWN0aXZlIjogImF1dG9fc3RhdGljX29taXQiLAogICJzb3VyY2Vfb25ueCI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfZGVlcHhfbTFfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9kZWVweF90b190cnQvOTgxMWE4ODA3M2MwNzE3NDc4NjE1NmRkNzU5YWEyMmZlZTVjOWI3MTdhZWUwMDU0MWY2MDkwMWUyZGNlYjAwOC9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi9mbG9hdDMyX2xheW91dF9mcDE2L3NvdXJjZV9wYXJ0Ml9mbG9hdDMyX2xheW91dF9icmlkZ2Uub25ueCIsCiAgInRydF9jYWNoZSI6IHsKICAgICJhcnRpZmFjdF9wYXRoIjogIi9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L3JlZ25ldF94XzFfNmdmLWFhMzUzMzlkMDNjOWViZjQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9kZWVweF9tMV8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2RlZXB4X3RvX3RydC85ODExYTg4MDczYzA3MTc0Nzg2MTU2ZGQ3NTlhYTIyZmVlNWM5YjcxN2FlZTAwNTQxZjYwOTAxZTJkY2ViMDA4L2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL2Zsb2F0MzJfbGF5b3V0X2ZwMTYvcGFydDJfZmxvYXQzMl9sYXlvdXRfZnAxNi5lbmdpbmUiLAogICAgImNhc2VfaWQiOiAiYjEzMiIsCiAgICAiY29tcGlsZXJfZGlzcGF0Y2hlZCI6IGZhbHNlLAogICAgImlkZW50aXR5IjogIjlkOTg1MDQwNWY0YzZjZWI3ZjcwNzM0YzhjZTMwYzZjODU5MTY1OGI4M2NlOTJlNjY4ZTE5ZmQzMzdjZDc1ZjAiLAogICAgIm1vZGVsX2lkIjogInNvdXJjZV9wYXJ0Ml9mbG9hdDMyX2xheW91dF9icmlkZ2UiLAogICAgIm91dGNvbWUiOiAicmV1c2VkIiwKICAgICJyZWFzb24iOiAiY29tcGF0aWJsZV9yZWNlaXB0IiwKICAgICJyZWNlaXB0X3BhdGgiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvZmxvYXQzMl9sYXlvdXRfZnAxNi9lbmdpbmVfYnVpbGRfcmVjZWlwdC5qc29uIiwKICAgICJyb2xlIjogInBhcnQyIiwKICAgICJzdGF0dXMiOiAiSElUIgogIH0sCiAgInVpbnQ4X2Nhc3RfYnJpZGdlIjogewogICAgImJvdW5kYXJ5X2xheW91dCI6IHsKICAgICAgImFwcGxpZWQiOiBmYWxzZSwKICAgICAgImVmZmVjdGl2ZSI6ICJhc19pbnB1dCIsCiAgICAgICJyZXF1ZXN0ZWQiOiAiYXNfaW5wdXQiCiAgICB9LAogICAgImJyaWRnZSI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfZGVlcHhfbTFfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9kZWVweF90b190cnQvOTgxMWE4ODA3M2MwNzE3NDc4NjE1NmRkNzU5YWEyMmZlZTVjOWI3MTdhZWUwMDU0MWY2MDkwMWUyZGNlYjAwOC9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi9mbG9hdDMyX2xheW91dF9mcDE2L3NvdXJjZV9wYXJ0Ml9mbG9hdDMyX2xheW91dF9icmlkZ2Uub25ueCIsCiAgICAiYnJpZGdlX291dHB1dCI6ICJtZWFuIiwKICAgICJicmlkZ2Vfc2hhMjU2IjogIjBjNGNhMzFlYjZhZjQ0MDM1NjJiMWYwNGRmNzEwMzc0M2IxNzM2NzdmOGVhMzNiMDEzYTQzZDE5OGZkMDIxMGQiLAogICAgImlucHV0X2R0eXBlIjogIkZMT0FUIiwKICAgICJpbnB1dF9uYW1lIjogIm1lYW4iLAogICAgImlucHV0X3NoYXBlIjogWwogICAgICAxLAogICAgICA5MTIsCiAgICAgIDEsCiAgICAgIDEKICAgIF0sCiAgICAicGFyYW1zX3NvdXJjZSI6ICJoYWlsb3J0X2Zsb2F0MzJfdnN0cmVhbSIsCiAgICAicmVwbGFjZWRfdXNlcyI6IDAsCiAgICAic2NoZW1hIjogIm9ubngtc3BsaXRwb2ludC9mbG9hdDMyLWxheW91dC1icmlkZ2UiLAogICAgInNjaGVtYV92ZXJzaW9uIjogMSwKICAgICJzb3VyY2UiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvYmVuY2htYXJrX3NldC9iMTMyL3NvdXJjZV9wYXJ0Mi5vbm54IiwKICAgICJzb3VyY2Vfc2hhMjU2IjogIjBjNGNhMzFlYjZhZjQ0MDM1NjJiMWYwNGRmNzEwMzc0M2IxNzM2NzdmOGVhMzNiMDEzYTQzZDE5OGZkMDIxMGQiCiAgfSwKICAidmFyaWFudCI6ICJwYXJ0MiIKfQ==",
+                "encoding": "base64",
+                "file_sha256": "76a0d0691b0cf1dea6df419349d3346c797b19a97096668e2ca95fe9ff9a7d60",
+                "file_size_bytes": 8098
+              }
+            },
+            "engine_build_receipt_canonical_size_bytes": 2244,
+            "engine_build_receipt_inner_sha256": "9d9850405f4c6ceb7f70734c8ce30c6c8591658b83ce92e668e19fd337cd75f0",
+            "engine_build_receipt_outer_sha256": "f7a228eb93290b3964a6a90cd05483e72f363a89635df699ac2e2cd5c6565379",
+            "native_trt_meta_payload_sha256": "336afc978fb9ec4adaf3a5d371a22f68ff4d7b4d8710289252e2d93313da10b6",
+            "proof_sha256": "832abeb384a2cea4b36091edbcbd8c92d9e87ab323dc4c66ab8a2f1c9df3480f",
+            "schema": "onnx-splitpoint/native-split-local-artifact-verification",
+            "schema_version": 1,
+            "trt_build_command_sha256": "70cceba6e2dd404137b4cb562b2a300de05e73ba040c755d017c93fabb0eaa16",
+            "verification_kind": "producer_local_file_rehash"
+          },
+          "native_trt_meta": {
+            "build": {
+              "cache_hit": true,
+              "cmd": [
+                "/usr/src/tensorrt/bin/trtexec",
+                "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+                "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+                "--fp16",
+                "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/timing.cache",
+                "--memPoolSize=workspace:4096"
+              ],
+              "compiler_dispatched": false,
+              "dry_run": false,
+              "evidence_source": "verified_engine_build_receipt",
+              "returncode": 0
+            },
+            "build_attempts": [],
+            "build_ok": true,
+            "case": "b132",
+            "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+            "engine_build_receipt": {
+              "build_returncode": 0,
+              "command": [
+                "/usr/src/tensorrt/bin/trtexec",
+                "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+                "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+                "--fp16",
+                "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/timing.cache",
+                "--memPoolSize=workspace:4096"
+              ],
+              "dry_run": false,
+              "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+              "engine_sha256": "b246da69aec647fbb71bd58a625b01e1757a606a86c31a9564a7d348973da3be",
+              "receipt_sha256": "9d9850405f4c6ceb7f70734c8ce30c6c8591658b83ce92e668e19fd337cd75f0",
+              "schema": "onnx-splitpoint/tensorrt-engine-build-receipt",
+              "schema_version": 1,
+              "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+              "source_onnx_sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+              "trtexec": "/usr/src/tensorrt/bin/trtexec",
+              "trtexec_sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4"
+            },
+            "engine_build_receipt_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/engine_build_receipt.json",
+            "engine_build_receipt_status": "engine_build_receipt_verified",
+            "inputs": [
+              {
+                "elem_type": "FLOAT",
+                "has_dynamic": false,
+                "name": "mean",
+                "shape": [
+                  1,
+                  912,
+                  1,
+                  1
+                ]
+              }
+            ],
+            "inputs_static": true,
+            "onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+            "outputs": [
+              {
+                "elem_type": "FLOAT",
+                "has_dynamic": false,
+                "name": "logits",
+                "shape": [
+                  1,
+                  1000
+                ]
+              }
+            ],
+            "precision": "float32_layout_fp16",
+            "quality_first_identity": {},
+            "requested_precision": "float32_layout_fp16",
+            "schema": "onnx-splitpoint/native-trt-meta",
+            "schema_version": 1,
+            "shapes_arg": "",
+            "shapes_policy_effective": "auto_static_omit",
+            "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+            "trt_cache": {
+              "artifact_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+              "case_id": "b132",
+              "compiler_dispatched": false,
+              "identity": "9d9850405f4c6ceb7f70734c8ce30c6c8591658b83ce92e668e19fd337cd75f0",
+              "model_id": "source_part2_float32_layout_bridge",
+              "outcome": "reused",
+              "reason": "compatible_receipt",
+              "receipt_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/engine_build_receipt.json",
+              "role": "part2",
+              "status": "HIT"
+            },
+            "uint8_cast_bridge": {
+              "boundary_layout": {
+                "applied": false,
+                "effective": "as_input",
+                "requested": "as_input"
+              },
+              "bridge": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+              "bridge_output": "mean",
+              "bridge_sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+              "input_dtype": "FLOAT",
+              "input_name": "mean",
+              "input_shape": [
+                1,
+                912,
+                1,
+                1
+              ],
+              "params_source": "hailort_float32_vstream",
+              "replaced_uses": 0,
+              "schema": "onnx-splitpoint/float32-layout-bridge",
+              "schema_version": 1,
+              "source": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/benchmark_set/b132/source_part2.onnx",
+              "source_sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d"
+            },
+            "variant": "part2"
+          },
+          "native_trt_meta_file_sha256": "76a0d0691b0cf1dea6df419349d3346c797b19a97096668e2ca95fe9ff9a7d60",
+          "native_trt_meta_file_size_bytes": 8098,
+          "native_trt_meta_payload": {
+            "build": {
+              "cache_hit": true,
+              "cmd": [
+                "/usr/src/tensorrt/bin/trtexec",
+                "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+                "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+                "--fp16",
+                "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/timing.cache",
+                "--memPoolSize=workspace:4096"
+              ],
+              "compiler_dispatched": false,
+              "dry_run": false,
+              "evidence_source": "verified_engine_build_receipt",
+              "returncode": 0
+            },
+            "build_attempts": [],
+            "build_ok": true,
+            "case": "b132",
+            "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+            "engine_build_receipt": {
+              "build_returncode": 0,
+              "command": [
+                "/usr/src/tensorrt/bin/trtexec",
+                "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+                "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+                "--fp16",
+                "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/timing.cache",
+                "--memPoolSize=workspace:4096"
+              ],
+              "dry_run": false,
+              "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+              "engine_sha256": "b246da69aec647fbb71bd58a625b01e1757a606a86c31a9564a7d348973da3be",
+              "receipt_sha256": "9d9850405f4c6ceb7f70734c8ce30c6c8591658b83ce92e668e19fd337cd75f0",
+              "schema": "onnx-splitpoint/tensorrt-engine-build-receipt",
+              "schema_version": 1,
+              "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+              "source_onnx_sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+              "trtexec": "/usr/src/tensorrt/bin/trtexec",
+              "trtexec_sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4"
+            },
+            "engine_build_receipt_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/engine_build_receipt.json",
+            "engine_build_receipt_status": "engine_build_receipt_verified",
+            "inputs": [
+              {
+                "elem_type": "FLOAT",
+                "has_dynamic": false,
+                "name": "mean",
+                "shape": [
+                  1,
+                  912,
+                  1,
+                  1
+                ]
+              }
+            ],
+            "inputs_static": true,
+            "onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+            "outputs": [
+              {
+                "elem_type": "FLOAT",
+                "has_dynamic": false,
+                "name": "logits",
+                "shape": [
+                  1,
+                  1000
+                ]
+              }
+            ],
+            "precision": "float32_layout_fp16",
+            "quality_first_identity": {},
+            "requested_precision": "float32_layout_fp16",
+            "schema": "onnx-splitpoint/native-trt-meta",
+            "schema_version": 1,
+            "shapes_arg": "",
+            "shapes_policy_effective": "auto_static_omit",
+            "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+            "trt_cache": {
+              "artifact_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+              "case_id": "b132",
+              "compiler_dispatched": false,
+              "identity": "9d9850405f4c6ceb7f70734c8ce30c6c8591658b83ce92e668e19fd337cd75f0",
+              "model_id": "source_part2_float32_layout_bridge",
+              "outcome": "reused",
+              "reason": "compatible_receipt",
+              "receipt_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/engine_build_receipt.json",
+              "role": "part2",
+              "status": "HIT"
+            },
+            "uint8_cast_bridge": {
+              "boundary_layout": {
+                "applied": false,
+                "effective": "as_input",
+                "requested": "as_input"
+              },
+              "bridge": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+              "bridge_output": "mean",
+              "bridge_sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+              "input_dtype": "FLOAT",
+              "input_name": "mean",
+              "input_shape": [
+                1,
+                912,
+                1,
+                1
+              ],
+              "params_source": "hailort_float32_vstream",
+              "replaced_uses": 0,
+              "schema": "onnx-splitpoint/float32-layout-bridge",
+              "schema_version": 1,
+              "source": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/benchmark_set/b132/source_part2.onnx",
+              "source_sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d"
+            },
+            "variant": "part2"
+          },
+          "native_trt_meta_payload_sha256": "336afc978fb9ec4adaf3a5d371a22f68ff4d7b4d8710289252e2d93313da10b6",
+          "native_trt_meta_sha256": "336afc978fb9ec4adaf3a5d371a22f68ff4d7b4d8710289252e2d93313da10b6",
+          "performance_claims_emitted": false,
+          "preselection": {
+            "backend": "deepx_to_trt",
+            "boundary_dtype": "float32",
+            "boundary_layout": "as_input",
+            "boundary_metadata_file_sha256": "41df7f1b5eaeb0a650a906ba64f5292c409104505bce24daedad04f80ffee622",
+            "boundary_metadata_file_size_bytes": 2050,
+            "boundary_metadata_sha256": "ebc5918be080b4f8fbc83ad819678b8cf9003b11cd351a8e8cc77ce702b1254f",
+            "boundary_tensor_dtype": "float32",
+            "boundary_tensor_name": "mean",
+            "boundary_tensor_shape": [
+              1,
+              912,
+              1,
+              1
+            ],
+            "boundary_transform": "identity",
+            "canonical_part2_shape": [
+              1,
+              912,
+              1,
+              1
+            ],
+            "case_id": "b132",
+            "case_scope": "any_generated_split_case",
+            "dequant_scale": null,
+            "dequant_zero_point": null,
+            "engine_rebuild_allowed_after_quality": false,
+            "hailo_format": null,
+            "letterbox_pad_value": 0,
+            "model_family": "regnet",
+            "model_id": "regnet_x_1_6gf",
+            "part1_artifact_sha256": "d805160a5529b7ca9f62448c2d6f50303d59168e81350600389f294296e481dc",
+            "part1_artifact_size_bytes": 79942131,
+            "policy_sha256": "70db8bfff44a0e1512a960a1a2c090ee6952eab04906e5e99c96e1d90f6d4a22",
+            "precision": "float32_layout_fp16",
+            "preprocess_mode": "resize",
+            "quantization_policy": "none",
+            "schema": "onnx-splitpoint/native-split-quality-preselection",
+            "schema_version": 1,
+            "selection_sha256": "e9488868b5b49ac8b0b719c2d58a88c6de8c5fc53bd36079c9b1f90df948764b",
+            "setup_id": "orin_nx_deepx_m1_01",
+            "stage2_backend": "native_tensorrt",
+            "task": "classification"
+          },
+          "preselection_sha256": "e9488868b5b49ac8b0b719c2d58a88c6de8c5fc53bd36079c9b1f90df948764b",
+          "producer_binding_sha256": "b29535e1ded05efb432d5f373cb45c4afe9a5adab200ec3b102951fd6b0299be",
+          "producer_command": [
+            "/home/nx/venvs/deepx-runtime/bin/python3",
+            "/home/nx/splitpoint_runs/legacy_suite/complete_set_20260907_161614_regnet_x_1_6gf_orin_nx_deepx_m1_01/1/suite/splitpoint_runners/native_trt_from_benchmarkset.py",
+            "--benchmark-set",
+            "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/benchmark_set",
+            "--case",
+            "b132",
+            "--variants",
+            "part2",
+            "--precision",
+            "float32_layout_fp16",
+            "--out-dir",
+            "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache",
+            "--boundary-layout",
+            "as_input",
+            "--workspace-mb",
+            "4096",
+            "--workspace-mode",
+            "auto",
+            "--no-run-smoke",
+            "--json-out",
+            "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/native_trt_summary.json",
+            "--no-build"
+          ],
+          "quality_completed": true,
+          "schema": "onnx-splitpoint/native-split-quality-binding",
+          "schema_version": 1,
+          "source_request_sha256": "acf82350b42f6af11cf8d7467670cec03c438e118c7ae60456b016ab5512afef",
+          "source_run_id": "deepx_m1_to_tensorrt",
+          "trt_build_command_sha256": "70cceba6e2dd404137b4cb562b2a300de05e73ba040c755d017c93fabb0eaa16",
+          "binding_sha256": "4e6ff47bfdbfc6bce40384d629d12e66f0852fcf3827867277271e4117888ffa"
+        },
+        "native_split_quality_binding_sha256": "4e6ff47bfdbfc6bce40384d629d12e66f0852fcf3827867277271e4117888ffa",
+        "native_split_quality_eval_run_id": "complete_set_20260907_161614",
+        "native_split_quality_source_run_id": "deepx_to_trt",
+        "source_request_sha256": "acf82350b42f6af11cf8d7467670cec03c438e118c7ae60456b016ab5512afef",
+        "native_split_quality_source_request_sha256": "acf82350b42f6af11cf8d7467670cec03c438e118c7ae60456b016ab5512afef",
+        "native_split_quality_central_result_sha256": "99687b02561af01d914cd403a8265f5e40e38b13d2f6cdf0d57941a6e46a86f3",
+        "native_split_quality_selection_sha256": "408d691bfa8ff6a8c5fae656eed1af78ca59d3bbe05b28fc601a87e77850e5c0",
+        "native_split_quality_local_verification": {
+          "artifact_names": [
+            "part1_runtime",
+            "boundary_metadata",
+            "source_part2_onnx",
+            "build_part2_onnx",
+            "engine",
+            "native_trt_meta",
+            "engine_build_receipt",
+            "trtexec"
+          ],
+          "artifact_set_sha256": "7f117ee0fdc89571490b6bfd9765a187cc5138d3d7dcfdc90a4a666cf88c758c",
+          "artifacts": {
+            "boundary_metadata": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/part1_boundary_metadata.json",
+              "sha256": "41df7f1b5eaeb0a650a906ba64f5292c409104505bce24daedad04f80ffee622",
+              "size_bytes": 2050
+            },
+            "build_part2_onnx": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+              "sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+              "size_bytes": 3654704
+            },
+            "engine": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+              "sha256": "b246da69aec647fbb71bd58a625b01e1757a606a86c31a9564a7d348973da3be",
+              "size_bytes": 1838612
+            },
+            "engine_build_receipt": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/engine_build_receipt.json",
+              "sha256": "6c61e761e0fb66e8b735f6267e9bf739011cc808836b086d3b25d9a6c2610cfa",
+              "size_bytes": 2326
+            },
+            "native_trt_meta": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/native_trt_meta.json",
+              "sha256": "76a0d0691b0cf1dea6df419349d3346c797b19a97096668e2ca95fe9ff9a7d60",
+              "size_bytes": 8098
+            },
+            "part1_runtime": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/part1.dxnn",
+              "sha256": "d805160a5529b7ca9f62448c2d6f50303d59168e81350600389f294296e481dc",
+              "size_bytes": 79942131
+            },
+            "source_part2_onnx": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/benchmark_set/b132/source_part2.onnx",
+              "sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+              "size_bytes": 3654704
+            },
+            "trtexec": {
+              "path": "/usr/src/tensorrt/bin/trtexec",
+              "sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4",
+              "size_bytes": 1695696
+            }
+          },
+          "boundary_metadata_value_sha256": "3245e3302e1909eb5457740c63a521342f227cb86b3436078b9807ef528c8e9e",
+          "build_summary_row_sha256": "336afc978fb9ec4adaf3a5d371a22f68ff4d7b4d8710289252e2d93313da10b6",
+          "embedded_json_files": {
+            "boundary_metadata": {
+              "canonical_value_sha256": "3245e3302e1909eb5457740c63a521342f227cb86b3436078b9807ef528c8e9e",
+              "content_base64": "ewogICJiYWNrZW5kIjogImRlZXB4X3RvX3RydCIsCiAgImJvdW5kYXJ5X2xheW91dCI6ICJhc19pbnB1dCIsCiAgImJvdW5kYXJ5X3RlbnNvciI6IHsKICAgICJjYW5vbmljYWxfcGFydDJfc2hhcGUiOiBbCiAgICAgIDEsCiAgICAgIDkxMiwKICAgICAgMSwKICAgICAgMQogICAgXSwKICAgICJjb250cmFjdF9zb3VyY2UiOiAiZGVlcHhfcGFydDFfb3V0cHV0X2NvbnRyYWN0X3BsdXNfc291cmNlX3BhcnQyX2lucHV0IiwKICAgICJkZWVweF9pbnB1dF9jb250cmFjdCI6IHsKICAgICAgImNsYXNzaWZpY2F0aW9uX3ByZXByb2Nlc3NpbmciOiAiY3VycmVudF9zY2FsZV9vbmx5IiwKICAgICAgImNvbG9yX3NwYWNlIjogIlJHQiIsCiAgICAgICJjb250cmFjdF9zb3VyY2UiOiAidGFza19ib3VuZF9keGNvbV9pbWFnZV9sb2FkZXJfcHJlcHJvY2Vzc2luZyIsCiAgICAgICJkdHlwZSI6ICJ1aW50OCIsCiAgICAgICJlbWJlZGRlZF9udW1lcmljX3BhdGgiOiAiZHhjb21fZGl2MjU1X29ubHkiLAogICAgICAibGF5b3V0IjogIkhXQyIsCiAgICAgICJsZXR0ZXJib3hfcGFkX3ZhbHVlIjogMCwKICAgICAgImxldHRlcmJveF9wYWRfdmFsdWVfZWZmZWN0aXZlIjogMCwKICAgICAgImxldHRlcmJveF9wYWRfdmFsdWVfcmVxdWVzdGVkIjogMTE0LAogICAgICAibmFtZSI6ICJpbnB1dCIsCiAgICAgICJub3JtYWxpemF0aW9uIjogImVtYmVkZGVkX2R4Y29tX3ByZXByb2Nlc3NpbmciLAogICAgICAicHJlcHJvY2Vzc19tb2RlIjogInJlc2l6ZSIsCiAgICAgICJwcmVwcm9jZXNzX21vZGVfZWZmZWN0aXZlIjogInJlc2l6ZSIsCiAgICAgICJwcmVwcm9jZXNzX21vZGVfcmVxdWVzdGVkIjogImF1dG8iLAogICAgICAic2hhcGUiOiBbCiAgICAgICAgMjI0LAogICAgICAgIDIyNCwKICAgICAgICAzCiAgICAgIF0sCiAgICAgICJ0YXNrIjogImNsYXNzaWZpY2F0aW9uIgogICAgfSwKICAgICJkZWVweF9vdXRwdXRfY29udHJhY3Rfc2hhMjU2IjogIjg5NTY4NmRiYjAxOWI3MDkzYjI0MWQwYzA5YzRkYWVlODZjOWUzZWE5NWJhZGJmYjY3M2U0ZGJhMzA0ZGJmNDYiLAogICAgImR0eXBlIjogImZsb2F0MzIiLAogICAgIm5hbWUiOiAibWVhbiIsCiAgICAib3V0cHV0X25hbWVzIjogWwogICAgICAibWVhbiIKICAgIF0sCiAgICAicnVudGltZV9uYW1lIjogIm1lYW4iLAogICAgInNoYXBlIjogWwogICAgICAxLAogICAgICA5MTIsCiAgICAgIDEsCiAgICAgIDEKICAgIF0KICB9LAogICJib3VuZGFyeV90ZW5zb3JfY291bnQiOiAxLAogICJib3VuZGFyeV90cmFuc2Zvcm0iOiAiaWRlbnRpdHkiLAogICJjYXNlX2lkIjogImIxMzIiLAogICJkZWVweF9vdXRwdXRfY29udHJhY3QiOiB7CiAgICAicGF0aCI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvbGVnYWN5X3N1aXRlL2NvbXBsZXRlX3NldF8yMDI2MDkwN18xNjE2MTRfcmVnbmV0X3hfMV82Z2Zfb3Jpbl9ueF9kZWVweF9tMV8wMS8xL3N1aXRlL2IxMzIvZGVlcHgvZGVlcHhfbTEvcGFydDEvb3V0cHV0X2NvbnRyYWN0Lmpzb24iLAogICAgInNoYTI1NiI6ICI4OTU2ODZkYmIwMTliNzA5M2IyNDFkMGMwOWM0ZGFlZTg2YzllM2VhOTViYWRiZmI2NzNlNGRiYTMwNGRiZjQ2IiwKICAgICJzaXplX2J5dGVzIjogMjU0MAogIH0sCiAgIm1ldGFkYXRhX3NoYTI1NiI6ICJlYmM1OTE4YmUwODBiNGY4ZmJjODNhZDgxOTY3OGI4Y2Y5MDAzYjExY2QzNTFhOGU4Y2M3N2NlNzAyYjEyNTRmIiwKICAibW9kZWxfaWQiOiAicmVnbmV0X3hfMV82Z2YiLAogICJwYXJ0MV9hcnRpZmFjdF9zaGEyNTYiOiAiZDgwNTE2MGE1NTI5YjdjYTlmNjI0NDhjMmQ2ZjUwMzAzZDU5MTY4ZTgxMzUwNjAwMzg5ZjI5NDI5NmU0ODFkYyIsCiAgInBhcnQxX2FydGlmYWN0X3NpemVfYnl0ZXMiOiA3OTk0MjEzMSwKICAic2NoZW1hIjogIm9ubngtc3BsaXRwb2ludC9uYXRpdmUtcGFydDEtYm91bmRhcnktbWV0YWRhdGEiLAogICJzY2hlbWFfdmVyc2lvbiI6IDEsCiAgInNldHVwX2lkIjogIm9yaW5fbnhfZGVlcHhfbTFfMDEiLAogICJzb3VyY2VfcnVuX2lkIjogImRlZXB4X20xX3RvX3RlbnNvcnJ0Igp9Cg==",
+              "encoding": "base64",
+              "file_sha256": "41df7f1b5eaeb0a650a906ba64f5292c409104505bce24daedad04f80ffee622",
+              "file_size_bytes": 2050
+            },
+            "engine_build_receipt": {
+              "canonical_value_sha256": "f7a228eb93290b3964a6a90cd05483e72f363a89635df699ac2e2cd5c6565379",
+              "content_base64": "ewogICJidWlsZF9yZXR1cm5jb2RlIjogMCwKICAiY29tbWFuZCI6IFsKICAgICIvdXNyL3NyYy90ZW5zb3JydC9iaW4vdHJ0ZXhlYyIsCiAgICAiLS1vbm54PS9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L3JlZ25ldF94XzFfNmdmLWFhMzUzMzlkMDNjOWViZjQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9kZWVweF9tMV8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2RlZXB4X3RvX3RydC85ODExYTg4MDczYzA3MTc0Nzg2MTU2ZGQ3NTlhYTIyZmVlNWM5YjcxN2FlZTAwNTQxZjYwOTAxZTJkY2ViMDA4L2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL2Zsb2F0MzJfbGF5b3V0X2ZwMTYvc291cmNlX3BhcnQyX2Zsb2F0MzJfbGF5b3V0X2JyaWRnZS5vbm54IiwKICAgICItLXNhdmVFbmdpbmU9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvZmxvYXQzMl9sYXlvdXRfZnAxNi9wYXJ0Ml9mbG9hdDMyX2xheW91dF9mcDE2LmVuZ2luZSIsCiAgICAiLS1mcDE2IiwKICAgICItLXRpbWluZ0NhY2hlRmlsZT0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfZGVlcHhfbTFfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9kZWVweF90b190cnQvOTgxMWE4ODA3M2MwNzE3NDc4NjE1NmRkNzU5YWEyMmZlZTVjOWI3MTdhZWUwMDU0MWY2MDkwMWUyZGNlYjAwOC9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi9mbG9hdDMyX2xheW91dF9mcDE2L3RpbWluZy5jYWNoZSIsCiAgICAiLS1tZW1Qb29sU2l6ZT13b3Jrc3BhY2U6NDA5NiIKICBdLAogICJkcnlfcnVuIjogZmFsc2UsCiAgImVuZ2luZSI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfZGVlcHhfbTFfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9kZWVweF90b190cnQvOTgxMWE4ODA3M2MwNzE3NDc4NjE1NmRkNzU5YWEyMmZlZTVjOWI3MTdhZWUwMDU0MWY2MDkwMWUyZGNlYjAwOC9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi9mbG9hdDMyX2xheW91dF9mcDE2L3BhcnQyX2Zsb2F0MzJfbGF5b3V0X2ZwMTYuZW5naW5lIiwKICAiZW5naW5lX3NoYTI1NiI6ICJiMjQ2ZGE2OWFlYzY0N2ZiYjcxYmQ1OGE2MjViMDFlMTc1N2E2MDZhODZjMzFhOTU2NGE3ZDM0ODk3M2RhM2JlIiwKICAicmVjZWlwdF9zaGEyNTYiOiAiOWQ5ODUwNDA1ZjRjNmNlYjdmNzA3MzRjOGNlMzBjNmM4NTkxNjU4YjgzY2U5MmU2NjhlMTlmZDMzN2NkNzVmMCIsCiAgInNjaGVtYSI6ICJvbm54LXNwbGl0cG9pbnQvdGVuc29ycnQtZW5naW5lLWJ1aWxkLXJlY2VpcHQiLAogICJzY2hlbWFfdmVyc2lvbiI6IDEsCiAgInNvdXJjZV9vbm54IjogIi9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L3JlZ25ldF94XzFfNmdmLWFhMzUzMzlkMDNjOWViZjQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9kZWVweF9tMV8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2RlZXB4X3RvX3RydC85ODExYTg4MDczYzA3MTc0Nzg2MTU2ZGQ3NTlhYTIyZmVlNWM5YjcxN2FlZTAwNTQxZjYwOTAxZTJkY2ViMDA4L2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL2Zsb2F0MzJfbGF5b3V0X2ZwMTYvc291cmNlX3BhcnQyX2Zsb2F0MzJfbGF5b3V0X2JyaWRnZS5vbm54IiwKICAic291cmNlX29ubnhfc2hhMjU2IjogIjBjNGNhMzFlYjZhZjQ0MDM1NjJiMWYwNGRmNzEwMzc0M2IxNzM2NzdmOGVhMzNiMDEzYTQzZDE5OGZkMDIxMGQiLAogICJ0cnRleGVjIjogIi91c3Ivc3JjL3RlbnNvcnJ0L2Jpbi90cnRleGVjIiwKICAidHJ0ZXhlY19zaGEyNTYiOiAiYjgwMDk5MDUwODc5M2E5YmY1MDcxM2Q3OGQ0ZmVkZmU0NzUzODFkOGNkNzQ5YWJkYTgwOTA5YjkxOTdmYTFjNCIKfQ==",
+              "encoding": "base64",
+              "file_sha256": "6c61e761e0fb66e8b735f6267e9bf739011cc808836b086d3b25d9a6c2610cfa",
+              "file_size_bytes": 2326
+            },
+            "native_trt_meta": {
+              "canonical_value_sha256": "336afc978fb9ec4adaf3a5d371a22f68ff4d7b4d8710289252e2d93313da10b6",
+              "content_base64": "ewogICJidWlsZCI6IHsKICAgICJjYWNoZV9oaXQiOiB0cnVlLAogICAgImNtZCI6IFsKICAgICAgIi91c3Ivc3JjL3RlbnNvcnJ0L2Jpbi90cnRleGVjIiwKICAgICAgIi0tb25ueD0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfZGVlcHhfbTFfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9kZWVweF90b190cnQvOTgxMWE4ODA3M2MwNzE3NDc4NjE1NmRkNzU5YWEyMmZlZTVjOWI3MTdhZWUwMDU0MWY2MDkwMWUyZGNlYjAwOC9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi9mbG9hdDMyX2xheW91dF9mcDE2L3NvdXJjZV9wYXJ0Ml9mbG9hdDMyX2xheW91dF9icmlkZ2Uub25ueCIsCiAgICAgICItLXNhdmVFbmdpbmU9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvZmxvYXQzMl9sYXlvdXRfZnAxNi9wYXJ0Ml9mbG9hdDMyX2xheW91dF9mcDE2LmVuZ2luZSIsCiAgICAgICItLWZwMTYiLAogICAgICAiLS10aW1pbmdDYWNoZUZpbGU9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvZmxvYXQzMl9sYXlvdXRfZnAxNi90aW1pbmcuY2FjaGUiLAogICAgICAiLS1tZW1Qb29sU2l6ZT13b3Jrc3BhY2U6NDA5NiIKICAgIF0sCiAgICAiY29tcGlsZXJfZGlzcGF0Y2hlZCI6IGZhbHNlLAogICAgImRyeV9ydW4iOiBmYWxzZSwKICAgICJldmlkZW5jZV9zb3VyY2UiOiAidmVyaWZpZWRfZW5naW5lX2J1aWxkX3JlY2VpcHQiLAogICAgInJldHVybmNvZGUiOiAwCiAgfSwKICAiYnVpbGRfYXR0ZW1wdHMiOiBbXSwKICAiYnVpbGRfb2siOiB0cnVlLAogICJjYXNlIjogImIxMzIiLAogICJlbmdpbmUiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvZmxvYXQzMl9sYXlvdXRfZnAxNi9wYXJ0Ml9mbG9hdDMyX2xheW91dF9mcDE2LmVuZ2luZSIsCiAgImVuZ2luZV9idWlsZF9yZWNlaXB0IjogewogICAgImJ1aWxkX3JldHVybmNvZGUiOiAwLAogICAgImNvbW1hbmQiOiBbCiAgICAgICIvdXNyL3NyYy90ZW5zb3JydC9iaW4vdHJ0ZXhlYyIsCiAgICAgICItLW9ubng9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvZmxvYXQzMl9sYXlvdXRfZnAxNi9zb3VyY2VfcGFydDJfZmxvYXQzMl9sYXlvdXRfYnJpZGdlLm9ubngiLAogICAgICAiLS1zYXZlRW5naW5lPS9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L3JlZ25ldF94XzFfNmdmLWFhMzUzMzlkMDNjOWViZjQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9kZWVweF9tMV8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2RlZXB4X3RvX3RydC85ODExYTg4MDczYzA3MTc0Nzg2MTU2ZGQ3NTlhYTIyZmVlNWM5YjcxN2FlZTAwNTQxZjYwOTAxZTJkY2ViMDA4L2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL2Zsb2F0MzJfbGF5b3V0X2ZwMTYvcGFydDJfZmxvYXQzMl9sYXlvdXRfZnAxNi5lbmdpbmUiLAogICAgICAiLS1mcDE2IiwKICAgICAgIi0tdGltaW5nQ2FjaGVGaWxlPS9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L3JlZ25ldF94XzFfNmdmLWFhMzUzMzlkMDNjOWViZjQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9kZWVweF9tMV8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2RlZXB4X3RvX3RydC85ODExYTg4MDczYzA3MTc0Nzg2MTU2ZGQ3NTlhYTIyZmVlNWM5YjcxN2FlZTAwNTQxZjYwOTAxZTJkY2ViMDA4L2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL2Zsb2F0MzJfbGF5b3V0X2ZwMTYvdGltaW5nLmNhY2hlIiwKICAgICAgIi0tbWVtUG9vbFNpemU9d29ya3NwYWNlOjQwOTYiCiAgICBdLAogICAgImRyeV9ydW4iOiBmYWxzZSwKICAgICJlbmdpbmUiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvZmxvYXQzMl9sYXlvdXRfZnAxNi9wYXJ0Ml9mbG9hdDMyX2xheW91dF9mcDE2LmVuZ2luZSIsCiAgICAiZW5naW5lX3NoYTI1NiI6ICJiMjQ2ZGE2OWFlYzY0N2ZiYjcxYmQ1OGE2MjViMDFlMTc1N2E2MDZhODZjMzFhOTU2NGE3ZDM0ODk3M2RhM2JlIiwKICAgICJyZWNlaXB0X3NoYTI1NiI6ICI5ZDk4NTA0MDVmNGM2Y2ViN2Y3MDczNGM4Y2UzMGM2Yzg1OTE2NThiODNjZTkyZTY2OGUxOWZkMzM3Y2Q3NWYwIiwKICAgICJzY2hlbWEiOiAib25ueC1zcGxpdHBvaW50L3RlbnNvcnJ0LWVuZ2luZS1idWlsZC1yZWNlaXB0IiwKICAgICJzY2hlbWFfdmVyc2lvbiI6IDEsCiAgICAic291cmNlX29ubngiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvZmxvYXQzMl9sYXlvdXRfZnAxNi9zb3VyY2VfcGFydDJfZmxvYXQzMl9sYXlvdXRfYnJpZGdlLm9ubngiLAogICAgInNvdXJjZV9vbm54X3NoYTI1NiI6ICIwYzRjYTMxZWI2YWY0NDAzNTYyYjFmMDRkZjcxMDM3NDNiMTczNjc3ZjhlYTMzYjAxM2E0M2QxOThmZDAyMTBkIiwKICAgICJ0cnRleGVjIjogIi91c3Ivc3JjL3RlbnNvcnJ0L2Jpbi90cnRleGVjIiwKICAgICJ0cnRleGVjX3NoYTI1NiI6ICJiODAwOTkwNTA4NzkzYTliZjUwNzEzZDc4ZDRmZWRmZTQ3NTM4MWQ4Y2Q3NDlhYmRhODA5MDliOTE5N2ZhMWM0IgogIH0sCiAgImVuZ2luZV9idWlsZF9yZWNlaXB0X3BhdGgiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvZmxvYXQzMl9sYXlvdXRfZnAxNi9lbmdpbmVfYnVpbGRfcmVjZWlwdC5qc29uIiwKICAiZW5naW5lX2J1aWxkX3JlY2VpcHRfc3RhdHVzIjogImVuZ2luZV9idWlsZF9yZWNlaXB0X3ZlcmlmaWVkIiwKICAiaW5wdXRzIjogWwogICAgewogICAgICAiZWxlbV90eXBlIjogIkZMT0FUIiwKICAgICAgImhhc19keW5hbWljIjogZmFsc2UsCiAgICAgICJuYW1lIjogIm1lYW4iLAogICAgICAic2hhcGUiOiBbCiAgICAgICAgMSwKICAgICAgICA5MTIsCiAgICAgICAgMSwKICAgICAgICAxCiAgICAgIF0KICAgIH0KICBdLAogICJpbnB1dHNfc3RhdGljIjogdHJ1ZSwKICAib25ueCI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfZGVlcHhfbTFfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9kZWVweF90b190cnQvOTgxMWE4ODA3M2MwNzE3NDc4NjE1NmRkNzU5YWEyMmZlZTVjOWI3MTdhZWUwMDU0MWY2MDkwMWUyZGNlYjAwOC9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi9mbG9hdDMyX2xheW91dF9mcDE2L3NvdXJjZV9wYXJ0Ml9mbG9hdDMyX2xheW91dF9icmlkZ2Uub25ueCIsCiAgIm91dHB1dHMiOiBbCiAgICB7CiAgICAgICJlbGVtX3R5cGUiOiAiRkxPQVQiLAogICAgICAiaGFzX2R5bmFtaWMiOiBmYWxzZSwKICAgICAgIm5hbWUiOiAibG9naXRzIiwKICAgICAgInNoYXBlIjogWwogICAgICAgIDEsCiAgICAgICAgMTAwMAogICAgICBdCiAgICB9CiAgXSwKICAicHJlY2lzaW9uIjogImZsb2F0MzJfbGF5b3V0X2ZwMTYiLAogICJxdWFsaXR5X2ZpcnN0X2lkZW50aXR5Ijoge30sCiAgInJlcXVlc3RlZF9wcmVjaXNpb24iOiAiZmxvYXQzMl9sYXlvdXRfZnAxNiIsCiAgInNjaGVtYSI6ICJvbm54LXNwbGl0cG9pbnQvbmF0aXZlLXRydC1tZXRhIiwKICAic2NoZW1hX3ZlcnNpb24iOiAxLAogICJzaGFwZXNfYXJnIjogIiIsCiAgInNoYXBlc19wb2xpY3lfZWZmZWN0aXZlIjogImF1dG9fc3RhdGljX29taXQiLAogICJzb3VyY2Vfb25ueCI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfZGVlcHhfbTFfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9kZWVweF90b190cnQvOTgxMWE4ODA3M2MwNzE3NDc4NjE1NmRkNzU5YWEyMmZlZTVjOWI3MTdhZWUwMDU0MWY2MDkwMWUyZGNlYjAwOC9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi9mbG9hdDMyX2xheW91dF9mcDE2L3NvdXJjZV9wYXJ0Ml9mbG9hdDMyX2xheW91dF9icmlkZ2Uub25ueCIsCiAgInRydF9jYWNoZSI6IHsKICAgICJhcnRpZmFjdF9wYXRoIjogIi9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L3JlZ25ldF94XzFfNmdmLWFhMzUzMzlkMDNjOWViZjQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9kZWVweF9tMV8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2RlZXB4X3RvX3RydC85ODExYTg4MDczYzA3MTc0Nzg2MTU2ZGQ3NTlhYTIyZmVlNWM5YjcxN2FlZTAwNTQxZjYwOTAxZTJkY2ViMDA4L2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL2Zsb2F0MzJfbGF5b3V0X2ZwMTYvcGFydDJfZmxvYXQzMl9sYXlvdXRfZnAxNi5lbmdpbmUiLAogICAgImNhc2VfaWQiOiAiYjEzMiIsCiAgICAiY29tcGlsZXJfZGlzcGF0Y2hlZCI6IGZhbHNlLAogICAgImlkZW50aXR5IjogIjlkOTg1MDQwNWY0YzZjZWI3ZjcwNzM0YzhjZTMwYzZjODU5MTY1OGI4M2NlOTJlNjY4ZTE5ZmQzMzdjZDc1ZjAiLAogICAgIm1vZGVsX2lkIjogInNvdXJjZV9wYXJ0Ml9mbG9hdDMyX2xheW91dF9icmlkZ2UiLAogICAgIm91dGNvbWUiOiAicmV1c2VkIiwKICAgICJyZWFzb24iOiAiY29tcGF0aWJsZV9yZWNlaXB0IiwKICAgICJyZWNlaXB0X3BhdGgiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvZmxvYXQzMl9sYXlvdXRfZnAxNi9lbmdpbmVfYnVpbGRfcmVjZWlwdC5qc29uIiwKICAgICJyb2xlIjogInBhcnQyIiwKICAgICJzdGF0dXMiOiAiSElUIgogIH0sCiAgInVpbnQ4X2Nhc3RfYnJpZGdlIjogewogICAgImJvdW5kYXJ5X2xheW91dCI6IHsKICAgICAgImFwcGxpZWQiOiBmYWxzZSwKICAgICAgImVmZmVjdGl2ZSI6ICJhc19pbnB1dCIsCiAgICAgICJyZXF1ZXN0ZWQiOiAiYXNfaW5wdXQiCiAgICB9LAogICAgImJyaWRnZSI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfZGVlcHhfbTFfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9kZWVweF90b190cnQvOTgxMWE4ODA3M2MwNzE3NDc4NjE1NmRkNzU5YWEyMmZlZTVjOWI3MTdhZWUwMDU0MWY2MDkwMWUyZGNlYjAwOC9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi9mbG9hdDMyX2xheW91dF9mcDE2L3NvdXJjZV9wYXJ0Ml9mbG9hdDMyX2xheW91dF9icmlkZ2Uub25ueCIsCiAgICAiYnJpZGdlX291dHB1dCI6ICJtZWFuIiwKICAgICJicmlkZ2Vfc2hhMjU2IjogIjBjNGNhMzFlYjZhZjQ0MDM1NjJiMWYwNGRmNzEwMzc0M2IxNzM2NzdmOGVhMzNiMDEzYTQzZDE5OGZkMDIxMGQiLAogICAgImlucHV0X2R0eXBlIjogIkZMT0FUIiwKICAgICJpbnB1dF9uYW1lIjogIm1lYW4iLAogICAgImlucHV0X3NoYXBlIjogWwogICAgICAxLAogICAgICA5MTIsCiAgICAgIDEsCiAgICAgIDEKICAgIF0sCiAgICAicGFyYW1zX3NvdXJjZSI6ICJoYWlsb3J0X2Zsb2F0MzJfdnN0cmVhbSIsCiAgICAicmVwbGFjZWRfdXNlcyI6IDAsCiAgICAic2NoZW1hIjogIm9ubngtc3BsaXRwb2ludC9mbG9hdDMyLWxheW91dC1icmlkZ2UiLAogICAgInNjaGVtYV92ZXJzaW9uIjogMSwKICAgICJzb3VyY2UiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvYmVuY2htYXJrX3NldC9iMTMyL3NvdXJjZV9wYXJ0Mi5vbm54IiwKICAgICJzb3VyY2Vfc2hhMjU2IjogIjBjNGNhMzFlYjZhZjQ0MDM1NjJiMWYwNGRmNzEwMzc0M2IxNzM2NzdmOGVhMzNiMDEzYTQzZDE5OGZkMDIxMGQiCiAgfSwKICAidmFyaWFudCI6ICJwYXJ0MiIKfQ==",
+              "encoding": "base64",
+              "file_sha256": "76a0d0691b0cf1dea6df419349d3346c797b19a97096668e2ca95fe9ff9a7d60",
+              "file_size_bytes": 8098
+            }
+          },
+          "engine_build_receipt_canonical_size_bytes": 2244,
+          "engine_build_receipt_inner_sha256": "9d9850405f4c6ceb7f70734c8ce30c6c8591658b83ce92e668e19fd337cd75f0",
+          "engine_build_receipt_outer_sha256": "f7a228eb93290b3964a6a90cd05483e72f363a89635df699ac2e2cd5c6565379",
+          "native_trt_meta_payload_sha256": "336afc978fb9ec4adaf3a5d371a22f68ff4d7b4d8710289252e2d93313da10b6",
+          "proof_sha256": "832abeb384a2cea4b36091edbcbd8c92d9e87ab323dc4c66ab8a2f1c9df3480f",
+          "schema": "onnx-splitpoint/native-split-local-artifact-verification",
+          "schema_version": 1,
+          "trt_build_command_sha256": "70cceba6e2dd404137b4cb562b2a300de05e73ba040c755d017c93fabb0eaa16",
+          "verification_kind": "producer_local_file_rehash"
+        },
+        "quality_preselection": {
+          "backend": "deepx_to_trt",
+          "boundary_dtype": "float32",
+          "boundary_layout": "as_input",
+          "boundary_metadata_file_sha256": "41df7f1b5eaeb0a650a906ba64f5292c409104505bce24daedad04f80ffee622",
+          "boundary_metadata_file_size_bytes": 2050,
+          "boundary_metadata_sha256": "ebc5918be080b4f8fbc83ad819678b8cf9003b11cd351a8e8cc77ce702b1254f",
+          "boundary_tensor_dtype": "float32",
+          "boundary_tensor_name": "mean",
+          "boundary_tensor_shape": [
+            1,
+            912,
+            1,
+            1
+          ],
+          "boundary_transform": "identity",
+          "canonical_part2_shape": [
+            1,
+            912,
+            1,
+            1
+          ],
+          "case_id": "b132",
+          "case_scope": "any_generated_split_case",
+          "dequant_scale": null,
+          "dequant_zero_point": null,
+          "engine_rebuild_allowed_after_quality": false,
+          "hailo_format": null,
+          "letterbox_pad_value": 0,
+          "model_family": "regnet",
+          "model_id": "regnet_x_1_6gf",
+          "part1_artifact_sha256": "d805160a5529b7ca9f62448c2d6f50303d59168e81350600389f294296e481dc",
+          "part1_artifact_size_bytes": 79942131,
+          "policy_sha256": "70db8bfff44a0e1512a960a1a2c090ee6952eab04906e5e99c96e1d90f6d4a22",
+          "precision": "float32_layout_fp16",
+          "preprocess_mode": "resize",
+          "quantization_policy": "none",
+          "schema": "onnx-splitpoint/native-split-quality-preselection",
+          "schema_version": 1,
+          "selection_sha256": "e9488868b5b49ac8b0b719c2d58a88c6de8c5fc53bd36079c9b1f90df948764b",
+          "setup_id": "orin_nx_deepx_m1_01",
+          "stage2_backend": "native_tensorrt",
+          "task": "classification"
+        },
+        "quality_preselection_sha256": "e9488868b5b49ac8b0b719c2d58a88c6de8c5fc53bd36079c9b1f90df948764b",
+        "quality_boundary_contract": {
+          "boundary_layout": "as_input",
+          "boundary_metadata_file_sha256": "41df7f1b5eaeb0a650a906ba64f5292c409104505bce24daedad04f80ffee622",
+          "boundary_metadata_sha256": "ebc5918be080b4f8fbc83ad819678b8cf9003b11cd351a8e8cc77ce702b1254f",
+          "boundary_tensor_dtype": "float32",
+          "boundary_tensor_name": "mean",
+          "boundary_tensor_shape": [
+            1,
+            912,
+            1,
+            1
+          ],
+          "boundary_transform": "identity",
+          "dequant_scale": null,
+          "dequant_zero_point": null,
+          "precision": "float32_layout_fp16"
+        },
+        "quality_boundary_contract_sha256": "bb973ffd2080e59938914808a3ce184f35bb1b043e89fd97506048d3861d1def",
+        "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+        "engine_sha256": "b246da69aec647fbb71bd58a625b01e1757a606a86c31a9564a7d348973da3be",
+        "complete": true,
+        "schema": "onnx-splitpoint/native-command-contract",
+        "schema_version": 1,
+        "contract_sha256": "9002827324a35d93eaa6a22c23e4693f56622bd1b36ca632e81ec4b1696eb6d0"
+      },
+      "native_command_contract_sha256": "9002827324a35d93eaa6a22c23e4693f56622bd1b36ca632e81ec4b1696eb6d0",
+      "workload_contract_sha256": "9002827324a35d93eaa6a22c23e4693f56622bd1b36ca632e81ec4b1696eb6d0",
+      "native_split_quality_binding": {
+        "artifacts": {
+          "boundary_metadata": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/part1_boundary_metadata.json",
+            "sha256": "41df7f1b5eaeb0a650a906ba64f5292c409104505bce24daedad04f80ffee622",
+            "size_bytes": 2050
+          },
+          "build_part2_onnx": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+            "sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+            "size_bytes": 3654704
+          },
+          "engine": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+            "sha256": "b246da69aec647fbb71bd58a625b01e1757a606a86c31a9564a7d348973da3be",
+            "size_bytes": 1838612
+          },
+          "engine_build_receipt": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/engine_build_receipt.json",
+            "sha256": "6c61e761e0fb66e8b735f6267e9bf739011cc808836b086d3b25d9a6c2610cfa",
+            "size_bytes": 2326
+          },
+          "native_trt_meta": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/native_trt_meta.json",
+            "sha256": "76a0d0691b0cf1dea6df419349d3346c797b19a97096668e2ca95fe9ff9a7d60",
+            "size_bytes": 8098
+          },
+          "part1_runtime": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/part1.dxnn",
+            "sha256": "d805160a5529b7ca9f62448c2d6f50303d59168e81350600389f294296e481dc",
+            "size_bytes": 79942131
+          },
+          "source_part2_onnx": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/benchmark_set/b132/source_part2.onnx",
+            "sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+            "size_bytes": 3654704
+          },
+          "trtexec": {
+            "path": "/usr/src/tensorrt/bin/trtexec",
+            "sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4",
+            "size_bytes": 1695696
+          }
+        },
+        "boundary_contract": {
+          "boundary_layout": "as_input",
+          "boundary_metadata_file_sha256": "41df7f1b5eaeb0a650a906ba64f5292c409104505bce24daedad04f80ffee622",
+          "boundary_metadata_sha256": "ebc5918be080b4f8fbc83ad819678b8cf9003b11cd351a8e8cc77ce702b1254f",
+          "boundary_tensor_dtype": "float32",
+          "boundary_tensor_name": "mean",
+          "boundary_tensor_shape": [
+            1,
+            912,
+            1,
+            1
+          ],
+          "boundary_transform": "identity",
+          "dequant_scale": null,
+          "dequant_zero_point": null,
+          "precision": "float32_layout_fp16"
+        },
+        "boundary_contract_sha256": "bb973ffd2080e59938914808a3ce184f35bb1b043e89fd97506048d3861d1def",
+        "boundary_metadata_payload": {
+          "backend": "deepx_to_trt",
+          "boundary_layout": "as_input",
+          "boundary_tensor": {
+            "canonical_part2_shape": [
+              1,
+              912,
+              1,
+              1
+            ],
+            "contract_source": "deepx_part1_output_contract_plus_source_part2_input",
+            "deepx_input_contract": {
+              "classification_preprocessing": "current_scale_only",
+              "color_space": "RGB",
+              "contract_source": "task_bound_dxcom_image_loader_preprocessing",
+              "dtype": "uint8",
+              "embedded_numeric_path": "dxcom_div255_only",
+              "layout": "HWC",
+              "letterbox_pad_value": 0,
+              "letterbox_pad_value_effective": 0,
+              "letterbox_pad_value_requested": 114,
+              "name": "input",
+              "normalization": "embedded_dxcom_preprocessing",
+              "preprocess_mode": "resize",
+              "preprocess_mode_effective": "resize",
+              "preprocess_mode_requested": "auto",
+              "shape": [
+                224,
+                224,
+                3
+              ],
+              "task": "classification"
+            },
+            "deepx_output_contract_sha256": "895686dbb019b7093b241d0c09c4daee86c9e3ea95badbfb673e4dba304dbf46",
+            "dtype": "float32",
+            "name": "mean",
+            "output_names": [
+              "mean"
+            ],
+            "runtime_name": "mean",
+            "shape": [
+              1,
+              912,
+              1,
+              1
+            ]
+          },
+          "boundary_tensor_count": 1,
+          "boundary_transform": "identity",
+          "case_id": "b132",
+          "deepx_output_contract": {
+            "path": "/home/nx/splitpoint_runs/legacy_suite/complete_set_20260907_161614_regnet_x_1_6gf_orin_nx_deepx_m1_01/1/suite/b132/deepx/deepx_m1/part1/output_contract.json",
+            "sha256": "895686dbb019b7093b241d0c09c4daee86c9e3ea95badbfb673e4dba304dbf46",
+            "size_bytes": 2540
+          },
+          "metadata_sha256": "ebc5918be080b4f8fbc83ad819678b8cf9003b11cd351a8e8cc77ce702b1254f",
+          "model_id": "regnet_x_1_6gf",
+          "part1_artifact_sha256": "d805160a5529b7ca9f62448c2d6f50303d59168e81350600389f294296e481dc",
+          "part1_artifact_size_bytes": 79942131,
+          "schema": "onnx-splitpoint/native-part1-boundary-metadata",
+          "schema_version": 1,
+          "setup_id": "orin_nx_deepx_m1_01",
+          "source_run_id": "deepx_m1_to_tensorrt"
+        },
+        "boundary_metadata_value_sha256": "3245e3302e1909eb5457740c63a521342f227cb86b3436078b9807ef528c8e9e",
+        "central_quality_selection": {
+          "backend": "deepx_to_trt",
+          "case_id": "b132",
+          "central_result_sha256": "99687b02561af01d914cd403a8265f5e40e38b13d2f6cdf0d57941a6e46a86f3",
+          "eval_run_id": "complete_set_20260907_161614",
+          "model_id": "regnet_x_1_6gf",
+          "precision": "float32_layout_fp16",
+          "producer_binding_sha256": "b29535e1ded05efb432d5f373cb45c4afe9a5adab200ec3b102951fd6b0299be",
+          "receipt_sha256": "408d691bfa8ff6a8c5fae656eed1af78ca59d3bbe05b28fc601a87e77850e5c0",
+          "runtime_precision_identity": "float32_layout_fp16",
+          "schema": "onnx-splitpoint/native-split-quality-central-selection",
+          "schema_version": 1,
+          "setup_id": "orin_nx_deepx_m1_01",
+          "source_request_sha256": "acf82350b42f6af11cf8d7467670cec03c438e118c7ae60456b016ab5512afef",
+          "source_run_id": "deepx_to_trt",
+          "task": "classification",
+          "variant": "composed"
+        },
+        "central_quality_selection_sha256": "408d691bfa8ff6a8c5fae656eed1af78ca59d3bbe05b28fc601a87e77850e5c0",
+        "central_result_sha256": "99687b02561af01d914cd403a8265f5e40e38b13d2f6cdf0d57941a6e46a86f3",
+        "engine_build_receipt": {
+          "build_returncode": 0,
+          "command": [
+            "/usr/src/tensorrt/bin/trtexec",
+            "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+            "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+            "--fp16",
+            "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/timing.cache",
+            "--memPoolSize=workspace:4096"
+          ],
+          "dry_run": false,
+          "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+          "engine_sha256": "b246da69aec647fbb71bd58a625b01e1757a606a86c31a9564a7d348973da3be",
+          "receipt_sha256": "9d9850405f4c6ceb7f70734c8ce30c6c8591658b83ce92e668e19fd337cd75f0",
+          "schema": "onnx-splitpoint/tensorrt-engine-build-receipt",
+          "schema_version": 1,
+          "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+          "source_onnx_sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+          "trtexec": "/usr/src/tensorrt/bin/trtexec",
+          "trtexec_sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4"
+        },
+        "engine_build_receipt_canonical_size_bytes": 2244,
+        "engine_build_receipt_file_sha256": "6c61e761e0fb66e8b735f6267e9bf739011cc808836b086d3b25d9a6c2610cfa",
+        "engine_build_receipt_file_size_bytes": 2326,
+        "engine_build_receipt_outer_sha256": "f7a228eb93290b3964a6a90cd05483e72f363a89635df699ac2e2cd5c6565379",
+        "engine_build_receipt_sha256": "9d9850405f4c6ceb7f70734c8ce30c6c8591658b83ce92e668e19fd337cd75f0",
+        "eval_run_id": "complete_set_20260907_161614",
+        "local_artifact_verification": {
+          "artifact_names": [
+            "part1_runtime",
+            "boundary_metadata",
+            "source_part2_onnx",
+            "build_part2_onnx",
+            "engine",
+            "native_trt_meta",
+            "engine_build_receipt",
+            "trtexec"
+          ],
+          "artifact_set_sha256": "7f117ee0fdc89571490b6bfd9765a187cc5138d3d7dcfdc90a4a666cf88c758c",
+          "artifacts": {
+            "boundary_metadata": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/part1_boundary_metadata.json",
+              "sha256": "41df7f1b5eaeb0a650a906ba64f5292c409104505bce24daedad04f80ffee622",
+              "size_bytes": 2050
+            },
+            "build_part2_onnx": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+              "sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+              "size_bytes": 3654704
+            },
+            "engine": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+              "sha256": "b246da69aec647fbb71bd58a625b01e1757a606a86c31a9564a7d348973da3be",
+              "size_bytes": 1838612
+            },
+            "engine_build_receipt": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/engine_build_receipt.json",
+              "sha256": "6c61e761e0fb66e8b735f6267e9bf739011cc808836b086d3b25d9a6c2610cfa",
+              "size_bytes": 2326
+            },
+            "native_trt_meta": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/native_trt_meta.json",
+              "sha256": "76a0d0691b0cf1dea6df419349d3346c797b19a97096668e2ca95fe9ff9a7d60",
+              "size_bytes": 8098
+            },
+            "part1_runtime": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/part1.dxnn",
+              "sha256": "d805160a5529b7ca9f62448c2d6f50303d59168e81350600389f294296e481dc",
+              "size_bytes": 79942131
+            },
+            "source_part2_onnx": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/benchmark_set/b132/source_part2.onnx",
+              "sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+              "size_bytes": 3654704
+            },
+            "trtexec": {
+              "path": "/usr/src/tensorrt/bin/trtexec",
+              "sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4",
+              "size_bytes": 1695696
+            }
+          },
+          "boundary_metadata_value_sha256": "3245e3302e1909eb5457740c63a521342f227cb86b3436078b9807ef528c8e9e",
+          "build_summary_row_sha256": "336afc978fb9ec4adaf3a5d371a22f68ff4d7b4d8710289252e2d93313da10b6",
+          "embedded_json_files": {
+            "boundary_metadata": {
+              "canonical_value_sha256": "3245e3302e1909eb5457740c63a521342f227cb86b3436078b9807ef528c8e9e",
+              "content_base64": "ewogICJiYWNrZW5kIjogImRlZXB4X3RvX3RydCIsCiAgImJvdW5kYXJ5X2xheW91dCI6ICJhc19pbnB1dCIsCiAgImJvdW5kYXJ5X3RlbnNvciI6IHsKICAgICJjYW5vbmljYWxfcGFydDJfc2hhcGUiOiBbCiAgICAgIDEsCiAgICAgIDkxMiwKICAgICAgMSwKICAgICAgMQogICAgXSwKICAgICJjb250cmFjdF9zb3VyY2UiOiAiZGVlcHhfcGFydDFfb3V0cHV0X2NvbnRyYWN0X3BsdXNfc291cmNlX3BhcnQyX2lucHV0IiwKICAgICJkZWVweF9pbnB1dF9jb250cmFjdCI6IHsKICAgICAgImNsYXNzaWZpY2F0aW9uX3ByZXByb2Nlc3NpbmciOiAiY3VycmVudF9zY2FsZV9vbmx5IiwKICAgICAgImNvbG9yX3NwYWNlIjogIlJHQiIsCiAgICAgICJjb250cmFjdF9zb3VyY2UiOiAidGFza19ib3VuZF9keGNvbV9pbWFnZV9sb2FkZXJfcHJlcHJvY2Vzc2luZyIsCiAgICAgICJkdHlwZSI6ICJ1aW50OCIsCiAgICAgICJlbWJlZGRlZF9udW1lcmljX3BhdGgiOiAiZHhjb21fZGl2MjU1X29ubHkiLAogICAgICAibGF5b3V0IjogIkhXQyIsCiAgICAgICJsZXR0ZXJib3hfcGFkX3ZhbHVlIjogMCwKICAgICAgImxldHRlcmJveF9wYWRfdmFsdWVfZWZmZWN0aXZlIjogMCwKICAgICAgImxldHRlcmJveF9wYWRfdmFsdWVfcmVxdWVzdGVkIjogMTE0LAogICAgICAibmFtZSI6ICJpbnB1dCIsCiAgICAgICJub3JtYWxpemF0aW9uIjogImVtYmVkZGVkX2R4Y29tX3ByZXByb2Nlc3NpbmciLAogICAgICAicHJlcHJvY2Vzc19tb2RlIjogInJlc2l6ZSIsCiAgICAgICJwcmVwcm9jZXNzX21vZGVfZWZmZWN0aXZlIjogInJlc2l6ZSIsCiAgICAgICJwcmVwcm9jZXNzX21vZGVfcmVxdWVzdGVkIjogImF1dG8iLAogICAgICAic2hhcGUiOiBbCiAgICAgICAgMjI0LAogICAgICAgIDIyNCwKICAgICAgICAzCiAgICAgIF0sCiAgICAgICJ0YXNrIjogImNsYXNzaWZpY2F0aW9uIgogICAgfSwKICAgICJkZWVweF9vdXRwdXRfY29udHJhY3Rfc2hhMjU2IjogIjg5NTY4NmRiYjAxOWI3MDkzYjI0MWQwYzA5YzRkYWVlODZjOWUzZWE5NWJhZGJmYjY3M2U0ZGJhMzA0ZGJmNDYiLAogICAgImR0eXBlIjogImZsb2F0MzIiLAogICAgIm5hbWUiOiAibWVhbiIsCiAgICAib3V0cHV0X25hbWVzIjogWwogICAgICAibWVhbiIKICAgIF0sCiAgICAicnVudGltZV9uYW1lIjogIm1lYW4iLAogICAgInNoYXBlIjogWwogICAgICAxLAogICAgICA5MTIsCiAgICAgIDEsCiAgICAgIDEKICAgIF0KICB9LAogICJib3VuZGFyeV90ZW5zb3JfY291bnQiOiAxLAogICJib3VuZGFyeV90cmFuc2Zvcm0iOiAiaWRlbnRpdHkiLAogICJjYXNlX2lkIjogImIxMzIiLAogICJkZWVweF9vdXRwdXRfY29udHJhY3QiOiB7CiAgICAicGF0aCI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvbGVnYWN5X3N1aXRlL2NvbXBsZXRlX3NldF8yMDI2MDkwN18xNjE2MTRfcmVnbmV0X3hfMV82Z2Zfb3Jpbl9ueF9kZWVweF9tMV8wMS8xL3N1aXRlL2IxMzIvZGVlcHgvZGVlcHhfbTEvcGFydDEvb3V0cHV0X2NvbnRyYWN0Lmpzb24iLAogICAgInNoYTI1NiI6ICI4OTU2ODZkYmIwMTliNzA5M2IyNDFkMGMwOWM0ZGFlZTg2YzllM2VhOTViYWRiZmI2NzNlNGRiYTMwNGRiZjQ2IiwKICAgICJzaXplX2J5dGVzIjogMjU0MAogIH0sCiAgIm1ldGFkYXRhX3NoYTI1NiI6ICJlYmM1OTE4YmUwODBiNGY4ZmJjODNhZDgxOTY3OGI4Y2Y5MDAzYjExY2QzNTFhOGU4Y2M3N2NlNzAyYjEyNTRmIiwKICAibW9kZWxfaWQiOiAicmVnbmV0X3hfMV82Z2YiLAogICJwYXJ0MV9hcnRpZmFjdF9zaGEyNTYiOiAiZDgwNTE2MGE1NTI5YjdjYTlmNjI0NDhjMmQ2ZjUwMzAzZDU5MTY4ZTgxMzUwNjAwMzg5ZjI5NDI5NmU0ODFkYyIsCiAgInBhcnQxX2FydGlmYWN0X3NpemVfYnl0ZXMiOiA3OTk0MjEzMSwKICAic2NoZW1hIjogIm9ubngtc3BsaXRwb2ludC9uYXRpdmUtcGFydDEtYm91bmRhcnktbWV0YWRhdGEiLAogICJzY2hlbWFfdmVyc2lvbiI6IDEsCiAgInNldHVwX2lkIjogIm9yaW5fbnhfZGVlcHhfbTFfMDEiLAogICJzb3VyY2VfcnVuX2lkIjogImRlZXB4X20xX3RvX3RlbnNvcnJ0Igp9Cg==",
+              "encoding": "base64",
+              "file_sha256": "41df7f1b5eaeb0a650a906ba64f5292c409104505bce24daedad04f80ffee622",
+              "file_size_bytes": 2050
+            },
+            "engine_build_receipt": {
+              "canonical_value_sha256": "f7a228eb93290b3964a6a90cd05483e72f363a89635df699ac2e2cd5c6565379",
+              "content_base64": "ewogICJidWlsZF9yZXR1cm5jb2RlIjogMCwKICAiY29tbWFuZCI6IFsKICAgICIvdXNyL3NyYy90ZW5zb3JydC9iaW4vdHJ0ZXhlYyIsCiAgICAiLS1vbm54PS9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L3JlZ25ldF94XzFfNmdmLWFhMzUzMzlkMDNjOWViZjQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9kZWVweF9tMV8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2RlZXB4X3RvX3RydC85ODExYTg4MDczYzA3MTc0Nzg2MTU2ZGQ3NTlhYTIyZmVlNWM5YjcxN2FlZTAwNTQxZjYwOTAxZTJkY2ViMDA4L2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL2Zsb2F0MzJfbGF5b3V0X2ZwMTYvc291cmNlX3BhcnQyX2Zsb2F0MzJfbGF5b3V0X2JyaWRnZS5vbm54IiwKICAgICItLXNhdmVFbmdpbmU9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvZmxvYXQzMl9sYXlvdXRfZnAxNi9wYXJ0Ml9mbG9hdDMyX2xheW91dF9mcDE2LmVuZ2luZSIsCiAgICAiLS1mcDE2IiwKICAgICItLXRpbWluZ0NhY2hlRmlsZT0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfZGVlcHhfbTFfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9kZWVweF90b190cnQvOTgxMWE4ODA3M2MwNzE3NDc4NjE1NmRkNzU5YWEyMmZlZTVjOWI3MTdhZWUwMDU0MWY2MDkwMWUyZGNlYjAwOC9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi9mbG9hdDMyX2xheW91dF9mcDE2L3RpbWluZy5jYWNoZSIsCiAgICAiLS1tZW1Qb29sU2l6ZT13b3Jrc3BhY2U6NDA5NiIKICBdLAogICJkcnlfcnVuIjogZmFsc2UsCiAgImVuZ2luZSI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfZGVlcHhfbTFfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9kZWVweF90b190cnQvOTgxMWE4ODA3M2MwNzE3NDc4NjE1NmRkNzU5YWEyMmZlZTVjOWI3MTdhZWUwMDU0MWY2MDkwMWUyZGNlYjAwOC9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi9mbG9hdDMyX2xheW91dF9mcDE2L3BhcnQyX2Zsb2F0MzJfbGF5b3V0X2ZwMTYuZW5naW5lIiwKICAiZW5naW5lX3NoYTI1NiI6ICJiMjQ2ZGE2OWFlYzY0N2ZiYjcxYmQ1OGE2MjViMDFlMTc1N2E2MDZhODZjMzFhOTU2NGE3ZDM0ODk3M2RhM2JlIiwKICAicmVjZWlwdF9zaGEyNTYiOiAiOWQ5ODUwNDA1ZjRjNmNlYjdmNzA3MzRjOGNlMzBjNmM4NTkxNjU4YjgzY2U5MmU2NjhlMTlmZDMzN2NkNzVmMCIsCiAgInNjaGVtYSI6ICJvbm54LXNwbGl0cG9pbnQvdGVuc29ycnQtZW5naW5lLWJ1aWxkLXJlY2VpcHQiLAogICJzY2hlbWFfdmVyc2lvbiI6IDEsCiAgInNvdXJjZV9vbm54IjogIi9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L3JlZ25ldF94XzFfNmdmLWFhMzUzMzlkMDNjOWViZjQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9kZWVweF9tMV8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2RlZXB4X3RvX3RydC85ODExYTg4MDczYzA3MTc0Nzg2MTU2ZGQ3NTlhYTIyZmVlNWM5YjcxN2FlZTAwNTQxZjYwOTAxZTJkY2ViMDA4L2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL2Zsb2F0MzJfbGF5b3V0X2ZwMTYvc291cmNlX3BhcnQyX2Zsb2F0MzJfbGF5b3V0X2JyaWRnZS5vbm54IiwKICAic291cmNlX29ubnhfc2hhMjU2IjogIjBjNGNhMzFlYjZhZjQ0MDM1NjJiMWYwNGRmNzEwMzc0M2IxNzM2NzdmOGVhMzNiMDEzYTQzZDE5OGZkMDIxMGQiLAogICJ0cnRleGVjIjogIi91c3Ivc3JjL3RlbnNvcnJ0L2Jpbi90cnRleGVjIiwKICAidHJ0ZXhlY19zaGEyNTYiOiAiYjgwMDk5MDUwODc5M2E5YmY1MDcxM2Q3OGQ0ZmVkZmU0NzUzODFkOGNkNzQ5YWJkYTgwOTA5YjkxOTdmYTFjNCIKfQ==",
+              "encoding": "base64",
+              "file_sha256": "6c61e761e0fb66e8b735f6267e9bf739011cc808836b086d3b25d9a6c2610cfa",
+              "file_size_bytes": 2326
+            },
+            "native_trt_meta": {
+              "canonical_value_sha256": "336afc978fb9ec4adaf3a5d371a22f68ff4d7b4d8710289252e2d93313da10b6",
+              "content_base64": "ewogICJidWlsZCI6IHsKICAgICJjYWNoZV9oaXQiOiB0cnVlLAogICAgImNtZCI6IFsKICAgICAgIi91c3Ivc3JjL3RlbnNvcnJ0L2Jpbi90cnRleGVjIiwKICAgICAgIi0tb25ueD0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfZGVlcHhfbTFfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9kZWVweF90b190cnQvOTgxMWE4ODA3M2MwNzE3NDc4NjE1NmRkNzU5YWEyMmZlZTVjOWI3MTdhZWUwMDU0MWY2MDkwMWUyZGNlYjAwOC9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi9mbG9hdDMyX2xheW91dF9mcDE2L3NvdXJjZV9wYXJ0Ml9mbG9hdDMyX2xheW91dF9icmlkZ2Uub25ueCIsCiAgICAgICItLXNhdmVFbmdpbmU9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvZmxvYXQzMl9sYXlvdXRfZnAxNi9wYXJ0Ml9mbG9hdDMyX2xheW91dF9mcDE2LmVuZ2luZSIsCiAgICAgICItLWZwMTYiLAogICAgICAiLS10aW1pbmdDYWNoZUZpbGU9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvZmxvYXQzMl9sYXlvdXRfZnAxNi90aW1pbmcuY2FjaGUiLAogICAgICAiLS1tZW1Qb29sU2l6ZT13b3Jrc3BhY2U6NDA5NiIKICAgIF0sCiAgICAiY29tcGlsZXJfZGlzcGF0Y2hlZCI6IGZhbHNlLAogICAgImRyeV9ydW4iOiBmYWxzZSwKICAgICJldmlkZW5jZV9zb3VyY2UiOiAidmVyaWZpZWRfZW5naW5lX2J1aWxkX3JlY2VpcHQiLAogICAgInJldHVybmNvZGUiOiAwCiAgfSwKICAiYnVpbGRfYXR0ZW1wdHMiOiBbXSwKICAiYnVpbGRfb2siOiB0cnVlLAogICJjYXNlIjogImIxMzIiLAogICJlbmdpbmUiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvZmxvYXQzMl9sYXlvdXRfZnAxNi9wYXJ0Ml9mbG9hdDMyX2xheW91dF9mcDE2LmVuZ2luZSIsCiAgImVuZ2luZV9idWlsZF9yZWNlaXB0IjogewogICAgImJ1aWxkX3JldHVybmNvZGUiOiAwLAogICAgImNvbW1hbmQiOiBbCiAgICAgICIvdXNyL3NyYy90ZW5zb3JydC9iaW4vdHJ0ZXhlYyIsCiAgICAgICItLW9ubng9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvZmxvYXQzMl9sYXlvdXRfZnAxNi9zb3VyY2VfcGFydDJfZmxvYXQzMl9sYXlvdXRfYnJpZGdlLm9ubngiLAogICAgICAiLS1zYXZlRW5naW5lPS9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L3JlZ25ldF94XzFfNmdmLWFhMzUzMzlkMDNjOWViZjQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9kZWVweF9tMV8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2RlZXB4X3RvX3RydC85ODExYTg4MDczYzA3MTc0Nzg2MTU2ZGQ3NTlhYTIyZmVlNWM5YjcxN2FlZTAwNTQxZjYwOTAxZTJkY2ViMDA4L2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL2Zsb2F0MzJfbGF5b3V0X2ZwMTYvcGFydDJfZmxvYXQzMl9sYXlvdXRfZnAxNi5lbmdpbmUiLAogICAgICAiLS1mcDE2IiwKICAgICAgIi0tdGltaW5nQ2FjaGVGaWxlPS9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L3JlZ25ldF94XzFfNmdmLWFhMzUzMzlkMDNjOWViZjQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9kZWVweF9tMV8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2RlZXB4X3RvX3RydC85ODExYTg4MDczYzA3MTc0Nzg2MTU2ZGQ3NTlhYTIyZmVlNWM5YjcxN2FlZTAwNTQxZjYwOTAxZTJkY2ViMDA4L2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL2Zsb2F0MzJfbGF5b3V0X2ZwMTYvdGltaW5nLmNhY2hlIiwKICAgICAgIi0tbWVtUG9vbFNpemU9d29ya3NwYWNlOjQwOTYiCiAgICBdLAogICAgImRyeV9ydW4iOiBmYWxzZSwKICAgICJlbmdpbmUiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvZmxvYXQzMl9sYXlvdXRfZnAxNi9wYXJ0Ml9mbG9hdDMyX2xheW91dF9mcDE2LmVuZ2luZSIsCiAgICAiZW5naW5lX3NoYTI1NiI6ICJiMjQ2ZGE2OWFlYzY0N2ZiYjcxYmQ1OGE2MjViMDFlMTc1N2E2MDZhODZjMzFhOTU2NGE3ZDM0ODk3M2RhM2JlIiwKICAgICJyZWNlaXB0X3NoYTI1NiI6ICI5ZDk4NTA0MDVmNGM2Y2ViN2Y3MDczNGM4Y2UzMGM2Yzg1OTE2NThiODNjZTkyZTY2OGUxOWZkMzM3Y2Q3NWYwIiwKICAgICJzY2hlbWEiOiAib25ueC1zcGxpdHBvaW50L3RlbnNvcnJ0LWVuZ2luZS1idWlsZC1yZWNlaXB0IiwKICAgICJzY2hlbWFfdmVyc2lvbiI6IDEsCiAgICAic291cmNlX29ubngiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvZmxvYXQzMl9sYXlvdXRfZnAxNi9zb3VyY2VfcGFydDJfZmxvYXQzMl9sYXlvdXRfYnJpZGdlLm9ubngiLAogICAgInNvdXJjZV9vbm54X3NoYTI1NiI6ICIwYzRjYTMxZWI2YWY0NDAzNTYyYjFmMDRkZjcxMDM3NDNiMTczNjc3ZjhlYTMzYjAxM2E0M2QxOThmZDAyMTBkIiwKICAgICJ0cnRleGVjIjogIi91c3Ivc3JjL3RlbnNvcnJ0L2Jpbi90cnRleGVjIiwKICAgICJ0cnRleGVjX3NoYTI1NiI6ICJiODAwOTkwNTA4NzkzYTliZjUwNzEzZDc4ZDRmZWRmZTQ3NTM4MWQ4Y2Q3NDlhYmRhODA5MDliOTE5N2ZhMWM0IgogIH0sCiAgImVuZ2luZV9idWlsZF9yZWNlaXB0X3BhdGgiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvZmxvYXQzMl9sYXlvdXRfZnAxNi9lbmdpbmVfYnVpbGRfcmVjZWlwdC5qc29uIiwKICAiZW5naW5lX2J1aWxkX3JlY2VpcHRfc3RhdHVzIjogImVuZ2luZV9idWlsZF9yZWNlaXB0X3ZlcmlmaWVkIiwKICAiaW5wdXRzIjogWwogICAgewogICAgICAiZWxlbV90eXBlIjogIkZMT0FUIiwKICAgICAgImhhc19keW5hbWljIjogZmFsc2UsCiAgICAgICJuYW1lIjogIm1lYW4iLAogICAgICAic2hhcGUiOiBbCiAgICAgICAgMSwKICAgICAgICA5MTIsCiAgICAgICAgMSwKICAgICAgICAxCiAgICAgIF0KICAgIH0KICBdLAogICJpbnB1dHNfc3RhdGljIjogdHJ1ZSwKICAib25ueCI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfZGVlcHhfbTFfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9kZWVweF90b190cnQvOTgxMWE4ODA3M2MwNzE3NDc4NjE1NmRkNzU5YWEyMmZlZTVjOWI3MTdhZWUwMDU0MWY2MDkwMWUyZGNlYjAwOC9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi9mbG9hdDMyX2xheW91dF9mcDE2L3NvdXJjZV9wYXJ0Ml9mbG9hdDMyX2xheW91dF9icmlkZ2Uub25ueCIsCiAgIm91dHB1dHMiOiBbCiAgICB7CiAgICAgICJlbGVtX3R5cGUiOiAiRkxPQVQiLAogICAgICAiaGFzX2R5bmFtaWMiOiBmYWxzZSwKICAgICAgIm5hbWUiOiAibG9naXRzIiwKICAgICAgInNoYXBlIjogWwogICAgICAgIDEsCiAgICAgICAgMTAwMAogICAgICBdCiAgICB9CiAgXSwKICAicHJlY2lzaW9uIjogImZsb2F0MzJfbGF5b3V0X2ZwMTYiLAogICJxdWFsaXR5X2ZpcnN0X2lkZW50aXR5Ijoge30sCiAgInJlcXVlc3RlZF9wcmVjaXNpb24iOiAiZmxvYXQzMl9sYXlvdXRfZnAxNiIsCiAgInNjaGVtYSI6ICJvbm54LXNwbGl0cG9pbnQvbmF0aXZlLXRydC1tZXRhIiwKICAic2NoZW1hX3ZlcnNpb24iOiAxLAogICJzaGFwZXNfYXJnIjogIiIsCiAgInNoYXBlc19wb2xpY3lfZWZmZWN0aXZlIjogImF1dG9fc3RhdGljX29taXQiLAogICJzb3VyY2Vfb25ueCI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfZGVlcHhfbTFfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9kZWVweF90b190cnQvOTgxMWE4ODA3M2MwNzE3NDc4NjE1NmRkNzU5YWEyMmZlZTVjOWI3MTdhZWUwMDU0MWY2MDkwMWUyZGNlYjAwOC9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi9mbG9hdDMyX2xheW91dF9mcDE2L3NvdXJjZV9wYXJ0Ml9mbG9hdDMyX2xheW91dF9icmlkZ2Uub25ueCIsCiAgInRydF9jYWNoZSI6IHsKICAgICJhcnRpZmFjdF9wYXRoIjogIi9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L3JlZ25ldF94XzFfNmdmLWFhMzUzMzlkMDNjOWViZjQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9kZWVweF9tMV8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2RlZXB4X3RvX3RydC85ODExYTg4MDczYzA3MTc0Nzg2MTU2ZGQ3NTlhYTIyZmVlNWM5YjcxN2FlZTAwNTQxZjYwOTAxZTJkY2ViMDA4L2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL2Zsb2F0MzJfbGF5b3V0X2ZwMTYvcGFydDJfZmxvYXQzMl9sYXlvdXRfZnAxNi5lbmdpbmUiLAogICAgImNhc2VfaWQiOiAiYjEzMiIsCiAgICAiY29tcGlsZXJfZGlzcGF0Y2hlZCI6IGZhbHNlLAogICAgImlkZW50aXR5IjogIjlkOTg1MDQwNWY0YzZjZWI3ZjcwNzM0YzhjZTMwYzZjODU5MTY1OGI4M2NlOTJlNjY4ZTE5ZmQzMzdjZDc1ZjAiLAogICAgIm1vZGVsX2lkIjogInNvdXJjZV9wYXJ0Ml9mbG9hdDMyX2xheW91dF9icmlkZ2UiLAogICAgIm91dGNvbWUiOiAicmV1c2VkIiwKICAgICJyZWFzb24iOiAiY29tcGF0aWJsZV9yZWNlaXB0IiwKICAgICJyZWNlaXB0X3BhdGgiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvZmxvYXQzMl9sYXlvdXRfZnAxNi9lbmdpbmVfYnVpbGRfcmVjZWlwdC5qc29uIiwKICAgICJyb2xlIjogInBhcnQyIiwKICAgICJzdGF0dXMiOiAiSElUIgogIH0sCiAgInVpbnQ4X2Nhc3RfYnJpZGdlIjogewogICAgImJvdW5kYXJ5X2xheW91dCI6IHsKICAgICAgImFwcGxpZWQiOiBmYWxzZSwKICAgICAgImVmZmVjdGl2ZSI6ICJhc19pbnB1dCIsCiAgICAgICJyZXF1ZXN0ZWQiOiAiYXNfaW5wdXQiCiAgICB9LAogICAgImJyaWRnZSI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfZGVlcHhfbTFfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9kZWVweF90b190cnQvOTgxMWE4ODA3M2MwNzE3NDc4NjE1NmRkNzU5YWEyMmZlZTVjOWI3MTdhZWUwMDU0MWY2MDkwMWUyZGNlYjAwOC9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi9mbG9hdDMyX2xheW91dF9mcDE2L3NvdXJjZV9wYXJ0Ml9mbG9hdDMyX2xheW91dF9icmlkZ2Uub25ueCIsCiAgICAiYnJpZGdlX291dHB1dCI6ICJtZWFuIiwKICAgICJicmlkZ2Vfc2hhMjU2IjogIjBjNGNhMzFlYjZhZjQ0MDM1NjJiMWYwNGRmNzEwMzc0M2IxNzM2NzdmOGVhMzNiMDEzYTQzZDE5OGZkMDIxMGQiLAogICAgImlucHV0X2R0eXBlIjogIkZMT0FUIiwKICAgICJpbnB1dF9uYW1lIjogIm1lYW4iLAogICAgImlucHV0X3NoYXBlIjogWwogICAgICAxLAogICAgICA5MTIsCiAgICAgIDEsCiAgICAgIDEKICAgIF0sCiAgICAicGFyYW1zX3NvdXJjZSI6ICJoYWlsb3J0X2Zsb2F0MzJfdnN0cmVhbSIsCiAgICAicmVwbGFjZWRfdXNlcyI6IDAsCiAgICAic2NoZW1hIjogIm9ubngtc3BsaXRwb2ludC9mbG9hdDMyLWxheW91dC1icmlkZ2UiLAogICAgInNjaGVtYV92ZXJzaW9uIjogMSwKICAgICJzb3VyY2UiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2RlZXB4X20xXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvZGVlcHhfdG9fdHJ0Lzk4MTFhODgwNzNjMDcxNzQ3ODYxNTZkZDc1OWFhMjJmZWU1YzliNzE3YWVlMDA1NDFmNjA5MDFlMmRjZWIwMDgvYmVuY2htYXJrX3NldC9iMTMyL3NvdXJjZV9wYXJ0Mi5vbm54IiwKICAgICJzb3VyY2Vfc2hhMjU2IjogIjBjNGNhMzFlYjZhZjQ0MDM1NjJiMWYwNGRmNzEwMzc0M2IxNzM2NzdmOGVhMzNiMDEzYTQzZDE5OGZkMDIxMGQiCiAgfSwKICAidmFyaWFudCI6ICJwYXJ0MiIKfQ==",
+              "encoding": "base64",
+              "file_sha256": "76a0d0691b0cf1dea6df419349d3346c797b19a97096668e2ca95fe9ff9a7d60",
+              "file_size_bytes": 8098
+            }
+          },
+          "engine_build_receipt_canonical_size_bytes": 2244,
+          "engine_build_receipt_inner_sha256": "9d9850405f4c6ceb7f70734c8ce30c6c8591658b83ce92e668e19fd337cd75f0",
+          "engine_build_receipt_outer_sha256": "f7a228eb93290b3964a6a90cd05483e72f363a89635df699ac2e2cd5c6565379",
+          "native_trt_meta_payload_sha256": "336afc978fb9ec4adaf3a5d371a22f68ff4d7b4d8710289252e2d93313da10b6",
+          "proof_sha256": "832abeb384a2cea4b36091edbcbd8c92d9e87ab323dc4c66ab8a2f1c9df3480f",
+          "schema": "onnx-splitpoint/native-split-local-artifact-verification",
+          "schema_version": 1,
+          "trt_build_command_sha256": "70cceba6e2dd404137b4cb562b2a300de05e73ba040c755d017c93fabb0eaa16",
+          "verification_kind": "producer_local_file_rehash"
+        },
+        "native_trt_meta": {
+          "build": {
+            "cache_hit": true,
+            "cmd": [
+              "/usr/src/tensorrt/bin/trtexec",
+              "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+              "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+              "--fp16",
+              "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/timing.cache",
+              "--memPoolSize=workspace:4096"
+            ],
+            "compiler_dispatched": false,
+            "dry_run": false,
+            "evidence_source": "verified_engine_build_receipt",
+            "returncode": 0
+          },
+          "build_attempts": [],
+          "build_ok": true,
+          "case": "b132",
+          "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+          "engine_build_receipt": {
+            "build_returncode": 0,
+            "command": [
+              "/usr/src/tensorrt/bin/trtexec",
+              "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+              "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+              "--fp16",
+              "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/timing.cache",
+              "--memPoolSize=workspace:4096"
+            ],
+            "dry_run": false,
+            "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+            "engine_sha256": "b246da69aec647fbb71bd58a625b01e1757a606a86c31a9564a7d348973da3be",
+            "receipt_sha256": "9d9850405f4c6ceb7f70734c8ce30c6c8591658b83ce92e668e19fd337cd75f0",
+            "schema": "onnx-splitpoint/tensorrt-engine-build-receipt",
+            "schema_version": 1,
+            "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+            "source_onnx_sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+            "trtexec": "/usr/src/tensorrt/bin/trtexec",
+            "trtexec_sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4"
+          },
+          "engine_build_receipt_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/engine_build_receipt.json",
+          "engine_build_receipt_status": "engine_build_receipt_verified",
+          "inputs": [
+            {
+              "elem_type": "FLOAT",
+              "has_dynamic": false,
+              "name": "mean",
+              "shape": [
+                1,
+                912,
+                1,
+                1
+              ]
+            }
+          ],
+          "inputs_static": true,
+          "onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+          "outputs": [
+            {
+              "elem_type": "FLOAT",
+              "has_dynamic": false,
+              "name": "logits",
+              "shape": [
+                1,
+                1000
+              ]
+            }
+          ],
+          "precision": "float32_layout_fp16",
+          "quality_first_identity": {},
+          "requested_precision": "float32_layout_fp16",
+          "schema": "onnx-splitpoint/native-trt-meta",
+          "schema_version": 1,
+          "shapes_arg": "",
+          "shapes_policy_effective": "auto_static_omit",
+          "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+          "trt_cache": {
+            "artifact_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+            "case_id": "b132",
+            "compiler_dispatched": false,
+            "identity": "9d9850405f4c6ceb7f70734c8ce30c6c8591658b83ce92e668e19fd337cd75f0",
+            "model_id": "source_part2_float32_layout_bridge",
+            "outcome": "reused",
+            "reason": "compatible_receipt",
+            "receipt_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/engine_build_receipt.json",
+            "role": "part2",
+            "status": "HIT"
+          },
+          "uint8_cast_bridge": {
+            "boundary_layout": {
+              "applied": false,
+              "effective": "as_input",
+              "requested": "as_input"
+            },
+            "bridge": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+            "bridge_output": "mean",
+            "bridge_sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+            "input_dtype": "FLOAT",
+            "input_name": "mean",
+            "input_shape": [
+              1,
+              912,
+              1,
+              1
+            ],
+            "params_source": "hailort_float32_vstream",
+            "replaced_uses": 0,
+            "schema": "onnx-splitpoint/float32-layout-bridge",
+            "schema_version": 1,
+            "source": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/benchmark_set/b132/source_part2.onnx",
+            "source_sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d"
+          },
+          "variant": "part2"
+        },
+        "native_trt_meta_file_sha256": "76a0d0691b0cf1dea6df419349d3346c797b19a97096668e2ca95fe9ff9a7d60",
+        "native_trt_meta_file_size_bytes": 8098,
+        "native_trt_meta_payload": {
+          "build": {
+            "cache_hit": true,
+            "cmd": [
+              "/usr/src/tensorrt/bin/trtexec",
+              "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+              "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+              "--fp16",
+              "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/timing.cache",
+              "--memPoolSize=workspace:4096"
+            ],
+            "compiler_dispatched": false,
+            "dry_run": false,
+            "evidence_source": "verified_engine_build_receipt",
+            "returncode": 0
+          },
+          "build_attempts": [],
+          "build_ok": true,
+          "case": "b132",
+          "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+          "engine_build_receipt": {
+            "build_returncode": 0,
+            "command": [
+              "/usr/src/tensorrt/bin/trtexec",
+              "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+              "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+              "--fp16",
+              "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/timing.cache",
+              "--memPoolSize=workspace:4096"
+            ],
+            "dry_run": false,
+            "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+            "engine_sha256": "b246da69aec647fbb71bd58a625b01e1757a606a86c31a9564a7d348973da3be",
+            "receipt_sha256": "9d9850405f4c6ceb7f70734c8ce30c6c8591658b83ce92e668e19fd337cd75f0",
+            "schema": "onnx-splitpoint/tensorrt-engine-build-receipt",
+            "schema_version": 1,
+            "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+            "source_onnx_sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+            "trtexec": "/usr/src/tensorrt/bin/trtexec",
+            "trtexec_sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4"
+          },
+          "engine_build_receipt_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/engine_build_receipt.json",
+          "engine_build_receipt_status": "engine_build_receipt_verified",
+          "inputs": [
+            {
+              "elem_type": "FLOAT",
+              "has_dynamic": false,
+              "name": "mean",
+              "shape": [
+                1,
+                912,
+                1,
+                1
+              ]
+            }
+          ],
+          "inputs_static": true,
+          "onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+          "outputs": [
+            {
+              "elem_type": "FLOAT",
+              "has_dynamic": false,
+              "name": "logits",
+              "shape": [
+                1,
+                1000
+              ]
+            }
+          ],
+          "precision": "float32_layout_fp16",
+          "quality_first_identity": {},
+          "requested_precision": "float32_layout_fp16",
+          "schema": "onnx-splitpoint/native-trt-meta",
+          "schema_version": 1,
+          "shapes_arg": "",
+          "shapes_policy_effective": "auto_static_omit",
+          "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+          "trt_cache": {
+            "artifact_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/part2_float32_layout_fp16.engine",
+            "case_id": "b132",
+            "compiler_dispatched": false,
+            "identity": "9d9850405f4c6ceb7f70734c8ce30c6c8591658b83ce92e668e19fd337cd75f0",
+            "model_id": "source_part2_float32_layout_bridge",
+            "outcome": "reused",
+            "reason": "compatible_receipt",
+            "receipt_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/engine_build_receipt.json",
+            "role": "part2",
+            "status": "HIT"
+          },
+          "uint8_cast_bridge": {
+            "boundary_layout": {
+              "applied": false,
+              "effective": "as_input",
+              "requested": "as_input"
+            },
+            "bridge": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache/b132/part2/float32_layout_fp16/source_part2_float32_layout_bridge.onnx",
+            "bridge_output": "mean",
+            "bridge_sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+            "input_dtype": "FLOAT",
+            "input_name": "mean",
+            "input_shape": [
+              1,
+              912,
+              1,
+              1
+            ],
+            "params_source": "hailort_float32_vstream",
+            "replaced_uses": 0,
+            "schema": "onnx-splitpoint/float32-layout-bridge",
+            "schema_version": 1,
+            "source": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/benchmark_set/b132/source_part2.onnx",
+            "source_sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d"
+          },
+          "variant": "part2"
+        },
+        "native_trt_meta_payload_sha256": "336afc978fb9ec4adaf3a5d371a22f68ff4d7b4d8710289252e2d93313da10b6",
+        "native_trt_meta_sha256": "336afc978fb9ec4adaf3a5d371a22f68ff4d7b4d8710289252e2d93313da10b6",
+        "performance_claims_emitted": false,
+        "preselection": {
+          "backend": "deepx_to_trt",
+          "boundary_dtype": "float32",
+          "boundary_layout": "as_input",
+          "boundary_metadata_file_sha256": "41df7f1b5eaeb0a650a906ba64f5292c409104505bce24daedad04f80ffee622",
+          "boundary_metadata_file_size_bytes": 2050,
+          "boundary_metadata_sha256": "ebc5918be080b4f8fbc83ad819678b8cf9003b11cd351a8e8cc77ce702b1254f",
+          "boundary_tensor_dtype": "float32",
+          "boundary_tensor_name": "mean",
+          "boundary_tensor_shape": [
+            1,
+            912,
+            1,
+            1
+          ],
+          "boundary_transform": "identity",
+          "canonical_part2_shape": [
+            1,
+            912,
+            1,
+            1
+          ],
+          "case_id": "b132",
+          "case_scope": "any_generated_split_case",
+          "dequant_scale": null,
+          "dequant_zero_point": null,
+          "engine_rebuild_allowed_after_quality": false,
+          "hailo_format": null,
+          "letterbox_pad_value": 0,
+          "model_family": "regnet",
+          "model_id": "regnet_x_1_6gf",
+          "part1_artifact_sha256": "d805160a5529b7ca9f62448c2d6f50303d59168e81350600389f294296e481dc",
+          "part1_artifact_size_bytes": 79942131,
+          "policy_sha256": "70db8bfff44a0e1512a960a1a2c090ee6952eab04906e5e99c96e1d90f6d4a22",
+          "precision": "float32_layout_fp16",
+          "preprocess_mode": "resize",
+          "quantization_policy": "none",
+          "schema": "onnx-splitpoint/native-split-quality-preselection",
+          "schema_version": 1,
+          "selection_sha256": "e9488868b5b49ac8b0b719c2d58a88c6de8c5fc53bd36079c9b1f90df948764b",
+          "setup_id": "orin_nx_deepx_m1_01",
+          "stage2_backend": "native_tensorrt",
+          "task": "classification"
+        },
+        "preselection_sha256": "e9488868b5b49ac8b0b719c2d58a88c6de8c5fc53bd36079c9b1f90df948764b",
+        "producer_binding_sha256": "b29535e1ded05efb432d5f373cb45c4afe9a5adab200ec3b102951fd6b0299be",
+        "producer_command": [
+          "/home/nx/venvs/deepx-runtime/bin/python3",
+          "/home/nx/splitpoint_runs/legacy_suite/complete_set_20260907_161614_regnet_x_1_6gf_orin_nx_deepx_m1_01/1/suite/splitpoint_runners/native_trt_from_benchmarkset.py",
+          "--benchmark-set",
+          "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/benchmark_set",
+          "--case",
+          "b132",
+          "--variants",
+          "part2",
+          "--precision",
+          "float32_layout_fp16",
+          "--out-dir",
+          "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/engine_cache",
+          "--boundary-layout",
+          "as_input",
+          "--workspace-mb",
+          "4096",
+          "--workspace-mode",
+          "auto",
+          "--no-run-smoke",
+          "--json-out",
+          "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_deepx_m1_01/regnet_x_1_6gf/b132/deepx_to_trt/9811a88073c07174786156dd759aa22fee5c9b717aee00541f60901e2dceb008/native_trt_summary.json",
+          "--no-build"
+        ],
+        "quality_completed": true,
+        "schema": "onnx-splitpoint/native-split-quality-binding",
+        "schema_version": 1,
+        "source_request_sha256": "acf82350b42f6af11cf8d7467670cec03c438e118c7ae60456b016ab5512afef",
+        "source_run_id": "deepx_m1_to_tensorrt",
+        "trt_build_command_sha256": "70cceba6e2dd404137b4cb562b2a300de05e73ba040c755d017c93fabb0eaa16",
+        "binding_sha256": "4e6ff47bfdbfc6bce40384d629d12e66f0852fcf3827867277271e4117888ffa"
+      },
+      "native_split_quality_binding_sha256": "4e6ff47bfdbfc6bce40384d629d12e66f0852fcf3827867277271e4117888ffa",
+      "native_split_quality_eval_run_id": "complete_set_20260907_161614",
+      "native_split_quality_source_run_id": "deepx_to_trt",
+      "source_request_sha256": "acf82350b42f6af11cf8d7467670cec03c438e118c7ae60456b016ab5512afef",
+      "native_split_quality_source_request_sha256": "acf82350b42f6af11cf8d7467670cec03c438e118c7ae60456b016ab5512afef",
+      "native_split_quality_central_result_sha256": "99687b02561af01d914cd403a8265f5e40e38b13d2f6cdf0d57941a6e46a86f3",
+      "native_split_quality_selection_sha256": "408d691bfa8ff6a8c5fae656eed1af78ca59d3bbe05b28fc601a87e77850e5c0",
+      "native_split_quality_consumer_attestation": {
+        "schema": "onnx-splitpoint/native-split-quality-consumer-attestation",
+        "schema_version": 1,
+        "status": "local_files_rehashed_and_exact_command_join_verified",
+        "binding_sha256": "4e6ff47bfdbfc6bce40384d629d12e66f0852fcf3827867277271e4117888ffa",
+        "command_contract_sha256": "9002827324a35d93eaa6a22c23e4693f56622bd1b36ca632e81ec4b1696eb6d0",
+        "eval_run_id": "complete_set_20260907_161614",
+        "source_run_id": "deepx_to_trt",
+        "backend": "deepx_to_trt",
+        "model_id": "regnet_x_1_6gf",
+        "case_id": "b132",
+        "setup_id": "orin_nx_deepx_m1_01",
+        "task": "classification",
+        "precision": "float32_layout_fp16",
+        "local_artifact_verification_sha256": "fe6af318e5f058be55c606bb93ce2fd73cae9b052084b4b4dfa9048fb4cf5266",
+        "semantic_output_manifest_sha256": "aeaabd9b44ba4b6beda17c11e814a4bfdbad5602aee6f0ff26a3d9d50f1a4037",
+        "semantic_boundary_manifest_sha256": "2c698118175031f25566a1537659094df9bff158f3de29ddcb3842628821961c",
+        "source_request_sha256": "acf82350b42f6af11cf8d7467670cec03c438e118c7ae60456b016ab5512afef",
+        "native_split_quality_source_request_sha256": "acf82350b42f6af11cf8d7467670cec03c438e118c7ae60456b016ab5512afef",
+        "native_split_quality_central_result_sha256": "99687b02561af01d914cd403a8265f5e40e38b13d2f6cdf0d57941a6e46a86f3",
+        "native_split_quality_selection_sha256": "408d691bfa8ff6a8c5fae656eed1af78ca59d3bbe05b28fc601a87e77850e5c0",
+        "attestation_sha256": "f11839ade137e1226599460cf68c361102717c593b745fe4cc6d1d18e3b5ee20"
+      },
+      "native_split_quality_consumer_status": "exact_quality_native_engine_command_and_boundary_match",
+      "native_fifo_output_manifest": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set/native_pipeline/b132/deepx_to_trt/float32_layout_fp16/native_outputs/native_outputs_manifest.json",
+      "native_fifo_boundary_manifest": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set/native_pipeline/b132/deepx_to_trt/float32_layout_fp16/native_fifo_boundary/native_fifo_boundary_manifest.json",
+      "steps": [
+        {
+          "name": "native_producer_e2e",
+          "cmd": [
+            "/home/nx/venvs/deepx-runtime/bin/python",
+            "/home/nx/ONNX-Splitpoint-Tool/scripts/native_deepx_trt_e2e_from_benchmarkset.py",
+            "--benchmark-set",
+            "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set",
+            "--case",
+            "b132",
+            "--precision",
+            "float32_layout_fp16",
+            "--frames",
+            "1000",
+            "--warmup",
+            "100",
+            "--repetitions",
+            "3",
+            "--queue-depth",
+            "3",
+            "--task",
+            "classification",
+            "--preprocess-mode",
+            "auto",
+            "--letterbox-pad-value",
+            "114",
+            "--setup-id",
+            "orin_nx_deepx_m1_01",
+            "--model-id",
+            "regnet_x_1_6gf",
+            "--eval-run-id",
+            "complete_set_20260907_161614",
+            "--source-run-id",
+            "deepx_to_trt",
+            "--native-split-quality-binding",
+            "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/quality_first/consumed_bindings/deepx/regnet_x_1_6gf/b132.json",
+            "--dump-outputs",
+            "--dump-boundary",
+            "--boundary-layout",
+            "as_input",
+            "--engine-build-python",
+            "auto",
+            "--image",
+            "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set/resources/validation/classification/val_by_wnid_n500_s20260710/images/n01443537/ILSVRC2012_val_00013623.JPEG"
+          ],
+          "rc": 0,
+          "timed_out": false,
+          "stdout_tail": "{\n  \"ok\": true,\n  \"fps_makespan\": 223.25914425699193,\n  \"paper_fps\": 228.64673380186403,\n  \"report\": \"/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set/native_pipeline/b132/deepx_to_trt/float32_layout_fp16/deepx_native_fifo_e2e_results.json\",\n  \"error\": \"\"\n}\n",
+          "stderr_tail": ""
+        }
+      ],
+      "task": "classification",
+      "completed_frames": 1000,
+      "completed_work_units": 1000,
+      "completion_tail_ms": 0.0,
+      "postprocess_ms": 0.0,
+      "measurement_boundary": "workers_ready_to_last_completed_trt_frame",
+      "last_completion_source": "native_trt_synchronized_output",
+      "postprocess_included": false,
+      "postprocess_completed_frames": 0,
+      "postprocess_completion_verified": false,
+      "contract_family": "classification_logits",
+      "stage": "classification_logits",
+      "endpoint_contract_complete": true,
+      "endpoint_contract_hash": "3af2122851f19c5bf2b16b9c3ef78a6ba11452db33ff8fb915b76e3461bbcb28"
+    }
+  ],
+  "row_count": 1,
+  "ok_count": 1,
+  "failed_count": 0,
+  "ok": true,
+  "orchestration_status": "ok",
+  "evidence_status": "complete",
+  "failure_reasons": []
+}

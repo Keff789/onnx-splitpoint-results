@@ -1,0 +1,1967 @@
+{
+  "schema": "onnx-splitpoint/native-producer-e2e-eval-summary",
+  "schema_version": 2,
+  "root": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614",
+  "backend": "hailo10h",
+  "analysis_tag": "hailo10h_regnet_x_1_6gf_selected_single_part2_input",
+  "performance_repetitions": 3,
+  "rows": [
+    {
+      "backend": "hailo10h",
+      "model": "regnet_x_1_6gf",
+      "case": "b132",
+      "precision": "uint8_dequant_fp16",
+      "ok": true,
+      "status": "ok",
+      "runtime_success": true,
+      "failure_reason": "",
+      "status_detail": "ok",
+      "error": "",
+      "returncode": 0,
+      "rc": 0,
+      "timed_out": false,
+      "result_fresh": true,
+      "stdout_tail": "{\n  \"ok\": true,\n  \"fps_makespan\": 1174.912122611281,\n  \"paper_fps\": 1175.2230170842247,\n  \"producer_impl\": \"hailo10_infermodel_async_fifo\",\n  \"report\": \"/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set/native_pipeline/b132/hailo10h_to_trt/uint8_dequant_fp16/hailo10_native_fifo_e2e_results.json\",\n  \"error\": \"\"\n}\n",
+      "stderr_tail": "",
+      "input_image": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set/resources/validation/classification/val_by_wnid_n500_s20260710/images/n01443537/ILSVRC2012_val_00013623.JPEG",
+      "input_image_source": "generic_validation_image_map",
+      "input_image_sha256": "7fcdd3d95ff2491a2a5fe235d786026b728ffe0f88d25c4543d9a3e253f71652",
+      "fps_makespan": 1174.912122611281,
+      "paper_fps": 1175.2230170842247,
+      "fps_median": 1174.912122611281,
+      "fps_ci95_low": 1174.8888436800576,
+      "fps_ci95_high": 1174.9234766290585,
+      "repetition_count_requested": 3,
+      "repetition_count_attempted": 3,
+      "repetition_count_valid": 3,
+      "repetition_status": "complete",
+      "repetition_aggregation": "median_never_best_of",
+      "repetition_records": [
+        {
+          "producer_impl": "hailo10_infermodel_async_fifo",
+          "frames": 1000,
+          "requested_frames": 1000,
+          "duration_s": 0.0,
+          "warmup": 100,
+          "inflight": 8,
+          "queue_depth": 3,
+          "produced_frames": 1000,
+          "consumed_frames": 1000,
+          "hailo_latency_ms": 6.675170368369436,
+          "p1_ms": 6.675170368369436,
+          "producer_makespan_ms": 850.9184879949316,
+          "consumer_makespan_ms": 851.0328579868656,
+          "p1_effective_cycle_ms": 0.8509184879949316,
+          "consumer_effective_cycle_ms": 0.8510328579868656,
+          "output_extract_ms": 0.08170384567347355,
+          "payload_copy_ms": 0.0,
+          "boundary_copy_count": 1,
+          "boundary_copy_policy": "single_owned_contiguous_copy_from_reusable_accelerator_binding",
+          "fifo_put_block_ms": 0.013267879607155919,
+          "queue_wait_ms": 0.055691735178697854,
+          "trt_input_copy_ms": 0.01519123450270854,
+          "handoff_ms": 0.11016295978333801,
+          "p2_run_ms": 0.3115290134155657,
+          "completion_tail_ms": 0.0,
+          "postprocess_ms": 0.0,
+          "p1_thread_ms": 0.8509184879949316,
+          "p2_thread_ms": 0.32672024791827425,
+          "paper_equivalent_cycle_ms": 0.8509184879949316,
+          "paper_equivalent_fps": 1175.2006967863135,
+          "makespan_ms": 851.1443489987869,
+          "fps_makespan": 1174.8888436800576,
+          "measurement_boundary": "workers_ready_to_last_completed_trt_frame",
+          "last_completion_source": "native_trt_synchronized_output",
+          "warmup_contract": "fully_drained_before_worker_start",
+          "trt_host_memory_policy": "cuda_pinned_all_bindings",
+          "trt_output_materialization_policy": "synchronized_d2h_pinned_view_no_post_copy",
+          "trt_copy_outputs": true,
+          "completed_frames": 1000,
+          "completed_work_units": 1000,
+          "completed_work_units_source": "trt_consumer_successful_completion_counter",
+          "completed_work_units_status": "exact_runtime_counter",
+          "metric_note": "For async_fifo, queue_wait_ms is backlog wait and is not counted as handoff work. Detection p2_thread_ms and makespan include the serial completed-task tail.",
+          "postprocess_included": false,
+          "postprocess_completed_frames": 0,
+          "postprocess_completion_verified": false,
+          "repetition_index": 1,
+          "runtime_instance_id": "fresh_runtime:f5cadd41ac9244a894bfd4b52d47549d3736e1056607866b6f5dbed355069415",
+          "ok": true,
+          "status": "ok",
+          "workload_contract_sha256": "38f78c0435d1794475a32b54d5d75cec1e7d10e2891ff12c92504fc6074c8282"
+        },
+        {
+          "producer_impl": "hailo10_infermodel_async_fifo",
+          "frames": 1000,
+          "requested_frames": 1000,
+          "duration_s": 0.0,
+          "warmup": 100,
+          "inflight": 8,
+          "queue_depth": 3,
+          "produced_frames": 1000,
+          "consumed_frames": 1000,
+          "hailo_latency_ms": 6.673059233900858,
+          "p1_ms": 6.673059233900858,
+          "producer_makespan_ms": 850.897847005399,
+          "consumer_makespan_ms": 851.008441997692,
+          "p1_effective_cycle_ms": 0.8508978470053989,
+          "consumer_effective_cycle_ms": 0.851008441997692,
+          "output_extract_ms": 0.08351144677726552,
+          "payload_copy_ms": 0.0,
+          "boundary_copy_count": 1,
+          "boundary_copy_policy": "single_owned_contiguous_copy_from_reusable_accelerator_binding",
+          "fifo_put_block_ms": 0.012928414798807353,
+          "queue_wait_ms": 0.056124511698726565,
+          "trt_input_copy_ms": 0.014762737788259983,
+          "handoff_ms": 0.11120259936433285,
+          "p2_run_ms": 0.11992002179613337,
+          "completion_tail_ms": 0.0,
+          "postprocess_ms": 0.0,
+          "p1_thread_ms": 0.8508978470053989,
+          "p2_thread_ms": 0.13468275958439335,
+          "paper_equivalent_cycle_ms": 0.8508978470053989,
+          "paper_equivalent_fps": 1175.2292046799068,
+          "makespan_ms": 851.1192600126378,
+          "fps_makespan": 1174.9234766290585,
+          "measurement_boundary": "workers_ready_to_last_completed_trt_frame",
+          "last_completion_source": "native_trt_synchronized_output",
+          "warmup_contract": "fully_drained_before_worker_start",
+          "trt_host_memory_policy": "cuda_pinned_all_bindings",
+          "trt_output_materialization_policy": "synchronized_d2h_pinned_view_no_post_copy",
+          "trt_copy_outputs": true,
+          "completed_frames": 1000,
+          "completed_work_units": 1000,
+          "completed_work_units_source": "trt_consumer_successful_completion_counter",
+          "completed_work_units_status": "exact_runtime_counter",
+          "metric_note": "For async_fifo, queue_wait_ms is backlog wait and is not counted as handoff work. Detection p2_thread_ms and makespan include the serial completed-task tail.",
+          "postprocess_included": false,
+          "postprocess_completed_frames": 0,
+          "postprocess_completion_verified": false,
+          "repetition_index": 2,
+          "runtime_instance_id": "fresh_runtime:7b2d5e9af22f7dccd1cd3c1efd745998597e87bcc6d0627c52c810b52dbeb854",
+          "ok": true,
+          "status": "ok",
+          "workload_contract_sha256": "38f78c0435d1794475a32b54d5d75cec1e7d10e2891ff12c92504fc6074c8282"
+        },
+        {
+          "producer_impl": "hailo10_infermodel_async_fifo",
+          "frames": 1000,
+          "requested_frames": 1000,
+          "duration_s": 0.0,
+          "warmup": 100,
+          "inflight": 8,
+          "queue_depth": 3,
+          "produced_frames": 1000,
+          "consumed_frames": 1000,
+          "hailo_latency_ms": 6.674771136691561,
+          "p1_ms": 6.674771136691561,
+          "producer_makespan_ms": 850.9023270162288,
+          "consumer_makespan_ms": 851.0285069933161,
+          "p1_effective_cycle_ms": 0.8509023270162288,
+          "consumer_effective_cycle_ms": 0.8510285069933161,
+          "output_extract_ms": 0.0824067406647373,
+          "payload_copy_ms": 0.0,
+          "boundary_copy_count": 1,
+          "boundary_copy_policy": "single_owned_contiguous_copy_from_reusable_accelerator_binding",
+          "fifo_put_block_ms": 0.01321630339953117,
+          "queue_wait_ms": 0.055480078677646816,
+          "trt_input_copy_ms": 0.01450049044797197,
+          "handoff_ms": 0.11012353451224044,
+          "p2_run_ms": 0.11580727092223242,
+          "completion_tail_ms": 0.0,
+          "postprocess_ms": 0.0,
+          "p1_thread_ms": 0.8509023270162288,
+          "p2_thread_ms": 0.1303077613702044,
+          "paper_equivalent_cycle_ms": 0.8509023270162288,
+          "paper_equivalent_fps": 1175.2230170842247,
+          "makespan_ms": 851.1274849879555,
+          "fps_makespan": 1174.912122611281,
+          "measurement_boundary": "workers_ready_to_last_completed_trt_frame",
+          "last_completion_source": "native_trt_synchronized_output",
+          "warmup_contract": "fully_drained_before_worker_start",
+          "trt_host_memory_policy": "cuda_pinned_all_bindings",
+          "trt_output_materialization_policy": "synchronized_d2h_pinned_view_no_post_copy",
+          "trt_copy_outputs": true,
+          "completed_frames": 1000,
+          "completed_work_units": 1000,
+          "completed_work_units_source": "trt_consumer_successful_completion_counter",
+          "completed_work_units_status": "exact_runtime_counter",
+          "metric_note": "For async_fifo, queue_wait_ms is backlog wait and is not counted as handoff work. Detection p2_thread_ms and makespan include the serial completed-task tail.",
+          "postprocess_included": false,
+          "postprocess_completed_frames": 0,
+          "postprocess_completion_verified": false,
+          "repetition_index": 3,
+          "runtime_instance_id": "fresh_runtime:8605388d92544d158be7fc2ade3f41a5b22821a1ebcc8a8a35c7e1027d6d333a",
+          "ok": true,
+          "status": "ok",
+          "workload_contract_sha256": "38f78c0435d1794475a32b54d5d75cec1e7d10e2891ff12c92504fc6074c8282"
+        }
+      ],
+      "repetition_evidence": [
+        {
+          "producer_impl": "hailo10_infermodel_async_fifo",
+          "frames": 1000,
+          "requested_frames": 1000,
+          "duration_s": 0.0,
+          "warmup": 100,
+          "inflight": 8,
+          "queue_depth": 3,
+          "produced_frames": 1000,
+          "consumed_frames": 1000,
+          "hailo_latency_ms": 6.675170368369436,
+          "p1_ms": 6.675170368369436,
+          "producer_makespan_ms": 850.9184879949316,
+          "consumer_makespan_ms": 851.0328579868656,
+          "p1_effective_cycle_ms": 0.8509184879949316,
+          "consumer_effective_cycle_ms": 0.8510328579868656,
+          "output_extract_ms": 0.08170384567347355,
+          "payload_copy_ms": 0.0,
+          "boundary_copy_count": 1,
+          "boundary_copy_policy": "single_owned_contiguous_copy_from_reusable_accelerator_binding",
+          "fifo_put_block_ms": 0.013267879607155919,
+          "queue_wait_ms": 0.055691735178697854,
+          "trt_input_copy_ms": 0.01519123450270854,
+          "handoff_ms": 0.11016295978333801,
+          "p2_run_ms": 0.3115290134155657,
+          "completion_tail_ms": 0.0,
+          "postprocess_ms": 0.0,
+          "p1_thread_ms": 0.8509184879949316,
+          "p2_thread_ms": 0.32672024791827425,
+          "paper_equivalent_cycle_ms": 0.8509184879949316,
+          "paper_equivalent_fps": 1175.2006967863135,
+          "makespan_ms": 851.1443489987869,
+          "fps_makespan": 1174.8888436800576,
+          "measurement_boundary": "workers_ready_to_last_completed_trt_frame",
+          "last_completion_source": "native_trt_synchronized_output",
+          "warmup_contract": "fully_drained_before_worker_start",
+          "trt_host_memory_policy": "cuda_pinned_all_bindings",
+          "trt_output_materialization_policy": "synchronized_d2h_pinned_view_no_post_copy",
+          "trt_copy_outputs": true,
+          "completed_frames": 1000,
+          "completed_work_units": 1000,
+          "completed_work_units_source": "trt_consumer_successful_completion_counter",
+          "completed_work_units_status": "exact_runtime_counter",
+          "metric_note": "For async_fifo, queue_wait_ms is backlog wait and is not counted as handoff work. Detection p2_thread_ms and makespan include the serial completed-task tail.",
+          "postprocess_included": false,
+          "postprocess_completed_frames": 0,
+          "postprocess_completion_verified": false,
+          "repetition_index": 1,
+          "runtime_instance_id": "fresh_runtime:f5cadd41ac9244a894bfd4b52d47549d3736e1056607866b6f5dbed355069415",
+          "ok": true,
+          "status": "ok",
+          "workload_contract_sha256": "38f78c0435d1794475a32b54d5d75cec1e7d10e2891ff12c92504fc6074c8282"
+        },
+        {
+          "producer_impl": "hailo10_infermodel_async_fifo",
+          "frames": 1000,
+          "requested_frames": 1000,
+          "duration_s": 0.0,
+          "warmup": 100,
+          "inflight": 8,
+          "queue_depth": 3,
+          "produced_frames": 1000,
+          "consumed_frames": 1000,
+          "hailo_latency_ms": 6.673059233900858,
+          "p1_ms": 6.673059233900858,
+          "producer_makespan_ms": 850.897847005399,
+          "consumer_makespan_ms": 851.008441997692,
+          "p1_effective_cycle_ms": 0.8508978470053989,
+          "consumer_effective_cycle_ms": 0.851008441997692,
+          "output_extract_ms": 0.08351144677726552,
+          "payload_copy_ms": 0.0,
+          "boundary_copy_count": 1,
+          "boundary_copy_policy": "single_owned_contiguous_copy_from_reusable_accelerator_binding",
+          "fifo_put_block_ms": 0.012928414798807353,
+          "queue_wait_ms": 0.056124511698726565,
+          "trt_input_copy_ms": 0.014762737788259983,
+          "handoff_ms": 0.11120259936433285,
+          "p2_run_ms": 0.11992002179613337,
+          "completion_tail_ms": 0.0,
+          "postprocess_ms": 0.0,
+          "p1_thread_ms": 0.8508978470053989,
+          "p2_thread_ms": 0.13468275958439335,
+          "paper_equivalent_cycle_ms": 0.8508978470053989,
+          "paper_equivalent_fps": 1175.2292046799068,
+          "makespan_ms": 851.1192600126378,
+          "fps_makespan": 1174.9234766290585,
+          "measurement_boundary": "workers_ready_to_last_completed_trt_frame",
+          "last_completion_source": "native_trt_synchronized_output",
+          "warmup_contract": "fully_drained_before_worker_start",
+          "trt_host_memory_policy": "cuda_pinned_all_bindings",
+          "trt_output_materialization_policy": "synchronized_d2h_pinned_view_no_post_copy",
+          "trt_copy_outputs": true,
+          "completed_frames": 1000,
+          "completed_work_units": 1000,
+          "completed_work_units_source": "trt_consumer_successful_completion_counter",
+          "completed_work_units_status": "exact_runtime_counter",
+          "metric_note": "For async_fifo, queue_wait_ms is backlog wait and is not counted as handoff work. Detection p2_thread_ms and makespan include the serial completed-task tail.",
+          "postprocess_included": false,
+          "postprocess_completed_frames": 0,
+          "postprocess_completion_verified": false,
+          "repetition_index": 2,
+          "runtime_instance_id": "fresh_runtime:7b2d5e9af22f7dccd1cd3c1efd745998597e87bcc6d0627c52c810b52dbeb854",
+          "ok": true,
+          "status": "ok",
+          "workload_contract_sha256": "38f78c0435d1794475a32b54d5d75cec1e7d10e2891ff12c92504fc6074c8282"
+        },
+        {
+          "producer_impl": "hailo10_infermodel_async_fifo",
+          "frames": 1000,
+          "requested_frames": 1000,
+          "duration_s": 0.0,
+          "warmup": 100,
+          "inflight": 8,
+          "queue_depth": 3,
+          "produced_frames": 1000,
+          "consumed_frames": 1000,
+          "hailo_latency_ms": 6.674771136691561,
+          "p1_ms": 6.674771136691561,
+          "producer_makespan_ms": 850.9023270162288,
+          "consumer_makespan_ms": 851.0285069933161,
+          "p1_effective_cycle_ms": 0.8509023270162288,
+          "consumer_effective_cycle_ms": 0.8510285069933161,
+          "output_extract_ms": 0.0824067406647373,
+          "payload_copy_ms": 0.0,
+          "boundary_copy_count": 1,
+          "boundary_copy_policy": "single_owned_contiguous_copy_from_reusable_accelerator_binding",
+          "fifo_put_block_ms": 0.01321630339953117,
+          "queue_wait_ms": 0.055480078677646816,
+          "trt_input_copy_ms": 0.01450049044797197,
+          "handoff_ms": 0.11012353451224044,
+          "p2_run_ms": 0.11580727092223242,
+          "completion_tail_ms": 0.0,
+          "postprocess_ms": 0.0,
+          "p1_thread_ms": 0.8509023270162288,
+          "p2_thread_ms": 0.1303077613702044,
+          "paper_equivalent_cycle_ms": 0.8509023270162288,
+          "paper_equivalent_fps": 1175.2230170842247,
+          "makespan_ms": 851.1274849879555,
+          "fps_makespan": 1174.912122611281,
+          "measurement_boundary": "workers_ready_to_last_completed_trt_frame",
+          "last_completion_source": "native_trt_synchronized_output",
+          "warmup_contract": "fully_drained_before_worker_start",
+          "trt_host_memory_policy": "cuda_pinned_all_bindings",
+          "trt_output_materialization_policy": "synchronized_d2h_pinned_view_no_post_copy",
+          "trt_copy_outputs": true,
+          "completed_frames": 1000,
+          "completed_work_units": 1000,
+          "completed_work_units_source": "trt_consumer_successful_completion_counter",
+          "completed_work_units_status": "exact_runtime_counter",
+          "metric_note": "For async_fifo, queue_wait_ms is backlog wait and is not counted as handoff work. Detection p2_thread_ms and makespan include the serial completed-task tail.",
+          "postprocess_included": false,
+          "postprocess_completed_frames": 0,
+          "postprocess_completion_verified": false,
+          "repetition_index": 3,
+          "runtime_instance_id": "fresh_runtime:8605388d92544d158be7fc2ade3f41a5b22821a1ebcc8a8a35c7e1027d6d333a",
+          "ok": true,
+          "status": "ok",
+          "workload_contract_sha256": "38f78c0435d1794475a32b54d5d75cec1e7d10e2891ff12c92504fc6074c8282"
+        }
+      ],
+      "handoff_ms": 0.11016295978333801,
+      "p1_ms": 6.674771136691561,
+      "p2_run_ms": 0.11992002179613337,
+      "producer_ready": null,
+      "consumer_ready": null,
+      "report": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set/native_pipeline/b132/hailo10h_to_trt/uint8_dequant_fp16/hailo10_native_fifo_e2e_results.json",
+      "setup_id": "orin_nx_hailo10_01",
+      "eval_run_id": "complete_set_20260907_161614",
+      "source_run_id": "hailo10h_to_trt",
+      "native_split_quality_required": true,
+      "native_split_quality_available": true,
+      "technical_quality_error": "",
+      "energy_quality_qualified": true,
+      "energy_quality_status": "quality_qualified",
+      "native_energy_after_technical_error": "not_applicable_quality_qualified",
+      "performance_claims_emitted": true,
+      "execution_role": "quality_first_native_split",
+      "native_command_contract": {
+        "backend": "hailo10h_to_trt",
+        "model": "regnet_x_1_6gf",
+        "setup_id": "orin_nx_hailo10_01",
+        "comparison_backend": "hailo10h",
+        "runner": "scripts/native_hailo10_trt_e2e_from_benchmarkset.py",
+        "python_executable": "/home/nx/venvs/hailo10/bin/python",
+        "interpreter_identity": {
+          "executable": "/home/nx/venvs/hailo10/bin/python",
+          "resolved_executable": "/usr/bin/python3.10",
+          "executable_sha256": "e6bd3bd6d16c69ffda0d87aac09a2ed202119004805568b3d1b9b2b47763ca26",
+          "prefix": "/home/nx/venvs/hailo10",
+          "base_prefix": "/usr",
+          "version": "3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0]"
+        },
+        "runner_sha256": "4e4352d0632c22726d45dcaf63320af12b9f04a64c298a6b4a45882b737bc498",
+        "benchmark_set": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set",
+        "case": "b132",
+        "hw_arch": "hailo10h",
+        "precision": "uint8_dequant_fp16",
+        "input_image": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set/resources/validation/classification/val_by_wnid_n500_s20260710/images/n01443537/ILSVRC2012_val_00013623.JPEG",
+        "input_image_source": "exact_file",
+        "input_image_sha256": "7fcdd3d95ff2491a2a5fe235d786026b728ffe0f88d25c4543d9a3e253f71652",
+        "artifacts": {
+          "python_executable": {
+            "path": "/home/nx/venvs/hailo10/bin/python",
+            "sha256": "e6bd3bd6d16c69ffda0d87aac09a2ed202119004805568b3d1b9b2b47763ca26"
+          },
+          "hef": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/part1.hef",
+            "sha256": "8472a4e083e97fd2a095418690dee6ebcc4fcdcdf94c6bb368f3d61c9fb619d9",
+            "size_bytes": 6717440
+          },
+          "engine": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+            "sha256": "c6f6622d5f3af768eba7cf2889451d739d0690938feebf9ce36dfb7cba45f9f3",
+            "size_bytes": 1851716
+          },
+          "prepared_input_00": {
+            "path": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set/native_pipeline/b132/hailo10h_to_trt/uint8_dequant_fp16/contract_artifacts/hailo10_prepared_input_00_input.npy",
+            "sha256": "6b102dbc748b10e4e14ef92795c98c703d30b6e80d142ec7dbee7740791d9b0f"
+          },
+          "native_trt_meta": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/native_trt_meta.json",
+            "sha256": "986874485bff770d097708289f481b726c52995d089dc424f710bbc51521c94f",
+            "size_bytes": 8313
+          },
+          "part1_onnx": {
+            "path": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set/b132/regnet_x_1_6gf_part1_b132.onnx",
+            "sha256": "0ad1b5bca67360f83178c9d69192d999c9eb9d32cde80598ccf31e10a45a2a72"
+          },
+          "boundary_metadata": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/part1_boundary_metadata.json",
+            "sha256": "723a29fa2e796f59ea742ca401b059b7fcdca11d82a18e98eaeeedc8ef970c4a",
+            "size_bytes": 1034
+          },
+          "source_part2_onnx": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/benchmark_set/b132/source_part2.onnx",
+            "sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+            "size_bytes": 3654704
+          },
+          "build_part2_onnx": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+            "sha256": "8378cdbd3cf267e8a32567b459b19e4bd70c89e202930d7e5d402e11eb255ead",
+            "size_bytes": 3655086
+          },
+          "engine_build_receipt": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/engine_build_receipt.json",
+            "sha256": "7aa9973a805db97a3d82cc249abfadef198eba302bf379a12be0a1694dd2816d",
+            "size_bytes": 2327
+          },
+          "trtexec": {
+            "path": "/usr/src/tensorrt/bin/trtexec",
+            "sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4",
+            "size_bytes": 1695696
+          },
+          "semantic_output_manifest": {
+            "path": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set/native_pipeline/b132/hailo10h_to_trt/uint8_dequant_fp16/native_outputs/native_outputs_manifest.json",
+            "sha256": "82f52ccf6aab0622b6f40d0aa17e9486149966611fd747b71394dea99e50e9ab",
+            "size_bytes": 4186
+          },
+          "semantic_boundary_manifest": {
+            "path": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set/native_pipeline/b132/hailo10h_to_trt/uint8_dequant_fp16/native_fifo_boundary/native_fifo_boundary_manifest.json",
+            "sha256": "32efe0a8eba8a44cb3bd475fa3d2b9a1d8b143c373247e0f8058bd6cd8c46c67",
+            "size_bytes": 3258
+          }
+        },
+        "prepared_input_contract": {
+          "format": "numpy_npy_v1",
+          "entries": [
+            {
+              "name": "input",
+              "artifact_name": "prepared_input_00",
+              "shape": [
+                224,
+                224,
+                3
+              ],
+              "dtype": "uint8",
+              "c_contiguous": true
+            }
+          ],
+          "slot_order": [
+            "input"
+          ],
+          "preprocess": "exact_performance_prepared_tensor_persisted",
+          "task": "classification",
+          "preprocess_mode_requested": "resize",
+          "preprocess_mode": "resize",
+          "preprocess_mode_effective": "resize",
+          "normalization": "hef_quant_info_from_imagenet_float32",
+          "letterbox": false,
+          "pad_value": null,
+          "letterbox_pad_value_requested": 0,
+          "letterbox_pad_value_effective": 0,
+          "letterbox_pad_value": 0,
+          "pad_value_effective": 0,
+          "source_image": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set/resources/validation/classification/val_by_wnid_n500_s20260710/images/n01443537/ILSVRC2012_val_00013623.JPEG",
+          "source_image_sha256": "7fcdd3d95ff2491a2a5fe235d786026b728ffe0f88d25c4543d9a3e253f71652"
+        },
+        "runtime_options": {
+          "frames": 1000,
+          "duration_s": 0.0,
+          "warmup": 100,
+          "queue_depth": 3,
+          "repetitions": 3,
+          "inflight": 8,
+          "producer_impl": "auto",
+          "quantized_inputs": true,
+          "quantized_outputs": true,
+          "copy_outputs": true,
+          "dump_outputs": true,
+          "dump_boundary": true,
+          "build": false,
+          "part1_onnx_used": true,
+          "canonical_input_slot_names": [
+            "input"
+          ],
+          "canonical_output_slot_names": [
+            "mean"
+          ],
+          "runtime_input_shapes": {
+            "input": [
+              224,
+              224,
+              3
+            ]
+          },
+          "runtime_output_shapes": {
+            "mean": [
+              912
+            ]
+          },
+          "prepared_input_bound": true,
+          "task": "classification",
+          "preprocess_mode_requested": "resize",
+          "preprocess_mode_effective": "resize",
+          "letterbox_pad_value_requested": 0,
+          "letterbox_pad_value_effective": 0,
+          "letterbox_pad_value": 0,
+          "completion_execution_contract": null,
+          "completion_execution_contract_sha256": ""
+        },
+        "boundary_contract": {
+          "metadata_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/native_trt_meta.json",
+          "metadata_sha256": "986874485bff770d097708289f481b726c52995d089dc424f710bbc51521c94f",
+          "boundary_layout_requested": "as_input",
+          "boundary_layout_effective": "as_input",
+          "dequant_scale": 0.03765547648072243,
+          "dequant_zero_point": 0.0,
+          "bridge_schema": "onnx-splitpoint/uint8-dequant-bridge"
+        },
+        "source_contract_sha256": "",
+        "runtime_boundary_evidence": {
+          "status": "exact_runtime_boundary_verified",
+          "runtime_name": "mean",
+          "shape": [
+            912
+          ],
+          "dtype": "uint8",
+          "element_count": 912,
+          "trt_input_name": "mean",
+          "trt_input_shape": [
+            1,
+            912,
+            1,
+            1
+          ],
+          "binding_boundary_metadata_sha256": "608e54cb108b77f6fbc6b8b57e88539f1c9959b9b1be85b14ead2dad8d5ace41"
+        },
+        "eval_run_id": "complete_set_20260907_161614",
+        "source_run_id": "hailo10h_to_trt",
+        "native_split_quality_binding": {
+          "artifacts": {
+            "boundary_metadata": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/part1_boundary_metadata.json",
+              "sha256": "723a29fa2e796f59ea742ca401b059b7fcdca11d82a18e98eaeeedc8ef970c4a",
+              "size_bytes": 1034
+            },
+            "build_part2_onnx": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+              "sha256": "8378cdbd3cf267e8a32567b459b19e4bd70c89e202930d7e5d402e11eb255ead",
+              "size_bytes": 3655086
+            },
+            "engine": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+              "sha256": "c6f6622d5f3af768eba7cf2889451d739d0690938feebf9ce36dfb7cba45f9f3",
+              "size_bytes": 1851716
+            },
+            "engine_build_receipt": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/engine_build_receipt.json",
+              "sha256": "7aa9973a805db97a3d82cc249abfadef198eba302bf379a12be0a1694dd2816d",
+              "size_bytes": 2327
+            },
+            "native_trt_meta": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/native_trt_meta.json",
+              "sha256": "986874485bff770d097708289f481b726c52995d089dc424f710bbc51521c94f",
+              "size_bytes": 8313
+            },
+            "part1_runtime": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/part1.hef",
+              "sha256": "8472a4e083e97fd2a095418690dee6ebcc4fcdcdf94c6bb368f3d61c9fb619d9",
+              "size_bytes": 6717440
+            },
+            "source_part2_onnx": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/benchmark_set/b132/source_part2.onnx",
+              "sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+              "size_bytes": 3654704
+            },
+            "trtexec": {
+              "path": "/usr/src/tensorrt/bin/trtexec",
+              "sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4",
+              "size_bytes": 1695696
+            }
+          },
+          "boundary_contract": {
+            "boundary_layout": "as_input",
+            "boundary_metadata_file_sha256": "723a29fa2e796f59ea742ca401b059b7fcdca11d82a18e98eaeeedc8ef970c4a",
+            "boundary_metadata_sha256": "608e54cb108b77f6fbc6b8b57e88539f1c9959b9b1be85b14ead2dad8d5ace41",
+            "boundary_tensor_dtype": "uint8",
+            "boundary_tensor_name": "mean",
+            "boundary_tensor_shape": [
+              912
+            ],
+            "boundary_transform": "uint8_dequant",
+            "dequant_scale": 0.03765547648072243,
+            "dequant_zero_point": 0.0,
+            "precision": "uint8_dequant_fp16"
+          },
+          "boundary_contract_sha256": "628c100e15b4726d485d9e4f00e4fdb07f33dd46e0036375f1c46f6035cb9186",
+          "boundary_metadata_payload": {
+            "backend": "hailo10h_to_trt",
+            "boundary_layout": "as_input",
+            "boundary_tensor": {
+              "canonical_part2_shape": [
+                1,
+                912,
+                1,
+                1
+              ],
+              "dtype": "uint8",
+              "hef_native_storage_dtype": "uint8",
+              "hef_vstream_format_type": "uint8",
+              "name": "mean",
+              "quantization": {
+                "scale": 0.03765547648072243,
+                "source": "hailort_hef_output_vstream_info",
+                "zero_point": 0.0
+              },
+              "runtime_name": "regnet_x_1_6gf_part1_b132/avgpool1",
+              "shape": [
+                912
+              ]
+            },
+            "boundary_tensor_count": 1,
+            "boundary_transform": "uint8_dequant",
+            "case_id": "b132",
+            "metadata_sha256": "608e54cb108b77f6fbc6b8b57e88539f1c9959b9b1be85b14ead2dad8d5ace41",
+            "model_id": "regnet_x_1_6gf",
+            "part1_artifact_sha256": "8472a4e083e97fd2a095418690dee6ebcc4fcdcdf94c6bb368f3d61c9fb619d9",
+            "part1_artifact_size_bytes": 6717440,
+            "schema": "onnx-splitpoint/native-part1-boundary-metadata",
+            "schema_version": 1,
+            "setup_id": "orin_nx_hailo10_01",
+            "source_run_id": "hailo10_to_tensorrt"
+          },
+          "boundary_metadata_value_sha256": "9c4c94d9d4f6b62496bcd465c0c65376562d71b39ff70d8b2018adad06c338c9",
+          "central_quality_selection": {
+            "backend": "hailo10h_to_trt",
+            "case_id": "b132",
+            "central_result_sha256": "f85df918edc2b64a946af95a66870f7ccb284a419cc86364f352bcef5fbeecf0",
+            "eval_run_id": "complete_set_20260907_161614",
+            "model_id": "regnet_x_1_6gf",
+            "precision": "uint8_dequant_fp16",
+            "producer_binding_sha256": "83218d9f2819bb8d345f64a64a79abb170cd457bf6e59ca73cf08f19bcecef4a",
+            "receipt_sha256": "d3c222cf268e19a2c19a054bbcac6b29a00a59f6bd7b81fdd4298e8f6f146bb6",
+            "runtime_precision_identity": "uint8_dequant_fp16",
+            "schema": "onnx-splitpoint/native-split-quality-central-selection",
+            "schema_version": 1,
+            "setup_id": "orin_nx_hailo10_01",
+            "source_request_sha256": "2418b00e4a88c578fb6056ddf7944730260cc5ee4b2eef361ae53205c538cc9b",
+            "source_run_id": "hailo10h_to_trt",
+            "task": "classification",
+            "variant": "composed"
+          },
+          "central_quality_selection_sha256": "d3c222cf268e19a2c19a054bbcac6b29a00a59f6bd7b81fdd4298e8f6f146bb6",
+          "central_result_sha256": "f85df918edc2b64a946af95a66870f7ccb284a419cc86364f352bcef5fbeecf0",
+          "engine_build_receipt": {
+            "build_returncode": 0,
+            "command": [
+              "/usr/src/tensorrt/bin/trtexec",
+              "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+              "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+              "--fp16",
+              "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/timing.cache",
+              "--memPoolSize=workspace:4096"
+            ],
+            "dry_run": false,
+            "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+            "engine_sha256": "c6f6622d5f3af768eba7cf2889451d739d0690938feebf9ce36dfb7cba45f9f3",
+            "receipt_sha256": "ee2f72f366ab9224a56ddb85a0bec41a4c0497dc7b6c88d593f3f56e6988bffc",
+            "schema": "onnx-splitpoint/tensorrt-engine-build-receipt",
+            "schema_version": 1,
+            "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+            "source_onnx_sha256": "8378cdbd3cf267e8a32567b459b19e4bd70c89e202930d7e5d402e11eb255ead",
+            "trtexec": "/usr/src/tensorrt/bin/trtexec",
+            "trtexec_sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4"
+          },
+          "engine_build_receipt_canonical_size_bytes": 2245,
+          "engine_build_receipt_file_sha256": "7aa9973a805db97a3d82cc249abfadef198eba302bf379a12be0a1694dd2816d",
+          "engine_build_receipt_file_size_bytes": 2327,
+          "engine_build_receipt_outer_sha256": "94ab6c348008f5636c8632ba7e1e47f8b609cd0311b64e8fad1beb8b819c9491",
+          "engine_build_receipt_sha256": "ee2f72f366ab9224a56ddb85a0bec41a4c0497dc7b6c88d593f3f56e6988bffc",
+          "eval_run_id": "complete_set_20260907_161614",
+          "local_artifact_verification": {
+            "artifact_names": [
+              "part1_runtime",
+              "boundary_metadata",
+              "source_part2_onnx",
+              "build_part2_onnx",
+              "engine",
+              "native_trt_meta",
+              "engine_build_receipt",
+              "trtexec"
+            ],
+            "artifact_set_sha256": "6fbe28256e94055aac0b6872968763d20fa93a51bc782d9c16c679b5d9c0f733",
+            "artifacts": {
+              "boundary_metadata": {
+                "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/part1_boundary_metadata.json",
+                "sha256": "723a29fa2e796f59ea742ca401b059b7fcdca11d82a18e98eaeeedc8ef970c4a",
+                "size_bytes": 1034
+              },
+              "build_part2_onnx": {
+                "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+                "sha256": "8378cdbd3cf267e8a32567b459b19e4bd70c89e202930d7e5d402e11eb255ead",
+                "size_bytes": 3655086
+              },
+              "engine": {
+                "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+                "sha256": "c6f6622d5f3af768eba7cf2889451d739d0690938feebf9ce36dfb7cba45f9f3",
+                "size_bytes": 1851716
+              },
+              "engine_build_receipt": {
+                "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/engine_build_receipt.json",
+                "sha256": "7aa9973a805db97a3d82cc249abfadef198eba302bf379a12be0a1694dd2816d",
+                "size_bytes": 2327
+              },
+              "native_trt_meta": {
+                "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/native_trt_meta.json",
+                "sha256": "986874485bff770d097708289f481b726c52995d089dc424f710bbc51521c94f",
+                "size_bytes": 8313
+              },
+              "part1_runtime": {
+                "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/part1.hef",
+                "sha256": "8472a4e083e97fd2a095418690dee6ebcc4fcdcdf94c6bb368f3d61c9fb619d9",
+                "size_bytes": 6717440
+              },
+              "source_part2_onnx": {
+                "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/benchmark_set/b132/source_part2.onnx",
+                "sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+                "size_bytes": 3654704
+              },
+              "trtexec": {
+                "path": "/usr/src/tensorrt/bin/trtexec",
+                "sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4",
+                "size_bytes": 1695696
+              }
+            },
+            "boundary_metadata_value_sha256": "9c4c94d9d4f6b62496bcd465c0c65376562d71b39ff70d8b2018adad06c338c9",
+            "build_summary_row_sha256": "1c4263120484b384766d121888753b31b701bd280dc3d6aa058c8bd9b07eecd0",
+            "embedded_json_files": {
+              "boundary_metadata": {
+                "canonical_value_sha256": "9c4c94d9d4f6b62496bcd465c0c65376562d71b39ff70d8b2018adad06c338c9",
+                "content_base64": "ewogICJiYWNrZW5kIjogImhhaWxvMTBoX3RvX3RydCIsCiAgImJvdW5kYXJ5X2xheW91dCI6ICJhc19pbnB1dCIsCiAgImJvdW5kYXJ5X3RlbnNvciI6IHsKICAgICJjYW5vbmljYWxfcGFydDJfc2hhcGUiOiBbCiAgICAgIDEsCiAgICAgIDkxMiwKICAgICAgMSwKICAgICAgMQogICAgXSwKICAgICJkdHlwZSI6ICJ1aW50OCIsCiAgICAiaGVmX25hdGl2ZV9zdG9yYWdlX2R0eXBlIjogInVpbnQ4IiwKICAgICJoZWZfdnN0cmVhbV9mb3JtYXRfdHlwZSI6ICJ1aW50OCIsCiAgICAibmFtZSI6ICJtZWFuIiwKICAgICJxdWFudGl6YXRpb24iOiB7CiAgICAgICJzY2FsZSI6IDAuMDM3NjU1NDc2NDgwNzIyNDMsCiAgICAgICJzb3VyY2UiOiAiaGFpbG9ydF9oZWZfb3V0cHV0X3ZzdHJlYW1faW5mbyIsCiAgICAgICJ6ZXJvX3BvaW50IjogMC4wCiAgICB9LAogICAgInJ1bnRpbWVfbmFtZSI6ICJyZWduZXRfeF8xXzZnZl9wYXJ0MV9iMTMyL2F2Z3Bvb2wxIiwKICAgICJzaGFwZSI6IFsKICAgICAgOTEyCiAgICBdCiAgfSwKICAiYm91bmRhcnlfdGVuc29yX2NvdW50IjogMSwKICAiYm91bmRhcnlfdHJhbnNmb3JtIjogInVpbnQ4X2RlcXVhbnQiLAogICJjYXNlX2lkIjogImIxMzIiLAogICJtZXRhZGF0YV9zaGEyNTYiOiAiNjA4ZTU0Y2IxMDhiNzdmNmZiYzZiOGI1N2U4ODUzOWYxYzk5NTliOWIxYmU4NWIxNGVhZDJkYWQ4ZDVhY2U0MSIsCiAgIm1vZGVsX2lkIjogInJlZ25ldF94XzFfNmdmIiwKICAicGFydDFfYXJ0aWZhY3Rfc2hhMjU2IjogIjg0NzJhNGUwODNlOTdmZDJhMDk1NDE4NjkwZGVlNmViY2M0ZmNkY2RmOTRjNmJiMzY4ZjNkNjFjOWZiNjE5ZDkiLAogICJwYXJ0MV9hcnRpZmFjdF9zaXplX2J5dGVzIjogNjcxNzQ0MCwKICAic2NoZW1hIjogIm9ubngtc3BsaXRwb2ludC9uYXRpdmUtcGFydDEtYm91bmRhcnktbWV0YWRhdGEiLAogICJzY2hlbWFfdmVyc2lvbiI6IDEsCiAgInNldHVwX2lkIjogIm9yaW5fbnhfaGFpbG8xMF8wMSIsCiAgInNvdXJjZV9ydW5faWQiOiAiaGFpbG8xMF90b190ZW5zb3JydCIKfQo=",
+                "encoding": "base64",
+                "file_sha256": "723a29fa2e796f59ea742ca401b059b7fcdca11d82a18e98eaeeedc8ef970c4a",
+                "file_size_bytes": 1034
+              },
+              "engine_build_receipt": {
+                "canonical_value_sha256": "94ab6c348008f5636c8632ba7e1e47f8b609cd0311b64e8fad1beb8b819c9491",
+                "content_base64": "ewogICJidWlsZF9yZXR1cm5jb2RlIjogMCwKICAiY29tbWFuZCI6IFsKICAgICIvdXNyL3NyYy90ZW5zb3JydC9iaW4vdHJ0ZXhlYyIsCiAgICAiLS1vbm54PS9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L3JlZ25ldF94XzFfNmdmLWFhMzUzMzlkMDNjOWViZjQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvaGFpbG8xMGhfdG9fdHJ0L2Y5NjM0MjhjYzQ2YjFiMDAxZWM5NTUxNTMxNTNmNzk2NzhiZWIxNzBkNWFlMjYxNjY1NzY1MmZkZDgzZDk5NTIvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvdWludDhfZGVxdWFudF9mcDE2L3NvdXJjZV9wYXJ0Ml91aW50OF9kZXF1YW50X2JyaWRnZS5vbm54IiwKICAgICItLXNhdmVFbmdpbmU9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9oYWlsbzEwaF90b190cnQvZjk2MzQyOGNjNDZiMWIwMDFlYzk1NTE1MzE1M2Y3OTY3OGJlYjE3MGQ1YWUyNjE2NjU3NjUyZmRkODNkOTk1Mi9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvcGFydDJfdWludDhfZGVxdWFudF9mcDE2LmVuZ2luZSIsCiAgICAiLS1mcDE2IiwKICAgICItLXRpbWluZ0NhY2hlRmlsZT0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi90aW1pbmcuY2FjaGUiLAogICAgIi0tbWVtUG9vbFNpemU9d29ya3NwYWNlOjQwOTYiCiAgXSwKICAiZHJ5X3J1biI6IGZhbHNlLAogICJlbmdpbmUiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9oYWlsbzEwaF90b190cnQvZjk2MzQyOGNjNDZiMWIwMDFlYzk1NTE1MzE1M2Y3OTY3OGJlYjE3MGQ1YWUyNjE2NjU3NjUyZmRkODNkOTk1Mi9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvcGFydDJfdWludDhfZGVxdWFudF9mcDE2LmVuZ2luZSIsCiAgImVuZ2luZV9zaGEyNTYiOiAiYzZmNjYyMmQ1ZjNhZjc2OGViYTdjZjI4ODk0NTFkNzM5ZDA2OTA5MzhmZWViZjljZTM2ZGZiN2NiYTQ1ZjlmMyIsCiAgInJlY2VpcHRfc2hhMjU2IjogImVlMmY3MmYzNjZhYjkyMjRhNTZkZGI4NWEwYmVjNDFhNGMwNDk3ZGM3YjZjODhkNTkzZjNmNTZlNjk4OGJmZmMiLAogICJzY2hlbWEiOiAib25ueC1zcGxpdHBvaW50L3RlbnNvcnJ0LWVuZ2luZS1idWlsZC1yZWNlaXB0IiwKICAic2NoZW1hX3ZlcnNpb24iOiAxLAogICJzb3VyY2Vfb25ueCI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9zb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2Uub25ueCIsCiAgInNvdXJjZV9vbm54X3NoYTI1NiI6ICI4Mzc4Y2RiZDNjZjI2N2U4YTMyNTY3YjQ1OWIxOWU0YmQ3MGM4OWUyMDI5MzBkN2U1ZDQwMmUxMWViMjU1ZWFkIiwKICAidHJ0ZXhlYyI6ICIvdXNyL3NyYy90ZW5zb3JydC9iaW4vdHJ0ZXhlYyIsCiAgInRydGV4ZWNfc2hhMjU2IjogImI4MDA5OTA1MDg3OTNhOWJmNTA3MTNkNzhkNGZlZGZlNDc1MzgxZDhjZDc0OWFiZGE4MDkwOWI5MTk3ZmExYzQiCn0=",
+                "encoding": "base64",
+                "file_sha256": "7aa9973a805db97a3d82cc249abfadef198eba302bf379a12be0a1694dd2816d",
+                "file_size_bytes": 2327
+              },
+              "native_trt_meta": {
+                "canonical_value_sha256": "1c4263120484b384766d121888753b31b701bd280dc3d6aa058c8bd9b07eecd0",
+                "content_base64": "ewogICJidWlsZCI6IHsKICAgICJjYWNoZV9oaXQiOiB0cnVlLAogICAgImNtZCI6IFsKICAgICAgIi91c3Ivc3JjL3RlbnNvcnJ0L2Jpbi90cnRleGVjIiwKICAgICAgIi0tb25ueD0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9zb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2Uub25ueCIsCiAgICAgICItLXNhdmVFbmdpbmU9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9oYWlsbzEwaF90b190cnQvZjk2MzQyOGNjNDZiMWIwMDFlYzk1NTE1MzE1M2Y3OTY3OGJlYjE3MGQ1YWUyNjE2NjU3NjUyZmRkODNkOTk1Mi9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvcGFydDJfdWludDhfZGVxdWFudF9mcDE2LmVuZ2luZSIsCiAgICAgICItLWZwMTYiLAogICAgICAiLS10aW1pbmdDYWNoZUZpbGU9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9oYWlsbzEwaF90b190cnQvZjk2MzQyOGNjNDZiMWIwMDFlYzk1NTE1MzE1M2Y3OTY3OGJlYjE3MGQ1YWUyNjE2NjU3NjUyZmRkODNkOTk1Mi9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvdGltaW5nLmNhY2hlIiwKICAgICAgIi0tbWVtUG9vbFNpemU9d29ya3NwYWNlOjQwOTYiCiAgICBdLAogICAgImNvbXBpbGVyX2Rpc3BhdGNoZWQiOiBmYWxzZSwKICAgICJkcnlfcnVuIjogZmFsc2UsCiAgICAiZXZpZGVuY2Vfc291cmNlIjogInZlcmlmaWVkX2VuZ2luZV9idWlsZF9yZWNlaXB0IiwKICAgICJyZXR1cm5jb2RlIjogMAogIH0sCiAgImJ1aWxkX2F0dGVtcHRzIjogW10sCiAgImJ1aWxkX29rIjogdHJ1ZSwKICAiY2FzZSI6ICJiMTMyIiwKICAiZW5naW5lIjogIi9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L3JlZ25ldF94XzFfNmdmLWFhMzUzMzlkMDNjOWViZjQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvaGFpbG8xMGhfdG9fdHJ0L2Y5NjM0MjhjYzQ2YjFiMDAxZWM5NTUxNTMxNTNmNzk2NzhiZWIxNzBkNWFlMjYxNjY1NzY1MmZkZDgzZDk5NTIvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvdWludDhfZGVxdWFudF9mcDE2L3BhcnQyX3VpbnQ4X2RlcXVhbnRfZnAxNi5lbmdpbmUiLAogICJlbmdpbmVfYnVpbGRfcmVjZWlwdCI6IHsKICAgICJidWlsZF9yZXR1cm5jb2RlIjogMCwKICAgICJjb21tYW5kIjogWwogICAgICAiL3Vzci9zcmMvdGVuc29ycnQvYmluL3RydGV4ZWMiLAogICAgICAiLS1vbm54PS9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L3JlZ25ldF94XzFfNmdmLWFhMzUzMzlkMDNjOWViZjQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvaGFpbG8xMGhfdG9fdHJ0L2Y5NjM0MjhjYzQ2YjFiMDAxZWM5NTUxNTMxNTNmNzk2NzhiZWIxNzBkNWFlMjYxNjY1NzY1MmZkZDgzZDk5NTIvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvdWludDhfZGVxdWFudF9mcDE2L3NvdXJjZV9wYXJ0Ml91aW50OF9kZXF1YW50X2JyaWRnZS5vbm54IiwKICAgICAgIi0tc2F2ZUVuZ2luZT0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9wYXJ0Ml91aW50OF9kZXF1YW50X2ZwMTYuZW5naW5lIiwKICAgICAgIi0tZnAxNiIsCiAgICAgICItLXRpbWluZ0NhY2hlRmlsZT0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi90aW1pbmcuY2FjaGUiLAogICAgICAiLS1tZW1Qb29sU2l6ZT13b3Jrc3BhY2U6NDA5NiIKICAgIF0sCiAgICAiZHJ5X3J1biI6IGZhbHNlLAogICAgImVuZ2luZSI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9wYXJ0Ml91aW50OF9kZXF1YW50X2ZwMTYuZW5naW5lIiwKICAgICJlbmdpbmVfc2hhMjU2IjogImM2ZjY2MjJkNWYzYWY3NjhlYmE3Y2YyODg5NDUxZDczOWQwNjkwOTM4ZmVlYmY5Y2UzNmRmYjdjYmE0NWY5ZjMiLAogICAgInJlY2VpcHRfc2hhMjU2IjogImVlMmY3MmYzNjZhYjkyMjRhNTZkZGI4NWEwYmVjNDFhNGMwNDk3ZGM3YjZjODhkNTkzZjNmNTZlNjk4OGJmZmMiLAogICAgInNjaGVtYSI6ICJvbm54LXNwbGl0cG9pbnQvdGVuc29ycnQtZW5naW5lLWJ1aWxkLXJlY2VpcHQiLAogICAgInNjaGVtYV92ZXJzaW9uIjogMSwKICAgICJzb3VyY2Vfb25ueCI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9zb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2Uub25ueCIsCiAgICAic291cmNlX29ubnhfc2hhMjU2IjogIjgzNzhjZGJkM2NmMjY3ZThhMzI1NjdiNDU5YjE5ZTRiZDcwYzg5ZTIwMjkzMGQ3ZTVkNDAyZTExZWIyNTVlYWQiLAogICAgInRydGV4ZWMiOiAiL3Vzci9zcmMvdGVuc29ycnQvYmluL3RydGV4ZWMiLAogICAgInRydGV4ZWNfc2hhMjU2IjogImI4MDA5OTA1MDg3OTNhOWJmNTA3MTNkNzhkNGZlZGZlNDc1MzgxZDhjZDc0OWFiZGE4MDkwOWI5MTk3ZmExYzQiCiAgfSwKICAiZW5naW5lX2J1aWxkX3JlY2VpcHRfcGF0aCI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9lbmdpbmVfYnVpbGRfcmVjZWlwdC5qc29uIiwKICAiZW5naW5lX2J1aWxkX3JlY2VpcHRfc3RhdHVzIjogImVuZ2luZV9idWlsZF9yZWNlaXB0X3ZlcmlmaWVkIiwKICAiaW5wdXRzIjogWwogICAgewogICAgICAiZWxlbV90eXBlIjogIlVJTlQ4IiwKICAgICAgImhhc19keW5hbWljIjogZmFsc2UsCiAgICAgICJuYW1lIjogIm1lYW4iLAogICAgICAic2hhcGUiOiBbCiAgICAgICAgMSwKICAgICAgICA5MTIsCiAgICAgICAgMSwKICAgICAgICAxCiAgICAgIF0KICAgIH0KICBdLAogICJpbnB1dHNfc3RhdGljIjogdHJ1ZSwKICAib25ueCI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9zb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2Uub25ueCIsCiAgIm91dHB1dHMiOiBbCiAgICB7CiAgICAgICJlbGVtX3R5cGUiOiAiRkxPQVQiLAogICAgICAiaGFzX2R5bmFtaWMiOiBmYWxzZSwKICAgICAgIm5hbWUiOiAibG9naXRzIiwKICAgICAgInNoYXBlIjogWwogICAgICAgIDEsCiAgICAgICAgMTAwMAogICAgICBdCiAgICB9CiAgXSwKICAicHJlY2lzaW9uIjogInVpbnQ4X2RlcXVhbnRfZnAxNiIsCiAgInF1YWxpdHlfZmlyc3RfaWRlbnRpdHkiOiB7fSwKICAicmVxdWVzdGVkX3ByZWNpc2lvbiI6ICJ1aW50OF9kZXF1YW50X2ZwMTYiLAogICJzY2hlbWEiOiAib25ueC1zcGxpdHBvaW50L25hdGl2ZS10cnQtbWV0YSIsCiAgInNjaGVtYV92ZXJzaW9uIjogMSwKICAic2hhcGVzX2FyZyI6ICIiLAogICJzaGFwZXNfcG9saWN5X2VmZmVjdGl2ZSI6ICJhdXRvX3N0YXRpY19vbWl0IiwKICAic291cmNlX29ubngiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9oYWlsbzEwaF90b190cnQvZjk2MzQyOGNjNDZiMWIwMDFlYzk1NTE1MzE1M2Y3OTY3OGJlYjE3MGQ1YWUyNjE2NjU3NjUyZmRkODNkOTk1Mi9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvc291cmNlX3BhcnQyX3VpbnQ4X2RlcXVhbnRfYnJpZGdlLm9ubngiLAogICJ0cnRfY2FjaGUiOiB7CiAgICAiYXJ0aWZhY3RfcGF0aCI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9wYXJ0Ml91aW50OF9kZXF1YW50X2ZwMTYuZW5naW5lIiwKICAgICJjYXNlX2lkIjogImIxMzIiLAogICAgImNvbXBpbGVyX2Rpc3BhdGNoZWQiOiBmYWxzZSwKICAgICJpZGVudGl0eSI6ICJlZTJmNzJmMzY2YWI5MjI0YTU2ZGRiODVhMGJlYzQxYTRjMDQ5N2RjN2I2Yzg4ZDU5M2YzZjU2ZTY5ODhiZmZjIiwKICAgICJtb2RlbF9pZCI6ICJzb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2UiLAogICAgIm91dGNvbWUiOiAicmV1c2VkIiwKICAgICJyZWFzb24iOiAiY29tcGF0aWJsZV9yZWNlaXB0IiwKICAgICJyZWNlaXB0X3BhdGgiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9oYWlsbzEwaF90b190cnQvZjk2MzQyOGNjNDZiMWIwMDFlYzk1NTE1MzE1M2Y3OTY3OGJlYjE3MGQ1YWUyNjE2NjU3NjUyZmRkODNkOTk1Mi9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvZW5naW5lX2J1aWxkX3JlY2VpcHQuanNvbiIsCiAgICAicm9sZSI6ICJwYXJ0MiIsCiAgICAic3RhdHVzIjogIkhJVCIKICB9LAogICJ1aW50OF9jYXN0X2JyaWRnZSI6IHsKICAgICJib3VuZGFyeV9sYXlvdXQiOiB7CiAgICAgICJhcHBsaWVkIjogZmFsc2UsCiAgICAgICJlZmZlY3RpdmUiOiAiYXNfaW5wdXQiLAogICAgICAicmVxdWVzdGVkIjogImFzX2lucHV0IgogICAgfSwKICAgICJicmlkZ2UiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9oYWlsbzEwaF90b190cnQvZjk2MzQyOGNjNDZiMWIwMDFlYzk1NTE1MzE1M2Y3OTY3OGJlYjE3MGQ1YWUyNjE2NjU3NjUyZmRkODNkOTk1Mi9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvc291cmNlX3BhcnQyX3VpbnQ4X2RlcXVhbnRfYnJpZGdlLm9ubngiLAogICAgImJyaWRnZV9vdXRwdXQiOiAibWVhbl9fZGVxdWFudF9mbG9hdCIsCiAgICAiYnJpZGdlX3NoYTI1NiI6ICI4Mzc4Y2RiZDNjZjI2N2U4YTMyNTY3YjQ1OWIxOWU0YmQ3MGM4OWUyMDI5MzBkN2U1ZDQwMmUxMWViMjU1ZWFkIiwKICAgICJkZXF1YW50X291dHB1dCI6ICJtZWFuX19kZXF1YW50X2Zsb2F0IiwKICAgICJpbnB1dF9kdHlwZSI6ICJVSU5UOCIsCiAgICAiaW5wdXRfbmFtZSI6ICJtZWFuIiwKICAgICJpbnB1dF9zaGFwZSI6IFsKICAgICAgMSwKICAgICAgOTEyLAogICAgICAxLAogICAgICAxCiAgICBdLAogICAgInBhcmFtcyI6IHsKICAgICAgInNjYWxlIjogMC4wMzc2NTU0NzY0ODA3MjI0MywKICAgICAgInNvdXJjZSI6ICJleHBsaWNpdCIsCiAgICAgICJ6ZXJvX3BvaW50IjogMC4wCiAgICB9LAogICAgInBhcmFtc19zb3VyY2UiOiAiZXhwbGljaXQiLAogICAgInJlcGxhY2VkX3VzZXMiOiAxLAogICAgInNjYWxlIjogMC4wMzc2NTU0NzY0ODA3MjI0MywKICAgICJzY2hlbWEiOiAib25ueC1zcGxpdHBvaW50L3VpbnQ4LWRlcXVhbnQtYnJpZGdlIiwKICAgICJzY2hlbWFfdmVyc2lvbiI6IDIsCiAgICAic291cmNlIjogIi9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L3JlZ25ldF94XzFfNmdmLWFhMzUzMzlkMDNjOWViZjQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvaGFpbG8xMGhfdG9fdHJ0L2Y5NjM0MjhjYzQ2YjFiMDAxZWM5NTUxNTMxNTNmNzk2NzhiZWIxNzBkNWFlMjYxNjY1NzY1MmZkZDgzZDk5NTIvYmVuY2htYXJrX3NldC9iMTMyL3NvdXJjZV9wYXJ0Mi5vbm54IiwKICAgICJzb3VyY2Vfc2hhMjU2IjogIjBjNGNhMzFlYjZhZjQ0MDM1NjJiMWYwNGRmNzEwMzc0M2IxNzM2NzdmOGVhMzNiMDEzYTQzZDE5OGZkMDIxMGQiLAogICAgInplcm9fcG9pbnQiOiAwLjAKICB9LAogICJ2YXJpYW50IjogInBhcnQyIgp9",
+                "encoding": "base64",
+                "file_sha256": "986874485bff770d097708289f481b726c52995d089dc424f710bbc51521c94f",
+                "file_size_bytes": 8313
+              }
+            },
+            "engine_build_receipt_canonical_size_bytes": 2245,
+            "engine_build_receipt_inner_sha256": "ee2f72f366ab9224a56ddb85a0bec41a4c0497dc7b6c88d593f3f56e6988bffc",
+            "engine_build_receipt_outer_sha256": "94ab6c348008f5636c8632ba7e1e47f8b609cd0311b64e8fad1beb8b819c9491",
+            "native_trt_meta_payload_sha256": "1c4263120484b384766d121888753b31b701bd280dc3d6aa058c8bd9b07eecd0",
+            "proof_sha256": "84623a21b47b9da45e371c886466248ef4c23aed1de4e46aab798a70a9c73458",
+            "schema": "onnx-splitpoint/native-split-local-artifact-verification",
+            "schema_version": 1,
+            "trt_build_command_sha256": "51c2a83e0f43359bb165326fdd1a12a4b1950e68dfed4ced5b00eaf750acf05f",
+            "verification_kind": "producer_local_file_rehash"
+          },
+          "native_trt_meta": {
+            "build": {
+              "cache_hit": true,
+              "cmd": [
+                "/usr/src/tensorrt/bin/trtexec",
+                "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+                "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+                "--fp16",
+                "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/timing.cache",
+                "--memPoolSize=workspace:4096"
+              ],
+              "compiler_dispatched": false,
+              "dry_run": false,
+              "evidence_source": "verified_engine_build_receipt",
+              "returncode": 0
+            },
+            "build_attempts": [],
+            "build_ok": true,
+            "case": "b132",
+            "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+            "engine_build_receipt": {
+              "build_returncode": 0,
+              "command": [
+                "/usr/src/tensorrt/bin/trtexec",
+                "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+                "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+                "--fp16",
+                "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/timing.cache",
+                "--memPoolSize=workspace:4096"
+              ],
+              "dry_run": false,
+              "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+              "engine_sha256": "c6f6622d5f3af768eba7cf2889451d739d0690938feebf9ce36dfb7cba45f9f3",
+              "receipt_sha256": "ee2f72f366ab9224a56ddb85a0bec41a4c0497dc7b6c88d593f3f56e6988bffc",
+              "schema": "onnx-splitpoint/tensorrt-engine-build-receipt",
+              "schema_version": 1,
+              "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+              "source_onnx_sha256": "8378cdbd3cf267e8a32567b459b19e4bd70c89e202930d7e5d402e11eb255ead",
+              "trtexec": "/usr/src/tensorrt/bin/trtexec",
+              "trtexec_sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4"
+            },
+            "engine_build_receipt_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/engine_build_receipt.json",
+            "engine_build_receipt_status": "engine_build_receipt_verified",
+            "inputs": [
+              {
+                "elem_type": "UINT8",
+                "has_dynamic": false,
+                "name": "mean",
+                "shape": [
+                  1,
+                  912,
+                  1,
+                  1
+                ]
+              }
+            ],
+            "inputs_static": true,
+            "onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+            "outputs": [
+              {
+                "elem_type": "FLOAT",
+                "has_dynamic": false,
+                "name": "logits",
+                "shape": [
+                  1,
+                  1000
+                ]
+              }
+            ],
+            "precision": "uint8_dequant_fp16",
+            "quality_first_identity": {},
+            "requested_precision": "uint8_dequant_fp16",
+            "schema": "onnx-splitpoint/native-trt-meta",
+            "schema_version": 1,
+            "shapes_arg": "",
+            "shapes_policy_effective": "auto_static_omit",
+            "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+            "trt_cache": {
+              "artifact_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+              "case_id": "b132",
+              "compiler_dispatched": false,
+              "identity": "ee2f72f366ab9224a56ddb85a0bec41a4c0497dc7b6c88d593f3f56e6988bffc",
+              "model_id": "source_part2_uint8_dequant_bridge",
+              "outcome": "reused",
+              "reason": "compatible_receipt",
+              "receipt_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/engine_build_receipt.json",
+              "role": "part2",
+              "status": "HIT"
+            },
+            "uint8_cast_bridge": {
+              "boundary_layout": {
+                "applied": false,
+                "effective": "as_input",
+                "requested": "as_input"
+              },
+              "bridge": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+              "bridge_output": "mean__dequant_float",
+              "bridge_sha256": "8378cdbd3cf267e8a32567b459b19e4bd70c89e202930d7e5d402e11eb255ead",
+              "dequant_output": "mean__dequant_float",
+              "input_dtype": "UINT8",
+              "input_name": "mean",
+              "input_shape": [
+                1,
+                912,
+                1,
+                1
+              ],
+              "params": {
+                "scale": 0.03765547648072243,
+                "source": "explicit",
+                "zero_point": 0.0
+              },
+              "params_source": "explicit",
+              "replaced_uses": 1,
+              "scale": 0.03765547648072243,
+              "schema": "onnx-splitpoint/uint8-dequant-bridge",
+              "schema_version": 2,
+              "source": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/benchmark_set/b132/source_part2.onnx",
+              "source_sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+              "zero_point": 0.0
+            },
+            "variant": "part2"
+          },
+          "native_trt_meta_file_sha256": "986874485bff770d097708289f481b726c52995d089dc424f710bbc51521c94f",
+          "native_trt_meta_file_size_bytes": 8313,
+          "native_trt_meta_payload": {
+            "build": {
+              "cache_hit": true,
+              "cmd": [
+                "/usr/src/tensorrt/bin/trtexec",
+                "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+                "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+                "--fp16",
+                "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/timing.cache",
+                "--memPoolSize=workspace:4096"
+              ],
+              "compiler_dispatched": false,
+              "dry_run": false,
+              "evidence_source": "verified_engine_build_receipt",
+              "returncode": 0
+            },
+            "build_attempts": [],
+            "build_ok": true,
+            "case": "b132",
+            "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+            "engine_build_receipt": {
+              "build_returncode": 0,
+              "command": [
+                "/usr/src/tensorrt/bin/trtexec",
+                "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+                "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+                "--fp16",
+                "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/timing.cache",
+                "--memPoolSize=workspace:4096"
+              ],
+              "dry_run": false,
+              "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+              "engine_sha256": "c6f6622d5f3af768eba7cf2889451d739d0690938feebf9ce36dfb7cba45f9f3",
+              "receipt_sha256": "ee2f72f366ab9224a56ddb85a0bec41a4c0497dc7b6c88d593f3f56e6988bffc",
+              "schema": "onnx-splitpoint/tensorrt-engine-build-receipt",
+              "schema_version": 1,
+              "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+              "source_onnx_sha256": "8378cdbd3cf267e8a32567b459b19e4bd70c89e202930d7e5d402e11eb255ead",
+              "trtexec": "/usr/src/tensorrt/bin/trtexec",
+              "trtexec_sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4"
+            },
+            "engine_build_receipt_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/engine_build_receipt.json",
+            "engine_build_receipt_status": "engine_build_receipt_verified",
+            "inputs": [
+              {
+                "elem_type": "UINT8",
+                "has_dynamic": false,
+                "name": "mean",
+                "shape": [
+                  1,
+                  912,
+                  1,
+                  1
+                ]
+              }
+            ],
+            "inputs_static": true,
+            "onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+            "outputs": [
+              {
+                "elem_type": "FLOAT",
+                "has_dynamic": false,
+                "name": "logits",
+                "shape": [
+                  1,
+                  1000
+                ]
+              }
+            ],
+            "precision": "uint8_dequant_fp16",
+            "quality_first_identity": {},
+            "requested_precision": "uint8_dequant_fp16",
+            "schema": "onnx-splitpoint/native-trt-meta",
+            "schema_version": 1,
+            "shapes_arg": "",
+            "shapes_policy_effective": "auto_static_omit",
+            "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+            "trt_cache": {
+              "artifact_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+              "case_id": "b132",
+              "compiler_dispatched": false,
+              "identity": "ee2f72f366ab9224a56ddb85a0bec41a4c0497dc7b6c88d593f3f56e6988bffc",
+              "model_id": "source_part2_uint8_dequant_bridge",
+              "outcome": "reused",
+              "reason": "compatible_receipt",
+              "receipt_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/engine_build_receipt.json",
+              "role": "part2",
+              "status": "HIT"
+            },
+            "uint8_cast_bridge": {
+              "boundary_layout": {
+                "applied": false,
+                "effective": "as_input",
+                "requested": "as_input"
+              },
+              "bridge": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+              "bridge_output": "mean__dequant_float",
+              "bridge_sha256": "8378cdbd3cf267e8a32567b459b19e4bd70c89e202930d7e5d402e11eb255ead",
+              "dequant_output": "mean__dequant_float",
+              "input_dtype": "UINT8",
+              "input_name": "mean",
+              "input_shape": [
+                1,
+                912,
+                1,
+                1
+              ],
+              "params": {
+                "scale": 0.03765547648072243,
+                "source": "explicit",
+                "zero_point": 0.0
+              },
+              "params_source": "explicit",
+              "replaced_uses": 1,
+              "scale": 0.03765547648072243,
+              "schema": "onnx-splitpoint/uint8-dequant-bridge",
+              "schema_version": 2,
+              "source": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/benchmark_set/b132/source_part2.onnx",
+              "source_sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+              "zero_point": 0.0
+            },
+            "variant": "part2"
+          },
+          "native_trt_meta_payload_sha256": "1c4263120484b384766d121888753b31b701bd280dc3d6aa058c8bd9b07eecd0",
+          "native_trt_meta_sha256": "1c4263120484b384766d121888753b31b701bd280dc3d6aa058c8bd9b07eecd0",
+          "performance_claims_emitted": false,
+          "preselection": {
+            "backend": "hailo10h_to_trt",
+            "boundary_dtype": "uint8",
+            "boundary_layout": "as_input",
+            "boundary_metadata_file_sha256": "723a29fa2e796f59ea742ca401b059b7fcdca11d82a18e98eaeeedc8ef970c4a",
+            "boundary_metadata_file_size_bytes": 1034,
+            "boundary_metadata_sha256": "608e54cb108b77f6fbc6b8b57e88539f1c9959b9b1be85b14ead2dad8d5ace41",
+            "boundary_tensor_dtype": "uint8",
+            "boundary_tensor_name": "mean",
+            "boundary_tensor_shape": [
+              912
+            ],
+            "boundary_transform": "uint8_dequant",
+            "canonical_part2_shape": [
+              1,
+              912,
+              1,
+              1
+            ],
+            "case_id": "b132",
+            "case_scope": "any_generated_split_case",
+            "dequant_scale": 0.03765547648072243,
+            "dequant_zero_point": 0.0,
+            "engine_rebuild_allowed_after_quality": false,
+            "hailo_format": "uint8",
+            "letterbox_pad_value": 0,
+            "model_family": "regnet",
+            "model_id": "regnet_x_1_6gf",
+            "part1_artifact_sha256": "8472a4e083e97fd2a095418690dee6ebcc4fcdcdf94c6bb368f3d61c9fb619d9",
+            "part1_artifact_size_bytes": 6717440,
+            "policy_sha256": "809e9b4882ec34d6622f0843bbea1ebf38f0d8429e3b4008184900eb5b23f877",
+            "precision": "uint8_dequant_fp16",
+            "preprocess_mode": "resize",
+            "quantization_policy": "from_exact_part1_boundary_metadata",
+            "schema": "onnx-splitpoint/native-split-quality-preselection",
+            "schema_version": 1,
+            "selection_sha256": "c6be237eb40677b990188d0532c131ce74c7ae31138d082992272e71f6773148",
+            "setup_id": "orin_nx_hailo10_01",
+            "stage2_backend": "native_tensorrt",
+            "task": "classification"
+          },
+          "preselection_sha256": "c6be237eb40677b990188d0532c131ce74c7ae31138d082992272e71f6773148",
+          "producer_binding_sha256": "83218d9f2819bb8d345f64a64a79abb170cd457bf6e59ca73cf08f19bcecef4a",
+          "producer_command": [
+            "/home/nx/venvs/hailo10/bin/python3",
+            "/home/nx/splitpoint_runs/legacy_suite/complete_set_20260907_161614_regnet_x_1_6gf_orin_nx_hailo10_01/1/suite/splitpoint_runners/native_trt_from_benchmarkset.py",
+            "--benchmark-set",
+            "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/benchmark_set",
+            "--case",
+            "b132",
+            "--variants",
+            "part2",
+            "--precision",
+            "uint8_dequant_fp16",
+            "--out-dir",
+            "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache",
+            "--boundary-layout",
+            "as_input",
+            "--workspace-mb",
+            "4096",
+            "--workspace-mode",
+            "auto",
+            "--no-run-smoke",
+            "--json-out",
+            "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/native_trt_summary.json",
+            "--dequant-scale",
+            "0.03765547648072243",
+            "--dequant-zero-point",
+            "0.0",
+            "--no-build"
+          ],
+          "quality_completed": true,
+          "schema": "onnx-splitpoint/native-split-quality-binding",
+          "schema_version": 1,
+          "source_request_sha256": "2418b00e4a88c578fb6056ddf7944730260cc5ee4b2eef361ae53205c538cc9b",
+          "source_run_id": "hailo10_to_tensorrt",
+          "trt_build_command_sha256": "51c2a83e0f43359bb165326fdd1a12a4b1950e68dfed4ced5b00eaf750acf05f",
+          "binding_sha256": "c0c93b39dc9e9a8aef489df7dcc228b0cf215c3d792c5d49ba6f1b4beb322ded"
+        },
+        "native_split_quality_binding_sha256": "c0c93b39dc9e9a8aef489df7dcc228b0cf215c3d792c5d49ba6f1b4beb322ded",
+        "native_split_quality_eval_run_id": "complete_set_20260907_161614",
+        "native_split_quality_source_run_id": "hailo10h_to_trt",
+        "source_request_sha256": "2418b00e4a88c578fb6056ddf7944730260cc5ee4b2eef361ae53205c538cc9b",
+        "native_split_quality_source_request_sha256": "2418b00e4a88c578fb6056ddf7944730260cc5ee4b2eef361ae53205c538cc9b",
+        "native_split_quality_central_result_sha256": "f85df918edc2b64a946af95a66870f7ccb284a419cc86364f352bcef5fbeecf0",
+        "native_split_quality_selection_sha256": "d3c222cf268e19a2c19a054bbcac6b29a00a59f6bd7b81fdd4298e8f6f146bb6",
+        "native_split_quality_local_verification": {
+          "artifact_names": [
+            "part1_runtime",
+            "boundary_metadata",
+            "source_part2_onnx",
+            "build_part2_onnx",
+            "engine",
+            "native_trt_meta",
+            "engine_build_receipt",
+            "trtexec"
+          ],
+          "artifact_set_sha256": "6fbe28256e94055aac0b6872968763d20fa93a51bc782d9c16c679b5d9c0f733",
+          "artifacts": {
+            "boundary_metadata": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/part1_boundary_metadata.json",
+              "sha256": "723a29fa2e796f59ea742ca401b059b7fcdca11d82a18e98eaeeedc8ef970c4a",
+              "size_bytes": 1034
+            },
+            "build_part2_onnx": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+              "sha256": "8378cdbd3cf267e8a32567b459b19e4bd70c89e202930d7e5d402e11eb255ead",
+              "size_bytes": 3655086
+            },
+            "engine": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+              "sha256": "c6f6622d5f3af768eba7cf2889451d739d0690938feebf9ce36dfb7cba45f9f3",
+              "size_bytes": 1851716
+            },
+            "engine_build_receipt": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/engine_build_receipt.json",
+              "sha256": "7aa9973a805db97a3d82cc249abfadef198eba302bf379a12be0a1694dd2816d",
+              "size_bytes": 2327
+            },
+            "native_trt_meta": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/native_trt_meta.json",
+              "sha256": "986874485bff770d097708289f481b726c52995d089dc424f710bbc51521c94f",
+              "size_bytes": 8313
+            },
+            "part1_runtime": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/part1.hef",
+              "sha256": "8472a4e083e97fd2a095418690dee6ebcc4fcdcdf94c6bb368f3d61c9fb619d9",
+              "size_bytes": 6717440
+            },
+            "source_part2_onnx": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/benchmark_set/b132/source_part2.onnx",
+              "sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+              "size_bytes": 3654704
+            },
+            "trtexec": {
+              "path": "/usr/src/tensorrt/bin/trtexec",
+              "sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4",
+              "size_bytes": 1695696
+            }
+          },
+          "boundary_metadata_value_sha256": "9c4c94d9d4f6b62496bcd465c0c65376562d71b39ff70d8b2018adad06c338c9",
+          "build_summary_row_sha256": "1c4263120484b384766d121888753b31b701bd280dc3d6aa058c8bd9b07eecd0",
+          "embedded_json_files": {
+            "boundary_metadata": {
+              "canonical_value_sha256": "9c4c94d9d4f6b62496bcd465c0c65376562d71b39ff70d8b2018adad06c338c9",
+              "content_base64": "ewogICJiYWNrZW5kIjogImhhaWxvMTBoX3RvX3RydCIsCiAgImJvdW5kYXJ5X2xheW91dCI6ICJhc19pbnB1dCIsCiAgImJvdW5kYXJ5X3RlbnNvciI6IHsKICAgICJjYW5vbmljYWxfcGFydDJfc2hhcGUiOiBbCiAgICAgIDEsCiAgICAgIDkxMiwKICAgICAgMSwKICAgICAgMQogICAgXSwKICAgICJkdHlwZSI6ICJ1aW50OCIsCiAgICAiaGVmX25hdGl2ZV9zdG9yYWdlX2R0eXBlIjogInVpbnQ4IiwKICAgICJoZWZfdnN0cmVhbV9mb3JtYXRfdHlwZSI6ICJ1aW50OCIsCiAgICAibmFtZSI6ICJtZWFuIiwKICAgICJxdWFudGl6YXRpb24iOiB7CiAgICAgICJzY2FsZSI6IDAuMDM3NjU1NDc2NDgwNzIyNDMsCiAgICAgICJzb3VyY2UiOiAiaGFpbG9ydF9oZWZfb3V0cHV0X3ZzdHJlYW1faW5mbyIsCiAgICAgICJ6ZXJvX3BvaW50IjogMC4wCiAgICB9LAogICAgInJ1bnRpbWVfbmFtZSI6ICJyZWduZXRfeF8xXzZnZl9wYXJ0MV9iMTMyL2F2Z3Bvb2wxIiwKICAgICJzaGFwZSI6IFsKICAgICAgOTEyCiAgICBdCiAgfSwKICAiYm91bmRhcnlfdGVuc29yX2NvdW50IjogMSwKICAiYm91bmRhcnlfdHJhbnNmb3JtIjogInVpbnQ4X2RlcXVhbnQiLAogICJjYXNlX2lkIjogImIxMzIiLAogICJtZXRhZGF0YV9zaGEyNTYiOiAiNjA4ZTU0Y2IxMDhiNzdmNmZiYzZiOGI1N2U4ODUzOWYxYzk5NTliOWIxYmU4NWIxNGVhZDJkYWQ4ZDVhY2U0MSIsCiAgIm1vZGVsX2lkIjogInJlZ25ldF94XzFfNmdmIiwKICAicGFydDFfYXJ0aWZhY3Rfc2hhMjU2IjogIjg0NzJhNGUwODNlOTdmZDJhMDk1NDE4NjkwZGVlNmViY2M0ZmNkY2RmOTRjNmJiMzY4ZjNkNjFjOWZiNjE5ZDkiLAogICJwYXJ0MV9hcnRpZmFjdF9zaXplX2J5dGVzIjogNjcxNzQ0MCwKICAic2NoZW1hIjogIm9ubngtc3BsaXRwb2ludC9uYXRpdmUtcGFydDEtYm91bmRhcnktbWV0YWRhdGEiLAogICJzY2hlbWFfdmVyc2lvbiI6IDEsCiAgInNldHVwX2lkIjogIm9yaW5fbnhfaGFpbG8xMF8wMSIsCiAgInNvdXJjZV9ydW5faWQiOiAiaGFpbG8xMF90b190ZW5zb3JydCIKfQo=",
+              "encoding": "base64",
+              "file_sha256": "723a29fa2e796f59ea742ca401b059b7fcdca11d82a18e98eaeeedc8ef970c4a",
+              "file_size_bytes": 1034
+            },
+            "engine_build_receipt": {
+              "canonical_value_sha256": "94ab6c348008f5636c8632ba7e1e47f8b609cd0311b64e8fad1beb8b819c9491",
+              "content_base64": "ewogICJidWlsZF9yZXR1cm5jb2RlIjogMCwKICAiY29tbWFuZCI6IFsKICAgICIvdXNyL3NyYy90ZW5zb3JydC9iaW4vdHJ0ZXhlYyIsCiAgICAiLS1vbm54PS9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L3JlZ25ldF94XzFfNmdmLWFhMzUzMzlkMDNjOWViZjQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvaGFpbG8xMGhfdG9fdHJ0L2Y5NjM0MjhjYzQ2YjFiMDAxZWM5NTUxNTMxNTNmNzk2NzhiZWIxNzBkNWFlMjYxNjY1NzY1MmZkZDgzZDk5NTIvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvdWludDhfZGVxdWFudF9mcDE2L3NvdXJjZV9wYXJ0Ml91aW50OF9kZXF1YW50X2JyaWRnZS5vbm54IiwKICAgICItLXNhdmVFbmdpbmU9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9oYWlsbzEwaF90b190cnQvZjk2MzQyOGNjNDZiMWIwMDFlYzk1NTE1MzE1M2Y3OTY3OGJlYjE3MGQ1YWUyNjE2NjU3NjUyZmRkODNkOTk1Mi9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvcGFydDJfdWludDhfZGVxdWFudF9mcDE2LmVuZ2luZSIsCiAgICAiLS1mcDE2IiwKICAgICItLXRpbWluZ0NhY2hlRmlsZT0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi90aW1pbmcuY2FjaGUiLAogICAgIi0tbWVtUG9vbFNpemU9d29ya3NwYWNlOjQwOTYiCiAgXSwKICAiZHJ5X3J1biI6IGZhbHNlLAogICJlbmdpbmUiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9oYWlsbzEwaF90b190cnQvZjk2MzQyOGNjNDZiMWIwMDFlYzk1NTE1MzE1M2Y3OTY3OGJlYjE3MGQ1YWUyNjE2NjU3NjUyZmRkODNkOTk1Mi9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvcGFydDJfdWludDhfZGVxdWFudF9mcDE2LmVuZ2luZSIsCiAgImVuZ2luZV9zaGEyNTYiOiAiYzZmNjYyMmQ1ZjNhZjc2OGViYTdjZjI4ODk0NTFkNzM5ZDA2OTA5MzhmZWViZjljZTM2ZGZiN2NiYTQ1ZjlmMyIsCiAgInJlY2VpcHRfc2hhMjU2IjogImVlMmY3MmYzNjZhYjkyMjRhNTZkZGI4NWEwYmVjNDFhNGMwNDk3ZGM3YjZjODhkNTkzZjNmNTZlNjk4OGJmZmMiLAogICJzY2hlbWEiOiAib25ueC1zcGxpdHBvaW50L3RlbnNvcnJ0LWVuZ2luZS1idWlsZC1yZWNlaXB0IiwKICAic2NoZW1hX3ZlcnNpb24iOiAxLAogICJzb3VyY2Vfb25ueCI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9zb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2Uub25ueCIsCiAgInNvdXJjZV9vbm54X3NoYTI1NiI6ICI4Mzc4Y2RiZDNjZjI2N2U4YTMyNTY3YjQ1OWIxOWU0YmQ3MGM4OWUyMDI5MzBkN2U1ZDQwMmUxMWViMjU1ZWFkIiwKICAidHJ0ZXhlYyI6ICIvdXNyL3NyYy90ZW5zb3JydC9iaW4vdHJ0ZXhlYyIsCiAgInRydGV4ZWNfc2hhMjU2IjogImI4MDA5OTA1MDg3OTNhOWJmNTA3MTNkNzhkNGZlZGZlNDc1MzgxZDhjZDc0OWFiZGE4MDkwOWI5MTk3ZmExYzQiCn0=",
+              "encoding": "base64",
+              "file_sha256": "7aa9973a805db97a3d82cc249abfadef198eba302bf379a12be0a1694dd2816d",
+              "file_size_bytes": 2327
+            },
+            "native_trt_meta": {
+              "canonical_value_sha256": "1c4263120484b384766d121888753b31b701bd280dc3d6aa058c8bd9b07eecd0",
+              "content_base64": "ewogICJidWlsZCI6IHsKICAgICJjYWNoZV9oaXQiOiB0cnVlLAogICAgImNtZCI6IFsKICAgICAgIi91c3Ivc3JjL3RlbnNvcnJ0L2Jpbi90cnRleGVjIiwKICAgICAgIi0tb25ueD0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9zb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2Uub25ueCIsCiAgICAgICItLXNhdmVFbmdpbmU9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9oYWlsbzEwaF90b190cnQvZjk2MzQyOGNjNDZiMWIwMDFlYzk1NTE1MzE1M2Y3OTY3OGJlYjE3MGQ1YWUyNjE2NjU3NjUyZmRkODNkOTk1Mi9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvcGFydDJfdWludDhfZGVxdWFudF9mcDE2LmVuZ2luZSIsCiAgICAgICItLWZwMTYiLAogICAgICAiLS10aW1pbmdDYWNoZUZpbGU9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9oYWlsbzEwaF90b190cnQvZjk2MzQyOGNjNDZiMWIwMDFlYzk1NTE1MzE1M2Y3OTY3OGJlYjE3MGQ1YWUyNjE2NjU3NjUyZmRkODNkOTk1Mi9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvdGltaW5nLmNhY2hlIiwKICAgICAgIi0tbWVtUG9vbFNpemU9d29ya3NwYWNlOjQwOTYiCiAgICBdLAogICAgImNvbXBpbGVyX2Rpc3BhdGNoZWQiOiBmYWxzZSwKICAgICJkcnlfcnVuIjogZmFsc2UsCiAgICAiZXZpZGVuY2Vfc291cmNlIjogInZlcmlmaWVkX2VuZ2luZV9idWlsZF9yZWNlaXB0IiwKICAgICJyZXR1cm5jb2RlIjogMAogIH0sCiAgImJ1aWxkX2F0dGVtcHRzIjogW10sCiAgImJ1aWxkX29rIjogdHJ1ZSwKICAiY2FzZSI6ICJiMTMyIiwKICAiZW5naW5lIjogIi9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L3JlZ25ldF94XzFfNmdmLWFhMzUzMzlkMDNjOWViZjQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvaGFpbG8xMGhfdG9fdHJ0L2Y5NjM0MjhjYzQ2YjFiMDAxZWM5NTUxNTMxNTNmNzk2NzhiZWIxNzBkNWFlMjYxNjY1NzY1MmZkZDgzZDk5NTIvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvdWludDhfZGVxdWFudF9mcDE2L3BhcnQyX3VpbnQ4X2RlcXVhbnRfZnAxNi5lbmdpbmUiLAogICJlbmdpbmVfYnVpbGRfcmVjZWlwdCI6IHsKICAgICJidWlsZF9yZXR1cm5jb2RlIjogMCwKICAgICJjb21tYW5kIjogWwogICAgICAiL3Vzci9zcmMvdGVuc29ycnQvYmluL3RydGV4ZWMiLAogICAgICAiLS1vbm54PS9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L3JlZ25ldF94XzFfNmdmLWFhMzUzMzlkMDNjOWViZjQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvaGFpbG8xMGhfdG9fdHJ0L2Y5NjM0MjhjYzQ2YjFiMDAxZWM5NTUxNTMxNTNmNzk2NzhiZWIxNzBkNWFlMjYxNjY1NzY1MmZkZDgzZDk5NTIvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvdWludDhfZGVxdWFudF9mcDE2L3NvdXJjZV9wYXJ0Ml91aW50OF9kZXF1YW50X2JyaWRnZS5vbm54IiwKICAgICAgIi0tc2F2ZUVuZ2luZT0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9wYXJ0Ml91aW50OF9kZXF1YW50X2ZwMTYuZW5naW5lIiwKICAgICAgIi0tZnAxNiIsCiAgICAgICItLXRpbWluZ0NhY2hlRmlsZT0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi90aW1pbmcuY2FjaGUiLAogICAgICAiLS1tZW1Qb29sU2l6ZT13b3Jrc3BhY2U6NDA5NiIKICAgIF0sCiAgICAiZHJ5X3J1biI6IGZhbHNlLAogICAgImVuZ2luZSI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9wYXJ0Ml91aW50OF9kZXF1YW50X2ZwMTYuZW5naW5lIiwKICAgICJlbmdpbmVfc2hhMjU2IjogImM2ZjY2MjJkNWYzYWY3NjhlYmE3Y2YyODg5NDUxZDczOWQwNjkwOTM4ZmVlYmY5Y2UzNmRmYjdjYmE0NWY5ZjMiLAogICAgInJlY2VpcHRfc2hhMjU2IjogImVlMmY3MmYzNjZhYjkyMjRhNTZkZGI4NWEwYmVjNDFhNGMwNDk3ZGM3YjZjODhkNTkzZjNmNTZlNjk4OGJmZmMiLAogICAgInNjaGVtYSI6ICJvbm54LXNwbGl0cG9pbnQvdGVuc29ycnQtZW5naW5lLWJ1aWxkLXJlY2VpcHQiLAogICAgInNjaGVtYV92ZXJzaW9uIjogMSwKICAgICJzb3VyY2Vfb25ueCI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9zb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2Uub25ueCIsCiAgICAic291cmNlX29ubnhfc2hhMjU2IjogIjgzNzhjZGJkM2NmMjY3ZThhMzI1NjdiNDU5YjE5ZTRiZDcwYzg5ZTIwMjkzMGQ3ZTVkNDAyZTExZWIyNTVlYWQiLAogICAgInRydGV4ZWMiOiAiL3Vzci9zcmMvdGVuc29ycnQvYmluL3RydGV4ZWMiLAogICAgInRydGV4ZWNfc2hhMjU2IjogImI4MDA5OTA1MDg3OTNhOWJmNTA3MTNkNzhkNGZlZGZlNDc1MzgxZDhjZDc0OWFiZGE4MDkwOWI5MTk3ZmExYzQiCiAgfSwKICAiZW5naW5lX2J1aWxkX3JlY2VpcHRfcGF0aCI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9lbmdpbmVfYnVpbGRfcmVjZWlwdC5qc29uIiwKICAiZW5naW5lX2J1aWxkX3JlY2VpcHRfc3RhdHVzIjogImVuZ2luZV9idWlsZF9yZWNlaXB0X3ZlcmlmaWVkIiwKICAiaW5wdXRzIjogWwogICAgewogICAgICAiZWxlbV90eXBlIjogIlVJTlQ4IiwKICAgICAgImhhc19keW5hbWljIjogZmFsc2UsCiAgICAgICJuYW1lIjogIm1lYW4iLAogICAgICAic2hhcGUiOiBbCiAgICAgICAgMSwKICAgICAgICA5MTIsCiAgICAgICAgMSwKICAgICAgICAxCiAgICAgIF0KICAgIH0KICBdLAogICJpbnB1dHNfc3RhdGljIjogdHJ1ZSwKICAib25ueCI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9zb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2Uub25ueCIsCiAgIm91dHB1dHMiOiBbCiAgICB7CiAgICAgICJlbGVtX3R5cGUiOiAiRkxPQVQiLAogICAgICAiaGFzX2R5bmFtaWMiOiBmYWxzZSwKICAgICAgIm5hbWUiOiAibG9naXRzIiwKICAgICAgInNoYXBlIjogWwogICAgICAgIDEsCiAgICAgICAgMTAwMAogICAgICBdCiAgICB9CiAgXSwKICAicHJlY2lzaW9uIjogInVpbnQ4X2RlcXVhbnRfZnAxNiIsCiAgInF1YWxpdHlfZmlyc3RfaWRlbnRpdHkiOiB7fSwKICAicmVxdWVzdGVkX3ByZWNpc2lvbiI6ICJ1aW50OF9kZXF1YW50X2ZwMTYiLAogICJzY2hlbWEiOiAib25ueC1zcGxpdHBvaW50L25hdGl2ZS10cnQtbWV0YSIsCiAgInNjaGVtYV92ZXJzaW9uIjogMSwKICAic2hhcGVzX2FyZyI6ICIiLAogICJzaGFwZXNfcG9saWN5X2VmZmVjdGl2ZSI6ICJhdXRvX3N0YXRpY19vbWl0IiwKICAic291cmNlX29ubngiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9oYWlsbzEwaF90b190cnQvZjk2MzQyOGNjNDZiMWIwMDFlYzk1NTE1MzE1M2Y3OTY3OGJlYjE3MGQ1YWUyNjE2NjU3NjUyZmRkODNkOTk1Mi9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvc291cmNlX3BhcnQyX3VpbnQ4X2RlcXVhbnRfYnJpZGdlLm9ubngiLAogICJ0cnRfY2FjaGUiOiB7CiAgICAiYXJ0aWZhY3RfcGF0aCI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9wYXJ0Ml91aW50OF9kZXF1YW50X2ZwMTYuZW5naW5lIiwKICAgICJjYXNlX2lkIjogImIxMzIiLAogICAgImNvbXBpbGVyX2Rpc3BhdGNoZWQiOiBmYWxzZSwKICAgICJpZGVudGl0eSI6ICJlZTJmNzJmMzY2YWI5MjI0YTU2ZGRiODVhMGJlYzQxYTRjMDQ5N2RjN2I2Yzg4ZDU5M2YzZjU2ZTY5ODhiZmZjIiwKICAgICJtb2RlbF9pZCI6ICJzb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2UiLAogICAgIm91dGNvbWUiOiAicmV1c2VkIiwKICAgICJyZWFzb24iOiAiY29tcGF0aWJsZV9yZWNlaXB0IiwKICAgICJyZWNlaXB0X3BhdGgiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9oYWlsbzEwaF90b190cnQvZjk2MzQyOGNjNDZiMWIwMDFlYzk1NTE1MzE1M2Y3OTY3OGJlYjE3MGQ1YWUyNjE2NjU3NjUyZmRkODNkOTk1Mi9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvZW5naW5lX2J1aWxkX3JlY2VpcHQuanNvbiIsCiAgICAicm9sZSI6ICJwYXJ0MiIsCiAgICAic3RhdHVzIjogIkhJVCIKICB9LAogICJ1aW50OF9jYXN0X2JyaWRnZSI6IHsKICAgICJib3VuZGFyeV9sYXlvdXQiOiB7CiAgICAgICJhcHBsaWVkIjogZmFsc2UsCiAgICAgICJlZmZlY3RpdmUiOiAiYXNfaW5wdXQiLAogICAgICAicmVxdWVzdGVkIjogImFzX2lucHV0IgogICAgfSwKICAgICJicmlkZ2UiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9oYWlsbzEwaF90b190cnQvZjk2MzQyOGNjNDZiMWIwMDFlYzk1NTE1MzE1M2Y3OTY3OGJlYjE3MGQ1YWUyNjE2NjU3NjUyZmRkODNkOTk1Mi9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvc291cmNlX3BhcnQyX3VpbnQ4X2RlcXVhbnRfYnJpZGdlLm9ubngiLAogICAgImJyaWRnZV9vdXRwdXQiOiAibWVhbl9fZGVxdWFudF9mbG9hdCIsCiAgICAiYnJpZGdlX3NoYTI1NiI6ICI4Mzc4Y2RiZDNjZjI2N2U4YTMyNTY3YjQ1OWIxOWU0YmQ3MGM4OWUyMDI5MzBkN2U1ZDQwMmUxMWViMjU1ZWFkIiwKICAgICJkZXF1YW50X291dHB1dCI6ICJtZWFuX19kZXF1YW50X2Zsb2F0IiwKICAgICJpbnB1dF9kdHlwZSI6ICJVSU5UOCIsCiAgICAiaW5wdXRfbmFtZSI6ICJtZWFuIiwKICAgICJpbnB1dF9zaGFwZSI6IFsKICAgICAgMSwKICAgICAgOTEyLAogICAgICAxLAogICAgICAxCiAgICBdLAogICAgInBhcmFtcyI6IHsKICAgICAgInNjYWxlIjogMC4wMzc2NTU0NzY0ODA3MjI0MywKICAgICAgInNvdXJjZSI6ICJleHBsaWNpdCIsCiAgICAgICJ6ZXJvX3BvaW50IjogMC4wCiAgICB9LAogICAgInBhcmFtc19zb3VyY2UiOiAiZXhwbGljaXQiLAogICAgInJlcGxhY2VkX3VzZXMiOiAxLAogICAgInNjYWxlIjogMC4wMzc2NTU0NzY0ODA3MjI0MywKICAgICJzY2hlbWEiOiAib25ueC1zcGxpdHBvaW50L3VpbnQ4LWRlcXVhbnQtYnJpZGdlIiwKICAgICJzY2hlbWFfdmVyc2lvbiI6IDIsCiAgICAic291cmNlIjogIi9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L3JlZ25ldF94XzFfNmdmLWFhMzUzMzlkMDNjOWViZjQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvaGFpbG8xMGhfdG9fdHJ0L2Y5NjM0MjhjYzQ2YjFiMDAxZWM5NTUxNTMxNTNmNzk2NzhiZWIxNzBkNWFlMjYxNjY1NzY1MmZkZDgzZDk5NTIvYmVuY2htYXJrX3NldC9iMTMyL3NvdXJjZV9wYXJ0Mi5vbm54IiwKICAgICJzb3VyY2Vfc2hhMjU2IjogIjBjNGNhMzFlYjZhZjQ0MDM1NjJiMWYwNGRmNzEwMzc0M2IxNzM2NzdmOGVhMzNiMDEzYTQzZDE5OGZkMDIxMGQiLAogICAgInplcm9fcG9pbnQiOiAwLjAKICB9LAogICJ2YXJpYW50IjogInBhcnQyIgp9",
+              "encoding": "base64",
+              "file_sha256": "986874485bff770d097708289f481b726c52995d089dc424f710bbc51521c94f",
+              "file_size_bytes": 8313
+            }
+          },
+          "engine_build_receipt_canonical_size_bytes": 2245,
+          "engine_build_receipt_inner_sha256": "ee2f72f366ab9224a56ddb85a0bec41a4c0497dc7b6c88d593f3f56e6988bffc",
+          "engine_build_receipt_outer_sha256": "94ab6c348008f5636c8632ba7e1e47f8b609cd0311b64e8fad1beb8b819c9491",
+          "native_trt_meta_payload_sha256": "1c4263120484b384766d121888753b31b701bd280dc3d6aa058c8bd9b07eecd0",
+          "proof_sha256": "84623a21b47b9da45e371c886466248ef4c23aed1de4e46aab798a70a9c73458",
+          "schema": "onnx-splitpoint/native-split-local-artifact-verification",
+          "schema_version": 1,
+          "trt_build_command_sha256": "51c2a83e0f43359bb165326fdd1a12a4b1950e68dfed4ced5b00eaf750acf05f",
+          "verification_kind": "producer_local_file_rehash"
+        },
+        "quality_preselection": {
+          "backend": "hailo10h_to_trt",
+          "boundary_dtype": "uint8",
+          "boundary_layout": "as_input",
+          "boundary_metadata_file_sha256": "723a29fa2e796f59ea742ca401b059b7fcdca11d82a18e98eaeeedc8ef970c4a",
+          "boundary_metadata_file_size_bytes": 1034,
+          "boundary_metadata_sha256": "608e54cb108b77f6fbc6b8b57e88539f1c9959b9b1be85b14ead2dad8d5ace41",
+          "boundary_tensor_dtype": "uint8",
+          "boundary_tensor_name": "mean",
+          "boundary_tensor_shape": [
+            912
+          ],
+          "boundary_transform": "uint8_dequant",
+          "canonical_part2_shape": [
+            1,
+            912,
+            1,
+            1
+          ],
+          "case_id": "b132",
+          "case_scope": "any_generated_split_case",
+          "dequant_scale": 0.03765547648072243,
+          "dequant_zero_point": 0.0,
+          "engine_rebuild_allowed_after_quality": false,
+          "hailo_format": "uint8",
+          "letterbox_pad_value": 0,
+          "model_family": "regnet",
+          "model_id": "regnet_x_1_6gf",
+          "part1_artifact_sha256": "8472a4e083e97fd2a095418690dee6ebcc4fcdcdf94c6bb368f3d61c9fb619d9",
+          "part1_artifact_size_bytes": 6717440,
+          "policy_sha256": "809e9b4882ec34d6622f0843bbea1ebf38f0d8429e3b4008184900eb5b23f877",
+          "precision": "uint8_dequant_fp16",
+          "preprocess_mode": "resize",
+          "quantization_policy": "from_exact_part1_boundary_metadata",
+          "schema": "onnx-splitpoint/native-split-quality-preselection",
+          "schema_version": 1,
+          "selection_sha256": "c6be237eb40677b990188d0532c131ce74c7ae31138d082992272e71f6773148",
+          "setup_id": "orin_nx_hailo10_01",
+          "stage2_backend": "native_tensorrt",
+          "task": "classification"
+        },
+        "quality_preselection_sha256": "c6be237eb40677b990188d0532c131ce74c7ae31138d082992272e71f6773148",
+        "quality_boundary_contract": {
+          "boundary_layout": "as_input",
+          "boundary_metadata_file_sha256": "723a29fa2e796f59ea742ca401b059b7fcdca11d82a18e98eaeeedc8ef970c4a",
+          "boundary_metadata_sha256": "608e54cb108b77f6fbc6b8b57e88539f1c9959b9b1be85b14ead2dad8d5ace41",
+          "boundary_tensor_dtype": "uint8",
+          "boundary_tensor_name": "mean",
+          "boundary_tensor_shape": [
+            912
+          ],
+          "boundary_transform": "uint8_dequant",
+          "dequant_scale": 0.03765547648072243,
+          "dequant_zero_point": 0.0,
+          "precision": "uint8_dequant_fp16"
+        },
+        "quality_boundary_contract_sha256": "628c100e15b4726d485d9e4f00e4fdb07f33dd46e0036375f1c46f6035cb9186",
+        "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+        "engine_sha256": "c6f6622d5f3af768eba7cf2889451d739d0690938feebf9ce36dfb7cba45f9f3",
+        "complete": true,
+        "schema": "onnx-splitpoint/native-command-contract",
+        "schema_version": 1,
+        "contract_sha256": "38f78c0435d1794475a32b54d5d75cec1e7d10e2891ff12c92504fc6074c8282"
+      },
+      "native_command_contract_sha256": "38f78c0435d1794475a32b54d5d75cec1e7d10e2891ff12c92504fc6074c8282",
+      "workload_contract_sha256": "38f78c0435d1794475a32b54d5d75cec1e7d10e2891ff12c92504fc6074c8282",
+      "native_split_quality_binding": {
+        "artifacts": {
+          "boundary_metadata": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/part1_boundary_metadata.json",
+            "sha256": "723a29fa2e796f59ea742ca401b059b7fcdca11d82a18e98eaeeedc8ef970c4a",
+            "size_bytes": 1034
+          },
+          "build_part2_onnx": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+            "sha256": "8378cdbd3cf267e8a32567b459b19e4bd70c89e202930d7e5d402e11eb255ead",
+            "size_bytes": 3655086
+          },
+          "engine": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+            "sha256": "c6f6622d5f3af768eba7cf2889451d739d0690938feebf9ce36dfb7cba45f9f3",
+            "size_bytes": 1851716
+          },
+          "engine_build_receipt": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/engine_build_receipt.json",
+            "sha256": "7aa9973a805db97a3d82cc249abfadef198eba302bf379a12be0a1694dd2816d",
+            "size_bytes": 2327
+          },
+          "native_trt_meta": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/native_trt_meta.json",
+            "sha256": "986874485bff770d097708289f481b726c52995d089dc424f710bbc51521c94f",
+            "size_bytes": 8313
+          },
+          "part1_runtime": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/part1.hef",
+            "sha256": "8472a4e083e97fd2a095418690dee6ebcc4fcdcdf94c6bb368f3d61c9fb619d9",
+            "size_bytes": 6717440
+          },
+          "source_part2_onnx": {
+            "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/benchmark_set/b132/source_part2.onnx",
+            "sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+            "size_bytes": 3654704
+          },
+          "trtexec": {
+            "path": "/usr/src/tensorrt/bin/trtexec",
+            "sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4",
+            "size_bytes": 1695696
+          }
+        },
+        "boundary_contract": {
+          "boundary_layout": "as_input",
+          "boundary_metadata_file_sha256": "723a29fa2e796f59ea742ca401b059b7fcdca11d82a18e98eaeeedc8ef970c4a",
+          "boundary_metadata_sha256": "608e54cb108b77f6fbc6b8b57e88539f1c9959b9b1be85b14ead2dad8d5ace41",
+          "boundary_tensor_dtype": "uint8",
+          "boundary_tensor_name": "mean",
+          "boundary_tensor_shape": [
+            912
+          ],
+          "boundary_transform": "uint8_dequant",
+          "dequant_scale": 0.03765547648072243,
+          "dequant_zero_point": 0.0,
+          "precision": "uint8_dequant_fp16"
+        },
+        "boundary_contract_sha256": "628c100e15b4726d485d9e4f00e4fdb07f33dd46e0036375f1c46f6035cb9186",
+        "boundary_metadata_payload": {
+          "backend": "hailo10h_to_trt",
+          "boundary_layout": "as_input",
+          "boundary_tensor": {
+            "canonical_part2_shape": [
+              1,
+              912,
+              1,
+              1
+            ],
+            "dtype": "uint8",
+            "hef_native_storage_dtype": "uint8",
+            "hef_vstream_format_type": "uint8",
+            "name": "mean",
+            "quantization": {
+              "scale": 0.03765547648072243,
+              "source": "hailort_hef_output_vstream_info",
+              "zero_point": 0.0
+            },
+            "runtime_name": "regnet_x_1_6gf_part1_b132/avgpool1",
+            "shape": [
+              912
+            ]
+          },
+          "boundary_tensor_count": 1,
+          "boundary_transform": "uint8_dequant",
+          "case_id": "b132",
+          "metadata_sha256": "608e54cb108b77f6fbc6b8b57e88539f1c9959b9b1be85b14ead2dad8d5ace41",
+          "model_id": "regnet_x_1_6gf",
+          "part1_artifact_sha256": "8472a4e083e97fd2a095418690dee6ebcc4fcdcdf94c6bb368f3d61c9fb619d9",
+          "part1_artifact_size_bytes": 6717440,
+          "schema": "onnx-splitpoint/native-part1-boundary-metadata",
+          "schema_version": 1,
+          "setup_id": "orin_nx_hailo10_01",
+          "source_run_id": "hailo10_to_tensorrt"
+        },
+        "boundary_metadata_value_sha256": "9c4c94d9d4f6b62496bcd465c0c65376562d71b39ff70d8b2018adad06c338c9",
+        "central_quality_selection": {
+          "backend": "hailo10h_to_trt",
+          "case_id": "b132",
+          "central_result_sha256": "f85df918edc2b64a946af95a66870f7ccb284a419cc86364f352bcef5fbeecf0",
+          "eval_run_id": "complete_set_20260907_161614",
+          "model_id": "regnet_x_1_6gf",
+          "precision": "uint8_dequant_fp16",
+          "producer_binding_sha256": "83218d9f2819bb8d345f64a64a79abb170cd457bf6e59ca73cf08f19bcecef4a",
+          "receipt_sha256": "d3c222cf268e19a2c19a054bbcac6b29a00a59f6bd7b81fdd4298e8f6f146bb6",
+          "runtime_precision_identity": "uint8_dequant_fp16",
+          "schema": "onnx-splitpoint/native-split-quality-central-selection",
+          "schema_version": 1,
+          "setup_id": "orin_nx_hailo10_01",
+          "source_request_sha256": "2418b00e4a88c578fb6056ddf7944730260cc5ee4b2eef361ae53205c538cc9b",
+          "source_run_id": "hailo10h_to_trt",
+          "task": "classification",
+          "variant": "composed"
+        },
+        "central_quality_selection_sha256": "d3c222cf268e19a2c19a054bbcac6b29a00a59f6bd7b81fdd4298e8f6f146bb6",
+        "central_result_sha256": "f85df918edc2b64a946af95a66870f7ccb284a419cc86364f352bcef5fbeecf0",
+        "engine_build_receipt": {
+          "build_returncode": 0,
+          "command": [
+            "/usr/src/tensorrt/bin/trtexec",
+            "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+            "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+            "--fp16",
+            "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/timing.cache",
+            "--memPoolSize=workspace:4096"
+          ],
+          "dry_run": false,
+          "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+          "engine_sha256": "c6f6622d5f3af768eba7cf2889451d739d0690938feebf9ce36dfb7cba45f9f3",
+          "receipt_sha256": "ee2f72f366ab9224a56ddb85a0bec41a4c0497dc7b6c88d593f3f56e6988bffc",
+          "schema": "onnx-splitpoint/tensorrt-engine-build-receipt",
+          "schema_version": 1,
+          "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+          "source_onnx_sha256": "8378cdbd3cf267e8a32567b459b19e4bd70c89e202930d7e5d402e11eb255ead",
+          "trtexec": "/usr/src/tensorrt/bin/trtexec",
+          "trtexec_sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4"
+        },
+        "engine_build_receipt_canonical_size_bytes": 2245,
+        "engine_build_receipt_file_sha256": "7aa9973a805db97a3d82cc249abfadef198eba302bf379a12be0a1694dd2816d",
+        "engine_build_receipt_file_size_bytes": 2327,
+        "engine_build_receipt_outer_sha256": "94ab6c348008f5636c8632ba7e1e47f8b609cd0311b64e8fad1beb8b819c9491",
+        "engine_build_receipt_sha256": "ee2f72f366ab9224a56ddb85a0bec41a4c0497dc7b6c88d593f3f56e6988bffc",
+        "eval_run_id": "complete_set_20260907_161614",
+        "local_artifact_verification": {
+          "artifact_names": [
+            "part1_runtime",
+            "boundary_metadata",
+            "source_part2_onnx",
+            "build_part2_onnx",
+            "engine",
+            "native_trt_meta",
+            "engine_build_receipt",
+            "trtexec"
+          ],
+          "artifact_set_sha256": "6fbe28256e94055aac0b6872968763d20fa93a51bc782d9c16c679b5d9c0f733",
+          "artifacts": {
+            "boundary_metadata": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/part1_boundary_metadata.json",
+              "sha256": "723a29fa2e796f59ea742ca401b059b7fcdca11d82a18e98eaeeedc8ef970c4a",
+              "size_bytes": 1034
+            },
+            "build_part2_onnx": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+              "sha256": "8378cdbd3cf267e8a32567b459b19e4bd70c89e202930d7e5d402e11eb255ead",
+              "size_bytes": 3655086
+            },
+            "engine": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+              "sha256": "c6f6622d5f3af768eba7cf2889451d739d0690938feebf9ce36dfb7cba45f9f3",
+              "size_bytes": 1851716
+            },
+            "engine_build_receipt": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/engine_build_receipt.json",
+              "sha256": "7aa9973a805db97a3d82cc249abfadef198eba302bf379a12be0a1694dd2816d",
+              "size_bytes": 2327
+            },
+            "native_trt_meta": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/native_trt_meta.json",
+              "sha256": "986874485bff770d097708289f481b726c52995d089dc424f710bbc51521c94f",
+              "size_bytes": 8313
+            },
+            "part1_runtime": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/part1.hef",
+              "sha256": "8472a4e083e97fd2a095418690dee6ebcc4fcdcdf94c6bb368f3d61c9fb619d9",
+              "size_bytes": 6717440
+            },
+            "source_part2_onnx": {
+              "path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/benchmark_set/b132/source_part2.onnx",
+              "sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+              "size_bytes": 3654704
+            },
+            "trtexec": {
+              "path": "/usr/src/tensorrt/bin/trtexec",
+              "sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4",
+              "size_bytes": 1695696
+            }
+          },
+          "boundary_metadata_value_sha256": "9c4c94d9d4f6b62496bcd465c0c65376562d71b39ff70d8b2018adad06c338c9",
+          "build_summary_row_sha256": "1c4263120484b384766d121888753b31b701bd280dc3d6aa058c8bd9b07eecd0",
+          "embedded_json_files": {
+            "boundary_metadata": {
+              "canonical_value_sha256": "9c4c94d9d4f6b62496bcd465c0c65376562d71b39ff70d8b2018adad06c338c9",
+              "content_base64": "ewogICJiYWNrZW5kIjogImhhaWxvMTBoX3RvX3RydCIsCiAgImJvdW5kYXJ5X2xheW91dCI6ICJhc19pbnB1dCIsCiAgImJvdW5kYXJ5X3RlbnNvciI6IHsKICAgICJjYW5vbmljYWxfcGFydDJfc2hhcGUiOiBbCiAgICAgIDEsCiAgICAgIDkxMiwKICAgICAgMSwKICAgICAgMQogICAgXSwKICAgICJkdHlwZSI6ICJ1aW50OCIsCiAgICAiaGVmX25hdGl2ZV9zdG9yYWdlX2R0eXBlIjogInVpbnQ4IiwKICAgICJoZWZfdnN0cmVhbV9mb3JtYXRfdHlwZSI6ICJ1aW50OCIsCiAgICAibmFtZSI6ICJtZWFuIiwKICAgICJxdWFudGl6YXRpb24iOiB7CiAgICAgICJzY2FsZSI6IDAuMDM3NjU1NDc2NDgwNzIyNDMsCiAgICAgICJzb3VyY2UiOiAiaGFpbG9ydF9oZWZfb3V0cHV0X3ZzdHJlYW1faW5mbyIsCiAgICAgICJ6ZXJvX3BvaW50IjogMC4wCiAgICB9LAogICAgInJ1bnRpbWVfbmFtZSI6ICJyZWduZXRfeF8xXzZnZl9wYXJ0MV9iMTMyL2F2Z3Bvb2wxIiwKICAgICJzaGFwZSI6IFsKICAgICAgOTEyCiAgICBdCiAgfSwKICAiYm91bmRhcnlfdGVuc29yX2NvdW50IjogMSwKICAiYm91bmRhcnlfdHJhbnNmb3JtIjogInVpbnQ4X2RlcXVhbnQiLAogICJjYXNlX2lkIjogImIxMzIiLAogICJtZXRhZGF0YV9zaGEyNTYiOiAiNjA4ZTU0Y2IxMDhiNzdmNmZiYzZiOGI1N2U4ODUzOWYxYzk5NTliOWIxYmU4NWIxNGVhZDJkYWQ4ZDVhY2U0MSIsCiAgIm1vZGVsX2lkIjogInJlZ25ldF94XzFfNmdmIiwKICAicGFydDFfYXJ0aWZhY3Rfc2hhMjU2IjogIjg0NzJhNGUwODNlOTdmZDJhMDk1NDE4NjkwZGVlNmViY2M0ZmNkY2RmOTRjNmJiMzY4ZjNkNjFjOWZiNjE5ZDkiLAogICJwYXJ0MV9hcnRpZmFjdF9zaXplX2J5dGVzIjogNjcxNzQ0MCwKICAic2NoZW1hIjogIm9ubngtc3BsaXRwb2ludC9uYXRpdmUtcGFydDEtYm91bmRhcnktbWV0YWRhdGEiLAogICJzY2hlbWFfdmVyc2lvbiI6IDEsCiAgInNldHVwX2lkIjogIm9yaW5fbnhfaGFpbG8xMF8wMSIsCiAgInNvdXJjZV9ydW5faWQiOiAiaGFpbG8xMF90b190ZW5zb3JydCIKfQo=",
+              "encoding": "base64",
+              "file_sha256": "723a29fa2e796f59ea742ca401b059b7fcdca11d82a18e98eaeeedc8ef970c4a",
+              "file_size_bytes": 1034
+            },
+            "engine_build_receipt": {
+              "canonical_value_sha256": "94ab6c348008f5636c8632ba7e1e47f8b609cd0311b64e8fad1beb8b819c9491",
+              "content_base64": "ewogICJidWlsZF9yZXR1cm5jb2RlIjogMCwKICAiY29tbWFuZCI6IFsKICAgICIvdXNyL3NyYy90ZW5zb3JydC9iaW4vdHJ0ZXhlYyIsCiAgICAiLS1vbm54PS9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L3JlZ25ldF94XzFfNmdmLWFhMzUzMzlkMDNjOWViZjQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvaGFpbG8xMGhfdG9fdHJ0L2Y5NjM0MjhjYzQ2YjFiMDAxZWM5NTUxNTMxNTNmNzk2NzhiZWIxNzBkNWFlMjYxNjY1NzY1MmZkZDgzZDk5NTIvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvdWludDhfZGVxdWFudF9mcDE2L3NvdXJjZV9wYXJ0Ml91aW50OF9kZXF1YW50X2JyaWRnZS5vbm54IiwKICAgICItLXNhdmVFbmdpbmU9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9oYWlsbzEwaF90b190cnQvZjk2MzQyOGNjNDZiMWIwMDFlYzk1NTE1MzE1M2Y3OTY3OGJlYjE3MGQ1YWUyNjE2NjU3NjUyZmRkODNkOTk1Mi9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvcGFydDJfdWludDhfZGVxdWFudF9mcDE2LmVuZ2luZSIsCiAgICAiLS1mcDE2IiwKICAgICItLXRpbWluZ0NhY2hlRmlsZT0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi90aW1pbmcuY2FjaGUiLAogICAgIi0tbWVtUG9vbFNpemU9d29ya3NwYWNlOjQwOTYiCiAgXSwKICAiZHJ5X3J1biI6IGZhbHNlLAogICJlbmdpbmUiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9oYWlsbzEwaF90b190cnQvZjk2MzQyOGNjNDZiMWIwMDFlYzk1NTE1MzE1M2Y3OTY3OGJlYjE3MGQ1YWUyNjE2NjU3NjUyZmRkODNkOTk1Mi9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvcGFydDJfdWludDhfZGVxdWFudF9mcDE2LmVuZ2luZSIsCiAgImVuZ2luZV9zaGEyNTYiOiAiYzZmNjYyMmQ1ZjNhZjc2OGViYTdjZjI4ODk0NTFkNzM5ZDA2OTA5MzhmZWViZjljZTM2ZGZiN2NiYTQ1ZjlmMyIsCiAgInJlY2VpcHRfc2hhMjU2IjogImVlMmY3MmYzNjZhYjkyMjRhNTZkZGI4NWEwYmVjNDFhNGMwNDk3ZGM3YjZjODhkNTkzZjNmNTZlNjk4OGJmZmMiLAogICJzY2hlbWEiOiAib25ueC1zcGxpdHBvaW50L3RlbnNvcnJ0LWVuZ2luZS1idWlsZC1yZWNlaXB0IiwKICAic2NoZW1hX3ZlcnNpb24iOiAxLAogICJzb3VyY2Vfb25ueCI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9zb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2Uub25ueCIsCiAgInNvdXJjZV9vbm54X3NoYTI1NiI6ICI4Mzc4Y2RiZDNjZjI2N2U4YTMyNTY3YjQ1OWIxOWU0YmQ3MGM4OWUyMDI5MzBkN2U1ZDQwMmUxMWViMjU1ZWFkIiwKICAidHJ0ZXhlYyI6ICIvdXNyL3NyYy90ZW5zb3JydC9iaW4vdHJ0ZXhlYyIsCiAgInRydGV4ZWNfc2hhMjU2IjogImI4MDA5OTA1MDg3OTNhOWJmNTA3MTNkNzhkNGZlZGZlNDc1MzgxZDhjZDc0OWFiZGE4MDkwOWI5MTk3ZmExYzQiCn0=",
+              "encoding": "base64",
+              "file_sha256": "7aa9973a805db97a3d82cc249abfadef198eba302bf379a12be0a1694dd2816d",
+              "file_size_bytes": 2327
+            },
+            "native_trt_meta": {
+              "canonical_value_sha256": "1c4263120484b384766d121888753b31b701bd280dc3d6aa058c8bd9b07eecd0",
+              "content_base64": "ewogICJidWlsZCI6IHsKICAgICJjYWNoZV9oaXQiOiB0cnVlLAogICAgImNtZCI6IFsKICAgICAgIi91c3Ivc3JjL3RlbnNvcnJ0L2Jpbi90cnRleGVjIiwKICAgICAgIi0tb25ueD0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9zb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2Uub25ueCIsCiAgICAgICItLXNhdmVFbmdpbmU9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9oYWlsbzEwaF90b190cnQvZjk2MzQyOGNjNDZiMWIwMDFlYzk1NTE1MzE1M2Y3OTY3OGJlYjE3MGQ1YWUyNjE2NjU3NjUyZmRkODNkOTk1Mi9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvcGFydDJfdWludDhfZGVxdWFudF9mcDE2LmVuZ2luZSIsCiAgICAgICItLWZwMTYiLAogICAgICAiLS10aW1pbmdDYWNoZUZpbGU9L2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9oYWlsbzEwaF90b190cnQvZjk2MzQyOGNjNDZiMWIwMDFlYzk1NTE1MzE1M2Y3OTY3OGJlYjE3MGQ1YWUyNjE2NjU3NjUyZmRkODNkOTk1Mi9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvdGltaW5nLmNhY2hlIiwKICAgICAgIi0tbWVtUG9vbFNpemU9d29ya3NwYWNlOjQwOTYiCiAgICBdLAogICAgImNvbXBpbGVyX2Rpc3BhdGNoZWQiOiBmYWxzZSwKICAgICJkcnlfcnVuIjogZmFsc2UsCiAgICAiZXZpZGVuY2Vfc291cmNlIjogInZlcmlmaWVkX2VuZ2luZV9idWlsZF9yZWNlaXB0IiwKICAgICJyZXR1cm5jb2RlIjogMAogIH0sCiAgImJ1aWxkX2F0dGVtcHRzIjogW10sCiAgImJ1aWxkX29rIjogdHJ1ZSwKICAiY2FzZSI6ICJiMTMyIiwKICAiZW5naW5lIjogIi9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L3JlZ25ldF94XzFfNmdmLWFhMzUzMzlkMDNjOWViZjQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvaGFpbG8xMGhfdG9fdHJ0L2Y5NjM0MjhjYzQ2YjFiMDAxZWM5NTUxNTMxNTNmNzk2NzhiZWIxNzBkNWFlMjYxNjY1NzY1MmZkZDgzZDk5NTIvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvdWludDhfZGVxdWFudF9mcDE2L3BhcnQyX3VpbnQ4X2RlcXVhbnRfZnAxNi5lbmdpbmUiLAogICJlbmdpbmVfYnVpbGRfcmVjZWlwdCI6IHsKICAgICJidWlsZF9yZXR1cm5jb2RlIjogMCwKICAgICJjb21tYW5kIjogWwogICAgICAiL3Vzci9zcmMvdGVuc29ycnQvYmluL3RydGV4ZWMiLAogICAgICAiLS1vbm54PS9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L3JlZ25ldF94XzFfNmdmLWFhMzUzMzlkMDNjOWViZjQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvaGFpbG8xMGhfdG9fdHJ0L2Y5NjM0MjhjYzQ2YjFiMDAxZWM5NTUxNTMxNTNmNzk2NzhiZWIxNzBkNWFlMjYxNjY1NzY1MmZkZDgzZDk5NTIvZW5naW5lX2NhY2hlL2IxMzIvcGFydDIvdWludDhfZGVxdWFudF9mcDE2L3NvdXJjZV9wYXJ0Ml91aW50OF9kZXF1YW50X2JyaWRnZS5vbm54IiwKICAgICAgIi0tc2F2ZUVuZ2luZT0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9wYXJ0Ml91aW50OF9kZXF1YW50X2ZwMTYuZW5naW5lIiwKICAgICAgIi0tZnAxNiIsCiAgICAgICItLXRpbWluZ0NhY2hlRmlsZT0vaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi90aW1pbmcuY2FjaGUiLAogICAgICAiLS1tZW1Qb29sU2l6ZT13b3Jrc3BhY2U6NDA5NiIKICAgIF0sCiAgICAiZHJ5X3J1biI6IGZhbHNlLAogICAgImVuZ2luZSI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9wYXJ0Ml91aW50OF9kZXF1YW50X2ZwMTYuZW5naW5lIiwKICAgICJlbmdpbmVfc2hhMjU2IjogImM2ZjY2MjJkNWYzYWY3NjhlYmE3Y2YyODg5NDUxZDczOWQwNjkwOTM4ZmVlYmY5Y2UzNmRmYjdjYmE0NWY5ZjMiLAogICAgInJlY2VpcHRfc2hhMjU2IjogImVlMmY3MmYzNjZhYjkyMjRhNTZkZGI4NWEwYmVjNDFhNGMwNDk3ZGM3YjZjODhkNTkzZjNmNTZlNjk4OGJmZmMiLAogICAgInNjaGVtYSI6ICJvbm54LXNwbGl0cG9pbnQvdGVuc29ycnQtZW5naW5lLWJ1aWxkLXJlY2VpcHQiLAogICAgInNjaGVtYV92ZXJzaW9uIjogMSwKICAgICJzb3VyY2Vfb25ueCI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9zb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2Uub25ueCIsCiAgICAic291cmNlX29ubnhfc2hhMjU2IjogIjgzNzhjZGJkM2NmMjY3ZThhMzI1NjdiNDU5YjE5ZTRiZDcwYzg5ZTIwMjkzMGQ3ZTVkNDAyZTExZWIyNTVlYWQiLAogICAgInRydGV4ZWMiOiAiL3Vzci9zcmMvdGVuc29ycnQvYmluL3RydGV4ZWMiLAogICAgInRydGV4ZWNfc2hhMjU2IjogImI4MDA5OTA1MDg3OTNhOWJmNTA3MTNkNzhkNGZlZGZlNDc1MzgxZDhjZDc0OWFiZGE4MDkwOWI5MTk3ZmExYzQiCiAgfSwKICAiZW5naW5lX2J1aWxkX3JlY2VpcHRfcGF0aCI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9lbmdpbmVfYnVpbGRfcmVjZWlwdC5qc29uIiwKICAiZW5naW5lX2J1aWxkX3JlY2VpcHRfc3RhdHVzIjogImVuZ2luZV9idWlsZF9yZWNlaXB0X3ZlcmlmaWVkIiwKICAiaW5wdXRzIjogWwogICAgewogICAgICAiZWxlbV90eXBlIjogIlVJTlQ4IiwKICAgICAgImhhc19keW5hbWljIjogZmFsc2UsCiAgICAgICJuYW1lIjogIm1lYW4iLAogICAgICAic2hhcGUiOiBbCiAgICAgICAgMSwKICAgICAgICA5MTIsCiAgICAgICAgMSwKICAgICAgICAxCiAgICAgIF0KICAgIH0KICBdLAogICJpbnB1dHNfc3RhdGljIjogdHJ1ZSwKICAib25ueCI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9zb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2Uub25ueCIsCiAgIm91dHB1dHMiOiBbCiAgICB7CiAgICAgICJlbGVtX3R5cGUiOiAiRkxPQVQiLAogICAgICAiaGFzX2R5bmFtaWMiOiBmYWxzZSwKICAgICAgIm5hbWUiOiAibG9naXRzIiwKICAgICAgInNoYXBlIjogWwogICAgICAgIDEsCiAgICAgICAgMTAwMAogICAgICBdCiAgICB9CiAgXSwKICAicHJlY2lzaW9uIjogInVpbnQ4X2RlcXVhbnRfZnAxNiIsCiAgInF1YWxpdHlfZmlyc3RfaWRlbnRpdHkiOiB7fSwKICAicmVxdWVzdGVkX3ByZWNpc2lvbiI6ICJ1aW50OF9kZXF1YW50X2ZwMTYiLAogICJzY2hlbWEiOiAib25ueC1zcGxpdHBvaW50L25hdGl2ZS10cnQtbWV0YSIsCiAgInNjaGVtYV92ZXJzaW9uIjogMSwKICAic2hhcGVzX2FyZyI6ICIiLAogICJzaGFwZXNfcG9saWN5X2VmZmVjdGl2ZSI6ICJhdXRvX3N0YXRpY19vbWl0IiwKICAic291cmNlX29ubngiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9oYWlsbzEwaF90b190cnQvZjk2MzQyOGNjNDZiMWIwMDFlYzk1NTE1MzE1M2Y3OTY3OGJlYjE3MGQ1YWUyNjE2NjU3NjUyZmRkODNkOTk1Mi9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvc291cmNlX3BhcnQyX3VpbnQ4X2RlcXVhbnRfYnJpZGdlLm9ubngiLAogICJ0cnRfY2FjaGUiOiB7CiAgICAiYXJ0aWZhY3RfcGF0aCI6ICIvaG9tZS9ueC9zcGxpdHBvaW50X3J1bnMvX29ubnhfc3BsaXRwb2ludF9jYWNoZS90ZW5zb3JydF9tYW5hZ2VkX3YyNzUxNi9yZWduZXRfeF8xXzZnZi1hYTM1MzM5ZDAzYzllYmY0L25hdGl2ZV9zcGxpdF9xdWFsaXR5L29yaW5fbnhfaGFpbG8xMF8wMS9yZWduZXRfeF8xXzZnZi9iMTMyL2hhaWxvMTBoX3RvX3RydC9mOTYzNDI4Y2M0NmIxYjAwMWVjOTU1MTUzMTUzZjc5Njc4YmViMTcwZDVhZTI2MTY2NTc2NTJmZGQ4M2Q5OTUyL2VuZ2luZV9jYWNoZS9iMTMyL3BhcnQyL3VpbnQ4X2RlcXVhbnRfZnAxNi9wYXJ0Ml91aW50OF9kZXF1YW50X2ZwMTYuZW5naW5lIiwKICAgICJjYXNlX2lkIjogImIxMzIiLAogICAgImNvbXBpbGVyX2Rpc3BhdGNoZWQiOiBmYWxzZSwKICAgICJpZGVudGl0eSI6ICJlZTJmNzJmMzY2YWI5MjI0YTU2ZGRiODVhMGJlYzQxYTRjMDQ5N2RjN2I2Yzg4ZDU5M2YzZjU2ZTY5ODhiZmZjIiwKICAgICJtb2RlbF9pZCI6ICJzb3VyY2VfcGFydDJfdWludDhfZGVxdWFudF9icmlkZ2UiLAogICAgIm91dGNvbWUiOiAicmV1c2VkIiwKICAgICJyZWFzb24iOiAiY29tcGF0aWJsZV9yZWNlaXB0IiwKICAgICJyZWNlaXB0X3BhdGgiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9oYWlsbzEwaF90b190cnQvZjk2MzQyOGNjNDZiMWIwMDFlYzk1NTE1MzE1M2Y3OTY3OGJlYjE3MGQ1YWUyNjE2NjU3NjUyZmRkODNkOTk1Mi9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvZW5naW5lX2J1aWxkX3JlY2VpcHQuanNvbiIsCiAgICAicm9sZSI6ICJwYXJ0MiIsCiAgICAic3RhdHVzIjogIkhJVCIKICB9LAogICJ1aW50OF9jYXN0X2JyaWRnZSI6IHsKICAgICJib3VuZGFyeV9sYXlvdXQiOiB7CiAgICAgICJhcHBsaWVkIjogZmFsc2UsCiAgICAgICJlZmZlY3RpdmUiOiAiYXNfaW5wdXQiLAogICAgICAicmVxdWVzdGVkIjogImFzX2lucHV0IgogICAgfSwKICAgICJicmlkZ2UiOiAiL2hvbWUvbngvc3BsaXRwb2ludF9ydW5zL19vbm54X3NwbGl0cG9pbnRfY2FjaGUvdGVuc29ycnRfbWFuYWdlZF92Mjc1MTYvcmVnbmV0X3hfMV82Z2YtYWEzNTMzOWQwM2M5ZWJmNC9uYXRpdmVfc3BsaXRfcXVhbGl0eS9vcmluX254X2hhaWxvMTBfMDEvcmVnbmV0X3hfMV82Z2YvYjEzMi9oYWlsbzEwaF90b190cnQvZjk2MzQyOGNjNDZiMWIwMDFlYzk1NTE1MzE1M2Y3OTY3OGJlYjE3MGQ1YWUyNjE2NjU3NjUyZmRkODNkOTk1Mi9lbmdpbmVfY2FjaGUvYjEzMi9wYXJ0Mi91aW50OF9kZXF1YW50X2ZwMTYvc291cmNlX3BhcnQyX3VpbnQ4X2RlcXVhbnRfYnJpZGdlLm9ubngiLAogICAgImJyaWRnZV9vdXRwdXQiOiAibWVhbl9fZGVxdWFudF9mbG9hdCIsCiAgICAiYnJpZGdlX3NoYTI1NiI6ICI4Mzc4Y2RiZDNjZjI2N2U4YTMyNTY3YjQ1OWIxOWU0YmQ3MGM4OWUyMDI5MzBkN2U1ZDQwMmUxMWViMjU1ZWFkIiwKICAgICJkZXF1YW50X291dHB1dCI6ICJtZWFuX19kZXF1YW50X2Zsb2F0IiwKICAgICJpbnB1dF9kdHlwZSI6ICJVSU5UOCIsCiAgICAiaW5wdXRfbmFtZSI6ICJtZWFuIiwKICAgICJpbnB1dF9zaGFwZSI6IFsKICAgICAgMSwKICAgICAgOTEyLAogICAgICAxLAogICAgICAxCiAgICBdLAogICAgInBhcmFtcyI6IHsKICAgICAgInNjYWxlIjogMC4wMzc2NTU0NzY0ODA3MjI0MywKICAgICAgInNvdXJjZSI6ICJleHBsaWNpdCIsCiAgICAgICJ6ZXJvX3BvaW50IjogMC4wCiAgICB9LAogICAgInBhcmFtc19zb3VyY2UiOiAiZXhwbGljaXQiLAogICAgInJlcGxhY2VkX3VzZXMiOiAxLAogICAgInNjYWxlIjogMC4wMzc2NTU0NzY0ODA3MjI0MywKICAgICJzY2hlbWEiOiAib25ueC1zcGxpdHBvaW50L3VpbnQ4LWRlcXVhbnQtYnJpZGdlIiwKICAgICJzY2hlbWFfdmVyc2lvbiI6IDIsCiAgICAic291cmNlIjogIi9ob21lL254L3NwbGl0cG9pbnRfcnVucy9fb25ueF9zcGxpdHBvaW50X2NhY2hlL3RlbnNvcnJ0X21hbmFnZWRfdjI3NTE2L3JlZ25ldF94XzFfNmdmLWFhMzUzMzlkMDNjOWViZjQvbmF0aXZlX3NwbGl0X3F1YWxpdHkvb3Jpbl9ueF9oYWlsbzEwXzAxL3JlZ25ldF94XzFfNmdmL2IxMzIvaGFpbG8xMGhfdG9fdHJ0L2Y5NjM0MjhjYzQ2YjFiMDAxZWM5NTUxNTMxNTNmNzk2NzhiZWIxNzBkNWFlMjYxNjY1NzY1MmZkZDgzZDk5NTIvYmVuY2htYXJrX3NldC9iMTMyL3NvdXJjZV9wYXJ0Mi5vbm54IiwKICAgICJzb3VyY2Vfc2hhMjU2IjogIjBjNGNhMzFlYjZhZjQ0MDM1NjJiMWYwNGRmNzEwMzc0M2IxNzM2NzdmOGVhMzNiMDEzYTQzZDE5OGZkMDIxMGQiLAogICAgInplcm9fcG9pbnQiOiAwLjAKICB9LAogICJ2YXJpYW50IjogInBhcnQyIgp9",
+              "encoding": "base64",
+              "file_sha256": "986874485bff770d097708289f481b726c52995d089dc424f710bbc51521c94f",
+              "file_size_bytes": 8313
+            }
+          },
+          "engine_build_receipt_canonical_size_bytes": 2245,
+          "engine_build_receipt_inner_sha256": "ee2f72f366ab9224a56ddb85a0bec41a4c0497dc7b6c88d593f3f56e6988bffc",
+          "engine_build_receipt_outer_sha256": "94ab6c348008f5636c8632ba7e1e47f8b609cd0311b64e8fad1beb8b819c9491",
+          "native_trt_meta_payload_sha256": "1c4263120484b384766d121888753b31b701bd280dc3d6aa058c8bd9b07eecd0",
+          "proof_sha256": "84623a21b47b9da45e371c886466248ef4c23aed1de4e46aab798a70a9c73458",
+          "schema": "onnx-splitpoint/native-split-local-artifact-verification",
+          "schema_version": 1,
+          "trt_build_command_sha256": "51c2a83e0f43359bb165326fdd1a12a4b1950e68dfed4ced5b00eaf750acf05f",
+          "verification_kind": "producer_local_file_rehash"
+        },
+        "native_trt_meta": {
+          "build": {
+            "cache_hit": true,
+            "cmd": [
+              "/usr/src/tensorrt/bin/trtexec",
+              "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+              "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+              "--fp16",
+              "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/timing.cache",
+              "--memPoolSize=workspace:4096"
+            ],
+            "compiler_dispatched": false,
+            "dry_run": false,
+            "evidence_source": "verified_engine_build_receipt",
+            "returncode": 0
+          },
+          "build_attempts": [],
+          "build_ok": true,
+          "case": "b132",
+          "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+          "engine_build_receipt": {
+            "build_returncode": 0,
+            "command": [
+              "/usr/src/tensorrt/bin/trtexec",
+              "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+              "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+              "--fp16",
+              "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/timing.cache",
+              "--memPoolSize=workspace:4096"
+            ],
+            "dry_run": false,
+            "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+            "engine_sha256": "c6f6622d5f3af768eba7cf2889451d739d0690938feebf9ce36dfb7cba45f9f3",
+            "receipt_sha256": "ee2f72f366ab9224a56ddb85a0bec41a4c0497dc7b6c88d593f3f56e6988bffc",
+            "schema": "onnx-splitpoint/tensorrt-engine-build-receipt",
+            "schema_version": 1,
+            "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+            "source_onnx_sha256": "8378cdbd3cf267e8a32567b459b19e4bd70c89e202930d7e5d402e11eb255ead",
+            "trtexec": "/usr/src/tensorrt/bin/trtexec",
+            "trtexec_sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4"
+          },
+          "engine_build_receipt_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/engine_build_receipt.json",
+          "engine_build_receipt_status": "engine_build_receipt_verified",
+          "inputs": [
+            {
+              "elem_type": "UINT8",
+              "has_dynamic": false,
+              "name": "mean",
+              "shape": [
+                1,
+                912,
+                1,
+                1
+              ]
+            }
+          ],
+          "inputs_static": true,
+          "onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+          "outputs": [
+            {
+              "elem_type": "FLOAT",
+              "has_dynamic": false,
+              "name": "logits",
+              "shape": [
+                1,
+                1000
+              ]
+            }
+          ],
+          "precision": "uint8_dequant_fp16",
+          "quality_first_identity": {},
+          "requested_precision": "uint8_dequant_fp16",
+          "schema": "onnx-splitpoint/native-trt-meta",
+          "schema_version": 1,
+          "shapes_arg": "",
+          "shapes_policy_effective": "auto_static_omit",
+          "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+          "trt_cache": {
+            "artifact_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+            "case_id": "b132",
+            "compiler_dispatched": false,
+            "identity": "ee2f72f366ab9224a56ddb85a0bec41a4c0497dc7b6c88d593f3f56e6988bffc",
+            "model_id": "source_part2_uint8_dequant_bridge",
+            "outcome": "reused",
+            "reason": "compatible_receipt",
+            "receipt_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/engine_build_receipt.json",
+            "role": "part2",
+            "status": "HIT"
+          },
+          "uint8_cast_bridge": {
+            "boundary_layout": {
+              "applied": false,
+              "effective": "as_input",
+              "requested": "as_input"
+            },
+            "bridge": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+            "bridge_output": "mean__dequant_float",
+            "bridge_sha256": "8378cdbd3cf267e8a32567b459b19e4bd70c89e202930d7e5d402e11eb255ead",
+            "dequant_output": "mean__dequant_float",
+            "input_dtype": "UINT8",
+            "input_name": "mean",
+            "input_shape": [
+              1,
+              912,
+              1,
+              1
+            ],
+            "params": {
+              "scale": 0.03765547648072243,
+              "source": "explicit",
+              "zero_point": 0.0
+            },
+            "params_source": "explicit",
+            "replaced_uses": 1,
+            "scale": 0.03765547648072243,
+            "schema": "onnx-splitpoint/uint8-dequant-bridge",
+            "schema_version": 2,
+            "source": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/benchmark_set/b132/source_part2.onnx",
+            "source_sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+            "zero_point": 0.0
+          },
+          "variant": "part2"
+        },
+        "native_trt_meta_file_sha256": "986874485bff770d097708289f481b726c52995d089dc424f710bbc51521c94f",
+        "native_trt_meta_file_size_bytes": 8313,
+        "native_trt_meta_payload": {
+          "build": {
+            "cache_hit": true,
+            "cmd": [
+              "/usr/src/tensorrt/bin/trtexec",
+              "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+              "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+              "--fp16",
+              "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/timing.cache",
+              "--memPoolSize=workspace:4096"
+            ],
+            "compiler_dispatched": false,
+            "dry_run": false,
+            "evidence_source": "verified_engine_build_receipt",
+            "returncode": 0
+          },
+          "build_attempts": [],
+          "build_ok": true,
+          "case": "b132",
+          "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+          "engine_build_receipt": {
+            "build_returncode": 0,
+            "command": [
+              "/usr/src/tensorrt/bin/trtexec",
+              "--onnx=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+              "--saveEngine=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+              "--fp16",
+              "--timingCacheFile=/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/timing.cache",
+              "--memPoolSize=workspace:4096"
+            ],
+            "dry_run": false,
+            "engine": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+            "engine_sha256": "c6f6622d5f3af768eba7cf2889451d739d0690938feebf9ce36dfb7cba45f9f3",
+            "receipt_sha256": "ee2f72f366ab9224a56ddb85a0bec41a4c0497dc7b6c88d593f3f56e6988bffc",
+            "schema": "onnx-splitpoint/tensorrt-engine-build-receipt",
+            "schema_version": 1,
+            "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+            "source_onnx_sha256": "8378cdbd3cf267e8a32567b459b19e4bd70c89e202930d7e5d402e11eb255ead",
+            "trtexec": "/usr/src/tensorrt/bin/trtexec",
+            "trtexec_sha256": "b800990508793a9bf50713d78d4fedfe475381d8cd749abda80909b9197fa1c4"
+          },
+          "engine_build_receipt_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/engine_build_receipt.json",
+          "engine_build_receipt_status": "engine_build_receipt_verified",
+          "inputs": [
+            {
+              "elem_type": "UINT8",
+              "has_dynamic": false,
+              "name": "mean",
+              "shape": [
+                1,
+                912,
+                1,
+                1
+              ]
+            }
+          ],
+          "inputs_static": true,
+          "onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+          "outputs": [
+            {
+              "elem_type": "FLOAT",
+              "has_dynamic": false,
+              "name": "logits",
+              "shape": [
+                1,
+                1000
+              ]
+            }
+          ],
+          "precision": "uint8_dequant_fp16",
+          "quality_first_identity": {},
+          "requested_precision": "uint8_dequant_fp16",
+          "schema": "onnx-splitpoint/native-trt-meta",
+          "schema_version": 1,
+          "shapes_arg": "",
+          "shapes_policy_effective": "auto_static_omit",
+          "source_onnx": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+          "trt_cache": {
+            "artifact_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/part2_uint8_dequant_fp16.engine",
+            "case_id": "b132",
+            "compiler_dispatched": false,
+            "identity": "ee2f72f366ab9224a56ddb85a0bec41a4c0497dc7b6c88d593f3f56e6988bffc",
+            "model_id": "source_part2_uint8_dequant_bridge",
+            "outcome": "reused",
+            "reason": "compatible_receipt",
+            "receipt_path": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/engine_build_receipt.json",
+            "role": "part2",
+            "status": "HIT"
+          },
+          "uint8_cast_bridge": {
+            "boundary_layout": {
+              "applied": false,
+              "effective": "as_input",
+              "requested": "as_input"
+            },
+            "bridge": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache/b132/part2/uint8_dequant_fp16/source_part2_uint8_dequant_bridge.onnx",
+            "bridge_output": "mean__dequant_float",
+            "bridge_sha256": "8378cdbd3cf267e8a32567b459b19e4bd70c89e202930d7e5d402e11eb255ead",
+            "dequant_output": "mean__dequant_float",
+            "input_dtype": "UINT8",
+            "input_name": "mean",
+            "input_shape": [
+              1,
+              912,
+              1,
+              1
+            ],
+            "params": {
+              "scale": 0.03765547648072243,
+              "source": "explicit",
+              "zero_point": 0.0
+            },
+            "params_source": "explicit",
+            "replaced_uses": 1,
+            "scale": 0.03765547648072243,
+            "schema": "onnx-splitpoint/uint8-dequant-bridge",
+            "schema_version": 2,
+            "source": "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/benchmark_set/b132/source_part2.onnx",
+            "source_sha256": "0c4ca31eb6af4403562b1f04df7103743b173677f8ea33b013a43d198fd0210d",
+            "zero_point": 0.0
+          },
+          "variant": "part2"
+        },
+        "native_trt_meta_payload_sha256": "1c4263120484b384766d121888753b31b701bd280dc3d6aa058c8bd9b07eecd0",
+        "native_trt_meta_sha256": "1c4263120484b384766d121888753b31b701bd280dc3d6aa058c8bd9b07eecd0",
+        "performance_claims_emitted": false,
+        "preselection": {
+          "backend": "hailo10h_to_trt",
+          "boundary_dtype": "uint8",
+          "boundary_layout": "as_input",
+          "boundary_metadata_file_sha256": "723a29fa2e796f59ea742ca401b059b7fcdca11d82a18e98eaeeedc8ef970c4a",
+          "boundary_metadata_file_size_bytes": 1034,
+          "boundary_metadata_sha256": "608e54cb108b77f6fbc6b8b57e88539f1c9959b9b1be85b14ead2dad8d5ace41",
+          "boundary_tensor_dtype": "uint8",
+          "boundary_tensor_name": "mean",
+          "boundary_tensor_shape": [
+            912
+          ],
+          "boundary_transform": "uint8_dequant",
+          "canonical_part2_shape": [
+            1,
+            912,
+            1,
+            1
+          ],
+          "case_id": "b132",
+          "case_scope": "any_generated_split_case",
+          "dequant_scale": 0.03765547648072243,
+          "dequant_zero_point": 0.0,
+          "engine_rebuild_allowed_after_quality": false,
+          "hailo_format": "uint8",
+          "letterbox_pad_value": 0,
+          "model_family": "regnet",
+          "model_id": "regnet_x_1_6gf",
+          "part1_artifact_sha256": "8472a4e083e97fd2a095418690dee6ebcc4fcdcdf94c6bb368f3d61c9fb619d9",
+          "part1_artifact_size_bytes": 6717440,
+          "policy_sha256": "809e9b4882ec34d6622f0843bbea1ebf38f0d8429e3b4008184900eb5b23f877",
+          "precision": "uint8_dequant_fp16",
+          "preprocess_mode": "resize",
+          "quantization_policy": "from_exact_part1_boundary_metadata",
+          "schema": "onnx-splitpoint/native-split-quality-preselection",
+          "schema_version": 1,
+          "selection_sha256": "c6be237eb40677b990188d0532c131ce74c7ae31138d082992272e71f6773148",
+          "setup_id": "orin_nx_hailo10_01",
+          "stage2_backend": "native_tensorrt",
+          "task": "classification"
+        },
+        "preselection_sha256": "c6be237eb40677b990188d0532c131ce74c7ae31138d082992272e71f6773148",
+        "producer_binding_sha256": "83218d9f2819bb8d345f64a64a79abb170cd457bf6e59ca73cf08f19bcecef4a",
+        "producer_command": [
+          "/home/nx/venvs/hailo10/bin/python3",
+          "/home/nx/splitpoint_runs/legacy_suite/complete_set_20260907_161614_regnet_x_1_6gf_orin_nx_hailo10_01/1/suite/splitpoint_runners/native_trt_from_benchmarkset.py",
+          "--benchmark-set",
+          "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/benchmark_set",
+          "--case",
+          "b132",
+          "--variants",
+          "part2",
+          "--precision",
+          "uint8_dequant_fp16",
+          "--out-dir",
+          "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/engine_cache",
+          "--boundary-layout",
+          "as_input",
+          "--workspace-mb",
+          "4096",
+          "--workspace-mode",
+          "auto",
+          "--no-run-smoke",
+          "--json-out",
+          "/home/nx/splitpoint_runs/_onnx_splitpoint_cache/tensorrt_managed_v27516/regnet_x_1_6gf-aa35339d03c9ebf4/native_split_quality/orin_nx_hailo10_01/regnet_x_1_6gf/b132/hailo10h_to_trt/f963428cc46b1b001ec955153153f79678beb170d5ae2616657652fdd83d9952/native_trt_summary.json",
+          "--dequant-scale",
+          "0.03765547648072243",
+          "--dequant-zero-point",
+          "0.0",
+          "--no-build"
+        ],
+        "quality_completed": true,
+        "schema": "onnx-splitpoint/native-split-quality-binding",
+        "schema_version": 1,
+        "source_request_sha256": "2418b00e4a88c578fb6056ddf7944730260cc5ee4b2eef361ae53205c538cc9b",
+        "source_run_id": "hailo10_to_tensorrt",
+        "trt_build_command_sha256": "51c2a83e0f43359bb165326fdd1a12a4b1950e68dfed4ced5b00eaf750acf05f",
+        "binding_sha256": "c0c93b39dc9e9a8aef489df7dcc228b0cf215c3d792c5d49ba6f1b4beb322ded"
+      },
+      "native_split_quality_binding_sha256": "c0c93b39dc9e9a8aef489df7dcc228b0cf215c3d792c5d49ba6f1b4beb322ded",
+      "native_split_quality_eval_run_id": "complete_set_20260907_161614",
+      "native_split_quality_source_run_id": "hailo10h_to_trt",
+      "source_request_sha256": "2418b00e4a88c578fb6056ddf7944730260cc5ee4b2eef361ae53205c538cc9b",
+      "native_split_quality_source_request_sha256": "2418b00e4a88c578fb6056ddf7944730260cc5ee4b2eef361ae53205c538cc9b",
+      "native_split_quality_central_result_sha256": "f85df918edc2b64a946af95a66870f7ccb284a419cc86364f352bcef5fbeecf0",
+      "native_split_quality_selection_sha256": "d3c222cf268e19a2c19a054bbcac6b29a00a59f6bd7b81fdd4298e8f6f146bb6",
+      "native_split_quality_consumer_attestation": {
+        "schema": "onnx-splitpoint/native-split-quality-consumer-attestation",
+        "schema_version": 1,
+        "status": "local_files_rehashed_and_exact_command_join_verified",
+        "binding_sha256": "c0c93b39dc9e9a8aef489df7dcc228b0cf215c3d792c5d49ba6f1b4beb322ded",
+        "command_contract_sha256": "38f78c0435d1794475a32b54d5d75cec1e7d10e2891ff12c92504fc6074c8282",
+        "eval_run_id": "complete_set_20260907_161614",
+        "source_run_id": "hailo10h_to_trt",
+        "backend": "hailo10h_to_trt",
+        "model_id": "regnet_x_1_6gf",
+        "case_id": "b132",
+        "setup_id": "orin_nx_hailo10_01",
+        "task": "classification",
+        "precision": "uint8_dequant_fp16",
+        "local_artifact_verification_sha256": "66e2160e1a6d677cb99a4edff3a679694d68a6dc4bb305a7b976463543d398bf",
+        "semantic_output_manifest_sha256": "82f52ccf6aab0622b6f40d0aa17e9486149966611fd747b71394dea99e50e9ab",
+        "semantic_boundary_manifest_sha256": "32efe0a8eba8a44cb3bd475fa3d2b9a1d8b143c373247e0f8058bd6cd8c46c67",
+        "source_request_sha256": "2418b00e4a88c578fb6056ddf7944730260cc5ee4b2eef361ae53205c538cc9b",
+        "native_split_quality_source_request_sha256": "2418b00e4a88c578fb6056ddf7944730260cc5ee4b2eef361ae53205c538cc9b",
+        "native_split_quality_central_result_sha256": "f85df918edc2b64a946af95a66870f7ccb284a419cc86364f352bcef5fbeecf0",
+        "native_split_quality_selection_sha256": "d3c222cf268e19a2c19a054bbcac6b29a00a59f6bd7b81fdd4298e8f6f146bb6",
+        "attestation_sha256": "83b2b9ccebdf7987b11ff746480b809291575d111041120f1b9a24cbf0915568"
+      },
+      "native_split_quality_consumer_status": "exact_quality_native_engine_command_and_boundary_match",
+      "native_fifo_output_manifest": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set/native_pipeline/b132/hailo10h_to_trt/uint8_dequant_fp16/native_outputs/native_outputs_manifest.json",
+      "native_fifo_boundary_manifest": "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set/native_pipeline/b132/hailo10h_to_trt/uint8_dequant_fp16/native_fifo_boundary/native_fifo_boundary_manifest.json",
+      "steps": [
+        {
+          "name": "native_producer_e2e",
+          "cmd": [
+            "/home/nx/venvs/hailo10/bin/python",
+            "/home/nx/ONNX-Splitpoint-Tool/scripts/native_hailo10_trt_e2e_from_benchmarkset.py",
+            "--benchmark-set",
+            "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set",
+            "--case",
+            "b132",
+            "--precision",
+            "uint8_dequant_fp16",
+            "--frames",
+            "1000",
+            "--warmup",
+            "100",
+            "--repetitions",
+            "3",
+            "--queue-depth",
+            "3",
+            "--inflight",
+            "8",
+            "--preprocess-mode",
+            "auto",
+            "--letterbox-pad-value",
+            "114",
+            "--setup-id",
+            "orin_nx_hailo10_01",
+            "--model-id",
+            "regnet_x_1_6gf",
+            "--quantized-inputs",
+            "--eval-run-id",
+            "complete_set_20260907_161614",
+            "--source-run-id",
+            "hailo10h_to_trt",
+            "--native-split-quality-binding",
+            "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/quality_first/consumed_bindings/hailo10h/regnet_x_1_6gf/b132.json",
+            "--task",
+            "classification",
+            "--dump-outputs",
+            "--dump-boundary",
+            "--boundary-layout",
+            "memory_nhwc_to_nchw",
+            "--dequant-zero-point",
+            "0.0",
+            "--quantized-outputs",
+            "--engine-build-python",
+            "auto",
+            "--image",
+            "/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set/resources/validation/classification/val_by_wnid_n500_s20260710/images/n01443537/ILSVRC2012_val_00013623.JPEG"
+          ],
+          "rc": 0,
+          "timed_out": false,
+          "stdout_tail": "{\n  \"ok\": true,\n  \"fps_makespan\": 1174.912122611281,\n  \"paper_fps\": 1175.2230170842247,\n  \"producer_impl\": \"hailo10_infermodel_async_fifo\",\n  \"report\": \"/home/nx/native_fifo_evalsets/complete_set_20260907_161614/regnet_x_1_6gf/benchmark_set/native_pipeline/b132/hailo10h_to_trt/uint8_dequant_fp16/hailo10_native_fifo_e2e_results.json\",\n  \"error\": \"\"\n}\n",
+          "stderr_tail": ""
+        }
+      ],
+      "completion_tail_ms": 0.0,
+      "postprocess_ms": 0.0,
+      "measurement_boundary": "workers_ready_to_last_completed_trt_frame",
+      "last_completion_source": "native_trt_synchronized_output",
+      "completed_frames": 1000,
+      "completed_work_units": 1000,
+      "postprocess_included": false,
+      "postprocess_completed_frames": 0,
+      "postprocess_completion_verified": false,
+      "task": "classification",
+      "contract_family": "classification_logits",
+      "stage": "classification_logits",
+      "endpoint_contract_complete": true,
+      "endpoint_contract_hash": "3af2122851f19c5bf2b16b9c3ef78a6ba11452db33ff8fb915b76e3461bbcb28"
+    }
+  ],
+  "row_count": 1,
+  "ok_count": 1,
+  "failed_count": 0,
+  "ok": true,
+  "orchestration_status": "ok",
+  "evidence_status": "complete",
+  "failure_reasons": []
+}
