@@ -1,0 +1,118 @@
+{
+  "events": [
+    {
+      "phase": "sdk_initialization",
+      "state": "started",
+      "event": "started",
+      "timestamp": 1789202113.0397217,
+      "monotonic_s": 180387.125545965,
+      "monotonic": 180387.125545965,
+      "pid": 1505755
+    },
+    {
+      "phase": "sdk_initialization",
+      "state": "completed",
+      "event": "completed",
+      "timestamp": 1789202113.0645967,
+      "monotonic_s": 180387.150422568,
+      "monotonic": 180387.150422672,
+      "elapsed_s": 0.024877090996596962,
+      "pid": 1505755
+    },
+    {
+      "phase": "translate",
+      "state": "started",
+      "event": "started",
+      "timestamp": 1789202113.0682766,
+      "monotonic_s": 180387.154101495,
+      "monotonic": 180387.154101495,
+      "pid": 1505755
+    },
+    {
+      "phase": "translate",
+      "state": "completed",
+      "event": "completed",
+      "timestamp": 1789202114.2296865,
+      "monotonic_s": 180388.315512375,
+      "monotonic": 180388.315512474,
+      "elapsed_s": 1.1614114080148283,
+      "pid": 1505755
+    },
+    {
+      "phase": "calibration_materialization",
+      "state": "started",
+      "event": "started",
+      "timestamp": 1789202114.3109913,
+      "monotonic_s": 180388.396816123,
+      "monotonic": 180388.396816123,
+      "pid": 1505755
+    },
+    {
+      "phase": "calibration_materialization",
+      "state": "completed",
+      "event": "completed",
+      "timestamp": 1789202116.814283,
+      "monotonic_s": 180390.900108577,
+      "monotonic": 180390.900108625,
+      "elapsed_s": 2.5032928090076894,
+      "pid": 1505755
+    },
+    {
+      "phase": "optimize",
+      "state": "started",
+      "event": "started",
+      "timestamp": 1789202116.818146,
+      "monotonic_s": 180390.903970959,
+      "monotonic": 180390.903970959,
+      "pid": 1505755
+    },
+    {
+      "phase": "optimize",
+      "state": "completed",
+      "event": "completed",
+      "timestamp": 1789202583.3519163,
+      "monotonic_s": 180857.437742006,
+      "monotonic": 180857.437742131,
+      "elapsed_s": 466.5337731789914,
+      "pid": 1505755
+    },
+    {
+      "phase": "compile",
+      "state": "started",
+      "event": "started",
+      "timestamp": 1789202584.1665266,
+      "monotonic_s": 180858.252351294,
+      "monotonic": 180858.252351294,
+      "pid": 1505755
+    },
+    {
+      "phase": "compile",
+      "state": "completed",
+      "event": "completed",
+      "timestamp": 1789202628.6043565,
+      "monotonic_s": 180902.690182738,
+      "monotonic": 180902.690182856,
+      "elapsed_s": 44.437831825984176,
+      "pid": 1505755
+    },
+    {
+      "phase": "publication",
+      "state": "started",
+      "event": "started",
+      "timestamp": 1789202628.6223648,
+      "monotonic_s": 180902.708189068,
+      "monotonic": 180902.708189068,
+      "pid": 1505755
+    },
+    {
+      "phase": "publication",
+      "state": "completed",
+      "event": "completed",
+      "timestamp": 1789202628.846658,
+      "monotonic_s": 180902.932483729,
+      "monotonic": 180902.932483779,
+      "elapsed_s": 0.22429490997456014,
+      "pid": 1505755
+    }
+  ]
+}

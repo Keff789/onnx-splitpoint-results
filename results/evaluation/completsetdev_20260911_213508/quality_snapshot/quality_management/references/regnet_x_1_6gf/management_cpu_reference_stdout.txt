@@ -1,0 +1,45 @@
+[case-filter] selected 1/3 case(s): ['b023']
+[case-filter] target filter: case=b023 variant=*
+[plan] selected run ids: management_cpu_reference
+
+[management_cpu_reference] [1/1] Running b023 (provider=cpu)
+[viz] b023/management_cpu_reference: visual sample=/home/kmika/Models/EvaluationRuns/completsetdev_20260911_213508/quality_management/references/regnet_x_1_6gf/workspaces/management_cpu_reference_znp7gx2t/suite/resources/validation/classification/val_by_wnid_n5000_s20260710/images/n04228054/ILSVRC2012_val_00024679.JPEG
+[info] manifest: /home/kmika/Models/EvaluationRuns/completsetdev_20260911_213508/quality_management/references/regnet_x_1_6gf/workspaces/management_cpu_reference_znp7gx2t/suite/b023/split_manifest.json
+[info] full : regnet_x_1_6gf.onnx
+[info] part1: regnet_x_1_6gf_part1_b23.onnx
+[info] part2: regnet_x_1_6gf_part2_b23.onnx
+[inputs] using image 'ILSVRC2012_val_00024679.JPEG' for input 'input' shape=[1, 3, 224, 224] scale=norm
+ORT available providers: ['AzureExecutionProvider', 'CPUExecutionProvider']
+Using providers: ['CPUExecutionProvider']
+[quality][management] ORT CPU thread contract: intra=4, inter=1
+[init] session 'full' ready in 0.3s | providers in use: ['CPUExecutionProvider']
+[init] session 'part1' ready in 0.2s | providers in use: ['CPUExecutionProvider']
+[init] session 'part2' ready in 0.3s | providers in use: ['CPUExecutionProvider']
+[auto] image_scale=auto + classification validation -> defaulting to imagenet; skipping confidence-based raw/norm probe.
+[full] warmup: 0 runs (not measured)
+[full] measured: 1 runs
+
+Benchmark results (mean ± std, ms):
+  full    : 62.060 ± 0.000
+  part1   : - ± -
+  part2   : - ± -
+  composed: - ± -
+[baseline] wrote baseline cache: baseline_full_cpu_outputs.npz
+[validation][backend-drift] full@cpu vs cpu_full (full_vs_cpu_full): max_abs=0.0 mean_abs=0.0 top1_match=True cosine=0.9999999999999999
+[validation][cardinality] requested=5000 evaluated=5000 pass=True
+[validation][dataset] semantic classification validation on 5000 sample(s)
+[validation][dataset] full: ref_mode=same_backend_full semantic_pass=True fidelity_pass=True images=5000 image_pass_ratio=1.0 top1_agreement=1.0 top5_agreement=1.0 top1_acc=0.7894 top5_acc=0.9432
+[validation][mini-classification] full: top1=0.7894 top5=0.9432 images=5000 labeled=5000
+[quality-gate] full: tier=final decision=pending_central_evaluation metric=top1_accuracy delta=0.0 lcb=None margin=0.01
+==== Output validation ====
+reference policy: requested=auto same_backend_ready=True cpu_full_outputs=1 output_format=classification_logits
+  full   : status=ok provider=cpu mode=proxy_classification ref=same_backend_full/full_same_backend fidelity_pass=True semantic_pass=True max_abs=0.0 mean_abs=0.0
+           classification: top1_ref=795 top1_out=795 top1_match=True top5_overlap=5 cosine=0.9999999999999999
+[validation] mode=auto ref_mode=auto used(primary=full)=proxy_classification final_pass=True final_pass_all=True semantic_gate=False semantic_primary_pass=True semantic_pass_all=True semantic_gate=False
+Wrote /home/kmika/Models/EvaluationRuns/completsetdev_20260911_213508/quality_management/references/regnet_x_1_6gf/workspaces/management_cpu_reference_znp7gx2t/suite/b023/results_management_cpu_reference/validation_report.json
+Wrote /home/kmika/Models/EvaluationRuns/completsetdev_20260911_213508/quality_management/references/regnet_x_1_6gf/workspaces/management_cpu_reference_znp7gx2t/suite/b023/results_management_cpu_reference/validation_report.png and .pdf
+Wrote benchmark_results_management_cpu_reference_auto.json
+Wrote scientific_report/ (canonical task-quality, eligibility, frozen Cut Bytes workflow selector plus four alternative ranking baselines, TeX and figures)
+Wrote benchmark_suite_status_matrix.md/csv/json
+
+Done.

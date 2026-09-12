@@ -1,0 +1,87 @@
+{
+  "status": "started",
+  "stage": "parsed_native",
+  "context": "SDK_NATIVE",
+  "new_hef_build": false,
+  "new_optimization": false,
+  "hardware_inference": false,
+  "requested_execution": "CPU emulation (not performance measurement)",
+  "cuda_visible_devices": "-1",
+  "sdk_version": "3.33.1",
+  "api": {
+    "infer_context": "(self, inference_context: hailo_sdk_client.exposed_definitions.InferenceContext, device_ids=None, nms_score_threshold=None, gpu_policy: hailo_model_optimization.acceleras.utils.acceleras_definitions.DistributionStrategy = <DistributionStrategy.AUTO: 'auto'>, custom_infer_config: Union[str, pathlib.Path, dict, NoneType] = None, lora_adapter_name: Optional[str] = None) -> Generator[hailo_sdk_client.exposed_definitions.ContextInfo, NoneType, NoneType]",
+    "infer": "(self, context: hailo_sdk_client.exposed_definitions.ContextInfo, dataset, data_type=<CalibrationDataType.auto: 'auto'>, data_count: Optional[int] = None, batch_size: int = 8) -> list",
+    "get_hn": "(self)"
+  },
+  "runner_state_before": "hailo_model",
+  "hn": {
+    "name": "mobilenet_v3_large_full",
+    "layer_count": 101,
+    "input_layers": {
+      "mobilenet_v3_large_full/input_layer1": {
+        "type": "input_layer",
+        "input": [],
+        "output": [
+          "mobilenet_v3_large_full/conv1"
+        ],
+        "input_shapes": [
+          [
+            -1,
+            224,
+            224,
+            3
+          ]
+        ],
+        "output_shapes": [
+          [
+            -1,
+            224,
+            224,
+            3
+          ]
+        ],
+        "original_names": [
+          "input"
+        ],
+        "compilation_params": {},
+        "quantization_params": {},
+        "transposed": false,
+        "engine": "nn_core",
+        "io_type": "standard"
+      }
+    },
+    "output_layers": {
+      "mobilenet_v3_large_full/output_layer1": {
+        "type": "output_layer",
+        "input": [
+          "mobilenet_v3_large_full/fc18"
+        ],
+        "output": [],
+        "input_shapes": [
+          [
+            -1,
+            1,
+            1,
+            1000
+          ]
+        ],
+        "output_shapes": [
+          [
+            -1,
+            1,
+            1,
+            1000
+          ]
+        ],
+        "original_names": [
+          "logits"
+        ],
+        "compilation_params": {},
+        "quantization_params": {},
+        "transposed": false,
+        "engine": "nn_core",
+        "io_type": "standard"
+      }
+    }
+  }
+}

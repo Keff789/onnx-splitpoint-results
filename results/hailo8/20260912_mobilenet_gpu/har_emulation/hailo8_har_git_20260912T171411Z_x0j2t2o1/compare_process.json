@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "/home/kmika/ONNX-Splitpoint-Tool/.venv/bin/python",
+    "-I",
+    "-B",
+    "/home/kmika/Downloads/Hailo8_HAR_und_Git_R1/array_compare.py",
+    "compare",
+    "--request",
+    "/home/kmika/Downloads/hailo8_har_git_20260912T171411Z_x0j2t2o1/har_comparison/comparison_request.json",
+    "--out",
+    "/home/kmika/Downloads/hailo8_har_git_20260912T171411Z_x0j2t2o1/har_comparison"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "cancelled": false,
+  "elapsed_s": 0.6541306530125439,
+  "owned_survivors": [],
+  "process_cleanup_complete": true
+}

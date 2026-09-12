@@ -1,0 +1,10 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "cancelled": false,
+  "lingering_children_after_cli": false,
+  "owned_processes_observed": 230,
+  "owned_survivors": [],
+  "elapsed_s": 533.3182032089971,
+  "cleanup_complete": true
+}

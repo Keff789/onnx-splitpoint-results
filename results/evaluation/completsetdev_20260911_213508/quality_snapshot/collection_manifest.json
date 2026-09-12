@@ -1,0 +1,782 @@
+{
+  "kind": "targeted_quality_snapshot_not_full_debug_pack",
+  "created_utc": "2026-09-12T05:59:29.261199+00:00",
+  "source_run": "/home/kmika/Models/EvaluationRuns/completsetdev_20260911_213508",
+  "status": "collected",
+  "files": [
+    {
+      "path": "run_manifest.json",
+      "size_bytes": 2773027,
+      "request_descriptor": false
+    },
+    {
+      "path": "profile.yaml",
+      "size_bytes": 31160,
+      "request_descriptor": false
+    },
+    {
+      "path": "profile_source.yaml",
+      "size_bytes": 23385,
+      "request_descriptor": false
+    },
+    {
+      "path": "effective_execution_plan.json",
+      "size_bytes": 13370,
+      "request_descriptor": false
+    },
+    {
+      "path": "evaluation_workflow.log",
+      "size_bytes": 3853295,
+      "request_descriptor": false
+    },
+    {
+      "path": "quality_management/central_quality_summary.json",
+      "size_bytes": 11074510,
+      "request_descriptor": false
+    },
+    {
+      "path": "quality_management/central_quality_summary.csv",
+      "size_bytes": 29376,
+      "request_descriptor": false
+    },
+    {
+      "path": "reports/run_status_summary.json",
+      "size_bytes": 25997,
+      "request_descriptor": false
+    },
+    {
+      "path": "reports/run_status_summary.md",
+      "size_bytes": 7322,
+      "request_descriptor": false
+    },
+    {
+      "path": "reports/result_dashboard.json",
+      "size_bytes": 1013854,
+      "request_descriptor": false
+    },
+    {
+      "path": "reports/artifact_index_closure.json",
+      "size_bytes": 649,
+      "request_descriptor": false
+    },
+    {
+      "path": "quality_management/references/mobilenet_v3_large/management_cpu_reference_status.json",
+      "size_bytes": 1435,
+      "request_descriptor": false
+    },
+    {
+      "path": "quality_management/references/mobilenet_v3_large/management_cpu_reference_stdout.txt",
+      "size_bytes": 3775,
+      "request_descriptor": false
+    },
+    {
+      "path": "quality_management/references/resnet50/management_cpu_reference_status.json",
+      "size_bytes": 1405,
+      "request_descriptor": false
+    },
+    {
+      "path": "quality_management/references/resnet50/management_cpu_reference_stdout.txt",
+      "size_bytes": 3704,
+      "request_descriptor": false
+    },
+    {
+      "path": "quality_management/references/regnet_x_1_6gf/management_cpu_reference_status.json",
+      "size_bytes": 1423,
+      "request_descriptor": false
+    },
+    {
+      "path": "quality_management/references/regnet_x_1_6gf/management_cpu_reference_stdout.txt",
+      "size_bytes": 3780,
+      "request_descriptor": false
+    },
+    {
+      "path": "quality_management/references/yolo11l/management_cpu_reference_status.json",
+      "size_bytes": 6684,
+      "request_descriptor": false
+    },
+    {
+      "path": "quality_management/references/yolo11l/management_cpu_reference_stdout.txt",
+      "size_bytes": 3725,
+      "request_descriptor": false
+    },
+    {
+      "path": "quality_management/references/yolo26m/management_cpu_reference_status.json",
+      "size_bytes": 6673,
+      "request_descriptor": false
+    },
+    {
+      "path": "quality_management/references/yolo26m/management_cpu_reference_stdout.txt",
+      "size_bytes": 3665,
+      "request_descriptor": false
+    },
+    {
+      "path": "quality_management/references/yolo26s/management_cpu_reference_status.json",
+      "size_bytes": 6672,
+      "request_descriptor": false
+    },
+    {
+      "path": "quality_management/references/yolo26s/management_cpu_reference_stdout.txt",
+      "size_bytes": 3666,
+      "request_descriptor": false
+    },
+    {
+      "path": "quality_management/references/yolov7_paper/management_cpu_reference_status.json",
+      "size_bytes": 6739,
+      "request_descriptor": false
+    },
+    {
+      "path": "quality_management/references/yolov7_paper/management_cpu_reference_stdout.txt",
+      "size_bytes": 3645,
+      "request_descriptor": false
+    },
+    {
+      "path": "models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b027/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 416009,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b027/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 327584,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b027/results_ort_tensorrt/task_quality_inputs/full_request.json",
+      "size_bytes": 316283,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b056/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 365662,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b056/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 327584,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b135/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 365575,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b135/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 327588,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/deepx_m1_full/task_quality_inputs/full_request.json",
+      "size_bytes": 326606,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+      "size_bytes": 330744,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b027/results_hailo10/task_quality_inputs/full_request.json",
+      "size_bytes": 316360,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b027/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 364825,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b056/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 364837,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b135/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 364119,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+      "size_bytes": 330740,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b027/results_hailo8/task_quality_inputs/full_request.json",
+      "size_bytes": 316360,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b027/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+      "size_bytes": 363603,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b056/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+      "size_bytes": 363608,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b135/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+      "size_bytes": 363486,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+      "size_bytes": 330732,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b023/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 415028,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b023/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 327556,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b023/results_ort_tensorrt/task_quality_inputs/full_request.json",
+      "size_bytes": 316279,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b052/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 364893,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b052/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 327558,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b132/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 364846,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b132/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 327559,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/deepx_m1_full/task_quality_inputs/full_request.json",
+      "size_bytes": 326594,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+      "size_bytes": 330684,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b023/results_hailo10/task_quality_inputs/full_request.json",
+      "size_bytes": 316356,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b023/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 364060,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b052/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 364052,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b132/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 363350,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+      "size_bytes": 330680,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b023/results_hailo8/task_quality_inputs/full_request.json",
+      "size_bytes": 316356,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b023/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+      "size_bytes": 362845,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b052/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+      "size_bytes": 362845,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b132/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+      "size_bytes": 362757,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+      "size_bytes": 330672,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/resnet50/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b002/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 363935,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/resnet50/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b002/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 327513,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/resnet50/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b002/results_ort_tensorrt/task_quality_inputs/full_request.json",
+      "size_bytes": 316273,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/resnet50/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b060/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 413725,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/resnet50/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b060/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 327519,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/resnet50/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b119/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 363823,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/resnet50/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b119/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 327518,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/resnet50/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/deepx_m1_full/task_quality_inputs/full_request.json",
+      "size_bytes": 326576,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/resnet50/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+      "size_bytes": 330598,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b002/results_hailo10/task_quality_inputs/full_request.json",
+      "size_bytes": 316350,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b002/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 363091,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b060/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 412912,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b119/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 362323,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+      "size_bytes": 330594,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b002/results_hailo8/task_quality_inputs/full_request.json",
+      "size_bytes": 316350,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b002/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+      "size_bytes": 361882,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b060/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+      "size_bytes": 411669,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b119/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+      "size_bytes": 361744,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+      "size_bytes": 330586,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo11l/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b062/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 244943,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo11l/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b062/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 209573,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo11l/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b062/results_ort_tensorrt/task_quality_inputs/full_request.json",
+      "size_bytes": 197121,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo11l/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b064/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 244905,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo11l/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b064/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 209573,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo11l/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b065/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 294850,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo11l/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b065/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 209573,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo11l/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/deepx_m1_full/task_quality_inputs/full_request.json",
+      "size_bytes": 260460,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo11l/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+      "size_bytes": 212652,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo11l/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b062/results_hailo10/task_quality_inputs/full_request.json",
+      "size_bytes": 205224,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo11l/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b062/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 244183,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo11l/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b064/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 244129,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo11l/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b065/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 244275,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo11l/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+      "size_bytes": 212648,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo11l/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b062/results_hailo8/task_quality_inputs/full_request.json",
+      "size_bytes": 205770,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo11l/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b062/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+      "size_bytes": 243887,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo11l/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b065/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+      "size_bytes": 243971,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo11l/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+      "size_bytes": 212640,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26m/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b038/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 247025,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26m/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b038/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 213752,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26m/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b038/results_ort_tensorrt/task_quality_inputs/full_request.json",
+      "size_bytes": 199211,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26m/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b398/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 246943,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26m/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b398/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 213749,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26m/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b399/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 296789,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26m/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b399/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 213749,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26m/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/deepx_m1_full/task_quality_inputs/full_request.json",
+      "size_bytes": 291163,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26m/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+      "size_bytes": 216851,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26m/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b038/results_hailo10/task_quality_inputs/full_request.json",
+      "size_bytes": 205402,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26m/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b038/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 246275,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26m/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+      "size_bytes": 216843,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26m/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b038/results_hailo8/task_quality_inputs/full_request.json",
+      "size_bytes": 205968,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26m/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b038/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+      "size_bytes": 245969,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26m/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+      "size_bytes": 216831,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26s/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b021/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 247012,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26s/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b021/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 213732,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26s/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b021/results_ort_tensorrt/task_quality_inputs/full_request.json",
+      "size_bytes": 199202,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26s/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b364/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 246934,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26s/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b364/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 213731,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26s/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b365/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 296780,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26s/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b365/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 213731,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26s/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+      "size_bytes": 216833,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26s/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b021/results_hailo10/task_quality_inputs/full_request.json",
+      "size_bytes": 205444,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26s/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b021/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 246245,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26s/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+      "size_bytes": 216825,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26s/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b021/results_hailo8/task_quality_inputs/full_request.json",
+      "size_bytes": 205804,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26s/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b021/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+      "size_bytes": 245943,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolo26s/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+      "size_bytes": 216813,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b009/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 246712,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b009/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 210380,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b009/results_ort_tensorrt/task_quality_inputs/full_request.json",
+      "size_bytes": 197513,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b011/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 296711,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b011/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 210381,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b044/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 246610,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b044/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 210383,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/deepx_m1_full/task_quality_inputs/full_request.json",
+      "size_bytes": 288155,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+      "size_bytes": 213346,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b009/results_hailo10/task_quality_inputs/full_request.json",
+      "size_bytes": 205952,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b009/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 245918,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b011/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 295904,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b044/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+      "size_bytes": 245787,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+      "size_bytes": 213342,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b009/results_hailo8/task_quality_inputs/full_request.json",
+      "size_bytes": 206178,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b009/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+      "size_bytes": 245622,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b011/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+      "size_bytes": 295526,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b044/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+      "size_bytes": 245483,
+      "request_descriptor": true
+    },
+    {
+      "path": "models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+      "size_bytes": 213334,
+      "request_descriptor": true
+    }
+  ],
+  "issues": [],
+  "tests_started": 0,
+  "tool_imported": false,
+  "configuration_modified": false,
+  "source_files_modified": false,
+  "new_model_hashes": false,
+  "limits": {
+    "file_bytes": 67108864,
+    "request_file_bytes": 16777216,
+    "request_total_bytes": 134217728,
+    "total_bytes": 268435456,
+    "requests": 2048
+  },
+  "scope": "Fixed summaries/logs, seven CPU diagnostics pairs, and unique source_request JSONs referenced by the central summary. No prediction bodies or model files are followed.",
+  "consistency": "Each included file stable while read; not an atomic snapshot of a running workflow.",
+  "summary_values": {
+    "status": "failed",
+    "technical_status": "failed",
+    "request_count": 123,
+    "completed_count": 63,
+    "failed_count": 60,
+    "cache_hit_count": 0,
+    "decision_counts": {
+      "fail": 18,
+      "inconclusive": 2,
+      "not_evaluated": 60,
+      "pass": 43
+    },
+    "aggregate_quality_decision": "fail"
+  },
+  "descriptor_paths_expected": 123,
+  "included_bytes": 54060355,
+  "request_bytes": 35157419,
+  "included_file_count": 148
+}

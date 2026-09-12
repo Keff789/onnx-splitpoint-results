@@ -1,0 +1,14 @@
+{
+  "root": "/home/kmika/ONNX-Splitpoint-Tool",
+  "version": "2.80.3",
+  "python": "/home/kmika/ONNX-Splitpoint-Tool/.venv/bin/python",
+  "checked_files": {
+    "onnx_splitpoint_tool/hailo_backend.py": "383f363ab692162127a640ab8084790acf7fb877214b7455f2f81679606b97da",
+    "onnx_splitpoint_tool/hailo_compiler_context.py": "e9f844a25937b82deefa447ad00cbbfdee9442c637088467dd1e1dd6d75b0656",
+    "onnx_splitpoint_tool/hailo_dependency_plan.py": "ef3da2189ea5d44ceb4020d3e9c372cc95202af97abf93a978b642288537eeaf",
+    "onnx_splitpoint_tool/cache_verify_policy.py": "39b7d3bb2c4d329579b79e57c571dffdbb77177192b5c2e76c0547d860da0c3e",
+    "onnx_splitpoint_tool/force_build_admission.py": "76213c3cdf608641aeeb63a938d82402bf84e551f2998a80af8f2d2cc4c115f6",
+    "scripts/deepx_full_workflow_smoke_worker_v27930.py": "e25ba5a69b371b74de1cd5cc1e61fee16b325915a4648de0a5c83314e8466998",
+    "scripts/deepx_full_output_probe_worker_v27930.py": "7e8dc574901a631cf648759527a54eacff03b7e7f51d7ffb01ab3a3db18f4e1c"
+  }
+}

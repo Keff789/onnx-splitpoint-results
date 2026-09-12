@@ -1,0 +1,3479 @@
+{
+  "conflicts": [],
+  "expected_changes": [
+    "Create only the new private target; selected exact local NVIDIA wheels only.",
+    "No vendor venv, framework, registry, shell, GUI, or cache writes."
+  ],
+  "family": "hailo8",
+  "gpu_readiness": "NOT_PROVEN",
+  "hardware_execution": "NOT_RUN",
+  "inventory": {
+    "distributions": [
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/absl_py-2.4.0.dist-info/METADATA",
+        "name": "absl-py",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.10",
+        "version": "2.4.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/annotated_types-0.4.0.dist-info/METADATA",
+        "name": "annotated-types",
+        "provides_extra": [],
+        "requires_dist": [
+          "typing-extensions>=4.0.0; python_version < '3.9'"
+        ],
+        "requires_python": ">=3.7",
+        "version": "0.4.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/anyio-4.13.0.dist-info/METADATA",
+        "name": "anyio",
+        "provides_extra": [
+          "trio"
+        ],
+        "requires_dist": [
+          "exceptiongroup>=1.0.2; python_version < \"3.11\"",
+          "idna>=2.8",
+          "typing_extensions>=4.5; python_version < \"3.13\"",
+          "trio>=0.32.0; extra == \"trio\""
+        ],
+        "requires_python": ">=3.10",
+        "version": "4.13.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/argcomplete-3.6.3.dist-info/METADATA",
+        "name": "argcomplete",
+        "provides_extra": [
+          "test"
+        ],
+        "requires_dist": [
+          "coverage; extra == 'test'",
+          "mypy; extra == 'test'",
+          "pexpect; extra == 'test'",
+          "ruff; extra == 'test'",
+          "wheel; extra == 'test'"
+        ],
+        "requires_python": ">=3.8",
+        "version": "3.6.3"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/argon2_cffi-25.1.0.dist-info/METADATA",
+        "name": "argon2-cffi",
+        "provides_extra": [],
+        "requires_dist": [
+          "argon2-cffi-bindings"
+        ],
+        "requires_python": ">=3.8",
+        "version": "25.1.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/argon2_cffi_bindings-25.1.0.dist-info/METADATA",
+        "name": "argon2-cffi-bindings",
+        "provides_extra": [],
+        "requires_dist": [
+          "cffi>=1.0.1; python_version < \"3.14\"",
+          "cffi>=2.0.0b1; python_version >= \"3.14\""
+        ],
+        "requires_python": ">=3.9",
+        "version": "25.1.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/arrow-1.4.0.dist-info/METADATA",
+        "name": "arrow",
+        "provides_extra": [
+          "doc",
+          "test"
+        ],
+        "requires_dist": [
+          "python-dateutil>=2.7.0",
+          "backports.zoneinfo==0.2.1;python_version<'3.9'",
+          "tzdata;python_version>='3.9'",
+          "doc8 ; extra == \"doc\"",
+          "sphinx>=7.0.0 ; extra == \"doc\"",
+          "sphinx-autobuild ; extra == \"doc\"",
+          "sphinx-autodoc-typehints ; extra == \"doc\"",
+          "sphinx_rtd_theme>=1.3.0 ; extra == \"doc\"",
+          "dateparser==1.* ; extra == \"test\"",
+          "pre-commit ; extra == \"test\"",
+          "pytest ; extra == \"test\"",
+          "pytest-cov ; extra == \"test\"",
+          "pytest-mock ; extra == \"test\"",
+          "pytz==2025.2 ; extra == \"test\"",
+          "simplejson==3.* ; extra == \"test\""
+        ],
+        "requires_python": ">=3.8",
+        "version": "1.4.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/asttokens-3.0.1.dist-info/METADATA",
+        "name": "asttokens",
+        "provides_extra": [
+          "astroid",
+          "test"
+        ],
+        "requires_dist": [
+          "astroid<5,>=2; extra == \"astroid\"",
+          "astroid<5,>=2; extra == \"test\"",
+          "pytest<9.0; extra == \"test\"",
+          "pytest-cov; extra == \"test\"",
+          "pytest-xdist; extra == \"test\""
+        ],
+        "requires_python": ">=3.8",
+        "version": "3.0.1"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/astunparse-1.6.3.dist-info/METADATA",
+        "name": "astunparse",
+        "provides_extra": [],
+        "requires_dist": [
+          "wheel (<1.0,>=0.23.0)",
+          "six (<2.0,>=1.6.1)"
+        ],
+        "requires_python": "",
+        "version": "1.6.3"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/async_lru-2.3.0.dist-info/METADATA",
+        "name": "async-lru",
+        "provides_extra": [],
+        "requires_dist": [
+          "typing_extensions>=4.0.0; python_version < \"3.11\""
+        ],
+        "requires_python": ">=3.10",
+        "version": "2.3.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/attrs-26.1.0.dist-info/METADATA",
+        "name": "attrs",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.9",
+        "version": "26.1.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/babel-2.18.0.dist-info/METADATA",
+        "name": "babel",
+        "provides_extra": [
+          "dev"
+        ],
+        "requires_dist": [
+          "pytz>=2015.7; python_version < \"3.9\"",
+          "tzdata; sys_platform == \"win32\" and extra == \"dev\"",
+          "backports.zoneinfo; python_version < \"3.9\" and extra == \"dev\"",
+          "freezegun~=1.0; extra == \"dev\"",
+          "jinja2>=3.0; extra == \"dev\"",
+          "pytest-cov; extra == \"dev\"",
+          "pytest>=6.0; extra == \"dev\"",
+          "pytz; extra == \"dev\"",
+          "setuptools; extra == \"dev\""
+        ],
+        "requires_python": ">=3.8",
+        "version": "2.18.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/beautifulsoup4-4.14.3.dist-info/METADATA",
+        "name": "beautifulsoup4",
+        "provides_extra": [
+          "cchardet",
+          "chardet",
+          "charset-normalizer",
+          "html5lib",
+          "lxml"
+        ],
+        "requires_dist": [
+          "soupsieve>=1.6.1",
+          "typing-extensions>=4.0.0",
+          "cchardet; extra == 'cchardet'",
+          "chardet; extra == 'chardet'",
+          "charset-normalizer; extra == 'charset-normalizer'",
+          "html5lib; extra == 'html5lib'",
+          "lxml; extra == 'lxml'"
+        ],
+        "requires_python": ">=3.7.0",
+        "version": "4.14.3"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/bleach-6.3.0.dist-info/METADATA",
+        "name": "bleach",
+        "provides_extra": [
+          "css"
+        ],
+        "requires_dist": [
+          "webencodings",
+          "tinycss2<1.5,>=1.1.0; extra == \"css\""
+        ],
+        "requires_python": ">=3.10",
+        "version": "6.3.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/certifi-2026.5.20.dist-info/METADATA",
+        "name": "certifi",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.7",
+        "version": "2026.5.20"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/cffi-2.0.0.dist-info/METADATA",
+        "name": "cffi",
+        "provides_extra": [],
+        "requires_dist": [
+          "pycparser; implementation_name != \"PyPy\""
+        ],
+        "requires_python": ">=3.9",
+        "version": "2.0.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/charset_normalizer-3.4.7.dist-info/METADATA",
+        "name": "charset-normalizer",
+        "provides_extra": [
+          "unicode-backport"
+        ],
+        "requires_dist": [],
+        "requires_python": ">=3.7",
+        "version": "3.4.7"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/cloudpickle-3.1.2.dist-info/METADATA",
+        "name": "cloudpickle",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.8",
+        "version": "3.1.2"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/coloredlogs-15.0.1.dist-info/METADATA",
+        "name": "coloredlogs",
+        "provides_extra": [
+          "cron"
+        ],
+        "requires_dist": [
+          "humanfriendly (>=9.1)",
+          "capturer (>=2.4) ; extra == 'cron'"
+        ],
+        "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*",
+        "version": "15.0.1"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/comm-0.2.3.dist-info/METADATA",
+        "name": "comm",
+        "provides_extra": [
+          "test"
+        ],
+        "requires_dist": [
+          "pytest; extra == 'test'"
+        ],
+        "requires_python": ">=3.8",
+        "version": "0.2.3"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/contextlib2-21.6.0.dist-info/METADATA",
+        "name": "contextlib2",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.6",
+        "version": "21.6.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/cycler-0.12.1.dist-info/METADATA",
+        "name": "cycler",
+        "provides_extra": [
+          "docs",
+          "tests"
+        ],
+        "requires_dist": [
+          "ipython ; extra == 'docs'",
+          "matplotlib ; extra == 'docs'",
+          "numpydoc ; extra == 'docs'",
+          "sphinx ; extra == 'docs'",
+          "pytest ; extra == 'tests'",
+          "pytest-cov ; extra == 'tests'",
+          "pytest-xdist ; extra == 'tests'"
+        ],
+        "requires_python": ">=3.8",
+        "version": "0.12.1"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/debugpy-1.8.20.dist-info/METADATA",
+        "name": "debugpy",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.8",
+        "version": "1.8.20"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/decorator-5.3.1.dist-info/METADATA",
+        "name": "decorator",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.8",
+        "version": "5.3.1"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/defusedxml-0.7.1.dist-info/METADATA",
+        "name": "defusedxml",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*",
+        "version": "0.7.1"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/disjoint_set-0.9.0.dist-info/METADATA",
+        "name": "disjoint-set",
+        "provides_extra": [],
+        "requires_dist": [
+          "typing-extensions"
+        ],
+        "requires_python": ">=3.10, <4",
+        "version": "0.9.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/dm_tree-0.1.10.dist-info/METADATA",
+        "name": "dm-tree",
+        "provides_extra": [],
+        "requires_dist": [
+          "absl-py>=0.6.1",
+          "attrs>=18.2.0",
+          "numpy>=1.21",
+          "numpy>=1.21.2; python_version >= \"3.10\"",
+          "numpy>=1.23.3; python_version >= \"3.11\"",
+          "numpy>=1.26.0; python_version >= \"3.12\"",
+          "numpy>=2.1.0; python_version >= \"3.13\"",
+          "numpy>=2.3.2; python_version >= \"3.14\"",
+          "wrapt>=1.11.2"
+        ],
+        "requires_python": ">=3.10",
+        "version": "0.1.10"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/executing-2.2.1.dist-info/METADATA",
+        "name": "executing",
+        "provides_extra": [
+          "tests"
+        ],
+        "requires_dist": [
+          "asttokens>=2.1.0; extra == \"tests\"",
+          "ipython; extra == \"tests\"",
+          "pytest; extra == \"tests\"",
+          "coverage; extra == \"tests\"",
+          "coverage-enable-subprocess; extra == \"tests\"",
+          "littleutils; extra == \"tests\"",
+          "rich; python_version >= \"3.11\" and extra == \"tests\""
+        ],
+        "requires_python": ">=3.8",
+        "version": "2.2.1"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/fastjsonschema-2.21.2.dist-info/METADATA",
+        "name": "fastjsonschema",
+        "provides_extra": [
+          "devel"
+        ],
+        "requires_dist": [
+          "colorama; extra == \"devel\"",
+          "jsonschema; extra == \"devel\"",
+          "json-spec; extra == \"devel\"",
+          "pylint; extra == \"devel\"",
+          "pytest; extra == \"devel\"",
+          "pytest-benchmark; extra == \"devel\"",
+          "pytest-cache; extra == \"devel\"",
+          "validictory; extra == \"devel\""
+        ],
+        "requires_python": "",
+        "version": "2.21.2"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/flatbuffers-24.3.25.dist-info/METADATA",
+        "name": "flatbuffers",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": "",
+        "version": "24.3.25"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/fonttools-4.63.0.dist-info/METADATA",
+        "name": "fonttools",
+        "provides_extra": [
+          "ufo",
+          "lxml",
+          "woff",
+          "unicode",
+          "graphite",
+          "interpolatable",
+          "plot",
+          "symfont",
+          "type1",
+          "pathops",
+          "repacker",
+          "all"
+        ],
+        "requires_dist": [
+          "lxml>=4.0; extra == \"lxml\"",
+          "brotli>=1.0.1; platform_python_implementation == \"CPython\" and extra == \"woff\"",
+          "brotlicffi>=0.8.0; platform_python_implementation != \"CPython\" and extra == \"woff\"",
+          "zopfli>=0.1.4; extra == \"woff\"",
+          "unicodedata2>=17.0.0; python_version <= \"3.14\" and extra == \"unicode\"",
+          "lz4>=1.7.4.2; extra == \"graphite\"",
+          "scipy; platform_python_implementation != \"PyPy\" and extra == \"interpolatable\"",
+          "munkres; platform_python_implementation == \"PyPy\" and extra == \"interpolatable\"",
+          "pycairo; extra == \"interpolatable\"",
+          "matplotlib; extra == \"plot\"",
+          "sympy; extra == \"symfont\"",
+          "xattr; sys_platform == \"darwin\" and extra == \"type1\"",
+          "skia-pathops>=0.5.0; extra == \"pathops\"",
+          "uharfbuzz>=0.45.0; extra == \"repacker\"",
+          "lxml>=4.0; extra == \"all\"",
+          "brotli>=1.0.1; platform_python_implementation == \"CPython\" and extra == \"all\"",
+          "brotlicffi>=0.8.0; platform_python_implementation != \"CPython\" and extra == \"all\"",
+          "zopfli>=0.1.4; extra == \"all\"",
+          "unicodedata2>=17.0.0; python_version <= \"3.14\" and extra == \"all\"",
+          "lz4>=1.7.4.2; extra == \"all\"",
+          "scipy; platform_python_implementation != \"PyPy\" and extra == \"all\"",
+          "munkres; platform_python_implementation == \"PyPy\" and extra == \"all\"",
+          "pycairo; extra == \"all\"",
+          "matplotlib; extra == \"all\"",
+          "sympy; extra == \"all\"",
+          "xattr; sys_platform == \"darwin\" and extra == \"all\"",
+          "skia-pathops>=0.5.0; extra == \"all\"",
+          "uharfbuzz>=0.45.0; extra == \"all\""
+        ],
+        "requires_python": ">=3.10",
+        "version": "4.63.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/fqdn-1.5.1.dist-info/METADATA",
+        "name": "fqdn",
+        "provides_extra": [],
+        "requires_dist": [
+          "cached-property (>=1.3.0) ; python_version < \"3.8\""
+        ],
+        "requires_python": ">=2.7, !=3.0, !=3.1, !=3.2, !=3.3, !=3.4, <4",
+        "version": "1.5.1"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/future-1.0.0.dist-info/METADATA",
+        "name": "future",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*",
+        "version": "1.0.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/gast-0.4.0.dist-info/METADATA",
+        "name": "gast",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*",
+        "version": "0.4.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/google_pasta-0.2.0.dist-info/METADATA",
+        "name": "google-pasta",
+        "provides_extra": [],
+        "requires_dist": [
+          "six"
+        ],
+        "requires_python": "",
+        "version": "0.2.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/grpcio-1.80.0.dist-info/METADATA",
+        "name": "grpcio",
+        "provides_extra": [
+          "protobuf"
+        ],
+        "requires_dist": [
+          "typing-extensions~=4.12",
+          "grpcio-tools>=1.80.0; extra == \"protobuf\""
+        ],
+        "requires_python": ">=3.9",
+        "version": "1.80.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/h11-0.16.0.dist-info/METADATA",
+        "name": "h11",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.8",
+        "version": "0.16.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/h5py-3.16.0.dist-info/METADATA",
+        "name": "h5py",
+        "provides_extra": [],
+        "requires_dist": [
+          "numpy>=1.21.2"
+        ],
+        "requires_python": ">=3.10",
+        "version": "3.16.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/hailo_dataflow_compiler-3.33.1.dist-info/METADATA",
+        "name": "hailo-dataflow-compiler",
+        "provides_extra": [],
+        "requires_dist": [
+          "absl-py",
+          "annotated-types==0.4.0",
+          "argcomplete",
+          "contextlib2",
+          "future",
+          "jsonref",
+          "jsonschema",
+          "matplotlib==3.5.2",
+          "networkx==2.8.8",
+          "jax==0.5.3",
+          "jaxlib==0.5.3",
+          "packaging",
+          "pandas",
+          "Pillow",
+          "prompt-toolkit",
+          "pwlf",
+          "py",
+          "pydantic==2.0.2",
+          "pydantic-core==2.1.2",
+          "pygraphviz",
+          "PyYAML",
+          "scipy==1.12.0",
+          "tabulate",
+          "verboselogs",
+          "testresources",
+          "h5py",
+          "disjoint-set",
+          "importlib-metadata",
+          "grpcio",
+          "six",
+          "typing-extensions==4.12.2",
+          "wheel",
+          "onnx-tf",
+          "pyparsing==2.4.7",
+          "tqdm",
+          "py-cpuinfo",
+          "msgpack",
+          "prettytable==3.5.0",
+          "tensorflow-probability==0.20.1",
+          "tensorflow==2.18.0",
+          "keras==3.5.0",
+          "numpy==1.26.4",
+          "flatbuffers==24.3.25",
+          "protobuf==3.20.3",
+          "onnx==1.16.0",
+          "onnxsim==0.4.36",
+          "onnxruntime==1.18.0",
+          "safetensors",
+          "tflite==2.10.0",
+          "tensorboard==2.18.0",
+          "gast<=0.4.0,>=0.3.2",
+          "xxhash==3.5.0",
+          "setuptools",
+          "ipython",
+          "jedi",
+          "jupyter",
+          "parso"
+        ],
+        "requires_python": "",
+        "version": "3.33.1"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/httpcore-1.0.9.dist-info/METADATA",
+        "name": "httpcore",
+        "provides_extra": [
+          "asyncio",
+          "http2",
+          "socks",
+          "trio"
+        ],
+        "requires_dist": [
+          "certifi",
+          "h11>=0.16",
+          "anyio<5.0,>=4.0; extra == 'asyncio'",
+          "h2<5,>=3; extra == 'http2'",
+          "socksio==1.*; extra == 'socks'",
+          "trio<1.0,>=0.22.0; extra == 'trio'"
+        ],
+        "requires_python": ">=3.8",
+        "version": "1.0.9"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/httpx-0.28.1.dist-info/METADATA",
+        "name": "httpx",
+        "provides_extra": [
+          "brotli",
+          "cli",
+          "http2",
+          "socks",
+          "zstd"
+        ],
+        "requires_dist": [
+          "anyio",
+          "certifi",
+          "httpcore==1.*",
+          "idna",
+          "brotli; (platform_python_implementation == 'CPython') and extra == 'brotli'",
+          "brotlicffi; (platform_python_implementation != 'CPython') and extra == 'brotli'",
+          "click==8.*; extra == 'cli'",
+          "pygments==2.*; extra == 'cli'",
+          "rich<14,>=10; extra == 'cli'",
+          "h2<5,>=3; extra == 'http2'",
+          "socksio==1.*; extra == 'socks'",
+          "zstandard>=0.18.0; extra == 'zstd'"
+        ],
+        "requires_python": ">=3.8",
+        "version": "0.28.1"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/humanfriendly-10.0.dist-info/METADATA",
+        "name": "humanfriendly",
+        "provides_extra": [],
+        "requires_dist": [
+          "monotonic ; python_version == \"2.7\"",
+          "pyreadline ; sys_platform == \"win32\" and python_version<\"3.8\"",
+          "pyreadline3 ; sys_platform == \"win32\" and python_version>=\"3.8\""
+        ],
+        "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*",
+        "version": "10.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/idna-3.16.dist-info/METADATA",
+        "name": "idna",
+        "provides_extra": [
+          "all"
+        ],
+        "requires_dist": [
+          "ruff >= 0.6.2 ; extra == \"all\"",
+          "mypy >= 1.11.2 ; extra == \"all\"",
+          "pytest >= 8.3.2 ; extra == \"all\""
+        ],
+        "requires_python": ">=3.9",
+        "version": "3.16"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/importlib_metadata-9.0.0.dist-info/METADATA",
+        "name": "importlib_metadata",
+        "provides_extra": [
+          "test",
+          "doc",
+          "perf",
+          "check",
+          "cover",
+          "enabler",
+          "type"
+        ],
+        "requires_dist": [
+          "zipp>=3.20",
+          "pytest!=8.1.*,>=6; extra == \"test\"",
+          "packaging; extra == \"test\"",
+          "pyfakefs; extra == \"test\"",
+          "pytest-perf>=0.9.2; extra == \"test\"",
+          "sphinx>=3.5; extra == \"doc\"",
+          "jaraco.packaging>=9.3; extra == \"doc\"",
+          "rst.linker>=1.9; extra == \"doc\"",
+          "furo; extra == \"doc\"",
+          "sphinx-lint; extra == \"doc\"",
+          "jaraco.tidelift>=1.4; extra == \"doc\"",
+          "ipython; extra == \"perf\"",
+          "pytest-checkdocs>=2.14; extra == \"check\"",
+          "pytest-ruff>=0.2.1; sys_platform != \"cygwin\" and extra == \"check\"",
+          "pytest-cov; extra == \"cover\"",
+          "pytest-enabler>=3.4; extra == \"enabler\"",
+          "pytest-mypy>=1.0.1; platform_python_implementation != \"PyPy\" and extra == \"type\""
+        ],
+        "requires_python": ">=3.10",
+        "version": "9.0.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/ipykernel-7.2.0.dist-info/METADATA",
+        "name": "ipykernel",
+        "provides_extra": [
+          "cov",
+          "docs",
+          "pyqt5",
+          "pyside6",
+          "test"
+        ],
+        "requires_dist": [
+          "appnope>=0.1.2; platform_system == 'Darwin'",
+          "comm>=0.1.1",
+          "debugpy>=1.6.5",
+          "ipython>=7.23.1",
+          "jupyter-client>=8.8.0",
+          "jupyter-core!=6.0.*,>=5.1",
+          "matplotlib-inline>=0.1",
+          "nest-asyncio>=1.4",
+          "packaging>=22",
+          "psutil>=5.7",
+          "pyzmq>=25",
+          "tornado>=6.4.1",
+          "traitlets>=5.4.0",
+          "coverage[toml]; extra == 'cov'",
+          "matplotlib; extra == 'cov'",
+          "pytest-cov; extra == 'cov'",
+          "trio; extra == 'cov'",
+          "intersphinx-registry; extra == 'docs'",
+          "myst-parser; extra == 'docs'",
+          "pydata-sphinx-theme; extra == 'docs'",
+          "sphinx-autodoc-typehints; extra == 'docs'",
+          "sphinx<8.2.0; extra == 'docs'",
+          "sphinxcontrib-github-alt; extra == 'docs'",
+          "sphinxcontrib-spelling; extra == 'docs'",
+          "trio; extra == 'docs'",
+          "pyqt5; extra == 'pyqt5'",
+          "pyside6; extra == 'pyside6'",
+          "flaky; extra == 'test'",
+          "ipyparallel; extra == 'test'",
+          "pre-commit; extra == 'test'",
+          "pytest-asyncio>=0.23.5; extra == 'test'",
+          "pytest-cov; extra == 'test'",
+          "pytest-timeout; extra == 'test'",
+          "pytest<10,>=7.0; extra == 'test'"
+        ],
+        "requires_python": ">=3.10",
+        "version": "7.2.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/ipython-9.13.0.dist-info/METADATA",
+        "name": "ipython",
+        "provides_extra": [
+          "black",
+          "doc",
+          "test",
+          "test-extra",
+          "matplotlib",
+          "all"
+        ],
+        "requires_dist": [
+          "colorama>=0.4.4; sys_platform == \"win32\"",
+          "decorator>=5.1.0",
+          "ipython-pygments-lexers>=1.0.0",
+          "jedi>=0.18.2",
+          "matplotlib-inline>=0.1.6",
+          "pexpect>4.6; sys_platform != \"win32\" and sys_platform != \"emscripten\"",
+          "prompt_toolkit<3.1.0,>=3.0.41",
+          "psutil>=7",
+          "pygments>=2.14.0",
+          "stack_data>=0.6.0",
+          "traitlets>=5.13.0",
+          "typing_extensions>=4.6; python_version < \"3.12\"",
+          "black; extra == \"black\"",
+          "docrepr; extra == \"doc\"",
+          "exceptiongroup; extra == \"doc\"",
+          "intersphinx_registry; extra == \"doc\"",
+          "ipykernel; extra == \"doc\"",
+          "ipython[matplotlib,test]; extra == \"doc\"",
+          "setuptools>=80.0; extra == \"doc\"",
+          "sphinx_toml==0.0.4; extra == \"doc\"",
+          "sphinx-rtd-theme>=0.1.8; extra == \"doc\"",
+          "sphinx>=8.0; extra == \"doc\"",
+          "typing_extensions; extra == \"doc\"",
+          "pytest>=7.0.0; extra == \"test\"",
+          "pytest-asyncio>=1.0.0; extra == \"test\"",
+          "testpath>=0.2; extra == \"test\"",
+          "packaging>=23.0.0; extra == \"test\"",
+          "setuptools>=80.0; extra == \"test\"",
+          "ipython[test]; extra == \"test-extra\"",
+          "curio; extra == \"test-extra\"",
+          "jupyter_ai; extra == \"test-extra\"",
+          "ipython[matplotlib]; extra == \"test-extra\"",
+          "nbformat; extra == \"test-extra\"",
+          "nbclient; extra == \"test-extra\"",
+          "ipykernel>6.30; extra == \"test-extra\"",
+          "numpy>=2.0; extra == \"test-extra\"",
+          "pandas>2.1; extra == \"test-extra\"",
+          "trio>=0.22.0; extra == \"test-extra\"",
+          "matplotlib>3.9; extra == \"matplotlib\"",
+          "ipython[doc,matplotlib,terminal,test,test_extra]; extra == \"all\"",
+          "argcomplete>=3.0; extra == \"all\"",
+          "types-decorator; extra == \"all\""
+        ],
+        "requires_python": ">=3.11",
+        "version": "9.13.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/ipython_pygments_lexers-1.1.1.dist-info/METADATA",
+        "name": "ipython_pygments_lexers",
+        "provides_extra": [],
+        "requires_dist": [
+          "pygments"
+        ],
+        "requires_python": ">=3.8",
+        "version": "1.1.1"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/ipywidgets-8.1.8.dist-info/METADATA",
+        "name": "ipywidgets",
+        "provides_extra": [
+          "test"
+        ],
+        "requires_dist": [
+          "comm>=0.1.3",
+          "ipython>=6.1.0",
+          "traitlets>=4.3.1",
+          "widgetsnbextension~=4.0.14",
+          "jupyterlab_widgets~=3.0.15",
+          "jsonschema; extra == \"test\"",
+          "ipykernel; extra == \"test\"",
+          "pytest>=3.6.0; extra == \"test\"",
+          "pytest-cov; extra == \"test\"",
+          "pytz; extra == \"test\""
+        ],
+        "requires_python": ">=3.7",
+        "version": "8.1.8"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/isoduration-20.11.0.dist-info/METADATA",
+        "name": "isoduration",
+        "provides_extra": [],
+        "requires_dist": [
+          "arrow (>=0.15.0)"
+        ],
+        "requires_python": ">=3.7",
+        "version": "20.11.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/jax-0.5.3.dist-info/METADATA",
+        "name": "jax",
+        "provides_extra": [
+          "minimum-jaxlib",
+          "cpu",
+          "ci",
+          "tpu",
+          "cuda",
+          "cuda12",
+          "cuda12-pip",
+          "cuda12-local",
+          "rocm",
+          "k8s"
+        ],
+        "requires_dist": [
+          "jaxlib<=0.5.3,>=0.5.3",
+          "ml_dtypes>=0.4.0",
+          "numpy>=1.25",
+          "numpy>=1.26.0; python_version >= \"3.12\"",
+          "opt_einsum",
+          "scipy>=1.11.1",
+          "jaxlib==0.5.3; extra == \"minimum-jaxlib\"",
+          "jaxlib==0.5.1; extra == \"ci\"",
+          "jaxlib<=0.5.3,>=0.5.3; extra == \"tpu\"",
+          "libtpu==0.0.11.*; extra == \"tpu\"",
+          "requests; extra == \"tpu\"",
+          "jaxlib==0.5.3; extra == \"cuda\"",
+          "jax-cuda12-plugin[with_cuda]<=0.5.3,>=0.5.3; extra == \"cuda\"",
+          "jaxlib==0.5.3; extra == \"cuda12\"",
+          "jax-cuda12-plugin[with_cuda]<=0.5.3,>=0.5.3; extra == \"cuda12\"",
+          "jaxlib==0.5.3; extra == \"cuda12-pip\"",
+          "jax-cuda12-plugin[with_cuda]<=0.5.3,>=0.5.3; extra == \"cuda12-pip\"",
+          "jaxlib==0.5.3; extra == \"cuda12-local\"",
+          "jax-cuda12-plugin==0.5.3; extra == \"cuda12-local\"",
+          "jaxlib==0.5.3; extra == \"rocm\"",
+          "jax-rocm60-plugin<=0.5.3,>=0.5.3; extra == \"rocm\"",
+          "kubernetes; extra == \"k8s\""
+        ],
+        "requires_python": ">=3.10",
+        "version": "0.5.3"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/jaxlib-0.5.3.dist-info/METADATA",
+        "name": "jaxlib",
+        "provides_extra": [],
+        "requires_dist": [
+          "scipy>=1.11.1",
+          "numpy>=1.25",
+          "ml_dtypes>=0.2.0"
+        ],
+        "requires_python": ">=3.10",
+        "version": "0.5.3"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/jedi-0.20.0.dist-info/METADATA",
+        "name": "jedi",
+        "provides_extra": [
+          "dev",
+          "docs"
+        ],
+        "requires_dist": [
+          "parso <0.9.0,>=0.8.6",
+          "Django ; extra == 'dev'",
+          "attrs ; extra == 'dev'",
+          "colorama ; extra == 'dev'",
+          "docopt ; extra == 'dev'",
+          "flake8 ==7.1.2 ; extra == 'dev'",
+          "pytest <9.0.0 ; extra == 'dev'",
+          "types-setuptools ==80.9.0.20250529 ; extra == 'dev'",
+          "typing-extensions ; extra == 'dev'",
+          "zuban ==0.7.0 ; extra == 'dev'",
+          "Jinja2 ==3.1.6 ; extra == 'docs'",
+          "MarkupSafe ==3.0.3 ; extra == 'docs'",
+          "Pygments ==2.20.0 ; extra == 'docs'",
+          "Sphinx ==9.1.0 ; extra == 'docs'",
+          "alabaster ==1.0.0 ; extra == 'docs'",
+          "babel ==2.18.0 ; extra == 'docs'",
+          "certifi ==2026.4.22 ; extra == 'docs'",
+          "charset-normalizer ==3.4.7 ; extra == 'docs'",
+          "docutils ==0.22.4 ; extra == 'docs'",
+          "idna ==3.13 ; extra == 'docs'",
+          "imagesize ==2.0.0 ; extra == 'docs'",
+          "iniconfig ==2.3.0 ; extra == 'docs'",
+          "packaging ==26.2 ; extra == 'docs'",
+          "pluggy ==1.6.0 ; extra == 'docs'",
+          "pytest ==9.0.3 ; extra == 'docs'",
+          "requests ==2.33.1 ; extra == 'docs'",
+          "roman-numerals ==4.1.0 ; extra == 'docs'",
+          "snowballstemmer ==3.0.1 ; extra == 'docs'",
+          "sphinx-rtd-theme ==3.1.0 ; extra == 'docs'",
+          "sphinxcontrib-applehelp ==2.0.0 ; extra == 'docs'",
+          "sphinxcontrib-devhelp ==2.0.0 ; extra == 'docs'",
+          "sphinxcontrib-htmlhelp ==2.1.0 ; extra == 'docs'",
+          "sphinxcontrib-jquery ==4.1 ; extra == 'docs'",
+          "sphinxcontrib-jsmath ==1.0.1 ; extra == 'docs'",
+          "sphinxcontrib-qthelp ==2.0.0 ; extra == 'docs'",
+          "sphinxcontrib-serializinghtml ==2.0.0 ; extra == 'docs'",
+          "urllib3 ==2.6.3 ; extra == 'docs'"
+        ],
+        "requires_python": ">=3.10",
+        "version": "0.20.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/jinja2-3.1.6.dist-info/METADATA",
+        "name": "Jinja2",
+        "provides_extra": [
+          "i18n"
+        ],
+        "requires_dist": [
+          "MarkupSafe>=2.0",
+          "Babel>=2.7 ; extra == \"i18n\""
+        ],
+        "requires_python": ">=3.7",
+        "version": "3.1.6"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/json5-0.14.0.dist-info/METADATA",
+        "name": "json5",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.8.0",
+        "version": "0.14.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/jsonpointer-3.1.1.dist-info/METADATA",
+        "name": "jsonpointer",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.10",
+        "version": "3.1.1"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/jsonref-1.1.0.dist-info/METADATA",
+        "name": "jsonref",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.7",
+        "version": "1.1.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/jsonschema-4.26.0.dist-info/METADATA",
+        "name": "jsonschema",
+        "provides_extra": [
+          "format",
+          "format-nongpl"
+        ],
+        "requires_dist": [
+          "attrs>=22.2.0",
+          "jsonschema-specifications>=2023.03.6",
+          "referencing>=0.28.4",
+          "rpds-py>=0.25.0",
+          "fqdn; extra == 'format'",
+          "idna; extra == 'format'",
+          "isoduration; extra == 'format'",
+          "jsonpointer>1.13; extra == 'format'",
+          "rfc3339-validator; extra == 'format'",
+          "rfc3987; extra == 'format'",
+          "uri-template; extra == 'format'",
+          "webcolors>=1.11; extra == 'format'",
+          "fqdn; extra == 'format-nongpl'",
+          "idna; extra == 'format-nongpl'",
+          "isoduration; extra == 'format-nongpl'",
+          "jsonpointer>1.13; extra == 'format-nongpl'",
+          "rfc3339-validator; extra == 'format-nongpl'",
+          "rfc3986-validator>0.1.0; extra == 'format-nongpl'",
+          "rfc3987-syntax>=1.1.0; extra == 'format-nongpl'",
+          "uri-template; extra == 'format-nongpl'",
+          "webcolors>=24.6.0; extra == 'format-nongpl'"
+        ],
+        "requires_python": ">=3.10",
+        "version": "4.26.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/jsonschema_specifications-2025.9.1.dist-info/METADATA",
+        "name": "jsonschema-specifications",
+        "provides_extra": [],
+        "requires_dist": [
+          "referencing>=0.31.0"
+        ],
+        "requires_python": ">=3.9",
+        "version": "2025.9.1"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/jupyter-1.1.1.dist-info/METADATA",
+        "name": "jupyter",
+        "provides_extra": [],
+        "requires_dist": [
+          "notebook",
+          "jupyter-console",
+          "nbconvert",
+          "ipykernel",
+          "ipywidgets",
+          "jupyterlab"
+        ],
+        "requires_python": "",
+        "version": "1.1.1"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/jupyter_client-8.8.0.dist-info/METADATA",
+        "name": "jupyter_client",
+        "provides_extra": [
+          "docs",
+          "orjson",
+          "test"
+        ],
+        "requires_dist": [
+          "jupyter-core>=5.1",
+          "python-dateutil>=2.8.2",
+          "pyzmq>=25.0",
+          "tornado>=6.4.1",
+          "traitlets>=5.3",
+          "ipykernel; extra == 'docs'",
+          "myst-parser; extra == 'docs'",
+          "pydata-sphinx-theme; extra == 'docs'",
+          "sphinx-autodoc-typehints; extra == 'docs'",
+          "sphinx>=4; extra == 'docs'",
+          "sphinxcontrib-github-alt; extra == 'docs'",
+          "sphinxcontrib-spelling; extra == 'docs'",
+          "orjson; extra == 'orjson'",
+          "anyio; extra == 'test'",
+          "coverage; extra == 'test'",
+          "ipykernel>=6.14; extra == 'test'",
+          "msgpack; extra == 'test'",
+          "mypy; (platform_python_implementation != 'PyPy') and extra == 'test'",
+          "paramiko; (sys_platform == 'win32') and extra == 'test'",
+          "pre-commit; extra == 'test'",
+          "pytest; extra == 'test'",
+          "pytest-cov; extra == 'test'",
+          "pytest-jupyter[client]>=0.6.2; extra == 'test'",
+          "pytest-timeout; extra == 'test'"
+        ],
+        "requires_python": ">=3.10",
+        "version": "8.8.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/jupyter_console-6.6.3.dist-info/METADATA",
+        "name": "jupyter-console",
+        "provides_extra": [
+          "test"
+        ],
+        "requires_dist": [
+          "ipykernel>=6.14",
+          "ipython",
+          "jupyter-client>=7.0.0",
+          "jupyter-core!=5.0.*,>=4.12",
+          "prompt-toolkit>=3.0.30",
+          "pygments",
+          "pyzmq>=17",
+          "traitlets>=5.4",
+          "flaky; extra == 'test'",
+          "pexpect; extra == 'test'",
+          "pytest; extra == 'test'"
+        ],
+        "requires_python": ">=3.7",
+        "version": "6.6.3"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/jupyter_core-5.9.1.dist-info/METADATA",
+        "name": "jupyter_core",
+        "provides_extra": [
+          "docs",
+          "test"
+        ],
+        "requires_dist": [
+          "platformdirs>=2.5",
+          "traitlets>=5.3",
+          "intersphinx-registry; extra == 'docs'",
+          "myst-parser; extra == 'docs'",
+          "pydata-sphinx-theme; extra == 'docs'",
+          "sphinx-autodoc-typehints; extra == 'docs'",
+          "sphinxcontrib-spelling; extra == 'docs'",
+          "traitlets; extra == 'docs'",
+          "ipykernel; extra == 'test'",
+          "pre-commit; extra == 'test'",
+          "pytest-cov; extra == 'test'",
+          "pytest-timeout; extra == 'test'",
+          "pytest<9; extra == 'test'"
+        ],
+        "requires_python": ">=3.10",
+        "version": "5.9.1"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/jupyter_events-0.12.1.dist-info/METADATA",
+        "name": "jupyter-events",
+        "provides_extra": [
+          "cli",
+          "docs",
+          "test"
+        ],
+        "requires_dist": [
+          "jsonschema[format-nongpl]>=4.18.0",
+          "packaging",
+          "python-json-logger>=2.0.4",
+          "pyyaml>=5.3",
+          "referencing",
+          "rfc3339-validator",
+          "rfc3986-validator>=0.1.1",
+          "traitlets>=5.3",
+          "click; extra == 'cli'",
+          "rich; extra == 'cli'",
+          "jupyterlite-sphinx; extra == 'docs'",
+          "myst-parser; extra == 'docs'",
+          "pydata-sphinx-theme>=0.16; extra == 'docs'",
+          "sphinx>=8; extra == 'docs'",
+          "sphinxcontrib-spelling; extra == 'docs'",
+          "click; extra == 'test'",
+          "pre-commit; extra == 'test'",
+          "pytest-asyncio>=0.19.0; extra == 'test'",
+          "pytest-console-scripts; extra == 'test'",
+          "pytest>=7.0; extra == 'test'",
+          "rich; extra == 'test'"
+        ],
+        "requires_python": ">=3.9",
+        "version": "0.12.1"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/jupyter_lsp-2.3.1.dist-info/METADATA",
+        "name": "jupyter-lsp",
+        "provides_extra": [],
+        "requires_dist": [
+          "jupyter_server>=1.1.2",
+          "importlib_metadata>=4.8.3; python_version < \"3.10\""
+        ],
+        "requires_python": ">=3.8",
+        "version": "2.3.1"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/jupyter_server-2.18.2.dist-info/METADATA",
+        "name": "jupyter_server",
+        "provides_extra": [
+          "docs",
+          "test"
+        ],
+        "requires_dist": [
+          "anyio>=3.1.0",
+          "argon2-cffi>=21.1",
+          "jinja2>=3.0.3",
+          "jupyter-client>=7.4.4",
+          "jupyter-core!=5.0.*,>=4.12",
+          "jupyter-events>=0.11.0",
+          "jupyter-server-terminals>=0.4.4",
+          "nbconvert>=6.4.4",
+          "nbformat>=5.3.0",
+          "overrides>=5.0; python_version < '3.12'",
+          "packaging>=22.0",
+          "prometheus-client>=0.9",
+          "pywinpty>=2.0.1; os_name == 'nt'",
+          "pyzmq>=24",
+          "send2trash>=1.8.2",
+          "terminado>=0.8.3",
+          "tornado>=6.2.0",
+          "traitlets>=5.6.0",
+          "websocket-client>=1.7",
+          "ipykernel; extra == 'docs'",
+          "jinja2; extra == 'docs'",
+          "jupyter-client; extra == 'docs'",
+          "myst-parser; extra == 'docs'",
+          "nbformat; extra == 'docs'",
+          "prometheus-client; extra == 'docs'",
+          "pydata-sphinx-theme; extra == 'docs'",
+          "send2trash; extra == 'docs'",
+          "sphinx-autodoc-typehints; extra == 'docs'",
+          "sphinx<9.0; extra == 'docs'",
+          "sphinxcontrib-github-alt; extra == 'docs'",
+          "sphinxcontrib-openapi>=0.8.0; extra == 'docs'",
+          "sphinxcontrib-spelling; extra == 'docs'",
+          "sphinxemoji; extra == 'docs'",
+          "tornado; extra == 'docs'",
+          "typing-extensions; extra == 'docs'",
+          "flaky; extra == 'test'",
+          "ipykernel; extra == 'test'",
+          "pre-commit; extra == 'test'",
+          "pytest-console-scripts; extra == 'test'",
+          "pytest-jupyter[server]>=0.7; extra == 'test'",
+          "pytest-timeout; extra == 'test'",
+          "pytest<9,>=7.0; extra == 'test'",
+          "requests; extra == 'test'"
+        ],
+        "requires_python": ">=3.9",
+        "version": "2.18.2"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/jupyter_server_terminals-0.5.4.dist-info/METADATA",
+        "name": "jupyter_server_terminals",
+        "provides_extra": [
+          "docs",
+          "test"
+        ],
+        "requires_dist": [
+          "pywinpty>=2.0.3; os_name == 'nt'",
+          "terminado>=0.8.3",
+          "jinja2; extra == 'docs'",
+          "jupyter-server; extra == 'docs'",
+          "mistune<4.0; extra == 'docs'",
+          "myst-parser; extra == 'docs'",
+          "nbformat; extra == 'docs'",
+          "packaging; extra == 'docs'",
+          "pydata-sphinx-theme; extra == 'docs'",
+          "sphinxcontrib-github-alt; extra == 'docs'",
+          "sphinxcontrib-openapi; extra == 'docs'",
+          "sphinxcontrib-spelling; extra == 'docs'",
+          "sphinxemoji; extra == 'docs'",
+          "tornado; extra == 'docs'",
+          "jupyter-server>=2.0.0; extra == 'test'",
+          "pytest-jupyter[server]>=0.5.3; extra == 'test'",
+          "pytest-timeout; extra == 'test'",
+          "pytest>=7.0; extra == 'test'"
+        ],
+        "requires_python": ">=3.8",
+        "version": "0.5.4"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/jupyterlab-4.5.7.dist-info/METADATA",
+        "name": "jupyterlab",
+        "provides_extra": [
+          "dev",
+          "docs",
+          "docs-screenshots",
+          "test",
+          "upgrade-extension"
+        ],
+        "requires_dist": [
+          "async-lru>=1.0.0",
+          "httpx<1,>=0.25.0",
+          "importlib-metadata>=4.8.3; python_version < '3.10'",
+          "ipykernel!=6.30.0,>=6.5.0",
+          "jinja2>=3.0.3",
+          "jupyter-core",
+          "jupyter-lsp>=2.0.0",
+          "jupyter-server<3,>=2.4.0",
+          "jupyterlab-server<3,>=2.28.0",
+          "notebook-shim>=0.2",
+          "packaging",
+          "setuptools>=41.1.0",
+          "tomli>=1.2.2; python_version < '3.11'",
+          "tornado>=6.2.0",
+          "traitlets",
+          "build; extra == 'dev'",
+          "bump2version; extra == 'dev'",
+          "coverage; extra == 'dev'",
+          "hatch; extra == 'dev'",
+          "pre-commit; extra == 'dev'",
+          "pytest-cov; extra == 'dev'",
+          "ruff==0.11.12; extra == 'dev'",
+          "jsx-lexer; extra == 'docs'",
+          "myst-parser; extra == 'docs'",
+          "pydata-sphinx-theme>=0.13.0; extra == 'docs'",
+          "pytest; extra == 'docs'",
+          "pytest-check-links; extra == 'docs'",
+          "pytest-jupyter; extra == 'docs'",
+          "sphinx-copybutton; extra == 'docs'",
+          "sphinx<8.2.0,>=1.8; extra == 'docs'",
+          "altair==6.0.0; extra == 'docs-screenshots'",
+          "ipython==8.16.1; extra == 'docs-screenshots'",
+          "ipywidgets==8.1.5; extra == 'docs-screenshots'",
+          "jupyterlab-geojson==3.4.0; extra == 'docs-screenshots'",
+          "jupyterlab-language-pack-zh-cn==4.3.post1; extra == 'docs-screenshots'",
+          "matplotlib==3.10.0; extra == 'docs-screenshots'",
+          "nbconvert>=7.0.0; extra == 'docs-screenshots'",
+          "pandas==2.2.3; extra == 'docs-screenshots'",
+          "scipy==1.15.1; extra == 'docs-screenshots'",
+          "coverage; extra == 'test'",
+          "pytest-check-links>=0.7; extra == 'test'",
+          "pytest-console-scripts; extra == 'test'",
+          "pytest-cov; extra == 'test'",
+          "pytest-jupyter>=0.5.3; extra == 'test'",
+          "pytest-timeout; extra == 'test'",
+          "pytest-tornasync; extra == 'test'",
+          "pytest>=7.0; extra == 'test'",
+          "requests; extra == 'test'",
+          "requests-cache; extra == 'test'",
+          "virtualenv; extra == 'test'",
+          "copier<10,>=9; extra == 'upgrade-extension'",
+          "jinja2-time<0.3; extra == 'upgrade-extension'",
+          "pydantic<3.0; extra == 'upgrade-extension'",
+          "pyyaml-include<3.0; extra == 'upgrade-extension'",
+          "tomli-w<2.0; extra == 'upgrade-extension'"
+        ],
+        "requires_python": ">=3.9",
+        "version": "4.5.7"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/jupyterlab_pygments-0.3.0.dist-info/METADATA",
+        "name": "jupyterlab_pygments",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.8",
+        "version": "0.3.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/jupyterlab_server-2.28.0.dist-info/METADATA",
+        "name": "jupyterlab_server",
+        "provides_extra": [
+          "docs",
+          "openapi",
+          "test"
+        ],
+        "requires_dist": [
+          "babel>=2.10",
+          "importlib-metadata>=4.8.3; python_version < '3.10'",
+          "jinja2>=3.0.3",
+          "json5>=0.9.0",
+          "jsonschema>=4.18.0",
+          "jupyter-server<3,>=1.21",
+          "packaging>=21.3",
+          "requests>=2.31",
+          "autodoc-traits; extra == 'docs'",
+          "jinja2<3.2.0; extra == 'docs'",
+          "mistune<4; extra == 'docs'",
+          "myst-parser; extra == 'docs'",
+          "pydata-sphinx-theme; extra == 'docs'",
+          "sphinx; extra == 'docs'",
+          "sphinx-copybutton; extra == 'docs'",
+          "sphinxcontrib-openapi>0.8; extra == 'docs'",
+          "openapi-core~=0.18.0; extra == 'openapi'",
+          "ruamel-yaml; extra == 'openapi'",
+          "hatch; extra == 'test'",
+          "ipykernel; extra == 'test'",
+          "openapi-core~=0.18.0; extra == 'test'",
+          "openapi-spec-validator<0.8.0,>=0.6.0; extra == 'test'",
+          "pytest-console-scripts; extra == 'test'",
+          "pytest-cov; extra == 'test'",
+          "pytest-jupyter[server]>=0.6.2; extra == 'test'",
+          "pytest-timeout; extra == 'test'",
+          "pytest<8,>=7.0; extra == 'test'",
+          "requests-mock; extra == 'test'",
+          "ruamel-yaml; extra == 'test'",
+          "sphinxcontrib-spelling; extra == 'test'",
+          "strict-rfc3339; extra == 'test'",
+          "werkzeug; extra == 'test'"
+        ],
+        "requires_python": ">=3.8",
+        "version": "2.28.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/jupyterlab_widgets-3.0.16.dist-info/METADATA",
+        "name": "jupyterlab_widgets",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.7",
+        "version": "3.0.16"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/keras-3.5.0.dist-info/METADATA",
+        "name": "keras",
+        "provides_extra": [],
+        "requires_dist": [
+          "absl-py",
+          "numpy",
+          "rich",
+          "namex",
+          "h5py",
+          "optree",
+          "ml-dtypes",
+          "packaging"
+        ],
+        "requires_python": ">=3.9",
+        "version": "3.5.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/kiwisolver-1.5.0.dist-info/METADATA",
+        "name": "kiwisolver",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.10",
+        "version": "1.5.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/lark-1.3.1.dist-info/METADATA",
+        "name": "lark",
+        "provides_extra": [
+          "regex",
+          "nearley",
+          "atomic-cache",
+          "interegular"
+        ],
+        "requires_dist": [
+          "regex; extra == \"regex\"",
+          "js2py; extra == \"nearley\"",
+          "atomicwrites; extra == \"atomic-cache\"",
+          "interegular<0.4.0,>=0.3.1; extra == \"interegular\""
+        ],
+        "requires_python": ">=3.8",
+        "version": "1.3.1"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/libclang-18.1.1.dist-info/METADATA",
+        "name": "libclang",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": "",
+        "version": "18.1.1"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/markdown-3.10.2.dist-info/METADATA",
+        "name": "Markdown",
+        "provides_extra": [
+          "testing",
+          "docs"
+        ],
+        "requires_dist": [
+          "coverage; extra == \"testing\"",
+          "pyyaml; extra == \"testing\"",
+          "mkdocs>=1.6; extra == \"docs\"",
+          "mkdocs-nature>=0.6; extra == \"docs\"",
+          "mdx_gh_links>=0.2; extra == \"docs\"",
+          "mkdocstrings[python]>=0.28.3; extra == \"docs\"",
+          "mkdocs-gen-files; extra == \"docs\"",
+          "mkdocs-section-index; extra == \"docs\"",
+          "mkdocs-literate-nav; extra == \"docs\""
+        ],
+        "requires_python": ">=3.10",
+        "version": "3.10.2"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/markdown_it_py-4.2.0.dist-info/METADATA",
+        "name": "markdown-it-py",
+        "provides_extra": [
+          "benchmarking",
+          "compare",
+          "linkify",
+          "plugins",
+          "profiling",
+          "rtd",
+          "testing"
+        ],
+        "requires_dist": [
+          "mdurl~=0.1",
+          "psutil ; extra == \"benchmarking\"",
+          "pytest ; extra == \"benchmarking\"",
+          "pytest-benchmark ; extra == \"benchmarking\"",
+          "commonmark~=0.9 ; extra == \"compare\"",
+          "markdown~=3.4 ; extra == \"compare\"",
+          "mistletoe~=1.0 ; extra == \"compare\"",
+          "mistune~=3.0 ; extra == \"compare\"",
+          "panflute~=2.3 ; extra == \"compare\"",
+          "markdown-it-pyrs ; extra == \"compare\"",
+          "linkify-it-py>=1,<3 ; extra == \"linkify\"",
+          "mdit-py-plugins>=0.5.0 ; extra == \"plugins\"",
+          "gprof2dot ; extra == \"profiling\"",
+          "mdit-py-plugins>=0.5.0 ; extra == \"rtd\"",
+          "myst-parser ; extra == \"rtd\"",
+          "pyyaml ; extra == \"rtd\"",
+          "sphinx ; extra == \"rtd\"",
+          "sphinx-copybutton ; extra == \"rtd\"",
+          "sphinx-design ; extra == \"rtd\"",
+          "sphinx-book-theme~=1.0 ; extra == \"rtd\"",
+          "jupyter_sphinx ; extra == \"rtd\"",
+          "ipykernel ; extra == \"rtd\"",
+          "coverage ; extra == \"testing\"",
+          "pytest ; extra == \"testing\"",
+          "pytest-cov ; extra == \"testing\"",
+          "pytest-regressions ; extra == \"testing\"",
+          "pytest-timeout ; extra == \"testing\"",
+          "requests ; extra == \"testing\""
+        ],
+        "requires_python": ">=3.10",
+        "version": "4.2.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/markupsafe-3.0.3.dist-info/METADATA",
+        "name": "MarkupSafe",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.9",
+        "version": "3.0.3"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/matplotlib-3.5.2.dist-info/METADATA",
+        "name": "matplotlib",
+        "provides_extra": [],
+        "requires_dist": [
+          "cycler>=0.10",
+          "fonttools>=4.22.0",
+          "kiwisolver>=1.0.1",
+          "numpy>=1.17",
+          "packaging>=20.0",
+          "pillow>=6.2.0",
+          "pyparsing>=2.2.1",
+          "python-dateutil>=2.7"
+        ],
+        "requires_python": ">=3.7",
+        "version": "3.5.2"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/matplotlib_inline-0.2.2.dist-info/METADATA",
+        "name": "matplotlib-inline",
+        "provides_extra": [
+          "test"
+        ],
+        "requires_dist": [
+          "traitlets",
+          "flake8 ; extra == \"test\"",
+          "nbdime ; extra == \"test\"",
+          "nbval ; extra == \"test\"",
+          "notebook ; extra == \"test\"",
+          "pytest ; extra == \"test\"",
+          "matplotlib ; extra == \"test\""
+        ],
+        "requires_python": ">=3.9",
+        "version": "0.2.2"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/mdurl-0.1.2.dist-info/METADATA",
+        "name": "mdurl",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.7",
+        "version": "0.1.2"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/mistune-3.2.1.dist-info/METADATA",
+        "name": "mistune",
+        "provides_extra": [],
+        "requires_dist": [
+          "typing-extensions; python_version < \"3.11\""
+        ],
+        "requires_python": ">=3.8",
+        "version": "3.2.1"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/ml_dtypes-0.4.1.dist-info/METADATA",
+        "name": "ml-dtypes",
+        "provides_extra": [
+          "dev"
+        ],
+        "requires_dist": [
+          "numpy>1.20",
+          "numpy>=1.21.2; python_version >= \"3.10\"",
+          "numpy>=1.23.3; python_version >= \"3.11\"",
+          "numpy>=1.26.0; python_version >= \"3.12\"",
+          "absl-py; extra == \"dev\"",
+          "pytest; extra == \"dev\"",
+          "pytest-xdist; extra == \"dev\"",
+          "pylint>=2.6.0; extra == \"dev\"",
+          "pyink; extra == \"dev\""
+        ],
+        "requires_python": ">=3.9",
+        "version": "0.4.1"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/mpmath-1.3.0.dist-info/METADATA",
+        "name": "mpmath",
+        "provides_extra": [
+          "develop",
+          "docs",
+          "gmpy",
+          "tests"
+        ],
+        "requires_dist": [
+          "pytest (>=4.6) ; extra == 'develop'",
+          "pycodestyle ; extra == 'develop'",
+          "pytest-cov ; extra == 'develop'",
+          "codecov ; extra == 'develop'",
+          "wheel ; extra == 'develop'",
+          "sphinx ; extra == 'docs'",
+          "gmpy2 (>=2.1.0a4) ; (platform_python_implementation != \"PyPy\") and extra == 'gmpy'",
+          "pytest (>=4.6) ; extra == 'tests'"
+        ],
+        "requires_python": "",
+        "version": "1.3.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/msgpack-1.1.2.dist-info/METADATA",
+        "name": "msgpack",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.9",
+        "version": "1.1.2"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/namex-0.1.0.dist-info/METADATA",
+        "name": "namex",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": "",
+        "version": "0.1.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/nbclient-0.10.4.dist-info/METADATA",
+        "name": "nbclient",
+        "provides_extra": [
+          "dev",
+          "docs",
+          "test"
+        ],
+        "requires_dist": [
+          "jupyter-client>=6.1.12",
+          "jupyter-core!=5.0.*,>=4.12",
+          "nbformat>=5.1.3",
+          "traitlets>=5.4",
+          "pre-commit; extra == 'dev'",
+          "autodoc-traits; extra == 'docs'",
+          "flaky; extra == 'docs'",
+          "ipykernel>=6.19.3; extra == 'docs'",
+          "ipython; extra == 'docs'",
+          "ipywidgets; extra == 'docs'",
+          "mock; extra == 'docs'",
+          "moto; extra == 'docs'",
+          "myst-parser; extra == 'docs'",
+          "nbconvert>=7.1.0; extra == 'docs'",
+          "pytest-asyncio>=1.3.0; extra == 'docs'",
+          "pytest-cov>=4.0; extra == 'docs'",
+          "pytest<10,>=9.0.1; extra == 'docs'",
+          "sphinx-book-theme; extra == 'docs'",
+          "sphinx>=1.7; extra == 'docs'",
+          "sphinxcontrib-spelling; extra == 'docs'",
+          "testpath; extra == 'docs'",
+          "xmltodict; extra == 'docs'",
+          "flaky; extra == 'test'",
+          "ipykernel>=6.19.3; extra == 'test'",
+          "ipython; extra == 'test'",
+          "ipywidgets; extra == 'test'",
+          "nbconvert>=7.1.0; extra == 'test'",
+          "pytest-asyncio>=1.3.0; extra == 'test'",
+          "pytest-cov>=4.0; extra == 'test'",
+          "pytest<10,>=9.0.1; extra == 'test'",
+          "testpath; extra == 'test'",
+          "xmltodict; extra == 'test'"
+        ],
+        "requires_python": ">=3.10.0",
+        "version": "0.10.4"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/nbconvert-7.17.1.dist-info/METADATA",
+        "name": "nbconvert",
+        "provides_extra": [
+          "all",
+          "docs",
+          "qtpdf",
+          "qtpng",
+          "serve",
+          "test",
+          "webpdf"
+        ],
+        "requires_dist": [
+          "beautifulsoup4",
+          "bleach[css]!=5.0.0",
+          "defusedxml",
+          "importlib-metadata>=3.6; python_version < '3.10'",
+          "jinja2>=3.0",
+          "jupyter-core>=4.7",
+          "jupyterlab-pygments",
+          "markupsafe>=2.0",
+          "mistune<4,>=2.0.3",
+          "nbclient>=0.5.0",
+          "nbformat>=5.7",
+          "packaging",
+          "pandocfilters>=1.4.1",
+          "pygments>=2.4.1",
+          "traitlets>=5.1",
+          "flaky; extra == 'all'",
+          "intersphinx-registry; extra == 'all'",
+          "ipykernel; extra == 'all'",
+          "ipython; extra == 'all'",
+          "ipywidgets>=7.5; extra == 'all'",
+          "myst-parser; extra == 'all'",
+          "nbsphinx>=0.2.12; extra == 'all'",
+          "playwright; extra == 'all'",
+          "pydata-sphinx-theme; extra == 'all'",
+          "pyqtwebengine>=5.15; extra == 'all'",
+          "pytest>=7; extra == 'all'",
+          "sphinx>=5.0.2; extra == 'all'",
+          "sphinxcontrib-spelling; extra == 'all'",
+          "tornado>=6.1; extra == 'all'",
+          "intersphinx-registry; extra == 'docs'",
+          "ipykernel; extra == 'docs'",
+          "ipython; extra == 'docs'",
+          "myst-parser; extra == 'docs'",
+          "nbsphinx>=0.2.12; extra == 'docs'",
+          "pydata-sphinx-theme; extra == 'docs'",
+          "sphinx>=5.0.2; extra == 'docs'",
+          "sphinxcontrib-spelling; extra == 'docs'",
+          "pyqtwebengine>=5.15; extra == 'qtpdf'",
+          "pyqtwebengine>=5.15; extra == 'qtpng'",
+          "tornado>=6.1; extra == 'serve'",
+          "flaky; extra == 'test'",
+          "ipykernel; extra == 'test'",
+          "ipywidgets>=7.5; extra == 'test'",
+          "pytest>=7; extra == 'test'",
+          "playwright; extra == 'webpdf'"
+        ],
+        "requires_python": ">=3.9",
+        "version": "7.17.1"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/nbformat-5.10.4.dist-info/METADATA",
+        "name": "nbformat",
+        "provides_extra": [
+          "docs",
+          "test"
+        ],
+        "requires_dist": [
+          "fastjsonschema>=2.15",
+          "jsonschema>=2.6",
+          "jupyter-core!=5.0.*,>=4.12",
+          "traitlets>=5.1",
+          "myst-parser; extra == 'docs'",
+          "pydata-sphinx-theme; extra == 'docs'",
+          "sphinx; extra == 'docs'",
+          "sphinxcontrib-github-alt; extra == 'docs'",
+          "sphinxcontrib-spelling; extra == 'docs'",
+          "pep440; extra == 'test'",
+          "pre-commit; extra == 'test'",
+          "pytest; extra == 'test'",
+          "testpath; extra == 'test'"
+        ],
+        "requires_python": ">=3.8",
+        "version": "5.10.4"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/nest_asyncio-1.6.0.dist-info/METADATA",
+        "name": "nest-asyncio",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.5",
+        "version": "1.6.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/networkx-2.8.8.dist-info/METADATA",
+        "name": "networkx",
+        "provides_extra": [
+          "default",
+          "developer",
+          "doc",
+          "extra",
+          "test"
+        ],
+        "requires_dist": [
+          "numpy (>=1.19) ; extra == 'default'",
+          "scipy (>=1.8) ; extra == 'default'",
+          "matplotlib (>=3.4) ; extra == 'default'",
+          "pandas (>=1.3) ; extra == 'default'",
+          "pre-commit (>=2.20) ; extra == 'developer'",
+          "mypy (>=0.982) ; extra == 'developer'",
+          "sphinx (>=5.2) ; extra == 'doc'",
+          "pydata-sphinx-theme (>=0.11) ; extra == 'doc'",
+          "sphinx-gallery (>=0.11) ; extra == 'doc'",
+          "numpydoc (>=1.5) ; extra == 'doc'",
+          "pillow (>=9.2) ; extra == 'doc'",
+          "nb2plots (>=0.6) ; extra == 'doc'",
+          "texext (>=0.6.6) ; extra == 'doc'",
+          "lxml (>=4.6) ; extra == 'extra'",
+          "pygraphviz (>=1.9) ; extra == 'extra'",
+          "pydot (>=1.4.2) ; extra == 'extra'",
+          "sympy (>=1.10) ; extra == 'extra'",
+          "pytest (>=7.2) ; extra == 'test'",
+          "pytest-cov (>=4.0) ; extra == 'test'",
+          "codecov (>=2.1) ; extra == 'test'"
+        ],
+        "requires_python": ">=3.8",
+        "version": "2.8.8"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/notebook-7.5.6.dist-info/METADATA",
+        "name": "notebook",
+        "provides_extra": [
+          "dev",
+          "docs",
+          "test"
+        ],
+        "requires_dist": [
+          "jupyter-server<3,>=2.4.0",
+          "jupyterlab-server<3,>=2.28.0",
+          "jupyterlab<4.6,>=4.5.7",
+          "notebook-shim<0.3,>=0.2",
+          "tornado>=6.2.0",
+          "hatch; extra == 'dev'",
+          "pre-commit; extra == 'dev'",
+          "myst-parser; extra == 'docs'",
+          "nbsphinx; extra == 'docs'",
+          "pydata-sphinx-theme; extra == 'docs'",
+          "sphinx>=1.3.6; extra == 'docs'",
+          "sphinxcontrib-github-alt; extra == 'docs'",
+          "sphinxcontrib-spelling; extra == 'docs'",
+          "importlib-resources>=5.0; (python_version < '3.10') and extra == 'test'",
+          "ipykernel; extra == 'test'",
+          "jupyter-server[test]<3,>=2.4.0; extra == 'test'",
+          "jupyterlab-server[test]<3,>=2.28.0; extra == 'test'",
+          "nbval; extra == 'test'",
+          "pytest-console-scripts; extra == 'test'",
+          "pytest-timeout; extra == 'test'",
+          "pytest-tornasync; extra == 'test'",
+          "pytest>=7.0; extra == 'test'",
+          "requests; extra == 'test'"
+        ],
+        "requires_python": ">=3.9",
+        "version": "7.5.6"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/notebook_shim-0.2.4.dist-info/METADATA",
+        "name": "notebook_shim",
+        "provides_extra": [
+          "test"
+        ],
+        "requires_dist": [
+          "jupyter-server<3,>=1.8",
+          "pytest; extra == 'test'",
+          "pytest-console-scripts; extra == 'test'",
+          "pytest-jupyter; extra == 'test'",
+          "pytest-tornasync; extra == 'test'"
+        ],
+        "requires_python": ">=3.7",
+        "version": "0.2.4"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/numpy-1.26.4.dist-info/METADATA",
+        "name": "numpy",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.9",
+        "version": "1.26.4"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/onnx-1.16.0.dist-info/METADATA",
+        "name": "onnx",
+        "provides_extra": [
+          "reference"
+        ],
+        "requires_dist": [
+          "numpy >=1.20",
+          "protobuf >=3.20.2",
+          "google-re2 ; extra == 'reference'",
+          "Pillow ; extra == 'reference'"
+        ],
+        "requires_python": ">=3.8",
+        "version": "1.16.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/onnx_tf-1.6.0.dist-info/METADATA",
+        "name": "onnx-tf",
+        "provides_extra": [],
+        "requires_dist": [
+          "onnx (>=1.6.0)",
+          "PyYAML"
+        ],
+        "requires_python": "",
+        "version": "1.6.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/onnxruntime-1.18.0.dist-info/METADATA",
+        "name": "onnxruntime",
+        "provides_extra": [],
+        "requires_dist": [
+          "coloredlogs",
+          "flatbuffers",
+          "numpy (>=1.26.0)",
+          "packaging",
+          "protobuf",
+          "sympy"
+        ],
+        "requires_python": "",
+        "version": "1.18.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/onnxsim-0.4.36.dist-info/METADATA",
+        "name": "onnxsim",
+        "provides_extra": [],
+        "requires_dist": [
+          "onnx",
+          "rich"
+        ],
+        "requires_python": ">=3.7",
+        "version": "0.4.36"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/opt_einsum-3.4.0.dist-info/METADATA",
+        "name": "opt_einsum",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.8",
+        "version": "3.4.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/optree-0.19.1.dist-info/METADATA",
+        "name": "optree",
+        "provides_extra": [
+          "attrs",
+          "jax",
+          "numpy",
+          "torch",
+          "lint",
+          "test",
+          "docs"
+        ],
+        "requires_dist": [
+          "typing-extensions>=4.6.0",
+          "typing-extensions>=4.12.0; python_version >= \"3.13\"",
+          "attrs; extra == \"attrs\"",
+          "jax; extra == \"jax\"",
+          "numpy; extra == \"numpy\"",
+          "torch; extra == \"torch\"",
+          "cpplint; extra == \"lint\"",
+          "doc8; extra == \"lint\"",
+          "mypy; extra == \"lint\"",
+          "pre-commit; extra == \"lint\"",
+          "pyenchant; extra == \"lint\"",
+          "pylint[spelling]; extra == \"lint\"",
+          "ruff; extra == \"lint\"",
+          "xdoctest; extra == \"lint\"",
+          "pytest; extra == \"test\"",
+          "pytest-cov; extra == \"test\"",
+          "covdefaults; extra == \"test\"",
+          "rich; extra == \"test\"",
+          "typing-extensions==4.6.0; (python_version < \"3.13\" and platform_system == \"Linux\") and extra == \"test\"",
+          "typing-extensions==4.6.0; (python_version < \"3.13\" and platform_system == \"Darwin\") and extra == \"test\"",
+          "typing-extensions==4.6.0; (python_version < \"3.13\" and platform_system == \"Windows\") and extra == \"test\"",
+          "typing-extensions==4.12.0; (python_version >= \"3.13\" and platform_system == \"Linux\") and extra == \"test\"",
+          "typing-extensions==4.12.0; (python_version >= \"3.13\" and platform_system == \"Darwin\") and extra == \"test\"",
+          "typing-extensions==4.12.0; (python_version >= \"3.13\" and platform_system == \"Windows\") and extra == \"test\"",
+          "sphinx~=8.0; extra == \"docs\"",
+          "sphinx-autoapi; extra == \"docs\"",
+          "sphinx-autobuild; extra == \"docs\"",
+          "sphinx-autodoc-typehints; extra == \"docs\"",
+          "sphinx-copybutton; extra == \"docs\"",
+          "sphinx-rtd-theme; extra == \"docs\"",
+          "sphinxcontrib-bibtex; extra == \"docs\"",
+          "docutils; extra == \"docs\"",
+          "attrs; extra == \"docs\"",
+          "jax[cpu]; extra == \"docs\"",
+          "numpy; extra == \"docs\"",
+          "torch; extra == \"docs\""
+        ],
+        "requires_python": ">=3.9",
+        "version": "0.19.1"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/packaging-26.2.dist-info/METADATA",
+        "name": "packaging",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.8",
+        "version": "26.2"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/pandas-3.0.3.dist-info/METADATA",
+        "name": "pandas",
+        "provides_extra": [
+          "test",
+          "pyarrow",
+          "performance",
+          "computation",
+          "fss",
+          "aws",
+          "gcp",
+          "excel",
+          "parquet",
+          "feather",
+          "iceberg",
+          "hdf5",
+          "spss",
+          "postgresql",
+          "mysql",
+          "sql-other",
+          "html",
+          "xml",
+          "plot",
+          "output-formatting",
+          "clipboard",
+          "compression",
+          "timezone",
+          "all"
+        ],
+        "requires_dist": [
+          "numpy>=1.26.0; python_version < \"3.14\"",
+          "numpy>=2.3.3; python_version >= \"3.14\"",
+          "python-dateutil>=2.8.2",
+          "tzdata; sys_platform == \"win32\"",
+          "tzdata; sys_platform == \"emscripten\"",
+          "hypothesis>=6.116.0; extra == \"test\"",
+          "pytest>=8.3.4; extra == \"test\"",
+          "pytest-xdist>=3.6.1; extra == \"test\"",
+          "pyarrow>=13.0.0; extra == \"pyarrow\"",
+          "bottleneck>=1.4.2; extra == \"performance\"",
+          "numba>=0.60.0; extra == \"performance\"",
+          "numexpr>=2.10.2; extra == \"performance\"",
+          "scipy>=1.14.1; extra == \"computation\"",
+          "xarray>=2024.10.0; extra == \"computation\"",
+          "fsspec>=2024.10.0; extra == \"fss\"",
+          "s3fs>=2024.10.0; extra == \"aws\"",
+          "gcsfs>=2024.10.0; extra == \"gcp\"",
+          "odfpy>=1.4.1; extra == \"excel\"",
+          "openpyxl>=3.1.5; extra == \"excel\"",
+          "python-calamine>=0.3.0; extra == \"excel\"",
+          "pyxlsb>=1.0.10; extra == \"excel\"",
+          "xlrd>=2.0.1; extra == \"excel\"",
+          "xlsxwriter>=3.2.0; extra == \"excel\"",
+          "pyarrow>=13.0.0; extra == \"parquet\"",
+          "pyarrow>=13.0.0; extra == \"feather\"",
+          "pyiceberg>=0.8.1; extra == \"iceberg\"",
+          "tables>=3.10.1; extra == \"hdf5\"",
+          "pyreadstat>=1.2.8; extra == \"spss\"",
+          "SQLAlchemy>=2.0.36; extra == \"postgresql\"",
+          "psycopg2>=2.9.10; extra == \"postgresql\"",
+          "adbc-driver-postgresql>=1.2.0; extra == \"postgresql\"",
+          "SQLAlchemy>=2.0.36; extra == \"mysql\"",
+          "pymysql>=1.1.1; extra == \"mysql\"",
+          "SQLAlchemy>=2.0.36; extra == \"sql-other\"",
+          "adbc-driver-postgresql>=1.2.0; extra == \"sql-other\"",
+          "adbc-driver-sqlite>=1.2.0; extra == \"sql-other\"",
+          "beautifulsoup4>=4.12.3; extra == \"html\"",
+          "html5lib>=1.1; extra == \"html\"",
+          "lxml>=5.3.0; extra == \"html\"",
+          "lxml>=5.3.0; extra == \"xml\"",
+          "matplotlib>=3.9.3; extra == \"plot\"",
+          "jinja2>=3.1.5; extra == \"output-formatting\"",
+          "tabulate>=0.9.0; extra == \"output-formatting\"",
+          "PyQt5>=5.15.9; extra == \"clipboard\"",
+          "qtpy>=2.4.2; extra == \"clipboard\"",
+          "zstandard>=0.23.0; extra == \"compression\"",
+          "pytz>=2020.1; extra == \"timezone\"",
+          "adbc-driver-postgresql>=1.2.0; extra == \"all\"",
+          "adbc-driver-sqlite>=1.2.0; extra == \"all\"",
+          "beautifulsoup4>=4.12.3; extra == \"all\"",
+          "bottleneck>=1.4.2; extra == \"all\"",
+          "fastparquet>=2024.11.0; extra == \"all\"",
+          "fsspec>=2024.10.0; extra == \"all\"",
+          "gcsfs>=2024.10.0; extra == \"all\"",
+          "html5lib>=1.1; extra == \"all\"",
+          "hypothesis>=6.116.0; extra == \"all\"",
+          "jinja2>=3.1.5; extra == \"all\"",
+          "lxml>=5.3.0; extra == \"all\"",
+          "matplotlib>=3.9.3; extra == \"all\"",
+          "numba>=0.60.0; extra == \"all\"",
+          "numexpr>=2.10.2; extra == \"all\"",
+          "odfpy>=1.4.1; extra == \"all\"",
+          "openpyxl>=3.1.5; extra == \"all\"",
+          "psycopg2>=2.9.10; extra == \"all\"",
+          "pyarrow>=13.0.0; extra == \"all\"",
+          "pyiceberg>=0.8.1; extra == \"all\"",
+          "pymysql>=1.1.1; extra == \"all\"",
+          "PyQt5>=5.15.9; extra == \"all\"",
+          "pyreadstat>=1.2.8; extra == \"all\"",
+          "pytest>=8.3.4; extra == \"all\"",
+          "pytest-xdist>=3.6.1; extra == \"all\"",
+          "python-calamine>=0.3.0; extra == \"all\"",
+          "pytz>=2020.1; extra == \"all\"",
+          "pyxlsb>=1.0.10; extra == \"all\"",
+          "qtpy>=2.4.2; extra == \"all\"",
+          "scipy>=1.14.1; extra == \"all\"",
+          "s3fs>=2024.10.0; extra == \"all\"",
+          "SQLAlchemy>=2.0.36; extra == \"all\"",
+          "tables>=3.10.1; extra == \"all\"",
+          "tabulate>=0.9.0; extra == \"all\"",
+          "xarray>=2024.10.0; extra == \"all\"",
+          "xlrd>=2.0.1; extra == \"all\"",
+          "xlsxwriter>=3.2.0; extra == \"all\"",
+          "zstandard>=0.23.0; extra == \"all\""
+        ],
+        "requires_python": ">=3.11",
+        "version": "3.0.3"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/pandocfilters-1.5.1.dist-info/METADATA",
+        "name": "pandocfilters",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*",
+        "version": "1.5.1"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/parso-0.8.7.dist-info/METADATA",
+        "name": "parso",
+        "provides_extra": [
+          "qa",
+          "testing"
+        ],
+        "requires_dist": [
+          "flake8 ==5.0.4 ; extra == 'qa'",
+          "types-setuptools ==67.2.0.1 ; extra == 'qa'",
+          "zuban ==0.5.1 ; extra == 'qa'",
+          "docopt ; extra == 'testing'",
+          "pytest ; extra == 'testing'"
+        ],
+        "requires_python": ">=3.6",
+        "version": "0.8.7"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/pexpect-4.9.0.dist-info/METADATA",
+        "name": "pexpect",
+        "provides_extra": [],
+        "requires_dist": [
+          "ptyprocess (>=0.5)"
+        ],
+        "requires_python": "",
+        "version": "4.9.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/pillow-12.2.0.dist-info/METADATA",
+        "name": "pillow",
+        "provides_extra": [
+          "docs",
+          "fpx",
+          "mic",
+          "test-arrow",
+          "tests",
+          "xmp"
+        ],
+        "requires_dist": [
+          "furo; extra == \"docs\"",
+          "olefile; extra == \"docs\"",
+          "sphinx>=8.2; extra == \"docs\"",
+          "sphinx-autobuild; extra == \"docs\"",
+          "sphinx-copybutton; extra == \"docs\"",
+          "sphinx-inline-tabs; extra == \"docs\"",
+          "sphinxext-opengraph; extra == \"docs\"",
+          "olefile; extra == \"fpx\"",
+          "olefile; extra == \"mic\"",
+          "arro3-compute; extra == \"test-arrow\"",
+          "arro3-core; extra == \"test-arrow\"",
+          "nanoarrow; extra == \"test-arrow\"",
+          "pyarrow; extra == \"test-arrow\"",
+          "check-manifest; extra == \"tests\"",
+          "coverage>=7.4.2; extra == \"tests\"",
+          "defusedxml; extra == \"tests\"",
+          "markdown2; extra == \"tests\"",
+          "olefile; extra == \"tests\"",
+          "packaging; extra == \"tests\"",
+          "pyroma>=5; extra == \"tests\"",
+          "pytest; extra == \"tests\"",
+          "pytest-cov; extra == \"tests\"",
+          "pytest-timeout; extra == \"tests\"",
+          "pytest-xdist; extra == \"tests\"",
+          "trove-classifiers>=2024.10.12; extra == \"tests\"",
+          "defusedxml; extra == \"xmp\""
+        ],
+        "requires_python": ">=3.10",
+        "version": "12.2.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/pip-26.1.1.dist-info/METADATA",
+        "name": "pip",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.10",
+        "version": "26.1.1"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/platformdirs-4.9.6.dist-info/METADATA",
+        "name": "platformdirs",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.10",
+        "version": "4.9.6"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/prettytable-3.5.0.dist-info/METADATA",
+        "name": "prettytable",
+        "provides_extra": [
+          "tests"
+        ],
+        "requires_dist": [
+          "importlib-metadata; python_version < '3.8'",
+          "wcwidth",
+          "pytest; extra == 'tests'",
+          "pytest-cov; extra == 'tests'",
+          "pytest-lazy-fixture; extra == 'tests'"
+        ],
+        "requires_python": ">=3.7",
+        "version": "3.5.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/prometheus_client-0.25.0.dist-info/METADATA",
+        "name": "prometheus_client",
+        "provides_extra": [
+          "twisted",
+          "aiohttp",
+          "django"
+        ],
+        "requires_dist": [
+          "twisted; extra == \"twisted\"",
+          "aiohttp; extra == \"aiohttp\"",
+          "django; extra == \"django\""
+        ],
+        "requires_python": ">=3.9",
+        "version": "0.25.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/prompt_toolkit-3.0.52.dist-info/METADATA",
+        "name": "prompt_toolkit",
+        "provides_extra": [],
+        "requires_dist": [
+          "wcwidth"
+        ],
+        "requires_python": ">=3.8",
+        "version": "3.0.52"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/protobuf-3.20.3.dist-info/METADATA",
+        "name": "protobuf",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.7",
+        "version": "3.20.3"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/psutil-7.2.2.dist-info/METADATA",
+        "name": "psutil",
+        "provides_extra": [
+          "dev",
+          "test"
+        ],
+        "requires_dist": [
+          "psleak ; extra == 'dev'",
+          "pytest ; extra == 'dev'",
+          "pytest-instafail ; extra == 'dev'",
+          "pytest-xdist ; extra == 'dev'",
+          "setuptools ; extra == 'dev'",
+          "abi3audit ; extra == 'dev'",
+          "black ; extra == 'dev'",
+          "check-manifest ; extra == 'dev'",
+          "coverage ; extra == 'dev'",
+          "packaging ; extra == 'dev'",
+          "pylint ; extra == 'dev'",
+          "pyperf ; extra == 'dev'",
+          "pypinfo ; extra == 'dev'",
+          "pytest-cov ; extra == 'dev'",
+          "requests ; extra == 'dev'",
+          "rstcheck ; extra == 'dev'",
+          "ruff ; extra == 'dev'",
+          "sphinx ; extra == 'dev'",
+          "sphinx-rtd-theme ; extra == 'dev'",
+          "toml-sort ; extra == 'dev'",
+          "twine ; extra == 'dev'",
+          "validate-pyproject[all] ; extra == 'dev'",
+          "virtualenv ; extra == 'dev'",
+          "vulture ; extra == 'dev'",
+          "wheel ; extra == 'dev'",
+          "colorama ; (os_name == \"nt\") and extra == 'dev'",
+          "pyreadline3 ; (os_name == \"nt\") and extra == 'dev'",
+          "pywin32 ; (os_name == \"nt\" and implementation_name != \"pypy\") and extra == 'dev'",
+          "wheel ; (os_name == \"nt\" and implementation_name != \"pypy\") and extra == 'dev'",
+          "wmi ; (os_name == \"nt\" and implementation_name != \"pypy\") and extra == 'dev'",
+          "psleak ; extra == 'test'",
+          "pytest ; extra == 'test'",
+          "pytest-instafail ; extra == 'test'",
+          "pytest-xdist ; extra == 'test'",
+          "setuptools ; extra == 'test'",
+          "pywin32 ; (os_name == \"nt\" and implementation_name != \"pypy\") and extra == 'test'",
+          "wheel ; (os_name == \"nt\" and implementation_name != \"pypy\") and extra == 'test'",
+          "wmi ; (os_name == \"nt\" and implementation_name != \"pypy\") and extra == 'test'"
+        ],
+        "requires_python": ">=3.6",
+        "version": "7.2.2"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/ptyprocess-0.7.0.dist-info/METADATA",
+        "name": "ptyprocess",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": "",
+        "version": "0.7.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/pure_eval-0.2.3.dist-info/METADATA",
+        "name": "pure_eval",
+        "provides_extra": [
+          "tests"
+        ],
+        "requires_dist": [
+          "pytest ; extra == 'tests'"
+        ],
+        "requires_python": "",
+        "version": "0.2.3"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/pwlf-2.5.2.dist-info/METADATA",
+        "name": "pwlf",
+        "provides_extra": [],
+        "requires_dist": [
+          "numpy>=1.14.0",
+          "scipy>=1.8.0"
+        ],
+        "requires_python": ">3.5",
+        "version": "2.5.2"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/py-1.11.0.dist-info/METADATA",
+        "name": "py",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*",
+        "version": "1.11.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/py_cpuinfo-9.0.0.dist-info/METADATA",
+        "name": "py-cpuinfo",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": "",
+        "version": "9.0.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/pycparser-3.0.dist-info/METADATA",
+        "name": "pycparser",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.10",
+        "version": "3.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/pydantic-2.0.2.dist-info/METADATA",
+        "name": "pydantic",
+        "provides_extra": [
+          "email"
+        ],
+        "requires_dist": [
+          "annotated-types>=0.4.0",
+          "pydantic-core==2.1.2",
+          "typing-extensions>=4.6.1",
+          "email-validator>=2.0.0; extra == 'email'"
+        ],
+        "requires_python": ">=3.7",
+        "version": "2.0.2"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/pydantic_core-2.1.2.dist-info/METADATA",
+        "name": "pydantic_core",
+        "provides_extra": [],
+        "requires_dist": [
+          "typing-extensions >=4.6.0, !=4.7.0"
+        ],
+        "requires_python": ">=3.7",
+        "version": "2.1.2"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/pygments-2.20.0.dist-info/METADATA",
+        "name": "Pygments",
+        "provides_extra": [
+          "plugins",
+          "windows-terminal"
+        ],
+        "requires_dist": [
+          "colorama>=0.4.6; extra == 'windows-terminal'"
+        ],
+        "requires_python": ">=3.9",
+        "version": "2.20.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/pygraphviz-1.14.dist-info/METADATA",
+        "name": "pygraphviz",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.10",
+        "version": "1.14"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/pyparsing-2.4.7.dist-info/METADATA",
+        "name": "pyparsing",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*",
+        "version": "2.4.7"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/python_dateutil-2.9.0.post0.dist-info/METADATA",
+        "name": "python-dateutil",
+        "provides_extra": [],
+        "requires_dist": [
+          "six >=1.5"
+        ],
+        "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7",
+        "version": "2.9.0.post0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/python_json_logger-4.1.0.dist-info/METADATA",
+        "name": "python-json-logger",
+        "provides_extra": [
+          "dev"
+        ],
+        "requires_dist": [
+          "orjson; implementation_name != \"pypy\" and extra == \"dev\"",
+          "msgspec; implementation_name != \"pypy\" and extra == \"dev\"",
+          "validate-pyproject[all]; extra == \"dev\"",
+          "black; extra == \"dev\"",
+          "pylint; extra == \"dev\"",
+          "mypy; extra == \"dev\"",
+          "pytest; extra == \"dev\"",
+          "freezegun; extra == \"dev\"",
+          "tzdata; extra == \"dev\"",
+          "build; extra == \"dev\"",
+          "mkdocs; extra == \"dev\"",
+          "mkdocs-material>=8.5; extra == \"dev\"",
+          "mkdocs-awesome-pages-plugin; extra == \"dev\"",
+          "mdx_truly_sane_lists; extra == \"dev\"",
+          "mkdocstrings[python]; extra == \"dev\"",
+          "mkdocs-gen-files; extra == \"dev\"",
+          "mkdocs-literate-nav; extra == \"dev\"",
+          "mike; extra == \"dev\""
+        ],
+        "requires_python": ">=3.10",
+        "version": "4.1.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/pyyaml-6.0.3.dist-info/METADATA",
+        "name": "PyYAML",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.8",
+        "version": "6.0.3"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/pyzmq-27.1.0.dist-info/METADATA",
+        "name": "pyzmq",
+        "provides_extra": [],
+        "requires_dist": [
+          "cffi; implementation_name == \"pypy\""
+        ],
+        "requires_python": ">=3.8",
+        "version": "27.1.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/referencing-0.37.0.dist-info/METADATA",
+        "name": "referencing",
+        "provides_extra": [],
+        "requires_dist": [
+          "attrs>=22.2.0",
+          "rpds-py>=0.7.0",
+          "typing-extensions>=4.4.0; python_version < '3.13'"
+        ],
+        "requires_python": ">=3.10",
+        "version": "0.37.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/requests-2.34.2.dist-info/METADATA",
+        "name": "requests",
+        "provides_extra": [
+          "security",
+          "socks",
+          "use-chardet-on-py3"
+        ],
+        "requires_dist": [
+          "charset_normalizer<4,>=2",
+          "idna<4,>=2.5",
+          "urllib3<3,>=1.26",
+          "certifi>=2023.5.7",
+          "PySocks!=1.5.7,>=1.5.6; extra == \"socks\"",
+          "chardet<8,>=3.0.2; extra == \"use-chardet-on-py3\""
+        ],
+        "requires_python": ">=3.10",
+        "version": "2.34.2"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/rfc3339_validator-0.1.4.dist-info/METADATA",
+        "name": "rfc3339-validator",
+        "provides_extra": [],
+        "requires_dist": [
+          "six"
+        ],
+        "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*",
+        "version": "0.1.4"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/rfc3986_validator-0.1.1.dist-info/METADATA",
+        "name": "rfc3986-validator",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*",
+        "version": "0.1.1"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/rfc3987_syntax-1.1.0.dist-info/METADATA",
+        "name": "rfc3987-syntax",
+        "provides_extra": [
+          "testing"
+        ],
+        "requires_dist": [
+          "lark>=1.2.2",
+          "pytest>=8.3.5; extra == 'testing'"
+        ],
+        "requires_python": ">=3.9",
+        "version": "1.1.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/rich-15.0.0.dist-info/METADATA",
+        "name": "rich",
+        "provides_extra": [
+          "jupyter"
+        ],
+        "requires_dist": [
+          "ipywidgets (>=7.5.1,<9) ; extra == \"jupyter\"",
+          "markdown-it-py (>=2.2.0)",
+          "pygments (>=2.13.0,<3.0.0)"
+        ],
+        "requires_python": ">=3.9.0",
+        "version": "15.0.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/rpds_py-0.30.0.dist-info/METADATA",
+        "name": "rpds-py",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.10",
+        "version": "0.30.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/safetensors-0.7.0.dist-info/METADATA",
+        "name": "safetensors",
+        "provides_extra": [
+          "numpy",
+          "torch",
+          "tensorflow",
+          "pinned-tf",
+          "jax",
+          "mlx",
+          "paddlepaddle",
+          "quality",
+          "testing",
+          "testingfree",
+          "all",
+          "dev"
+        ],
+        "requires_dist": [
+          "numpy>=1.21.6 ; extra == 'numpy'",
+          "packaging ; extra == 'torch'",
+          "safetensors[numpy] ; extra == 'torch'",
+          "torch>=1.10 ; extra == 'torch'",
+          "safetensors[numpy] ; extra == 'tensorflow'",
+          "tensorflow>=2.11.0 ; extra == 'tensorflow'",
+          "safetensors[numpy] ; extra == 'pinned-tf'",
+          "tensorflow==2.18.0 ; extra == 'pinned-tf'",
+          "safetensors[numpy] ; extra == 'jax'",
+          "flax>=0.6.3 ; extra == 'jax'",
+          "jax>=0.3.25 ; extra == 'jax'",
+          "jaxlib>=0.3.25 ; extra == 'jax'",
+          "mlx>=0.0.9 ; extra == 'mlx'",
+          "safetensors[numpy] ; extra == 'paddlepaddle'",
+          "paddlepaddle>=2.4.1 ; extra == 'paddlepaddle'",
+          "ruff ; extra == 'quality'",
+          "safetensors[numpy] ; extra == 'testing'",
+          "h5py>=3.7.0 ; extra == 'testing'",
+          "huggingface-hub>=0.12.1 ; extra == 'testing'",
+          "setuptools-rust>=1.5.2 ; extra == 'testing'",
+          "pytest>=7.2.0 ; extra == 'testing'",
+          "pytest-benchmark>=4.0.0 ; extra == 'testing'",
+          "hypothesis>=6.70.2 ; extra == 'testing'",
+          "safetensors[numpy] ; extra == 'testingfree'",
+          "huggingface-hub>=0.12.1 ; extra == 'testingfree'",
+          "setuptools-rust>=1.5.2 ; extra == 'testingfree'",
+          "pytest>=7.2.0 ; extra == 'testingfree'",
+          "pytest-benchmark>=4.0.0 ; extra == 'testingfree'",
+          "hypothesis>=6.70.2 ; extra == 'testingfree'",
+          "safetensors[torch] ; extra == 'all'",
+          "safetensors[numpy] ; extra == 'all'",
+          "safetensors[pinned-tf] ; extra == 'all'",
+          "safetensors[jax] ; extra == 'all'",
+          "safetensors[paddlepaddle] ; extra == 'all'",
+          "safetensors[quality] ; extra == 'all'",
+          "safetensors[testing] ; extra == 'all'",
+          "safetensors[all] ; extra == 'dev'"
+        ],
+        "requires_python": ">=3.9",
+        "version": "0.7.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/scipy-1.12.0.dist-info/METADATA",
+        "name": "scipy",
+        "provides_extra": [
+          "test",
+          "doc",
+          "dev"
+        ],
+        "requires_dist": [
+          "numpy<1.29.0,>=1.22.4",
+          "pytest; extra == \"test\"",
+          "pytest-cov; extra == \"test\"",
+          "pytest-timeout; extra == \"test\"",
+          "pytest-xdist; extra == \"test\"",
+          "asv; extra == \"test\"",
+          "mpmath; extra == \"test\"",
+          "gmpy2; extra == \"test\"",
+          "threadpoolctl; extra == \"test\"",
+          "scikit-umfpack; extra == \"test\"",
+          "pooch; extra == \"test\"",
+          "hypothesis; extra == \"test\"",
+          "sphinx!=4.1.0; extra == \"doc\"",
+          "pydata-sphinx-theme==0.9.0; extra == \"doc\"",
+          "sphinx-design>=0.2.0; extra == \"doc\"",
+          "matplotlib>2; extra == \"doc\"",
+          "numpydoc; extra == \"doc\"",
+          "jupytext; extra == \"doc\"",
+          "myst-nb; extra == \"doc\"",
+          "pooch; extra == \"doc\"",
+          "mypy; extra == \"dev\"",
+          "typing_extensions; extra == \"dev\"",
+          "types-psutil; extra == \"dev\"",
+          "pycodestyle; extra == \"dev\"",
+          "ruff; extra == \"dev\"",
+          "cython-lint>=0.12.2; extra == \"dev\"",
+          "rich-click; extra == \"dev\"",
+          "click; extra == \"dev\"",
+          "doit>=0.36.0; extra == \"dev\"",
+          "pydevtool; extra == \"dev\""
+        ],
+        "requires_python": ">=3.9",
+        "version": "1.12.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/send2trash-2.1.0.dist-info/METADATA",
+        "name": "Send2Trash",
+        "provides_extra": [
+          "test",
+          "nativelib"
+        ],
+        "requires_dist": [
+          "pytest>=8; extra == \"test\"",
+          "pywin32>=305; sys_platform == \"win32\" and extra == \"nativelib\"",
+          "pyobjc>=9.0; sys_platform == \"darwin\" and extra == \"nativelib\""
+        ],
+        "requires_python": ">=3.8",
+        "version": "2.1.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/setuptools-81.0.0.dist-info/METADATA",
+        "name": "setuptools",
+        "provides_extra": [
+          "test",
+          "doc",
+          "ssl",
+          "certs",
+          "core",
+          "check",
+          "cover",
+          "enabler",
+          "type"
+        ],
+        "requires_dist": [
+          "pytest!=8.1.*,>=6; extra == \"test\"",
+          "virtualenv>=13.0.0; extra == \"test\"",
+          "wheel>=0.44.0; extra == \"test\"",
+          "pip>=19.1; extra == \"test\"",
+          "packaging>=24.2; extra == \"test\"",
+          "jaraco.envs>=2.2; extra == \"test\"",
+          "pytest-xdist>=3; extra == \"test\"",
+          "jaraco.path>=3.7.2; extra == \"test\"",
+          "build[virtualenv]>=1.0.3; extra == \"test\"",
+          "filelock>=3.4.0; extra == \"test\"",
+          "ini2toml[lite]>=0.14; extra == \"test\"",
+          "tomli-w>=1.0.0; extra == \"test\"",
+          "pytest-timeout; extra == \"test\"",
+          "pytest-perf; sys_platform != \"cygwin\" and extra == \"test\"",
+          "jaraco.develop>=7.21; (python_version >= \"3.9\" and sys_platform != \"cygwin\") and extra == \"test\"",
+          "pytest-home>=0.5; extra == \"test\"",
+          "pytest-subprocess; extra == \"test\"",
+          "pyproject-hooks!=1.1; extra == \"test\"",
+          "jaraco.test>=5.5; extra == \"test\"",
+          "sphinx>=3.5; extra == \"doc\"",
+          "jaraco.packaging>=9.3; extra == \"doc\"",
+          "rst.linker>=1.9; extra == \"doc\"",
+          "furo; extra == \"doc\"",
+          "sphinx-lint; extra == \"doc\"",
+          "jaraco.tidelift>=1.4; extra == \"doc\"",
+          "pygments-github-lexers==0.0.5; extra == \"doc\"",
+          "sphinx-favicon; extra == \"doc\"",
+          "sphinx-inline-tabs; extra == \"doc\"",
+          "sphinx-reredirects; extra == \"doc\"",
+          "sphinxcontrib-towncrier; extra == \"doc\"",
+          "sphinx-notfound-page<2,>=1; extra == \"doc\"",
+          "pyproject-hooks!=1.1; extra == \"doc\"",
+          "towncrier<24.7; extra == \"doc\"",
+          "packaging>=24.2; extra == \"core\"",
+          "more_itertools>=8.8; extra == \"core\"",
+          "jaraco.text>=3.7; extra == \"core\"",
+          "importlib_metadata>=6; python_version < \"3.10\" and extra == \"core\"",
+          "tomli>=2.0.1; python_version < \"3.11\" and extra == \"core\"",
+          "wheel>=0.43.0; extra == \"core\"",
+          "platformdirs>=4.2.2; extra == \"core\"",
+          "jaraco.functools>=4; extra == \"core\"",
+          "more_itertools; extra == \"core\"",
+          "pytest-checkdocs>=2.4; extra == \"check\"",
+          "pytest-ruff>=0.2.1; sys_platform != \"cygwin\" and extra == \"check\"",
+          "ruff>=0.13.0; sys_platform != \"cygwin\" and extra == \"check\"",
+          "pytest-cov; extra == \"cover\"",
+          "pytest-enabler>=2.2; extra == \"enabler\"",
+          "pytest-mypy; extra == \"type\"",
+          "mypy==1.18.*; extra == \"type\"",
+          "importlib_metadata>=7.0.2; python_version < \"3.10\" and extra == \"type\"",
+          "jaraco.develop>=7.21; sys_platform != \"cygwin\" and extra == \"type\""
+        ],
+        "requires_python": ">=3.9",
+        "version": "81.0.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/six-1.17.0.dist-info/METADATA",
+        "name": "six",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*",
+        "version": "1.17.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/soupsieve-2.8.3.dist-info/METADATA",
+        "name": "soupsieve",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.9",
+        "version": "2.8.3"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/stack_data-0.6.3.dist-info/METADATA",
+        "name": "stack-data",
+        "provides_extra": [
+          "tests"
+        ],
+        "requires_dist": [
+          "executing >=1.2.0",
+          "asttokens >=2.1.0",
+          "pure-eval",
+          "pytest ; extra == 'tests'",
+          "typeguard ; extra == 'tests'",
+          "pygments ; extra == 'tests'",
+          "littleutils ; extra == 'tests'",
+          "cython ; extra == 'tests'"
+        ],
+        "requires_python": "",
+        "version": "0.6.3"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/sympy-1.14.0.dist-info/METADATA",
+        "name": "sympy",
+        "provides_extra": [
+          "dev"
+        ],
+        "requires_dist": [
+          "mpmath<1.4,>=1.1.0",
+          "pytest>=7.1.0; extra == \"dev\"",
+          "hypothesis>=6.70.0; extra == \"dev\""
+        ],
+        "requires_python": ">=3.9",
+        "version": "1.14.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/tabulate-0.10.0.dist-info/METADATA",
+        "name": "tabulate",
+        "provides_extra": [
+          "widechars"
+        ],
+        "requires_dist": [
+          "wcwidth; extra == \"widechars\""
+        ],
+        "requires_python": ">=3.10",
+        "version": "0.10.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/tensorboard-2.18.0.dist-info/METADATA",
+        "name": "tensorboard",
+        "provides_extra": [],
+        "requires_dist": [
+          "absl-py>=0.4",
+          "grpcio>=1.48.2",
+          "markdown>=2.6.8",
+          "numpy>=1.12.0",
+          "packaging",
+          "protobuf!=4.24.0,>=3.19.6",
+          "setuptools>=41.0.0",
+          "six>1.9",
+          "tensorboard-data-server<0.8.0,>=0.7.0",
+          "werkzeug>=1.0.1"
+        ],
+        "requires_python": ">=3.9",
+        "version": "2.18.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/tensorboard_data_server-0.7.2.dist-info/METADATA",
+        "name": "tensorboard-data-server",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.7",
+        "version": "0.7.2"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/tensorflow-2.18.0.dist-info/METADATA",
+        "name": "tensorflow",
+        "provides_extra": [
+          "and-cuda"
+        ],
+        "requires_dist": [
+          "absl-py >=1.0.0",
+          "astunparse >=1.6.0",
+          "flatbuffers >=24.3.25",
+          "gast !=0.5.0,!=0.5.1,!=0.5.2,>=0.2.1",
+          "google-pasta >=0.1.1",
+          "libclang >=13.0.0",
+          "opt-einsum >=2.3.2",
+          "packaging",
+          "protobuf !=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.3",
+          "requests <3,>=2.21.0",
+          "setuptools",
+          "six >=1.12.0",
+          "termcolor >=1.1.0",
+          "typing-extensions >=3.6.6",
+          "wrapt >=1.11.0",
+          "grpcio <2.0,>=1.24.3",
+          "tensorboard <2.19,>=2.18",
+          "keras >=3.5.0",
+          "numpy <2.1.0,>=1.26.0",
+          "h5py >=3.11.0",
+          "ml-dtypes <0.5.0,>=0.4.0",
+          "tensorflow-intel ==2.18.0 ; platform_system == \"Windows\"",
+          "tensorflow-io-gcs-filesystem >=0.23.1 ; python_version < \"3.12\"",
+          "nvidia-cublas-cu12 ==12.5.3.2 ; extra == 'and-cuda'",
+          "nvidia-cuda-cupti-cu12 ==12.5.82 ; extra == 'and-cuda'",
+          "nvidia-cuda-nvcc-cu12 ==12.5.82 ; extra == 'and-cuda'",
+          "nvidia-cuda-nvrtc-cu12 ==12.5.82 ; extra == 'and-cuda'",
+          "nvidia-cuda-runtime-cu12 ==12.5.82 ; extra == 'and-cuda'",
+          "nvidia-cudnn-cu12 ==9.3.0.75 ; extra == 'and-cuda'",
+          "nvidia-cufft-cu12 ==11.2.3.61 ; extra == 'and-cuda'",
+          "nvidia-curand-cu12 ==10.3.6.82 ; extra == 'and-cuda'",
+          "nvidia-cusolver-cu12 ==11.6.3.83 ; extra == 'and-cuda'",
+          "nvidia-cusparse-cu12 ==12.5.1.3 ; extra == 'and-cuda'",
+          "nvidia-nccl-cu12 ==2.21.5 ; extra == 'and-cuda'",
+          "nvidia-nvjitlink-cu12 ==12.5.82 ; extra == 'and-cuda'"
+        ],
+        "requires_python": ">=3.9",
+        "version": "2.18.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/tensorflow_probability-0.20.1.dist-info/METADATA",
+        "name": "tensorflow-probability",
+        "provides_extra": [
+          "jax",
+          "tfds"
+        ],
+        "requires_dist": [
+          "absl-py",
+          "six (>=1.10.0)",
+          "numpy (>=1.13.3)",
+          "decorator",
+          "cloudpickle (>=1.3)",
+          "gast (>=0.3.2)",
+          "dm-tree",
+          "jax ; extra == 'jax'",
+          "jaxlib ; extra == 'jax'",
+          "tensorflow-datasets (>=2.2.0) ; extra == 'tfds'"
+        ],
+        "requires_python": ">=3.8",
+        "version": "0.20.1"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/termcolor-3.3.0.dist-info/METADATA",
+        "name": "termcolor",
+        "provides_extra": [
+          "tests"
+        ],
+        "requires_dist": [
+          "pytest; extra == 'tests'",
+          "pytest-cov; extra == 'tests'"
+        ],
+        "requires_python": ">=3.10",
+        "version": "3.3.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/terminado-0.18.1.dist-info/METADATA",
+        "name": "terminado",
+        "provides_extra": [
+          "docs",
+          "test",
+          "typing"
+        ],
+        "requires_dist": [
+          "ptyprocess; os_name != 'nt'",
+          "pywinpty>=1.1.0; os_name == 'nt'",
+          "tornado>=6.1.0",
+          "myst-parser; extra == 'docs'",
+          "pydata-sphinx-theme; extra == 'docs'",
+          "sphinx; extra == 'docs'",
+          "pre-commit; extra == 'test'",
+          "pytest-timeout; extra == 'test'",
+          "pytest>=7.0; extra == 'test'",
+          "mypy~=1.6; extra == 'typing'",
+          "traitlets>=5.11.1; extra == 'typing'"
+        ],
+        "requires_python": ">=3.8",
+        "version": "0.18.1"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/testresources-2.1.2.dist-info/METADATA",
+        "name": "testresources",
+        "provides_extra": [
+          "test"
+        ],
+        "requires_dist": [
+          "docutils; extra == 'test'",
+          "fixtures; extra == 'test'",
+          "testtools; extra == 'test'"
+        ],
+        "requires_python": ">=3.10",
+        "version": "2.1.2"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/tflite-2.10.0.dist-info/METADATA",
+        "name": "tflite",
+        "provides_extra": [],
+        "requires_dist": [
+          "flatbuffers",
+          "numpy"
+        ],
+        "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,<4,>=2.7",
+        "version": "2.10.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/tinycss2-1.4.0.dist-info/METADATA",
+        "name": "tinycss2",
+        "provides_extra": [
+          "doc",
+          "test"
+        ],
+        "requires_dist": [
+          "webencodings >=0.4",
+          "sphinx ; extra == \"doc\"",
+          "sphinx_rtd_theme ; extra == \"doc\"",
+          "pytest ; extra == \"test\"",
+          "ruff ; extra == \"test\""
+        ],
+        "requires_python": ">=3.8",
+        "version": "1.4.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/tornado-6.5.5.dist-info/METADATA",
+        "name": "tornado",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">= 3.9",
+        "version": "6.5.5"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/tqdm-4.67.3.dist-info/METADATA",
+        "name": "tqdm",
+        "provides_extra": [
+          "dev",
+          "discord",
+          "slack",
+          "telegram",
+          "notebook"
+        ],
+        "requires_dist": [
+          "colorama; platform_system == \"Windows\"",
+          "importlib_metadata; python_version < \"3.8\"",
+          "pytest>=6; extra == \"dev\"",
+          "pytest-cov; extra == \"dev\"",
+          "pytest-timeout; extra == \"dev\"",
+          "pytest-asyncio>=0.24; extra == \"dev\"",
+          "nbval; extra == \"dev\"",
+          "requests; extra == \"discord\"",
+          "slack-sdk; extra == \"slack\"",
+          "requests; extra == \"telegram\"",
+          "ipywidgets>=6; extra == \"notebook\""
+        ],
+        "requires_python": ">=3.7",
+        "version": "4.67.3"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/traitlets-5.15.0.dist-info/METADATA",
+        "name": "traitlets",
+        "provides_extra": [
+          "docs",
+          "test"
+        ],
+        "requires_dist": [
+          "myst-parser; extra == 'docs'",
+          "pydata-sphinx-theme; extra == 'docs'",
+          "sphinx; extra == 'docs'",
+          "argcomplete>=3.0.3; extra == 'test'",
+          "mypy<1.19,>=1.7.0; (platform_python_implementation == 'PyPy') and extra == 'test'",
+          "mypy>=1.7.0; extra == 'test'",
+          "pre-commit; extra == 'test'",
+          "pytest-mock; extra == 'test'",
+          "pytest-mypy-testing; extra == 'test'",
+          "pytest<8.2,>=7.0; extra == 'test'"
+        ],
+        "requires_python": ">=3.9",
+        "version": "5.15.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/typing_extensions-4.12.2.dist-info/METADATA",
+        "name": "typing_extensions",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.8",
+        "version": "4.12.2"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/tzdata-2026.2.dist-info/METADATA",
+        "name": "tzdata",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=2",
+        "version": "2026.2"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/uri_template-1.3.0.dist-info/METADATA",
+        "name": "uri-template",
+        "provides_extra": [
+          "dev"
+        ],
+        "requires_dist": [
+          "types-PyYAML ; extra == 'dev'",
+          "mypy ; extra == 'dev'",
+          "flake8 ; extra == 'dev'",
+          "flake8-annotations ; extra == 'dev'",
+          "flake8-bandit ; extra == 'dev'",
+          "flake8-bugbear ; extra == 'dev'",
+          "flake8-commas ; extra == 'dev'",
+          "flake8-comprehensions ; extra == 'dev'",
+          "flake8-continuation ; extra == 'dev'",
+          "flake8-datetimez ; extra == 'dev'",
+          "flake8-docstrings ; extra == 'dev'",
+          "flake8-import-order ; extra == 'dev'",
+          "flake8-literal ; extra == 'dev'",
+          "flake8-modern-annotations ; extra == 'dev'",
+          "flake8-noqa ; extra == 'dev'",
+          "flake8-pyproject ; extra == 'dev'",
+          "flake8-requirements ; extra == 'dev'",
+          "flake8-typechecking-import ; extra == 'dev'",
+          "flake8-use-fstring ; extra == 'dev'",
+          "pep8-naming ; extra == 'dev'"
+        ],
+        "requires_python": ">=3.7",
+        "version": "1.3.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/urllib3-2.7.0.dist-info/METADATA",
+        "name": "urllib3",
+        "provides_extra": [
+          "brotli",
+          "h2",
+          "socks",
+          "zstd"
+        ],
+        "requires_dist": [
+          "brotli>=1.2.0; (platform_python_implementation == 'CPython') and extra == 'brotli'",
+          "brotlicffi>=1.2.0.0; (platform_python_implementation != 'CPython') and extra == 'brotli'",
+          "h2<5,>=4; extra == 'h2'",
+          "pysocks!=1.5.7,<2.0,>=1.5.6; extra == 'socks'",
+          "backports-zstd>=1.0.0; (python_version < '3.14') and extra == 'zstd'"
+        ],
+        "requires_python": ">=3.10",
+        "version": "2.7.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/verboselogs-1.7.dist-info/METADATA",
+        "name": "verboselogs",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": "",
+        "version": "1.7"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/wcwidth-0.7.0.dist-info/METADATA",
+        "name": "wcwidth",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.8",
+        "version": "0.7.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/webcolors-25.10.0.dist-info/METADATA",
+        "name": "webcolors",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.10",
+        "version": "25.10.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/webencodings-0.5.1.dist-info/METADATA",
+        "name": "webencodings",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": "",
+        "version": "0.5.1"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/websocket_client-1.9.0.dist-info/METADATA",
+        "name": "websocket-client",
+        "provides_extra": [
+          "test",
+          "optional",
+          "docs"
+        ],
+        "requires_dist": [
+          "pytest; extra == \"test\"",
+          "websockets; extra == \"test\"",
+          "python-socks; extra == \"optional\"",
+          "wsaccel; extra == \"optional\"",
+          "Sphinx>=6.0; extra == \"docs\"",
+          "sphinx_rtd_theme>=1.1.0; extra == \"docs\"",
+          "myst-parser>=2.0.0; extra == \"docs\""
+        ],
+        "requires_python": ">=3.9",
+        "version": "1.9.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/werkzeug-3.1.8.dist-info/METADATA",
+        "name": "Werkzeug",
+        "provides_extra": [
+          "watchdog"
+        ],
+        "requires_dist": [
+          "markupsafe>=2.1.1",
+          "watchdog>=2.3 ; extra == \"watchdog\""
+        ],
+        "requires_python": ">=3.9",
+        "version": "3.1.8"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/wheel-0.47.0.dist-info/METADATA",
+        "name": "wheel",
+        "provides_extra": [],
+        "requires_dist": [
+          "packaging >= 24.0"
+        ],
+        "requires_python": ">=3.9",
+        "version": "0.47.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/widgetsnbextension-4.0.15.dist-info/METADATA",
+        "name": "widgetsnbextension",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.7",
+        "version": "4.0.15"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/wrapt-2.2.0.dist-info/METADATA",
+        "name": "wrapt",
+        "provides_extra": [
+          "dev"
+        ],
+        "requires_dist": [
+          "pytest; extra == \"dev\"",
+          "setuptools; extra == \"dev\""
+        ],
+        "requires_python": ">=3.9",
+        "version": "2.2.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/xxhash-3.5.0.dist-info/METADATA",
+        "name": "xxhash",
+        "provides_extra": [],
+        "requires_dist": [],
+        "requires_python": ">=3.7",
+        "version": "3.5.0"
+      },
+      {
+        "metadata_path": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/lib/python3.12/site-packages/zipp-4.1.0.dist-info/METADATA",
+        "name": "zipp",
+        "provides_extra": [
+          "test",
+          "doc",
+          "check",
+          "cover",
+          "enabler",
+          "type"
+        ],
+        "requires_dist": [
+          "pytest!=8.1.*,>=6; extra == \"test\"",
+          "jaraco.itertools; extra == \"test\"",
+          "jaraco.functools; extra == \"test\"",
+          "more_itertools; extra == \"test\"",
+          "big-O; extra == \"test\"",
+          "pytest-ignore-flaky; extra == \"test\"",
+          "jaraco.test; extra == \"test\"",
+          "sphinx>=3.5; extra == \"doc\"",
+          "jaraco.packaging>=9.3; extra == \"doc\"",
+          "rst.linker>=1.9; extra == \"doc\"",
+          "furo; extra == \"doc\"",
+          "sphinx-lint; extra == \"doc\"",
+          "jaraco.tidelift>=1.4; extra == \"doc\"",
+          "pytest-checkdocs>=2.14; extra == \"check\"",
+          "pytest-ruff>=0.2.1; sys_platform != \"cygwin\" and extra == \"check\"",
+          "pytest-cov; extra == \"cover\"",
+          "pytest-enabler>=3.4; extra == \"enabler\"",
+          "pytest-mypy>=1.0.1; platform_python_implementation != \"PyPy\" and extra == \"type\""
+        ],
+        "requires_python": ">=3.10",
+        "version": "4.1.0"
+      }
+    ],
+    "libc": [
+      "glibc",
+      "2.39"
+    ],
+    "marker_environment": {
+      "implementation_name": "cpython",
+      "implementation_version": "3.12.3",
+      "os_name": "posix",
+      "platform_machine": "x86_64",
+      "platform_python_implementation": "CPython",
+      "platform_release": "7.0.0-31-generic",
+      "platform_system": "Linux",
+      "platform_version": "#31~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Aug 10 09:38:02 UTC 2",
+      "python_full_version": "3.12.3",
+      "python_version": "3.12",
+      "sys_platform": "linux"
+    },
+    "python_executable": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/bin/python",
+    "selected_venv": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8",
+    "vendor_imports": false
+  },
+  "missing_wheels": [],
+  "network_used": false,
+  "next_gates": [
+    "fresh_hailo8_sdk_import",
+    "hailo8_eager_matmul_and_conv2d",
+    "hailo8_xla",
+    "hailo8_model_build",
+    "normal_hailo8_reuse_after_restart"
+  ],
+  "package_manager_used": false,
+  "proposals": [
+    {
+      "installed_version": null,
+      "name": "nvidia-cublas-cu12",
+      "necessity": "NOT_PROVEN_BY_METADATA",
+      "source_requirement": "nvidia-cublas-cu12 ==12.5.3.2 ; extra == 'and-cuda'",
+      "version": "12.5.3.2"
+    },
+    {
+      "installed_version": null,
+      "name": "nvidia-cuda-cupti-cu12",
+      "necessity": "NOT_PROVEN_BY_METADATA",
+      "source_requirement": "nvidia-cuda-cupti-cu12 ==12.5.82 ; extra == 'and-cuda'",
+      "version": "12.5.82"
+    },
+    {
+      "installed_version": null,
+      "name": "nvidia-cuda-nvcc-cu12",
+      "necessity": "NOT_PROVEN_BY_METADATA",
+      "source_requirement": "nvidia-cuda-nvcc-cu12 ==12.5.82 ; extra == 'and-cuda'",
+      "version": "12.5.82"
+    },
+    {
+      "installed_version": null,
+      "name": "nvidia-cuda-nvrtc-cu12",
+      "necessity": "NOT_PROVEN_BY_METADATA",
+      "source_requirement": "nvidia-cuda-nvrtc-cu12 ==12.5.82 ; extra == 'and-cuda'",
+      "version": "12.5.82"
+    },
+    {
+      "installed_version": null,
+      "name": "nvidia-cuda-runtime-cu12",
+      "necessity": "NOT_PROVEN_BY_METADATA",
+      "source_requirement": "nvidia-cuda-runtime-cu12 ==12.5.82 ; extra == 'and-cuda'",
+      "version": "12.5.82"
+    },
+    {
+      "installed_version": null,
+      "name": "nvidia-cudnn-cu12",
+      "necessity": "NOT_PROVEN_BY_METADATA",
+      "source_requirement": "nvidia-cudnn-cu12 ==9.3.0.75 ; extra == 'and-cuda'",
+      "version": "9.3.0.75"
+    },
+    {
+      "installed_version": null,
+      "name": "nvidia-cufft-cu12",
+      "necessity": "NOT_PROVEN_BY_METADATA",
+      "source_requirement": "nvidia-cufft-cu12 ==11.2.3.61 ; extra == 'and-cuda'",
+      "version": "11.2.3.61"
+    },
+    {
+      "installed_version": null,
+      "name": "nvidia-curand-cu12",
+      "necessity": "NOT_PROVEN_BY_METADATA",
+      "source_requirement": "nvidia-curand-cu12 ==10.3.6.82 ; extra == 'and-cuda'",
+      "version": "10.3.6.82"
+    },
+    {
+      "installed_version": null,
+      "name": "nvidia-cusolver-cu12",
+      "necessity": "NOT_PROVEN_BY_METADATA",
+      "source_requirement": "nvidia-cusolver-cu12 ==11.6.3.83 ; extra == 'and-cuda'",
+      "version": "11.6.3.83"
+    },
+    {
+      "installed_version": null,
+      "name": "nvidia-cusparse-cu12",
+      "necessity": "NOT_PROVEN_BY_METADATA",
+      "source_requirement": "nvidia-cusparse-cu12 ==12.5.1.3 ; extra == 'and-cuda'",
+      "version": "12.5.1.3"
+    },
+    {
+      "installed_version": null,
+      "name": "nvidia-nccl-cu12",
+      "necessity": "NOT_PROVEN_BY_METADATA",
+      "source_requirement": "nvidia-nccl-cu12 ==2.21.5 ; extra == 'and-cuda'",
+      "version": "2.21.5"
+    },
+    {
+      "installed_version": null,
+      "name": "nvidia-nvjitlink-cu12",
+      "necessity": "NOT_PROVEN_BY_METADATA",
+      "source_requirement": "nvidia-nvjitlink-cu12 ==12.5.82 ; extra == 'and-cuda'",
+      "version": "12.5.82"
+    }
+  ],
+  "rollback": "Deselect the overlay manifest; once no child uses it, remove only the private target.",
+  "schema": "hailo8_dependency_plan_v27934",
+  "selected_packages": [
+    "nvidia-cublas-cu12",
+    "nvidia-cuda-cupti-cu12",
+    "nvidia-cuda-nvcc-cu12",
+    "nvidia-cuda-nvrtc-cu12",
+    "nvidia-cuda-runtime-cu12",
+    "nvidia-cudnn-cu12",
+    "nvidia-cufft-cu12",
+    "nvidia-curand-cu12",
+    "nvidia-cusolver-cu12",
+    "nvidia-cusparse-cu12",
+    "nvidia-nccl-cu12",
+    "nvidia-nvjitlink-cu12"
+  ],
+  "status": "READY_FOR_EXPLICIT_OFFLINE_STAGE",
+  "target": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq",
+  "wheels": [
+    {
+      "name": "nvidia-cublas-cu12",
+      "path": "/home/kmika/Downloads/hailo8_gpu_test_20260912T062240Z_hx7b7hcq/wheels/nvidia_cublas_cu12-12.5.3.2-py3-none-manylinux2014_x86_64.whl",
+      "provides_extra": [],
+      "requires_dist": [],
+      "requires_python": ">=3",
+      "sha256": "ca070ad70e9fa6654084575d01bd001f30cc4665e33d4bb9fc8e0f321caa034b",
+      "size": 363313169,
+      "version": "12.5.3.2"
+    },
+    {
+      "name": "nvidia-cuda-cupti-cu12",
+      "path": "/home/kmika/Downloads/hailo8_gpu_test_20260912T062240Z_hx7b7hcq/wheels/nvidia_cuda_cupti_cu12-12.5.82-py3-none-manylinux2014_x86_64.whl",
+      "provides_extra": [],
+      "requires_dist": [],
+      "requires_python": ">=3",
+      "sha256": "bde77a5feb66752ec61db2adfe47f56b941842825b4c7e2068aff27c9d107953",
+      "size": 13811507,
+      "version": "12.5.82"
+    },
+    {
+      "name": "nvidia-cuda-nvcc-cu12",
+      "path": "/home/kmika/Downloads/hailo8_gpu_test_20260912T062240Z_hx7b7hcq/wheels/nvidia_cuda_nvcc_cu12-12.5.82-py3-none-manylinux2014_x86_64.whl",
+      "provides_extra": [],
+      "requires_dist": [],
+      "requires_python": ">=3",
+      "sha256": "b03e545b8e8c3ce7ebcd7fc44063180ff52ff01d064ece2127ed90a04ef12cd0",
+      "size": 22468537,
+      "version": "12.5.82"
+    },
+    {
+      "name": "nvidia-cuda-nvrtc-cu12",
+      "path": "/home/kmika/Downloads/hailo8_gpu_test_20260912T062240Z_hx7b7hcq/wheels/nvidia_cuda_nvrtc_cu12-12.5.82-py3-none-manylinux2014_x86_64.whl",
+      "provides_extra": [],
+      "requires_dist": [],
+      "requires_python": ">=3",
+      "sha256": "3dbd97b0104b4bfbc3c4f8c79cd2496307c89c43c29a9f83125f1d76296ff3fd",
+      "size": 24873108,
+      "version": "12.5.82"
+    },
+    {
+      "name": "nvidia-cuda-runtime-cu12",
+      "path": "/home/kmika/Downloads/hailo8_gpu_test_20260912T062240Z_hx7b7hcq/wheels/nvidia_cuda_runtime_cu12-12.5.82-py3-none-manylinux2014_x86_64.whl",
+      "provides_extra": [],
+      "requires_dist": [],
+      "requires_python": ">=3",
+      "sha256": "3e79a060e126df40fd3a068f3f787eb000fa51b251ec6cd97d09579632687115",
+      "size": 895707,
+      "version": "12.5.82"
+    },
+    {
+      "name": "nvidia-cudnn-cu12",
+      "path": "/home/kmika/Downloads/hailo8_gpu_test_20260912T062240Z_hx7b7hcq/wheels/nvidia_cudnn_cu12-9.3.0.75-py3-none-manylinux2014_x86_64.whl",
+      "provides_extra": [],
+      "requires_dist": [
+        "nvidia-cublas-cu12"
+      ],
+      "requires_python": ">=3",
+      "sha256": "9ad9c6929ebb5295eb4a1728024666d1c88283373e265a0c5c883e6f9d5cd76d",
+      "size": 577163502,
+      "version": "9.3.0.75"
+    },
+    {
+      "name": "nvidia-cufft-cu12",
+      "path": "/home/kmika/Downloads/hailo8_gpu_test_20260912T062240Z_hx7b7hcq/wheels/nvidia_cufft_cu12-11.2.3.61-py3-none-manylinux2014_x86_64.whl",
+      "provides_extra": [],
+      "requires_dist": [
+        "nvidia-nvjitlink-cu12"
+      ],
+      "requires_python": ">=3",
+      "sha256": "9a6e8df162585750f61983a638104a48c756aa13f9f48e19ab079b38e3c828b8",
+      "size": 192524114,
+      "version": "11.2.3.61"
+    },
+    {
+      "name": "nvidia-curand-cu12",
+      "path": "/home/kmika/Downloads/hailo8_gpu_test_20260912T062240Z_hx7b7hcq/wheels/nvidia_curand_cu12-10.3.6.82-py3-none-manylinux2014_x86_64.whl",
+      "provides_extra": [],
+      "requires_dist": [],
+      "requires_python": ">=3",
+      "sha256": "2823fb27de4e44dbb22394a6adf53aa6e1b013aca0f8c22867d1cfae58405536",
+      "size": 56309107,
+      "version": "10.3.6.82"
+    },
+    {
+      "name": "nvidia-cusolver-cu12",
+      "path": "/home/kmika/Downloads/hailo8_gpu_test_20260912T062240Z_hx7b7hcq/wheels/nvidia_cusolver_cu12-11.6.3.83-py3-none-manylinux2014_x86_64.whl",
+      "provides_extra": [],
+      "requires_dist": [
+        "nvidia-cublas-cu12",
+        "nvidia-nvjitlink-cu12",
+        "nvidia-cusparse-cu12"
+      ],
+      "requires_python": ">=3",
+      "sha256": "93cfafacde4428b71778eeb092ec615a02a3d05404da1bcf91c53e3fa1bce42b",
+      "size": 130341232,
+      "version": "11.6.3.83"
+    },
+    {
+      "name": "nvidia-cusparse-cu12",
+      "path": "/home/kmika/Downloads/hailo8_gpu_test_20260912T062240Z_hx7b7hcq/wheels/nvidia_cusparse_cu12-12.5.1.3-py3-none-manylinux2014_x86_64.whl",
+      "provides_extra": [],
+      "requires_dist": [
+        "nvidia-nvjitlink-cu12"
+      ],
+      "requires_python": ">=3",
+      "sha256": "016df8e993c437e8301e62739f01775cba988fd5253cd4c64173f8e8d2f8e752",
+      "size": 217558979,
+      "version": "12.5.1.3"
+    },
+    {
+      "name": "nvidia-nccl-cu12",
+      "path": "/home/kmika/Downloads/hailo8_gpu_test_20260912T062240Z_hx7b7hcq/wheels/nvidia_nccl_cu12-2.21.5-py3-none-manylinux2014_x86_64.whl",
+      "provides_extra": [],
+      "requires_dist": [],
+      "requires_python": ">=3",
+      "sha256": "8579076d30a8c24988834445f8d633c697d42397e92ffc3f63fa26766d25e0a0",
+      "size": 188654414,
+      "version": "2.21.5"
+    },
+    {
+      "name": "nvidia-nvjitlink-cu12",
+      "path": "/home/kmika/Downloads/hailo8_gpu_test_20260912T062240Z_hx7b7hcq/wheels/nvidia_nvjitlink_cu12-12.5.82-py3-none-manylinux2014_x86_64.whl",
+      "provides_extra": [],
+      "requires_dist": [],
+      "requires_python": ">=3",
+      "sha256": "f9b37bc5c8cf7509665cb6ada5aaa0ce65618f2332b7d3e78e9790511f111212",
+      "size": 21298879,
+      "version": "12.5.82"
+    }
+  ]
+}

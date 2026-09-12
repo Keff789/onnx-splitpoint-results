@@ -1,0 +1,185 @@
+{
+  "actual_feed_comparison_note": "Captured exact FLOAT32 InferVStreams inputs; internal quantized UINT8 buffers not observed.",
+  "actual_vstream_feed_equal": true,
+  "arrays": {
+    "path": "results/runtime_arrays.npz",
+    "sha256": "f0357e41611c8a2e4a23dde1e8387ac999cdc87a3458e5aad93b5c83475853a6",
+    "size_bytes": 38664794
+  },
+  "claim_eligible": false,
+  "compiler_invoked": false,
+  "expected_compiler_sha256": "511b13a4882c2cb4f1b904cb831b86d1e441c3f11c4eb87fec958b5529bcf438",
+  "expected_source_onnx_sha256": "2f5e79b1e4280251e7b6eefe1d6161c4831e2fc27858e1e9fe2fac697f44489e",
+  "family": "hailo8",
+  "frozen_inputs_unchanged": true,
+  "internal_uint8_feed_observed": false,
+  "logical_feed_equal": true,
+  "model": "mobilenet_v3_large",
+  "quality_status": "not_evaluated",
+  "raw_energy_status": "not_run",
+  "runtime_status": "pass",
+  "schema": "hailo8_model_runtime_result_r1",
+  "setup_id": "orin_nx_hailo8_01",
+  "stages": {
+    "cpu_hef": {
+      "actual_feed_dtype": "float32",
+      "actual_feed_unchanged": true,
+      "actual_vstream_call_count": 16,
+      "artifact_sha256": "8d1cb584e05307a641d41eab4dd51c1d1c7824e99a97469935f88089cf756f85",
+      "hef_readability_status": "pass",
+      "ids": [
+        "n02788148/ILSVRC2012_val_00049054.JPEG",
+        "n02098413/ILSVRC2012_val_00031453.JPEG",
+        "n02086910/ILSVRC2012_val_00040564.JPEG",
+        "n02102177/ILSVRC2012_val_00006947.JPEG",
+        "n01817953/ILSVRC2012_val_00002791.JPEG",
+        "n03297495/ILSVRC2012_val_00020583.JPEG",
+        "n01818515/ILSVRC2012_val_00036879.JPEG",
+        "n04326547/ILSVRC2012_val_00013931.JPEG",
+        "n04086273/ILSVRC2012_val_00015260.JPEG",
+        "n04251144/ILSVRC2012_val_00010908.JPEG",
+        "n04597913/ILSVRC2012_val_00041290.JPEG",
+        "n04192698/ILSVRC2012_val_00026513.JPEG",
+        "n01664065/ILSVRC2012_val_00022469.JPEG",
+        "n04372370/ILSVRC2012_val_00035646.JPEG",
+        "n03065424/ILSVRC2012_val_00020012.JPEG",
+        "n03459775/ILSVRC2012_val_00041657.JPEG"
+      ],
+      "inference_count": 16,
+      "logical_feed_layout": "NHWC",
+      "normalization": "existing_canonical_image_tensor_imagenet_once_then_HailoRT_internal_HEF_quantization",
+      "output_dtype": "float32",
+      "output_shape": [
+        16,
+        1000
+      ],
+      "runtime_api": "vstreams",
+      "runtime_io": {
+        "hailort_version": "4.20.0",
+        "input_format": "FLOAT32",
+        "input_streams": [
+          {
+            "name": "mobilenet_v3_large_full/input_layer1",
+            "quant_info": {
+              "limvals_max": 2.640000343322754,
+              "limvals_min": -2.1344683170318604,
+              "qp_scale": 0.01872340589761734,
+              "qp_zp": 114.0
+            },
+            "shape": [
+              224,
+              224,
+              3
+            ]
+          }
+        ],
+        "internal_quantized_input_observed": false,
+        "output_format": "FLOAT32",
+        "output_streams": [
+          {
+            "name": "mobilenet_v3_large_full/fc18",
+            "quant_info": {
+              "limvals_max": 11.972420692443848,
+              "limvals_min": -4.988508701324463,
+              "qp_scale": 0.06651344895362854,
+              "qp_zp": 75.0
+            },
+            "shape": [
+              1000
+            ]
+          }
+        ],
+        "quantized_inputs": false,
+        "quantized_outputs": false,
+        "runtime_api": "vstreams"
+      },
+      "runtime_status": "pass",
+      "source": "normal_HailoBackend.prepare_and_run_exact_precompiled_HEF"
+    },
+    "gpu_hef": {
+      "actual_feed_dtype": "float32",
+      "actual_feed_unchanged": true,
+      "actual_vstream_call_count": 16,
+      "artifact_sha256": "bdfdf620ea557fff667b22343678db19e00d4b833afa2bf56de7161c766d64b0",
+      "hef_readability_status": "pass",
+      "ids": [
+        "n02788148/ILSVRC2012_val_00049054.JPEG",
+        "n02098413/ILSVRC2012_val_00031453.JPEG",
+        "n02086910/ILSVRC2012_val_00040564.JPEG",
+        "n02102177/ILSVRC2012_val_00006947.JPEG",
+        "n01817953/ILSVRC2012_val_00002791.JPEG",
+        "n03297495/ILSVRC2012_val_00020583.JPEG",
+        "n01818515/ILSVRC2012_val_00036879.JPEG",
+        "n04326547/ILSVRC2012_val_00013931.JPEG",
+        "n04086273/ILSVRC2012_val_00015260.JPEG",
+        "n04251144/ILSVRC2012_val_00010908.JPEG",
+        "n04597913/ILSVRC2012_val_00041290.JPEG",
+        "n04192698/ILSVRC2012_val_00026513.JPEG",
+        "n01664065/ILSVRC2012_val_00022469.JPEG",
+        "n04372370/ILSVRC2012_val_00035646.JPEG",
+        "n03065424/ILSVRC2012_val_00020012.JPEG",
+        "n03459775/ILSVRC2012_val_00041657.JPEG"
+      ],
+      "inference_count": 16,
+      "logical_feed_layout": "NHWC",
+      "normalization": "existing_canonical_image_tensor_imagenet_once_then_HailoRT_internal_HEF_quantization",
+      "output_dtype": "float32",
+      "output_shape": [
+        16,
+        1000
+      ],
+      "runtime_api": "vstreams",
+      "runtime_io": {
+        "hailort_version": "4.20.0",
+        "input_format": "FLOAT32",
+        "input_streams": [
+          {
+            "name": "mobilenet_v3_large_full/input_layer1",
+            "quant_info": {
+              "limvals_max": 2.640000343322754,
+              "limvals_min": -2.1344683170318604,
+              "qp_scale": 0.01872340589761734,
+              "qp_zp": 114.0
+            },
+            "shape": [
+              224,
+              224,
+              3
+            ]
+          }
+        ],
+        "internal_quantized_input_observed": false,
+        "output_format": "FLOAT32",
+        "output_streams": [
+          {
+            "name": "mobilenet_v3_large_full/fc18",
+            "quant_info": {
+              "limvals_max": 11.972424507141113,
+              "limvals_min": -4.9885101318359375,
+              "qp_scale": 0.06651347130537033,
+              "qp_zp": 75.0
+            },
+            "shape": [
+              1000
+            ]
+          }
+        ],
+        "quantized_inputs": false,
+        "quantized_outputs": false,
+        "runtime_api": "vstreams"
+      },
+      "runtime_status": "pass",
+      "source": "normal_HailoBackend.prepare_and_run_exact_precompiled_HEF"
+    }
+  },
+  "supervision": {
+    "cancelled": false,
+    "cleanup_complete": true,
+    "elapsed_s": 1.504748850944452,
+    "lingering_children_after_cli": false,
+    "owned_processes_observed": 1,
+    "owned_survivors": [],
+    "returncode": 0,
+    "timed_out": false
+  }
+}

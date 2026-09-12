@@ -1,0 +1,1127 @@
+{
+  "ok": true,
+  "elapsed_s": 528.8277332782745,
+  "hw_arch": "hailo8",
+  "net_name": "mobilenet_v3_large_full",
+  "backend": "venv",
+  "error": null,
+  "hef_path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/compiled.hef",
+  "parsed_har_path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/parsed.har",
+  "quant_har_path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/quantized.har",
+  "fixed_onnx_path": null,
+  "fixup_report": null,
+  "skipped": false,
+  "calib_info": {
+    "source": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710",
+    "requested_count": 500,
+    "used_count": 500,
+    "batch_size": 8,
+    "inputs": {
+      "mobilenet_v3_large_full/input_layer1": {
+        "shape": [
+          224,
+          224,
+          3
+        ]
+      }
+    },
+    "image_preprocess": "imagenet",
+    "preprocessing_contract": {
+      "schema": "onnx-splitpoint/image-preprocessing-contract",
+      "schema_version": 2,
+      "contract_scope": "prepared_rgb_uint8_semantics",
+      "task": "classification",
+      "preprocess_mode": "resize",
+      "spatial_transform": "direct_resize",
+      "target_hw": [
+        224,
+        224
+      ],
+      "color_space": "RGB",
+      "input_domain": "uint8_0_255",
+      "resize_interpolation": "bilinear",
+      "resize_rounding": "python_round_ties_to_even",
+      "placement": "not_applicable",
+      "pad_value": 0,
+      "letterbox_pad_value": 0,
+      "image_scale": "imagenet",
+      "letterbox": false
+    },
+    "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+    "effective_count": 500,
+    "available_sample_count": 500,
+    "available_sample_count_source": "manifest",
+    "clamped": false,
+    "clamped_reason": "",
+    "storage_mode": "memmap",
+    "calibration_memory_cap_bytes": 268435456,
+    "effective_requested_count": 500,
+    "hef_validation": {
+      "status": "unavailable",
+      "reader": "hailo_platform.HEF",
+      "error": "No module named 'hailo_platform'"
+    },
+    "compiler_dispatch_count": 1,
+    "compiler_context": {
+      "available_components": [
+        "ptxas",
+        "libdevice.10.bc"
+      ],
+      "compiler_component_view": true,
+      "component_source": "selected_hailo8_dependency_overlay",
+      "compute_capability": "6.1",
+      "conflicts": [],
+      "dependency_manifest": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/overlay_manifest.json",
+      "device": "gpu",
+      "family": "hailo8",
+      "full_cuda_toolkit": false,
+      "gpu_index": "0",
+      "gpu_selector": "GPU-b823007b-546c-4cda-533d-fc24c61f01e6",
+      "gpu_uuid": "GPU-b823007b-546c-4cda-533d-fc24c61f01e6",
+      "ignored_legacy": [],
+      "inherited_cuda_mask_source": "unset",
+      "legacy_inputs": [],
+      "libdevice_path": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/nvvm/libdevice/libdevice.10.bc",
+      "nvidia_smi": "/usr/bin/nvidia-smi",
+      "ptxas_path": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/bin/ptxas",
+      "ptxas_trace_path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/onnx_hailo_cuda_view_nctmi_zf_ptxas_invocations.jsonl",
+      "ptxas_version": "ptxas: NVIDIA (R) Ptx optimizing assembler\nCopyright (c) 2005-2024 NVIDIA Corporation\nBuilt on Thu_Jun__6_02:14:54_PDT_2024\nCuda compilation tools, release 12.5, V12.5.82\nBuild cuda_12.5.r12.5/compiler.34385749_0",
+      "schema_version": 1,
+      "source": "job_override",
+      "target_arch": "sm_61",
+      "target_probe": {
+        "binary": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/bin/ptxas",
+        "kind": "preflight_target",
+        "output_size": 2120,
+        "returncode": 0,
+        "source_ptx": ".version 4.0\n.target sm_50\n.address_size 64\n.visible .entry splitpoint_target_probe() { ret; }\n",
+        "stderr": "",
+        "stdout": "",
+        "target_arch": "sm_61"
+      },
+      "thread_settings": {
+        "TF_FORCE_GPU_ALLOW_GROWTH": "true",
+        "TF_NUM_INTEROP_THREADS": "2",
+        "TF_NUM_INTRAOP_THREADS": "2"
+      },
+      "unprovided_compiler_components": [
+        "nvcc",
+        "nvlink",
+        "fatbinary",
+        "cicc",
+        "cudafe++"
+      ],
+      "venv_python": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/bin/python",
+      "venv_root": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8",
+      "view_root": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/onnx_hailo_cuda_view_nctmi_zf"
+    },
+    "phase_events": [
+      {
+        "phase": "sdk_initialization",
+        "state": "started",
+        "event": "started",
+        "timestamp": 1789202113.0397217,
+        "monotonic_s": 180387.125545965,
+        "monotonic": 180387.125545965,
+        "pid": 1505755
+      },
+      {
+        "phase": "sdk_initialization",
+        "state": "completed",
+        "event": "completed",
+        "timestamp": 1789202113.0645967,
+        "monotonic_s": 180387.150422568,
+        "monotonic": 180387.150422672,
+        "elapsed_s": 0.024877090996596962,
+        "pid": 1505755
+      },
+      {
+        "phase": "translate",
+        "state": "started",
+        "event": "started",
+        "timestamp": 1789202113.0682766,
+        "monotonic_s": 180387.154101495,
+        "monotonic": 180387.154101495,
+        "pid": 1505755
+      },
+      {
+        "phase": "translate",
+        "state": "completed",
+        "event": "completed",
+        "timestamp": 1789202114.2296865,
+        "monotonic_s": 180388.315512375,
+        "monotonic": 180388.315512474,
+        "elapsed_s": 1.1614114080148283,
+        "pid": 1505755
+      },
+      {
+        "phase": "calibration_materialization",
+        "state": "started",
+        "event": "started",
+        "timestamp": 1789202114.3109913,
+        "monotonic_s": 180388.396816123,
+        "monotonic": 180388.396816123,
+        "pid": 1505755
+      },
+      {
+        "phase": "calibration_materialization",
+        "state": "completed",
+        "event": "completed",
+        "timestamp": 1789202116.814283,
+        "monotonic_s": 180390.900108577,
+        "monotonic": 180390.900108625,
+        "elapsed_s": 2.5032928090076894,
+        "pid": 1505755
+      },
+      {
+        "phase": "optimize",
+        "state": "started",
+        "event": "started",
+        "timestamp": 1789202116.818146,
+        "monotonic_s": 180390.903970959,
+        "monotonic": 180390.903970959,
+        "pid": 1505755
+      },
+      {
+        "phase": "optimize",
+        "state": "completed",
+        "event": "completed",
+        "timestamp": 1789202583.3519163,
+        "monotonic_s": 180857.437742006,
+        "monotonic": 180857.437742131,
+        "elapsed_s": 466.5337731789914,
+        "pid": 1505755
+      },
+      {
+        "phase": "compile",
+        "state": "started",
+        "event": "started",
+        "timestamp": 1789202584.1665266,
+        "monotonic_s": 180858.252351294,
+        "monotonic": 180858.252351294,
+        "pid": 1505755
+      },
+      {
+        "phase": "compile",
+        "state": "completed",
+        "event": "completed",
+        "timestamp": 1789202628.6043565,
+        "monotonic_s": 180902.690182738,
+        "monotonic": 180902.690182856,
+        "elapsed_s": 44.437831825984176,
+        "pid": 1505755
+      },
+      {
+        "phase": "publication",
+        "state": "started",
+        "event": "started",
+        "timestamp": 1789202628.6223648,
+        "monotonic_s": 180902.708189068,
+        "monotonic": 180902.708189068,
+        "pid": 1505755
+      },
+      {
+        "phase": "publication",
+        "state": "completed",
+        "event": "completed",
+        "timestamp": 1789202628.846658,
+        "monotonic_s": 180902.932483729,
+        "monotonic": 180902.932483779,
+        "elapsed_s": 0.22429490997456014,
+        "pid": 1505755
+      }
+    ],
+    "publish_artifacts": false,
+    "gpu_execution_status": "gpu_execution_unproven",
+    "build_receipt": {
+      "schema": "onnx-splitpoint/hailo-hef-build-receipt/v2",
+      "created_at_unix_s": 1789202628.6692245,
+      "source_onnx_sha256": "511b13a4882c2cb4f1b904cb831b86d1e441c3f11c4eb87fec958b5529bcf438",
+      "compiler_onnx_sha256": "511b13a4882c2cb4f1b904cb831b86d1e441c3f11c4eb87fec958b5529bcf438",
+      "compiler_onnx_filename": "mobilenet_v3_large_hailo_fixed.onnx",
+      "hef_sha256": "bdfdf620ea557fff667b22343678db19e00d4b833afa2bf56de7161c766d64b0",
+      "hef_size_bytes": 5660588,
+      "hw_arch": "hailo8",
+      "net_name": "mobilenet_v3_large_full",
+      "hailo_sdk_version": "hailo-dataflow-compiler:3.33.1",
+      "calibration_identity": "manifest:6d6978cafd1b828d6fa9438b232120f2a769311c28492bea5a141af586c3d58c",
+      "prepared_calibration_identity_sha256": "fb09c137fe8380101f4d02f4c3998037407c0cce5d1b09aa854c61ba41172b18",
+      "calibration_count": 500,
+      "requested_calibration_count": 500,
+      "calibration_storage": "memmap",
+      "calibration_memory_cap_bytes": 268435456,
+      "preprocessing_contract": {
+        "schema": "onnx-splitpoint/image-preprocessing-contract",
+        "schema_version": 2,
+        "contract_scope": "prepared_rgb_uint8_semantics",
+        "task": "classification",
+        "preprocess_mode": "resize",
+        "spatial_transform": "direct_resize",
+        "target_hw": [
+          224,
+          224
+        ],
+        "color_space": "RGB",
+        "input_domain": "uint8_0_255",
+        "resize_interpolation": "bilinear",
+        "resize_rounding": "python_round_ties_to_even",
+        "placement": "not_applicable",
+        "pad_value": 0,
+        "letterbox_pad_value": 0,
+        "image_scale": "imagenet",
+        "letterbox": false
+      },
+      "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+      "cache_key": "a911084ca887d0a74d73addc6d654ea6faec61876a51b4ded92e9a49ed612070",
+      "cache_payload": {
+        "schema": "onnx-splitpoint/hailo-hef-cache-key-v3",
+        "model_sha256": "511b13a4882c2cb4f1b904cb831b86d1e441c3f11c4eb87fec958b5529bcf438",
+        "activation_part1_sha256": "",
+        "hw_arch": "hailo8",
+        "hailo_sdk_version": "hailo-dataflow-compiler:3.33.1",
+        "optimization_level": 1,
+        "calibration_identity": "manifest:6d6978cafd1b828d6fa9438b232120f2a769311c28492bea5a141af586c3d58c",
+        "prepared_calibration_identity_sha256": "fb09c137fe8380101f4d02f4c3998037407c0cce5d1b09aa854c61ba41172b18",
+        "calibration_count": 500,
+        "requested_calibration_count": 500,
+        "calibration_storage": "memmap",
+        "calibration_memory_cap_bytes": 268435456,
+        "calibration_batch_size": 8,
+        "extra_model_script": "",
+        "start_nodes": [],
+        "end_nodes": [],
+        "integrity": "relaxed",
+        "preprocessing_contract": {
+          "schema": "onnx-splitpoint/image-preprocessing-contract",
+          "schema_version": 2,
+          "contract_scope": "prepared_rgb_uint8_semantics",
+          "task": "classification",
+          "preprocess_mode": "resize",
+          "spatial_transform": "direct_resize",
+          "target_hw": [
+            224,
+            224
+          ],
+          "color_space": "RGB",
+          "input_domain": "uint8_0_255",
+          "resize_interpolation": "bilinear",
+          "resize_rounding": "python_round_ties_to_even",
+          "placement": "not_applicable",
+          "pad_value": 0,
+          "letterbox_pad_value": 0,
+          "image_scale": "imagenet",
+          "letterbox": false
+        },
+        "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+        "net_name": "mobilenet_v3_large_full",
+        "net_input_shapes": [
+          1,
+          3,
+          224,
+          224
+        ],
+        "disable_rt_metadata_extraction": true
+      },
+      "compiler_context": {
+        "available_components": [
+          "ptxas",
+          "libdevice.10.bc"
+        ],
+        "compiler_component_view": true,
+        "component_source": "selected_hailo8_dependency_overlay",
+        "compute_capability": "6.1",
+        "conflicts": [],
+        "dependency_manifest": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/overlay_manifest.json",
+        "device": "gpu",
+        "family": "hailo8",
+        "full_cuda_toolkit": false,
+        "gpu_index": "0",
+        "gpu_selector": "GPU-b823007b-546c-4cda-533d-fc24c61f01e6",
+        "gpu_uuid": "GPU-b823007b-546c-4cda-533d-fc24c61f01e6",
+        "ignored_legacy": [],
+        "inherited_cuda_mask_source": "unset",
+        "legacy_inputs": [],
+        "libdevice_path": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/nvvm/libdevice/libdevice.10.bc",
+        "nvidia_smi": "/usr/bin/nvidia-smi",
+        "ptxas_path": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/bin/ptxas",
+        "ptxas_trace_path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/onnx_hailo_cuda_view_nctmi_zf_ptxas_invocations.jsonl",
+        "ptxas_version": "ptxas: NVIDIA (R) Ptx optimizing assembler\nCopyright (c) 2005-2024 NVIDIA Corporation\nBuilt on Thu_Jun__6_02:14:54_PDT_2024\nCuda compilation tools, release 12.5, V12.5.82\nBuild cuda_12.5.r12.5/compiler.34385749_0",
+        "schema_version": 1,
+        "source": "job_override",
+        "target_arch": "sm_61",
+        "target_probe": {
+          "binary": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/bin/ptxas",
+          "kind": "preflight_target",
+          "output_size": 2120,
+          "returncode": 0,
+          "source_ptx": ".version 4.0\n.target sm_50\n.address_size 64\n.visible .entry splitpoint_target_probe() { ret; }\n",
+          "stderr": "",
+          "stdout": "",
+          "target_arch": "sm_61"
+        },
+        "thread_settings": {
+          "TF_FORCE_GPU_ALLOW_GROWTH": "true",
+          "TF_NUM_INTEROP_THREADS": "2",
+          "TF_NUM_INTRAOP_THREADS": "2"
+        },
+        "unprovided_compiler_components": [
+          "nvcc",
+          "nvlink",
+          "fatbinary",
+          "cicc",
+          "cudafe++"
+        ],
+        "venv_python": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/bin/python",
+        "venv_root": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8",
+        "view_root": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/onnx_hailo_cuda_view_nctmi_zf"
+      },
+      "phase_events": [
+        {
+          "phase": "sdk_initialization",
+          "state": "started",
+          "event": "started",
+          "timestamp": 1789202113.0397217,
+          "monotonic_s": 180387.125545965,
+          "monotonic": 180387.125545965,
+          "pid": 1505755
+        },
+        {
+          "phase": "sdk_initialization",
+          "state": "completed",
+          "event": "completed",
+          "timestamp": 1789202113.0645967,
+          "monotonic_s": 180387.150422568,
+          "monotonic": 180387.150422672,
+          "elapsed_s": 0.024877090996596962,
+          "pid": 1505755
+        },
+        {
+          "phase": "translate",
+          "state": "started",
+          "event": "started",
+          "timestamp": 1789202113.0682766,
+          "monotonic_s": 180387.154101495,
+          "monotonic": 180387.154101495,
+          "pid": 1505755
+        },
+        {
+          "phase": "translate",
+          "state": "completed",
+          "event": "completed",
+          "timestamp": 1789202114.2296865,
+          "monotonic_s": 180388.315512375,
+          "monotonic": 180388.315512474,
+          "elapsed_s": 1.1614114080148283,
+          "pid": 1505755
+        },
+        {
+          "phase": "calibration_materialization",
+          "state": "started",
+          "event": "started",
+          "timestamp": 1789202114.3109913,
+          "monotonic_s": 180388.396816123,
+          "monotonic": 180388.396816123,
+          "pid": 1505755
+        },
+        {
+          "phase": "calibration_materialization",
+          "state": "completed",
+          "event": "completed",
+          "timestamp": 1789202116.814283,
+          "monotonic_s": 180390.900108577,
+          "monotonic": 180390.900108625,
+          "elapsed_s": 2.5032928090076894,
+          "pid": 1505755
+        },
+        {
+          "phase": "optimize",
+          "state": "started",
+          "event": "started",
+          "timestamp": 1789202116.818146,
+          "monotonic_s": 180390.903970959,
+          "monotonic": 180390.903970959,
+          "pid": 1505755
+        },
+        {
+          "phase": "optimize",
+          "state": "completed",
+          "event": "completed",
+          "timestamp": 1789202583.3519163,
+          "monotonic_s": 180857.437742006,
+          "monotonic": 180857.437742131,
+          "elapsed_s": 466.5337731789914,
+          "pid": 1505755
+        },
+        {
+          "phase": "compile",
+          "state": "started",
+          "event": "started",
+          "timestamp": 1789202584.1665266,
+          "monotonic_s": 180858.252351294,
+          "monotonic": 180858.252351294,
+          "pid": 1505755
+        },
+        {
+          "phase": "compile",
+          "state": "completed",
+          "event": "completed",
+          "timestamp": 1789202628.6043565,
+          "monotonic_s": 180902.690182738,
+          "monotonic": 180902.690182856,
+          "elapsed_s": 44.437831825984176,
+          "pid": 1505755
+        },
+        {
+          "phase": "publication",
+          "state": "started",
+          "event": "started",
+          "timestamp": 1789202628.6223648,
+          "monotonic_s": 180902.708189068,
+          "monotonic": 180902.708189068,
+          "pid": 1505755
+        }
+      ],
+      "publish_artifacts": false,
+      "diagnostic_only": true,
+      "hef_validation": {
+        "status": "unavailable",
+        "reader": "hailo_platform.HEF",
+        "error": "No module named 'hailo_platform'"
+      }
+    },
+    "build_receipt_path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/.hailo-generations/8cfd96e5161b492b810ece0d26357d4f/hailo_hef_build_receipt.json",
+    "cache_hit": false,
+    "cache_key": "a911084ca887d0a74d73addc6d654ea6faec61876a51b4ded92e9a49ed612070"
+  },
+  "returncode": 0,
+  "debug_log": null,
+  "timed_out": false,
+  "timeout_kind": null,
+  "last_stage": "publication",
+  "failure_kind": null,
+  "unsupported_reason": null,
+  "details": {
+    "hef_validation": {
+      "status": "unavailable",
+      "reader": "hailo_platform.HEF",
+      "error": "No module named 'hailo_platform'"
+    },
+    "compiler_dispatch_count": 1,
+    "phase_events": [
+      {
+        "phase": "sdk_initialization",
+        "state": "started",
+        "event": "started",
+        "timestamp": 1789202113.0397217,
+        "monotonic_s": 180387.125545965,
+        "monotonic": 180387.125545965,
+        "pid": 1505755
+      },
+      {
+        "phase": "sdk_initialization",
+        "state": "completed",
+        "event": "completed",
+        "timestamp": 1789202113.0645967,
+        "monotonic_s": 180387.150422568,
+        "monotonic": 180387.150422672,
+        "elapsed_s": 0.024877090996596962,
+        "pid": 1505755
+      },
+      {
+        "phase": "translate",
+        "state": "started",
+        "event": "started",
+        "timestamp": 1789202113.0682766,
+        "monotonic_s": 180387.154101495,
+        "monotonic": 180387.154101495,
+        "pid": 1505755
+      },
+      {
+        "phase": "translate",
+        "state": "completed",
+        "event": "completed",
+        "timestamp": 1789202114.2296865,
+        "monotonic_s": 180388.315512375,
+        "monotonic": 180388.315512474,
+        "elapsed_s": 1.1614114080148283,
+        "pid": 1505755
+      },
+      {
+        "phase": "calibration_materialization",
+        "state": "started",
+        "event": "started",
+        "timestamp": 1789202114.3109913,
+        "monotonic_s": 180388.396816123,
+        "monotonic": 180388.396816123,
+        "pid": 1505755
+      },
+      {
+        "phase": "calibration_materialization",
+        "state": "completed",
+        "event": "completed",
+        "timestamp": 1789202116.814283,
+        "monotonic_s": 180390.900108577,
+        "monotonic": 180390.900108625,
+        "elapsed_s": 2.5032928090076894,
+        "pid": 1505755
+      },
+      {
+        "phase": "optimize",
+        "state": "started",
+        "event": "started",
+        "timestamp": 1789202116.818146,
+        "monotonic_s": 180390.903970959,
+        "monotonic": 180390.903970959,
+        "pid": 1505755
+      },
+      {
+        "phase": "optimize",
+        "state": "completed",
+        "event": "completed",
+        "timestamp": 1789202583.3519163,
+        "monotonic_s": 180857.437742006,
+        "monotonic": 180857.437742131,
+        "elapsed_s": 466.5337731789914,
+        "pid": 1505755
+      },
+      {
+        "phase": "compile",
+        "state": "started",
+        "event": "started",
+        "timestamp": 1789202584.1665266,
+        "monotonic_s": 180858.252351294,
+        "monotonic": 180858.252351294,
+        "pid": 1505755
+      },
+      {
+        "phase": "compile",
+        "state": "completed",
+        "event": "completed",
+        "timestamp": 1789202628.6043565,
+        "monotonic_s": 180902.690182738,
+        "monotonic": 180902.690182856,
+        "elapsed_s": 44.437831825984176,
+        "pid": 1505755
+      },
+      {
+        "phase": "publication",
+        "state": "started",
+        "event": "started",
+        "timestamp": 1789202628.6223648,
+        "monotonic_s": 180902.708189068,
+        "monotonic": 180902.708189068,
+        "pid": 1505755
+      },
+      {
+        "phase": "publication",
+        "state": "completed",
+        "event": "completed",
+        "timestamp": 1789202628.846658,
+        "monotonic_s": 180902.932483729,
+        "monotonic": 180902.932483779,
+        "elapsed_s": 0.22429490997456014,
+        "pid": 1505755
+      }
+    ],
+    "compiler_context": {
+      "available_components": [
+        "ptxas",
+        "libdevice.10.bc"
+      ],
+      "compiler_component_view": true,
+      "component_source": "selected_hailo8_dependency_overlay",
+      "compute_capability": "6.1",
+      "conflicts": [],
+      "dependency_manifest": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/overlay_manifest.json",
+      "device": "gpu",
+      "family": "hailo8",
+      "full_cuda_toolkit": false,
+      "gpu_index": "0",
+      "gpu_selector": "GPU-b823007b-546c-4cda-533d-fc24c61f01e6",
+      "gpu_uuid": "GPU-b823007b-546c-4cda-533d-fc24c61f01e6",
+      "ignored_legacy": [],
+      "inherited_cuda_mask_source": "unset",
+      "legacy_inputs": [],
+      "libdevice_path": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/nvvm/libdevice/libdevice.10.bc",
+      "nvidia_smi": "/usr/bin/nvidia-smi",
+      "ptxas_path": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/bin/ptxas",
+      "ptxas_trace_path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/onnx_hailo_cuda_view_nctmi_zf_ptxas_invocations.jsonl",
+      "ptxas_version": "ptxas: NVIDIA (R) Ptx optimizing assembler\nCopyright (c) 2005-2024 NVIDIA Corporation\nBuilt on Thu_Jun__6_02:14:54_PDT_2024\nCuda compilation tools, release 12.5, V12.5.82\nBuild cuda_12.5.r12.5/compiler.34385749_0",
+      "schema_version": 1,
+      "source": "job_override",
+      "target_arch": "sm_61",
+      "target_probe": {
+        "kind": "preflight_target",
+        "binary": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/bin/ptxas",
+        "target_arch": "sm_61",
+        "source_ptx": ".version 4.0\n.target sm_50\n.address_size 64\n.visible .entry splitpoint_target_probe() { ret; }\n",
+        "returncode": 0,
+        "output_size": 2120,
+        "stdout": "",
+        "stderr": ""
+      },
+      "thread_settings": {
+        "TF_NUM_INTEROP_THREADS": "2",
+        "TF_NUM_INTRAOP_THREADS": "2",
+        "TF_FORCE_GPU_ALLOW_GROWTH": "true"
+      },
+      "unprovided_compiler_components": [
+        "nvcc",
+        "nvlink",
+        "fatbinary",
+        "cicc",
+        "cudafe++"
+      ],
+      "venv_python": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/bin/python",
+      "venv_root": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8",
+      "view_root": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/onnx_hailo_cuda_view_nctmi_zf"
+    },
+    "publish_artifacts": false,
+    "cache_hit": false,
+    "cache_key": "a911084ca887d0a74d73addc6d654ea6faec61876a51b4ded92e9a49ed612070",
+    "cache_dir": null,
+    "preprocessing_contract": {
+      "schema": "onnx-splitpoint/image-preprocessing-contract",
+      "schema_version": 2,
+      "contract_scope": "prepared_rgb_uint8_semantics",
+      "task": "classification",
+      "preprocess_mode": "resize",
+      "spatial_transform": "direct_resize",
+      "target_hw": [
+        224,
+        224
+      ],
+      "color_space": "RGB",
+      "input_domain": "uint8_0_255",
+      "resize_interpolation": "bilinear",
+      "resize_rounding": "python_round_ties_to_even",
+      "placement": "not_applicable",
+      "pad_value": 0,
+      "letterbox_pad_value": 0,
+      "image_scale": "imagenet",
+      "letterbox": false
+    },
+    "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+    "build_receipt": {
+      "schema": "onnx-splitpoint/hailo-hef-build-receipt/v2",
+      "created_at_unix_s": 1789202628.6692245,
+      "source_onnx_sha256": "511b13a4882c2cb4f1b904cb831b86d1e441c3f11c4eb87fec958b5529bcf438",
+      "compiler_onnx_sha256": "511b13a4882c2cb4f1b904cb831b86d1e441c3f11c4eb87fec958b5529bcf438",
+      "compiler_onnx_filename": "mobilenet_v3_large_hailo_fixed.onnx",
+      "hef_sha256": "bdfdf620ea557fff667b22343678db19e00d4b833afa2bf56de7161c766d64b0",
+      "hef_size_bytes": 5660588,
+      "hw_arch": "hailo8",
+      "net_name": "mobilenet_v3_large_full",
+      "hailo_sdk_version": "hailo-dataflow-compiler:3.33.1",
+      "calibration_identity": "manifest:6d6978cafd1b828d6fa9438b232120f2a769311c28492bea5a141af586c3d58c",
+      "prepared_calibration_identity_sha256": "fb09c137fe8380101f4d02f4c3998037407c0cce5d1b09aa854c61ba41172b18",
+      "calibration_count": 500,
+      "requested_calibration_count": 500,
+      "calibration_storage": "memmap",
+      "calibration_memory_cap_bytes": 268435456,
+      "preprocessing_contract": {
+        "schema": "onnx-splitpoint/image-preprocessing-contract",
+        "schema_version": 2,
+        "contract_scope": "prepared_rgb_uint8_semantics",
+        "task": "classification",
+        "preprocess_mode": "resize",
+        "spatial_transform": "direct_resize",
+        "target_hw": [
+          224,
+          224
+        ],
+        "color_space": "RGB",
+        "input_domain": "uint8_0_255",
+        "resize_interpolation": "bilinear",
+        "resize_rounding": "python_round_ties_to_even",
+        "placement": "not_applicable",
+        "pad_value": 0,
+        "letterbox_pad_value": 0,
+        "image_scale": "imagenet",
+        "letterbox": false
+      },
+      "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+      "cache_key": "a911084ca887d0a74d73addc6d654ea6faec61876a51b4ded92e9a49ed612070",
+      "cache_payload": {
+        "schema": "onnx-splitpoint/hailo-hef-cache-key-v3",
+        "model_sha256": "511b13a4882c2cb4f1b904cb831b86d1e441c3f11c4eb87fec958b5529bcf438",
+        "activation_part1_sha256": "",
+        "hw_arch": "hailo8",
+        "hailo_sdk_version": "hailo-dataflow-compiler:3.33.1",
+        "optimization_level": 1,
+        "calibration_identity": "manifest:6d6978cafd1b828d6fa9438b232120f2a769311c28492bea5a141af586c3d58c",
+        "prepared_calibration_identity_sha256": "fb09c137fe8380101f4d02f4c3998037407c0cce5d1b09aa854c61ba41172b18",
+        "calibration_count": 500,
+        "requested_calibration_count": 500,
+        "calibration_storage": "memmap",
+        "calibration_memory_cap_bytes": 268435456,
+        "calibration_batch_size": 8,
+        "extra_model_script": "",
+        "start_nodes": [],
+        "end_nodes": [],
+        "integrity": "relaxed",
+        "preprocessing_contract": {
+          "schema": "onnx-splitpoint/image-preprocessing-contract",
+          "schema_version": 2,
+          "contract_scope": "prepared_rgb_uint8_semantics",
+          "task": "classification",
+          "preprocess_mode": "resize",
+          "spatial_transform": "direct_resize",
+          "target_hw": [
+            224,
+            224
+          ],
+          "color_space": "RGB",
+          "input_domain": "uint8_0_255",
+          "resize_interpolation": "bilinear",
+          "resize_rounding": "python_round_ties_to_even",
+          "placement": "not_applicable",
+          "pad_value": 0,
+          "letterbox_pad_value": 0,
+          "image_scale": "imagenet",
+          "letterbox": false
+        },
+        "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+        "net_name": "mobilenet_v3_large_full",
+        "net_input_shapes": [
+          1,
+          3,
+          224,
+          224
+        ],
+        "disable_rt_metadata_extraction": true
+      },
+      "compiler_context": {
+        "available_components": [
+          "ptxas",
+          "libdevice.10.bc"
+        ],
+        "compiler_component_view": true,
+        "component_source": "selected_hailo8_dependency_overlay",
+        "compute_capability": "6.1",
+        "conflicts": [],
+        "dependency_manifest": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/overlay_manifest.json",
+        "device": "gpu",
+        "family": "hailo8",
+        "full_cuda_toolkit": false,
+        "gpu_index": "0",
+        "gpu_selector": "GPU-b823007b-546c-4cda-533d-fc24c61f01e6",
+        "gpu_uuid": "GPU-b823007b-546c-4cda-533d-fc24c61f01e6",
+        "ignored_legacy": [],
+        "inherited_cuda_mask_source": "unset",
+        "legacy_inputs": [],
+        "libdevice_path": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/nvvm/libdevice/libdevice.10.bc",
+        "nvidia_smi": "/usr/bin/nvidia-smi",
+        "ptxas_path": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/bin/ptxas",
+        "ptxas_trace_path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/onnx_hailo_cuda_view_nctmi_zf_ptxas_invocations.jsonl",
+        "ptxas_version": "ptxas: NVIDIA (R) Ptx optimizing assembler\nCopyright (c) 2005-2024 NVIDIA Corporation\nBuilt on Thu_Jun__6_02:14:54_PDT_2024\nCuda compilation tools, release 12.5, V12.5.82\nBuild cuda_12.5.r12.5/compiler.34385749_0",
+        "schema_version": 1,
+        "source": "job_override",
+        "target_arch": "sm_61",
+        "target_probe": {
+          "binary": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/bin/ptxas",
+          "kind": "preflight_target",
+          "output_size": 2120,
+          "returncode": 0,
+          "source_ptx": ".version 4.0\n.target sm_50\n.address_size 64\n.visible .entry splitpoint_target_probe() { ret; }\n",
+          "stderr": "",
+          "stdout": "",
+          "target_arch": "sm_61"
+        },
+        "thread_settings": {
+          "TF_FORCE_GPU_ALLOW_GROWTH": "true",
+          "TF_NUM_INTEROP_THREADS": "2",
+          "TF_NUM_INTRAOP_THREADS": "2"
+        },
+        "unprovided_compiler_components": [
+          "nvcc",
+          "nvlink",
+          "fatbinary",
+          "cicc",
+          "cudafe++"
+        ],
+        "venv_python": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/bin/python",
+        "venv_root": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8",
+        "view_root": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/onnx_hailo_cuda_view_nctmi_zf"
+      },
+      "phase_events": [
+        {
+          "phase": "sdk_initialization",
+          "state": "started",
+          "event": "started",
+          "timestamp": 1789202113.0397217,
+          "monotonic_s": 180387.125545965,
+          "monotonic": 180387.125545965,
+          "pid": 1505755
+        },
+        {
+          "phase": "sdk_initialization",
+          "state": "completed",
+          "event": "completed",
+          "timestamp": 1789202113.0645967,
+          "monotonic_s": 180387.150422568,
+          "monotonic": 180387.150422672,
+          "elapsed_s": 0.024877090996596962,
+          "pid": 1505755
+        },
+        {
+          "phase": "translate",
+          "state": "started",
+          "event": "started",
+          "timestamp": 1789202113.0682766,
+          "monotonic_s": 180387.154101495,
+          "monotonic": 180387.154101495,
+          "pid": 1505755
+        },
+        {
+          "phase": "translate",
+          "state": "completed",
+          "event": "completed",
+          "timestamp": 1789202114.2296865,
+          "monotonic_s": 180388.315512375,
+          "monotonic": 180388.315512474,
+          "elapsed_s": 1.1614114080148283,
+          "pid": 1505755
+        },
+        {
+          "phase": "calibration_materialization",
+          "state": "started",
+          "event": "started",
+          "timestamp": 1789202114.3109913,
+          "monotonic_s": 180388.396816123,
+          "monotonic": 180388.396816123,
+          "pid": 1505755
+        },
+        {
+          "phase": "calibration_materialization",
+          "state": "completed",
+          "event": "completed",
+          "timestamp": 1789202116.814283,
+          "monotonic_s": 180390.900108577,
+          "monotonic": 180390.900108625,
+          "elapsed_s": 2.5032928090076894,
+          "pid": 1505755
+        },
+        {
+          "phase": "optimize",
+          "state": "started",
+          "event": "started",
+          "timestamp": 1789202116.818146,
+          "monotonic_s": 180390.903970959,
+          "monotonic": 180390.903970959,
+          "pid": 1505755
+        },
+        {
+          "phase": "optimize",
+          "state": "completed",
+          "event": "completed",
+          "timestamp": 1789202583.3519163,
+          "monotonic_s": 180857.437742006,
+          "monotonic": 180857.437742131,
+          "elapsed_s": 466.5337731789914,
+          "pid": 1505755
+        },
+        {
+          "phase": "compile",
+          "state": "started",
+          "event": "started",
+          "timestamp": 1789202584.1665266,
+          "monotonic_s": 180858.252351294,
+          "monotonic": 180858.252351294,
+          "pid": 1505755
+        },
+        {
+          "phase": "compile",
+          "state": "completed",
+          "event": "completed",
+          "timestamp": 1789202628.6043565,
+          "monotonic_s": 180902.690182738,
+          "monotonic": 180902.690182856,
+          "elapsed_s": 44.437831825984176,
+          "pid": 1505755
+        },
+        {
+          "phase": "publication",
+          "state": "started",
+          "event": "started",
+          "timestamp": 1789202628.6223648,
+          "monotonic_s": 180902.708189068,
+          "monotonic": 180902.708189068,
+          "pid": 1505755
+        }
+      ],
+      "publish_artifacts": false,
+      "diagnostic_only": true,
+      "hef_validation": {
+        "status": "unavailable",
+        "reader": "hailo_platform.HEF",
+        "error": "No module named 'hailo_platform'"
+      }
+    },
+    "process_cleanup": {
+      "root_pid": 1505755,
+      "captured_process_count": 0,
+      "captured_process_group_count": 0,
+      "remaining_process_count": 0,
+      "process_control_platform": "posix",
+      "procfs_pid_namespace_matches": true,
+      "descendant_discovery_available": true,
+      "root_process_group_cancellation_available": true,
+      "nested_session_cancellation_safe": true,
+      "cancellation_capability_reason": "nested_process_tree_cancellation_available",
+      "cancellation_assurance": "full_descendant_tree",
+      "unverified_nested_descendants_possible": false,
+      "label": "hailo-streamed-subprocess",
+      "registration_token": 135466342904224
+    },
+    "process_summary": {
+      "stage_history": [
+        {
+          "stage": "compile",
+          "t_s": 1.115
+        },
+        {
+          "stage": "translation",
+          "t_s": 13.982
+        },
+        {
+          "stage": "activation_calibration",
+          "t_s": 15.239
+        },
+        {
+          "stage": "optimization",
+          "t_s": 18.211
+        },
+        {
+          "stage": "statistics_collector",
+          "t_s": 31.957
+        },
+        {
+          "stage": "optimization",
+          "t_s": 79.502
+        },
+        {
+          "stage": "bias_correction",
+          "t_s": 108.052
+        },
+        {
+          "stage": "layer_noise_analysis",
+          "t_s": 382.851
+        },
+        {
+          "stage": "optimization",
+          "t_s": 467.288
+        },
+        {
+          "stage": "allocation",
+          "t_s": 485.606
+        },
+        {
+          "stage": "compile_prep",
+          "t_s": 485.67
+        },
+        {
+          "stage": "allocation",
+          "t_s": 510.922
+        },
+        {
+          "stage": "compile",
+          "t_s": 523.248
+        }
+      ],
+      "stage_durations_s": {
+        "compile": 7.462,
+        "translation": 1.257,
+        "activation_calibration": 2.972,
+        "optimization": 18.318,
+        "statistics_collector": 47.545,
+        "bias_correction": 274.799,
+        "layer_noise_analysis": 84.437,
+        "allocation": 12.326,
+        "compile_prep": 25.252
+      },
+      "last_stage": "compile",
+      "elapsed_s_observed": 530.71,
+      "allocation_time_s": 33.0,
+      "compilation_time_s": 4.0,
+      "algo_times_s": {
+        "Mixed Precision": 0.59,
+        "Statistics Collector": 46.5,
+        "Fix zp_comp Encoding": 0.0,
+        "MatmulDecomposeFix": 0.0,
+        "Bias Correction": 249.74,
+        "Layer Noise Analysis": 84.18
+      },
+      "snr_db": {
+        "mobilenet_v3_large_full/output_layer1": 1.181
+      },
+      "detected": {
+        "normalization_warning": true,
+        "single_context_used": true
+      }
+    },
+    "extra_fields": {
+      "cuda_probe": {
+        "available_components": [
+          "ptxas",
+          "libdevice.10.bc"
+        ],
+        "compiler_component_view": true,
+        "component_source": "selected_hailo8_dependency_overlay",
+        "compute_capability": "6.1",
+        "conflicts": [],
+        "dependency_manifest": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/overlay_manifest.json",
+        "device": "gpu",
+        "family": "hailo8",
+        "full_cuda_toolkit": false,
+        "gpu_index": "0",
+        "gpu_selector": "GPU-b823007b-546c-4cda-533d-fc24c61f01e6",
+        "gpu_uuid": "GPU-b823007b-546c-4cda-533d-fc24c61f01e6",
+        "ignored_legacy": [],
+        "inherited_cuda_mask_source": "unset",
+        "legacy_inputs": [],
+        "libdevice_path": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/nvvm/libdevice/libdevice.10.bc",
+        "nvidia_smi": "/usr/bin/nvidia-smi",
+        "ptxas_path": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/bin/ptxas",
+        "ptxas_trace_path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/onnx_hailo_cuda_view_nctmi_zf_ptxas_invocations.jsonl",
+        "ptxas_version": "ptxas: NVIDIA (R) Ptx optimizing assembler\nCopyright (c) 2005-2024 NVIDIA Corporation\nBuilt on Thu_Jun__6_02:14:54_PDT_2024\nCuda compilation tools, release 12.5, V12.5.82\nBuild cuda_12.5.r12.5/compiler.34385749_0",
+        "schema_version": 1,
+        "source": "job_override",
+        "target_arch": "sm_61",
+        "target_probe": {
+          "binary": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/bin/ptxas",
+          "kind": "preflight_target",
+          "output_size": 2120,
+          "returncode": 0,
+          "source_ptx": ".version 4.0\n.target sm_50\n.address_size 64\n.visible .entry splitpoint_target_probe() { ret; }\n",
+          "stderr": "",
+          "stdout": "",
+          "target_arch": "sm_61"
+        },
+        "thread_settings": {
+          "TF_FORCE_GPU_ALLOW_GROWTH": "true",
+          "TF_NUM_INTEROP_THREADS": "2",
+          "TF_NUM_INTRAOP_THREADS": "2"
+        },
+        "unprovided_compiler_components": [
+          "nvcc",
+          "nvlink",
+          "fatbinary",
+          "cicc",
+          "cudafe++"
+        ],
+        "venv_python": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/bin/python",
+        "venv_root": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8",
+        "view_root": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/onnx_hailo_cuda_view_nctmi_zf",
+        "mode": "gpu_resolved",
+        "gpu_ok": true,
+        "forced_cpu": false,
+        "cuda_visible_devices_effective": "GPU-b823007b-546c-4cda-533d-fc24c61f01e6",
+        "cuda_root": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/onnx_hailo_cuda_view_nctmi_zf",
+        "xla_cuda_data_dir": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/onnx_hailo_cuda_view_nctmi_zf",
+        "summary": "Compute: GPU (resolved hailo8 job)"
+      },
+      "result_json_path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/hailo_hef_build_result.json"
+    }
+  }
+}

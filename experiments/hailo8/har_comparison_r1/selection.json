@@ -1,0 +1,1280 @@
+{
+  "sources": [
+    {
+      "id": "compute",
+      "original_upload": "hailo8_gpu_test_20260912T062240Z_hx7b7hcq.zip",
+      "required": true,
+      "members": [
+        {
+          "member": "dependency_proposals.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/compute/dependency_proposals.json",
+          "size_bytes": 127104,
+          "sha256": "4336fa47b7adc757aab3373333c1f0a88711e16f80cb8081432fec7dcf6d222a"
+        },
+        {
+          "member": "dependency_selection.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/compute/dependency_selection.json",
+          "size_bytes": 127778,
+          "sha256": "2869296d26eec3917c3ac833e28d07b0cb3d28560292a3aae19a505522dbf110"
+        },
+        {
+          "member": "download_command.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/compute/download_command.json",
+          "size_bytes": 927,
+          "sha256": "699eeb5ece9a3dc0eed174c63a8c7ae575f960afdf8e99f40c0789e7143d24ed"
+        },
+        {
+          "member": "download_process.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/compute/download_process.json",
+          "size_bytes": 203,
+          "sha256": "e606ba6ae256210319739acce89def301ff794182baabb9584af67be187b5c62"
+        },
+        {
+          "member": "inventory_after.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/compute/inventory_after.json",
+          "size_bytes": 116865,
+          "sha256": "54e7a2692023ef5d4163a0bd256ce390b28015b716b6f8981b20b95d9acd580b"
+        },
+        {
+          "member": "inventory_before.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/compute/inventory_before.json",
+          "size_bytes": 116865,
+          "sha256": "54e7a2692023ef5d4163a0bd256ce390b28015b716b6f8981b20b95d9acd580b"
+        },
+        {
+          "member": "launcher.py",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/compute/launcher.py",
+          "size_bytes": 15388,
+          "sha256": "7374565d1cd1316f8c298ee8099f1fc74571e8a0a3245146de2cf8ef3d92733a"
+        },
+        {
+          "member": "overlay_manifest.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/compute/overlay_manifest.json",
+          "size_bytes": 126199,
+          "sha256": "7d1b4a5ebf5986765de6fbd778541a02498c31a40aa8fc4375cb5a0544cf2d12"
+        },
+        {
+          "member": "reviewed_stage_plan.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/compute/reviewed_stage_plan.json",
+          "size_bytes": 132772,
+          "sha256": "7eabd6e284a840d2842b956686f38fe74215d5e45de8e0b90c3e09372ee9c424"
+        },
+        {
+          "member": "summary.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/compute/summary.json",
+          "size_bytes": 584,
+          "sha256": "750eff9611b82d382ceee29ae08b3b906f9f9294279708dff3f86d9af21255cb"
+        },
+        {
+          "member": "compute/hailo_gpu_compute_r1_20260912T062333Z_y30scpw3/collection_summary.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/compute/compute/hailo_gpu_compute_r1_20260912T062333Z_y30scpw3/collection_summary.json",
+          "size_bytes": 930,
+          "sha256": "26054a993b28e59fd031a78618ae020c456b68d40ad9e28c128f278223331586"
+        },
+        {
+          "member": "compute/hailo_gpu_compute_r1_20260912T062333Z_y30scpw3/hailo8/gpu_compute_result.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/compute/compute/hailo_gpu_compute_r1_20260912T062333Z_y30scpw3/hailo8/gpu_compute_result.json",
+          "size_bytes": 11674,
+          "sha256": "13c1c2fb3b128cccc571a57e368c46f4adeacea4df7ecb8aab765f11c22fa024"
+        },
+        {
+          "member": "compute/hailo_gpu_compute_r1_20260912T062333Z_y30scpw3/hailo8/process_result.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/compute/compute/hailo_gpu_compute_r1_20260912T062333Z_y30scpw3/hailo8/process_result.json",
+          "size_bytes": 202,
+          "sha256": "61aec155e4c1e7d89611bdb420bd8c3abfc7e52cdf169a039628ea89ba6bfa92"
+        },
+        {
+          "member": "compute/hailo_gpu_compute_r1_20260912T062333Z_y30scpw3/hailo8/environment_overrides.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/compute/compute/hailo_gpu_compute_r1_20260912T062333Z_y30scpw3/hailo8/environment_overrides.json",
+          "size_bytes": 6176,
+          "sha256": "c0290537649064dc1d9c0a9fdc28163a38c90d0a4fe575f76c7aba95c168a982"
+        },
+        {
+          "member": "compute/hailo_gpu_compute_r1_20260912T062333Z_y30scpw3/hailo8/console.log",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/compute/compute/hailo_gpu_compute_r1_20260912T062333Z_y30scpw3/hailo8/console.log",
+          "size_bytes": 2409,
+          "sha256": "fa3d37462943907578baf8db84414b7153a02dced21734df6be7e5b3440b6582"
+        },
+        {
+          "member": "compute/hailo_gpu_compute_r1_20260912T062333Z_y30scpw3/hailo8/compiler_context.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/compute/compute/hailo_gpu_compute_r1_20260912T062333Z_y30scpw3/hailo8/compiler_context.json",
+          "size_bytes": 2451,
+          "sha256": "dd6aeddc502a1ad5630d8957913f70971ff4b65a319461311e227aba96a15522"
+        },
+        {
+          "member": "compute/hailo_gpu_compute_r1_20260912T062333Z_y30scpw3/hailo8/onnx_hailo_cuda_view_t9w2dow1_ptxas_invocations.jsonl",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/compute/compute/hailo_gpu_compute_r1_20260912T062333Z_y30scpw3/hailo8/onnx_hailo_cuda_view_t9w2dow1_ptxas_invocations.jsonl",
+          "size_bytes": 3544,
+          "sha256": "afd4eba12eecdc352d6208148d0da4952898de5471979e274382e5c0a88fe606"
+        },
+        {
+          "member": "compute/hailo_gpu_compute_r1_20260912T062333Z_y30scpw3/source/collect.py",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/compute/compute/hailo_gpu_compute_r1_20260912T062333Z_y30scpw3/source/collect.py",
+          "size_bytes": 16263,
+          "sha256": "76ba2f76fe3b7f684bc59bddbaace8e2a19daa255739e803d5e9eb082112d263"
+        },
+        {
+          "member": "compute/hailo_gpu_compute_r1_20260912T062333Z_y30scpw3/source/worker.py",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/compute/compute/hailo_gpu_compute_r1_20260912T062333Z_y30scpw3/source/worker.py",
+          "size_bytes": 8103,
+          "sha256": "2f54c35d5219d75793d601e8b251a5c2c2551d1da04f39c38c578dc6c6aade7c"
+        },
+        {
+          "member": "compute/hailo_gpu_compute_r1_20260912T062333Z_y30scpw3/source/worker_context_v27934.py",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/compute/compute/hailo_gpu_compute_r1_20260912T062333Z_y30scpw3/source/worker_context_v27934.py",
+          "size_bytes": 10636,
+          "sha256": "aff9934b5eecc0d06deba668fb6a24921519a6b7cd1ba46758dffa430fb02981"
+        },
+        {
+          "member": "compute/hailo_gpu_compute_r1_20260912T062333Z_y30scpw3/source/run_hailo_gpu_smoke.sh",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/compute/compute/hailo_gpu_compute_r1_20260912T062333Z_y30scpw3/source/run_hailo_gpu_smoke.sh",
+          "size_bytes": 223,
+          "sha256": "384b4f8de09c4f95a5436aaea7232c38be6093f7346c05d5d5cbdb7039f0608c"
+        },
+        {
+          "member": "compute/hailo_gpu_compute_r1_20260912T062333Z_y30scpw3/source/README.md",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/compute/compute/hailo_gpu_compute_r1_20260912T062333Z_y30scpw3/source/README.md",
+          "size_bytes": 6222,
+          "sha256": "c975397eae5324172958fc7f88f4407f473981d855474a0212d990c8e999c478"
+        },
+        {
+          "member": "download/console.log",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/compute/download/console.log",
+          "size_bytes": 6522,
+          "sha256": "c72a0781193538688eee4b1a083a6b9f40e8fb04f40841a4cbf6d359c96b8eff"
+        }
+      ]
+    },
+    {
+      "id": "build",
+      "original_upload": "hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv.zip",
+      "required": true,
+      "members": [
+        {
+          "member": "launcher_summary.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/build_metadata/launcher_summary.json",
+          "size_bytes": 74062,
+          "sha256": "076491523693fcb7170005332245351e47b3f462084d12f755333ec663c1f7d9"
+        },
+        {
+          "member": "tool_source_check.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/build_metadata/tool_source_check.json",
+          "size_bytes": 1008,
+          "sha256": "b182345598d42f3d5c77c4342fde914b6259aeca1b4414e9feaaa3861172c5a9"
+        },
+        {
+          "member": "configuration_before.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/build_metadata/configuration_before.json",
+          "size_bytes": 504,
+          "sha256": "e4305460b8c634859f5f65c1b9d43287f12672969050d6da28389132c850b8a9"
+        },
+        {
+          "member": "configuration_after.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/build_metadata/configuration_after.json",
+          "size_bytes": 504,
+          "sha256": "e4305460b8c634859f5f65c1b9d43287f12672969050d6da28389132c850b8a9"
+        },
+        {
+          "member": "configuration_preservation.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/build_metadata/configuration_preservation.json",
+          "size_bytes": 38,
+          "sha256": "7951fbbf5f9ba7452bc47cd9eb4b0ff794ddeef5e727bfb0d8a5432082250f40"
+        },
+        {
+          "member": "fixed16_images.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/build_metadata/fixed16_images.json",
+          "size_bytes": 5162,
+          "sha256": "32a243ab219fa4971685d60470f7c70dd8ee4101ab0d3de6bf2e548f1def6f1d"
+        },
+        {
+          "member": "request.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/build_metadata/request.json",
+          "size_bytes": 177314,
+          "sha256": "ab8eb8394782f2f250570fdd9d10b403bddcf78ec527a6a50bf6d22b800908ba"
+        },
+        {
+          "member": "overlay_manifest.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/build_metadata/overlay_manifest.json",
+          "size_bytes": 126199,
+          "sha256": "7d1b4a5ebf5986765de6fbd778541a02498c31a40aa8fc4375cb5a0544cf2d12"
+        },
+        {
+          "member": "baseline_cpu_receipt.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/build_metadata/baseline_cpu_receipt.json",
+          "size_bytes": 3505,
+          "sha256": "b90a5a80c5e9b46ae0afcabfcf0c6ed78c8f35103829546bcf3d578f7a2747c6"
+        },
+        {
+          "member": "summary.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/build_metadata/summary.json",
+          "size_bytes": 73669,
+          "sha256": "feafa6e94e159735dddef59264b1ead32df66bf5ed6ccb5393387e9b87d5afcd"
+        },
+        {
+          "member": "build_result.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/build_metadata/build_result.json",
+          "size_bytes": 41967,
+          "sha256": "7ae950467c0cb2b11d9b9a03d46e874e782e13499b7b5262be5923819a8807e4"
+        },
+        {
+          "member": "supervision.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/build_metadata/supervision.json",
+          "size_bytes": 229,
+          "sha256": "392f663f3d05dd547463c58c7d75023adde2489b08ed4c75d0d81f39159ff1e2"
+        },
+        {
+          "member": "gpu_activity.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/build_metadata/gpu_activity.json",
+          "size_bytes": 95713,
+          "sha256": "4299216db5eebbcc690638f38a50d06cc987d8c8c003bcdaad116681859879c3"
+        },
+        {
+          "member": "gpu_activity.log",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/build_metadata/gpu_activity.log",
+          "size_bytes": 128246,
+          "sha256": "2fcfb33675a195975447687c1b4447e94b36785640fcc5816562d108e2ca56de"
+        },
+        {
+          "member": "compiler.log",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/build_metadata/compiler.log",
+          "size_bytes": 89296,
+          "sha256": "2584c08607991aa8ec8d490a63aed63f6fb880cf2ab43879c397d32e723a985f"
+        },
+        {
+          "member": "worker.log",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/build_metadata/worker.log",
+          "size_bytes": 89296,
+          "sha256": "2584c08607991aa8ec8d490a63aed63f6fb880cf2ab43879c397d32e723a985f"
+        },
+        {
+          "member": "builder_arguments.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/build_metadata/builder_arguments.json",
+          "size_bytes": 1686,
+          "sha256": "076a88ddd07f79770912da3147b00c1c363a24c81dfb85154bebf86417733b05"
+        },
+        {
+          "member": "private_hef_receipt.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/build_metadata/private_hef_receipt.json",
+          "size_bytes": 9024,
+          "sha256": "e830baa781fc6617e7bf2757fc00807134b5b25298070cc7dd95553e83314a86"
+        },
+        {
+          "member": "build/hailo_build_phases.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/build_metadata/phase_metadata/hailo_build_phases.json",
+          "size_bytes": 3078,
+          "sha256": "fbb4f53d79fd50f5d5c2c59821bb3aa418351f8ef3ccf773f838d40785f0b60f"
+        },
+        {
+          "member": "build/hailo_compiler_context.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/build_metadata/phase_metadata/hailo_compiler_context.json",
+          "size_bytes": 2388,
+          "sha256": "29bc17a71d313ae2d6a99097cd0344c75ed818490d31ce7646de946e334f86ca"
+        },
+        {
+          "member": "ptxas_invocations.jsonl",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/build_metadata/ptxas_invocations.jsonl",
+          "size_bytes": 147706,
+          "sha256": "5c8e4aaef00e23079703552b30830fd827b6130488d0e1f461115f5df13e6845"
+        },
+        {
+          "member": "source/run_hailo8_model_build.py",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/build_metadata/source/run_hailo8_model_build.py",
+          "size_bytes": 21815,
+          "sha256": "e07f7936fe2ad48c014277ec8b74b89980262b21e4fcb43d366f9b4e8ae33a98"
+        },
+        {
+          "member": "source/h8_model_request.py",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/build_metadata/source/h8_model_request.py",
+          "size_bytes": 16703,
+          "sha256": "c41a2d4cc749ebb9eb4707ea3f27ea729d705f492aca5b5160031a5127dd1d36"
+        },
+        {
+          "member": "source/build_observation.py",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/build_metadata/source/build_observation.py",
+          "size_bytes": 8407,
+          "sha256": "769b5ff609219f12e673d4c966899a7a814eed3a58ca977a26b7259b9bbe5171"
+        },
+        {
+          "member": "source/SOURCE_PROVENANCE.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/build_metadata/source/SOURCE_PROVENANCE.json",
+          "size_bytes": 1325,
+          "sha256": "5aa759df618afabf85040bd977dd7938f8b6bc87f119f2d532465b8b7d6c5c4a"
+        },
+        {
+          "member": "collection_inventory.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/build_metadata/collection_inventory.json",
+          "size_bytes": 3109,
+          "sha256": "7e07e47bfd639e7d37fd2da746a6d9e4157f48a777b12c911fb1b55835feeb2f"
+        }
+      ]
+    },
+    {
+      "id": "runtime",
+      "original_upload": "runtime_evidence(1).zip",
+      "required": true,
+      "members": [
+        {
+          "member": "runtime/plan.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/runtime/plan.json",
+          "size_bytes": 1136,
+          "sha256": "e34939328ab35767bdbc89370805fe4c84874f0aed48e1efadf9fb86aeeaac9d"
+        },
+        {
+          "member": "runtime/runtime_request.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/runtime/runtime_request.json",
+          "size_bytes": 5450,
+          "sha256": "036fb84400d8b36ae0ba51bbd2e45733b93fc188ff58d72950671c71e084e1ae"
+        },
+        {
+          "member": "runtime/comparison.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/runtime/comparison.json",
+          "size_bytes": 11773,
+          "sha256": "b7dd72cd511dd474aee693ae44a5b777a224978408648fe6a24042d502f119ad"
+        },
+        {
+          "member": "runtime/transport.log",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/runtime/transport.log",
+          "size_bytes": 133,
+          "sha256": "81dd8ba7504a1a2ec691065671f434abe4d3aa478d669e9d37f1cc58d7a438f1"
+        },
+        {
+          "member": "runtime/results/runtime_result.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/runtime/results/runtime_result.json",
+          "size_bytes": 6448,
+          "sha256": "41f3cc55213cf5cfc23c91d0da248d91a85889d4f95dbaa22fe954d690fa26a4"
+        },
+        {
+          "member": "runtime/results/supervision.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/runtime/results/supervision.json",
+          "size_bytes": 227,
+          "sha256": "a209a67bc6415133301748ceef9811dec3f0c2e0092dcc39a11ec1bdaffec400"
+        },
+        {
+          "member": "runtime/results/runtime.log",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/runtime/results/runtime.log",
+          "size_bytes": 27,
+          "sha256": "ee830254fd6cce2aefdf8fe0c09b6342965a73664a8c72757b60b7a831f53416"
+        },
+        {
+          "member": "runtime/source_binding.json",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/runtime/source_binding.json",
+          "size_bytes": 1514,
+          "sha256": "c81a7e1b59eb99111663123b87db8dc8a6da4e62486e97cb9c39acf7497ddefc"
+        },
+        {
+          "member": "runtime/source/run_runtime.py",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/runtime/source/run_runtime.py",
+          "size_bytes": 27979,
+          "sha256": "62c120994b77dad01fe344833e691d31c419e4c4c54a960f056506137c08ecd5"
+        },
+        {
+          "member": "runtime/source/hailo8_model_runtime_worker_r1.py",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/runtime/source/hailo8_model_runtime_worker_r1.py",
+          "size_bytes": 16715,
+          "sha256": "fe55ced6549398dfffcf2b61fc9d9d451df731e8bf59f1711557455452999407"
+        },
+        {
+          "member": "runtime/source/h8_model_request.py",
+          "destination": "results/hailo8/20260912_mobilenet_gpu/runtime/source/h8_model_request.py",
+          "size_bytes": 16703,
+          "sha256": "c41a2d4cc749ebb9eb4707ea3f27ea729d705f492aca5b5160031a5127dd1d36"
+        }
+      ]
+    },
+    {
+      "id": "quality",
+      "original_upload": "quality_snapshot.zip",
+      "required": false,
+      "members": [
+        {
+          "member": "run/run_manifest.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/run_manifest.json",
+          "size_bytes": 2773027,
+          "sha256": "1cbe6ee94b9ab2cf1a5421577825e3a3d9bcc957bd942468ef328fe78b50626b"
+        },
+        {
+          "member": "run/profile.yaml",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/profile.yaml",
+          "size_bytes": 31160,
+          "sha256": "0aa39e3bb6febf54f5f5e725c835c6f69f816a7e65c7f1624f4f01fb35b6faa6"
+        },
+        {
+          "member": "run/profile_source.yaml",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/profile_source.yaml",
+          "size_bytes": 23385,
+          "sha256": "e708d30aece831a05b51b46953b3b25ba9e4a866e7cbfc0a108ae77c8f4e1506"
+        },
+        {
+          "member": "run/effective_execution_plan.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/effective_execution_plan.json",
+          "size_bytes": 13370,
+          "sha256": "5ceed7b39f80f59520e7b126dfc5520c3fc24ec88e5c150b593a712fa32e8de4"
+        },
+        {
+          "member": "run/quality_management/central_quality_summary.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/quality_management/central_quality_summary.json",
+          "size_bytes": 11074510,
+          "sha256": "0999e087d504ba082d9340b0dd0792bfe1d56b9ca68b80cbeff75bd56746e4fd"
+        },
+        {
+          "member": "run/quality_management/central_quality_summary.csv",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/quality_management/central_quality_summary.csv",
+          "size_bytes": 29376,
+          "sha256": "bd7d7bb531d192bf0ccf16482a7e5b03b129560a61f5f842db7d98c8ed9084a7"
+        },
+        {
+          "member": "run/reports/run_status_summary.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/reports/run_status_summary.json",
+          "size_bytes": 25997,
+          "sha256": "b40a8854558281171eeb6949cbd06c89af59393d123ec4714eb87b6671e90773"
+        },
+        {
+          "member": "run/reports/run_status_summary.md",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/reports/run_status_summary.md",
+          "size_bytes": 7322,
+          "sha256": "76867e45c7c6fd177966c505ca4184bb51a2327f3b4b424949d090cff6e9073d"
+        },
+        {
+          "member": "run/reports/result_dashboard.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/reports/result_dashboard.json",
+          "size_bytes": 1013854,
+          "sha256": "10e53c42bdc6df761498d977c946adc9d33d5d33a74a683101793a48b0f43d3b"
+        },
+        {
+          "member": "run/reports/artifact_index_closure.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/reports/artifact_index_closure.json",
+          "size_bytes": 649,
+          "sha256": "b583e04335aadad26f71c09df21165cff48336023fbf9e96d2f758205eb2255a"
+        },
+        {
+          "member": "run/quality_management/references/mobilenet_v3_large/management_cpu_reference_status.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/quality_management/references/mobilenet_v3_large/management_cpu_reference_status.json",
+          "size_bytes": 1435,
+          "sha256": "c7abb657b419437aaa841aad14cb5816b70b542dce0ca434db05a327c299475c"
+        },
+        {
+          "member": "run/quality_management/references/mobilenet_v3_large/management_cpu_reference_stdout.txt",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/quality_management/references/mobilenet_v3_large/management_cpu_reference_stdout.txt",
+          "size_bytes": 3775,
+          "sha256": "7bba5b5db3c6493132717ccf997133a7d06b058df9e37bb342de0ae02b42f869"
+        },
+        {
+          "member": "run/quality_management/references/resnet50/management_cpu_reference_status.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/quality_management/references/resnet50/management_cpu_reference_status.json",
+          "size_bytes": 1405,
+          "sha256": "eba941eb8fb18cdee779a0a88aaef7e8b569a0d2c44eccc55c47af5adcfb55c9"
+        },
+        {
+          "member": "run/quality_management/references/resnet50/management_cpu_reference_stdout.txt",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/quality_management/references/resnet50/management_cpu_reference_stdout.txt",
+          "size_bytes": 3704,
+          "sha256": "8e1d9d023e46fa10ee678028bdb3e8ab62aae30bb638376fb23da60eeafba534"
+        },
+        {
+          "member": "run/quality_management/references/regnet_x_1_6gf/management_cpu_reference_status.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/quality_management/references/regnet_x_1_6gf/management_cpu_reference_status.json",
+          "size_bytes": 1423,
+          "sha256": "c125ff9e7aad8bc50a9168fdb6f2537b124814cd33086975aecf7ae764d0f8a1"
+        },
+        {
+          "member": "run/quality_management/references/regnet_x_1_6gf/management_cpu_reference_stdout.txt",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/quality_management/references/regnet_x_1_6gf/management_cpu_reference_stdout.txt",
+          "size_bytes": 3780,
+          "sha256": "a41ce21de3877b7404e6c236ca76ba224964c40c6d2c42c4b5988ead792e41be"
+        },
+        {
+          "member": "run/quality_management/references/yolo11l/management_cpu_reference_status.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/quality_management/references/yolo11l/management_cpu_reference_status.json",
+          "size_bytes": 6684,
+          "sha256": "2de1c9b034677d3c74d50033dc5ca0169b8dc180a0f2a7dfa5b836c0a3567991"
+        },
+        {
+          "member": "run/quality_management/references/yolo11l/management_cpu_reference_stdout.txt",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/quality_management/references/yolo11l/management_cpu_reference_stdout.txt",
+          "size_bytes": 3725,
+          "sha256": "5633836e68cf462edc5cb043512c61b25fc73410c9cfeb67285f25b36152f9fc"
+        },
+        {
+          "member": "run/quality_management/references/yolo26m/management_cpu_reference_status.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/quality_management/references/yolo26m/management_cpu_reference_status.json",
+          "size_bytes": 6673,
+          "sha256": "37049157021e320511d563b66e3f7734bd348abf53f7380880c8f8b8f83b7f1c"
+        },
+        {
+          "member": "run/quality_management/references/yolo26m/management_cpu_reference_stdout.txt",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/quality_management/references/yolo26m/management_cpu_reference_stdout.txt",
+          "size_bytes": 3665,
+          "sha256": "e15623f078eff82e6bfb287f9e9b35afbbc2e126efc78bb7aa6fc8bceccea5e1"
+        },
+        {
+          "member": "run/quality_management/references/yolo26s/management_cpu_reference_status.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/quality_management/references/yolo26s/management_cpu_reference_status.json",
+          "size_bytes": 6672,
+          "sha256": "afbf988d83f1bdb751fa13b09b6a508976f6d4d61da997cd96949b7ece9fc9c7"
+        },
+        {
+          "member": "run/quality_management/references/yolo26s/management_cpu_reference_stdout.txt",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/quality_management/references/yolo26s/management_cpu_reference_stdout.txt",
+          "size_bytes": 3666,
+          "sha256": "456f6abf8ddbc3e2fda845ff0c9a3783e0428b9b62ea45ff484ee564f69dc233"
+        },
+        {
+          "member": "run/quality_management/references/yolov7_paper/management_cpu_reference_status.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/quality_management/references/yolov7_paper/management_cpu_reference_status.json",
+          "size_bytes": 6739,
+          "sha256": "09d0bc1f6cd4012fa170adfda3728a9c567e183daec3a819cf818c4c73b0051a"
+        },
+        {
+          "member": "run/quality_management/references/yolov7_paper/management_cpu_reference_stdout.txt",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/quality_management/references/yolov7_paper/management_cpu_reference_stdout.txt",
+          "size_bytes": 3645,
+          "sha256": "3e4e3ed09773c58e6ff9ce97ef70d78f9110075966805542609368235ecf3d6d"
+        },
+        {
+          "member": "run/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b027/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b027/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 416009,
+          "sha256": "6c6c71f1986804fa3713b3c596508686923840a3253c7c1e6d53571aaae150be"
+        },
+        {
+          "member": "run/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b027/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b027/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 327584,
+          "sha256": "0bef30d3b4499024cd860b92a29fce5b6f805c501f0862f7f7a3344a090ff4d7"
+        },
+        {
+          "member": "run/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b027/results_ort_tensorrt/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b027/results_ort_tensorrt/task_quality_inputs/full_request.json",
+          "size_bytes": 316283,
+          "sha256": "41e46d0b5b206e323905d41f014f7bda809463568a84255f22e934fbaf57eb4f"
+        },
+        {
+          "member": "run/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b056/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b056/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 365662,
+          "sha256": "81f694209a98a4b8f4abd74b545d65261a666aa8a9e84844e2c2804cc315329e"
+        },
+        {
+          "member": "run/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b056/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b056/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 327584,
+          "sha256": "18591d60823fc11e9503b634a1e5dc0545b6acd7b42b0b18e2a3100a005c1346"
+        },
+        {
+          "member": "run/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b135/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b135/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 365575,
+          "sha256": "7710129a3eae751728ee048cc2a6040a90499e060d2ff8662acc65436dec27b0"
+        },
+        {
+          "member": "run/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b135/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b135/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 327588,
+          "sha256": "1d638e5c09ea14f435a658b97ce98165b148187a8ca65308be7241d4068d9632"
+        },
+        {
+          "member": "run/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/deepx_m1_full/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/deepx_m1_full/task_quality_inputs/full_request.json",
+          "size_bytes": 326606,
+          "sha256": "e1c572fb0941c36d63a77a6302a40a8f98a5c8afd4fe56713550085448976fa1"
+        },
+        {
+          "member": "run/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "size_bytes": 330744,
+          "sha256": "a6006f4119b5e2a9e9b4c284496c0fabe23300a94a46d1a70ed3daf73dad9d19"
+        },
+        {
+          "member": "run/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b027/results_hailo10/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b027/results_hailo10/task_quality_inputs/full_request.json",
+          "size_bytes": 316360,
+          "sha256": "a2ada4457ba2ff6faae5e378c7912a35bfe3db7a1d909c9cbd0c56ecf52f938d"
+        },
+        {
+          "member": "run/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b027/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b027/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 364825,
+          "sha256": "ffd40bcc26dbc5c207ea10ca8bfaf42d5d9fe2bc1bf7f2f899487f880d59ed78"
+        },
+        {
+          "member": "run/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b056/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b056/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 364837,
+          "sha256": "085902a9441b5d888f3ca0b1b9735a124b1e6854df726e55b2543935043553f3"
+        },
+        {
+          "member": "run/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b135/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b135/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 364119,
+          "sha256": "c0cadcf223aa68c9d63e7c8ce7852b0668d2eabbd84fba0c91592d1f29f6e76f"
+        },
+        {
+          "member": "run/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "size_bytes": 330740,
+          "sha256": "89cf462d4da04aa3e59ab3c2e87ae4b3384f10ba0f0a500b5a27300dab24d652"
+        },
+        {
+          "member": "run/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b027/results_hailo8/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b027/results_hailo8/task_quality_inputs/full_request.json",
+          "size_bytes": 316360,
+          "sha256": "859e9e4fceb05092906a988439fde1e9fb0d1c3e22a4c5010a7d31269054130c"
+        },
+        {
+          "member": "run/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b027/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b027/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "size_bytes": 363603,
+          "sha256": "6471c9661b45bca9ee28e4796f4632b2f0b9683afe619ce68c923fdbe94b20f4"
+        },
+        {
+          "member": "run/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b056/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b056/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "size_bytes": 363608,
+          "sha256": "1f6522b5cc4dd2a6b884eadb79d802448cb6e29b78d0ed3cbd8412a4797748cc"
+        },
+        {
+          "member": "run/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b135/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b135/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "size_bytes": 363486,
+          "sha256": "82dfbb41fed68c338fdc185a7eca7691909777564f0bf3ea104802f89592d451"
+        },
+        {
+          "member": "run/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/mobilenet_v3_large/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "size_bytes": 330732,
+          "sha256": "6915da92b8777a86f56a48d120524db17d3de8ccf3dcc997bec8c5a91dfd9b1c"
+        },
+        {
+          "member": "run/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b023/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b023/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 415028,
+          "sha256": "fe9e244a2457a4a5f213fec7d5c2d6e3811633a16c4b6bf6811baec742b2427e"
+        },
+        {
+          "member": "run/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b023/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b023/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 327556,
+          "sha256": "4e739b6c8b45e79da29cdaf708c50496835f3e671b31d02fd6f9d4395ee565b5"
+        },
+        {
+          "member": "run/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b023/results_ort_tensorrt/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b023/results_ort_tensorrt/task_quality_inputs/full_request.json",
+          "size_bytes": 316279,
+          "sha256": "05e1a2aae365f4322626e059e0a1931f334fa0f9dd472c87008bebcde36be311"
+        },
+        {
+          "member": "run/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b052/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b052/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 364893,
+          "sha256": "85377e00e37e79c6f837d71ac0c4a76c90e7d4a3e37bf56e86f6a2ca004e2b55"
+        },
+        {
+          "member": "run/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b052/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b052/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 327558,
+          "sha256": "5fd4c39b01402e988b6312a580c40246e4cb32a3979e8dcece53ffb59687d24d"
+        },
+        {
+          "member": "run/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b132/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b132/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 364846,
+          "sha256": "d5c8c2869ca12cf5e131875b5932f33214eedc4e3a8c0dbe74f6ae9de759cea9"
+        },
+        {
+          "member": "run/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b132/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b132/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 327559,
+          "sha256": "d59e8f9f3760751c93e906c4cfeca786a4fd1641d06d0af94cb19c016435ad35"
+        },
+        {
+          "member": "run/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/deepx_m1_full/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/deepx_m1_full/task_quality_inputs/full_request.json",
+          "size_bytes": 326594,
+          "sha256": "7c1ccb8d9e77b1b7ec9c0cfeacd294809b99085944772ad0406586f8c0c9479f"
+        },
+        {
+          "member": "run/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "size_bytes": 330684,
+          "sha256": "33965013d5ded7ae33adfb66894ee8d98b76b2c8a4ed9890a1a2f32e1bba3716"
+        },
+        {
+          "member": "run/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b023/results_hailo10/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b023/results_hailo10/task_quality_inputs/full_request.json",
+          "size_bytes": 316356,
+          "sha256": "59618b2dc5948b05fd5b5c2383e995e6ca18e241b9da7ccc06db1a320b0b9e75"
+        },
+        {
+          "member": "run/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b023/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b023/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 364060,
+          "sha256": "dfaf378e0f23d616c1fd5ab389b0e3a197f133e871558d908d5de8faf0a927fc"
+        },
+        {
+          "member": "run/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b052/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b052/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 364052,
+          "sha256": "99e9fc6195df14a544c21012cf4cdfa288802a79751587e08c28d49f00d92808"
+        },
+        {
+          "member": "run/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b132/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b132/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 363350,
+          "sha256": "beaf0e4ce09e9b083d09b174aeaf91f5fd96c13e02d9076957b8ab11bbd444a6"
+        },
+        {
+          "member": "run/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "size_bytes": 330680,
+          "sha256": "948a203deb49f650f07af8a832026f4f82715a81d636479e289d06fc5cf7a33a"
+        },
+        {
+          "member": "run/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b023/results_hailo8/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b023/results_hailo8/task_quality_inputs/full_request.json",
+          "size_bytes": 316356,
+          "sha256": "79345d1d9944ce3af6b70f98835b6bc435bd5013559aaaadda694d1e54243d3a"
+        },
+        {
+          "member": "run/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b023/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b023/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "size_bytes": 362845,
+          "sha256": "50e5ebe950d8c968ba70a68bf6b9725720a56b9e699cc3fa108629c83e02e61a"
+        },
+        {
+          "member": "run/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b052/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b052/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "size_bytes": 362845,
+          "sha256": "d6ede625d537065bb9fe3e94493b5f77fa35fa375e12b8dba5f94548637a906e"
+        },
+        {
+          "member": "run/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b132/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b132/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "size_bytes": 362757,
+          "sha256": "8d62785c3fdcfe3091dab845a69e82c85c7af291e08c335d881f271c2b1de2ec"
+        },
+        {
+          "member": "run/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/regnet_x_1_6gf/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "size_bytes": 330672,
+          "sha256": "a41de50ce9a3b15bd1a0c24ca86262010508ad2102266e490caa744bcdbfb505"
+        },
+        {
+          "member": "run/models/resnet50/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b002/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/resnet50/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b002/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 363935,
+          "sha256": "a322496429487482d3866cb43b08f68d5224153c4d22d2d95789063da4525f80"
+        },
+        {
+          "member": "run/models/resnet50/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b002/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/resnet50/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b002/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 327513,
+          "sha256": "372e9a44fff115150f3d70a83bdd480f504e74546e6ddc58fe90e779ce033978"
+        },
+        {
+          "member": "run/models/resnet50/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b002/results_ort_tensorrt/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/resnet50/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b002/results_ort_tensorrt/task_quality_inputs/full_request.json",
+          "size_bytes": 316273,
+          "sha256": "236369de640a149bb40c3693158fc795204099effefa3b5f58b93ee16f441bc7"
+        },
+        {
+          "member": "run/models/resnet50/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b060/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/resnet50/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b060/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 413725,
+          "sha256": "4b8a5a4d13ff679ee2e540af60fccc7f6f483db2588ea244e14e888c57c12a83"
+        },
+        {
+          "member": "run/models/resnet50/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b060/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/resnet50/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b060/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 327519,
+          "sha256": "78061f331da086961d5632172b2e54817247caeb958d87d9ee3fc1f57af611c2"
+        },
+        {
+          "member": "run/models/resnet50/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b119/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/resnet50/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b119/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 363823,
+          "sha256": "1b3844584fd191e38e4706dde6ca7ef4ddae661ba7cc88236a593e0cdf089883"
+        },
+        {
+          "member": "run/models/resnet50/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b119/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/resnet50/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b119/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 327518,
+          "sha256": "0f51325e74a5fb5d14f3b66c0d5a6eb55eb620184baf8a80e5524cdfb0d3cd62"
+        },
+        {
+          "member": "run/models/resnet50/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/deepx_m1_full/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/resnet50/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/deepx_m1_full/task_quality_inputs/full_request.json",
+          "size_bytes": 326576,
+          "sha256": "62094fd1727e64e10764afe8a73d0623f02133d681b18959773a9deb501de956"
+        },
+        {
+          "member": "run/models/resnet50/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/resnet50/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "size_bytes": 330598,
+          "sha256": "af3739702252a543eaa7cd01fb757bbc27548761a39643f7052ac71b00833be5"
+        },
+        {
+          "member": "run/models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b002/results_hailo10/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b002/results_hailo10/task_quality_inputs/full_request.json",
+          "size_bytes": 316350,
+          "sha256": "c9a1dd19a6c0756c2e9e48eb052874a0a2cdc0c47c6646f339f870404f0b41d8"
+        },
+        {
+          "member": "run/models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b002/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b002/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 363091,
+          "sha256": "a637f73852ee869e5f37d227823479cbecd510f3858807502d08bfb40a83dda1"
+        },
+        {
+          "member": "run/models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b060/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b060/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 412912,
+          "sha256": "0599181ec5d81caf19fc016244af07e78f4cfe3865777960e0b750b3963a8ed4"
+        },
+        {
+          "member": "run/models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b119/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b119/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 362323,
+          "sha256": "ef09018f9e06d627941122aede835d7e2717a7051ac199adf0b041b0a566bf8f"
+        },
+        {
+          "member": "run/models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "size_bytes": 330594,
+          "sha256": "6d40ad1e0dd6804d9ccb5079ef5aac6436baa810d09ff398d61dc767c01523a1"
+        },
+        {
+          "member": "run/models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b002/results_hailo8/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b002/results_hailo8/task_quality_inputs/full_request.json",
+          "size_bytes": 316350,
+          "sha256": "80046e0cd4fea48175f49f09f4f93945d967fcb8a115d68be357a556a92bf8e1"
+        },
+        {
+          "member": "run/models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b002/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b002/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "size_bytes": 361882,
+          "sha256": "11af17ecdd07d2a6056ac199d329a537575a35efb4007e46499a4635ce152a9b"
+        },
+        {
+          "member": "run/models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b060/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b060/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "size_bytes": 411669,
+          "sha256": "6f5f521a624be2861fb287b2ff96009eca58f6c567acb2d53c76a95bc3611c70"
+        },
+        {
+          "member": "run/models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b119/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b119/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "size_bytes": 361744,
+          "sha256": "46912c3601b11337bceb9c8336056eb7b664d3ddb83f0893b11e88b65635fe1d"
+        },
+        {
+          "member": "run/models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/resnet50/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "size_bytes": 330586,
+          "sha256": "0c9c987881c6a7665a028a44f1f18b143492b25403d1eaa1da901aa614e53932"
+        },
+        {
+          "member": "run/models/yolo11l/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b062/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo11l/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b062/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 244943,
+          "sha256": "38cfd975871ff2b01f425474ba7d76f8a2f73572ee842055d8a16b6aef990acb"
+        },
+        {
+          "member": "run/models/yolo11l/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b062/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo11l/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b062/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 209573,
+          "sha256": "039ccbe144750ff50af88ddc76e541b2305b1775ef75eaa840d2bf21532c0f34"
+        },
+        {
+          "member": "run/models/yolo11l/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b062/results_ort_tensorrt/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo11l/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b062/results_ort_tensorrt/task_quality_inputs/full_request.json",
+          "size_bytes": 197121,
+          "sha256": "2d2677d5d54435db6f59704c4e94913a8406f7e545dee3f9804779da8df67eac"
+        },
+        {
+          "member": "run/models/yolo11l/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b064/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo11l/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b064/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 244905,
+          "sha256": "5bc82fe841c101ac95b03e5471e44b617c5ef224afb4c06d7c7ffb5987ef8ff8"
+        },
+        {
+          "member": "run/models/yolo11l/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b064/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo11l/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b064/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 209573,
+          "sha256": "28631d916978ecf30c90cffe57112c70a02c364aea09d9d91de2d2b933f31fd3"
+        },
+        {
+          "member": "run/models/yolo11l/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b065/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo11l/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b065/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 294850,
+          "sha256": "e969205366dcd4b89eb1ab0ef5ee9aade5bb3d3e4f47b9b534913bd29abae6ca"
+        },
+        {
+          "member": "run/models/yolo11l/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b065/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo11l/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b065/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 209573,
+          "sha256": "d4ad5431e4678159c7cbfc5863894422857b6629b160b8f9a7a05ea5f4e40e7e"
+        },
+        {
+          "member": "run/models/yolo11l/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/deepx_m1_full/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo11l/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/deepx_m1_full/task_quality_inputs/full_request.json",
+          "size_bytes": 260460,
+          "sha256": "4c6ec6a14e63fa77555d9d0beae3b2d246e5c4a21b80ef14f493a69475ff9d80"
+        },
+        {
+          "member": "run/models/yolo11l/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo11l/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "size_bytes": 212652,
+          "sha256": "3ff6605b3579bce743d07ab5e87b71e6d74c597f7619a87b37bec11e12c50ae3"
+        },
+        {
+          "member": "run/models/yolo11l/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b062/results_hailo10/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo11l/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b062/results_hailo10/task_quality_inputs/full_request.json",
+          "size_bytes": 205224,
+          "sha256": "f054a6940eb6576c9802f437b1907abb6d24a1e7a05240b59cd0060a8a5072e0"
+        },
+        {
+          "member": "run/models/yolo11l/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b062/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo11l/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b062/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 244183,
+          "sha256": "ff9de930ac732614cfb7c1f6d35b779e3984945dca89baed5e5fdada25188e1d"
+        },
+        {
+          "member": "run/models/yolo11l/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b064/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo11l/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b064/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 244129,
+          "sha256": "6b24bde459244159382d9eae2f2b63a33a67d16a0b9220036d7f5468a830a6d9"
+        },
+        {
+          "member": "run/models/yolo11l/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b065/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo11l/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b065/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 244275,
+          "sha256": "8d73a70700cf587ba68b0080b0932b72cf6f5c11750a4f2db53fd6d40ec8e117"
+        },
+        {
+          "member": "run/models/yolo11l/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo11l/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "size_bytes": 212648,
+          "sha256": "0993c6f90ffdb4f3aea6b34d88f44fdebfc82e5cd2a840df542d9cf53e785ebe"
+        },
+        {
+          "member": "run/models/yolo11l/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b062/results_hailo8/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo11l/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b062/results_hailo8/task_quality_inputs/full_request.json",
+          "size_bytes": 205770,
+          "sha256": "ca11942839d90aefa005d2d5a760c40446010d0086f7fcc1fe2204b2e6e56a6b"
+        },
+        {
+          "member": "run/models/yolo11l/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b062/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo11l/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b062/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "size_bytes": 243887,
+          "sha256": "febe65b65f4e60a0f856b4103f07a6b99f82c0f1f9612f0f95c1e0d3233949f5"
+        },
+        {
+          "member": "run/models/yolo11l/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b065/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo11l/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b065/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "size_bytes": 243971,
+          "sha256": "037ab0a2fc5c2b04685e33e5a95604ce35aaa6b6ee7072d9f582e145755a58ab"
+        },
+        {
+          "member": "run/models/yolo11l/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo11l/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "size_bytes": 212640,
+          "sha256": "d39f4b64e227d9ed5390871f1104514db267860f254462fce8794f1a8fca5158"
+        },
+        {
+          "member": "run/models/yolo26m/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b038/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26m/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b038/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 247025,
+          "sha256": "0954d03ad85a3768154d344d5ce1836149338270094aaa894c49e4f24a6274f5"
+        },
+        {
+          "member": "run/models/yolo26m/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b038/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26m/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b038/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 213752,
+          "sha256": "5f25f5ae414e00e7362803fc7006363b34f0cc3c56b3106089643449cf9466e9"
+        },
+        {
+          "member": "run/models/yolo26m/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b038/results_ort_tensorrt/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26m/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b038/results_ort_tensorrt/task_quality_inputs/full_request.json",
+          "size_bytes": 199211,
+          "sha256": "5a8a3b573865e54a510f318e3227d28c311918b973e0dcf343d6b54aee693121"
+        },
+        {
+          "member": "run/models/yolo26m/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b398/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26m/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b398/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 246943,
+          "sha256": "078ac20536fd7cccdb8602abe6a3f671343f641a902ac4007fd56b33f6768922"
+        },
+        {
+          "member": "run/models/yolo26m/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b398/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26m/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b398/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 213749,
+          "sha256": "366bc15419d4bbbe0c7f62fb3fd5a12743edf7894c342a84c73965507c88c394"
+        },
+        {
+          "member": "run/models/yolo26m/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b399/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26m/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b399/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 296789,
+          "sha256": "4a0599ba869c7276d30c920dd432c70df5576517c10c82d0bbd792d438e16e72"
+        },
+        {
+          "member": "run/models/yolo26m/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b399/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26m/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b399/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 213749,
+          "sha256": "63c1077bf4c53800ccc0a6b1a9b9051fcdac8929acef57ebea078cb07b642eaf"
+        },
+        {
+          "member": "run/models/yolo26m/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/deepx_m1_full/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26m/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/deepx_m1_full/task_quality_inputs/full_request.json",
+          "size_bytes": 291163,
+          "sha256": "d04fe79a9dad24c9b44df24f450762461439273160c367086e6b096185ae5068"
+        },
+        {
+          "member": "run/models/yolo26m/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26m/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "size_bytes": 216851,
+          "sha256": "d2856496786155f0c3bf24f2a41b954a1ab19399ea8e73bbdd62f769c413d4b4"
+        },
+        {
+          "member": "run/models/yolo26m/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b038/results_hailo10/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26m/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b038/results_hailo10/task_quality_inputs/full_request.json",
+          "size_bytes": 205402,
+          "sha256": "64ab53a7b21aa9c78351c37f8ed65f47bb569f4ba261a3770aa2cc1fd0cb1d7c"
+        },
+        {
+          "member": "run/models/yolo26m/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b038/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26m/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b038/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 246275,
+          "sha256": "bfd738ca1c02f0487232285aa28c40e5f99d30621d11491cccc350a699c7d138"
+        },
+        {
+          "member": "run/models/yolo26m/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26m/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "size_bytes": 216843,
+          "sha256": "920e6203b9f786c48f9bd79fff418989e1b7b396470a198cc76ad9a357e04e2b"
+        },
+        {
+          "member": "run/models/yolo26m/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b038/results_hailo8/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26m/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b038/results_hailo8/task_quality_inputs/full_request.json",
+          "size_bytes": 205968,
+          "sha256": "5cb685a82adf04b7fe43703ebd7536d6727faa87be6a0ddd0f1a26d307e00baf"
+        },
+        {
+          "member": "run/models/yolo26m/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b038/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26m/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b038/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "size_bytes": 245969,
+          "sha256": "4805f1a7117f1d9de78a948553cfa2bab72ff11894440f272a193ac4c4cf2486"
+        },
+        {
+          "member": "run/models/yolo26m/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26m/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "size_bytes": 216831,
+          "sha256": "fdec866a5440e78bb0eef1afc207f84841de41ca26748468bd9887646ebace43"
+        },
+        {
+          "member": "run/models/yolo26s/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b021/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26s/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b021/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 247012,
+          "sha256": "e022d33acdb406b845d91e9ab4843bf590a07ac720a7c23ce5aea3c94d1ffa0f"
+        },
+        {
+          "member": "run/models/yolo26s/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b021/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26s/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b021/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 213732,
+          "sha256": "e7c35fb1a0f25cac099904e20f3d7f91009a4c38c0461d4d128d753fe9665cd0"
+        },
+        {
+          "member": "run/models/yolo26s/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b021/results_ort_tensorrt/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26s/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b021/results_ort_tensorrt/task_quality_inputs/full_request.json",
+          "size_bytes": 199202,
+          "sha256": "65627e650ec198ea06ed7378fdda27efdead3644bdd1b0ed834ffd32e9737bdb"
+        },
+        {
+          "member": "run/models/yolo26s/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b364/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26s/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b364/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 246934,
+          "sha256": "3661d66239594cf15e184df5ea960ba9dad1c593e9bcd76977ac1167e1d96909"
+        },
+        {
+          "member": "run/models/yolo26s/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b364/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26s/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b364/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 213731,
+          "sha256": "8ded25e65862723427a24d7aaf72868c7c003390528bdac3462a3889b1951210"
+        },
+        {
+          "member": "run/models/yolo26s/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b365/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26s/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b365/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 296780,
+          "sha256": "830c85873aa9fb2b0f423ea6cf73a3e8d77394510b521ece2d75fce8c84743ee"
+        },
+        {
+          "member": "run/models/yolo26s/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b365/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26s/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b365/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 213731,
+          "sha256": "5660ec77014b9c5b872935223290757d1a5e75253c2a18c8bc856ab844b694d3"
+        },
+        {
+          "member": "run/models/yolo26s/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26s/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "size_bytes": 216833,
+          "sha256": "d8b127c724dbd5359a92f05cf6af5efd026d13e8822474acd420c2a7e217988f"
+        },
+        {
+          "member": "run/models/yolo26s/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b021/results_hailo10/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26s/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b021/results_hailo10/task_quality_inputs/full_request.json",
+          "size_bytes": 205444,
+          "sha256": "d79ea710f28358076f3446e2806f24f35bb428a931f5be1f3f82b89bfc300bf8"
+        },
+        {
+          "member": "run/models/yolo26s/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b021/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26s/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b021/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 246245,
+          "sha256": "a6c98b6d089241ce18dd9c8a95781da2facaa152e58b648282f214b842a673a7"
+        },
+        {
+          "member": "run/models/yolo26s/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26s/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "size_bytes": 216825,
+          "sha256": "a316134b70b82700423bae70c06d23fd590e03bd6d1d7e6d7075de3fdd9fe0fa"
+        },
+        {
+          "member": "run/models/yolo26s/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b021/results_hailo8/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26s/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b021/results_hailo8/task_quality_inputs/full_request.json",
+          "size_bytes": 205804,
+          "sha256": "e2fff0d586234cb8ab1fd5bca41dcc23a38c91936cbf47611ff9610793ef850d"
+        },
+        {
+          "member": "run/models/yolo26s/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b021/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26s/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b021/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "size_bytes": 245943,
+          "sha256": "cded4c6ada53f7538c9c6c5a512b2ec04b117fa3ad2b9d87f56dc9f85447a6c9"
+        },
+        {
+          "member": "run/models/yolo26s/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolo26s/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "size_bytes": 216813,
+          "sha256": "a93b97c186e00b55444d84cb1a381e1ad37ab5b278a33c48e0b6777a72a84950"
+        },
+        {
+          "member": "run/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b009/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b009/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 246712,
+          "sha256": "c0e9780205e47bd7af3f682f9d0339ee2505841a7d535f16cdffeb95bdf6c469"
+        },
+        {
+          "member": "run/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b009/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b009/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 210380,
+          "sha256": "7eb85ea95c439307fe07af3a83d55398ccebf54f065d340ead2ae213879b0176"
+        },
+        {
+          "member": "run/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b009/results_ort_tensorrt/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b009/results_ort_tensorrt/task_quality_inputs/full_request.json",
+          "size_bytes": 197513,
+          "sha256": "5379ea98f6d844de3a035834ae8084c99515601c6aecdd6bd6879c6ef2a4a78e"
+        },
+        {
+          "member": "run/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b011/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b011/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 296711,
+          "sha256": "7aa165d7184e0382ba31f59a54413aebd9e137d5a663f6a7a26260425964399b"
+        },
+        {
+          "member": "run/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b011/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b011/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 210381,
+          "sha256": "58d54886dc025ea32044876cb4b9eb0e8f8d50870f23093869b3fc0a8405b68d"
+        },
+        {
+          "member": "run/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b044/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b044/results_deepx_m1_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 246610,
+          "sha256": "869e0f821732a8f11a06fd661e4c3777af42e49f0ba3ecbcce21f926357093c3"
+        },
+        {
+          "member": "run/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b044/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/b044/results_ort_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 210383,
+          "sha256": "69feda147d57e9180daa7df8c366c472d57544ae752ad899449f66bca1e355ad"
+        },
+        {
+          "member": "run/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/deepx_m1_full/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/deepx_m1_full/task_quality_inputs/full_request.json",
+          "size_bytes": 288155,
+          "sha256": "2a5eb2a72a06efa6040a1e0e5c99cd1bdaec141be5c5f4bbf7424c1ba33193ed"
+        },
+        {
+          "member": "run/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_deepx_m1_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "size_bytes": 213346,
+          "sha256": "dbc4ab505851743f52b69901fcff203231cc1bbffdc1bc33b42858b5529da775"
+        },
+        {
+          "member": "run/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b009/results_hailo10/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b009/results_hailo10/task_quality_inputs/full_request.json",
+          "size_bytes": 205952,
+          "sha256": "c8169ca05a92274d6d93d24591e96a015b6460ce23d462762741d72d85bc16d7"
+        },
+        {
+          "member": "run/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b009/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b009/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 245918,
+          "sha256": "5a88eb0467359ae617178f84232fbb1ebe4fa5f4923460a6502a83ccab724582"
+        },
+        {
+          "member": "run/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b011/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b011/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 295904,
+          "sha256": "76fbad0718abbac14fad1be3a1c8334f0981d198301c0c47fa80bc4f02884e09"
+        },
+        {
+          "member": "run/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b044/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/b044/results_hailo10_to_tensorrt/task_quality_inputs/composed_request.json",
+          "size_bytes": 245787,
+          "sha256": "64c547861e54345b46f569762ba5f76a5bcfe313ea4e390d0766396a699df48e"
+        },
+        {
+          "member": "run/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo10_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "size_bytes": 213342,
+          "sha256": "b1368794ed6cc44719e7279e97a6b54acd251542f178ae1e9b111724f67cd44f"
+        },
+        {
+          "member": "run/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b009/results_hailo8/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b009/results_hailo8/task_quality_inputs/full_request.json",
+          "size_bytes": 206178,
+          "sha256": "453eff75946e6bb7ac762e596d0f70cfb2dbbe32ad793ca1fba12e120ecb46cb"
+        },
+        {
+          "member": "run/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b009/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b009/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "size_bytes": 245622,
+          "sha256": "38593a2ae5f0e19bc3ea8c1e1a1c5c9d03c0208b1519c5278046fb9e6d838876"
+        },
+        {
+          "member": "run/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b011/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b011/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "size_bytes": 295526,
+          "sha256": "2919815768742433a5790b6fc802b649b1a1c6f9c09533a99d72cdd79f66218c"
+        },
+        {
+          "member": "run/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b044/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/b044/results_hailo8_to_trt/task_quality_inputs/composed_request.json",
+          "size_bytes": 245483,
+          "sha256": "daa53d52aed9b3fffb72866134f6101318fd884bb842e2c122219a7c4665d166"
+        },
+        {
+          "member": "run/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/models/yolov7_paper/benchmark_results/quality_inputs/orin_nx_hailo8_01/results/results_native_full_tensorrt/task_quality_inputs/full_request.json",
+          "size_bytes": 213334,
+          "sha256": "d5aac964620203ed5482af05c8bb577ca9eb4c2e7ddace52d8ee16c68b3454a0"
+        },
+        {
+          "member": "collection_manifest.json",
+          "destination": "results/evaluation/completsetdev_20260911_213508/quality_snapshot/collection_manifest.json",
+          "size_bytes": 34314,
+          "sha256": "e9666e90aa6de8a344bf0a5dec78dfd2117d4e70055454362d1628b4f67ece37"
+        }
+      ]
+    }
+  ]
+}

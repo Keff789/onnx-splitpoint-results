@@ -1,0 +1,31 @@
+{
+  "model": "mobilenet_v3_large",
+  "setup_id": "orin_nx_hailo8_01",
+  "remote_host": "192.168.0.104",
+  "remote_python": "/home/nx/hailo_py/bin/python",
+  "fixed_image_ids": [
+    "n02788148/ILSVRC2012_val_00049054.JPEG",
+    "n02098413/ILSVRC2012_val_00031453.JPEG",
+    "n02086910/ILSVRC2012_val_00040564.JPEG",
+    "n02102177/ILSVRC2012_val_00006947.JPEG",
+    "n01817953/ILSVRC2012_val_00002791.JPEG",
+    "n03297495/ILSVRC2012_val_00020583.JPEG",
+    "n01818515/ILSVRC2012_val_00036879.JPEG",
+    "n04326547/ILSVRC2012_val_00013931.JPEG",
+    "n04086273/ILSVRC2012_val_00015260.JPEG",
+    "n04251144/ILSVRC2012_val_00010908.JPEG",
+    "n04597913/ILSVRC2012_val_00041290.JPEG",
+    "n04192698/ILSVRC2012_val_00026513.JPEG",
+    "n01664065/ILSVRC2012_val_00022469.JPEG",
+    "n04372370/ILSVRC2012_val_00035646.JPEG",
+    "n03065424/ILSVRC2012_val_00020012.JPEG",
+    "n03459775/ILSVRC2012_val_00041657.JPEG"
+  ],
+  "model_build_status": "pass",
+  "gpu_execution_status": "pass",
+  "runtime_status": "not_run",
+  "quality_status": "not_evaluated",
+  "claim_eligible": false,
+  "compiler_invoked": false,
+  "energy_invoked": false
+}

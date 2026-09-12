@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/bin/python",
+    "-I",
+    "-B",
+    "/home/kmika/Downloads/Hailo8_HAR_und_Git_R1/har_worker.py",
+    "--request",
+    "/home/kmika/Downloads/hailo8_har_git_20260912T171411Z_x0j2t2o1/har_comparison/comparison_request.json",
+    "--stage",
+    "quantized",
+    "--out",
+    "/home/kmika/Downloads/hailo8_har_git_20260912T171411Z_x0j2t2o1/har_comparison/quantized"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "cancelled": false,
+  "elapsed_s": 31.29604819501401,
+  "owned_survivors": [],
+  "process_cleanup_complete": true
+}

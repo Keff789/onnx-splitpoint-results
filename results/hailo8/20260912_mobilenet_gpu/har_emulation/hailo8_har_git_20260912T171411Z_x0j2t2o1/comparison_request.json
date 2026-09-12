@@ -1,0 +1,728 @@
+{
+  "schema": "hailo8-har-comparison-r1",
+  "model": "mobilenet_v3_large",
+  "family": "hailo8",
+  "net_name": "mobilenet_v3_large_full",
+  "sdk_version": "3.33.1",
+  "venv_python": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/bin/python",
+  "image_ids": [
+    "n02788148/ILSVRC2012_val_00049054.JPEG",
+    "n02098413/ILSVRC2012_val_00031453.JPEG",
+    "n02086910/ILSVRC2012_val_00040564.JPEG",
+    "n02102177/ILSVRC2012_val_00006947.JPEG",
+    "n01817953/ILSVRC2012_val_00002791.JPEG",
+    "n03297495/ILSVRC2012_val_00020583.JPEG",
+    "n01818515/ILSVRC2012_val_00036879.JPEG",
+    "n04326547/ILSVRC2012_val_00013931.JPEG",
+    "n04086273/ILSVRC2012_val_00015260.JPEG",
+    "n04251144/ILSVRC2012_val_00010908.JPEG",
+    "n04597913/ILSVRC2012_val_00041290.JPEG",
+    "n04192698/ILSVRC2012_val_00026513.JPEG",
+    "n01664065/ILSVRC2012_val_00022469.JPEG",
+    "n04372370/ILSVRC2012_val_00035646.JPEG",
+    "n03065424/ILSVRC2012_val_00020012.JPEG",
+    "n03459775/ILSVRC2012_val_00041657.JPEG"
+  ],
+  "labels": [
+    421,
+    204,
+    157,
+    218,
+    87,
+    550,
+    88,
+    825,
+    763,
+    801,
+    910,
+    787,
+    33,
+    844,
+    506,
+    581
+  ],
+  "count": 16,
+  "feed_semantics": "recorded_actual_FLOAT32_VStreams_NHWC_already_imagenet_normalized_NO_new_normalization",
+  "feed": {
+    "path": "/home/kmika/Downloads/hailo8_har_git_20260912T171411Z_x0j2t2o1/har_comparison/feed.npy",
+    "size_bytes": 9633920,
+    "sha256": "c0f21fa83421f4aa58f9e2d5837f7711d45609d506436e36212453e771626209"
+  },
+  "baseline_arrays": {
+    "cpu_hef": {
+      "path": "/home/kmika/Downloads/hailo8_har_git_20260912T171411Z_x0j2t2o1/har_comparison/cpu_hef.npy",
+      "size_bytes": 64128,
+      "sha256": "84728b1e40d90786b104dd4012fb5bb6c2bb8cb9750d3d2a4ac8725e522b00d4"
+    },
+    "gpu_hef": {
+      "path": "/home/kmika/Downloads/hailo8_har_git_20260912T171411Z_x0j2t2o1/har_comparison/gpu_hef.npy",
+      "size_bytes": 64128,
+      "sha256": "4082154692934165aca057c5d96c19b3685b2ebf1198f329fa7fe2ed05ab2c08"
+    },
+    "source_float": {
+      "path": "/home/kmika/Downloads/hailo8_har_git_20260912T171411Z_x0j2t2o1/har_comparison/source_float.npy",
+      "size_bytes": 64128,
+      "sha256": "792b1cade5f3e5c53d04306a5ac8117dbc46c487c2cef82439b58b6ad0cbaa9f"
+    },
+    "build_float": {
+      "path": "/home/kmika/Downloads/hailo8_har_git_20260912T171411Z_x0j2t2o1/har_comparison/build_float.npy",
+      "size_bytes": 64128,
+      "sha256": "792b1cade5f3e5c53d04306a5ac8117dbc46c487c2cef82439b58b6ad0cbaa9f"
+    }
+  },
+  "baseline_metrics": {
+    "cpu_hef": {
+      "shape": [
+        16,
+        1000
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "top1": [
+        421,
+        155,
+        151,
+        217,
+        87,
+        786,
+        88,
+        82,
+        763,
+        801,
+        112,
+        787,
+        33,
+        846,
+        506,
+        468
+      ],
+      "top5": [
+        [
+          421,
+          506,
+          877,
+          576,
+          556
+        ],
+        [
+          155,
+          204,
+          153,
+          200,
+          154
+        ],
+        [
+          151,
+          219,
+          156,
+          207,
+          154
+        ],
+        [
+          217,
+          218,
+          220,
+          219,
+          215
+        ],
+        [
+          87,
+          88,
+          406,
+          892,
+          865
+        ],
+        [
+          786,
+          872,
+          550,
+          708,
+          746
+        ],
+        [
+          88,
+          775,
+          863,
+          552,
+          90
+        ],
+        [
+          82,
+          825,
+          716,
+          912,
+          81
+        ],
+        [
+          763,
+          764,
+          740,
+          597,
+          413
+        ],
+        [
+          801,
+          983,
+          65,
+          433,
+          6
+        ],
+        [
+          112,
+          910,
+          459,
+          738,
+          618
+        ],
+        [
+          787,
+          455,
+          919,
+          524,
+          643
+        ],
+        [
+          33,
+          34,
+          36,
+          37,
+          35
+        ],
+        [
+          846,
+          619,
+          844,
+          480,
+          648
+        ],
+        [
+          506,
+          835,
+          545,
+          749,
+          549
+        ],
+        [
+          468,
+          656,
+          654,
+          436,
+          407
+        ]
+      ],
+      "top1_correct": 8,
+      "top5_correct": 14,
+      "count": 16
+    },
+    "gpu_hef": {
+      "shape": [
+        16,
+        1000
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "top1": [
+        421,
+        204,
+        151,
+        217,
+        87,
+        550,
+        88,
+        912,
+        763,
+        801,
+        788,
+        787,
+        33,
+        619,
+        506,
+        656
+      ],
+      "top5": [
+        [
+          421,
+          506,
+          877,
+          743,
+          576
+        ],
+        [
+          204,
+          153,
+          155,
+          200,
+          154
+        ],
+        [
+          151,
+          154,
+          219,
+          158,
+          157
+        ],
+        [
+          217,
+          218,
+          220,
+          219,
+          216
+        ],
+        [
+          87,
+          88,
+          406,
+          865,
+          600
+        ],
+        [
+          550,
+          708,
+          872,
+          786,
+          613
+        ],
+        [
+          88,
+          552,
+          775,
+          90,
+          863
+        ],
+        [
+          912,
+          82,
+          716,
+          825,
+          272
+        ],
+        [
+          763,
+          597,
+          764,
+          413,
+          740
+        ],
+        [
+          801,
+          983,
+          65,
+          433,
+          973
+        ],
+        [
+          788,
+          910,
+          459,
+          738,
+          755
+        ],
+        [
+          787,
+          455,
+          919,
+          524,
+          637
+        ],
+        [
+          33,
+          34,
+          36,
+          37,
+          35
+        ],
+        [
+          619,
+          846,
+          844,
+          894,
+          999
+        ],
+        [
+          506,
+          646,
+          545,
+          749,
+          821
+        ],
+        [
+          656,
+          436,
+          468,
+          654,
+          717
+        ]
+      ],
+      "top1_correct": 10,
+      "top5_correct": 15,
+      "count": 16
+    },
+    "source_float": {
+      "shape": [
+        16,
+        1000
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "top1": [
+        421,
+        204,
+        151,
+        218,
+        87,
+        550,
+        88,
+        825,
+        763,
+        801,
+        910,
+        787,
+        33,
+        846,
+        506,
+        656
+      ],
+      "top5": [
+        [
+          421,
+          506,
+          556,
+          520,
+          743
+        ],
+        [
+          204,
+          155,
+          153,
+          200,
+          154
+        ],
+        [
+          151,
+          157,
+          154,
+          158,
+          219
+        ],
+        [
+          218,
+          217,
+          219,
+          220,
+          216
+        ],
+        [
+          87,
+          88,
+          89,
+          600,
+          823
+        ],
+        [
+          550,
+          473,
+          786,
+          708,
+          856
+        ],
+        [
+          88,
+          92,
+          90,
+          87,
+          95
+        ],
+        [
+          825,
+          212,
+          172,
+          251,
+          708
+        ],
+        [
+          763,
+          764,
+          413,
+          597,
+          740
+        ],
+        [
+          801,
+          983,
+          329,
+          973,
+          65
+        ],
+        [
+          910,
+          618,
+          788,
+          693,
+          792
+        ],
+        [
+          787,
+          524,
+          490,
+          461,
+          439
+        ],
+        [
+          33,
+          34,
+          36,
+          35,
+          37
+        ],
+        [
+          846,
+          619,
+          519,
+          771,
+          707
+        ],
+        [
+          506,
+          755,
+          807,
+          694,
+          545
+        ],
+        [
+          656,
+          821,
+          864,
+          436,
+          654
+        ]
+      ],
+      "top1_correct": 13,
+      "top5_correct": 14,
+      "count": 16
+    },
+    "build_float": {
+      "shape": [
+        16,
+        1000
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "top1": [
+        421,
+        204,
+        151,
+        218,
+        87,
+        550,
+        88,
+        825,
+        763,
+        801,
+        910,
+        787,
+        33,
+        846,
+        506,
+        656
+      ],
+      "top5": [
+        [
+          421,
+          506,
+          556,
+          520,
+          743
+        ],
+        [
+          204,
+          155,
+          153,
+          200,
+          154
+        ],
+        [
+          151,
+          157,
+          154,
+          158,
+          219
+        ],
+        [
+          218,
+          217,
+          219,
+          220,
+          216
+        ],
+        [
+          87,
+          88,
+          89,
+          600,
+          823
+        ],
+        [
+          550,
+          473,
+          786,
+          708,
+          856
+        ],
+        [
+          88,
+          92,
+          90,
+          87,
+          95
+        ],
+        [
+          825,
+          212,
+          172,
+          251,
+          708
+        ],
+        [
+          763,
+          764,
+          413,
+          597,
+          740
+        ],
+        [
+          801,
+          983,
+          329,
+          973,
+          65
+        ],
+        [
+          910,
+          618,
+          788,
+          693,
+          792
+        ],
+        [
+          787,
+          524,
+          490,
+          461,
+          439
+        ],
+        [
+          33,
+          34,
+          36,
+          35,
+          37
+        ],
+        [
+          846,
+          619,
+          519,
+          771,
+          707
+        ],
+        [
+          506,
+          755,
+          807,
+          694,
+          545
+        ],
+        [
+          656,
+          821,
+          864,
+          436,
+          654
+        ]
+      ],
+      "top1_correct": 13,
+      "top5_correct": 14,
+      "count": 16
+    }
+  },
+  "hars": {
+    "parsed_native": {
+      "path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/parsed.har",
+      "size_bytes": 22487040,
+      "sha256": "2293915adb1a8403b152053431bef99c55ccfee12953cd7b2c53bc2ac6c0e5b3"
+    },
+    "quantized": {
+      "path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/quantized.har",
+      "size_bytes": 130723840,
+      "sha256": "8090345630e694cc37fd96a5aba0c77e6e0e81748ac7270f7799bac139394e6e"
+    }
+  },
+  "input_files": [
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/completsetdev_20260911_213508/models/mobilenet_v3_large/benchmark_set/legacy_suite/hailo/hailo8/full/.hailo-generations/f59b7d3fe02043d98305a17938551ea7/compiled.hef",
+      "size_bytes": 5660518,
+      "sha256": "8d1cb584e05307a641d41eab4dd51c1d1c7824e99a97469935f88089cf756f85"
+    },
+    {
+      "path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/.hailo-generations/8cfd96e5161b492b810ece0d26357d4f/compiled.hef",
+      "size_bytes": 5660588,
+      "sha256": "bdfdf620ea557fff667b22343678db19e00d4b833afa2bf56de7161c766d64b0"
+    },
+    {
+      "path": "/home/kmika/Models/mobilenet_v3_large.onnx",
+      "size_bytes": 22243154,
+      "sha256": "2f5e79b1e4280251e7b6eefe1d6161c4831e2fc27858e1e9fe2fac697f44489e"
+    },
+    {
+      "path": "/home/kmika/Models/EvaluationRuns/completsetdev_20260911_213508/models/mobilenet_v3_large/benchmark_set/legacy_suite/hailo/hailo8/full/mobilenet_v3_large_hailo_fixed.onnx",
+      "size_bytes": 22244580,
+      "sha256": "511b13a4882c2cb4f1b904cb831b86d1e441c3f11c4eb87fec958b5529bcf438"
+    },
+    {
+      "path": "/home/kmika/Downloads/hailo8_mobilenet_runtime_8FehkBqO/runtime/results/runtime_arrays.npz",
+      "size_bytes": 38664794,
+      "sha256": "f0357e41611c8a2e4a23dde1e8387ac999cdc87a3458e5aad93b5c83475853a6"
+    },
+    {
+      "path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/parsed.har",
+      "size_bytes": 22487040,
+      "sha256": "2293915adb1a8403b152053431bef99c55ccfee12953cd7b2c53bc2ac6c0e5b3"
+    },
+    {
+      "path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/quantized.har",
+      "size_bytes": 130723840,
+      "sha256": "8090345630e694cc37fd96a5aba0c77e6e0e81748ac7270f7799bac139394e6e"
+    }
+  ],
+  "artifact_identity": {
+    "cpu_hef": {
+      "path": "/home/kmika/Models/EvaluationRuns/completsetdev_20260911_213508/models/mobilenet_v3_large/benchmark_set/legacy_suite/hailo/hailo8/full/.hailo-generations/f59b7d3fe02043d98305a17938551ea7/compiled.hef",
+      "sha256": "8d1cb584e05307a641d41eab4dd51c1d1c7824e99a97469935f88089cf756f85",
+      "size_bytes": 5660518
+    },
+    "gpu_hef": {
+      "path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/.hailo-generations/8cfd96e5161b492b810ece0d26357d4f/compiled.hef",
+      "sha256": "bdfdf620ea557fff667b22343678db19e00d4b833afa2bf56de7161c766d64b0",
+      "size_bytes": 5660588
+    },
+    "source_onnx": {
+      "path": "/home/kmika/Models/mobilenet_v3_large.onnx",
+      "sha256": "2f5e79b1e4280251e7b6eefe1d6161c4831e2fc27858e1e9fe2fac697f44489e",
+      "size_bytes": 22243154
+    },
+    "compiler_onnx": {
+      "path": "/home/kmika/Models/EvaluationRuns/completsetdev_20260911_213508/models/mobilenet_v3_large/benchmark_set/legacy_suite/hailo/hailo8/full/mobilenet_v3_large_hailo_fixed.onnx",
+      "sha256": "511b13a4882c2cb4f1b904cb831b86d1e441c3f11c4eb87fec958b5529bcf438",
+      "size_bytes": 22244580
+    }
+  },
+  "har_binding": "original_build_report_paths; HAR fingerprints recorded NOW, not retrospectively attested at build time",
+  "runtime_array_identity": {
+    "path": "/home/kmika/Downloads/hailo8_mobilenet_runtime_8FehkBqO/runtime/results/runtime_arrays.npz",
+    "sha256": "f0357e41611c8a2e4a23dde1e8387ac999cdc87a3458e5aad93b5c83475853a6",
+    "size_bytes": 38664794
+  },
+  "images_usage": "opened_development_diagnostic_not_holdout",
+  "hef_build_invoked": false,
+  "hardware_inference_invoked": false,
+  "model_acceptance": "NOT_EVALUATED"
+}

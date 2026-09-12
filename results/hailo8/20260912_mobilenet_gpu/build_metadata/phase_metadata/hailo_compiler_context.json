@@ -1,0 +1,53 @@
+{
+  "family": "hailo8",
+  "device": "gpu",
+  "source": "job_override",
+  "gpu_selector": "GPU-b823007b-546c-4cda-533d-fc24c61f01e6",
+  "ignored_legacy": [],
+  "legacy_inputs": [],
+  "conflicts": [],
+  "inherited_cuda_mask_source": "unset",
+  "schema_version": 1,
+  "venv_python": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/bin/python",
+  "venv_root": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8",
+  "compiler_component_view": true,
+  "full_cuda_toolkit": false,
+  "dependency_manifest": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/overlay_manifest.json",
+  "gpu_index": "0",
+  "gpu_uuid": "GPU-b823007b-546c-4cda-533d-fc24c61f01e6",
+  "compute_capability": "6.1",
+  "target_arch": "sm_61",
+  "nvidia_smi": "/usr/bin/nvidia-smi",
+  "ptxas_version": "ptxas: NVIDIA (R) Ptx optimizing assembler\nCopyright (c) 2005-2024 NVIDIA Corporation\nBuilt on Thu_Jun__6_02:14:54_PDT_2024\nCuda compilation tools, release 12.5, V12.5.82\nBuild cuda_12.5.r12.5/compiler.34385749_0",
+  "target_probe": {
+    "kind": "preflight_target",
+    "binary": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/bin/ptxas",
+    "target_arch": "sm_61",
+    "source_ptx": ".version 4.0\n.target sm_50\n.address_size 64\n.visible .entry splitpoint_target_probe() { ret; }\n",
+    "returncode": 0,
+    "output_size": 2120,
+    "stdout": "",
+    "stderr": ""
+  },
+  "ptxas_path": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/bin/ptxas",
+  "libdevice_path": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/nvvm/libdevice/libdevice.10.bc",
+  "component_source": "selected_hailo8_dependency_overlay",
+  "view_root": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/onnx_hailo_cuda_view_nctmi_zf",
+  "ptxas_trace_path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/onnx_hailo_cuda_view_nctmi_zf_ptxas_invocations.jsonl",
+  "available_components": [
+    "ptxas",
+    "libdevice.10.bc"
+  ],
+  "unprovided_compiler_components": [
+    "nvcc",
+    "nvlink",
+    "fatbinary",
+    "cicc",
+    "cudafe++"
+  ],
+  "thread_settings": {
+    "TF_NUM_INTEROP_THREADS": "2",
+    "TF_NUM_INTRAOP_THREADS": "2",
+    "TF_FORCE_GPU_ALLOW_GROWTH": "true"
+  }
+}

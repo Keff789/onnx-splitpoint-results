@@ -1,0 +1,138 @@
+{
+  "cancelled": false,
+  "canonical_record_endpoint": "decoded_xyxy_score_class_detections",
+  "case_id": "b021",
+  "cpu_threads": 4,
+  "created_at": "2026-09-12T00:32:36+02:00",
+  "dataset_manifest_sha256": "6e6a01aff3f354ef81379ac56359c89080733c338ac2e42b87c039b899d33dd2",
+  "decoder_sha256": "a402b423de08a651395cf034927bb871aacbcca65b18c6fef1c5ea159f3eb279",
+  "duration_s": 848.928918,
+  "errors": [],
+  "execution_location": "central_management",
+  "image_ids_sha256": "9eced8e839495a204fb99096d0cc923f5c41e6bce8ba7155b70999686a303768",
+  "include_in_latency_fps_energy": false,
+  "include_in_pareto": false,
+  "include_in_ranking": false,
+  "model_id": "yolo26s",
+  "model_sha256": "4b8ff9dce56ca7058c53e1a08feca69a59f8504a8f2ef68c85c065ae837ce04a",
+  "nms_sha256": "4aea0118a544168d888a903a80413401f62c6617a45c28e027c930d9940c588a",
+  "preprocessing_sha256": "411898b92628e2a769a2b8ea7aa35faff35373cfacb863c3ab34b243c105b70e",
+  "provider": "onnxruntime_cpu",
+  "quality_contract": {
+    "canonical_coordinate_space": "original_image_xyxy_pixels",
+    "canonical_record_endpoint": "decoded_xyxy_score_class_detections",
+    "contract_scope": "canonical_quality_record_semantics",
+    "dataset": {
+      "coordinate_space": "original_image_xyxy_pixels",
+      "ground_truth_sha256": "30d8ece02b38ee5be1dbd65d46356134134f24bf6f870122c1ef97f7ab92cb50",
+      "image_count": 5000,
+      "image_ids_sha256": "9eced8e839495a204fb99096d0cc923f5c41e6bce8ba7155b70999686a303768",
+      "manifest_name": "manifest.json",
+      "manifest_sha256": "6e6a01aff3f354ef81379ac56359c89080733c338ac2e42b87c039b899d33dd2"
+    },
+    "decoder": {
+      "identity": {
+        "adapter_id": "vendored_yolo_harness_with_local_fallback_v1",
+        "adapter_location": "quality_record_host_postprocessor",
+        "canonical_record_endpoint": "decoded_xyxy_score_class_detections",
+        "confidence_threshold": 0.25,
+        "implementation_runner_sha256": "61be38b5c35564467ca7be9aa445de7910e2710e56919ef53bc885fc8b5c6e5c",
+        "labels_sha256": "a2bb9c8218affdef450cc85951e6a5abc5e4d956cd37b1be3d04840ae0120c8e",
+        "schema": "onnx-splitpoint/detection-decoder-contract",
+        "schema_version": 1,
+        "source_endpoint_has_integrated_nms": null,
+        "source_endpoint_semantics": "bn6_detections",
+        "source_output_format": "bn6_detections",
+        "source_output_names": [
+          "output0"
+        ]
+      },
+      "sha256": "a402b423de08a651395cf034927bb871aacbcca65b18c6fef1c5ea159f3eb279"
+    },
+    "model": {
+      "artifact_name": "yolo26s.onnx",
+      "sha256": "4b8ff9dce56ca7058c53e1a08feca69a59f8504a8f2ef68c85c065ae837ce04a"
+    },
+    "nms": {
+      "identity": {
+        "adapter_id": "vendored_yolo_harness_with_local_fallback_v1",
+        "detr_or_bn6_confidence_threshold": 0.25,
+        "detr_or_bn6_iou_threshold": 0.45,
+        "detr_or_bn6_max_detections": 300,
+        "implementation_runner_sha256": "61be38b5c35564467ca7be9aa445de7910e2710e56919ef53bc885fc8b5c6e5c",
+        "iou_threshold": 0.45,
+        "max_detections": 300,
+        "schema": "onnx-splitpoint/detection-nms-contract",
+        "schema_version": 1
+      },
+      "sha256": "4aea0118a544168d888a903a80413401f62c6617a45c28e027c930d9940c588a"
+    },
+    "preprocessing": {
+      "identity": {
+        "color_space": "RGB",
+        "contract_scope": "prepared_rgb_uint8_semantics",
+        "image_scale": "norm",
+        "input_domain": "uint8_0_255",
+        "letterbox": true,
+        "letterbox_pad_value": 114,
+        "pad_value": 114,
+        "placement": "floor_top_left_remainder_bottom_right",
+        "preprocess_mode": "letterbox",
+        "resize_interpolation": "bilinear",
+        "resize_rounding": "python_round_ties_to_even",
+        "schema": "onnx-splitpoint/image-preprocessing-contract",
+        "schema_version": 2,
+        "spatial_transform": "centered_letterbox",
+        "target_hw": [
+          640,
+          640
+        ],
+        "task": "detection"
+      },
+      "runtime_input_encoding": {
+        "image_scale": "norm",
+        "input_dtype": "float32",
+        "schema": "onnx-splitpoint/model-input-encoding-contract",
+        "schema_version": 1
+      },
+      "runtime_input_encoding_sha256": "4ceacc87aae48c1f60bb631b6d636603f1b5dabe4b84b6b812d58ba74ebde43e",
+      "sha256": "411898b92628e2a769a2b8ea7aa35faff35373cfacb863c3ab34b243c105b70e"
+    },
+    "quality_contract_sha256": "34517d71fe047944be09b87a15daa111e93db52b0c57c0fe8f9516ff764ec5ab",
+    "quality_record_endpoint": {
+      "identity": {
+        "canonical_record_endpoint": "decoded_xyxy_score_class_detections",
+        "decoder_contract_sha256": "a402b423de08a651395cf034927bb871aacbcca65b18c6fef1c5ea159f3eb279",
+        "implementation_runner_sha256": "61be38b5c35564467ca7be9aa445de7910e2710e56919ef53bc885fc8b5c6e5c",
+        "nms_contract_sha256": "4aea0118a544168d888a903a80413401f62c6617a45c28e027c930d9940c588a",
+        "schema": "onnx-splitpoint/detection-quality-record-endpoint-contract",
+        "schema_version": 1,
+        "vendored_endpoint_attestor_sha256": "45416300d9f26eaed4dea37cd9d3bbc518883028aae176e5148cadcee5da269e"
+      },
+      "sha256": "e4149a5c5f3841decc4148eefdced0b6632d472a58a6589c51a04e022d28c133"
+    },
+    "quality_record_endpoint_contract_sha256": "e4149a5c5f3841decc4148eefdced0b6632d472a58a6589c51a04e022d28c133",
+    "schema": "onnx-splitpoint/central-detection-quality-contract",
+    "schema_version": 1,
+    "source_endpoint_is_raw": false,
+    "source_endpoint_role": "canonical_reference_model_output",
+    "task": "detection"
+  },
+  "quality_contract_sha256": "34517d71fe047944be09b87a15daa111e93db52b0c57c0fe8f9516ff764ec5ab",
+  "record_count": 5000,
+  "reference_immutable": true,
+  "reference_path": "/home/kmika/Models/EvaluationRuns/completsetdev_20260911_213508/quality_management/references/yolo26s/by_source_contract/1927cb577e30a0278f7793247014f3b5ebc09667db3bbdcce670692351ee874f/canonical_cpu_reference.json",
+  "reference_sha256": "sha256:e531b34baae9db9cd79a5f90dad3290996b88c9220d5a8f66db70f985fbc169c",
+  "reference_size_bytes": 8299341,
+  "reference_storage": "immutable_source_contract",
+  "return_code": 0,
+  "schema": "onnx-splitpoint/management-cpu-reference-job",
+  "schema_version": 1,
+  "semantic_reference_only": true,
+  "source_contract_sha256": "sha256:1927cb577e30a0278f7793247014f3b5ebc09667db3bbdcce670692351ee874f",
+  "source_endpoint_is_raw": false,
+  "status": "completed",
+  "stdout_path": "/home/kmika/Models/EvaluationRuns/completsetdev_20260911_213508/quality_management/references/yolo26s/management_cpu_reference_stdout.txt",
+  "task": "detection",
+  "timed_out": false
+}

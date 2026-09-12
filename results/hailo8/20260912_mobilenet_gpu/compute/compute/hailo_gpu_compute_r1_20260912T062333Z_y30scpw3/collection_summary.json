@@ -1,0 +1,33 @@
+{
+  "schema": "hailo-gpu-smoke-collection-r1",
+  "status": "compute_pass",
+  "diagnostic_only": true,
+  "model_compiler_invoked": false,
+  "model_acceptance": "NOT_EVALUATED_BY_DIAGNOSTIC",
+  "tool_configuration_modified": false,
+  "package_installations": false,
+  "sequential": true,
+  "families": [
+    {
+      "family": "hailo8",
+      "venv": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8",
+      "status": "compute_pass",
+      "process": {
+        "returncode": 0,
+        "elapsed_s": 9.227,
+        "timed_out": false,
+        "reason": "normal",
+        "cleanup_complete": true,
+        "remaining_group_pids": [],
+        "unexpected_live_processes_after_worker_exit": false
+      },
+      "worker_status": "compute_pass",
+      "error": "",
+      "failed_checks": []
+    }
+  ],
+  "expected_families": [
+    "hailo8"
+  ],
+  "scope": "SDK import and synthetic TensorFlow GPU/XLA computations; NOT a HEF build"
+}

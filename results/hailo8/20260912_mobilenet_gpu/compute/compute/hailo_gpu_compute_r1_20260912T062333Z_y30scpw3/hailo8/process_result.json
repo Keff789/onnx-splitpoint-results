@@ -1,0 +1,9 @@
+{
+  "returncode": 0,
+  "elapsed_s": 9.227,
+  "timed_out": false,
+  "reason": "normal",
+  "cleanup_complete": true,
+  "remaining_group_pids": [],
+  "unexpected_live_processes_after_worker_exit": false
+}

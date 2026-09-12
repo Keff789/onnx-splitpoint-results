@@ -1,0 +1,3146 @@
+{
+  "status": "collected",
+  "samples": [
+    {
+      "pid": 2887,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180374.470808571,
+      "interval_start_monotonic_s": 180373.370808571,
+      "owned_compiler_descendant": false,
+      "process_identity": null
+    },
+    {
+      "pid": 2887,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180375.506156517,
+      "interval_start_monotonic_s": 180374.40615651698,
+      "owned_compiler_descendant": false,
+      "process_identity": null
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180393.137837994,
+      "interval_start_monotonic_s": 180392.037837994,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180394.18170104,
+      "interval_start_monotonic_s": 180393.08170104,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180395.215726729,
+      "interval_start_monotonic_s": 180394.11572672898,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180396.251250825,
+      "interval_start_monotonic_s": 180395.151250825,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180397.291543731,
+      "interval_start_monotonic_s": 180396.191543731,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180398.327578578,
+      "interval_start_monotonic_s": 180397.227578578,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180399.362231038,
+      "interval_start_monotonic_s": 180398.26223103798,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180400.402375234,
+      "interval_start_monotonic_s": 180399.302375234,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180401.437692724,
+      "interval_start_monotonic_s": 180400.337692724,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180402.471722863,
+      "interval_start_monotonic_s": 180401.371722863,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180403.506527202,
+      "interval_start_monotonic_s": 180402.406527202,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180404.542711706,
+      "interval_start_monotonic_s": 180403.44271170598,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180405.576893582,
+      "interval_start_monotonic_s": 180404.476893582,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180406.619707749,
+      "interval_start_monotonic_s": 180405.519707749,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180407.655369524,
+      "interval_start_monotonic_s": 180406.555369524,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180408.691187421,
+      "interval_start_monotonic_s": 180407.591187421,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180409.729404714,
+      "interval_start_monotonic_s": 180408.62940471398,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180410.766278146,
+      "interval_start_monotonic_s": 180409.666278146,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180411.802077838,
+      "interval_start_monotonic_s": 180410.70207783798,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 37.0,
+      "observed_monotonic_s": 180428.404258004,
+      "interval_start_monotonic_s": 180427.304258004,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 70.0,
+      "observed_monotonic_s": 180429.438582886,
+      "interval_start_monotonic_s": 180428.338582886,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 71.0,
+      "observed_monotonic_s": 180430.474120965,
+      "interval_start_monotonic_s": 180429.374120965,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 42.0,
+      "observed_monotonic_s": 180431.515198133,
+      "interval_start_monotonic_s": 180430.415198133,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180432.552547121,
+      "interval_start_monotonic_s": 180431.452547121,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 2887,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180434.6256448,
+      "interval_start_monotonic_s": 180433.5256448,
+      "owned_compiler_descendant": false,
+      "process_identity": null
+    },
+    {
+      "pid": 2887,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180435.662631206,
+      "interval_start_monotonic_s": 180434.562631206,
+      "owned_compiler_descendant": false,
+      "process_identity": null
+    },
+    {
+      "pid": 2887,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180436.699939817,
+      "interval_start_monotonic_s": 180435.59993981698,
+      "owned_compiler_descendant": false,
+      "process_identity": null
+    },
+    {
+      "pid": 2887,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180437.736033565,
+      "interval_start_monotonic_s": 180436.63603356498,
+      "owned_compiler_descendant": false,
+      "process_identity": null
+    },
+    {
+      "pid": 2887,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180438.784641595,
+      "interval_start_monotonic_s": 180437.684641595,
+      "owned_compiler_descendant": false,
+      "process_identity": null
+    },
+    {
+      "pid": 2887,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180439.821460403,
+      "interval_start_monotonic_s": 180438.721460403,
+      "owned_compiler_descendant": false,
+      "process_identity": null
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180450.211402588,
+      "interval_start_monotonic_s": 180449.111402588,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 24.0,
+      "observed_monotonic_s": 180451.246951451,
+      "interval_start_monotonic_s": 180450.146951451,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180452.289352457,
+      "interval_start_monotonic_s": 180451.189352457,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180453.333277947,
+      "interval_start_monotonic_s": 180452.233277947,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180454.36958156,
+      "interval_start_monotonic_s": 180453.26958156,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180455.405316555,
+      "interval_start_monotonic_s": 180454.305316555,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180456.441588948,
+      "interval_start_monotonic_s": 180455.34158894798,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180457.47785918,
+      "interval_start_monotonic_s": 180456.37785918,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180458.51522823,
+      "interval_start_monotonic_s": 180457.41522823,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180459.552422318,
+      "interval_start_monotonic_s": 180458.452422318,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180460.588187531,
+      "interval_start_monotonic_s": 180459.48818753098,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180461.630124317,
+      "interval_start_monotonic_s": 180460.53012431698,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180462.671803184,
+      "interval_start_monotonic_s": 180461.571803184,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180463.707436218,
+      "interval_start_monotonic_s": 180462.607436218,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180464.74389632,
+      "interval_start_monotonic_s": 180463.64389632,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180465.780400439,
+      "interval_start_monotonic_s": 180464.68040043899,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180466.816160514,
+      "interval_start_monotonic_s": 180465.71616051398,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180467.860592842,
+      "interval_start_monotonic_s": 180466.76059284198,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506015,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180468.892927482,
+      "interval_start_monotonic_s": 180467.792927482,
+      "owned_compiler_descendant": true,
+      "process_identity": "18039238"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180474.075500702,
+      "interval_start_monotonic_s": 180472.97550070198,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180475.111065924,
+      "interval_start_monotonic_s": 180474.011065924,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180476.149922055,
+      "interval_start_monotonic_s": 180475.04992205498,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180477.192784254,
+      "interval_start_monotonic_s": 180476.092784254,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180478.228500436,
+      "interval_start_monotonic_s": 180477.128500436,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180479.264117786,
+      "interval_start_monotonic_s": 180478.164117786,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180480.299104613,
+      "interval_start_monotonic_s": 180479.19910461298,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180481.334758505,
+      "interval_start_monotonic_s": 180480.234758505,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180482.375818678,
+      "interval_start_monotonic_s": 180481.275818678,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180483.45908249,
+      "interval_start_monotonic_s": 180482.35908249,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 4.0,
+      "observed_monotonic_s": 180484.497423774,
+      "interval_start_monotonic_s": 180483.397423774,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 8.0,
+      "observed_monotonic_s": 180485.541175892,
+      "interval_start_monotonic_s": 180484.441175892,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 13.0,
+      "observed_monotonic_s": 180486.578967974,
+      "interval_start_monotonic_s": 180485.478967974,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 14.0,
+      "observed_monotonic_s": 180487.615486286,
+      "interval_start_monotonic_s": 180486.515486286,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 5.0,
+      "observed_monotonic_s": 180488.654963725,
+      "interval_start_monotonic_s": 180487.554963725,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 5.0,
+      "observed_monotonic_s": 180489.695490634,
+      "interval_start_monotonic_s": 180488.595490634,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 13.0,
+      "observed_monotonic_s": 180490.733470646,
+      "interval_start_monotonic_s": 180489.633470646,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 18.0,
+      "observed_monotonic_s": 180491.768659407,
+      "interval_start_monotonic_s": 180490.668659407,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 11.0,
+      "observed_monotonic_s": 180492.807203357,
+      "interval_start_monotonic_s": 180491.707203357,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 6.0,
+      "observed_monotonic_s": 180493.844876242,
+      "interval_start_monotonic_s": 180492.74487624198,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 9.0,
+      "observed_monotonic_s": 180494.887328022,
+      "interval_start_monotonic_s": 180493.787328022,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 15.0,
+      "observed_monotonic_s": 180495.93221275,
+      "interval_start_monotonic_s": 180494.83221274999,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 16.0,
+      "observed_monotonic_s": 180496.977186143,
+      "interval_start_monotonic_s": 180495.87718614299,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 15.0,
+      "observed_monotonic_s": 180498.01328632,
+      "interval_start_monotonic_s": 180496.91328632,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 11.0,
+      "observed_monotonic_s": 180499.051985085,
+      "interval_start_monotonic_s": 180497.951985085,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 11.0,
+      "observed_monotonic_s": 180500.09034636,
+      "interval_start_monotonic_s": 180498.99034636,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 15.0,
+      "observed_monotonic_s": 180501.130448499,
+      "interval_start_monotonic_s": 180500.030448499,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 27.0,
+      "observed_monotonic_s": 180502.173238676,
+      "interval_start_monotonic_s": 180501.073238676,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 19.0,
+      "observed_monotonic_s": 180503.211428346,
+      "interval_start_monotonic_s": 180502.111428346,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 28.0,
+      "observed_monotonic_s": 180504.250069231,
+      "interval_start_monotonic_s": 180503.150069231,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 7.0,
+      "observed_monotonic_s": 180505.284118182,
+      "interval_start_monotonic_s": 180504.184118182,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 11.0,
+      "observed_monotonic_s": 180506.320141658,
+      "interval_start_monotonic_s": 180505.220141658,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 6.0,
+      "observed_monotonic_s": 180507.368132635,
+      "interval_start_monotonic_s": 180506.26813263498,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 22.0,
+      "observed_monotonic_s": 180508.414048797,
+      "interval_start_monotonic_s": 180507.314048797,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 19.0,
+      "observed_monotonic_s": 180509.447416474,
+      "interval_start_monotonic_s": 180508.347416474,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 22.0,
+      "observed_monotonic_s": 180510.490111905,
+      "interval_start_monotonic_s": 180509.390111905,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 15.0,
+      "observed_monotonic_s": 180511.526916558,
+      "interval_start_monotonic_s": 180510.426916558,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 5.0,
+      "observed_monotonic_s": 180512.56335286,
+      "interval_start_monotonic_s": 180511.46335285998,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 9.0,
+      "observed_monotonic_s": 180513.599930643,
+      "interval_start_monotonic_s": 180512.49993064298,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 12.0,
+      "observed_monotonic_s": 180514.636127365,
+      "interval_start_monotonic_s": 180513.536127365,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 7.0,
+      "observed_monotonic_s": 180515.672640091,
+      "interval_start_monotonic_s": 180514.572640091,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 6.0,
+      "observed_monotonic_s": 180516.710469044,
+      "interval_start_monotonic_s": 180515.61046904398,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 10.0,
+      "observed_monotonic_s": 180517.750018214,
+      "interval_start_monotonic_s": 180516.650018214,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 10.0,
+      "observed_monotonic_s": 180518.785487261,
+      "interval_start_monotonic_s": 180517.68548726098,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 5.0,
+      "observed_monotonic_s": 180519.824480945,
+      "interval_start_monotonic_s": 180518.724480945,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 7.0,
+      "observed_monotonic_s": 180520.866611879,
+      "interval_start_monotonic_s": 180519.766611879,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 13.0,
+      "observed_monotonic_s": 180521.906547745,
+      "interval_start_monotonic_s": 180520.80654774499,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 18.0,
+      "observed_monotonic_s": 180522.942255446,
+      "interval_start_monotonic_s": 180521.84225544598,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 11.0,
+      "observed_monotonic_s": 180523.979627968,
+      "interval_start_monotonic_s": 180522.87962796798,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 5.0,
+      "observed_monotonic_s": 180525.016525431,
+      "interval_start_monotonic_s": 180523.916525431,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 8.0,
+      "observed_monotonic_s": 180526.058470351,
+      "interval_start_monotonic_s": 180524.958470351,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 9.0,
+      "observed_monotonic_s": 180527.105455824,
+      "interval_start_monotonic_s": 180526.005455824,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 15.0,
+      "observed_monotonic_s": 180528.144916215,
+      "interval_start_monotonic_s": 180527.044916215,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180529.189450009,
+      "interval_start_monotonic_s": 180528.089450009,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 5.0,
+      "observed_monotonic_s": 180530.235062704,
+      "interval_start_monotonic_s": 180529.135062704,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 12.0,
+      "observed_monotonic_s": 180531.273180283,
+      "interval_start_monotonic_s": 180530.173180283,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 13.0,
+      "observed_monotonic_s": 180532.310725252,
+      "interval_start_monotonic_s": 180531.210725252,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 4.0,
+      "observed_monotonic_s": 180533.35247411,
+      "interval_start_monotonic_s": 180532.25247411,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 7.0,
+      "observed_monotonic_s": 180534.396377348,
+      "interval_start_monotonic_s": 180533.296377348,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 12.0,
+      "observed_monotonic_s": 180535.437010717,
+      "interval_start_monotonic_s": 180534.337010717,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 8.0,
+      "observed_monotonic_s": 180536.474585403,
+      "interval_start_monotonic_s": 180535.37458540298,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180537.510772973,
+      "interval_start_monotonic_s": 180536.410772973,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180538.548651658,
+      "interval_start_monotonic_s": 180537.448651658,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180539.590143869,
+      "interval_start_monotonic_s": 180538.49014386898,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 6.0,
+      "observed_monotonic_s": 180540.625736419,
+      "interval_start_monotonic_s": 180539.525736419,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 7.0,
+      "observed_monotonic_s": 180541.661590021,
+      "interval_start_monotonic_s": 180540.56159002098,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 8.0,
+      "observed_monotonic_s": 180542.701088428,
+      "interval_start_monotonic_s": 180541.601088428,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 4.0,
+      "observed_monotonic_s": 180543.741910407,
+      "interval_start_monotonic_s": 180542.641910407,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 5.0,
+      "observed_monotonic_s": 180544.780409268,
+      "interval_start_monotonic_s": 180543.68040926798,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 7.0,
+      "observed_monotonic_s": 180545.819816677,
+      "interval_start_monotonic_s": 180544.71981667698,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 5.0,
+      "observed_monotonic_s": 180546.858444543,
+      "interval_start_monotonic_s": 180545.758444543,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 5.0,
+      "observed_monotonic_s": 180547.897856368,
+      "interval_start_monotonic_s": 180546.797856368,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 9.0,
+      "observed_monotonic_s": 180548.934894217,
+      "interval_start_monotonic_s": 180547.834894217,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 6.0,
+      "observed_monotonic_s": 180549.971644183,
+      "interval_start_monotonic_s": 180548.871644183,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180551.016408601,
+      "interval_start_monotonic_s": 180549.91640860098,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180552.05280132,
+      "interval_start_monotonic_s": 180550.95280132,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180553.087767191,
+      "interval_start_monotonic_s": 180551.987767191,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180554.126297404,
+      "interval_start_monotonic_s": 180553.026297404,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180555.161891468,
+      "interval_start_monotonic_s": 180554.06189146798,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180556.203653257,
+      "interval_start_monotonic_s": 180555.10365325699,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180557.239722429,
+      "interval_start_monotonic_s": 180556.13972242898,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 6.0,
+      "observed_monotonic_s": 180558.276674916,
+      "interval_start_monotonic_s": 180557.176674916,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180559.316614055,
+      "interval_start_monotonic_s": 180558.21661405498,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 16.0,
+      "observed_monotonic_s": 180560.356311622,
+      "interval_start_monotonic_s": 180559.25631162198,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180561.393553214,
+      "interval_start_monotonic_s": 180560.293553214,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 10.0,
+      "observed_monotonic_s": 180562.430288467,
+      "interval_start_monotonic_s": 180561.330288467,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 11.0,
+      "observed_monotonic_s": 180563.467414145,
+      "interval_start_monotonic_s": 180562.367414145,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180564.503313151,
+      "interval_start_monotonic_s": 180563.403313151,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 5.0,
+      "observed_monotonic_s": 180565.539450157,
+      "interval_start_monotonic_s": 180564.439450157,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 6.0,
+      "observed_monotonic_s": 180566.581772641,
+      "interval_start_monotonic_s": 180565.48177264098,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 4.0,
+      "observed_monotonic_s": 180567.617243774,
+      "interval_start_monotonic_s": 180566.517243774,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 8.0,
+      "observed_monotonic_s": 180568.652954819,
+      "interval_start_monotonic_s": 180567.552954819,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 10.0,
+      "observed_monotonic_s": 180569.690026011,
+      "interval_start_monotonic_s": 180568.590026011,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 4.0,
+      "observed_monotonic_s": 180570.726733889,
+      "interval_start_monotonic_s": 180569.626733889,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180571.765903852,
+      "interval_start_monotonic_s": 180570.665903852,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180572.804088382,
+      "interval_start_monotonic_s": 180571.704088382,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180573.840832558,
+      "interval_start_monotonic_s": 180572.740832558,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180574.876889584,
+      "interval_start_monotonic_s": 180573.776889584,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180575.918947632,
+      "interval_start_monotonic_s": 180574.81894763198,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180576.954227106,
+      "interval_start_monotonic_s": 180575.854227106,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180577.994177545,
+      "interval_start_monotonic_s": 180576.894177545,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180579.033223429,
+      "interval_start_monotonic_s": 180577.933223429,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 5.0,
+      "observed_monotonic_s": 180580.073810381,
+      "interval_start_monotonic_s": 180578.973810381,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 10.0,
+      "observed_monotonic_s": 180581.116550509,
+      "interval_start_monotonic_s": 180580.016550509,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 7.0,
+      "observed_monotonic_s": 180582.154062525,
+      "interval_start_monotonic_s": 180581.05406252499,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 14.0,
+      "observed_monotonic_s": 180583.190718829,
+      "interval_start_monotonic_s": 180582.090718829,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180584.230270608,
+      "interval_start_monotonic_s": 180583.130270608,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 7.0,
+      "observed_monotonic_s": 180585.265065155,
+      "interval_start_monotonic_s": 180584.165065155,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 11.0,
+      "observed_monotonic_s": 180586.300115789,
+      "interval_start_monotonic_s": 180585.200115789,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 11.0,
+      "observed_monotonic_s": 180587.335342572,
+      "interval_start_monotonic_s": 180586.235342572,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180588.371475105,
+      "interval_start_monotonic_s": 180587.271475105,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 6.0,
+      "observed_monotonic_s": 180589.413038926,
+      "interval_start_monotonic_s": 180588.313038926,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 9.0,
+      "observed_monotonic_s": 180590.459431632,
+      "interval_start_monotonic_s": 180589.359431632,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 6.0,
+      "observed_monotonic_s": 180591.501842163,
+      "interval_start_monotonic_s": 180590.401842163,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180592.53974225,
+      "interval_start_monotonic_s": 180591.43974225,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180593.575247163,
+      "interval_start_monotonic_s": 180592.475247163,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180594.611426195,
+      "interval_start_monotonic_s": 180593.511426195,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180595.648406133,
+      "interval_start_monotonic_s": 180594.548406133,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180596.684098106,
+      "interval_start_monotonic_s": 180595.584098106,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180597.718725435,
+      "interval_start_monotonic_s": 180596.618725435,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180598.762843893,
+      "interval_start_monotonic_s": 180597.662843893,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 4.0,
+      "observed_monotonic_s": 180599.802993472,
+      "interval_start_monotonic_s": 180598.702993472,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180600.840656485,
+      "interval_start_monotonic_s": 180599.740656485,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180601.883039792,
+      "interval_start_monotonic_s": 180600.783039792,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180602.923909381,
+      "interval_start_monotonic_s": 180601.823909381,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180603.959306445,
+      "interval_start_monotonic_s": 180602.859306445,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180604.996660621,
+      "interval_start_monotonic_s": 180603.896660621,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180606.032558124,
+      "interval_start_monotonic_s": 180604.93255812398,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180607.06875004,
+      "interval_start_monotonic_s": 180605.96875004,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180608.108362075,
+      "interval_start_monotonic_s": 180607.008362075,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 4.0,
+      "observed_monotonic_s": 180609.146231702,
+      "interval_start_monotonic_s": 180608.046231702,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180610.184838968,
+      "interval_start_monotonic_s": 180609.084838968,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180611.2226092,
+      "interval_start_monotonic_s": 180610.12260919999,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180612.258190141,
+      "interval_start_monotonic_s": 180611.158190141,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180613.29646377,
+      "interval_start_monotonic_s": 180612.19646377,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180614.33452813,
+      "interval_start_monotonic_s": 180613.23452813,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180615.372816474,
+      "interval_start_monotonic_s": 180614.272816474,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180616.408119751,
+      "interval_start_monotonic_s": 180615.308119751,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180617.443629303,
+      "interval_start_monotonic_s": 180616.34362930298,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180618.484120465,
+      "interval_start_monotonic_s": 180617.384120465,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180619.519417382,
+      "interval_start_monotonic_s": 180618.41941738199,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180620.557371883,
+      "interval_start_monotonic_s": 180619.457371883,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180621.59280243,
+      "interval_start_monotonic_s": 180620.49280243,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180622.634274799,
+      "interval_start_monotonic_s": 180621.534274799,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180623.670245721,
+      "interval_start_monotonic_s": 180622.570245721,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180624.705129053,
+      "interval_start_monotonic_s": 180623.605129053,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 6.0,
+      "observed_monotonic_s": 180625.745622343,
+      "interval_start_monotonic_s": 180624.645622343,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 6.0,
+      "observed_monotonic_s": 180626.783302804,
+      "interval_start_monotonic_s": 180625.68330280398,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180627.819654609,
+      "interval_start_monotonic_s": 180626.71965460898,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 7.0,
+      "observed_monotonic_s": 180628.860743951,
+      "interval_start_monotonic_s": 180627.760743951,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 8.0,
+      "observed_monotonic_s": 180629.896099893,
+      "interval_start_monotonic_s": 180628.796099893,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 4.0,
+      "observed_monotonic_s": 180630.933592981,
+      "interval_start_monotonic_s": 180629.83359298098,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180631.972936947,
+      "interval_start_monotonic_s": 180630.87293694698,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180633.009292764,
+      "interval_start_monotonic_s": 180631.909292764,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180634.045775933,
+      "interval_start_monotonic_s": 180632.94577593298,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180635.087071341,
+      "interval_start_monotonic_s": 180633.987071341,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180636.123607925,
+      "interval_start_monotonic_s": 180635.023607925,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180637.160218434,
+      "interval_start_monotonic_s": 180636.060218434,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 5.0,
+      "observed_monotonic_s": 180638.199635712,
+      "interval_start_monotonic_s": 180637.099635712,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180639.234774773,
+      "interval_start_monotonic_s": 180638.134774773,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 15.0,
+      "observed_monotonic_s": 180640.277750925,
+      "interval_start_monotonic_s": 180639.17775092498,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180641.320147029,
+      "interval_start_monotonic_s": 180640.220147029,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 14.0,
+      "observed_monotonic_s": 180642.357520334,
+      "interval_start_monotonic_s": 180641.25752033398,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180643.400832095,
+      "interval_start_monotonic_s": 180642.300832095,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 7.0,
+      "observed_monotonic_s": 180644.439218794,
+      "interval_start_monotonic_s": 180643.339218794,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 11.0,
+      "observed_monotonic_s": 180645.481111162,
+      "interval_start_monotonic_s": 180644.381111162,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 7.0,
+      "observed_monotonic_s": 180646.524902602,
+      "interval_start_monotonic_s": 180645.42490260198,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 4.0,
+      "observed_monotonic_s": 180647.565599748,
+      "interval_start_monotonic_s": 180646.465599748,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 9.0,
+      "observed_monotonic_s": 180648.60297823,
+      "interval_start_monotonic_s": 180647.50297822998,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 9.0,
+      "observed_monotonic_s": 180649.638364306,
+      "interval_start_monotonic_s": 180648.538364306,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180650.678096388,
+      "interval_start_monotonic_s": 180649.578096388,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 4.0,
+      "observed_monotonic_s": 180651.71881513,
+      "interval_start_monotonic_s": 180650.61881513,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180652.758779368,
+      "interval_start_monotonic_s": 180651.658779368,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180653.802930546,
+      "interval_start_monotonic_s": 180652.702930546,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180654.837838608,
+      "interval_start_monotonic_s": 180653.73783860798,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180655.875673061,
+      "interval_start_monotonic_s": 180654.775673061,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180656.91790618,
+      "interval_start_monotonic_s": 180655.81790618,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180657.957249482,
+      "interval_start_monotonic_s": 180656.85724948198,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 5.0,
+      "observed_monotonic_s": 180658.994085798,
+      "interval_start_monotonic_s": 180657.894085798,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 5.0,
+      "observed_monotonic_s": 180660.051529726,
+      "interval_start_monotonic_s": 180658.951529726,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 13.0,
+      "observed_monotonic_s": 180661.075840624,
+      "interval_start_monotonic_s": 180659.97584062399,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 10.0,
+      "observed_monotonic_s": 180662.115415158,
+      "interval_start_monotonic_s": 180661.015415158,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 21.0,
+      "observed_monotonic_s": 180663.150950389,
+      "interval_start_monotonic_s": 180662.050950389,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180664.186736083,
+      "interval_start_monotonic_s": 180663.086736083,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180665.223548811,
+      "interval_start_monotonic_s": 180664.12354881098,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 7.0,
+      "observed_monotonic_s": 180666.259428555,
+      "interval_start_monotonic_s": 180665.159428555,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 11.0,
+      "observed_monotonic_s": 180667.295626624,
+      "interval_start_monotonic_s": 180666.195626624,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 4.0,
+      "observed_monotonic_s": 180668.332677243,
+      "interval_start_monotonic_s": 180667.23267724298,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 5.0,
+      "observed_monotonic_s": 180669.372565218,
+      "interval_start_monotonic_s": 180668.27256521798,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 8.0,
+      "observed_monotonic_s": 180670.410217593,
+      "interval_start_monotonic_s": 180669.31021759298,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180671.447463287,
+      "interval_start_monotonic_s": 180670.347463287,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180672.485394024,
+      "interval_start_monotonic_s": 180671.385394024,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180673.522362629,
+      "interval_start_monotonic_s": 180672.422362629,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180674.557786476,
+      "interval_start_monotonic_s": 180673.457786476,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180675.596226576,
+      "interval_start_monotonic_s": 180674.49622657598,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180676.631131932,
+      "interval_start_monotonic_s": 180675.531131932,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180677.666246661,
+      "interval_start_monotonic_s": 180676.566246661,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180678.706306579,
+      "interval_start_monotonic_s": 180677.606306579,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180679.741712973,
+      "interval_start_monotonic_s": 180678.64171297298,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 4.0,
+      "observed_monotonic_s": 180680.779049104,
+      "interval_start_monotonic_s": 180679.679049104,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 4.0,
+      "observed_monotonic_s": 180681.820409587,
+      "interval_start_monotonic_s": 180680.720409587,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180682.859706868,
+      "interval_start_monotonic_s": 180681.759706868,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180683.897611486,
+      "interval_start_monotonic_s": 180682.797611486,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180684.933464964,
+      "interval_start_monotonic_s": 180683.833464964,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180685.969908432,
+      "interval_start_monotonic_s": 180684.86990843198,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180687.006454701,
+      "interval_start_monotonic_s": 180685.906454701,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180688.042507483,
+      "interval_start_monotonic_s": 180686.942507483,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 4.0,
+      "observed_monotonic_s": 180689.077689594,
+      "interval_start_monotonic_s": 180687.977689594,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180690.114172305,
+      "interval_start_monotonic_s": 180689.014172305,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180691.153782817,
+      "interval_start_monotonic_s": 180690.053782817,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180692.190904791,
+      "interval_start_monotonic_s": 180691.090904791,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180693.226850172,
+      "interval_start_monotonic_s": 180692.126850172,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180694.26407557,
+      "interval_start_monotonic_s": 180693.16407557,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180695.300273655,
+      "interval_start_monotonic_s": 180694.200273655,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180696.334945157,
+      "interval_start_monotonic_s": 180695.234945157,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180697.372336796,
+      "interval_start_monotonic_s": 180696.27233679598,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180698.406933522,
+      "interval_start_monotonic_s": 180697.306933522,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 7.0,
+      "observed_monotonic_s": 180699.441655255,
+      "interval_start_monotonic_s": 180698.341655255,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180700.48133478,
+      "interval_start_monotonic_s": 180699.38133478,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180701.525118102,
+      "interval_start_monotonic_s": 180700.425118102,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 6.0,
+      "observed_monotonic_s": 180702.562531452,
+      "interval_start_monotonic_s": 180701.46253145198,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180703.599615362,
+      "interval_start_monotonic_s": 180702.499615362,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180704.637767192,
+      "interval_start_monotonic_s": 180703.537767192,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180705.681505154,
+      "interval_start_monotonic_s": 180704.581505154,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180706.716658342,
+      "interval_start_monotonic_s": 180705.61665834198,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 4.0,
+      "observed_monotonic_s": 180707.755268196,
+      "interval_start_monotonic_s": 180706.655268196,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 4.0,
+      "observed_monotonic_s": 180708.799943844,
+      "interval_start_monotonic_s": 180707.699943844,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180709.835598261,
+      "interval_start_monotonic_s": 180708.735598261,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180710.872986037,
+      "interval_start_monotonic_s": 180709.772986037,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180711.91046242,
+      "interval_start_monotonic_s": 180710.81046242,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180712.945234116,
+      "interval_start_monotonic_s": 180711.845234116,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180713.982325628,
+      "interval_start_monotonic_s": 180712.882325628,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180715.018017193,
+      "interval_start_monotonic_s": 180713.918017193,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180716.0541233,
+      "interval_start_monotonic_s": 180714.9541233,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180717.095695063,
+      "interval_start_monotonic_s": 180715.995695063,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180718.140432795,
+      "interval_start_monotonic_s": 180717.04043279498,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 9.0,
+      "observed_monotonic_s": 180719.181129678,
+      "interval_start_monotonic_s": 180718.081129678,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180720.219289074,
+      "interval_start_monotonic_s": 180719.119289074,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 8.0,
+      "observed_monotonic_s": 180721.255454189,
+      "interval_start_monotonic_s": 180720.155454189,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180722.292763215,
+      "interval_start_monotonic_s": 180721.192763215,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180723.327568856,
+      "interval_start_monotonic_s": 180722.227568856,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 3.0,
+      "observed_monotonic_s": 180724.364036204,
+      "interval_start_monotonic_s": 180723.264036204,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180725.399130105,
+      "interval_start_monotonic_s": 180724.299130105,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180726.437917784,
+      "interval_start_monotonic_s": 180725.337917784,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180727.474939863,
+      "interval_start_monotonic_s": 180726.374939863,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180728.512056958,
+      "interval_start_monotonic_s": 180727.41205695798,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180729.551130447,
+      "interval_start_monotonic_s": 180728.451130447,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 2.0,
+      "observed_monotonic_s": 180730.587134941,
+      "interval_start_monotonic_s": 180729.48713494098,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 1.0,
+      "observed_monotonic_s": 180731.62270182,
+      "interval_start_monotonic_s": 180730.52270181998,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180732.66012409,
+      "interval_start_monotonic_s": 180731.56012409,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180733.695529586,
+      "interval_start_monotonic_s": 180732.595529586,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180734.731523273,
+      "interval_start_monotonic_s": 180733.63152327298,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180735.770118434,
+      "interval_start_monotonic_s": 180734.670118434,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180736.811429664,
+      "interval_start_monotonic_s": 180735.711429664,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180737.846851249,
+      "interval_start_monotonic_s": 180736.746851249,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180738.887172177,
+      "interval_start_monotonic_s": 180737.787172177,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180739.931936173,
+      "interval_start_monotonic_s": 180738.831936173,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1506856,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180740.970741048,
+      "interval_start_monotonic_s": 180739.87074104798,
+      "owned_compiler_descendant": true,
+      "process_identity": "18047185"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180748.300110591,
+      "interval_start_monotonic_s": 180747.200110591,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180749.336735119,
+      "interval_start_monotonic_s": 180748.236735119,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180750.369580856,
+      "interval_start_monotonic_s": 180749.269580856,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180751.401494114,
+      "interval_start_monotonic_s": 180750.30149411398,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180752.439291901,
+      "interval_start_monotonic_s": 180751.339291901,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180753.476427487,
+      "interval_start_monotonic_s": 180752.376427487,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180754.512841028,
+      "interval_start_monotonic_s": 180753.41284102798,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180755.552743169,
+      "interval_start_monotonic_s": 180754.452743169,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180756.588416117,
+      "interval_start_monotonic_s": 180755.488416117,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180757.63090771,
+      "interval_start_monotonic_s": 180756.53090771,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180758.667477485,
+      "interval_start_monotonic_s": 180757.567477485,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180759.703070214,
+      "interval_start_monotonic_s": 180758.60307021398,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180760.743610019,
+      "interval_start_monotonic_s": 180759.643610019,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180761.779498155,
+      "interval_start_monotonic_s": 180760.679498155,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180762.816726237,
+      "interval_start_monotonic_s": 180761.716726237,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 2887,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180794.989010814,
+      "interval_start_monotonic_s": 180793.889010814,
+      "owned_compiler_descendant": false,
+      "process_identity": null
+    },
+    {
+      "pid": 2887,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180796.026655783,
+      "interval_start_monotonic_s": 180794.926655783,
+      "owned_compiler_descendant": false,
+      "process_identity": null
+    },
+    {
+      "pid": 2887,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180797.06278885,
+      "interval_start_monotonic_s": 180795.96278884998,
+      "owned_compiler_descendant": false,
+      "process_identity": null
+    },
+    {
+      "pid": 2887,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180798.100200369,
+      "interval_start_monotonic_s": 180797.000200369,
+      "owned_compiler_descendant": false,
+      "process_identity": null
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180835.484099717,
+      "interval_start_monotonic_s": 180834.384099717,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 5.0,
+      "observed_monotonic_s": 180836.559900149,
+      "interval_start_monotonic_s": 180835.459900149,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 17.0,
+      "observed_monotonic_s": 180837.600081453,
+      "interval_start_monotonic_s": 180836.500081453,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 29.0,
+      "observed_monotonic_s": 180838.631033797,
+      "interval_start_monotonic_s": 180837.531033797,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180839.667334693,
+      "interval_start_monotonic_s": 180838.56733469298,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180840.710006773,
+      "interval_start_monotonic_s": 180839.610006773,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180841.746142424,
+      "interval_start_monotonic_s": 180840.646142424,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180842.782040642,
+      "interval_start_monotonic_s": 180841.682040642,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180843.819017143,
+      "interval_start_monotonic_s": 180842.71901714298,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180844.869151471,
+      "interval_start_monotonic_s": 180843.769151471,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180845.896466968,
+      "interval_start_monotonic_s": 180844.796466968,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180846.934012449,
+      "interval_start_monotonic_s": 180845.834012449,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180847.975637643,
+      "interval_start_monotonic_s": 180846.87563764298,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180849.01611276,
+      "interval_start_monotonic_s": 180847.91611276,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180850.057697307,
+      "interval_start_monotonic_s": 180848.957697307,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180851.092310478,
+      "interval_start_monotonic_s": 180849.992310478,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180852.128280676,
+      "interval_start_monotonic_s": 180851.028280676,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180853.164260968,
+      "interval_start_monotonic_s": 180852.064260968,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 2887,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180854.199910868,
+      "interval_start_monotonic_s": 180853.09991086798,
+      "owned_compiler_descendant": false,
+      "process_identity": null
+    },
+    {
+      "pid": 1513762,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180854.21298497,
+      "interval_start_monotonic_s": 180853.11298497,
+      "owned_compiler_descendant": true,
+      "process_identity": "18074626"
+    },
+    {
+      "pid": 2887,
+      "gpu_index": 0,
+      "sm_utilization_percent": 0.0,
+      "observed_monotonic_s": 180855.235590648,
+      "interval_start_monotonic_s": 180854.135590648,
+      "owned_compiler_descendant": false,
+      "process_identity": null
+    }
+  ]
+}

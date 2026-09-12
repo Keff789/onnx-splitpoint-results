@@ -1,0 +1,3254 @@
+{
+  "schema": "hailo8_model_diagnostic_request_r1",
+  "model": "mobilenet_v3_large",
+  "role": "full",
+  "family": "hailo8",
+  "preset": "balanced",
+  "cpu_hef": {
+    "path": "/home/kmika/Models/EvaluationRuns/completsetdev_20260911_213508/models/mobilenet_v3_large/benchmark_set/legacy_suite/hailo/hailo8/full/.hailo-generations/f59b7d3fe02043d98305a17938551ea7/compiled.hef",
+    "sha256": "8d1cb584e05307a641d41eab4dd51c1d1c7824e99a97469935f88089cf756f85",
+    "size_bytes": 5660518
+  },
+  "cpu_receipt": {
+    "path": "/home/kmika/Models/EvaluationRuns/completsetdev_20260911_213508/models/mobilenet_v3_large/benchmark_set/legacy_suite/hailo/hailo8/full/.hailo-generations/f59b7d3fe02043d98305a17938551ea7/hailo_hef_build_receipt.json",
+    "sha256": "b90a5a80c5e9b46ae0afcabfcf0c6ed78c8f35103829546bcf3d578f7a2747c6",
+    "size_bytes": 3505
+  },
+  "source_onnx": {
+    "path": "/home/kmika/Models/mobilenet_v3_large.onnx",
+    "sha256": "2f5e79b1e4280251e7b6eefe1d6161c4831e2fc27858e1e9fe2fac697f44489e",
+    "size_bytes": 22243154
+  },
+  "compiler_onnx": {
+    "path": "/home/kmika/Models/EvaluationRuns/completsetdev_20260911_213508/models/mobilenet_v3_large/benchmark_set/legacy_suite/hailo/hailo8/full/mobilenet_v3_large_hailo_fixed.onnx",
+    "sha256": "511b13a4882c2cb4f1b904cb831b86d1e441c3f11c4eb87fec958b5529bcf438",
+    "size_bytes": 22244580
+  },
+  "calibration_dir": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710",
+  "calibration_manifest": {
+    "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/manifests/imagenet_train_calibration_manifest.json",
+    "sha256": "6d6978cafd1b828d6fa9438b232120f2a769311c28492bea5a141af586c3d58c",
+    "size_bytes": 138088
+  },
+  "calibration_records": [
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01443537/n01443537_3614.JPEG",
+      "sha256": "148568c435635fa8dcf33617a70ba8c39f519e317b25c6883acb5998c52d0e25",
+      "size_bytes": 121446,
+      "relative_path": "n01443537/n01443537_3614.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01484850/n01484850_276.JPEG",
+      "sha256": "088d13ea656d0143b5ce8d4f8ff8e776c47ac4b8408c9b88c45d8860ade2fa3b",
+      "size_bytes": 72947,
+      "relative_path": "n01484850/n01484850_276.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01494475/n01494475_17410.JPEG",
+      "sha256": "db2aafd1e679c4a45eb07ea5ac6a3c0ed74548f908756a64a212d4b3c6a75b86",
+      "size_bytes": 56478,
+      "relative_path": "n01494475/n01494475_17410.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01496331/n01496331_3543.JPEG",
+      "sha256": "9d4b8cef011b541c420c35288c33b8f50b14c01133abee1d05458b7f01a4bd7b",
+      "size_bytes": 29319,
+      "relative_path": "n01496331/n01496331_3543.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01514668/n01514668_7528.JPEG",
+      "sha256": "fdef0f17e8ac1c4c189e5963655f558081636ff82814ffb1baa1cf87d4c56890",
+      "size_bytes": 236874,
+      "relative_path": "n01514668/n01514668_7528.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01514859/n01514859_22349.JPEG",
+      "sha256": "88fe61e0a07bae6a4406c77de699bc7e47f8a471d4b085db8be8ba51e79f0e07",
+      "size_bytes": 158151,
+      "relative_path": "n01514859/n01514859_22349.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01518878/n01518878_32758.JPEG",
+      "sha256": "ae3089b296428d951214c6009c7c30d2450ef8a6b0f9b085ee91afd5877ab760",
+      "size_bytes": 202785,
+      "relative_path": "n01518878/n01518878_32758.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01530575/n01530575_6984.JPEG",
+      "sha256": "4d08a776637b17fbd03ec0ee22e2719390c44a8f26a187df7cf7bb0098105463",
+      "size_bytes": 46403,
+      "relative_path": "n01530575/n01530575_6984.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01532829/n01532829_3246.JPEG",
+      "sha256": "c9b8af2d34288a0113df446ec17a70abcdb402f84063780515e0d72ec69c5c6d",
+      "size_bytes": 173527,
+      "relative_path": "n01532829/n01532829_3246.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01534433/n01534433_5138.JPEG",
+      "sha256": "d3cc8b01c5f7e65b3004466071a20434d893c758c1bdcef36abdd66a310aa7fc",
+      "size_bytes": 111031,
+      "relative_path": "n01534433/n01534433_5138.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01537544/n01537544_10632.JPEG",
+      "sha256": "527b78085638ac3406740970af0e1970ed3d054a68c6281979517cc239c271b5",
+      "size_bytes": 61128,
+      "relative_path": "n01537544/n01537544_10632.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01558993/n01558993_927.JPEG",
+      "sha256": "2101961d8b064f55069a6ae08fde11b61a6d39f3809b6a47496a74fc22f8602b",
+      "size_bytes": 90329,
+      "relative_path": "n01558993/n01558993_927.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01580077/n01580077_7644.JPEG",
+      "sha256": "45d1762aa40717cb5dea3035dee5044de8512b33132e521d35cc490bcb2751ca",
+      "size_bytes": 153854,
+      "relative_path": "n01580077/n01580077_7644.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01592084/n01592084_8211.JPEG",
+      "sha256": "55a6e216f6ab0730a8b5b690f741a1cf09dca7f2294d00faaa130e7cd3c8482e",
+      "size_bytes": 133729,
+      "relative_path": "n01592084/n01592084_8211.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01608432/n01608432_9253.JPEG",
+      "sha256": "94168a3fb4ec8dd5529b5a2632d6c2b36946db2e19f03b8b272066087a502565",
+      "size_bytes": 81696,
+      "relative_path": "n01608432/n01608432_9253.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01622779/n01622779_6459.JPEG",
+      "sha256": "42bd1ed046e56a4ebc9d78628ac818fe6ea81f37fcaea5789266af7d5da86493",
+      "size_bytes": 101705,
+      "relative_path": "n01622779/n01622779_6459.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01632777/n01632777_14544.JPEG",
+      "sha256": "f6688bfcb12852b145e224e86fc3b0e4b5539c983f0f5388f0dd84fd10428559",
+      "size_bytes": 62354,
+      "relative_path": "n01632777/n01632777_14544.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01641577/n01641577_13941.JPEG",
+      "sha256": "4b6ad5c406be1be8fab5b91a62d8c5b4a5883c37c80d83b74e5defd5a744691e",
+      "size_bytes": 176477,
+      "relative_path": "n01641577/n01641577_13941.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01644900/n01644900_1427.JPEG",
+      "sha256": "c879d41dfd8f50008864eb342ebf51628ef1ebe3d958922167420ca2b0259a03",
+      "size_bytes": 16496,
+      "relative_path": "n01644900/n01644900_1427.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01664065/n01664065_4401.JPEG",
+      "sha256": "ac89722386a1e67b766839bcacdb477ab4087b05480925933e42d975c18b0f3d",
+      "size_bytes": 102268,
+      "relative_path": "n01664065/n01664065_4401.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01667114/n01667114_2967.JPEG",
+      "sha256": "455e79dfe382a7a670ae7bae43147fa45e81c1ee9e3fb62af48800d8b5dc3926",
+      "size_bytes": 166457,
+      "relative_path": "n01667114/n01667114_2967.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01667778/n01667778_2347.JPEG",
+      "sha256": "be5719abf58e8c5512d0d2b692efc31eb34993e7f2bb8abde7f1ffbe2be56690",
+      "size_bytes": 235208,
+      "relative_path": "n01667778/n01667778_2347.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01675722/n01675722_2441.JPEG",
+      "sha256": "8914e03c34d6b2eaeadff5c7242b9bbc8b118a2a1e14972635d43921e839f153",
+      "size_bytes": 298262,
+      "relative_path": "n01675722/n01675722_2441.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01687978/n01687978_7514.JPEG",
+      "sha256": "69091400e56dcc0d763ab185b4182c6958d952c6806df9f3bcec973ebaebc506",
+      "size_bytes": 208479,
+      "relative_path": "n01687978/n01687978_7514.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01692333/n01692333_9041.JPEG",
+      "sha256": "9a9a6494c20b9372d75972aee0a354e48403533080a030b07884d18b047fc968",
+      "size_bytes": 173577,
+      "relative_path": "n01692333/n01692333_9041.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01693334/n01693334_9366.JPEG",
+      "sha256": "f07f58eda254dafd97f41daf0cbc02fd49289f3250423164c8b4494175c868e9",
+      "size_bytes": 144746,
+      "relative_path": "n01693334/n01693334_9366.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01698640/n01698640_10237.JPEG",
+      "sha256": "c78da112fe573203c927937a7c08c5e6db8e7c02b2f2436a3714ecf52686b168",
+      "size_bytes": 116195,
+      "relative_path": "n01698640/n01698640_10237.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01729322/n01729322_18225.JPEG",
+      "sha256": "f8565272b06626fcbca2a982348d953ea7cf697ef4151375637c530acf50e1c9",
+      "size_bytes": 227450,
+      "relative_path": "n01729322/n01729322_18225.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01748264/n01748264_18214.JPEG",
+      "sha256": "2c4e9c81c5b7ee0590f6b813fc290281eb34e5ace2f2ca0bda0869d1c04ae66e",
+      "size_bytes": 13624,
+      "relative_path": "n01748264/n01748264_18214.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01753488/n01753488_10211.JPEG",
+      "sha256": "0e00a080013378a12f4abc240b349d33af946ddce52a0884716c19f1dcc77d04",
+      "size_bytes": 14106,
+      "relative_path": "n01753488/n01753488_10211.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01755581/n01755581_790.JPEG",
+      "sha256": "065caf61adc0e2ef950965e9507e6a6c2832bdb8150983bc9a2c4791baa6795b",
+      "size_bytes": 61235,
+      "relative_path": "n01755581/n01755581_790.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01770081/n01770081_17287.JPEG",
+      "sha256": "1c66e7fc5cfe4afa583a87dbf3dd0ba00e69c69497a2cf201509fd2749a28105",
+      "size_bytes": 139931,
+      "relative_path": "n01770081/n01770081_17287.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01770393/n01770393_3005.JPEG",
+      "sha256": "0e58f3bc590c09134a5502a68933ac1759ce311eda8617ec346877ae979048c1",
+      "size_bytes": 26472,
+      "relative_path": "n01770393/n01770393_3005.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01773549/n01773549_3090.JPEG",
+      "sha256": "f335b3b7226201918762894a2cea05dbb284ac6eab395a594d843510249e8980",
+      "size_bytes": 34201,
+      "relative_path": "n01773549/n01773549_3090.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01773797/n01773797_9366.JPEG",
+      "sha256": "b458242dd2575cf359f44e0fef875453427789105612c62859535820c32a9008",
+      "size_bytes": 66393,
+      "relative_path": "n01773797/n01773797_9366.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01774384/n01774384_12123.JPEG",
+      "sha256": "94f274ffd23dc963eb72c1c674d5cfdec28cbc080f7e9abe8b53db22c8fb3c40",
+      "size_bytes": 165462,
+      "relative_path": "n01774384/n01774384_12123.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01774750/n01774750_236.JPEG",
+      "sha256": "955712f4392ee702a87eb0d94ffaf774323085e4cf1aa22a59a374445e0f74ba",
+      "size_bytes": 129823,
+      "relative_path": "n01774750/n01774750_236.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01776313/n01776313_12712.JPEG",
+      "sha256": "713834571fa9efd588cd330b7e9c38a45d66bee6ba66eaab3d1dcdb3c0d76738",
+      "size_bytes": 82225,
+      "relative_path": "n01776313/n01776313_12712.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01795545/n01795545_4710.JPEG",
+      "sha256": "5b8558159d93e1d111bdfd3e7f9ce548b911e686e4b35037140870772682d9cb",
+      "size_bytes": 3997,
+      "relative_path": "n01795545/n01795545_4710.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01796340/n01796340_6374.JPEG",
+      "sha256": "354241fcbab33b57f241ed8be7247d09367188eaf199d0b4e6636018d712fe0b",
+      "size_bytes": 101677,
+      "relative_path": "n01796340/n01796340_6374.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01806567/n01806567_1773.JPEG",
+      "sha256": "ed2edc64f0bb9cccc6ac709941a5a4c45d5d9bfb039bc1c1b481ee7f17989068",
+      "size_bytes": 209749,
+      "relative_path": "n01806567/n01806567_1773.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01807496/n01807496_15093.JPEG",
+      "sha256": "104ff6d97bd73da80ab422bf871242a23f67efd93e0eb47bacec054ac375488c",
+      "size_bytes": 141617,
+      "relative_path": "n01807496/n01807496_15093.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01817953/n01817953_13548.JPEG",
+      "sha256": "0e9da27fc017f17d2423be35f5e4515cc161258d6c324e11d3d46a99e2c7d1d7",
+      "size_bytes": 126191,
+      "relative_path": "n01817953/n01817953_13548.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01818515/n01818515_2753.JPEG",
+      "sha256": "a959e1b246721a22b2733513a4f808258c678ca72b267540e55be74802b8aa1e",
+      "size_bytes": 52080,
+      "relative_path": "n01818515/n01818515_2753.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01819313/n01819313_1515.JPEG",
+      "sha256": "3c05b44ebe301163e0600bad770e1eb356a3737f885944be13ca8b275c93a5b4",
+      "size_bytes": 57563,
+      "relative_path": "n01819313/n01819313_1515.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01833805/n01833805_6654.JPEG",
+      "sha256": "d8a6c2b94686c315200ff21ad791ed746973f2147125a34f361a26ff6601efe8",
+      "size_bytes": 120273,
+      "relative_path": "n01833805/n01833805_6654.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01843065/n01843065_2740.JPEG",
+      "sha256": "bd663773527e6ced499931b5acc7ac5fb62a3809d71a72a753264d8791cbdfa3",
+      "size_bytes": 190662,
+      "relative_path": "n01843065/n01843065_2740.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01843383/n01843383_10431.JPEG",
+      "sha256": "4cd61fe37a62707872544df20cb99e61c92f947e14f8f809be8d57c4c96ccdbd",
+      "size_bytes": 149584,
+      "relative_path": "n01843383/n01843383_10431.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01847000/n01847000_4542.JPEG",
+      "sha256": "2f59915c7d6cf9bcab70602cb45900ab5271a7dc8f7f87b98339312a25848fe9",
+      "size_bytes": 164182,
+      "relative_path": "n01847000/n01847000_4542.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01855032/n01855032_3745.JPEG",
+      "sha256": "a6f32d4e7240a5e037e72fbbc5a1f8e9e4c433b59c48bcf63ee1aa753ebe0416",
+      "size_bytes": 73992,
+      "relative_path": "n01855032/n01855032_3745.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01872401/n01872401_7082.JPEG",
+      "sha256": "76374c8da619780fc1125872d30c6ec159e2050989e4f83cb0e411dc8781d257",
+      "size_bytes": 217218,
+      "relative_path": "n01872401/n01872401_7082.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01873310/n01873310_408.JPEG",
+      "sha256": "045ace68d61493f13ae9d6ef52e129b42ca8b07d9a74294fa98a425e39191f48",
+      "size_bytes": 9162,
+      "relative_path": "n01873310/n01873310_408.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01877812/n01877812_8927.JPEG",
+      "sha256": "6cfddf2d4ff21713ec46d13a5d8e01438b357b6af4f76dff5c5770552385fa58",
+      "size_bytes": 158790,
+      "relative_path": "n01877812/n01877812_8927.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01882714/n01882714_15076.JPEG",
+      "sha256": "62e5b34dd7b5ef03a3275b77d66a2462c2fa3db3bd4b2f473cdd72c5e6ad3616",
+      "size_bytes": 104174,
+      "relative_path": "n01882714/n01882714_15076.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01910747/n01910747_1675.JPEG",
+      "sha256": "c5308546eb7327c7f6014f3ca9ac43877a07d6a90ad9f56cfdc8fa679d6bcc01",
+      "size_bytes": 125409,
+      "relative_path": "n01910747/n01910747_1675.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01914609/n01914609_20453.JPEG",
+      "sha256": "73356d35ff52e1621d536f80350e8f9d22750b856dfc6aa3c0acd00e728b5eeb",
+      "size_bytes": 159953,
+      "relative_path": "n01914609/n01914609_20453.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01917289/n01917289_1764.JPEG",
+      "sha256": "022815685f4d3f0c700788557bbdc186fff5377bfc5eff51bb33fd49ce53977e",
+      "size_bytes": 354717,
+      "relative_path": "n01917289/n01917289_1764.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01930112/n01930112_14415.JPEG",
+      "sha256": "b36a99db10e104481e858f84fcc5950155ce4c2d4c58ca376193e7552944878f",
+      "size_bytes": 13948,
+      "relative_path": "n01930112/n01930112_14415.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01943899/n01943899_889.JPEG",
+      "sha256": "80d6b92ff2a78384fe5bb6c24ff556dbb30a759cc835e8891c0c6a9f741ae070",
+      "size_bytes": 3766,
+      "relative_path": "n01943899/n01943899_889.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01944390/n01944390_411.JPEG",
+      "sha256": "7036ae4724543b4e2650136a684e8f71d5b11f0ba1e11239002ecd171e07b752",
+      "size_bytes": 170349,
+      "relative_path": "n01944390/n01944390_411.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01978287/n01978287_2150.JPEG",
+      "sha256": "88869ba5a1bba8d65017d15c9b02734a88025cfc53d920fc5ccbe7c1e20da0c6",
+      "size_bytes": 97585,
+      "relative_path": "n01978287/n01978287_2150.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01978455/n01978455_2251.JPEG",
+      "sha256": "f79a3c3e81d6f858cfb8d90be9a1212aa7a0830a601637beda49de3c03c9ad39",
+      "size_bytes": 36037,
+      "relative_path": "n01978455/n01978455_2251.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01980166/n01980166_6310.JPEG",
+      "sha256": "a7c56a230cc3d57d1a4d9b170e4f813b5e4e51d38ff836132000960e66462654",
+      "size_bytes": 110201,
+      "relative_path": "n01980166/n01980166_6310.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01983481/n01983481_21509.JPEG",
+      "sha256": "e7fdb643a9d0787aa358523fbadb6845b10afaf74334c813c00509b1ad9b0d87",
+      "size_bytes": 17187,
+      "relative_path": "n01983481/n01983481_21509.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n01990800/n01990800_18075.JPEG",
+      "sha256": "7bc3061261d552288a454d3e95d6f67704083c170a0c9ce77dd6ee845ad8d67a",
+      "size_bytes": 148230,
+      "relative_path": "n01990800/n01990800_18075.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02002556/n02002556_14222.JPEG",
+      "sha256": "fc3c49206e278de26dec4b46a7b349230b38c3224fe300c318b93e2485481cba",
+      "size_bytes": 113146,
+      "relative_path": "n02002556/n02002556_14222.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02007558/n02007558_12240.JPEG",
+      "sha256": "75cb93ebd1899c38a005c27585f2d8266cc2d4b8d40a4018089d21e5f5e37029",
+      "size_bytes": 121214,
+      "relative_path": "n02007558/n02007558_12240.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02009912/n02009912_16384.JPEG",
+      "sha256": "15b039bc25ffd68db3954444fb43601b628b8d4d3f967cf23595091ded6597cc",
+      "size_bytes": 156950,
+      "relative_path": "n02009912/n02009912_16384.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02011460/n02011460_3905.JPEG",
+      "sha256": "c7aefea2af7bbbe73e85b2d7007646d1caad46af5c9368da8df1973311af5127",
+      "size_bytes": 28501,
+      "relative_path": "n02011460/n02011460_3905.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02013706/n02013706_6700.JPEG",
+      "sha256": "5dc8c48a8f8a8dab1681ec3468e92abcecc8d98dd748e64e7f25c3ccd1cd5dbb",
+      "size_bytes": 281872,
+      "relative_path": "n02013706/n02013706_6700.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02018795/n02018795_5700.JPEG",
+      "sha256": "e21c8284adcaac16bde9f987049348170a8d1bf65724cfeb5e4038619c6dc691",
+      "size_bytes": 89195,
+      "relative_path": "n02018795/n02018795_5700.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02027492/n02027492_5966.JPEG",
+      "sha256": "655a428920511a8e267f1876e0a7cd98b110957cae7876c53a99ff4ffbab3694",
+      "size_bytes": 105172,
+      "relative_path": "n02027492/n02027492_5966.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02051845/n02051845_27036.JPEG",
+      "sha256": "21d7dc18abf549ff161759f87c81410398e79892cfd8f37f748ff0eea60e8afb",
+      "size_bytes": 85512,
+      "relative_path": "n02051845/n02051845_27036.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02071294/n02071294_42390.JPEG",
+      "sha256": "df6866afc2c0c0468498da3fdca78f690ff6bd5ae77718442bb503b4aad04b30",
+      "size_bytes": 77051,
+      "relative_path": "n02071294/n02071294_42390.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02074367/n02074367_1169.JPEG",
+      "sha256": "3df014176cc4237e6743ef26d01537379091a714f31e26ba5dd15e9c699d2840",
+      "size_bytes": 1547,
+      "relative_path": "n02074367/n02074367_1169.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02077923/n02077923_4893.JPEG",
+      "sha256": "b1fcdbe30b8a80bca15051b81db4aef16ee1e4075747c360f788f13e3e36b0fb",
+      "size_bytes": 134454,
+      "relative_path": "n02077923/n02077923_4893.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02085936/n02085936_5769.JPEG",
+      "sha256": "542dd300285ca82ce5e34f18c5a3a44a7ee506cdbc90346671cef0cdf23747d6",
+      "size_bytes": 24638,
+      "relative_path": "n02085936/n02085936_5769.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02086240/n02086240_2446.JPEG",
+      "sha256": "65cdf18986aa87b1422eb2797ad7c7e9ac8ba306dc5aa179c7eb9f34af9cfda3",
+      "size_bytes": 152255,
+      "relative_path": "n02086240/n02086240_2446.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02086910/n02086910_1419.JPEG",
+      "sha256": "e7557acc9ecad8f730263af25087044fbafd9274004bf0ad3f2e105798d682ba",
+      "size_bytes": 64321,
+      "relative_path": "n02086910/n02086910_1419.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02087046/n02087046_6179.JPEG",
+      "sha256": "1cd8796cb95b94d31e6084d2a4d0ed76be8c45bd566fe2ca130214d7a083c167",
+      "size_bytes": 13253,
+      "relative_path": "n02087046/n02087046_6179.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02087394/n02087394_9689.JPEG",
+      "sha256": "9c7667f75d9152e5d600956655c72597cacf1f2e41ce0f60acf098d00cf413a1",
+      "size_bytes": 55428,
+      "relative_path": "n02087394/n02087394_9689.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02088094/n02088094_6220.JPEG",
+      "sha256": "0077cd3c776fcc5174da1ab589bbcf029cc9adb880099d59e94dafa39508ec8e",
+      "size_bytes": 157757,
+      "relative_path": "n02088094/n02088094_6220.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02088238/n02088238_4743.JPEG",
+      "sha256": "f4b5a2424dea7cc877b294b2b72cd6df59e969222c6aed25d9d706489fed589c",
+      "size_bytes": 66951,
+      "relative_path": "n02088238/n02088238_4743.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02088364/n02088364_14565.JPEG",
+      "sha256": "a6cf775ab8ee079690e89375313def9dabfba715c9bfac824317d4d227bdee6e",
+      "size_bytes": 101369,
+      "relative_path": "n02088364/n02088364_14565.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02088632/n02088632_9033.JPEG",
+      "sha256": "21e94738b942b190d8a620aa218c6d4200a570c3e84d7d7649eabd540443e77d",
+      "size_bytes": 210129,
+      "relative_path": "n02088632/n02088632_9033.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02090379/n02090379_3244.JPEG",
+      "sha256": "ab44a5cd8af250e7e6af6f4a05e8893de2a4e419abadca3a1a21268ab48064f3",
+      "size_bytes": 3185,
+      "relative_path": "n02090379/n02090379_3244.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02090622/n02090622_6211.JPEG",
+      "sha256": "6febb96bab893f878bf02c75d4356da249fb51c027044a39ae99ab9db3ec2ba7",
+      "size_bytes": 146211,
+      "relative_path": "n02090622/n02090622_6211.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02090721/n02090721_333.JPEG",
+      "sha256": "55121af0f711221411a9b18ec5cca708f7fe1c6bc525c90f31d70d4c0db1c397",
+      "size_bytes": 48027,
+      "relative_path": "n02090721/n02090721_333.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02091134/n02091134_751.JPEG",
+      "sha256": "6bdb422f05bcb25fe1d36dfd98da2ed9178a5cf453e3aa2dd1e621374684fac5",
+      "size_bytes": 181349,
+      "relative_path": "n02091134/n02091134_751.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02091467/n02091467_6158.JPEG",
+      "sha256": "d3d530c8cf11e25c3823fddde8239f4d295a213492382ab044fdef2a2b79b0f8",
+      "size_bytes": 143457,
+      "relative_path": "n02091467/n02091467_6158.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02091635/n02091635_7029.JPEG",
+      "sha256": "b1ec25b2d049afb16de14363e65028b0ce847da97ada883a51938524aff9c0c5",
+      "size_bytes": 4537,
+      "relative_path": "n02091635/n02091635_7029.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02091831/n02091831_3067.JPEG",
+      "sha256": "cbd7c5fcc3be88dfcb07c3f3146aa1e325a1dbeffbce49e9515a10e1e8496c75",
+      "size_bytes": 48312,
+      "relative_path": "n02091831/n02091831_3067.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02093256/n02093256_5969.JPEG",
+      "sha256": "b8270ae53ebedf7762620b7c8cf4b8167f56ef4604d9385b589285d8db2559ad",
+      "size_bytes": 55372,
+      "relative_path": "n02093256/n02093256_5969.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02093428/n02093428_17170.JPEG",
+      "sha256": "49161d1af1304a34535931e4dce9b924944a41afd9f4c9dfe4effb5be349e716",
+      "size_bytes": 92081,
+      "relative_path": "n02093428/n02093428_17170.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02093754/n02093754_4395.JPEG",
+      "sha256": "7c52cf20162c95558a9a14226169515f473dcd8447d6a905ae7ec9287bb8cac2",
+      "size_bytes": 21257,
+      "relative_path": "n02093754/n02093754_4395.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02093991/n02093991_8154.JPEG",
+      "sha256": "7fce6f10c5d202a4db2b35b9f1b34c3d4465e12a5d38c3c1d8e7aabeace3b512",
+      "size_bytes": 111964,
+      "relative_path": "n02093991/n02093991_8154.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02094258/n02094258_4425.JPEG",
+      "sha256": "a653dded3f663b07634b50ce7edc3296a9f6072796c85707e48fd8708199e176",
+      "size_bytes": 71599,
+      "relative_path": "n02094258/n02094258_4425.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02095570/n02095570_7397.JPEG",
+      "sha256": "491474ec04b95289b346dcd0a811d29f38489504af9bb3df53c2d96a25e78ae1",
+      "size_bytes": 142771,
+      "relative_path": "n02095570/n02095570_7397.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02096294/n02096294_313.JPEG",
+      "sha256": "6c0f7f4d2b9381311c780ba8dd1395f86d62e8660eecb03b3143f7b427801e7f",
+      "size_bytes": 145775,
+      "relative_path": "n02096294/n02096294_313.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02096585/n02096585_7407.JPEG",
+      "sha256": "37b9dfa9a602bec80808e3a368fbbcd7463164e074d39eb283b388d37c191ef6",
+      "size_bytes": 230388,
+      "relative_path": "n02096585/n02096585_7407.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02097047/n02097047_6433.JPEG",
+      "sha256": "6601dd6a9f1949faaa278e3e0546de1653cfadc119889674b59fe038bdbf8abe",
+      "size_bytes": 3327,
+      "relative_path": "n02097047/n02097047_6433.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02097209/n02097209_8348.JPEG",
+      "sha256": "7906d3dbb8b00081af64989621a6b945681431fc5e5bfb4c143e4ac5cad00db7",
+      "size_bytes": 218381,
+      "relative_path": "n02097209/n02097209_8348.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02097474/n02097474_1762.JPEG",
+      "sha256": "2ddac5f3eb5cfa2965335fb233fdd012162ac27f54c1c614182ad6f8738e95bf",
+      "size_bytes": 68983,
+      "relative_path": "n02097474/n02097474_1762.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02097658/n02097658_6252.JPEG",
+      "sha256": "04ff141169bdc5d7c6bd34b923fb9907a053d8051d92381deae140f35e1d1d6f",
+      "size_bytes": 146229,
+      "relative_path": "n02097658/n02097658_6252.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02098105/n02098105_1121.JPEG",
+      "sha256": "89868413fd761b41138fb740b0df2440438e33903ff3e80551abdf4f253c4680",
+      "size_bytes": 160240,
+      "relative_path": "n02098105/n02098105_1121.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02098413/n02098413_4005.JPEG",
+      "sha256": "f3cc1c4bfb549ae948d04dac1c29c5c0eb54c1a82ab73f226b11131e86995736",
+      "size_bytes": 87347,
+      "relative_path": "n02098413/n02098413_4005.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02099267/n02099267_971.JPEG",
+      "sha256": "dcc07b5ed91f3c658c6264d1dcb148640ca8a5872594e20249f9e3a0af26f22d",
+      "size_bytes": 117459,
+      "relative_path": "n02099267/n02099267_971.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02099601/n02099601_7084.JPEG",
+      "sha256": "cde781121990c91d6bdb46d0fdec4e734620ee6c23eb799ff843984932e9608a",
+      "size_bytes": 124445,
+      "relative_path": "n02099601/n02099601_7084.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02099712/n02099712_2543.JPEG",
+      "sha256": "63d615fa5123ad1ce678f6d663db3ea5d96f54b0ae510c2af9d415dbd38c614e",
+      "size_bytes": 192906,
+      "relative_path": "n02099712/n02099712_2543.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02099849/n02099849_1798.JPEG",
+      "sha256": "5946ab4eb8ecae69b325cc0106255da2aa5242542fdeb4a7623e24a9d9c28cd3",
+      "size_bytes": 112976,
+      "relative_path": "n02099849/n02099849_1798.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02100236/n02100236_2442.JPEG",
+      "sha256": "36c02d36896e1616e59e2ca0d2cdc0acedbbcf2d77d6e091df4673643f0d691a",
+      "size_bytes": 20633,
+      "relative_path": "n02100236/n02100236_2442.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02100583/n02100583_12253.JPEG",
+      "sha256": "febe0d623984105ac6a8050ca06b8da33c72f35e4b40f7ce0ad89be9c0fa0e6c",
+      "size_bytes": 22458,
+      "relative_path": "n02100583/n02100583_12253.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02100735/n02100735_3641.JPEG",
+      "sha256": "e87870bb47f6bb02ee0e37042b4fb8e689190934f5cf07c95717c77e1f3c8293",
+      "size_bytes": 172891,
+      "relative_path": "n02100735/n02100735_3641.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02102040/n02102040_6625.JPEG",
+      "sha256": "c65f07a09be8c9889d70bd2c0f5d0c115b06194f7631cd842bc611e80f1ae5c4",
+      "size_bytes": 98485,
+      "relative_path": "n02102040/n02102040_6625.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02102177/n02102177_2542.JPEG",
+      "sha256": "5c84be30e1937106a40df2b9feff8c929698a637372aa7df65a1e4c44628e352",
+      "size_bytes": 46748,
+      "relative_path": "n02102177/n02102177_2542.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02102318/n02102318_9454.JPEG",
+      "sha256": "5977d7ef14b8b107d3754c261bb4174d8f50e30637baef26339c288b0d446cec",
+      "size_bytes": 163762,
+      "relative_path": "n02102318/n02102318_9454.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02105162/n02105162_6501.JPEG",
+      "sha256": "7a8e69b8e69daca8b435483676dec68c4f10be67cbbaf06303cfa0deb426bcbc",
+      "size_bytes": 38081,
+      "relative_path": "n02105162/n02105162_6501.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02105251/n02105251_146.JPEG",
+      "sha256": "d32f5d3d96a2a76f0cf0264c14ddb70fbdbf2494606c16dac0cc339ac8868dec",
+      "size_bytes": 115356,
+      "relative_path": "n02105251/n02105251_146.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02105412/n02105412_7019.JPEG",
+      "sha256": "541ba64b72cc0f29778e1e3a1f4f57788d77a8a170ac8eecd2501c4c1e476360",
+      "size_bytes": 129653,
+      "relative_path": "n02105412/n02105412_7019.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02105855/n02105855_15573.JPEG",
+      "sha256": "1bb733ff8a3c3146e3ee00aa43c7bf72130bb0ef2bd4126bdb2deea7bec1b939",
+      "size_bytes": 80426,
+      "relative_path": "n02105855/n02105855_15573.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02106166/n02106166_19857.JPEG",
+      "sha256": "b02fa81eb35d59375b51bf3f3a3c62c1d285613ce48fecd78223baa8131df080",
+      "size_bytes": 134445,
+      "relative_path": "n02106166/n02106166_19857.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02106550/n02106550_8788.JPEG",
+      "sha256": "2c3389a569d05447dbb9f54ffe4f29dfe2e5c576df24f5bde87b20645a26c004",
+      "size_bytes": 56043,
+      "relative_path": "n02106550/n02106550_8788.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02106662/n02106662_16081.JPEG",
+      "sha256": "2ff8c69f175b54dacf3f59f6244810d9c2aff4f57a753a46d6d3c2efe891b6bc",
+      "size_bytes": 69347,
+      "relative_path": "n02106662/n02106662_16081.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02107142/n02107142_6882.JPEG",
+      "sha256": "aab9d192397feef4af8412ec26baf22e7b7d52a49012ff98ad711d968f0376ee",
+      "size_bytes": 83037,
+      "relative_path": "n02107142/n02107142_6882.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02107312/n02107312_3227.JPEG",
+      "sha256": "0ff77b06ceefd6984bec441b08bd000a5e4ed2d309bd6a0bcd4ddb4482f2718f",
+      "size_bytes": 33252,
+      "relative_path": "n02107312/n02107312_3227.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02107574/n02107574_5166.JPEG",
+      "sha256": "0d633e9183e24b4ff819b979052eeb70cc372babcf3ffad7d1b6d1571492c777",
+      "size_bytes": 124899,
+      "relative_path": "n02107574/n02107574_5166.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02107683/n02107683_7026.JPEG",
+      "sha256": "c3466c8c73e2e76a9e593eafe4d2e3ed406456c9b2a87bed947558f854e62b43",
+      "size_bytes": 112991,
+      "relative_path": "n02107683/n02107683_7026.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02107908/n02107908_266.JPEG",
+      "sha256": "abdc5985251b5df240787713d7eb8164cfd143779c3381cadaa028357497d843",
+      "size_bytes": 144342,
+      "relative_path": "n02107908/n02107908_266.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02108089/n02108089_867.JPEG",
+      "sha256": "6171a0a589cf3e2f5fff57a154348c93fa0bc2ee0e030ee94ebb33d5c3e5f11b",
+      "size_bytes": 147822,
+      "relative_path": "n02108089/n02108089_867.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02108422/n02108422_4122.JPEG",
+      "sha256": "bf6d9427b8c09d1b9a6fa8c8c902ba97adbd47d7da7e129e18c2fe6e50a77c9e",
+      "size_bytes": 61462,
+      "relative_path": "n02108422/n02108422_4122.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02108551/n02108551_20918.JPEG",
+      "sha256": "436d640b7f76f8682716e49b18327f4de4f4af1f906d2b334838010eea90dc0b",
+      "size_bytes": 140130,
+      "relative_path": "n02108551/n02108551_20918.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02108915/n02108915_9596.JPEG",
+      "sha256": "6151a397801afbfe839317a587d1b30b509db89d04aec9ca1daa7a68251d5163",
+      "size_bytes": 237374,
+      "relative_path": "n02108915/n02108915_9596.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02109961/n02109961_5485.JPEG",
+      "sha256": "2bb1454e2ad875296f94b2333e98ec2b0a3fe4e02b4b2c29f4f1b474d4b7f3da",
+      "size_bytes": 121346,
+      "relative_path": "n02109961/n02109961_5485.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02110185/n02110185_4930.JPEG",
+      "sha256": "e8a63b3e18db2bb06ded0480e5bb6c5b5184576e3d9c50eb8e6b1165ba8baa49",
+      "size_bytes": 97000,
+      "relative_path": "n02110185/n02110185_4930.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02110341/n02110341_11863.JPEG",
+      "sha256": "b331a2bcd5ea63332f37d056778ec35dc3f5e9b623d4c7e9e4cc0c8c6ab6085c",
+      "size_bytes": 29284,
+      "relative_path": "n02110341/n02110341_11863.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02110627/n02110627_9233.JPEG",
+      "sha256": "d0f361a1076da66f233307f2f9b0d1ce36ac6f634d0a502a1287abb2071b114c",
+      "size_bytes": 12483,
+      "relative_path": "n02110627/n02110627_9233.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02110958/n02110958_9528.JPEG",
+      "sha256": "01206aa3f80230f3a85731a1cb5e3a422e635bce71fa2471e4ff9bb7088548e1",
+      "size_bytes": 90691,
+      "relative_path": "n02110958/n02110958_9528.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02111129/n02111129_547.JPEG",
+      "sha256": "06a6c19a089c44edf8b29e330805b9abd779dc7babe49fc3c0c3f833c98854fb",
+      "size_bytes": 22003,
+      "relative_path": "n02111129/n02111129_547.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02111277/n02111277_45434.JPEG",
+      "sha256": "5772e1ddab66bdcb4b093c98e45c8485935bdf4a12487537386a3f92f3617301",
+      "size_bytes": 172350,
+      "relative_path": "n02111277/n02111277_45434.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02112018/n02112018_5572.JPEG",
+      "sha256": "33720e64bfb273637f8128494dc9bb07df04c61cf463e070970796acdeca4a86",
+      "size_bytes": 70082,
+      "relative_path": "n02112018/n02112018_5572.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02112706/n02112706_3051.JPEG",
+      "sha256": "add652770f06cb365e70f5ff8083d9aee3eedfca82d28d98d2c775676567f626",
+      "size_bytes": 207821,
+      "relative_path": "n02112706/n02112706_3051.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02113624/n02113624_1100.JPEG",
+      "sha256": "c77439e07658f3524ff6f943be448ab689d67e617533ebbfb519939587c98bd1",
+      "size_bytes": 98841,
+      "relative_path": "n02113624/n02113624_1100.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02113978/n02113978_4174.JPEG",
+      "sha256": "43184f5410b5e0d3507e1428fc158f89477bb665ade802944480aac4577c16fd",
+      "size_bytes": 56570,
+      "relative_path": "n02113978/n02113978_4174.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02114548/n02114548_1029.JPEG",
+      "sha256": "920eff4cb7ac0c69096c664c104c8c31516cfe6578803ad78927557b8d5173e9",
+      "size_bytes": 220512,
+      "relative_path": "n02114548/n02114548_1029.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02114712/n02114712_18675.JPEG",
+      "sha256": "7034af03282affc2cac21e5a7a6405a55d064015cbd64d487f60d6e7689ad8ff",
+      "size_bytes": 108013,
+      "relative_path": "n02114712/n02114712_18675.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02114855/n02114855_6429.JPEG",
+      "sha256": "99402344d01b294062cfc65a418cfa6f964e62d9bd42692ed1cfa7278402f14d",
+      "size_bytes": 153280,
+      "relative_path": "n02114855/n02114855_6429.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02116738/n02116738_17000.JPEG",
+      "sha256": "1e7217d2822275ff1f66d2dfe91548cc9e4a5efbf4cb776ea55121048bad328a",
+      "size_bytes": 59516,
+      "relative_path": "n02116738/n02116738_17000.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02117135/n02117135_11394.JPEG",
+      "sha256": "ee62f93b7c29977602ad7fc99e07275fb3b338c9bc48ae96698ca17cfc71b2ad",
+      "size_bytes": 192418,
+      "relative_path": "n02117135/n02117135_11394.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02119022/n02119022_1281.JPEG",
+      "sha256": "3b02d1be5820f59eb5e81aaa8d24115683306b8d1d1f0edbfb508274898fda09",
+      "size_bytes": 78674,
+      "relative_path": "n02119022/n02119022_1281.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02119789/n02119789_9669.JPEG",
+      "sha256": "d18dba211193351c40a1b46654e0f60ffeb1cc0c58b47bfd21f80b31456a0d11",
+      "size_bytes": 243897,
+      "relative_path": "n02119789/n02119789_9669.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02123045/n02123045_7538.JPEG",
+      "sha256": "755b637e753c6408169de36cb26bcccd39ebde8ed7ea05d6e0511786286ea0d1",
+      "size_bytes": 7473,
+      "relative_path": "n02123045/n02123045_7538.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02123394/n02123394_1879.JPEG",
+      "sha256": "edfb4ef94c36e68961a25e8b1559cba9f8ba9c54c7c51b60a4ac5879d21c5f40",
+      "size_bytes": 48249,
+      "relative_path": "n02123394/n02123394_1879.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02123597/n02123597_10203.JPEG",
+      "sha256": "842fd87cc18c85fa9133e76658c9a1db1affaf1f31bfc7cef540788e9581beb5",
+      "size_bytes": 168994,
+      "relative_path": "n02123597/n02123597_10203.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02124075/n02124075_3230.JPEG",
+      "sha256": "fcee34ff153f93e6b97d64e9b8af6978dfcfe5e8ea5bd365551b8c92ee255d2f",
+      "size_bytes": 57966,
+      "relative_path": "n02124075/n02124075_3230.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02125311/n02125311_2734.JPEG",
+      "sha256": "8c889317cfad000b1d78ad24d0bedf61343a066954892e351eabf79f7a120ac9",
+      "size_bytes": 32992,
+      "relative_path": "n02125311/n02125311_2734.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02127052/n02127052_7372.JPEG",
+      "sha256": "cd0afcc512565b3b436b64a6d8a9be0b45bfe3f50a2f697493f6e49e071f75ac",
+      "size_bytes": 2513,
+      "relative_path": "n02127052/n02127052_7372.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02128385/n02128385_14743.JPEG",
+      "sha256": "341fbe75ecea6fd04dae3acf07f8ec3e8465b004d3a362e990ebf97174e5a32c",
+      "size_bytes": 39066,
+      "relative_path": "n02128385/n02128385_14743.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02128757/n02128757_15956.JPEG",
+      "sha256": "7d9758b486cea3f00051e5dd71e4c30bc61bb121ee204d6bf7c97600481ed60e",
+      "size_bytes": 26123,
+      "relative_path": "n02128757/n02128757_15956.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02129165/n02129165_1098.JPEG",
+      "sha256": "c5cae600049fc623f4c3babc4927524a9a8d7275f6af4ab0192c590f267bfcb1",
+      "size_bytes": 101674,
+      "relative_path": "n02129165/n02129165_1098.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02129604/n02129604_20579.JPEG",
+      "sha256": "38b6b8e4911385b5d92f70f760ec619ed1b2016d5c1a63a1562de9956a856056",
+      "size_bytes": 158290,
+      "relative_path": "n02129604/n02129604_20579.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02130308/n02130308_1088.JPEG",
+      "sha256": "8bffdb1ed34a8f3465f1b4a1798d175eb69a8416c0fb4b8b65a290791babdadb",
+      "size_bytes": 12819,
+      "relative_path": "n02130308/n02130308_1088.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02132136/n02132136_24647.JPEG",
+      "sha256": "2db48d4a08c420a74d1d9d6a1037e39780ef398061b05291f8ff50436238ed9f",
+      "size_bytes": 163457,
+      "relative_path": "n02132136/n02132136_24647.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02134418/n02134418_3571.JPEG",
+      "sha256": "d8696256ed8dde4cc93a5c6a008ca7881d389097f0095559141374f8df93c34a",
+      "size_bytes": 123084,
+      "relative_path": "n02134418/n02134418_3571.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02137549/n02137549_7868.JPEG",
+      "sha256": "2add3a531f443447ab62f689bdb1cb42aa4364a72df8522426143d691e980027",
+      "size_bytes": 149830,
+      "relative_path": "n02137549/n02137549_7868.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02138441/n02138441_185.JPEG",
+      "sha256": "2e102dc404ba2917ec009b88107fea0426c38118e31fbac3fd86601e1e1fcccf",
+      "size_bytes": 155397,
+      "relative_path": "n02138441/n02138441_185.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02165456/n02165456_29260.JPEG",
+      "sha256": "70cc7c4a6190c8c4df0d677fa32e04723810b10131a80172d335899d1ce7aa2f",
+      "size_bytes": 25941,
+      "relative_path": "n02165456/n02165456_29260.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02169497/n02169497_9535.JPEG",
+      "sha256": "48fdccac6245959b09d761d01606440d27a6574483bc90007982c75195a744f9",
+      "size_bytes": 136766,
+      "relative_path": "n02169497/n02169497_9535.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02190166/n02190166_2719.JPEG",
+      "sha256": "7925e512d24908e2f1d27c1ba50ac3b606ab2e3a963414312a6146a07764addb",
+      "size_bytes": 29003,
+      "relative_path": "n02190166/n02190166_2719.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02219486/n02219486_24946.JPEG",
+      "sha256": "434830aa47547c0ab21438530f6e0ba5793b41a3b71883ece9fb9f49977f427b",
+      "size_bytes": 150793,
+      "relative_path": "n02219486/n02219486_24946.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02226429/n02226429_14841.JPEG",
+      "sha256": "27787653b81d70f0db0ff3936b957270e9918e979292123fda7cff51c6bfc0cd",
+      "size_bytes": 76396,
+      "relative_path": "n02226429/n02226429_14841.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02229544/n02229544_7220.JPEG",
+      "sha256": "a8a422372c7a83d454564d276e99c0c17b4c25d2a730e68659dec58f713dc28c",
+      "size_bytes": 107902,
+      "relative_path": "n02229544/n02229544_7220.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02233338/n02233338_5798.JPEG",
+      "sha256": "f943d9d907a853414f7ff3b61ed34f3ded1265a03369d6fb63098ad8b12eeca4",
+      "size_bytes": 158996,
+      "relative_path": "n02233338/n02233338_5798.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02256656/n02256656_14168.JPEG",
+      "sha256": "4e88d0c26e608df4ed286de923551570af4942a44f816cdf8e17662bfdc253eb",
+      "size_bytes": 116162,
+      "relative_path": "n02256656/n02256656_14168.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02264363/n02264363_6739.JPEG",
+      "sha256": "d694fba7b85b1766e26868c88a23adb12af2aa67af6e5950474e04d3178cedee",
+      "size_bytes": 42637,
+      "relative_path": "n02264363/n02264363_6739.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02276258/n02276258_428.JPEG",
+      "sha256": "35eac6d7e92ead1f2064b203e5d5345bfdc50e1ba0d8ded75d25fe141d272394",
+      "size_bytes": 186077,
+      "relative_path": "n02276258/n02276258_428.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02281406/n02281406_9182.JPEG",
+      "sha256": "15ca1f774c7dcc6f6092438724cc0434d78c1c0eb5bd7e23cd2a6da3fa179c91",
+      "size_bytes": 105893,
+      "relative_path": "n02281406/n02281406_9182.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02317335/n02317335_12370.JPEG",
+      "sha256": "75e7f6e0f1af40a8ea46294e3b77cea9a8418089ea6f1d0c7e3def7ddacd2a7a",
+      "size_bytes": 101168,
+      "relative_path": "n02317335/n02317335_12370.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02325366/n02325366_8316.JPEG",
+      "sha256": "900cf62502e38bb94f32ddf2fa6800637ffe9121ff1aa0aba6f3e6079d65fa02",
+      "size_bytes": 182426,
+      "relative_path": "n02325366/n02325366_8316.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02328150/n02328150_3815.JPEG",
+      "sha256": "985f9dbd60dd21b30f3842cc1faa1ce6d13fb674c577586bd9f6f2af33f9ae75",
+      "size_bytes": 97986,
+      "relative_path": "n02328150/n02328150_3815.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02346627/n02346627_9674.JPEG",
+      "sha256": "2bc894cc33a22d9c38bf9a8df1a15c06ca999fbf0209cdd2b388a1bd65f7ae4d",
+      "size_bytes": 149587,
+      "relative_path": "n02346627/n02346627_9674.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02356798/n02356798_6618.JPEG",
+      "sha256": "445764e8eae1eea8b577385c8cb64d70e119bd46d137611f27ae7c0418e895cd",
+      "size_bytes": 33826,
+      "relative_path": "n02356798/n02356798_6618.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02363005/n02363005_2423.JPEG",
+      "sha256": "f79699349ba0475ea88078f73b1823e7611ad5953478954175761dfbf63497d1",
+      "size_bytes": 96142,
+      "relative_path": "n02363005/n02363005_2423.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02364673/n02364673_47022.JPEG",
+      "sha256": "3135e8de93aeaf3f93d3386d2d10fe8b23eb360a638ba04ed8deb3da75c1a85f",
+      "size_bytes": 153551,
+      "relative_path": "n02364673/n02364673_47022.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02391049/n02391049_627.JPEG",
+      "sha256": "14a4165253a7f6bddad8fcc29c0da31c4e2444f970004a7052346675280db103",
+      "size_bytes": 123649,
+      "relative_path": "n02391049/n02391049_627.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02396427/n02396427_12454.JPEG",
+      "sha256": "4d5439a166432dedd5fa88fadf6113892cbd3f1b26a1680f74b105a6344c4b51",
+      "size_bytes": 30726,
+      "relative_path": "n02396427/n02396427_12454.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02397096/n02397096_13563.JPEG",
+      "sha256": "e2634656d83593dbbeb2a5efa4b9bf2140e1f593bfbe0e39ffce0dae32e47cff",
+      "size_bytes": 226914,
+      "relative_path": "n02397096/n02397096_13563.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02403003/n02403003_11541.JPEG",
+      "sha256": "b0ae3a9617f932d4e80f11dbb7b9fa6e6d508ad0de9769c171bd3ac0497ff22b",
+      "size_bytes": 9690,
+      "relative_path": "n02403003/n02403003_11541.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02408429/n02408429_16973.JPEG",
+      "sha256": "d6aef3dbf5217709748b98e23d1f768b1d604d23caeae16e9798caa4167e1a2b",
+      "size_bytes": 133310,
+      "relative_path": "n02408429/n02408429_16973.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02417914/n02417914_16042.JPEG",
+      "sha256": "166860e514b180142966035348ede28cdd4b735c2bf71c81b7c7236f3dbc0f42",
+      "size_bytes": 21485,
+      "relative_path": "n02417914/n02417914_16042.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02422106/n02422106_4452.JPEG",
+      "sha256": "30b210352adfb91ba9f6b64371a2540eae7491519c75f883b9576f28fe31a60d",
+      "size_bytes": 119946,
+      "relative_path": "n02422106/n02422106_4452.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02437616/n02437616_2873.JPEG",
+      "sha256": "554290399db0cdcabe938996402cdcd03b56653dc4942da2258f4efe722b5f1d",
+      "size_bytes": 184424,
+      "relative_path": "n02437616/n02437616_2873.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02441942/n02441942_21332.JPEG",
+      "sha256": "d5ed6d4f83d0255075c5af13c8a18b03a0cf23ed515a231143738c7e9c915b61",
+      "size_bytes": 156860,
+      "relative_path": "n02441942/n02441942_21332.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02442845/n02442845_23842.JPEG",
+      "sha256": "5074a967d245216b0a94c91d99c50287a0fbc179782216a85320b4f803be4a6e",
+      "size_bytes": 12417,
+      "relative_path": "n02442845/n02442845_23842.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02444819/n02444819_5829.JPEG",
+      "sha256": "8408f327dd9a4f8bacd9fa694b796556940c162e008a9dab665809b42b366a17",
+      "size_bytes": 125370,
+      "relative_path": "n02444819/n02444819_5829.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02447366/n02447366_1713.JPEG",
+      "sha256": "fad0934c34c54634cba0e14409aaf1b6103d869e788421405e38ab3050c57546",
+      "size_bytes": 151059,
+      "relative_path": "n02447366/n02447366_1713.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02480855/n02480855_11956.JPEG",
+      "sha256": "dcc198d9877e862c48d68b29ac715f9182f54e7ad0743cd97ee84100a12af395",
+      "size_bytes": 189152,
+      "relative_path": "n02480855/n02480855_11956.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02483362/n02483362_2371.JPEG",
+      "sha256": "428767fc39b879761aa41e6d321b366ce2bada16564bf7703d62c9a3ed94765d",
+      "size_bytes": 156027,
+      "relative_path": "n02483362/n02483362_2371.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02486261/n02486261_17030.JPEG",
+      "sha256": "0e81f32dceef0924181504120857cff912ecc4fa7e63b589a38b09b518eb51ab",
+      "size_bytes": 129211,
+      "relative_path": "n02486261/n02486261_17030.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02488291/n02488291_5166.JPEG",
+      "sha256": "1f61a6c71683b3dc6bff63e070ec22352e703220ec6fb04c2d54beb49088446b",
+      "size_bytes": 2273,
+      "relative_path": "n02488291/n02488291_5166.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02488702/n02488702_5325.JPEG",
+      "sha256": "3fa078d70a6ea4ce5dd79c87a31affc3afb665d880dd75c291f4bf35e6f5efdf",
+      "size_bytes": 6818,
+      "relative_path": "n02488702/n02488702_5325.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02489166/n02489166_8334.JPEG",
+      "sha256": "277688d5ede617d40f9afa26aba1b832afad741a5c05d452029ac93082fe5238",
+      "size_bytes": 133867,
+      "relative_path": "n02489166/n02489166_8334.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02490219/n02490219_4839.JPEG",
+      "sha256": "fa9aa7d1be2d71acfe97ca9443e325bd1563d2111717d653566190f613fd6f1d",
+      "size_bytes": 95966,
+      "relative_path": "n02490219/n02490219_4839.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02493509/n02493509_527.JPEG",
+      "sha256": "a02f0ca93e682fc16e87d477170008eb92940442a090ab2df1662cfa15056a6f",
+      "size_bytes": 49656,
+      "relative_path": "n02493509/n02493509_527.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02493793/n02493793_3703.JPEG",
+      "sha256": "d2f868f56fb7afeae8e5ea5fc228851fb8a3982cd53d533e254a64e5d1d458a5",
+      "size_bytes": 176693,
+      "relative_path": "n02493793/n02493793_3703.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02494079/n02494079_616.JPEG",
+      "sha256": "68771bf863847b3265fbef7889a4eb7297947601e7208923c11b600d812e76ee",
+      "size_bytes": 122952,
+      "relative_path": "n02494079/n02494079_616.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02497673/n02497673_1115.JPEG",
+      "sha256": "960d37311f9593da1543de26da2ae9a3615609edc2f9b2107a471968977d8221",
+      "size_bytes": 143372,
+      "relative_path": "n02497673/n02497673_1115.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02536864/n02536864_6873.JPEG",
+      "sha256": "e4c666a650c897f9199ba9beb025231a5df3bb380af79b0826908bffca08d592",
+      "size_bytes": 129311,
+      "relative_path": "n02536864/n02536864_6873.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02606052/n02606052_13795.JPEG",
+      "sha256": "5b5ce9c8d4935cfa56a881b267d3b72f07b8cec85fc75556d319f3b865aae375",
+      "size_bytes": 8195,
+      "relative_path": "n02606052/n02606052_13795.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02607072/n02607072_15140.JPEG",
+      "sha256": "163c903bc35b7fac8b86b20855a08e1244b413669e3a73fb372725020dcb43df",
+      "size_bytes": 183808,
+      "relative_path": "n02607072/n02607072_15140.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02640242/n02640242_6780.JPEG",
+      "sha256": "acdc673a9c6894564c37f0dba3ecab8a003e4fffb097b58bac8c54064ef65f09",
+      "size_bytes": 30121,
+      "relative_path": "n02640242/n02640242_6780.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02643566/n02643566_2433.JPEG",
+      "sha256": "5721ac15de5607495511e24372cfbee620ecdc1b7a760481d78b6df53a935012",
+      "size_bytes": 218050,
+      "relative_path": "n02643566/n02643566_2433.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02667093/n02667093_1271.JPEG",
+      "sha256": "6a3b66192e16ed4fb4f1150cff720c2abf92506b95d219af34f75af290df299c",
+      "size_bytes": 17175,
+      "relative_path": "n02667093/n02667093_1271.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02669723/n02669723_6324.JPEG",
+      "sha256": "b2c195a5f00ee7ebaa00bb0f8343bfea3bd6d5dcdb0572a4a1052f139c2c18a1",
+      "size_bytes": 7490,
+      "relative_path": "n02669723/n02669723_6324.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02672831/n02672831_525.JPEG",
+      "sha256": "7361f556566c2cd4e76abc7aee913562c7339345679961b88e3a3977163c0cea",
+      "size_bytes": 88835,
+      "relative_path": "n02672831/n02672831_525.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02676566/n02676566_8195.JPEG",
+      "sha256": "daa1a5e256625a4726a9bbd43586fc8464aecf29f6df7a8f6a7da3db685f34ad",
+      "size_bytes": 86023,
+      "relative_path": "n02676566/n02676566_8195.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02692877/n02692877_9633.JPEG",
+      "sha256": "5a13eb430d08e2078fb0ce99bef6815bfcf50b222614ae6490fef0f0ff86ff42",
+      "size_bytes": 71615,
+      "relative_path": "n02692877/n02692877_9633.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02708093/n02708093_2179.JPEG",
+      "sha256": "9b3ea2f148381012c3b84efda7c5410223bccd4e8bf876a3ff18279c79e0f65d",
+      "size_bytes": 11265,
+      "relative_path": "n02708093/n02708093_2179.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02727426/n02727426_743.JPEG",
+      "sha256": "cc69baa8cdf58b13b498ad8ee721054ba3f7d104a0be9492f0d58501d347d442",
+      "size_bytes": 225002,
+      "relative_path": "n02727426/n02727426_743.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02730930/n02730930_14752.JPEG",
+      "sha256": "0d50ed8849680502db674377cc8dac79f6308d61b6bd99fce805d212084f2ff3",
+      "size_bytes": 124943,
+      "relative_path": "n02730930/n02730930_14752.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02769748/n02769748_53957.JPEG",
+      "sha256": "3f37edd4af19f49a031f0e86625240943f54a9169aa66a60b93107264201a524",
+      "size_bytes": 74660,
+      "relative_path": "n02769748/n02769748_53957.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02776631/n02776631_14066.JPEG",
+      "sha256": "ba72c320cab1c782612e99a0188a3b595946532fd40a4d864b4cbc2db75fdda2",
+      "size_bytes": 104815,
+      "relative_path": "n02776631/n02776631_14066.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02783161/n02783161_23150.JPEG",
+      "sha256": "4e3dd8669324cca3587713bc65156956747f7f2caa7fe771863376f19a7c1a6d",
+      "size_bytes": 73619,
+      "relative_path": "n02783161/n02783161_23150.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02787622/n02787622_3131.JPEG",
+      "sha256": "c7704bc504e9594cfaadd0fe5f4fe66138c7e7db85b8b3bbd91f908cc53c609f",
+      "size_bytes": 94447,
+      "relative_path": "n02787622/n02787622_3131.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02788148/n02788148_32655.JPEG",
+      "sha256": "4268d19a2652a0d2071601553599535b6d9dc02ff79874104f1e996420950a6c",
+      "size_bytes": 68390,
+      "relative_path": "n02788148/n02788148_32655.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02791124/n02791124_5807.JPEG",
+      "sha256": "31bf5aa46134fa23b9e118b1a5aa8253f72dd4d361a3571bbfcd443ae880cd1e",
+      "size_bytes": 20878,
+      "relative_path": "n02791124/n02791124_5807.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02795169/n02795169_26969.JPEG",
+      "sha256": "7d37d4f55c2deaa660e6bf670a99e26715d27c53083814eb2da75cfef81a7d83",
+      "size_bytes": 130042,
+      "relative_path": "n02795169/n02795169_26969.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02797295/n02797295_2298.JPEG",
+      "sha256": "b1ed37e06ab056920bf6dcc99b6a15c9d6c5d64ea457e5267b9fa59cd6ef591a",
+      "size_bytes": 15698,
+      "relative_path": "n02797295/n02797295_2298.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02799071/n02799071_30736.JPEG",
+      "sha256": "cc677a39d1979d06b1541521a8f082971a89d376e1428ec84f74bff900ea2134",
+      "size_bytes": 64931,
+      "relative_path": "n02799071/n02799071_30736.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02804610/n02804610_18284.JPEG",
+      "sha256": "86ef033f85a2ed6e9b61909a2641799072c60d1e15c04df172ba85a060b0333f",
+      "size_bytes": 141518,
+      "relative_path": "n02804610/n02804610_18284.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02814533/n02814533_65530.JPEG",
+      "sha256": "61d7b7c0ca0fd188965828eb73f992041e9999ede0fb84bd1b40251bed3ec676",
+      "size_bytes": 227475,
+      "relative_path": "n02814533/n02814533_65530.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02814860/n02814860_26701.JPEG",
+      "sha256": "a6886a7adef656dad4d31b9b5dcac6a1b06a4a018c09f24226abc284742cb1bf",
+      "size_bytes": 128785,
+      "relative_path": "n02814860/n02814860_26701.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02817516/n02817516_9635.JPEG",
+      "sha256": "478da5b27c424e13f46d12f14ce470094bcab667209f0a2f9d389436bf8a2cc2",
+      "size_bytes": 24382,
+      "relative_path": "n02817516/n02817516_9635.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02823428/n02823428_2450.JPEG",
+      "sha256": "9d77427f9aaf7b1907ec4f63e277fc17eff7729a6bf965044828828d19fd9d94",
+      "size_bytes": 94044,
+      "relative_path": "n02823428/n02823428_2450.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02823750/n02823750_1222.JPEG",
+      "sha256": "25c14fbcb2cd3296904318713388d6c33c51ebeaacf7ce7fcfc3a60cc7b275d1",
+      "size_bytes": 70155,
+      "relative_path": "n02823750/n02823750_1222.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02825657/n02825657_6346.JPEG",
+      "sha256": "f9f89b875fb3f633a370de5a9d0fed2d5bc9b1cfa0f8703edc26b3e5dc8fd168",
+      "size_bytes": 106218,
+      "relative_path": "n02825657/n02825657_6346.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02834397/n02834397_33668.JPEG",
+      "sha256": "1a2f4487f6b88e8072ac22179f077eef82869387ea7a8855dae74e5116ca2b05",
+      "size_bytes": 62016,
+      "relative_path": "n02834397/n02834397_33668.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02835271/n02835271_9503.JPEG",
+      "sha256": "5870ed0311870cdc09ec9939fe11aea75c10da277858b630efb8f00cb9811f86",
+      "size_bytes": 156968,
+      "relative_path": "n02835271/n02835271_9503.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02837789/n02837789_17869.JPEG",
+      "sha256": "1a165c3f72d73bdc134962b5546ad43b6b34e69149653dc5678500c4682d1639",
+      "size_bytes": 82625,
+      "relative_path": "n02837789/n02837789_17869.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02840245/n02840245_8978.JPEG",
+      "sha256": "5a2a124b9d0f760dfaecbc1f5ef8c84769ff185da5df3236cdf3019bc938e381",
+      "size_bytes": 160672,
+      "relative_path": "n02840245/n02840245_8978.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02841315/n02841315_6922.JPEG",
+      "sha256": "8359169de900939a26f29d71842e6672fc8274d32a6017f1d938bf56e99831a3",
+      "size_bytes": 118838,
+      "relative_path": "n02841315/n02841315_6922.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02859443/n02859443_4400.JPEG",
+      "sha256": "391fd15f55fce770cc44bb373d7781754fa00dfb36d6cfa130ba08cffc7a05c4",
+      "size_bytes": 143516,
+      "relative_path": "n02859443/n02859443_4400.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02860847/n02860847_2707.JPEG",
+      "sha256": "9bb254ae304ebd63ffbd4e5330279d702b3c69685ba0c63f778c7ae0c98f5662",
+      "size_bytes": 122563,
+      "relative_path": "n02860847/n02860847_2707.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02869837/n02869837_8639.JPEG",
+      "sha256": "2dce9211a12f28bf6505d938aee11a70101e3155f71f9d26a78951fcececa14c",
+      "size_bytes": 153147,
+      "relative_path": "n02869837/n02869837_8639.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02877765/n02877765_9963.JPEG",
+      "sha256": "495c1e02af5bcbf965f7f028d07f52698f69229644652a1e08d553a7c70aadaf",
+      "size_bytes": 91830,
+      "relative_path": "n02877765/n02877765_9963.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02879718/n02879718_9626.JPEG",
+      "sha256": "e9fe63183337636d285a50e1d65fa8e4516e7bdb210ee2fb7af3f1c67d3f5311",
+      "size_bytes": 37819,
+      "relative_path": "n02879718/n02879718_9626.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02892201/n02892201_53214.JPEG",
+      "sha256": "4c50060a0018e76197f6b2032d6f9c3513ab77e4b5c9005853a59102d50e8944",
+      "size_bytes": 110939,
+      "relative_path": "n02892201/n02892201_53214.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02895154/n02895154_4290.JPEG",
+      "sha256": "2d1ca273a9218ebf6bf8b9ba7c056bb0c2ec46464d45983b1ae9772174fc2693",
+      "size_bytes": 23402,
+      "relative_path": "n02895154/n02895154_4290.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02909870/n02909870_2159.JPEG",
+      "sha256": "ab729d51e366030125643e80484ceb9647592ad8522f76a962b339fc77c75e22",
+      "size_bytes": 119533,
+      "relative_path": "n02909870/n02909870_2159.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02927161/n02927161_29714.JPEG",
+      "sha256": "741debd5a9ae041b8744139723152c335971b07eafba61092c2cd27e3291c8bf",
+      "size_bytes": 172194,
+      "relative_path": "n02927161/n02927161_29714.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02930766/n02930766_37144.JPEG",
+      "sha256": "3e65929254d3a47e70a624ddf580ed396517f591ed4fc2c91c666298892dac01",
+      "size_bytes": 118148,
+      "relative_path": "n02930766/n02930766_37144.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02948072/n02948072_5098.JPEG",
+      "sha256": "12431197048285c3f9030c1d8fe271f06802fd7fa0ddd1d72bf1bf64d634ea8d",
+      "size_bytes": 14838,
+      "relative_path": "n02948072/n02948072_5098.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02950826/n02950826_21607.JPEG",
+      "sha256": "2385689c5b7f38fa327aeba6c3524d6476f8d6c1d24f1bf5cb6737f117d011c2",
+      "size_bytes": 110096,
+      "relative_path": "n02950826/n02950826_21607.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02951358/n02951358_34916.JPEG",
+      "sha256": "6bf74e192f8362308062c1caa79c95cdac6fef5046d6b5ad14b0f7ce9a58e0f9",
+      "size_bytes": 139009,
+      "relative_path": "n02951358/n02951358_34916.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02951585/n02951585_14718.JPEG",
+      "sha256": "6a4bc0edf29a752f5726d2d23a6d46642a71ac7310c563b5cb7228f39578c23a",
+      "size_bytes": 4413,
+      "relative_path": "n02951585/n02951585_14718.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02963159/n02963159_4696.JPEG",
+      "sha256": "bbbe8bba0918fa24be38ea649a58aeeffe14456941f832d8c9d35304b66ed545",
+      "size_bytes": 143558,
+      "relative_path": "n02963159/n02963159_4696.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02966687/n02966687_8629.JPEG",
+      "sha256": "e88b55a26cb34c5a13ba1d72353e3e62a9caec9943d1beeb5424cbaa252b4b44",
+      "size_bytes": 50852,
+      "relative_path": "n02966687/n02966687_8629.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02971356/n02971356_12137.JPEG",
+      "sha256": "7be62911d830e0b055eb88586b4e36972e43d5a5f61d3fa5ccbd0bc80f2fc2ca",
+      "size_bytes": 41903,
+      "relative_path": "n02971356/n02971356_12137.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02978881/n02978881_649.JPEG",
+      "sha256": "2c4765baa3d0c2d67d6e4dbdbd36431e39c2f14a6dca6817dd88a156cd9085f7",
+      "size_bytes": 80503,
+      "relative_path": "n02978881/n02978881_649.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n02992211/n02992211_9589.JPEG",
+      "sha256": "b6889e44a3aaabd909f5f97d0e5aaf0c0c4c74331c6d2795342fe3d2cf4076a6",
+      "size_bytes": 82407,
+      "relative_path": "n02992211/n02992211_9589.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03000247/n03000247_38350.JPEG",
+      "sha256": "22a0e91b17464e9f3d202614b7dd2cca72c5ef7157d18c3fabe1388d4a34d28b",
+      "size_bytes": 77123,
+      "relative_path": "n03000247/n03000247_38350.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03000684/n03000684_2264.JPEG",
+      "sha256": "a6fca83c2f7a083eba9a135ec8b214432961d166d84b30942b24204647397f35",
+      "size_bytes": 53269,
+      "relative_path": "n03000684/n03000684_2264.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03016953/n03016953_11650.JPEG",
+      "sha256": "c8f948855ad1542cc0d504baf2993c9fc011b9164f3245385c1a784afaf1fc64",
+      "size_bytes": 90888,
+      "relative_path": "n03016953/n03016953_11650.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03028079/n03028079_10590.JPEG",
+      "sha256": "65fe8ecc5f9fccb4ec439df50c02a720ade40549ef84fc4a3e911591db7ecc3e",
+      "size_bytes": 116953,
+      "relative_path": "n03028079/n03028079_10590.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03041632/n03041632_30602.JPEG",
+      "sha256": "c4aea8610504bd8fd8bab5d5ac6a845e6245c4d9b75e1d538504e3a22ef40479",
+      "size_bytes": 84316,
+      "relative_path": "n03041632/n03041632_30602.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03045698/n03045698_6214.JPEG",
+      "sha256": "caa4ff0b1b68a34cfc7ded2e6fe7977ed8916545947353857dd0e51fe251180f",
+      "size_bytes": 141692,
+      "relative_path": "n03045698/n03045698_6214.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03062245/n03062245_15980.JPEG",
+      "sha256": "ae381dc7ab34540d8cd29adb0454ceb643fdbbcd70d243ac07a23f95baef6843",
+      "size_bytes": 2365,
+      "relative_path": "n03062245/n03062245_15980.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03063599/n03063599_3755.JPEG",
+      "sha256": "40959efb4aa3e8a277b2f4b30bcd0a198b21aa86ebce91fa8aa8ae17258b8e22",
+      "size_bytes": 125963,
+      "relative_path": "n03063599/n03063599_3755.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03063689/n03063689_21338.JPEG",
+      "sha256": "71f0caec9896059c6726e2c1fc1ea610d62935b15f8a50c01516f1bdc862fa4a",
+      "size_bytes": 68229,
+      "relative_path": "n03063689/n03063689_21338.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03065424/n03065424_9666.JPEG",
+      "sha256": "8ad8789c3e3238b247641ef5b4c7cb30bc1ba11ecdbd3cf00a5ceb9b0540153a",
+      "size_bytes": 140901,
+      "relative_path": "n03065424/n03065424_9666.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03075370/n03075370_3890.JPEG",
+      "sha256": "116214ae584ebc218864691aeae25527b0093e9cf92c5a4dfdfa8bb6f39baf7e",
+      "size_bytes": 112374,
+      "relative_path": "n03075370/n03075370_3890.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03085013/n03085013_19416.JPEG",
+      "sha256": "2edcf85ed618aba07b66c323b43f45f090885855d93f062809f826db42ed0fa8",
+      "size_bytes": 73765,
+      "relative_path": "n03085013/n03085013_19416.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03089624/n03089624_35383.JPEG",
+      "sha256": "e82766095f5b1bbb31209511854b2a171bfa212cf7eaef3f67be000a0c0c68c6",
+      "size_bytes": 148955,
+      "relative_path": "n03089624/n03089624_35383.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03100240/n03100240_11978.JPEG",
+      "sha256": "cabeaefbdd1863fa4d5b36abc34bd63c83119a7fec6ff30b562e382c6e585e3b",
+      "size_bytes": 165828,
+      "relative_path": "n03100240/n03100240_11978.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03109150/n03109150_2771.JPEG",
+      "sha256": "19a5ab3e3f7e20612c5c5024d8488f7cd4f62c4f8d300940c6392ba29353fbef",
+      "size_bytes": 117803,
+      "relative_path": "n03109150/n03109150_2771.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03124043/n03124043_5287.JPEG",
+      "sha256": "efb3e54d332121dad9033afb94a0a7832521f2d3b6aea88f804ffd0db5409698",
+      "size_bytes": 70964,
+      "relative_path": "n03124043/n03124043_5287.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03124170/n03124170_3983.JPEG",
+      "sha256": "c03149a27eeebcb07be7d49913c58005bb9bf78967a682894559faa4e5dcddd1",
+      "size_bytes": 135906,
+      "relative_path": "n03124170/n03124170_3983.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03125729/n03125729_2958.JPEG",
+      "sha256": "7f2ff80a2b75422854f5ef36015aac3967ea020d421d49755898035adcaeba33",
+      "size_bytes": 17971,
+      "relative_path": "n03125729/n03125729_2958.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03127747/n03127747_2967.JPEG",
+      "sha256": "6e43c7bf94df925936f7937e58fc266f0799785e94fa0fc249f5cc110ab40147",
+      "size_bytes": 19272,
+      "relative_path": "n03127747/n03127747_2967.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03131574/n03131574_51430.JPEG",
+      "sha256": "da16f52a86c664128668f4a8e533bf68c9ebf6b6d3fe95d7bf9af63f671cb2ff",
+      "size_bytes": 121146,
+      "relative_path": "n03131574/n03131574_51430.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03134739/n03134739_2965.JPEG",
+      "sha256": "473b670465d0b9be2fb48b9d879a9c50cdea397b8cab6da37633b56e0bc8b766",
+      "size_bytes": 156754,
+      "relative_path": "n03134739/n03134739_2965.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03160309/n03160309_26441.JPEG",
+      "sha256": "3aaaff85ec857e883fbf3e2b468c54b6bc46f1ce96b2aa33e7937da53c98267d",
+      "size_bytes": 172072,
+      "relative_path": "n03160309/n03160309_26441.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03179701/n03179701_48083.JPEG",
+      "sha256": "37a606cafb57183749c452e27abd960fb3fd4b4da6a8bc3908a7dcca233351b5",
+      "size_bytes": 129495,
+      "relative_path": "n03179701/n03179701_48083.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03180011/n03180011_12204.JPEG",
+      "sha256": "a7eceb2aae3e32e87fc81bdec43264da0e075600b75a79a0d42f3ea1bc3c89b0",
+      "size_bytes": 118220,
+      "relative_path": "n03180011/n03180011_12204.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03201208/n03201208_14762.JPEG",
+      "sha256": "f83d53a60aa75b41f6e6c1cc516cb2a7d2203669151cf1e9f38b0097971bb50f",
+      "size_bytes": 180048,
+      "relative_path": "n03201208/n03201208_14762.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03207941/n03207941_32413.JPEG",
+      "sha256": "948f39ecc645ef72811432b4c9ab1fe220cb2106d828b540e8e4cb1d3503b782",
+      "size_bytes": 122199,
+      "relative_path": "n03207941/n03207941_32413.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03218198/n03218198_4401.JPEG",
+      "sha256": "59ab26418e311b9a5d9d4fb2e9a07923bf781e0c5367ed22256bc389709ddf1d",
+      "size_bytes": 15220,
+      "relative_path": "n03218198/n03218198_4401.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03223299/n03223299_6370.JPEG",
+      "sha256": "51def56c5d6a195d3283a6bf1ab11022ee6e65b3f0be1cb391059f49f7b695a8",
+      "size_bytes": 151033,
+      "relative_path": "n03223299/n03223299_6370.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03249569/n03249569_36853.JPEG",
+      "sha256": "c1976fa0ef3210bd51ead96fed6570f5e3bc6aea114998a8cd637e4fa91f4739",
+      "size_bytes": 37131,
+      "relative_path": "n03249569/n03249569_36853.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03250847/n03250847_14615.JPEG",
+      "sha256": "09d878090f1024458302c4b9c439b70f893171bdb4b58292dd75aa10db3db4f0",
+      "size_bytes": 94839,
+      "relative_path": "n03250847/n03250847_14615.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03259280/n03259280_10921.JPEG",
+      "sha256": "c5b67a10f9bfa2883607f622d4f6cd6553e0670399753ac71b0c212939fa1561",
+      "size_bytes": 142558,
+      "relative_path": "n03259280/n03259280_10921.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03271574/n03271574_24536.JPEG",
+      "sha256": "cc27bec7338d73c08896faa1cf3ca6352f103f7dc252a76261e03ebc9a54b8c1",
+      "size_bytes": 184298,
+      "relative_path": "n03271574/n03271574_24536.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03290653/n03290653_2500.JPEG",
+      "sha256": "17c51758949ca5d0734ee845a56c46f90ef332457612f4f61930d311306927ab",
+      "size_bytes": 90699,
+      "relative_path": "n03290653/n03290653_2500.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03297495/n03297495_2091.JPEG",
+      "sha256": "772d6393a2e34f0409817e35e8ac6a09089f8e31046080f55238764b1b9e57ee",
+      "size_bytes": 11719,
+      "relative_path": "n03297495/n03297495_2091.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03314780/n03314780_8558.JPEG",
+      "sha256": "aecb7859c68720e6d00ae2df13441e5efa63069ed7214d938df992636ef402c6",
+      "size_bytes": 14973,
+      "relative_path": "n03314780/n03314780_8558.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03337140/n03337140_34923.JPEG",
+      "sha256": "532f7262f3ab80eb17c7caac1d0cb6ce33277418e6be77d90e8f615642b68de5",
+      "size_bytes": 35193,
+      "relative_path": "n03337140/n03337140_34923.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03376595/n03376595_9926.JPEG",
+      "sha256": "e09b18cfdcf3989b8fed663c81fb55787fa30d451b38a89447d5311aab2e3f22",
+      "size_bytes": 75373,
+      "relative_path": "n03376595/n03376595_9926.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03394916/n03394916_33247.JPEG",
+      "sha256": "c23a6a8844af2e099a5ca96257049c6c2b5081a4832177c2d141cf99bcda2d32",
+      "size_bytes": 113841,
+      "relative_path": "n03394916/n03394916_33247.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03417042/n03417042_8478.JPEG",
+      "sha256": "23aaacee1b7d242e584d3b2f99f0d72b92b36895b116b1c9e80df48c8ef9f25c",
+      "size_bytes": 234345,
+      "relative_path": "n03417042/n03417042_8478.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03424325/n03424325_27597.JPEG",
+      "sha256": "ad07c3574070bd5431e4baea345842c54b915bbf7c123e72cf7ea815cbe2485c",
+      "size_bytes": 57868,
+      "relative_path": "n03424325/n03424325_27597.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03425413/n03425413_15130.JPEG",
+      "sha256": "e0e00754253ff9b5f9ab53f27cde27336b9452ca91dbe9afe41f2813d54a7f8f",
+      "size_bytes": 115193,
+      "relative_path": "n03425413/n03425413_15130.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03443371/n03443371_7178.JPEG",
+      "sha256": "63209731852a4bb48cbab80947705757731cd7de9044f6f8f0a499f1271b2f56",
+      "size_bytes": 18116,
+      "relative_path": "n03443371/n03443371_7178.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03444034/n03444034_2958.JPEG",
+      "sha256": "ecd702e4061085f3a926a1f397a4129ac86b3ccc8c41430c4266addbbcddd298",
+      "size_bytes": 140212,
+      "relative_path": "n03444034/n03444034_2958.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03447721/n03447721_52724.JPEG",
+      "sha256": "60d7923048ec093a2517f6f83743682a0c2c6d0bbb7abeea9fccd7e3e35edcce",
+      "size_bytes": 93034,
+      "relative_path": "n03447721/n03447721_52724.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03450230/n03450230_155.JPEG",
+      "sha256": "068aa4b19b77588df6f85d3d140d452667af482345ae91ac95e6654ec3efcd9d",
+      "size_bytes": 124314,
+      "relative_path": "n03450230/n03450230_155.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03452741/n03452741_15947.JPEG",
+      "sha256": "906cccca67c7c573d6e602f2432063010b9fb6da81e04c8447aff1a904d13084",
+      "size_bytes": 92587,
+      "relative_path": "n03452741/n03452741_15947.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03457902/n03457902_8275.JPEG",
+      "sha256": "4b4fa76de3b8d994152d90a3a171b6344ad58f5a865e7ef9136ab42ec5eabb1e",
+      "size_bytes": 221920,
+      "relative_path": "n03457902/n03457902_8275.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03459775/n03459775_14575.JPEG",
+      "sha256": "1fa595c2e3a8158cacdee98735833f805f4a1e50f7dc24e26db418118abc6e24",
+      "size_bytes": 187587,
+      "relative_path": "n03459775/n03459775_14575.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03461385/n03461385_20602.JPEG",
+      "sha256": "7aa21346eaede1556cb38cf159c0f1e47eda83c52ccd2cb3280360ac372b66f3",
+      "size_bytes": 168011,
+      "relative_path": "n03461385/n03461385_20602.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03467068/n03467068_10476.JPEG",
+      "sha256": "7f7b40c9e2bc770bd761b4665447872d25277aab3c79278e521af38cced0bdea",
+      "size_bytes": 122657,
+      "relative_path": "n03467068/n03467068_10476.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03476991/n03476991_8953.JPEG",
+      "sha256": "d608861c692c4cf72f706a61fd6e657cf092027a29ca45627838e9f7abddec38",
+      "size_bytes": 3774,
+      "relative_path": "n03476991/n03476991_8953.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03478589/n03478589_2650.JPEG",
+      "sha256": "0e7920002fd397eda44f8881b951f17d6278fa35c94eda683a43cc1a43243ba6",
+      "size_bytes": 25862,
+      "relative_path": "n03478589/n03478589_2650.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03481172/n03481172_6701.JPEG",
+      "sha256": "f3b81c255adfdee293ba1e0e768601409e51fe2920d2c0c51cf3dfe44bfc89eb",
+      "size_bytes": 66222,
+      "relative_path": "n03481172/n03481172_6701.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03485407/n03485407_4893.JPEG",
+      "sha256": "f23188f2077a0450b602d75321a342ebef66e0a6a8eb0b30cca9be3e6e3d9c7a",
+      "size_bytes": 37320,
+      "relative_path": "n03485407/n03485407_4893.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03485794/n03485794_51390.JPEG",
+      "sha256": "cb05538a8fd7b26b4e5b9d8e998e13c5646948247d87b21d3aa5cefebd757ba0",
+      "size_bytes": 122408,
+      "relative_path": "n03485794/n03485794_51390.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03492542/n03492542_31492.JPEG",
+      "sha256": "bd5b68251cea4e488d9a8df57beeb9ca833f07c2bbab29bec18aee6bacae0960",
+      "size_bytes": 68703,
+      "relative_path": "n03492542/n03492542_31492.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03498962/n03498962_59587.JPEG",
+      "sha256": "4a2c0237110593bb4a3e37449a583a252c9a461d997472495dedf4de69cc0db3",
+      "size_bytes": 147274,
+      "relative_path": "n03498962/n03498962_59587.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03527444/n03527444_2998.JPEG",
+      "sha256": "ea422815e5acb218e605b2f7ac571d427f1092b01bd144ce4897829b5970b804",
+      "size_bytes": 150451,
+      "relative_path": "n03527444/n03527444_2998.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03529860/n03529860_686.JPEG",
+      "sha256": "7e23218a92d3d55550c371985a5866c865f3ea54875d6e82f41fe10a91590532",
+      "size_bytes": 40750,
+      "relative_path": "n03529860/n03529860_686.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03534580/n03534580_20456.JPEG",
+      "sha256": "97823871a4557cb9085374e0e29f1e9dbefec3e6f4447a66b04ab28777fb5d71",
+      "size_bytes": 101663,
+      "relative_path": "n03534580/n03534580_20456.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03544143/n03544143_16055.JPEG",
+      "sha256": "199fe2f00ca4ee6b41899b2d1d20683982d600f878f2a33550c3ceddf5b798ed",
+      "size_bytes": 3125,
+      "relative_path": "n03544143/n03544143_16055.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03584254/n03584254_3634.JPEG",
+      "sha256": "3369d58438274dd2afa292e3a6ed65cda273b3ef0b336a8164548fa21ba0a1ce",
+      "size_bytes": 18181,
+      "relative_path": "n03584254/n03584254_3634.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03590841/n03590841_7032.JPEG",
+      "sha256": "1aed76342a73df9f41df75b055b38635b40b3c49901fc364f0cd0703453f8369",
+      "size_bytes": 129523,
+      "relative_path": "n03590841/n03590841_7032.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03594734/n03594734_12518.JPEG",
+      "sha256": "d8691f09c7d28ff20859397f85bd51853880e1eb414b077009119238135fc173",
+      "size_bytes": 82774,
+      "relative_path": "n03594734/n03594734_12518.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03595614/n03595614_5033.JPEG",
+      "sha256": "ef855f44320fe1108f079b79330f3b0a687a98ee50a0149f7c6ec5882332b421",
+      "size_bytes": 121782,
+      "relative_path": "n03595614/n03595614_5033.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03617480/n03617480_9989.JPEG",
+      "sha256": "3df738e4bd8c11b79263a1708c28183485de22e38ee534a0b82f2d96bc198baa",
+      "size_bytes": 142613,
+      "relative_path": "n03617480/n03617480_9989.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03627232/n03627232_21961.JPEG",
+      "sha256": "19ab155a01fa87379fcb7f89fbd6df512a7acfc1d7c36abb9be51fa47587981d",
+      "size_bytes": 144950,
+      "relative_path": "n03627232/n03627232_21961.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03633091/n03633091_13849.JPEG",
+      "sha256": "a6dd5549186aa1ff1d72d53be76a9cfc2c83f692aa67c9c9d075fa404ae30150",
+      "size_bytes": 199042,
+      "relative_path": "n03633091/n03633091_13849.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03642806/n03642806_24463.JPEG",
+      "sha256": "b6610d242ba24e22a7865effe1ea702861891bf2b544815e259f0caa75b8da8b",
+      "size_bytes": 134452,
+      "relative_path": "n03642806/n03642806_24463.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03657121/n03657121_2028.JPEG",
+      "sha256": "736c499c6d8aa830cb91abbb30b7997ef66c8643cdcdda2023a8ce7c8e87f68f",
+      "size_bytes": 126260,
+      "relative_path": "n03657121/n03657121_2028.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03658185/n03658185_8243.JPEG",
+      "sha256": "9d94fef0010b9c1da61d784fa4c392d39f28b5544ad00abead7c536373e8ee23",
+      "size_bytes": 132243,
+      "relative_path": "n03658185/n03658185_8243.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03666591/n03666591_45047.JPEG",
+      "sha256": "c950e421ffa8c20e78334761d677dffb4e8fdcbc7ec84020b204bc16e534c4ae",
+      "size_bytes": 88965,
+      "relative_path": "n03666591/n03666591_45047.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03670208/n03670208_49534.JPEG",
+      "sha256": "0864ddf155e8da6f45345f928813565b2aee853da0d6212c2b6886ff047d4262",
+      "size_bytes": 160896,
+      "relative_path": "n03670208/n03670208_49534.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03676483/n03676483_37763.JPEG",
+      "sha256": "6eae3d3a5c472be50c87726cd792ecd6eef23d568238006bc1d54f04d7530d26",
+      "size_bytes": 28432,
+      "relative_path": "n03676483/n03676483_37763.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03680355/n03680355_6531.JPEG",
+      "sha256": "4220c0dba6ac05e79c2324dcd3f0d831a69689d3ea7390319bad2b9807554d05",
+      "size_bytes": 121664,
+      "relative_path": "n03680355/n03680355_6531.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03690938/n03690938_9527.JPEG",
+      "sha256": "bd3f37e6064cb58a20e29763e3a7f250fc28504649c1e08c6dc1e46d976d2a80",
+      "size_bytes": 160003,
+      "relative_path": "n03690938/n03690938_9527.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03697007/n03697007_21685.JPEG",
+      "sha256": "a8c8a43314f3057852855252e8877c0bfd28c362f848fe606c5999805250ff58",
+      "size_bytes": 211772,
+      "relative_path": "n03697007/n03697007_21685.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03710193/n03710193_6445.JPEG",
+      "sha256": "f8c5be54e6839b4d3d3b9f09e2629917ccf102fa9a9977bb936ba6d36f8c5e20",
+      "size_bytes": 117114,
+      "relative_path": "n03710193/n03710193_6445.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03710637/n03710637_5693.JPEG",
+      "sha256": "78915a8159623ff9d05bf6c7d443200e20ac37d4658ebb31ed673ed6621da31c",
+      "size_bytes": 46949,
+      "relative_path": "n03710637/n03710637_5693.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03724870/n03724870_13244.JPEG",
+      "sha256": "113fae59f475df0dd24a1430ec2c2a456d47d4e2ec3a43889e3760e0f1a3573f",
+      "size_bytes": 105615,
+      "relative_path": "n03724870/n03724870_13244.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03729826/n03729826_12080.JPEG",
+      "sha256": "5d307a92a6ed9ccdb19839d89ad42919fde0648f75fef5a3669946f291742f12",
+      "size_bytes": 95039,
+      "relative_path": "n03729826/n03729826_12080.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03733131/n03733131_7238.JPEG",
+      "sha256": "b817779fc4f78e68cc46244e7c7b9fd40f57059a1e9b31e9c14b7d4ea0dd5039",
+      "size_bytes": 141695,
+      "relative_path": "n03733131/n03733131_7238.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03733281/n03733281_4462.JPEG",
+      "sha256": "5e730916913b4c13b3e0a41f649301ca7707d40aaca55f0eec26eba43b46ccee",
+      "size_bytes": 159358,
+      "relative_path": "n03733281/n03733281_4462.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03764736/n03764736_5281.JPEG",
+      "sha256": "7131376af4a83141586f3aa17ac0fe996136094a8675db63dc37a67028084943",
+      "size_bytes": 12221,
+      "relative_path": "n03764736/n03764736_5281.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03775071/n03775071_9866.JPEG",
+      "sha256": "a2bd5017981ace7c7fcfc4c5fec698ce2a0efae1f1e20ce3f7f8d4f900221207",
+      "size_bytes": 151941,
+      "relative_path": "n03775071/n03775071_9866.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03775546/n03775546_9760.JPEG",
+      "sha256": "5cad28be1082557d9e22a695b2efbb7f44a3129102c18a0bf5184a50a240e817",
+      "size_bytes": 123676,
+      "relative_path": "n03775546/n03775546_9760.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03776460/n03776460_7288.JPEG",
+      "sha256": "4f9bcaadec3c200a653c3769f38a33c51a79993676234d7a0f8f5f67b3df5967",
+      "size_bytes": 119350,
+      "relative_path": "n03776460/n03776460_7288.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03777568/n03777568_11960.JPEG",
+      "sha256": "7c19348729d9109331a930872b361e5d114974a264d85999915a59c6a4dc528f",
+      "size_bytes": 195888,
+      "relative_path": "n03777568/n03777568_11960.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03782006/n03782006_26737.JPEG",
+      "sha256": "f240bfa214f483750beab0690dcb210fea0a3f7809ba4540e14cea7c4ecf549f",
+      "size_bytes": 123020,
+      "relative_path": "n03782006/n03782006_26737.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03785016/n03785016_10244.JPEG",
+      "sha256": "50058075cd94262c52f2b3e168639f4b0489dc7d5df1907275eae9fac6373d02",
+      "size_bytes": 22346,
+      "relative_path": "n03785016/n03785016_10244.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03786901/n03786901_10897.JPEG",
+      "sha256": "1f63d717c7657b38c9e6f92d74b5411d6cd337d05ccc82df387f7615d3624a25",
+      "size_bytes": 123153,
+      "relative_path": "n03786901/n03786901_10897.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03788195/n03788195_39283.JPEG",
+      "sha256": "bd42e3e0846896679b0df763558deb6fb6091574d7799edfb1a85bb40b26789d",
+      "size_bytes": 84438,
+      "relative_path": "n03788195/n03788195_39283.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03791053/n03791053_5670.JPEG",
+      "sha256": "acf1901826313b349a4243b47397c3e7819b5555aac9ddc7d832d37aa3bf0e3d",
+      "size_bytes": 182876,
+      "relative_path": "n03791053/n03791053_5670.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03792972/n03792972_7514.JPEG",
+      "sha256": "0e75dde81c1d6a5a8f4cce5406d300940ec98176f6a910319ea1057453df109b",
+      "size_bytes": 161955,
+      "relative_path": "n03792972/n03792972_7514.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03838899/n03838899_5819.JPEG",
+      "sha256": "9ed3dc465ab41fcfe206be9a9a80e4ccf8f8eb2b5514fc87fa0351d523d97c9a",
+      "size_bytes": 3678,
+      "relative_path": "n03838899/n03838899_5819.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03841143/n03841143_11858.JPEG",
+      "sha256": "c20d74729a55c25bdb2a674a5e3f1db6802658bfd0911a4a09d6aeca34227ff6",
+      "size_bytes": 50866,
+      "relative_path": "n03841143/n03841143_11858.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03843555/n03843555_9269.JPEG",
+      "sha256": "6ddec3c6a38fef00f335a8ed14624d1860d1b4ff2d648f2f580f5caebb63c4cd",
+      "size_bytes": 166369,
+      "relative_path": "n03843555/n03843555_9269.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03866082/n03866082_9288.JPEG",
+      "sha256": "5e385168b155943073bc04fe1d0c6c9b2eaf2baf4b53ee476c38aefd0a0dbba5",
+      "size_bytes": 32308,
+      "relative_path": "n03866082/n03866082_9288.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03868242/n03868242_14057.JPEG",
+      "sha256": "ef0ce8d6af275317aa2730618560dce5a29a6a28e1192a0aab1ab139cf3134c9",
+      "size_bytes": 174537,
+      "relative_path": "n03868242/n03868242_14057.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03868863/n03868863_11374.JPEG",
+      "sha256": "7031fc7b06a13164a6d06901a668f8c5096e194d397436339c5d222956c4ab93",
+      "size_bytes": 20198,
+      "relative_path": "n03868863/n03868863_11374.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03874293/n03874293_15174.JPEG",
+      "sha256": "93229fa19fd3f980f24cd254baa1557bad8dc4697fd1fae5a341753212721540",
+      "size_bytes": 132965,
+      "relative_path": "n03874293/n03874293_15174.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03876231/n03876231_5713.JPEG",
+      "sha256": "c3baf71ab1c3d177b720432921621ccc77cb3fbc9993473bf362e875d0501bd7",
+      "size_bytes": 35090,
+      "relative_path": "n03876231/n03876231_5713.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03877472/n03877472_23022.JPEG",
+      "sha256": "8804d708fdd50fd1b42e62ba050d3a092a5bab8421670db7075e707bbd659dcc",
+      "size_bytes": 116684,
+      "relative_path": "n03877472/n03877472_23022.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03884397/n03884397_7500.JPEG",
+      "sha256": "add232fc939a8a82a8d06021bf7f16ab202245a533d6b7afaa80754f80423759",
+      "size_bytes": 33430,
+      "relative_path": "n03884397/n03884397_7500.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03887697/n03887697_6517.JPEG",
+      "sha256": "8eb497f97522b6cacd5fd6ab1dcb73ae8e3a0250b517c3ce3bc58ecf51fed105",
+      "size_bytes": 48794,
+      "relative_path": "n03887697/n03887697_6517.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03888257/n03888257_56335.JPEG",
+      "sha256": "bd42df59763884f47712a707669a46ecedba2731773cf3da71b9132dac0af4d2",
+      "size_bytes": 101269,
+      "relative_path": "n03888257/n03888257_56335.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03916031/n03916031_15317.JPEG",
+      "sha256": "cdbf33744735955b70dd6f737f02f654a26e5b05ea9a3eebcbae17d9f4bba137",
+      "size_bytes": 226081,
+      "relative_path": "n03916031/n03916031_15317.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03920288/n03920288_309.JPEG",
+      "sha256": "421c6ae491560041e2fa587b5ad3ea3ac7fbc440d4f5a0849800d87e5cc8c2e8",
+      "size_bytes": 22360,
+      "relative_path": "n03920288/n03920288_309.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03929660/n03929660_21479.JPEG",
+      "sha256": "532f3c3ba09e29e82e691977939b4bd12ad4c81601e7fe12817e173d65776d1b",
+      "size_bytes": 65452,
+      "relative_path": "n03929660/n03929660_21479.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03929855/n03929855_6503.JPEG",
+      "sha256": "84e54abd8b00eb399cf62a287637765002a25e5f6515a711a1bcd20ce6dc7ae3",
+      "size_bytes": 132495,
+      "relative_path": "n03929855/n03929855_6503.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03930313/n03930313_10520.JPEG",
+      "sha256": "0e82ef8b0d947a5a8dffbc0976a2815f6fc5532bf94afb8d7629b5c479810900",
+      "size_bytes": 142651,
+      "relative_path": "n03930313/n03930313_10520.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03933933/n03933933_90.JPEG",
+      "sha256": "df242d054a81e934da0d02c0f29f99eecfeaf96eb700961b4ed0089b5cd8b779",
+      "size_bytes": 106371,
+      "relative_path": "n03933933/n03933933_90.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03935335/n03935335_27399.JPEG",
+      "sha256": "5cc275f076f25a31570f102e184be55e6556ad9e8686a0eb3548dbd77b43fd4e",
+      "size_bytes": 86515,
+      "relative_path": "n03935335/n03935335_27399.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03938244/n03938244_23696.JPEG",
+      "sha256": "0249274a73913c2530bb24aaecceaa12da94e6797bb9008551afa5bcd7d01598",
+      "size_bytes": 179012,
+      "relative_path": "n03938244/n03938244_23696.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03942813/n03942813_8914.JPEG",
+      "sha256": "49a1a416ebfed0e71f295a656f268df530b8a801a7050eb566b7d9268ea688a1",
+      "size_bytes": 167221,
+      "relative_path": "n03942813/n03942813_8914.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03947888/n03947888_16509.JPEG",
+      "sha256": "40739f1ea3ecf873de1275ed1a02a8e4a4653d5dae00db81eeb26d81c72df59d",
+      "size_bytes": 125298,
+      "relative_path": "n03947888/n03947888_16509.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03954731/n03954731_22151.JPEG",
+      "sha256": "0d97cf04c122e93db8017ca81ac3ce7e56f8dd87ce0202d48fb749284453f1db",
+      "size_bytes": 548449,
+      "relative_path": "n03954731/n03954731_22151.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03961711/n03961711_8858.JPEG",
+      "sha256": "41c9c5de047d7529a28a4099122663b8001f66824f834016dc3e62fded6136e8",
+      "size_bytes": 96981,
+      "relative_path": "n03961711/n03961711_8858.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03982430/n03982430_13991.JPEG",
+      "sha256": "a4aa9919b8e880b25aa182235c7bacccca40da0ce2456a85332ecd15a34b3787",
+      "size_bytes": 76566,
+      "relative_path": "n03982430/n03982430_13991.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n03992509/n03992509_5192.JPEG",
+      "sha256": "d99d662185b2403f2b653d8436085c6b436c4ead0c918cbd6b710daf765fa1cf",
+      "size_bytes": 47386,
+      "relative_path": "n03992509/n03992509_5192.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04008634/n04008634_49895.JPEG",
+      "sha256": "481f627009604eb04c8a46bff5984b6127df6d4b2e362e97f79de797b1df381e",
+      "size_bytes": 103351,
+      "relative_path": "n04008634/n04008634_49895.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04026417/n04026417_41962.JPEG",
+      "sha256": "a3be70bcb4c013f725c9ef25d3229c71184bcfb6240f8d4f200fc9213af650d6",
+      "size_bytes": 113969,
+      "relative_path": "n04026417/n04026417_41962.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04033995/n04033995_13882.JPEG",
+      "sha256": "cc3a3cd1f59a5dd4479774a6e8714bb5cb421ad61583b318140148cc0e0a1b37",
+      "size_bytes": 143790,
+      "relative_path": "n04033995/n04033995_13882.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04040759/n04040759_1495.JPEG",
+      "sha256": "09a304511e77e3a23a2f3462066fbd215dff988137846223269c022694e5ba26",
+      "size_bytes": 142185,
+      "relative_path": "n04040759/n04040759_1495.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04041544/n04041544_9705.JPEG",
+      "sha256": "8fbc8848875bd0df297ab02f167b045b91182520b179ccb51271f9c0f910836e",
+      "size_bytes": 71830,
+      "relative_path": "n04041544/n04041544_9705.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04069434/n04069434_6336.JPEG",
+      "sha256": "4e55dd1e0c00088cc0b494dc01b3447677ea62488e2414f58442d39b03b5608e",
+      "size_bytes": 30883,
+      "relative_path": "n04069434/n04069434_6336.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04074963/n04074963_1791.JPEG",
+      "sha256": "1a806de6760bad26f87e8de6ec2a2cad64df89a0c5c77c03eaa089c31cfdda34",
+      "size_bytes": 80139,
+      "relative_path": "n04074963/n04074963_1791.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04081281/n04081281_108022.JPEG",
+      "sha256": "4689610fdd16fb10b522e5fa7262fbcfbaec8875f93ee79a0429a97f54254402",
+      "size_bytes": 144334,
+      "relative_path": "n04081281/n04081281_108022.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04086273/n04086273_6561.JPEG",
+      "sha256": "84323ad89cd02725dae977c027ef4d97a9e1e7ccd3a8cc8ad21deb355002acc6",
+      "size_bytes": 13787,
+      "relative_path": "n04086273/n04086273_6561.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04116512/n04116512_11395.JPEG",
+      "sha256": "55bf617276b646f8366472c4237446257486fc2fe5d71cb993673123d1becd3e",
+      "size_bytes": 102862,
+      "relative_path": "n04116512/n04116512_11395.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04118776/n04118776_27501.JPEG",
+      "sha256": "a674edb6897242d20f87e88b175c613423a4d692dd65895a9ebc179519348dd2",
+      "size_bytes": 88720,
+      "relative_path": "n04118776/n04118776_27501.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04125021/n04125021_8565.JPEG",
+      "sha256": "03ac7dca36e25f2a36f7b2de73d39d667f246243f18517124e121ca9abc222eb",
+      "size_bytes": 18262,
+      "relative_path": "n04125021/n04125021_8565.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04136333/n04136333_10209.JPEG",
+      "sha256": "ff6220ba970bcaffad3f375e472c0be9fc78b733d277d787e2387ee60e007348",
+      "size_bytes": 14755,
+      "relative_path": "n04136333/n04136333_10209.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04141076/n04141076_49157.JPEG",
+      "sha256": "333eddb886b76a912e2b29e0ae20e1ae0783c6fb0d75c86bd9dac144253c5962",
+      "size_bytes": 127949,
+      "relative_path": "n04141076/n04141076_49157.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04146614/n04146614_7052.JPEG",
+      "sha256": "22d3b1d817bdb06deb377265bbc3cb41dcff3901d4e837716b3f12cff2a5e624",
+      "size_bytes": 129746,
+      "relative_path": "n04146614/n04146614_7052.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04179913/n04179913_11539.JPEG",
+      "sha256": "fa7ef6c1207a71bcd683641a8bbaa3e23f0f45bc6e9f784d93b27f6f2006dce4",
+      "size_bytes": 79374,
+      "relative_path": "n04179913/n04179913_11539.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04192698/n04192698_2011.JPEG",
+      "sha256": "51c64816f33ece1c21ae8008e7e48f451db04523aa91b830ef765bf2a38c8e3e",
+      "size_bytes": 149703,
+      "relative_path": "n04192698/n04192698_2011.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04201297/n04201297_10649.JPEG",
+      "sha256": "1729b3c598b779b0f3be4084bd970014631dbaf3096eff4e9535dca5b53e7ed3",
+      "size_bytes": 89980,
+      "relative_path": "n04201297/n04201297_10649.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04204238/n04204238_2149.JPEG",
+      "sha256": "68113120876cc9d7ea6fafcb8eaf921214366d704f4514d663c2e4e7a44ddac0",
+      "size_bytes": 25082,
+      "relative_path": "n04204238/n04204238_2149.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04209239/n04209239_1895.JPEG",
+      "sha256": "1f318a23eb099088c6bf67f6e044d8a005eaf85b3aa53ff07d101b1e70caf85c",
+      "size_bytes": 90924,
+      "relative_path": "n04209239/n04209239_1895.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04229816/n04229816_12801.JPEG",
+      "sha256": "4b430e7c73ab0e0a0f7bfb1b8cce3e088316c081e7894a5867a190615ab41788",
+      "size_bytes": 122819,
+      "relative_path": "n04229816/n04229816_12801.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04235860/n04235860_837.JPEG",
+      "sha256": "6fb7eae263c568a5aaeda284ef27109a8828239f245ee8c82a49a784e247a520",
+      "size_bytes": 206402,
+      "relative_path": "n04235860/n04235860_837.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04238763/n04238763_6990.JPEG",
+      "sha256": "79cf68baacacd8bfeeb59abef3200505e7bf73195beac8dbd60530176c66e819",
+      "size_bytes": 85041,
+      "relative_path": "n04238763/n04238763_6990.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04239074/n04239074_1684.JPEG",
+      "sha256": "f5205366c7d27d2f291d9916cb8a96ef14d70ea6ed7afb167494b34a5454325d",
+      "size_bytes": 77881,
+      "relative_path": "n04239074/n04239074_1684.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04243546/n04243546_4204.JPEG",
+      "sha256": "1309e7209c60b1ca331b6415e70e4b99ea596e8921e8d42fa6411154b95880cc",
+      "size_bytes": 182742,
+      "relative_path": "n04243546/n04243546_4204.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04251144/n04251144_3283.JPEG",
+      "sha256": "f4446005cccd6778fe52f2b5ee08331c714fe5c5eabe21d323b4a92cb0f5ad1b",
+      "size_bytes": 151823,
+      "relative_path": "n04251144/n04251144_3283.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04252077/n04252077_3666.JPEG",
+      "sha256": "4c3097f293f5293debe7cfcc990f3582b36a2688c38e517226ee34dee72c50b1",
+      "size_bytes": 33680,
+      "relative_path": "n04252077/n04252077_3666.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04252225/n04252225_11950.JPEG",
+      "sha256": "a5c1bc72eac2962855665b3bfc8cee70ac741fd260064d9cd94646d7e77daa33",
+      "size_bytes": 126286,
+      "relative_path": "n04252225/n04252225_11950.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04254120/n04254120_2421.JPEG",
+      "sha256": "79ba64538b145cdbd596dbd114caeaa9966649e51d8e9599ecc37234429be856",
+      "size_bytes": 173938,
+      "relative_path": "n04254120/n04254120_2421.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04254777/n04254777_19621.JPEG",
+      "sha256": "b23ed8f6f7eedfc4c63447d86ff0621b5e9146b34399547736a3eebf81fe50d8",
+      "size_bytes": 141642,
+      "relative_path": "n04254777/n04254777_19621.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04259630/n04259630_13031.JPEG",
+      "sha256": "8e65273039f60f490465b9dcb52e8e9990165f8c4c488c1d4d451f3e2795f82f",
+      "size_bytes": 92638,
+      "relative_path": "n04259630/n04259630_13031.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04264628/n04264628_36978.JPEG",
+      "sha256": "490fe6a5442c3b5018059ee8d33cc77d341817de97e20465bdf303d000a65ba3",
+      "size_bytes": 4559,
+      "relative_path": "n04264628/n04264628_36978.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04265275/n04265275_3472.JPEG",
+      "sha256": "03c21bdae1a70a763ccfb92a85996b3ae1f5622de98d7925d3d7dc444e3eb084",
+      "size_bytes": 8202,
+      "relative_path": "n04265275/n04265275_3472.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04270147/n04270147_24.JPEG",
+      "sha256": "16225111d4f604cad5e808a38eef060f5749bf1c990fa16023f85f57c26002fa",
+      "size_bytes": 1377,
+      "relative_path": "n04270147/n04270147_24.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04275548/n04275548_11357.JPEG",
+      "sha256": "fd7f909349dd92d5ed24328fa863a58e1ec30cc12b0a811533e1fba62111e204",
+      "size_bytes": 206245,
+      "relative_path": "n04275548/n04275548_11357.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04277352/n04277352_7835.JPEG",
+      "sha256": "7aa02980bb16bf567fd9f24864f75bf0165ffe6dee1a672ad478bb46f5533c84",
+      "size_bytes": 157549,
+      "relative_path": "n04277352/n04277352_7835.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04286575/n04286575_56677.JPEG",
+      "sha256": "121164d89981b8eeef31de65915c3793def2e353e93265f5cc5dda8117c9f6e8",
+      "size_bytes": 174710,
+      "relative_path": "n04286575/n04286575_56677.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04310018/n04310018_10873.JPEG",
+      "sha256": "00648dbd3f878addebdb73c7ce1c67088f849d193c5a220e338645652b48988f",
+      "size_bytes": 132065,
+      "relative_path": "n04310018/n04310018_10873.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04311004/n04311004_1405.JPEG",
+      "sha256": "ae90b4b065cb247143099b278998cd7d0ef88a78e1e0a72d535af1fce0682a62",
+      "size_bytes": 206053,
+      "relative_path": "n04311004/n04311004_1405.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04325704/n04325704_9780.JPEG",
+      "sha256": "36489b68b4a3af7fcd9e7a997878c96bb8f9ba5d0b9c9b34ee850c9e299cc187",
+      "size_bytes": 192902,
+      "relative_path": "n04325704/n04325704_9780.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04326547/n04326547_5899.JPEG",
+      "sha256": "a94dadfc9cf186cbd88b8dcf4941ffedc411490645a8d3a0173948a08ad9c88e",
+      "size_bytes": 263422,
+      "relative_path": "n04326547/n04326547_5899.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04332243/n04332243_15843.JPEG",
+      "sha256": "18f9f2dec4bf1d30c2158f30f6a3e9ea2c58f0708ce6a36f96625adbb388eeb0",
+      "size_bytes": 96028,
+      "relative_path": "n04332243/n04332243_15843.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04344873/n04344873_1061.JPEG",
+      "sha256": "7beca2f02fa3b288e462617cfb40eb86767478ef20470f6474cd33c96496504a",
+      "size_bytes": 261789,
+      "relative_path": "n04344873/n04344873_1061.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04355338/n04355338_10258.JPEG",
+      "sha256": "529eb573481f9ee6ceedf130fa17801a01bf27854c6cbcca8f62095e2ac8fd9c",
+      "size_bytes": 23953,
+      "relative_path": "n04355338/n04355338_10258.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04356056/n04356056_5242.JPEG",
+      "sha256": "153a19c3ac12f078a0411da3fef8d31635dfb853a41f5d85628410c8bb72022f",
+      "size_bytes": 45133,
+      "relative_path": "n04356056/n04356056_5242.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04370456/n04370456_27432.JPEG",
+      "sha256": "4cb73186a90c372d7fe9cc9950b5efa65e9ece31c73c6ea185cf8c55c27b1a30",
+      "size_bytes": 16956,
+      "relative_path": "n04370456/n04370456_27432.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04372370/n04372370_16258.JPEG",
+      "sha256": "accee9a5a8d354d14d84d5ff8783aff54393814f7e48de0eb9b42114af32f8b6",
+      "size_bytes": 224917,
+      "relative_path": "n04372370/n04372370_16258.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04392985/n04392985_4996.JPEG",
+      "sha256": "61e4aa312bed50d2e6fd5cfcdabe7263572da31fc4ddc3cb11abde1b08bf0471",
+      "size_bytes": 19853,
+      "relative_path": "n04392985/n04392985_4996.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04398044/n04398044_14689.JPEG",
+      "sha256": "81099870f8d6d01b64c76559d80cf8cee2ad838f100c8526142f68ac281d5d37",
+      "size_bytes": 163888,
+      "relative_path": "n04398044/n04398044_14689.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04399382/n04399382_5010.JPEG",
+      "sha256": "1b3f490e2da1c4ff7727473d25daf1261ca53bcb7c98196032b965b3a9e42f06",
+      "size_bytes": 113694,
+      "relative_path": "n04399382/n04399382_5010.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04409515/n04409515_8230.JPEG",
+      "sha256": "758fb491bfdd37a4935264e5444e8cb71a6aaebd49a5b808db348ba7f15873b0",
+      "size_bytes": 12225,
+      "relative_path": "n04409515/n04409515_8230.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04417672/n04417672_3873.JPEG",
+      "sha256": "16294b0e97826f88b1d777b3f76c81d1391db9fa5348d9d216dc334886272bf8",
+      "size_bytes": 143853,
+      "relative_path": "n04417672/n04417672_3873.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04423845/n04423845_17646.JPEG",
+      "sha256": "a121669af13f86d5fe0c742df3d9336edff7eddf5fb5d5e8173d927c59fa568c",
+      "size_bytes": 83382,
+      "relative_path": "n04423845/n04423845_17646.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04428191/n04428191_745.JPEG",
+      "sha256": "f08722b97676eebaf1d6689fb6ecfee6412aa009f438fadc1d652a1ecc76fd6d",
+      "size_bytes": 31684,
+      "relative_path": "n04428191/n04428191_745.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04435653/n04435653_6529.JPEG",
+      "sha256": "925ea842f227548e96aefbb2e87a69e85782cb8fb48fc076e8c71572ba539136",
+      "size_bytes": 178028,
+      "relative_path": "n04435653/n04435653_6529.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04442312/n04442312_16035.JPEG",
+      "sha256": "1a0a431a4aaab2a1a7bf5d1fd793af9eca43d1ce35ef824963f860d89f44006c",
+      "size_bytes": 95757,
+      "relative_path": "n04442312/n04442312_16035.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04447861/n04447861_4658.JPEG",
+      "sha256": "f4d0bbf63a8946a8d5885ca98f30ccd172e24cdf081d60093d5e717767536342",
+      "size_bytes": 93338,
+      "relative_path": "n04447861/n04447861_4658.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04458633/n04458633_6390.JPEG",
+      "sha256": "dc47e083ef6ad02662e548566e403a1af592290166a88743c43de35f8d66b6fc",
+      "size_bytes": 204635,
+      "relative_path": "n04458633/n04458633_6390.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04462240/n04462240_16213.JPEG",
+      "sha256": "b0d86e326dd5d3fe086c262d67c6e6fc7f9a88dc0be21deece8a74bf7926d1df",
+      "size_bytes": 174608,
+      "relative_path": "n04462240/n04462240_16213.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04465501/n04465501_3675.JPEG",
+      "sha256": "d7f9eb749a7fd913482115555e53c845b7c5ef7169440752546301de6dcda902",
+      "size_bytes": 103594,
+      "relative_path": "n04465501/n04465501_3675.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04476259/n04476259_20453.JPEG",
+      "sha256": "1f083acd2a97d7eaac354aefbd5ca6a81fc37d08667e9cfd00d9693a22c32387",
+      "size_bytes": 292116,
+      "relative_path": "n04476259/n04476259_20453.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04483307/n04483307_12361.JPEG",
+      "sha256": "b333af61fb22e08a852104c80b8ca50f190e0d2a0e049d8868fe853e39c5b930",
+      "size_bytes": 138596,
+      "relative_path": "n04483307/n04483307_12361.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04485082/n04485082_39000.JPEG",
+      "sha256": "8fe804bdbcc55d431137ec435af872b85451b8e6bf08f1276b0988b2cf9f3f8d",
+      "size_bytes": 155614,
+      "relative_path": "n04485082/n04485082_39000.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04487394/n04487394_16876.JPEG",
+      "sha256": "08f76369bab2f9b1c97d5cbd263f7451cc8f35489f5f9280f95993fb4535c473",
+      "size_bytes": 70070,
+      "relative_path": "n04487394/n04487394_16876.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04493381/n04493381_9663.JPEG",
+      "sha256": "9c512ba6f3d6ae3f7075b9f98d587f9acacbc7ad0423cfd36b3cd6bdf6e2892f",
+      "size_bytes": 151950,
+      "relative_path": "n04493381/n04493381_9663.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04509417/n04509417_5099.JPEG",
+      "sha256": "ef03f3013eb050d2fb46f84ce78f64867dc921ef6f07b3f238889e3b6b0a76b4",
+      "size_bytes": 153968,
+      "relative_path": "n04509417/n04509417_5099.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04515003/n04515003_481.JPEG",
+      "sha256": "bc2b6b2f4a7408be54879edd6812aaa071910582e62d4c781001673107cddfd2",
+      "size_bytes": 155362,
+      "relative_path": "n04515003/n04515003_481.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04522168/n04522168_15864.JPEG",
+      "sha256": "923070b97528526b5e0ea3bfdc9022a32283b76dc56edfe04e796747ff42161f",
+      "size_bytes": 20644,
+      "relative_path": "n04522168/n04522168_15864.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04523525/n04523525_40878.JPEG",
+      "sha256": "3cc7aa01b56804a5199db3faecf0ce024cbd68b0edaf4b36ccc5c987076653b9",
+      "size_bytes": 68400,
+      "relative_path": "n04523525/n04523525_40878.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04540053/n04540053_1212.JPEG",
+      "sha256": "3f16b20d27ee99b024fb158c318ad8b2aafad73421f3881f6aacabe4fa7a88e3",
+      "size_bytes": 185023,
+      "relative_path": "n04540053/n04540053_1212.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04548362/n04548362_14232.JPEG",
+      "sha256": "e62478f49f5d76e52a9eb644582ed7263d13b5913debe05262d6a2d6b5929005",
+      "size_bytes": 122748,
+      "relative_path": "n04548362/n04548362_14232.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04550184/n04550184_5948.JPEG",
+      "sha256": "4cb589d97091b4c20ce90bdd8bb08b4cac4e3813507db8d8fba1f8f698bef974",
+      "size_bytes": 93094,
+      "relative_path": "n04550184/n04550184_5948.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04554684/n04554684_5.JPEG",
+      "sha256": "c1d3ab4642132117256bb7601b8f21d1b25a16b71e47480de02cff74bbabd01d",
+      "size_bytes": 27833,
+      "relative_path": "n04554684/n04554684_5.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04557648/n04557648_957.JPEG",
+      "sha256": "defcfaad3171997af4acdd8fc85c325156c450e7f26ce9c18e90da0f3e67c9da",
+      "size_bytes": 74385,
+      "relative_path": "n04557648/n04557648_957.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04560804/n04560804_11376.JPEG",
+      "sha256": "e47a80f72f063dbda1bd4666759a862eb0628f6851324306e69a70d77e05d020",
+      "size_bytes": 86627,
+      "relative_path": "n04560804/n04560804_11376.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04589890/n04589890_11461.JPEG",
+      "sha256": "a3cacff1bdecbbe5d6e4a771b236ec548a950e6b16cd7cbabcc93e85540efe5b",
+      "size_bytes": 118617,
+      "relative_path": "n04589890/n04589890_11461.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04591157/n04591157_8423.JPEG",
+      "sha256": "d1a99e0a1ccc9491bcb2c4a80bccdb39a9052eb2c0939cc853bb45a111747ffb",
+      "size_bytes": 119778,
+      "relative_path": "n04591157/n04591157_8423.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04591713/n04591713_4139.JPEG",
+      "sha256": "a35223d07185fb14da01724ce396c602390833e5afbf0644b1b30ffcc507fbd7",
+      "size_bytes": 398129,
+      "relative_path": "n04591713/n04591713_4139.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04592741/n04592741_15132.JPEG",
+      "sha256": "96108518853da07482b4809021e9204a6ddf705522766668793af05f4ef8917e",
+      "size_bytes": 95307,
+      "relative_path": "n04592741/n04592741_15132.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04597913/n04597913_3606.JPEG",
+      "sha256": "f61f68b5772eccda7dca2835f72e5d5684ef687945b38b9ca145b477b2c40e9f",
+      "size_bytes": 200489,
+      "relative_path": "n04597913/n04597913_3606.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04604644/n04604644_17474.JPEG",
+      "sha256": "8ca1d97bc17a1a056137b39b199eca7876e7b98bb618af337fd412b6edcd7b37",
+      "size_bytes": 9852,
+      "relative_path": "n04604644/n04604644_17474.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n04606251/n04606251_11752.JPEG",
+      "sha256": "75544d826da9bfc082bcba1f925e9187a7fa19c025c971792fad5d6ee65f67d6",
+      "size_bytes": 97102,
+      "relative_path": "n04606251/n04606251_11752.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n06596364/n06596364_2008.JPEG",
+      "sha256": "0db1ce39ab1efb1088ca456899a89b644c226d37f7e2bfbf668d5ea18fa76648",
+      "size_bytes": 100841,
+      "relative_path": "n06596364/n06596364_2008.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n06874185/n06874185_2732.JPEG",
+      "sha256": "ff761a878f2cb39d23afeb04bd56624d769d3dfc18fb0d94aa96927e8208c84a",
+      "size_bytes": 72158,
+      "relative_path": "n06874185/n06874185_2732.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n07565083/n07565083_12890.JPEG",
+      "sha256": "3e89b28b334ee81eed3412da404daad4521f39d3ee7e9866bc9fde72ba96c2aa",
+      "size_bytes": 168331,
+      "relative_path": "n07565083/n07565083_12890.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n07583066/n07583066_7973.JPEG",
+      "sha256": "bbfc34fc8588881bb2f183759dd395b31d9c14df8fdd68c520aff8c997b79a50",
+      "size_bytes": 97624,
+      "relative_path": "n07583066/n07583066_7973.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n07584110/n07584110_8498.JPEG",
+      "sha256": "5d3f0e48d37cd98adee2a0afa84a186157b21673914384c940464d0902c1a922",
+      "size_bytes": 67870,
+      "relative_path": "n07584110/n07584110_8498.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n07590611/n07590611_12293.JPEG",
+      "sha256": "e24a2a78917e2c491daf1ad899f871b6cdf5d8e8f4cb66405235bc3b621e9912",
+      "size_bytes": 31565,
+      "relative_path": "n07590611/n07590611_12293.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n07613480/n07613480_11842.JPEG",
+      "sha256": "fcfa624c492b4273b15d2492896ee37fcff148cb76847a8e2a06ee9b0daf220f",
+      "size_bytes": 122382,
+      "relative_path": "n07613480/n07613480_11842.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n07614500/n07614500_59848.JPEG",
+      "sha256": "aa7c9970bd7f637c3af57f0484498998ba532d000c21229dd5fdf35bbfd0439e",
+      "size_bytes": 148201,
+      "relative_path": "n07614500/n07614500_59848.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n07684084/n07684084_1430.JPEG",
+      "sha256": "00f8c2c2cac4ebcfb147d6a37ec0f7714b4bb64e67e512f949fee6dfee79f9c5",
+      "size_bytes": 47182,
+      "relative_path": "n07684084/n07684084_1430.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n07693725/n07693725_22958.JPEG",
+      "sha256": "ccd1f818f394166986d63852f83f8a2472165555863239fab26a1dda31b91aeb",
+      "size_bytes": 142766,
+      "relative_path": "n07693725/n07693725_22958.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n07695742/n07695742_9797.JPEG",
+      "sha256": "42c8fa165cc9cc61d70b862a940694d9ec2be765906c0a5855b71f20fbc7b27e",
+      "size_bytes": 193087,
+      "relative_path": "n07695742/n07695742_9797.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n07711569/n07711569_3669.JPEG",
+      "sha256": "c4b24bbb3b2a8b60d343d4a807cf9224c7d1af496a15b9a47d31494becacfad7",
+      "size_bytes": 159886,
+      "relative_path": "n07711569/n07711569_3669.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n07715103/n07715103_4146.JPEG",
+      "sha256": "213e5547a95d6c51ff94b5b6d109088eab1982760823f7c5972b42859d01ddf4",
+      "size_bytes": 152158,
+      "relative_path": "n07715103/n07715103_4146.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n07716906/n07716906_4672.JPEG",
+      "sha256": "b72ab1926a3810b412542a93dc0d85b44ed716359870dd79e41cd7c8ab67c5c3",
+      "size_bytes": 76808,
+      "relative_path": "n07716906/n07716906_4672.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n07717410/n07717410_1964.JPEG",
+      "sha256": "bab5b8bce4416da88f657cdbc0d6ef467df3c96ee1861e1aecf6eb961f540d05",
+      "size_bytes": 150501,
+      "relative_path": "n07717410/n07717410_1964.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n07720875/n07720875_8804.JPEG",
+      "sha256": "5670deb914938bf962f286bdc3be37020b173373bffbb9a84a1ba111e4bdc048",
+      "size_bytes": 137585,
+      "relative_path": "n07720875/n07720875_8804.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n07753275/n07753275_3746.JPEG",
+      "sha256": "fee9e85c35fb460c6fc6a3f2e081ebbf4faf85898c7db50c94ffd01b521057df",
+      "size_bytes": 211431,
+      "relative_path": "n07753275/n07753275_3746.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n07754684/n07754684_25080.JPEG",
+      "sha256": "4b5377df5aa19fd47c401aad826320a2c9fed8c9eb72e3daab73837e1364ca3e",
+      "size_bytes": 125537,
+      "relative_path": "n07754684/n07754684_25080.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n07802026/n07802026_8796.JPEG",
+      "sha256": "dfc82f140a7c2243f0a33e4d020e75ebba137809e2da9bcbd2d5f629fe7e55ec",
+      "size_bytes": 128899,
+      "relative_path": "n07802026/n07802026_8796.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n07860988/n07860988_1238.JPEG",
+      "sha256": "4d29ea239b9e6444afcddc773e72b35d205b4efb14f43e93d3a5315a123350b7",
+      "size_bytes": 120851,
+      "relative_path": "n07860988/n07860988_1238.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n07873807/n07873807_15340.JPEG",
+      "sha256": "ef572a197fb973a13914da1c1f239dbe2c4fa6d91c8b7466dbd264fa70bc42d2",
+      "size_bytes": 177403,
+      "relative_path": "n07873807/n07873807_15340.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n07875152/n07875152_3125.JPEG",
+      "sha256": "43ab0c7336d0e106e0ed554ef799321adf5368bdb1fde011e01d2efb5d25737b",
+      "size_bytes": 98358,
+      "relative_path": "n07875152/n07875152_3125.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n07892512/n07892512_3277.JPEG",
+      "sha256": "d8737e772d8149fba80f8ed57301d66fd03b746ce675826321fed979574f3959",
+      "size_bytes": 41237,
+      "relative_path": "n07892512/n07892512_3277.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n09229709/n09229709_3906.JPEG",
+      "sha256": "14cd7d7a2ac5b7038fe0193cac5b9f6e9ca58f3cae6fccb83c897979a4c1ff46",
+      "size_bytes": 85127,
+      "relative_path": "n09229709/n09229709_3906.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n09246464/n09246464_44118.JPEG",
+      "sha256": "342371ba0a8fc70bd6ec93147b06ade3195cd397ac2c729f7b8d33f70e6744b0",
+      "size_bytes": 168432,
+      "relative_path": "n09246464/n09246464_44118.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n09332890/n09332890_4307.JPEG",
+      "sha256": "35d0195cf52a23930b376f8107e0e665c21ba11cb240ac7e5b34fdf8d6d12ccd",
+      "size_bytes": 42191,
+      "relative_path": "n09332890/n09332890_4307.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n09421951/n09421951_21689.JPEG",
+      "sha256": "4eeea28d892a46bfec12c608268389e65a3f159a705bb34faad08ecc9760b32b",
+      "size_bytes": 87652,
+      "relative_path": "n09421951/n09421951_21689.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n09472597/n09472597_49331.JPEG",
+      "sha256": "9088825dcc7074a58458dbbb3677d2b81b8b0d2ba002338afb323ddf5aea11a7",
+      "size_bytes": 121067,
+      "relative_path": "n09472597/n09472597_49331.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n09835506/n09835506_16081.JPEG",
+      "sha256": "4873d3a2d7abec0d5e495bce8d21d82b48fd1417562807af1983720e6e7cbc9d",
+      "size_bytes": 144624,
+      "relative_path": "n09835506/n09835506_16081.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n10148035/n10148035_14322.JPEG",
+      "sha256": "07410a22b39e92b9c2aa70b1c9763bcde7d962d483b256667fc9f5964cece8f8",
+      "size_bytes": 108412,
+      "relative_path": "n10148035/n10148035_14322.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n12267677/n12267677_36201.JPEG",
+      "sha256": "181036e7b817a48505203220fd039b298fc1637452c076b769c5f4d6d43f3a4a",
+      "size_bytes": 116410,
+      "relative_path": "n12267677/n12267677_36201.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n12620546/n12620546_22818.JPEG",
+      "sha256": "cb7ca4b5182bdfe0d7262626415f2ae86c59e958e4900a9de8952f3543acc99d",
+      "size_bytes": 180299,
+      "relative_path": "n12620546/n12620546_22818.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n12768682/n12768682_25243.JPEG",
+      "sha256": "4437746b604a4fb28c9a105f233214a700bb518eb777343a8a198671458dfb5a",
+      "size_bytes": 3438,
+      "relative_path": "n12768682/n12768682_25243.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n12985857/n12985857_4667.JPEG",
+      "sha256": "09fd4adf64605fa7d721093e2b93abc2c171280d4b11b6f74bea7ba14336ace5",
+      "size_bytes": 180684,
+      "relative_path": "n12985857/n12985857_4667.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n12998815/n12998815_1712.JPEG",
+      "sha256": "5a391d7e1019140b181505ec47f0563d67cd68dee735ddda4c0c8a547e0bd4d2",
+      "size_bytes": 202721,
+      "relative_path": "n12998815/n12998815_1712.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n13040303/n13040303_11124.JPEG",
+      "sha256": "dda919e35f8d34e34b16d77088258925634e6059ce88783e8f138b29ea2d4cb3",
+      "size_bytes": 38427,
+      "relative_path": "n13040303/n13040303_11124.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n13044778/n13044778_5589.JPEG",
+      "sha256": "464cb940c7bd6a950e27f625efe1b4585f7e4d98ce65af4fb73821e983a141ac",
+      "size_bytes": 180484,
+      "relative_path": "n13044778/n13044778_5589.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n13052670/n13052670_4140.JPEG",
+      "sha256": "4730c9c2c0a940923376809ce53aa7a6ca3fd1e1ced70523764e0023a878904c",
+      "size_bytes": 160349,
+      "relative_path": "n13052670/n13052670_4140.JPEG"
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710/n13054560/n13054560_1411.JPEG",
+      "sha256": "834a1e79e3742ddb7bb68c0ea27ae66e88f7b2225b076a34bf3cb1719dbdfbb4",
+      "size_bytes": 219561,
+      "relative_path": "n13054560/n13054560_1411.JPEG"
+    }
+  ],
+  "calibration_identity": "manifest:6d6978cafd1b828d6fa9438b232120f2a769311c28492bea5a141af586c3d58c",
+  "cpu_build_receipt": {
+    "schema": "onnx-splitpoint/hailo-hef-build-receipt/v2",
+    "created_at_unix_s": 1788898376.3623095,
+    "source_onnx_sha256": "2f5e79b1e4280251e7b6eefe1d6161c4831e2fc27858e1e9fe2fac697f44489e",
+    "compiler_onnx_sha256": "511b13a4882c2cb4f1b904cb831b86d1e441c3f11c4eb87fec958b5529bcf438",
+    "compiler_onnx_filename": "mobilenet_v3_large_hailo_fixed.onnx",
+    "hef_sha256": "8d1cb584e05307a641d41eab4dd51c1d1c7824e99a97469935f88089cf756f85",
+    "hef_size_bytes": 5660518,
+    "hw_arch": "hailo8",
+    "net_name": "mobilenet_v3_large_full",
+    "hailo_sdk_version": "hailo-dataflow-compiler:3.33.1",
+    "calibration_identity": "manifest:6d6978cafd1b828d6fa9438b232120f2a769311c28492bea5a141af586c3d58c",
+    "prepared_calibration_identity_sha256": "fb09c137fe8380101f4d02f4c3998037407c0cce5d1b09aa854c61ba41172b18",
+    "calibration_count": 500,
+    "requested_calibration_count": 500,
+    "calibration_storage": "memmap",
+    "calibration_memory_cap_bytes": 268435456,
+    "preprocessing_contract": {
+      "schema": "onnx-splitpoint/image-preprocessing-contract",
+      "schema_version": 2,
+      "contract_scope": "prepared_rgb_uint8_semantics",
+      "task": "classification",
+      "preprocess_mode": "resize",
+      "spatial_transform": "direct_resize",
+      "target_hw": [
+        224,
+        224
+      ],
+      "color_space": "RGB",
+      "input_domain": "uint8_0_255",
+      "resize_interpolation": "bilinear",
+      "resize_rounding": "python_round_ties_to_even",
+      "placement": "not_applicable",
+      "pad_value": 0,
+      "letterbox_pad_value": 0,
+      "image_scale": "imagenet",
+      "letterbox": false
+    },
+    "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+    "cache_key": "a911084ca887d0a74d73addc6d654ea6faec61876a51b4ded92e9a49ed612070",
+    "cache_payload": {
+      "schema": "onnx-splitpoint/hailo-hef-cache-key-v3",
+      "model_sha256": "511b13a4882c2cb4f1b904cb831b86d1e441c3f11c4eb87fec958b5529bcf438",
+      "activation_part1_sha256": "",
+      "hw_arch": "hailo8",
+      "hailo_sdk_version": "hailo-dataflow-compiler:3.33.1",
+      "optimization_level": 1,
+      "calibration_identity": "manifest:6d6978cafd1b828d6fa9438b232120f2a769311c28492bea5a141af586c3d58c",
+      "prepared_calibration_identity_sha256": "fb09c137fe8380101f4d02f4c3998037407c0cce5d1b09aa854c61ba41172b18",
+      "calibration_count": 500,
+      "requested_calibration_count": 500,
+      "calibration_storage": "memmap",
+      "calibration_memory_cap_bytes": 268435456,
+      "calibration_batch_size": 8,
+      "extra_model_script": "",
+      "start_nodes": [],
+      "end_nodes": [],
+      "integrity": "relaxed",
+      "preprocessing_contract": {
+        "schema": "onnx-splitpoint/image-preprocessing-contract",
+        "schema_version": 2,
+        "contract_scope": "prepared_rgb_uint8_semantics",
+        "task": "classification",
+        "preprocess_mode": "resize",
+        "spatial_transform": "direct_resize",
+        "target_hw": [
+          224,
+          224
+        ],
+        "color_space": "RGB",
+        "input_domain": "uint8_0_255",
+        "resize_interpolation": "bilinear",
+        "resize_rounding": "python_round_ties_to_even",
+        "placement": "not_applicable",
+        "pad_value": 0,
+        "letterbox_pad_value": 0,
+        "image_scale": "imagenet",
+        "letterbox": false
+      },
+      "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9",
+      "net_name": "mobilenet_v3_large_full",
+      "net_input_shapes": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "disable_rt_metadata_extraction": true
+    }
+  },
+  "images": [
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n02788148/ILSVRC2012_val_00049054.JPEG",
+      "sha256": "6d825bff39b262d95c76d95df76f866ca6653aba7af516ea800aee126265be20",
+      "size_bytes": 18184,
+      "id": "n02788148/ILSVRC2012_val_00049054.JPEG",
+      "label": 421
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n02098413/ILSVRC2012_val_00031453.JPEG",
+      "sha256": "4117c45fae3844f984e3a12fe898bf2bb088fa7a62b66a56dc92d9ae64fe9a09",
+      "size_bytes": 93122,
+      "id": "n02098413/ILSVRC2012_val_00031453.JPEG",
+      "label": 204
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n02086910/ILSVRC2012_val_00040564.JPEG",
+      "sha256": "d9cf80a0b3f76097ca164f1694dde6a22bd9dd39f66d9c8b4b7e88b41000c597",
+      "size_bytes": 128465,
+      "id": "n02086910/ILSVRC2012_val_00040564.JPEG",
+      "label": 157
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n02102177/ILSVRC2012_val_00006947.JPEG",
+      "sha256": "5ea6507d84f2e5478b282644532505e10a187198156a41fe61586aa40836e814",
+      "size_bytes": 148215,
+      "id": "n02102177/ILSVRC2012_val_00006947.JPEG",
+      "label": 218
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n01817953/ILSVRC2012_val_00002791.JPEG",
+      "sha256": "3e07f0ecfed9b50e9b03acf239d6ba7b648597e1a7f6f2327b8d0a851d2cd4ce",
+      "size_bytes": 122329,
+      "id": "n01817953/ILSVRC2012_val_00002791.JPEG",
+      "label": 87
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n03297495/ILSVRC2012_val_00020583.JPEG",
+      "sha256": "80721e97ea6335c7d69aaf7efee989d8d1ce083b2a7fe057cb2b706ffe1575af",
+      "size_bytes": 1673,
+      "id": "n03297495/ILSVRC2012_val_00020583.JPEG",
+      "label": 550
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n01818515/ILSVRC2012_val_00036879.JPEG",
+      "sha256": "4683fef3653851f7e519adefb8c18f5dea91fcc9e035bf77e1a5414de2246f2e",
+      "size_bytes": 149287,
+      "id": "n01818515/ILSVRC2012_val_00036879.JPEG",
+      "label": 88
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n04326547/ILSVRC2012_val_00013931.JPEG",
+      "sha256": "bbfa767c642cec97255afe97571ab90859a277d0602f06636ceba81cc8462bf1",
+      "size_bytes": 147523,
+      "id": "n04326547/ILSVRC2012_val_00013931.JPEG",
+      "label": 825
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n04086273/ILSVRC2012_val_00015260.JPEG",
+      "sha256": "a26168111134e2a84e8f1b436c3e55c51fcd264fcca4b4514506209caec4a402",
+      "size_bytes": 37475,
+      "id": "n04086273/ILSVRC2012_val_00015260.JPEG",
+      "label": 763
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n04251144/ILSVRC2012_val_00010908.JPEG",
+      "sha256": "bbb7e7ea6f462682c17a91f3afd50607d34f0555d961e170e056ee3112ebb089",
+      "size_bytes": 155118,
+      "id": "n04251144/ILSVRC2012_val_00010908.JPEG",
+      "label": 801
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n04597913/ILSVRC2012_val_00041290.JPEG",
+      "sha256": "1b7809af177ff49e0ed9d4abd36e84d5ca92a8db82de0e01115de02fea438966",
+      "size_bytes": 148444,
+      "id": "n04597913/ILSVRC2012_val_00041290.JPEG",
+      "label": 910
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n04192698/ILSVRC2012_val_00026513.JPEG",
+      "sha256": "e296bf711a03aba7fb455a8656b7983911f93eacd904c7b08a7bc119b0c5ee61",
+      "size_bytes": 110049,
+      "id": "n04192698/ILSVRC2012_val_00026513.JPEG",
+      "label": 787
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n01664065/ILSVRC2012_val_00022469.JPEG",
+      "sha256": "84ceeee2e6a2047ca9ebacf6d844418d874a285fa06223e116889284238e38e9",
+      "size_bytes": 207519,
+      "id": "n01664065/ILSVRC2012_val_00022469.JPEG",
+      "label": 33
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n04372370/ILSVRC2012_val_00035646.JPEG",
+      "sha256": "aa38bc38b20f6b2d3fff138b8964a1f55e77da2eb6c03cc9e61569dbc1768d48",
+      "size_bytes": 82589,
+      "id": "n04372370/ILSVRC2012_val_00035646.JPEG",
+      "label": 844
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n03065424/ILSVRC2012_val_00020012.JPEG",
+      "sha256": "3b0afe986a30d5e2301ad652ec1ad8cadc07506978cacd80986dae9f93c3c982",
+      "size_bytes": 165964,
+      "id": "n03065424/ILSVRC2012_val_00020012.JPEG",
+      "label": 506
+    },
+    {
+      "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n03459775/ILSVRC2012_val_00041657.JPEG",
+      "sha256": "050d220fda336d16a5551c296c508ffe514d9600da87f439c4da345242c76f9c",
+      "size_bytes": 124906,
+      "id": "n03459775/ILSVRC2012_val_00041657.JPEG",
+      "label": 581
+    }
+  ],
+  "images_usage": "opened_development_diagnostic_not_holdout",
+  "venv_python": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/bin/python",
+  "timeout_s": 7200,
+  "publication": "private_only",
+  "central_force_modified": false,
+  "compute_device": "gpu",
+  "gpu_selector": "GPU-b823007b-546c-4cda-533d-fc24c61f01e6",
+  "prepared_unix_s": 1789202097.195303,
+  "dependency_manifest": {
+    "path": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/overlay_manifest.json",
+    "sha256": "7d1b4a5ebf5986765de6fbd778541a02498c31a40aa8fc4375cb5a0544cf2d12",
+    "size_bytes": 126199
+  },
+  "evidence_note": "New Hailo8-only request; CPU baseline Hailo8. Calibration and fixed16 from previously opened diagnostic cohort."
+}

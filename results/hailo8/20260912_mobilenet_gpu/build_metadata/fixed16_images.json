@@ -1,0 +1,114 @@
+[
+  {
+    "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n02788148/ILSVRC2012_val_00049054.JPEG",
+    "sha256": "6d825bff39b262d95c76d95df76f866ca6653aba7af516ea800aee126265be20",
+    "size_bytes": 18184,
+    "id": "n02788148/ILSVRC2012_val_00049054.JPEG",
+    "label": 421
+  },
+  {
+    "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n02098413/ILSVRC2012_val_00031453.JPEG",
+    "sha256": "4117c45fae3844f984e3a12fe898bf2bb088fa7a62b66a56dc92d9ae64fe9a09",
+    "size_bytes": 93122,
+    "id": "n02098413/ILSVRC2012_val_00031453.JPEG",
+    "label": 204
+  },
+  {
+    "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n02086910/ILSVRC2012_val_00040564.JPEG",
+    "sha256": "d9cf80a0b3f76097ca164f1694dde6a22bd9dd39f66d9c8b4b7e88b41000c597",
+    "size_bytes": 128465,
+    "id": "n02086910/ILSVRC2012_val_00040564.JPEG",
+    "label": 157
+  },
+  {
+    "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n02102177/ILSVRC2012_val_00006947.JPEG",
+    "sha256": "5ea6507d84f2e5478b282644532505e10a187198156a41fe61586aa40836e814",
+    "size_bytes": 148215,
+    "id": "n02102177/ILSVRC2012_val_00006947.JPEG",
+    "label": 218
+  },
+  {
+    "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n01817953/ILSVRC2012_val_00002791.JPEG",
+    "sha256": "3e07f0ecfed9b50e9b03acf239d6ba7b648597e1a7f6f2327b8d0a851d2cd4ce",
+    "size_bytes": 122329,
+    "id": "n01817953/ILSVRC2012_val_00002791.JPEG",
+    "label": 87
+  },
+  {
+    "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n03297495/ILSVRC2012_val_00020583.JPEG",
+    "sha256": "80721e97ea6335c7d69aaf7efee989d8d1ce083b2a7fe057cb2b706ffe1575af",
+    "size_bytes": 1673,
+    "id": "n03297495/ILSVRC2012_val_00020583.JPEG",
+    "label": 550
+  },
+  {
+    "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n01818515/ILSVRC2012_val_00036879.JPEG",
+    "sha256": "4683fef3653851f7e519adefb8c18f5dea91fcc9e035bf77e1a5414de2246f2e",
+    "size_bytes": 149287,
+    "id": "n01818515/ILSVRC2012_val_00036879.JPEG",
+    "label": 88
+  },
+  {
+    "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n04326547/ILSVRC2012_val_00013931.JPEG",
+    "sha256": "bbfa767c642cec97255afe97571ab90859a277d0602f06636ceba81cc8462bf1",
+    "size_bytes": 147523,
+    "id": "n04326547/ILSVRC2012_val_00013931.JPEG",
+    "label": 825
+  },
+  {
+    "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n04086273/ILSVRC2012_val_00015260.JPEG",
+    "sha256": "a26168111134e2a84e8f1b436c3e55c51fcd264fcca4b4514506209caec4a402",
+    "size_bytes": 37475,
+    "id": "n04086273/ILSVRC2012_val_00015260.JPEG",
+    "label": 763
+  },
+  {
+    "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n04251144/ILSVRC2012_val_00010908.JPEG",
+    "sha256": "bbb7e7ea6f462682c17a91f3afd50607d34f0555d961e170e056ee3112ebb089",
+    "size_bytes": 155118,
+    "id": "n04251144/ILSVRC2012_val_00010908.JPEG",
+    "label": 801
+  },
+  {
+    "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n04597913/ILSVRC2012_val_00041290.JPEG",
+    "sha256": "1b7809af177ff49e0ed9d4abd36e84d5ca92a8db82de0e01115de02fea438966",
+    "size_bytes": 148444,
+    "id": "n04597913/ILSVRC2012_val_00041290.JPEG",
+    "label": 910
+  },
+  {
+    "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n04192698/ILSVRC2012_val_00026513.JPEG",
+    "sha256": "e296bf711a03aba7fb455a8656b7983911f93eacd904c7b08a7bc119b0c5ee61",
+    "size_bytes": 110049,
+    "id": "n04192698/ILSVRC2012_val_00026513.JPEG",
+    "label": 787
+  },
+  {
+    "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n01664065/ILSVRC2012_val_00022469.JPEG",
+    "sha256": "84ceeee2e6a2047ca9ebacf6d844418d874a285fa06223e116889284238e38e9",
+    "size_bytes": 207519,
+    "id": "n01664065/ILSVRC2012_val_00022469.JPEG",
+    "label": 33
+  },
+  {
+    "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n04372370/ILSVRC2012_val_00035646.JPEG",
+    "sha256": "aa38bc38b20f6b2d3fff138b8964a1f55e77da2eb6c03cc9e61569dbc1768d48",
+    "size_bytes": 82589,
+    "id": "n04372370/ILSVRC2012_val_00035646.JPEG",
+    "label": 844
+  },
+  {
+    "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n03065424/ILSVRC2012_val_00020012.JPEG",
+    "sha256": "3b0afe986a30d5e2301ad652ec1ad8cadc07506978cacd80986dae9f93c3c982",
+    "size_bytes": 165964,
+    "id": "n03065424/ILSVRC2012_val_00020012.JPEG",
+    "label": 506
+  },
+  {
+    "path": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/val_by_wnid/n03459775/ILSVRC2012_val_00041657.JPEG",
+    "sha256": "050d220fda336d16a5551c296c508ffe514d9600da87f439c4da345242c76f9c",
+    "size_bytes": 124906,
+    "id": "n03459775/ILSVRC2012_val_00041657.JPEG",
+    "label": 581
+  }
+]

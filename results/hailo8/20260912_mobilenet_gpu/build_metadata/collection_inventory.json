@@ -1,0 +1,145 @@
+{
+  "schema": "hailo8_mobilenet_private_build_r1",
+  "rows": [
+    {
+      "path": "launcher_summary.json",
+      "status": "included",
+      "size_bytes": 74062
+    },
+    {
+      "path": "tool_source_check.json",
+      "status": "included",
+      "size_bytes": 1008
+    },
+    {
+      "path": "configuration_before.json",
+      "status": "included",
+      "size_bytes": 504
+    },
+    {
+      "path": "configuration_after.json",
+      "status": "included",
+      "size_bytes": 504
+    },
+    {
+      "path": "configuration_preservation.json",
+      "status": "included",
+      "size_bytes": 38
+    },
+    {
+      "path": "fixed16_images.json",
+      "status": "included",
+      "size_bytes": 5162
+    },
+    {
+      "path": "request.json",
+      "status": "included",
+      "size_bytes": 177314
+    },
+    {
+      "path": "overlay_manifest.json",
+      "status": "included",
+      "size_bytes": 126199
+    },
+    {
+      "path": "baseline_cpu_receipt.json",
+      "status": "included",
+      "size_bytes": 3505
+    },
+    {
+      "path": "summary.json",
+      "status": "included",
+      "size_bytes": 73669
+    },
+    {
+      "path": "build_result.json",
+      "status": "included",
+      "size_bytes": 41967
+    },
+    {
+      "path": "primary_error.json",
+      "status": "not_present_or_symlink"
+    },
+    {
+      "path": "supervision.json",
+      "status": "included",
+      "size_bytes": 229
+    },
+    {
+      "path": "gpu_activity.json",
+      "status": "included",
+      "size_bytes": 95713
+    },
+    {
+      "path": "gpu_activity.log",
+      "status": "included",
+      "size_bytes": 128246
+    },
+    {
+      "path": "compiler.log",
+      "status": "included",
+      "size_bytes": 89296
+    },
+    {
+      "path": "worker.log",
+      "status": "included",
+      "size_bytes": 89296
+    },
+    {
+      "path": "worker_traceback.log",
+      "status": "not_present_or_symlink"
+    },
+    {
+      "path": "builder_arguments.json",
+      "status": "included",
+      "size_bytes": 1686
+    },
+    {
+      "path": "private_hef_receipt.json",
+      "status": "included",
+      "size_bytes": 9024
+    },
+    {
+      "path": "preflight_error.json",
+      "status": "not_present_or_symlink"
+    },
+    {
+      "path": "build/hailo_build_phases.json",
+      "status": "included",
+      "size_bytes": 3078
+    },
+    {
+      "path": "build/hailo_compiler_context.json",
+      "status": "included",
+      "size_bytes": 2388
+    },
+    {
+      "path": "ptxas_invocations.jsonl",
+      "status": "included",
+      "size_bytes": 147706
+    },
+    {
+      "path": "source/run_hailo8_model_build.py",
+      "status": "included",
+      "size_bytes": 21815
+    },
+    {
+      "path": "source/h8_model_request.py",
+      "status": "included",
+      "size_bytes": 16703
+    },
+    {
+      "path": "source/build_observation.py",
+      "status": "included",
+      "size_bytes": 8407
+    },
+    {
+      "path": "source/SOURCE_PROVENANCE.json",
+      "status": "included",
+      "size_bytes": 1325
+    }
+  ],
+  "source_payload_bytes": 1118844,
+  "models_and_libraries_included": false,
+  "complete_model_archive": false
+}

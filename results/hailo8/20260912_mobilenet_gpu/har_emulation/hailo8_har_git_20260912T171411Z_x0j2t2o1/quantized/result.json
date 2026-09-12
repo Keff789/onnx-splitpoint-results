@@ -1,0 +1,141 @@
+{
+  "status": "evaluated",
+  "stage": "quantized",
+  "context": "SDK_QUANTIZED",
+  "new_hef_build": false,
+  "new_optimization": false,
+  "hardware_inference": false,
+  "requested_execution": "CPU emulation (not performance measurement)",
+  "cuda_visible_devices": "-1",
+  "sdk_version": "3.33.1",
+  "api": {
+    "infer_context": "(self, inference_context: hailo_sdk_client.exposed_definitions.InferenceContext, device_ids=None, nms_score_threshold=None, gpu_policy: hailo_model_optimization.acceleras.utils.acceleras_definitions.DistributionStrategy = <DistributionStrategy.AUTO: 'auto'>, custom_infer_config: Union[str, pathlib.Path, dict, NoneType] = None, lora_adapter_name: Optional[str] = None) -> Generator[hailo_sdk_client.exposed_definitions.ContextInfo, NoneType, NoneType]",
+    "infer": "(self, context: hailo_sdk_client.exposed_definitions.ContextInfo, dataset, data_type=<CalibrationDataType.auto: 'auto'>, data_count: Optional[int] = None, batch_size: int = 8) -> list",
+    "get_hn": "(self)"
+  },
+  "runner_state_before": "quantized_model",
+  "hn": {
+    "name": "mobilenet_v3_large_full",
+    "layer_count": 89,
+    "input_layers": {
+      "mobilenet_v3_large_full/input_layer1": {
+        "type": "input_layer",
+        "input": [],
+        "output": [
+          "mobilenet_v3_large_full/conv1"
+        ],
+        "input_shapes": [
+          [
+            -1,
+            224,
+            224,
+            3
+          ]
+        ],
+        "output_shapes": [
+          [
+            -1,
+            224,
+            224,
+            3
+          ]
+        ],
+        "original_names": [
+          "input"
+        ],
+        "compilation_params": {},
+        "quantization_params": {
+          "quantization_groups": 1,
+          "quantization_weight_groups": 1,
+          "precision_mode": "a8_w8_a8",
+          "bias_mode": "single_scale_decomposition",
+          "signed_output": false
+        },
+        "transposed": false,
+        "engine": "nn_core",
+        "io_type": "standard"
+      }
+    },
+    "output_layers": {
+      "mobilenet_v3_large_full/output_layer1": {
+        "type": "output_layer",
+        "input": [
+          "mobilenet_v3_large_full/fc18"
+        ],
+        "output": [],
+        "input_shapes": [
+          [
+            -1,
+            1,
+            1,
+            1000
+          ]
+        ],
+        "output_shapes": [
+          [
+            -1,
+            1,
+            1,
+            1000
+          ]
+        ],
+        "original_names": [
+          "logits"
+        ],
+        "compilation_params": {},
+        "quantization_params": {
+          "quantization_groups": 1,
+          "quantization_weight_groups": 1,
+          "precision_mode": "a8_w8_a8",
+          "bias_mode": "single_scale_decomposition",
+          "signed_output": false
+        },
+        "transposed": false,
+        "engine": "nn_core",
+        "io_type": "standard"
+      }
+    }
+  },
+  "output": {
+    "path": "/home/kmika/Downloads/hailo8_har_git_20260912T171411Z_x0j2t2o1/har_comparison/quantized/logits.npy",
+    "size_bytes": 64128,
+    "sha256": "60f85432043d5a839b0581c9fea21ead595f8001ed110e14d7603ce5b6e0289f"
+  },
+  "output_info": {
+    "selected_output": null,
+    "original_shape": [
+      16,
+      1,
+      1,
+      1000
+    ]
+  },
+  "image_ids": [
+    "n02788148/ILSVRC2012_val_00049054.JPEG",
+    "n02098413/ILSVRC2012_val_00031453.JPEG",
+    "n02086910/ILSVRC2012_val_00040564.JPEG",
+    "n02102177/ILSVRC2012_val_00006947.JPEG",
+    "n01817953/ILSVRC2012_val_00002791.JPEG",
+    "n03297495/ILSVRC2012_val_00020583.JPEG",
+    "n01818515/ILSVRC2012_val_00036879.JPEG",
+    "n04326547/ILSVRC2012_val_00013931.JPEG",
+    "n04086273/ILSVRC2012_val_00015260.JPEG",
+    "n04251144/ILSVRC2012_val_00010908.JPEG",
+    "n04597913/ILSVRC2012_val_00041290.JPEG",
+    "n04192698/ILSVRC2012_val_00026513.JPEG",
+    "n01664065/ILSVRC2012_val_00022469.JPEG",
+    "n04372370/ILSVRC2012_val_00035646.JPEG",
+    "n03065424/ILSVRC2012_val_00020012.JPEG",
+    "n03459775/ILSVRC2012_val_00041657.JPEG"
+  ],
+  "feed_sha256": "c0f21fa83421f4aa58f9e2d5837f7711d45609d506436e36212453e771626209",
+  "feed_unchanged": true,
+  "har": {
+    "path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/quantized.har",
+    "size_bytes": 130723840,
+    "sha256": "8090345630e694cc37fd96a5aba0c77e6e0e81748ac7270f7799bac139394e6e"
+  },
+  "har_unchanged": true,
+  "elapsed_s": 29.96077743198839,
+  "runner_state_after": "quantized_model"
+}

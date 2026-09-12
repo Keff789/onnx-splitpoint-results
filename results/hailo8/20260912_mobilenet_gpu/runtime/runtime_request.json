@@ -1,0 +1,170 @@
+{
+  "schema": "hailo8_model_runtime_request_r1",
+  "model": "mobilenet_v3_large",
+  "family": "hailo8",
+  "setup_id": "orin_nx_hailo8_01",
+  "input_name": "input",
+  "input_shape": [
+    1,
+    3,
+    224,
+    224
+  ],
+  "output_name": "logits",
+  "class_count": 1000,
+  "cpu_hef": {
+    "path": "cpu.hef",
+    "sha256": "8d1cb584e05307a641d41eab4dd51c1d1c7824e99a97469935f88089cf756f85",
+    "size_bytes": 5660518
+  },
+  "gpu_hef": {
+    "path": "gpu.hef",
+    "sha256": "bdfdf620ea557fff667b22343678db19e00d4b833afa2bf56de7161c766d64b0",
+    "size_bytes": 5660588
+  },
+  "images": [
+    {
+      "path": "images/000.JPEG",
+      "sha256": "6d825bff39b262d95c76d95df76f866ca6653aba7af516ea800aee126265be20",
+      "size_bytes": 18184,
+      "id": "n02788148/ILSVRC2012_val_00049054.JPEG",
+      "label": 421
+    },
+    {
+      "path": "images/001.JPEG",
+      "sha256": "4117c45fae3844f984e3a12fe898bf2bb088fa7a62b66a56dc92d9ae64fe9a09",
+      "size_bytes": 93122,
+      "id": "n02098413/ILSVRC2012_val_00031453.JPEG",
+      "label": 204
+    },
+    {
+      "path": "images/002.JPEG",
+      "sha256": "d9cf80a0b3f76097ca164f1694dde6a22bd9dd39f66d9c8b4b7e88b41000c597",
+      "size_bytes": 128465,
+      "id": "n02086910/ILSVRC2012_val_00040564.JPEG",
+      "label": 157
+    },
+    {
+      "path": "images/003.JPEG",
+      "sha256": "5ea6507d84f2e5478b282644532505e10a187198156a41fe61586aa40836e814",
+      "size_bytes": 148215,
+      "id": "n02102177/ILSVRC2012_val_00006947.JPEG",
+      "label": 218
+    },
+    {
+      "path": "images/004.JPEG",
+      "sha256": "3e07f0ecfed9b50e9b03acf239d6ba7b648597e1a7f6f2327b8d0a851d2cd4ce",
+      "size_bytes": 122329,
+      "id": "n01817953/ILSVRC2012_val_00002791.JPEG",
+      "label": 87
+    },
+    {
+      "path": "images/005.JPEG",
+      "sha256": "80721e97ea6335c7d69aaf7efee989d8d1ce083b2a7fe057cb2b706ffe1575af",
+      "size_bytes": 1673,
+      "id": "n03297495/ILSVRC2012_val_00020583.JPEG",
+      "label": 550
+    },
+    {
+      "path": "images/006.JPEG",
+      "sha256": "4683fef3653851f7e519adefb8c18f5dea91fcc9e035bf77e1a5414de2246f2e",
+      "size_bytes": 149287,
+      "id": "n01818515/ILSVRC2012_val_00036879.JPEG",
+      "label": 88
+    },
+    {
+      "path": "images/007.JPEG",
+      "sha256": "bbfa767c642cec97255afe97571ab90859a277d0602f06636ceba81cc8462bf1",
+      "size_bytes": 147523,
+      "id": "n04326547/ILSVRC2012_val_00013931.JPEG",
+      "label": 825
+    },
+    {
+      "path": "images/008.JPEG",
+      "sha256": "a26168111134e2a84e8f1b436c3e55c51fcd264fcca4b4514506209caec4a402",
+      "size_bytes": 37475,
+      "id": "n04086273/ILSVRC2012_val_00015260.JPEG",
+      "label": 763
+    },
+    {
+      "path": "images/009.JPEG",
+      "sha256": "bbb7e7ea6f462682c17a91f3afd50607d34f0555d961e170e056ee3112ebb089",
+      "size_bytes": 155118,
+      "id": "n04251144/ILSVRC2012_val_00010908.JPEG",
+      "label": 801
+    },
+    {
+      "path": "images/010.JPEG",
+      "sha256": "1b7809af177ff49e0ed9d4abd36e84d5ca92a8db82de0e01115de02fea438966",
+      "size_bytes": 148444,
+      "id": "n04597913/ILSVRC2012_val_00041290.JPEG",
+      "label": 910
+    },
+    {
+      "path": "images/011.JPEG",
+      "sha256": "e296bf711a03aba7fb455a8656b7983911f93eacd904c7b08a7bc119b0c5ee61",
+      "size_bytes": 110049,
+      "id": "n04192698/ILSVRC2012_val_00026513.JPEG",
+      "label": 787
+    },
+    {
+      "path": "images/012.JPEG",
+      "sha256": "84ceeee2e6a2047ca9ebacf6d844418d874a285fa06223e116889284238e38e9",
+      "size_bytes": 207519,
+      "id": "n01664065/ILSVRC2012_val_00022469.JPEG",
+      "label": 33
+    },
+    {
+      "path": "images/013.JPEG",
+      "sha256": "aa38bc38b20f6b2d3fff138b8964a1f55e77da2eb6c03cc9e61569dbc1768d48",
+      "size_bytes": 82589,
+      "id": "n04372370/ILSVRC2012_val_00035646.JPEG",
+      "label": 844
+    },
+    {
+      "path": "images/014.JPEG",
+      "sha256": "3b0afe986a30d5e2301ad652ec1ad8cadc07506978cacd80986dae9f93c3c982",
+      "size_bytes": 165964,
+      "id": "n03065424/ILSVRC2012_val_00020012.JPEG",
+      "label": 506
+    },
+    {
+      "path": "images/015.JPEG",
+      "sha256": "050d220fda336d16a5551c296c508ffe514d9600da87f439c4da345242c76f9c",
+      "size_bytes": 124906,
+      "id": "n03459775/ILSVRC2012_val_00041657.JPEG",
+      "label": 581
+    }
+  ],
+  "preprocessing_contract": {
+    "schema": "onnx-splitpoint/image-preprocessing-contract",
+    "schema_version": 2,
+    "contract_scope": "prepared_rgb_uint8_semantics",
+    "task": "classification",
+    "preprocess_mode": "resize",
+    "spatial_transform": "direct_resize",
+    "target_hw": [
+      224,
+      224
+    ],
+    "color_space": "RGB",
+    "input_domain": "uint8_0_255",
+    "resize_interpolation": "bilinear",
+    "resize_rounding": "python_round_ties_to_even",
+    "placement": "not_applicable",
+    "pad_value": 0,
+    "letterbox_pad_value": 0,
+    "image_scale": "imagenet",
+    "letterbox": false
+  },
+  "expected_source_onnx_sha256": "2f5e79b1e4280251e7b6eefe1d6161c4831e2fc27858e1e9fe2fac697f44489e",
+  "expected_compiler_sha256": "511b13a4882c2cb4f1b904cb831b86d1e441c3f11c4eb87fec958b5529bcf438",
+  "model_build_summary": {
+    "path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/summary.json",
+    "sha256": "feafa6e94e159735dddef59264b1ead32df66bf5ed6ccb5393387e9b87d5afcd",
+    "size_bytes": 73669
+  },
+  "images_usage": "opened_development_diagnostic_not_holdout",
+  "compiler_invoked": false,
+  "energy_invoked": false
+}

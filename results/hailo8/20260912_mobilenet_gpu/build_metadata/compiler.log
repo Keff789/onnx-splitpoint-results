@@ -1,0 +1,658 @@
+stdout [splitpoint][cuda] Compute: GPU (resolved hailo8 job)
+stdout [hailo-cache] MISS role=hef model=mobilenet_v3_large_full identity=a911084ca887d0a74d73addc6d654ea6faec61876a51b4ded92e9a49ed612070 reason=force_rebuild_requested artifact=/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/compiled.hef hw_arch=hailo8
+stdout [build-evidence] status=UNAVAILABLE model=mobilenet_v3_large_full boundary=full stage=unknown backend=hailo8 state=- reason=diagnostic_nonpublishing
+stderr WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+stderr E0000 00:00:1789202102.209243 1505755 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+stderr E0000 00:00:1789202102.213759 1505755 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+stdout [hailo][translate] start net=mobilenet_v3_large_full hw_arch=hailo8
+stdout [info] Translation started on ONNX model mobilenet_v3_large_full
+stdout [info] Restored ONNX model mobilenet_v3_large_full (completion time: 00:00:00.11)
+stdout [info] Start nodes mapped from original model: 'input': 'mobilenet_v3_large_full/input_layer1'.
+stdout [info] End nodes mapped from original model: 'node_linear_1'.
+stdout [info] Translation completed on ONNX model mobilenet_v3_large_full (completion time: 00:00:00.55)
+stdout [hailo][heartbeat] translate net=mobilenet_v3_large_full finished after 1.2s
+stdout [hailo][translate] done net=mobilenet_v3_large_full
+stdout [info] Saved HAR to: /home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/parsed.har
+stdout [hailo][calib] image_preprocess=imagenet
+stdout [info] Loading model script commands to mobilenet_v3_large_full from string
+stdout [hailo][optimize] start net=mobilenet_v3_large_full hw_arch=hailo8 calib_source=/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710 used_count=500 batch_size=8 opt_level=1
+stdout [info] Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+stdout [info] Starting Model Optimization
+stderr I0000 00:00:1789202117.501374 1505755 gpu_device.cc:2022] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 10448 MB memory:  -> device: 0, name: NVIDIA GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1
+stderr I0000 00:00:1789202117.715003 1505755 gpu_device.cc:2022] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 10448 MB memory:  -> device: 0, name: NVIDIA GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1
+stdout [warning] Reducing compression level to 0 because requested optimization level equal or less than 1
+stdout [info] Model received quantization params from the hn
+stderr I0000 00:00:1789202118.208543 1505755 gpu_device.cc:2022] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 10448 MB memory:  -> device: 0, name: NVIDIA GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1
+stderr I0000 00:00:1789202118.420881 1505755 gpu_device.cc:2022] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 10448 MB memory:  -> device: 0, name: NVIDIA GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1
+stdout [info] MatmulDecompose skipped
+stdout [info] Starting Mixed Precision
+stdout [info] Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.59)
+stderr I0000 00:00:1789202125.842134 1505755 cuda_dnn.cc:529] Loaded cuDNN version 90300
+stdout [info] Remove layer mobilenet_v3_large_full/avgpool1 because it has no effect on the network output
+stdout [info] Remove layer mobilenet_v3_large_full/fc1 because it has no effect on the network output
+stdout [info] Layer mobilenet_v3_large_full/fc2 has near zeros weights. Replacing with with mobilenet_v3_large_full/fc2_const_replacement
+stdout [info] LayerNorm Decomposition skipped
+stdout [info] Starting Statistics Collector
+stdout [info] Using dataset with 500 entries for calibration
+stderr 
+stdout [hailo][heartbeat] optimize net=mobilenet_v3_large_full still running after 30s
+stderr Calibration:   0%|          | 0/500 [00:00<?, ?entries/s]
+stderr Calibration:   2%|▏         | 8/500 [00:22<23:18,  2.84s/entries]
+stderr Calibration:   6%|▋         | 32/500 [00:22<04:13,  1.84entries/s]
+stderr Calibration:  11%|█         | 56/500 [00:23<01:52,  3.93entries/s]
+stderr Calibration:  16%|█▌        | 80/500 [00:23<01:01,  6.83entries/s]
+stderr Calibration:  21%|██        | 104/500 [00:23<00:36, 10.80entries/s]
+stderr Calibration:  26%|██▌       | 128/500 [00:23<00:22, 16.18entries/s]
+stderr Calibration:  30%|███       | 152/500 [00:23<00:14, 23.30entries/s]
+stderr Calibration:  35%|███▌      | 176/500 [00:23<00:09, 32.41entries/s]
+stderr Calibration:  40%|████      | 200/500 [00:23<00:06, 43.69entries/s]
+stderr Calibration:  45%|████▍     | 224/500 [00:23<00:04, 57.17entries/s]
+stderr Calibration:  50%|████▉     | 248/500 [00:24<00:03, 72.27entries/s]
+stderr Calibration:  54%|█████▍    | 272/500 [00:24<00:02, 88.46entries/s]
+stderr Calibration:  59%|█████▉    | 296/500 [00:24<00:01, 104.67entries/s]
+stderr Calibration:  64%|██████▍   | 320/500 [00:24<00:01, 118.64entries/s]
+stderr Calibration:  69%|██████▉   | 344/500 [00:24<00:01, 130.78entries/s]
+stderr Calibration:  74%|███████▎  | 368/500 [00:24<00:00, 142.09entries/s]
+stderr Calibration:  78%|███████▊  | 392/500 [00:24<00:00, 150.31entries/s]
+stderr Calibration:  83%|████████▎ | 416/500 [00:25<00:00, 157.34entries/s]
+stderr Calibration:  88%|████████▊ | 440/500 [00:25<00:00, 162.48entries/s]
+stderr Calibration:  93%|█████████▎| 464/500 [00:25<00:00, 166.67entries/s]
+status [hailo][subprocess][heartbeat] still running after 60s; stage=statistics_collector; silence=2s; hard_timeout_s=7200; idle_timeout_s=off
+stderr Calibration:  98%|█████████▊| 488/500 [00:25<00:00, 170.05entries/s]
+stderr Calibration:  99%|█████████▉| 496/500 [00:40<00:00, 170.05entries/s]
+stderr Calibration: 100%|██████████| 500/500 [00:45<00:00,  3.38entries/s] 
+stderr Calibration: 100%|██████████| 500/500 [00:45<00:00,  3.38entries/s]
+stderr Calibration: 100%|██████████| 500/500 [00:45<00:00, 11.05entries/s]
+stdout [hailo][heartbeat] optimize net=mobilenet_v3_large_full still running after 60s
+stdout [info] Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:46.50)
+stdout [info] Starting Fix zp_comp Encoding
+stdout [info] Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+stdout [info] Matmul Equalization skipped
+stdout [info] Starting MatmulDecomposeFix
+stdout [info] Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+stdout [info] No shifts available for layer mobilenet_v3_large_full/avgpool3/avgpool_op, using max shift instead. delta=1.0000
+stderr I0000 00:00:1789202197.672751 1505755 gpu_device.cc:2022] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 10448 MB memory:  -> device: 0, name: NVIDIA GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1
+stderr I0000 00:00:1789202199.376927 1505755 gpu_device.cc:2022] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 10448 MB memory:  -> device: 0, name: NVIDIA GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1
+stdout [hailo][heartbeat] optimize net=mobilenet_v3_large_full still running after 90s
+stdout [info] Finetune encoding skipped
+stdout [info] Starting Bias Correction
+stdout [info] The algorithm Bias Correction will use up to 3.61 GB of storage space
+stdout [info] Using dataset with 500 entries for Bias Correction
+stderr 
+stderr Bias Correction:   0%|          | 0/62 [00:00<?, ?blocks/s]
+stderr Bias Correction:   0%|          | 0/62 [00:00<?, ?blocks/s, Layers=['mobilenet_v3_large_full/conv1_output_0']]I0000 00:00:1789202209.578328 1506942 cuda_dnn.cc:529] Loaded cuDNN version 90300
+stderr 
+stderr Bias Correction:   2%|▏         | 1/62 [00:05<05:08,  5.06s/blocks, Layers=['mobilenet_v3_large_full/conv1_output_0']]
+stderr Bias Correction:   2%|▏         | 1/62 [00:05<05:08,  5.06s/blocks, Layers=['mobilenet_v3_large_full/dw1_output_0']]  
+stderr Bias Correction:   3%|▎         | 2/62 [00:09<04:33,  4.56s/blocks, Layers=['mobilenet_v3_large_full/dw1_output_0']]
+status [hailo][subprocess][heartbeat] still running after 120s; stage=bias_correction; silence=1s; hard_timeout_s=7200; idle_timeout_s=off
+stderr Bias Correction:   3%|▎         | 2/62 [00:09<04:33,  4.56s/blocks, Layers=['mobilenet_v3_large_full/conv2_output_0']]
+stderr Bias Correction:   5%|▍         | 3/62 [00:15<05:05,  5.18s/blocks, Layers=['mobilenet_v3_large_full/conv2_output_0']]
+stderr Bias Correction:   5%|▍         | 3/62 [00:15<05:05,  5.18s/blocks, Layers=['mobilenet_v3_large_full/conv3_output_0']]
+stderr Bias Correction:   6%|▋         | 4/62 [00:21<05:33,  5.76s/blocks, Layers=['mobilenet_v3_large_full/conv3_output_0']]
+stdout [hailo][heartbeat] optimize net=mobilenet_v3_large_full still running after 120s
+stderr Bias Correction:   6%|▋         | 4/62 [00:22<05:33,  5.76s/blocks, Layers=['mobilenet_v3_large_full/dw2_output_0']]  
+stderr Bias Correction:   8%|▊         | 5/62 [00:28<05:47,  6.09s/blocks, Layers=['mobilenet_v3_large_full/dw2_output_0']]
+stderr Bias Correction:   8%|▊         | 5/62 [00:28<05:47,  6.09s/blocks, Layers=['mobilenet_v3_large_full/conv4_output_0']]
+stderr Bias Correction:  10%|▉         | 6/62 [00:32<04:54,  5.26s/blocks, Layers=['mobilenet_v3_large_full/conv4_output_0']]
+stderr Bias Correction:  10%|▉         | 6/62 [00:32<04:54,  5.26s/blocks, Layers=['mobilenet_v3_large_full/conv5_output_0']]
+stderr Bias Correction:  11%|█▏        | 7/62 [00:35<04:21,  4.75s/blocks, Layers=['mobilenet_v3_large_full/conv5_output_0']]
+stderr Bias Correction:  11%|█▏        | 7/62 [00:36<04:21,  4.75s/blocks, Layers=['mobilenet_v3_large_full/dw3_output_0']]  
+stderr Bias Correction:  13%|█▎        | 8/62 [00:40<04:12,  4.68s/blocks, Layers=['mobilenet_v3_large_full/dw3_output_0']]
+stderr Bias Correction:  13%|█▎        | 8/62 [00:40<04:12,  4.68s/blocks, Layers=['mobilenet_v3_large_full/conv6_output_0']]
+stderr Bias Correction:  15%|█▍        | 9/62 [00:45<04:20,  4.91s/blocks, Layers=['mobilenet_v3_large_full/conv6_output_0']]
+stderr Bias Correction:  15%|█▍        | 9/62 [00:46<04:20,  4.91s/blocks, Layers=['mobilenet_v3_large_full/conv7_output_0']]
+stderr Bias Correction:  16%|█▌        | 10/62 [00:49<03:55,  4.53s/blocks, Layers=['mobilenet_v3_large_full/conv7_output_0']]
+stderr Bias Correction:  16%|█▌        | 10/62 [00:49<03:55,  4.53s/blocks, Layers=['mobilenet_v3_large_full/dw4_output_0']]  
+stderr Bias Correction:  18%|█▊        | 11/62 [00:53<03:39,  4.30s/blocks, Layers=['mobilenet_v3_large_full/dw4_output_0']]
+stdout [hailo][heartbeat] optimize net=mobilenet_v3_large_full still running after 150s
+stderr Bias Correction:  18%|█▊        | 11/62 [00:53<03:39,  4.30s/blocks, Layers=['mobilenet_v3_large_full/conv8_output_0']]
+stderr Bias Correction:  19%|█▉        | 12/62 [01:00<04:15,  5.11s/blocks, Layers=['mobilenet_v3_large_full/conv8_output_0']]
+stderr Bias Correction:  19%|█▉        | 12/62 [01:00<04:15,  5.11s/blocks, Layers=['mobilenet_v3_large_full/conv9_output_0']]
+stderr Bias Correction:  21%|██        | 13/62 [01:03<03:39,  4.49s/blocks, Layers=['mobilenet_v3_large_full/conv9_output_0']]
+stderr Bias Correction:  21%|██        | 13/62 [01:03<03:39,  4.49s/blocks, Layers=['mobilenet_v3_large_full/dw5_output_0']]  
+stderr Bias Correction:  23%|██▎       | 14/62 [01:06<03:17,  4.12s/blocks, Layers=['mobilenet_v3_large_full/dw5_output_0']]
+stderr Bias Correction:  23%|██▎       | 14/62 [01:06<03:17,  4.12s/blocks, Layers=['mobilenet_v3_large_full/fc3_output_0']]
+status [hailo][subprocess][heartbeat] still running after 180s; stage=bias_correction; silence=0s; hard_timeout_s=7200; idle_timeout_s=off
+stderr Bias Correction:  24%|██▍       | 15/62 [01:10<03:11,  4.08s/blocks, Layers=['mobilenet_v3_large_full/fc3_output_0']]
+stderr Bias Correction:  24%|██▍       | 15/62 [01:10<03:11,  4.08s/blocks, Layers=['mobilenet_v3_large_full/fc4_output_0']]
+stderr Bias Correction:  26%|██▌       | 16/62 [01:13<02:49,  3.68s/blocks, Layers=['mobilenet_v3_large_full/fc4_output_0']]
+stderr Bias Correction:  26%|██▌       | 16/62 [01:13<02:49,  3.68s/blocks, Layers=['mobilenet_v3_large_full/conv10_output_0']]
+stderr Bias Correction:  27%|██▋       | 17/62 [01:20<03:36,  4.80s/blocks, Layers=['mobilenet_v3_large_full/conv10_output_0']]
+stderr Bias Correction:  27%|██▋       | 17/62 [01:20<03:36,  4.80s/blocks, Layers=['mobilenet_v3_large_full/conv11_output_0']]
+stderr Bias Correction:  29%|██▉       | 18/62 [01:23<03:07,  4.25s/blocks, Layers=['mobilenet_v3_large_full/conv11_output_0']]
+stderr Bias Correction:  29%|██▉       | 18/62 [01:23<03:07,  4.25s/blocks, Layers=['mobilenet_v3_large_full/dw6_output_0']]   
+stderr Bias Correction:  31%|███       | 19/62 [01:26<02:50,  3.96s/blocks, Layers=['mobilenet_v3_large_full/dw6_output_0']]
+stdout [hailo][heartbeat] optimize net=mobilenet_v3_large_full still running after 180s
+stderr Bias Correction:  31%|███       | 19/62 [01:27<02:50,  3.96s/blocks, Layers=['mobilenet_v3_large_full/fc5_output_0']]
+stderr Bias Correction:  32%|███▏      | 20/62 [01:30<02:42,  3.88s/blocks, Layers=['mobilenet_v3_large_full/fc5_output_0']]
+stderr Bias Correction:  32%|███▏      | 20/62 [01:30<02:42,  3.88s/blocks, Layers=['mobilenet_v3_large_full/fc6_output_0']]
+stderr Bias Correction:  34%|███▍      | 21/62 [01:33<02:28,  3.63s/blocks, Layers=['mobilenet_v3_large_full/fc6_output_0']]
+stderr Bias Correction:  34%|███▍      | 21/62 [01:33<02:28,  3.63s/blocks, Layers=['mobilenet_v3_large_full/conv12_output_0']]
+stderr Bias Correction:  35%|███▌      | 22/62 [01:41<03:09,  4.75s/blocks, Layers=['mobilenet_v3_large_full/conv12_output_0']]
+stderr Bias Correction:  35%|███▌      | 22/62 [01:41<03:09,  4.75s/blocks, Layers=['mobilenet_v3_large_full/conv13_output_0']]
+stderr Bias Correction:  37%|███▋      | 23/62 [01:44<02:50,  4.37s/blocks, Layers=['mobilenet_v3_large_full/conv13_output_0']]
+stderr Bias Correction:  37%|███▋      | 23/62 [01:44<02:50,  4.37s/blocks, Layers=['mobilenet_v3_large_full/dw7_output_0']]   
+stderr Bias Correction:  39%|███▊      | 24/62 [01:48<02:37,  4.14s/blocks, Layers=['mobilenet_v3_large_full/dw7_output_0']]
+stderr Bias Correction:  39%|███▊      | 24/62 [01:48<02:37,  4.14s/blocks, Layers=['mobilenet_v3_large_full/conv14_output_0']]
+stderr Bias Correction:  40%|████      | 25/62 [01:51<02:19,  3.77s/blocks, Layers=['mobilenet_v3_large_full/conv14_output_0']]
+stderr Bias Correction:  40%|████      | 25/62 [01:51<02:19,  3.77s/blocks, Layers=['mobilenet_v3_large_full/conv15_output_0']]
+stderr Bias Correction:  42%|████▏     | 26/62 [01:53<02:05,  3.49s/blocks, Layers=['mobilenet_v3_large_full/conv15_output_0']]
+stderr Bias Correction:  42%|████▏     | 26/62 [01:54<02:05,  3.49s/blocks, Layers=['mobilenet_v3_large_full/dw8_output_0']]   
+stderr Bias Correction:  44%|████▎     | 27/62 [01:56<01:56,  3.32s/blocks, Layers=['mobilenet_v3_large_full/dw8_output_0']]
+stdout [hailo][heartbeat] optimize net=mobilenet_v3_large_full still running after 210s
+stderr Bias Correction:  44%|████▎     | 27/62 [01:56<01:56,  3.32s/blocks, Layers=['mobilenet_v3_large_full/conv16_output_0']]
+stderr Bias Correction:  45%|████▌     | 28/62 [02:00<01:58,  3.48s/blocks, Layers=['mobilenet_v3_large_full/conv16_output_0']]
+stderr Bias Correction:  45%|████▌     | 28/62 [02:00<01:58,  3.48s/blocks, Layers=['mobilenet_v3_large_full/conv17_output_0']]
+stderr Bias Correction:  47%|████▋     | 29/62 [02:03<01:52,  3.40s/blocks, Layers=['mobilenet_v3_large_full/conv17_output_0']]
+stderr Bias Correction:  47%|████▋     | 29/62 [02:04<01:52,  3.40s/blocks, Layers=['mobilenet_v3_large_full/dw9_output_0']]   
+stderr Bias Correction:  48%|████▊     | 30/62 [02:06<01:44,  3.27s/blocks, Layers=['mobilenet_v3_large_full/dw9_output_0']]
+stderr Bias Correction:  48%|████▊     | 30/62 [02:07<01:44,  3.27s/blocks, Layers=['mobilenet_v3_large_full/conv18_output_0']]
+status [hailo][subprocess][heartbeat] still running after 240s; stage=bias_correction; silence=0s; hard_timeout_s=7200; idle_timeout_s=off
+stderr Bias Correction:  50%|█████     | 31/62 [02:10<01:46,  3.44s/blocks, Layers=['mobilenet_v3_large_full/conv18_output_0']]
+stderr Bias Correction:  50%|█████     | 31/62 [02:10<01:46,  3.44s/blocks, Layers=['mobilenet_v3_large_full/conv19_output_0']]
+stderr Bias Correction:  52%|█████▏    | 32/62 [02:13<01:37,  3.26s/blocks, Layers=['mobilenet_v3_large_full/conv19_output_0']]
+stderr Bias Correction:  52%|█████▏    | 32/62 [02:13<01:37,  3.26s/blocks, Layers=['mobilenet_v3_large_full/dw10_output_0']]  
+stderr Bias Correction:  53%|█████▎    | 33/62 [02:16<01:31,  3.17s/blocks, Layers=['mobilenet_v3_large_full/dw10_output_0']]
+stderr Bias Correction:  53%|█████▎    | 33/62 [02:16<01:31,  3.17s/blocks, Layers=['mobilenet_v3_large_full/conv20_output_0']]
+stderr Bias Correction:  55%|█████▍    | 34/62 [02:20<01:34,  3.36s/blocks, Layers=['mobilenet_v3_large_full/conv20_output_0']]
+stderr Bias Correction:  55%|█████▍    | 34/62 [02:20<01:34,  3.36s/blocks, Layers=['mobilenet_v3_large_full/conv21_output_0']]
+stderr Bias Correction:  56%|█████▋    | 35/62 [02:23<01:31,  3.37s/blocks, Layers=['mobilenet_v3_large_full/conv21_output_0']]
+stderr Bias Correction:  56%|█████▋    | 35/62 [02:23<01:31,  3.37s/blocks, Layers=['mobilenet_v3_large_full/dw11_output_0']]  
+stderr Bias Correction:  58%|█████▊    | 36/62 [02:26<01:27,  3.35s/blocks, Layers=['mobilenet_v3_large_full/dw11_output_0']]
+stdout [hailo][heartbeat] optimize net=mobilenet_v3_large_full still running after 240s
+stderr Bias Correction:  58%|█████▊    | 36/62 [02:27<01:27,  3.35s/blocks, Layers=['mobilenet_v3_large_full/fc7_output_0']] 
+stderr Bias Correction:  60%|█████▉    | 37/62 [02:30<01:26,  3.46s/blocks, Layers=['mobilenet_v3_large_full/fc7_output_0']]
+stderr Bias Correction:  60%|█████▉    | 37/62 [02:30<01:26,  3.46s/blocks, Layers=['mobilenet_v3_large_full/fc8_output_0']]
+stderr Bias Correction:  61%|██████▏   | 38/62 [02:33<01:17,  3.24s/blocks, Layers=['mobilenet_v3_large_full/fc8_output_0']]
+stderr Bias Correction:  61%|██████▏   | 38/62 [02:33<01:17,  3.24s/blocks, Layers=['mobilenet_v3_large_full/conv22_output_0']]
+stderr Bias Correction:  63%|██████▎   | 39/62 [02:39<01:37,  4.23s/blocks, Layers=['mobilenet_v3_large_full/conv22_output_0']]
+stderr Bias Correction:  63%|██████▎   | 39/62 [02:40<01:37,  4.23s/blocks, Layers=['mobilenet_v3_large_full/conv23_output_0']]
+stderr Bias Correction:  65%|██████▍   | 40/62 [02:43<01:26,  3.92s/blocks, Layers=['mobilenet_v3_large_full/conv23_output_0']]
+stderr Bias Correction:  65%|██████▍   | 40/62 [02:43<01:26,  3.92s/blocks, Layers=['mobilenet_v3_large_full/dw12_output_0']]  
+stderr Bias Correction:  66%|██████▌   | 41/62 [02:46<01:20,  3.82s/blocks, Layers=['mobilenet_v3_large_full/dw12_output_0']]
+stderr Bias Correction:  66%|██████▌   | 41/62 [02:46<01:20,  3.82s/blocks, Layers=['mobilenet_v3_large_full/fc9_output_0']] 
+stderr Bias Correction:  68%|██████▊   | 42/62 [02:50<01:18,  3.92s/blocks, Layers=['mobilenet_v3_large_full/fc9_output_0']]
+stderr Bias Correction:  68%|██████▊   | 42/62 [02:51<01:18,  3.92s/blocks, Layers=['mobilenet_v3_large_full/fc10_output_0']]
+stderr Bias Correction:  69%|██████▉   | 43/62 [02:53<01:07,  3.57s/blocks, Layers=['mobilenet_v3_large_full/fc10_output_0']]
+stdout [hailo][heartbeat] optimize net=mobilenet_v3_large_full still running after 270s
+stderr Bias Correction:  69%|██████▉   | 43/62 [02:53<01:07,  3.57s/blocks, Layers=['mobilenet_v3_large_full/conv24_output_0']]
+stderr Bias Correction:  71%|███████   | 44/62 [03:01<01:26,  4.82s/blocks, Layers=['mobilenet_v3_large_full/conv24_output_0']]
+stderr Bias Correction:  71%|███████   | 44/62 [03:01<01:26,  4.82s/blocks, Layers=['mobilenet_v3_large_full/conv25_output_0']]
+stderr Bias Correction:  73%|███████▎  | 45/62 [03:04<01:14,  4.37s/blocks, Layers=['mobilenet_v3_large_full/conv25_output_0']]
+stderr Bias Correction:  73%|███████▎  | 45/62 [03:04<01:14,  4.37s/blocks, Layers=['mobilenet_v3_large_full/dw13_output_0']]  
+stderr Bias Correction:  74%|███████▍  | 46/62 [03:08<01:04,  4.06s/blocks, Layers=['mobilenet_v3_large_full/dw13_output_0']]
+status [hailo][subprocess][heartbeat] still running after 300s; stage=bias_correction; silence=3s; hard_timeout_s=7200; idle_timeout_s=off
+stderr Bias Correction:  74%|███████▍  | 46/62 [03:08<01:04,  4.06s/blocks, Layers=['mobilenet_v3_large_full/fc11_output_0']]
+stderr Bias Correction:  76%|███████▌  | 47/62 [03:11<00:58,  3.87s/blocks, Layers=['mobilenet_v3_large_full/fc11_output_0']]
+stderr Bias Correction:  76%|███████▌  | 47/62 [03:11<00:58,  3.87s/blocks, Layers=['mobilenet_v3_large_full/fc12_output_0']]
+stderr Bias Correction:  77%|███████▋  | 48/62 [03:14<00:49,  3.51s/blocks, Layers=['mobilenet_v3_large_full/fc12_output_0']]
+stderr Bias Correction:  77%|███████▋  | 48/62 [03:14<00:49,  3.51s/blocks, Layers=['mobilenet_v3_large_full/conv26_output_0']]
+stderr Bias Correction:  79%|███████▉  | 49/62 [03:20<00:55,  4.29s/blocks, Layers=['mobilenet_v3_large_full/conv26_output_0']]
+stderr Bias Correction:  79%|███████▉  | 49/62 [03:20<00:55,  4.29s/blocks, Layers=['mobilenet_v3_large_full/conv27_output_0']]
+stderr Bias Correction:  81%|████████  | 50/62 [03:23<00:46,  3.87s/blocks, Layers=['mobilenet_v3_large_full/conv27_output_0']]
+stderr Bias Correction:  81%|████████  | 50/62 [03:23<00:46,  3.87s/blocks, Layers=['mobilenet_v3_large_full/dw14_output_0']]  
+stderr Bias Correction:  82%|████████▏ | 51/62 [03:26<00:39,  3.60s/blocks, Layers=['mobilenet_v3_large_full/dw14_output_0']]
+stdout [hailo][heartbeat] optimize net=mobilenet_v3_large_full still running after 300s
+stderr Bias Correction:  82%|████████▏ | 51/62 [03:26<00:39,  3.60s/blocks, Layers=['mobilenet_v3_large_full/fc13_output_0']]
+stderr Bias Correction:  84%|████████▍ | 52/62 [03:29<00:36,  3.68s/blocks, Layers=['mobilenet_v3_large_full/fc13_output_0']]
+stderr Bias Correction:  84%|████████▍ | 52/62 [03:30<00:36,  3.68s/blocks, Layers=['mobilenet_v3_large_full/fc14_output_0']]
+stderr Bias Correction:  85%|████████▌ | 53/62 [03:32<00:30,  3.43s/blocks, Layers=['mobilenet_v3_large_full/fc14_output_0']]
+stderr Bias Correction:  85%|████████▌ | 53/62 [03:33<00:30,  3.43s/blocks, Layers=['mobilenet_v3_large_full/conv28_output_0']]
+stderr Bias Correction:  87%|████████▋ | 54/62 [03:39<00:35,  4.49s/blocks, Layers=['mobilenet_v3_large_full/conv28_output_0']]
+stderr Bias Correction:  87%|████████▋ | 54/62 [03:39<00:35,  4.49s/blocks, Layers=['mobilenet_v3_large_full/conv29_output_0']]
+stderr Bias Correction:  89%|████████▊ | 55/62 [03:42<00:27,  3.99s/blocks, Layers=['mobilenet_v3_large_full/conv29_output_0']]
+stderr Bias Correction:  89%|████████▊ | 55/62 [03:42<00:27,  3.99s/blocks, Layers=['mobilenet_v3_large_full/dw15_output_0']]  
+stderr Bias Correction:  90%|█████████ | 56/62 [03:45<00:22,  3.72s/blocks, Layers=['mobilenet_v3_large_full/dw15_output_0']]
+stderr Bias Correction:  90%|█████████ | 56/62 [03:45<00:22,  3.72s/blocks, Layers=['mobilenet_v3_large_full/fc15_output_0']]
+stderr Bias Correction:  92%|█████████▏| 57/62 [03:49<00:18,  3.65s/blocks, Layers=['mobilenet_v3_large_full/fc15_output_0']]
+stderr Bias Correction:  92%|█████████▏| 57/62 [03:49<00:18,  3.65s/blocks, Layers=['mobilenet_v3_large_full/fc16_output_0']]
+stderr Bias Correction:  94%|█████████▎| 58/62 [03:51<00:13,  3.37s/blocks, Layers=['mobilenet_v3_large_full/fc16_output_0']]
+stdout [hailo][heartbeat] optimize net=mobilenet_v3_large_full still running after 330s
+stderr Bias Correction:  94%|█████████▎| 58/62 [03:52<00:13,  3.37s/blocks, Layers=['mobilenet_v3_large_full/conv30_output_0']]
+stderr Bias Correction:  95%|█████████▌| 59/62 [03:58<00:13,  4.43s/blocks, Layers=['mobilenet_v3_large_full/conv30_output_0']]
+stderr Bias Correction:  95%|█████████▌| 59/62 [03:58<00:13,  4.43s/blocks, Layers=['mobilenet_v3_large_full/conv31_output_0']]
+stderr Bias Correction:  97%|█████████▋| 60/62 [04:01<00:07,  3.95s/blocks, Layers=['mobilenet_v3_large_full/conv31_output_0']]
+stderr Bias Correction:  97%|█████████▋| 60/62 [04:01<00:07,  3.95s/blocks, Layers=['mobilenet_v3_large_full/fc17_output_0']]  
+stderr Bias Correction:  98%|█████████▊| 61/62 [04:05<00:03,  3.96s/blocks, Layers=['mobilenet_v3_large_full/fc17_output_0']]
+stderr Bias Correction:  98%|█████████▊| 61/62 [04:05<00:03,  3.96s/blocks, Layers=['mobilenet_v3_large_full/fc18_output_0']]
+stderr Bias Correction: 100%|██████████| 62/62 [04:08<00:00,  3.61s/blocks, Layers=['mobilenet_v3_large_full/fc18_output_0']]
+stderr Bias Correction: 100%|██████████| 62/62 [04:08<00:00,  4.01s/blocks, Layers=['mobilenet_v3_large_full/fc18_output_0']]
+stdout [info] Model Optimization Algorithm Bias Correction is done (completion time is 00:04:09.74)
+stdout [info] Adaround skipped
+stdout [info] Quantization-Aware Fine-Tuning skipped
+status [hailo][subprocess][heartbeat] still running after 360s; stage=bias_correction; silence=2s; hard_timeout_s=7200; idle_timeout_s=off
+stderr I0000 00:00:1789202472.077347 1505755 gpu_device.cc:2022] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 10448 MB memory:  -> device: 0, name: NVIDIA GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1
+stderr I0000 00:00:1789202473.779602 1505755 gpu_device.cc:2022] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 10448 MB memory:  -> device: 0, name: NVIDIA GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1
+stdout [hailo][heartbeat] optimize net=mobilenet_v3_large_full still running after 360s
+stdout [info] Starting Layer Noise Analysis
+stderr 
+stdout [hailo][heartbeat] optimize net=mobilenet_v3_large_full still running after 390s
+status [hailo][subprocess][heartbeat] still running after 420s; stage=layer_noise_analysis; silence=12s; hard_timeout_s=7200; idle_timeout_s=off
+stdout [hailo][heartbeat] optimize net=mobilenet_v3_large_full still running after 420s
+stderr Full Quant Analysis:   0%|          | 0/2 [00:00<?, ?iterations/s]E0000 00:00:1789202551.878389 1505755 meta_optimizer.cc:966] layout failed: INVALID_ARGUMENT: Size of values 1 does not match size of permutation 4 @ fanin shape inlat_model_1/conv1_5/act_op_1/SelectV2-1-TransposeNHWCToNCHW-LayoutOptimizer
+stderr I0000 00:00:1789202561.161616 1513777 cuda_dnn.cc:529] Loaded cuDNN version 90300
+stderr 
+stderr Full Quant Analysis:  50%|█████     | 1/2 [01:20<01:20, 80.35s/iterations]
+stderr Full Quant Analysis: 100%|██████████| 2/2 [01:20<00:00, 33.27s/iterations]
+stderr Full Quant Analysis: 100%|██████████| 2/2 [01:20<00:00, 33.27s/iterations]
+stderr Full Quant Analysis: 100%|██████████| 2/2 [01:20<00:00, 40.33s/iterations]
+stdout [info] Model Optimization Algorithm Layer Noise Analysis is done (completion time is 00:01:24.18)
+stdout [info] Output layers signal-to-noise ratio (SNR): measures the quantization noise (higher is better)
+stdout [info] 	mobilenet_v3_large_full/output_layer1 SNR:	1.181 dB
+stdout [info] The calibration set seems to not be normalized, because the values range is [(-2.117904, 2.2489083), (-2.0357141, 2.4285715), (-1.8044444, 2.64)].
+stdout Since the neural core works in 8-bit (between 0 to 255), a quantization will occur on the CPU of the runtime platform.
+stdout Add a normalization layer to the model to offload the normalization to the neural core.
+stdout Refer to the user guide Hailo Dataflow Compiler user guide / Model Optimization / Optimization Related Model Script Commands / model_modification_commands / normalization for details.
+stdout [hailo][heartbeat] optimize net=mobilenet_v3_large_full still running after 450s
+status [hailo][subprocess][heartbeat] still running after 480s; stage=optimization; silence=13s; hard_timeout_s=7200; idle_timeout_s=off
+stdout [info] Model Optimization is done
+stdout [hailo][heartbeat] optimize net=mobilenet_v3_large_full finished after 466.5s
+stdout [hailo][optimize] done net=mobilenet_v3_large_full
+stdout [info] Saved HAR to: /home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/quantized.har
+stdout [hailo][compile] start net=mobilenet_v3_large_full hw_arch=hailo8
+stdout [info] To achieve optimal performance, set the compiler_optimization_level to "max" by adding performance_param(compiler_optimization_level=max) to the model script. Note that this may increase compilation time.
+stdout [info] Loading network parameters
+stdout [info] Starting Hailo allocation and compilation flow
+stdout [info] Building optimization options for network layers...
+stdout [info] Successfully built optimization options - 4s 262ms
+stdout [info] Trying to compile the network in a single context
+stdout [info] Using Single-context flow
+stdout [info] Resources optimization params: max_control_utilization=75%, max_compute_utilization=75%, max_compute_16bit_utilization=75%, max_memory_utilization (weights)=75%, max_input_aligner_utilization=75%, max_apu_utilization=75%
+stdout [info] Validating layers feasibility
+stdout [info] input_layer1: Pass
+stdout [info] fc2_const_replacement: Pass
+stdout [info] output_layer1: Pass
+stdout [info] avgpool6: Pass
+stdout [info] conv3: Pass
+stdout [info] conv2: Pass
+stdout [info] resize1: Pass
+stdout [info] conv1: Pass
+stdout [info] ew_mult3: Pass
+stdout [info] dw2_d0: Pass
+stdout [info] fc9: Pass
+stdout [info] fc11: Pass
+stdout [info] dw13: Pass
+stdout [info] dw2_fs: Pass
+stdout [info] dw1: Pass
+stdout [info] conv21: Pass
+stdout [info] fc6: Pass
+stdout [info] conv19: Pass
+stdout [info] avgpool7: Pass
+stdout [info] conv20: Pass
+stdout [info] conv18: Pass
+stdout [info] fc5: Pass
+stdout [info] fc3: Pass
+stdout [info] conv14: Pass
+stdout [info] dw2_d1: Pass
+stdout [info] avgpool8: Pass
+stdout [info] conv26: Pass
+stdout [info] fc14: Pass
+stdout [info] conv12: Pass
+stdout [info] auto_reshape_from_input_layer1_to_conv1: Pass
+stdout [info] resize7: Pass
+stdout [info] ew_mult8: Pass
+stdout [info] resize6: Pass
+stdout [info] conv10: Pass
+stdout [info] fc13: Pass
+stdout [info] conv27: Pass
+stdout [info] conv5: Pass
+stdout [info] fc8: Pass
+stdout [info] conv4: Pass
+stdout [info] avgpool9: Pass
+stdout [info] dw12: Pass
+stdout [info] ew_mult1: Pass
+stdout [info] conv6: Pass
+stdout [info] resize8: Pass
+stdout [info] dw14: Pass
+stdout [info] conv28: Pass
+stdout [info] conv30: Pass
+stdout [info] dw6: Pass
+stdout [info] dw10: Pass
+stdout [info] ew_mult2: Pass
+stdout [info] dw4_lanes_2: Pass
+stdout [info] conv17: Pass
+stdout [info] dw9: Pass
+stdout [info] conv22: Pass
+stdout [info] ew_mult4: Pass
+stdout [info] fc7: Pass
+stdout [info] conv25: Pass
+stdout [info] conv29: Pass
+stdout [info] fc4: Pass
+stdout [info] conv15: Pass
+stdout [info] dw3: Pass
+stdout [info] dw5: Pass
+stdout [info] ew_mult7: Pass
+stdout [info] avgpool2: Pass
+stdout [info] ew_mult6: Pass
+stdout [info] fc12: Pass
+stdout [info] resize4: Pass
+stdout [info] conv16: Pass
+stdout [info] dw4_lanes_concat: Pass
+stdout [info] conv9: Pass
+stdout [info] conv23: Pass
+stdout [info] dw2_dc: Pass
+stdout [info] conv11: Pass
+stdout [info] fc10: Pass
+stdout [info] conv13: Pass
+stdout [info] dw8: Pass
+stdout [info] ew_mult5: Pass
+stdout [info] resize3: Pass
+stdout [info] resize2: Pass
+stdout [info] dw4_lanes_feature_splitter: Pass
+stdout [info] dw2_d2: Pass
+stdout [info] resize5: Pass
+stdout [info] dw15: Pass
+stdout [info] conv31: Pass
+stdout [info] fc15: Pass
+stdout [info] dw7: Pass
+stdout [info] conv8: Pass
+stdout [info] dw11: Pass
+stdout [info] avgpool3: Pass
+stdout [info] conv24: Pass
+stdout [info] fc16: Pass
+stdout [info] avgpool4: Pass
+stdout [info] conv7: Pass
+stdout [info] avgpool5: Pass
+stdout [info] fc18: Pass
+stdout [info] fc17: Pass
+stdout [info] Layers feasibility validated successfully
+stdout [info] Running resources allocation (mapping) flow, time per context: 59m 59s
+stdout 
+stdout 
+stdout [info] Context:0/0 Iteration 0: Mapping prepost...          
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  *          *          *          *          *          *          *          *          V       
+stdout  worker1                                                                                                  
+stdout  worker2                                                                                                  
+stdout  worker3                                                                                                  
+stdout 
+stdout   00:00
+stdout [info] Context:0/0 Iteration 0: Trying parallel splits...   
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0                                                                                                  
+stdout  worker1                                                                                                  
+stdout  worker2                                                                                                  
+stdout  worker3                                                                                                  
+stdout 
+stdout   00:00
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  *          *          *          *          *          *          *          *          V       
+stdout  worker1                                                                                                  
+stdout  worker2                                                                                                  
+stdout  worker3                                                                                                  
+stdout 
+stdout   00:00
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  *          *          *          *          *          *          *          *          V       
+stdout  worker1                                                                                                  
+stdout  worker2                                                                                                  
+stdout  worker3                                                                                                  
+stdout 
+stdout   00:00
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  *          V          *          *          *          *          *          *          V       
+stdout  worker1                                                                                                  
+stdout  worker2                                                                                                  
+stdout  worker3                                                                                                  
+stdout 
+stdout   00:00
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  V          V          *          *          *          *          *          *          V       
+stdout  worker1                                                                                                  
+stdout  worker2                                                                                                  
+stdout  worker3                                                                                                  
+stdout 
+stdout   00:00
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  V          V          *          *          *          *          *          *          V       
+stdout  worker1  *          *          *          *          *          *          *          *          V       
+stdout  worker2                                                                                                  
+stdout  worker3                                                                                                  
+stdout 
+stdout   00:00
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  V          V          V          *          *          V          V          V          V       
+stdout  worker1  *          *          *          *          *          *          *          *          V       
+stdout  worker2                                                                                                  
+stdout  worker3                                                                                                  
+stdout 
+stdout   00:00
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  V          V          V          *          V          V          V          V          V       
+stdout  worker1  *          *          *          *          *          *          *          *          V       
+stdout  worker2                                                                                                  
+stdout  worker3                                                                                                  
+stdout 
+stdout   00:00
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  V          V          V          *          V          V          V          V          V       
+stdout  worker1  *          *          *          *          *          *          *          *          V       
+stdout  worker2                                                                                                  
+stdout  worker3                                                                                                  
+stdout 
+stdout   00:00
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  V          V          V          *          V          V          V          V          V       
+stdout  worker1  *          *          *          *          *          *          *          *          V       
+stdout  worker2                                                                                                  
+stdout  worker3                                                                                                  
+stdout 
+stdout   00:00
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  V          V          V          *          V          V          V          V          V       
+stdout  worker1  *          *          *          *          *          *          *          *          V       
+stdout  worker2                                                                                                  
+stdout  worker3                                                                                                  
+stdout 
+stdout   00:00
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  V          V          V          *          V          V          V          V          V       
+stdout  worker1  *          *          *          *          *          *          *          *          V       
+stdout  worker2                                                                                                  
+stdout  worker3                                                                                                  
+stdout 
+stdout   00:01
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  V          V          V          *          V          V          V          V          V       
+stdout  worker1  *          *          *          *          *          *          *          *          V       
+stdout  worker2                                                                                                  
+stdout  worker3  *          *          *          *          *          *          *          *          V       
+stdout 
+stdout   00:01
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  V          V          V          *          V          V          V          V          V       
+stdout  worker1  *          *          *          *          *          *          *          *          V       
+stdout  worker2                                                                                                  
+stdout  worker3  *          *          *          *          *          *          *          *          V       
+stdout 
+stdout   00:02
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  V          V          V          *          V          V          V          V          V       
+stdout  worker1  *          *          *          *          *          *          *          *          V       
+stdout  worker2                                                                                                  
+stdout  worker3  V          V          *          *          *          *          *          *          V       
+stdout 
+stdout   00:02
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  V          V          V          *          V          V          V          V          V       
+stdout  worker1  *          *          *          *          *          *          *          *          V       
+stdout  worker2                                                                                                  
+stdout  worker3  V          V          *          *          V          V          *          *          V       
+stdout 
+stdout   00:02
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  V          V          V          *          V          V          V          V          V       
+stdout  worker1  *          *          *          *          *          *          *          *          V       
+stdout  worker2                                                                                                  
+stdout  worker3  V          V          *          V          V          V          V          *          V       
+stdout 
+stdout   00:02
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  V          V          V          *          V          V          V          V          V       
+stdout  worker1  *          *          *          *          *          *          *          *          V       
+stdout  worker2                                                                                                  
+stdout  worker3  V          V          *          V          V          V          V          *          V       
+stdout 
+stdout   00:02
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  V          V          V          *          V          V          V          V          V       
+stdout  worker1  *          *          *          *          *          *          *          *          V       
+stdout  worker2                                                                                                  
+stdout  worker3  V          V          *          V          V          V          V          *          V       
+stdout 
+stdout   00:02
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  V          V          V          *          V          V          V          V          V       
+stdout  worker1  *          *          *          *          *          *          *          *          V       
+stdout  worker2                                                                                                  
+stdout  worker3  V          V          *          V          V          V          V          *          V       
+stdout 
+stdout   00:02
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  V          V          V          *          V          V          V          V          V       
+stdout  worker1  *          *          *          *          *          *          *          *          V       
+stdout  worker2                                                                                                  
+stdout  worker3  V          V          *          V          V          V          V          V          V       
+stdout 
+stdout   00:02
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  V          V          V          *          V          V          V          V          V       
+stdout  worker1  *          *          *          *          *          *          *          *          V       
+stdout  worker2                                                                                                  
+stdout  worker3  V          V          V          V          V          V          V          V          V       
+stdout 
+stdout   00:02
+stdout [hailo][heartbeat] compile net=mobilenet_v3_large_full still running after 30s
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  V          V          V          X          V          V          V          V          V       
+stdout  worker1  *          *          *          *          *          *          *          *          V       
+stdout  worker2                                                                                                  
+stdout  worker3  V          V          V          V          V          V          V          V          V       
+stdout 
+stdout   00:04
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  V          V          V          X          V          V          V          V          V       
+stdout  worker1  *          *          *          *          *          *          *          *          V       
+stdout  worker2  *          *          *          *          *          *          *          *          V       
+stdout  worker3  V          V          V          V          V          V          V          V          V       
+stdout 
+stdout   00:05
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  V          V          V          X          V          V          V          V          V       
+stdout  worker1  *          *          *          *          *          *          *          *          V       
+stdout  worker2  *          *          *          *          *          *          *          *          V       
+stdout  worker3  V          V          V          V          V          V          V          V          V       
+stdout 
+stdout   00:06
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  V          V          V          X          V          V          V          V          V       
+stdout  worker1  *          *          *          *          *          *          *          *          V       
+stdout  worker2  *          *          *          *          V          *          *          *          V       
+stdout  worker3  V          V          V          V          V          V          V          V          V       
+stdout 
+stdout   00:06
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  V          V          V          X          V          V          V          V          V       
+stdout  worker1  *          *          *          *          *          *          *          *          V       
+stdout  worker2  V          *          *          V          V          V          V          V          V       
+stdout  worker3  V          V          V          V          V          V          V          V          V       
+stdout 
+stdout   00:06
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  V          V          V          X          V          V          V          V          V       
+stdout  worker1  *          *          *          *          *          *          *          *          V       
+stdout  worker2  V          *          *          V          V          V          V          V          V       
+stdout  worker3  V          V          V          V          V          V          V          V          V       
+stdout 
+stdout   00:06
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  V          V          V          X          V          V          V          V          V       
+stdout  worker1  *          *          *          *          *          *          *          *          V       
+stdout  worker2  V          *          *          V          V          V          V          V          V       
+stdout  worker3  V          V          V          V          V          V          V          V          V       
+stdout 
+stdout   00:06
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  V          V          V          X          V          V          V          V          V       
+stdout  worker1  *          *          *          *          *          *          *          *          V       
+stdout  worker2  V          *          *          V          V          V          V          V          V       
+stdout  worker3  V          V          V          V          V          V          V          V          V       
+stdout 
+stdout   00:06
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  V          V          V          X          V          V          V          V          V       
+stdout  worker1  *          *          *          *          *          *          *          *          V       
+stdout  worker2  V          *          *          V          V          V          V          V          V       
+stdout  worker3  V          V          V          V          V          V          V          V          V       
+stdout 
+stdout   00:06
+stdout [info] Context:0/0 Iteration 4: Trying parallel mapping...  
+stdout           cluster_0  cluster_1  cluster_2  cluster_3  cluster_4  cluster_5  cluster_6  cluster_7  prepost 
+stdout  worker0  V          V          V          X          V          V          V          V          V       
+stdout  worker1  *          *          *          *          *          *          *          *          V       
+stdout  worker2  V          *          X          V          V          V          V          V          V       
+stdout  worker3  V          V          V          V          V          V          V          V          V       
+stdout 
+stdout   00:10
+stdout 
+stdout [info] Iterations: 4
+stdout Reverts on cluster mapping: 2
+stdout Reverts on inter-cluster connectivity: 0
+stdout Reverts on pre-mapping validation: 1
+stdout Reverts on split failed: 0
+stdout [info] +-----------+---------------------+---------------------+--------------------+
+stdout [info] | Cluster   | Control Utilization | Compute Utilization | Memory Utilization |
+stdout [info] +-----------+---------------------+---------------------+--------------------+
+stdout [info] | cluster_0 | 62.5%               | 31.3%               | 25.8%              |
+stdout [info] | cluster_1 | 31.3%               | 7.8%                | 10.2%              |
+stdout [info] | cluster_2 | 68.8%               | 21.9%               | 51.6%              |
+stdout [info] | cluster_3 | 100%                | 39.1%               | 50.8%              |
+stdout [info] | cluster_4 | 100%                | 53.1%               | 24.2%              |
+stdout [info] | cluster_5 | 68.8%               | 17.2%               | 22.7%              |
+stdout [info] | cluster_6 | 87.5%               | 48.4%               | 25.8%              |
+stdout [info] | cluster_7 | 62.5%               | 40.6%               | 54.7%              |
+stdout [info] +-----------+---------------------+---------------------+--------------------+
+stdout [info] | Total     | 72.7%               | 32.4%               | 33.2%              |
+stdout [info] +-----------+---------------------+---------------------+--------------------+
+stdout [info] Successful Mapping (allocation time: 33s)
+stdout [info] Compiling kernels of mobilenet_v3_large_full_context_0...
+stdout [info] Bandwidth of model inputs: 1.14844 Mbps, outputs: 0.00762939 Mbps (for a single frame)
+stdout [info] Bandwidth of DDR buffers: 0.0 Mbps (for a single frame)
+stdout [info] Bandwidth of inter context tensors: 0.0 Mbps (for a single frame)
+stdout [info] Building HEF...
+stdout [info] Successful Compilation (compilation time: 4s)
+stdout [hailo][heartbeat] compile net=mobilenet_v3_large_full finished after 44.4s
+stdout [hailo][compile] done net=mobilenet_v3_large_full bytes=5660588
+stdout [hailo-cache] BUILD role=hef model=mobilenet_v3_large_full identity=a911084ca887d0a74d73addc6d654ea6faec61876a51b4ded92e9a49ed612070 reason=force_rebuild_requested artifact=/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/compiled.hef hw_arch=hailo8
+stdout __SPLITPOINT_HAILO_RESULT__{"ok": true, "elapsed_s": 528.8277332782745, "hw_arch": "hailo8", "net_name": "mobilenet_v3_large_full", "backend": "venv", "error": null, "hef_path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/compiled.hef", "parsed_har_path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/parsed.har", "quant_har_path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/quantized.har", "fixed_onnx_path": null, "fixup_report": null, "skipped": false, "calib_info": {"source": "/home/kmika/.onnx_splitpoint_tool/final_datasets/imagenet2012/prepared/train_calibration_n500_s20260710", "requested_count": 500, "used_count": 500, "batch_size": 8, "inputs": {"mobilenet_v3_large_full/input_layer1": {"shape": [224, 224, 3]}}, "image_preprocess": "imagenet", "preprocessing_contract": {"schema": "onnx-splitpoint/image-preprocessing-contract", "schema_version": 2, "contract_scope": "prepared_rgb_uint8_semantics", "task": "classification", "preprocess_mode": "resize", "spatial_transform": "direct_resize", "target_hw": [224, 224], "color_space": "RGB", "input_domain": "uint8_0_255", "resize_interpolation": "bilinear", "resize_rounding": "python_round_ties_to_even", "placement": "not_applicable", "pad_value": 0, "letterbox_pad_value": 0, "image_scale": "imagenet", "letterbox": false}, "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9", "effective_count": 500, "available_sample_count": 500, "available_sample_count_source": "manifest", "clamped": false, "clamped_reason": "", "storage_mode": "memmap", "calibration_memory_cap_bytes": 268435456, "effective_requested_count": 500, "hef_validation": {"status": "unavailable", "reader": "hailo_platform.HEF", "error": "No module named 'hailo_platform'"}, "compiler_dispatch_count": 1, "compiler_context": {"available_components": ["ptxas", "libdevice.10.bc"], "compiler_component_view": true, "component_source": "selected_hailo8_dependency_overlay", "compute_capability": "6.1", "conflicts": [], "dependency_manifest": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/overlay_manifest.json", "device": "gpu", "family": "hailo8", "full_cuda_toolkit": false, "gpu_index": "0", "gpu_selector": "GPU-b823007b-546c-4cda-533d-fc24c61f01e6", "gpu_uuid": "GPU-b823007b-546c-4cda-533d-fc24c61f01e6", "ignored_legacy": [], "inherited_cuda_mask_source": "unset", "legacy_inputs": [], "libdevice_path": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/nvvm/libdevice/libdevice.10.bc", "nvidia_smi": "/usr/bin/nvidia-smi", "ptxas_path": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/bin/ptxas", "ptxas_trace_path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/onnx_hailo_cuda_view_nctmi_zf_ptxas_invocations.jsonl", "ptxas_version": "ptxas: NVIDIA (R) Ptx optimizing assembler\nCopyright (c) 2005-2024 NVIDIA Corporation\nBuilt on Thu_Jun__6_02:14:54_PDT_2024\nCuda compilation tools, release 12.5, V12.5.82\nBuild cuda_12.5.r12.5/compiler.34385749_0", "schema_version": 1, "source": "job_override", "target_arch": "sm_61", "target_probe": {"binary": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/bin/ptxas", "kind": "preflight_target", "output_size": 2120, "returncode": 0, "source_ptx": ".version 4.0\n.target sm_50\n.address_size 64\n.visible .entry splitpoint_target_probe() { ret; }\n", "stderr": "", "stdout": "", "target_arch": "sm_61"}, "thread_settings": {"TF_FORCE_GPU_ALLOW_GROWTH": "true", "TF_NUM_INTEROP_THREADS": "2", "TF_NUM_INTRAOP_THREADS": "2"}, "unprovided_compiler_components": ["nvcc", "nvlink", "fatbinary", "cicc", "cudafe++"], "venv_python": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/bin/python", "venv_root": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8", "view_root": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/onnx_hailo_cuda_view_nctmi_zf"}, "phase_events": [{"phase": "sdk_initialization", "state": "started", "event": "started", "timestamp": 1789202113.0397217, "monotonic_s": 180387.125545965, "monotonic": 180387.125545965, "pid": 1505755}, {"phase": "sdk_initialization", "state": "completed", "event": "completed", "timestamp": 1789202113.0645967, "monotonic_s": 180387.150422568, "monotonic": 180387.150422672, "elapsed_s": 0.024877090996596962, "pid": 1505755}, {"phase": "translate", "state": "started", "event": "started", "timestamp": 1789202113.0682766, "monotonic_s": 180387.154101495, "monotonic": 180387.154101495, "pid": 1505755}, {"phase": "translate", "state": "completed", "event": "completed", "timestamp": 1789202114.2296865, "monotonic_s": 180388.315512375, "monotonic": 180388.315512474, "elapsed_s": 1.1614114080148283, "pid": 1505755}, {"phase": "calibration_materialization", "state": "started", "event": "started", "timestamp": 1789202114.3109913, "monotonic_s": 180388.396816123, "monotonic": 180388.396816123, "pid": 1505755}, {"phase": "calibration_materialization", "state": "completed", "event": "completed", "timestamp": 1789202116.814283, "monotonic_s": 180390.900108577, "monotonic": 180390.900108625, "elapsed_s": 2.5032928090076894, "pid": 1505755}, {"phase": "optimize", "state": "started", "event": "started", "timestamp": 1789202116.818146, "monotonic_s": 180390.903970959, "monotonic": 180390.903970959, "pid": 1505755}, {"phase": "optimize", "state": "completed", "event": "completed", "timestamp": 1789202583.3519163, "monotonic_s": 180857.437742006, "monotonic": 180857.437742131, "elapsed_s": 466.5337731789914, "pid": 1505755}, {"phase": "compile", "state": "started", "event": "started", "timestamp": 1789202584.1665266, "monotonic_s": 180858.252351294, "monotonic": 180858.252351294, "pid": 1505755}, {"phase": "compile", "state": "completed", "event": "completed", "timestamp": 1789202628.6043565, "monotonic_s": 180902.690182738, "monotonic": 180902.690182856, "elapsed_s": 44.437831825984176, "pid": 1505755}, {"phase": "publication", "state": "started", "event": "started", "timestamp": 1789202628.6223648, "monotonic_s": 180902.708189068, "monotonic": 180902.708189068, "pid": 1505755}, {"phase": "publication", "state": "completed", "event": "completed", "timestamp": 1789202628.846658, "monotonic_s": 180902.932483729, "monotonic": 180902.932483779, "elapsed_s": 0.22429490997456014, "pid": 1505755}], "publish_artifacts": false, "gpu_execution_status": "gpu_execution_unproven", "build_receipt": {"schema": "onnx-splitpoint/hailo-hef-build-receipt/v2", "created_at_unix_s": 1789202628.6692245, "source_onnx_sha256": "511b13a4882c2cb4f1b904cb831b86d1e441c3f11c4eb87fec958b5529bcf438", "compiler_onnx_sha256": "511b13a4882c2cb4f1b904cb831b86d1e441c3f11c4eb87fec958b5529bcf438", "compiler_onnx_filename": "mobilenet_v3_large_hailo_fixed.onnx", "hef_sha256": "bdfdf620ea557fff667b22343678db19e00d4b833afa2bf56de7161c766d64b0", "hef_size_bytes": 5660588, "hw_arch": "hailo8", "net_name": "mobilenet_v3_large_full", "hailo_sdk_version": "hailo-dataflow-compiler:3.33.1", "calibration_identity": "manifest:6d6978cafd1b828d6fa9438b232120f2a769311c28492bea5a141af586c3d58c", "prepared_calibration_identity_sha256": "fb09c137fe8380101f4d02f4c3998037407c0cce5d1b09aa854c61ba41172b18", "calibration_count": 500, "requested_calibration_count": 500, "calibration_storage": "memmap", "calibration_memory_cap_bytes": 268435456, "preprocessing_contract": {"schema": "onnx-splitpoint/image-preprocessing-contract", "schema_version": 2, "contract_scope": "prepared_rgb_uint8_semantics", "task": "classification", "preprocess_mode": "resize", "spatial_transform": "direct_resize", "target_hw": [224, 224], "color_space": "RGB", "input_domain": "uint8_0_255", "resize_interpolation": "bilinear", "resize_rounding": "python_round_ties_to_even", "placement": "not_applicable", "pad_value": 0, "letterbox_pad_value": 0, "image_scale": "imagenet", "letterbox": false}, "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9", "cache_key": "a911084ca887d0a74d73addc6d654ea6faec61876a51b4ded92e9a49ed612070", "cache_payload": {"schema": "onnx-splitpoint/hailo-hef-cache-key-v3", "model_sha256": "511b13a4882c2cb4f1b904cb831b86d1e441c3f11c4eb87fec958b5529bcf438", "activation_part1_sha256": "", "hw_arch": "hailo8", "hailo_sdk_version": "hailo-dataflow-compiler:3.33.1", "optimization_level": 1, "calibration_identity": "manifest:6d6978cafd1b828d6fa9438b232120f2a769311c28492bea5a141af586c3d58c", "prepared_calibration_identity_sha256": "fb09c137fe8380101f4d02f4c3998037407c0cce5d1b09aa854c61ba41172b18", "calibration_count": 500, "requested_calibration_count": 500, "calibration_storage": "memmap", "calibration_memory_cap_bytes": 268435456, "calibration_batch_size": 8, "extra_model_script": "", "start_nodes": [], "end_nodes": [], "integrity": "relaxed", "preprocessing_contract": {"schema": "onnx-splitpoint/image-preprocessing-contract", "schema_version": 2, "contract_scope": "prepared_rgb_uint8_semantics", "task": "classification", "preprocess_mode": "resize", "spatial_transform": "direct_resize", "target_hw": [224, 224], "color_space": "RGB", "input_domain": "uint8_0_255", "resize_interpolation": "bilinear", "resize_rounding": "python_round_ties_to_even", "placement": "not_applicable", "pad_value": 0, "letterbox_pad_value": 0, "image_scale": "imagenet", "letterbox": false}, "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9", "net_name": "mobilenet_v3_large_full", "net_input_shapes": [1, 3, 224, 224], "disable_rt_metadata_extraction": true}, "compiler_context": {"available_components": ["ptxas", "libdevice.10.bc"], "compiler_component_view": true, "component_source": "selected_hailo8_dependency_overlay", "compute_capability": "6.1", "conflicts": [], "dependency_manifest": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/overlay_manifest.json", "device": "gpu", "family": "hailo8", "full_cuda_toolkit": false, "gpu_index": "0", "gpu_selector": "GPU-b823007b-546c-4cda-533d-fc24c61f01e6", "gpu_uuid": "GPU-b823007b-546c-4cda-533d-fc24c61f01e6", "ignored_legacy": [], "inherited_cuda_mask_source": "unset", "legacy_inputs": [], "libdevice_path": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/nvvm/libdevice/libdevice.10.bc", "nvidia_smi": "/usr/bin/nvidia-smi", "ptxas_path": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/bin/ptxas", "ptxas_trace_path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/onnx_hailo_cuda_view_nctmi_zf_ptxas_invocations.jsonl", "ptxas_version": "ptxas: NVIDIA (R) Ptx optimizing assembler\nCopyright (c) 2005-2024 NVIDIA Corporation\nBuilt on Thu_Jun__6_02:14:54_PDT_2024\nCuda compilation tools, release 12.5, V12.5.82\nBuild cuda_12.5.r12.5/compiler.34385749_0", "schema_version": 1, "source": "job_override", "target_arch": "sm_61", "target_probe": {"binary": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/bin/ptxas", "kind": "preflight_target", "output_size": 2120, "returncode": 0, "source_ptx": ".version 4.0\n.target sm_50\n.address_size 64\n.visible .entry splitpoint_target_probe() { ret; }\n", "stderr": "", "stdout": "", "target_arch": "sm_61"}, "thread_settings": {"TF_FORCE_GPU_ALLOW_GROWTH": "true", "TF_NUM_INTEROP_THREADS": "2", "TF_NUM_INTRAOP_THREADS": "2"}, "unprovided_compiler_components": ["nvcc", "nvlink", "fatbinary", "cicc", "cudafe++"], "venv_python": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/bin/python", "venv_root": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8", "view_root": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/onnx_hailo_cuda_view_nctmi_zf"}, "phase_events": [{"phase": "sdk_initialization", "state": "started", "event": "started", "timestamp": 1789202113.0397217, "monotonic_s": 180387.125545965, "monotonic": 180387.125545965, "pid": 1505755}, {"phase": "sdk_initialization", "state": "completed", "event": "completed", "timestamp": 1789202113.0645967, "monotonic_s": 180387.150422568, "monotonic": 180387.150422672, "elapsed_s": 0.024877090996596962, "pid": 1505755}, {"phase": "translate", "state": "started", "event": "started", "timestamp": 1789202113.0682766, "monotonic_s": 180387.154101495, "monotonic": 180387.154101495, "pid": 1505755}, {"phase": "translate", "state": "completed", "event": "completed", "timestamp": 1789202114.2296865, "monotonic_s": 180388.315512375, "monotonic": 180388.315512474, "elapsed_s": 1.1614114080148283, "pid": 1505755}, {"phase": "calibration_materialization", "state": "started", "event": "started", "timestamp": 1789202114.3109913, "monotonic_s": 180388.396816123, "monotonic": 180388.396816123, "pid": 1505755}, {"phase": "calibration_materialization", "state": "completed", "event": "completed", "timestamp": 1789202116.814283, "monotonic_s": 180390.900108577, "monotonic": 180390.900108625, "elapsed_s": 2.5032928090076894, "pid": 1505755}, {"phase": "optimize", "state": "started", "event": "started", "timestamp": 1789202116.818146, "monotonic_s": 180390.903970959, "monotonic": 180390.903970959, "pid": 1505755}, {"phase": "optimize", "state": "completed", "event": "completed", "timestamp": 1789202583.3519163, "monotonic_s": 180857.437742006, "monotonic": 180857.437742131, "elapsed_s": 466.5337731789914, "pid": 1505755}, {"phase": "compile", "state": "started", "event": "started", "timestamp": 1789202584.1665266, "monotonic_s": 180858.252351294, "monotonic": 180858.252351294, "pid": 1505755}, {"phase": "compile", "state": "completed", "event": "completed", "timestamp": 1789202628.6043565, "monotonic_s": 180902.690182738, "monotonic": 180902.690182856, "elapsed_s": 44.437831825984176, "pid": 1505755}, {"phase": "publication", "state": "started", "event": "started", "timestamp": 1789202628.6223648, "monotonic_s": 180902.708189068, "monotonic": 180902.708189068, "pid": 1505755}], "publish_artifacts": false, "diagnostic_only": true, "hef_validation": {"status": "unavailable", "reader": "hailo_platform.HEF", "error": "No module named 'hailo_platform'"}}, "build_receipt_path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/.hailo-generations/8cfd96e5161b492b810ece0d26357d4f/hailo_hef_build_receipt.json", "cache_hit": false, "cache_key": "a911084ca887d0a74d73addc6d654ea6faec61876a51b4ded92e9a49ed612070"}, "returncode": null, "debug_log": null, "timed_out": false, "timeout_kind": null, "last_stage": null, "failure_kind": null, "unsupported_reason": null, "details": {"hef_validation": {"status": "unavailable", "reader": "hailo_platform.HEF", "error": "No module named 'hailo_platform'"}, "compiler_dispatch_count": 1, "phase_events": [{"phase": "sdk_initialization", "state": "started", "event": "started", "timestamp": 1789202113.0397217, "monotonic_s": 180387.125545965, "monotonic": 180387.125545965, "pid": 1505755}, {"phase": "sdk_initialization", "state": "completed", "event": "completed", "timestamp": 1789202113.0645967, "monotonic_s": 180387.150422568, "monotonic": 180387.150422672, "elapsed_s": 0.024877090996596962, "pid": 1505755}, {"phase": "translate", "state": "started", "event": "started", "timestamp": 1789202113.0682766, "monotonic_s": 180387.154101495, "monotonic": 180387.154101495, "pid": 1505755}, {"phase": "translate", "state": "completed", "event": "completed", "timestamp": 1789202114.2296865, "monotonic_s": 180388.315512375, "monotonic": 180388.315512474, "elapsed_s": 1.1614114080148283, "pid": 1505755}, {"phase": "calibration_materialization", "state": "started", "event": "started", "timestamp": 1789202114.3109913, "monotonic_s": 180388.396816123, "monotonic": 180388.396816123, "pid": 1505755}, {"phase": "calibration_materialization", "state": "completed", "event": "completed", "timestamp": 1789202116.814283, "monotonic_s": 180390.900108577, "monotonic": 180390.900108625, "elapsed_s": 2.5032928090076894, "pid": 1505755}, {"phase": "optimize", "state": "started", "event": "started", "timestamp": 1789202116.818146, "monotonic_s": 180390.903970959, "monotonic": 180390.903970959, "pid": 1505755}, {"phase": "optimize", "state": "completed", "event": "completed", "timestamp": 1789202583.3519163, "monotonic_s": 180857.437742006, "monotonic": 180857.437742131, "elapsed_s": 466.5337731789914, "pid": 1505755}, {"phase": "compile", "state": "started", "event": "started", "timestamp": 1789202584.1665266, "monotonic_s": 180858.252351294, "monotonic": 180858.252351294, "pid": 1505755}, {"phase": "compile", "state": "completed", "event": "completed", "timestamp": 1789202628.6043565, "monotonic_s": 180902.690182738, "monotonic": 180902.690182856, "elapsed_s": 44.437831825984176, "pid": 1505755}, {"phase": "publication", "state": "started", "event": "started", "timestamp": 1789202628.6223648, "monotonic_s": 180902.708189068, "monotonic": 180902.708189068, "pid": 1505755}, {"phase": "publication", "state": "completed", "event": "completed", "timestamp": 1789202628.846658, "monotonic_s": 180902.932483729, "monotonic": 180902.932483779, "elapsed_s": 0.22429490997456014, "pid": 1505755}], "compiler_context": {"available_components": ["ptxas", "libdevice.10.bc"], "compiler_component_view": true, "component_source": "selected_hailo8_dependency_overlay", "compute_capability": "6.1", "conflicts": [], "dependency_manifest": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/overlay_manifest.json", "device": "gpu", "family": "hailo8", "full_cuda_toolkit": false, "gpu_index": "0", "gpu_selector": "GPU-b823007b-546c-4cda-533d-fc24c61f01e6", "gpu_uuid": "GPU-b823007b-546c-4cda-533d-fc24c61f01e6", "ignored_legacy": [], "inherited_cuda_mask_source": "unset", "legacy_inputs": [], "libdevice_path": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/nvvm/libdevice/libdevice.10.bc", "nvidia_smi": "/usr/bin/nvidia-smi", "ptxas_path": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/bin/ptxas", "ptxas_trace_path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/onnx_hailo_cuda_view_nctmi_zf_ptxas_invocations.jsonl", "ptxas_version": "ptxas: NVIDIA (R) Ptx optimizing assembler\nCopyright (c) 2005-2024 NVIDIA Corporation\nBuilt on Thu_Jun__6_02:14:54_PDT_2024\nCuda compilation tools, release 12.5, V12.5.82\nBuild cuda_12.5.r12.5/compiler.34385749_0", "schema_version": 1, "source": "job_override", "target_arch": "sm_61", "target_probe": {"binary": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/bin/ptxas", "kind": "preflight_target", "output_size": 2120, "returncode": 0, "source_ptx": ".version 4.0\n.target sm_50\n.address_size 64\n.visible .entry splitpoint_target_probe() { ret; }\n", "stderr": "", "stdout": "", "target_arch": "sm_61"}, "thread_settings": {"TF_FORCE_GPU_ALLOW_GROWTH": "true", "TF_NUM_INTEROP_THREADS": "2", "TF_NUM_INTRAOP_THREADS": "2"}, "unprovided_compiler_components": ["nvcc", "nvlink", "fatbinary", "cicc", "cudafe++"], "venv_python": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/bin/python", "venv_root": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8", "view_root": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/onnx_hailo_cuda_view_nctmi_zf"}, "publish_artifacts": false, "cache_hit": false, "cache_key": "a911084ca887d0a74d73addc6d654ea6faec61876a51b4ded92e9a49ed612070", "cache_dir": null, "preprocessing_contract": {"schema": "onnx-splitpoint/image-preprocessing-contract", "schema_version": 2, "contract_scope": "prepared_rgb_uint8_semantics", "task": "classification", "preprocess_mode": "resize", "spatial_transform": "direct_resize", "target_hw": [224, 224], "color_space": "RGB", "input_domain": "uint8_0_255", "resize_interpolation": "bilinear", "resize_rounding": "python_round_ties_to_even", "placement": "not_applicable", "pad_value": 0, "letterbox_pad_value": 0, "image_scale": "imagenet", "letterbox": false}, "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9", "build_receipt": {"schema": "onnx-splitpoint/hailo-hef-build-receipt/v2", "created_at_unix_s": 1789202628.6692245, "source_onnx_sha256": "511b13a4882c2cb4f1b904cb831b86d1e441c3f11c4eb87fec958b5529bcf438", "compiler_onnx_sha256": "511b13a4882c2cb4f1b904cb831b86d1e441c3f11c4eb87fec958b5529bcf438", "compiler_onnx_filename": "mobilenet_v3_large_hailo_fixed.onnx", "hef_sha256": "bdfdf620ea557fff667b22343678db19e00d4b833afa2bf56de7161c766d64b0", "hef_size_bytes": 5660588, "hw_arch": "hailo8", "net_name": "mobilenet_v3_large_full", "hailo_sdk_version": "hailo-dataflow-compiler:3.33.1", "calibration_identity": "manifest:6d6978cafd1b828d6fa9438b232120f2a769311c28492bea5a141af586c3d58c", "prepared_calibration_identity_sha256": "fb09c137fe8380101f4d02f4c3998037407c0cce5d1b09aa854c61ba41172b18", "calibration_count": 500, "requested_calibration_count": 500, "calibration_storage": "memmap", "calibration_memory_cap_bytes": 268435456, "preprocessing_contract": {"schema": "onnx-splitpoint/image-preprocessing-contract", "schema_version": 2, "contract_scope": "prepared_rgb_uint8_semantics", "task": "classification", "preprocess_mode": "resize", "spatial_transform": "direct_resize", "target_hw": [224, 224], "color_space": "RGB", "input_domain": "uint8_0_255", "resize_interpolation": "bilinear", "resize_rounding": "python_round_ties_to_even", "placement": "not_applicable", "pad_value": 0, "letterbox_pad_value": 0, "image_scale": "imagenet", "letterbox": false}, "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9", "cache_key": "a911084ca887d0a74d73addc6d654ea6faec61876a51b4ded92e9a49ed612070", "cache_payload": {"schema": "onnx-splitpoint/hailo-hef-cache-key-v3", "model_sha256": "511b13a4882c2cb4f1b904cb831b86d1e441c3f11c4eb87fec958b5529bcf438", "activation_part1_sha256": "", "hw_arch": "hailo8", "hailo_sdk_version": "hailo-dataflow-compiler:3.33.1", "optimization_level": 1, "calibration_identity": "manifest:6d6978cafd1b828d6fa9438b232120f2a769311c28492bea5a141af586c3d58c", "prepared_calibration_identity_sha256": "fb09c137fe8380101f4d02f4c3998037407c0cce5d1b09aa854c61ba41172b18", "calibration_count": 500, "requested_calibration_count": 500, "calibration_storage": "memmap", "calibration_memory_cap_bytes": 268435456, "calibration_batch_size": 8, "extra_model_script": "", "start_nodes": [], "end_nodes": [], "integrity": "relaxed", "preprocessing_contract": {"schema": "onnx-splitpoint/image-preprocessing-contract", "schema_version": 2, "contract_scope": "prepared_rgb_uint8_semantics", "task": "classification", "preprocess_mode": "resize", "spatial_transform": "direct_resize", "target_hw": [224, 224], "color_space": "RGB", "input_domain": "uint8_0_255", "resize_interpolation": "bilinear", "resize_rounding": "python_round_ties_to_even", "placement": "not_applicable", "pad_value": 0, "letterbox_pad_value": 0, "image_scale": "imagenet", "letterbox": false}, "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9", "net_name": "mobilenet_v3_large_full", "net_input_shapes": [1, 3, 224, 224], "disable_rt_metadata_extraction": true}, "compiler_context": {"available_components": ["ptxas", "libdevice.10.bc"], "compiler_component_view": true, "component_source": "selected_hailo8_dependency_overlay", "compute_capability": "6.1", "conflicts": [], "dependency_manifest": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/overlay_manifest.json", "device": "gpu", "family": "hailo8", "full_cuda_toolkit": false, "gpu_index": "0", "gpu_selector": "GPU-b823007b-546c-4cda-533d-fc24c61f01e6", "gpu_uuid": "GPU-b823007b-546c-4cda-533d-fc24c61f01e6", "ignored_legacy": [], "inherited_cuda_mask_source": "unset", "legacy_inputs": [], "libdevice_path": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/nvvm/libdevice/libdevice.10.bc", "nvidia_smi": "/usr/bin/nvidia-smi", "ptxas_path": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/bin/ptxas", "ptxas_trace_path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/onnx_hailo_cuda_view_nctmi_zf_ptxas_invocations.jsonl", "ptxas_version": "ptxas: NVIDIA (R) Ptx optimizing assembler\nCopyright (c) 2005-2024 NVIDIA Corporation\nBuilt on Thu_Jun__6_02:14:54_PDT_2024\nCuda compilation tools, release 12.5, V12.5.82\nBuild cuda_12.5.r12.5/compiler.34385749_0", "schema_version": 1, "source": "job_override", "target_arch": "sm_61", "target_probe": {"binary": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/bin/ptxas", "kind": "preflight_target", "output_size": 2120, "returncode": 0, "source_ptx": ".version 4.0\n.target sm_50\n.address_size 64\n.visible .entry splitpoint_target_probe() { ret; }\n", "stderr": "", "stdout": "", "target_arch": "sm_61"}, "thread_settings": {"TF_FORCE_GPU_ALLOW_GROWTH": "true", "TF_NUM_INTEROP_THREADS": "2", "TF_NUM_INTRAOP_THREADS": "2"}, "unprovided_compiler_components": ["nvcc", "nvlink", "fatbinary", "cicc", "cudafe++"], "venv_python": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/bin/python", "venv_root": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8", "view_root": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/onnx_hailo_cuda_view_nctmi_zf"}, "phase_events": [{"phase": "sdk_initialization", "state": "started", "event": "started", "timestamp": 1789202113.0397217, "monotonic_s": 180387.125545965, "monotonic": 180387.125545965, "pid": 1505755}, {"phase": "sdk_initialization", "state": "completed", "event": "completed", "timestamp": 1789202113.0645967, "monotonic_s": 180387.150422568, "monotonic": 180387.150422672, "elapsed_s": 0.024877090996596962, "pid": 1505755}, {"phase": "translate", "state": "started", "event": "started", "timestamp": 1789202113.0682766, "monotonic_s": 180387.154101495, "monotonic": 180387.154101495, "pid": 1505755}, {"phase": "translate", "state": "completed", "event": "completed", "timestamp": 1789202114.2296865, "monotonic_s": 180388.315512375, "monotonic": 180388.315512474, "elapsed_s": 1.1614114080148283, "pid": 1505755}, {"phase": "calibration_materialization", "state": "started", "event": "started", "timestamp": 1789202114.3109913, "monotonic_s": 180388.396816123, "monotonic": 180388.396816123, "pid": 1505755}, {"phase": "calibration_materialization", "state": "completed", "event": "completed", "timestamp": 1789202116.814283, "monotonic_s": 180390.900108577, "monotonic": 180390.900108625, "elapsed_s": 2.5032928090076894, "pid": 1505755}, {"phase": "optimize", "state": "started", "event": "started", "timestamp": 1789202116.818146, "monotonic_s": 180390.903970959, "monotonic": 180390.903970959, "pid": 1505755}, {"phase": "optimize", "state": "completed", "event": "completed", "timestamp": 1789202583.3519163, "monotonic_s": 180857.437742006, "monotonic": 180857.437742131, "elapsed_s": 466.5337731789914, "pid": 1505755}, {"phase": "compile", "state": "started", "event": "started", "timestamp": 1789202584.1665266, "monotonic_s": 180858.252351294, "monotonic": 180858.252351294, "pid": 1505755}, {"phase": "compile", "state": "completed", "event": "completed", "timestamp": 1789202628.6043565, "monotonic_s": 180902.690182738, "monotonic": 180902.690182856, "elapsed_s": 44.437831825984176, "pid": 1505755}, {"phase": "publication", "state": "started", "event": "started", "timestamp": 1789202628.6223648, "monotonic_s": 180902.708189068, "monotonic": 180902.708189068, "pid": 1505755}], "publish_artifacts": false, "diagnostic_only": true, "hef_validation": {"status": "unavailable", "reader": "hailo_platform.HEF", "error": "No module named 'hailo_platform'"}}}, "cuda_probe": {"available_components": ["ptxas", "libdevice.10.bc"], "compiler_component_view": true, "component_source": "selected_hailo8_dependency_overlay", "compute_capability": "6.1", "conflicts": [], "dependency_manifest": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/overlay_manifest.json", "device": "gpu", "family": "hailo8", "full_cuda_toolkit": false, "gpu_index": "0", "gpu_selector": "GPU-b823007b-546c-4cda-533d-fc24c61f01e6", "gpu_uuid": "GPU-b823007b-546c-4cda-533d-fc24c61f01e6", "ignored_legacy": [], "inherited_cuda_mask_source": "unset", "legacy_inputs": [], "libdevice_path": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/nvvm/libdevice/libdevice.10.bc", "nvidia_smi": "/usr/bin/nvidia-smi", "ptxas_path": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/bin/ptxas", "ptxas_trace_path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/onnx_hailo_cuda_view_nctmi_zf_ptxas_invocations.jsonl", "ptxas_version": "ptxas: NVIDIA (R) Ptx optimizing assembler\nCopyright (c) 2005-2024 NVIDIA Corporation\nBuilt on Thu_Jun__6_02:14:54_PDT_2024\nCuda compilation tools, release 12.5, V12.5.82\nBuild cuda_12.5.r12.5/compiler.34385749_0", "schema_version": 1, "source": "job_override", "target_arch": "sm_61", "target_probe": {"binary": "/home/kmika/.onnx_splitpoint_tool/hailo/hailo8_cuda_20260912T062240Z_hx7b7hcq/packages/nvidia/cuda_nvcc/bin/ptxas", "kind": "preflight_target", "output_size": 2120, "returncode": 0, "source_ptx": ".version 4.0\n.target sm_50\n.address_size 64\n.visible .entry splitpoint_target_probe() { ret; }\n", "stderr": "", "stdout": "", "target_arch": "sm_61"}, "thread_settings": {"TF_FORCE_GPU_ALLOW_GROWTH": "true", "TF_NUM_INTEROP_THREADS": "2", "TF_NUM_INTRAOP_THREADS": "2"}, "unprovided_compiler_components": ["nvcc", "nvlink", "fatbinary", "cicc", "cudafe++"], "venv_python": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/bin/python", "venv_root": "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8", "view_root": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/onnx_hailo_cuda_view_nctmi_zf", "mode": "gpu_resolved", "gpu_ok": true, "forced_cpu": false, "cuda_visible_devices_effective": "GPU-b823007b-546c-4cda-533d-fc24c61f01e6", "cuda_root": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/onnx_hailo_cuda_view_nctmi_zf", "xla_cuda_data_dir": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/onnx_hailo_cuda_view_nctmi_zf", "summary": "Compute: GPU (resolved hailo8 job)"}, "result_json_path": "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv/build/hailo_hef_build_result.json"}

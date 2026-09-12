@@ -1,0 +1,89 @@
+{
+  "status": "diagnostic_evaluated",
+  "phases": {
+    "prepare": {
+      "argv": [
+        "/home/kmika/ONNX-Splitpoint-Tool/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/kmika/Downloads/Hailo8_HAR_und_Git_R1/array_compare.py",
+        "prepare",
+        "--build",
+        "/home/kmika/Downloads/hailo8_mobilenet_gpu_20260912T083456Z_a_10a8wv",
+        "--runtime",
+        "/home/kmika/Downloads/hailo8_mobilenet_runtime_8FehkBqO/runtime",
+        "--out",
+        "/home/kmika/Downloads/hailo8_har_git_20260912T171411Z_x0j2t2o1/har_comparison"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "cancelled": false,
+      "elapsed_s": 1.8840331370010972,
+      "owned_survivors": [],
+      "process_cleanup_complete": true
+    },
+    "parsed_native": {
+      "argv": [
+        "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/bin/python",
+        "-I",
+        "-B",
+        "/home/kmika/Downloads/Hailo8_HAR_und_Git_R1/har_worker.py",
+        "--request",
+        "/home/kmika/Downloads/hailo8_har_git_20260912T171411Z_x0j2t2o1/har_comparison/comparison_request.json",
+        "--stage",
+        "parsed_native",
+        "--out",
+        "/home/kmika/Downloads/hailo8_har_git_20260912T171411Z_x0j2t2o1/har_comparison/parsed_native"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "cancelled": false,
+      "elapsed_s": 13.75472514500143,
+      "owned_survivors": [],
+      "process_cleanup_complete": true
+    },
+    "quantized": {
+      "argv": [
+        "/home/kmika/.onnx_splitpoint_tool/hailo/venv_hailo8/bin/python",
+        "-I",
+        "-B",
+        "/home/kmika/Downloads/Hailo8_HAR_und_Git_R1/har_worker.py",
+        "--request",
+        "/home/kmika/Downloads/hailo8_har_git_20260912T171411Z_x0j2t2o1/har_comparison/comparison_request.json",
+        "--stage",
+        "quantized",
+        "--out",
+        "/home/kmika/Downloads/hailo8_har_git_20260912T171411Z_x0j2t2o1/har_comparison/quantized"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "cancelled": false,
+      "elapsed_s": 31.29604819501401,
+      "owned_survivors": [],
+      "process_cleanup_complete": true
+    },
+    "compare": {
+      "argv": [
+        "/home/kmika/ONNX-Splitpoint-Tool/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/kmika/Downloads/Hailo8_HAR_und_Git_R1/array_compare.py",
+        "compare",
+        "--request",
+        "/home/kmika/Downloads/hailo8_har_git_20260912T171411Z_x0j2t2o1/har_comparison/comparison_request.json",
+        "--out",
+        "/home/kmika/Downloads/hailo8_har_git_20260912T171411Z_x0j2t2o1/har_comparison"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "cancelled": false,
+      "elapsed_s": 0.6541306530125439,
+      "owned_survivors": [],
+      "process_cleanup_complete": true
+    }
+  },
+  "hef_build": "NOT_RUN",
+  "hardware_inference": "NOT_RUN",
+  "energy": "NOT_RUN",
+  "product_configuration_modified": false
+}

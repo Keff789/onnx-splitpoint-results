@@ -1,0 +1,33 @@
+PHASE_START=dfc_sdk_import
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1789194216.190280 1443730 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1789194216.211706 1443730 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+PHASE_END=dfc_sdk_import STATUS=pass
+PHASE_START=tensorflow_import
+PHASE_END=tensorflow_gpu_setup STATUS=pass
+I0000 00:00:1789194221.513350 1443730 gpu_device.cc:2022] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 10448 MB memory:  -> device: 0, name: NVIDIA GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1
+PHASE_START=matmul_gpu
+PHASE_END=matmul_gpu STATUS=pass
+PHASE_START=conv2d_gpu
+I0000 00:00:1789194221.578289 1443730 cuda_dnn.cc:529] Loaded cuDNN version 90300
+PHASE_END=conv2d_gpu STATUS=pass
+PHASE_START=xla_math_gpu
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1789194221.759063 1443730 service.cc:148] XLA service 0x26cb1750 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+I0000 00:00:1789194221.759339 1443730 service.cc:156]   StreamExecutor device (0): NVIDIA GeForce GTX 1080 Ti, Compute Capability 6.1
+I0000 00:00:1789194222.158235 1443730 device_compiler.h:188] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+PHASE_END=xla_math_gpu STATUS=pass
+PHASE_START=xla_conv2d_gpu
+PHASE_END=xla_conv2d_gpu STATUS=pass
+WORKER_STATUS=compute_pass
+input: (_Arg): /job:localhost/replica:0/task:0/device:GPU:0
+_EagerConst: (_EagerConst): /job:localhost/replica:0/task:0/device:GPU:0
+output_RetVal: (_Retval): /job:localhost/replica:0/task:0/device:GPU:0
+a: (_Arg): /job:localhost/replica:0/task:0/device:GPU:0
+b: (_Arg): /job:localhost/replica:0/task:0/device:GPU:0
+MatMul: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+product_RetVal: (_Retval): /job:localhost/replica:0/task:0/device:GPU:0
+input: (_Arg): /job:localhost/replica:0/task:0/device:GPU:0
+filter: (_Arg): /job:localhost/replica:0/task:0/device:GPU:0
+Conv2D: (Conv2D): /job:localhost/replica:0/task:0/device:GPU:0
+output_RetVal: (_Retval): /job:localhost/replica:0/task:0/device:GPU:0

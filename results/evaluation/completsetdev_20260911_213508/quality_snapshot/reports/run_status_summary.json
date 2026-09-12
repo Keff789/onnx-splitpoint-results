@@ -1,0 +1,482 @@
+{
+  "aggregate_quality_decision": "fail",
+  "blocking_reason_count": 6,
+  "blocking_reasons": [
+    {
+      "blocking": true,
+      "kind": "stage_status",
+      "model_id": "yolo11l",
+      "reason": "Backend build/reuse decisions recorded; reusable full-baseline artifacts copied when present. Hailo HEF reuse/build service plan recorded; existing HEFs were detected and missing heavy builds are structured. Hailo build queue: 0 item(s); dispatch status: not_required. DeepX full DXNN artifact ready. Selected deferred artifact readiness is incomplete: hailo8:b064/part1: Venv HEF build failed to launch: CompilerContextError: hailo_compiler_components_missing: No complete local ptxas/libdevice pair in selected DFC venv",
+      "stage": "build_backend_artifacts",
+      "stage_result_path": "models/yolo11l/stages/build_backend_artifacts/stage_result.json",
+      "status": "partial"
+    },
+    {
+      "blocking": true,
+      "kind": "stage_status",
+      "model_id": "yolo11l",
+      "reason": "Remote benchmark suite dispatched per hardware target/run-profile.; preserved 16 measured row(s), but the requested hardware matrix is incomplete; missing required profile row(s): hailo8_to_tensorrt:split:b064.",
+      "stage": "run_benchmarks",
+      "stage_result_path": "models/yolo11l/stages/run_benchmarks/stage_result.json",
+      "status": "partial"
+    },
+    {
+      "blocking": true,
+      "kind": "stage_status",
+      "model_id": "yolo26m",
+      "reason": "Backend build/reuse decisions recorded; reusable full-baseline artifacts copied when present. Hailo HEF reuse/build service plan recorded; existing HEFs were detected and missing heavy builds are structured. Hailo build queue: 0 item(s); dispatch status: not_required. DeepX full DXNN artifact ready. Selected deferred artifact readiness is incomplete: hailo8:b398/part1: Exact build evidence prevents repeated compiler attempt: COMPILE_INFEASIBLE (exact_deterministic_outcome); hailo10h:b399/part1: Exact build evidence prevents repeated compiler attempt: COMPILE_INFEASIBLE (exact_deterministic_outcome); hailo8:b399/part1: Exact build evidence prevents repeated compiler attempt: COMPILE_INFEASIBLE (exact_deterministic_outcome)",
+      "stage": "build_backend_artifacts",
+      "stage_result_path": "models/yolo26m/stages/build_backend_artifacts/stage_result.json",
+      "status": "partial"
+    },
+    {
+      "blocking": true,
+      "kind": "stage_status",
+      "model_id": "yolo26m",
+      "reason": "Remote benchmark suite dispatched per hardware target/run-profile.; preserved 16 measured row(s), but the requested hardware matrix is incomplete; missing required profile row(s): hailo8_to_tensorrt:split:b398, hailo8_to_tensorrt:split:b399, hailo10_to_tensorrt:split:b399.",
+      "stage": "run_benchmarks",
+      "stage_result_path": "models/yolo26m/stages/run_benchmarks/stage_result.json",
+      "status": "partial"
+    },
+    {
+      "blocking": true,
+      "kind": "stage_status",
+      "model_id": "yolo26s",
+      "reason": "Backend build/reuse decisions recorded; reusable full-baseline artifacts copied when present. Hailo HEF reuse/build service plan recorded; existing HEFs were detected and missing heavy builds are structured. Hailo build queue: 0 item(s); dispatch status: not_required. DeepX full DXNN artifact ready. Selected deferred artifact readiness is incomplete: hailo8:b364/part1: Exact build evidence prevents repeated compiler attempt: COMPILE_INFEASIBLE (exact_deterministic_outcome); hailo10h:b365/part1: Exact build evidence prevents repeated compiler attempt: COMPILE_INFEASIBLE (exact_deterministic_outcome); hailo8:b365/part1: Exact build evidence prevents repeated compiler attempt: COMPILE_INFEASIBLE (exact_deterministic_outcome)",
+      "stage": "build_backend_artifacts",
+      "stage_result_path": "models/yolo26s/stages/build_backend_artifacts/stage_result.json",
+      "status": "partial"
+    },
+    {
+      "blocking": true,
+      "kind": "stage_status",
+      "model_id": "yolo26s",
+      "reason": "Remote benchmark suite dispatched per hardware target/run-profile.; preserved 16 measured row(s), but the requested hardware matrix is incomplete; missing required profile row(s): hailo8_to_tensorrt:split:b364, hailo8_to_tensorrt:split:b365, hailo10_to_tensorrt:split:b365.",
+      "stage": "run_benchmarks",
+      "stage_result_path": "models/yolo26s/stages/run_benchmarks/stage_result.json",
+      "status": "partial"
+    }
+  ],
+  "claim_decisions_complete": null,
+  "claim_eligible_count": null,
+  "claim_validation_complete": null,
+  "created_at": "2026-09-12T07:33:52+02:00",
+  "debug_upload_hint": {
+    "parent_latest_log": "_latest_evaluation_workflow.log",
+    "primary_log": "evaluation_workflow.log",
+    "recommended_files": [
+      "evaluation_workflow.log",
+      "run_manifest.json",
+      "reports/run_status_summary.json",
+      "reports/summary.csv",
+      "reports/prediction_vs_benchmark.csv"
+    ]
+  },
+  "decision_axes": {
+    "central_quality_reporting": {
+      "aggregate_all_full_result_count": 48,
+      "aggregate_decision_counts": {
+        "not_evaluated": 12,
+        "pass": 9
+      },
+      "aggregate_duplicate_expected_identity_count": 0,
+      "aggregate_duplicate_identities": [],
+      "aggregate_duplicate_identity_count": 0,
+      "aggregate_excluded_diagnostic_full_result_count": 27,
+      "aggregate_excluded_diagnostic_full_result_ids": [
+        "c3e126359964871ee6216bb7db55834dddc1f99d4163af34e8abef61d27ddde2",
+        "9c5c4e8ef3438b9664231a8dcff69f39fcaef06083959dadba8e830ab5bb5c66",
+        "633e9bdc44d74ceea19e25246beccc7a5a85d82d8173b7b37a5693d0b5ba354a",
+        "2518ee786bee4aae6c5ef748b06f0fb13b232a0f1a459dcf4a83650239c47044",
+        "sha256:bebd81ad51fe1695af34d3c0acf72ed76d78f305eec8c3e7c8cd78e313447e6e",
+        "sha256:6da37b32147d9fa5cf4ac843d6e4f6222a1f405e9c281abacaf49ffdf2bfb431",
+        "sha256:9e41a623f7db4a3e61369d232ffde6236980163c17dc1841c161660842a70d95",
+        "sha256:86db5f8bdca31e07fa8d0cd0e54290f0c5ce44e829fbb8e61ce977df8704190c",
+        "bf2058fc407cd9974671b4f70da32cf0dbcab00dc01bf36a7c2cb2315a94c57b",
+        "516d482eba07238b8b12f01f8fd99c3fd66d21b06b1758a22fef01d2f9802db4",
+        "123123e04a1d06c8a8e534c443d9cd8bda9f723823a45f682e26bb0ac09a631d",
+        "72f14016c7a8d049c2cff7702290884e875d8d77d8798087f67205804287aaae",
+        "8babcf0802309bfbd0e0ae55726c951d892fe84daad0c942f76d893a49544839",
+        "217c041350a8ab6c4b7e4f115afb3df16b81019f35e03f7b04cc8e6f5dc8a12b",
+        "dd756328fa62c0aa8f8faa401995c570fdf3ee0cd1cb896e352e76e2baddefc6",
+        "c9a9ed5cda0e91b77549545b20cdd727a16d3d34484531f8c8d3b9c5a28589c0",
+        "sha256:f5f4f4938abdbc91fb77e0275807b0587d5c1ebce2d9b1d62b3c0f82d7e8d206",
+        "sha256:f70bf7ac0cfdf20d4735857a2c61d016e2fdbd1f0a04e3268ae2634dcaa03e6d",
+        "sha256:cbcce766bb6b1056fa39d217a35097c9cb6b939b4e2cfafe20473ec8d596aec5",
+        "e59349c0a50d2c864c748cc6888305a8fa9f87ccec3ae0600dcef661be47c73e",
+        "sha256:1f9e1be9258b696c3301fd8737550427004232cc7716bfee0cd61419ca4c3462",
+        "sha256:691322a45f98d7e753cf7ba8422932f8491f904834fa2fdc3ebf370ac48dd42a",
+        "sha256:2a6ceb9812a4b01c160b1933ac90866139d3ca346fa003c5c2de3b7af16fb1ca",
+        "sha256:58e3a989bf79ebd40897913c11234e65ed2926a30d6774ecc3509f8584a4882a",
+        "sha256:af3f5a8c04261e1699bff4989719fd2bca6a0eb590131f95c1d608c56783f8b2",
+        "sha256:3cf29b7b4feaa2fdb81c0c095efcf21d5f53cf37f62e9efe0a5939d1f88bc464",
+        "sha256:48cde6637e7adc49a972f71234493dbca8cb2f4d589850cf9bb9d6d5a873d0dc"
+      ],
+      "aggregate_expected_full_result_count": 21,
+      "aggregate_full_result_count": 21,
+      "aggregate_identity_contract_complete": true,
+      "aggregate_identity_contract_definition_errors": [],
+      "aggregate_identity_contract_issue_count": 0,
+      "aggregate_missing_identities": [],
+      "aggregate_missing_identity_count": 0,
+      "aggregate_selection_mode": "explicit_full_only_identity_contract",
+      "aggregate_unexpected_identity_count": 0,
+      "aggregate_unexpected_identity_result_ids": [],
+      "aggregate_usable_full_result_count": 9,
+      "campaign_quality_decision": "fail",
+      "campaign_quality_missing_count": 58,
+      "completed_count": 63,
+      "decision_counts": {
+        "fail": 18,
+        "inconclusive": 2,
+        "not_evaluated": 60,
+        "pass": 43
+      },
+      "failed_count": 60,
+      "full_reference_quality_decision": "not_evaluated",
+      "full_reference_scientific_pass": false,
+      "missing_guardrail_count": 0,
+      "not_evaluated_count": 81,
+      "quality_acceptance_identity_contract": {
+        "contract_mode": "standard_quality_setup_local_tensorrt",
+        "execution_scope": "standard_quality_setup_local_tensorrt",
+        "expected_identities": [
+          {
+            "backend": "tensorrt",
+            "dispatch_run_id": "ort_tensorrt",
+            "execution_role": "full_quality_only",
+            "id": "tensorrt_at_hailo8_full",
+            "identity_source": "scheduler_materialized_before_remote_dispatch",
+            "logical_setup_group": "hailo8_setup",
+            "performance_claims_emitted": false,
+            "producer": "hailo8",
+            "quality_companion_endpoint_id": "tensorrt_at_hailo8_full",
+            "run_id": "native_full_tensorrt",
+            "setup_id": "orin_nx_hailo8_01",
+            "source_run_id": "native_full_tensorrt",
+            "variant": "full"
+          },
+          {
+            "backend": "tensorrt",
+            "dispatch_run_id": "ort_tensorrt",
+            "execution_role": "full_quality_only",
+            "id": "tensorrt_at_hailo10h_full",
+            "identity_source": "scheduler_materialized_before_remote_dispatch",
+            "logical_setup_group": "hailo10h_setup",
+            "performance_claims_emitted": false,
+            "producer": "hailo10h",
+            "quality_companion_endpoint_id": "tensorrt_at_hailo10h_full",
+            "run_id": "native_full_tensorrt",
+            "setup_id": "orin_nx_hailo10_01",
+            "source_run_id": "native_full_tensorrt",
+            "variant": "full"
+          },
+          {
+            "backend": "tensorrt",
+            "dispatch_run_id": "ort_tensorrt",
+            "execution_role": "full_quality_only",
+            "id": "tensorrt_at_deepx_m1_full",
+            "identity_source": "scheduler_materialized_before_remote_dispatch",
+            "logical_setup_group": "deepx_setup",
+            "performance_claims_emitted": false,
+            "producer": "deepx",
+            "quality_companion_endpoint_id": "tensorrt_at_deepx_m1_full",
+            "run_id": "native_full_tensorrt",
+            "setup_id": "orin_nx_deepx_m1_01",
+            "source_run_id": "native_full_tensorrt",
+            "variant": "full"
+          }
+        ],
+        "identity_key_fields": [
+          "model_id",
+          "source_run_id",
+          "setup_id",
+          "backend",
+          "variant",
+          "execution_role",
+          "performance_claims_emitted"
+        ],
+        "model_ids": [
+          "mobilenet_v3_large",
+          "resnet50",
+          "yolo11l",
+          "yolo26m",
+          "yolo26s",
+          "regnet_x_1_6gf",
+          "yolov7_paper"
+        ],
+        "postcondition": {
+          "completed_count": 9,
+          "contract_error_count": 0,
+          "duplicate_count": 0,
+          "expected_count": 21,
+          "failed_count": 0,
+          "missing_count": 0,
+          "status": "blocked"
+        },
+        "schema": "onnx-splitpoint/standard-setup-local-tensorrt-quality-acceptance-identity-contract",
+        "schema_version": 1
+      },
+      "quality_decision": "fail",
+      "request_count": 123,
+      "result_count": 123,
+      "result_shortfall_count": 0,
+      "results_complete": false,
+      "schema": "onnx-splitpoint/central-quality-reporting-status",
+      "schema_version": 1,
+      "scientific_pass": false,
+      "scientific_status": "not_evaluated",
+      "source_present": true,
+      "source_status": "failed",
+      "status_semantics": {
+        "quality_decision": "Standard campaigns include all evaluated Full/split decisions and required quality coverage. Explicit Full-only canaries retain their exact acceptance scope. The Full reference decision is reported separately.",
+        "technical_status": "Execution/computation completeness only; metric decisions do not turn a technically completed run into a crash."
+      },
+      "technical_status": "failed",
+      "unmatched_result_count": 21
+    },
+    "quality_decision": "fail",
+    "quality_evaluation_technical_status": "failed",
+    "scientific_pass": false,
+    "scientific_status": "not_evaluated",
+    "technical_status": "cancelled"
+  },
+  "energy_coverage_contract_active": null,
+  "energy_coverage_contract_status": null,
+  "energy_coverage_contract_valid": null,
+  "energy_plan_completion_fraction": null,
+  "energy_planned_matrix_coverage_fraction": null,
+  "energy_successful_matrix_coverage_fraction": null,
+  "native_evidence_status": {},
+  "non_blocking_reason_count": 11,
+  "non_blocking_reasons": [
+    {
+      "blocking": false,
+      "kind": "stage_status",
+      "model_id": "yolo11l",
+      "reason": "Validation produced invalid measured rows; runtime/interface validation and central task-quality decisions are reported separately. This validation warning is non-blocking in summary_only mode. Use validation.mode=strict to make this a blocking gate.",
+      "stage": "validate_outputs",
+      "stage_result_path": "models/yolo11l/stages/validate_outputs/stage_result.json",
+      "status": "warn"
+    },
+    {
+      "blocking": false,
+      "kind": "stage_status",
+      "model_id": "yolo26m",
+      "reason": "Validation produced invalid measured rows; runtime/interface validation and central task-quality decisions are reported separately. This validation warning is non-blocking in summary_only mode. Use validation.mode=strict to make this a blocking gate.",
+      "stage": "validate_outputs",
+      "stage_result_path": "models/yolo26m/stages/validate_outputs/stage_result.json",
+      "status": "warn"
+    },
+    {
+      "blocking": false,
+      "kind": "stage_status",
+      "model_id": "yolo26s",
+      "reason": "Validation produced invalid measured rows; runtime/interface validation and central task-quality decisions are reported separately. This validation warning is non-blocking in summary_only mode. Use validation.mode=strict to make this a blocking gate.",
+      "stage": "validate_outputs",
+      "stage_result_path": "models/yolo26s/stages/validate_outputs/stage_result.json",
+      "status": "warn"
+    },
+    {
+      "blocking": false,
+      "kind": "stage_status",
+      "model_id": "yolov7_paper",
+      "reason": "Validation produced invalid measured rows; runtime/interface validation and central task-quality decisions are reported separately. This validation warning is non-blocking in summary_only mode. Use validation.mode=strict to make this a blocking gate.",
+      "stage": "validate_outputs",
+      "stage_result_path": "models/yolov7_paper/stages/validate_outputs/stage_result.json",
+      "status": "warn"
+    },
+    {
+      "artifact": "models/mobilenet_v3_large/validation/validation_summary.json",
+      "blocking": false,
+      "kind": "validation",
+      "model_id": "mobilenet_v3_large",
+      "reason": "6 measured row(s) failed validation. Validation evaluation completed; invalid cases are kept in validation_summary.json and excluded/marked by reports. Runtime and central task-quality outcomes are reported separately. Use validation.mode=strict to make this validation gate blocking.",
+      "stage": "validate_outputs",
+      "status": "valid_complete_splits_present"
+    },
+    {
+      "artifact": "models/regnet_x_1_6gf/validation/validation_summary.json",
+      "blocking": false,
+      "kind": "validation",
+      "model_id": "regnet_x_1_6gf",
+      "reason": "5 measured row(s) failed validation. Validation evaluation completed; invalid cases are kept in validation_summary.json and excluded/marked by reports. Runtime and central task-quality outcomes are reported separately. Use validation.mode=strict to make this validation gate blocking.",
+      "stage": "validate_outputs",
+      "status": "valid_complete_splits_present"
+    },
+    {
+      "artifact": "models/resnet50/validation/validation_summary.json",
+      "blocking": false,
+      "kind": "validation",
+      "model_id": "resnet50",
+      "reason": "4 measured row(s) failed validation. Validation evaluation completed; invalid cases are kept in validation_summary.json and excluded/marked by reports. Runtime and central task-quality outcomes are reported separately. Use validation.mode=strict to make this validation gate blocking.",
+      "stage": "validate_outputs",
+      "status": "valid_complete_splits_present"
+    },
+    {
+      "artifact": "models/yolo11l/validation/validation_summary.json",
+      "blocking": false,
+      "kind": "validation",
+      "model_id": "yolo11l",
+      "reason": "11 measured row(s) failed validation. Validation evaluation completed; invalid cases are kept in validation_summary.json and excluded/marked by reports. Runtime and central task-quality outcomes are reported separately. Use validation.mode=strict to make this validation gate blocking.",
+      "stage": "validate_outputs",
+      "status": "validation_failed"
+    },
+    {
+      "artifact": "models/yolo26m/validation/validation_summary.json",
+      "blocking": false,
+      "kind": "validation",
+      "model_id": "yolo26m",
+      "reason": "9 measured row(s) failed validation. Validation evaluation completed; invalid cases are kept in validation_summary.json and excluded/marked by reports. Runtime and central task-quality outcomes are reported separately. Use validation.mode=strict to make this validation gate blocking.",
+      "stage": "validate_outputs",
+      "status": "validation_failed"
+    },
+    {
+      "artifact": "models/yolo26s/validation/validation_summary.json",
+      "blocking": false,
+      "kind": "validation",
+      "model_id": "yolo26s",
+      "reason": "10 measured row(s) failed validation. Validation evaluation completed; invalid cases are kept in validation_summary.json and excluded/marked by reports. Runtime and central task-quality outcomes are reported separately. Use validation.mode=strict to make this validation gate blocking.",
+      "stage": "validate_outputs",
+      "status": "validation_failed"
+    },
+    {
+      "artifact": "models/yolov7_paper/validation/validation_summary.json",
+      "blocking": false,
+      "kind": "validation",
+      "model_id": "yolov7_paper",
+      "reason": "12 measured row(s) failed validation. Validation evaluation completed; invalid cases are kept in validation_summary.json and excluded/marked by reports. Runtime and central task-quality outcomes are reported separately. Use validation.mode=strict to make this validation gate blocking.",
+      "stage": "validate_outputs",
+      "status": "validation_failed"
+    }
+  ],
+  "partial_reason_count": 11,
+  "partial_reasons": [
+    {
+      "blocking": false,
+      "kind": "stage_status",
+      "model_id": "yolo11l",
+      "reason": "Validation produced invalid measured rows; runtime/interface validation and central task-quality decisions are reported separately. This validation warning is non-blocking in summary_only mode. Use validation.mode=strict to make this a blocking gate.",
+      "stage": "validate_outputs",
+      "stage_result_path": "models/yolo11l/stages/validate_outputs/stage_result.json",
+      "status": "warn"
+    },
+    {
+      "blocking": false,
+      "kind": "stage_status",
+      "model_id": "yolo26m",
+      "reason": "Validation produced invalid measured rows; runtime/interface validation and central task-quality decisions are reported separately. This validation warning is non-blocking in summary_only mode. Use validation.mode=strict to make this a blocking gate.",
+      "stage": "validate_outputs",
+      "stage_result_path": "models/yolo26m/stages/validate_outputs/stage_result.json",
+      "status": "warn"
+    },
+    {
+      "blocking": false,
+      "kind": "stage_status",
+      "model_id": "yolo26s",
+      "reason": "Validation produced invalid measured rows; runtime/interface validation and central task-quality decisions are reported separately. This validation warning is non-blocking in summary_only mode. Use validation.mode=strict to make this a blocking gate.",
+      "stage": "validate_outputs",
+      "stage_result_path": "models/yolo26s/stages/validate_outputs/stage_result.json",
+      "status": "warn"
+    },
+    {
+      "blocking": false,
+      "kind": "stage_status",
+      "model_id": "yolov7_paper",
+      "reason": "Validation produced invalid measured rows; runtime/interface validation and central task-quality decisions are reported separately. This validation warning is non-blocking in summary_only mode. Use validation.mode=strict to make this a blocking gate.",
+      "stage": "validate_outputs",
+      "stage_result_path": "models/yolov7_paper/stages/validate_outputs/stage_result.json",
+      "status": "warn"
+    },
+    {
+      "artifact": "models/mobilenet_v3_large/validation/validation_summary.json",
+      "blocking": false,
+      "kind": "validation",
+      "model_id": "mobilenet_v3_large",
+      "reason": "6 measured row(s) failed validation. Validation evaluation completed; invalid cases are kept in validation_summary.json and excluded/marked by reports. Runtime and central task-quality outcomes are reported separately. Use validation.mode=strict to make this validation gate blocking.",
+      "stage": "validate_outputs",
+      "status": "valid_complete_splits_present"
+    },
+    {
+      "artifact": "models/regnet_x_1_6gf/validation/validation_summary.json",
+      "blocking": false,
+      "kind": "validation",
+      "model_id": "regnet_x_1_6gf",
+      "reason": "5 measured row(s) failed validation. Validation evaluation completed; invalid cases are kept in validation_summary.json and excluded/marked by reports. Runtime and central task-quality outcomes are reported separately. Use validation.mode=strict to make this validation gate blocking.",
+      "stage": "validate_outputs",
+      "status": "valid_complete_splits_present"
+    },
+    {
+      "artifact": "models/resnet50/validation/validation_summary.json",
+      "blocking": false,
+      "kind": "validation",
+      "model_id": "resnet50",
+      "reason": "4 measured row(s) failed validation. Validation evaluation completed; invalid cases are kept in validation_summary.json and excluded/marked by reports. Runtime and central task-quality outcomes are reported separately. Use validation.mode=strict to make this validation gate blocking.",
+      "stage": "validate_outputs",
+      "status": "valid_complete_splits_present"
+    },
+    {
+      "artifact": "models/yolo11l/validation/validation_summary.json",
+      "blocking": false,
+      "kind": "validation",
+      "model_id": "yolo11l",
+      "reason": "11 measured row(s) failed validation. Validation evaluation completed; invalid cases are kept in validation_summary.json and excluded/marked by reports. Runtime and central task-quality outcomes are reported separately. Use validation.mode=strict to make this validation gate blocking.",
+      "stage": "validate_outputs",
+      "status": "validation_failed"
+    },
+    {
+      "artifact": "models/yolo26m/validation/validation_summary.json",
+      "blocking": false,
+      "kind": "validation",
+      "model_id": "yolo26m",
+      "reason": "9 measured row(s) failed validation. Validation evaluation completed; invalid cases are kept in validation_summary.json and excluded/marked by reports. Runtime and central task-quality outcomes are reported separately. Use validation.mode=strict to make this validation gate blocking.",
+      "stage": "validate_outputs",
+      "status": "validation_failed"
+    },
+    {
+      "artifact": "models/yolo26s/validation/validation_summary.json",
+      "blocking": false,
+      "kind": "validation",
+      "model_id": "yolo26s",
+      "reason": "10 measured row(s) failed validation. Validation evaluation completed; invalid cases are kept in validation_summary.json and excluded/marked by reports. Runtime and central task-quality outcomes are reported separately. Use validation.mode=strict to make this validation gate blocking.",
+      "stage": "validate_outputs",
+      "status": "validation_failed"
+    },
+    {
+      "artifact": "models/yolov7_paper/validation/validation_summary.json",
+      "blocking": false,
+      "kind": "validation",
+      "model_id": "yolov7_paper",
+      "reason": "12 measured row(s) failed validation. Validation evaluation completed; invalid cases are kept in validation_summary.json and excluded/marked by reports. Runtime and central task-quality outcomes are reported separately. Use validation.mode=strict to make this validation gate blocking.",
+      "stage": "validate_outputs",
+      "status": "validation_failed"
+    }
+  ],
+  "profile_id": "completsetdev",
+  "quality_decision": "fail",
+  "quality_evaluation_technical_status": "failed",
+  "run_id": "completsetdev_20260911_213508",
+  "runtime_complete": null,
+  "schema": "onnx-splitpoint/run-status-summary",
+  "schema_version": 1,
+  "scientific_pass": false,
+  "scientific_ready": null,
+  "scientific_status": "not_evaluated",
+  "semantic_validation_complete": null,
+  "stage_status_counts": {
+    "cancelled": 1,
+    "ok": 70,
+    "partial": 6,
+    "warn": 4
+  },
+  "status": "cancelled",
+  "status_decision": {
+    "blocking_reason_count": 6,
+    "non_blocking_reason_count": 11,
+    "note": "Non-blocking warnings, especially build_backend_artifacts queues followed by successful benchmark/validation/hardware stages, do not force the final run status to partial."
+  },
+  "technical_quality_failure": null,
+  "technical_status": "cancelled",
+  "tool_version": "2.80.3",
+  "workflow_version": "v2.80.3-build-readiness-native-not-started-debug-export"
+}
