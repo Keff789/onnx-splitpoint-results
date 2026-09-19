@@ -1,0 +1,10 @@
+stage,passed,failed,errors,skipped,source_archive,junit_member,source_sha256,scope
+R3,310,0,0,0,ERGEBNISSE_R3.zip,final_tests.junit.xml,92902977cf83d44cfb48f6fdac91af6e83b422f5decfac4bb9a99fd389386575,local final selection
+R6-JUnit-all-suites,597,0,0,0,ERGEBNISSE_R6.zip,JUNIT_R6.xml,1156f59fa0fd3c78caf7a75219775c5f372648b32820f5b314f725d4f0a6ac6e,567 source + 21 UDP + 4 CLI/evening + 3 launch-budget + 2 variant/probe = 597 JUnit nodes; Rust tests not in this total
+R8,678,0,0,0,ERGEBNISSE_R8.zip,acceptance_r8_complete.xml,69a9e3beb1ed956b8a3f048f05f66379d5792e9cda2e3793dc267fd9df58c591,final 678-node product selection
+R9B-rest,971,0,0,0,ERGEBNISSE_R9B_RESTABNAHME_FORTSETZUNG.zip,fortsetzung/acceptance.xml,fe63ef4d5301e277ec8e1cf126e43db8eba5d6e4b30a77b7ea54246161fb8414,final product selection
+R9C,1012,0,0,0,ERGEBNISSE_R9C.zip,final_acceptance.xml,058cc7e70cba1037c7bdc262570c5f02598130075eca3acb47fe564af932cee2,final product selection after capture fix
+R9C-Tk,29,0,0,0,ERGEBNISSE_R9C.zip,final_gui.xml,2e81ffb32a4a297d46a6151ac7198a7281cc77d2933614b0bda9596a022b89d3,Tk cases; real H10 retest is separate
+R9E-local,70,0,0,0,ERGEBNISSE_R9E_FIXES_TESTS.zip,sitzung_8ae6gcyi/pytest_r9e_final.xml,78ffc97d34e39a0be806060aa1bba50154847bd339c9406240854717df886ddb,focused; overlaps host selection
+R9E-host,229,0,0,0,ERGEBNISSE_R9E_FIXES_TESTS.zip,sitzung_8ae6gcyi/FOCUSED_TESTS.xml,292d28e19b358daa0ce2e2d58ad58b878341db6c923bd395eff9de717288368e,focused; not a full project suite
+R9G-host-final,122,0,0,0,ERGEBNISSE_R9G.zip,local_52o_a8ia/host_tests/tests.xml,33b74683df669c7c06dc231b1430573544083a5837529acd5e34cc468e4e74ca,final host suite before eval_02

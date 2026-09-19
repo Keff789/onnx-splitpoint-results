@@ -1,0 +1,159 @@
+{
+  "scope": "Drei beauftragte reale Geräte-GUI-Zellen; lokale Tk-CPU-Tests separat",
+  "entries": [
+    {
+      "key": "hailo8_detection",
+      "start_count": 1,
+      "journal_status": "TERMINAL_UI",
+      "expected_split": "b021",
+      "split_runtime_evidenced": true,
+      "selected_native_rows": 3,
+      "runtime_ok_rows": 3,
+      "terminal_axes": {
+        "status": "ok",
+        "technical_status": "ok",
+        "quality_decision": "fail",
+        "finalization_status": "pass",
+        "blocking_reasons": [],
+        "finalization_source": "${CONTROLLER_HOME}/Models/EvaluationRuns/r9b_restabnahme_20260917_084323/r9b_restabnahme_hailo8_detection_20260917_092529/reports/artifact_index_closure.json"
+      },
+      "run_dirs": [
+        "${CONTROLLER_HOME}/Models/EvaluationRuns/r9b_restabnahme_20260917_084323/r9b_restabnahme_hailo8_detection_20260917_092529"
+      ],
+      "duration_s": 538.969143735012,
+      "actual_button": {
+        "widget": ".!notebook.!frame9.!labelframe3.!frame.!button",
+        "text": "Start Evaluation Workflow",
+        "action": "normal_tk_button_invoke"
+      },
+      "terminal_dialogs": [
+        {
+          "path": ".!toplevel2",
+          "title": "Evaluation Workflow",
+          "text": "⚠\nEvaluation Workflow\nSee details below.\nAbgeschlossen mit Qualitätswarnungen. Native: 3 erfolgreich, 0 ausgeschlossen, 0 fehlgeschlagen/blockiert, 0 fehlend (ausgewählt: 3). Zentrale Qualität: 4 Auswertungen abgeschlossen, 1 außerhalb der Grenzen, 3 uneindeutig.\n\nResults bundle:\n${CONTROLLER_HOME}/Models/EvaluationRuns/r9b_restabnahme_20260917_084323/r9b_restabnahme_hailo8_detection_20260917_092529\n\nDebug log:\n${CONTROLLER_HOME}/Models/EvaluationRuns/r9b_restabnahme_20260917_084323/r9b_restabnahme_hailo8_detection_20260917_092529/evaluation_workflow.log\n\nCopy details\nOK",
+          "button": ".!toplevel2.!frame.!frame2.!button2",
+          "acknowledged": true,
+          "worker_terminal": true
+        }
+      ],
+      "gui_destroyed": true,
+      "product_lock_released": true,
+      "settings_restored": true,
+      "evidence": "HARDWARE_hailo8_detection.json"
+    },
+    {
+      "key": "deepx_classification",
+      "start_count": 1,
+      "journal_status": "TERMINAL_UI",
+      "expected_split": "b135",
+      "split_runtime_evidenced": true,
+      "selected_native_rows": 3,
+      "runtime_ok_rows": 3,
+      "terminal_axes": {
+        "status": "ok",
+        "technical_status": "ok",
+        "quality_decision": "inconclusive",
+        "finalization_status": "pass",
+        "blocking_reasons": [],
+        "finalization_source": "${CONTROLLER_HOME}/Models/EvaluationRuns/r9b_restabnahme_20260917_084323/r9b_restabnahme_deepx_classification_20260917_093618/reports/artifact_index_closure.json"
+      },
+      "run_dirs": [
+        "${CONTROLLER_HOME}/Models/EvaluationRuns/r9b_restabnahme_20260917_084323/r9b_restabnahme_deepx_classification_20260917_093618"
+      ],
+      "duration_s": 474.83322874701116,
+      "actual_button": {
+        "widget": ".!notebook.!frame9.!labelframe3.!frame.!button",
+        "text": "Start Evaluation Workflow",
+        "action": "normal_tk_button_invoke"
+      },
+      "terminal_dialogs": [
+        {
+          "path": ".!toplevel2",
+          "title": "Evaluation Workflow",
+          "text": "⚠\nEvaluation Workflow\nSee details below.\nAbgeschlossen mit Qualitätswarnungen. Native: 3 erfolgreich, 0 ausgeschlossen, 0 fehlgeschlagen/blockiert, 0 fehlend (ausgewählt: 3). Zentrale Qualität: 4 Auswertungen abgeschlossen, 0 außerhalb der Grenzen, 1 uneindeutig.\n\nResults bundle:\n${CONTROLLER_HOME}/Models/EvaluationRuns/r9b_restabnahme_20260917_084323/r9b_restabnahme_deepx_classification_20260917_093618\n\nDebug log:\n${CONTROLLER_HOME}/Models/EvaluationRuns/r9b_restabnahme_20260917_084323/r9b_restabnahme_deepx_classification_20260917_093618/evaluation_workflow.log\n\nCopy details\nOK",
+          "button": ".!toplevel2.!frame.!frame2.!button2",
+          "acknowledged": true,
+          "worker_terminal": true
+        }
+      ],
+      "gui_destroyed": true,
+      "product_lock_released": true,
+      "settings_restored": true,
+      "evidence": "HARDWARE_deepx_classification.json"
+    },
+    {
+      "key": "deepx_detection",
+      "start_count": 1,
+      "journal_status": "TERMINAL_UI",
+      "expected_split": "b062",
+      "split_runtime_evidenced": true,
+      "selected_native_rows": 3,
+      "runtime_ok_rows": 3,
+      "terminal_axes": {
+        "status": "ok",
+        "technical_status": "ok",
+        "quality_decision": "fail",
+        "finalization_status": "pass",
+        "blocking_reasons": [],
+        "finalization_source": "${CONTROLLER_HOME}/Models/EvaluationRuns/r9b_restabnahme_20260917_084323/r9b_restabnahme_deepx_detection_20260917_094725/reports/artifact_index_closure.json"
+      },
+      "run_dirs": [
+        "${CONTROLLER_HOME}/Models/EvaluationRuns/r9b_restabnahme_20260917_084323/r9b_restabnahme_deepx_detection_20260917_094725"
+      ],
+      "duration_s": 510.22645296296105,
+      "actual_button": {
+        "widget": ".!notebook.!frame9.!labelframe3.!frame.!button",
+        "text": "Start Evaluation Workflow",
+        "action": "normal_tk_button_invoke"
+      },
+      "terminal_dialogs": [
+        {
+          "path": ".!toplevel2",
+          "title": "Evaluation Workflow",
+          "text": "⚠\nEvaluation Workflow\nSee details below.\nAbgeschlossen mit Qualitätswarnungen. Native: 3 erfolgreich, 0 ausgeschlossen, 0 fehlgeschlagen/blockiert, 0 fehlend (ausgewählt: 3). Zentrale Qualität: 4 Auswertungen abgeschlossen, 2 außerhalb der Grenzen, 0 uneindeutig.\n\nResults bundle:\n${CONTROLLER_HOME}/Models/EvaluationRuns/r9b_restabnahme_20260917_084323/r9b_restabnahme_deepx_detection_20260917_094725\n\nDebug log:\n${CONTROLLER_HOME}/Models/EvaluationRuns/r9b_restabnahme_20260917_084323/r9b_restabnahme_deepx_detection_20260917_094725/evaluation_workflow.log\n\nCopy details\nOK",
+          "button": ".!toplevel2.!frame.!frame2.!button2",
+          "acknowledged": true,
+          "worker_terminal": true
+        }
+      ],
+      "gui_destroyed": true,
+      "product_lock_released": true,
+      "settings_restored": true,
+      "evidence": "HARDWARE_deepx_detection.json"
+    }
+  ],
+  "gui_starts_total": 3,
+  "max_gui_starts": 3,
+  "p2_preflights": [
+    {
+      "key": "deepx_classification",
+      "suite": "${CONTROLLER_HOME}/Models/EvaluationRuns/r9b_abschluss_20260916_223540/r9b_abschluss_deepx_classification_20260916_233831/models/mobilenet_v3_large/benchmark_set/legacy_suite",
+      "started": 1789629661.7099822,
+      "status": "HIT",
+      "max_total_seconds": 180,
+      "no_inference": true,
+      "no_build": true,
+      "elapsed_s": 2.4261994620319456,
+      "finished": 1789629664.1364505,
+      "local_survivors": []
+    },
+    {
+      "key": "deepx_detection",
+      "suite": "${CONTROLLER_HOME}/Models/EvaluationRuns/completsetdev_20260915_211333/models/yolo11l/benchmark_set/legacy_suite",
+      "started": 1789629679.3233585,
+      "status": "HIT",
+      "max_total_seconds": 180,
+      "no_inference": true,
+      "no_build": true,
+      "elapsed_s": 4.883092522039078,
+      "finished": 1789629684.2066777,
+      "local_survivors": []
+    }
+  ],
+  "p2_budget_scope": "Zwei dedizierte lesende Gerätepreflights; zusätzliche zwingende Cachegates innerhalb der drei normalen GUI-Ketten separat in deren Originalreports, keine Umgehung oder Wiederholung des dedizierten Tests.",
+  "wrapper_generations": 1,
+  "max_wrapper_generations": 1,
+  "model_builds": 0,
+  "energy_measurements": 0,
+  "retry_starts": 0
+}

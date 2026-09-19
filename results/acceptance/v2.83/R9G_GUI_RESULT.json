@@ -1,0 +1,443 @@
+{
+  "phase": "eval",
+  "started": true,
+  "run_created": true,
+  "dialogs": [
+    {
+      "path": ".!toplevel2",
+      "title": "Evaluation Workflow",
+      "text": "⚠\nEvaluation Workflow\nSee details below.\nAbgeschlossen mit Qualitätswarnungen. Native: 63 erfolgreich, 0 ausgeschlossen, 0 fehlgeschlagen/blockiert, 0 fehlend (ausgewählt: 63). Zentrale Qualität: 77 Auswertungen abgeschlossen, 25 außerhalb der Grenzen, 12 uneindeutig. Native-Energie: 63 von 63 gestarteten Zeilen vollständig verifiziert; 0 fehlgeschlagen/nicht importierbar. Energie-Replikate: 189/189 gültige logische Wiederholungen. Collectorversuche: 189 gestartet, 0 fehlgeschlagen (separate Versuchszählung).\n\nResults bundle:\n${CONTROLLER_HOME}/Models/EvaluationRuns/v283_R9G_20260918_133810_7vb48dms/eval_02/r9g_eval_20260918_171131\n\nDebug log:\n${CONTROLLER_HOME}/Models/EvaluationRuns/v283_R9G_20260918_133810_7vb48dms/eval_02/r9g_eval_20260918_171131/evaluation_workflow.log\n\nCopy details\nOK",
+      "button": ".!toplevel2.!frame.!frame2.!button2",
+      "acknowledged": true,
+      "worker_terminal": true
+    }
+  ],
+  "cleanup_proven": true,
+  "started_epoch": 1789744251.887255,
+  "queue_epoch": 1789744255.4532516,
+  "jobs": [
+    {
+      "status": "warning",
+      "worker_alive": false
+    },
+    {
+      "status": "warning",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "warning",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "warning",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "warning",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "warning",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "warning",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "warning",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "warning",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "warning",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    },
+    {
+      "status": "success",
+      "worker_alive": false
+    }
+  ],
+  "status_widget": "Abgeschlossen mit Qualitätswarnungen",
+  "run_dirs": [
+    "${CONTROLLER_HOME}/Models/EvaluationRuns/v283_R9G_20260918_133810_7vb48dms/eval_02/r9g_eval_20260918_171131"
+  ],
+  "terminal_reached": true,
+  "settings_restored": true,
+  "run_status": [
+    {
+      "technical_status": "ok",
+      "completion": {
+        "counts": {
+          "central_quality_completed": 77,
+          "central_quality_failed": 25,
+          "central_quality_inconclusive": 12,
+          "central_quality_missing": 0,
+          "central_quality_started": 77,
+          "energy_failed": 0,
+          "energy_quality_qualified": 0,
+          "energy_started": 63,
+          "energy_verified": 63,
+          "generic_excluded": 0,
+          "native_excluded": 0,
+          "native_failed_or_blocked": 0,
+          "native_measured": 63,
+          "native_missing": 0,
+          "native_present": 63,
+          "native_selected": 63,
+          "native_validation_technical_errors": 0,
+          "native_validation_total_technical_errors": 0
+        },
+        "detail_lines": [
+          "Native: 63 erfolgreich, 0 ausgeschlossen, 0 fehlgeschlagen/blockiert, 0 fehlend (ausgewählt: 63).",
+          "Zentrale Qualität: 77 Auswertungen abgeschlossen, 25 außerhalb der Grenzen, 12 uneindeutig.",
+          "Native-Energie: 63 von 63 gestarteten Zeilen vollständig verifiziert; 0 fehlgeschlagen/nicht importierbar.",
+          "Energie-Replikate: 189/189 gültige logische Wiederholungen.",
+          "Collectorversuche: 189 gestartet, 0 fehlgeschlagen (separate Versuchszählung)."
+        ],
+        "label": "Abgeschlossen mit Qualitätswarnungen",
+        "message": "Abgeschlossen mit Qualitätswarnungen. Native: 63 erfolgreich, 0 ausgeschlossen, 0 fehlgeschlagen/blockiert, 0 fehlend (ausgewählt: 63). Zentrale Qualität: 77 Auswertungen abgeschlossen, 25 außerhalb der Grenzen, 12 uneindeutig. Native-Energie: 63 von 63 gestarteten Zeilen vollständig verifiziert; 0 fehlgeschlagen/nicht importierbar. Energie-Replikate: 189/189 gültige logische Wiederholungen. Collectorversuche: 189 gestartet, 0 fehlgeschlagen (separate Versuchszählung).",
+        "quality_warning": true,
+        "scientific_pass_semantics": "false means no confirmed release under the declared quality/claim criteria; valid negative observations remain usable descriptively",
+        "severity": "warning",
+        "status": "ok",
+        "warning_present": true
+      },
+      "blocking_reasons": [],
+      "aggregate_quality_decision": "fail"
+    }
+  ],
+  "unresolved_cleanup_runs": [],
+  "finished_epoch": 1789757124.1328733
+}

@@ -1,0 +1,589 @@
+{
+  "core_entries": 8436,
+  "supplement_entries": 11030,
+  "supplement_files_verified": 11028,
+  "sup_bad": [],
+  "collection_status": {
+    "status": "COMPLETE_SUPPLEMENT",
+    "run_id": "r9g_eval_20260918_171131",
+    "source_run": "${CONTROLLER_HOME}/Models/EvaluationRuns/v283_R9G_20260918_133810_7vb48dms/eval_02/r9g_eval_20260918_171131",
+    "base_core": "${CONTROLLER_HOME}/Downloads/r9g_eval_20260918_171131_debug_core.zip",
+    "created_at": "2026-09-18T20:56:59.918025+00:00",
+    "copied_files": 11028,
+    "already_in_core": 8435,
+    "missing_or_skipped": [],
+    "changed_against_index": [],
+    "scope": "Text evidence only. No binary model, array, image or energy trace. No commands executed."
+  },
+  "terminal_index_files_verified": 19463,
+  "terminal_index_mismatch": [],
+  "terminal_index_unindexed": [
+    "artifact_index.json"
+  ],
+  "energy_rows": 63,
+  "energy_attempts": 189,
+  "energy_checks_failed": [],
+  "receive_logs": 189,
+  "receive_pass": 189,
+  "command_window_checks": {
+    "request": {
+      "True": 189
+    },
+    "marker": {
+      "True": 189
+    },
+    "postprocessor_result": {
+      "True": 189
+    },
+    "result": {
+      "True": 189
+    },
+    "timing": {
+      "True": 189
+    },
+    "crop": {
+      "True": 189
+    },
+    "time": {
+      "True": 189
+    }
+  },
+  "energy_ranges": {
+    "power_w": [
+      14.570169957025001,
+      21.252209908607156
+    ],
+    "active_s": [
+      2.2075,
+      4.3835
+    ],
+    "cv_pct": [
+      0.2050080936661097,
+      4.20679113359453
+    ],
+    "mean_j_image": [
+      0.038303305804447116,
+      7.041759925901452
+    ]
+  },
+  "energy_quality_counts": {
+    "quality_failed": 25,
+    "screening_only": 26,
+    "quality_inconclusive": 12
+  },
+  "energy_claim_exclusion_counts": {
+    "screening_energy_policy_nonclaimable;native_accuracy_gate_not_passed": 17,
+    "screening_energy_policy_nonclaimable;native_quality_claim_result_not_verified": 2,
+    "native_output_endpoint_not_verified;screening_energy_policy_nonclaimable;native_accuracy_gate_inconclusive": 3,
+    "native_output_endpoint_not_verified;screening_energy_policy_nonclaimable;native_accuracy_gate_not_passed": 6,
+    "native_output_endpoint_not_verified;screening_energy_policy_nonclaimable;native_quality_claim_result_not_verified": 3,
+    "screening_energy_policy_nonclaimable;native_accuracy_gate_inconclusive": 7,
+    "prepared_feed_identity_missing;screening_energy_policy_nonclaimable;native_accuracy_gate_not_passed": 2,
+    "prepared_feed_identity_missing;screening_energy_policy_nonclaimable;native_accuracy_gate_inconclusive": 2,
+    "screening_energy_policy_nonclaimable;native_quality_claim_result_not_verified;required_tensorrt_full_normalized_metrics_invalid": 20,
+    "screening_energy_policy_nonclaimable;native_quality_claim_result_not_verified;host_normalized_verified": 1
+  },
+  "pair_reason_counts": {
+    "validation_input_or_image_hash_mismatch_or_missing": 7,
+    "prepared_feed_source_image_hash_mismatch_or_missing": 7,
+    "split_claim_gate_failed": 42,
+    "baseline_claim_gate_failed": 42,
+    "comparison_energy_per_work_missing": 20,
+    "baseline_required_host_normalization_unavailable": 21,
+    "active_duration_relative_tolerance_exceeded": 35,
+    "prepared_feed_pad_value_mismatch_or_missing": 4,
+    "output_endpoint_mismatch_or_missing": 24,
+    "endpoint_contract_hash_mismatch_or_missing": 24,
+    "split_endpoint_contract_incomplete": 24,
+    "split_output_endpoint_not_verified": 24
+  },
+  "generic_counts": {
+    "runtime_ok": {
+      "True": 56
+    },
+    "validation_ok": {
+      "True": 27,
+      "False": 29
+    },
+    "validation_verdict": {
+      "contract_fail_or_unavailable": 36,
+      "numerical_similarity_failed": 14,
+      "screening_only": 6
+    },
+    "task_quality_status": {
+      "fail": 25,
+      "pass": 19,
+      "inconclusive": 12
+    },
+    "energy_coverage_status": {
+      "missing_or_not_measured": 28,
+      "missing_row_level_energy": 28
+    }
+  },
+  "trt_classification_energy_trtexec_replicates": [
+    {
+      "model": "mobilenet_v3_large",
+      "setup_id": "orin_nx_deepx_m1_01",
+      "repeat": 0,
+      "trtexec": true,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__mobilenet_v3_large__full__orin_nx_deepx_m1_01__5be3b8a68eb2/plan_3e0023b8f77f417d9630bdb08981d578/attempt_28e00a164df9406a9cfb875cf353d37e/run_000/workload_stdout.log"
+    },
+    {
+      "model": "mobilenet_v3_large",
+      "setup_id": "orin_nx_deepx_m1_01",
+      "repeat": 1,
+      "trtexec": true,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__mobilenet_v3_large__full__orin_nx_deepx_m1_01__5be3b8a68eb2/plan_3e0023b8f77f417d9630bdb08981d578/attempt_28e00a164df9406a9cfb875cf353d37e/run_001/workload_stdout.log"
+    },
+    {
+      "model": "mobilenet_v3_large",
+      "setup_id": "orin_nx_deepx_m1_01",
+      "repeat": 2,
+      "trtexec": true,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__mobilenet_v3_large__full__orin_nx_deepx_m1_01__5be3b8a68eb2/plan_3e0023b8f77f417d9630bdb08981d578/attempt_28e00a164df9406a9cfb875cf353d37e/run_002/workload_stdout.log"
+    },
+    {
+      "model": "mobilenet_v3_large",
+      "setup_id": "orin_nx_hailo10_01",
+      "repeat": 0,
+      "trtexec": true,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__mobilenet_v3_large__full__orin_nx_hailo10_01__ddcd9afd8ea3/plan_3e0023b8f77f417d9630bdb08981d578/attempt_b7288266d6da4fe690d20da98ab929a0/run_000/workload_stdout.log"
+    },
+    {
+      "model": "mobilenet_v3_large",
+      "setup_id": "orin_nx_hailo10_01",
+      "repeat": 1,
+      "trtexec": true,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__mobilenet_v3_large__full__orin_nx_hailo10_01__ddcd9afd8ea3/plan_3e0023b8f77f417d9630bdb08981d578/attempt_b7288266d6da4fe690d20da98ab929a0/run_001/workload_stdout.log"
+    },
+    {
+      "model": "mobilenet_v3_large",
+      "setup_id": "orin_nx_hailo10_01",
+      "repeat": 2,
+      "trtexec": true,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__mobilenet_v3_large__full__orin_nx_hailo10_01__ddcd9afd8ea3/plan_3e0023b8f77f417d9630bdb08981d578/attempt_b7288266d6da4fe690d20da98ab929a0/run_002/workload_stdout.log"
+    },
+    {
+      "model": "mobilenet_v3_large",
+      "setup_id": "orin_nx_hailo8_01",
+      "repeat": 0,
+      "trtexec": true,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__mobilenet_v3_large__full__orin_nx_hailo8_01__5ac378e7d609/plan_3e0023b8f77f417d9630bdb08981d578/attempt_59750a072b764e319a0f9ece996c8792/run_000/workload_stdout.log"
+    },
+    {
+      "model": "mobilenet_v3_large",
+      "setup_id": "orin_nx_hailo8_01",
+      "repeat": 1,
+      "trtexec": true,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__mobilenet_v3_large__full__orin_nx_hailo8_01__5ac378e7d609/plan_3e0023b8f77f417d9630bdb08981d578/attempt_59750a072b764e319a0f9ece996c8792/run_001/workload_stdout.log"
+    },
+    {
+      "model": "mobilenet_v3_large",
+      "setup_id": "orin_nx_hailo8_01",
+      "repeat": 2,
+      "trtexec": true,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__mobilenet_v3_large__full__orin_nx_hailo8_01__5ac378e7d609/plan_3e0023b8f77f417d9630bdb08981d578/attempt_59750a072b764e319a0f9ece996c8792/run_002/workload_stdout.log"
+    },
+    {
+      "model": "regnet_x_1_6gf",
+      "setup_id": "orin_nx_deepx_m1_01",
+      "repeat": 0,
+      "trtexec": true,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__regnet_x_1_6gf__full__orin_nx_deepx_m1_01__00ed8381fd52/plan_3e0023b8f77f417d9630bdb08981d578/attempt_211c746b7097426c9ace3b8a45a314c9/run_000/workload_stdout.log"
+    },
+    {
+      "model": "regnet_x_1_6gf",
+      "setup_id": "orin_nx_deepx_m1_01",
+      "repeat": 1,
+      "trtexec": true,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__regnet_x_1_6gf__full__orin_nx_deepx_m1_01__00ed8381fd52/plan_3e0023b8f77f417d9630bdb08981d578/attempt_211c746b7097426c9ace3b8a45a314c9/run_001/workload_stdout.log"
+    },
+    {
+      "model": "regnet_x_1_6gf",
+      "setup_id": "orin_nx_deepx_m1_01",
+      "repeat": 2,
+      "trtexec": true,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__regnet_x_1_6gf__full__orin_nx_deepx_m1_01__00ed8381fd52/plan_3e0023b8f77f417d9630bdb08981d578/attempt_211c746b7097426c9ace3b8a45a314c9/run_002/workload_stdout.log"
+    },
+    {
+      "model": "regnet_x_1_6gf",
+      "setup_id": "orin_nx_hailo10_01",
+      "repeat": 0,
+      "trtexec": true,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__regnet_x_1_6gf__full__orin_nx_hailo10_01__536346a3f4cb/plan_3e0023b8f77f417d9630bdb08981d578/attempt_08d0a4925e1248b89856b40ce02c82c7/run_000/workload_stdout.log"
+    },
+    {
+      "model": "regnet_x_1_6gf",
+      "setup_id": "orin_nx_hailo10_01",
+      "repeat": 1,
+      "trtexec": true,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__regnet_x_1_6gf__full__orin_nx_hailo10_01__536346a3f4cb/plan_3e0023b8f77f417d9630bdb08981d578/attempt_08d0a4925e1248b89856b40ce02c82c7/run_001/workload_stdout.log"
+    },
+    {
+      "model": "regnet_x_1_6gf",
+      "setup_id": "orin_nx_hailo10_01",
+      "repeat": 2,
+      "trtexec": true,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__regnet_x_1_6gf__full__orin_nx_hailo10_01__536346a3f4cb/plan_3e0023b8f77f417d9630bdb08981d578/attempt_08d0a4925e1248b89856b40ce02c82c7/run_002/workload_stdout.log"
+    },
+    {
+      "model": "regnet_x_1_6gf",
+      "setup_id": "orin_nx_hailo8_01",
+      "repeat": 0,
+      "trtexec": true,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__regnet_x_1_6gf__full__orin_nx_hailo8_01__4d9853ea951b/plan_3e0023b8f77f417d9630bdb08981d578/attempt_182f48a28fe64f259970735a24a23e5a/run_000/workload_stdout.log"
+    },
+    {
+      "model": "regnet_x_1_6gf",
+      "setup_id": "orin_nx_hailo8_01",
+      "repeat": 1,
+      "trtexec": true,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__regnet_x_1_6gf__full__orin_nx_hailo8_01__4d9853ea951b/plan_3e0023b8f77f417d9630bdb08981d578/attempt_182f48a28fe64f259970735a24a23e5a/run_001/workload_stdout.log"
+    },
+    {
+      "model": "regnet_x_1_6gf",
+      "setup_id": "orin_nx_hailo8_01",
+      "repeat": 2,
+      "trtexec": true,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__regnet_x_1_6gf__full__orin_nx_hailo8_01__4d9853ea951b/plan_3e0023b8f77f417d9630bdb08981d578/attempt_182f48a28fe64f259970735a24a23e5a/run_002/workload_stdout.log"
+    },
+    {
+      "model": "resnet50",
+      "setup_id": "orin_nx_deepx_m1_01",
+      "repeat": 0,
+      "trtexec": true,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_deepx_m1_01__b097620d9644/plan_3e0023b8f77f417d9630bdb08981d578/attempt_d45024f77f0f4a9989376213cea382e6/run_000/workload_stdout.log"
+    },
+    {
+      "model": "resnet50",
+      "setup_id": "orin_nx_deepx_m1_01",
+      "repeat": 1,
+      "trtexec": true,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_deepx_m1_01__b097620d9644/plan_3e0023b8f77f417d9630bdb08981d578/attempt_d45024f77f0f4a9989376213cea382e6/run_001/workload_stdout.log"
+    },
+    {
+      "model": "resnet50",
+      "setup_id": "orin_nx_deepx_m1_01",
+      "repeat": 2,
+      "trtexec": true,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_deepx_m1_01__b097620d9644/plan_3e0023b8f77f417d9630bdb08981d578/attempt_d45024f77f0f4a9989376213cea382e6/run_002/workload_stdout.log"
+    },
+    {
+      "model": "resnet50",
+      "setup_id": "orin_nx_hailo10_01",
+      "repeat": 0,
+      "trtexec": true,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo10_01__53560f009513/plan_3e0023b8f77f417d9630bdb08981d578/attempt_e8a938885b644d8d8983498936166f5c/run_000/workload_stdout.log"
+    },
+    {
+      "model": "resnet50",
+      "setup_id": "orin_nx_hailo10_01",
+      "repeat": 1,
+      "trtexec": true,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo10_01__53560f009513/plan_3e0023b8f77f417d9630bdb08981d578/attempt_e8a938885b644d8d8983498936166f5c/run_001/workload_stdout.log"
+    },
+    {
+      "model": "resnet50",
+      "setup_id": "orin_nx_hailo10_01",
+      "repeat": 2,
+      "trtexec": true,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo10_01__53560f009513/plan_3e0023b8f77f417d9630bdb08981d578/attempt_e8a938885b644d8d8983498936166f5c/run_002/workload_stdout.log"
+    },
+    {
+      "model": "resnet50",
+      "setup_id": "orin_nx_hailo8_01",
+      "repeat": 0,
+      "trtexec": true,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__1cdd9fc78dfe/plan_3e0023b8f77f417d9630bdb08981d578/attempt_a46c14c3f5704ce390ed0b14a0009c93/run_000/workload_stdout.log"
+    },
+    {
+      "model": "resnet50",
+      "setup_id": "orin_nx_hailo8_01",
+      "repeat": 1,
+      "trtexec": true,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__1cdd9fc78dfe/plan_3e0023b8f77f417d9630bdb08981d578/attempt_a46c14c3f5704ce390ed0b14a0009c93/run_001/workload_stdout.log"
+    },
+    {
+      "model": "resnet50",
+      "setup_id": "orin_nx_hailo8_01",
+      "repeat": 2,
+      "trtexec": true,
+      "path": "reports/native_energy_measurements/measurements/native_full_tensorrt__resnet50__full__orin_nx_hailo8_01__1cdd9fc78dfe/plan_3e0023b8f77f417d9630bdb08981d578/attempt_a46c14c3f5704ce390ed0b14a0009c93/run_002/workload_stdout.log"
+    }
+  ],
+  "trt_normalization_checks": [
+    {
+      "model": "mobilenet_v3_large",
+      "setup_id": "orin_nx_deepx_m1_01",
+      "mean_of_ratios": 0.04030924906614682,
+      "ratio_of_means": 0.04030937385549089,
+      "relative_delta": 3.0957992757860297e-06,
+      "unit_counts": [
+        940,
+        934,
+        935
+      ],
+      "power_relative_delta": 1.8089674541851933e-05
+    },
+    {
+      "model": "mobilenet_v3_large",
+      "setup_id": "orin_nx_hailo10_01",
+      "mean_of_ratios": 0.044834113465819676,
+      "ratio_of_means": 0.04483359082223805,
+      "relative_delta": 1.1657274812107968e-05,
+      "unit_counts": [
+        937,
+        940,
+        936
+      ],
+      "power_relative_delta": 8.575589416406892e-07
+    },
+    {
+      "model": "mobilenet_v3_large",
+      "setup_id": "orin_nx_hailo8_01",
+      "mean_of_ratios": 0.04702929590779136,
+      "ratio_of_means": 0.047028589089084104,
+      "relative_delta": 1.502932786073802e-05,
+      "unit_counts": [
+        910,
+        910,
+        913
+      ],
+      "power_relative_delta": 9.780036240340696e-06
+    },
+    {
+      "model": "regnet_x_1_6gf",
+      "setup_id": "orin_nx_deepx_m1_01",
+      "mean_of_ratios": 0.11300797171202698,
+      "ratio_of_means": 0.11299866017319021,
+      "relative_delta": 8.239718575334667e-05,
+      "unit_counts": [
+        350,
+        351,
+        343
+      ],
+      "power_relative_delta": 2.206471294094521e-05
+    },
+    {
+      "model": "regnet_x_1_6gf",
+      "setup_id": "orin_nx_hailo10_01",
+      "mean_of_ratios": 0.12949885212511314,
+      "ratio_of_means": 0.1294980909065667,
+      "relative_delta": 5.878187597456777e-06,
+      "unit_counts": [
+        328,
+        327,
+        330
+      ],
+      "power_relative_delta": 0.0
+    },
+    {
+      "model": "regnet_x_1_6gf",
+      "setup_id": "orin_nx_hailo8_01",
+      "mean_of_ratios": 0.13250703748000336,
+      "ratio_of_means": 0.13250728901615433,
+      "relative_delta": 1.8982852212780506e-06,
+      "unit_counts": [
+        331,
+        332,
+        332
+      ],
+      "power_relative_delta": 4.7482265163169425e-06
+    },
+    {
+      "model": "resnet50",
+      "setup_id": "orin_nx_deepx_m1_01",
+      "mean_of_ratios": 0.07729383944546683,
+      "ratio_of_means": 0.07729341566883423,
+      "relative_delta": 5.482670231485028e-06,
+      "unit_counts": [
+        564,
+        568,
+        566
+      ],
+      "power_relative_delta": 1.708182190975334e-05
+    },
+    {
+      "model": "resnet50",
+      "setup_id": "orin_nx_hailo10_01",
+      "mean_of_ratios": 0.0866408465905371,
+      "ratio_of_means": 0.08664150891944059,
+      "relative_delta": 7.644534068514228e-06,
+      "unit_counts": [
+        569,
+        567,
+        568
+      ],
+      "power_relative_delta": 3.9681309616862654e-05
+    },
+    {
+      "model": "resnet50",
+      "setup_id": "orin_nx_hailo8_01",
+      "mean_of_ratios": 0.0872214057566726,
+      "ratio_of_means": 0.08722013844234733,
+      "relative_delta": 1.452985438928713e-05,
+      "unit_counts": [
+        567,
+        566,
+        571
+      ],
+      "power_relative_delta": 3.129473652390597e-05
+    },
+    {
+      "model": "yolo11l",
+      "setup_id": "orin_nx_deepx_m1_01",
+      "mean_of_ratios": 1.210002845007702,
+      "ratio_of_means": 1.209881747645836,
+      "relative_delta": 0.00010008022903895881,
+      "unit_counts": [
+        39,
+        38,
+        39
+      ],
+      "power_relative_delta": 2.138139714493001e-16
+    },
+    {
+      "model": "yolo11l",
+      "setup_id": "orin_nx_hailo10_01",
+      "mean_of_ratios": 1.3418669345021772,
+      "ratio_of_means": 1.341866934502177,
+      "relative_delta": 1.6547438439371652e-16,
+      "unit_counts": [
+        38,
+        38,
+        38
+      ],
+      "power_relative_delta": 3.624297019476823e-06
+    },
+    {
+      "model": "yolo11l",
+      "setup_id": "orin_nx_hailo8_01",
+      "mean_of_ratios": 1.3422694337261205,
+      "ratio_of_means": 1.3417106009362227,
+      "relative_delta": 0.0004163342886729199,
+      "unit_counts": [
+        39,
+        38,
+        40
+      ],
+      "power_relative_delta": 2.427218059514619e-05
+    },
+    {
+      "model": "yolo26m",
+      "setup_id": "orin_nx_deepx_m1_01",
+      "mean_of_ratios": 0.6371144716403813,
+      "ratio_of_means": 0.6370685922062403,
+      "relative_delta": 7.20112886822212e-05,
+      "unit_counts": [
+        83,
+        83,
+        82
+      ],
+      "power_relative_delta": 1.8993242753770545e-16
+    },
+    {
+      "model": "yolo26m",
+      "setup_id": "orin_nx_hailo10_01",
+      "mean_of_ratios": 0.6975416876231453,
+      "ratio_of_means": 0.6975347624602607,
+      "relative_delta": 9.92795557235149e-06,
+      "unit_counts": [
+        82,
+        83,
+        83
+      ],
+      "power_relative_delta": 0.0
+    },
+    {
+      "model": "yolo26m",
+      "setup_id": "orin_nx_hailo8_01",
+      "mean_of_ratios": 0.7064920874963297,
+      "ratio_of_means": 0.7064788819342849,
+      "relative_delta": 1.869173381922671e-05,
+      "unit_counts": [
+        83,
+        84,
+        84
+      ],
+      "power_relative_delta": 1.846116383841885e-16
+    },
+    {
+      "model": "yolo26s",
+      "setup_id": "orin_nx_deepx_m1_01",
+      "mean_of_ratios": 0.3298702320709062,
+      "ratio_of_means": 0.32983952846076237,
+      "relative_delta": 9.307784443321746e-05,
+      "unit_counts": [
+        146,
+        145,
+        148
+      ],
+      "power_relative_delta": 9.208333665436724e-05
+    },
+    {
+      "model": "yolo26s",
+      "setup_id": "orin_nx_hailo10_01",
+      "mean_of_ratios": 0.36550417028993704,
+      "ratio_of_means": 0.36550019128812,
+      "relative_delta": 1.088633766853456e-05,
+      "unit_counts": [
+        144,
+        145,
+        144
+      ],
+      "power_relative_delta": 9.61401659343617e-06
+    },
+    {
+      "model": "yolo26s",
+      "setup_id": "orin_nx_hailo8_01",
+      "mean_of_ratios": 0.369889741146036,
+      "ratio_of_means": 0.369889741146036,
+      "relative_delta": 0.0,
+      "unit_counts": [
+        147,
+        147,
+        147
+      ],
+      "power_relative_delta": 1.4353615568940211e-05
+    },
+    {
+      "model": "yolov7_paper",
+      "setup_id": "orin_nx_deepx_m1_01",
+      "mean_of_ratios": 3.236734590831789,
+      "ratio_of_means": 3.236734590831789,
+      "relative_delta": 0.0,
+      "unit_counts": [
+        13,
+        13,
+        13
+      ],
+      "power_relative_delta": 1.2291264527392675e-16
+    },
+    {
+      "model": "yolov7_paper",
+      "setup_id": "orin_nx_hailo10_01",
+      "mean_of_ratios": 3.44538225594726,
+      "ratio_of_means": 3.443966615463044,
+      "relative_delta": 0.0004108805290827857,
+      "unit_counts": [
+        14,
+        14,
+        13
+      ],
+      "power_relative_delta": 3.328418659614037e-05
+    },
+    {
+      "model": "yolov7_paper",
+      "setup_id": "orin_nx_hailo8_01",
+      "mean_of_ratios": 3.792889689718045,
+      "ratio_of_means": 3.790555926555239,
+      "relative_delta": 0.0006152995087446021,
+      "unit_counts": [
+        13,
+        12,
+        13
+      ],
+      "power_relative_delta": 0.00025878380886554676
+    }
+  ]
+}

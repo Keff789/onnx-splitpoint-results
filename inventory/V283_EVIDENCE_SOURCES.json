@@ -1,0 +1,189 @@
+{
+  "document_date": "2026-09-19",
+  "repo_base_commit": "5636017e5db3229862ba10c609b5f4b5f290e76b",
+  "mode": "reviewable patch only; not committed or pushed",
+  "public_export_policy": "No compiled models, dataset images, raw arrays, raw traces, complete archives, private live profiles or credentials. Logical setup IDs retained. Redactions do not alter metrics.",
+  "scope": "Completed v2.83 evidence through R9G; R9H only partial status in docs, no final acceptance claim",
+  "sources": [
+    {
+      "destination": "results/acceptance/v2.83/R8_ABSCHLUSS.md",
+      "source": "ERGEBNISSE_R8.zip::ABSCHLUSSBERICHT_R8.md",
+      "source_sha256": "5c9c1dcdfead5922259047242a515175efcc45ed131ce676f87886592a4ee38c",
+      "role": "primary",
+      "export": "UTF-8; host home paths and private IPv4 addresses redacted; no numerical values changed"
+    },
+    {
+      "destination": "results/acceptance/v2.83/R9B_RESTABNAHME.md",
+      "source": "ERGEBNISSE_R9B_RESTABNAHME_FORTSETZUNG.zip::fortsetzung/ABSCHLUSSBERICHT.md",
+      "source_sha256": "77c6dee7a97534f926fa61a1938e8dfb27b7d1ff8bcba836d7195246a353071c",
+      "role": "primary",
+      "export": "UTF-8; host home paths and private IPv4 addresses redacted; no numerical values changed"
+    },
+    {
+      "destination": "results/acceptance/v2.83/R9B_GUI_COVERAGE.json",
+      "source": "ERGEBNISSE_R9B_RESTABNAHME_FORTSETZUNG.zip::fortsetzung/GUI_COVERAGE.json",
+      "source_sha256": "09fba7d69fdf3bcf100a96150e35a3e85cee6d2a5644be055669f28424c478fe",
+      "role": "primary",
+      "export": "UTF-8; host home paths and private IPv4 addresses redacted; no numerical values changed"
+    },
+    {
+      "destination": "results/acceptance/v2.83/R9C_H10_NACHTEST.md",
+      "source": "ERGEBNISSE_R9C_H10_NACHTEST.zip::ABSCHLUSSBERICHT.md",
+      "source_sha256": "ddcac1d8c6c94362ff8f71686596c2b654771a26426f39c8c4adaa7ac09f4df9",
+      "role": "primary",
+      "export": "UTF-8; host home paths and private IPv4 addresses redacted; no numerical values changed"
+    },
+    {
+      "destination": "results/acceptance/v2.83/R9G_GUI_RESULT.json",
+      "source": "ERGEBNISSE_R9G.zip::eval_02/GUI_RESULT.json",
+      "source_sha256": "701a6e0b390a79348776473746841dbca47d537594f3da839979c5edc33738e7",
+      "role": "primary",
+      "export": "UTF-8; host home paths and private IPv4 addresses redacted; no numerical values changed"
+    },
+    {
+      "destination": "results/acceptance/v2.83/R9G_HOST_TESTS.xml",
+      "source": "ERGEBNISSE_R9G.zip::local_52o_a8ia/host_tests/tests.xml",
+      "source_sha256": "33b74683df669c7c06dc231b1430573544083a5837529acd5e34cc468e4e74ca",
+      "role": "primary",
+      "export": "UTF-8; host home paths and private IPv4 addresses redacted; no numerical values changed"
+    },
+    {
+      "destination": "results/evaluation/r9g_eval_20260918_171131/README.md",
+      "source": "R9G_Final_Review/AUSWERTUNG_FINAL.md",
+      "source_sha256": "d118c93f244bfa698f9430744cd09e41323a68481e5bacd251fc9fcb96c34ceb",
+      "role": "derived_review",
+      "export": "UTF-8; host home paths and private IPv4 addresses redacted; no numerical values changed; public preface and local table links added"
+    },
+    {
+      "destination": "results/evaluation/r9g_eval_20260918_171131/ENERGY_AND_INTEGRITY_AUDIT.json",
+      "source": "R9G_Final_Review/PRUEFUNG_FINAL.json",
+      "source_sha256": "81ec798384cc400610de3c3615d1965a363a545b7d44b6cc21123faa9825932f",
+      "role": "derived_review",
+      "export": "UTF-8; host home paths and private IPv4 addresses redacted; no numerical values changed"
+    },
+    {
+      "destination": "results/evaluation/r9g_eval_20260918_171131/Backfill.csv",
+      "source": "R9G_Auswertung_Core/Backfill.csv",
+      "source_sha256": "731a08021b8a93a3b7a6a7210e58d0d8081fcc2ef9483a05165e1acda6eed3b1",
+      "role": "derived_table",
+      "export": "UTF-8; host home paths and private IPv4 addresses redacted; no numerical values changed"
+    },
+    {
+      "destination": "diagnostics/v2.83_h10_output/H10_OUTPUT_BEFUND.md",
+      "source": "r9c_current_review/input/H10_OUTPUT_BEFUND.md",
+      "source_sha256": "370cda9512f9eca663b083c74db3f30b8ae32ee53f1befacc22c948ea690183f",
+      "role": "primary_diagnostic_report",
+      "export": "UTF-8; host home paths and private IPv4 addresses redacted; no numerical values changed"
+    },
+    {
+      "destination": "diagnostics/v2.83_h10_output/R9E_SDK_RESULT.json",
+      "source": "ERGEBNISSE_R9E_FIXES_TESTS.zip::compile_only/SDK_RESULT.json",
+      "source_sha256": "9a2439ec9aee528addfd3b6f80f14a7aa33d48a6f61080c1c6c24455811cdc9a",
+      "role": "primary_diagnostic_result",
+      "export": "UTF-8; host home paths and private IPv4 addresses redacted; no numerical values changed"
+    },
+    {
+      "destination": "results/evaluation/r9g_eval_20260918_171131/Full_42.csv",
+      "source": "R9G_Final_Review/R9G_Full_Splits_Energie_Qualitaet_FINAL.xlsx::Full_42",
+      "source_sha256": "899e4ed64a7b1932c7e7ca0d3a9c0d36c60d93f43355131bb52de810f33a1c90",
+      "role": "derived_reviewed_table",
+      "export": "CSV of existing cell values; units, endpoint caveats and all decisions preserved; no remeasurement"
+    },
+    {
+      "destination": "results/evaluation/r9g_eval_20260918_171131/Splits_21.csv",
+      "source": "R9G_Final_Review/R9G_Full_Splits_Energie_Qualitaet_FINAL.xlsx::Splits_21",
+      "source_sha256": "899e4ed64a7b1932c7e7ca0d3a9c0d36c60d93f43355131bb52de810f33a1c90",
+      "role": "derived_reviewed_table",
+      "export": "CSV of existing cell values; units, endpoint caveats and all decisions preserved; no remeasurement"
+    },
+    {
+      "destination": "results/evaluation/r9g_eval_20260918_171131/Energy_189.csv",
+      "source": "R9G_Final_Review/R9G_Full_Splits_Energie_Qualitaet_FINAL.xlsx::Energie_189",
+      "source_sha256": "899e4ed64a7b1932c7e7ca0d3a9c0d36c60d93f43355131bb52de810f33a1c90",
+      "role": "derived_reviewed_table",
+      "export": "CSV of existing cell values; units, endpoint caveats and all decisions preserved; no remeasurement"
+    },
+    {
+      "destination": "results/evaluation/r9g_eval_20260918_171131/ROW_SOURCES.csv",
+      "source": "R9G_Final_Review/R9G_Full_Splits_Energie_Qualitaet_FINAL.xlsx::Quellen",
+      "source_sha256": "899e4ed64a7b1932c7e7ca0d3a9c0d36c60d93f43355131bb52de810f33a1c90",
+      "role": "derived_reviewed_table",
+      "export": "CSV of existing cell values; units, endpoint caveats and all decisions preserved; no remeasurement"
+    },
+    {
+      "destination": "results/evaluation/r9g_eval_20260918_171131/OPEN_FINDINGS.json",
+      "source": "R9G_Final_Review/BEFUNDE_FUER_CODEX.json",
+      "source_sha256": "fb55ee1713e94a8556118483107f2b2056d6c87f19e5d3e9202c89765cca8961",
+      "role": "selected derived findings",
+      "export": "Projection; only stated subsets copied; see source for individual rows"
+    },
+    {
+      "destination": "results/evaluation/r9g_eval_20260918_171131/Quality_77.csv",
+      "source": "r9g_eval_20260918_171131_debug_core.zip::run/quality_management/central_quality_summary.json",
+      "source_sha256": "87fae0e66b3a7cfe4b32c0dcdbd5b5bcde30f78dcac18a7105871ee5ab4422be",
+      "role": "primary-report projection",
+      "export": "77 rows, metric values remain in original 0..1 units (NOT percent/AP points); decisions retained. Selected scalar fields only."
+    }
+  ],
+  "test_table_sources": [
+    {
+      "stage": "R3",
+      "archive": "ERGEBNISSE_R3.zip",
+      "member": "final_tests.junit.xml",
+      "sha256": "92902977cf83d44cfb48f6fdac91af6e83b422f5decfac4bb9a99fd389386575"
+    },
+    {
+      "stage": "R6-JUnit-all-suites",
+      "archive": "ERGEBNISSE_R6.zip",
+      "member": "JUNIT_R6.xml",
+      "sha256": "1156f59fa0fd3c78caf7a75219775c5f372648b32820f5b314f725d4f0a6ac6e"
+    },
+    {
+      "stage": "R8",
+      "archive": "ERGEBNISSE_R8.zip",
+      "member": "acceptance_r8_complete.xml",
+      "sha256": "69a9e3beb1ed956b8a3f048f05f66379d5792e9cda2e3793dc267fd9df58c591"
+    },
+    {
+      "stage": "R9B-rest",
+      "archive": "ERGEBNISSE_R9B_RESTABNAHME_FORTSETZUNG.zip",
+      "member": "fortsetzung/acceptance.xml",
+      "sha256": "fe63ef4d5301e277ec8e1cf126e43db8eba5d6e4b30a77b7ea54246161fb8414"
+    },
+    {
+      "stage": "R9C",
+      "archive": "ERGEBNISSE_R9C.zip",
+      "member": "final_acceptance.xml",
+      "sha256": "058cc7e70cba1037c7bdc262570c5f02598130075eca3acb47fe564af932cee2"
+    },
+    {
+      "stage": "R9C-Tk",
+      "archive": "ERGEBNISSE_R9C.zip",
+      "member": "final_gui.xml",
+      "sha256": "2e81ffb32a4a297d46a6151ac7198a7281cc77d2933614b0bda9596a022b89d3"
+    },
+    {
+      "stage": "R9E-local",
+      "archive": "ERGEBNISSE_R9E_FIXES_TESTS.zip",
+      "member": "sitzung_8ae6gcyi/pytest_r9e_final.xml",
+      "sha256": "78ffc97d34e39a0be806060aa1bba50154847bd339c9406240854717df886ddb"
+    },
+    {
+      "stage": "R9E-host",
+      "archive": "ERGEBNISSE_R9E_FIXES_TESTS.zip",
+      "member": "sitzung_8ae6gcyi/FOCUSED_TESTS.xml",
+      "sha256": "292d28e19b358daa0ce2e2d58ad58b878341db6c923bd395eff9de717288368e"
+    },
+    {
+      "stage": "R9G-host-final",
+      "archive": "ERGEBNISSE_R9G.zip",
+      "member": "local_52o_a8ia/host_tests/tests.xml",
+      "sha256": "33b74683df669c7c06dc231b1430573544083a5837529acd5e34cc468e4e74ca"
+    }
+  ],
+  "r9h_snapshot_sources": [
+    "Uploaded _latest_evaluation_workflow(20260919-051919).log, run r9h_eval_20260919_064323, last timestamp 07:19:10 +02:00",
+    "Uploaded host.log, separate eval_01/r9h_eval_20260919_005754; not current eval_02 outcome"
+  ],
+  "exclusions": "Existing v2.79/Hailo8 HAR evidence not recopied. Old whole bundles, cumulative source patches and live R9H reports not included."
+}

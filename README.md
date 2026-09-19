@@ -5,6 +5,21 @@ Split-Point evaluation project. It keeps compact measurement results,
 experiment scripts, acceptance evidence and explanatory documentation. Large
 runtime artefacts stay in a separate local raw archive and are not committed.
 
+## Knowledge base
+
+The continuously maintained [project knowledge base](docs/KNOWLEDGEBASE.md)
+is the canonical entry point for methods, current scope, open items and historical
+context. Its filename stays fixed; updates and older states are tracked by Git.
+The dated evidence directories below remain immutable records of their own runs.
+
+## v2.83 evidence update — 19 September 2026
+
+See [current v2.83 scope and open items](docs/V283_STATUS_2026-09-19.md),
+[GUI and software acceptance](results/acceptance/v2.83/README.md), and
+[the completed R9G one-split evaluation](results/evaluation/r9g_eval_20260918_171131/README.md).
+R9H three-split acceptance is still pending final evidence. Successful acquisition is not a
+blanket scientific or task-equivalence claim. The initial inventory below remains historical.
+
 ## Current contents
 
 - Hailo-10 `InferModel` output-format A/B result
