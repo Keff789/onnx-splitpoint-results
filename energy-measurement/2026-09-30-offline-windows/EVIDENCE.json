@@ -1,0 +1,41 @@
+{
+  "status": "completed_batch_and_focused_review_not_blanket_paper_release",
+  "full_batch": {
+    "planned_npy_paths": 16834,
+    "integrated": 16826,
+    "time_axis_failures": 8,
+    "pending": 0,
+    "legacy_reproduced": 16721,
+    "legacy_mismatches": 105,
+    "pico_paths_integrated": 9106,
+    "verified_manifest_files": 17221,
+    "checked_window_rows": 209294,
+    "checked_original_groups": 14075,
+    "duplicate_groups": 2327
+  },
+  "focused_review": {
+    "files_verified": 25,
+    "original_arrays_read": 11,
+    "cached_bin_traces_replayed": 14,
+    "determinism_original_arrays": 3,
+    "repetitions_per_array": 5,
+    "identical_boundaries": true,
+    "max_chunk_energy_difference_J": 2.000888343900442e-11,
+    "terminal_failure_paths": 8,
+    "unique_terminal_arrays": 5,
+    "legacy_max_prefix_difference_J": 1.4551915228366852e-11
+  },
+  "unresolved": [
+    "LLM: all 105 mismatches in approximately 138-s YAML cohort; 300 approximately 136-s records reproduce. Historical cause unresolved.",
+    "Hailo random-pattern early/late small bursts and capture-edge level can prevent a complete load envelope.",
+    "Cross-device windows are not physically synchronized and boundaries/scaling may differ.",
+    "Original stored power cannot reconstruct arbitrary raw U/I calibration or unobserved samples."
+  ],
+  "user_capture_clarification": "Acquisition started manually/by benchmark tool before benchmark and stopped roughly ten seconds afterwards; approximate, not a universal fixed offset.",
+  "postpass": {
+    "version": "0.3.0",
+    "new_raw_reads": 0,
+    "source_or_cache_writes": 0,
+    "device_comparison": "paired_observed_results_not_isolated_sensor_error"
+  }
+}

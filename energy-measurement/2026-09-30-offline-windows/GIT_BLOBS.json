@@ -1,0 +1,13 @@
+{
+  "meaning": "Exact Git object identity for every payload, including verifier; manifest itself not self-hashed. Source archives use SHA-256 in sources.json. Not a signature or raw backup.",
+  "git_blob_sha1": {
+    "EVIDENCE.json": "fb63c4a1d71b273a6dbd6330b49a5385f189ad0f",
+    "PLOT_POLICY.md": "1e6384c094ac5ced5752d484ff50c21a30fb7072",
+    "README.md": "78bf712298c6b5cc6423473ac966fd2c39e93d96",
+    "WINDOW_METHOD.md": "3b3d047bd9c4dacbc7624b381f94be914ea804ed",
+    "data/duration_examples.csv": "4806997e81159cdef230eea2d5c1e60d38816b66",
+    "data/sweep_endpoints.csv": "a7b4990a56f1faa51db60f0e4b4860758e75a7ee",
+    "sources.json": "487c225232535b2fa00387fd27bb330d95c35a95",
+    "verify.py": "e9d2049afec11e13e760bd9cc5a02366829597b5"
+  }
+}
