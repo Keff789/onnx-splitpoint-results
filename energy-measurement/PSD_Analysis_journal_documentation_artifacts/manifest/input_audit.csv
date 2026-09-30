@@ -1,0 +1,37 @@
+platform,workload_id,label,source_path,status,physical_runs,reason,run,rate_sps,duration_s,idle_status,idle_reason,energy_check_max_abs_pct
+Jetson Orin NX,gemmfp32,GEMM-FP32,/homes/kmika/common_trace_analysis/edge_ai_multi_workload_v1/psd/per_workload/gemmfp32/cross_workload_psd_summary.npz,reused_native_spectra,10,no_raw_read,,,,,,
+Jetson Orin NX,gemmint8,GEMM-INT8,/homes/kmika/common_trace_analysis/edge_ai_multi_workload_v1/psd/per_workload/gemmint8/cross_workload_psd_summary.npz,reused_native_spectra,10,no_raw_read,,,,,,
+Jetson Orin NX,yolofp32,YOLO-FP32,/homes/kmika/common_trace_analysis/edge_ai_multi_workload_v1/psd/per_workload/yolofp32/cross_workload_psd_summary.npz,reused_native_spectra,10,no_raw_read,,,,,,
+Jetson Orin NX,yoloint8,YOLO-INT8,/homes/kmika/common_trace_analysis/edge_ai_multi_workload_v1/psd/per_workload/yoloint8/cross_workload_psd_summary.npz,reused_native_spectra,10,no_raw_read,,,,,,
+Jetson Orin NX,gemma3-4b,Gemma3-4B,/homes/kmika/common_trace_analysis/edge_ai_multi_workload_v1/psd/per_workload/gemma3-4b/cross_workload_psd_summary.npz,reused_native_spectra,10,no_raw_read,,,,,,
+Jetson Orin NX,resnet50,ResNet-50 FP32,/homes/kmika/common_trace_analysis/edge_ai_multi_workload_v1/psd/per_workload/resnet50/cross_workload_psd_summary.npz,reused_native_spectra,9,no_raw_read,,,,,,
+Hailo-10,gemm,,/homes/jwachsmuth/power_measurements/hailo_sweep/gemm/5000000Sps/0,computed,,,0,5000000,102.0,same_record_prebenchmark,,7.902081211597078e-08
+Hailo-10,gemm,,/homes/jwachsmuth/power_measurements/hailo_sweep/gemm/5000000Sps/1,computed,,,1,5000000,102.0,same_record_prebenchmark,,8.612315305356333e-08
+Hailo-10,gemm,,/homes/jwachsmuth/power_measurements/hailo_sweep/gemm/5000000Sps/2,computed,,,2,5000000,102.0,same_record_prebenchmark,,8.070779600188871e-08
+Hailo-10,gemm,,/homes/jwachsmuth/power_measurements/hailo_sweep/gemm/5000000Sps/3,computed,,,3,5000000,102.0,same_record_prebenchmark,,8.687235375504088e-08
+Hailo-10,gemm,,/homes/jwachsmuth/power_measurements/hailo_sweep/gemm/5000000Sps/4,computed,,,4,5000000,102.0,same_record_prebenchmark,,8.149900754261807e-08
+Hailo-10,gemm,,/homes/jwachsmuth/power_measurements/hailo_sweep/gemm/5000000Sps/5,computed,,,5,5000000,102.0,same_record_prebenchmark,,8.151486152740972e-08
+Hailo-10,gemm,,/homes/jwachsmuth/power_measurements/hailo_sweep/gemm/5000000Sps/6,computed,,,6,5000000,102.0,same_record_prebenchmark,,8.239116056074636e-08
+Hailo-10,gemm,,/homes/jwachsmuth/power_measurements/hailo_sweep/gemm/5000000Sps/7,computed,,,7,5000000,102.0,same_record_prebenchmark,,7.627114495534215e-08
+Hailo-10,gemm,,/homes/jwachsmuth/power_measurements/hailo_sweep/gemm/5000000Sps/8,computed,,,8,5000000,102.0,same_record_prebenchmark,,7.991736161727658e-08
+Hailo-10,gemm,,/homes/jwachsmuth/power_measurements/hailo_sweep/gemm/5000000Sps/9,computed,,,9,5000000,102.0,same_record_prebenchmark,,9.741025763787547e-08
+Hailo-10,gemm,,/homes/jwachsmuth/power_measurements/hailo_sweep/gemm/5000000Sps/10,computed,,,10,5000000,102.0,same_record_prebenchmark,,8.637979220793568e-08
+Hailo-10,gemm,,/homes/jwachsmuth/power_measurements/hailo_sweep/gemm/5000000Sps/11,computed,,,11,5000000,102.0,same_record_prebenchmark,,8.450038446738972e-08
+Hailo-10,gemm,,/homes/jwachsmuth/power_measurements/hailo_sweep/gemm/5000000Sps/12,computed,,,12,5000000,102.0,same_record_prebenchmark,,7.775793342545967e-08
+Hailo-10,gemm,,/homes/jwachsmuth/power_measurements/hailo_sweep/gemm/5000000Sps/13,computed,,,13,5000000,102.0,same_record_prebenchmark,,8.564571274405353e-08
+Hailo-10,gemm,,/homes/jwachsmuth/power_measurements/hailo_sweep/gemm/5000000Sps/14,computed,,,14,5000000,102.0,same_record_prebenchmark,,8.474261292690244e-08
+Hailo-10,yolo,,/homes/jwachsmuth/power_measurements/hailo_sweep/yolo/5000000Sps/0,computed,,,0,5000000,103.0,same_record_prebenchmark,,1.0042049414238363e-07
+Hailo-10,yolo,,/homes/jwachsmuth/power_measurements/hailo_sweep/yolo/5000000Sps/1,computed,,,1,5000000,103.0,same_record_prebenchmark,,8.505325332919256e-08
+Hailo-10,yolo,,/homes/jwachsmuth/power_measurements/hailo_sweep/yolo/5000000Sps/2,computed,,,2,5000000,103.0,same_record_prebenchmark,,8.140847995719014e-08
+Hailo-10,yolo,,/homes/jwachsmuth/power_measurements/hailo_sweep/yolo/5000000Sps/3,computed,,,3,5000000,103.0,same_record_prebenchmark,,9.350316076961462e-08
+Hailo-10,yolo,,/homes/jwachsmuth/power_measurements/hailo_sweep/yolo/5000000Sps/4,computed,,,4,5000000,103.0,same_record_prebenchmark,,8.114660055014156e-08
+Hailo-10,yolo,,/homes/jwachsmuth/power_measurements/hailo_sweep/yolo/5000000Sps/5,computed,,,5,5000000,103.0,same_record_prebenchmark,,9.152079094576493e-08
+Hailo-10,yolo,,/homes/jwachsmuth/power_measurements/hailo_sweep/yolo/5000000Sps/6,computed,,,6,5000000,103.0,same_record_prebenchmark,,7.992704276205131e-08
+Hailo-10,yolo,,/homes/jwachsmuth/power_measurements/hailo_sweep/yolo/5000000Sps/7,computed,,,7,5000000,103.0,same_record_prebenchmark,,7.384428624135353e-08
+Hailo-10,yolo,,/homes/jwachsmuth/power_measurements/hailo_sweep/yolo/5000000Sps/8,computed,,,8,5000000,103.0,same_record_prebenchmark,,8.104510396123032e-08
+Hailo-10,yolo,,/homes/jwachsmuth/power_measurements/hailo_sweep/yolo/5000000Sps/9,computed,,,9,5000000,103.0,same_record_prebenchmark,,9.998331051974674e-08
+Hailo-10,yolo,,/homes/jwachsmuth/power_measurements/hailo_sweep/yolo/5000000Sps/10,computed,,,10,5000000,103.0,same_record_prebenchmark,,8.125864425778673e-08
+Hailo-10,yolo,,/homes/jwachsmuth/power_measurements/hailo_sweep/yolo/5000000Sps/11,computed,,,11,5000000,103.0,same_record_prebenchmark,,9.036145165453036e-08
+Hailo-10,yolo,,/homes/jwachsmuth/power_measurements/hailo_sweep/yolo/5000000Sps/12,computed,,,12,5000000,103.0,same_record_prebenchmark,,9.185590066351779e-08
+Hailo-10,yolo,,/homes/jwachsmuth/power_measurements/hailo_sweep/yolo/5000000Sps/13,computed,,,13,5000000,103.0,same_record_prebenchmark,,8.295892861553966e-08
+Hailo-10,yolo,,/homes/jwachsmuth/power_measurements/hailo_sweep/yolo/5000000Sps/14,computed,,,14,5000000,103.0,same_record_prebenchmark,,7.669700430312787e-08
