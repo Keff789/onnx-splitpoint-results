@@ -4,12 +4,15 @@ Separate area for the Energy Paper / IEEE TIM measurement-methodology work. It d
 
 ## Read first — current knowledgebase status
 
-1. [1 October: complementary controlled rate test](knowledgebase/2026-10-01-complementary-rate-test.md) — current compact conclusion from two position-balanced six-run sessions.
-2. [1 October: controlled rate test and historical decomposition](knowledgebase/2026-10-01-controlled-rate-test.md) — preceding fixed-window and first-session analysis.
-3. [30 September: Prio A, remaining energy drops and fixed-window follow-up](knowledgebase/2026-09-30-prio-a.md) — retained as the preceding audit state.
-4. [Full knowledgebase, 30 September baseline](Energy_Paper_TIM_KnowledgeBase_2026-09-30.md) — retained unchanged. Current amendments supersede older workflow-status/exclusion statements; scientific baseline chapters remain available.
+1. [1 October: consolidated current status](Energy_Paper_TIM_KnowledgeBase_CURRENT_2026-10-01.md) — operative Source of Truth for paper windows, controlled-rate evidence, claims, figures, backup and GPU follow-up.
+2. [1 October: complementary controlled rate test](knowledgebase/2026-10-01-complementary-rate-test.md) — compact conclusion from two position-balanced six-run sessions.
+3. [1 October: controlled rate test and historical decomposition](knowledgebase/2026-10-01-controlled-rate-test.md) — preceding fixed-window and first-session analysis.
+4. [30 September: Prio A, remaining energy drops and fixed-window follow-up](knowledgebase/2026-09-30-prio-a.md) — retained as the preceding audit state.
+5. [Full knowledgebase, 30 September baseline](Energy_Paper_TIM_KnowledgeBase_2026-09-30.md) — retained unchanged as the detailed historical baseline.
 
 The fixed 20–80-s comparison confirms that outer window placement is not the sole explanation. The two complementary fixed-work/fixed-pause sessions show that the raw Pico difference changes sign with measurement order; the position-balanced rate-associated load-power estimate is -0.061 %, not the historical multi-percent decrease. The external pre- and load-window levels drift together, while VDD_IN and TensorRT runtime remain nearly stable. No offset correction is applied.
+
+Current paper policy: NPY-derived windows by default, NPY-derived LLM results without a paper old/new comparison, and the historical explicit window for Hailo Random Pattern. Common Reference / Same Trace carries isolated sampling claims; direct sweeps remain protocol observations.
 
 ## Evidence and original figure references
 
