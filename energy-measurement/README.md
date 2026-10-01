@@ -4,15 +4,16 @@ Separate area for the Energy Paper / IEEE TIM measurement-methodology work. It d
 
 ## Read first — current knowledgebase status
 
-1. [1 October: controlled 2-kS/s-/5-MS/s test and historical baseline decomposition](knowledgebase/2026-10-01-controlled-rate-test.md) — current compact amendment; fixed-window Prio A and the six-run hardware diagnostic are complete.
-2. [30 September: Prio A, remaining energy drops and fixed-window follow-up](knowledgebase/2026-09-30-prio-a.md) — retained as the preceding audit state.
-3. [Full knowledgebase, 30 September baseline](Energy_Paper_TIM_KnowledgeBase_2026-09-30.md) — retained unchanged. Current amendments supersede older workflow-status/exclusion statements; scientific baseline chapters remain available.
+1. [1 October: complementary controlled rate test](knowledgebase/2026-10-01-complementary-rate-test.md) — current compact conclusion from two position-balanced six-run sessions.
+2. [1 October: controlled rate test and historical decomposition](knowledgebase/2026-10-01-controlled-rate-test.md) — preceding fixed-window and first-session analysis.
+3. [30 September: Prio A, remaining energy drops and fixed-window follow-up](knowledgebase/2026-09-30-prio-a.md) — retained as the preceding audit state.
+4. [Full knowledgebase, 30 September baseline](Energy_Paper_TIM_KnowledgeBase_2026-09-30.md) — retained unchanged. Current amendments supersede older workflow-status/exclusion statements; scientific baseline chapters remain available.
 
-The fixed 20–80-s comparison confirms that outer window placement is not the sole explanation. The controlled fixed-work/fixed-pause test finds no multi-percent 2-kS/s-/5-MS/s load-power deficit; instead, the Pico current signal exhibits session-order drift shared by pre-load and load windows. Historical endpoint trends largely follow their pre-load levels. No repeat of the large acquisition campaign or raw-data batch is required.
+The fixed 20–80-s comparison confirms that outer window placement is not the sole explanation. The two complementary fixed-work/fixed-pause sessions show that the raw Pico difference changes sign with measurement order; the position-balanced rate-associated load-power estimate is -0.061 %, not the historical multi-percent decrease. The external pre- and load-window levels drift together, while VDD_IN and TensorRT runtime remain nearly stable. No offset correction is applied.
 
 ## Evidence and original figure references
 
-- [1 October: controlled rate-test evidence](2026-10-01-controlled-rate-test/README.md)
+- [1 October: complete fixed-window and complementary controlled-rate evidence](2026-10-01-controlled-rate-test/README.md)
 - [29 September: Jetson window and pause evidence](2026-09-29-jetson-window-pause/README.md)
 - [30 September: offline-window evidence](2026-09-30-offline-windows/README.md)
 - [Joris' original figure archive](Ergebnisse_Joris/)
