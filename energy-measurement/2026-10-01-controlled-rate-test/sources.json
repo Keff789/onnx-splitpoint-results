@@ -1,0 +1,28 @@
+{
+  "successful_control_review": {
+    "file": "baseline_20261001_065752Z_c8a3cc42_review_20261001_072601Z_47c45cae.zip",
+    "sha256": "ac8e7ceffad42a1bb6a9fdea86a69d825c17695368c29a00548017a4ad1f3187",
+    "manifest_files_verified": 117,
+    "raw_parquet_in_public_git": false
+  },
+  "stopped_100_query_review": {
+    "file": "baseline_20261001_064406Z_0d74d15c_review_20261001_064519Z_a68b0490.zip",
+    "sha256": "a0f40e57839696693f8642a7b66055da9b2dfc6b705a301993bc7766f28c1aec",
+    "role": "expected stop before scored capture"
+  },
+  "private_analysis_review": {
+    "file": "baseline_rate_test_review_20261001.zip",
+    "sha256": "664f33b5e50362bfbe23e1cb1455e448c7c3aa43f840e712839c6b06348c0184"
+  },
+  "historical_full_review": {
+    "file": "v0.2.0_preflight_8pxojcp1_review_20260929_220252_9c06eb.zip",
+    "sha256": "d922b5e214c73214994620273ad5aa04e78bdf9d5f7580b855746dd680c8ec98"
+  },
+  "limits": [
+    "n=3 per controlled rate",
+    "Pico and VDD_IN are not hardware-synchronized and have different boundaries",
+    "collector-transformed channels are not untouched ADC codes",
+    "baseline subtraction is diagnostic, not an automatic calibration correction",
+    "historic engine identity is not established for the new FP16 engine"
+  ]
+}
