@@ -1,0 +1,37 @@
+# English paper captions
+
+## fig01_coverage_matrix (main)
+
+Coverage across 21 model/setup groups. Historical Generic: 527/588 observations (37 build failures and 24 policy exclusions); completed-task pairs: 192 base + 12 post-planned additions; quality: 39/560 accuracy-loss observations; Native full-system energy: 246 cases and 738 repeats, including 42 unique Full baselines. Counts are not common denominators across columns. Native unsupported cases (228) are terminal capability exclusions, listed separately. Cell shading is a visual count guide, not a common success probability. No uncertainty bars or performance baseline apply.
+
+## fig02_split_full_benefit (main)
+
+All 408 descriptive Split/Full comparisons (204 per baseline family), derived from 204 split cases and 42 reused Full baselines; pairs are dependent. Ratios use means of three per-replicate E/N and N/T values from the same active energy windows; primary energy is calibrated full-system, without idle subtraction. Dashed lines denote equality. Hollow symbols retain accuracy loss in either endpoint; crosses mark 16 unsupported semantic comparisons (all Vendor Full). The other 392 have local semantic evidence. No range bars are drawn here; all nine repetition combinations are provided in the supplement tables. TRT Full references share a declared historical attestor-source gap. No causal or deployment claim is inferred.
+
+## fig03_selection_and_stability (main)
+
+Generic-to-Native selection in all 21 exact model/setup/precision/endpoint groups (204 augmented technical pairs; n=17, 19 or 20 for classification and n=3 for YOLO). Symbols use three-repeat median throughput; horizontal segments show min/max over nine Generic/Native repetition combinations, not confidence intervals or independent studies. L_R=1−R_selected/R_best; L_C uses a different denominator and is tabulated separately. Right labels count exact Top1 hits across the nine combinations. All accuracy-loss cases are retained; quality-transfer and reference-close sensitivities are in rank_groups.csv. The baseline is the best observed Native candidate within the same group.
+
+## fig04_yolo_fixed_candidates (main)
+
+All 36 YOLO completed-task pairs in 12 groups, with exactly three measured boundaries per group. Circles/squares show Generic/Native median throughput; bars are min/max of three 1000-task repetitions (not confidence intervals). Asterisks mark the 12 post-planned additions; the 12 short predecessor runs are excluded. Boundary labels are categorical, not a common graph-depth axis; no interpolation is drawn. Both runners use the existing task-completion pairing evidence, with uncontrolled runtime conditions. Hollow symbols retain accuracy losses; quality-transfer exclusions and filtered groups with fewer than three candidates are retained in the supplement. No Full baseline appears.
+
+## fig05_energy_choices (main)
+
+Three contrasting exact energy strata: ResNet-50/DeepX (stable throughput/energy tradeoff), RegNet/H10 (same winner), and MobileNet/DeepX (small energy difference with unstable winner). All split candidates are shown; large circles denote the technical split Pareto frontier and black outlines its reference-close-transfer counterpart. Full references (diamond: Vendor; X: TRT) are contextual, not inserted into the split frontier; all comparisons in these three panels have local semantic evidence. Values are means of three per-replicate E/N and N/T ratios; bars are observed min/max, not CIs. Fulls are plotted once per panel. Calibrated full-system energy has no idle subtraction. The TRT attestor-source gap remains. Panel case counts, identities and precision/calibration contracts are in the source CSV; no cross-panel dominance is implied.
+
+## fig06_regnet_counterexample (main)
+
+RegNetX-1.6GF/H10, all 20 original reference-close completed-task candidates. Points are three-repeat medians (ranges are tabulated and selection sensitivity appears in Fig. 3); no smoothing, regression fit or confidence bands. The x-axis of panel (a) uses the saved analytical FLOPs share, not measured stage time or normalized boundary IDs. Generic/Native rank reversal is descriptive; materialized two-worker Generic and asynchronous Native paths, plus uncontrolled thread/thermal conditions are alternative explanations, not isolated causes. Panel (b) compares identical candidate identities. Full baselines and post-planned additions are absent; numerical results do not establish a universal manufacturer property.
+
+## supp01_quality_losses (supplement)
+
+All 39 retained accuracy-loss observations: 22 Top-1 and 17 AP50:95, shown in separate panels; 30 are splits and 9 are Vendor Full companions. Full labels identify the execution variant even when the stored case_id names a companion boundary. Points are original N=5000 estimates; bars are the original paired-bootstrap B=1000 95% intervals for absolute metric differences, with no bootstrap rerun. Crosses mark seven losses whose original relative-loss intervals cross the frozen 5% reporting threshold; circles mark 32 supported losses. Classification/detection metrics are not pooled. The original 0.01 absolute task margin (one percentage point) is retained separately from the relative reporting rule. All other 521 reference-close observations are in quality_effects.csv. All 39 losses are original-base observations.
+
+## supp02_proxy_change (supplement)
+
+Historical raw-output proxy versus Generic task-completion proxy on exactly the same original candidate identities in each group. All technical groups with n≥3 appear; groups below three remain tabulated. Open circles: raw; filled squares: completion; Native reference uses the same three-repeat medians. No error bars are implied. No short augmentation predecessors enter the raw cohort. Changes in ranking and throughput regret are not causally attributable solely to postprocessing because acquisition date, runtime, thread and thermal conditions are uncontrolled.
+
+## supp03_all_energy_groups (supplement)
+
+All 21 exact energy strata, using the same encoding and aggregation as Fig. 5: all 204 split cases plus 42 unique contextual Fulls, three valid energy repeats per case. Min/max bars are not confidence intervals. Fulls do not enter the split Pareto frontier. Vendor Full semantic limits affect all four DeepX detection models and additionally YOLO11l/YOLO26s on H8 and H10; see all 16 comparisons in energy_semantic_limits.csv and per-reference source rows. These references remain descriptive context and are not declared semantically interchangeable. Technical and reference-close-transfer frontiers are distinguished. Hollow split markers and hollow Full diamonds retain accuracy losses (9 of 21 Vendor Fulls); filled Full markers are reference_close. No cross-model/setup dominance is inferred.

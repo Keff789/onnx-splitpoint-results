@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-04T21:53:18.703512+02:00",
+  "software_only": true,
+  "commands": [
+    {
+      "log": "validation/pytest-final.log",
+      "exitcode": 0
+    },
+    {
+      "log": "validation/reproduce-primary.log",
+      "exitcode": 0
+    },
+    {
+      "log": "validation/reproduce-independent.log",
+      "exitcode": 0
+    }
+  ],
+  "reproduction_files": 71,
+  "byte_equal": 71,
+  "differences": [],
+  "hardware_tests": 0,
+  "new_measurements": 0
+}

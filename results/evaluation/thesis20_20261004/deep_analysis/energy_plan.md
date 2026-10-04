@@ -1,0 +1,12 @@
+# Post-hoc-Plan: Split/Full-Nutzen und Energie
+
+Erstellt am 04.10.2026 nach vollständiger Lektüre des Auftrags und seiner fünf Pflichtquellen, vor den neuen Detailrechnungen. Dies ist eine explorative Planung vorhandener Messungen, keine Präregistrierung.
+
+1. Alle 408 ursprünglichen produktgepaarten Split/Full-Vergleiche exakt über Modell, Setup, Backend, Fall und Kohorte mit den 246 Energiebeobachtungen verknüpfen; 42 Fullbaselines einmal zählen. Vendor Full und TensorRT Full getrennt und tatsächliche Ausführungspräzision sichtbar halten. Die drei gleichen Replikate werden nach ihren ursprünglichen IDs zugeordnet; keine Paarreplikate als neue unabhängige Messungen.
+2. E/N, E/T, N/T pro Energiereplikat prüfen. Primär Mittel der replikatweisen Quotienten. Median und gepoolte E/N ausschließlich als deklarierte Sensitivität; alle aggregierten Abweichungen und Rangwechsel ausweisen. Performance-FPS separat als Kontext halten.
+3. Pro exakter vorhandener Produktgruppe Nutzen, Null-/Negativbefunde, Quantile und absolute Werte gegenüber jeder Fullbaseline bestimmen. Deskriptive, semantisch bestätigte und reference_close-Population getrennt. Alle 16 semantischen Grenzen einzeln erhalten; fehlende Identitätsbelege nicht in numerische FAILs umdeuten.
+4. Deskriptive Split-Paretofronten und Gewinner für Energie-Fensterdurchsatz versus J/task je Produktstratum, Kalibrierung, Fenster und Inputkompatibilität. Replikatstabilität in den tatsächlichen drei Wiederholungen, sowie Empfindlichkeit gegenüber Median/Pooling. Fulls werden nur über die vorhandenen Vergleichsbelege angebunden.
+5. Verhältnisse von Leistung und Durchsatz getrennt tabellieren. Die exakte Replikatidentität J/task=P/R und die Abweichung bei getrennten Mittelwerten offenlegen; eine negative J/task-Durchsatzkorrelation ist keine unabhängige Hardwareentdeckung.
+6. Sensitivitäten: Basis gegenüber augmentierter Vereinigung; technische/semantische/reference_close-Ansicht; mit/ohne alle 21 von der historischen Attestorquellenlücke betroffenen TRT-Fulls. Letzteres entfernt alle TRT-Referenzpaare, nicht deren Messwerte aus der Hauptansicht. Keine künstliche Freigabe, neue Messung oder Quellinstallation.
+
+Kompakte öffentliche Inputs/Produktreader zuerst. Fehlende Inputidentitäten werden nur anhand der konkret gebundenen vorhandenen Pair-Projektion bzw. selektiver Originalbelege ergänzt. Fehlende Belege bleiben explizit unbekannt. Portable CLI: `python scripts/analyze_energy.py --source-root PATH_TO_EXISTING_PUBLIC --output-root PATH_TO_DEEP_ANALYSIS`.

@@ -1,0 +1,113 @@
+{
+  "counts": {
+    "technical": 204,
+    "qualitytransfer": 201,
+    "reference_close": 184,
+    "base": 192,
+    "augmentation": 12,
+    "exact_raw_common": 192
+  },
+  "tables": {
+    "rank_cases.csv": 204,
+    "rank_groups.csv": 126,
+    "rank_shortlists.csv": 108,
+    "rank_repeat_combinations.csv": 837,
+    "rank_repeat_sensitivity.csv": 93,
+    "rank_raw_join_audit.csv": 192,
+    "rank_proxy_comparison.csv": 63,
+    "rank_dominant_case_sensitivity.csv": 90
+  }
+}
+{
+  "schema": "thesis20-exploratory-energy-analysis",
+  "aggregation": "mean_of_three_replicate_ratios",
+  "case_n": 246,
+  "split_n": 204,
+  "full_n": 42,
+  "repeat_n": 738,
+  "descriptive_pair_n": 408,
+  "semantic_pair_n": 392,
+  "semantic_limit_n": 16,
+  "attestor_gap_full_n": 21,
+  "attestor_gap_pair_n": 204,
+  "arithmetic_max_absolute_error": 7.105427357601002e-15,
+  "max_pooled_j_relative_difference": 0.00490809077793386,
+  "max_mean_identity_relative_gap": 0.004902985277854599,
+  "max_pair_ratio_identity_relative_gap": 0.004924635101393848,
+  "technical_group_n": 21,
+  "technical_winners_coincide": 17,
+  "technical_performance_energy_winners_coincide": 15,
+  "technical_fastest_all_reps_stable": 19,
+  "technical_energy_all_reps_stable": 18,
+  "technical_pooled_energy_winner_changes": 0,
+  "technical_median_energy_winner_changes": 0,
+  "technical_fastest_separated_repeat_ranges": 18,
+  "technical_energy_separated_repeat_ranges": 16,
+  "secondary_host_normalization_n": 21,
+  "secondary_host_normalized_energy_saving_pair_n": 80,
+  "legacy_mixed_baseline_field_rows": 192,
+  "reference_close_transfer_group_n": 21,
+  "reference_close_transfer_winners_coincide": 17,
+  "limitations": [
+    "post_hoc_development_screening",
+    "shared_full_baselines_not_independent_pairs",
+    "three_repeats_not_thousands_independent_tasks",
+    "no_controlled_runtime_thread_temperature_time_equivalence",
+    "21_trt_full_historical_attestor_source_gaps",
+    "full_execution_precision_differs_from_split_boundary_precision",
+    "no_generic_energy_measured",
+    "same_index_repetitions_not_synchronized_trials",
+    "input_equality_inherited_from_original_product_pair_projection"
+  ]
+}
+{
+  "quality_n": 560,
+  "quality_loss_n": 39,
+  "loss_by_metric": {
+    "Top1": 22,
+    "COCO_AP_50_95": 17
+  },
+  "loss_by_model": {
+    "mobilenet_v3_large": 22,
+    "yolo11l": 1,
+    "yolo26m": 5,
+    "yolo26s": 7,
+    "yolov7_paper": 4
+  },
+  "uncertainty_all": {
+    "supported": 543,
+    "borderline": 17
+  },
+  "loss_uncertainty": {
+    "supported": 32,
+    "borderline": 7
+  },
+  "ci_crosses_threshold": 17,
+  "quality_graph_joined": 511,
+  "completed_graph_joined": 204,
+  "native_unsupported": 228,
+  "unsupported_reasons": {
+    "part2_input_count_not_one": 228
+  },
+  "coverage_status": {
+    "completed": 527,
+    "build_failed": 37,
+    "policy_excluded": 24
+  },
+  "original_absolute_margins": [
+    0.01
+  ],
+  "original_relative_thresholds": [
+    0.05
+  ],
+  "loss_by_variant": {
+    "split": 30,
+    "vendor_full": 9
+  },
+  "paired_quality_classes": {
+    "reference_close": 187,
+    "accuracy_loss": 17
+  }
+}
+{"main_figures": 6, "supplements": 3}
+Offline reproduction completed; no measurement or inference was executed.

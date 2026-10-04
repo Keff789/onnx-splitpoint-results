@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "measurement_count": 0,
+  "original_files_modified": false,
+  "semantic_decisions_unchanged": true,
+  "prior_evidence_fields_unchanged": true,
+  "pairs": 24,
+  "semantic_comparable": 20,
+  "boundaries": 4,
+  "functional_input_sets": 40,
+  "command_verifications": 48,
+  "unique_command_contracts": 30,
+  "manifest_verifications": 48,
+  "unique_output_manifests": 30,
+  "raw_output_verifications": 116,
+  "unique_raw_content_shas": 73,
+  "raw_output_authorities": {
+    "original_output_manifest": 84,
+    "original_artifact_index": 32
+  },
+  "negatives": [
+    {
+      "case": "original_manifest_wrong_sha",
+      "rejected": true,
+      "reason": "original_output_manifest_sha256_mismatch"
+    },
+    {
+      "case": "copied_raw_same_size_changed_byte",
+      "rejected": true,
+      "reason": "original_raw_content_mismatch"
+    },
+    {
+      "case": "no_original_raw_sha_authority",
+      "rejected": true,
+      "reason": "original_raw_sha256_missing_or_ambiguous"
+    },
+    {
+      "case": "foreign_case_identity",
+      "rejected": true,
+      "reason": "original_energy_row_identity_mismatch"
+    },
+    {
+      "case": "original_command_file_wrong_sha",
+      "rejected": true,
+      "reason": "original_command_file_sha256_mismatch"
+    }
+  ]
+}

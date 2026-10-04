@@ -1,5 +1,10 @@
 # ONNX Splitpoint Tool – Knowledge Base
 
+> **Additiver Reviewstand 04.10.2026:** Die wissenschaftliche Vertiefung liegt separat unter
+> [`deep_analysis/`](../results/evaluation/thesis20_20261004/deep_analysis/README.md)
+> auf `analysis/thesis20-deep-review-20261004`; siehe §24. Historische Mainausgaben
+> und Toolrelease v2.92.0 bleiben unverändert. Der Roharchivabschluss ist noch offen.
+>
 > **Kanonischer Pfad: `docs/KNOWLEDGEBASE.md`.** Diese Datei wird fortlaufend
 > aktualisiert; ihre Historie liegt in Git. Keine neue Datei je Dokumentrevision.
 > Toolversionen, Run-IDs und historische Revisionsangaben im Text bleiben erhalten,
@@ -2208,3 +2213,38 @@ ist die oben genannte THESIS20-Runwurzel gemeint. Die bisherigen Quellen bleiben
 | E-TH20-ENERGY-REENTRY | `~/Reports/thesis20-energy-reentry-20261001/ABSCHLUSSBERICHT.txt` (`ABSCHLUSSBERICHT(2).txt` im Chat): enger Nullstart-Previous-Results-Fix, 28 integrierte Abnahmekriterien, 638 Artefaktbindungen/234 Attestierungen, produktiver Start 01.10. 09:21:51 und erstes gültiges Replikat. Letzter dokumentierter lokaler Stand 2.91.2 mit uncommitteter Folgearbeit, kein Commit/Push/Tagwechsel |
 | E-TH20-FOLLOWUP | `AUFTRAG_LOKALE_AUSWERTUNGSKORREKTUREN.md` aus dem Auditpaket: zunächst lokale F01–F06-/W01–W03-Nacharbeit, keine produktive Fortsetzung und keine neuen Hardware-/Compiler-/Collectorstarts. Noch kein Erfüllungsbeleg |
 | E-TH20-KB-UPDATE | Nutzerauftrag vom 02.10.2026, den aktuellen Stand und offene Punkte in `docs/KNOWLEDGEBASE.md` fortzuschreiben. Dokumentationsänderung, keine zusätzliche wissenschaftliche Evidenz oder Freigabe neuer Messungen |
+
+
+## 24. Wissenschaftliche Vertiefung – additive Reviewfassung vom 04.10.2026
+
+Der getrennte Bereich [`deep_analysis`](../results/evaluation/thesis20_20261004/deep_analysis/README.md)
+enthält ausgeführte post-hoc-Analysen A–F, reproduzierbare kleine Tabellen und sechs
+Haupt-/drei Supplementfiguren als PDF/SVG. Die bisherigen Ergebnisse, Qualityregeln,
+Hold-out-Rollen und Toolversion werden weder ersetzt noch rückwirkend umgedeutet.
+
+Generic-Top1 trifft in 10/21 exakten Gruppen den Native-Besten; die drei großen
+Gegenbeispiele bleiben über alle neun Kombinationen der vorhandenen Wiederholungen.
+Nichttriviale Shortlists helfen in vielen Gruppen, scheitern aber weiterhin bei
+RegNet/H10 und MobileNet/H10. Durchsatz- und Energieoptimum stimmen in 17/21 Gruppen
+überein; beide ResNet-Gegenfälle behalten verschiedene Gewinner in allen drei Reps.
+
+Deskriptiv sind 142/204 Vendor- und 86/204 TRT-Vergleiche gleichzeitig schneller und
+energieärmer; nach Semantik und beiderseitiger reference_close 80/140 bzw. 84/187.
+Die 42 Fullbaselines werden einmal gezählt. Die 39 Qualityverluste zerfallen in
+9 Vendor-Full-, 17 Completed-paarbare Split- und 13 Native-unsupported-Splitverluste.
+Full-Companions können eine boundaryartige Fall-ID tragen; Variant-/Backendjoin bleibt nötig.
+Eine gemischt benannte Legacy-Full-Energiespalte ist ausschließlich in der neuen
+Ableitung eindeutig korrigiert; ursprüngliche deskriptive Quotienten waren bereits korrekt.
+
+Die Archivübernahme behob Symlinkzeit-/Epoch-mtime-Fehler über SSHFS eng begrenzt.
+Completion192 ist kopiert und abgeglichen, die bestehende große YOLO-Folge läuft;
+Finalisierung wartet. Kein Gesamtarchiv-PASS. Die gezielte zusätzliche historische
+Quellensuche fand keinen Originalhash für 21 TRT-Full-Attestorverweise. Diese Grenze
+bleibt deklariert; ohne diese Fulls verbleiben keine TRT-Paare. Kleine Folgearchivierung
+der gefrorenen Analyse darf erst nach echtem Abschluss der bisherigen Writer erfolgen.
+
+Validierung und Einschränkungen stehen in
+[`VALIDIERUNG.md`](../results/evaluation/thesis20_20261004/deep_analysis/VALIDIERUNG.md)
+und [`STATUS.md`](../results/evaluation/thesis20_20261004/deep_analysis/STATUS.md).
+Keine neue Messung, Inferenz, Kompilierung, Qualitykampagne oder reale GUI-Abnahme.
+Nächster Schritt ist Review von Claims/Figuren und Abschluss der vorhandenen Archivqueue.
