@@ -5,6 +5,21 @@ Split-Point evaluation project. It keeps compact measurement results,
 experiment scripts, acceptance evidence and explanatory documentation. Large
 runtime artefacts stay in a separate local raw archive and are not committed.
 
+## THESIS20 completed analysis — 4 October 2026
+
+Start with [the paper handoff](results/evaluation/thesis20_20261004/START_HERE.md),
+[reproducible tables and figures](results/evaluation/thesis20_20261004/README.md), and
+[findings and limits](results/evaluation/thesis20_20261004/PAPER_FINDINGS.md).
+The corrected base, 192-case Generic completion and 12-case YOLO augmentation remain
+separate cohorts: 560 quality results, 246 Native cases, 204 completed Generic/Native
+pairs and 246 complete energy rows. Negative scientific results are retained.
+
+[Tool release v2.92.0](https://github.com/Keff789/ONNX-Splitpoint-Tool/releases/tag/v2.92.0),
+main commit `d164aad6d7c7ef68c1b371c49a1fdea0a3b27dd7`, its annotated tag and both
+source archives are published and verified against the remote. Raw archive transfer remains in progress; compact public
+inputs are not a replacement for the private original payloads. No new measurements
+were made for this analysis or release.
+
 ## Knowledge base
 
 The continuously maintained [project knowledge base](docs/KNOWLEDGEBASE.md)
@@ -14,13 +29,13 @@ The dated evidence directories below remain immutable records of their own runs.
 
 ## v2.83 evidence update — 19 September 2026
 
-See [current v2.83 scope and open items](docs/V283_STATUS_2026-09-19.md),
+Historical snapshot: see [v2.83 scope and then-open items](docs/V283_STATUS_2026-09-19.md),
 [GUI and software acceptance](results/acceptance/v2.83/README.md), and
 [the completed R9G one-split evaluation](results/evaluation/r9g_eval_20260918_171131/README.md).
 R9H three-split acceptance is still pending final evidence. Successful acquisition is not a
 blanket scientific or task-equivalence claim. The initial inventory below remains historical.
 
-## Current contents
+## Historical initial inventory
 
 - Hailo-10 `InferModel` output-format A/B result
 - Hailo-10 FLOAT32-versus-native-UINT8 input A/B result
@@ -73,7 +88,7 @@ Using a different disk or NAS makes the raw archive a real second copy. A
 second directory on the same Smartmirror2 filesystem is initially only a
 staging copy.
 
-## Start Git locally
+## Historical repository bootstrap instructions
 
 Review the output of the safety check first. Then:
 

@@ -1,0 +1,948 @@
+model_id,case_id,setup_id,run_id,build_runtime_state,quality_applicability,quality_completion,quality_decision,historical_secondary_reason,new_quality_job_required,terminal_reason,original_evidence_role
+yolo11l,b031,orin_nx_hailo10_01,hailo10_to_tensorrt,build_failed,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,"feature splitter layer feature_splitter1 (translated from /model.2/Split) successor name is missing, output shape is ambiguous
+
+Details were written to gui.log (Logs tab).",build_receipt
+yolo11l,b093,orin_nx_hailo10_01,hailo10_to_tensorrt,build_failed,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,"feature splitter layer feature_splitter2 (translated from /model.4/Split) successor name is missing, output shape is ambiguous
+
+Details were written to gui.log (Logs tab).",build_receipt
+yolo11l,b186,orin_nx_hailo10_01,hailo10_to_tensorrt,build_failed,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,"feature splitter layer feature_splitter4 (translated from /model.8/Split) successor name is missing, output shape is ambiguous
+
+Details were written to gui.log (Logs tab).",build_receipt
+yolo11l,b287,orin_nx_hailo10_01,hailo10_to_tensorrt,build_failed,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,"feature splitter layer feature_splitter5 (translated from /model.10/Split) successor name is missing, output shape is ambiguous
+
+Details were written to gui.log (Logs tab).",build_receipt
+yolo11l,b315,orin_nx_hailo10_01,hailo10_to_tensorrt,build_failed,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,"feature splitter layer feature_splitter8 (translated from /model.13/Split) successor name is missing, output shape is ambiguous
+
+Details were written to gui.log (Logs tab).",build_receipt
+yolo11l,b373,orin_nx_hailo10_01,hailo10_to_tensorrt,build_failed,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,"feature splitter layer feature_splitter9 (translated from /model.16/Split) successor name is missing, output shape is ambiguous
+
+Details were written to gui.log (Logs tab).",build_receipt
+yolo11l,b455,orin_nx_hailo10_01,hailo10_to_tensorrt,build_failed,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,"feature splitter layer feature_splitter10 (translated from /model.19/Split) successor name is missing, output shape is ambiguous
+
+Details were written to gui.log (Logs tab).",build_receipt
+yolo11l,b537,orin_nx_hailo10_01,hailo10_to_tensorrt,build_failed,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,"feature splitter layer feature_splitter11 (translated from /model.22/Split) successor name is missing, output shape is ambiguous
+
+Details were written to gui.log (Logs tab).",build_receipt
+yolo11l,b602,orin_nx_hailo10_01,hailo10_to_tensorrt,build_failed,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,"Parsing failed. The errors found in the graph are:
+ UnsupportedShuffleLayerError in op /model.23/dfl/Reshape: Unable to create shuffle layer at /model.23/dfl/Reshape
+ UnsupportedShuffleLayerError in op /model.23/dfl/Transpose: Failed to determine type of layer to create in node /model.23/dfl/Transpose
+Please try to parse the model again, using these end node names: /model.23/Reshape_3, /model.23/cv3.2/cv3.2.2/Conv, /model.23/Concat, /model.23/Reshape_4
+
+Details were written to gui.log (Logs tab).",build_receipt
+yolo11l,b031,orin_nx_hailo8_01,hailo8_to_trt,build_failed,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,"feature splitter layer feature_splitter1 (translated from /model.2/Split) successor name is missing, output shape is ambiguous
+
+Details were written to gui.log (Logs tab).",build_receipt
+yolo11l,b093,orin_nx_hailo8_01,hailo8_to_trt,build_failed,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,"feature splitter layer feature_splitter2 (translated from /model.4/Split) successor name is missing, output shape is ambiguous
+
+Details were written to gui.log (Logs tab).",build_receipt
+yolo11l,b186,orin_nx_hailo8_01,hailo8_to_trt,build_failed,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,"feature splitter layer feature_splitter4 (translated from /model.8/Split) successor name is missing, output shape is ambiguous
+
+Details were written to gui.log (Logs tab).",build_receipt
+yolo11l,b287,orin_nx_hailo8_01,hailo8_to_trt,build_failed,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,"feature splitter layer feature_splitter5 (translated from /model.10/Split) successor name is missing, output shape is ambiguous
+
+Details were written to gui.log (Logs tab).",build_receipt
+yolo11l,b315,orin_nx_hailo8_01,hailo8_to_trt,build_failed,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,"feature splitter layer feature_splitter8 (translated from /model.13/Split) successor name is missing, output shape is ambiguous
+
+Details were written to gui.log (Logs tab).",build_receipt
+yolo11l,b373,orin_nx_hailo8_01,hailo8_to_trt,build_failed,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,"feature splitter layer feature_splitter9 (translated from /model.16/Split) successor name is missing, output shape is ambiguous
+
+Details were written to gui.log (Logs tab).",build_receipt
+yolo11l,b455,orin_nx_hailo8_01,hailo8_to_trt,build_failed,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,"feature splitter layer feature_splitter10 (translated from /model.19/Split) successor name is missing, output shape is ambiguous
+
+Details were written to gui.log (Logs tab).",build_receipt
+yolo11l,b492,orin_nx_hailo8_01,hailo8_to_trt,build_failed,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,"Compilation failed: No successful assignments: format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+
+Details were written to gui.log (Logs tab).",build_receipt
+yolo11l,b511,orin_nx_hailo8_01,hailo8_to_trt,build_failed,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,"Compilation failed: No successful assignments: format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+
+Details were written to gui.log (Logs tab).",build_receipt
+yolo11l,b537,orin_nx_hailo8_01,hailo8_to_trt,build_failed,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,"feature splitter layer feature_splitter11 (translated from /model.22/Split) successor name is missing, output shape is ambiguous
+
+Details were written to gui.log (Logs tab).",build_receipt
+yolo11l,b584,orin_nx_hailo8_01,hailo8_to_trt,build_failed,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,"Compilation failed: No successful assignments: format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion7 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+format_conversion8 errors:
+	Agent infeasible
+
+Details were written to gui.log (Logs tab).",build_receipt
+yolo11l,b602,orin_nx_hailo8_01,hailo8_to_trt,build_failed,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,"Parsing failed. The errors found in the graph are:
+ UnsupportedShuffleLayerError in op /model.23/dfl/Reshape: Failed to determine type of layer to create in node /model.23/dfl/Reshape
+Please try to parse the model again, using these end node names: /model.23/Reshape_4, /model.23/cv3.2/cv3.2.2/Conv, /model.23/Reshape_3, /model.23/Concat
+
+Details were written to gui.log (Logs tab).",build_receipt
+yolo26m,b290,orin_nx_hailo10_01,hailo10_to_tensorrt,policy_excluded,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,hailo_yolo26_static_part1_guard,policy_exclusion
+yolo26m,b303,orin_nx_hailo10_01,hailo10_to_tensorrt,policy_excluded,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,hailo_yolo26_static_part1_guard,policy_exclusion
+yolo26m,b325,orin_nx_hailo10_01,hailo10_to_tensorrt,policy_excluded,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,hailo_yolo26_static_part1_guard,policy_exclusion
+yolo26m,b340,orin_nx_hailo10_01,hailo10_to_tensorrt,policy_excluded,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,hailo_yolo26_static_part1_guard,policy_exclusion
+yolo26m,b373,orin_nx_hailo10_01,hailo10_to_tensorrt,policy_excluded,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,hailo_yolo26_static_part1_guard,policy_exclusion
+yolo26m,b393,orin_nx_hailo10_01,hailo10_to_tensorrt,policy_excluded,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,hailo_yolo26_static_part1_guard,policy_exclusion
+yolo26m,b290,orin_nx_hailo8_01,hailo8_to_trt,policy_excluded,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,hailo_yolo26_static_part1_guard,policy_exclusion
+yolo26m,b303,orin_nx_hailo8_01,hailo8_to_trt,policy_excluded,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,hailo_yolo26_static_part1_guard,policy_exclusion
+yolo26m,b325,orin_nx_hailo8_01,hailo8_to_trt,policy_excluded,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,hailo_yolo26_static_part1_guard,policy_exclusion
+yolo26m,b340,orin_nx_hailo8_01,hailo8_to_trt,policy_excluded,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,hailo_yolo26_static_part1_guard,policy_exclusion
+yolo26m,b373,orin_nx_hailo8_01,hailo8_to_trt,policy_excluded,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,hailo_yolo26_static_part1_guard,policy_exclusion
+yolo26m,b393,orin_nx_hailo8_01,hailo8_to_trt,policy_excluded,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,hailo_yolo26_static_part1_guard,policy_exclusion
+yolo26s,b256,orin_nx_hailo10_01,hailo10_to_tensorrt,policy_excluded,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,hailo_yolo26_static_part1_guard,policy_exclusion
+yolo26s,b284,orin_nx_hailo10_01,hailo10_to_tensorrt,policy_excluded,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,hailo_yolo26_static_part1_guard,policy_exclusion
+yolo26s,b291,orin_nx_hailo10_01,hailo10_to_tensorrt,policy_excluded,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,hailo_yolo26_static_part1_guard,policy_exclusion
+yolo26s,b308,orin_nx_hailo10_01,hailo10_to_tensorrt,policy_excluded,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,hailo_yolo26_static_part1_guard,policy_exclusion
+yolo26s,b345,orin_nx_hailo10_01,hailo10_to_tensorrt,policy_excluded,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,hailo_yolo26_static_part1_guard,policy_exclusion
+yolo26s,b360,orin_nx_hailo10_01,hailo10_to_tensorrt,policy_excluded,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,hailo_yolo26_static_part1_guard,policy_exclusion
+yolo26s,b256,orin_nx_hailo8_01,hailo8_to_trt,policy_excluded,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,hailo_yolo26_static_part1_guard,policy_exclusion
+yolo26s,b284,orin_nx_hailo8_01,hailo8_to_trt,policy_excluded,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,hailo_yolo26_static_part1_guard,policy_exclusion
+yolo26s,b291,orin_nx_hailo8_01,hailo8_to_trt,policy_excluded,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,hailo_yolo26_static_part1_guard,policy_exclusion
+yolo26s,b308,orin_nx_hailo8_01,hailo8_to_trt,policy_excluded,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,hailo_yolo26_static_part1_guard,policy_exclusion
+yolo26s,b345,orin_nx_hailo8_01,hailo8_to_trt,policy_excluded,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,hailo_yolo26_static_part1_guard,policy_exclusion
+yolo26s,b360,orin_nx_hailo8_01,hailo8_to_trt,policy_excluded,not_applicable,not_applicable,not_applicable,quality_missing_or_unbound,False,hailo_yolo26_static_part1_guard,policy_exclusion

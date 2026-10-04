@@ -1,0 +1,103 @@
+{
+  "inventory": [
+    {
+      "cohort": "base",
+      "historical_generic": 527,
+      "quality": 548,
+      "reference_close": 509,
+      "accuracy_loss": 39,
+      "native": 234,
+      "native_full": 42,
+      "native_repeats": 702,
+      "generic_completed": 192,
+      "generic_repeats": 576,
+      "energy": 234,
+      "energy_repeats": 702,
+      "physical_starts": 705,
+      "failed_completed": 3,
+      "unconfirmed": 0
+    },
+    {
+      "cohort": "augmentation",
+      "historical_generic": 12,
+      "quality": 12,
+      "reference_close": 12,
+      "accuracy_loss": 0,
+      "native": 12,
+      "native_full": 0,
+      "native_repeats": 36,
+      "generic_completed": 12,
+      "generic_repeats": 36,
+      "energy": 12,
+      "energy_repeats": 36,
+      "physical_starts": 42,
+      "failed_completed": 4,
+      "unconfirmed": 2
+    }
+  ],
+  "coverage_states": {
+    "completed": 527,
+    "build_failed": 37,
+    "policy_excluded": 24
+  },
+  "historical_endpoint_counts": {
+    "completed_classification": 12,
+    "classification_logits": 240,
+    "completed_detection": 16,
+    "p2_output": 259
+  },
+  "rank_groups": 21,
+  "base_sufficient": 12,
+  "augmented_sufficient": 21,
+  "yolo_base_sufficient": 3,
+  "yolo_augmented_sufficient": 12,
+  "yolo_n3": 12,
+  "yolo_top1_hits": 7,
+  "yolo_worst_regret": 1.12592811344495,
+  "classification_rho_range": [
+    -0.4556390977443609,
+    0.9950980392156863
+  ],
+  "all_rho_range": [
+    -0.5,
+    1.0
+  ],
+  "technical_pairs": 204,
+  "quality_pairs": 201,
+  "claim_pairs": 0,
+  "pair_quality_classes": {
+    "reference_close": 187,
+    "accuracy_loss": 17
+  },
+  "ratio_median": 1.2423227296542276,
+  "ratio_min": 0.8646445801076087,
+  "ratio_max": 9.129230616783893,
+  "ratio_below_one": 62,
+  "native_cv_median": 0.005236454425824615,
+  "generic_cv_median": 0.0040426216825892244,
+  "energy_physical": {
+    "base": {
+      "valid": 702,
+      "completed_failed": 3
+    },
+    "augmentation": {
+      "valid": 36,
+      "completed_failed": 4,
+      "interrupted_unconfirmed": 2
+    }
+  },
+  "setup_diagnostic": {
+    "valid": 1
+  },
+  "energy_duration_range": [
+    61.2795,
+    63.5515
+  ],
+  "energy_physical_scope": {
+    "full_system": 246
+  },
+  "energy_claim_true": 0,
+  "arithmetic_max_abs_error": 4.945447926729685e-07,
+  "fps_repeat_count_time_assertions": 1350,
+  "quality_unique_identity_count": 560
+}

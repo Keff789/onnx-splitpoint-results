@@ -1,0 +1,5 @@
+view,historical_raw,short_predecessor,quality,native,native_full,generic_completed,energy
+corrected_original_base,527,0,548,234,42,0,234
+separate_completion_192,0,0,0,0,0,192,0
+yolo_additions,0,12,12,12,0,12,12
+explicit_augmented_union,527,12,560,246,42,204,246

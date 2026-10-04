@@ -1,0 +1,13 @@
+cohort,model_id,case_id,setup_id,backend,comparison_backend,precision,task,endpoint_id,throughput_fps,measurement_endpoint,measurement,source_role
+augmentation_short,yolo11l,b120,DeepX,deepx_m1_to_tensorrt,,,detection,,27.091816316988737,p2_output,generic_short_predecessor,inventory_only
+augmentation_short,yolo11l,b120,H10,hailo10_to_tensorrt,,,detection,,26.814385360928934,p2_output,generic_short_predecessor,inventory_only
+augmentation_short,yolo11l,b120,H8,hailo8_to_tensorrt,,,detection,,56.16151734276284,p2_output,generic_short_predecessor,inventory_only
+augmentation_short,yolo26s,b038,DeepX,deepx_m1_to_tensorrt,,,detection,,46.74853109604492,p2_output,generic_short_predecessor,inventory_only
+augmentation_short,yolo26s,b038,H10,hailo10_to_tensorrt,,,detection,,54.063015959904604,p2_output,generic_short_predecessor,inventory_only
+augmentation_short,yolo26s,b038,H8,hailo8_to_tensorrt,,,detection,,108.45481967072037,p2_output,generic_short_predecessor,inventory_only
+augmentation_short,yolov7_paper,b044,DeepX,deepx_m1_to_tensorrt,,,detection,,36.128861053888905,p2_output,generic_short_predecessor,inventory_only
+augmentation_short,yolov7_paper,b066,DeepX,deepx_m1_to_tensorrt,,,detection,,26.27566082757797,p2_output,generic_short_predecessor,inventory_only
+augmentation_short,yolov7_paper,b044,H10,hailo10_to_tensorrt,,,detection,,46.15126782773855,p2_output,generic_short_predecessor,inventory_only
+augmentation_short,yolov7_paper,b066,H10,hailo10_to_tensorrt,,,detection,,27.269369588643666,p2_output,generic_short_predecessor,inventory_only
+augmentation_short,yolov7_paper,b044,H8,hailo8_to_tensorrt,,,detection,,49.65411278205442,p2_output,generic_short_predecessor,inventory_only
+augmentation_short,yolov7_paper,b066,H8,hailo8_to_tensorrt,,,detection,,51.092509974708854,p2_output,generic_short_predecessor,inventory_only

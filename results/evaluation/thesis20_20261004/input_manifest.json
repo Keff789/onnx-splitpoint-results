@@ -1,0 +1,117 @@
+[
+  {
+    "file": "inputs/arithmetic_checks.csv",
+    "bytes": 332074,
+    "sha256": "3ba98099184865e2275c7aac1ff67f509d549550e3716020c91669b027a36529"
+  },
+  {
+    "file": "inputs/completion_pairs.csv",
+    "bytes": 71532,
+    "sha256": "272ed1d7bad22e59500aef5df4ed34a62f0e5840a7706533fb92a6e4fdccedaa"
+  },
+  {
+    "file": "inputs/coverage.csv",
+    "bytes": 68427,
+    "sha256": "5d47cb4d002001ca90e163d1b0eab41c92c43fbf3c6c5183f8efffad7fc25c1c"
+  },
+  {
+    "file": "inputs/energy_cases.csv",
+    "bytes": 147938,
+    "sha256": "7ed13607bbfbbf9f10c66cb86e85864bb86dd5bd7e04ce1231434d50c09df5e3"
+  },
+  {
+    "file": "inputs/energy_physical_attempts.csv",
+    "bytes": 117795,
+    "sha256": "6b878cc550d66636e558ec92a2609bbac9ad5a3e4387abe4a444b31d5512c11a"
+  },
+  {
+    "file": "inputs/energy_repeats.csv",
+    "bytes": 291701,
+    "sha256": "d9f20ee14e01f418e3ec8c3ba790a92da0c6ecf410a41225f2e24512fcb3202f"
+  },
+  {
+    "file": "inputs/energy_split_full_pairs.csv",
+    "bytes": 176413,
+    "sha256": "08daed06d9a55fbbfabcc00d8b2c892fd050d5f036b7c21ac78065e452ff08d5"
+  },
+  {
+    "file": "inputs/generic_cases.csv",
+    "bytes": 97985,
+    "sha256": "7398c02540deb8deea37fab82a84ed87ef795a98f112b89c51fe8de9fcadff5f"
+  },
+  {
+    "file": "inputs/generic_raw.csv",
+    "bytes": 78263,
+    "sha256": "31f073fca0c3fd59fce907b883fff0cd5922329666c257d8e4c7e07c33854092"
+  },
+  {
+    "file": "inputs/generic_short_predecessors.csv",
+    "bytes": 1857,
+    "sha256": "edfd27fb194ce2308b7cee59b45d6ffcbc00ea6c61c921b12758c30adae47d15"
+  },
+  {
+    "file": "inputs/inventory.json",
+    "bytes": 1014,
+    "sha256": "d91c784afffb3f572cc1fe5b7b3c79a516aed0f751600275ecb61e217c23f689"
+  },
+  {
+    "file": "inputs/native_cases.csv",
+    "bytes": 111569,
+    "sha256": "62405bb0e447ca9c07a464ba9aa9654ddebb248720868f8497a4600a24cd81ae"
+  },
+  {
+    "file": "inputs/performance_repeats.csv",
+    "bytes": 708167,
+    "sha256": "66e5930abdb8056431981e7ecdc7d2715f19789e86bdf96d8d05d77610a44005"
+  },
+  {
+    "file": "inputs/quality.csv",
+    "bytes": 124059,
+    "sha256": "31f165156541647039c813e4d773a58e317ff2cf513b306fa37a101152d754e8"
+  },
+  {
+    "file": "inputs/quality_transfer_exclusions.csv",
+    "bytes": 493,
+    "sha256": "490a6c0facb74a69de04728d404deaa0368b45979fd2c8eaf1693f37ddc4207c"
+  },
+  {
+    "file": "inputs/rank_function_provenance.json",
+    "bytes": 1612,
+    "sha256": "c7e055aa79adc603bc959e56a7e2d3ca63f73ccdb137997b499c64334abe0ae8"
+  },
+  {
+    "file": "inputs/semantics/README.md",
+    "bytes": 4791,
+    "sha256": "c8dfea1adc21ab84cb8c6363462c1ddb842563d3d334fda95ed0436bcd74cf3d"
+  },
+  {
+    "file": "inputs/semantics/original_binding_audit.json",
+    "bytes": 1274,
+    "sha256": "78da9029082e9d8962eaf0c71b8e4d554faf588d23f68602c784c4c4bfce4d1c"
+  },
+  {
+    "file": "inputs/semantics/scripts/replay_semantics.py",
+    "bytes": 14068,
+    "sha256": "d7ff7f64b56b6e95078955025b9ec508a1cb1f17865451c62de83d8d2e8a6a8b"
+  },
+  {
+    "file": "inputs/semantics/terminal_quality_projection_45.csv",
+    "bytes": 31332,
+    "sha256": "2ae3911cb32f3addd75f6a3b57ea39cac3b569d1cb9fce262c6325d3b78cb9c2"
+  },
+  {
+    "file": "inputs/semantics/two_full_negative_replay.json",
+    "bytes": 2559,
+    "sha256": "82479ee5650492017943dcdee544ceaaa8dfee729af875cf499a2cc77c21b6c1"
+  },
+  {
+    "file": "inputs/semantics/yolo_energy_semantic_evidence.json",
+    "bytes": 541140,
+    "sha256": "5e254b523d2439b520ec06242624d948b4dd41332df6e8268be96a65a3fa5569"
+  },
+  {
+    "file": "inputs/semantics/yolo_energy_semantic_projection_24.csv",
+    "bytes": 6648,
+    "sha256": "ede686c66dd397b7e5d2d4156d07ec7d6350749bdd3d77651a4ba75ad53e124e"
+  }
+]

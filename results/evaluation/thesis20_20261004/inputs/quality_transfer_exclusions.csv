@@ -1,0 +1,4 @@
+cohort,model_id,case_id,setup_id,technical_eligible,quality_eligible,generic_quality,native_quality,quality_exclusion_reasons
+augmentation,yolo11l,b120,H8,True,False,reference_close,reference_close,"[""native_output_endpoint_match"",""validation_semantic_ok""]"
+augmentation,yolo26s,b038,H10,True,False,reference_close,reference_close,"[""native_output_endpoint_match""]"
+augmentation,yolov7_paper,b044,DeepX,True,False,reference_close,reference_close,"[""native_output_endpoint_match""]"

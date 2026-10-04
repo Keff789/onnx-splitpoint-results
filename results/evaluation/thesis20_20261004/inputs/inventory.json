@@ -1,0 +1,49 @@
+{
+  "generic_raw_base": 527,
+  "generic_short_predecessor_rows": 12,
+  "quality": 560,
+  "quality_classes": {
+    "reference_close": 521,
+    "accuracy_loss": 39
+  },
+  "native_cases": 246,
+  "native_full": 42,
+  "native_repeats": 738,
+  "generic_completed_cases": 204,
+  "generic_completed_repeats": 612,
+  "generic_completed_tasks": 612000,
+  "energy_cases": 246,
+  "energy_repeats": 738,
+  "native_terminal_counts": {
+    "ok": 234,
+    "not_supported": 228
+  },
+  "quality_policy": {
+    "base": {
+      "N": 5000,
+      "B": 1000,
+      "seed": 20260710
+    },
+    "augmentation": {
+      "N": 5000,
+      "B": 1000,
+      "seed": 20260710
+    }
+  },
+  "arithmetic_check_count": 2172,
+  "arithmetic_max_abs_error": 4.945447926729685e-07,
+  "energy_physical_attempts": {
+    "base": {
+      "valid": 702,
+      "completed_failed": 3
+    },
+    "augmentation": {
+      "valid": 36,
+      "completed_failed": 4,
+      "interrupted_unconfirmed": 2
+    }
+  },
+  "setup_diagnostic_attempts": {
+    "valid": 1
+  }
+}

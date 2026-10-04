@@ -1,0 +1,36 @@
+{
+  "verified": true,
+  "commit": "d164aad6d7c7ef68c1b371c49a1fdea0a3b27dd7",
+  "annotated_tag": "v2.92.0",
+  "tag_object": "30b4cbfc0e5bdfc31dcec863dc720c217e599363",
+  "tag_type": "tag",
+  "remote_refs": {
+    "refs/heads/main": "d164aad6d7c7ef68c1b371c49a1fdea0a3b27dd7",
+    "refs/tags/v2.92.0": "30b4cbfc0e5bdfc31dcec863dc720c217e599363",
+    "refs/tags/v2.92.0^{}": "d164aad6d7c7ef68c1b371c49a1fdea0a3b27dd7"
+  },
+  "url": "https://github.com/Keff789/ONNX-Splitpoint-Tool/releases/tag/v2.92.0",
+  "published_at": "2026-10-04T17:29:31Z",
+  "assets": [
+    {
+      "name": "ONNX-Splitpoint-Tool_v2.92.0_source.tar.gz",
+      "size": 16269097,
+      "digest": "sha256:1aa245530769f4d0f3319f1cbe11d2886bdbdbbd0ea70e69800b04391693b438",
+      "browser_download_url": "https://github.com/Keff789/ONNX-Splitpoint-Tool/releases/download/v2.92.0/ONNX-Splitpoint-Tool_v2.92.0_source.tar.gz"
+    },
+    {
+      "name": "ONNX-Splitpoint-Tool_v2.92.0_source.zip",
+      "size": 18054142,
+      "digest": "sha256:afbb63c6123e64f4cfb3d458cdade023fb5e981cad7332a9910134a9601c4c71",
+      "browser_download_url": "https://github.com/Keff789/ONNX-Splitpoint-Tool/releases/download/v2.92.0/ONNX-Splitpoint-Tool_v2.92.0_source.zip"
+    },
+    {
+      "name": "SHA256SUMS.release.txt",
+      "size": 215,
+      "digest": "sha256:04f08d8121282f7c2fab7d25d604368e93f524d6c6d98331a23f1b3a9871eb96",
+      "browser_download_url": "https://github.com/Keff789/ONNX-Splitpoint-Tool/releases/download/v2.92.0/SHA256SUMS.release.txt"
+    }
+  ],
+  "working_tree_status": "",
+  "github_asset_digests_match_local": true
+}

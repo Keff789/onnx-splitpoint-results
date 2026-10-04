@@ -1,0 +1,37 @@
+[
+  {
+    "figure": "fig01_coverage",
+    "table": "tables/fig01_coverage_input.csv",
+    "pdf": "figures/fig01_coverage.pdf",
+    "svg": "figures/fig01_coverage.svg",
+    "caption": "Original Generic scope and Native support are separate row universes. Quality includes 21 vendor Full companion observations and 12 additions; failures are retained."
+  },
+  {
+    "figure": "fig02_completed_throughput_ratio",
+    "table": "tables/fig02_completed_throughput_ratio_input.csv",
+    "pdf": "figures/fig02_completed_throughput_ratio.pdf",
+    "svg": "figures/fig02_completed_throughput_ratio.svg",
+    "caption": "Both endpoints complete the same task. Three-repetition medians; black marks are descriptive within-model/setup medians. Runtime conditions are not controlled equivalently; no causal speedup claim."
+  },
+  {
+    "figure": "fig03_yolo_rank_transfer",
+    "table": "tables/fig03_yolo_rank_transfer_input.csv",
+    "pdf": "figures/fig03_yolo_rank_transfer.pdf",
+    "svg": "figures/fig03_yolo_rank_transfer.svg",
+    "caption": "Base correlations exist only for the three YOLO26m groups (n=3); gray rings coincide with their unchanged augmented estimates. The other nine base groups have n<3 and no base estimate. Every augmented YOLO group has n=3. Top-3 at n=3 is tautological. Top-1 regret=(best Native FPS / FPS selected by Generic)-1."
+  },
+  {
+    "figure": "fig04_energy_tradeoffs",
+    "table": "tables/fig04_energy_tradeoffs_input.csv",
+    "pdf": "figures/fig04_energy_tradeoffs.pdf",
+    "svg": "figures/fig04_energy_tradeoffs.svg",
+    "caption": "Split cases only. Throughput and energy share each measured energy window; 60-s screening, three repeats, whole-system energy, no idle subtraction. Hollow red marks preserve accuracy_loss. Pareto membership is computed separately within exact precision/endpoint/calibration strata, not across panels or Full baselines."
+  },
+  {
+    "figure": "fig05_quality_and_variability",
+    "table": "tables/fig05_quality_and_variability_input.csv",
+    "pdf": "figures/fig05_quality_and_variability.pdf",
+    "svg": "figures/fig05_quality_and_variability.svg",
+    "caption": "All 204 matched cases shown without pooled rank/regression claims. Quality loss has task-specific meaning and unchanged acceptance margins. CV uses sample SD / mean FPS; only three repetitions per case."
+  }
+]

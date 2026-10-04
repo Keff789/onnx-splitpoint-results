@@ -5,15 +5,39 @@
 > Toolversionen, Run-IDs und historische Revisionsangaben im Text bleiben erhalten,
 > damit sich Befunde weiterhin dem richtigen Stand zuordnen lassen.
 >
-> **Evidenzstichtag: 02.10.2026, THESIS20-Abschluss und Ergebnis-Audit.**
-> Die planmäßige Erhebung ist abgeschlossen; die wissenschaftliche Auswertung
-> und Vergleichsfreigabe sind noch nicht abgeschlossen. Aktuelle Aufgaben stehen
-> ausschließlich in §12, die Übergabe in §16 und die neuen Befunde in §22.
-> Frühere R9H-/Resume-/Startanweisungen sind datierte Historie, kein neuer Auftrag.
-> Historische Quellenpakete und das private Abschlussarchiv liegen nicht automatisch
-> in diesem Repository. Lokale Benutzerpfade bleiben abstrahiert.
+> **Evidenzstichtag: 04.10.2026, gemeinsame Auswertung und Quellabschluss.**
+> Hauptkampagne, 192er-Completion und YOLO-Augmentierung sind technisch vollständig.
+> Die gemeinsame lokale Ableitung führt Originalidentitäten und negative Ergebnisse
+> fort. Aktuelle Aufgaben stehen in §12, die Übergabe in §16 und der Abschluss in §23.
+> Frühere Resume-/Messanweisungen sind datierte Historie, kein aktueller Auftrag.
 
 ## Aktueller Stand
+
+| Menge / Gegenstand | Live geprüfter Stand am 04.10.2026 |
+|---|---|
+| Maßgebliche Quellen | ursprüngliche Hauptkampagne; korrigierte Basisableitung vom 02.10.; separate 192er-Completion; finale YOLO-Zusatzkohorte mit Abschluss **17:54:23 CEST, Exitcode 0** |
+| Historische Generic-Performance, Endpunkte getrennt | **527** Hauptmesszeilen + **37** negative Builds + **24** Policyausschlüsse = **588** Sollfälle; zwölf kurze YOLO-Vorläufe sind separat inventarisiert |
+| Quality | **560** eindeutige N5000/B1000-Ergebnisse: **521 reference_close / 39 accuracy_loss**; keine neue Statistikrechnung |
+| Native-Performance | **246** Fälle = **204 Splits + 42 Fullbaselines**, **738** gültige Wiederholungen; ursprüngliche **228 not_supported** bleiben terminal |
+| Generic-Completed-Task | **204** Fälle = 192 + 12; **612** Wiederholungen und **612.000** gemessene Abschlüsse; Prepared Input bis tatsächliche Task-Completion |
+| Native-FS-Energie | **246** vollständige Zeilen, **738** gültige Replikate; Primärenergie ohne Idleabzug; 21 vorhandene TRT-Full-Zusatznormalisierungen getrennt |
+| Physische Aufnahmehistorie | Basis **705 = 702 gültig + 3 abgeschlossen ungültig**; YOLO **42 = 36 gültig + 4 abgeschlossen ungültig + 2 unbestätigt unterbrochen**; ein unabhängiger GUI-Funktionstest separat |
+| YOLO-Abdeckung | zwölf Modell-/Setupgruppen mit mindestens drei technisch vergleichbaren Grenzen; neun ungemessene Standbyidentitäten sind keine offenen Pflichtfälle |
+| Auswertungsreparaturen | F01/F02/F03/F05/F06 lokal abgeleitet; F04 durch separat beauftragte 192er-Completion und zwölf Zusatzfälle ergänzt. Primärdaten und historische Negativprojektionen bleiben erhalten |
+| Rollen und Grenzen | Zusatzkohorte post-planned/development; `runtime_conditions_comparable=false` bleibt bestehen. 204 technische Paarungen, 201 nach bestehendem Qualitytransfergate, 0 Claims. Technische Gleichendpunktprüfung ist keine kausale oder Hold-out-Freigabe |
+| Toolrelease | [Toolrelease v2.92.0](https://github.com/Keff789/ONNX-Splitpoint-Tool/releases/tag/v2.92.0), Maincommit `d164aad6d7c7ef68c1b371c49a1fdea0a3b27dd7`, annotierter Tag und beide Quellenarchive sind veröffentlicht und remote verifiziert |
+| Roharchiv | Benutzertransfer läuft beim Abschluss weiter. Zusätzliche Bereiche sind sequenziell vorgemerkt; Originale bleiben vollständig erhalten. Kein pauschales „alles gesichert“ |
+| Einstieg | [START_HERE](../results/evaluation/thesis20_20261004/START_HERE.md), [Paperbefunde](../results/evaluation/thesis20_20261004/PAPER_FINDINGS.md), [gemeinsame Auswertung](../results/evaluation/thesis20_20261004/README.md) |
+
+**Entscheidung:** Keine erneute Inferenz, Qualityrechnung, Performance-/Energieaufnahme
+oder Modellkompilierung. Die folgenden historischen Stände erklären die Entwicklung;
+sie sind keine aktuelle Restplanung. Wissenschaftliche Einschränkungen werden fallbezogen
+veröffentlicht und nicht durch positive Flags beseitigt.
+
+<details>
+<summary>Historischer Kopfstand und Entscheidung vom 02.10.2026</summary>
+
+### Historischer Kopfstand vom 02.10.2026
 
 | Feld | Maßgeblicher Arbeitsstand am 02.10.2026 |
 |---|---|
@@ -38,6 +62,9 @@ Zuerst die nachgewiesenen Auswertungsfehler lokal korrigieren. „Erhebung volls
 nicht gleich „alle Vergleichsaussagen freigegeben“. Dieses Update dokumentiert den Audit;
 es implementiert keinen der neuen F01–F06-Fixes. [E-TH20-AUDIT] [E-TH20-ENERGY-END]
 [E-TH20-ENERGY-REENTRY] [E-TH20-FOLLOWUP]
+
+
+</details>
 
 <details>
 <summary>Historischer Kopfstand vom 19.09.2026 – unverändert als damaliger Nachweis</summary>
@@ -68,18 +95,18 @@ und Prüfung sichern. Keine neue Reparaturrunde allein für die Knowledgebase. [
 
 ## Navigation
 
-[0. Dokumentführung](#dokumentfuehrung) · [1. Methode](#methode) · [2. Fragenkatalog](#fragen) · [3. Setups](#endpunkte) · [4. Releasefortschritt bis R8](#v30) · [5. DeepX-Historie](#deepx-full) · [6. Energie](#energie) · [7. Modellqualität](#deepx-r1-r2) · [8. Cache und Abschluss](#abschluss) · [9. Historisches Complete Set](#complete-set) · [10. Historischer .4-Auftrag](#v31-plan) · [11. Historische Abnahme](#gates) · [12. Aktuelle Aufgaben](#todo) · [13. Betrieb](#betrieb) · [14. Evidenz](#ablage) · [15. Klärungen](#grenzen) · [16. Übergabe](#uebergabe) · [17. Änderungen](#aenderungen) · [18. Codex-Betrieb](#codex) · [19. GUI-Teststandard](#gui-tests) · [20. Nachtauswertung/Plausibilität](#nacht-audit) · [21. Historie R9A–H](#r9fortschritt) · [22. THESIS20-Abschluss/Audit](#thesis20-audit) · [Quellen](#quellen)
+[0. Dokumentführung](#dokumentfuehrung) · [1. Methode](#methode) · [2. Fragenkatalog](#fragen) · [3. Setups](#endpunkte) · [4. Releasefortschritt bis R8](#v30) · [5. DeepX-Historie](#deepx-full) · [6. Energie](#energie) · [7. Modellqualität](#deepx-r1-r2) · [8. Cache und Abschluss](#abschluss) · [9. Historisches Complete Set](#complete-set) · [10. Historischer .4-Auftrag](#v31-plan) · [11. Historische Abnahme](#gates) · [12. Aktuelle Aufgaben](#todo) · [13. Betrieb](#betrieb) · [14. Evidenz](#ablage) · [15. Klärungen](#grenzen) · [16. Übergabe](#uebergabe) · [17. Änderungen](#aenderungen) · [18. Codex-Betrieb](#codex) · [19. GUI-Teststandard](#gui-tests) · [20. Nachtauswertung/Plausibilität](#nacht-audit) · [21. Historie R9A–H](#r9fortschritt) · [22. Historischer THESIS20-Audit](#thesis20-audit) · [23. Gemeinsamer Abschluss](#thesis20-final) · [Quellen](#quellen)
 
 <a id="dokumentfuehrung"></a>
 ## 0. Dokumentführung und Quellenrang
 
 Diese Fassung führt die kanonische Knowledgebase einschließlich der REV5-Historie fort.
 Aktuelle Aufgaben stehen nur in §12, die aktuelle Übergabe in §16, die historischen R9A–H-
-Nachweise in §21 und der THESIS20-Abschluss samt Audit in §22. Methoden und historische
+Nachweise in §21, der historische THESIS20-Audit in §22 und der gemeinsame Abschluss in §23. Methoden und historische
 Befunde bleiben erhalten; spätere Ergebnisse schreiben keine Originalmessung um. Frühere
 .4-, R8-, R9H- und THESIS20-Fortsetzungsanweisungen sind keine erneut auszuführenden Aufträge.
 
-**Quellenstatus dieses Dokumentupdates:** bestehende Git-Fassung und gelieferter THESIS20-
+**Historischer Quellenstatus des Updates vom 02.10.2026 (durch §23 fortgeschrieben):** bestehende Git-Fassung und gelieferter THESIS20-
 Ergebnis-Audit mit seinen Falllisten sowie datierte Installations-/Start-/Abschlussberichte.
 Der Audit stammt aus der vorherigen Ergebnisprüfung; hier werden seine Befunde dokumentiert,
 nicht erneut als neue Hardware- oder komplette Rohdatenprüfung ausgegeben. F01–F06 sind offen,
@@ -872,7 +899,19 @@ Nach der Softwarelieferung folgt eine zusammenhängende, begrenzte Abnahme mit e
 G5 verwendet den bestehenden Erwartungs-/Admissionpfad; ein unerwarteter MISS wird sichtbar, statt die kurze Runde heimlich in einen langen Build zu verwandeln. Nicht global `cache_verify_only` setzen, weil dann der normale Referenzpfad fehlt. Wenn G6 bereits warm ist, bleibt „aktueller normaler Kaltbuild nicht beobachtet“ ein benannter Scope; es wird kein vorhandenes HEF gelöscht oder per Force neu gebaut. Weitere wissenschaftliche Final-/Energieaufträge sind keine versteckten Voraussetzungen für Software-PASS. [E-2804-PLAN, §9]
 
 <a id="todo"></a>
-## 12. Einzige aktuelle Aufgabenliste – THESIS20-Ergebnisaudit, 02.10.2026
+## 12. Einzige aktuelle Aufgabenliste – Abschluss vom 04.10.2026
+
+Die autorisierten Erhebungen und lokalen Auswertungskorrekturen sind abgeschlossen.
+Es gibt keine offene planmäßige Messpflicht. Maßgeblich sind die Tabellen des gemeinsamen
+Abschlusses und §23, nicht die früheren Restzahlen.
+
+1. **Archiv:** laufenden Benutzertransfer und nachfolgende sequenzielle Ergänzung bis zum tatsächlichen Copy-/Lesenachweis verfolgen; verbliebene externe Evidenzlücken in der privaten Pfadkarte prüfen. Keine Originale löschen.
+2. **Paper:** Rangtransfer je Modell/Setup/Precision/Endpunkt und die explizit deskriptiven Energiequoten aus den reproduzierbaren Tabellen verwenden. Keine kausale Laufzeitkontrolle oder Hold-out-Rolle behaupten.
+3. **Vergleichsgrenzen:** die beiden negativen YOLO26s-Vendor-Fulls und fallbezogene Decoder-/Messgrenzen erhalten; keine neue Messung automatisch daraus ableiten.
+4. **Veröffentlichung:** [Toolrelease v2.92.0](https://github.com/Keff789/ONNX-Splitpoint-Tool/releases/tag/v2.92.0), Maincommit `d164aad6d7c7ef68c1b371c49a1fdea0a3b27dd7`, annotierter Tag und beide Quellenarchive sind veröffentlicht und remote verifiziert. Der neue Quellenstand ist keine rückwirkende Versionszuordnung aller Messungen.
+
+<details>
+<summary>Historische Aufgabenliste des Ergebnis-Audits vom 02.10.2026</summary>
 
 Die planmäßige Generic-/Quality-/Native-/Energieerhebung dieses Runs ist abgeschlossen.
 Die früheren Ergänzungszahlen 152 Generic, 66 Quality und zwölf Nativefälle sind **erledigte
@@ -916,6 +955,9 @@ keine neuen Hash-/Registrymechanismen, kein Force-Rebuild, keine Schwellenlocker
 keine rückwirkende Hold-out-/Final-Rollenumdeklaration und keine automatische Startschleife.
 Der vorbereitete Anschlussauftrag `AUFTRAG_LOKALE_AUSWERTUNGSKORREKTUREN.md` ist ein Auftrag,
 **kein Implementierungs- oder Abnahmenachweis**. [E-TH20-FOLLOWUP]
+
+
+</details>
 
 <details>
 <summary>Historische R9G-/R9H-Aufgaben und damalige Grenzen (19.09.2026)</summary>
@@ -986,6 +1028,18 @@ Performance/Paper/Qualitätsauswertung. Keine weitere allgemeine Reparaturschlei
 
 Generische Energie bleibt aus. Native-Energie ist ein eigener Scope; Dauer und Replikate werden nicht still geändert. Vorhandene alte Fehlermeldungen oder PIDs sind keine aktuellen Betriebszustände. Primärfehler, erwartete Nichtrealisierbarkeit, technische Ausführung, Qualitätsentscheid und Cleanup werden separat gelesen.
 
+### 13.0 Aktueller Betrieb nach gemeinsamem Abschluss (04.10.2026)
+
+Keine Kampagne oder Messfortsetzung starten. Die Auswertung wurde außerhalb der
+Primärbereiche ausgeführt, der Quellrelease regulär installiert und veröffentlicht.
+Originale, historische Attempts, Profile und Caches bleiben erhalten. Archivkopien
+laufen unabhängig und sequenziell nach dem Benutzertransfer; keine Quelländerung an
+kopierten Messdaten und keine Löschung nach bloßer Größenprüfung. Weitere Paperarbeit
+verwendet die abgeschlossenen Tabellen und die Grenzen aus §23.
+
+<details>
+<summary>Historische Betriebsanweisung vom 02.10.2026</summary>
+
 ### 13.0 Aktueller Betrieb nach THESIS20-Abschluss
 
 Keine erneute Kampagnenfortsetzung allein für F01–F06. Lokale Reader-/Reporter-/Validator-
@@ -993,6 +1047,9 @@ Nacharbeit erfolgt getrennt von Primärmessungen. Originalrun, Caches und Quelle
 keine manuelle Gatefreigabe, keine neue Hasharchitektur und keine automatische Messschleife.
 Ein eventueller kleiner Zusatzmessplan wird erst nach §12/F04 beziehungsweise nach konkreter
 Evidenzlücke gesondert entschieden. Dieses Dokumentupdate ändert keine Hostdateien. [E-TH20-FOLLOWUP]
+
+
+</details>
 
 ### 13.0a Historischer Betrieb während R9H (19.09.2026)
 
@@ -1138,6 +1195,29 @@ der Public-Patch enthält einen bereinigten Statusauszug und Quellenzuordnung.
 <a id="uebergabe"></a>
 ## 16. Kompakte Übergabe – maßgeblich für die nächste Sitzung
 
+**Stand 04.10.2026:** Hauptkampagne, 192er-Completion und zwölf YOLO-Zusatzfälle
+sind abgeschlossen. Keine Messfortsetzung starten. Einstieg ist
+[START_HERE](../results/evaluation/thesis20_20261004/START_HERE.md); §23 beschreibt Quellen,
+Korrekturen und Grenzen. Die ursprüngliche 20er-Auswahl und neun ungemessene Reserven bleiben unverändert.
+
+**Gemeinsame Bilanz:** 527 historische Genericzeilen; 560 Quality; 246 Native/738
+Wiederholungen; 204 Generic-Completion/612 Wiederholungen; 246 Energie/738 gültige
+Replikate. 39 Accuracyverluste, 37 negative Builds, 24 Policyfälle und 228 unsupported
+werden weiter ausgewiesen. Die alte `partial`-Projektion ist historische Workflowinformation,
+keine aktuelle fehlende Messung.
+
+**Release/Archiv:** [Toolrelease v2.92.0](https://github.com/Keff789/ONNX-Splitpoint-Tool/releases/tag/v2.92.0), Maincommit `d164aad6d7c7ef68c1b371c49a1fdea0a3b27dd7`, annotierter Tag und beide Quellenarchive sind veröffentlicht und remote verifiziert. Die zusätzliche Archivierung wartet auf
+den laufenden Benutzertransfer; Privatquellen, Messquellstände und Rohdaten sind kein
+öffentliches Gitpayload. Erst verifizierte Kopien gelten als gesichert.
+
+**Wissenschaftliche Grenze:** technische Aufnahme vollständig, Vergleichsevidenz
+fallbezogen, kein pauschaler wissenschaftlicher PASS. Keine nachträgliche Final-/Hold-out-
+Umdeklaration. H8/b066 verwendet den aktuellen Prepared-Input-Dreistufenpfad und die
+gebundene aktuelle Engine; historische 97 FPS sind kein automatisch gleicher Vergleich.
+
+<details>
+<summary>Historische Übergabe vom 02.10.2026</summary>
+
 **Stand 02.10.2026:** Bestehender Run
 `thesis_20splits_n5000_b1000_20260925_20260925_103745`, zuletzt installierter Stand laut
 Lieferbericht 2.91.2 mit lokalen Folgepatches. Energie regulär am 02.10. um 03:49:31 beendet,
@@ -1167,6 +1247,9 @@ architekturen, kein Tuning bis PASS, keine automatische Fortsetzung für Reporte
 Quellcodeveröffentlichung separat: letzter Hostbericht nennt Basis `182092216dfaf4f3ad36460a883098548c83bd8f`
 mit uncommitteter Folgearbeit. Nur die Knowledgebase wird mit diesem Dokumentupdate geändert;
 kein lokaler Hostzugriff, Toolpatch oder Messstart. [E-TH20-AUDIT] [E-TH20-ENERGY-REENTRY]
+
+
+</details>
 
 <details>
 <summary>Vorherige Übergabe (19.09.2026), nur historische Quellenzuordnung</summary>
@@ -1205,6 +1288,14 @@ nach Supervisorende aktuellen Source- und Ergebnisstand getrennt und überprüfb
 
 <a id="aenderungen"></a>
 ## 17. Änderungsprotokoll
+
+### 4. Oktober 2026 – gemeinsamer THESIS20-Abschluss
+
+Live geprüfter Messbestand, korrigierte Basis, vollständige 192er-Completion und YOLO-
+Augmentierung zusammengeführt; Fallzahlen, Replikate und physische Aufnahmehistorie
+getrennt bilanziert. Neue reproduzierbare Tabellen/Grafiken und Quellenrelease verknüpft.
+Alte Aufgaben/Übergaben datiert erhalten, aktuelle §12/§16/§23 synchronisiert. Keine neue Messung.
+
 
 ### 2. Oktober 2026 – THESIS20 abgeschlossen; Ergebnis-Audit und lokale Nacharbeit
 
@@ -1664,7 +1755,7 @@ Energie- und Latenzreplikate, finaler Source-/Test-/Installedstand und gegengepr
 Kein `final`-/Release-Tag allein aufgrund eines laufenden Standard-Integrationslogs. [E-REV5-GIT]
 
 <a id="thesis20-audit"></a>
-## 22. THESIS20: abgeschlossene Erhebung und noch offene Auswertung
+## 22. Historischer THESIS20-Audit vom 02.10.2026
 
 **Stichtag 02.10.2026.** Dieser Abschnitt schreibt den früheren R9G/R9H-Stand für die
 aktuelle THESIS20-Kampagne fort, ohne alte Versuche rückwirkend als bestanden auszugeben.
@@ -1842,6 +1933,66 @@ gültiges negatives Ergebnis, methodische Grenze oder exakt benötigte Zusatzmes
 Aktuell keine physische Messung eindeutig als verdorben nachgewiesen; kein vollständiger
 Neulauf gerechtfertigt. Bedingte Generic-Completion-/Outputdiagnosen sind keine automatisch
 freigegebene neue Kampagne. [E-TH20-AUDIT] [E-TH20-FOLLOWUP]
+
+<a id="thesis20-final"></a>
+## 23. Gemeinsame Auswertung und Veröffentlichung am 04.10.2026
+
+### 23.1 Vier Quellenbereiche und drei Evidenzebenen
+
+Die korrigierte ursprüngliche Hauptauswertung, 192er-Completion, zwölf YOLO-Zusatzfälle
+und augmentierte Vereinigung bleiben eigene Ansichten. Fullbaselines werden einmal
+gezählt. Auswahl erfolgt anhand Fall-/Request-/Attempt-/Vertragsbindungen, nicht nach
+Dateizeit oder bestem Ergebnis. Die 527 historischen Genericzeilen umfassen 499 Rohoutput-Splits und 28 Completed-Fulls.
+204 technische Paarungen sind von 201 Qualitytransferfreigaben und 0 wissenschaftlichen
+Claims getrennt; gültige zentrale Qualityentscheidungen erzwingen keine Paarfreigabe.
+Die kleinen veröffentlichten Eingaben enthalten keine
+Modelle, Tensorpayloads, Bilder, privaten Pfade oder Zugangsdaten.
+
+Historische Workflowstatusfelder (`partial`, `not_evaluated`) bleiben unverändert.
+Die auditierte Messmatrix ist vollständig. Wissenschaftliche Vergleichsfreigabe bleibt
+separat: Screening-/Developmentrollen, unkontrollierte Zeit-/Thread-/Thermikbedingungen
+und gültige Accuracyverluste verhindern pauschale kausale oder Hold-out-Aussagen.
+
+### 23.2 Abgeschlossene lokale Korrekturen
+
+- F01: 47 H10-Labels korrigiert; echte TensorRT-Fälle erhalten.
+- F02: 186 historische Authoritykonflikte durch reguläre Originalbindungen erklärt; falsche Run-/Setup-/Requestbindungen bleiben negativ.
+- F03: sechs TRT-Full-Numerikbelege aus gespeicherten Outputs erfolgreich nachgeprüft. YOLO26s-Vendor-Full H8/H10 bleiben echte negative numerische Ergebnisse.
+- F06: 588 Sollfälle regulär bilanziert; 61 terminale Ausschlüsse und alle Qualityentscheidungen aus Originalen projiziert. Die 45 historischen `quality_missing_or_unbound`-Zeilen entsprechen **21 negativen Builds und 24 Policyausschlüssen**, nicht 45 offenen Qualityjobs.
+- F04: ursprüngliche Generic-Rohoutputzeiten bleiben getrennt; die später autorisierte Completion ergänzt 192 Basis- und zwölf Zusatzpaare ohne erneute Native-/Qualitykampagne.
+- F05: alle 246 Energiebeobachtungen und tatsächlichen Workcounts sichtbar; primäre FS-Energie bleibt unsubtrahiert. Die lokal gebundene Originaloutputprüfung bestätigt 20/24 neue semantische Split–Full-Paare; mit 372/384 Basisvergleichen ergibt das 392/408. Vier neue und zwölf historische Grenzen bleiben erhalten. Alle wissenschaftlichen Claim-Gates bleiben unverändert.
+
+### 23.3 Aufnahmegeschichte und H8/b066
+
+Die physische Quellenhistorie erklärt 705 Basis- und 42 Zusatzversuche. Bei den zwei
+unbestätigten Unterbrechungen wurde kein physischer Reset behauptet. Einmalige
+Wiederanlauffreigaben und der separat gültige Funktionstest bleiben eigene Diagnosen.
+Das Energieretrybudget wurde ausschließlich für die drei offenen H8-Zeilen von zwei auf
+fünf erhöht, verbrauchte Versuche mitgezählt; keine ungültigen Aufnahmen wurden nachträglich PASS.
+
+H8/b066 misst Prepared Input bis vollständig abgeschlossenes Detectionergebnis im
+aktuellen Dreistufenpfad, mit aktuell gebundener Engine und eingefrorener Nachverarbeitung.
+Keine Gleichsetzung mit historischen Paperzeiten anderer Engine-/Messgrenzen. Die zwölf
+Zusatzfälle sind post-planned/development; neun Reserven bleiben ungemessen.
+
+### 23.4 Reproduktion, Release und noch laufendes Archiv
+
+Die gemeinsame Auswertung verwendet vorhandene Reader/Reporter und Rangfunktionen.
+Rechenprüfungen beziehen sich auf gespeicherte Count-/Makespan-/Markeraggregate, nicht
+auf erneute Hardwaremessung, Bootstraprechnung oder Neukalibrierung. Jede Abbildung hat
+eine kleine Eingabetabelle. Rangtransfer bleibt innerhalb zulässiger Modell-/Setup-/
+Precision-/Endpunktgruppen; n=3 macht Top3 trivial. Accuracyverluste bleiben in der Gesamt-
+ansicht, eine referenznahe Teilansicht ist explizit gekennzeichnet.
+
+[Toolrelease v2.92.0](https://github.com/Keff789/ONNX-Splitpoint-Tool/releases/tag/v2.92.0), Maincommit `d164aad6d7c7ef68c1b371c49a1fdea0a3b27dd7`, annotierter Tag und beide Quellenarchive sind veröffentlicht und remote verifiziert. Die Messquellcheckpoints werden zusätzlich privat erhalten;
+der aktuelle Release versieht historische Messungen nicht rückwirkend mit neuer Provenienz.
+
+Der bestehende Benutzertransfer kopiert die Hauptkampagne direkt in den gemounteten
+Roharchivwurzelbaum. Die Ergänzung wartet in einer dauerhaften Sitzung und kopiert danach
+192er-Completion, vollständige YOLO-Arbeit, korrigierte Basis, gezielt gebundene externe
+Artefakte und diesen Abschluss sequenziell. Der Kopiervorgang ist beim Publikationsstand
+**noch nicht vollständig abgeschlossen**; Pfadkarte und Transferlogs liegen privat.
+Keine lokale oder Remoteoriginaldatei wird gelöscht.
 
 <a id="quellen"></a>
 ## Quellen- und Fundstellenverzeichnis

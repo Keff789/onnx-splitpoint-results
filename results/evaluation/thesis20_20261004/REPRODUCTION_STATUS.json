@@ -1,0 +1,219 @@
+{
+  "status": "PASS",
+  "original_readers": {
+    "completion_base_cases": 192,
+    "completion_addition_cases": 12,
+    "strict_result_parser": "write_completion_reports",
+    "augmentation_reporter": "write_augmentation_reports",
+    "native_endpoint_reader": "rate_endpoint_fields",
+    "energy_reader": "collect_native_energy"
+  },
+  "isolated_reproduction": {
+    "returncode": 0,
+    "os_network": "unshared",
+    "source_filesystem": "read_only",
+    "inputs": "curated_relative_files_only",
+    "compared_file_count": 32,
+    "differences": []
+  },
+  "compared_outputs": [
+    {
+      "file": "tables/energy_split_full_comparisons.csv",
+      "sha256": "08daed06d9a55fbbfabcc00d8b2c892fd050d5f036b7c21ac78065e452ff08d5",
+      "reproduced_sha256": "08daed06d9a55fbbfabcc00d8b2c892fd050d5f036b7c21ac78065e452ff08d5"
+    },
+    {
+      "file": "tables/fig01_coverage_input.csv",
+      "sha256": "c761264270697b4a8d6513f856776a657e1f1bb23d9782df74e65b28b3751c18",
+      "reproduced_sha256": "c761264270697b4a8d6513f856776a657e1f1bb23d9782df74e65b28b3751c18"
+    },
+    {
+      "file": "tables/fig02_completed_throughput_ratio_input.csv",
+      "sha256": "b913c2a2e179916c98c865c3dfe83d7e7e1f78a81bcb127f56903608d1653b6d",
+      "reproduced_sha256": "b913c2a2e179916c98c865c3dfe83d7e7e1f78a81bcb127f56903608d1653b6d"
+    },
+    {
+      "file": "tables/fig03_yolo_rank_transfer_input.csv",
+      "sha256": "0681c4d2974fc1a333bf9b0633d0f44b144d91b579fea68ba4376484c558c270",
+      "reproduced_sha256": "0681c4d2974fc1a333bf9b0633d0f44b144d91b579fea68ba4376484c558c270"
+    },
+    {
+      "file": "tables/fig04_energy_tradeoffs_input.csv",
+      "sha256": "77f4b1a143372adfc1714b494e474f312551bac65d42847f00ea9cdbb95152d2",
+      "reproduced_sha256": "77f4b1a143372adfc1714b494e474f312551bac65d42847f00ea9cdbb95152d2"
+    },
+    {
+      "file": "tables/fig05_quality_and_variability_input.csv",
+      "sha256": "0320dd2a47cd005f288b19666ae8dce50183aadbcd4b6f2267b5fe55bdc0212a",
+      "reproduced_sha256": "0320dd2a47cd005f288b19666ae8dce50183aadbcd4b6f2267b5fe55bdc0212a"
+    },
+    {
+      "file": "tables/four_views_inventory.csv",
+      "sha256": "5efd3c4e0948b73c1749b37cde9a805bebe112611b52bd50600060edf4cb89b1",
+      "reproduced_sha256": "5efd3c4e0948b73c1749b37cde9a805bebe112611b52bd50600060edf4cb89b1"
+    },
+    {
+      "file": "tables/four_views_inventory.tex",
+      "sha256": "c6381d2ed5c2df36d71634af453d0d67dd1577249c2d64aaa439fb39a8d46ee7",
+      "reproduced_sha256": "c6381d2ed5c2df36d71634af453d0d67dd1577249c2d64aaa439fb39a8d46ee7"
+    },
+    {
+      "file": "tables/origin_inventory.csv",
+      "sha256": "a74197fa27c9204d71f2c6113732b274a79cede885395f567229acd101cc43f5",
+      "reproduced_sha256": "a74197fa27c9204d71f2c6113732b274a79cede885395f567229acd101cc43f5"
+    },
+    {
+      "file": "tables/paired_completed_cases.csv",
+      "sha256": "c1d275bd0dd6db30bdc40c0d994685632f996432df5023de97cf9b58ce90f0dd",
+      "reproduced_sha256": "c1d275bd0dd6db30bdc40c0d994685632f996432df5023de97cf9b58ce90f0dd"
+    },
+    {
+      "file": "tables/paired_group_descriptives.csv",
+      "sha256": "efdd20c7026c9ebc4df7fcc638c7e791eca7b4690221a2d51430ff30db8611df",
+      "reproduced_sha256": "efdd20c7026c9ebc4df7fcc638c7e791eca7b4690221a2d51430ff30db8611df"
+    },
+    {
+      "file": "tables/paired_group_descriptives.tex",
+      "sha256": "f64ce2aebd6f10d9dc946f2cda508feb1e13bd607229492091138d9e9532949d",
+      "reproduced_sha256": "f64ce2aebd6f10d9dc946f2cda508feb1e13bd607229492091138d9e9532949d"
+    },
+    {
+      "file": "tables/quality_groups.csv",
+      "sha256": "16ec9b4845fcc43c189975a2a043bf8dc87bbd939bf0d7d2e8636b8ce22b5504",
+      "reproduced_sha256": "16ec9b4845fcc43c189975a2a043bf8dc87bbd939bf0d7d2e8636b8ce22b5504"
+    },
+    {
+      "file": "tables/rank_groups.csv",
+      "sha256": "641dc33ac7134b975af457773103fed7e9615d7f95d0e93623a017131df1fe7d",
+      "reproduced_sha256": "641dc33ac7134b975af457773103fed7e9615d7f95d0e93623a017131df1fe7d"
+    },
+    {
+      "file": "tables/rank_groups.tex",
+      "sha256": "1be63d5c23933cdc88930db8ec9b3de1d49eda5b97b5f8b4851363c6daeb9794",
+      "reproduced_sha256": "1be63d5c23933cdc88930db8ec9b3de1d49eda5b97b5f8b4851363c6daeb9794"
+    },
+    {
+      "file": "tables/split_full_semantic_summary.csv",
+      "sha256": "d6d7a43ea89fd2d0c2963207e451c1566d818122b5af22ffde27846b51b69ca1",
+      "reproduced_sha256": "d6d7a43ea89fd2d0c2963207e451c1566d818122b5af22ffde27846b51b69ca1"
+    },
+    {
+      "file": "tables/split_full_semantic_summary.tex",
+      "sha256": "fb67a796acf0f2cb64c410471e9c65eed0bc6af41115c6dea8c4933a47342a83",
+      "reproduced_sha256": "fb67a796acf0f2cb64c410471e9c65eed0bc6af41115c6dea8c4933a47342a83"
+    },
+    {
+      "file": "tables/support_by_backend_and_origin.csv",
+      "sha256": "342c37f9cdf2e0c6cabe058e6011e655d7dee171b1a03f76b2c22c351c2f87cf",
+      "reproduced_sha256": "342c37f9cdf2e0c6cabe058e6011e655d7dee171b1a03f76b2c22c351c2f87cf"
+    },
+    {
+      "file": "tables/support_matrix.csv",
+      "sha256": "c761264270697b4a8d6513f856776a657e1f1bb23d9782df74e65b28b3751c18",
+      "reproduced_sha256": "c761264270697b4a8d6513f856776a657e1f1bb23d9782df74e65b28b3751c18"
+    },
+    {
+      "file": "tables/within_stratum_pareto.csv",
+      "sha256": "64aa131e220f26acf34672b085bda9cf3ff66359b15b3b022281496d36c09d92",
+      "reproduced_sha256": "64aa131e220f26acf34672b085bda9cf3ff66359b15b3b022281496d36c09d92"
+    },
+    {
+      "file": "tables/yolo_base_vs_augmented.csv",
+      "sha256": "0681c4d2974fc1a333bf9b0633d0f44b144d91b579fea68ba4376484c558c270",
+      "reproduced_sha256": "0681c4d2974fc1a333bf9b0633d0f44b144d91b579fea68ba4376484c558c270"
+    },
+    {
+      "file": "tables/yolo_base_vs_augmented.tex",
+      "sha256": "54101e1c858d12ff143a7c815ff4cf4c3c3a96b0ef1540caddf50e2b257ac304",
+      "reproduced_sha256": "54101e1c858d12ff143a7c815ff4cf4c3c3a96b0ef1540caddf50e2b257ac304"
+    },
+    {
+      "file": "figures/fig01_coverage.pdf",
+      "sha256": "b43e2ba7c9675b44ca61f6ba6b84a5aad1cbc4a1fd4d98c3dae925e5c7b14cf6",
+      "reproduced_sha256": "b43e2ba7c9675b44ca61f6ba6b84a5aad1cbc4a1fd4d98c3dae925e5c7b14cf6"
+    },
+    {
+      "file": "figures/fig01_coverage.svg",
+      "sha256": "d1174c82a39c7fc8dd5fcb64fb63912b54a7013acf262d55464642478a26a42c",
+      "reproduced_sha256": "d1174c82a39c7fc8dd5fcb64fb63912b54a7013acf262d55464642478a26a42c"
+    },
+    {
+      "file": "figures/fig02_completed_throughput_ratio.pdf",
+      "sha256": "73be82a2c09d6d6aed43f36cf977761a8befdb148f54cb093d3030379ad59518",
+      "reproduced_sha256": "73be82a2c09d6d6aed43f36cf977761a8befdb148f54cb093d3030379ad59518"
+    },
+    {
+      "file": "figures/fig02_completed_throughput_ratio.svg",
+      "sha256": "cb410ff6b983faa22c4afc3f4935b2cee1e94483d8bd81d94ce38084a77669db",
+      "reproduced_sha256": "cb410ff6b983faa22c4afc3f4935b2cee1e94483d8bd81d94ce38084a77669db"
+    },
+    {
+      "file": "figures/fig03_yolo_rank_transfer.pdf",
+      "sha256": "e8a5e37a95a372cd9b5249e89d2fcf05be38ddec1bcc0671eb15d48ba95e842f",
+      "reproduced_sha256": "e8a5e37a95a372cd9b5249e89d2fcf05be38ddec1bcc0671eb15d48ba95e842f"
+    },
+    {
+      "file": "figures/fig03_yolo_rank_transfer.svg",
+      "sha256": "30770489b890b16749ba678a1647b4bd338647b93566331680273bb83b5f7ef4",
+      "reproduced_sha256": "30770489b890b16749ba678a1647b4bd338647b93566331680273bb83b5f7ef4"
+    },
+    {
+      "file": "figures/fig04_energy_tradeoffs.pdf",
+      "sha256": "46b83015b2d022af8cec81466357d5d415ecb081304bc58555cc0f2a49c3f108",
+      "reproduced_sha256": "46b83015b2d022af8cec81466357d5d415ecb081304bc58555cc0f2a49c3f108"
+    },
+    {
+      "file": "figures/fig04_energy_tradeoffs.svg",
+      "sha256": "bf5ce51d25cd8c13b9e78eb7c925a0417511994d491771ba1912743d023c1573",
+      "reproduced_sha256": "bf5ce51d25cd8c13b9e78eb7c925a0417511994d491771ba1912743d023c1573"
+    },
+    {
+      "file": "figures/fig05_quality_and_variability.pdf",
+      "sha256": "5e1ef76241a52acecd2279b63f6e75a1ed79f3df59ac52d1a991e88675a18807",
+      "reproduced_sha256": "5e1ef76241a52acecd2279b63f6e75a1ed79f3df59ac52d1a991e88675a18807"
+    },
+    {
+      "file": "figures/fig05_quality_and_variability.svg",
+      "sha256": "3d8bfed07764848de8f65204e892722f809fb117410f36746e9633df57dc4e06",
+      "reproduced_sha256": "3d8bfed07764848de8f65204e892722f809fb117410f36746e9633df57dc4e06"
+    }
+  ],
+  "additional_identical_indices": [
+    {
+      "file": "findings_numbers.json",
+      "sha256": "37a94c9549771d5b5ab872c8431a48478112ffe426623b711d6b97dbb1c94a1c"
+    },
+    {
+      "file": "figure_index.json",
+      "sha256": "988c6ac4d452cc78b3b047cc0b80d60ce05f415d5cdd314263e81347ec1018ee"
+    },
+    {
+      "file": "input_manifest.json",
+      "sha256": "7e18546d6d0fd408c5504466598e5b894f9122bb70436d1ccb75a45896c3c246"
+    }
+  ],
+  "arithmetic_checks": 2172,
+  "performance_repeat_assertions": 1350,
+  "quality_unique_results": 560,
+  "privacy": {
+    "checker": "scripts/check_before_commit.py from the existing results repository",
+    "fatal": 0,
+    "review": 0
+  },
+  "visual_review": {
+    "figures": 5,
+    "status": "reviewed",
+    "changes": "Sparse major ticks on small energy panels; visible base correlation rings only where n>=3."
+  },
+  "measurement_activity": {
+    "inference": 0,
+    "bootstrap": 0,
+    "collector": 0,
+    "build": 0
+  },
+  "boundaries": [
+    "Portable reproduction consumes only curated inputs.",
+    "Original-data verification uses existing tool readers and requires the archived evidence.",
+    "Scientific comparison claims remain false; measurement inventory completion is separate."
+  ]
+}
