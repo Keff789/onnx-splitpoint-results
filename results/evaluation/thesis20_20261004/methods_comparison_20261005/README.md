@@ -2,8 +2,10 @@
 
 One additional offline analysis of the closed campaign, prepared for scientific
 review. The earlier deep analysis was integrated into `main` at `82f0a257` and
-the navigation update at `29d9312`. This new comparison is a separate contribution
-on `analysis/thesis20-ranking-methods-20261005`.
+the navigation update at `29d9312`. This comparison was integrated into `main` on
+5 October 2026 by a normal fast-forward to reviewed commit `9c9c1c5`, followed by
+a regular push and remote verification. The original
+`analysis/thesis20-ranking-methods-20261005` branch is retained.
 
 The question is whether existing graph selectors, cost proxies and measured
 Generic rankings select the best observed Native candidate in the same exact
@@ -68,9 +70,10 @@ Repeated combinations are dependent sensitivity views, not extra experiments.
 
 Existing data, quality decisions and claim gates are preserved. This is post-hoc
 development evidence, not an independent hold-out or causal runtime comparison.
-The existing archive queue and its frozen inputs remain unchanged. Archiving this
-new contribution is pending; local/Git availability does not certify completion
-of the large raw transfer. Manuscript work remains local and is not included here.
+The existing archive queue and its frozen inputs remain unchanged by this Git
+integration. Actual archive exit codes and destination checks are tracked
+separately; publication on `main` does not certify completion of the raw archive.
+Manuscript work remains private and is not included here.
 
 ## Offline reproduction
 

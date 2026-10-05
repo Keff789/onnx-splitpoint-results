@@ -1,10 +1,12 @@
 # Arbeitsstand – THESIS20 wissenschaftliche Reviewableitung
 
-## Zusätzlicher Methodenvergleich — Reviewstand 05.10.2026
+## Zusätzlicher Methodenvergleich — Mainintegration 05.10.2026
 
 Der [Offlinevergleich der Rangverfahren](../results/evaluation/thesis20_20261004/methods_comparison_20261005/README.md)
-liegt additiv auf `analysis/thesis20-ranking-methods-20261005`. Er setzt nach der
-bereits abgeschlossenen Mainintegration und dem Navigationscommit `29d9312…` an.
+wurde am 05.10.2026 per Fast-Forward von `29d931274a398822b99f4b83ace1d6962caabdcb`
+auf den geprüften Reviewcommit `9c9c1c5c059485c6bc9b2e8eae6d3d5d6006dc27` nach
+`main` übernommen, normal gepusht und remote nachgelesen. Der Branch
+`analysis/thesis20-ranking-methods-20261005` bleibt erhalten.
 Historische Parameter sind aus den kleinen Originalmetadaten belegt; fehlende
 Native-Handover-/GUI-Bindungen bleiben unverfügbar. Keine neuen Modellfits.
 
@@ -12,12 +14,15 @@ Technische Top1: Cut 5/21, Weighted 7/21, gespeicherter H10-Fit 5/21,
 Cycle ohne Handover 7/21, gespeicherte Stream-FPS 6/21, gemessene Completion 10/21.
 Negative Fälle, 204/201/184-Kohorten, Raw-Schnittmenge, globale ungemessene
 Empfehlungen, Tie-/Replikat-/Energiesensitivitäten und zwei Vektorfiguren sind
-reviewbar. 21 gezielte Tests bestanden; 27/27 Outputs separat bytegleich.
+reviewbar. Die bestehende Abnahme bleibt gültig: 21 gezielte Tests bestanden;
+27/27 Outputs separat bytegleich. Vor Integration wurden alle 49 Paketdateien
+gegen die eingefrorene Lieferung und die 27 vorhandenen Reproduktionsausgaben
+nochmals bytegleich bestätigt; keine erneute Berechnung oder Messung.
 
 Die englische Paperarbeitsfassung mit numerischer Belegmatrix und Literaturbezug
-liegt ausschließlich lokal, nicht in diesem Gitpayload. Die ursprünglichen
-Archivwriter arbeiten unverändert weiter; die Archivierung dieser neuen Ergänzung
-steht aus. Kein neuer Transfer und keine neue Hardware-/Normal-GUI-Abnahme,
+bleibt privat und ist nicht in diesem Gitpayload. Die tatsächlichen Archivendcodes
+und der Zielabgleich werden separat geprüft; die Mainintegration ist keine
+Gesamtarchivabnahme. Dieser Git-Schritt startet keinen Transfer und keine Hardware-/Normal-GUI-Abnahme,
 Messung, Inferenz, Qualityrechnung, Kalibrierung oder Kompilierung.
 
 ## Integration und Navigation — 05.10.2026

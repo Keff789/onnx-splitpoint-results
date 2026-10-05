@@ -1,11 +1,14 @@
 # ONNX Splitpoint Tool – Knowledge Base
 
-> **Zusätzlicher Methodenreview 05.10.2026:** Der
+> **Methodenvergleich integriert, 05.10.2026:** Der
 > [vorhandene Rangverfahrenvergleich](../results/evaluation/thesis20_20261004/methods_comparison_20261005/README.md)
-> wird separat auf `analysis/thesis20-ranking-methods-20261005` geliefert.
+> wurde regulär per Fast-Forward von `29d9312…` auf den geprüften Commit `9c9c1c5…`
+> nach `main` übernommen, normal gepusht und remote bestätigt. Der Reviewbranch
+> `analysis/thesis20-ranking-methods-20261005` bleibt erhalten.
 > Historische Gewichte, gespeichertes H10-Profil und fehlende GUI-/Native-Handover-
-> Bindungen sind offengelegt; Originalmessungen und bestehende Auswertungen bleiben
-> erhalten. Neue Ergebnisse sind keine zusätzliche Mainfreigabe oder Archivabnahme.
+> Bindungen sind offengelegt; Originalmessungen, Claim-Gates und bestehende
+> Auswertungen bleiben erhalten. Das ist keine Hardware- oder Gesamtarchivabnahme;
+> die Paperarbeitsfassung bleibt privat.
 >
 > **Integration 05.10.2026:** Die geprüfte wissenschaftliche Vertiefung unter
 > [`deep_analysis/`](../results/evaluation/thesis20_20261004/deep_analysis/README.md)
