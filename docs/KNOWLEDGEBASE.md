@@ -1,5 +1,16 @@
 # ONNX Splitpoint Tool – Knowledge Base
 
+> **Archivabschluss, 05.10.2026, 12:06 CEST:** Die bestehende Archivkette,
+> eingefrorene Vertiefung und zusätzliche private Ranking-/Papersicherung sind
+> nach realen Endcodes und Zielprüfungen beendet. BASE wurde nur um 4.784 fehlende
+> Symlinks ergänzt; keine regulären BASE-Dateien und keine YOLO-Kopie wiederholt.
+> Die neuen privaten Reportkopien bestanden ihre Checksum-Prüfungen. Der große
+> Bestand ist nach dem dokumentierten Größen-/Typ-/Link-/mtime-Umfang geprüft,
+> nicht vollständig inhaltlich gehasht. Eine historische Quelldatei mit
+> 21 Referenzen fehlt weiterhin; die Paperarbeitsfassung bleibt privat.
+> [Abschluss und Prüfgrenzen](ARBEITSSTAND.md#archivabschluss--05102026-1206-cest).
+> Frühere Archivfortschritte unten sind datierte Historie.
+>
 > **Methodenvergleich integriert, 05.10.2026:** Der
 > [vorhandene Rangverfahrenvergleich](../results/evaluation/thesis20_20261004/methods_comparison_20261005/README.md)
 > wurde regulär per Fast-Forward von `29d9312…` auf den geprüften Commit `9c9c1c5…`

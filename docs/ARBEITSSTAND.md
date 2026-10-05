@@ -1,5 +1,39 @@
 # Arbeitsstand – THESIS20 wissenschaftliche Reviewableitung
 
+## Archivabschluss — 05.10.2026, 12:06 CEST
+
+Die vorhandene Archivkette ist tatsächlich beendet: Originalfinalisierung,
+eingefrorene Vertiefung und zusätzliche private Ranking-/Papersicherung melden
+jeweils Exitcode 0 mit passendem Abschlussstatus. Die große YOLO-Kopie wurde nicht
+wiederholt. Ihre 61.729 Epoch-Zeitabweichungen sind durch Dateibelege geklärt,
+darunter sechs ausdrücklich begrenzte Dateien über der bisherigen 1-MiB-Prüfgrenze.
+Die BASE-Ergänzung übertrug ausschließlich 4.784 zuvor fehlende Symlinks,
+keine regulären Dateien. Der abschließende BASE-Vergleich enthält keine
+Größen-/Typ-/Linkabweichung; vorhandene Zielzeitstempel gleich großer regulärer
+Dateien wurden nicht umgeschrieben.
+
+Korrigierte Auswertung, Auditarchive, gebundene externe Originale und gefrorene
+Quellen-/Analysepakete sind gesichert und im jeweiligen Umfang am Ziel geprüft.
+Die vollständigen neuen Ranking- und Paperverzeichnisse wurden anschließend
+sequenziell privat gesichert: Copy-/Checksum-Prüfungen jeweils 0, Differenzlogs
+leer, Quellen unverändert. Die 12 Paperdateien wurden zusätzlich unabhängig am
+Ziel bytegleich geprüft. Das Manuskript ist nicht Bestandteil dieses Gitpayloads.
+
+Grenzen: kein vollständiger Ziel-Inhaltschecksum des großen Bestandsarchivs;
+BASE nach Größe/Typ/Linktext, Folgetransfers zusätzlich nach regulären mtimes und
+Epoch-Ausnahmen nur bei gezielter Bytegleichheit. Eine historische
+`native_output_endpoint.py` mit 21 Referenzen fehlt weiterhin. Das sind nicht
+21 fehlende Messfälle. Aktuelle Belege sind `final-archive-status.json`, die
+Phasenendcodes, die Deep-Abnahme und `ranking_and_private_paper_copy_verified`.
+Die darunterstehenden datierten Übergabestände bleiben als Historie erhalten.
+
+Lokale Archivguardtests: 8 + 8 + 6 bestanden; unabhängige Abschlussprüfung
+bestanden im genannten Umfang. Keine Originale gelöscht, keine eingefrorenen
+wissenschaftlichen Quellen überschrieben. Tool v2.92.0, Originalergebnisse und
+Methodengrenzen unverändert. Keine neue Messung, Inferenz, Kalibrierung,
+Quality-/Benchmarkkampagne, Modellkompilierung oder Hardware-/GUI-Abnahme.
+Nächster Schritt: fachlicher Review der vorhandenen Paperarbeitsfassung.
+
 ## Zusätzlicher Methodenvergleich — Mainintegration 05.10.2026
 
 Der [Offlinevergleich der Rangverfahren](../results/evaluation/thesis20_20261004/methods_comparison_20261005/README.md)
