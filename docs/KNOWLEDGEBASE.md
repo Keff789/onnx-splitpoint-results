@@ -1,5 +1,12 @@
 # ONNX Splitpoint Tool – Knowledge Base
 
+> **Zusätzlicher Methodenreview 05.10.2026:** Der
+> [vorhandene Rangverfahrenvergleich](../results/evaluation/thesis20_20261004/methods_comparison_20261005/README.md)
+> wird separat auf `analysis/thesis20-ranking-methods-20261005` geliefert.
+> Historische Gewichte, gespeichertes H10-Profil und fehlende GUI-/Native-Handover-
+> Bindungen sind offengelegt; Originalmessungen und bestehende Auswertungen bleiben
+> erhalten. Neue Ergebnisse sind keine zusätzliche Mainfreigabe oder Archivabnahme.
+>
 > **Integration 05.10.2026:** Die geprüfte wissenschaftliche Vertiefung unter
 > [`deep_analysis/`](../results/evaluation/thesis20_20261004/deep_analysis/README.md)
 > wurde regulär nach `main` übernommen und remote als `82f0a257…` bestätigt;

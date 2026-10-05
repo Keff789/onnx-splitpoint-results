@@ -1,0 +1,54 @@
+{
+  "pytest": "21 passed in 4.63s",
+  "pytest_exitcode": 0,
+  "reproduction_exitcode": 0,
+  "generated_files_compared": 27,
+  "different_files": [],
+  "verbatim_definition_files_confirmed": [
+    "scripts/method_core/ranking_methods.py",
+    "scripts/method_core/objective_scoring.py",
+    "scripts/method_core/system_model.py",
+    "scripts/method_core/units.py"
+  ],
+  "public_reproduction_files": [
+    "METHOD_FIGURE_CAPTIONS.md",
+    "figures/fig01_ranking_methods_loss.pdf",
+    "figures/fig01_ranking_methods_loss.svg",
+    "figures/fig02_selector_energy_cost.pdf",
+    "figures/fig02_selector_energy_cost.svg",
+    "inputs/method_availability.csv",
+    "inputs/method_candidate_scores.csv",
+    "method_evaluation_results.json",
+    "method_figure_index.json",
+    "previews/fig01_ranking_methods_loss.png",
+    "previews/fig02_selector_energy_cost.png",
+    "tables/fig01_ranking_methods_loss_source.csv",
+    "tables/fig02_selector_energy_cost_source.csv",
+    "tables/method_case_ranks.csv",
+    "tables/method_coverage.csv",
+    "tables/method_energy_fixed_selection_repeat9.csv",
+    "tables/method_energy_repeat_combinations.csv",
+    "tables/method_energy_repeat_sensitivity.csv",
+    "tables/method_global_selection.csv",
+    "tables/method_groups.csv",
+    "tables/method_order_equivalence.csv",
+    "tables/method_repeat_combinations.csv",
+    "tables/method_repeat_sensitivity.csv",
+    "tables/method_score_verification.json",
+    "tables/method_shortlists.csv",
+    "tables/method_summary.csv",
+    "tables/method_yolov7_global_context.csv"
+  ],
+  "curated_default_path_reproduction_compared": 27,
+  "curated_default_path_differences": [],
+  "relative_links_checked": 13,
+  "broken_relative_links": 0,
+  "privacy_check": {
+    "fatal": 0,
+    "review": 0
+  },
+  "expected_whitespace_findings": {
+    "renderer_svg_trailing_space": 197,
+    "verbatim_definition_eof_blank_lines": 2
+  }
+}

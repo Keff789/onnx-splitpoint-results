@@ -1,5 +1,25 @@
 # Arbeitsstand – THESIS20 wissenschaftliche Reviewableitung
 
+## Zusätzlicher Methodenvergleich — Reviewstand 05.10.2026
+
+Der [Offlinevergleich der Rangverfahren](../results/evaluation/thesis20_20261004/methods_comparison_20261005/README.md)
+liegt additiv auf `analysis/thesis20-ranking-methods-20261005`. Er setzt nach der
+bereits abgeschlossenen Mainintegration und dem Navigationscommit `29d9312…` an.
+Historische Parameter sind aus den kleinen Originalmetadaten belegt; fehlende
+Native-Handover-/GUI-Bindungen bleiben unverfügbar. Keine neuen Modellfits.
+
+Technische Top1: Cut 5/21, Weighted 7/21, gespeicherter H10-Fit 5/21,
+Cycle ohne Handover 7/21, gespeicherte Stream-FPS 6/21, gemessene Completion 10/21.
+Negative Fälle, 204/201/184-Kohorten, Raw-Schnittmenge, globale ungemessene
+Empfehlungen, Tie-/Replikat-/Energiesensitivitäten und zwei Vektorfiguren sind
+reviewbar. 21 gezielte Tests bestanden; 27/27 Outputs separat bytegleich.
+
+Die englische Paperarbeitsfassung mit numerischer Belegmatrix und Literaturbezug
+liegt ausschließlich lokal, nicht in diesem Gitpayload. Die ursprünglichen
+Archivwriter arbeiten unverändert weiter; die Archivierung dieser neuen Ergänzung
+steht aus. Kein neuer Transfer und keine neue Hardware-/Normal-GUI-Abnahme,
+Messung, Inferenz, Qualityrechnung, Kalibrierung oder Kompilierung.
+
 ## Integration und Navigation — 05.10.2026
 
 Die geprüfte Vertiefung wurde zuerst per Fast-Forward von `e7bd8d8…` auf
