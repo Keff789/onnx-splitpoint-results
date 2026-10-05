@@ -7,6 +7,13 @@ runtime artefacts stay in a separate local raw archive and are not committed.
 
 ## THESIS20 completed analysis — 4 October 2026
 
+The reviewed [scientific deep analysis](results/evaluation/thesis20_20261004/deep_analysis/README.md)
+was integrated into `main` on 5 October 2026 at commit `82f0a257`.
+Read its [findings](results/evaluation/thesis20_20261004/deep_analysis/WISSENSCHAFTLICHE_ANALYSE.md),
+[cohort definitions](results/evaluation/thesis20_20261004/deep_analysis/DATEN_UND_KOHORTEN.md),
+and [figure captions](results/evaluation/thesis20_20261004/deep_analysis/CAPTIONS.md).
+See the [repository map](docs/REPOSITORY_MAP.md) for current entry points and historical evidence.
+
 Start with [the paper handoff](results/evaluation/thesis20_20261004/START_HERE.md),
 [reproducible tables and figures](results/evaluation/thesis20_20261004/README.md), and
 [findings and limits](results/evaluation/thesis20_20261004/PAPER_FINDINGS.md).
@@ -20,6 +27,19 @@ source archives are published and verified against the remote. Raw archive trans
 inputs are not a replacement for the private original payloads. No new measurements
 were made for this analysis or release.
 
+For offline reproduction, follow the [deep-analysis instructions](results/evaluation/thesis20_20261004/deep_analysis/README.md#offline-reproduction).
+From the repository root, with the existing scientific Python environment:
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python results/evaluation/thesis20_20261004/deep_analysis/scripts/reproduce.py --output-root /tmp/thesis20-deep-reproduction
+```
+
+Choose a fresh output directory. This reads compact inputs and regenerates derived
+tables and figures; it does not run models or collect measurements. The
+[integration record](docs/THESIS20_INTEGRATION_20261005.md) documents the actual checks.
+Raw archival transfer and its sequential follow-ups remain a separate, unfinished
+operation as of 5 October; a successful Git push does not certify the raw archive.
+
 ## Knowledge base
 
 The continuously maintained [project knowledge base](docs/KNOWLEDGEBASE.md)
@@ -32,7 +52,7 @@ The dated evidence directories below remain immutable records of their own runs.
 Historical snapshot: see [v2.83 scope and then-open items](docs/V283_STATUS_2026-09-19.md),
 [GUI and software acceptance](results/acceptance/v2.83/README.md), and
 [the completed R9G one-split evaluation](results/evaluation/r9g_eval_20260918_171131/README.md).
-R9H three-split acceptance is still pending final evidence. Successful acquisition is not a
+At that historical snapshot, R9H three-split acceptance was pending final evidence. Successful acquisition is not a
 blanket scientific or task-equivalence claim. The initial inventory below remains historical.
 
 ## Historical initial inventory
@@ -48,9 +68,11 @@ three-stage reports, energy calibration records, v2.79.16 acceptance evidence,
 the seven-model reconciliation and a compact diagnostic fixture from the
 failed `biggerset` run.
 
-## Collect on Smartmirror2
+## Historical collection instructions
 
-Extract this starter directory on Smartmirror2, then run:
+These commands document the original collection workflow; they are not needed to
+reproduce THESIS20 or continue the existing archival queue. For that historical
+workflow, extract this starter directory on Smartmirror2, then run:
 
 ```bash
 cd "$HOME/onnx-splitpoint-results"

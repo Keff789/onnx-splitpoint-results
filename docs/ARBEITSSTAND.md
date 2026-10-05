@@ -1,5 +1,23 @@
 # Arbeitsstand – THESIS20 wissenschaftliche Reviewableitung
 
+## Integration und Navigation — 05.10.2026
+
+Die geprüfte Vertiefung wurde zuerst per Fast-Forward von `e7bd8d8…` auf
+`82f0a257…` nach `main` übernommen, normal gepusht und remote nachgelesen.
+31 vorhandene Tests bestanden (1,18 s); die separate Reproduktion war in 71/71
+Dateien bytegleich. [Prüfbefehle und Grenzen](THESIS20_INTEGRATION_20261005.md).
+
+Danach wurden Root-README, [Repositorykarte](REPOSITORY_MAP.md) und KB-Einstieg
+ergänzt. Historische Pfade und Datentabellen bleiben erhalten. URECS/PSD/TIM
+bleiben ein eigener Bereich. Die kleine Navigation wird getrennt committet.
+
+Normal-GUI-/Hardwareabnahme: nicht ausgeführt. Keine neue Messung, Inferenz,
+Qualityrechnung oder Kompilierung. Tool v2.92.0, Collectorregeln und Budgets
+bleiben unverändert. Der neue Offline-Methodenvergleich wird separat reviewbar;
+die englische Paperarbeitsfassung bleibt lokal. Die Archivqueue läuft unverändert.
+
+## Historischer Lieferstand — 04.10.2026
+
 04.10.2026. Additive Dokumentation im Ergebnisreviewbranch. Der veröffentlichte
 Toolcheckout und seine `docs/ARBEITSSTAND.md` bleiben entsprechend diesem Auftrag
 bytegleich auf v2.92.0; dieser neue Ergebnisarbeitsstand verändert keinen Toolrelease.

@@ -1,9 +1,12 @@
 # ONNX Splitpoint Tool – Knowledge Base
 
-> **Additiver Reviewstand 04.10.2026:** Die wissenschaftliche Vertiefung liegt separat unter
+> **Integration 05.10.2026:** Die geprüfte wissenschaftliche Vertiefung unter
 > [`deep_analysis/`](../results/evaluation/thesis20_20261004/deep_analysis/README.md)
-> auf `analysis/thesis20-deep-review-20261004`; siehe §24. Historische Mainausgaben
-> und Toolrelease v2.92.0 bleiben unverändert. Der Roharchivabschluss ist noch offen.
+> wurde regulär nach `main` übernommen und remote als `82f0a257…` bestätigt;
+> [Prüfbericht](THESIS20_INTEGRATION_20261005.md), [Repositorykarte](REPOSITORY_MAP.md).
+> Der Reviewbranch und die datierten Befunde in §24 bleiben erhalten. Toolrelease
+> v2.92.0 bleibt unverändert. Der Roharchivabschluss ist noch offen; die bestehende
+> YOLO-Folgekopie läuft, Finalisierung und eingefrorene Analyse warten sequenziell.
 >
 > **Kanonischer Pfad: `docs/KNOWLEDGEBASE.md`.** Diese Datei wird fortlaufend
 > aktualisiert; ihre Historie liegt in Git. Keine neue Datei je Dokumentrevision.
