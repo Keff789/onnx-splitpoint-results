@@ -1,5 +1,17 @@
 # Arbeitsstand – THESIS20 wissenschaftliche Reviewableitung
 
+## Revision 3 — 07.10.2026, unvollständiger Zwischenstand
+
+[Aktuelle Daten und Prüfbefehl](../results/evaluation/native_fairness_rev3_20261007/README.md)
+· [technischer Befund](NATIVE_FAIRNESS_REV3_20261007.md).
+15 neue Native-Punkte, neun belegte Wiederverwendungen, neun Generic-Paare;
+drei Full-Energiepunkte über die normalen Consumer zugelassen. 222 neue
+Native- und 195 weitere Generic-Performancepunkte fehlen. Physischer H10-STOP
+bleibt bestehen; konkrete einmalige Fortsetzungsfreigabe ist angefragt.
+Keine Datenlöschung oder Speicherbereinigung. Historisches Archiv nur lesend;
+neue Rohbelege in einem getrennten datierten Zweig hashgeprüft. Die folgenden
+Blöcke dokumentieren frühere Stände und sind keine aktuelle Startfreigabe.
+
 ## YOLOv7-Completion-Nachtrag — 07.10.2026
 
 Berichtsbasierte Fortschreibung: neun Splitkonfigurationen mit 27 neuen

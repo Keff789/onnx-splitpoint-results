@@ -1,0 +1,23 @@
+{
+  "path": "revision3:/reporting_caller_managed_energy/REPORTING_SOURCE_SUPPLEMENT.json",
+  "sha256": "ea43a3e319631e902b6b38feaf91d9960dc55e58faa6cc8c56da758f6a6f254f",
+  "changes": [
+    {
+      "path": "onnx_splitpoint_tool/native_energy_reporting.py",
+      "before_sha256": "7adda83f5d59ea6205135da8d47bf613662e30b3f210edb0096b8939a1e17966",
+      "before_status": "existing_file",
+      "after_sha256": "411b16b277a8f9781a9404c74692d492a01513a9edb7409069d77c79649a506f",
+      "candidate_path": "revision3:/reporting_caller_managed_energy/native_energy_reporting.after.py",
+      "freeze223_sha256": "7adda83f5d59ea6205135da8d47bf613662e30b3f210edb0096b8939a1e17966"
+    },
+    {
+      "path": "onnx_splitpoint_tool/energy/caller_managed_reporting.py",
+      "before_sha256": null,
+      "before_status": "absent_new_controller_report_helper",
+      "after_sha256": "d774d0b88bdf91bd70ad01a5036433986cb6263aae77c0d4cda6b59cd538ba04",
+      "candidate_path": "revision3:/reporting_caller_managed_energy/caller_managed_reporting.py",
+      "freeze223_sha256": null
+    }
+  ],
+  "source_dependencies_only_report": true
+}

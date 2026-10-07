@@ -1,0 +1,35 @@
+{
+  "schema": "native-fairness-revision3/remeasurement-plan/v1",
+  "scope": {
+    "native": 246,
+    "native_remeasure": 237,
+    "native_reuse_candidates": 9,
+    "generic_completed": 204,
+    "generic_remeasure": 204,
+    "extra_control_points": 1,
+    "native_performance_remeasure": 237,
+    "native_energy_remeasure": 240,
+    "native_energy_only_remeasure": 3,
+    "native_performance_reuse_candidates": 9,
+    "native_energy_reuse_candidates": 6
+  },
+  "decision_basis": "Actual executed operations and exact input pixels; filehash changes alone never trigger remeasurement",
+  "native_reasons": {
+    "classification_split_input_changed": 168,
+    "detector_split_completion_changed": 36,
+    "detector_full_completion_changed": 24,
+    "classification_vendor_full_actual_branch_unchanged": 9,
+    "classification_trt_full_timed_dispatch_changed": 9,
+    "classification_deepx_vendor_full_energy_only_dispatch_changed": 3
+  },
+  "quality_policy": "Changed timing input does not establish changed dataset quality. Preserve explicit accuracy_loss/reference_close and transfer only exact model/artifacts/numeric preprocessing/completion binding; targeted5000 only when this cannot be proven.",
+  "energy_policy": "No old J/task joined to new FPS. Actual completed counts and system sensor interval required. Historical screening values keep their tier.",
+  "historical_archive_read_only": true,
+  "plan_file": "revision3:/REMEASUREMENT_PLAN.csv",
+  "plan_sha256": "9e3d27725d077f249331037170f1540bd9897547f6da498c37cbd8c296d8fe0e",
+  "plan_revision_evidence": "revision3:/native_audit/classification_full_branch/RESULT.json",
+  "separate_performance_energy_revision_evidence": {
+    "path": "revision3:/native_audit/CLASSIFICATION_FULL_REUSE.json",
+    "sha256": "2efde1348a6f337bcc1d90c3ceafc0e0a7198907ba64656647fe8ed4cb200b59"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schema": "revision3/report-only-source-supplement",
+  "created_utc": "2026-10-07T12:14:35.520810+00:00",
+  "status": "applied_and_tested",
+  "changes": [
+    {
+      "path": "onnx_splitpoint_tool/native_energy_reporting.py",
+      "before_sha256": "7adda83f5d59ea6205135da8d47bf613662e30b3f210edb0096b8939a1e17966",
+      "before_status": "existing_file",
+      "after_sha256": "411b16b277a8f9781a9404c74692d492a01513a9edb7409069d77c79649a506f",
+      "candidate_path": "revision3:/reporting_caller_managed_energy/native_energy_reporting.after.py",
+      "freeze223_sha256": "7adda83f5d59ea6205135da8d47bf613662e30b3f210edb0096b8939a1e17966"
+    },
+    {
+      "path": "onnx_splitpoint_tool/energy/caller_managed_reporting.py",
+      "before_sha256": null,
+      "before_status": "absent_new_controller_report_helper",
+      "after_sha256": "d774d0b88bdf91bd70ad01a5036433986cb6263aae77c0d4cda6b59cd538ba04",
+      "candidate_path": "revision3:/reporting_caller_managed_energy/caller_managed_reporting.py",
+      "freeze223_sha256": null
+    }
+  ],
+  "parent_freeze": "revision3:/IMPLEMENTATION_FREEZE.json",
+  "parent_freeze_sha256": "e297e6e49351985f251c57d40e0011fca674673e621d343bc53a4080007714cc",
+  "source_dependencies_only_report": true,
+  "call_path": "native_energy_reporting.collect_native_energy -> energy.caller_managed_reporting.import_caller_managed_energy_item -> existing run_native_producer_energy_from_summary._attach_energy_aggregate / collector statistics; then existing normal Endpoint, Quality, primary and scientific_energy_rows gates",
+  "effects": {
+    "DUT_files_changed": false,
+    "inference_or_completion_implementation_changed": false,
+    "performance_timer_changed": false,
+    "hardware_or_collector_started": false,
+    "budget_or_ownership_controller_changed": false,
+    "raw_records_rewritten": false,
+    "old_report_receipts_rewritten": false
+  },
+  "source_review_fix": "Full performance descriptors must match distinct report paths/hashes, request-bound observations, successful report receipt SHA and actual telemetry PID/start/argv/env; duplicate report and false PID negative fixtures pass",
+  "tests": {
+    "result": "124 passed in 9.25s",
+    "log": "revision3:/reporting_caller_managed_energy/tests_worktree_combined.log",
+    "sha256": "723e4ed8bd67b13b65e9dd027f3c34c972061f7b07a76b6465ee68c2ba18df99",
+    "command": [
+      "env",
+      "PYTHONDONTWRITEBYTECODE=1",
+      "source:controller/.venv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "-o",
+      "cache_dir=revision3:/test_cache",
+      "revision3:/reporting_caller_managed_energy/test_caller_managed_import.py",
+      "revision3:/operations/energy_policy_fix/test_fast_energy.py",
+      "revision3:/reporting_energy_primary_policy/test_primary_diagnostic_policy.py",
+      "source:worktree/tests/test_v27925_energy_calibration_reporting.py",
+      "source:worktree/tests/test_v2712_energy_resume.py",
+      "source:worktree/tests/test_v2721_energy_contract_repairs.py",
+      "source:worktree/tests/test_v269c_energy_identity_repetition.py"
+    ]
+  },
+  "current_normal_energy_pointer": "revision3:/CURRENT_NORMAL_ENERGY.json",
+  "current_normal_energy_pointer_sha256": "df4aa7b313891db970b6db8374d1b3d42468c5abd1df3b6e2ae93ec4625c5063",
+  "current_consumer_reproduction_command": [
+    "env",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "source:controller/.venv/bin/python",
+    "revision3:/reporting_caller_managed_energy/export_current_normal_energy.py"
+  ],
+  "note": "Reproduction creates a new dated export; existing raw acquisitions, performance records and old receipts stay unchanged. Group quarantine remains explicit."
+}

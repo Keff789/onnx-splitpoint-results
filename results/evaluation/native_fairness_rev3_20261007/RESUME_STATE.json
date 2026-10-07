@@ -1,0 +1,189 @@
+{
+  "at": "2026-10-07T12:23:12.971674+00:00",
+  "task_status": "in_progress_hardware_paused_at_required_post_stop_authorization",
+  "own_measurement_processes_at_last_terminal_check": {
+    "local": 0,
+    "remote": 0,
+    "proof": "energy/native_full_remaining5_qualified/cleanup-status.json"
+  },
+  "authorization_received": false,
+  "required_authorization": "one_new_H10_TRT_workflow_despite_unconfirmed_source_completion",
+  "concrete_profile": "operations/recovery_full_h10_20261007/one_workflow.yaml",
+  "plan": "operations/recovery_full_h10_20261007/PLAN.json",
+  "budget_sha256": "35bb39082918b99f9ab2b6ca6a33f16055052ca6780564f08fa55e72f0128aeb",
+  "budgets": [
+    {
+      "identity": [
+        "deepx_to_trt",
+        "yolov7_paper",
+        "b009",
+        "orin_nx_deepx_m1_01"
+      ],
+      "reserved_chains": 3,
+      "physical_starts": 3,
+      "valid_sensor_repeats": 3,
+      "remaining_chain_capacity": 6,
+      "stop_reason": "",
+      "limits": {
+        "max_chains": 9,
+        "max_transport_failures": 20,
+        "max_retries": 2
+      }
+    },
+    {
+      "identity": [
+        "hailo10h_to_trt",
+        "yolov7_paper",
+        "b009",
+        "orin_nx_hailo10_01"
+      ],
+      "reserved_chains": 4,
+      "physical_starts": 4,
+      "valid_sensor_repeats": 3,
+      "remaining_chain_capacity": 5,
+      "stop_reason": "",
+      "limits": {
+        "max_chains": 9,
+        "max_transport_failures": 20,
+        "max_retries": 2
+      }
+    },
+    {
+      "identity": [
+        "hailo8_to_trt",
+        "yolov7_paper",
+        "b009",
+        "orin_nx_hailo8_01"
+      ],
+      "reserved_chains": 3,
+      "physical_starts": 3,
+      "valid_sensor_repeats": 3,
+      "remaining_chain_capacity": 6,
+      "stop_reason": "",
+      "limits": {
+        "max_chains": 9,
+        "max_transport_failures": 20,
+        "max_retries": 2
+      }
+    },
+    {
+      "identity": [
+        "native_full_hailo10h",
+        "yolov7_paper",
+        "full",
+        "orin_nx_hailo10_01"
+      ],
+      "reserved_chains": 3,
+      "physical_starts": 3,
+      "valid_sensor_repeats": 3,
+      "remaining_chain_capacity": 6,
+      "stop_reason": "",
+      "limits": {
+        "max_chains": 9,
+        "max_transport_failures": 20,
+        "max_retries": 2
+      }
+    },
+    {
+      "identity": [
+        "native_full_deepx",
+        "yolov7_paper",
+        "full",
+        "orin_nx_deepx_m1_01"
+      ],
+      "reserved_chains": 3,
+      "physical_starts": 3,
+      "valid_sensor_repeats": 3,
+      "remaining_chain_capacity": 6,
+      "stop_reason": "",
+      "limits": {
+        "max_chains": 9,
+        "max_transport_failures": 20,
+        "max_retries": 2
+      }
+    },
+    {
+      "identity": [
+        "native_full_hailo8",
+        "yolov7_paper",
+        "full",
+        "orin_nx_hailo8_01"
+      ],
+      "reserved_chains": 3,
+      "physical_starts": 3,
+      "valid_sensor_repeats": 3,
+      "remaining_chain_capacity": 6,
+      "stop_reason": "",
+      "limits": {
+        "max_chains": 9,
+        "max_transport_failures": 20,
+        "max_retries": 2
+      }
+    },
+    {
+      "identity": [
+        "native_full_tensorrt",
+        "yolov7_paper",
+        "full",
+        "orin_nx_deepx_m1_01"
+      ],
+      "reserved_chains": 3,
+      "physical_starts": 3,
+      "valid_sensor_repeats": 3,
+      "remaining_chain_capacity": 6,
+      "stop_reason": "",
+      "limits": {
+        "max_chains": 9,
+        "max_transport_failures": 20,
+        "max_retries": 2
+      }
+    },
+    {
+      "identity": [
+        "native_full_tensorrt",
+        "yolov7_paper",
+        "full",
+        "orin_nx_hailo10_01"
+      ],
+      "reserved_chains": 1,
+      "physical_starts": 1,
+      "valid_sensor_repeats": 0,
+      "remaining_chain_capacity": 8,
+      "stop_reason": "campaign_source_completion_unresolved",
+      "limits": {
+        "max_chains": 9,
+        "max_transport_failures": 20,
+        "max_retries": 2
+      }
+    },
+    {
+      "identity": [
+        "native_full_tensorrt",
+        "yolov7_paper",
+        "full",
+        "orin_nx_hailo8_01"
+      ],
+      "reserved_chains": 1,
+      "physical_starts": 0,
+      "valid_sensor_repeats": 0,
+      "remaining_chain_capacity": 8,
+      "stop_reason": "task_execution_interrupted",
+      "limits": {
+        "max_chains": 9,
+        "max_transport_failures": 20,
+        "max_retries": 2
+      }
+    }
+  ],
+  "remaining": {
+    "new_native_performance_points": 222,
+    "generic_additional_points": 195,
+    "generic_current_points_to_confirm_after_final_duration_worker_change": 9,
+    "native_required_energy_points_without_final_admission": 237,
+    "generic_energy_points_without_final_admission": 204
+  },
+  "normal_energy_pointer": "CURRENT_NORMAL_ENERGY.json",
+  "normal_energy_points": 3,
+  "historical_archive_read_only": true,
+  "data_deletion_performed": false
+}

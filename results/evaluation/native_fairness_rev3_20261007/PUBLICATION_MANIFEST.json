@@ -1,0 +1,199 @@
+{
+  "schema": "revision3/public-progress-snapshot-v1",
+  "created_at": "2026-10-07T12:31:31.457110+00:00",
+  "status": "incomplete_hardware_stopped_pending_required_authorization",
+  "native_new_performance_points": 15,
+  "native_verified_performance_reuse": 9,
+  "native_performance_not_measured": 222,
+  "generic_measured_points": 9,
+  "generic_additional_points_not_measured": 195,
+  "generic_current_points_require_final_bundle_confirmation": 9,
+  "normal_current_energy_points": 3,
+  "historical_archive_modified": false,
+  "data_deletion_performed": false,
+  "private_manuscript_included": false,
+  "files": [
+    {
+      "path": "ARCHIVE_VERIFICATION.json",
+      "original_sha256": "6e93cdb1de2286f20ad28758ed8bbe313c16c75053fbd123041bf9d762bc50f6",
+      "public_sha256": "6b0c0442da513e559060c5877feaad517e4cbd6e73958388d930573178961e1d",
+      "public_bytes": 19146,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "INPUT_AVAILABILITY.json",
+      "original_sha256": "528aea22f26a9fce4bacedb3630fe1dd0f8a94df83a69869ceaaa16958c0919d",
+      "public_sha256": "d2fb16091ce72df69f985de2be143a23c362f67bb3248b1c4d0273eda9d5f1ec",
+      "public_bytes": 131505,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "RESULT_REPORT.md",
+      "original_sha256": "39eba84d567936d1bb43e8229ba92c2899867b17d7745accd36d5c9904be9a77",
+      "public_sha256": "39eba84d567936d1bb43e8229ba92c2899867b17d7745accd36d5c9904be9a77",
+      "public_bytes": 10500,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "AUDIT_FINDING_DISPOSITION.csv",
+      "original_sha256": "4627ed5b8f9cb0f48d6d90090092aab7584cd8616a97d984f6f4d95ab4839fbc",
+      "public_sha256": "4ae7c1155b01e114075882812b48eadae184512bf17aacef3a7ccf7ebd932106",
+      "public_bytes": 18022,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "LEGACY_GENERIC_USAGE.csv",
+      "original_sha256": "4edc1704f65d2d29d1747fc12d53c4ab6bd123d06209951d743a3343341bbbba",
+      "public_sha256": "b6140e2b4caa86f0a17e0986b64b73abdcb6291dcaf4d2196bf54a1e44051c9a",
+      "public_bytes": 135304,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "REMEASUREMENT_PLAN.csv",
+      "original_sha256": "9e3d27725d077f249331037170f1540bd9897547f6da498c37cbd8c296d8fe0e",
+      "public_sha256": "9d963822e4a32d4c9ac5619270b8a2730c0fb326fef556b1eba59e496135b9db",
+      "public_bytes": 1141098,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "REMEASUREMENT_PLAN_SUMMARY.json",
+      "original_sha256": "8fcd8dd6a81507fe0b3f34b1ce19f92698b5671b0056904ea27fccbffa2b03d2",
+      "public_sha256": "6560c339728b08850d4d874586fae59c6f0303e25ca7b1aa843f054076a3974f",
+      "public_bytes": 1841,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "FAIRNESS_MATRIX.csv",
+      "original_sha256": "2c91cc5ae21df6e09fdbbb8646741190e4132e8f8279b07b46147afe0c092807",
+      "public_sha256": "f0a01318b1e147e776a58e8451167e96dcc5778551a94eddfbfbd575fd90185a",
+      "public_bytes": 337331,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "FAIRNESS_MATRIX_PROVENANCE.json",
+      "original_sha256": "6f54ea969b8fafb221a22c6287c49016e71761df98b2146b2c259ae9160ff286",
+      "public_sha256": "6f54ea969b8fafb221a22c6287c49016e71761df98b2146b2c259ae9160ff286",
+      "public_bytes": 653,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "RESUME_STATE.json",
+      "original_sha256": "8a105fa746432e6c701d5e6146598a9c1fa40aa3dca9a399a95eb39cd557eb98",
+      "public_sha256": "8a105fa746432e6c701d5e6146598a9c1fa40aa3dca9a399a95eb39cd557eb98",
+      "public_bytes": 4853,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "IMPLEMENTATION_FREEZE.json",
+      "original_sha256": "e297e6e49351985f251c57d40e0011fca674673e621d343bc53a4080007714cc",
+      "public_sha256": "3ee7307c76eec192e138f53f9e98ca442688bc39d4dd89d917c17385d42f6b31",
+      "public_bytes": 45930,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "REPORTING_SOURCE_SUPPLEMENT.json",
+      "original_sha256": "266d64851538987113bfb2b62e09442a03286432e62dc8c89cbecb7c94e7b236",
+      "public_sha256": "20e25c4883022d0d97cd3ede1ee557dbe087fcc3fe19ab5c3789d703d53d386d",
+      "public_bytes": 1125,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "current_results/native_current.json",
+      "original_sha256": "ff6f5042a0430fde7c81da252af73ded61f61b7e5cb67041ab35f299b0457c64",
+      "public_sha256": "a3ed4351e9a4e66bc6871e3f0c7d074235a945f08a6c555da9fdfebed74d47b0",
+      "public_bytes": 601837,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "current_results/native_repeats.csv",
+      "original_sha256": "b54a051ab34529a30a9e50f2e6d29affbf484c71749c586eafcf3547be3a1f30",
+      "public_sha256": "b54a051ab34529a30a9e50f2e6d29affbf484c71749c586eafcf3547be3a1f30",
+      "public_bytes": 29977,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "current_results/generic_current.json",
+      "original_sha256": "66a087ee408ada740bc8c972f99822fe1de12a3d441700d523e79a1ab957a270",
+      "public_sha256": "b557673a8cdb88bce6c5e633e8e93c7cc19c5d839ff6a53609cb1db9eb50c06a",
+      "public_bytes": 983918,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "current_results/generic_repeats.json",
+      "original_sha256": "1def05225d150cc653ef4b3bdabbd387ab139fef3ba1b95d250fbf9333588530",
+      "public_sha256": "b06dce9079fdce113ddf53d019042cd9b1f194b38acc9e8176f7f621602396f6",
+      "public_bytes": 255956,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "current_results/generic_cross_runner.json",
+      "original_sha256": "9e73c18d0725bb3b8e9004fa2de9af820a7377d52c9f130ff484754d5c6592c4",
+      "public_sha256": "67213137d52d713af84a6fdae85e7c7ff5244c4ea093ce81d2b298a1cf1cdb56",
+      "public_bytes": 98099,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "current_results/energy_acquisitions.json",
+      "original_sha256": "d9681b0ed9599eafbcb3d6a2d6b4406c148ac91ed553286bf0b9e86ceaa48850",
+      "public_sha256": "27990d36d2fe38dc76626e04615bcc838771909472c6792895096211bbef7b4e",
+      "public_bytes": 51395,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "current_results/energy_acquisition_repeats.csv",
+      "original_sha256": "02b140a665778ba900268417a905f3247b6c42dba653e48ef4ab36534a5d331c",
+      "public_sha256": "02b140a665778ba900268417a905f3247b6c42dba653e48ef4ab36534a5d331c",
+      "public_bytes": 10220,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "current_results/ENERGY_PROJECTION_VERIFICATION.json",
+      "original_sha256": "fe11129dc4f98ba3f6b0523000e07f190bf3e407275359d8557591ddfc30279b",
+      "public_sha256": "60cbea3282f2fb1c8f7f955cb8ebf577712d9239966b2ce5c2851fb686651821",
+      "public_bytes": 1263,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "CURRENT_NORMAL_ENERGY.json",
+      "original_sha256": "df4aa7b313891db970b6db8374d1b3d42468c5abd1df3b6e2ae93ec4625c5063",
+      "public_sha256": "230d0398f6b21cf6d83518f0569557f8a45f2d9b3321c6d5117015478c5a77cf",
+      "public_bytes": 2982,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "reporting_caller_managed_energy/exports/20261007T121320430771Z/scientific_energy_rows.json",
+      "original_sha256": "a660b9e21d341cd0e5cd60192e1dee1e5f6bb39f1325ad47c4a421986dfe5dc3",
+      "public_sha256": "5f97c76ded9047d943a436a4a9f5bf2c431e308f572782310c10b338d694eb18",
+      "public_bytes": 104954,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "reporting_caller_managed_energy/exports/20261007T121320430771Z/native_energy_observations.json",
+      "original_sha256": "b46b51ddf3f831a4fca840ca6d336f4e0de5d131415f6caf334aaf5b79ab7503",
+      "public_sha256": "c4d63d1f4560dc70f87a817de9d2464eecc779d71466c79cd0a0f3795c6474ef",
+      "public_bytes": 190829,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "reporting_caller_managed_energy/exports/20261007T121320430771Z/exact_performance_energy_bindings.json",
+      "original_sha256": "ea5a055ecb33bdab21039324802de0daf63b6edba23e2c9294dff99c3570dbf6",
+      "public_sha256": "a23f63f517a3bba854ff26c6ce1949cc4464297dbba3746cf68540c4359f03c6",
+      "public_bytes": 141733,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained; repeated full producer row replaced by its canonical SHA256, exact original summary and raw bindings retained"
+    },
+    {
+      "path": "reporting_caller_managed_energy/exports/20261007T121320430771Z/RECEIPT.json",
+      "original_sha256": "c94cbfcde63a3e641cfa33eb7463354473008da9bb31339762330690ea1ba490",
+      "public_sha256": "dbeca298a2ab3bc0afdd697a274f15faa06e1188b21efc836d1b546e4a82284a",
+      "public_bytes": 2698,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "reporting_caller_managed_energy/REPORTING_SOURCE_SUPPLEMENT.json",
+      "original_sha256": "ea43a3e319631e902b6b38feaf91d9960dc55e58faa6cc8c56da758f6a6f254f",
+      "public_sha256": "d43d36a29ccf5d7b57427934234bc9540e3d5c2f27d95aaa0d51beb9e8d4d7f8",
+      "public_bytes": 3658,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    }
+  ]
+}

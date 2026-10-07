@@ -1,5 +1,11 @@
 # Repository map
 
+> **Current incomplete Revision 3 view, 7 October 2026:**
+> [Data and standalone arithmetic check](../results/evaluation/native_fairness_rev3_20261007/README.md)
+> · [audit, fixes and remaining measurements](NATIVE_FAIRNESS_REV3_20261007.md).
+> Includes three normally admitted current energy points; historical data and
+> older dated entry points remain intact. This is not a completed campaign.
+
 > **Added 7 October 2026:**
 > [YOLOv7 native-completion findings](YOLOV7_NATIVE_COMPLETION_20261007.md) and
 > [reported performance data](../results/evaluation/yolov7_native_completion_20261007/README.md)

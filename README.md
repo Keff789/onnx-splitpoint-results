@@ -1,5 +1,16 @@
 # ONNX Split-Point Results Archive
 
+## Revision 3 fairness audit — current incomplete snapshot, 7 October 2026
+
+The [current Revision 3 view](results/evaluation/native_fairness_rev3_20261007/README.md)
+contains 15 new Native performance points, nine verified performance reuses,
+nine Generic pairs and three normally admitted current energy points. Remaining
+measurements are explicit; a physical source STOP requires bounded recovery.
+Historical data is preserved and was inspected read-only. The prior YOLOv7 ZIP
+has now passed its supplied raw-evidence checker. See the
+[technical knowledge-base update](docs/NATIVE_FAIRNESS_REV3_20261007.md).
+The older dated sections below retain their original scope.
+
 This repository is the curated, Git-friendly result archive for the ONNX
 Split-Point evaluation project. It keeps compact measurement results,
 experiment scripts, acceptance evidence and explanatory documentation. Large

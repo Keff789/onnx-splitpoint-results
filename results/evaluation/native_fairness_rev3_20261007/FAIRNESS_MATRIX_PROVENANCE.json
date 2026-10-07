@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-07T12:18:56.346573+00:00",
+  "rows": 450,
+  "state": "in_progress",
+  "current_native_points": {
+    "not_measured": 222,
+    "new_measurement": 15,
+    "reused_verified": 9
+  },
+  "current_generic_points": {
+    "completed": 9,
+    "pending_remeasurement": 195
+  },
+  "sources": {
+    "native_current.json": "ff6f5042a0430fde7c81da252af73ded61f61b7e5cb67041ab35f299b0457c64",
+    "generic_current.json": "66a087ee408ada740bc8c972f99822fe1de12a3d441700d523e79a1ab957a270",
+    "energy_acquisitions.json": "d9681b0ed9599eafbcb3d6a2d6b4406c148ac91ed553286bf0b9e86ceaa48850"
+  },
+  "normal_consumer_required_for_claim_promotion": true
+}

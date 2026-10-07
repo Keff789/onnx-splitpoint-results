@@ -1,5 +1,15 @@
 # ONNX Splitpoint Tool – Knowledge Base
 
+> **Revision 3, 07.10.2026 — noch in Ausführung:**
+> [Aktuelle Daten](../results/evaluation/native_fairness_rev3_20261007/README.md)
+> und [technische Befunde](NATIVE_FAIRNESS_REV3_20261007.md) führen 15 neue Native-
+> Punkte, neun belegte Performancewiederverwendungen, neun Generic-Paare und
+> drei regulär zugelassene aktuelle Energiepunkte. Die restlichen Messungen
+> bleiben offen; ein physischer Quellen-STOP wird nicht umgangen. Historisches
+> Archiv ausschließlich lesend, keine Datenlöschung oder Speicherbereinigung.
+> Das frühere Review-ZIP ist inzwischen tatsächlich geprüft. Ältere Angaben
+> zu fehlendem ZIP oder Energie NA unten gelten für ihren damaligen Stand.
+
 > **YOLOv7-Nachtrag, 07.10.2026:** Der neue Bericht beschreibt die Reparatur des
 > dichten seriellen Completion-Tails auf H10/DeepX und neun neue Splitfälle
 > mit je drei getrennten 100/1000-Prozessen. Sechs optimierte Fulls werden nach

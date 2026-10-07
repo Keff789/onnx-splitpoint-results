@@ -1,0 +1,399 @@
+{
+  "schema": "native-fairness-revision3/archive-verification/v1",
+  "observed_at": "2026-10-07T08:54:16.577994+00:00",
+  "status": "SELECTIVE_ARCHIVE_CHECK_COMPLETE",
+  "archive_root": "archive:historical",
+  "mount": {
+    "filesystems": [
+      {
+        "source": "archive-account@archive-host:remote-root",
+        "target": "private-home:/mnt/sprite",
+        "fstype": "fuse.sshfs",
+        "options": "rw,nosuid,nodev,relatime,user_id=1002,group_id=1002"
+      }
+    ]
+  },
+  "space_check": [
+    {
+      "path": "revision3:",
+      "available_bytes": 317316730880,
+      "total_bytes": 982240026624
+    },
+    {
+      "path": "archive:historical",
+      "available_bytes": 8834085027840,
+      "total_bytes": 80008069513216
+    }
+  ],
+  "cleanup_owner": "user",
+  "data_deletion_performed": false,
+  "historical_archive_writes_performed": false,
+  "path_mapping": [
+    {
+      "original": "private-home:/Models/EvaluationRuns/thesis_20splits_n5000_b1000_20260925_20260925_103745",
+      "archive": "archive:historical"
+    },
+    {
+      "original": "private-home:/Reports/thesis20-generic-completion-192-20261002",
+      "archive": "archive:historical/_supplements/generic_completion_192_20261002"
+    },
+    {
+      "original": "private-home:/Reports/thesis20-yolo-min3-augmentation-20261002_222904",
+      "archive": "archive:historical/_supplements/yolo_min3_20261002_222904"
+    },
+    {
+      "original": "private-home:/Reports/thesis20-auswertung-20261002_110429",
+      "archive": "archive:historical/_analysis/corrected_20261002_110429"
+    }
+  ],
+  "scope": "Selected manifest, all 246 stored command contracts and representative inputs/source/output artifacts; not a full archive content verification.",
+  "checks": [
+    {
+      "original_path": "private-home:/Reports/thesis20-generic-completion-192-20261002/plan/execution-plan.json",
+      "checked_path": "archive:historical/_supplements/generic_completion_192_20261002/plan/execution-plan.json",
+      "role": "frozen completion execution plan",
+      "expected_sha256": "0bc7a798ecca847ead7f91d4759d1f55e2d6f4637c09756f1ce54cc815bad04e",
+      "exists": true,
+      "is_symlink": false,
+      "size_bytes": 52331216,
+      "sha256": "0bc7a798ecca847ead7f91d4759d1f55e2d6f4637c09756f1ce54cc815bad04e",
+      "hash_matches": true,
+      "parsed_json": true,
+      "json_type": "dict",
+      "status": "hash_match"
+    },
+    {
+      "original_path": "private-home:/Reports/thesis20-yolo-min3-augmentation-20261002_222904/completion/execution-plan.json",
+      "checked_path": "archive:historical/_supplements/yolo_min3_20261002_222904/completion/execution-plan.json",
+      "role": "frozen completion execution plan",
+      "expected_sha256": "1be24eebe376d5f5733922b7cf57473934d4846d5443e7df77ae26577a9ae6d4",
+      "exists": true,
+      "is_symlink": false,
+      "size_bytes": 3696322,
+      "sha256": "1be24eebe376d5f5733922b7cf57473934d4846d5443e7df77ae26577a9ae6d4",
+      "hash_matches": true,
+      "parsed_json": true,
+      "json_type": "dict",
+      "status": "hash_match"
+    },
+    {
+      "original_path": "private-home:/Reports/thesis20-yolo-min3-augmentation-20261002_222904/attempts/h8_energy_rest_20261004_170518/rest-result-sources.json",
+      "checked_path": "archive:historical/_supplements/yolo_min3_20261002_222904/attempts/h8_energy_rest_20261004_170518/rest-result-sources.json",
+      "role": "latest augmentation rest source selection",
+      "expected_sha256": "102624fa7f323ae4e27892c75f373becbf8ca8b8fb526e594ce03212aec6038e",
+      "exists": true,
+      "is_symlink": false,
+      "size_bytes": 647,
+      "sha256": "102624fa7f323ae4e27892c75f373becbf8ca8b8fb526e594ce03212aec6038e",
+      "hash_matches": true,
+      "parsed_json": true,
+      "json_type": "dict",
+      "status": "hash_match"
+    },
+    {
+      "original_path": "private-home:/Models/EvaluationRuns/thesis_20splits_n5000_b1000_20260925_20260925_103745/reports/native_energy_measurements/native_producer_energy_results.json",
+      "checked_path": "archive:historical/reports/native_energy_measurements/native_producer_energy_results.json",
+      "role": "original energy command/configuration binding inventory; not automatic present-day energy eligibility",
+      "expected_sha256": "092dca2281ba84dfcf30e5e56312daa7b1c54b5ff4cb1e61ba7d45fea4a94882",
+      "exists": true,
+      "is_symlink": false,
+      "size_bytes": 93817821,
+      "sha256": "092dca2281ba84dfcf30e5e56312daa7b1c54b5ff4cb1e61ba7d45fea4a94882",
+      "hash_matches": true,
+      "parsed_json": true,
+      "json_type": "dict",
+      "status": "hash_match"
+    },
+    {
+      "original_path": "private-home:/Reports/thesis20-yolo-min3-augmentation-20261002_222904/runs/yolo_min3_20261002_222904/reports/rest_attempts/h8_energy_rest_20261004_170518/block1/reports/native_energy_measurements/native_producer_energy_results.json",
+      "checked_path": "archive:historical/_supplements/yolo_min3_20261002_222904/runs/yolo_min3_20261002_222904/reports/rest_attempts/h8_energy_rest_20261004_170518/block1/reports/native_energy_measurements/native_producer_energy_results.json",
+      "role": "original energy command/configuration binding inventory; not automatic present-day energy eligibility",
+      "expected_sha256": "eeeb959104c86b744ea62513137bdc6c4d4fe1df1572f06c2f9539d196a62ae5",
+      "exists": true,
+      "is_symlink": false,
+      "size_bytes": 5644624,
+      "sha256": "eeeb959104c86b744ea62513137bdc6c4d4fe1df1572f06c2f9539d196a62ae5",
+      "hash_matches": true,
+      "parsed_json": true,
+      "json_type": "dict",
+      "status": "hash_match"
+    },
+    {
+      "original_path": "private-home:/Reports/thesis20-yolo-min3-augmentation-20261002_222904/runs/yolo_min3_20261002_222904/reports/rest_attempts/h8_energy_rest_20261004_170518/block2/reports/native_energy_measurements/native_producer_energy_results.json",
+      "checked_path": "archive:historical/_supplements/yolo_min3_20261002_222904/runs/yolo_min3_20261002_222904/reports/rest_attempts/h8_energy_rest_20261004_170518/block2/reports/native_energy_measurements/native_producer_energy_results.json",
+      "role": "original energy command/configuration binding inventory; not automatic present-day energy eligibility",
+      "expected_sha256": "5d75652a9e3801b728b32d95e1913371ba22225674dca0b3086b120fbce21bd5",
+      "exists": true,
+      "is_symlink": false,
+      "size_bytes": 1019709,
+      "sha256": "5d75652a9e3801b728b32d95e1913371ba22225674dca0b3086b120fbce21bd5",
+      "hash_matches": true,
+      "parsed_json": true,
+      "json_type": "dict",
+      "status": "hash_match"
+    },
+    {
+      "original_path": "private-home:/Models/EvaluationRuns/thesis_20splits_n5000_b1000_20260925_20260925_103745/reports/native_expected_matrix.json",
+      "checked_path": "archive:historical/reports/native_expected_matrix.json",
+      "role": "authoritative original native expected matrix, preserving executable/excluded separation",
+      "expected_sha256": "90fb3b1928eee046ace9a00d2a9803b76452a2421adce13fac1f32f7554a22fe",
+      "exists": true,
+      "is_symlink": false,
+      "size_bytes": 1120353,
+      "sha256": "90fb3b1928eee046ace9a00d2a9803b76452a2421adce13fac1f32f7554a22fe",
+      "hash_matches": true,
+      "parsed_json": true,
+      "json_type": "dict",
+      "status": "hash_match"
+    },
+    {
+      "original_path": "private-home:/Models/EvaluationRuns/thesis_20splits_n5000_b1000_20260925_20260925_103745/run_manifest.json",
+      "checked_path": "archive:historical/run_manifest.json",
+      "role": "original campaign scope/context; not the executable-native count",
+      "expected_sha256": "32be499859dd84a8a62207f6f1298c37d512bc26e856ec3834a75a08ebf9e7b1",
+      "exists": true,
+      "is_symlink": false,
+      "size_bytes": 16878801,
+      "sha256": "32be499859dd84a8a62207f6f1298c37d512bc26e856ec3834a75a08ebf9e7b1",
+      "hash_matches": true,
+      "parsed_json": true,
+      "json_type": "dict",
+      "status": "hash_match"
+    },
+    {
+      "original_path": "private-home:/Models/EvaluationRuns/thesis_20splits_n5000_b1000_20260925_20260925_103745/required_run_scope.json",
+      "checked_path": "archive:historical/required_run_scope.json",
+      "role": "original campaign scope/context; not the executable-native count",
+      "expected_sha256": "d2000eb099743472d07aeb9657c0c5cfcc35a29a2f64c84b80175551f442a36c",
+      "exists": true,
+      "is_symlink": false,
+      "size_bytes": 55319,
+      "sha256": "d2000eb099743472d07aeb9657c0c5cfcc35a29a2f64c84b80175551f442a36c",
+      "hash_matches": true,
+      "parsed_json": true,
+      "json_type": "dict",
+      "status": "hash_match"
+    },
+    {
+      "original_path": "private-home:/Models/EvaluationRuns/thesis_20splits_n5000_b1000_20260925_20260925_103745/effective_execution_plan.json",
+      "checked_path": "archive:historical/effective_execution_plan.json",
+      "role": "original campaign scope/context; not the executable-native count",
+      "expected_sha256": "c78cd207c564d6d3473e298efae50611c554245503563dffed3832db268e8c70",
+      "exists": true,
+      "is_symlink": false,
+      "size_bytes": 13791,
+      "sha256": "c78cd207c564d6d3473e298efae50611c554245503563dffed3832db268e8c70",
+      "hash_matches": true,
+      "parsed_json": true,
+      "json_type": "dict",
+      "status": "hash_match"
+    },
+    {
+      "original_path": "private-home:/Reports/thesis20-yolo-min3-augmentation-20261002_222904/runs/yolo_min3_20261002_222904/run_manifest.json",
+      "checked_path": "archive:historical/_supplements/yolo_min3_20261002_222904/runs/yolo_min3_20261002_222904/run_manifest.json",
+      "role": "augmentation campaign scope/context",
+      "expected_sha256": "a930b399e253e84da0a2de9eee1f1f6924103d2e4b81b350de17e473009a3eb8",
+      "exists": true,
+      "is_symlink": false,
+      "size_bytes": 2007348,
+      "sha256": "a930b399e253e84da0a2de9eee1f1f6924103d2e4b81b350de17e473009a3eb8",
+      "hash_matches": true,
+      "parsed_json": true,
+      "json_type": "dict",
+      "status": "hash_match"
+    },
+    {
+      "original_path": "private-home:/Reports/thesis20-yolo-min3-augmentation-20261002_222904/runs/yolo_min3_20261002_222904/required_run_scope.json",
+      "checked_path": "archive:historical/_supplements/yolo_min3_20261002_222904/runs/yolo_min3_20261002_222904/required_run_scope.json",
+      "role": "augmentation campaign scope/context",
+      "expected_sha256": "7963a29d4fa05ca46261720c7600dd489b6bd1d02d145b7e7cc697c4c9785351",
+      "exists": true,
+      "is_symlink": false,
+      "size_bytes": 18829,
+      "sha256": "7963a29d4fa05ca46261720c7600dd489b6bd1d02d145b7e7cc697c4c9785351",
+      "hash_matches": true,
+      "parsed_json": true,
+      "json_type": "dict",
+      "status": "hash_match"
+    },
+    {
+      "original_path": "archive:historical/artifact_index.json",
+      "checked_path": "archive:historical/artifact_index.json",
+      "role": "Parsed historical artifact index; self has no independent expected digest",
+      "expected_sha256": null,
+      "exists": true,
+      "is_symlink": false,
+      "size_bytes": 201180816,
+      "sha256": "c6b9d2d4d2806940cf7e0e11ca6d792de70afb0c9a3872fa016bd42880ce2a75",
+      "hash_matches": null,
+      "status": "readable_unbound"
+    },
+    {
+      "original_path": "archive:historical/dataset_registry_binding.json",
+      "checked_path": "archive:historical/dataset_registry_binding.json",
+      "role": "critical archive metadata",
+      "expected_sha256": "8bc2d590f09eeacee375aca126e2b2bc9628a150cf86f63c412026a8bf049f6f",
+      "exists": true,
+      "is_symlink": false,
+      "size_bytes": 1243,
+      "sha256": "8bc2d590f09eeacee375aca126e2b2bc9628a150cf86f63c412026a8bf049f6f",
+      "hash_matches": true,
+      "parsed_json": true,
+      "json_type": "dict",
+      "status": "hash_match"
+    },
+    {
+      "original_path": "archive:historical/hardware_matrix.json",
+      "checked_path": "archive:historical/hardware_matrix.json",
+      "role": "critical archive metadata",
+      "expected_sha256": "d69bfd1858a8e2452de9ba93c96486be8e63ce1473ab99b77c3e2dfa3d373164",
+      "exists": true,
+      "is_symlink": false,
+      "size_bytes": 10029,
+      "sha256": "d69bfd1858a8e2452de9ba93c96486be8e63ce1473ab99b77c3e2dfa3d373164",
+      "hash_matches": true,
+      "parsed_json": true,
+      "json_type": "dict",
+      "status": "hash_match"
+    },
+    {
+      "original_path": "archive:historical/campaign/campaign_readiness.json",
+      "checked_path": "archive:historical/campaign/campaign_readiness.json",
+      "role": "critical archive metadata",
+      "expected_sha256": "ea8780cdd3691c5517f32093c85cacbfe67e9819390678dcff59353fb6400bd3",
+      "exists": true,
+      "is_symlink": false,
+      "size_bytes": 34228,
+      "sha256": "ea8780cdd3691c5517f32093c85cacbfe67e9819390678dcff59353fb6400bd3",
+      "hash_matches": true,
+      "parsed_json": true,
+      "json_type": "dict",
+      "status": "hash_match"
+    },
+    {
+      "original_path": "archive:historical/campaign/inputs/campaign_inputs_manifest.json",
+      "checked_path": "archive:historical/campaign/inputs/campaign_inputs_manifest.json",
+      "role": "critical archive metadata",
+      "expected_sha256": "591b6423e0dfab18e904fd4735c4ca54642884f42bfef9e9c4d82dd6872625a0",
+      "exists": true,
+      "is_symlink": false,
+      "size_bytes": 1741,
+      "sha256": "591b6423e0dfab18e904fd4735c4ca54642884f42bfef9e9c4d82dd6872625a0",
+      "hash_matches": true,
+      "parsed_json": true,
+      "json_type": "dict",
+      "status": "hash_match"
+    },
+    {
+      "original_path": "archive:historical/energy_task_budget.json",
+      "checked_path": "archive:historical/energy_task_budget.json",
+      "role": "critical archive metadata",
+      "expected_sha256": "328202f05dbcfd9f11c29c747476f8a6661a03f5406a384cd466fba89507d7fc",
+      "exists": true,
+      "is_symlink": false,
+      "size_bytes": 1045150,
+      "sha256": "328202f05dbcfd9f11c29c747476f8a6661a03f5406a384cd466fba89507d7fc",
+      "hash_matches": true,
+      "parsed_json": true,
+      "json_type": "dict",
+      "status": "hash_match"
+    }
+  ],
+  "artifact_index_entries": 434385,
+  "configuration_counts": {
+    "native_total": 246,
+    "splits": 204,
+    "fulls": 42,
+    "original_executable": 234,
+    "original_excluded": 228,
+    "original_exclusion_reasons": {
+      "part2_input_count_not_one": 228
+    },
+    "generic_completed_plans": [
+      192,
+      12
+    ]
+  },
+  "command_contract_checks": {
+    "total": 246,
+    "hash_match": 246,
+    "details": "revision3:/archive_checks/all_246_command_checks.json"
+  },
+  "generic_usage": {
+    "completed_report_count": 204,
+    "readable_reports": 204,
+    "plan_cfg_streaming_impl_counts": {
+      "auto": 204
+    },
+    "details": "revision3:/archive_checks/generic_204_usage_bindings.json"
+  },
+  "prior_archive_verification": {
+    "source": "private-home:/Reports/thesis20-archive-close-20261005/archive-completion-evidence.json",
+    "sha256": "4b679f877ae4ed904565569535b7693511dd8012b3a3c197478f73bc8e60cdff",
+    "core": {
+      "status": "copies_complete_with_declared_historical_source_gap",
+      "at": "2026-10-05T12:05:40+0200",
+      "original_user_exit_code": "not_observable_from_external_process",
+      "base_targeted_repair_count": 4784,
+      "second_full_base_copy": false,
+      "base_verification": "all source entries compared by size/type/link, timestamps of same-size user-copied files not rewritten; no full content checksum",
+      "supplement_verification": "rsync dry-run size/regular-file-mtime/type/link matches; symlink mtimes omitted; any source epoch-mtime exception requires targeted exact byte equality",
+      "external_verification": "original-bound source bytes checked before archive copy; archive copy size/mtime/type/link checked; no full archive content checksum",
+      "missing_original_source_sha256": "aae20edc6a4bb19c40d00f82707e333d8c931a2ace23b641c426d099fb3a3d0e",
+      "missing_original_source_reference_count": 21,
+      "measurement_started": false
+    },
+    "note": "Prior size/type/link verification retained as limited evidence; no full archive SHA claim."
+  },
+  "recent_yolov7": {
+    "location": "private-home:/Reports/yolov7-full-fix-20261005/YOLOV7_SPLITS_ORIN_REVIEW_20261006_234549_focused.zip",
+    "sha256": "5d7336396d7d4536e5fd8b6cb0c77dd734b847dc9056765809b772d1685bef9f",
+    "size_bytes": 516268306,
+    "all_checker_exit_codes_zero": true,
+    "checker_receipts": "revision3:/archive_checks/checker_receipts.json",
+    "payload_files_sha256_verified": 6281,
+    "cohort": {
+      "new_split_process_repeats": 27,
+      "reused_full_process_repeats": 18,
+      "separate_full_control_processes": 3
+    },
+    "source_and_control_detail": "revision3:/archive_checks/controls_sources_result.json",
+    "quality_statuses": {
+      "DeepX__deepx__b009": "reference_close",
+      "DeepX__deepx__b044": "reference_close",
+      "DeepX__deepx__b066": "reference_close",
+      "DeepX__native_full_deepx__full": "reference_close",
+      "DeepX__native_full_tensorrt__full": "reference_close",
+      "H10__hailo10h__b009": "reference_close",
+      "H10__hailo10h__b044": "reference_close",
+      "H10__hailo10h__b066": "reference_close",
+      "H10__native_full_hailo10h__full": "accuracy_loss",
+      "H10__native_full_tensorrt__full": "reference_close",
+      "H8__hailo8_to_trt__b009": "reference_close",
+      "H8__hailo8_to_trt__b044": "reference_close",
+      "H8__hailo8_to_trt__b066": "reference_close",
+      "H8__native_full_hailo8__full": "accuracy_loss",
+      "H8__native_full_tensorrt__full": "reference_close"
+    },
+    "energy_status": "NA for all15 current variants; historical STOP/budgets retained",
+    "limits": [
+      "Archive consistency and saved reports are verified; this does not rerun hardware or establish current hardware state.",
+      "Large engine/model binaries are not in this focused review ZIP; engine/input identity is attested by saved hash bindings and before/after receipts, not fresh physical-device hashing.",
+      "Embedded paper checker validates saved normal-product replay receipts and preserved raw tensor bytes; no new numerical Strict replay or COCO campaign is performed in this recheck.",
+      "Historical energy review ZIP is not nested; only its archived FINAL_VERIFICATION digest statement is checked by the embedded checker. Three actual energy accounting files are byte-verified."
+    ],
+    "archived_in_diss_results_not_assumed": true
+  },
+  "check_status_counts": {
+    "hash_match": 17,
+    "readable_unbound": 1
+  },
+  "scope_limits": [
+    "Not a complete cryptographic check of the historical archive.",
+    "Symlinks examined only when encountered among selected inputs; no exhaustive link traversal.",
+    "246 rows identify historical executable configurations; execution-path code audit and remeasurement decisions are separate."
+  ],
+  "input_availability": "revision3:/INPUT_AVAILABILITY.json",
+  "historical_stop_scope_evidence": "revision3:/archive_checks/historical_energy_stop_scopes.json",
+  "legacy_generic_raw_evidence": "revision3:/archive_checks/legacy_generic_raw_sample.json"
+}
