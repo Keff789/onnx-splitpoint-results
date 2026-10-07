@@ -5,6 +5,20 @@ Split-Point evaluation project. It keeps compact measurement results,
 experiment scripts, acceptance evidence and explanatory documentation. Large
 runtime artefacts stay in a separate local raw archive and are not committed.
 
+## Current YOLOv7 performance — 7 October 2026
+
+The [current completed-task results](results/evaluation/yolov7_native_completion_20261007/README.md)
+replace the nine YOLOv7 Native split throughput aggregates and six Full alternatives
+for current paper use. All three repeats are supplied, with explicit report-level
+provenance. H8 b066 reaches 2.17x and H10 b044 1.25x their fastest Full;
+DeepX b044 has a small observed 1.03x advantage. Historical records remain intact.
+
+Energy for these 15 current implementations is **not measured**; old Joule values
+must not be joined to the new FPS. The new review ZIP was unavailable during this
+integration, so raw-evidence verification is still a local handoff task. See the
+[knowledge-base update](docs/YOLOV7_NATIVE_COMPLETION_20261007.md) for the measured
+software mechanism, host configuration and remaining work.
+
 ## THESIS20 completed analysis — 4 October 2026
 
 The reviewed [scientific deep analysis](results/evaluation/thesis20_20261004/deep_analysis/README.md)
@@ -155,3 +169,4 @@ See [docs/ARTIFACT_SELECTION.md](docs/ARTIFACT_SELECTION.md) and
 Existing compressed evidence is copied to the separate raw archive and can
 later be attached to a GitHub Release if its licence, privacy and size have
 been checked.
+

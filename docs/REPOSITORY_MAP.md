@@ -1,5 +1,13 @@
 # Repository map
 
+> **Added 7 October 2026:**
+> [YOLOv7 native-completion findings](YOLOV7_NATIVE_COMPLETION_20261007.md) and
+> [reported performance data](../results/evaluation/yolov7_native_completion_20261007/README.md)
+> form a separate dated update. The supplied report was transcribed and checked
+> arithmetically; its new raw-data/source archive was not independently verified.
+> Current performance and historical energy are kept separate; all 15 updated
+> variants have energy NA. Existing THESIS20 paths and historical results remain.
+
 Current navigation, 5 October 2026. Evidence paths stay fixed so that old reports,
 figure references and scripts continue to resolve. Dated directories describe
 their own run; they do not override a newer analysis merely by remaining present.

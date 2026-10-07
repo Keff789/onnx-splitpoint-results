@@ -1,5 +1,11 @@
 # THESIS20 completed analysis, 4 October 2026
 
+> **Current-view update, 7 October 2026:** [YOLOv7 native performance](../yolov7_native_completion_20261007/README.md)
+> supersedes the nine matching split and six Full throughput aggregates for paper use.
+> Their current energy values are unavailable. This dated directory and its
+> reproductions retain the historical October-4 snapshot; do not mix its YOLOv7
+> energy with the newer runtime. Other models are unchanged by this update.
+
 [Start here](START_HERE.md) · [Paper findings](PAPER_FINDINGS.md) · [Methods](METHODS.md) · [Input schema](INPUT_SCHEMA.md) · [Reproduction proof](REPRODUCTION_STATUS.json)
 
 This is the curated joint derivation of the corrected original campaign, the
@@ -49,3 +55,4 @@ preserved evidence, running transfer and the one unresolved historical source
 byte identity. This public projection is not a substitute for original tensors,
 models, engines, datasets, sensor traces, calibration payloads or private profiles.
 No new data licence or public raw-data hosting arrangement is asserted.
+

@@ -1,5 +1,25 @@
 # Arbeitsstand – THESIS20 wissenschaftliche Reviewableitung
 
+## YOLOv7-Completion-Nachtrag — 07.10.2026
+
+Berichtsbasierte Fortschreibung: neun Splitkonfigurationen mit 27 neuen
+Prozessrepeats, sechs weiterverwendete optimierte Fulls mit 18 Repeats und drei
+separate aktuelle TRT-Full-Kontrollen. Die Median-/Quotientenrechnung wurde
+geprüft; neue Rohreports, Quellen, Telemetrie und Review-ZIP wurden für diese
+Übernahme nicht unabhängig nachgeprüft. [Detaillierter Befund](YOLOV7_NATIVE_COMPLETION_20261007.md)
+und [Daten/Provenienz](../results/evaluation/yolov7_native_completion_20261007/README.md).
+
+Laut Bericht ist der Worktree-Fix im regulären Startpfad eingebunden; die
+Hardwaremessungen verwendeten isolierte Candidate-Runtimes. Offen bleiben
+der Rollout außerhalb des Worktrees und Energie für alle 15 aktuellen Varianten
+(`not_measured`/NA). Historische Joulewerte werden nicht als Energie der neuen
+Implementierung übernommen. Der ungeklärte restliche TRT-Full-Abstand und eine
+mögliche Zusammenführung der doppelt gemessenen Finitprüfung sind getrennte
+Folgefragen, keine pauschalen Voraussetzungen für die Performanceauswertung.
+H8-b009/b044-Regressionswerte und sämtliche älteren Ergebnisstände bleiben erhalten.
+Dieser Dokumentationsnachtrag veröffentlicht keinen Toolrelease und startet keine
+neue Hardware-/Energiekampagne. Die folgenden Standblöcke sind datierte Historie.
+
 ## Archivabschluss — 05.10.2026, 12:06 CEST
 
 Die vorhandene Archivkette ist tatsächlich beendet: Originalfinalisierung,

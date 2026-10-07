@@ -1,5 +1,11 @@
 # Start here: final THESIS20 analysis
 
+> **Current-view update, 7 October 2026:** [YOLOv7 native performance](../yolov7_native_completion_20261007/README.md)
+> supersedes the nine matching split and six Full throughput aggregates for paper use.
+> Their current energy values are unavailable. This dated directory and its
+> reproductions retain the historical October-4 snapshot; do not mix its YOLOv7
+> energy with the newer runtime. Other models are unchanged by this update.
+
 This directory is the compact public analysis projection. It contains no model payloads, raw sensor traces, datasets, private machine paths or credentials. Original evidence remains in the separately documented private archive. Publication status and the released tool reference belong to the enclosing result-repository release notes.
 
 Read `PAPER_FINDINGS.md` first, then `METHODS.md`. `tables/four_views_inventory.csv` separates:
@@ -37,3 +43,4 @@ The command uses paths relative to this directory. It performs no network reques
 Original-data verification is separate. With access to the private archive and the corresponding installed tool, the documented `extract_inputs.py`, `extract_auxiliary.py`, `merge_semantics.py` and stored-output semantic replay reproduce the compact input projection using the existing normal readers. Supply source roots explicitly as described in `METHODS.md`. Never direct their output into an original run.
 
 The five figures have vector PDF/SVG versions and PNG review previews. Their small exact plot tables accompany them; no figure depends on an external host path. PDF/SVG styling follows the existing project PSD paper figures (white background, DejaVu Sans, tab10 palette, thin gray grid); hardware aliases H8/H10/DeepX use blue/orange/green consistently. Semantic comparisons and the curated summaries are descriptive screening/development evidence, not final or held-out deployment claims.
+

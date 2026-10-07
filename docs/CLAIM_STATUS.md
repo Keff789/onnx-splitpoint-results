@@ -1,5 +1,15 @@
 # Current result and claim status
 
+> **Additive update, 7 October 2026:** The
+> [YOLOv7 native-completion follow-up](YOLOV7_NATIVE_COMPLETION_20261007.md)
+> records nine newly measured split configurations and six reused optimized Fulls.
+> This repository update checks the supplied report's transcription and arithmetic;
+> the newly referenced raw-data/source archive has not been independently checked.
+> All 15 current variants have energy **not measured / NA**. Historical energy and
+> older claim lists below retain their original scope and are not automatically
+> new prerequisites for this performance follow-up.
+> [Reported results and provenance](../results/evaluation/yolov7_native_completion_20261007/README.md).
+
 Updated: 2026-09-03
 
 | Evidence | Status | What it demonstrates | Important limit |

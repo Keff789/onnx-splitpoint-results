@@ -1,5 +1,17 @@
 # ONNX Splitpoint Tool – Knowledge Base
 
+> **YOLOv7-Nachtrag, 07.10.2026:** Der neue Bericht beschreibt die Reparatur des
+> dichten seriellen Completion-Tails auf H10/DeepX und neun neue Splitfälle
+> mit je drei getrennten 100/1000-Prozessen. Sechs optimierte Fulls werden nach
+> separaten TRT-Kontrollen weiterverwendet; alle 15 aktuellen Varianten haben
+> Energie **NA**. H8-b009/b044-Regressionswerte bleiben sichtbar. Tabellen und
+> Rechnungen wurden hier geprüft, das neue Rohdaten-/Quellen-ZIP nicht unabhängig.
+> [Befund, Quellenkorrektur und offene Punkte](YOLOV7_NATIVE_COMPLETION_20261007.md)
+> · [Datennachtrag](../results/evaluation/yolov7_native_completion_20261007/README.md).
+> Frühere Entscheidungen gegen neue Messungen unten betreffen ihren damaligen
+> Abschlussstand; sie ersetzen diesen später beauftragten gezielten Nachtrag nicht.
+> Die THESIS20-Historie bleibt unverändert, dies ist kein neuer Toolrelease.
+
 > **Archivabschluss, 05.10.2026, 12:06 CEST:** Die bestehende Archivkette,
 > eingefrorene Vertiefung und zusätzliche private Ranking-/Papersicherung sind
 > nach realen Endcodes und Zielprüfungen beendet. BASE wurde nur um 4.784 fehlende
