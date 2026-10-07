@@ -1,5 +1,13 @@
 # Arbeitsstand – THESIS20 wissenschaftliche Reviewableitung
 
+## Revision 3 — 07.10.2026, Softwareabschluss des Offline-Zwischenstands
+
+Die Generic-Dauererweiterung ist im Worktree integriert und gezielt geprüft.
+Neun vorhandene Generic-Punkte benötigen neue Bestätigungen vor finaler Energie.
+Der aktuelle Quellreview umfasst 80 Dateien; die private unvollständige
+Paperableitung wurde gebaut und reproduziert. Neue Hardware bleibt am konkret
+angefragten H10-STOP gebunden. [Details und Belegquellen](NATIVE_FAIRNESS_REV3_20261007.md).
+
 ## Revision 3 — 07.10.2026, unvollständiger Zwischenstand
 
 [Aktuelle Daten und Prüfbefehl](../results/evaluation/native_fairness_rev3_20261007/README.md)

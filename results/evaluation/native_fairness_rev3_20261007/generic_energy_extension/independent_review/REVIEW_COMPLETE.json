@@ -1,0 +1,30 @@
+{
+  "schema": "revision3/generic-energy-independent-review-complete",
+  "status": "REVIEW_PASSED_FOR_EXACT_ISOLATED_CANDIDATE",
+  "source_delta": {
+    "path": "revision3:/generic_energy_extension/SOURCE_DELTA.json",
+    "sha256": "ebadda1719a1b0041ff181479004a8bc3b0ffec43198df89641c65d5332030ac"
+  },
+  "review": {
+    "path": "revision3:/generic_energy_extension/independent_review/FINAL_REVIEW.json",
+    "sha256": "ecc4436b52aed0d6c9ced3ceb6a993cacd385cb88b2de3337d1e6766e1dcc066"
+  },
+  "targeted_final_negative_probes": {
+    "path": "revision3:/generic_energy_extension/independent_review/FINAL_NEGATIVE_PROBES.json",
+    "sha256": "b35359c6f97fb4c8651dc793a17764239419f511ca68a1125e7255fa179dfb1b"
+  },
+  "final_alias_and_allowlist_probe": {
+    "path": "revision3:/generic_energy_extension/independent_review/CORRECTION_PROBE.json",
+    "sha256": "92f45b6a43593ff1bf8b674e384fb5ec8464f90d3af322ef7f3352a54287f126"
+  },
+  "author_182_test_log": {
+    "path": "revision3:/generic_energy_extension/pytest_final_v2.log",
+    "sha256": "e9171f2774cf5c18f7bb33c986e8be0817689d70d4ed98d036bc271f30de0079"
+  },
+  "all_review_findings_addressed": true,
+  "exact_reviewed_changed_file_count": 6,
+  "unchanged_gui_controller_also_reviewed": true,
+  "hardware_started": false,
+  "reviewer_product_or_budget_or_archive_mutations": false,
+  "admission_limits": "This is software review readiness only. Actual energy results require actual newly bound performance processes, normal owned collector captures, fresh nonces/counts and final Quality/normal report admission. Previous nine Generic performance points remain separate valid historical observations."
+}

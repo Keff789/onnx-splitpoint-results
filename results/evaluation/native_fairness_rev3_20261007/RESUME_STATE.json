@@ -1,5 +1,5 @@
 {
-  "at": "2026-10-07T12:23:12.971674+00:00",
+  "at": "2026-10-07T13:12:38.721819+00:00",
   "task_status": "in_progress_hardware_paused_at_required_post_stop_authorization",
   "own_measurement_processes_at_last_terminal_check": {
     "local": 0,
@@ -180,10 +180,20 @@
     "generic_additional_points": 195,
     "generic_current_points_to_confirm_after_final_duration_worker_change": 9,
     "native_required_energy_points_without_final_admission": 237,
-    "generic_energy_points_without_final_admission": 204
+    "generic_energy_points_without_final_admission": 204,
+    "native_existing_points_requiring_bounded_normal_source_admission_confirmation": 6
   },
   "normal_energy_pointer": "CURRENT_NORMAL_ENERGY.json",
   "normal_energy_points": 3,
   "historical_archive_read_only": true,
-  "data_deletion_performed": false
+  "data_deletion_performed": false,
+  "generic_duration_software_status": "integrated_and_offline_verified; no_hardware_energy_started",
+  "current_source_review_snapshot": "CURRENT_SOURCE_REVIEW_SNAPSHOT.json",
+  "budget_unchanged_since_terminal": true,
+  "next_read_only_command": "source:controller/.venv/bin/python -B revision3:/operations/recovery_full_h10_20261007/recover.py check",
+  "generic_capture_parent_status": "READY_TO_PREPARE_AFTER_PERFORMANCE; no hardware energy started",
+  "private_paper_status": "incomplete_current_view_built_and_reproduced",
+  "zero_start_recovery_status": "84_tests_23_bound_evidence_files_passed; isolated_not_applied",
+  "source_deployment_status": "original_223_runtime_cohorts_preserved; DX_H10_energy_delta_not_deployed",
+  "generic_capture_parent_receipt": "operations/generic_energy_parent/RECEIPT.json"
 }

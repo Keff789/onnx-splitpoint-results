@@ -5,8 +5,8 @@ Der aktuelle Auftrag ist noch in Ausführung. Der
 führt 15 neue Native-Punkte mit drei tatsächlichen Prozessen, neun unveränderte
 Klassifikations-Fulls mit belegter Performancewiederverwendung und neun neue
 Generic-Paare. 222 Native- und 195 weitere Generic-Performancepunkte fehlen noch.
-Die neun Generic-Punkte werden nach Abschluss der gemeinsamen Dauersteuerung
-einmal bestätigt. Eine alte Messung erhält keine erfundenen neuen Repeats.
+Die gemeinsame Dauersteuerung ist jetzt im Worktree integriert; die neun
+Generic-Punkte benötigen vor finaler Energie eine neue Bestätigung. Eine alte Messung erhält keine erfundenen neuen Repeats.
 
 Die Archivprüfung war ausschließlich lesend. Der vorhandene YOLOv7-Review-ZIP
 bestand seinen Prüfer für 6.281 Payloadhashes sowie die 27 Splitrepeats,
@@ -63,8 +63,18 @@ Erfolgreiche Repeats werden bei der Fortsetzung nicht erneut gestartet.
 
 Neue Gruppen sind im getrennten datierten Archiv einschließlich Fehlern,
 Befehlen und Quellbindungen gespeichert und hashgeprüft. Die erforderlichen
-weiteren Messungen, abschließenden Rankings, private Paperableitung und das
-kompakte Rohbelegpaket sind noch nicht vollständig. Fehlende Werte bleiben NA;
+weiteren Messungen und abschließenden Allmodell-Rankings bleiben offen. Die
+private, ausdrücklich unvollständige Paperableitung ist gebaut und reproduziert;
+das kompakte Rohbelegpaket wird als privater Offline-Checkpoint abgeschlossen. Fehlende Werte bleiben NA;
 die unveränderte relative Fünf-Prozent-Qualityregel wird nicht als strengere
 Nichtunterlegenheitsregel ausgegeben. 1.000 Wiederholungen desselben Bildes sind
 keine 1.000 verschiedenen Bilder oder unabhängigen Sitzungen.
+
+Die integrierte Generic-Dauererweiterung ist mit 182 Kandidatentests, zehn
+unabhängigen Reviewproben und 36 Worktree-/Bundleprüfungen belegt. Diese
+überlappenden Läufe werden nicht addiert und ersetzen keine Hardwaremessung.
+Der aktuelle Review-Snapshot umfasst 80 geänderte Quell-/Testdateien; der
+ursprüngliche 223-Dateien-DUT-Freeze bleibt für seine Kohorten verbindlich.
+Die sechs alten DX/H10-Performancekohorten bleiben gültig. Sechs begrenzte
+neue Bestätigungen sind ausschließlich für die normale Preflightzulassung
+der reparierten Energie-Runtime vorbereitet; alte Reports werden nicht neuversiegelt.

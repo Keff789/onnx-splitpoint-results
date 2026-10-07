@@ -1,0 +1,74 @@
+{
+  "schema": "revision3/generic-completed-energy-software-delta/v1",
+  "candidate_root": "revision3:/generic_energy_extension/candidate",
+  "worktree_root": "source:worktree",
+  "files": [
+    {
+      "relative_path": "onnx_splitpoint_tool/runners/task_completion.py",
+      "before_sha256": "f13f89582d312214407dc33217787122280d51a94f9e126721cc11de08f812ec",
+      "after_sha256": "4088d7e7b88cf19d0f9f3098770521f0326dcc6ac31fe08ab55a9e7c7066de51",
+      "bytes": 27251,
+      "native_executed": false,
+      "role": "generic_measured_executor"
+    },
+    {
+      "relative_path": "onnx_splitpoint_tool/resources/templates/run_split_onnxruntime.py.txt",
+      "before_sha256": "50f5e0d642a673b218df96125f19cfa379b261d784d7520c604ed49ccb7770e1",
+      "after_sha256": "b6180c54d20659e1105fda4d39f84b8c94ad673d2c1a966f3a4e9823348a9cfe",
+      "bytes": 1075481,
+      "native_executed": false,
+      "role": "generic_measured_executor"
+    },
+    {
+      "relative_path": "onnx_splitpoint_tool/workflow/generic_completed_task.py",
+      "before_sha256": "9ec45fce93d28fb3f7c1b88704245743220874fe22cdae563045551c5f2a016b",
+      "after_sha256": "b85a7dbafd504b1c5aa0e5ceaa321f527bc297df60fbf6c638307a85dcb448d9",
+      "bytes": 76232,
+      "native_executed": false,
+      "role": "controller_or_report_only"
+    },
+    {
+      "relative_path": "onnx_splitpoint_tool/generic_completion_reporting.py",
+      "before_sha256": "3489ecfcd206e03a2431e78fb05512856f5de42b49d161bd6199790008142920",
+      "after_sha256": "5dad649348ccd9c50b78efb6939408c50d74fb1fd68dc6a615d48bfa8a42b153",
+      "bytes": 34562,
+      "native_executed": false,
+      "role": "controller_or_report_only"
+    },
+    {
+      "relative_path": "onnx_splitpoint_tool/runners/generic_energy.py",
+      "before_sha256": null,
+      "after_sha256": "0e8827ebc654852e427839c9e0af2726d37253c0ed1049631615f39159bc24fb",
+      "bytes": 15812,
+      "native_executed": false,
+      "role": "generic_preflight_runtime"
+    },
+    {
+      "relative_path": "onnx_splitpoint_tool/generic_energy_reporting.py",
+      "before_sha256": null,
+      "after_sha256": "1f58c67282551daae035efc9174915c68c1a52db5113a259cc0a3105d0088dad",
+      "bytes": 14894,
+      "native_executed": false,
+      "role": "controller_or_report_only"
+    }
+  ],
+  "exact_product_file_count": 6,
+  "worktree_before_sha_verified": true,
+  "worktree_modified": false,
+  "hardware_executed": false,
+  "historical_nine_performance_rows_modified": false,
+  "new_energy_pairing_requires_fresh_same_bundle_performance": true,
+  "shared_campaign_budget": "revision3:/energy/energy_task_budget.json",
+  "limits": {
+    "max_chains": 9,
+    "max_retries": 2,
+    "max_transport_failures": 20
+  },
+  "tests": {
+    "path": "revision3:/generic_energy_extension/pytest_final_v2.log",
+    "sha256": "e9171f2774cf5c18f7bb33c986e8be0817689d70d4ed98d036bc271f30de0079",
+    "passed": 182
+  },
+  "ast_proof_sha256": "8c619ec73f4a25b1b16dbb17833bfddefab4a4a9065bbce8f2413cdd3b6d6fd2",
+  "patch_sha256": "a2b4bd3fa21f67c7ef59404c70e3ac4d286da9311e55b3081fb8f12a7255529e"
+}

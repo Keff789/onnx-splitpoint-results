@@ -1,0 +1,148 @@
+{
+  "schema": "revision3/generic-energy-parent-adapter-receipt/v1",
+  "at": "2026-10-07T13:14:22.345897+00:00",
+  "status": "READY_TO_PREPARE_AFTER_PERFORMANCE",
+  "implementation_complete": true,
+  "hardware_executed": false,
+  "hardware_starts": 0,
+  "new_performance_available": 0,
+  "energy_ready_points": 0,
+  "energy_measurements_claimed": 0,
+  "source_files": [
+    {
+      "path": "revision3:/operations/generic_energy_parent/adapter.py",
+      "sha256": "3feb79e9182ad0db7d029b505255cda265035c8178862eb00b3b26567e2565c8"
+    },
+    {
+      "path": "revision3:/operations/generic_energy_parent/test_adapter.py",
+      "sha256": "71a25f409ee1e5efed952a8c8ecfae67546595952554f8b8e5c6e368049c6c01"
+    },
+    {
+      "path": "revision3:/operations/generic_energy_parent/negative_actual_cli.py",
+      "sha256": "962f8cc04004f71d7efb0c588d4e250ef6d591ee0429a6ccb70f25ea44d476de"
+    }
+  ],
+  "tests": {
+    "pytest": {
+      "path": "revision3:/operations/generic_energy_parent/pytest_v2.log",
+      "sha256": "4d9790da97d0b82d13be42da97e7dcc876a7aeba6452d199b2a7c4499a8a1c05"
+    },
+    "passed": 42,
+    "failed": 0,
+    "seconds": 1.4,
+    "actual_frozen_plan_negative_cli": {
+      "path": "revision3:/operations/generic_energy_parent/ACTUAL_NEGATIVE_CLI.json",
+      "sha256": "04785c5612cb313e7d140377fedb9d5095b70148a68c32f29192720681b391b8"
+    },
+    "actual_cases": 9,
+    "independent_review": {
+      "path": "revision3:/generic_energy_extension/CAPTURE_ADAPTER_REVIEW.json",
+      "sha256": "09eccdd288e6f9f2ee3590b0a64fb8df6b0e7c779d9873e8b4d52f17864f9edf"
+    },
+    "independent_probes_passed": 3
+  },
+  "readiness": {
+    "path": "revision3:/operations/generic_energy_parent/READINESS_v2.json",
+    "sha256": "41dcf0fc5d737a40437f752b3bc823d22f7174b8e6c8b20ceb5e6197dddc6a4a"
+  },
+  "runbook": {
+    "path": "revision3:/operations/generic_energy_parent/RUNBOOK.txt",
+    "sha256": "343aba13f6843a03e06f353894994a66db47c92399883fe563da9f429a3a30bb"
+  },
+  "normal_product_source_supplement": {
+    "path": "revision3:/generic_energy_extension/SOURCE_SUPPLEMENT.json",
+    "sha256": "b87d454a0901a1e1d2f0d5194b62ccecebb3f7d624f4093e0f9f1d8c5ebec17a"
+  },
+  "normal_bundle_performance_plan": {
+    "path": "revision3:/generic_energy_extension/confirmation_v2/plan/execution-plan.json",
+    "sha256": "77f3a669cce6212d5ca78dcae4ab47959b7a33635a0ca4dc4f75db486f2f03be"
+  },
+  "normal_apis": [
+    "workflow.generic_completed_task.prepare_energy_case",
+    "workflow.generic_completed_task.run_energy_case",
+    "scripts/energy_measurement_cli.py measure",
+    "generic_completion_reporting.write_generic_energy_report",
+    "generic_energy_reporting.collect_generic_energy_case",
+    "remote.process_lease.ControllerResourceBroker",
+    "remote.process_lease_cli exec",
+    "workflow.run_control.EvaluationRunLock"
+  ],
+  "scope": {
+    "one_point_per_parent": true,
+    "model": "yolov7_paper",
+    "calls": 3,
+    "duration_s": 60.0,
+    "automatic_retry": false,
+    "stop_at_first_failure": true,
+    "first_group_only_after_root_handoff": true,
+    "later_points": "separately prepared and serial root handoffs"
+  },
+  "budget": {
+    "path": "revision3:/energy/energy_task_budget.json",
+    "same_existing_campaign": true,
+    "key": [
+      "generic_completed:<comparison_backend>",
+      "model_id",
+      "case_id",
+      "setup_id"
+    ],
+    "max_chains": 9,
+    "max_retries": 2,
+    "max_source_transport_failures": 20,
+    "logical_repeats": [
+      "repeat:0",
+      "repeat:1",
+      "repeat:2"
+    ],
+    "initialization_or_reset_supported": false,
+    "source_recovery_or_release_supported": false,
+    "before_after_actual_cli_sha_equal": true
+  },
+  "ownership": {
+    "normal_parent_lock": true,
+    "normal_parent_remote_pid_journal": true,
+    "worker_exact_parent_session": true,
+    "resources": [
+      "physical DUT",
+      "physical source",
+      "controller:cpu",
+      "controller:io",
+      "controller:nic",
+      "controller:capture"
+    ],
+    "metadata_claim_order": [
+      "dut_job",
+      "transfer"
+    ],
+    "capture_claim": "normal collector",
+    "terminal_cleanup": "owned local and remote PID trees only; any source STOP/unproven cleanup preserves quarantine"
+  },
+  "admission": {
+    "fresh_three_actual_performance_processes": true,
+    "same_measured_source_operation_environment": true,
+    "normal_quality_claim_required_before_prepare": true,
+    "no_diagnostic_capture": true,
+    "normal_collector_import_and_final_report_required": true,
+    "actual_raw_run_indices": [
+      0,
+      0,
+      0
+    ],
+    "no_raw_inference_substitute": true,
+    "no_fps_derived_count": true,
+    "no_fake_reused_reference": true
+  },
+  "untouched": {
+    "worktree": true,
+    "DUTs": true,
+    "shared_budget": true,
+    "historical_archive": true,
+    "source_STOP_records": true
+  },
+  "limits": [
+    "No real Generic energy observation exists from this adapter.",
+    "Actual new performance and normal Quality admission are required before a case can be prepared.",
+    "Login bootstrap count differs between original SSHTransport and journaled raw SSH prefix; actual scientific environment must pass existing identity preflight. No normalization or equality is invented.",
+    "Recovery after a failed Single is deliberately not implemented; it requires a separately reviewed normal workflow preserving the same case budget/logical repetition."
+  ]
+}

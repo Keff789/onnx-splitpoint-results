@@ -1,0 +1,44 @@
+{
+  "schema": "revision3/controller-validator-snapshot-supplement/v1",
+  "status": "PASS_OFFLINE_CONTROLLER_ONLY",
+  "hardware_executed": false,
+  "runtime_changed": false,
+  "DUT_source_checks_changed": false,
+  "plans_changed": false,
+  "budgets_changed": false,
+  "pending_plans_pass": 222,
+  "replacement_plans_pass": 6,
+  "pending_groups_pass": 39,
+  "negative_source_checks_rejected": 15,
+  "pending_original_sources": {
+    "energy_policy_v2": 148,
+    "original_implementation_freeze": 74
+  },
+  "authority_files": [
+    {
+      "path": "revision3:/operations/controller_validator_snapshot_fix/SOURCE_DELTA.json",
+      "sha256": "63e4e31fd72e933604a83544e48e164373b60928e48b7f6d42c70786791f740a"
+    },
+    {
+      "path": "revision3:/operations/controller_validator_snapshot_fix/ADAPTER_SOURCE_SUPPLEMENT.json",
+      "sha256": "b76cfbf02451e14d8fd8a78f8a1cd973f6fd06fc412a5d5c967b0eb83cdb34c9"
+    },
+    {
+      "path": "revision3:/operations/controller_validator_snapshot_fix/BEFORE_OFFLINE_AUDIT.json",
+      "sha256": "2dc1196c7f7afb25adc5ce405f65d872e7d99806e3829636caf24e819157deb4"
+    },
+    {
+      "path": "revision3:/operations/controller_validator_snapshot_fix/PENDING_OFFLINE_PREFLIGHT.json",
+      "sha256": "ad4de8ae449df62348bdf8f77c705d19aa0c5af6314dc2832134241437104a01"
+    },
+    {
+      "path": "revision3:/operations/controller_validator_snapshot_fix/ENERGY_OFFLINE_PREFLIGHT.json",
+      "sha256": "29b26f3f8a58984166f2e13d4b61f85d8eb959ed99a6a42ebb62b079488364fb"
+    },
+    {
+      "path": "revision3:/operations/controller_validator_snapshot_fix/verify_offline.py",
+      "sha256": "c0bdab331fbf25a5bb79f62b476662b2ccfb5ee25dc642823e1da74e1327dc19"
+    }
+  ],
+  "immutable_index_policy": "Original INDEX and groups retain their historical controller hashes. Current group executor permits only the exact hash-pinned adapter amendment and rejects all other generations. The separate SOURCE_DELTA binds the group-executor before/after bytes. DUT candidates still undergo exact original before/after checks."
+}

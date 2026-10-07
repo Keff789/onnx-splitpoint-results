@@ -1,0 +1,111 @@
+{
+  "schema": "revision3/generic-completed-energy-source-supplement/v1",
+  "validated": true,
+  "source_delta": "revision3:/generic_energy_extension/SOURCE_DELTA.json",
+  "source_delta_sha256": "ebadda1719a1b0041ff181479004a8bc3b0ffec43198df89641c65d5332030ac",
+  "integration_receipt": "revision3:/generic_energy_extension/INTEGRATION.json",
+  "integration_receipt_sha256": "4dafe47a29e3c8c5fcad76a18d71c8dcd9e7572ba524758a74fed29de814e8cb",
+  "independent_review": "revision3:/generic_energy_extension/independent_review/REVIEW_COMPLETE.json",
+  "independent_review_sha256": "f7d7fafc962c59362da2969539faa8f1eac9290f33668c3b8bd5f01fd82f1d8d",
+  "test_sources": {
+    "test_sources": [
+      {
+        "relative_path": "tests/test_generic_energy_campaign.py",
+        "sha256": "e659ec89614e0800773f2074c6ff657849a56bfa47dee87523516afdbe3e925d",
+        "outputs_outside_worktree": true
+      },
+      {
+        "relative_path": "tests/test_generic_energy_contract.py",
+        "sha256": "189875b37e662d8d6932a5ac97340f50164e0df223e7e7738fc9eef80813b05b",
+        "outputs_outside_worktree": true
+      },
+      {
+        "relative_path": "tests/test_generic_energy_controller.py",
+        "sha256": "9d4c1e12540307ca00ff014b2d3985c374e8852bf1aabe71b1d02d3de519b0c1",
+        "outputs_outside_worktree": true
+      },
+      {
+        "relative_path": "tests/test_generic_energy_duration.py",
+        "sha256": "a51a7fb9a9e7820b156d9e383aba79b95b75c483138f8c531f8821e5b6ebe088",
+        "outputs_outside_worktree": true
+      },
+      {
+        "relative_path": "tests/test_generic_energy_generated_processes.py",
+        "sha256": "752fa0875305030c89ae9d560d783f5d8007e16a52d9426b7fef983f60cedd72",
+        "outputs_outside_worktree": true
+      },
+      {
+        "relative_path": "tests/test_generic_energy_reporting.py",
+        "sha256": "1a258c5c90280e38340d63c57eba20fcd663cdf755cc3cad0fd215234844ce4a",
+        "outputs_outside_worktree": true
+      }
+    ],
+    "count": 6,
+    "source": "reviewed portable normal test fixtures; no candidate-root literals",
+    "hardware_executed": false
+  },
+  "test_source_receipt_sha256": "a0abeef423e4c6d661c775669e0dc3b9dbb89bb20f7470e9cbe265fa1890f276",
+  "integrated_bundle_proof": "revision3:/generic_energy_extension/INTEGRATED_BUNDLE_PROOF.json",
+  "integrated_bundle_proof_sha256": "57d580a46f7ce6cc6c458c82c5950eeb389aed88050f7544bba7ef631921d0db",
+  "documentation": {
+    "path": "source:worktree/docs/ARBEITSSTAND.md",
+    "sha256": "a429b7998c747159b8dc05d2501d6e68e73f0e1fc705ac4b978da9e50246a871"
+  },
+  "product_files": [
+    {
+      "relative_path": "onnx_splitpoint_tool/runners/task_completion.py",
+      "before_sha256": "f13f89582d312214407dc33217787122280d51a94f9e126721cc11de08f812ec",
+      "after_sha256": "4088d7e7b88cf19d0f9f3098770521f0326dcc6ac31fe08ab55a9e7c7066de51",
+      "bytes": 27251,
+      "native_executed": false,
+      "role": "generic_measured_executor"
+    },
+    {
+      "relative_path": "onnx_splitpoint_tool/resources/templates/run_split_onnxruntime.py.txt",
+      "before_sha256": "50f5e0d642a673b218df96125f19cfa379b261d784d7520c604ed49ccb7770e1",
+      "after_sha256": "b6180c54d20659e1105fda4d39f84b8c94ad673d2c1a966f3a4e9823348a9cfe",
+      "bytes": 1075481,
+      "native_executed": false,
+      "role": "generic_measured_executor"
+    },
+    {
+      "relative_path": "onnx_splitpoint_tool/workflow/generic_completed_task.py",
+      "before_sha256": "9ec45fce93d28fb3f7c1b88704245743220874fe22cdae563045551c5f2a016b",
+      "after_sha256": "b85a7dbafd504b1c5aa0e5ceaa321f527bc297df60fbf6c638307a85dcb448d9",
+      "bytes": 76232,
+      "native_executed": false,
+      "role": "controller_or_report_only"
+    },
+    {
+      "relative_path": "onnx_splitpoint_tool/generic_completion_reporting.py",
+      "before_sha256": "3489ecfcd206e03a2431e78fb05512856f5de42b49d161bd6199790008142920",
+      "after_sha256": "5dad649348ccd9c50b78efb6939408c50d74fb1fd68dc6a615d48bfa8a42b153",
+      "bytes": 34562,
+      "native_executed": false,
+      "role": "controller_or_report_only"
+    },
+    {
+      "relative_path": "onnx_splitpoint_tool/runners/generic_energy.py",
+      "before_sha256": null,
+      "after_sha256": "0e8827ebc654852e427839c9e0af2726d37253c0ed1049631615f39159bc24fb",
+      "bytes": 15812,
+      "native_executed": false,
+      "role": "generic_preflight_runtime"
+    },
+    {
+      "relative_path": "onnx_splitpoint_tool/generic_energy_reporting.py",
+      "before_sha256": null,
+      "after_sha256": "1f58c67282551daae035efc9174915c68c1a52db5113a259cc0a3105d0088dad",
+      "bytes": 14894,
+      "native_executed": false,
+      "role": "controller_or_report_only"
+    }
+  ],
+  "native_numerical_sources_changed": false,
+  "controller_budget_sources_changed": false,
+  "hardware_executed": false,
+  "DUT_deployed": false,
+  "energy_pairing_requires_new_same_bundle_performance": true,
+  "root_capture_adapter_status": "READY_TO_PREPARE_AFTER_PERFORMANCE; separate normal owner adapter pending",
+  "archive_mutated": false
+}

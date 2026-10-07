@@ -1,5 +1,11 @@
 # ONNX Splitpoint Tool – Knowledge Base
 
+> **Revision 3, Softwarecheckpoint:** Generic-Dauersteuerung integriert und
+> offline geprüft; neue Performance-/Energieaufnahmen bleiben erforderlich.
+> Neun bisherige Generic-Kohorten bleiben separat erhalten. Die private
+> Paperableitung wurde aus der unvollständigen aktuellen Sicht reproduziert.
+> Physischer Quellen-STOP und Budgets sind unverändert.
+
 > **Revision 3, 07.10.2026 — noch in Ausführung:**
 > [Aktuelle Daten](../results/evaluation/native_fairness_rev3_20261007/README.md)
 > und [technische Befunde](NATIVE_FAIRNESS_REV3_20261007.md) führen 15 neue Native-

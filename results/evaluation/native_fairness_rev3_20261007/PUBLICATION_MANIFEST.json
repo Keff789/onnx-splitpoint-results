@@ -1,6 +1,6 @@
 {
   "schema": "revision3/public-progress-snapshot-v1",
-  "created_at": "2026-10-07T12:31:31.457110+00:00",
+  "created_at": "2026-10-07T13:14:54.642997+00:00",
   "status": "incomplete_hardware_stopped_pending_required_authorization",
   "native_new_performance_points": 15,
   "native_verified_performance_reuse": 9,
@@ -29,16 +29,16 @@
     },
     {
       "path": "RESULT_REPORT.md",
-      "original_sha256": "39eba84d567936d1bb43e8229ba92c2899867b17d7745accd36d5c9904be9a77",
-      "public_sha256": "39eba84d567936d1bb43e8229ba92c2899867b17d7745accd36d5c9904be9a77",
-      "public_bytes": 10500,
+      "original_sha256": "e2beee44a3daca306714efe3aaa89875ac1786a2e740fe235f0d7bf2526ae956",
+      "public_sha256": "e2beee44a3daca306714efe3aaa89875ac1786a2e740fe235f0d7bf2526ae956",
+      "public_bytes": 13039,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
     {
       "path": "AUDIT_FINDING_DISPOSITION.csv",
-      "original_sha256": "4627ed5b8f9cb0f48d6d90090092aab7584cd8616a97d984f6f4d95ab4839fbc",
-      "public_sha256": "4ae7c1155b01e114075882812b48eadae184512bf17aacef3a7ccf7ebd932106",
-      "public_bytes": 18022,
+      "original_sha256": "9234ea88930a3bba4f0ceaa9e90f65d2bcbf18320820c3dd4c9b9d6d9c347679",
+      "public_sha256": "d81800ccf8a7098a2444df26f9af494df2e716ca50f9334ea47bfac4dd3abaf1",
+      "public_bytes": 19702,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
     {
@@ -78,9 +78,9 @@
     },
     {
       "path": "RESUME_STATE.json",
-      "original_sha256": "8a105fa746432e6c701d5e6146598a9c1fa40aa3dca9a399a95eb39cd557eb98",
-      "public_sha256": "8a105fa746432e6c701d5e6146598a9c1fa40aa3dca9a399a95eb39cd557eb98",
-      "public_bytes": 4853,
+      "original_sha256": "9d89fdd04c048fc50c0eb635d2f98eac7a9646cf141ad55b4c11a74659db5dc2",
+      "public_sha256": "d90324c5128ee569eecc1a0a3fcbaa51eafae83a6c9e7183e1acca6d7f4be320",
+      "public_bytes": 5758,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
     {
@@ -95,6 +95,55 @@
       "original_sha256": "266d64851538987113bfb2b62e09442a03286432e62dc8c89cbecb7c94e7b236",
       "public_sha256": "20e25c4883022d0d97cd3ede1ee557dbe087fcc3fe19ab5c3789d703d53d386d",
       "public_bytes": 1125,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "CURRENT_SOURCE_REVIEW_SNAPSHOT.json",
+      "original_sha256": "869ceaab0b12eeb01d92b2aa05451bd70aa6112af733465a2f22ca1dcbaeea48",
+      "public_sha256": "9ab58eb7f4975f78a414a8baf275ae7736b424e0ebff1c9eef6ef9a5cf7da14d",
+      "public_bytes": 163,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "CONTROLLER_VALIDATOR_SNAPSHOT_SUPPLEMENT.json",
+      "original_sha256": "cb28c6d5aa6b502f36b520902528f833cfed89c588a581d06813c42ab5e4068a",
+      "public_sha256": "0cadebdbdd16d56134c566134d7e722c2550d6614e523441152f38338bdce862",
+      "public_bytes": 2045,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "generic_energy_extension/SOURCE_DELTA.json",
+      "original_sha256": "ebadda1719a1b0041ff181479004a8bc3b0ffec43198df89641c65d5332030ac",
+      "public_sha256": "05c2b75a0d5b62bf3cdaa92f01ba2d50711d8d0a83a0bba8a9a35d93423b3eda",
+      "public_bytes": 3081,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "generic_energy_extension/SOURCE_SUPPLEMENT.json",
+      "original_sha256": "b87d454a0901a1e1d2f0d5194b62ccecebb3f7d624f4093e0f9f1d8c5ebec17a",
+      "public_sha256": "3dcf9839d992f7a88e09020ca6aaab86dd27d553f61b158d531aaf98606ac961",
+      "public_bytes": 5033,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "generic_energy_extension/independent_review/REVIEW_COMPLETE.json",
+      "original_sha256": "f7d7fafc962c59362da2969539faa8f1eac9290f33668c3b8bd5f01fd82f1d8d",
+      "public_sha256": "8b144e527e6796f149a194008b3fc9900371c5c03e1796d216c916db8772b9d1",
+      "public_bytes": 1657,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "operations/generic_energy_parent/RECEIPT.json",
+      "original_sha256": "5b8844f2a5dbfa1ed19f57498bc7fcd6caf8ff631c69ed7413e6a83cbc6fd8b4",
+      "public_sha256": "87e0ae0ba36e18762c663d61b42175f342995ba11d79a3c9e9d609c9d31abf30",
+      "public_bytes": 5416,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "operations/energy_policy_fix/NORMAL_SOURCE_ADMISSION_DECISION.json",
+      "original_sha256": "a948e459097e43734562fa6967a29b440cf6d607bd8b367e2d62c83a58709e2c",
+      "public_sha256": "0fe78e0d8cbbbeb3cb17fdac12ef24f59eab0bc0937858de90854535509e98e4",
+      "public_bytes": 1489,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
     {

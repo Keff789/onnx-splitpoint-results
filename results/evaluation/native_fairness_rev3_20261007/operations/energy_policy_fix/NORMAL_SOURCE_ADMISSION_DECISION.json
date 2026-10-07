@@ -1,0 +1,22 @@
+{
+  "schema": "revision3/normal-source-admission-decision",
+  "at": "2026-10-07T12:35:02.485490+00:00",
+  "review": "revision3:/operations/energy_policy_fix/performance_reuse_review/REVIEW.json",
+  "review_sha256": "a732fecb78548107bfa517b2ed363c47d87ef86012e49a1ad560309161bc6ab3",
+  "decision": "retain_all_existing_performance_as_valid; use_six_prepared_bounded_deployment_confirmation_cohorts_only_for_new_energy_source_admission",
+  "old_timed_path_changed": false,
+  "old_performance_invalidated": false,
+  "reason": "Existing normal preflight binds actual runner bytes to the same command contract used by performance/quality/fresh markers. All18 actual contracts correctly reject repaired runner bytes. No supported separate source-equivalence admission exists. Do not re-seal old reports or weaken gates.",
+  "scope": "six existing DX/H10 YOLOv7 split operating points only, 3 actual100/1000processes each after normal deployment",
+  "not_a_claim_of_new_fps_optimization": true,
+  "no_wide_246_case_rerun_due_to_source_file_change": true,
+  "source_selection": "SOURCE_COHORT_SELECTION.json",
+  "old_cohorts_preserved_and_not_pooled": true,
+  "hardware_started_by_this_decision": false,
+  "preconditions": [
+    "resolve physical source STOP by normal authorized recovery",
+    "finish qualified energy bound to old deployed Full runtime",
+    "normal five-file runtime deployment with prior-byte backup",
+    "all current fixed sources and input contracts frozen together"
+  ]
+}

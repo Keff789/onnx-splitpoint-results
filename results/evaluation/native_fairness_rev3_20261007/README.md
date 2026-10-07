@@ -4,8 +4,8 @@ This is an **incomplete execution snapshot**. It records 15 newly measured
 YOLOv7 Native points, nine verified classifier Full performance reuses,
 nine measured Generic pairs, and three normally admitted current energy points.
 Another 222 Native and 195 Generic performance points remain unmeasured.
-The nine Generic points require confirmation after the pending duration-worker
-extension is frozen. Missing values remain null.
+The nine Generic points require confirmation against the now integrated and frozen duration-worker
+extension before final energy acquisition. Missing values remain null.
 
 The historical archive was inspected read-only. No result data was deleted,
 moved or cleaned up. New raw reports and failed attempts are retained in a
@@ -59,6 +59,16 @@ Student-t fallback were checked with targeted tests. The report-only correction
 prevents an A/B shadow diagnostic flag from overriding the primary energy policy.
 It also gives the normal consumer a hash-bound import for three real single
 captures without changing their original raw repeat indices.
+
+The Generic duration extension is now integrated in the regular worktree: six
+product files and six regression-test sources. Candidate tests (182), independent
+review probes (10), and actual-worktree/bundle checks (36) passed; these overlap
+and are not summed. New Generic hardware energy has not been captured. The
+80-file current source review snapshot is distinct from the original 223-file
+DUT runtime freeze. Six existing DX/H10 performance cohorts remain valid, but
+normal energy preflight requires six bounded deployment confirmations against
+the repaired runner bytes; old reports are not resealed. The private incomplete
+paper view was rebuilt and reproduced; its LaTeX remains outside this repository.
 
 Run the public hash and arithmetic check from any directory:
 
