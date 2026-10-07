@@ -2,11 +2,16 @@
 
 Dokumentationsstand: **07.10.2026**. Dieser Nachtrag ergänzt die eingefrorenen
 THESIS20-Ergebnisse; historische Messungen und Auswertungen bleiben erhalten.
-Die neuen Angaben stammen aus dem bereitgestellten Bericht
-„YOLOv7: Split-Reparatur und Orin-Abgleich“. Die Übernahme prüft dessen Tabellen
-und Rechnungen, **nicht unabhängig die dort referenzierten neuen Rohreports,
-Quellen, Telemetrie oder das Review-ZIP**. Der Bericht nennt keinen absoluten
-Messzeitstempel; das Dokumentationsdatum ersetzt diesen nicht.
+Die Zahlen stammen aus dem Bericht „YOLOv7: Split-Reparatur und Orin-Abgleich“.
+Die Erstveröffentlichung prüfte Tabellen und Rechnungen. Der lesende Nachtrag
+vom 07.10.2026 prüft zusätzlich das tatsächlich vorliegende Review-ZIP:
+6.281 Payloadhashes, 27 Split-Prozessrepeats, 18 erhaltene Full-Prozessrepeats,
+drei getrennte Fullkontrollen sowie die enthaltenen Quellen- und Qualitybindungen.
+[Prüfprovenienz und Grenzen](../results/evaluation/yolov7_native_completion_20261007/raw_verification_addendum.json).
+Der separate historische Kampagnenbestand wurde dadurch nicht vollständig
+kryptografisch geprüft; der historische Energie-ZIP-Inhalt wurde nicht erneut
+unabhängig gelesen. Für diese Archivprüfung wurden keine Messungen wiederholt.
+Das Dokumentationsdatum ersetzt keinen Messzeitstempel.
 
 Bericht-SHA256:
 `2ae5446d5114ea647a21ed2804ebb6ec28caab829952c58d4e045a5f49de23e5`.

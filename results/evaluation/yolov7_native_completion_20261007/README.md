@@ -43,12 +43,16 @@ python3 results/evaluation/yolov7_native_completion_20261007/extract_reported_re
 
 All 15 medians, 18 split/reference ratios and nine historical comparison
 ratios were checked against the displayed six-decimal source precision.
-The new 516-MB review ZIP was not available in the review environment. This
-integration therefore verifies transcription and arithmetic, **not** the new
-raw reports, source hashes, telemetry or quality joins. The report describes
-those local checks; their independent archive verification remains a handoff
-item. This limitation does not turn the reported measurements into simulated
-or inferred FPS. Do not mislabel this projection as raw-archive verification.
+The initial publication was report-based. On 7 October 2026, local read-only
+verification opened the actual review ZIP and ran its supplied hash and paper
+checkers plus the control/source verifier. All 6,281 payload hashes passed;
+the evidence contains 27 new split process repeats, 18 retained Full process
+repeats and three separate Full controls. Raw reports, source bindings and the
+two quality sources were checked within that archive. See
+[the verification receipt](raw_verification_addendum.json) for archive/checker
+hashes, timestamps, results and limits. This is not a full cryptographic audit
+of the separate historical campaign archive, and the historical energy ZIP
+was not independently reread. This check did not start new hardware work.
 
 ## Applying the current projection
 
