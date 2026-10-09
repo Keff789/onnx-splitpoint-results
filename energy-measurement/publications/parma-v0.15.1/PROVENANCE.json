@@ -1,0 +1,19 @@
+{
+  "version": "0.15.1",
+  "source_package": "Energy_Paper_PARMA_v014_Quellenpaket.zip",
+  "source_package_sha256": "aced56ac7ac1108f3382c466d371e3ba0e28f9ca3716e78f4d1fbdbd653fd83e",
+  "source_members": {
+    "generated/parma_device_pair_values.csv": "d7c9e55022b80e27f36cf94fdaaafcc460f8d155e95f6269bb0a9a522f51bdc8",
+    "generated/parma_device_pair_spread.csv": "5aa36349357bd004dc622510c970fcddc9040810eb19011a2a4222740a480f87"
+  },
+  "json_export": "Binary64 mean powers parsed from the source CSV; original record IDs retained; no new waveform integration.",
+  "source_window": "envelope_0.5",
+  "requested_duration_s": 300,
+  "groups": 21,
+  "comparisons": 315,
+  "physical_executions": 105,
+  "scope_reference_git_commit": "9b4208c97420b1621a14b7dc91f051985e65e6f5",
+  "scope_reference_commit_note": "Supports separate Scope/FP16 evidence; the meter pairs are identified by the supplied source archive above, not claimed to originate in that Git commit.",
+  "pairs_json_sha256": "68bda2b2d6fb6e9397b6a971348061bf053185f1a660bed37ea933a3ad200a59",
+  "interpretation": "paired own-window, scaled measurement-path observations; not intrinsic sensor accuracy"
+}
