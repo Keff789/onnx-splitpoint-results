@@ -1,6 +1,20 @@
 # Repository map
 
-> **Current incomplete Revision 3 view, 7 October 2026:**
+> **Revision 3 Current checkpoint, 8 October 2026:**
+> [Publication manifest](../results/evaluation/native_fairness_rev3_20261007/PUBLICATION_MANIFEST.json)
+> and [selected Current rows/checker](../results/evaluation/native_fairness_rev3_20261007/README.md)
+> provide the actual counts for new performance, unchanged single-observation
+> reuse, normal dataset Quality, comparative claims and admitted energy.
+> The finalized Quality pointer and its current composition/review references
+> follow the selected generation; a candidate is not a completed campaign.
+> [Technical findings](NATIVE_FAIRNESS_REV3_20261007.md) separate the H8 input-domain
+> correction, retained accuracy loss, DX56 dataset input mismatch and the excluded
+> historical H10 physical Full context. Runtimefreeze241 and the Controller reporting
+> correction remain distinct. STOP, recovery and budgets are retained.
+> Final numeric export/private-paper refresh await the coordinated Current handoff;
+> original raw/model/dataset evidence and private LaTeX remain outside this payload.
+
+> **Preserved incomplete Revision 3 export, 7 October 2026:**
 > [Data and standalone arithmetic check](../results/evaluation/native_fairness_rev3_20261007/README.md)
 > · [audit, fixes and remaining measurements](NATIVE_FAIRNESS_REV3_20261007.md).
 > Includes three normally admitted current energy points; historical data and

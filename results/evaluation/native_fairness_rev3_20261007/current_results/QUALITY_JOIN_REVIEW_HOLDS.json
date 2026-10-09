@@ -1,0 +1,974 @@
+{
+  "schema": "revision3/quality-projection-review-holds",
+  "at": "2026-10-08T15:40:56.690176+00:00",
+  "rows": [
+    {
+      "case_uid": "native|revision3|yolov7_paper|H8|hailo8_to_trt|b066",
+      "summary_sha256": "c8c5e6de23ea413946be6e230eb285cfe6cf078cff054e3d448d0d367d9c6091",
+      "active": false,
+      "reason": "Finalized v5 validation terminal claim and normal combined producer alias differ; normal consumer consistency review pending. Technical performance and artifact/equivalence proofs unchanged.",
+      "resolution": {
+        "receipt": "quality_transfer/H8_B066_TERMINAL_PROJECTION_RECEIPT.json",
+        "sha256": "860b7d09f7f6a72bf60b88c6c3209718f1e604c168a72ab14cdb1bab9aff10bf",
+        "current_finalized_pointer": "revision3:/quality_transfer/CURRENT_FINALIZED.json",
+        "current_finalized_pointer_sha256": "30a2f56ffe37cab1d6c83ddb80a8fe469a8b3b7a6959c6d11c1cf9fb13b1bef8"
+      }
+    },
+    {
+      "case_uid": "native|revision3|mobilenet_v3_large|DeepX|deepx_to_trt|b001",
+      "summary_sha256": "b001a5f3a629497df4e43a423c0a6b9da1649b2ab20c997a83f4e15c883edbdf",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 0,
+        "normal_negative_row_sha256": "933c0d2c256fd8db58a09a894f4904042482f26b20fc4b5bb2083fa3a069b95f",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|mobilenet_v3_large|DeepX|deepx_to_trt|b010",
+      "summary_sha256": "cafc0a93e8f18f00f750d4167172d132479e17be6a40a6e4b28e81199890878f",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 1,
+        "normal_negative_row_sha256": "14352c647949752328733170047bedfaa61330243cab6a1596cee3b86830b766",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|mobilenet_v3_large|DeepX|deepx_to_trt|b019",
+      "summary_sha256": "f3c9be7250c31a562870bfbb3598fca12073dcddc075835b34cc5acea4253d93",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 2,
+        "normal_negative_row_sha256": "8657e35c0b0d649c2ae6e652992b13669064778fa77374c25140160334c4f24e",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|mobilenet_v3_large|DeepX|deepx_to_trt|b027",
+      "summary_sha256": "f90360fee857549f6f5dc4ba4b26222edde93d34e38466c92f6c679bbd49e75f",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 3,
+        "normal_negative_row_sha256": "793ccc9f202d53154d12645a4b9ac9e9823b8a0e50407b8ace7dc031d0538e8b",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|mobilenet_v3_large|DeepX|deepx_to_trt|b039",
+      "summary_sha256": "17aaf45878b19df1acae9b38e09a7f48401fbead7ee8aee9ede89362c51b79b9",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 4,
+        "normal_negative_row_sha256": "e9396ee0a7399fc0550a8260f1b1fea8a0ad9ba916f6daad378121b5ceaa0849",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|mobilenet_v3_large|DeepX|deepx_to_trt|b056",
+      "summary_sha256": "461cbc03f9a0bb2a6afa6271afe34dbc85c232438d23d9a32ca4ea7fd698d2b8",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 5,
+        "normal_negative_row_sha256": "15b75379af26fa149f4f5537f6313810493b77af8aca1d2d54f7d9f70f97db51",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|mobilenet_v3_large|DeepX|deepx_to_trt|b062",
+      "summary_sha256": "631a21c4957c881006799ae1ba886f663320199200b20d1b1b708fe679663d99",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 6,
+        "normal_negative_row_sha256": "114ec70fb2bc0f39407161492a9eeec7abe3013fec5c0a729027e9dffc931614",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|mobilenet_v3_large|DeepX|deepx_to_trt|b068",
+      "summary_sha256": "85dce455547500d842c97ea4aa0383dc99abd6a80bf0eef6624e9d6066cc56f3",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 7,
+        "normal_negative_row_sha256": "fc3b1cda84d1be69a1cf0eba373db564f3324fc001f135639c75d92b073523ee",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|mobilenet_v3_large|DeepX|deepx_to_trt|b074",
+      "summary_sha256": "f7827f86791b801ebe96f105acc12317321f43e15d54b892b1254f961f19ba2e",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 8,
+        "normal_negative_row_sha256": "e83ceeba2af2ab69d519da7589f3548fc0a0f049ff173cc2d79907eb2890f2e0",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|mobilenet_v3_large|DeepX|deepx_to_trt|b078",
+      "summary_sha256": "2593f0336b0af6e14a7a9f4829c97d9bcd0067693e64cde144f130989aaef86b",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 9,
+        "normal_negative_row_sha256": "2c8cc18cca1ad2d6b9cbf0a0ad75165246fc8de6135254b07d271a2ca4ef9a1d",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|mobilenet_v3_large|DeepX|deepx_to_trt|b085",
+      "summary_sha256": "b5f05bb957c4edf42d03d35d21f3f790f4c4f0c06271015b2a82591b88ba1371",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 10,
+        "normal_negative_row_sha256": "ac3e88362f82408688d332c2c70061dd46abed5bdc32b710eacfe83d7a42f62a",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|mobilenet_v3_large|DeepX|deepx_to_trt|b097",
+      "summary_sha256": "60067c3199a4f5a4f50a7f5bb34132d7f546c982df3b0a11c3a149d97b686d2c",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 11,
+        "normal_negative_row_sha256": "555fabee315dbbc5dbbe4b7467aa9aafcb39110a5f3a51c022168ac79e9aaf1b",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|mobilenet_v3_large|DeepX|deepx_to_trt|b100",
+      "summary_sha256": "2145c54fe75f011521735f22b3eff3acc385bcedb2ada941620e6ceec1e7e893",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 12,
+        "normal_negative_row_sha256": "2dc9ede19bb6748c073c6b4bedc2b49f305252a1985fc812704c18931386600e",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|mobilenet_v3_large|DeepX|deepx_to_trt|b108",
+      "summary_sha256": "452a023de7f654f61d3c08b6ead5aa28a69a22f08a9756f6c83533ebec27146a",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 13,
+        "normal_negative_row_sha256": "9ec96345f8acd83056cc5e5821a9b58974ef60c5c034fcf77adb06a6c2ae19fe",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|mobilenet_v3_large|DeepX|deepx_to_trt|b120",
+      "summary_sha256": "2cb6b78f9ef71bc223a2bdacbac5a7eb1656e2c6caf1c7b3a9a3822b97aafc18",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 14,
+        "normal_negative_row_sha256": "b22e4547525e84d86e25e18a55490475a281513e83e301991ab29cbe87e89adf",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|mobilenet_v3_large|DeepX|deepx_to_trt|b132",
+      "summary_sha256": "58a692af0c295b1e408c3f052668db10c31fa9d04ff0ca9ae7482b59b1d81b30",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 15,
+        "normal_negative_row_sha256": "a1776465da48710f00df01e1592983fca90db796ef3c06fca1b09249b619cf76",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|mobilenet_v3_large|DeepX|deepx_to_trt|b135",
+      "summary_sha256": "472518e1f217eb58776499f99e68335d2679145dba0e920f6593f841c87e2b7c",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 16,
+        "normal_negative_row_sha256": "849a0c8fef08342f3faa9a3c1befb8fad35dcf4a12dea86e0a411639067dbe42",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|regnet_x_1_6gf|DeepX|deepx_to_trt|b001",
+      "summary_sha256": "e4535e14c1469d84f7a0960a53360df807186fc2f78dc984e210a0313cafeda4",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 17,
+        "normal_negative_row_sha256": "5621a2082d36b713247ff7bcfa2169c5e8ebe3c83ea5d1e7186fb873075d2cc9",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|regnet_x_1_6gf|DeepX|deepx_to_trt|b008",
+      "summary_sha256": "8584a498564c35ba25a8f7b462fe09ed5f6d6c92d8535145311045c37ac7e8d9",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 18,
+        "normal_negative_row_sha256": "be6e1a929ac7ad356d05f4a5e282b3a8db8751b16d2ea9aa11eade7d64674582",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|regnet_x_1_6gf|DeepX|deepx_to_trt|b015",
+      "summary_sha256": "6d952a392fff7a75bfaa0a48dba91bb6655c4cbb6d274851607ffaadb38e9221",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 19,
+        "normal_negative_row_sha256": "e69f1e3a7a10f5c3e4ebfeed73e6076c290e18c96c1d6753ac370e602e359e26",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|regnet_x_1_6gf|DeepX|deepx_to_trt|b023",
+      "summary_sha256": "528cb11b9986c12c09752888141f0ee259323a3c6534f9d5279a1a35d5ce7e06",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 20,
+        "normal_negative_row_sha256": "565c64ffff99c44075e7b9f132f485f36d6b7e7e4a4fac51fe98270906e4702d",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|regnet_x_1_6gf|DeepX|deepx_to_trt|b030",
+      "summary_sha256": "e515fbc7ca6664114d73a2f6c0e9afd8a6fdea507d4200dfda05ae02d0db2453",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 21,
+        "normal_negative_row_sha256": "5e4c466cb31b46725aa144b93a668b54d2aa871b695cfc681db2d2fd3681d996",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|regnet_x_1_6gf|DeepX|deepx_to_trt|b037",
+      "summary_sha256": "f9b58aa92373e1884beeff32b4a73b6ed02f3daf79b5080f6cbd342c6d83b7ca",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 22,
+        "normal_negative_row_sha256": "c160a33b9a51773eaddb61a5186801c96f3f5854c59d210fb2b17317b6b8db31",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|regnet_x_1_6gf|DeepX|deepx_to_trt|b044",
+      "summary_sha256": "790c0b22e02a7ebd4a30f9a2f6170a05e0aee088392ee5115e0d302530f567bf",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 23,
+        "normal_negative_row_sha256": "310ab733ce0e0b15d0c07bb7a730e03aa687cdc4adc70216b72a0782655d6a15",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|regnet_x_1_6gf|DeepX|deepx_to_trt|b052",
+      "summary_sha256": "f9d93cadc62bc2f7ad2c226364df71fabec3226178bcaadc6002b660737b9adc",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 24,
+        "normal_negative_row_sha256": "a3b1078ed23e424fcd4ee3068c6165e0e38f95036e306714ccc361129c3e3f52",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|regnet_x_1_6gf|DeepX|deepx_to_trt|b059",
+      "summary_sha256": "1ba6a1a46761feaf930fc6ba26b7c7ad122a59a7afaa77b48a9009f7dd8804cc",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 25,
+        "normal_negative_row_sha256": "3ebbc11567a599f97c1388ca96155603b608448e07945780a7f8d9ddb2ac6e5f",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|regnet_x_1_6gf|DeepX|deepx_to_trt|b066",
+      "summary_sha256": "733d2d9b5f67856ec00503779689b223fe68eb2fec9bec54d38fcd5535871137",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 26,
+        "normal_negative_row_sha256": "b2f9df294a185787d774bc83c09a2799fe4dc04d80adc799d08546247e590cea",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|regnet_x_1_6gf|DeepX|deepx_to_trt|b073",
+      "summary_sha256": "4a5d78dfa8c92ef4083d680bbb4fed3db7ec04e99c5741c514b5eefc1039ee63",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 27,
+        "normal_negative_row_sha256": "d0ecd7feee1b1bd4602561882a362a2b4235d00348586be9b177b5e9beef0f65",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|regnet_x_1_6gf|DeepX|deepx_to_trt|b080",
+      "summary_sha256": "1f9ba74e7ab645a8c9c5b35fd5e52516f52deef59f47a887b6201e8664420ef3",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 28,
+        "normal_negative_row_sha256": "2852038f979b6b0ccd5e6cd09de67687abb73bcb1b207b3655813e2edb4dca23",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|regnet_x_1_6gf|DeepX|deepx_to_trt|b087",
+      "summary_sha256": "ffeb32b2d679187d01a7fcbc99a8de028aa19c1ba3a0dac86ede4e04d6400f2a",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 29,
+        "normal_negative_row_sha256": "8869a563156a3c61442d2c27099f4fce8b81a81058728cc3d00ae8b656931352",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|regnet_x_1_6gf|DeepX|deepx_to_trt|b088",
+      "summary_sha256": "2ad92b6a5868998a180f4394fcb134e5acd7b4cd96de9fc4cc13f520211fcf7f",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 30,
+        "normal_negative_row_sha256": "6747c96b2b984214058cdb7ac446b8bed85e4f3a95dacc9b04e234bece2855a6",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|regnet_x_1_6gf|DeepX|deepx_to_trt|b095",
+      "summary_sha256": "bd29381cb410611fa9cea46476cb8c4d1b93659d2fcd157ef77be68b3ab3ba2d",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 31,
+        "normal_negative_row_sha256": "74f5f2c9fecb92bd0fd32468daa373aaf2ae64b2798a82bef71a058fc0be2a1a",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|regnet_x_1_6gf|DeepX|deepx_to_trt|b102",
+      "summary_sha256": "af9d3e9d9522d6a76ca83e22d1eb586596fc05a285b2015396966dd2e6ef9b64",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 32,
+        "normal_negative_row_sha256": "b2a656ce6f212a28f9d121f9f74807096e141513f8664be2488b58b8b8483c79",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|regnet_x_1_6gf|DeepX|deepx_to_trt|b109",
+      "summary_sha256": "6d043ab6f4d90c6af37e306d065e9c8d1efeabb3abb8d204d59dfcb584cd547c",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 33,
+        "normal_negative_row_sha256": "4da27375109727e1917455870b23e0077517280e3488ae8848ea7bbb20963bfd",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|regnet_x_1_6gf|DeepX|deepx_to_trt|b115",
+      "summary_sha256": "48ea19cbc34d4fe866363d7b603c80c81456644086e78786d8482c366b4345af",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 34,
+        "normal_negative_row_sha256": "252bb4262b6a46a39aac49e5dbc66751484a86e92d7e8b31d5e9df96f7d886cf",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|regnet_x_1_6gf|DeepX|deepx_to_trt|b123",
+      "summary_sha256": "12539ace8a561fd109b275a6021881361cf4e214923dba84eff5ca487964df73",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 35,
+        "normal_negative_row_sha256": "cade2b81cdc54864541b66e2c65ee5dbbf9241cb64361cd8be63800a3754522d",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|regnet_x_1_6gf|DeepX|deepx_to_trt|b132",
+      "summary_sha256": "c5b1bd6dc3ca5b30c8e4c035a83ef54701319217b414fa8fc8807f965083dd45",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 36,
+        "normal_negative_row_sha256": "b33bf2482aaa782a548590283ff7b75259544da7cc33d89cd72db5e2962fef2d",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|resnet50|DeepX|deepx_to_trt|b002",
+      "summary_sha256": "6a0fe91b7567a0273e2173c576aef1beaa818899dd8dacc61c1a10379a33559c",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 37,
+        "normal_negative_row_sha256": "5de7ded6182b65321ef518f95290d2c93e3f820a131b0ec9d95f5ec312ca1c1e",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|resnet50|DeepX|deepx_to_trt|b009",
+      "summary_sha256": "b1499b9fbde37c32832445cd50367c4903b36f6722e83222cb576b7b72cb762c",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 38,
+        "normal_negative_row_sha256": "dc9a5e75c3466c3d75787d818268b19ccd5a91fc6d67203d89fc6e0de1ee448e",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|resnet50|DeepX|deepx_to_trt|b016",
+      "summary_sha256": "6c096a663318e60ccc9aa13d1dba68e5ccb16b72bb5ddfb653d4925cc1b851f8",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 39,
+        "normal_negative_row_sha256": "9e17e716ae7eff6b0b768be01fdae195caef0e917cb4bfbf3037d7e1e3e2ee69",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|resnet50|DeepX|deepx_to_trt|b023",
+      "summary_sha256": "6a44ddd4789e2e085bce3ef8a784ee20909d6a6b0eda78e22ea99f47a92e2d1c",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 40,
+        "normal_negative_row_sha256": "8e9963f3cf4a722a03524af429093100c9d1fddf2bb430fbefe7a55acaf0090c",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|resnet50|DeepX|deepx_to_trt|b031",
+      "summary_sha256": "9f3a623425994640cb4ac2145e9dbf7191d44ee06266eab6d9ff40cf3ab87613",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 41,
+        "normal_negative_row_sha256": "25caf76e0af57d7ba4f8f9c17aa24d0208c93e434054cfc40cfb7bab09872e5c",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|resnet50|DeepX|deepx_to_trt|b038",
+      "summary_sha256": "f4770a67b5738d8249fc38f0ee1a741823415ac0403c932b9628172f04b2a26f",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 42,
+        "normal_negative_row_sha256": "65f1dbd83abee2bfe2f178a58f1cc01a16d3018965e48b349f2136b6634255c4",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|resnet50|DeepX|deepx_to_trt|b045",
+      "summary_sha256": "7b7ff294570edd09402462bc6df7435dc55cf4d28e2263aae5d87cc305f38970",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 43,
+        "normal_negative_row_sha256": "0c31a43740cab5818184d58361e0bec15dd5942d36e960dc8207ac975d77028c",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|resnet50|DeepX|deepx_to_trt|b052",
+      "summary_sha256": "593de48d3587f6efbe5af847e4c5b5c13ef6e3df340d5177bcf5025cc13a3cb2",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 44,
+        "normal_negative_row_sha256": "0956e86b865aa52f846ffb1b14e9aacd10413e4c1e89a311a789a6e26329abff",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|resnet50|DeepX|deepx_to_trt|b060",
+      "summary_sha256": "619bb5ece9d2b6f3bc359bcd37859a2eed08479a69d7fe2b8bce76670b4c31ec",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 45,
+        "normal_negative_row_sha256": "f66385d73d22b33543108df0ab261c38dbf1b4c9a226be2a8ee30a1d79445523",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|resnet50|DeepX|deepx_to_trt|b067",
+      "summary_sha256": "2548a6a2dc69079ace409d6ec11dbde7c36b7ca690d473be864046e163a7549c",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 46,
+        "normal_negative_row_sha256": "239d36a0d592fdb5d9abddd8b4bf2d1ae58df27f3246acbfbfb5012f77317ccb",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|resnet50|DeepX|deepx_to_trt|b068",
+      "summary_sha256": "b695772be38d789aca9bf32eabc4c4d0e02ee29130bd4535e539029287418030",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 47,
+        "normal_negative_row_sha256": "b309059cc2edb342cfbf20aff87f0db05b0f384ce4ec01696d65fed328c8dabc",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|resnet50|DeepX|deepx_to_trt|b074",
+      "summary_sha256": "e1bd2d5f6adf319610738f4c61e4fc75846a8449c13bfbdf799bd9cbaf4cd4a5",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 48,
+        "normal_negative_row_sha256": "84ca443aa0e07375d767b87df5d0ef85f1bb9df097cf7b528e7ae90cb6e9641c",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|resnet50|DeepX|deepx_to_trt|b081",
+      "summary_sha256": "b893a8784b4e0a8a283a5baef3f62f35b41143e098e972d2bdf1573f2b600190",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 49,
+        "normal_negative_row_sha256": "f49906690daceaa53ca3fe4dde15168d72d0e18d19157dc77749c8a645567abb",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|resnet50|DeepX|deepx_to_trt|b088",
+      "summary_sha256": "ebcac8c54a7fd15a5a7f1d09ad04990ea62b02b468d63f414af8076c3bf29615",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 50,
+        "normal_negative_row_sha256": "343978f11ef1a2e5d9d353a24d0f43746c6ace4922d34efa52fd7dd96c3bb2d4",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|resnet50|DeepX|deepx_to_trt|b095",
+      "summary_sha256": "b7aab16d0bb714e9368fc10ce35c347e85ffea0f5c5dc7e95905b2ed3ec4d20b",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 51,
+        "normal_negative_row_sha256": "faecd295c8d1e40a5a4917d39b0d02262dd9cefa3146eb38b043b370c5393d43",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|resnet50|DeepX|deepx_to_trt|b103",
+      "summary_sha256": "fe3926a9f10215a28783bddc313bd5db478af20e7e7edadd3600493264d67a4e",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 52,
+        "normal_negative_row_sha256": "8ef4c64e907e69aeb98ba9078f40d47c8824fa9ccaa3712b02e21972db9e3cf6",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|resnet50|DeepX|deepx_to_trt|b104",
+      "summary_sha256": "1815f80968965eb9ba7b3af804876839af4c0a1d2da32dce40250ef201f3c030",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 53,
+        "normal_negative_row_sha256": "c98c6a1f85237f0f7af2409de7c4c18e9f844042cf9793af50e0c8c03965d9a3",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|resnet50|DeepX|deepx_to_trt|b110",
+      "summary_sha256": "b0ba977f0611c5d5667730d9e733df6efc5f8bb98cc454320dbee9ecd878c844",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 54,
+        "normal_negative_row_sha256": "1dd85b522344cb729a4bd201a18434e05f5b6b740e55a1fe15d3938fb309a727",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    },
+    {
+      "case_uid": "native|revision3|resnet50|DeepX|deepx_to_trt|b119",
+      "summary_sha256": "ab24a868152f821e22c9df534535f32b4dd2dbe912d342d77afbf54fef5a2de4",
+      "active": true,
+      "state": "blocked_confirmed",
+      "reason": "Current classifier input is direct HWC RGBuint8; the original N5000 runner reconstructs uint8 after Float32 ImageNet normalization, differing by1LSB for137/768 scalar RGB/channel values. The frozen241 implementation has no regular DirectRGB classification-N5000 API. Actual3process/100warmup/1000completed performance and historical N5000 remain valid separately; current dataset transfer is unverified.",
+      "provenance": {
+        "normal_negative_quality_summary": "quality_transfer/final_classifier_dx56_20261008/finalized_blocked_original_roundtrip/native_producer_validation_summary.json",
+        "normal_negative_quality_summary_sha256": "5a64be82db906f666dead0d81c5a6c57f445f7cbdb17cdbee7b48272f4c02914",
+        "normal_negative_row_index": 55,
+        "normal_negative_row_sha256": "1a3bbb426972e86763b15ca4c4c95a881bd33d0ac155d69d83677ab72a1056e9",
+        "normal_guard_receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json",
+        "normal_guard_receipt_sha256": "0de9f2f37d0f33e89e84d768f3e2e62fe8f4e39dfbba32096b9d43d28b9fd62f",
+        "frozen_API_readiness": "quality_transfer/classifier_split_preparation_20261008/DX56_DIRECT_RGB_N5000_READINESS.json",
+        "frozen_API_readiness_sha256": "ee133fadb04631b559312eb9382dbba5d4e2bae1ddc1af40f3f4d685cf1416fc"
+      }
+    }
+  ],
+  "prior_hold_file": {
+    "path": "revision3:/current_results/QUALITY_JOIN_REVIEW_HOLDS.json",
+    "sha256": "480bbc89f5ab00f170eb8826e914f082e11881f93ed6a2e661fdffc7c78fd6f9"
+  }
+}

@@ -19,5 +19,132 @@
       "freeze223_sha256": null
     }
   ],
-  "source_dependencies_only_report": true
+  "source_dependencies_only_report": true,
+  "final_runtime_controller_changes": {
+    "parent_freeze": "revision3:/final_implementation_20261008/IMPLEMENTATION_FREEZE.json",
+    "parent_freeze_sha256": "f20b854cb9f5948e1ef57d3ff8d379a80390e6f3037bd129316eef700f6aa5ff",
+    "status": "bounded_controller_cohort_reader_tests_and_independent_review_pass",
+    "at": "2026-10-08T17:54:11.039138+00:00",
+    "source_dependencies_only_report": true,
+    "DUT_files_changed": false,
+    "snapshot_changed": false,
+    "bundle_changed": false,
+    "changes": [
+      {
+        "path": "scripts/native_producer_final_report.py",
+        "before_sha256": "adbcc08dddf0705e96adbcdecbf2cfbf9627edfb84b15e9943d231cc1684129b",
+        "after_sha256": "bb1c017a9a12f4d89dc7c1097e0a703dfa41af60dce882d9732c560ccc24b482",
+        "candidate_path": "revision3:/operations/finalisation_native_20261008/bn6_controller_reporting/unchanged_origin/source_after/scripts/native_producer_final_report.py",
+        "scope": "controller_report_only; deployed original bytes retained"
+      },
+      {
+        "path": "onnx_splitpoint_tool/workflow/cross_runner_reporting.py",
+        "before_sha256": "aa4fd0425c216877f125758468909e82b0bba47107a568b3e2ad37575a436358",
+        "after_sha256": "abb5d9ffa26bba49420bbc180096c1947c4508d197966f909309a7e1d0bb9f13",
+        "candidate_path": "revision3:/operations/rev3_three_points_20261009/source_after/onnx_splitpoint_tool/workflow/cross_runner_reporting.py",
+        "scope": "controller_report_only; deployed original bytes retained"
+      },
+      {
+        "path": "scripts/native_full_baseline_eval_runner.py",
+        "before_sha256": "b7ae230927809cae6d031919c634725187809d15fca3ebef7c7db00e123245f2",
+        "after_sha256": "c63cfed084f3134ee596f6655da73744ec3bf3710fe6e92737e864d803c9ba99",
+        "candidate_path": "revision3:/operations/controller_validator_snapshot_fix/reporting_final_20261008/source_after_strict_physical_hash/scripts/native_full_baseline_eval_runner.py",
+        "scope": "controller_report_only; deployed original bytes retained"
+      }
+    ],
+    "full_baseline_other_functions_and_file_literals_unchanged": true,
+    "local_guard_tests": "revision3:/operations/controller_validator_snapshot_fix/REPORTING_SCOPE_TESTS_20261008.xml",
+    "note": "Final179 and Native Current integrated; new bounded Generic cohort reader correction only. Original measured241 runtime and DUT bytes unchanged.",
+    "independent_sourceguard_review": {
+      "at": "2026-10-08T17:56:09.031553+00:00",
+      "reviewer": "finalise_legacy_usage",
+      "status": "PASS",
+      "reviewed_supplement_sha256": "fdb64892e8f846a6f1afdb47c62d303e248e262868a0bee997b2d7091422628f",
+      "method": "Exact originalSnapshot-before/localCurrent/candidate three tuples; unchanged hardware helper/native gate/generic gate and followup final_sources. Existing13-test XML read only, no test/gate/hardware replay. Main and mirror identical.",
+      "scope": "Tuple/gate/byte verification only; functional guard peer separately bound, final179 and normal Current still pending.",
+      "source_commit": "6ca5b3cedf3fda0f69397ad0e7a3e7abbe0194ae",
+      "original_snapshot_file_count": 241,
+      "final_sources": {
+        "scripts/native_producer_final_report.py": "bb1c017a9a12f4d89dc7c1097e0a703dfa41af60dce882d9732c560ccc24b482",
+        "onnx_splitpoint_tool/workflow/cross_runner_reporting.py": "39c526fbc34688a74fca9f64e08632b25735f0986d5d3fde035c5a091917447e",
+        "scripts/native_full_baseline_eval_runner.py": "c63cfed084f3134ee596f6655da73744ec3bf3710fe6e92737e864d803c9ba99"
+      },
+      "related_functional_review": "operations/finalisation_native_20261008/bn6_controller_reporting/unchanged_origin/INDEPENDENT_DX_REPNN_GUARD_REVIEW.json",
+      "prior_5435_review_preserved_in": "plan_versions/finalisation_20261008/REPORTING_SOURCE_SUPPLEMENT_before_unchanged_origin_guard.json"
+    },
+    "controller_commit": {
+      "commit": "5e742b34862a7d0e0760474a1ff3e4826854f20e",
+      "parent": "ec68097d0ca161a75380da158a257ad495296d90",
+      "at": "2026-10-08T17:11:49.188245+00:00",
+      "source_worktree": "source:worktree",
+      "files": [
+        "docs/ARBEITSSTAND.md",
+        "onnx_splitpoint_tool/resources/remote_scripts/native_producer_final_report.py",
+        "onnx_splitpoint_tool/workflow/cross_runner_reporting.py",
+        "scripts/native_full_baseline_eval_runner.py",
+        "scripts/native_producer_final_report.py",
+        "scripts/native_producer_validate_visualize.py",
+        "tests/test_rev3_native_repeat_operating_point.py",
+        "tests/test_v276_cross_runner_reporting.py"
+      ],
+      "patch": "revision3:/operations/controller_validator_snapshot_fix/reporting_final_20261008/controller_report_changes.patch",
+      "patch_sha256": "f60464d08fdcc9f28d240c6ee233407ad1fce255a239e8a43b31a2e76a98b11e",
+      "status_after": "",
+      "runtime_freeze_commit_unchanged": "8346d43d526221bd9d138943122206b658d56cbf",
+      "source_pushed": false
+    },
+    "unchanged_origin_guard_review": {
+      "receipt": "revision3:/operations/finalisation_native_20261008/bn6_controller_reporting/unchanged_origin/IMPLEMENTATION_RECEIPT.json",
+      "receipt_sha256": "5f81760aca3056f227e3a184c5e612db8d319bb19d1c526cd7ad4f47b6470296",
+      "independent_review": "revision3:/operations/finalisation_native_20261008/bn6_controller_reporting/unchanged_origin/INDEPENDENT_DX_REPNN_GUARD_REVIEW.json",
+      "independent_review_sha256": "454681984f9e50d3451ca5680d3f8fd0f3eeac418e1770f0b340c02b500157ca",
+      "original_science_preserved_cases": 18,
+      "controller_only": true
+    },
+    "controller_guard_commit": {
+      "commit": "6ca5b3cedf3fda0f69397ad0e7a3e7abbe0194ae",
+      "parent": "5e742b34862a7d0e0760474a1ff3e4826854f20e",
+      "files": [
+        "docs/ARBEITSSTAND.md",
+        "onnx_splitpoint_tool/resources/remote_scripts/native_producer_final_report.py",
+        "scripts/native_producer_final_report.py",
+        "tests/test_rev3_native_repeat_operating_point.py"
+      ],
+      "patch": "revision3:/operations/finalisation_native_20261008/bn6_controller_reporting/unchanged_origin/controller_guard_changes.patch",
+      "patch_sha256": "488a1f6d9ade1792a04a5cc88a2712506e51dfb8e868ea07d40e2424f7e54894",
+      "status_after": "",
+      "runtime_freeze_commit_unchanged": "8346d43d526221bd9d138943122206b658d56cbf",
+      "source_pushed": false
+    },
+    "bounded_reporting_plan_continuation_20261009": {
+      "scope": "Normal cohort reader and existing plan updater only; no runtimefreeze/deployment/measurements",
+      "diff": "revision3:/operations/rev3_three_points_20261009/REPORTING_PLAN_CHANGES.diff",
+      "source_files": [
+        "source:worktree/onnx_splitpoint_tool/workflow/cross_runner_reporting.py",
+        "revision3:/generic_final/export_current.py",
+        "revision3:/current_results/build_fairness_matrix.py"
+      ],
+      "tests_xml": "revision3:/operations/rev3_three_points_20261009/TESTS.xml",
+      "generic_stop_tests_xml": "revision3:/operations/rev3_three_points_20261009/GENERIC_STOP_FINAL_TEST.xml",
+      "previous_supplement": "revision3:/operations/rev3_three_points_20261009/before_REPORTING_SOURCE_SUPPLEMENT.json",
+      "DUT_files_changed": false,
+      "source_pushed": false,
+      "source_commit": "b7c2094e329351dcbdbeef4d3fcac48eec9458f3",
+      "source_patch": "revision3:/operations/rev3_three_points_20261009/SOURCE_COMMIT.patch",
+      "source_patch_sha256": "1ebd9213698a42250a17143fe1a352594f6eb395d1469b1caef35cceb270a956",
+      "independent_review": "revision3:/operations/rev3_three_points_20261009/INDEPENDENT_REVIEW.json",
+      "ops_controller_sources": [
+        {
+          "relative_path": "generic_final/export_current.py",
+          "candidate_path": "revision3:/operations/rev3_three_points_20261009/source_after/generic_final/export_current.py",
+          "after_sha256": "180035b8b82879c4818f3f77d74c1e9d5b616e59400a410fdc0ec42fb7e30c83"
+        },
+        {
+          "relative_path": "current_results/build_fairness_matrix.py",
+          "candidate_path": "revision3:/operations/rev3_three_points_20261009/source_after/current_results/build_fairness_matrix.py",
+          "after_sha256": "76dbc7ae3fbe964e403f11934be3cdec676b553a11d5d7bcaba307928a08b291"
+        }
+      ]
+    }
+  }
 }

@@ -2,15 +2,15 @@
   "schema": "native-fairness-revision3/remeasurement-plan/v1",
   "scope": {
     "native": 246,
-    "native_remeasure": 237,
-    "native_reuse_candidates": 9,
+    "native_remeasure": 240,
+    "native_reuse_candidates": 6,
     "generic_completed": 204,
     "generic_remeasure": 204,
     "extra_control_points": 1,
-    "native_performance_remeasure": 237,
+    "native_performance_remeasure": 240,
     "native_energy_remeasure": 240,
     "native_energy_only_remeasure": 3,
-    "native_performance_reuse_candidates": 9,
+    "native_performance_reuse_candidates": 6,
     "native_energy_reuse_candidates": 6
   },
   "decision_basis": "Actual executed operations and exact input pixels; filehash changes alone never trigger remeasurement",
@@ -18,18 +18,52 @@
     "classification_split_input_changed": 168,
     "detector_split_completion_changed": 36,
     "detector_full_completion_changed": 24,
-    "classification_vendor_full_actual_branch_unchanged": 9,
+    "classification_vendor_full_actual_branch_unchanged": 6,
     "classification_trt_full_timed_dispatch_changed": 9,
-    "classification_deepx_vendor_full_energy_only_dispatch_changed": 3
+    "classification_deepx_vendor_full_energy_only_dispatch_changed": 3,
+    "classification_h8_vendor_full_numeric_input_corrected": 3
   },
   "quality_policy": "Changed timing input does not establish changed dataset quality. Preserve explicit accuracy_loss/reference_close and transfer only exact model/artifacts/numeric preprocessing/completion binding; targeted5000 only when this cannot be proven.",
   "energy_policy": "No old J/task joined to new FPS. Actual completed counts and system sensor interval required. Historical screening values keep their tier.",
   "historical_archive_read_only": true,
   "plan_file": "revision3:/REMEASUREMENT_PLAN.csv",
-  "plan_sha256": "9e3d27725d077f249331037170f1540bd9897547f6da498c37cbd8c296d8fe0e",
+  "plan_sha256": "25e4eef834acbbb636dfb023923ca35602512e809c5dd9f6cd503fb3b93beb74",
   "plan_revision_evidence": "revision3:/native_audit/classification_full_branch/RESULT.json",
   "separate_performance_energy_revision_evidence": {
     "path": "revision3:/native_audit/CLASSIFICATION_FULL_REUSE.json",
     "sha256": "2efde1348a6f337bcc1d90c3ceafc0e0a7198907ba64656647fe8ed4cb200b59"
+  },
+  "finalisation_20261008": {
+    "updated_at": "2026-10-08T15:48:05.991379+00:00",
+    "existing_native_observations_preserved": 15,
+    "existing_generic_observations_preserved": 9,
+    "historical_full_observations_preserved": 9,
+    "historical_full_reuse_for_unchanged_final_numeric_path": 6,
+    "h8_classifier_full_new_performance_required_due_to_proven_numeric_domain_mismatch": 3,
+    "new_native_performance_remaining_before_further_acquisition": 225,
+    "native_bounded_source_admission_confirmations_remaining": 0,
+    "generic_final_bundle_confirmations_remaining": 3,
+    "generic_additional_points_remaining": 109,
+    "h8_domain_evidence": "operations/h8_classifier_domain_20261008/SDK_INSPECTION.json",
+    "filehash_change_alone_not_remeasurement_reason": true,
+    "native_bounded_source_admission_confirmations_total": 9,
+    "h8_normal_source_admission_evidence": "operations/finalisation_native_20261008/H8_NORMAL_SOURCE_ADMISSION.json",
+    "new_native_performance_remaining_current": 8,
+    "generic_final_bundle_confirmations_blocked": 3,
+    "current_progress_basis": "current_results/native_current.json and generic_current.json; original scientific scope retained",
+    "current_native_counts": {
+      "new_measurement": 232,
+      "reused_verified": 6,
+      "not_measured": 8
+    },
+    "current_normal_energy_points": 5,
+    "native_required_energy_points_without_final_admission": 238,
+    "native_rows_without_current_final_energy_admission": 241,
+    "current_generic_counts": {
+      "completed": 95,
+      "pending_remeasurement": 109
+    },
+    "current_generic_quality_pairs": 22,
+    "current_generic_claim_pairs": 0
   }
 }

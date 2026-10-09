@@ -1,5 +1,42 @@
 # Arbeitsstand – THESIS20 wissenschaftliche Reviewableitung
 
+## Revision 3 — Current-Checkpoint der Finalisierung am 08.10.2026
+
+Die aktuellen Zahlen werden aus den ausgewählten Native-/Generic-Current-Zeilen
+abgeleitet. [Publikationsmanifest](../results/evaluation/native_fairness_rev3_20261007/PUBLICATION_MANIFEST.json),
+[Current-Daten und Prüfer](../results/evaluation/native_fairness_rev3_20261007/README.md)
+und [technischer Befund](NATIVE_FAIRNESS_REV3_20261007.md) beschreiben denselben
+exportierten Checkpoint. Sie unterscheiden neue Performance, belegte historische
+Einzelbeobachtungen, Datasetqualität, normale Vergleichsclaims und zugelassene
+Energie. Zahlen aus den datierten Abschnitten unten sind ihre damalige Historie.
+
+Der neue lokale Export folgt dem koordinierten Current-Handoff. Bis dahin ist
+die öffentliche numerische Projektion ihr bereits veröffentlichter Checkpoint;
+vorbereitete Quell- und Dokumentationsänderungen sind keine Kampagnenabnahme.
+Die endgültige normale Qualitygeneration folgt `CURRENT_FINALIZED.json`; neue
+Kandidaten werden erst nach Review und tatsächlicher Pointerintegration wirksam.
+
+Die H8-Eingabedomäne ist anhand konkreter HEF-/SDK-Verträge korrigiert. Die
+aktuellen Vendor-/TRT-Classifier-Full-Bindungen und normale H8-Vergleiche sind
+geprüft; `accuracy_loss` bleibt sichtbar. Gültige Vendor-DX/H10-Originalqualität
+bleibt getrennt an historische einzelne Performancebeobachtungen gebunden.
+Der widersprüchliche historische physische H10-Full-Kontext wird nicht für
+Vergleichsclaims angeglichen. DX56-Splits behalten ihre gültige Performance,
+aber der ursprüngliche inverse-ImageNet-UINT8-Pfad beweist keine Gleichheit mit
+dem aktuellen direkten RGB-Pfad. Die enge normale Ableitung bleibt hierfür
+gesperrt; konkrete Eingabe- und Frozen-API-Blocker stehen in Current/Resume.
+
+Runtimefreeze `8346d43d526221bd9d138943122206b658d56cbf` mit 241 Dateien und
+Controller-Reportfix `ec68097d0ca161a75380da158a257ad495296d90` bleiben getrennt.
+Es gibt keinen zweiten Runtimefreeze, keine hashbedingten Modellneubauten
+und keine Neumessung bereits gültiger Ergebnisse allein wegen Dateihashdrift.
+H10s freigegebene Energiefortsetzung wurde wegen 7.936 fehlender Samples im
+Commandfenster abgewiesen. Quellenabschluss/Cleanup sind bestätigt, die
+Freigabe ist verbraucht; STOP-/Recovery-/Budgetregeln bleiben wirksam.
+Die private Paperableitung und ihre LaTeX-Quellen bleiben außerhalb dieses Gitpayloads.
+
+Die folgenden Blöcke sind datierte Historie.
+
 ## Revision 3 — 07.10.2026, Softwareabschluss des Offline-Zwischenstands
 
 Die Generic-Dauererweiterung ist im Worktree integriert und gezielt geprüft.
@@ -143,3 +180,6 @@ additiv archiviert. Keine doppelte BASE-Kopie, keine Löschung.
 
 Nächster Schritt: wissenschaftlicher Review der konkreten Claims/Figuren;
 vorhandene Archivendcodes prüfen. Kein automatischer neuer Hardwareauftrag.
+
+
+Revision 3, 2026-10-09: Begrenzte Current-/Plan-/Metadatenfortsetzung abgeschlossen. Generic204 technische /148 Quality-/Claimpaare bei612 tatsächlichen Prozessen;12 YOLO26-Joins normal geschlossen,14 Planwidersprüche und204 Quellbindungen berichtigt. Native232 neu+6 Singles+8 technische Full-Ausschlüsse,180 Quality/169 Claims/5 Energie; Generic0 Energie. DX56-Holds und alle STOP-/Budgetgrenzen bleiben erhalten. Energie-Restdelta442, nächste14DX nur Metadaten-PASS/kein Parent gestartet. Private Paperableitung mit18 Tests gebaut, kleine Archivmetadaten verifiziert. Aktueller Umfang und Belege: [Revision-3-Current](../results/evaluation/native_fairness_rev3_20261007/README.md). Keine neue Hardware-/Energie-/N5000-Messung.

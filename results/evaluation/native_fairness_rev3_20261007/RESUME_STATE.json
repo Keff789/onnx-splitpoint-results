@@ -1,16 +1,12 @@
 {
-  "at": "2026-10-07T13:12:38.721819+00:00",
-  "task_status": "in_progress_hardware_paused_at_required_post_stop_authorization",
-  "own_measurement_processes_at_last_terminal_check": {
-    "local": 0,
-    "remote": 0,
-    "proof": "energy/native_full_remaining5_qualified/cleanup-status.json"
-  },
-  "authorization_received": false,
-  "required_authorization": "one_new_H10_TRT_workflow_despite_unconfirmed_source_completion",
+  "at": "2026-10-08T20:24:55.106351+00:00",
+  "task_status": "bounded_three_points_current_plan_energy_paper_archive_complete_public_review_closure",
+  "own_measurement_processes_at_last_terminal_check": "Native232 new points/696 selected repeats+6 historical singles complete;8BN6Full excluded. Generic204 final-bundle points/612 selected independent processes complete. Last owned H10 cleanup2026-10-08T17:40:05.699770+00:00 local0/remote0; no active owned DUT or energy jobs.",
+  "authorization_received": true,
+  "required_authorization": "fresh_post_stop_authorization_required_before_another_affected_energy_workflow",
   "concrete_profile": "operations/recovery_full_h10_20261007/one_workflow.yaml",
   "plan": "operations/recovery_full_h10_20261007/PLAN.json",
-  "budget_sha256": "35bb39082918b99f9ab2b6ca6a33f16055052ca6780564f08fa55e72f0128aeb",
+  "budget_sha256": "f203e468b1ba5cb53b3e3ed4dd4e7ece5561784e0282b4b00310b987150cbed8",
   "budgets": [
     {
       "identity": [
@@ -145,10 +141,10 @@
         "full",
         "orin_nx_hailo10_01"
       ],
-      "reserved_chains": 1,
-      "physical_starts": 1,
+      "reserved_chains": 2,
+      "physical_starts": 2,
       "valid_sensor_repeats": 0,
-      "remaining_chain_capacity": 8,
+      "remaining_chain_capacity": 7,
       "stop_reason": "campaign_source_completion_unresolved",
       "limits": {
         "max_chains": 9,
@@ -173,27 +169,871 @@
         "max_transport_failures": 20,
         "max_retries": 2
       }
+    },
+    {
+      "identity": [
+        "deepx_to_trt",
+        "yolov7_paper",
+        "b044",
+        "orin_nx_deepx_m1_01"
+      ],
+      "reserved_chains": 4,
+      "physical_starts": 4,
+      "valid_sensor_repeats": 3,
+      "remaining_chain_capacity": 5,
+      "stop_reason": "",
+      "limits": {
+        "max_chains": 9,
+        "max_transport_failures": 20,
+        "max_retries": 2
+      }
+    },
+    {
+      "identity": [
+        "deepx_to_trt",
+        "yolov7_paper",
+        "b066",
+        "orin_nx_deepx_m1_01"
+      ],
+      "reserved_chains": 3,
+      "physical_starts": 3,
+      "valid_sensor_repeats": 3,
+      "remaining_chain_capacity": 6,
+      "stop_reason": "",
+      "limits": {
+        "max_chains": 9,
+        "max_transport_failures": 20,
+        "max_retries": 2
+      }
     }
   ],
   "remaining": {
-    "new_native_performance_points": 222,
-    "generic_additional_points": 195,
-    "generic_current_points_to_confirm_after_final_duration_worker_change": 9,
-    "native_required_energy_points_without_final_admission": 237,
+    "new_native_performance_points": 8,
+    "generic_additional_points": 0,
+    "generic_current_points_to_confirm_after_final_duration_worker_change": 0,
+    "native_required_energy_points_without_final_admission": 238,
     "generic_energy_points_without_final_admission": 204,
-    "native_existing_points_requiring_bounded_normal_source_admission_confirmation": 6
+    "native_existing_points_requiring_bounded_normal_source_admission_confirmation": 0,
+    "generic_missing_hardware_points": 0,
+    "generic_historical_points_requiring_final_bundle_confirmation": 0,
+    "note": "All204 Generic hardware cohorts,204technical/148quality/148claim comparisons complete.56DX numeric-input quality exclusions remain;8Native Full runtime-attestation exclusions remain. No new measurement start authorized."
   },
   "normal_energy_pointer": "CURRENT_NORMAL_ENERGY.json",
-  "normal_energy_points": 3,
+  "normal_energy_points": 5,
   "historical_archive_read_only": true,
   "data_deletion_performed": false,
   "generic_duration_software_status": "integrated_and_offline_verified; no_hardware_energy_started",
   "current_source_review_snapshot": "CURRENT_SOURCE_REVIEW_SNAPSHOT.json",
-  "budget_unchanged_since_terminal": true,
+  "budget_unchanged_since_terminal": false,
   "next_read_only_command": "source:controller/.venv/bin/python -B revision3:/operations/recovery_full_h10_20261007/recover.py check",
-  "generic_capture_parent_status": "READY_TO_PREPARE_AFTER_PERFORMANCE; no hardware energy started",
+  "generic_capture_parent_status": "Both Generic technical-energy consumer and existing four Native attachment consumers independently passed. Existing prior unstarted parents remain stale; fresh existing normal parent preparation follows final Current export and global quiet handoff; no capture started.",
   "private_paper_status": "incomplete_current_view_built_and_reproduced",
   "zero_start_recovery_status": "84_tests_23_bound_evidence_files_passed; isolated_not_applied",
-  "source_deployment_status": "original_223_runtime_cohorts_preserved; DX_H10_energy_delta_not_deployed",
-  "generic_capture_parent_receipt": "operations/generic_energy_parent/RECEIPT.json"
+  "source_deployment_status": {
+    "DeepX": "deployment_final_20261008/orin_nx_deepx_m1_01/DEPLOYED.json",
+    "H8": "deployment_final_20261008/orin_nx_hailo8_01/DEPLOYED.json",
+    "H10": "deployment_final_20261008/orin_nx_hailo10_01/DEPLOYED.json"
+  },
+  "generic_capture_parent_receipt": "operations/generic_energy_parent/RECEIPT.json",
+  "resource_scope": {
+    "all_dut_performance": "All existing hardware cohorts terminal. Targeted reporting fixes and one Currentexport terminal. No hardware/capture/bulk started in token-saving phase.",
+    "physical_quarantines": "released_by_explicitly_authorized_normal_recovery; no_new_quarantines_on_cleanly_closed_failed_continuation",
+    "h10_sensor_capture": "blocked_fresh_post_stop_authorization_and_concrete_continuation_adapter_required",
+    "other_sensor_capture": "Deferred by explicit user token-saving instruction; no new capture/parent hardware preparation in this phase. Original STOPs and budgets retained.",
+    "no_budget_reset": true,
+    "controller_bulk_archive": "Batch14 terminal; last15Generic groups target-byte verified; no active own bulk transport."
+  },
+  "completed_finalisation_checks": {
+    "exact_deepx_infer_signature": "implemented, focused tests passed, actual final three-process deployment confirmations complete",
+    "native_cold_sync": "local_transport_tests_pass; all_three_actual_241_file_deployments_pass",
+    "h10_layout_metadata": "implemented before timer with unchanged tensor bytes; final deployment and three confirmations complete",
+    "historical_generic_original_report_and_runner": "opened_exact_original_bytes_verified_and_normal_readers_pass",
+    "offline_energy": "18_original_binary_calls_byte_identical_results; independent_trapezoid_and_student_t_pass",
+    "receipts": [
+      "generic_finalisation_tests/review_contract_correction.xml",
+      "operations/finalisation_native_20261008/RECEIPT.json",
+      "operations/finalisation_native_20261008/GENERIC_GATE_REVIEW.json",
+      "generic/legacy_acceptance_20261008.xml",
+      "archive_checks/offline_energy_20261008/RECEIPT.json"
+    ],
+    "h8_classifier_domain": "Six exact HEFs/SDK contracts verified; corrected source in sole freeze;68 focused tests and one normal CPPwrapper build; all56splits and3Vendor/3TRTFull performance complete. All112H8/H10ClassifierSplit exact quality joins now integrated in Current."
+  },
+  "next_actions": [
+    "Publish already authorized existing results Git and create bounded metadata review package; no measurements."
+  ],
+  "h8_classifier_domain": {
+    "status": "concrete_hef_domain_verified_corrected_source_frozen_68_tests_pass_hardware_and_current112_hailo_split_quality_complete",
+    "sdk_inspection": "operations/h8_classifier_domain_20261008/SDK_INSPECTION.json",
+    "split_inventory": "operations/h8_classifier_domain_20261008/IMPACT_SPLIT_INVENTORY.json",
+    "affected_native_splits": 56,
+    "affected_vendor_fulls": 3,
+    "historical_vendor_full_observations_retained": 3,
+    "unchanged_historical_full_reuse_points": 6,
+    "engines_hefs_dxnn_rebuilt": 0,
+    "normal_cpp_wrapper_build": "operations/h8_classifier_domain_20261008/CPP_WRAPPER_READY.json",
+    "normal_cpp_wrapper_build_count": 1,
+    "current_vendor_full_performance": "three_points_complete_nine_actual_processes_corrected_input",
+    "current_vendor_full_quality": "three corrected Vendor plus threeTRT classification Full normal quality joins complete; MobileVendor accuracy_loss retained; same-setup comparative eligibility from normal consumer",
+    "quality_blocker": "operations/h8_classifier_domain_20261008/CURRENT_FULL_QUALITY_BLOCKER_20261008.json"
+  },
+  "required_authorization_question": "previous_specific_three_repeat_workflow_authorized_and_consumed; no_new_question_pending",
+  "native_rows_without_current_final_energy_admission": 241,
+  "authorization": "operations/recovery_full_h10_20261007/AUTHORIZATION_20261008.json",
+  "final_implementation_freeze": "final_implementation_20261008/IMPLEMENTATION_FREEZE.json",
+  "final_source_commit": "8346d43d526221bd9d138943122206b658d56cbf",
+  "authorization_status": "H10_specific_grant_consumed_by_energy-resume-02532533fd67482cbfa37049df31192f; no further affected H10 workflow authorized; independent task-authorized DX work remains allowed under normal gates",
+  "source_transport_budget": {
+    "DeepX-source": {
+      "transport_failures": 1,
+      "max_transport_failures": 20,
+      "remaining_transport_failures": 19,
+      "stop_reason": ""
+    },
+    "H10-source": {
+      "transport_failures": 3,
+      "max_transport_failures": 20,
+      "remaining_transport_failures": 17,
+      "stop_reason": "campaign_source_completion_unresolved"
+    },
+    "H8-source": {
+      "transport_failures": 0,
+      "max_transport_failures": 20,
+      "remaining_transport_failures": 20,
+      "stop_reason": ""
+    }
+  },
+  "h10_authorized_continuation_result": {
+    "attempt": "energy/native_full_remaining5_qualified/attempts/energy-resume-02532533fd67482cbfa37049df31192f",
+    "status": "failed_repeat_0_invalid_command_window_immediate_stop",
+    "completed_tasks": 3165,
+    "missing_samples_in_command_window": 7936,
+    "source_completion_verified": true,
+    "original_source_completion_verified": false,
+    "cleanup_proven": true,
+    "additional_repeats_started": false,
+    "repeat_0_attempt_slots_remaining": 1,
+    "repeat_1_attempt_slots_remaining": 3,
+    "repeat_2_attempt_slots_remaining": 3,
+    "automatic_retry": false
+  },
+  "generic_final_confirmations": {
+    "DeepX": "three_complete_actual_three_processes_each",
+    "H8": "three_complete_actual_three_processes_each",
+    "H10": "three_complete_actual_three_processes_each_final_bundle_a837bd56",
+    "h10_blocker": "resolved; original failed metadata binding receipt retained; current normal closure in operations/finalisation_generic_20261008/H10_YOLO7_FINAL_GENERIC_COMPLETION.json",
+    "quality_transfers_verified": 5,
+    "claim_transfers_verified": 0,
+    "own_dataset_quality_results_verified": 1,
+    "quality_pairs_verified": 6
+  },
+  "h10_final_confirmations": "operations/finalisation_native_20261008/H10_FINAL_CONFIRMATIONS.json",
+  "current_native_counts": {
+    "new_measurement": 232,
+    "reused_verified": 6,
+    "not_measured": 8
+  },
+  "capture_scope_audit": "operations/recovery_full_h10_20261007/CAPTURE_SCOPE_AUDIT_20261008.json",
+  "native_bn6_full_runtime_blocker": {
+    "affected_points": 8,
+    "scope": "yolo26m/s TRT Full on all three setups; yolo26m/s DeepX Vendor Full",
+    "actual_failed_case": "yolo26m__orin_nx_deepx_m1_01__native_full_tensorrt__full__final20261008",
+    "reason": "postflight_oracle_extra_field_rejected_by_frozen_normalized_endpoint_attestation",
+    "runtime_modified_after_final_freeze": false,
+    "known_affected_cases_not_retried": true,
+    "actual_runner_rc": 5
+  },
+  "current_quality_pointer": "quality_transfer/CURRENT_FINALIZED.json",
+  "current_quality_join": {
+    "split": 148,
+    "full": 31,
+    "quality": 180,
+    "comparative_claims": 169,
+    "unpaired_excluded": 11,
+    "historical_single_observation_quality_reuse": 6,
+    "historical_single_observation_new_performance_claims": 0,
+    "historical_contexts": [
+      "quality_transfer/final_dx_vendor_classifier_reuse_20261008/QUALITY_REUSE_CONTEXT_RECEIPT.json",
+      "quality_transfer/final_h10_vendor_classifier_reuse_20261008/QUALITY_REUSE_CONTEXT_RECEIPT.json"
+    ],
+    "report_rows": 179,
+    "fresh_quality": 174,
+    "separate_original_h10_reuse_rows": 3,
+    "source": "actual current_results/native_current.json flags after normal179 projection;177 positive report rows plus3 separately verified originalH10 reuse;2 RawY26s semantic-negative preserved"
+  },
+  "controller_report_commit": "6ca5b3cedf3fda0f69397ad0e7a3e7abbe0194ae",
+  "native_h10_missing_acquisition": "operations/finalisation_native_20261008/H10_MISSING_ACQUISITION.json",
+  "native_h10_missing_commands": "operations/finalisation_native_20261008/H10_MISSING_GROUP_COMMANDS.txt",
+  "native_bn6_split_report_blocker": {
+    "affected_points": 12,
+    "scope": "six H8 and six H10 YOLO26 detector splits",
+    "status": "Resolved: actual12 plus original6DX rate preservation, all161 prior science and179composition independently PASS. Pointer179 integrated; normalNativeCurrentexport in progress.",
+    "controller_reporter_modified": true,
+    "original_snapshot_or_dut_modified": false,
+    "normal_negative_generation": "quality_transfer/final_detector_splits_20261008/bn6_controller_20261008",
+    "existing_implementation_receipt": "operations/finalisation_native_20261008/bn6_controller_reporting/IMPLEMENTATION_RECEIPT.json",
+    "negative_quality_count": 0,
+    "verified_evidence_join_count_is_not_quality_or_numeric_fps_pass": true,
+    "original_runtime_or_snapshot_modified": false,
+    "rate_projection_limitation": "Initial negative generations retained; actual12 positive normal output independently reviewed. Currentpointer161 remains until all161 retained science fields survive final179 normal composition.",
+    "actual12_independent_review": "quality_transfer/final_detector_splits_20261008/bn6_location_caller/ACTUAL12_INDEPENDENT_REVIEW.json"
+  },
+  "dx_final_split_energy": {
+    "points": 2,
+    "cases": [
+      "b044",
+      "b066"
+    ],
+    "physical_starts": 7,
+    "selected_valid_repeats": 6,
+    "invalid_retained_repeats": 1,
+    "cleanup_proven": true,
+    "normal_energy_pointer": "CURRENT_NORMAL_ENERGY.json",
+    "receipt": "energy/final_dx_b044_b066_20261008_bound_context/REPEAT_OBSERVATIONS.json"
+  },
+  "generic_followup_progress": "Current204 complete/612repeats/errors0; technicalpairs192;Q/Claim136;56DX Qualityexclusions preserved;12 H8/H10 YOLO26 Native-ranking projection exclusions deferred.",
+  "dx_b044_quality": {
+    "first_attempt": "5000 inferences, export failed missing original suite declaration; no predictions recoverable; retained",
+    "corrected_preflight": "PASS, no-SDK complete export admission fixture; fixture must not be evaluated",
+    "corrected_one_run_authorized": true,
+    "next_command": "No repeated source inference or quality evaluation required.",
+    "device_handoff": "DeepX returned to Native acquisition at12:31:05 UTC; no active Generic DUT worker",
+    "corrected_one_run_status": "SOURCE_AND_CENTRAL_EVALUATION_AND_NORMAL_CURRENT_EXPORT_COMPLETE_REFERENCE_CLOSE_5000_B1000",
+    "corrected_handoff": "operations/finalisation_generic_20261008/dx_b044_quality_corrected_execution/HANDOFF.json",
+    "central_evaluation": "operations/finalisation_generic_20261008/dx_b044_quality_corrected_execution/quality_management/CENTRAL_EVALUATION.json",
+    "quality_decision": "reference_close",
+    "relative_loss": 0.0014127162518591978
+  },
+  "current_generic_counts": {
+    "completed": 204,
+    "repeats": 612,
+    "technical_pairs": 204,
+    "quality_pairs": 148,
+    "claim_pairs": 148,
+    "energy_points": 0
+  },
+  "h8_cpp_rate_reader": {
+    "status": "narrow verified CPP fixed-six-decimal reader corrected and independently reviewed; old b097 repeat1 preserved, only missing2/3 executed; cohort complete",
+    "receipt": "operations/finalisation_native_20261008/H8_CPP_RATE_SERIALIZATION_RECEIPT.json",
+    "runtime_or_plan_changed": false
+  },
+  "current_export_snapshot_at": "2026-10-08T18:14:36.829458+00:00",
+  "dx_vendor_classifier_quality_reuse": {
+    "points": 3,
+    "context": "quality_transfer/final_dx_vendor_classifier_reuse_20261008/QUALITY_REUSE_CONTEXT_RECEIPT.json",
+    "performance_observations_each": 1,
+    "new_performance_claims": false,
+    "separate_new_energy_capture_pending": true
+  },
+  "native_dx_energy14_preparation": "operations/energy_assembly/final_dx_energy14_20261008/final_current_inputs/ASSEMBLY_RECEIPT.json",
+  "h10_vendor_classifier_quality_reuse": {
+    "points": 3,
+    "context": "quality_transfer/final_h10_vendor_classifier_reuse_20261008/QUALITY_REUSE_CONTEXT_RECEIPT.json",
+    "performance_observations_each": 1,
+    "new_performance_claims": false,
+    "source_branch_equivalence_reverified": true,
+    "energy_stop_unchanged": true
+  },
+  "native_performance_terminal": {
+    "new_points": 232,
+    "actual_selected_repeats": 696,
+    "historical_single_observation_reuses": 6,
+    "concrete_frozen_BN6_full_exclusions": 8,
+    "h8_terminal_receipt": "operations/finalisation_native_20261008/H8_RESNET_CLOSED_COHORT.json",
+    "h10_terminal_receipt": "operations/finalisation_native_20261008/H10_MISSING_ACQUISITION.json"
+  },
+  "current_generic_export_snapshot_at": "2026-10-08T20:18:00.371825+00:00",
+  "current_generic_quality_pairs": 136,
+  "current_generic_claim_pairs": 136,
+  "generic_hardware_terminal": {
+    "technical_points": 204,
+    "fresh_points": 204,
+    "historical_points": 0,
+    "integrated_as_current": true,
+    "last_group_receipts": [
+      "operations/finalisation_generic_20261008/H8_BN6_GENERIC_COMPLETION.json",
+      "operations/finalisation_generic_20261008/H10_BN6_GENERIC_COMPLETION.json",
+      "operations/finalisation_generic_20261008/H10_YOLO7_FINAL_GENERIC_COMPLETION.json"
+    ],
+    "scope": "All204 final-bundle actual cases closed; three prior H10 observations preserved and explicitly superseded. Still distinct from last normal Current95 export.",
+    "selected_independent_processes": 612
+  },
+  "controller_reporting_integration": {
+    "status": "two_generic_consumer_fixes34_tests_and_independent_review_pass_normal_current204_complete",
+    "supplement": "REPORTING_SOURCE_SUPPLEMENT.json",
+    "runtime_freeze": "final_implementation_20261008/IMPLEMENTATION_FREEZE.json",
+    "original_snapshot_changed": false,
+    "measured_DUT_bytes_changed": false,
+    "deployment_required_or_performed": false,
+    "worktree_dirty_files": 0,
+    "all_dirty_files_controller_mirror_or_tests": true,
+    "further_source_commit_completed": true,
+    "source_head": "6ca5b3cedf3fda0f69397ad0e7a3e7abbe0194ae",
+    "controller_commit": "5e742b34862a7d0e0760474a1ff3e4826854f20e",
+    "committed_controller_files": 8,
+    "controller_guard_commit": "6ca5b3cedf3fda0f69397ad0e7a3e7abbe0194ae",
+    "controller_guard_committed_files": 4
+  },
+  "raw_detector_full_quality_pending_current": {
+    "new_contexts": 6,
+    "saved_repeat_bindings": 27,
+    "normal_quality_claim_true": 4,
+    "semantic_false_accuracy_loss": 2,
+    "normal_receipt": "quality_transfer/final_detector_full_20261008/y26m_completed_binding/NORMAL_NINE_FINAL_QUALITY_RECEIPT.json",
+    "normal_finalized_root": "quality_transfer/final_detector_full_20261008/y26m_completed_binding/finalized_actual9_strict",
+    "independent_normal_review": "quality_transfer/final_detector_full_20261008/y26m_completed_binding/INDEPENDENT_NORMAL_NINE_REVIEW.json",
+    "integrated_as_current": true,
+    "new_hw_cpu_n5000_inference": false,
+    "status": "all6_rawFull_contexts_integrated_4Qpositive_2Y26snegative"
+  },
+  "dx56_current_dataset_quality_blocker": {
+    "affected_points": 56,
+    "confirmed_mismatched_scalar_codes": 137,
+    "checked_scalar_codes": 768,
+    "difference_lsb": 1,
+    "actual_fresh_route": "direct_HWC_RGB_uint8",
+    "historical_N5000_route": "ImageNet_float32_inverse_to_uint8_roundtrip",
+    "normal_diagnostic_quality_claims": false,
+    "original_N5000_and_current_performance_preserved": true,
+    "receipt": "quality_transfer/final_classifier_dx56_20261008/NORMAL_DX56_FAILCLOSED_GATE_RECEIPT.json"
+  },
+  "planned_existing_energy_commands": "operations/energy_assembly/final_dx_energy14_20261008/FINAL_ENERGY_COMMAND_SELECTION_20261008.json",
+  "controller_reference_commit": "ec68097d0ca161a75380da158a257ad495296d90",
+  "controller_source_worktree_status": "clean_after_reviewed_repNN_only_guard_commit",
+  "controller_source_supplement": "REPORTING_SOURCE_SUPPLEMENT.json",
+  "current_controller_hardware_scope": {
+    "owner": "finalise_generic",
+    "state": "all_hardware_and_current_exports_terminal_no_active_owned_jobs",
+    "commands": "operations/finalisation_generic_20261008/BN6_GENERIC_HARDWARE_COMMANDS.txt",
+    "readiness": "operations/finalisation_generic_20261008/BN6_GENERIC_GROUPS_READINESS.json",
+    "independent_plan_review": "operations/finalisation_generic_20261008/BN6_GENERIC_PREPARATION_INDEPENDENT_REVIEW.json",
+    "cases_h8": 6,
+    "cases_h10": 6,
+    "processes_per_case": 3,
+    "warmups": 100,
+    "completed_tasks": 1000,
+    "build_allowed": false,
+    "automatic_retry": false,
+    "capture_allowed_in_this_scope": false,
+    "h10_yolov7_start": "completed_three_cases_nine_independent_processes",
+    "h8_completion_receipt": "operations/finalisation_generic_20261008/H8_BN6_GENERIC_COMPLETION.json",
+    "h8_cleanup_proven": true,
+    "h8_owned_local_remaining": 0,
+    "h8_owned_remote_remaining": 0,
+    "h10_bn6_session": 51225,
+    "h10_yolov7_readiness": "operations/finalisation_generic_20261008/H10_Y7_FINAL_GENERIC_READINESS.json",
+    "h10_yolov7_command": "operations/finalisation_generic_20261008/H10_Y7_FINAL_GENERIC_HARDWARE_COMMAND.txt",
+    "h10_completion_receipt": "operations/finalisation_generic_20261008/H10_BN6_GENERIC_COMPLETION.json",
+    "h10_yolov7_completion_receipt": "operations/finalisation_generic_20261008/H10_YOLO7_FINAL_GENERIC_COMPLETION.json",
+    "h10_cleanup_proven": true,
+    "h10_owned_local_remaining": 0,
+    "h10_owned_remote_remaining": 0
+  },
+  "pending_current_export": {
+    "state": "terminal_success",
+    "at": "2026-10-09T07:41:38.851470+00:00",
+    "log": "operations/rev3_three_points_20261009/FINAL_CURRENT_EXPORT.log",
+    "session_id": 71247,
+    "processes": [
+      {
+        "pid": 2239054,
+        "start_ticks": "25992595"
+      }
+    ],
+    "do_not_restart_while_process_identity_matches": true,
+    "returncode": 0,
+    "receipt": "revision3:/operations/rev3_three_points_20261009/FINAL_CURRENT_EXPORT_RECEIPT.json"
+  },
+  "archive_latest_closed_batch": "operations/finalisation_archive_20261008/CLOSED_BATCH14_ARCHIVED_20261008.json",
+  "native_current_independent_review": "quality_transfer/final_native_179_20261008/INDEPENDENT_NATIVE_CURRENT_INTEGRATION_REVIEW.json",
+  "native_current_independent_review_status": "PASS_246_observations_original696_repeats_180Q_169claims_5unchanged_energy",
+  "native_dx_energy14_preparation_status": "local_metadata_assembly_complete_normal_parent_prepare_not_started_waiting_final_GenericCurrent_and_global_quiet",
+  "current_phase_constraints": {
+    "max_concurrent_subagents": 2,
+    "new_hardware_or_energy_measurements_allowed": false,
+    "large_archive_transfers_allowed": false,
+    "repeat_passed_unchanged_tests_allowed": false,
+    "scope": "two Generic consumer fixes; minimum regressions; one normal Current export; persistent status and resume"
+  },
+  "deferred_original_next_actions": [
+    "Actual new energy capture only after renewed bounded authorization, live normal preparation/admission and global controller/DUT/source handoff. No old H10 grant reuse.",
+    "Resolve genuine DX56 dataset input mismatch, eight BN6 Full runtime-attestation exclusions and unavailable final-energy scopes only in a separately authorized block. Existing negative scientific results and budgets remain authoritative."
+  ],
+  "remaining_generic_comparison_exclusions": [],
+  "deferred_resume_command": "source:controller/.venv/bin/python -B revision3:/operations/energy_parent_qualified.py prepare --summary revision3:/operations/energy_assembly/final_dx_energy14_20261008/final_current_inputs/priority13/reports/native_producer_summary.json --validation-summary revision3:/operations/energy_assembly/final_dx_energy14_20261008/final_current_inputs/priority13/reports/native_validation/native_producer_validation_summary.json --run-dir revision3:/energy/final_dx_remaining13_20261008_final_current --phase final --setup orin_nx_deepx_m1_01 --registry private-home:/.onnx_splitpoint_tool/hardware_setups.yaml --capture-limit 13 --remote-root dut-home:/native_fifo_evalsets/thesis_20splits_n5000_b1000_20260925_20260925_103745",
+  "deferred_resume_preconditions": "Only after renewed explicit user authorization for deferred heavy work, free global controller/DX slot, unchanged normal admission, and existing STOP/budget checks. This command prepares the existing Native13 parent; it does not authorize capture.",
+  "energy_remaining": {
+    "native_without_final_energy": 241,
+    "generic_without_final_energy": 204,
+    "matrix_without_final_energy": 445,
+    "delta_native": 238,
+    "delta_generic": 204,
+    "delta_total": 442,
+    "historical_H10_vendor_screening_outside_delta": 3,
+    "already_final_native_energy_points": 5,
+    "already_final_native_energy_repeats": 15,
+    "rederive_only_cases": 0,
+    "rederive_only_reason": "No unused compatible final-energy source was identified in the existing closed selection/normal receipts; old strict/diagnostic repeats remain their original tier.",
+    "categories": [
+      {
+        "regime": "native",
+        "setup": "orin_nx_deepx_m1_01",
+        "category": "new_capture_metadata_prepared",
+        "points": 73
+      },
+      {
+        "regime": "native",
+        "setup": "orin_nx_hailo10_01",
+        "category": "blocked_stop",
+        "points": 77
+      },
+      {
+        "regime": "native",
+        "setup": "orin_nx_hailo10_01",
+        "category": "historical_screening_preserved",
+        "points": 3
+      },
+      {
+        "regime": "native",
+        "setup": "orin_nx_hailo8_01",
+        "category": "new_capture_parent_unprepared",
+        "points": 77
+      },
+      {
+        "regime": "native",
+        "setup": "orin_nx_deepx_m1_01",
+        "category": "blocked_technical_binding",
+        "points": 4
+      },
+      {
+        "regime": "native",
+        "setup": "orin_nx_hailo10_01",
+        "category": "blocked_technical_binding",
+        "points": 2
+      },
+      {
+        "regime": "native",
+        "setup": "orin_nx_hailo8_01",
+        "category": "blocked_technical_binding",
+        "points": 2
+      },
+      {
+        "regime": "native",
+        "setup": "orin_nx_deepx_m1_01",
+        "category": "blocked_existing_repeat_scope",
+        "points": 1
+      },
+      {
+        "regime": "native",
+        "setup": "orin_nx_deepx_m1_01",
+        "category": "reuse_final_energy",
+        "points": 4
+      },
+      {
+        "regime": "native",
+        "setup": "orin_nx_hailo8_01",
+        "category": "blocked_existing_repeat_scope",
+        "points": 1
+      },
+      {
+        "regime": "native",
+        "setup": "orin_nx_hailo8_01",
+        "category": "reuse_final_energy",
+        "points": 1
+      },
+      {
+        "regime": "native",
+        "setup": "orin_nx_hailo8_01",
+        "category": "blocked_stop",
+        "points": 1
+      },
+      {
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01",
+        "category": "new_capture_metadata_prepared",
+        "points": 68
+      },
+      {
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01",
+        "category": "blocked_stop",
+        "points": 68
+      },
+      {
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01",
+        "category": "new_capture_parent_unprepared",
+        "points": 68
+      }
+    ],
+    "prepared_metadata_only": {
+      "native": 73,
+      "generic": 68,
+      "total": 141
+    },
+    "next_small_block": {
+      "at": "2026-10-09T07:38:35.644847+00:00",
+      "scope": "Metadata-only bounded continuation; no parent prepare, deployment, capture or STOP grant.",
+      "candidate_count": 14,
+      "repeats_per_point": 3,
+      "pure_workload_seconds": 2520,
+      "historical_collector_envelope_seconds": 3612,
+      "historical_parent_rate_estimate_seconds": 3774.4998539999997,
+      "historical_run_tree_size_estimate_bytes": 333630948,
+      "policy_max_start_run_tree_size_estimate_bytes": 1000892844,
+      "estimate_limit": "Extrapolation from existing YOLOv7 runs; no guaranteed ETA/storage bound for other models. Source/timeouts/STOPs can terminate earlier.",
+      "local_free_bytes": 282307338240,
+      "archive_free_bytes": 8527344041984,
+      "resource_observation": {
+        "controller:io": {
+          "lock_exists": false,
+          "quarantine_exists": false,
+          "observed_only": true
+        },
+        "controller:transfer": {
+          "lock_exists": false,
+          "quarantine_exists": false,
+          "observed_only": true
+        },
+        "controller:capture": {
+          "lock_exists": true,
+          "quarantine_exists": false,
+          "observed_only": true,
+          "kernel_lock_held": false
+        },
+        "controller:cpu": {
+          "lock_exists": false,
+          "quarantine_exists": false,
+          "observed_only": true
+        },
+        "dut:orin_nx_deepx_m1_01": {
+          "lock_exists": false,
+          "quarantine_exists": false,
+          "observed_only": true
+        },
+        "source:DeepX-source": {
+          "lock_exists": true,
+          "quarantine_exists": false,
+          "observed_only": true,
+          "kernel_lock_held": false
+        }
+      },
+      "candidates": [
+        {
+          "identity": [
+            "deepx_to_trt",
+            "yolo11l",
+            "b003",
+            "orin_nx_deepx_m1_01"
+          ],
+          "metadata_status": "PASS",
+          "quality_eligible": true,
+          "claim_eligible": true,
+          "source_summary": "native_performance/yolo11l__deepx_to_trt__b003__orin_nx_deepx_m1_01__final20261008_staged/summary.json",
+          "source_summary_sha256": "92678aae55ff891a330da9aea986406719f58f8d76fb2e15f484ea471ca9a8d6",
+          "existing_chain_count": 0,
+          "task_stop": "",
+          "source_stop": "",
+          "parent_prepared": false,
+          "live_runtime_admission": "NOT_RUN; existing normal prepare performs actual admission",
+          "measurement_authorization": "NOT_GRANTED_IN_THIS_BLOCK"
+        },
+        {
+          "identity": [
+            "deepx_to_trt",
+            "yolo11l",
+            "b062",
+            "orin_nx_deepx_m1_01"
+          ],
+          "metadata_status": "PASS",
+          "quality_eligible": true,
+          "claim_eligible": true,
+          "source_summary": "native_performance/yolo11l__deepx_to_trt__b062__orin_nx_deepx_m1_01__final20261008_staged/summary.json",
+          "source_summary_sha256": "e2c1fb845f50dd0854bc0a5ebe15964dc39d6874e993b5b169bc4185376c4ea6",
+          "existing_chain_count": 0,
+          "task_stop": "",
+          "source_stop": "",
+          "parent_prepared": false,
+          "live_runtime_admission": "NOT_RUN; existing normal prepare performs actual admission",
+          "measurement_authorization": "NOT_GRANTED_IN_THIS_BLOCK"
+        },
+        {
+          "identity": [
+            "deepx_to_trt",
+            "yolo11l",
+            "b120",
+            "orin_nx_deepx_m1_01"
+          ],
+          "metadata_status": "PASS",
+          "quality_eligible": true,
+          "claim_eligible": true,
+          "source_summary": "native_performance/yolo11l__deepx_to_trt__b120__orin_nx_deepx_m1_01__final20261008_staged/summary.json",
+          "source_summary_sha256": "7f22d595bc2382363503ecc60205ac6544d7c7ee4c83e71967afaabcf170e4e5",
+          "existing_chain_count": 0,
+          "task_stop": "",
+          "source_stop": "",
+          "parent_prepared": false,
+          "live_runtime_admission": "NOT_RUN; existing normal prepare performs actual admission",
+          "measurement_authorization": "NOT_GRANTED_IN_THIS_BLOCK"
+        },
+        {
+          "identity": [
+            "deepx_to_trt",
+            "yolo26m",
+            "b003",
+            "orin_nx_deepx_m1_01"
+          ],
+          "metadata_status": "PASS",
+          "quality_eligible": true,
+          "claim_eligible": true,
+          "source_summary": "native_performance/yolo26m__deepx_to_trt__b003__orin_nx_deepx_m1_01__final20261008/summary.json",
+          "source_summary_sha256": "0104e386368ab3bf71d1e4a29b5ed1dd886e68cf98499fcc943bcbd84bd5f432",
+          "existing_chain_count": 0,
+          "task_stop": "",
+          "source_stop": "",
+          "parent_prepared": false,
+          "live_runtime_admission": "NOT_RUN; existing normal prepare performs actual admission",
+          "measurement_authorization": "NOT_GRANTED_IN_THIS_BLOCK"
+        },
+        {
+          "identity": [
+            "deepx_to_trt",
+            "yolo26m",
+            "b038",
+            "orin_nx_deepx_m1_01"
+          ],
+          "metadata_status": "PASS",
+          "quality_eligible": true,
+          "claim_eligible": true,
+          "source_summary": "native_performance/yolo26m__deepx_to_trt__b038__orin_nx_deepx_m1_01__final20261008/summary.json",
+          "source_summary_sha256": "5a93fe2fcbd7ffe5e3076728c4c586e3244d89edbb13a107e3702e039663fd01",
+          "existing_chain_count": 0,
+          "task_stop": "",
+          "source_stop": "",
+          "parent_prepared": false,
+          "live_runtime_admission": "NOT_RUN; existing normal prepare performs actual admission",
+          "measurement_authorization": "NOT_GRANTED_IN_THIS_BLOCK"
+        },
+        {
+          "identity": [
+            "deepx_to_trt",
+            "yolo26m",
+            "b043",
+            "orin_nx_deepx_m1_01"
+          ],
+          "metadata_status": "PASS",
+          "quality_eligible": true,
+          "claim_eligible": true,
+          "source_summary": "native_performance/yolo26m__deepx_to_trt__b043__orin_nx_deepx_m1_01__final20261008/summary.json",
+          "source_summary_sha256": "ade657f6900e0a9e0a6f6aad20c16a1a26f9607801d9b29414d9b13ad55dbe92",
+          "existing_chain_count": 0,
+          "task_stop": "",
+          "source_stop": "",
+          "parent_prepared": false,
+          "live_runtime_admission": "NOT_RUN; existing normal prepare performs actual admission",
+          "measurement_authorization": "NOT_GRANTED_IN_THIS_BLOCK"
+        },
+        {
+          "identity": [
+            "deepx_to_trt",
+            "yolo26s",
+            "b003",
+            "orin_nx_deepx_m1_01"
+          ],
+          "metadata_status": "PASS",
+          "quality_eligible": true,
+          "claim_eligible": true,
+          "source_summary": "native_performance/yolo26s__deepx_to_trt__b003__orin_nx_deepx_m1_01__final20261008/summary.json",
+          "source_summary_sha256": "04fc91a31dd630af5a64ee7bcd3bdbbbaed16f31d22c2f73fd83896195098b34",
+          "existing_chain_count": 0,
+          "task_stop": "",
+          "source_stop": "",
+          "parent_prepared": false,
+          "live_runtime_admission": "NOT_RUN; existing normal prepare performs actual admission",
+          "measurement_authorization": "NOT_GRANTED_IN_THIS_BLOCK"
+        },
+        {
+          "identity": [
+            "deepx_to_trt",
+            "yolo26s",
+            "b021",
+            "orin_nx_deepx_m1_01"
+          ],
+          "metadata_status": "PASS",
+          "quality_eligible": true,
+          "claim_eligible": true,
+          "source_summary": "native_performance/yolo26s__deepx_to_trt__b021__orin_nx_deepx_m1_01__final20261008/summary.json",
+          "source_summary_sha256": "a8a79a91c681e129c14f05a185be8791bf2b565f0cb20814cda3452e26abb029",
+          "existing_chain_count": 0,
+          "task_stop": "",
+          "source_stop": "",
+          "parent_prepared": false,
+          "live_runtime_admission": "NOT_RUN; existing normal prepare performs actual admission",
+          "measurement_authorization": "NOT_GRANTED_IN_THIS_BLOCK"
+        },
+        {
+          "identity": [
+            "deepx_to_trt",
+            "yolo26s",
+            "b038",
+            "orin_nx_deepx_m1_01"
+          ],
+          "metadata_status": "PASS",
+          "quality_eligible": true,
+          "claim_eligible": true,
+          "source_summary": "native_performance/yolo26s__deepx_to_trt__b038__orin_nx_deepx_m1_01__final20261008/summary.json",
+          "source_summary_sha256": "fc54533b41921d4db637fb866bead18cd3e3b91d62f1e682b00aa666ce9d64ce",
+          "existing_chain_count": 0,
+          "task_stop": "",
+          "source_stop": "",
+          "parent_prepared": false,
+          "live_runtime_admission": "NOT_RUN; existing normal prepare performs actual admission",
+          "measurement_authorization": "NOT_GRANTED_IN_THIS_BLOCK"
+        },
+        {
+          "identity": [
+            "native_full_tensorrt",
+            "mobilenet_v3_large",
+            "full",
+            "orin_nx_deepx_m1_01"
+          ],
+          "metadata_status": "PASS",
+          "quality_eligible": true,
+          "claim_eligible": true,
+          "source_summary": "native_performance/mobilenet_v3_large__orin_nx_deepx_m1_01__native_full_tensorrt__full_classification_dispatch__final20261008/summary.json",
+          "source_summary_sha256": "181bfcbb4d3e693c47c73a8b62093076137ce8117797d4a45c3ad32a2d6e33c5",
+          "existing_chain_count": 0,
+          "task_stop": "",
+          "source_stop": "",
+          "parent_prepared": false,
+          "live_runtime_admission": "NOT_RUN; existing normal prepare performs actual admission",
+          "measurement_authorization": "NOT_GRANTED_IN_THIS_BLOCK"
+        },
+        {
+          "identity": [
+            "native_full_tensorrt",
+            "regnet_x_1_6gf",
+            "full",
+            "orin_nx_deepx_m1_01"
+          ],
+          "metadata_status": "PASS",
+          "quality_eligible": true,
+          "claim_eligible": true,
+          "source_summary": "native_performance/regnet_x_1_6gf__orin_nx_deepx_m1_01__native_full_tensorrt__full_classification_dispatch__final20261008/summary.json",
+          "source_summary_sha256": "a58c7a6acaf6a7da26ab06fe0ed8ae760b13715419688742559ee1f140c6333b",
+          "existing_chain_count": 0,
+          "task_stop": "",
+          "source_stop": "",
+          "parent_prepared": false,
+          "live_runtime_admission": "NOT_RUN; existing normal prepare performs actual admission",
+          "measurement_authorization": "NOT_GRANTED_IN_THIS_BLOCK"
+        },
+        {
+          "identity": [
+            "native_full_tensorrt",
+            "resnet50",
+            "full",
+            "orin_nx_deepx_m1_01"
+          ],
+          "metadata_status": "PASS",
+          "quality_eligible": true,
+          "claim_eligible": true,
+          "source_summary": "native_performance/resnet50__orin_nx_deepx_m1_01__native_full_tensorrt__full_classification_dispatch__final20261008/summary.json",
+          "source_summary_sha256": "3433a082a504a0a29202eb4a4d945e682ddd3dee4c5ba619be5758467cff5f94",
+          "existing_chain_count": 0,
+          "task_stop": "",
+          "source_stop": "",
+          "parent_prepared": false,
+          "live_runtime_admission": "NOT_RUN; existing normal prepare performs actual admission",
+          "measurement_authorization": "NOT_GRANTED_IN_THIS_BLOCK"
+        },
+        {
+          "identity": [
+            "native_full_tensorrt",
+            "yolo11l",
+            "full",
+            "orin_nx_deepx_m1_01"
+          ],
+          "metadata_status": "PASS",
+          "quality_eligible": true,
+          "claim_eligible": true,
+          "source_summary": "native_performance/yolo11l__orin_nx_deepx_m1_01__native_full_tensorrt__full__final20261008/summary.json",
+          "source_summary_sha256": "1807c90d227d2cae12128e5b8f4d6673be47f817a68e8a645f74634ed52fc117",
+          "existing_chain_count": 0,
+          "task_stop": "",
+          "source_stop": "",
+          "parent_prepared": false,
+          "live_runtime_admission": "NOT_RUN; existing normal prepare performs actual admission",
+          "measurement_authorization": "NOT_GRANTED_IN_THIS_BLOCK"
+        },
+        {
+          "identity": [
+            "native_full_deepx",
+            "yolo11l",
+            "full",
+            "orin_nx_deepx_m1_01"
+          ],
+          "metadata_status": "PASS",
+          "quality_eligible": true,
+          "claim_eligible": true,
+          "source_summary": "native_performance/yolo11l__orin_nx_deepx_m1_01__native_full_deepx__full__final20261008_staged_inputfiles/summary.json",
+          "source_summary_sha256": "c895aa038b38a8b31831fca91310f5efc4f13638dfe356ca766b90b4d5a3baed",
+          "existing_chain_count": 0,
+          "task_stop": "",
+          "source_stop": "",
+          "parent_prepared": false,
+          "live_runtime_admission": "NOT_RUN; existing normal prepare performs actual admission",
+          "measurement_authorization": "NOT_GRANTED_IN_THIS_BLOCK"
+        }
+      ],
+      "generic_groups": {
+        "priority_yolov7": 3,
+        "followup_detectors9": 9,
+        "followup_mobilenet17": 17,
+        "followup_regnet20": 20,
+        "followup_resnet19": 19
+      },
+      "all_68_generic_parents_not_prepared": true,
+      "assembly_receipt": "operations/energy_assembly/final_dx_energy14_20261008/final_current_inputs/ASSEMBLY_RECEIPT.json",
+      "normal_prepare_and_run_argv_remain_original": true,
+      "actual_slot_handoff_placeholder_is_not_authorization": true,
+      "h10_prior_grant_consumed": true,
+      "h10_unknown_old_source_close_preserved": true,
+      "h8_zero_start_task_preserved": true,
+      "next_global_quiet_check_required_at_actual_resume": true
+    },
+    "concrete_commands": "operations/energy_assembly/final_dx_energy14_20261008/FINAL_ENERGY_COMMAND_SELECTION_20261008.json",
+    "original_scope_decisions_unchanged": true,
+    "no_new_measurements_authorized": true,
+    "no_blanket_delta_authorization": true,
+    "additional_repeat_scope_note": "Native yolov7_paper b009 retains accepted three logical slots on all setups; H10 primary source-STOP category does not clear this additional old scope block."
+  },
+  "current_constraints": {
+    "max_subagents": 1,
+    "subagent_role": "Independent joint diff review only; completed",
+    "new_hardware_energy_n5000_measurements": false,
+    "builds_deployments_runtimefreeze": false,
+    "small_targeted_metadata_transfers": true,
+    "large_archive_transfers": false,
+    "H10_new_stop_grant": false
+  },
+  "completed_actions_this_block": [
+    "14 semantic plan contradictions corrected from own regime Current;204 Generic source bindings corrected.",
+    "26 focused regressions and overlapping Generic-STOP probe PASS; independent reviewer PASS.",
+    "One ordinary16plan204case GenericCurrent/Cross export running; no measurements.",
+    "Energy remainder categorized in existing plan;14 next candidates metadata-PASS, no parents prepared.",
+    "One full normal Current/Cross export PASS204technical/148quality/148claims; all192oldpairs and204numericcohorts unchanged."
+  ],
+  "metadata_review_package_scope": "Current/plan/source/diff/tests/energy/archive receipts only, existing private-review-inputs-v1 schema. Full original cohort reports, large normal quality aggregates and raw payloads explicitly external; no full raw-data closure claim.",
+  "remaining_generic_comparison_exclusions_count": 0,
+  "paper_current_status": "PASS_CURRENT_DERIVATION_AND_MAIN_SUPPLEMENT_BUILD; campaign in_progress",
+  "paper_receipt": "revision3:/operations/rev3_three_points_20261009/PAPER_RECEIPT.json",
+  "normal_quality_points": 180,
+  "normal_claim_points": 169,
+  "remaining_native_performance_exclusions": 8,
+  "remaining_generic_quality_exclusions": 56,
+  "archive_metadata_status": "PASS selected current/source/plan/receipt metadata archived; normal index target-byte verified",
+  "archive_current_pointer": "CURRENT_ARCHIVE_PROGRESS_SNAPSHOT.json",
+  "archive_latest_metadata_group_receipt": "archive_receipts/_metadata__current_metadata_20261009.json",
+  "archive_index_receipt": "archive_receipts/_snapshots__checkpoint_20261009T083546Z.json",
+  "archive_metadata_scope": "20.7MB selected current/source metadata; all original bulk payloads reused, large normal quality aggregates remain local/external. No complete raw-data closure claim."
 }

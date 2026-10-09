@@ -1,0 +1,66 @@
+{
+  "status": "COMPLETE_NORMAL_CURRENT_QUALITY_JOIN",
+  "directory": "revision3:/quality_transfer/final_native_179_20261008/finalized_179_origin_verified",
+  "counts": {
+    "split_report_rows": 148,
+    "full_report_rows": 31,
+    "all_report_rows": 179,
+    "all_report_rows_exact_quality_evidence_joined": 179,
+    "normal_quality_claim_verified_rows": 177,
+    "negative_report_quality_claim_rows": 2,
+    "normal_comparative_performance_claim_rows": 169,
+    "separate_original_H10_reuse_quality_rows": 3,
+    "all_current_positive_quality_rows_including_separate_H10reuse": 180,
+    "new_BN6_split_rows": 12,
+    "new_Hailo_rawFull_rows": 6,
+    "new_Hailo_rawFull_quality_claim_verified": 4,
+    "Y26s_rawFull_negative_rows_preserved": 2,
+    "historical_DX_original_single_observation_contexts": 3
+  },
+  "normal_comparative_performance_claim_eligible": 169,
+  "files": [
+    {
+      "role": "native_producer_summary.json",
+      "path": "revision3:/quality_transfer/final_native_179_20261008/finalized_179_origin_verified/native_producer_summary.json",
+      "sha256": "083ac8db0758f19d247e8dca1f5693c4138b4227d789281095d5e9f744a50519"
+    },
+    {
+      "role": "native_producer_validation_summary.json",
+      "path": "revision3:/quality_transfer/final_native_179_20261008/finalized_179_origin_verified/native_producer_validation_summary.json",
+      "sha256": "12bf2227e6ec762a6a3daad5a599106050d4b8341f4548ef5f527a988b10851f"
+    },
+    {
+      "role": "STATUS.json",
+      "path": "revision3:/quality_transfer/final_native_179_20261008/finalized_179_origin_verified/STATUS.json",
+      "sha256": "5092a2c894b6b548f04f640f6df3360b598c5d37cf1d08888ecf6d6354f28f23"
+    },
+    {
+      "role": "full_native_producer_summary.json",
+      "path": "revision3:/quality_transfer/final_native_179_20261008/finalized_179_origin_verified/full_native_producer_summary.json",
+      "sha256": "98b0bb7a301deb7a5e302e08c4757b24fd981f104afa62f5c9e3905b6e142afe"
+    },
+    {
+      "role": "full_native_producer_validation_summary.json",
+      "path": "revision3:/quality_transfer/final_native_179_20261008/finalized_179_origin_verified/full_native_producer_validation_summary.json",
+      "sha256": "6ec06343e901a6a4722b16bc4330b015a6a89eeacdc72132853917e1b6d2992c"
+    },
+    {
+      "role": "full_STATUS.json",
+      "path": "revision3:/quality_transfer/final_native_179_20261008/finalized_179_origin_verified/full_STATUS.json",
+      "sha256": "abaca20f7cda9ca50a7e783c8f999dba868b4a6c5df66d47d085aaceaff710f5"
+    }
+  ],
+  "composition_receipt": "revision3:/quality_transfer/final_native_179_20261008/finalized_179_origin_verified/COMPOSITION_RECEIPT.json",
+  "composition_receipt_sha256": "5266d8682fc44d978a1cee749bab5edc3ced9cd085b5053698a8d41568052a76",
+  "independent_composition_review_pending": false,
+  "Current_pointer_modified": true,
+  "negative_Y26s_quality_contexts_preserved": true,
+  "separate_original_H10_reuse_contexts_preserved": true,
+  "normal_retained_claim_promotions_proof": "revision3:/quality_transfer/final_native_179_20261008/finalized_179_origin_verified/NORMAL_GATE_PROMOTION_PROOF.json",
+  "normal_retained_claim_promotions_proof_sha256": "391edb2d10057d2ed006bb4ac66b8c72facf255d2cb46ce1b926567598a7e57f",
+  "independent_review": "revision3:/quality_transfer/final_native_179_20261008/finalized_179_origin_verified/INDEPENDENT_COMPOSITION_REVIEW.json",
+  "independent_review_sha256": "2db959f9e30b7f85142c841f8a2b818f571c8156a57c12ad42afe799665c92d2",
+  "candidate": "revision3:/quality_transfer/final_native_179_20261008/CANDIDATE_FINALIZED_179.json",
+  "candidate_sha256": "08b5d5c4719f9e2c0ba00750576496dfc95079a5cff855f0d82efda04196c221",
+  "integrated_at": "2026-10-08T18:11:27.733130+00:00"
+}

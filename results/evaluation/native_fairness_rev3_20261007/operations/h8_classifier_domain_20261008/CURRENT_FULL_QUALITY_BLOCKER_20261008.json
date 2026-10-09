@@ -1,0 +1,87 @@
+{
+  "schema": "revision3/h8-classifier-current-quality-review",
+  "at_utc": "2026-10-08T13:10:23.883657+00:00",
+  "read_only_audit_status": "PASS",
+  "current_quality_claim_status": "RESOLVED_NORMAL_CLASSIFIER_QUALITY_ADMISSION",
+  "scope": "Three corrected H8 Vendor Full classifiers only; performance observations and original N5000 quality are independent axes.",
+  "worktree_commit": "ec68097d0ca161a75380da158a257ad495296d90",
+  "source_changed": true,
+  "hardware_started_by_review": false,
+  "new_cpu_inference": false,
+  "new_dataset_quality_inference": false,
+  "manual_claim_flags_set": false,
+  "files_deleted_or_moved": false,
+  "rows": [
+    {
+      "model": "mobilenet_v3_large",
+      "normal_quality_claim_verified": true,
+      "accuracy_class": "accuracy_loss",
+      "n5000_candidate": 0.6062,
+      "n5000_reference": 0.737,
+      "original_task_quality_data_equal": true,
+      "canonical_cpu_feed_sha256": "a33513acfa98003cdce41cf6bb06df01af285b4d112c6820454610e7b97c588e",
+      "sealed_result": "revision3:/operations/energy_assembly/h8_classifier_20261008/full/mobilenet_v3_large__orin_nx_hailo8_01__native_full_hailo8__full_inputdomain__final20261008/sealed_result.json",
+      "sealed_result_sha256": "44df41a166b9a24177fd23699e210de90950e35091492ab8851fe28454a2afa5",
+      "cleanup": "revision3:/operations/energy_assembly/h8_classifier_20261008/full/mobilenet_v3_large__orin_nx_hailo8_01__native_full_hailo8__full_inputdomain__final20261008/device_seal/full_energy_metadata_seal-20261008T141902-0dd257/cleanup.json",
+      "cleanup_sha256": "6c079f276ac8384f869410f0194cbe806e7efe377099209e997a1c687be7223b"
+    },
+    {
+      "model": "regnet_x_1_6gf",
+      "normal_quality_claim_verified": true,
+      "accuracy_class": "reference_close",
+      "n5000_candidate": 0.7876,
+      "n5000_reference": 0.7894,
+      "original_task_quality_data_equal": true,
+      "canonical_cpu_feed_sha256": "a33513acfa98003cdce41cf6bb06df01af285b4d112c6820454610e7b97c588e",
+      "sealed_result": "revision3:/operations/energy_assembly/h8_classifier_20261008/full/regnet_x_1_6gf__orin_nx_hailo8_01__native_full_hailo8__full_inputdomain__final20261008/sealed_result.json",
+      "sealed_result_sha256": "0577b6cbca97166d84030507875693b1264ffc192befeca19785469f35975b05",
+      "cleanup": "revision3:/operations/energy_assembly/h8_classifier_20261008/full/regnet_x_1_6gf__orin_nx_hailo8_01__native_full_hailo8__full_inputdomain__final20261008/device_seal/full_energy_metadata_seal-20261008T142003-1fcf5c/cleanup.json",
+      "cleanup_sha256": "be3b9684515029e78b6e26124e277f8501dead105053ec8288c0ecb5c23f7095"
+    },
+    {
+      "model": "resnet50",
+      "normal_quality_claim_verified": true,
+      "accuracy_class": "reference_close",
+      "n5000_candidate": 0.8032,
+      "n5000_reference": 0.8044,
+      "original_task_quality_data_equal": true,
+      "canonical_cpu_feed_sha256": "a33513acfa98003cdce41cf6bb06df01af285b4d112c6820454610e7b97c588e",
+      "sealed_result": "revision3:/operations/energy_assembly/h8_classifier_20261008/full/resnet50__orin_nx_hailo8_01__native_full_hailo8__full_inputdomain__final20261008/sealed_result.json",
+      "sealed_result_sha256": "c2578bfe33cbcb379741b567797dde60f99d6c1b5433a7b5a73db221f113f621",
+      "cleanup": "revision3:/operations/energy_assembly/h8_classifier_20261008/full/resnet50__orin_nx_hailo8_01__native_full_hailo8__full_inputdomain__final20261008/device_seal/full_energy_metadata_seal-20261008T142052-d6defe/cleanup.json",
+      "cleanup_sha256": "c271c909648533ca3f673a0aa28be61ef07ddcc39fffffb938fcb0849a3cde3f"
+    }
+  ],
+  "blockers": [],
+  "existing_normal_consumers": {
+    "validator": "source:worktree/scripts/native_producer_validate_visualize.py",
+    "validator_cli_template": "--summary <regular current Full producer summary> --out-dir <external reports/native_validation> --eval-root <correct original campaign role> --existing-outputs-only --central-quality-summary <existing central quality summary> --quality-gate-json <existing N5000 policy>",
+    "final_report": "source:worktree/scripts/native_producer_final_report.py",
+    "final_report_cli_template": "--root <regular current assembly> --quality-summary <schema10 validated summary>",
+    "not_executed": false,
+    "note": "Existing normal tensor/classification validators, exact central N5000 binding, v10 terminal gates and normal final-report joins executed without CPU/N5000 inference. One-image CPU reference remains separate from dataset outcomes."
+  },
+  "resume": "CurrentQuality40 is integrated by Root: the three corrected H8Vendor Fulls and three actually completed same-H8 TRT counterparts have regular exact v10 Quality admission and normal same-setup comparative performance eligibility. Original Mobile accuracy_loss remains unchanged under the existing technical_fail_only reporting policy. DX TRT3 remain legitimately unpaired until normal VendorDX reuse contexts are joined. Existing original N5000 and stored CPU references retained without inference/building. No manual flags, endpoint tolerance or cross-setup scope override. Runtime241 and STOP/recovery/capture budgets unchanged. Product Current/Status snapshots update at the next Root group checkpoint; final paper/public build still pending.",
+  "paper_current_read_only_check": {
+    "source": "revision3:/paper_private/MLSys_Split_Selection_20261005/analysis/current_view/reproduce.py",
+    "current_source": "revision3:/current_results/native_current.json",
+    "actual_models": [
+      "mobilenet_v3_large",
+      "regnet_x_1_6gf",
+      "resnet50"
+    ],
+    "observed_performance_status": "complete",
+    "observed_normal_quality_eligible": "Reviewed normal schema10 candidate admitted in CurrentQuality40; product Current checkpoint is Root-owned",
+    "existing_quality_binding_function_result": "Use final consistent Root Current snapshot for final paper generation; no final paper build yet",
+    "final_paper_build_executed": false,
+    "existing_validate_native_function_all_three_actual_rows": "PASS",
+    "current_performance_retained_while_current_quality_is_unavailable": false
+  },
+  "runtime_freeze_commit": "8346d43d526221bd9d138943122206b658d56cbf",
+  "runtime241_changed": false,
+  "resolved_normal_admission_receipt": "revision3:/operations/h8_classifier_domain_20261008/H8_FULL_NORMAL_QUALITY_ADMISSION_20261008.json",
+  "historical_blocker_receipt_preserved": "revision3:/plan_versions/finalisation_20261008/CURRENT_FULL_QUALITY_BLOCKER_before_normal_admission.json",
+  "source_change_scope": "Controller-only reference reader ec68097; Ops/quality-report adapters outside frozen241 runtime.",
+  "normal_comparison_receipt": "revision3:/quality_transfer/final_h8_trt_classifiers_20261008/finalized_40/COMPOSITION_RECEIPT.json",
+  "current_quality_pointer": "revision3:/quality_transfer/CURRENT_FINALIZED.json"
+}

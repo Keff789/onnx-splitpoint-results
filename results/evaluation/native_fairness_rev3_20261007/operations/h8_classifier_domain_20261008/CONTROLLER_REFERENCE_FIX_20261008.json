@@ -1,0 +1,416 @@
+{
+  "schema": "revision3/controller-h8-classification-reference-correction",
+  "at_utc": "2026-10-08T11:18:20.098316+00:00",
+  "status": "PASS_CONTROLLER_READER_ONLY_CURRENT_FULL_BINDINGS_STILL_PENDING",
+  "changed_sources": [
+    {
+      "path": "source:worktree/scripts/native_producer_validate_visualize.py",
+      "sha256": "38b331ea034d16b78eef2451d0a4c47b455a95619982716748cfb3b9e3d2bf38"
+    },
+    {
+      "path": "source:worktree/tests/test_final_h8_classifier_reference_feed.py",
+      "sha256": "e5e4f2e7b98632cb92df8151ca81a6c534a1d5d1078e89bfc56c600c8e634c82"
+    }
+  ],
+  "correction": "Existing H8 Full classification UINT8 scope requires strictly bound canonical RGB before CPU reference conversion. Actual HEF codes never interpreted as pixels; no heuristic dequantization. Existing runtime tensor SHA still verified, plus actual RGB SHA/bytes/shape and image/model/preprocessing/numeric mirrors. Missing combined encoding descriptors fail closed.",
+  "runtime_freeze": {
+    "existing_freeze": "revision3:/final_implementation_20261008/IMPLEMENTATION_FREEZE.json",
+    "base_commit": "8346d43d526221bd9d138943122206b658d56cbf",
+    "runtime_files": 241,
+    "worktree_and_snapshot_entries_checked": 482,
+    "mismatches": [],
+    "controller_validator_excluded_from_runtime241": true,
+    "new_runtime_freeze_created": false
+  },
+  "actual_saved_input_probes": [
+    {
+      "model": "mobilenet_v3_large",
+      "repeat": 1,
+      "manifest": "revision3:/native_performance/mobilenet_v3_large__orin_nx_hailo8_01__native_full_hailo8__full_inputdomain__final20261008/rep01/outputs/native_full_input_manifest.json",
+      "reference_projection": "revision3:/quality_transfer/classifier_reference_reuse/source_copies/mobilenet_v3_large__orin_nx_hailo8_01__native_full_hailo8/reference_projection.json",
+      "normal_feed_evidence": {
+        "status": "passed",
+        "reason": "",
+        "transformation_id": "bound_canonical_rgb_to_onnx_reference_v1",
+        "source_runtime_input_sha256": "68d5d8bda640a1965fe3572346e34bee50e3b4f08a2759fa3c94da7c7d55b5e0",
+        "source_shape": [
+          224,
+          224,
+          3
+        ],
+        "source_layout": "HWC",
+        "source_dtype": "uint8",
+        "target_shape": [
+          1,
+          3,
+          224,
+          224
+        ],
+        "target_layout": "NCHW",
+        "target_dtype": "float32",
+        "ort_model_scale": "imagenet",
+        "derived_reference_tensor_sha256": "a33513acfa98003cdce41cf6bb06df01af285b4d112c6820454610e7b97c588e",
+        "c_contiguous": true,
+        "canonical_rgb_sha256": "0bb145365e13b00450b4669f4d45c40745b6cecb933fe4b3f36b72e05ce30201",
+        "source_image_sha256": "6d825bff39b262d95c76d95df76f866ca6653aba7af516ea800aee126265be20",
+        "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9"
+      },
+      "canonical_cpu_feed_equal": true
+    },
+    {
+      "model": "mobilenet_v3_large",
+      "repeat": 2,
+      "manifest": "revision3:/native_performance/mobilenet_v3_large__orin_nx_hailo8_01__native_full_hailo8__full_inputdomain__final20261008/rep02/outputs/native_full_input_manifest.json",
+      "reference_projection": "revision3:/quality_transfer/classifier_reference_reuse/source_copies/mobilenet_v3_large__orin_nx_hailo8_01__native_full_hailo8/reference_projection.json",
+      "normal_feed_evidence": {
+        "status": "passed",
+        "reason": "",
+        "transformation_id": "bound_canonical_rgb_to_onnx_reference_v1",
+        "source_runtime_input_sha256": "68d5d8bda640a1965fe3572346e34bee50e3b4f08a2759fa3c94da7c7d55b5e0",
+        "source_shape": [
+          224,
+          224,
+          3
+        ],
+        "source_layout": "HWC",
+        "source_dtype": "uint8",
+        "target_shape": [
+          1,
+          3,
+          224,
+          224
+        ],
+        "target_layout": "NCHW",
+        "target_dtype": "float32",
+        "ort_model_scale": "imagenet",
+        "derived_reference_tensor_sha256": "a33513acfa98003cdce41cf6bb06df01af285b4d112c6820454610e7b97c588e",
+        "c_contiguous": true,
+        "canonical_rgb_sha256": "0bb145365e13b00450b4669f4d45c40745b6cecb933fe4b3f36b72e05ce30201",
+        "source_image_sha256": "6d825bff39b262d95c76d95df76f866ca6653aba7af516ea800aee126265be20",
+        "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9"
+      },
+      "canonical_cpu_feed_equal": true
+    },
+    {
+      "model": "mobilenet_v3_large",
+      "repeat": 3,
+      "manifest": "revision3:/native_performance/mobilenet_v3_large__orin_nx_hailo8_01__native_full_hailo8__full_inputdomain__final20261008/rep03/outputs/native_full_input_manifest.json",
+      "reference_projection": "revision3:/quality_transfer/classifier_reference_reuse/source_copies/mobilenet_v3_large__orin_nx_hailo8_01__native_full_hailo8/reference_projection.json",
+      "normal_feed_evidence": {
+        "status": "passed",
+        "reason": "",
+        "transformation_id": "bound_canonical_rgb_to_onnx_reference_v1",
+        "source_runtime_input_sha256": "68d5d8bda640a1965fe3572346e34bee50e3b4f08a2759fa3c94da7c7d55b5e0",
+        "source_shape": [
+          224,
+          224,
+          3
+        ],
+        "source_layout": "HWC",
+        "source_dtype": "uint8",
+        "target_shape": [
+          1,
+          3,
+          224,
+          224
+        ],
+        "target_layout": "NCHW",
+        "target_dtype": "float32",
+        "ort_model_scale": "imagenet",
+        "derived_reference_tensor_sha256": "a33513acfa98003cdce41cf6bb06df01af285b4d112c6820454610e7b97c588e",
+        "c_contiguous": true,
+        "canonical_rgb_sha256": "0bb145365e13b00450b4669f4d45c40745b6cecb933fe4b3f36b72e05ce30201",
+        "source_image_sha256": "6d825bff39b262d95c76d95df76f866ca6653aba7af516ea800aee126265be20",
+        "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9"
+      },
+      "canonical_cpu_feed_equal": true
+    },
+    {
+      "model": "regnet_x_1_6gf",
+      "repeat": 1,
+      "manifest": "revision3:/native_performance/regnet_x_1_6gf__orin_nx_hailo8_01__native_full_hailo8__full_inputdomain__final20261008/rep01/outputs/native_full_input_manifest.json",
+      "reference_projection": "revision3:/quality_transfer/classifier_reference_reuse/source_copies/regnet_x_1_6gf__orin_nx_hailo8_01__native_full_hailo8/reference_projection.json",
+      "normal_feed_evidence": {
+        "status": "passed",
+        "reason": "",
+        "transformation_id": "bound_canonical_rgb_to_onnx_reference_v1",
+        "source_runtime_input_sha256": "68d5d8bda640a1965fe3572346e34bee50e3b4f08a2759fa3c94da7c7d55b5e0",
+        "source_shape": [
+          224,
+          224,
+          3
+        ],
+        "source_layout": "HWC",
+        "source_dtype": "uint8",
+        "target_shape": [
+          1,
+          3,
+          224,
+          224
+        ],
+        "target_layout": "NCHW",
+        "target_dtype": "float32",
+        "ort_model_scale": "imagenet",
+        "derived_reference_tensor_sha256": "a33513acfa98003cdce41cf6bb06df01af285b4d112c6820454610e7b97c588e",
+        "c_contiguous": true,
+        "canonical_rgb_sha256": "0bb145365e13b00450b4669f4d45c40745b6cecb933fe4b3f36b72e05ce30201",
+        "source_image_sha256": "6d825bff39b262d95c76d95df76f866ca6653aba7af516ea800aee126265be20",
+        "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9"
+      },
+      "canonical_cpu_feed_equal": true
+    },
+    {
+      "model": "regnet_x_1_6gf",
+      "repeat": 2,
+      "manifest": "revision3:/native_performance/regnet_x_1_6gf__orin_nx_hailo8_01__native_full_hailo8__full_inputdomain__final20261008/rep02/outputs/native_full_input_manifest.json",
+      "reference_projection": "revision3:/quality_transfer/classifier_reference_reuse/source_copies/regnet_x_1_6gf__orin_nx_hailo8_01__native_full_hailo8/reference_projection.json",
+      "normal_feed_evidence": {
+        "status": "passed",
+        "reason": "",
+        "transformation_id": "bound_canonical_rgb_to_onnx_reference_v1",
+        "source_runtime_input_sha256": "68d5d8bda640a1965fe3572346e34bee50e3b4f08a2759fa3c94da7c7d55b5e0",
+        "source_shape": [
+          224,
+          224,
+          3
+        ],
+        "source_layout": "HWC",
+        "source_dtype": "uint8",
+        "target_shape": [
+          1,
+          3,
+          224,
+          224
+        ],
+        "target_layout": "NCHW",
+        "target_dtype": "float32",
+        "ort_model_scale": "imagenet",
+        "derived_reference_tensor_sha256": "a33513acfa98003cdce41cf6bb06df01af285b4d112c6820454610e7b97c588e",
+        "c_contiguous": true,
+        "canonical_rgb_sha256": "0bb145365e13b00450b4669f4d45c40745b6cecb933fe4b3f36b72e05ce30201",
+        "source_image_sha256": "6d825bff39b262d95c76d95df76f866ca6653aba7af516ea800aee126265be20",
+        "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9"
+      },
+      "canonical_cpu_feed_equal": true
+    },
+    {
+      "model": "regnet_x_1_6gf",
+      "repeat": 3,
+      "manifest": "revision3:/native_performance/regnet_x_1_6gf__orin_nx_hailo8_01__native_full_hailo8__full_inputdomain__final20261008/rep03/outputs/native_full_input_manifest.json",
+      "reference_projection": "revision3:/quality_transfer/classifier_reference_reuse/source_copies/regnet_x_1_6gf__orin_nx_hailo8_01__native_full_hailo8/reference_projection.json",
+      "normal_feed_evidence": {
+        "status": "passed",
+        "reason": "",
+        "transformation_id": "bound_canonical_rgb_to_onnx_reference_v1",
+        "source_runtime_input_sha256": "68d5d8bda640a1965fe3572346e34bee50e3b4f08a2759fa3c94da7c7d55b5e0",
+        "source_shape": [
+          224,
+          224,
+          3
+        ],
+        "source_layout": "HWC",
+        "source_dtype": "uint8",
+        "target_shape": [
+          1,
+          3,
+          224,
+          224
+        ],
+        "target_layout": "NCHW",
+        "target_dtype": "float32",
+        "ort_model_scale": "imagenet",
+        "derived_reference_tensor_sha256": "a33513acfa98003cdce41cf6bb06df01af285b4d112c6820454610e7b97c588e",
+        "c_contiguous": true,
+        "canonical_rgb_sha256": "0bb145365e13b00450b4669f4d45c40745b6cecb933fe4b3f36b72e05ce30201",
+        "source_image_sha256": "6d825bff39b262d95c76d95df76f866ca6653aba7af516ea800aee126265be20",
+        "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9"
+      },
+      "canonical_cpu_feed_equal": true
+    },
+    {
+      "model": "resnet50",
+      "repeat": 1,
+      "manifest": "revision3:/native_performance/resnet50__orin_nx_hailo8_01__native_full_hailo8__full_inputdomain__final20261008/rep01/outputs/native_full_input_manifest.json",
+      "reference_projection": "revision3:/quality_transfer/classifier_reference_reuse/source_copies/resnet50__orin_nx_hailo8_01__native_full_hailo8/reference_projection.json",
+      "normal_feed_evidence": {
+        "status": "passed",
+        "reason": "",
+        "transformation_id": "bound_canonical_rgb_to_onnx_reference_v1",
+        "source_runtime_input_sha256": "68d5d8bda640a1965fe3572346e34bee50e3b4f08a2759fa3c94da7c7d55b5e0",
+        "source_shape": [
+          224,
+          224,
+          3
+        ],
+        "source_layout": "HWC",
+        "source_dtype": "uint8",
+        "target_shape": [
+          1,
+          3,
+          224,
+          224
+        ],
+        "target_layout": "NCHW",
+        "target_dtype": "float32",
+        "ort_model_scale": "imagenet",
+        "derived_reference_tensor_sha256": "a33513acfa98003cdce41cf6bb06df01af285b4d112c6820454610e7b97c588e",
+        "c_contiguous": true,
+        "canonical_rgb_sha256": "0bb145365e13b00450b4669f4d45c40745b6cecb933fe4b3f36b72e05ce30201",
+        "source_image_sha256": "6d825bff39b262d95c76d95df76f866ca6653aba7af516ea800aee126265be20",
+        "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9"
+      },
+      "canonical_cpu_feed_equal": true
+    },
+    {
+      "model": "resnet50",
+      "repeat": 2,
+      "manifest": "revision3:/native_performance/resnet50__orin_nx_hailo8_01__native_full_hailo8__full_inputdomain__final20261008/rep02/outputs/native_full_input_manifest.json",
+      "reference_projection": "revision3:/quality_transfer/classifier_reference_reuse/source_copies/resnet50__orin_nx_hailo8_01__native_full_hailo8/reference_projection.json",
+      "normal_feed_evidence": {
+        "status": "passed",
+        "reason": "",
+        "transformation_id": "bound_canonical_rgb_to_onnx_reference_v1",
+        "source_runtime_input_sha256": "68d5d8bda640a1965fe3572346e34bee50e3b4f08a2759fa3c94da7c7d55b5e0",
+        "source_shape": [
+          224,
+          224,
+          3
+        ],
+        "source_layout": "HWC",
+        "source_dtype": "uint8",
+        "target_shape": [
+          1,
+          3,
+          224,
+          224
+        ],
+        "target_layout": "NCHW",
+        "target_dtype": "float32",
+        "ort_model_scale": "imagenet",
+        "derived_reference_tensor_sha256": "a33513acfa98003cdce41cf6bb06df01af285b4d112c6820454610e7b97c588e",
+        "c_contiguous": true,
+        "canonical_rgb_sha256": "0bb145365e13b00450b4669f4d45c40745b6cecb933fe4b3f36b72e05ce30201",
+        "source_image_sha256": "6d825bff39b262d95c76d95df76f866ca6653aba7af516ea800aee126265be20",
+        "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9"
+      },
+      "canonical_cpu_feed_equal": true
+    },
+    {
+      "model": "resnet50",
+      "repeat": 3,
+      "manifest": "revision3:/native_performance/resnet50__orin_nx_hailo8_01__native_full_hailo8__full_inputdomain__final20261008/rep03/outputs/native_full_input_manifest.json",
+      "reference_projection": "revision3:/quality_transfer/classifier_reference_reuse/source_copies/resnet50__orin_nx_hailo8_01__native_full_hailo8/reference_projection.json",
+      "normal_feed_evidence": {
+        "status": "passed",
+        "reason": "",
+        "transformation_id": "bound_canonical_rgb_to_onnx_reference_v1",
+        "source_runtime_input_sha256": "68d5d8bda640a1965fe3572346e34bee50e3b4f08a2759fa3c94da7c7d55b5e0",
+        "source_shape": [
+          224,
+          224,
+          3
+        ],
+        "source_layout": "HWC",
+        "source_dtype": "uint8",
+        "target_shape": [
+          1,
+          3,
+          224,
+          224
+        ],
+        "target_layout": "NCHW",
+        "target_dtype": "float32",
+        "ort_model_scale": "imagenet",
+        "derived_reference_tensor_sha256": "a33513acfa98003cdce41cf6bb06df01af285b4d112c6820454610e7b97c588e",
+        "c_contiguous": true,
+        "canonical_rgb_sha256": "0bb145365e13b00450b4669f4d45c40745b6cecb933fe4b3f36b72e05ce30201",
+        "source_image_sha256": "6d825bff39b262d95c76d95df76f866ca6653aba7af516ea800aee126265be20",
+        "preprocessing_contract_sha256": "ea28cf5ac35bd4c9a3321ac97fd559f32fd7a661dc4a93c324fe3ffc54188fa9"
+      },
+      "canonical_cpu_feed_equal": true
+    }
+  ],
+  "test_runs": [
+    {
+      "path": "revision3:/operations/h8_classifier_domain_20261008/reference_feed_tests_20261008/controller_reference.xml",
+      "sha256": "d7009195d6963799abd8a80a9b99ff63d40c53a43ec962bc2dd89be1d3fe261e",
+      "counts": {
+        "name": "pytest",
+        "errors": "45",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "46",
+        "time": "1.295",
+        "timestamp": "2026-10-08T13:10:38.538285+02:00",
+        "hostname": "Smartmirror2"
+      }
+    },
+    {
+      "path": "revision3:/operations/h8_classifier_domain_20261008/reference_feed_tests_20261008/controller_reference_corrected.xml",
+      "sha256": "ee11b8860e93705dfe32023231d1d9624a812f490ee6d68b7cc43bbafa583fd3",
+      "counts": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "46",
+        "time": "0.710",
+        "timestamp": "2026-10-08T13:10:53.010407+02:00",
+        "hostname": "Smartmirror2"
+      }
+    },
+    {
+      "path": "revision3:/operations/h8_classifier_domain_20261008/reference_feed_tests_20261008/controller_reference_review_corrected.xml",
+      "sha256": "d16d343efccdaba4dbbafa59cd5f218c9e056f8af870393004bd60ddfc843c6a",
+      "counts": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "47",
+        "time": "0.714",
+        "timestamp": "2026-10-08T13:14:26.091918+02:00",
+        "hostname": "Smartmirror2"
+      }
+    },
+    {
+      "path": "revision3:/operations/h8_classifier_domain_20261008/reference_feed_tests_20261008/controller_reference_scope_corrected.xml",
+      "sha256": "6ab71e7d6faeb16d9f7193c84eefed1f19fff16c3da3871b1c90c934012ef674",
+      "counts": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "48",
+        "time": "0.778",
+        "timestamp": "2026-10-08T13:16:43.497137+02:00",
+        "hostname": "Smartmirror2"
+      }
+    }
+  ],
+  "latest_tests": "48PASS in0.78s;38 new regression cases plus10 existing Rank3 cases",
+  "test_overlap_note": "Latest48 replaces overlapping47 and46 suites; never sum. First fixture setup used wrong existing helper keyword and is preserved separately, not a product regression.",
+  "independent_review": {
+    "reviewer": "/root/audit_energy_resume",
+    "status": "PASS",
+    "method": "Read-only source/XML review and actual MobileNetrep1 normal/missing-domain probes; suite not rerun",
+    "findings": "Two combined missing-field fallbacks were reproduced and fixed before final review. Final established H8Full/classification/UINT8 dispatch rejects both; actual canonical RGB CPU feed a33513ac matches. Model/input/image/contract mirrors and separate RGB/quant binding reviewed. No source rebase or other Rank3 change."
+  },
+  "hardware_starts": 0,
+  "new_cpu_or_dataset_inference": 0,
+  "normal_current_full_quality_admission": false,
+  "pending": "Existing Full assembly/command/physical endpoint/quality binding for three H8 classifiers; MobileNet original accuracy_loss retained.",
+  "source_versioning": {
+    "commit": "ec68097d0ca161a75380da158a257ad495296d90",
+    "runtime_freeze_commit": "8346d43d526221bd9d138943122206b658d56cbf",
+    "changed_files": [
+      "docs/ARBEITSSTAND.md",
+      "scripts/native_producer_validate_visualize.py",
+      "tests/test_final_h8_classifier_reference_feed.py"
+    ],
+    "status": "",
+    "patch": "revision3:/operations/h8_classifier_domain_20261008/controller_reference_source_changes.patch",
+    "patch_sha256": "ef49d1719433cdc415efb12f2adce8e9e7752eceb69d915ee6c72b340bbf03a8",
+    "runtime_241_changed": false
+  }
+}

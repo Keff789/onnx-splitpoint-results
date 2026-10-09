@@ -1,87 +1,81 @@
-# Native/Generic fairness — Revision 3, 7 October 2026
+# Native/Generic fairness — Revision 3 Current snapshot
 
-This is an **incomplete execution snapshot**. It records 15 newly measured
-YOLOv7 Native points, nine verified classifier Full performance reuses,
-nine measured Generic pairs, and three normally admitted current energy points.
-Another 222 Native and 195 Generic performance points remain unmeasured.
-The nine Generic points require confirmation against the now integrated and frozen duration-worker
-extension before final energy acquisition. Missing values remain null.
+This snapshot reports the actual selected Current rows at **2026-10-08T20:24:55.106351+00:00**.
+Execution state: `bounded_three_points_current_plan_energy_paper_archive_complete_public_review_closure`. Counts below are derived from those rows;
+the finalized Quality pointer describes its own normal report generation separately.
+Missing values remain null/NA. This page does not declare the campaign complete.
 
-The historical archive was inspected read-only. No result data was deleted,
-moved or cleaned up. New raw reports and failed attempts are retained in a
-separate dated archive. The historical review ZIP passed its supplied checker
-for 6,281 payload hashes, 27 split repeats, 18 Full repeats and three controls;
-this is not a full cryptographic verification of the historical campaign archive.
-
-Start with [RESULT_REPORT.md](RESULT_REPORT.md), the
-[450-row fairness matrix](FAIRNESS_MATRIX.csv),
-[audit dispositions](AUDIT_FINDING_DISPOSITION.csv),
-[historical Generic usage](LEGACY_GENERIC_USAGE.csv) and
-[remeasurement decisions](REMEASUREMENT_PLAN.csv).
-Machine-readable observations are in
-[native_current.json](current_results/native_current.json) and
-[generic_current.json](current_results/generic_current.json).
-Explicit `supersedes` links preserve older operating points.
-
-New Native performance uses three actual processes, each with 100 completed
-warmups and 1,000 completed tasks. Historical reuse keeps its original protocol;
-it does not acquire invented three-process repeats. Quality class, technical
-execution, normal report eligibility and broader scientific claims remain separate.
-H8 regressions and `accuracy_loss` results are retained.
-
-| Normally admitted Full point | Raw system J/task, mean E/N | Tasks/J, mean N/E |
+| Current axis | Native | Generic |
 |---|---:|---:|
-| DeepX vendor | 0.689874383 | 1.449540153 |
-| H8 vendor | 0.549843563 | 1.818699641 |
-| DeepX TensorRT | 0.613181286 | 1.630862555 |
+| Newly measured Native / completed Generic performance | 232 | 204 |
+| Verified original single-observation performance reuse | 6 | — |
+| Performance not measured/completed | 8 | 0 |
+| Normally bound dataset Quality | 180 | 148 |
+| Normal comparative performance claims | 169 | 148 |
+| Normally admitted current energy | 5 | 0 |
 
-Each value uses three requested 60-second captures with actual completed counts
-and confirmed source completion. The existing TensorRT comparison normalization
-is stored separately: 0.561263320 J/task and 1.781724572 tasks/J. It does not replace
-the raw system measurement. Mean N/E is not computed as the reciprocal of mean E/N.
-Earlier diagnostic or strict-versus-fast captures remain visible but cannot supply
-energy for the new performance points.
+Generic points still requiring final-bundle confirmation according to Resume:
+0.
+Completed historical cohorts remain visible; this count is not inferred from a free lease.
 
-The first following H10 TensorRT capture failed with a source silence timeout
-and no confirmed protocol end. Its physical STOP remains binding. A subsequent
-H8 TensorRT reservation never started a collector. The concrete bounded recovery
-requires a separate post-STOP authorization under the existing source-completion
-guard; it was requested and has not been received at this snapshot.
-No measurement processes remain according to the terminal ownership report.
-[Resume state and retained budgets](RESUME_STATE.json).
+Start with [the result report](RESULT_REPORT.md), [fairness matrix](FAIRNESS_MATRIX.csv),
+[Native Current](current_results/native_current.json), [Generic Current](current_results/generic_current.json),
+[finalized Quality pointer](quality_transfer/CURRENT_FINALIZED.json),
+[review holds](current_results/QUALITY_JOIN_REVIEW_HOLDS.json),
+[audit dispositions](AUDIT_FINDING_DISPOSITION.csv) and [Resume state](RESUME_STATE.json).
+[PUBLICATION_MANIFEST.json](PUBLICATION_MANIFEST.json) records the exported checkpoint and source bindings.
 
-The code audit preserves the general Generic streaming, multi-tensor,
-`native_fifo` and `NativeTRTSession` paths. Only three unreachable DeepX P2
-duplicates and their dead helpers, 197 lines, were removed with original sources
-and a diff retained. Lossless queue drain, explicit input domains, canonical
-prepared inputs, format-specific completion, evidence outside the timer and the
-Student-t fallback were checked with targeted tests. The report-only correction
-prevents an A/B shadow diagnostic flag from overriding the primary energy policy.
-It also gives the normal consumer a hash-bound import for three real single
-captures without changing their original raw repeat indices.
+Runtime freeze: `8346d43d526221bd9d138943122206b658d56cbf` (241 files).
+The canonical CPU-reference Controller correction is `ec68097d0ca161a75380da158a257ad495296d90`.
+Controller reporting is `5e742b34862a7d0e0760474a1ff3e4826854f20e`; the retained-origin reader
+guard is `6ca5b3cedf3fda0f69397ad0e7a3e7abbe0194ae`. The bound cohort reader is
+`b7c2094e329351dcbdbeef4d3fcac48eec9458f3`. These local reporting amendments are bound by the existing
+[reporting source supplement](REPORTING_SOURCE_SUPPLEMENT.json); deployed runtime bytes remain
+at the original freeze.
+Current normal Quality generation: `revision3:/quality_transfer/final_native_179_20261008/finalized_179_origin_verified`. Its composition and
+independent-review references follow the current pointer; no historical generation count is substituted.
+Complete Quality summaries, N5000/CPU evidence, model binaries and original raw captures remain private.
 
-The Generic duration extension is now integrated in the regular worktree: six
-product files and six regression-test sources. Candidate tests (182), independent
-review probes (10), and actual-worktree/bundle checks (36) passed; these overlap
-and are not summed. New Generic hardware energy has not been captured. The
-80-file current source review snapshot is distinct from the original 223-file
-DUT runtime freeze. Six existing DX/H10 performance cohorts remain valid, but
-normal energy preflight requires six bounded deployment confirmations against
-the repaired runner bytes; old reports are not resealed. The private incomplete
-paper view was rebuilt and reproduced; its LaTeX remains outside this repository.
+H8 classification was corrected against the actual HEF/SDK domain. Corrected Vendor/TRT Full
+Quality bindings and same-setup comparisons use the normal consumer; `accuracy_loss` remains visible.
+Original Vendor-DX/H10 dataset Quality reuse retains one performance observation, no new repeats/CI
+and no new performance claim. The conflicted H10 historical physical Full context stays excluded.
 
-Run the public hash and arithmetic check from any directory:
+The [DX56 input-source finding](quality_transfer/classifier_split_preparation_20261008/DX56_N5000_INPUT_SOURCE_REVIEW.json)
+records the original inverse-ImageNet-to-UINT8 truncation versus the final direct-RGB path.
+The unintegrated preliminary transfer is invalid; actual performance and valid original N5000 remain.
+Current holds and Resume carry the exact applicable input/consumer blocker and targeted API readiness.
+No Quality flag or hash-only dataset remeasurement resolves that difference.
+
+| Normally admitted current energy row | Completed tasks/s, integer display | Raw system mJ/task | Tasks/J |
+|---|---:|---:|---:|
+| Native yolov7_paper/DeepX/native_full_deepx/full | 23 | 689.874383 | 1.449540153 |
+| Native yolov7_paper/H8/native_full_hailo8/full | 32 | 549.843563 | 1.818699641 |
+| Native yolov7_paper/DeepX/native_full_tensorrt/full | 48 | 613.181286 | 1.630862555 |
+| Native yolov7_paper/DeepX/deepx_to_trt/b044 | 49 | 532.093280 | 1.879388384 |
+| Native yolov7_paper/DeepX/deepx_to_trt/b066 | 31 | 712.277595 | 1.403947547 |
+
+Energy uses actual completed counts and three accepted captures. Presentation multiplies the stored
+J/task by 1000 only; raw values remain unchanged. Mean N/E is separate from inverse mean E/N, and
+existing comparison normalization remains in separate Current fields. Unadmitted rows stay NA.
+
+H10's specifically authorized energy continuation failed with 7,936 missing samples inside its command
+window despite source closure and cleanup. Its authorization is consumed. H8 zero-start, accepted-repeat,
+source STOP and budget restrictions remain governed by [Resume](RESUME_STATE.json); a free lease is no
+capture authorization. Valid evidence and failed attempts are retained, with no deletion or cleanup.
+
+The historical Generic streaming, multi-tensor, Raw, `native_fifo` and `NativeTRTSession` paths remain.
+Only proven dead isolated duplicates were removed. Actual independent process cohorts, completion
+counts, exact inputs, normal Quality, comparative claims and energy are separate evidence axes.
+One thousand repetitions of one prepared input are not one thousand dataset images or independent sessions.
+
+Run the standalone public hash and arithmetic check from any directory:
 
 ```sh
 python3 verify_snapshot.py
 ```
 
-`PUBLICATION_MANIFEST.json` records both original private and public projection
-hashes. Private paths and network identifiers are replaced by descriptive labels.
-One repeated full producer row is represented by its canonical hash; the exact
-original remains in the private report archive. The checker validates the
-provided projections, repeat arithmetic and confidence intervals. It does not
-independently replay sensor traces, model inference, normal consumer execution
-or per-frame FIFO order. Raw data, precise source snapshots and the private
-manuscript remain outside this Git payload. No final all-model ranking or paper
-completion is claimed.
+The checker verifies supplied projections and repeat arithmetic; it does not replay raw sensors,
+model inference or normal private consumer execution. Private paths/network labels are sanitized.
+The private manuscript and all LaTeX remain outside this Git payload. Final rankings and private-paper
+status are stated only by the current result/Resume checkpoint.

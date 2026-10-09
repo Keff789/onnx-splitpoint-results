@@ -1,0 +1,745 @@
+{
+  "status": "NORMAL_CONTEXT_DERIVED_PROMOTIONS_ONLY",
+  "rows": [
+    {
+      "identity": [
+        "yolo26m",
+        "orin_nx_deepx_m1_01",
+        "deepx_to_trt",
+        "b003"
+      ],
+      "kind": "retained_DX_BN6_split_paired_with_new_H8_H10_same_model_case",
+      "normal_consumer": "native_producer_final_report._apply_comparison_claim_gates",
+      "consumer_source": "source:worktree/scripts/native_producer_final_report.py",
+      "consumer_source_sha256": "bb1c017a9a12f4d89dc7c1097e0a703dfa41af60dce882d9732c560ccc24b482",
+      "consumer_lines": [
+        5400,
+        5412,
+        5427,
+        5436,
+        5449,
+        5454,
+        5473
+      ],
+      "stratum": [
+        "yolo26m",
+        "b003",
+        "native_split"
+      ],
+      "before_participating_backends": [
+        "deepx_to_trt"
+      ],
+      "after_participating_backends": [
+        "deepx_to_trt",
+        "hailo10h_to_trt",
+        "hailo8_to_trt"
+      ],
+      "exact_common_comparison_output_endpoint_id": "detection:decoded_nms:comparison:2bdfd5274f36a50a181d96da20662aadf0b3bec1bf8da048fc1c5e5d48ac7848",
+      "before": {
+        "comparison_endpoint_match": false,
+        "performance_claim_eligible": false,
+        "performance_claim_exclusion_reasons": [
+          "output_endpoint_not_common_across_backends"
+        ],
+        "comparison_output_endpoint_id": "detection:decoded_nms:comparison:2bdfd5274f36a50a181d96da20662aadf0b3bec1bf8da048fc1c5e5d48ac7848",
+        "comparison_endpoint_contract_hash": "2bdfd5274f36a50a181d96da20662aadf0b3bec1bf8da048fc1c5e5d48ac7848",
+        "completed_task_comparison_endpoint_contract_hash": "2bdfd5274f36a50a181d96da20662aadf0b3bec1bf8da048fc1c5e5d48ac7848",
+        "quality_claim_result_verified": true,
+        "precision_quality_binding_verified": true,
+        "quality_accuracy_gate_pass": true,
+        "repetition_count_valid": 3,
+        "repetition_independence_verified": true,
+        "repeat_claim_exclusion_reasons": []
+      },
+      "after": {
+        "comparison_endpoint_match": true,
+        "performance_claim_eligible": true,
+        "performance_claim_exclusion_reasons": [],
+        "comparison_output_endpoint_id": "detection:decoded_nms:comparison:2bdfd5274f36a50a181d96da20662aadf0b3bec1bf8da048fc1c5e5d48ac7848",
+        "comparison_endpoint_contract_hash": "2bdfd5274f36a50a181d96da20662aadf0b3bec1bf8da048fc1c5e5d48ac7848",
+        "completed_task_comparison_endpoint_contract_hash": "2bdfd5274f36a50a181d96da20662aadf0b3bec1bf8da048fc1c5e5d48ac7848",
+        "quality_claim_result_verified": true,
+        "precision_quality_binding_verified": true,
+        "quality_accuracy_gate_pass": true,
+        "repetition_count_valid": 3,
+        "repetition_independence_verified": true,
+        "repeat_claim_exclusion_reasons": []
+      },
+      "new_partner_rows": [
+        {
+          "identity": [
+            "yolo26m",
+            "orin_nx_hailo10_01",
+            "hailo10h_to_trt",
+            "b003"
+          ],
+          "quality_claim_result_verified": true,
+          "precision_quality_binding_verified": true,
+          "comparison_output_endpoint_id": "detection:decoded_nms:comparison:2bdfd5274f36a50a181d96da20662aadf0b3bec1bf8da048fc1c5e5d48ac7848",
+          "actual_summary": "revision3:/native_performance/yolo26m__hailo10h_to_trt__b003__orin_nx_hailo10_01__final20261008_staged/summary.json",
+          "actual_summary_sha256": "ac6afff48d90bbada1bb35c8c0a915cb6cbe12a0e6d1272f082a894eaaac297d"
+        },
+        {
+          "identity": [
+            "yolo26m",
+            "orin_nx_hailo8_01",
+            "hailo8_to_trt",
+            "b003"
+          ],
+          "quality_claim_result_verified": true,
+          "precision_quality_binding_verified": true,
+          "comparison_output_endpoint_id": "detection:decoded_nms:comparison:2bdfd5274f36a50a181d96da20662aadf0b3bec1bf8da048fc1c5e5d48ac7848",
+          "actual_summary": "revision3:/native_performance/yolo26m__hailo8_to_trt__b003__orin_nx_hailo8_01__final20261008_staged/summary.json",
+          "actual_summary_sha256": "2210f5802846d5ccf619483567329337bb75e40fed4c4c7fff4348843718aa60"
+        }
+      ],
+      "measured_science_and_original_contracts_changed": false,
+      "claim_flags_manually_set": false
+    },
+    {
+      "identity": [
+        "yolo26m",
+        "orin_nx_deepx_m1_01",
+        "deepx_to_trt",
+        "b038"
+      ],
+      "kind": "retained_DX_BN6_split_paired_with_new_H8_H10_same_model_case",
+      "normal_consumer": "native_producer_final_report._apply_comparison_claim_gates",
+      "consumer_source": "source:worktree/scripts/native_producer_final_report.py",
+      "consumer_source_sha256": "bb1c017a9a12f4d89dc7c1097e0a703dfa41af60dce882d9732c560ccc24b482",
+      "consumer_lines": [
+        5400,
+        5412,
+        5427,
+        5436,
+        5449,
+        5454,
+        5473
+      ],
+      "stratum": [
+        "yolo26m",
+        "b038",
+        "native_split"
+      ],
+      "before_participating_backends": [
+        "deepx_to_trt"
+      ],
+      "after_participating_backends": [
+        "deepx_to_trt",
+        "hailo10h_to_trt",
+        "hailo8_to_trt"
+      ],
+      "exact_common_comparison_output_endpoint_id": "detection:decoded_nms:comparison:2bdfd5274f36a50a181d96da20662aadf0b3bec1bf8da048fc1c5e5d48ac7848",
+      "before": {
+        "comparison_endpoint_match": false,
+        "performance_claim_eligible": false,
+        "performance_claim_exclusion_reasons": [
+          "output_endpoint_not_common_across_backends"
+        ],
+        "comparison_output_endpoint_id": "detection:decoded_nms:comparison:2bdfd5274f36a50a181d96da20662aadf0b3bec1bf8da048fc1c5e5d48ac7848",
+        "comparison_endpoint_contract_hash": "2bdfd5274f36a50a181d96da20662aadf0b3bec1bf8da048fc1c5e5d48ac7848",
+        "completed_task_comparison_endpoint_contract_hash": "2bdfd5274f36a50a181d96da20662aadf0b3bec1bf8da048fc1c5e5d48ac7848",
+        "quality_claim_result_verified": true,
+        "precision_quality_binding_verified": true,
+        "quality_accuracy_gate_pass": true,
+        "repetition_count_valid": 3,
+        "repetition_independence_verified": true,
+        "repeat_claim_exclusion_reasons": []
+      },
+      "after": {
+        "comparison_endpoint_match": true,
+        "performance_claim_eligible": true,
+        "performance_claim_exclusion_reasons": [],
+        "comparison_output_endpoint_id": "detection:decoded_nms:comparison:2bdfd5274f36a50a181d96da20662aadf0b3bec1bf8da048fc1c5e5d48ac7848",
+        "comparison_endpoint_contract_hash": "2bdfd5274f36a50a181d96da20662aadf0b3bec1bf8da048fc1c5e5d48ac7848",
+        "completed_task_comparison_endpoint_contract_hash": "2bdfd5274f36a50a181d96da20662aadf0b3bec1bf8da048fc1c5e5d48ac7848",
+        "quality_claim_result_verified": true,
+        "precision_quality_binding_verified": true,
+        "quality_accuracy_gate_pass": true,
+        "repetition_count_valid": 3,
+        "repetition_independence_verified": true,
+        "repeat_claim_exclusion_reasons": []
+      },
+      "new_partner_rows": [
+        {
+          "identity": [
+            "yolo26m",
+            "orin_nx_hailo10_01",
+            "hailo10h_to_trt",
+            "b038"
+          ],
+          "quality_claim_result_verified": true,
+          "precision_quality_binding_verified": true,
+          "comparison_output_endpoint_id": "detection:decoded_nms:comparison:2bdfd5274f36a50a181d96da20662aadf0b3bec1bf8da048fc1c5e5d48ac7848",
+          "actual_summary": "revision3:/native_performance/yolo26m__hailo10h_to_trt__b038__orin_nx_hailo10_01__final20261008_staged/summary.json",
+          "actual_summary_sha256": "10c718f897b4c8c8515ef274b2168b7f3f8d3cc35c154eb8a402c13fca1c473f"
+        },
+        {
+          "identity": [
+            "yolo26m",
+            "orin_nx_hailo8_01",
+            "hailo8_to_trt",
+            "b038"
+          ],
+          "quality_claim_result_verified": true,
+          "precision_quality_binding_verified": true,
+          "comparison_output_endpoint_id": "detection:decoded_nms:comparison:2bdfd5274f36a50a181d96da20662aadf0b3bec1bf8da048fc1c5e5d48ac7848",
+          "actual_summary": "revision3:/native_performance/yolo26m__hailo8_to_trt__b038__orin_nx_hailo8_01__final20261008_staged/summary.json",
+          "actual_summary_sha256": "aa002479bb0cd91248d118bf3e2a68800c6f28be9f827a4b9e7b989a726ee597"
+        }
+      ],
+      "measured_science_and_original_contracts_changed": false,
+      "claim_flags_manually_set": false
+    },
+    {
+      "identity": [
+        "yolo26m",
+        "orin_nx_deepx_m1_01",
+        "deepx_to_trt",
+        "b043"
+      ],
+      "kind": "retained_DX_BN6_split_paired_with_new_H8_H10_same_model_case",
+      "normal_consumer": "native_producer_final_report._apply_comparison_claim_gates",
+      "consumer_source": "source:worktree/scripts/native_producer_final_report.py",
+      "consumer_source_sha256": "bb1c017a9a12f4d89dc7c1097e0a703dfa41af60dce882d9732c560ccc24b482",
+      "consumer_lines": [
+        5400,
+        5412,
+        5427,
+        5436,
+        5449,
+        5454,
+        5473
+      ],
+      "stratum": [
+        "yolo26m",
+        "b043",
+        "native_split"
+      ],
+      "before_participating_backends": [
+        "deepx_to_trt"
+      ],
+      "after_participating_backends": [
+        "deepx_to_trt",
+        "hailo10h_to_trt",
+        "hailo8_to_trt"
+      ],
+      "exact_common_comparison_output_endpoint_id": "detection:decoded_nms:comparison:2bdfd5274f36a50a181d96da20662aadf0b3bec1bf8da048fc1c5e5d48ac7848",
+      "before": {
+        "comparison_endpoint_match": false,
+        "performance_claim_eligible": false,
+        "performance_claim_exclusion_reasons": [
+          "output_endpoint_not_common_across_backends"
+        ],
+        "comparison_output_endpoint_id": "detection:decoded_nms:comparison:2bdfd5274f36a50a181d96da20662aadf0b3bec1bf8da048fc1c5e5d48ac7848",
+        "comparison_endpoint_contract_hash": "2bdfd5274f36a50a181d96da20662aadf0b3bec1bf8da048fc1c5e5d48ac7848",
+        "completed_task_comparison_endpoint_contract_hash": "2bdfd5274f36a50a181d96da20662aadf0b3bec1bf8da048fc1c5e5d48ac7848",
+        "quality_claim_result_verified": true,
+        "precision_quality_binding_verified": true,
+        "quality_accuracy_gate_pass": true,
+        "repetition_count_valid": 3,
+        "repetition_independence_verified": true,
+        "repeat_claim_exclusion_reasons": []
+      },
+      "after": {
+        "comparison_endpoint_match": true,
+        "performance_claim_eligible": true,
+        "performance_claim_exclusion_reasons": [],
+        "comparison_output_endpoint_id": "detection:decoded_nms:comparison:2bdfd5274f36a50a181d96da20662aadf0b3bec1bf8da048fc1c5e5d48ac7848",
+        "comparison_endpoint_contract_hash": "2bdfd5274f36a50a181d96da20662aadf0b3bec1bf8da048fc1c5e5d48ac7848",
+        "completed_task_comparison_endpoint_contract_hash": "2bdfd5274f36a50a181d96da20662aadf0b3bec1bf8da048fc1c5e5d48ac7848",
+        "quality_claim_result_verified": true,
+        "precision_quality_binding_verified": true,
+        "quality_accuracy_gate_pass": true,
+        "repetition_count_valid": 3,
+        "repetition_independence_verified": true,
+        "repeat_claim_exclusion_reasons": []
+      },
+      "new_partner_rows": [
+        {
+          "identity": [
+            "yolo26m",
+            "orin_nx_hailo10_01",
+            "hailo10h_to_trt",
+            "b043"
+          ],
+          "quality_claim_result_verified": true,
+          "precision_quality_binding_verified": true,
+          "comparison_output_endpoint_id": "detection:decoded_nms:comparison:2bdfd5274f36a50a181d96da20662aadf0b3bec1bf8da048fc1c5e5d48ac7848",
+          "actual_summary": "revision3:/native_performance/yolo26m__hailo10h_to_trt__b043__orin_nx_hailo10_01__final20261008_staged/summary.json",
+          "actual_summary_sha256": "b267a4e72c06a524e0c9d4a3ec7e41b4c6e4887d66591d2bf4426f6f5fa4f3e8"
+        },
+        {
+          "identity": [
+            "yolo26m",
+            "orin_nx_hailo8_01",
+            "hailo8_to_trt",
+            "b043"
+          ],
+          "quality_claim_result_verified": true,
+          "precision_quality_binding_verified": true,
+          "comparison_output_endpoint_id": "detection:decoded_nms:comparison:2bdfd5274f36a50a181d96da20662aadf0b3bec1bf8da048fc1c5e5d48ac7848",
+          "actual_summary": "revision3:/native_performance/yolo26m__hailo8_to_trt__b043__orin_nx_hailo8_01__final20261008_staged/summary.json",
+          "actual_summary_sha256": "98f654d3e99a820fc8b60b9103f52141c54a792d40b170798727b05ab0da1954"
+        }
+      ],
+      "measured_science_and_original_contracts_changed": false,
+      "claim_flags_manually_set": false
+    },
+    {
+      "identity": [
+        "yolo26s",
+        "orin_nx_deepx_m1_01",
+        "deepx_to_trt",
+        "b003"
+      ],
+      "kind": "retained_DX_BN6_split_paired_with_new_H8_H10_same_model_case",
+      "normal_consumer": "native_producer_final_report._apply_comparison_claim_gates",
+      "consumer_source": "source:worktree/scripts/native_producer_final_report.py",
+      "consumer_source_sha256": "bb1c017a9a12f4d89dc7c1097e0a703dfa41af60dce882d9732c560ccc24b482",
+      "consumer_lines": [
+        5400,
+        5412,
+        5427,
+        5436,
+        5449,
+        5454,
+        5473
+      ],
+      "stratum": [
+        "yolo26s",
+        "b003",
+        "native_split"
+      ],
+      "before_participating_backends": [
+        "deepx_to_trt"
+      ],
+      "after_participating_backends": [
+        "deepx_to_trt",
+        "hailo10h_to_trt",
+        "hailo8_to_trt"
+      ],
+      "exact_common_comparison_output_endpoint_id": "detection:decoded_nms:comparison:0153c6c2c964096ca2469182c8e2c0fd276d3b57166b737de759dbc39ca75dad",
+      "before": {
+        "comparison_endpoint_match": false,
+        "performance_claim_eligible": false,
+        "performance_claim_exclusion_reasons": [
+          "output_endpoint_not_common_across_backends"
+        ],
+        "comparison_output_endpoint_id": "detection:decoded_nms:comparison:0153c6c2c964096ca2469182c8e2c0fd276d3b57166b737de759dbc39ca75dad",
+        "comparison_endpoint_contract_hash": "0153c6c2c964096ca2469182c8e2c0fd276d3b57166b737de759dbc39ca75dad",
+        "completed_task_comparison_endpoint_contract_hash": "0153c6c2c964096ca2469182c8e2c0fd276d3b57166b737de759dbc39ca75dad",
+        "quality_claim_result_verified": true,
+        "precision_quality_binding_verified": true,
+        "quality_accuracy_gate_pass": true,
+        "repetition_count_valid": 3,
+        "repetition_independence_verified": true,
+        "repeat_claim_exclusion_reasons": []
+      },
+      "after": {
+        "comparison_endpoint_match": true,
+        "performance_claim_eligible": true,
+        "performance_claim_exclusion_reasons": [],
+        "comparison_output_endpoint_id": "detection:decoded_nms:comparison:0153c6c2c964096ca2469182c8e2c0fd276d3b57166b737de759dbc39ca75dad",
+        "comparison_endpoint_contract_hash": "0153c6c2c964096ca2469182c8e2c0fd276d3b57166b737de759dbc39ca75dad",
+        "completed_task_comparison_endpoint_contract_hash": "0153c6c2c964096ca2469182c8e2c0fd276d3b57166b737de759dbc39ca75dad",
+        "quality_claim_result_verified": true,
+        "precision_quality_binding_verified": true,
+        "quality_accuracy_gate_pass": true,
+        "repetition_count_valid": 3,
+        "repetition_independence_verified": true,
+        "repeat_claim_exclusion_reasons": []
+      },
+      "new_partner_rows": [
+        {
+          "identity": [
+            "yolo26s",
+            "orin_nx_hailo10_01",
+            "hailo10h_to_trt",
+            "b003"
+          ],
+          "quality_claim_result_verified": true,
+          "precision_quality_binding_verified": true,
+          "comparison_output_endpoint_id": "detection:decoded_nms:comparison:0153c6c2c964096ca2469182c8e2c0fd276d3b57166b737de759dbc39ca75dad",
+          "actual_summary": "revision3:/native_performance/yolo26s__hailo10h_to_trt__b003__orin_nx_hailo10_01__final20261008_staged/summary.json",
+          "actual_summary_sha256": "f0f82bc2d9083c5d89343b54688ca241f00b3005f718ee377c99f1e50bbf90cd"
+        },
+        {
+          "identity": [
+            "yolo26s",
+            "orin_nx_hailo8_01",
+            "hailo8_to_trt",
+            "b003"
+          ],
+          "quality_claim_result_verified": true,
+          "precision_quality_binding_verified": true,
+          "comparison_output_endpoint_id": "detection:decoded_nms:comparison:0153c6c2c964096ca2469182c8e2c0fd276d3b57166b737de759dbc39ca75dad",
+          "actual_summary": "revision3:/native_performance/yolo26s__hailo8_to_trt__b003__orin_nx_hailo8_01__final20261008_staged/summary.json",
+          "actual_summary_sha256": "c84bfdf8dcc31d315aaf140602f96da296841c56ff9d98edf59faa183c652a3c"
+        }
+      ],
+      "measured_science_and_original_contracts_changed": false,
+      "claim_flags_manually_set": false
+    },
+    {
+      "identity": [
+        "yolo26s",
+        "orin_nx_deepx_m1_01",
+        "deepx_to_trt",
+        "b021"
+      ],
+      "kind": "retained_DX_BN6_split_paired_with_new_H8_H10_same_model_case",
+      "normal_consumer": "native_producer_final_report._apply_comparison_claim_gates",
+      "consumer_source": "source:worktree/scripts/native_producer_final_report.py",
+      "consumer_source_sha256": "bb1c017a9a12f4d89dc7c1097e0a703dfa41af60dce882d9732c560ccc24b482",
+      "consumer_lines": [
+        5400,
+        5412,
+        5427,
+        5436,
+        5449,
+        5454,
+        5473
+      ],
+      "stratum": [
+        "yolo26s",
+        "b021",
+        "native_split"
+      ],
+      "before_participating_backends": [
+        "deepx_to_trt"
+      ],
+      "after_participating_backends": [
+        "deepx_to_trt",
+        "hailo10h_to_trt",
+        "hailo8_to_trt"
+      ],
+      "exact_common_comparison_output_endpoint_id": "detection:decoded_nms:comparison:0153c6c2c964096ca2469182c8e2c0fd276d3b57166b737de759dbc39ca75dad",
+      "before": {
+        "comparison_endpoint_match": false,
+        "performance_claim_eligible": false,
+        "performance_claim_exclusion_reasons": [
+          "output_endpoint_not_common_across_backends"
+        ],
+        "comparison_output_endpoint_id": "detection:decoded_nms:comparison:0153c6c2c964096ca2469182c8e2c0fd276d3b57166b737de759dbc39ca75dad",
+        "comparison_endpoint_contract_hash": "0153c6c2c964096ca2469182c8e2c0fd276d3b57166b737de759dbc39ca75dad",
+        "completed_task_comparison_endpoint_contract_hash": "0153c6c2c964096ca2469182c8e2c0fd276d3b57166b737de759dbc39ca75dad",
+        "quality_claim_result_verified": true,
+        "precision_quality_binding_verified": true,
+        "quality_accuracy_gate_pass": true,
+        "repetition_count_valid": 3,
+        "repetition_independence_verified": true,
+        "repeat_claim_exclusion_reasons": []
+      },
+      "after": {
+        "comparison_endpoint_match": true,
+        "performance_claim_eligible": true,
+        "performance_claim_exclusion_reasons": [],
+        "comparison_output_endpoint_id": "detection:decoded_nms:comparison:0153c6c2c964096ca2469182c8e2c0fd276d3b57166b737de759dbc39ca75dad",
+        "comparison_endpoint_contract_hash": "0153c6c2c964096ca2469182c8e2c0fd276d3b57166b737de759dbc39ca75dad",
+        "completed_task_comparison_endpoint_contract_hash": "0153c6c2c964096ca2469182c8e2c0fd276d3b57166b737de759dbc39ca75dad",
+        "quality_claim_result_verified": true,
+        "precision_quality_binding_verified": true,
+        "quality_accuracy_gate_pass": true,
+        "repetition_count_valid": 3,
+        "repetition_independence_verified": true,
+        "repeat_claim_exclusion_reasons": []
+      },
+      "new_partner_rows": [
+        {
+          "identity": [
+            "yolo26s",
+            "orin_nx_hailo10_01",
+            "hailo10h_to_trt",
+            "b021"
+          ],
+          "quality_claim_result_verified": true,
+          "precision_quality_binding_verified": true,
+          "comparison_output_endpoint_id": "detection:decoded_nms:comparison:0153c6c2c964096ca2469182c8e2c0fd276d3b57166b737de759dbc39ca75dad",
+          "actual_summary": "revision3:/native_performance/yolo26s__hailo10h_to_trt__b021__orin_nx_hailo10_01__final20261008_staged/summary.json",
+          "actual_summary_sha256": "e512b28abb14f6213b35246c6759c7896f162485966d9362b54fdbeb6817aeeb"
+        },
+        {
+          "identity": [
+            "yolo26s",
+            "orin_nx_hailo8_01",
+            "hailo8_to_trt",
+            "b021"
+          ],
+          "quality_claim_result_verified": true,
+          "precision_quality_binding_verified": true,
+          "comparison_output_endpoint_id": "detection:decoded_nms:comparison:0153c6c2c964096ca2469182c8e2c0fd276d3b57166b737de759dbc39ca75dad",
+          "actual_summary": "revision3:/native_performance/yolo26s__hailo8_to_trt__b021__orin_nx_hailo8_01__final20261008_staged/summary.json",
+          "actual_summary_sha256": "9305a8dba563dc31da3c961203828469a3dee08e032c28cd1d9690a08e430630"
+        }
+      ],
+      "measured_science_and_original_contracts_changed": false,
+      "claim_flags_manually_set": false
+    },
+    {
+      "identity": [
+        "yolo26s",
+        "orin_nx_deepx_m1_01",
+        "deepx_to_trt",
+        "b038"
+      ],
+      "kind": "retained_DX_BN6_split_paired_with_new_H8_H10_same_model_case",
+      "normal_consumer": "native_producer_final_report._apply_comparison_claim_gates",
+      "consumer_source": "source:worktree/scripts/native_producer_final_report.py",
+      "consumer_source_sha256": "bb1c017a9a12f4d89dc7c1097e0a703dfa41af60dce882d9732c560ccc24b482",
+      "consumer_lines": [
+        5400,
+        5412,
+        5427,
+        5436,
+        5449,
+        5454,
+        5473
+      ],
+      "stratum": [
+        "yolo26s",
+        "b038",
+        "native_split"
+      ],
+      "before_participating_backends": [
+        "deepx_to_trt"
+      ],
+      "after_participating_backends": [
+        "deepx_to_trt",
+        "hailo10h_to_trt",
+        "hailo8_to_trt"
+      ],
+      "exact_common_comparison_output_endpoint_id": "detection:decoded_nms:comparison:0153c6c2c964096ca2469182c8e2c0fd276d3b57166b737de759dbc39ca75dad",
+      "before": {
+        "comparison_endpoint_match": false,
+        "performance_claim_eligible": false,
+        "performance_claim_exclusion_reasons": [
+          "output_endpoint_not_common_across_backends"
+        ],
+        "comparison_output_endpoint_id": "detection:decoded_nms:comparison:0153c6c2c964096ca2469182c8e2c0fd276d3b57166b737de759dbc39ca75dad",
+        "comparison_endpoint_contract_hash": "0153c6c2c964096ca2469182c8e2c0fd276d3b57166b737de759dbc39ca75dad",
+        "completed_task_comparison_endpoint_contract_hash": "0153c6c2c964096ca2469182c8e2c0fd276d3b57166b737de759dbc39ca75dad",
+        "quality_claim_result_verified": true,
+        "precision_quality_binding_verified": true,
+        "quality_accuracy_gate_pass": true,
+        "repetition_count_valid": 3,
+        "repetition_independence_verified": true,
+        "repeat_claim_exclusion_reasons": []
+      },
+      "after": {
+        "comparison_endpoint_match": true,
+        "performance_claim_eligible": true,
+        "performance_claim_exclusion_reasons": [],
+        "comparison_output_endpoint_id": "detection:decoded_nms:comparison:0153c6c2c964096ca2469182c8e2c0fd276d3b57166b737de759dbc39ca75dad",
+        "comparison_endpoint_contract_hash": "0153c6c2c964096ca2469182c8e2c0fd276d3b57166b737de759dbc39ca75dad",
+        "completed_task_comparison_endpoint_contract_hash": "0153c6c2c964096ca2469182c8e2c0fd276d3b57166b737de759dbc39ca75dad",
+        "quality_claim_result_verified": true,
+        "precision_quality_binding_verified": true,
+        "quality_accuracy_gate_pass": true,
+        "repetition_count_valid": 3,
+        "repetition_independence_verified": true,
+        "repeat_claim_exclusion_reasons": []
+      },
+      "new_partner_rows": [
+        {
+          "identity": [
+            "yolo26s",
+            "orin_nx_hailo10_01",
+            "hailo10h_to_trt",
+            "b038"
+          ],
+          "quality_claim_result_verified": true,
+          "precision_quality_binding_verified": true,
+          "comparison_output_endpoint_id": "detection:decoded_nms:comparison:0153c6c2c964096ca2469182c8e2c0fd276d3b57166b737de759dbc39ca75dad",
+          "actual_summary": "revision3:/native_performance/yolo26s__hailo10h_to_trt__b038__orin_nx_hailo10_01__final20261008_staged/summary.json",
+          "actual_summary_sha256": "62fb6fd348b3b4a778fb63bef0afdf7e6d61a51ee95e6fe503105571f61ec0fc"
+        },
+        {
+          "identity": [
+            "yolo26s",
+            "orin_nx_hailo8_01",
+            "hailo8_to_trt",
+            "b038"
+          ],
+          "quality_claim_result_verified": true,
+          "precision_quality_binding_verified": true,
+          "comparison_output_endpoint_id": "detection:decoded_nms:comparison:0153c6c2c964096ca2469182c8e2c0fd276d3b57166b737de759dbc39ca75dad",
+          "actual_summary": "revision3:/native_performance/yolo26s__hailo8_to_trt__b038__orin_nx_hailo8_01__final20261008_staged/summary.json",
+          "actual_summary_sha256": "4f5bd400548e21f26c39940b300ab98ad3af543fd0938a107e291728002244a4"
+        }
+      ],
+      "measured_science_and_original_contracts_changed": false,
+      "claim_flags_manually_set": false
+    },
+    {
+      "identity": [
+        "yolo11l",
+        "orin_nx_hailo10_01",
+        "native_full_tensorrt",
+        "full"
+      ],
+      "kind": "retained_YOLO11_TRTFull_paired_with_new_same_setup_vendorFull",
+      "normal_consumer": "native_producer_final_report._apply_comparison_claim_gates",
+      "consumer_source": "source:worktree/scripts/native_producer_final_report.py",
+      "consumer_source_sha256": "bb1c017a9a12f4d89dc7c1097e0a703dfa41af60dce882d9732c560ccc24b482",
+      "consumer_lines": [
+        5400,
+        5412,
+        5427,
+        5436,
+        5449,
+        5454,
+        5473
+      ],
+      "stratum": [
+        "yolo11l",
+        "full",
+        "native_full_baseline",
+        "orin_nx_hailo10_01",
+        "hailo10h"
+      ],
+      "before_participating_backends": [
+        "native_full_tensorrt"
+      ],
+      "after_participating_backends": [
+        "native_full_hailo10h",
+        "native_full_tensorrt"
+      ],
+      "exact_common_comparison_output_endpoint_id": "detection:decoded_nms:comparison:2ace95cb46d14e3d783aa3d914712cf3c4587aeaa84ce15b4fba2635b5e4c67a",
+      "before": {
+        "comparison_endpoint_match": false,
+        "performance_claim_eligible": false,
+        "performance_claim_exclusion_reasons": [
+          "output_endpoint_not_common_across_backends"
+        ],
+        "comparison_output_endpoint_id": "detection:decoded_nms:comparison:2ace95cb46d14e3d783aa3d914712cf3c4587aeaa84ce15b4fba2635b5e4c67a",
+        "comparison_endpoint_contract_hash": null,
+        "completed_task_comparison_endpoint_contract_hash": "2ace95cb46d14e3d783aa3d914712cf3c4587aeaa84ce15b4fba2635b5e4c67a",
+        "quality_claim_result_verified": true,
+        "precision_quality_binding_verified": true,
+        "quality_accuracy_gate_pass": true,
+        "repetition_count_valid": 3,
+        "repetition_independence_verified": true,
+        "repeat_claim_exclusion_reasons": []
+      },
+      "after": {
+        "comparison_endpoint_match": true,
+        "performance_claim_eligible": true,
+        "performance_claim_exclusion_reasons": [],
+        "comparison_output_endpoint_id": "detection:decoded_nms:comparison:2ace95cb46d14e3d783aa3d914712cf3c4587aeaa84ce15b4fba2635b5e4c67a",
+        "comparison_endpoint_contract_hash": null,
+        "completed_task_comparison_endpoint_contract_hash": "2ace95cb46d14e3d783aa3d914712cf3c4587aeaa84ce15b4fba2635b5e4c67a",
+        "quality_claim_result_verified": true,
+        "precision_quality_binding_verified": true,
+        "quality_accuracy_gate_pass": true,
+        "repetition_count_valid": 3,
+        "repetition_independence_verified": true,
+        "repeat_claim_exclusion_reasons": []
+      },
+      "new_partner_rows": [
+        {
+          "identity": [
+            "yolo11l",
+            "orin_nx_hailo10_01",
+            "native_full_hailo10h",
+            "full"
+          ],
+          "quality_claim_result_verified": true,
+          "precision_quality_binding_verified": true,
+          "comparison_output_endpoint_id": "detection:decoded_nms:comparison:2ace95cb46d14e3d783aa3d914712cf3c4587aeaa84ce15b4fba2635b5e4c67a",
+          "actual_summary": "revision3:/native_performance/yolo11l__orin_nx_hailo10_01__native_full_hailo10h__full__final20261008/summary.json",
+          "actual_summary_sha256": "f6bb6a6da6d56fb5b0f9986633753c17407a89598c56d94b872cfee6014bde90"
+        }
+      ],
+      "measured_science_and_original_contracts_changed": false,
+      "claim_flags_manually_set": false
+    },
+    {
+      "identity": [
+        "yolo11l",
+        "orin_nx_hailo8_01",
+        "native_full_tensorrt",
+        "full"
+      ],
+      "kind": "retained_YOLO11_TRTFull_paired_with_new_same_setup_vendorFull",
+      "normal_consumer": "native_producer_final_report._apply_comparison_claim_gates",
+      "consumer_source": "source:worktree/scripts/native_producer_final_report.py",
+      "consumer_source_sha256": "bb1c017a9a12f4d89dc7c1097e0a703dfa41af60dce882d9732c560ccc24b482",
+      "consumer_lines": [
+        5400,
+        5412,
+        5427,
+        5436,
+        5449,
+        5454,
+        5473
+      ],
+      "stratum": [
+        "yolo11l",
+        "full",
+        "native_full_baseline",
+        "orin_nx_hailo8_01",
+        "hailo8"
+      ],
+      "before_participating_backends": [
+        "native_full_tensorrt"
+      ],
+      "after_participating_backends": [
+        "native_full_hailo8",
+        "native_full_tensorrt"
+      ],
+      "exact_common_comparison_output_endpoint_id": "detection:decoded_nms:comparison:2ace95cb46d14e3d783aa3d914712cf3c4587aeaa84ce15b4fba2635b5e4c67a",
+      "before": {
+        "comparison_endpoint_match": false,
+        "performance_claim_eligible": false,
+        "performance_claim_exclusion_reasons": [
+          "output_endpoint_not_common_across_backends"
+        ],
+        "comparison_output_endpoint_id": "detection:decoded_nms:comparison:2ace95cb46d14e3d783aa3d914712cf3c4587aeaa84ce15b4fba2635b5e4c67a",
+        "comparison_endpoint_contract_hash": null,
+        "completed_task_comparison_endpoint_contract_hash": "2ace95cb46d14e3d783aa3d914712cf3c4587aeaa84ce15b4fba2635b5e4c67a",
+        "quality_claim_result_verified": true,
+        "precision_quality_binding_verified": true,
+        "quality_accuracy_gate_pass": true,
+        "repetition_count_valid": 3,
+        "repetition_independence_verified": true,
+        "repeat_claim_exclusion_reasons": []
+      },
+      "after": {
+        "comparison_endpoint_match": true,
+        "performance_claim_eligible": true,
+        "performance_claim_exclusion_reasons": [],
+        "comparison_output_endpoint_id": "detection:decoded_nms:comparison:2ace95cb46d14e3d783aa3d914712cf3c4587aeaa84ce15b4fba2635b5e4c67a",
+        "comparison_endpoint_contract_hash": null,
+        "completed_task_comparison_endpoint_contract_hash": "2ace95cb46d14e3d783aa3d914712cf3c4587aeaa84ce15b4fba2635b5e4c67a",
+        "quality_claim_result_verified": true,
+        "precision_quality_binding_verified": true,
+        "quality_accuracy_gate_pass": true,
+        "repetition_count_valid": 3,
+        "repetition_independence_verified": true,
+        "repeat_claim_exclusion_reasons": []
+      },
+      "new_partner_rows": [
+        {
+          "identity": [
+            "yolo11l",
+            "orin_nx_hailo8_01",
+            "native_full_hailo8",
+            "full"
+          ],
+          "quality_claim_result_verified": true,
+          "precision_quality_binding_verified": true,
+          "comparison_output_endpoint_id": "detection:decoded_nms:comparison:2ace95cb46d14e3d783aa3d914712cf3c4587aeaa84ce15b4fba2635b5e4c67a",
+          "actual_summary": "revision3:/native_performance/yolo11l__orin_nx_hailo8_01__native_full_hailo8__full__final20261008/summary.json",
+          "actual_summary_sha256": "74344258231ac30c6973f8d6451f3c35dafbe66bcf14dd9ca6e696bbb4b5bb34"
+        }
+      ],
+      "measured_science_and_original_contracts_changed": false,
+      "claim_flags_manually_set": false
+    }
+  ],
+  "count": 8,
+  "old_exclusion_reason": "output_endpoint_not_common_across_backends",
+  "resolved_by": "Additional regularly verified matching comparison backends in the unchanged existing consumer stratum; all measured science and original contracts retained exactly",
+  "negative_Y26s_and_historical_DX_single_exclusions_preserved": true
+}

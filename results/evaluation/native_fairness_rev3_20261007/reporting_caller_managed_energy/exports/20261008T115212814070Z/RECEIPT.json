@@ -1,8 +1,5 @@
 {
-  "generation": "revision3:/reporting_caller_managed_energy/exports/20261008T115212814070Z",
-  "receipt": "revision3:/reporting_caller_managed_energy/exports/20261008T115212814070Z/RECEIPT.json",
-  "receipt_sha256": "b46aac52fdf79055a82aa3c0e950036c4e90b5b098057397a86a4df1a4cba6d5",
-  "status": "five_cases_normal_claim_eligible_with_original_group_stops_retained",
+  "status": "five_cases_normal_claim_eligible_candidate_with_original_group_stops_retained",
   "created_utc": "2026-10-08T11:52:13.185673+00:00",
   "module_sha256": "411b16b277a8f9781a9404c74692d492a01513a9edb7409069d77c79649a506f",
   "caller_managed_module_sha256": "d774d0b88bdf91bd70ad01a5036433986cb6263aae77c0d4cda6b59cd538ba04",
@@ -61,5 +58,5 @@
       "normal_original_summary_sha256": "d5ae69134bf46dc5d2da35ef48714e3acd3ca64fe755a418a9458defc3893624"
     }
   ],
-  "candidate_only": false
+  "candidate_only": true
 }

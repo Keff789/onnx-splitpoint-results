@@ -1,12 +1,33 @@
 # ONNX Splitpoint Tool – Knowledge Base
 
-> **Revision 3, Softwarecheckpoint:** Generic-Dauersteuerung integriert und
+> **Revision 3, Finalisierung 08.10.2026 — Current-Checkpoint:**
+> Aktuelle Mengen und Statusachsen stehen im [Publikationsmanifest](../results/evaluation/native_fairness_rev3_20261007/PUBLICATION_MANIFEST.json)
+> und den [Native-/Generic-Current-Daten](../results/evaluation/native_fairness_rev3_20261007/README.md).
+> Neue Performance, historische Einzelbeobachtungen, Datasetqualität,
+> Vergleichsclaims und Energie werden einzeln aus den tatsächlichen Zeilen
+> abgeleitet; die datierten Zahlen unten gelten nur für ihren historischen Stand.
+> Die aktuelle normale Qualitygeneration folgt dem vorhandenen finalisierten
+> Pointer und dessen Kompositions-/Reviewbelegen. Ein Kandidat ersetzt ihn nicht.
+> H8s konkrete HEF-/SDK-Eingabekorrektur und die aktuellen Full-Classifier-
+> Bindungen sind geprüft; `accuracy_loss` bleibt erhalten. Gültige historische
+> Vendor-DX/H10-Datasetqualität erzeugt keine neuen Performance-Repeats oder CI.
+> Der widersprüchliche physische H10-Full-Kontext bleibt ausgeschlossen.
+> DX56-Performance bleibt gültig; die ursprüngliche inverse ImageNet-UINT8-
+> Rekonstruktion gegenüber direktem RGB verhindert ihren bisherigen Datasettransfer.
+> Konkrete Current-Holds und Resume dokumentieren auch die gezielte API-Readiness.
+> Runtimefreeze241 und separater Controller-Reportfix sind unterschiedliche Quellenstände.
+> STOP-/Recovery-/Budgetregeln bleiben bestehen; die konkrete H10-Energiefreigabe
+> ist nach dem fehlgeschlagenen Inwindow-Versuch verbraucht. Der finale Publicexport
+> und private Paperrefresh folgen dem abgestimmten Current-Handoff. Private LaTeX
+> und Originale werden hier nicht veröffentlicht.
+
+> **Revision 3, Softwarecheckpoint 07.10.2026 (datierte Historie):** Generic-Dauersteuerung integriert und
 > offline geprüft; neue Performance-/Energieaufnahmen bleiben erforderlich.
 > Neun bisherige Generic-Kohorten bleiben separat erhalten. Die private
 > Paperableitung wurde aus der unvollständigen aktuellen Sicht reproduziert.
 > Physischer Quellen-STOP und Budgets sind unverändert.
 
-> **Revision 3, 07.10.2026 — noch in Ausführung:**
+> **Revision 3, 07.10.2026 — damaliger Zwischenstand:**
 > [Aktuelle Daten](../results/evaluation/native_fairness_rev3_20261007/README.md)
 > und [technische Befunde](NATIVE_FAIRNESS_REV3_20261007.md) führen 15 neue Native-
 > Punkte, neun belegte Performancewiederverwendungen, neun Generic-Paare und
@@ -2300,3 +2321,6 @@ Validierung und Einschränkungen stehen in
 und [`STATUS.md`](../results/evaluation/thesis20_20261004/deep_analysis/STATUS.md).
 Keine neue Messung, Inferenz, Kompilierung, Qualitykampagne oder reale GUI-Abnahme.
 Nächster Schritt ist Review von Claims/Figuren und Abschluss der vorhandenen Archivqueue.
+
+
+Revision 3, 2026-10-09: Begrenzte Current-/Plan-/Metadatenfortsetzung abgeschlossen. Generic204 technische /148 Quality-/Claimpaare bei612 tatsächlichen Prozessen;12 YOLO26-Joins normal geschlossen,14 Planwidersprüche und204 Quellbindungen berichtigt. Native232 neu+6 Singles+8 technische Full-Ausschlüsse,180 Quality/169 Claims/5 Energie; Generic0 Energie. DX56-Holds und alle STOP-/Budgetgrenzen bleiben erhalten. Energie-Restdelta442, nächste14DX nur Metadaten-PASS/kein Parent gestartet. Private Paperableitung mit18 Tests gebaut, kleine Archivmetadaten verifiziert. Aktueller Umfang und Belege: [Revision-3-Current](../results/evaluation/native_fairness_rev3_20261007/README.md). Keine neue Hardware-/Energie-/N5000-Messung.
