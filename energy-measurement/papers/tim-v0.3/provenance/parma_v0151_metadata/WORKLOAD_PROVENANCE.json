@@ -1,0 +1,112 @@
+{
+  "source": "Joris Wachsmuth, Entwicklung und Validierung eines Messsystems zur energetischen Bewertung eingebetteter KI-Beschleuniger, Master thesis, Bielefeld University, July 2026",
+  "filename": "Joris Masterarbeit.pdf",
+  "sha256": "897428afa66e9674f8e3ef9b2356bba2cf565fda471803bb9a2ed28de8001191",
+  "bytes": 17685364,
+  "pages_one_indexed": [
+    63,
+    64,
+    65,
+    66,
+    67,
+    68
+  ],
+  "printed_pages": [
+    57,
+    58,
+    59,
+    60,
+    61,
+    62
+  ],
+  "facts": {
+    "gemm": {
+      "batch": 512,
+      "input_shape": [
+        512,
+        2048,
+        14,
+        14
+      ],
+      "channels": 2048,
+      "network": "eight 1x1 Conv2D+ReLU blocks, global average pool, final 1x1 conv",
+      "precision_labels": [
+        "FP32",
+        "FP16",
+        "INT8"
+      ],
+      "rate_study_requested_iterations": [
+        100,
+        200,
+        400
+      ]
+    },
+    "yolo": {
+      "model": "YOLO11n",
+      "precision_labels": [
+        "FP32",
+        "FP16",
+        "INT8"
+      ],
+      "rate_study_requested_iterations": [
+        15000,
+        26000,
+        33000
+      ],
+      "input_resolution": null,
+      "batch": null
+    },
+    "llm": {
+      "model": "Gemma3-12B",
+      "runtime": "Ollama",
+      "seed": 0,
+      "temperature": 0,
+      "top_k": 1,
+      "fixed_token_cap": false,
+      "prompt": "Please write a Sudoku solver in Python. Keep it short"
+    },
+    "variable_yolo": {
+      "precision": "FP32",
+      "activity_s": [
+        0.1,
+        1.5
+      ],
+      "pause_s": [
+        0.1,
+        1.0
+      ],
+      "activity_seed": 42,
+      "pause_seed": 420
+    }
+  },
+  "limits": [
+    "Historical Jetson campaign description; not a hash-level identity proof for every artifact.",
+    "Hailo names are not mapped to exact model builds or batch/input defaults.",
+    "The shell listing, not ambiguous prose, supplies the variable-YOLO pause upper bound 1.0 s.",
+    "Later Gemma3-4B scope campaign is separate and not substituted for the historical 12B workload.",
+    "Original common-reference 0/1 exclusions are from supplied manuscript/source selection history, not a newly established hardware-invalidity reason."
+  ],
+  "identity_note": "Verified against the newly supplied July thesis. The old source identity is retained separately in WORKLOAD_PROVENANCE_V07.json; frozen numerical inputs are unchanged.",
+  "calibration_pages": {
+    "printed": [
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56
+    ],
+    "pdf_one_indexed": [
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62
+    ]
+  }
+}

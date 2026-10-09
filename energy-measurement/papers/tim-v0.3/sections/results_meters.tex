@@ -1,0 +1,68 @@
+\section{RQ3: Agreement Depends on What and When We Measure}
+\label{sec:meters}
+
+\subsection{A Complete Jetson Deployment Check}
+The reconstruction and spectrum determine what to test; deployed instruments still have to agree under the actual benchmark protocol. Figure~\ref{fig:jetson-meters} presents the Jetson comparison at a 300-s request. Each of seven workloads contributes 15 executions observed by PicoScope and three comparators. The resulting 315 comparator pairs represent 105 physical executions, not 315 independent benchmarks. Their medians are computed after pairing as in~\eqref{eq:paired}.
+
+\begin{figure}[t]
+\centering\includegraphics[width=\columnwidth]{jetson_deployed_meters.pdf}
+\caption{Jetson deployed-meter comparison at a 300-s request. Markers show the medians of individual mean-power differences from PicoScope, with 15 matched executions per workload. Variable YOLO is separated from the six continuous workloads. Per-run windows and recorded scaling are retained; full pair percentiles are in the numerical artefact.}
+\label{fig:jetson-meters}
+\end{figure}
+
+For the six continuous GEMM and YOLO workloads, every \urecs{} median difference is within $\pm0.5\%$. This is useful evidence for the deployed embedded 2-kS/s path in those long, continuous measurements. It complements the fixed-endpoint numerical test without converting the reconstruction criterion into an absolute instrument-accuracy claim. Individual differences and other activity patterns can still behave differently.
+
+INA3221 input telemetry is about 1.0--1.5\% lower than PicoScope across those continuous workloads. Empirically scaled Shelly observations are about 2--6\% lower and more workload-dependent. A repeatable signed displacement is not removed simply by averaging more repeats. Conversely, the AC comparison includes its specific transformation and electrical domain; it is not an isolated specification of the plug meter.
+
+Variable YOLO provides the critical contrast. The \urecs{} median difference rises to approximately +2.9\% without a change in nominal acquisition rate. The data do not identify the mechanism, because the devices retain their own intervals and responses. They do establish why continuous-load agreement is not sufficient evidence for intermittent operation. This complete Jetson check is the starting point for the attached-card experiment, not an assumed accuracy specification transferred to it.
+
+\subsection{Close DC Agreement Carries Over to the Hailo Card}
+The 300-s comparison first asks whether the embedded sensing path can reproduce the long-window external observation at the selected card input. It can do so closely in the tested Hailo workloads. Median \urecs{}--PicoScope power differences are about +0.40\% for GEMM, +0.45\% for YOLO and +0.19\% for variable YOLO (Fig.~\ref{fig:meters}). These are paired results from 15 executions per workload, not a comparison of unrelated benchmark averages.
+
+\begin{figure*}[t]
+\centering
+\begin{minipage}[t]{.48\textwidth}\centering
+\includegraphics[width=\linewidth]{hailo_dc_telemetry.pdf}\\[-1mm]
+\small (a) Embedded sensing and vendor telemetry
+\end{minipage}\hfill
+\begin{minipage}[t]{.48\textwidth}\centering
+\includegraphics[width=\linewidth]{hailo_ac_context.pdf}\\[-1mm]
+\small (b) Scaled observation at the AC boundary
+\end{minipage}
+\caption{Hailo at a 300-s request. Markers are medians of per-execution mean-power differences from PicoScope, with 15 paired executions per workload. The panels use different horizontal ranges to keep the DC/telemetry differences readable. Shelly is an empirically scaled AC observation, not another card-input sensor. Each path retains its own integration interval; all pair values and percentiles accompany the figure.}
+\label{fig:meters}
+\end{figure*}
+
+HailoRT is also repeatable within workloads, but its central agreement is not constant across them: about $-2.05\%$ for GEMM, $-0.18\%$ for YOLO and $-0.79\%$ for variable YOLO. Narrow repeated observations do not by themselves remove this workload dependence. The result supports long-window, workload-specific use of the interface; it does not establish a universal telemetry correction or its response to individual short events.
+
+The two platforms therefore share close embedded/external agreement during the tested long continuous workloads, but their variable-activity results differ. The smaller Hailo variable-YOLO difference does not establish a superior architecture: its deployment and explicitly retained interval differ from the Jetson case. The appropriate conclusion is workload-specific validation at each boundary, not one transferred correction factor.
+
+\subsection{A Wider Electrical Boundary Changes the Interpretation}
+The scaled Shelly observations in Fig.~\ref{fig:meters}(b) are roughly 23--40\% above the Hailo card-input readings. This is a larger difference than between the DC paths, but it is not evidence that the plug meter is intrinsically inaccurate. It observes the supplied AC arrangement and retains an empirical transformation; card input does not include conversion or other connected loads. Those quantities should be distinguished before interpreting the difference.
+
+The direction is itself informative. In the continuous Jetson comparisons, the scaled AC estimates lie about 2--6\% \emph{below} PicoScope, whereas they lie above card input for all three Hailo workloads. A universal statement such as ``AC measurements are higher'' or a single cross-platform scaling correction would not describe these results. The combined effects of measurement boundary, applied transformation and interval must remain part of the reported quantity.
+
+Likewise, the 40\% relative difference for variable Hailo activity cannot be relabelled as a 40\% host-energy share. A relative difference uses card-input power as its denominator, and the AC path need not contain a separately measured host. Quantifying component shares requires compatible, aligned component observations. The present comparison establishes the practical consequence of distinct boundaries, not a measured decomposition of them.
+
+\subsection{Mean-Power Agreement Can Hide an Interval Mismatch}
+A 300-s average is only one operating point. Applying the same pairing to all ten duration requests shows that HailoRT mean-power agreement changes most at the shortest requests. For continuous YOLO, its median difference moves from approximately $-3.3\%$ at 5 s to $-0.18\%$ at 300 s; GEMM changes from roughly $-3.8\%$ to $-2.1\%$. Variable YOLO appears comparatively stable when only mean power is inspected (Fig.~\ref{fig:intervals}(a)).
+
+\begin{figure*}[t]
+\centering
+\begin{minipage}[t]{.48\textwidth}\centering
+\includegraphics[width=\linewidth]{hailort_duration.pdf}\\[-1mm]
+\small (a) HailoRT mean-power agreement by workload
+\end{minipage}\hfill
+\begin{minipage}[t]{.48\textwidth}\centering
+\includegraphics[width=\linewidth]{hailo_variable_intervals.pdf}\\[-1mm]
+\small (b) Variable YOLO: power, energy and span
+\end{minipage}
+\caption{Duration-wise HailoRT--PicoScope pairing from the same stored measurement outputs, with 15 pairs at each request. Each point is the median of the individual relative differences. In (b), power agreement alone conceals a short-request interval difference. The retained explicit PicoScope interval for variable YOLO includes padding; these curves do not compare common physical endpoints or measure telemetry latency.}
+\label{fig:intervals}
+\end{figure*}
+
+The energy comparison reveals why that apparent stability is incomplete. At a 5-s variable-YOLO request, the HailoRT median mean-power difference is only $\VariablePowerFive\%$, but the median energy difference is $\VariableEnergyFive\%$. Its median interval-span difference is $\VariableSpanFive\%$. The explicitly retained PicoScope interval is seven seconds because padding is included, whereas the telemetry interval is shorter. Equation~\eqref{eq:identity} links these quantities within every recorded pair. Agreement in mean power has not validated the energy interval.
+
+At 300 s, the corresponding power and energy differences are both below 1\% in magnitude, and the relative span difference is small. A long-window agreement result can therefore coexist with a materially different short-request energy result. The conclusion is not that telemetry loses a proven fraction of the physical event: the retained endpoints differ, and no synchronised onset test is implied. It is that interval verification is necessary before an aggregate meter comparison can support an energy claim.
+
+This distinction also clarifies what numerical resampling can and cannot fix. Increasing the density of samples inside an unchanged, shorter interval cannot supply energy outside that interval. Calibration and sample-rate selection remain useful, but they address different parts of the observed disagreement.

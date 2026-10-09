@@ -1,0 +1,68 @@
+\section{Results: Execution Protocol, Duration and Meter Agreement}
+\label{sec:results-protocol}
+
+\subsection{Direct Rate Sweeps and a Complementary Acquisition Control}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{direct_control.pdf}
+\caption{Different experimental comparisons. Left: historical GEMM-FP16 energy medians normalised to the direct 2-kS/s group, with empirical run ranges. Right: adjusted outcome changes and model-based 95\% intervals from the separate 12-run complementary control. The left panel measures energy from separate executions; the right reports inner-window power and runtime. Neither panel alone isolates numerical sampling error.}
+\label{fig:direct_control}
+\end{figure*}
+
+\input{tables/controlled}
+
+Historical direct sweeps cover eight Jetson and four Hailo workloads, generally with 27 rate groups and 15 executions per group; Jetson YOLO-FP32 contains 26 groups. These compare different executions, including acquisition conditions, execution history and interval selection alongside rate.
+
+Jetson GEMM-FP16 has at most 0.73\% within-rate energy CV but 2.04\% maximum deviation of a rate-group mean from the average of rate-group medians. Its medians at 50~S/s and 2~kS/s are 2.27\% and 2.30\% above the separate 5-MS/s group. GEMM-FP16 also has the largest CV and group deviation across the Jetson workloads. Figure~\ref{fig:direct_control} contrasts the historical energy observations with the separate protocol control; its panels report different quantities and execution cohorts. Repeatability within groups does not establish equivalent conditions between groups.
+
+An additional fixed-window diagnostic uses all 225 recordings from five workload cohorts at three rates, integrated over record-relative 20--80~s. Median 5-MS/s-minus-2-kS/s changes remain $-2.299\%$ for GEMM-FP16, $-2.567\%$ for GEMM-INT8, $-1.967\%$ for the LLM, $-0.981\%$ for YOLO-FP32 and $-0.036\%$ for YOLO-INT8. Excluding the outer load-window boundaries therefore does not remove the complete between-group variation. The diagnostic does not identify its cause or justify a universal rate-dependent correction.
+
+The complementary FP16 acquisition control fixes the engine, 250 completed queries, \texttt{--useSpinWait} and 120-s process pauses. The two orders ABBAAB and BAABBA place each rate at every sequence position across sessions. Table~\ref{tab:controlled} reports all 12 runs, six per rate. Mean inner-load PicoScope powers are 35.036~W at 2~kS/s and 35.014~W at 5~MS/s. The adjusted 5-MS/s-minus-2-kS/s estimate is $-0.061\%$, with a 95\% interval of [$-0.182\%$, $+0.060\%$]. The corresponding estimates are $+0.009\%$ [$-0.072\%$, $+0.089\%$] for VDD\_IN and $-0.030\%$ [$-0.172\%$, $+0.112\%$] for TensorRT runtime.
+
+All three intervals include zero under the additive session/position model, with four residual degrees of freedom. The control resolves no clear rate effect under these conditions; it is not an equivalence test or an absolute uncertainty statement. The unadjusted per-session PicoScope median differences have opposite signs, $-0.508\%$ and $+0.441\%$, further motivating explicit order control. The historical and complementary experiments retain different execution protocols and should be reported as such.
+
+Hailo LLM also illustrates a prerequisite for interpreting direct sweeps: its maximum within-rate CV is 46.06\%, with 33.09\% maximum group deviation. Three of 405 recordings lack a finite load interval. Continuous GEMM and YOLO are markedly more repeatable, whereas variable YOLO remains more dispersed. Such differences require checking execution and interval consistency before attributing variation to acquisition rate.
+
+\subsection{Process Pauses Change Runtime and Thermal History}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{pause.pdf}
+\caption{Separate FP32 pause diagnostic, fixed acquisition at 2~kS/s. Six evaluated 100-query executions follow the shown 20/120-s pause sequence; a conditioning run is excluded by design. Runtime and pre-process temperature change together. This descriptive six-run comparison does not identify a specific throttling mechanism or include waiting energy.}
+\label{fig:pause}
+\end{figure*}
+
+A separate 100-query GEMM-FP32 experiment provides direct evidence that execution conditions can change even when acquisition rate remains fixed. One conditioning run is excluded from group statistics; the six evaluated executions follow pauses of 20, 120, 120, 20, 20 and 120~s. Each condition therefore has three runs in one session. This experiment is separate from the 250-query FP16 acquisition control.
+
+Figure~\ref{fig:pause} shows median TensorRT runtimes of 105.302~s after 20-s pauses and 96.1504~s after 120-s pauses, a reduction of 8.6908\%. Every long-pause execution is faster than every short-pause execution in this sequence. Median pre-start GPU temperatures, defined from the last 5~s before process start, are 73.562 and 58.781~$^\circ$C, respectively. These timing and temperature observations do not depend on calibrating the external power path.
+
+Independent TensorRT latency logs also show changes within an execution. For run~4 after a 20-s pause, the mean latency of successive ten-query groups increases from 942.751 to 1140.000~ms. For run~3 after a 120-s pause, it increases from 917.626 to 1036.040~ms. Longer pauses are associated with cooler starts and smaller within-run latency increases, but do not eliminate the latter. Because these latencies come from benchmark logs, they cannot be generated by changing the external power-integration window.
+
+Recorded GPU frequency remains 1.173~GHz throughout the queried sysfs samples. The observations therefore establish neither an observed frequency reduction nor a specific throttling threshold. Thermal history, preceding work and other device states remain coupled in this small sequential experiment. We use the result to motivate documenting pause policy and starting state; we do not claim an isolated causal temperature effect. Absolute power/energy estimates from its NvGpu path are not used here because that Jetson calibration chain lacks independent electrical validation. Nor does the experiment establish that adding idle waits minimises total workflow energy, or validate a matched cross-platform burst protocol.
+
+\subsection{Requested Duration and Actual Integration Span}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{duration.pdf}
+\caption{Duration dependence of median per-run mean power $E/T$, normalised to each workload's 600-s-request group. Actual integration spans define $T$. The reference is a within-series observation, not an established steady-state limit. Hailo variable YOLO retains its explicitly recorded interval including padding.}
+\label{fig:duration}
+\end{figure*}
+
+Figure~\ref{fig:duration} reports medians of per-run mean powers $E/T$, normalised to each workload's own 600-s group. The denominator is each run's actual integration span, rather than the requested command duration. The 600-s group is a comparison point within the series; it is not an experimentally established steady-state limit.
+
+For Jetson GEMM-FP16, the 5-s request gives median power 34.34~W, 6.33\% below the 600-s group's 36.66~W. The median detected span in the 5-s group is 3.0~s. Hailo GEMM and YOLO 5-s medians are 5.36\% and 3.65\% below their corresponding 600-s groups. At 100-s requests, the six continuous Jetson workload medians are 0.19--1.98\% below their 600-s groups; Hailo GEMM and YOLO are 0.58\% and 0.79\% below. Longer groups are closer to this reference in these cohorts, but the observations do not supply a universal equilibration time.
+
+Variable Hailo YOLO retains its recorded interval including padding. Duration recommendations must state the workload and window rule: nominal command duration, detected load span and representative deployment interval are separate quantities.
+
+\subsection{Agreement at 300 s Retains Measurement Boundaries}
+\input{tables/meters}
+
+Table~\ref{tab:meters} compares matched run IDs at 300-s requests. Central comparisons use ratios of sensor and PicoScope group medians; empirical 5th--95th ranges describe individual run-pair percentage differences. These statistics are deliberately distinct, and each path retains its own interval and electrical response.
+
+Across six continuous Jetson GEMM/YOLO workloads, u.RECS central differences span $-0.49\%$ to $+0.39\%$, input telemetry $-1.64\%$ to $-0.98\%$, and scaled Shelly readings $-6.16\%$ to $-2.31\%$. These are agreement results for the deployed voltage/scaling treatment and intervals. For example, GEMM-FP16 u.RECS has a central difference of $+0.221\%$, while its individual paired differences have a median of $+0.201\%$ and a 5th--95th range of $+0.119\%$ to $+0.266\%$.
+
+At the Hailo card-input boundary, u.RECS central differences range from $+0.19\%$ to $+0.47\%$. For GEMM, its paired range is $+0.368\%$ to $+0.431\%$; for YOLO it is $+0.382\%$ to $+0.511\%$. HailoRT central differences are $-2.05\%$ for GEMM and $-0.12\%$ for YOLO, with paired ranges of $-2.088\%$ to $-1.686\%$ and $-0.227\%$ to $-0.120\%$, respectively. Small within-workload spread therefore coexists with workload-dependent central agreement.
+
+Scaled Shelly central values are 23.50--39.82\% above the Hailo card-input observation across the three workloads. The AC path includes supply losses and wider system loads, so the difference cannot be ranked as a same-boundary meter error or assigned quantitatively to host energy. Likewise, run matching and empirical scaling do not turn telemetry, DC card input and AC input into interchangeable observations. The supported conclusion is that practical agreement depends on workload, interval, transformation and electrical boundary.

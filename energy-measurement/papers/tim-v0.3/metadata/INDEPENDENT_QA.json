@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "method": "Independent Python standard-library recomputation (statistics and explicit type-7 quantiles)",
+  "original_data_files_byte_verified": 79,
+  "prior_TIM_data_files_byte_verified": 81,
+  "paired_rows_checked": 4416,
+  "paired_groups_checked": 300,
+  "duration_groups_checked": 100,
+  "rate_series_checked": 12,
+  "source_PARMA_300s_summary_rows_checked": 30,
+  "physical_executions_at_300s": 150,
+  "max_numeric_residual": 6.750155989720952e-14,
+  "max_pair_identity_residual": 4.440892098500626e-16,
+  "native_all15_reference_guards": "PASS",
+  "manuscript_scope_and_float_counts": "PASS",
+  "raw_signals_read": 0,
+  "scope": "Export arithmetic and displayed input definitions; not raw calibration/PSD or acquisition verification"
+}

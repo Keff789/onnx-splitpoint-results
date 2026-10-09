@@ -1,0 +1,100 @@
+{
+  "source": "PARMA_DITAM_v0.6_20261003_Source.zip; all listed bytes unchanged",
+  "files": [
+    {
+      "path": "data/final_direct/device_groups_all_pairs.csv",
+      "bytes": 873413,
+      "sha256": "3f27d39f9932c40df77789253cf5dba47f5f43b0fea4b6225b545992bf166238"
+    },
+    {
+      "path": "data/final_direct/groups_all_candidates.csv",
+      "bytes": 1533786,
+      "sha256": "81e544394a803daa635011e11828cf1baffc489b7db79c386e90e3b7a3c82b6f"
+    },
+    {
+      "path": "data/final_direct/paper_window_policy.csv",
+      "bytes": 2508,
+      "sha256": "5adacf6f3feecd40d0c52be72494c23fc7b2f5e41546df7ed41deefbbc9a777a"
+    },
+    {
+      "path": "data/final_direct/plotted_candidates.csv",
+      "bytes": 11264079,
+      "sha256": "46dfc7a59ec5e2073044842376a0ec63dfbcffe7911351b57651b2355957ea7a"
+    },
+    {
+      "path": "data/final_direct/series.json",
+      "bytes": 42159,
+      "sha256": "533a267541597637e5324625552f2cf64063829f7a3b1b7244af9fc98debe9ac"
+    },
+    {
+      "path": "data/git/platform_spectral_metrics.csv",
+      "bytes": 7622,
+      "sha256": "8f0909bdf2e78c67317cef83acddfb179afeef3ce7972802be7c3e1b01e14370"
+    },
+    {
+      "path": "results_summary/FULL_RUN_SUMMARY.md",
+      "bytes": 5015,
+      "sha256": "a1a129d0ccf0d9a58f6216e2d21c79de60eee0d622eeb5b997341c93d9fec158"
+    },
+    {
+      "path": "results_summary/analysis_manifest.json",
+      "bytes": 4868,
+      "sha256": "2e2a8768e6ba26d03688a9b97e7f3c9ba533bed95742a8c00b8ce727d8cf4182"
+    },
+    {
+      "path": "results_summary/anti_aliased_summary.csv",
+      "bytes": 5249,
+      "sha256": "743780b2e9af9b120964a69fee67d338961ccfe236ed5a8f0b1723805ea451be"
+    },
+    {
+      "path": "results_summary/f_min.csv",
+      "bytes": 1328,
+      "sha256": "d21c3c5a5a0e3b78808e40c037e9cbf1baea8e2cea1475c3c194054eb0d0d894"
+    },
+    {
+      "path": "results_summary/phase_only_summary.csv",
+      "bytes": 4229,
+      "sha256": "5fb8ba8347bf972405f5fac22a524763359427296358c982b8494e6432907a3a"
+    },
+    {
+      "path": "results_summary/psd_bandwidth_sensitivity_decision.json",
+      "bytes": 1671,
+      "sha256": "7dcae0a210cd6a15539caf63f21aed6e208ba8d7bc3353542f4f603cb3288ff3"
+    },
+    {
+      "path": "results_summary/psd_bandwidth_sensitivity_summary.csv",
+      "bytes": 1051,
+      "sha256": "c297a7f0d4d0dbdf2435196272894523382f2102f30f5af04e83d71d09b0815b"
+    },
+    {
+      "path": "results_summary/psd_metrics_summary.csv",
+      "bytes": 1095,
+      "sha256": "7ffc1efc3a713cf44ba2b24dc48f4c2635d402ef75fa10b001086373475ed99a"
+    },
+    {
+      "path": "results_summary/psd_summary.npz",
+      "bytes": 33593622,
+      "sha256": "81763f276b4736e6076f68f7c4b589053955cc4fd756aea2ddd20a8d95c06d16"
+    },
+    {
+      "path": "results_summary/real_measurements_summary.csv",
+      "bytes": 5686,
+      "sha256": "d52f85e5d3e5fd807d7db1c99d3cbaf1fe3056397b41d3e0117efefd9451b3e4"
+    },
+    {
+      "path": "results_summary/variance_bands_summary.csv",
+      "bytes": 2120,
+      "sha256": "2e19893a1ed112de1cb977bdb98e7fd14bd0dd406d9242b7b8c005fc51909a86"
+    },
+    {
+      "path": "results_summary/variance_capture_summary.csv",
+      "bytes": 4770,
+      "sha256": "9d830efa4ef50f09ecfb5622d630db0bd67e274a89c320523ee7705ec8ef87cb"
+    },
+    {
+      "path": "results_summary/variance_capture_thresholds.csv",
+      "bytes": 561,
+      "sha256": "921a842e09cf0c9d001c51dad046350da1514e833498b6a2902704cef77c131c"
+    }
+  ]
+}

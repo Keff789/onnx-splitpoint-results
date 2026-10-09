@@ -1,0 +1,20 @@
+\section{Practical Implications and Scope}
+\subsection{Validate a Measurement Configuration, Not a Sampling Number}
+The results support a staged decision. Start with the electrical boundary and intended quantity: interval energy, activity mean power, schedule energy or fluctuation structure. Choose the endpoints and keep startup, transfers and internal pauses either explicitly inside or outside them. A reference recording can then test candidate sampling grids for that integral; a separate spectral criterion is needed when temporal detail is itself the output.
+
+Next, deploy the selected configuration and test it with the actual workload. Pair repeated observations before aggregation, and inspect energy, mean power and span together. The Hailo variable-activity example shows why this is more informative than a single power ratio: a small power difference can coexist with a much larger energy difference when the intervals differ. Repeated long-window agreement is useful evidence for that operating point, not a substitute for testing a shorter interval.
+
+Finally, validate the execution protocol. Specify completed work where it is known, request semantics where it is not, starting conditions and inter-execution pauses. Use balanced or randomised acquisition order when estimating rate-associated effects. The 600-s group can be a practical within-series comparator without being called a universal steady state, and a six-run pause test can expose a confound without supplying a general thermal model.
+
+\subsection{What the Cross-Platform Comparison Establishes}
+The Hailo results extend the Jetson evidence in a concrete but bounded way. Long-window embedded/external agreement also occurs at an attached card input; vendor agreement remains workload-dependent; the scaled AC difference changes direction between setups; and short-request energy and mean-power agreement can diverge. Hailo spectra add a separate warning against transferring a fluctuation requirement solely from a platform label.
+
+These observations do not constitute an accelerator-efficiency ranking. The module and card boundaries include different components, and identical workload names do not establish identical completed inference work. A quantitative host fraction requires aligned component observations, not subtraction of an unexplained AC/DC difference. Similarly, the presented native Jetson error envelope does not certify a Hailo or discrete-GPU energy rate without the corresponding same-trace test.
+
+The duration-wise HailoRT comparison is also intentionally distinct from dynamic sensor validation. Its own intervals are part of the observations. It does not measure internal update cadence, onset delay or loss of a synchronised event. Those properties require timing evidence beyond paired aggregate outputs. This limit does not invalidate the aggregate comparison; it specifies which measurement decision the comparison can support.
+
+\subsection{Traceability of the Argument and Its Limits}
+
+The statistical and electrical limits remain separate. Empirical pair percentiles describe recorded repeats; hierarchical quantiles describe reconstruction cases and recordings; PSD area describes measured fluctuation variance. None is a complete dynamic-power uncertainty budget. Current-model extrapolation, the workload-derived scope correction and setup-specific scaling remain part of the interpretation. Nor does the nominal 77-kHz front end guarantee anti-alias protection at 2 kS/s.
+
+The source package provides full-precision pair values, interval policies, calibration information, spectral and reconstruction summaries, and generators for every numerical figure and table. Evidence is pinned to a repository commit~\cite{energyResults2026,pauseEvidence2026}; the preceding Jetson study is cited at its fixed author-manuscript version~\cite{mika2026workshopdraft}. Regeneration from stored outcomes is distinct from raw-waveform reconstruction or PSD re-estimation, which require the original recordings and matching acquisition settings.
