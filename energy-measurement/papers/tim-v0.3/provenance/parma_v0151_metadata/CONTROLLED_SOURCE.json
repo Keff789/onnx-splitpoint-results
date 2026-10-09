@@ -1,0 +1,151 @@
+{
+  "repository": "Keff789/onnx-splitpoint-results",
+  "commit": "e87730135385e756c667fc2b573fb1a86834d4bb",
+  "scope": "Complete compact public controlled-rate evidence, not raw samples",
+  "files": [
+    {
+      "repository_path": "energy-measurement/2026-10-01-controlled-rate-test/README.md",
+      "local_path": "data/validation/controlled/README.md",
+      "git_blob_sha1": "9334b34c9a3f5305c508f558852fd2a9a05aa685",
+      "source_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/2026-10-01-controlled-rate-test/README.md",
+      "sha256": "906c846788f577f5f11929ad2c29c34cbb6cb96ba7ae91ae2b470a64732a4ea6",
+      "bytes": 2455
+    },
+    {
+      "repository_path": "energy-measurement/2026-10-01-controlled-rate-test/fixed-window/README.md",
+      "local_path": "data/validation/controlled/fixed-window/README.md",
+      "git_blob_sha1": "13ebb213fb820d082ef98f259a9eb12797610b6f",
+      "source_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/2026-10-01-controlled-rate-test/fixed-window/README.md",
+      "sha256": "843475141ae0f8294de89c67daffb20e9140d53d78e1556b70b46755087bd96c",
+      "bytes": 1444
+    },
+    {
+      "repository_path": "energy-measurement/2026-10-01-controlled-rate-test/fixed-window/data/main_summary.csv",
+      "local_path": "data/validation/controlled/fixed-window/data/main_summary.csv",
+      "git_blob_sha1": "bc075c9b4ba5ebc9dec1a91a63c8d05d915b7c9c",
+      "source_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/2026-10-01-controlled-rate-test/fixed-window/data/main_summary.csv",
+      "sha256": "bf7c162352c89f15be958d1a07ed0340ffe7a29846d46639b6f22477cefa6c90",
+      "bytes": 860
+    },
+    {
+      "repository_path": "energy-measurement/2026-10-01-controlled-rate-test/complementary/REPORT.md",
+      "local_path": "data/validation/controlled/complementary/REPORT.md",
+      "git_blob_sha1": "2546661b47f9f7daf957d763522721d4a5185c57",
+      "source_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/2026-10-01-controlled-rate-test/complementary/REPORT.md",
+      "sha256": "ac73c6d1274aa7bc60e1961febcd4faf4fdfb9b8a8a9922da82de59940de7c9d",
+      "bytes": 2806
+    },
+    {
+      "repository_path": "energy-measurement/2026-10-01-controlled-rate-test/complementary/data/combined_runs.csv",
+      "local_path": "data/validation/controlled/complementary/data/combined_runs.csv",
+      "git_blob_sha1": "ab96bf498085fe4de582f03378235520357a1f04",
+      "source_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/2026-10-01-controlled-rate-test/complementary/data/combined_runs.csv",
+      "sha256": "0f18ba716c5ed7b32fea1d52af47a5b42cdceeebd896771c3ab5667f8a03ab9e",
+      "bytes": 7831
+    },
+    {
+      "repository_path": "energy-measurement/2026-10-01-controlled-rate-test/complementary/data/balanced_effects.csv",
+      "local_path": "data/validation/controlled/complementary/data/balanced_effects.csv",
+      "git_blob_sha1": "9b51128f581b73151242f213ddca7a5dd6fc0eae",
+      "source_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/2026-10-01-controlled-rate-test/complementary/data/balanced_effects.csv",
+      "sha256": "5645a78fad791a57569125e6afa4c0bde64c2662544e419837b3042c2828ade4",
+      "bytes": 6001
+    },
+    {
+      "repository_path": "energy-measurement/2026-10-01-controlled-rate-test/sources.json",
+      "local_path": "data/validation/controlled/sources.json",
+      "git_blob_sha1": "99d96db6c88bada19d1616f48b5cb713fb88c4cb",
+      "source_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/2026-10-01-controlled-rate-test/sources.json",
+      "sha256": "2e0be7bf01f2fca6dde3f09f6eda5ed53fda940bfe247213cb879587837533c8",
+      "bytes": 2026
+    },
+    {
+      "repository_path": "energy-measurement/2026-10-01-controlled-rate-test/verify.py",
+      "local_path": "data/validation/controlled/verify.py",
+      "git_blob_sha1": "a2fc622a582f42ff1569d0a98d9afcd374ecd3a3",
+      "source_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/2026-10-01-controlled-rate-test/verify.py",
+      "sha256": "6a8a5621015a3b0f0f1a009bbbeef3a2ed1fd597065a94b053037da2875da75c",
+      "bytes": 2403
+    },
+    {
+      "repository_path": "energy-measurement/2026-10-01-controlled-rate-test/fixed-window/data/QA.json",
+      "local_path": "data/validation/controlled/fixed-window/data/QA.json",
+      "git_blob_sha1": "aabffc4176069d920c24ed9c24e27b27755c0d69",
+      "source_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/2026-10-01-controlled-rate-test/fixed-window/data/QA.json",
+      "sha256": "018ba2475b1c137e92ca852dab54537e3103df933c0652842a1b8bcdb83d2880",
+      "bytes": 1514
+    },
+    {
+      "repository_path": "energy-measurement/2026-10-01-controlled-rate-test/fixed-window/data/preload_decomposition.csv",
+      "local_path": "data/validation/controlled/fixed-window/data/preload_decomposition.csv",
+      "git_blob_sha1": "7eb1005eeb97c30eedb4cb8c563bb1606b391478",
+      "source_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/2026-10-01-controlled-rate-test/fixed-window/data/preload_decomposition.csv",
+      "sha256": "0f41e33a7ceb94682239a8867a5c669907f946832037216b6e09c789e31e9291",
+      "bytes": 1493
+    },
+    {
+      "repository_path": "energy-measurement/2026-10-01-controlled-rate-test/fixed-window/data/run0_observation.csv",
+      "local_path": "data/validation/controlled/fixed-window/data/run0_observation.csv",
+      "git_blob_sha1": "dbb6ab7ecc05b2385f6a60d75467952af54a4cce",
+      "source_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/2026-10-01-controlled-rate-test/fixed-window/data/run0_observation.csv",
+      "sha256": "e520d13419e2a68a0ac122604767b62e35d76969ea6279753b42b5575a9a4829",
+      "bytes": 907
+    },
+    {
+      "repository_path": "energy-measurement/2026-10-01-controlled-rate-test/fixed-window/data/subwindows.csv",
+      "local_path": "data/validation/controlled/fixed-window/data/subwindows.csv",
+      "git_blob_sha1": "efacbeaeff3509f2770db6d285265f4bf170943e",
+      "source_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/2026-10-01-controlled-rate-test/fixed-window/data/subwindows.csv",
+      "sha256": "8dd4698917fe5aaed1c9ff5e27982153c30dd7464b0a354cb3e1bc626caac8ae",
+      "bytes": 504
+    },
+    {
+      "repository_path": "energy-measurement/2026-10-01-controlled-rate-test/complementary/data/QA.json",
+      "local_path": "data/validation/controlled/complementary/data/QA.json",
+      "git_blob_sha1": "622890033dc093380edf2246970977f95450d843",
+      "source_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/2026-10-01-controlled-rate-test/complementary/data/QA.json",
+      "sha256": "a6179d2c4010427d09d94bd9b13891e97464c21a081f4909d2535ef0ab25151f",
+      "bytes": 3187
+    },
+    {
+      "repository_path": "energy-measurement/2026-10-01-controlled-rate-test/complementary/data/position_balance.csv",
+      "local_path": "data/validation/controlled/complementary/data/position_balance.csv",
+      "git_blob_sha1": "bdaa1709382d77c2bc8f78b6de7832e1e1166d9f",
+      "source_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/2026-10-01-controlled-rate-test/complementary/data/position_balance.csv",
+      "sha256": "0a058570201e6700336b481678f2c8e164405d859b33f473c77b3ce0002c4d45",
+      "bytes": 131
+    },
+    {
+      "repository_path": "energy-measurement/2026-10-01-controlled-rate-test/complementary/data/position_contrasts.csv",
+      "local_path": "data/validation/controlled/complementary/data/position_contrasts.csv",
+      "git_blob_sha1": "e4d07608bf023bc812dcd55f2337d1c949de362f",
+      "source_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/2026-10-01-controlled-rate-test/complementary/data/position_contrasts.csv",
+      "sha256": "4902099ccbbd6d0ea19afb512ce6bc230225e2220f1bba1c95585a1bbd9cf85c",
+      "bytes": 9800
+    },
+    {
+      "repository_path": "energy-measurement/2026-10-01-controlled-rate-test/complementary/data/sequence_slopes.csv",
+      "local_path": "data/validation/controlled/complementary/data/sequence_slopes.csv",
+      "git_blob_sha1": "973984e3041dfb57f5b93f96b54d84eb37f31f96",
+      "source_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/2026-10-01-controlled-rate-test/complementary/data/sequence_slopes.csv",
+      "sha256": "5251e9473d81c258ac7297f7157f8f74c7f729002d5d5cc46c46fbdeeee73866",
+      "bytes": 1881
+    },
+    {
+      "repository_path": "energy-measurement/2026-10-01-controlled-rate-test/complementary/data/session_rate_summaries.csv",
+      "local_path": "data/validation/controlled/complementary/data/session_rate_summaries.csv",
+      "git_blob_sha1": "073b181c587fb1b6e285a630d89053bf952cd001",
+      "source_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/2026-10-01-controlled-rate-test/complementary/data/session_rate_summaries.csv",
+      "sha256": "87041d9a0bc6a6858948cf3f5e8b4cb8da3464c426bb9d5c09a06199b97cd4bb",
+      "bytes": 2882
+    },
+    {
+      "repository_path": "energy-measurement/Energy_Paper_TIM_KnowledgeBase_CURRENT_2026-10-01.md",
+      "local_path": "data/validation/controlled/CURRENT_KB.md",
+      "git_blob_sha1": "69fca5a7859a0c7a91c40b9dbc15296c8f590d5c",
+      "source_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/Energy_Paper_TIM_KnowledgeBase_CURRENT_2026-10-01.md",
+      "sha256": "b6b85c704610eb9a66f2af6a44a1945f124c760854cf24d45c82a62c306a298b",
+      "bytes": 7020
+    }
+  ]
+}

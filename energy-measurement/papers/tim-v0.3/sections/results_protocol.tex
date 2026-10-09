@@ -1,0 +1,66 @@
+\section{RQ4: Validate the Execution as Well as the Meter}
+\label{sec:protocol}
+\subsection{A Short Benchmark Is Not Automatically Representative}
+
+The interval in the numerical reconstruction is held fixed. A benchmark's requested duration, in contrast, can alter which execution phases contribute to its measured average. Figure~\ref{fig:duration} keeps the DC path fixed within each series and compares each actual $E/T$ with that workload's 600-s-request median. This asks whether a shorter execution gives a similar measured mean, not whether its samples reproduce an unchanged reference trace.
+
+\begin{figure*}[t]
+\centering
+\begin{minipage}[t]{.48\textwidth}\centering
+\includegraphics[width=\linewidth]{jetson_duration.pdf}\\[-1mm]
+\small (a) Jetson
+\end{minipage}\hfill
+\begin{minipage}[t]{.48\textwidth}\centering
+\includegraphics[width=\linewidth]{hailo_duration.pdf}\\[-1mm]
+\small (b) Hailo
+\end{minipage}
+\caption{Duration dependence of per-run mean power $E/T$, relative to each workload's 600-s-request median. Markers or curves show group medians; shaded bands in (a) and bars in (b) show empirical fifth--95th percentiles, not confidence intervals. The actual recorded span defines $T$. Jetson uses available valid load intervals; each Hailo group contains 15 executions and variable YOLO retains its explicit padded interval.}
+\label{fig:duration}
+\end{figure*}
+
+For Jetson GEMM-FP16, a 5-s request gives about 6.3\% less mean power than the 600-s group, while its median detected load span is only 3.0 s. This is not in conflict with accurate reconstruction over a specified two-second window: the shorter benchmark and the longer benchmark are different executions. Startup, activity fraction and operating state can differ before any integration error is considered. At a 100-s request, the six continuous Jetson medians are within 2\% of their respective 600-s values.
+
+Hailo provides an analogous but not numerically identical duration dependence. Its 5-s GEMM and YOLO requests give about 5.4\% and 3.6\% less mean power than their own 600-s groups. By 100 s, their medians are within 0.8\%. Longer execution reduces the observed differences in these cohorts, but 600 s remains a comparison point rather than a demonstrated steady-state limit. The observations do not establish 100 s as a universal minimum benchmark duration.
+
+Variable activity deserves its own interpretation. Hailo's recorded interval includes padding and internal pauses. Averaging over that interval describes the retained schedule, not only accelerator-active samples. Removing those portions after seeing the result would change the quantity rather than improve its accuracy. An activity-only mean and a schedule-level energy can both be meaningful, but their definitions must precede their comparison.
+
+\subsection{Repeatability Is a Prerequisite for a Rate Sweep}
+Direct rate sweeps compare different physical executions. Their variation includes the executed work, acquisition order, starting conditions and interval selection, in addition to the configured rate. Table~\ref{tab:repeatability} retains all eight Jetson and four Hailo series under the same definitions; no series is selected merely for having a favourable trend. Hailo makes the importance of execution repeatability particularly visible. Continuous GEMM and YOLO are comparatively repeatable; variable activity is more dispersed, and the LLM-labelled series reaches a within-rate energy CV of about $\HailoLLMCV\%$.
+
+\begin{table}[t]
+\caption{Direct Jetson and Hailo sweeps. Each series has 27 rate groups except Jetson YOLO-FP32, which has 26. ``Max. shift'' compares a rate-group energy mean with the equally weighted mean of rate-group means. All finite results are retained; three LLM intervals are missing. These are between-execution statistics, not same-trace sampling errors.}
+\label{tab:repeatability}
+\centering\footnotesize\input{tables/direct_repeatability.tex}
+\end{table}
+
+The largest LLM group displacement is about $\HailoLLMShift\%$. Neither that displacement nor the three unavailable intervals can be explained simply by asking for a faster meter. They first require an account of execution and valid interval formation. Conversely, the small within-rate CVs of the continuous workloads do not prove that different rate groups share identical conditions. On Jetson, GEMM-FP16 combines a maximum within-rate CV below 0.8\% with a largest group displacement of about 2.1\%. Repeatability within a group and comparability between groups are separate checks.
+
+A fixed interior-window analysis of 225 Jetson recordings retains some of the between-rate differences after excluding the detected outer edges~\cite{energyResults2026}. This rules out attributing the entire observation to one envelope boundary, but it still compares separate executions. A more controlled acquisition sequence is therefore needed before assigning a change to the configured rate.
+
+\subsection{Order Control Narrows the Rate-Associated Difference}
+The complementary GEMM-FP16 control fixes the engine, 250 completed TensorRT queries, spin-wait option and 120-s process-end-to-next-start pause. With $A=2$ kS/s and $B=5$ MS/s, the two session orders are ABBAAB and BAABBA. Every sequence position is observed once at each rate across the two sessions. All twelve runs are retained.
+
+We fit an additive model with a rate indicator, a session term and categorical sequence-position effects. With eight independent design columns and twelve observations, it has four residual degrees of freedom. The rate estimate and its two-sided 95\% $t$ interval are expressed relative to the observed 2-kS/s outcome mean. The model does not fit rate-by-session interactions or supply an absolute measurement uncertainty.
+
+\begin{table}[t]
+\caption{Fixed-work FP16 rate control: adjusted 5-MS/s-minus-2-kS/s changes. The two final columns give the lower and upper model-based 95\% bounds. Six executions are measured at each rate; the intervals are not equivalence limits.}
+\label{tab:control}
+\centering\footnotesize\input{tables/controlled.tex}
+\end{table}
+
+The adjusted external load-power difference is about $-0.06\%$, with bounds of approximately $-0.18\%$ and $+0.06\%$ (Table~\ref{tab:control}). Input telemetry and query time likewise resolve no clear rate-associated change under this model. This is compatible with low reconstruction error at the intended embedded rate, but it is not proof that all rates or workloads are equivalent. The controlled outcome is deliberately narrower: the multi-percent difference seen between some separate groups is not a stable rate-associated effect in this fixed-work, balanced comparison.
+
+\subsection{The Starting State Can Change While the Rate Stays Fixed}
+A separate GEMM-FP32 diagnostic reverses the question. Acquisition remains at 2 kS/s in one continuous stream, while the process pause changes between 20 and 120 s. One conditioning execution is excluded by design; six scored executions follow the pause sequence 20, 120, 120, 20, 20, 120 s, with 100 completed TensorRT queries each~\cite{pauseEvidence2026}.
+
+\begin{figure}[t]
+\centering\includegraphics[width=\columnwidth]{pause_runtime.pdf}
+\caption{Fixed-rate FP32 pause diagnostic in execution order. Every scored run completes 100 queries; one preceding conditioning run is excluded. All long-pause runs are faster in this sequence. Three repeats per condition in one session support a protocol diagnostic, not an isolated causal temperature or throttling claim.}
+\label{fig:pause}
+\end{figure}
+
+Median runtime decreases from approximately 105.3 s after short pauses to 96.2 s after long pauses, or $\PauseReduction\%$ (Fig.~\ref{fig:pause}). Median pre-start GPU temperatures are about 74 and 59~$^{\circ}$C, respectively. These observations come from timing and platform logs, so an external power-window choice cannot create the runtime change. The experiment demonstrates that execution state matters even when the meter's configured rate does not change.
+
+It does not isolate a temperature mechanism. The sampled GPU-frequency readout remains unchanged, while thermal history and preceding work are coupled in this small sequential study. We therefore use timing and temperature as evidence for documenting the starting state, not as proof of a particular throttling threshold. The diagnostic's external power calibration is not independently validated for absolute Jetson energy, and waiting energy is outside its activity interval. No claim that longer waits minimise total schedule energy follows from the runtime result.
+
+The two controls complement rather than replace one another. Balanced acquisition narrows a rate-associated estimate; fixed-rate pauses demonstrate an independent execution dependency. Together they explain why a deployed energy benchmark needs both a validated observation and a repeatable protocol.

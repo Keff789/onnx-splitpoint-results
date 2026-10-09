@@ -1,0 +1,45 @@
+\documentclass[letterpaper,journal]{IEEEtran}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs,array,tabularx}
+\usepackage{cite}
+\usepackage{url}
+\usepackage{stfloats}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Beyond Sampling Rate: Reference-Based Energy Measurement Across Edge-AI Platforms},
+pdfauthor={Kevin Mika, Joris Wachsmuth, Florian Porrmann, Jens Hagemeyer},
+pdfsubject={IEEE TIM working manuscript v0.3, 9 October 2026}}
+\graphicspath{{figures/}}
+\newcommand{\urecs}{u.RECS}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\renewcommand{\dbltopfraction}{0.9}
+\renewcommand{\textfraction}{0.06}
+\setcounter{dbltopnumber}{2}
+\hyphenation{mea-sure-ment re-con-struc-tion ac-cel-er-a-tor}
+\input{generated/numbers.tex}
+\begin{document}
+\title{Beyond Sampling Rate: Reference-Based Energy Measurement Across Edge-AI Platforms}
+\author{Kevin Mika, Joris Wachsmuth, Florian Porrmann, and Jens Hagemeyer%
+\thanks{The authors are with CITEC, Bielefeld University, Inspiration 1, 33619 Bielefeld, Germany. Corresponding author: Kevin Mika (e-mail: kmika@techfak.uni-bielefeld.de).}%
+\thanks{Working journal manuscript v0.3, 9 October 2026. Prepared for development toward IEEE Transactions on Instrumentation and Measurement; not submitted.}}
+\markboth{IEEE TIM Working Manuscript, October 2026}{Mika et al.: Reference-Based Energy Measurement Across Edge-AI Platforms}
+\maketitle
+\begin{abstract}
+Energy measurement for edge inference requires a sampling rate suited to the intended quantity, a defined electrical boundary and a representative execution interval. We develop and evaluate a reference-based workflow that separates numerical sampling error, recorded power fluctuations and deployed measurement behaviour on Jetson and Hailo. Across six Jetson workloads and 59 paired executions, native-trace reconstruction at 2 kS/s meets an empirical hierarchical 1\% energy-error criterion at the tested 2-, 5- and 10-s intervals; a 100-ms interval instead requires a persistent 80-kS/s minimum on the tested grid. A separate 104-s FP16 study passes its pooled energy criterion at 50 S/s, whereas the evaluated 125/160-kS/s rates meet its 95/99\% measured-variance coverage targets. The deployed comparisons show why those rate decisions are only a starting point. Embedded/external median power differences remain below 0.5\% for continuous Jetson operation and the three Hailo workloads at 300 s, but variable Jetson activity gives 2.9\%. For variable Hailo activity at a 5-s request, telemetry mean-power disagreement is only $\VariablePowerFive\%$ while energy disagreement is $\VariableEnergyFive\%$, with different retained intervals. Spectral comparisons and controlled execution tests identify further acquisition and protocol dependencies. The resulting approach validates the measurement configuration as a whole rather than prescribing a universal sampling rate or ranking meters across different electrical boundaries.
+\end{abstract}
+\begin{IEEEkeywords}
+Energy measurement, instrumentation, edge AI, sampling rate, measurement boundary, power spectral density, accelerator telemetry.
+\end{IEEEkeywords}
+\input{sections/introduction}
+\input{sections/related_work}
+\input{sections/instrumentation}
+\input{sections/methods}
+\input{sections/results_sampling}
+\input{sections/results_dynamics}
+\input{sections/results_meters}
+\input{sections/results_protocol}
+\input{sections/discussion}
+\input{sections/conclusion}
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\end{document}

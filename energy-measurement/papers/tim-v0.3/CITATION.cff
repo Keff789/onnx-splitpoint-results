@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite the corresponding working manuscript and its final archival version when available."
+title: "Beyond Sampling Rate: Reference-Based Energy Measurement Across Edge-AI Platforms"
+type: software
+version: "0.3"
+date-released: "2026-10-09"
+authors:
+  - family-names: Mika
+    given-names: Kevin
+    orcid: "https://orcid.org/0009-0005-2717-5147"
+  - family-names: Wachsmuth
+    given-names: Joris
+  - family-names: Porrmann
+    given-names: Florian
+    orcid: "https://orcid.org/0000-0003-2401-7862"
+  - family-names: Hagemeyer
+    given-names: Jens
+    orcid: "https://orcid.org/0009-0005-9943-8081"
+abstract: "Working-manuscript and numerical-export reproduction package for reference-based energy measurement on Jetson and Hailo. This local v0.3 delivery has not been submitted or assigned a DOI."

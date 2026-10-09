@@ -1,0 +1,216 @@
+{
+  "repository": "Keff789/onnx-splitpoint-results",
+  "commit": "e87730135385e756c667fc2b573fb1a86834d4bb",
+  "files": [
+    {
+      "repository_path": "energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/multi_workload_manifest.json",
+      "relative_path": "data/validation/multi_workload/multi_workload_manifest.json",
+      "git_blob_sha": "d0fc7e6624a45d81320802f021bd09c60c819aca",
+      "sha256": "a43f833e05f2c810846bda4dc3d2810d62413501b152a73aa1b2405552c07b7f",
+      "bytes": 16902,
+      "display_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/multi_workload_manifest.json",
+      "download_method": "GitHub connector fetch_file pinned ref; decoded bytes verified by Git blob SHA-1"
+    },
+    {
+      "repository_path": "energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/MULTI_WORKLOAD_SUMMARY.md",
+      "relative_path": "data/validation/multi_workload/MULTI_WORKLOAD_SUMMARY.md",
+      "git_blob_sha": "961bb849edf72b9c2c73144f20402e550f529ac4",
+      "sha256": "683c6fa436e210f578d3a04fdfc69e35f69a7661d92d2d0f1834686a836c2aca",
+      "bytes": 4079,
+      "display_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/MULTI_WORKLOAD_SUMMARY.md",
+      "download_method": "GitHub connector fetch_file pinned ref; decoded bytes verified by Git blob SHA-1"
+    },
+    {
+      "repository_path": "energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/inventory/workload_inventory.json",
+      "relative_path": "data/validation/multi_workload/workload_inventory.json",
+      "git_blob_sha": "b369ddd52f5d852529a6f7cc5e3593c5358cacf4",
+      "sha256": "954c5a289e23efcfc2ccd44c17625eea7fbd70518b72776bc81b3804cbc15a5c",
+      "bytes": 6250,
+      "display_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/inventory/workload_inventory.json",
+      "download_method": "GitHub connector fetch_file pinned ref; decoded bytes verified by Git blob SHA-1"
+    },
+    {
+      "repository_path": "energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/inventory/workload_inventory.csv",
+      "relative_path": "data/validation/multi_workload/workload_inventory.csv",
+      "git_blob_sha": "776ec0a9b41280e73a57bcbd55dfd89e865ce4cb",
+      "sha256": "db91174c6f24e8d50bf6fb2dd802aa875fdfd084f1a8519ab01934b1f250016e",
+      "bytes": 2908,
+      "display_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/inventory/workload_inventory.csv",
+      "download_method": "GitHub connector fetch_file pinned ref; decoded bytes verified by Git blob SHA-1"
+    },
+    {
+      "repository_path": "energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/common_reference/common_reference_summary.csv",
+      "relative_path": "data/validation/multi_workload/common_reference_summary.csv",
+      "git_blob_sha": "caf9f129c61b9d279ea40e15f7095ecd2f6ea7e0",
+      "sha256": "fa67f7fc332326ec5afd89ff1d74a1188a11535feac753ab566cf38cb55ccdbb",
+      "bytes": 601496,
+      "display_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/common_reference/common_reference_summary.csv",
+      "download_method": "GitHub connector fetch_file pinned ref; decoded bytes verified by Git blob SHA-1"
+    },
+    {
+      "repository_path": "energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/common_reference/f_min_by_workload_duration.csv",
+      "relative_path": "data/validation/multi_workload/f_min_by_workload_duration.csv",
+      "git_blob_sha": "84c0e5c6ab71af38a5ee56330df4e2738964dbe7",
+      "sha256": "932512c61a48a28abcc3d1277fda58264e9de9139751eb1fdcb8ef6c24e2afc2",
+      "bytes": 136066,
+      "display_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/common_reference/f_min_by_workload_duration.csv",
+      "download_method": "GitHub connector fetch_file pinned ref; decoded bytes verified by Git blob SHA-1"
+    },
+    {
+      "repository_path": "energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/common_reference/highlighted_rate_thresholds.csv",
+      "relative_path": "data/validation/multi_workload/highlighted_rate_thresholds.csv",
+      "git_blob_sha": "b9edcb059d84caa959ea50f16f20ffc4c196aaae",
+      "sha256": "334e5d21e0389381817b000577c2ddb6384910e313d948b40a3ae69141ed407d",
+      "bytes": 16524,
+      "display_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/common_reference/highlighted_rate_thresholds.csv",
+      "download_method": "GitHub connector fetch_file pinned ref; decoded bytes verified by Git blob SHA-1"
+    },
+    {
+      "repository_path": "energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/common_reference/cache_energy_qc.csv",
+      "relative_path": "data/validation/multi_workload/cache_energy_qc.csv",
+      "git_blob_sha": "cf49ddc24bc65a02f0bbdcb698c437eb5efb33cb",
+      "sha256": "133787047c69de7604870c5984f1e5e409ba9ddc03c8219637433e4cb0670f53",
+      "bytes": 20052,
+      "display_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/common_reference/cache_energy_qc.csv",
+      "download_method": "GitHub connector fetch_file pinned ref; decoded bytes verified by Git blob SHA-1"
+    },
+    {
+      "repository_path": "energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/common_reference/worst_case_envelope.csv",
+      "relative_path": "data/validation/multi_workload/worst_case_envelope.csv",
+      "git_blob_sha": "4c0458133458b0e02b20d55cec7f1bb74b99b619",
+      "sha256": "4717b00cc92e20be3df544e34791a631a2f489c1cbd8ef3bb4e857eba1e29919",
+      "bytes": 12528,
+      "display_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/common_reference/worst_case_envelope.csv",
+      "download_method": "GitHub connector fetch_file pinned ref; decoded bytes verified by Git blob SHA-1"
+    },
+    {
+      "repository_path": "energy-measurement/PSD_Analysis_journal_documentation_artifacts/JOURNAL_METHODS.md",
+      "relative_path": "data/validation/multi_workload/JOURNAL_METHODS.md",
+      "git_blob_sha": "07e678e7fa1f80e230dd5b5a19977fee912cd604",
+      "sha256": "10532f9afa93cfdb70dad93fc2cb07083f9b59d6ba2803d781689e70a7fcf1e3",
+      "bytes": 8659,
+      "display_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/PSD_Analysis_journal_documentation_artifacts/JOURNAL_METHODS.md",
+      "download_method": "GitHub connector fetch_file pinned ref; decoded bytes verified by Git blob SHA-1"
+    },
+    {
+      "repository_path": "energy-measurement/PSD_Analysis_journal_documentation_artifacts/pico_vs_tek_psd/PICO_VS_TEK_PSD_SUMMARY.md",
+      "relative_path": "data/validation/multi_workload/PICO_VS_TEK_PSD_SUMMARY.md",
+      "git_blob_sha": "3f9043b72aae68ef028cc11ee5078c103a036b29",
+      "sha256": "ff80c318e2c3a1ca85e09d6c3155fa6b8bba1d6011d5e5b6ff52568bdf9c91ef",
+      "bytes": 1467,
+      "display_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/PSD_Analysis_journal_documentation_artifacts/pico_vs_tek_psd/PICO_VS_TEK_PSD_SUMMARY.md",
+      "download_method": "GitHub connector fetch_file pinned ref; decoded bytes verified by Git blob SHA-1"
+    },
+    {
+      "repository_path": "energy-measurement/PSD_Analysis_journal_documentation_artifacts/pico_vs_tek_psd/data/setup_comparison.csv",
+      "relative_path": "data/validation/multi_workload/setup_comparison.csv",
+      "git_blob_sha": "4b5a716e9cc0cfdb0c9fc977fb6bfef4843d9064",
+      "sha256": "c37d4b14b718cc0a87ab29e25ffba07ef51b1c5b65ab7dd9b7a37542ee171ce4",
+      "bytes": 10271,
+      "display_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/PSD_Analysis_journal_documentation_artifacts/pico_vs_tek_psd/data/setup_comparison.csv",
+      "download_method": "GitHub connector fetch_file pinned ref; decoded bytes verified by Git blob SHA-1"
+    },
+    {
+      "repository_path": "energy-measurement/PSD_Analysis_journal_documentation_artifacts/pico_vs_tek_psd/data/all_spectral_metrics.csv",
+      "relative_path": "data/validation/multi_workload/all_spectral_metrics.csv",
+      "git_blob_sha": "fc81f4e6fd0f7829a7c5d8f9cd7a9e3f08f4b912",
+      "sha256": "e167a77f6914b5d27ad538de1fabfd698a1369796a6da4a541b57947796c780c",
+      "bytes": 33582,
+      "display_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/PSD_Analysis_journal_documentation_artifacts/pico_vs_tek_psd/data/all_spectral_metrics.csv",
+      "download_method": "GitHub connector fetch_file pinned ref; decoded bytes verified by Git blob SHA-1"
+    },
+    {
+      "repository_path": "energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/psd/external_idle/5000000Sps/idle_psd_metrics.json",
+      "relative_path": "data/validation/multi_workload/idle_psd_metrics.json",
+      "git_blob_sha": "e4d5940af4e87c70ed367ff395e3838ea2f3b073",
+      "sha256": "5aa593ceef1f6792d49431ce475eaee5bfa0492d8567916899738381dc0524a3",
+      "bytes": 686,
+      "display_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/psd/external_idle/5000000Sps/idle_psd_metrics.json",
+      "download_method": "GitHub connector fetch_file pinned ref; decoded bytes verified by Git blob SHA-1"
+    },
+    {
+      "repository_path": "energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/paper_artifacts/tables/table_cross_workload_idle_load_summary.csv",
+      "relative_path": "data/validation/multi_workload/table_cross_workload_idle_load_summary.csv",
+      "git_blob_sha": "b0478806e877c8baec0e2f26be43a72515252da6",
+      "sha256": "23ce2d28f634c35d57fcbf4deb1cfe7aa5b2da934ec931903631176513b7abc3",
+      "bytes": 519,
+      "display_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/paper_artifacts/tables/table_cross_workload_idle_load_summary.csv",
+      "download_method": "GitHub connector fetch_file pinned ref; decoded bytes verified by Git blob SHA-1"
+    },
+    {
+      "repository_path": "energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/paper_artifacts/tables/table_cross_workload_fmin.csv",
+      "relative_path": "data/validation/multi_workload/table_cross_workload_fmin.csv",
+      "git_blob_sha": "5ae203aa3207980a399022163e1700796baf9d4b",
+      "sha256": "47aeb4f1a7198db477430926bb75e3c200ad3b093e684b569fe17bb5ac0b6e0f",
+      "bytes": 3198,
+      "display_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/paper_artifacts/tables/table_cross_workload_fmin.csv",
+      "download_method": "GitHub connector fetch_file pinned ref; decoded bytes verified by Git blob SHA-1"
+    },
+    {
+      "repository_path": "energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/paper_artifacts/tables/table_cross_workload_two_k_sufficiency.csv",
+      "relative_path": "data/validation/multi_workload/table_cross_workload_two_k_sufficiency.csv",
+      "git_blob_sha": "fc0faaa2f6590eb9bd473d5d305c880981d5867d",
+      "sha256": "6f9a0cfd8a8efe79efa2d28d97fe0339c0ab02b75e00b699693548689a289b42",
+      "bytes": 2044,
+      "display_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/paper_artifacts/tables/table_cross_workload_two_k_sufficiency.csv",
+      "download_method": "GitHub connector fetch_file pinned ref; decoded bytes verified by Git blob SHA-1"
+    }
+  ],
+  "analysis_contract": {
+    "status": "PASS",
+    "validated_source_files": 17,
+    "source_commit": "e87730135385e756c667fc2b573fb1a86834d4bb",
+    "tool_version": "0.8.2",
+    "physical_pairs": 59,
+    "source_records": 118,
+    "counts_by_workload": {
+      "gemmfp32": 10,
+      "gemmint8": 10,
+      "yolofp32": 10,
+      "yoloint8": 10,
+      "gemma3-4b": 10,
+      "resnet50": 9
+    },
+    "hierarchical_statistic": "Q0.95 across physical runs of each run's Q0.95 absolute reconstruction error over evaluated windows/grid offsets; upstream hierarchical field equals run_abs_error_q95_q95_pct",
+    "fixed_rate": 2000,
+    "unfiltered_mode_name": "phase_only",
+    "windows_per_duration": 16,
+    "durations_s": [
+      0.02,
+      0.05,
+      0.1,
+      0.2,
+      0.5,
+      1.0,
+      2.0,
+      5.0,
+      10.0
+    ],
+    "source_rate_sps": 5000000,
+    "analysis_rate_sps": 1000000,
+    "cache_method": "Lower rates are reconstructed from each physical 5-MS/s record after VHQ conversion to the validated 1-MS/s analysis representation; rates are never treated as separate runs in this stage.",
+    "cache_energy_max_abs_error_pct": 1.5223964988048e-05,
+    "rate_selection": "candidate and every higher available tested rate pass",
+    "duration_selection": "fixed 2 kS/s; candidate and every longer tested duration pass",
+    "recomputed_fmin_decisions_checked": 216,
+    "recomputed_duration_decisions_checked": 24,
+    "plotted_fixed_rate_rows": 108,
+    "maximum_error_by_duration": {
+      "0.02": 10.879826155001755,
+      "0.05": 5.7948154888821115,
+      "0.1": 3.684181667903359,
+      "0.2": 2.4350238425955575,
+      "0.5": 1.5089705483700229,
+      "1.0": 1.0814425283957112,
+      "2.0": 0.7923314696102042,
+      "5.0": 0.52876920316949,
+      "10.0": 0.3842547752156318
+    },
+    "minimum_all_cohort_one_pct_duration_s": 2.0,
+    "minimum_all_cohort_half_pct_duration_s": 10.0,
+    "per_rate_offset_count": null,
+    "offset_count_scope": "Not specified in the public frozen summary/manifest. Do not inherit the separate FP16 reference's 64 offsets.",
+    "original_workload_caveat": "All accepted source records in the frozen six-workload inventory are used; this does not establish that all originally acquired records were technically valid.",
+    "raw_waveforms_recomputed": false
+  }
+}

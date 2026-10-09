@@ -1,0 +1,64 @@
+{
+  "repository": "Keff789/onnx-splitpoint-results",
+  "ref": "e87730135385e756c667fc2b573fb1a86834d4bb",
+  "read_date": "2026-10-03",
+  "sources": [
+    {
+      "path": "energy-measurement/PSD_Analysis_journal_documentation_artifacts/cross_platform_psd/data/platform_spectral_metrics.csv",
+      "git_blob_sha1": "c977d025a5a3175e1c03c2276a9c7f499aad77b5",
+      "bytes_as_reported_by_git": 7622,
+      "role": "Exact 7622-byte native CSV preserved as data/git/platform_spectral_metrics.csv and its Git blob SHA-1 independently recomputed. Four matched-prefix active/excess rows are generated into hailo_psd_selected_rows.csv. No numerical integration of thinned review spectra."
+    },
+    {
+      "path": "energy-measurement/PSD_Analysis_journal_documentation_artifacts/JOURNAL_METHODS.md",
+      "git_blob_sha1": "07e678e7fa1f80e230dd5b5a19977fee912cd604",
+      "role": "Hailo native Welch, own-record idle and full-window versus prefix methods."
+    },
+    {
+      "path": "energy-measurement/PSD_Analysis_journal_documentation_artifacts/JOURNAL_ANALYSIS_SUMMARY.md",
+      "git_blob_sha1": "38456398982ee30ffad09b0505386e5c58aebe7e",
+      "role": "Completed spectral extension; the frozen PARMA/Common-Reference cache was not changed."
+    },
+    {
+      "path": "energy-measurement/PSD_Analysis_journal_documentation_artifacts/cross_platform_psd/CROSS_PLATFORM_PSD_SUMMARY.md",
+      "git_blob_sha1": "fa31c72686dfef6f796f4494ea71f9cf591fd9eb",
+      "role": "Comparison scope and limits."
+    },
+    {
+      "path": "energy-measurement/Energy_Paper_TIM_KnowledgeBase_CURRENT_2026-10-01.md",
+      "git_blob_sha1": "69fca5a7859a0c7a91c40b9dbc15296c8f590d5c",
+      "role": "Final series-wise paper window policy, not numeric source for whole replot tables."
+    },
+    {
+      "path": "energy-measurement/2026-09-30-offline-windows/WINDOW_METHOD.md",
+      "git_blob_sha1": "3b3d047bd9c4dacbc7624b381f94be914ea804ed",
+      "role": "Original detector definition only. Historical reporting exclusions superseded by final v1.1.0 all-finite paper policy."
+    }
+  ],
+  "separate_non_git_sources": [
+    {
+      "file": "How_Fast_Is_Fast_Enough__Reference_Calibrated_Energy_Measurement_for_Edge_AI_Inference(1).zip",
+      "role": "Supplied v0.5 manuscript, references, frozen 13-run GEMM-FP16 common-trace/PSD tables and figures.",
+      "bytes": 35600232,
+      "sha256": "e594fa16b3258aaf4b47eeb24e030b0d08c8411dc6cd06dd8ca6342be0b39b1b"
+    },
+    {
+      "file": "tim_figures_v1.1.0_release_output_review.zip",
+      "role": "Supplied final direct rate/duration/device result tables. These are NOT represented as retrieved from Git.",
+      "bytes": 26290003,
+      "sha256": "56f8a4a4144df8ad1576235c8677d6d31c2f484b3ff2264e60291a0d051ab670"
+    },
+    {
+      "file": "tim_figures_v1.1.0.zip",
+      "role": "Series registration and final window policy used to interpret direct result tables.",
+      "bytes": 9293338,
+      "sha256": "d75168bbe25abdd46bcea1612a76e5c629b474ade59411a731b646ccf857c12b"
+    }
+  ],
+  "source_limits": [
+    "Hailo source spectral CSV explicitly leaves precision and measurement_boundary unspecified. The M.2-card-input boundary follows the operator's project description; there is no independent boundary/calibration validation in the spectral table.",
+    "No Hailo-specific same-trace sampling-rate threshold is inferred from these PSD percentiles.",
+    "The Hailo 10-s prefix and Jetson 10-s middle-of-load PSD use different estimators and are described separately.",
+    "No raw-waveform integration, resampling, recalibration or re-selection of the frozen 13-run reference cohort was performed in this manuscript update."
+  ]
+}

@@ -1,5 +1,8 @@
 name: Publish PARMA Figure 5 artifact
 on:
+  push:
+    branches: [main]
+    paths: [energy-measurement/publications/parma-v0.15.1/release.json]
   workflow_dispatch:
 permissions:
   contents: write
@@ -26,7 +29,7 @@ jobs:
           set -euo pipefail
           python3 -m venv "$RUNNER_TEMP/parma-venv"
           . "$RUNNER_TEMP/parma-venv/bin/activate"
-          cd energy-measurement/evidence/measurement-comparison/sources/parma-figure5-v0.15.1
+          cd energy-measurement/publications/parma-v0.15.1
           python -m pip install -r requirements.txt
           python reproduce.py
       - name: Publish new version without replacing other releases
@@ -36,4 +39,4 @@ jobs:
         run: |
           set -euo pipefail
           . "$RUNNER_TEMP/parma-venv/bin/activate"
-          python energy-measurement/evidence/measurement-comparison/sources/parma-figure5-v0.15.1/publish.py
+          python energy-measurement/publications/parma-v0.15.1/publish.py
