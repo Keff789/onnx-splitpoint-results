@@ -1,0 +1,284 @@
+ENERGY-PAPER: GEZIELTE OFFLINEPRUEFUNG
+
+Status: completed_requested_probe
+Fertig berechnete Quellen: 118; Fehler: 0
+
+1. Rekonstruktionsvergleich
+
+Dauer[s]  Rate[S/s]  Q95 nativ[%]  Q95 via1M[%]  Differenz[pp]  Kohorte vollstaendig
+    0.02        150     33.454029     31.127160       2.326869 True
+    0.02        240     29.273044     27.765671       1.507373 True
+    0.02        400     26.755109     26.617571       0.137538 True
+    0.02        680     18.978521     18.113259       0.865262 True
+    0.02       1200     14.625573     14.327064       0.298508 True
+    0.02       2000     11.226559     10.942297       0.284262 True
+    0.02       2500      8.204127      7.777525       0.426602 True
+    0.02       3300      7.314744      6.745786       0.568958 True
+    0.02       5500      5.093053      4.787245       0.305808 True
+    0.02       9400      4.267565      4.008121       0.259444 True
+    0.02      16000      3.340565      3.023272       0.317294 True
+    0.02      25000      2.403896      2.131506       0.272390 True
+    0.02      45000      2.988898      2.815536       0.173362 True
+    0.02      80000      1.276172      1.162469       0.113702 True
+    0.02     100000      1.081221      0.951987       0.129234 True
+    0.02     125000      1.063863      0.803916       0.259947 True
+    0.02     160000      0.827000      0.746705       0.080295 True
+    0.05         85     33.910784     32.384010       1.526773 True
+    0.05        150     24.266689     22.677715       1.588974 True
+    0.05        240     18.697035     17.954576       0.742459 True
+    0.05        400     19.050589     18.827800       0.222790 True
+    0.05        680     10.402323      9.600589       0.801734 True
+    0.05       1200      9.640531      9.229828       0.410703 True
+    0.05       2000      6.051492      5.785305       0.266186 True
+    0.05       2500      4.811644      4.383741       0.427903 True
+    0.05       3300      4.438528      4.066496       0.372031 True
+    0.05       5500      3.226894      2.892727       0.334167 True
+    0.05       9400      3.609093      3.454646       0.154447 True
+    0.05      16000      2.016626      1.862320       0.154306 True
+    0.05      25000      1.464653      1.321429       0.143224 True
+    0.05      45000      2.783135      2.677115       0.106020 True
+    0.05      80000      0.750225      0.686238       0.063987 True
+    0.05     100000      0.649423      0.575122       0.074301 True
+    0.05     125000      0.706761      0.573325       0.133436 True
+    0.05     160000      0.529260      0.478179       0.051081 True
+     0.1         50     27.378806     25.946489       1.432317 True
+     0.1         85     21.675648     20.336260       1.339388 True
+     0.1        150     17.267454     16.557589       0.709864 True
+     0.1        240     12.543923     11.464206       1.079717 True
+     0.1        400     15.090954     14.829496       0.261458 True
+     0.1        680      7.349083      6.711775       0.637308 True
+     0.1       1200      5.806847      5.361783       0.445064 True
+     0.1       2000      3.962750      3.697243       0.265507 True
+     0.1       2500      3.340919      2.972766       0.368153 True
+     0.1       3300      3.125747      2.931629       0.194118 True
+     0.1       5500      2.243139      2.005860       0.237279 True
+     0.1       9400      2.908010      2.849864       0.058145 True
+     0.1      16000      1.440320      1.306647       0.133673 True
+     0.1      25000      1.073761      0.948999       0.124763 True
+     0.1      45000      1.271855      1.137478       0.134377 True
+     0.1      80000      0.509054      0.461056       0.047998 True
+     0.1     100000      0.458507      0.391476       0.067031 True
+     0.1     125000      0.595404      0.432012       0.163392 True
+     0.1     160000      0.377026      0.336828       0.040198 True
+     0.2         50     20.362732     19.029040       1.333693 True
+     0.2         85     16.803916     16.164145       0.639771 True
+     0.2        150     12.757434     12.249664       0.507770 True
+     0.2        240      8.796758      8.300503       0.496255 True
+     0.2        400      9.200535      9.118294       0.082241 True
+     0.2        680      5.054401      4.654906       0.399495 True
+     0.2       1200      4.093217      3.832730       0.260488 True
+     0.2       2000      2.700904      2.427594       0.273311 True
+     0.2       2500      2.480887      2.386332       0.094555 True
+     0.2       3300      2.142632      2.001253       0.141379 True
+     0.2       5500      1.749871      1.602882       0.146989 True
+     0.2       9400      2.444585      2.410703       0.033882 True
+     0.2      16000      0.987585      0.906049       0.081536 True
+     0.2      25000      0.749959      0.684399       0.065559 True
+     0.2      45000      1.608982      1.316343       0.292640 True
+     0.2      80000      0.384532      0.351352       0.033180 True
+     0.2     100000      0.350883      0.306284       0.044599 True
+     0.2     125000      0.340174      0.273605       0.066569 True
+     0.2     160000      0.252227      0.222440       0.029787 True
+     0.5         50     12.296792     11.758858       0.537934 True
+     0.5         85     11.912619     11.536442       0.376177 True
+     0.5        150      7.679206      7.455130       0.224076 True
+     0.5        240      5.684162      5.414036       0.270126 True
+     0.5        400      5.096793      5.000990       0.095803 True
+     0.5        680      3.121063      2.783927       0.337136 True
+     0.5       1200      2.711703      2.511669       0.200034 True
+     0.5       2000      1.677959      1.507315       0.170644 True
+     0.5       2500      1.672170      1.584012       0.088158 True
+     0.5       3300      1.373329      1.274262       0.099067 True
+     0.5       5500      0.985427      0.905227       0.080200 True
+     0.5       9400      1.850489      1.836927       0.013563 True
+     0.5      16000      0.629038      0.573498       0.055540 True
+     0.5      25000      0.484770      0.430747       0.054022 True
+     0.5      45000      0.874778      0.871906       0.002873 True
+     0.5      80000      0.246696      0.219157       0.027540 True
+     0.5     100000      0.201371      0.173117       0.028254 True
+     0.5     125000      0.227220      0.167784       0.059436 True
+     0.5     160000      0.174180      0.151665       0.022515 True
+       1         50      8.700446      8.437185       0.263261 True
+       1         85      8.076918      7.930599       0.146320 True
+       1        150      5.870012      5.734019       0.135994 True
+       1        240      4.241029      4.111642       0.129386 True
+       1        400      3.618715      3.521372       0.097343 True
+       1        680      2.244486      2.036228       0.208259 True
+       1       1200      1.965869      1.827865       0.138004 True
+       1       2000      1.194066      1.078484       0.115583 True
+       1       2500      1.312113      1.281565       0.030548 True
+       1       3300      0.989389      0.918516       0.070874 True
+       1       5500      0.739738      0.671587       0.068151 True
+       1       9400      1.343247      1.342164       0.001083 True
+       1      16000      0.445106      0.407873       0.037233 True
+       1      25000      0.364383      0.312348       0.052035 True
+       1      45000      0.731119      0.674269       0.056850 True
+       1      80000      0.180690      0.167531       0.013159 True
+       1     100000      0.154522      0.131414       0.023108 True
+       1     125000      0.179441      0.122239       0.057202 True
+       1     160000      0.131375      0.116806       0.014570 True
+       2         50      6.316926      5.997257       0.319668 True
+       2         85      5.345305      5.251823       0.093482 True
+       2        150      4.609616      4.571408       0.038208 True
+       2        240      3.033618      2.886300       0.147317 True
+       2        400      2.440964      2.391558       0.049406 True
+       2        680      1.640001      1.481170       0.158831 True
+       2       1200      1.375758      1.304335       0.071423 True
+       2       2000      0.853155      0.792110       0.061046 True
+       2       2500      0.940939      0.898209       0.042730 True
+       2       3300      0.696858      0.667175       0.029684 True
+       2       5500      0.510485      0.466878       0.043606 True
+       2       9400      1.019762      1.018562       0.001201 True
+       2      16000      0.316809      0.288318       0.028491 True
+       2      25000      0.283675      0.237695       0.045979 True
+       2      45000      0.352868      0.330070       0.022798 True
+       2      80000      0.130217      0.117530       0.012688 True
+       2     100000      0.112523      0.098583       0.013940 True
+       2     125000      0.151387      0.093203       0.058183 True
+       2     160000      0.094324      0.083737       0.010587 True
+       5         50      4.060014      3.893371       0.166643 True
+       5         85      3.580488      3.490610       0.089879 True
+       5        150      2.828566      2.747390       0.081176 True
+       5        240      1.937547      1.917481       0.020066 True
+       5        400      1.750552      1.701739       0.048813 True
+       5        680      1.064280      0.979507       0.084773 True
+       5       1200      0.961981      0.884414       0.077567 True
+       5       2000      0.563554      0.528671       0.034883 True
+       5       2500      0.597729      0.583404       0.014324 True
+       5       3300      0.441652      0.414470       0.027182 True
+       5       5500      0.331698      0.322194       0.009505 True
+       5       9400      0.589504      0.586075       0.003429 True
+       5      16000      0.213902      0.196911       0.016991 True
+       5      25000      0.212401      0.158375       0.054026 True
+       5      45000      0.122759      0.109731       0.013027 True
+       5      80000      0.079921      0.070818       0.009103 True
+       5     100000      0.083507      0.072840       0.010667 True
+       5     125000      0.123270      0.056950       0.066319 True
+       5     160000      0.060064      0.052451       0.007613 True
+      10         50      2.998291      3.082640      -0.084349 True
+      10         85      2.519123      2.386461       0.132662 True
+      10        150      1.653535      1.630151       0.023384 True
+      10        240      1.439568      1.322053       0.117515 True
+      10        400      1.318265      1.372717      -0.054452 True
+      10        680      0.755827      0.768593      -0.012766 True
+      10       1200      0.667258      0.679828      -0.012570 True
+      10       2000      0.426827      0.384406       0.042421 True
+      10       2500      0.428317      0.420700       0.007617 True
+      10       3300      0.333447      0.298844       0.034603 True
+      10       5500      0.239233      0.232272       0.006961 True
+      10       9400      0.520090      0.520897      -0.000807 True
+      10      16000      0.156561      0.145209       0.011352 True
+      10      25000      0.162378      0.113386       0.048992 True
+      10      45000      0.105890      0.093140       0.012751 True
+      10      80000      0.056242      0.047931       0.008312 True
+      10     100000      0.061229      0.053412       0.007817 True
+      10     125000      0.110585      0.034311       0.076273 True
+      10     160000      0.038044      0.030891       0.007153 True
+
+Raten-/Dauerkombinationen mit Wechsel an 0.5% oder 1%: 8.
+Kein Wechsel auf diesem Raster ist keine allgemeine Gleichheit aller Signale oder Offsets.
+
+2. FP16: IDs 2..14 und alle IDs 0..14
+
+
+Die Auswahlbegruendung wird aus Messwerten nicht erfunden. Gefundene Originalconfigs
+und Auswahl-/Fensterhinweise stehen in metadata/ und metadata_evidence.json.
+IDs 0/1 werden nicht getrimmt. Fehlende Runs werden als fehlend ausgewiesen.
+
+3. FP16-Spektren
+
+fp16_psd_per_run.csv: aktive10s/idle4s (19/7 Welchsegmente),
+aktive4s/idle4s (7/7), disjunkte idle2s/idle2s (3/3) in beiden Richtungen.
+Die 2-s-Blockpruefung ist deskriptiv und keine unabhaengige Messkampagne,
+kein Signifikanztest und keine automatische Korrektur der positiven PSD-Differenz.
+
+4. Festgelegte Methode dieses Zusatzchecks
+
+* Beide Zielrasterintegrale gegen dieselbe native Referenzenergie.
+* Leistung zuerst bilden; erst danach VHQ von 5 MS/s auf 1 MS/s.
+* Ganze Aufzeichnung filtern; 0.5 s konstante Randfortsetzung entfernen.
+* Native Leistung Float64, reduzierte Darstellung Float32. Keine Zielratenfilterung.
+* Gleichmaessig verteilte, unterschiedliche Fenster; alle Zeitgrenzen gespeichert.
+* Quell-Endpunkte interpoliert; gleiche Endpunktregel in beiden Zweigen.
+* Endpunkte zaehlen nicht als zusaetzliche Zielraster-Samples (Minimum4).
+* Gemeinsamer gemessener Support; maximal2us Defizit einer Nenndauer explizit ausgewiesen.
+* Scope: Q95 ueber Fenster/Offsets je Run, dann Q95 ueber physische Runs.
+* FP16: gepooltes Q95 der Run-/Offsetfaelle; verwendete Lauf-IDs immer ausgewiesen.
+* Quantile: NumPy method='linear'; Perzentile sind keine Konfidenzintervalle.
+* Scope-Pico: (raw_current + 0.0004272598504) * 1.99000512058047.
+* Scope-Tek YOLO-FP32: +0.111917 A, gerundeter KB-Wert; kein neuer Fit.
+* Scope-Leistung: I * (19.062607082705 - 0.07444582 * I).
+* FP16 oscilloscope.npy: gespeicherte Wattwerte, keine Rekalibrierung.
+* FP16-Fensterbasis: inklusive YAML-Indizes;104s zentral wenn verfuegbar,
+  sonst kuerzeres belegtes Fenster klar markiert. Urspruengliche104s-Lage unbestaetigt.
+* Dies ist eine neue Sensitivitaetsauswertung. Keine exakte Table2-Reproduktion.
+
+5. Noch zu pruefen / fehlende Eingaben
+
+Keine zusaetzlichen Dateifehler oder Laufblockaden im angeforderten Check.
+
+Beobachtete Datenhinweise (Rechenlauf ausgefuehrt):
+gemmfp32/tek/0: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+gemmfp32/tek/1: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+gemmfp32/tek/2: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+gemmfp32/tek/3: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+gemmfp32/tek/4: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+gemmfp32/tek/5: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+gemmfp32/tek/6: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+gemmfp32/pico/6: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+gemmfp32/tek/7: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+gemmfp32/pico/7: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+gemmfp32/tek/8: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+gemmfp32/tek/9: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+gemmint8/tek/0: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+gemmint8/tek/1: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+gemmint8/tek/2: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+gemmint8/tek/3: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+gemmint8/tek/4: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+gemmint8/tek/5: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+gemmint8/tek/6: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+gemmint8/tek/7: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+gemmint8/tek/8: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+gemmint8/tek/9: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+yolofp32/tek/0: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+yolofp32/tek/1: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+yolofp32/tek/2: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+yolofp32/tek/3: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+yolofp32/tek/4: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+yolofp32/tek/5: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+yolofp32/tek/6: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+yolofp32/tek/7: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+yolofp32/tek/8: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+yolofp32/tek/9: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+yoloint8/tek/0: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+yoloint8/tek/1: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+yoloint8/tek/2: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+yoloint8/tek/3: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+yoloint8/tek/4: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+yoloint8/tek/5: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+yoloint8/tek/6: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+yoloint8/tek/7: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+yoloint8/tek/8: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+yoloint8/tek/9: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+resnet50/tek/0: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+resnet50/tek/1: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+resnet50/tek/2: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+resnet50/tek/3: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+resnet50/tek/4: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+resnet50/tek/5: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+resnet50/tek/6: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+resnet50/tek/7: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+resnet50/tek/8: Strom ausserhalb 0..3.5 A; Modell extrapoliert, nicht geclippt.
+
+Die historische FP16-Auswahlbegruendung und Gleichheit zum urspruenglichen
+Fenster-/Offsetgitter brauchen weiterhin einen Blick in die mitgesicherten Metadaten.
+
+Quellen:
+https://github.com/Keff789/onnx-splitpoint-results/blob/c9c867d0a90bb62b764579322a135b60157bd8db/energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/multi_workload_manifest.json
+https://github.com/Keff789/onnx-splitpoint-results/blob/c9c867d0a90bb62b764579322a135b60157bd8db/energy-measurement/PSD_Analysis_journal_documentation_artifacts/manifest/spectral_sources.json
+https://github.com/Keff789/onnx-splitpoint-results/blob/c9c867d0a90bb62b764579322a135b60157bd8db/energy-measurement/Energy_Paper_TIM_KnowledgeBase_2026-09-30.md
+https://github.com/PercyJW-2/masterarbeit-helper-scripts/blob/4a9fe2daca4012f0c578ebf9e37d37f54163285f/power_calculations/src/main.rs
+https://github.com/PercyJW-2/masterarbeit-helper-scripts/blob/27a927fc089d49d2f1ea8104bf863a9bec1a0011/power_calculations/src/output_types.rs
+https://github.com/PercyJW-2/urecs-data-collector/blob/9079d79574fa683f98a10ee0e0537931d8c3bd5b/src/tekhsi_osc_communication.rs
+https://github.com/PercyJW-2/urecs-data-collector/blob/9079d79574fa683f98a10ee0e0537931d8c3bd5b/src/pico_osc_communication.rs
+https://github.com/PercyJW-2/masterarbeit-helper-scripts/blob/27a927fc089d49d2f1ea8104bf863a9bec1a0011/measurement_suite.py

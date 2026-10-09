@@ -1,8 +1,10 @@
 ---
 title: "Energy Paper – Current Consolidated Status"
 project: "How Fast Is Fast Enough? Reference-Calibrated Energy Measurement for Edge-AI Inference"
-status_date: "2026-10-01"
-full_baseline: "../Energy_Paper_TIM_KnowledgeBase_2026-09-30.md"
+status_date: "2026-10-09"
+full_baseline: "Energy_Paper_TIM_KnowledgeBase_2026-09-30.md"
+latest_review: "knowledgebase/2026-10-09-offline-robustness.md"
+offline_sensitivity_tool: "energy_paper_checks.py v1.0.1"
 full_consolidated_artifact: "Energy_Paper_TIM_KnowledgeBase_2026-10-01.md"
 canonical_analysis_tool: "common_reference_psd_tool_v0.7.3"
 result_plot_tool: "tim_figures_v1.1.0"
@@ -16,6 +18,33 @@ vollständigen KB vom 30.09. Die alte Langfassung bleibt der historische Detailb
 Widerspruch gelten die Entscheidungen hier. Eine vollständige konsolidierte Langfassung
 `Energy_Paper_TIM_KnowledgeBase_2026-10-01.md` wurde parallel erzeugt.
 
+## 0. Neuester Anschlussstand – 09.10.2026
+
+Die [Offline-Robustheitsprüfung](knowledgebase/2026-10-09-offline-robustness.md) ist jetzt
+für alle **118 Scope-Quellspuren / 59 Paare** abgeschlossen. Die geprüften kompakten
+[Ergebnisse und Skripte](2026-10-09-offline-robustness/README.md) sind gesichert.
+Der historische Detailbestand und die ursprünglichen Paper-Ergebnisse werden dadurch
+nicht überschrieben. Der Dateiname dieses operativen Einstiegs bleibt für bestehende Links erhalten.
+
+- Die realen Scope-Rateordner heißen `5000000` ohne `Sps`. Der anfängliche Nullfund lag
+  an der zu engen Pfadannahme des Zusatzskripts, nicht an nachgewiesen fehlenden Rohdaten.
+- Vorverarbeitung auf 1 MS/s ist für die anschließende Zielratenrekonstruktion nicht
+  allgemein wirkungslos: acht punktuelle Wechsel an 0,5 % oder 1 %, vier Änderungen
+  persistenter Minima bei diesen Toleranzen. Kleine Referenzintegraländerungen reichen
+  als Gleichwertigkeitsbeleg nicht aus.
+- **2 s / 2 kS/s besteht das einzelne 1-%-Kriterium.** Die persistente Mindest­rate
+  des neuen Rasters ist trotzdem **16 kS/s in beiden Pfaden**, da 9,4 kS/s knapp über
+  1 % liegt. Die ursprünglichen 2 kS/s sind damit nicht rasterunabhängig bestätigt.
+- Die getrennte FP16-Prüfung bestätigt 50 S/s für Q95 < 1 % und 85 S/s für alle
+  geprüften Fälle auch mit allen 15 Aufzeichnungen. Die spektralen 125/160-kS/s-Grenzen
+  bleiben bei gleichen Welch-Segmentzahlen und alternativen Idle-Blöcken erhalten.
+- Noch offen: konkrete Ursache der Unterschiede zum ursprünglichen Fenster-/Phasenraster,
+  historischer FP16-Auswahlgrund und Umfang der in 51 Scope-Spuren markierten
+  Strommodell-Extrapolation. Der beigefügte Archivhelfer exportiert dafür bereits
+  vorhandene Auditfelder und gezielte Vergleiche; keine erneute Rohdatenauswertung nötig.
+- **Paperumfang bleibt konstant:** bestehende Methodensätze präzisieren und Werte ihrer
+  jeweiligen Auswertung zuordnen; zusätzliche Prüftabellen in der Evidence halten.
+
 ## 1. Verbindliche Datengrundlage
 
 - Die mehrwöchige Messkampagne wird nicht wiederholt.
@@ -23,7 +52,8 @@ Widerspruch gelten die Entscheidungen hier. Eine vollständige konsolidierte Lan
 - Common Reference / Same Trace trägt die Aussage zum isolierten Sampling- und Grid-Offset-Effekt.
 - Direkte Samplerate-Sweeps sind separate physische Ausführungen und enthalten Session-,
   Reihenfolge-, Grundlast-, Temperatur-, Fenster- und Akquisitionseinflüsse.
-- PSD/Common Reference bleibt ein eigener, unveränderter Zweig.
+- Die ursprünglichen PSD/Common-Reference-Ergebnisse bleiben ein eigener archivierter Zweig;
+  der unabhängige Zusatzcheck vom 09.10. ergänzt die Robustheitsbewertung.
 
 ## 2. Lastfenster und Paper-Politik
 
@@ -121,6 +151,15 @@ Ein Neustart des eingefrorenen Plotpakets allein entdeckt keine neuen Rohdaten.
 `energy-measurement/2026-10-01-controlled-rate-test/` mit Fixed-Window- und komplementären
 Tabellen, QA, Quellenhashes und `verify.py`. Git und Review-ZIPs ersetzen kein Rohdatenbackup.
 
+Die Scope-/FP16-Zusatzprüfung liegt unter
+[`2026-10-09-offline-robustness/`](2026-10-09-offline-robustness/README.md).
+Die hochgeladenen Zusammenfassungen und FP16-Einzelergebnisse sind dort enthalten.
+`archive_energy_checks.py` ergänzt auf Twix die lokalen Laufmetadaten, kompakte
+Record-/Fenster-Audits und die kritischen Vergleichsvektoren. Die vollständige große
+Scope-ZIP und die Original-Records bleiben im Laborarchiv; ihr Transfer ins Git ist
+nicht erforderlich. Der lokale Detail-Export ist erst nach dessen erfolgreichem
+Aufruf und Commit gesichert, nicht bereits durch diese KB-Änderung.
+
 Noch operativ auszuführen: beide neuen `baselineRateTests`-Sessionordner mit
 `archive_baseline_rate_tests_to_sprite_20261001.sh` von Memmert in das Sprite-gestützte
 `/homes/kmika` kopieren und per `rsync --checksum` prüfen. Vor erfolgreicher Prüfung auf
@@ -136,6 +175,8 @@ Zulässig:
 - Der historische Mehrprozenttrend ist kein stabiler deterministischer Rateeffekt des
   kontrollierten Protokolls.
 - Common Reference bleibt die Basis für isolierte Sampling-/Grid-Offset-Aussagen.
+- Die zusätzliche Scope-Prüfung weist eine Empfindlichkeit gegenüber dem gesamten
+  5→1-MS/s-Verarbeitungspfad und dem endlichen Auswerteraster nach.
 
 Nicht zulässig:
 
@@ -144,11 +185,24 @@ Nicht zulässig:
 - VDD_IN als absolute Kalibrierreferenz ausgeben;
 - aus GEMM FP16 universelle Gleichheit von 2 kS/s und 5 MS/s ableiten;
 - Hailo Random Pattern mit pro Run ausgewählter Hüllenschwelle darstellen.
+- Aus der Erhaltung des Referenzintegrals die Gleichwertigkeit späterer Zielratenintegrale ableiten.
+- Einen bestandenen einzelnen Ratenpunkt als persistentes Minimum ausgeben.
+- Den Zusatzcheck als exakte Reproduktion der ursprünglichen Table 2 oder als neue
+  absolute Hardwarekalibrierung bezeichnen.
 
 ## 10. Aktuelle TODOs
 
-1. Rohdatensicherung der zwei kontrollierten Sessions abschließen.
-2. `tim_figures_v1.1.0` auf Twix ausführen und visuell freigeben.
-3. GPU-Daten nach Eingang auswerten und Snapshot aktualisieren.
-4. Finales Paper-Figurenset und Captions einfrieren.
-5. Danach Manuskriptintegration; kein weiterer GEMM-FP16-Gegenlauf nötig.
+1. Lokale Scope-Detailmetadaten mit `archive_energy_checks.py` ergänzen und committen;
+   danach Extrapolationsanteile aus den vorhandenen Audits prüfen.
+2. Ursprüngliche Fenster-/Offset-/Interpolationsregeln gegen das Zusatzraster abgleichen;
+   insbesondere 2 s / 9,4 kS/s und kurze Gemma3-4B/Tek-Fenster. Keine passende Rasterlage
+   nachträglich anhand günstiger Ergebnisse auswählen.
+3. Historischen Grund für FP16-IDs 2–14 dokumentieren. Die Wirkung von IDs 0/1 ist
+   geprüft; der neue Check reproduziert den früher genannten Maximalfehler 1,071 % nicht.
+4. Manuskript innerhalb der bestehenden Länge präzisieren; ursprüngliche Ergebnisse und
+   Zusatzcheck nicht vermischen. Kein weiterer FP16-Hardware-Gegenlauf nötig.
+
+Die operativen Punkte vom 01.10. (Backup der kontrollierten Sessions, Plotfreigabe auf
+Twix, GPU-Nachtrag und finales Figurenset) bleiben separat nachzuverfolgen. Diese
+Scope-Rückgabe bestätigt oder verneint deren Abschluss nicht.
+

@@ -1,0 +1,69 @@
+ENERGY-PAPER: GEZIELTE OFFLINEPRUEFUNG
+
+Status: partial_or_needs_inspection
+Fertig berechnete Quellen: 15; Fehler: 0
+
+1. Rekonstruktionsvergleich
+
+Keine Scope-Huelle berechenbar/angefordert.
+
+2. FP16: IDs 2..14 und alle IDs 0..14
+
+paper_ids_2_to_14, 50 S/s: n=13, Q95 nativ=0.6293998802437221, via1M=0.6307352542099437; 104-s-Fenster=True
+paper_ids_2_to_14, 85 S/s: n=13, Q95 nativ=0.49225388792395736, via1M=0.4887952745160098; 104-s-Fenster=True
+paper_ids_2_to_14, 2000 S/s: n=13, Q95 nativ=0.09600567390196177, via1M=0.09520321367291563; 104-s-Fenster=True
+all_ids_0_to_14, 50 S/s: n=15, Q95 nativ=0.6349568548870242, via1M=0.6320849061057772; 104-s-Fenster=True
+all_ids_0_to_14, 85 S/s: n=15, Q95 nativ=0.4940385479202204, via1M=0.4894829763716718; 104-s-Fenster=True
+all_ids_0_to_14, 2000 S/s: n=15, Q95 nativ=0.09323977142936536, via1M=0.0926199696216102; 104-s-Fenster=True
+
+Die Auswahlbegruendung wird aus Messwerten nicht erfunden. Gefundene Originalconfigs
+und Auswahl-/Fensterhinweise stehen in metadata/ und metadata_evidence.json.
+IDs 0/1 werden nicht getrimmt. Fehlende Runs werden als fehlend ausgewiesen.
+
+3. FP16-Spektren
+
+fp16_psd_per_run.csv: aktive10s/idle4s (19/7 Welchsegmente),
+aktive4s/idle4s (7/7), disjunkte idle2s/idle2s (3/3) in beiden Richtungen.
+Die 2-s-Blockpruefung ist deskriptiv und keine unabhaengige Messkampagne,
+kein Signifikanztest und keine automatische Korrektur der positiven PSD-Differenz.
+
+4. Festgelegte Methode dieses Zusatzchecks
+
+* Beide Zielrasterintegrale gegen dieselbe native Referenzenergie.
+* Leistung zuerst bilden; erst danach VHQ von 5 MS/s auf 1 MS/s.
+* Ganze Aufzeichnung filtern; 0.5 s konstante Randfortsetzung entfernen.
+* Native Leistung Float64, reduzierte Darstellung Float32. Keine Zielratenfilterung.
+* Gleichmaessig verteilte, unterschiedliche Fenster; alle Zeitgrenzen gespeichert.
+* Quell-Endpunkte interpoliert; gleiche Endpunktregel in beiden Zweigen.
+* Endpunkte zaehlen nicht als zusaetzliche Zielraster-Samples (Minimum4).
+* Gemeinsamer gemessener Support; maximal2us Defizit einer Nenndauer explizit ausgewiesen.
+* Scope: Q95 ueber Fenster/Offsets je Run, dann Q95 ueber physische Runs.
+* FP16: gepooltes Q95 der Run-/Offsetfaelle; verwendete Lauf-IDs immer ausgewiesen.
+* Quantile: NumPy method='linear'; Perzentile sind keine Konfidenzintervalle.
+* Scope-Pico: (raw_current + 0.0004272598504) * 1.99000512058047.
+* Scope-Tek YOLO-FP32: +0.111917 A, gerundeter KB-Wert; kein neuer Fit.
+* Scope-Leistung: I * (19.062607082705 - 0.07444582 * I).
+* FP16 oscilloscope.npy: gespeicherte Wattwerte, keine Rekalibrierung.
+* FP16-Fensterbasis: inklusive YAML-Indizes;104s zentral wenn verfuegbar,
+  sonst kuerzeres belegtes Fenster klar markiert. Urspruengliche104s-Lage unbestaetigt.
+* Dies ist eine neue Sensitivitaetsauswertung. Keine exakte Table2-Reproduktion.
+
+5. Noch zu pruefen / fehlende Eingaben
+
+gemmfp32: 0 statt 10 angeforderter Run-Paare gefunden.
+gemmint8: 0 statt 10 angeforderter Run-Paare gefunden.
+yolofp32: 0 statt 10 angeforderter Run-Paare gefunden.
+yoloint8: 0 statt 10 angeforderter Run-Paare gefunden.
+gemma3-4b: 0 statt 10 angeforderter Run-Paare gefunden.
+resnet50: 0 statt 9 angeforderter Run-Paare gefunden.
+Keine gueltigen Scope-Vergleiche auf dem angeforderten Raster (Minimum4 Samples/Fenster).
+
+Die historische FP16-Auswahlbegruendung und Gleichheit zum urspruenglichen
+Fenster-/Offsetgitter brauchen weiterhin einen Blick in die mitgesicherten Metadaten.
+
+Quellen:
+https://github.com/Keff789/onnx-splitpoint-results/blob/c9c867d0a90bb62b764579322a135b60157bd8db/energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/multi_workload_manifest.json
+https://github.com/Keff789/onnx-splitpoint-results/blob/c9c867d0a90bb62b764579322a135b60157bd8db/energy-measurement/PSD_Analysis_journal_documentation_artifacts/manifest/spectral_sources.json
+https://github.com/Keff789/onnx-splitpoint-results/blob/c9c867d0a90bb62b764579322a135b60157bd8db/energy-measurement/Energy_Paper_TIM_KnowledgeBase_2026-09-30.md
+https://github.com/PercyJW-2/masterarbeit-helper-scripts/blob/4a9fe2daca4012f0c578ebf9e37d37f54163285f/power_calculations/src/main.rs
+https://github.com/PercyJW-2/masterarbeit-helper-scripts/blob/27a927fc089d49d2f1ea8104bf863a9bec1a0011/power_calculations/src/output_types.rs
