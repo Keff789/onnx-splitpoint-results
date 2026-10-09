@@ -1,0 +1,4 @@
+# Preserve the exact bytes of supplied reports and compact result exports.
+scopes/** -text
+fp16/** -text
+review/*.csv -text
