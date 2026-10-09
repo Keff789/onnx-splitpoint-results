@@ -6,9 +6,28 @@ canonical_parma_version: "0.15.1"
 latest_review: "knowledgebase/2026-10-09-parma-v0151.md"
 full_baseline: "Energy_Paper_TIM_KnowledgeBase_2026-09-30.md"
 language: "de"
+current_parma_manuscript: "0.15.1"
 ---
 
 # Energy Paper — aktueller Einstieg
+
+
+<!-- PARMA-v0.15.1 -->
+## Aktueller PARMA-Manuskriptstand: v0.15.1
+
+Der [aktuelle Nachtrag](knowledgebase/2026-10-09-parma-v0151.md) hält die
+bestätigte Jetson-only-Abgrenzung zu TIM und die finale Ergebnisbasis fest.
+Tabelle 5 ist durch Abbildung 5 mit den 21 gepaarten Medianen ersetzt;
+Perzentile und 315 Paarwerte bleiben in der Evidence erhalten. Hailo bleibt TIM.
+
+[Manuskript und kompakte Evidence](papers/parma-v0.15.1/README.md) enthalten den
+konsistenten Stand. Die Artefaktidentität ist zusätzlich über den vorgesehenen
+Tag `parma-v0.15.1` und die Release-Assets festgehalten. Die folgenden älteren
+Abschnitte bleiben datierte Provenienz. Ihr Scope-Collector-TODO ist seit Commit
+`9b4208c` erledigt; ungeklärte historische Methodenfragen werden nicht pauschal
+als behoben ausgegeben. Der tatsächliche Remote-/DOI-Status ergibt sich aus dem
+Veröffentlichungsbeleg, nicht aus diesem lokalen Importtext.
+
 
 **Verbindlicher PARMA-Stand: v0.15.1.** Die Entscheidungen aus der Manuskriptrevision haben Vorrang vor den älteren Empfehlungen zur Paper-Auswahl und -Darstellung.
 

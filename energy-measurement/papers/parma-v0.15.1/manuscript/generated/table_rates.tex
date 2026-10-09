@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Jetson direct rate sweeps: largest repeat variation and group deviation across rates. Group deviation compares each rate-group mean with the equally weighted mean of all rate-group means. All finite results are retained.}
+\label{tab:rate-results}
+\begin{tabular}{@{}lrrR{.23\textwidth}R{.23\textwidth}@{}}
+\toprule
+Workload & Rates & Runs & Largest repeat variation (CV) & Largest group deviation \\
+\midrule
+GEMM-FP32 & 27 & 405 & 0.37\% & 0.40\% \\
+GEMM-FP16 & 27 & 405 & 0.73\% & 2.08\% \\
+GEMM-INT8 & 27 & 405 & 0.63\% & 1.69\% \\
+YOLO-FP32 & 26 & 390 & 0.41\% & 0.89\% \\
+YOLO-FP16 & 27 & 405 & 0.44\% & 0.25\% \\
+YOLO-INT8 & 27 & 405 & 0.73\% & 0.31\% \\
+Gemma3-12B & 27 & 405 & 0.58\% & 1.66\% \\
+Variable YOLO & 27 & 405 & 0.49\% & 0.56\% \\
+\bottomrule
+\end{tabular}
+\end{table}

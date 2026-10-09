@@ -1,0 +1,30 @@
+{
+  "version": "0.15.1",
+  "files": [
+    {
+      "name": "PARMA_v0151.pdf",
+      "bytes": 541553,
+      "sha256": "860abb57ec9792012eda703bd78ca50f1cf78e8e38138233302908b07b065abc"
+    },
+    {
+      "name": "PARMA_v0151_Aenderungen.md",
+      "bytes": 1255,
+      "sha256": "ecc1d52fafd0715ed89b4164120eb1a213e36653e98d98e4343f221d90b5f5e3"
+    },
+    {
+      "name": "PARMA_v0151_KnowledgeBase.md",
+      "bytes": 6350,
+      "sha256": "1661f7e74b4434edae7de985f4a5afecf065364c529211c5f5e2a38595ba4733"
+    },
+    {
+      "name": "PARMA_v0151_LaTeX.zip",
+      "bytes": 1198553,
+      "sha256": "303a48b05231a031c90ee1cf5c9d32471719ae87c82a91b69786811d351dd2db"
+    },
+    {
+      "name": "PARMA_v0151_Quellenpaket.zip",
+      "bytes": 40865517,
+      "sha256": "9493d4c055d95f8d90af26970242caff25df47aa6ea6658bbc19ab99855d5624"
+    }
+  ]
+}

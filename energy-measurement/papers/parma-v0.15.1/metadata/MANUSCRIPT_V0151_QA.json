@@ -1,0 +1,48 @@
+{
+  "version": "0.15.1",
+  "status": "PASS",
+  "errors": [],
+  "main_pages": 10,
+  "total_pages": 11,
+  "figures": 5,
+  "tables": 4,
+  "frozen_original_input_files": 19,
+  "frozen_validation_input_files": 47,
+  "complete_robustness_git_blobs_verified": 5,
+  "native_fixed_rate_rows": 9,
+  "fp16_physical_recordings": 15,
+  "fp16_numeric_cases_per_energy_rate": 960,
+  "fp16_psd_primary": "all_ids_0_to_14/matched_4s_4s",
+  "fp16_spectral_minima_claimed": false,
+  "duration_groups_recomputed": 110,
+  "paired_meter_groups_recomputed": 30,
+  "parma_pair_groups": 21,
+  "parma_pair_comparisons": 315,
+  "parma_unique_paired_executions": 105,
+  "parma_duration_groups": 70,
+  "parma_direct_rate_series": 8,
+  "figure_geometry": [
+    {
+      "figure": "measurement_boundaries",
+      "offpage_text": []
+    },
+    {
+      "figure": "scope_native_energy",
+      "offpage_text": []
+    },
+    {
+      "figure": "fp16_variance_coverage",
+      "offpage_text": []
+    },
+    {
+      "figure": "duration_dependence",
+      "offpage_text": []
+    },
+    {
+      "figure": "device_pair_medians",
+      "offpage_text": []
+    }
+  ],
+  "raw_waveforms_recomputed": false,
+  "scope": "Frozen inputs, selected summaries, direct descriptive aggregation and current PDF geometry/text. Human visual review is separate."
+}

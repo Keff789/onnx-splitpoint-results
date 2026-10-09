@@ -1,0 +1,4 @@
+# Prefer the shipped TeX/BibTeX support files; keep the normal TeX search path.
+$ENV{'TEXINPUTS'} = './texmf//:' . ($ENV{'TEXINPUTS'} // '');
+$ENV{'BSTINPUTS'} = './texmf//:' . ($ENV{'BSTINPUTS'} // '');
+$pdf_mode = 1;
