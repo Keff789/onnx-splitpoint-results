@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "unchanged_prior_generated_csvs": [
+    "controlled_effects.csv",
+    "direct_rates.csv",
+    "duration.csv",
+    "fp16_coverage.csv",
+    "fp16_energy.csv",
+    "hailo_spectra.csv",
+    "hailo_variable_interval_comparison.csv",
+    "native_reconstruction.csv",
+    "native_spectral_comparison.csv",
+    "paired_300s.csv",
+    "paired_all_durations.csv",
+    "paired_summary.csv",
+    "pause_summary.csv",
+    "pause_timing.csv"
+  ],
+  "changed_prior_generated_csvs": [],
+  "v02_chart_pngs": [
+    {
+      "file": "hailo_ac_context.png",
+      "identical": true
+    },
+    {
+      "file": "hailo_dc_telemetry.png",
+      "identical": true
+    },
+    {
+      "file": "hailo_duration.png",
+      "identical": true
+    },
+    {
+      "file": "hailo_spectral_tail.png",
+      "identical": true
+    },
+    {
+      "file": "hailo_variable_intervals.png",
+      "identical": true
+    },
+    {
+      "file": "hailort_duration.png",
+      "identical": true
+    },
+    {
+      "file": "native_cdf.png",
+      "identical": true
+    },
+    {
+      "file": "pause_runtime.png",
+      "identical": true
+    }
+  ],
+  "new_source_measurements": false
+}

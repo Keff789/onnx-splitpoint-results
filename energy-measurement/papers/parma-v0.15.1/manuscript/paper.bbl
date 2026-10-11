@@ -1,0 +1,121 @@
+\begin{thebibliography}{10}
+
+\bibitem{baller2021}
+Stephan~Patrick Baller, Anshul Jindal, Mohak Chadha, and Michael Gerndt.
+\newblock {DeepEdgeBench}: Benchmarking deep neural networks on edge devices.
+\newblock In {\em 2021 IEEE International Conference on Cloud Engineering},
+  pages 20--30, 2021.
+\newblock \href {https://doi.org/10.1109/IC2E52221.2021.00016}
+  {\path{doi:10.1109/IC2E52221.2021.00016}}.
+
+\bibitem{banbury2021mlperftiny}
+Colby Banbury, Vijay~Janapa Reddi, Peter Torelli, Jeremy Holleman, Nat
+  Jeffries, Csaba Kiraly, et~al.
+\newblock {MLPerf} tiny benchmark.
+\newblock {\em arXiv preprint arXiv:2106.07597}, 2021.
+\newblock URL: \url{https://arxiv.org/abs/2106.07597}.
+
+\bibitem{dauner2026frequency}
+Maximilian Dauner, Manuel Steinberg, Andreas Brunnert, Benedikt Schicker, and
+  Benedikt Z{\"o}nnchen.
+\newblock Evaluating the influence of measurement frequency on energy readings
+  using {Intel RAPL} and {NVIDIA NVML}.
+\newblock {\em ACM SIGENERGY Energy Informatics Review}, 6(2), July 2026.
+\newblock Presented at the Workshop on Sustainable Computer Systems (HotCarbon
+  2026).
+\newblock URL: \url{https://hotcarbon.org/assets/2026/paper-46.pdf}.
+
+\bibitem{gralka2024poweroverwhelming}
+Patrick Gralka, Christoph M{\"u}ller, Moritz Heinemann, Guido Reina, Daniel
+  Weiskopf, and Thomas Ertl.
+\newblock Power overwhelming: The one with the oscilloscopes.
+\newblock {\em Journal of Visualization}, 27(6):1171--1193, 2024.
+\newblock \href {https://doi.org/10.1007/s12650-024-01001-0}
+  {\path{doi:10.1007/s12650-024-01001-0}}.
+
+\bibitem{recs2026}
+Ren{\'e} Griessl, Florian Porrmann, Kevin Mika, Lennart Tigges, and Jens
+  Hagemeyer.
+\newblock {RECS}: A scalable platform for heterogeneous {AI} acceleration in
+  the cloud-edge continuum.
+\newblock In Ignacio Rojas, Gonzalo Joya, and Andreu Catala, editors, {\em
+  Advances in Computational Intelligence}, pages 153--165, Cham, 2026. Springer
+  Nature Switzerland.
+\newblock \href {https://doi.org/10.1007/978-3-032-02725-2_12}
+  {\path{doi:10.1007/978-3-032-02725-2_12}}.
+
+\bibitem{jay2023softwarepowermeters}
+Mathilde Jay, Vladimir Ostapenco, Laurent Lef{\`e}vre, Denis Trystram,
+  Anne-C{\'e}cile Orgerie, and Benjamin Fichel.
+\newblock An experimental comparison of software-based power meters: Focus on
+  {CPU} and {GPU}.
+\newblock In {\em 2023 IEEE/ACM International Symposium on Cluster, Cloud and
+  Internet Computing}, 2023.
+\newblock \href {https://doi.org/10.1109/CCGrid57682.2023.00020}
+  {\path{doi:10.1109/CCGrid57682.2023.00020}}.
+
+\bibitem{libutti2020usbaccelerators}
+Leandro~Ariel Libutti, Francisco~D. Igual, Luis Pi{\~n}uel, Laura De~Giusti,
+  and Marcelo Naiouf.
+\newblock Benchmarking performance and power of {USB} accelerators for
+  inference with {MLPerf}.
+\newblock In {\em Workshop on Accelerated Machine Learning}, 2020.
+\newblock URL:
+  \url{https://accml.dcs.gla.ac.uk/papers/2020/AccML_2020_paper_4.pdf}.
+
+\bibitem{energyResults2026}
+Kevin Mika and Joris Wachsmuth.
+\newblock {Energy-measurement results, analysis artifacts and
+  measurement-method documentation}, 2026.
+\newblock Frozen repository commit 9b4208c97420b1621a14b7dc91f051985e65e6f5;
+  accessed 9 October 2026.
+\newblock URL:
+  \url{https://github.com/Keff789/onnx-splitpoint-results/tree/9b4208c97420b1621a14b7dc91f051985e65e6f5/energy-measurement}.
+
+\bibitem{mlcommonsInferencePower}
+{MLCommons}.
+\newblock Power measurement --- {MLPerf} inference documentation.
+\newblock Online documentation, 2024.
+\newblock Accessed 2026-10-03.
+\newblock URL: \url{https://docs.mlcommons.org/inference/power/}.
+
+\bibitem{shalavi2023jetsoncalibration}
+Neda Shalavi, Aria Khoshsirat, Marco Stellini, Andrea Zanella, and Michele
+  Rossi.
+\newblock Accurate calibration of power measurements from internal power
+  sensors on {NVIDIA Jetson} devices.
+\newblock {\em arXiv preprint arXiv:2306.13107}, 2023.
+\newblock URL: \url{https://arxiv.org/abs/2306.13107}.
+
+\bibitem{tschand2024mlperfpower}
+Arya Tschand, Arun Tejusve~Raghunath Rajan, Sachin Idgunji, Anirban Ghosh,
+  Jeremy Holleman, Csaba Kiraly, et~al.
+\newblock {MLPerf} power: Benchmarking the energy efficiency of machine
+  learning systems from microwatts to megawatts for sustainable {AI}.
+\newblock {\em arXiv preprint arXiv:2410.12032}, 2024.
+\newblock URL: \url{https://arxiv.org/abs/2410.12032}.
+
+\bibitem{vanderVlugt2025powersensor3}
+Steven van~der Vlugt, Leon Oostrum, Gijs Schoonderbeek, Ben van Werkhoven, Bram
+  Veenboer, Krijn Doekemeijer, and John~W. Romein.
+\newblock {PowerSensor3}: A fast and accurate open source power measurement
+  tool.
+\newblock In {\em 2025 IEEE International Symposium on Performance Analysis of
+  Systems and Software (ISPASS)}, 2025.
+\newblock \href {https://doi.org/10.1109/ISPASS64960.2025.00028}
+  {\path{doi:10.1109/ISPASS64960.2025.00028}}.
+
+\bibitem{wachsmuth2026thesis}
+Joris Wachsmuth.
+\newblock {Entwicklung und Validierung eines Messsystems zur energetischen
+  Bewertung eingebetteter KI-Beschleuniger}.
+\newblock Master's thesis, Universit{\"a}t Bielefeld, Technische Fakult{\"a}t,
+  July 2026.
+
+\bibitem{yang2024parttime}
+Zeyu Yang, Karel Ad{\'a}mek, and Wesley Armour.
+\newblock Part-time power measurements: {NVIDIA-SMI}'s lack of attention.
+\newblock {\em arXiv preprint arXiv:2312.02741}, 2024.
+\newblock URL: \url{https://arxiv.org/abs/2312.02741}.
+
+\end{thebibliography}

@@ -1,0 +1,15 @@
+{
+  "repository": "Keff789/onnx-splitpoint-results",
+  "commit": "e87730135385e756c667fc2b573fb1a86834d4bb",
+  "scope": "Exact native spectral-source inventory from the pinned public journal documentation; source metadata, not recomputed waveforms.",
+  "files": [
+    {
+      "repository_path": "energy-measurement/PSD_Analysis_journal_documentation_artifacts/manifest/spectral_sources.json",
+      "local_path": "data/validation/native_spectra/spectral_sources.json",
+      "git_blob_sha1": "ee5847b4d204eae5b2caff6d849656191b50f92e",
+      "bytes": 846790,
+      "sha256": "b2e810488a6221a621635c7af6ec58ca9a84551024848b027ebf0661f9fad392",
+      "source_url": "https://github.com/Keff789/onnx-splitpoint-results/blob/e87730135385e756c667fc2b573fb1a86834d4bb/energy-measurement/PSD_Analysis_journal_documentation_artifacts/manifest/spectral_sources.json"
+    }
+  ]
+}

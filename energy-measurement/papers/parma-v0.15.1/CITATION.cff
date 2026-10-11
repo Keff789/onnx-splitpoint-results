@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: Cite this version of the companion artifact together with the paper. No DOI
+  has been assigned in this delivery.
+title: How Fast Is Fast Enough? Reference-Calibrated Energy Measurement for Edge-AI
+  Inference — companion artifact
+type: dataset
+version: 0.15.1
+authors:
+- family-names: Mika
+  given-names: Kevin
+  affiliation: CITEC, Bielefeld University
+  orcid: https://orcid.org/0009-0005-2717-5147
+- family-names: Wachsmuth
+  given-names: Joris
+  affiliation: CITEC, Bielefeld University
+- family-names: Porrmann
+  given-names: Florian
+  affiliation: CITEC, Bielefeld University
+  orcid: https://orcid.org/0000-0003-2401-7862
+- family-names: Hagemeyer
+  given-names: Jens
+  affiliation: CITEC, Bielefeld University
+  orcid: https://orcid.org/0009-0005-9943-8081
+repository-code: https://github.com/Keff789/onnx-splitpoint-results
+keywords:
+- energy measurement
+- Jetson
+- sampling rate
+- reproducibility

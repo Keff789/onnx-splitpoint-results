@@ -1,0 +1,21 @@
+{
+  "IEEEtran.cls": {
+    "source": "supplied TIM clean LaTeX/IEEEtran.cls",
+    "unchanged": true,
+    "sha256": "b0eb3567b81aec7fe98144a3ad283eeac2d31035bb19e0d9dcba7da190f18d9d"
+  },
+  "IEEEtran.bst": {
+    "source": "supplied TIM clean LaTeX/IEEEtran.bst",
+    "unchanged": true,
+    "sha256": "314f0ece704568faf827011bac498650691b2b5ee06320720830e782416d5a5f"
+  },
+  "figures/measurement_boundaries.pdf": {
+    "source": "supplied TIM clean LaTeX/figures/boundaries.pdf",
+    "unchanged": true,
+    "sha256": "28b1bc6936785dd2a6b1456316537a7ab78c01cddf588feafb8f42cb56f15fba"
+  },
+  "pause_input": {
+    "git_blob_sha1": "bfc92d1b235ffbfd774e2953f3a08921b8855dfc",
+    "verified": true
+  }
+}

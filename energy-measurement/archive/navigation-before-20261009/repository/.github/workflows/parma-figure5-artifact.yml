@@ -1,0 +1,42 @@
+name: Publish PARMA Figure 5 artifact
+on:
+  push:
+    branches: [main]
+    paths: [energy-measurement/publications/parma-v0.15.1/release.json]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: parma-figure5-v0151
+  cancel-in-progress: false
+jobs:
+  artifact:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Read the exact triggering commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          git init .
+          git remote add origin "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}.git"
+          git fetch --depth=1 origin "$GITHUB_SHA"
+          git checkout --detach FETCH_HEAD
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+      - name: Reproduce paired statistics and figure
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m venv "$RUNNER_TEMP/parma-venv"
+          . "$RUNNER_TEMP/parma-venv/bin/activate"
+          cd energy-measurement/publications/parma-v0.15.1
+          python -m pip install -r requirements.txt
+          python reproduce.py
+      - name: Publish new version without replacing other releases
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          . "$RUNNER_TEMP/parma-venv/bin/activate"
+          python energy-measurement/publications/parma-v0.15.1/publish.py

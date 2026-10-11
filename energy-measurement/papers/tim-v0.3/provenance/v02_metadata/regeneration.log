@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "source_candidate_rows": 35791,
+  "direct_series": 12,
+  "direct_groups": 323,
+  "direct_finite_runs": 4842,
+  "max_source_CV_residual_pp": 7.105427357601002e-15,
+  "duration_groups": 100,
+  "all_duration_pair_rows": 4416,
+  "all_duration_pair_groups": 300,
+  "300s_groups": 30,
+  "300s_pairs": 450,
+  "300s_physical_executions": 150,
+  "per_run_energy_power_duration_identity_max_absolute_residual": 4.440892098500626e-16,
+  "scope_native_rows": 9,
+  "scope_physical_executions": 59,
+  "scope_observations": 118,
+  "fp16_primary_recordings": 15,
+  "fp16_cases_per_energy_rate": 960,
+  "fp16_psd_branch": "matched_4s_4s",
+  "Hailo_spectral_recordings": 30,
+  "pause_scored_runs": 6,
+  "control_runs": 12,
+  "control_residual_df": 4,
+  "new_measurements": false,
+  "raw_waveform_reads": 0,
+  "PSD_reestimation": false,
+  "additional_summary": "Same stored Hailo paired values now also compared as E/P/span over all ten duration requests."
+}
+Created eight numeric charts (one axes each); boundary diagram retained from supplied TIM source.
+{
+  "status": "PASS",
+  "method": "Independent Python standard-library recomputation (statistics and explicit type-7 quantiles)",
+  "original_data_files_byte_verified": 79,
+  "paired_rows_checked": 4416,
+  "paired_groups_checked": 300,
+  "duration_groups_checked": 100,
+  "rate_series_checked": 12,
+  "source_PARMA_300s_summary_rows_checked": 30,
+  "physical_executions_at_300s": 150,
+  "max_numeric_residual": 6.750155989720952e-14,
+  "max_pair_identity_residual": 4.440892098500626e-16,
+  "native_all15_reference_guards": "PASS",
+  "manuscript_scope_and_float_counts": "PASS",
+  "raw_signals_read": 0,
+  "scope": "Export arithmetic and displayed input definitions; not raw calibration/PSD or acquisition verification"
+}
+OK: main.pdf
+PASS: numerical export reconstruction, independent audit and manuscript build.
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.

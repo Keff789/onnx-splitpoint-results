@@ -1,0 +1,85 @@
+\section{Analysis: Separate the Sources of Disagreement}
+\label{sec:methods}
+\subsection{An Operational Interval That Retains Internal Pauses}
+Direct acquisition begins before the benchmark and ends after it, so the analysis needs an explicit load interval. We use time-weighted 100-ms power bins, recording-edge medians for the baseline and the 95th percentile for the active level. A load must exceed both a relative contrast criterion and a robust edge-variation criterion. The main detector requires at least 200 ms above the midpoint between baseline and active level, then retains the envelope from the first to the last qualifying segment. Internal pauses remain part of that interval.
+
+This rule defines the measured quantity; it does not create hardware-synchronised inference markers. Thresholds at 0.4 and 0.6 of the contrast provide sensitivity checks around the main 0.5 rule. An interval is not chosen to fit the requested runtime or to minimise a measurement difference. Hailo variable YOLO retains its explicitly recorded interval, including padding, because a sustained high starting level does not supply a reliable detected onset. This same rule is retained across its rate and duration comparisons. The interval policy and full detector conditions are recorded with the exported results~\cite{energyResults2026}.
+
+\subsection{Pair Energy, Mean Power and Span Before Aggregation}
+For each series, comparator $s$ and requested duration, we intersect the recorded execution IDs with PicoScope IDs. For $X\in\{E,\overline P,T\}$, the signed pair difference is
+\begin{equation}
+\delta_{X,r}=100\left(\frac{X_{s,r}}{X_{\mathrm{Pico},r}}-1\right).
+\label{eq:paired}
+\end{equation}
+The reported central value is the median of these individual differences. It is not a ratio of two group medians. Empirical fifth and 95th percentiles describe repeat spread and remain available in the numerical artefact; they are not confidence intervals or absolute calibration uncertainties.
+
+Comparing all three quantities prevents an important ambiguity. For each pair, their ratios satisfy
+\begin{equation}
+\frac{E_{s,r}}{E_{\mathrm{Pico},r}}=
+\frac{\overline P_{s,r}}{\overline P_{\mathrm{Pico},r}}
+\frac{T_{s,r}}{T_{\mathrm{Pico},r}}.
+\label{eq:identity}
+\end{equation}
+Thus, close mean-power agreement need not imply close energy agreement. Equation~\eqref{eq:identity} holds for the individual pair; multiplying separately reported group medians is not an exact decomposition. The original intervals and voltage transformations remain unchanged throughout. Pairing identifies the same execution, not necessarily the same physical endpoints or electrical domain.
+
+Duration curves use each run's $E/T$, normalised to its workload's median in the 600-s-request group. This is a within-series reference, not an assumed steady-state limit. Direct-rate repeatability uses the population energy standard deviation divided by its mean. The displacement of a rate group compares its mean with the equally weighted mean of all rate-group means. This consistent mean-based statistic describes differences between physical executions, not an isolated numerical integration error.
+
+
+\subsection{Use Fixed Endpoints to Test the Sampling Representation}
+\label{sec:reconstruction-method}
+A direct acquisition-rate sweep changes more than a vector's sample spacing: each point belongs to another physical execution. To isolate the numerical representation, we instead reconstruct interval energy from a single high-rate recording. That recording supplies both the reference integral and all candidate grids. The executed workload, analogue response, voltage treatment and integration endpoints therefore remain fixed while the target rate and grid offset change.
+
+Let $P_{\mathrm{ref}}(t)$ be the calibrated native 5-MS/s power representation over a selected interval of duration $T$. Its integral gives $E_{\mathrm{ref}}$. At target rate $f$, the sample grid is shifted within one target period by an offset $0\leq\delta<1/f$. The offset concerns when the power signal is sampled, not the phase between a voltage and current channel. The reconstruction samples the reference representation on that grid, retains the source endpoint values and integrates the resulting piecewise-linear power representation. No additional target-rate anti-alias filter is applied in the primary comparison.
+
+The absolute relative energy error is
+\begin{equation}
+e(f,T,\delta)=\frac{|\widehat E(f,T,\delta)-E_{\mathrm{ref}}|}{E_{\mathrm{ref}}},
+\qquad E_{\mathrm{ref}}>0.
+\label{eq:reconstruction-error}
+\end{equation}
+An error of zero would mean agreement with that recorded reference, not proof that the reference itself is an exact electrical truth. The experiment also does not reproduce every hardware behaviour of a lower-rate ADC: it isolates the consequences of changing the grid on already derived power. Calibration, voltage modelling and acquisition response remain part of the source trace.
+
+The fixed test grid contains nine nominal durations, from 20 ms to 10 s, and 19 rates from 50 S/s to 160 kS/s. For each duration, up to 16 distributed windows test different portions of the recording; 64 offsets test alignment within a target period. An eligible case requires at least four target-grid samples. The full-duration case has one available span of 9.999999 s, rather than 16 independent ten-second recordings. Window and phase counts describe numerical cases, not physical repeats.
+
+For path $m$, workload $w$, recording $r$, window $j$ and offset $k$, the empirical envelope is
+\begin{equation}
+q(f,T)=\max_{m,w}Q_{0.95,r}
+\left[Q_{0.95,j,k}\left(e_{m,w,r,j,k}(f,T)\right)\right].
+\label{eq:hierarchy}
+\end{equation}
+The inner percentile summarises the grid and window cases within one recording. The outer percentile then summarises recordings of that workload and measurement path. Finally, the maximum covers the twelve workload/path groups. This ordering prevents a recording with many derived windows from being interpreted as many independent executions. Percentiles use linear interpolation; the resulting envelope is an empirical criterion on these cohorts, not a confidence guarantee for future workloads.
+
+A proposed fixed rate passes a tolerance $\varepsilon$ when $q(f,T)\leq\varepsilon$. A persistent minimum asks a stricter question: starting at which tested rate do \emph{all higher eligible tested rates} also pass? On the finite eligible rate set $\mathcal F_T$, it is
+\begin{equation}
+f_{\min,E}(T,\varepsilon)=\min\left\{f\in\mathcal F_T:
+\max_{g\in\mathcal F_T,\,g\geq f}q(g,T)\leq\varepsilon\right\}.
+\label{eq:persistent}
+\end{equation}
+If this set is empty, the criterion is not attained within the tested grid. No interpolation creates an untested threshold. Keeping fixed-point and persistent decisions separate is necessary because changes in grid alignment can produce nonmonotonic energy errors.
+
+Intermediate reduction to 1 MS/s is evaluated as a separate sensitivity branch, not used as the primary reference representation. Preserving a full-record integral through that step would not by itself establish identical later low-rate integrals. The long-window GEMM-FP16 example uses all 15 recordings, nominal 104-s intervals and 64 offsets at each of 50, 85 and 2000 S/s. Its pooled percentile describes 960 numerical cases per rate. It is not pooled with the six-workload hierarchy or presented as another set of 960 physical measurements.
+
+\subsection{Describe Fluctuations Without Calling Them Energy Error}
+\label{sec:spectral-method}
+The integral in~\eqref{eq:quantity} and the variability around its mean answer different questions. Spectral analysis starts from centred active and idle power: removing their respective means keeps the constant component from dominating a description of fluctuations. Welch estimation then yields a power spectral density (PSD) in W$^2$/Hz. Its integral is fluctuation variance in W$^2$, not consumed energy in joules.
+
+For each FP16 or Hailo recording, positive excess is the clipped difference
+\begin{equation}
+S_{\mathrm{exc},r}(f)=\max\{S_{\mathrm{active},r}(f)-S_{\mathrm{idle},r}(f),0\}.
+\label{eq:excess}
+\end{equation}
+This is an operational measure of additional recorded spectral content. Idle subtraction does not prove that every retained component originates solely from the workload, and clipping may retain differences due to PSD estimation. The active/idle construction must therefore accompany the reported spectrum.
+
+For positive total excess area within the analysed Nyquist band $[0,f_N]$, define
+\begin{equation}
+C_r(f)=\frac{\int_0^f S_{\mathrm{exc},r}(\nu)\,\mathrm{d}\nu}
+{\int_0^{f_N}S_{\mathrm{exc},r}(\nu)\,\mathrm{d}\nu}.
+\label{eq:coverage}
+\end{equation}
+A proposed sampling rate $f_s$ places the fraction $C_r(f_s/2)$ of the measured variance below its Nyquist limit. For the FP16 cohort, an evaluated rate meets a 95\% or 99\% coverage objective when the empirical fifth percentile of these recording-level fractions reaches the corresponding target. The descriptor $f_{99}$ instead identifies the frequency enclosing 99\% of a spectrum's area. Neither quantity is automatically an energy-error bound or a guarantee of true-waveform reconstruction.
+
+FP16 uses matched four-second active and idle intervals from all 15 recordings, at a 1-MS/s spectral analysis representation. One-second Hann segments with 50\% overlap give seven complete Welch segments on each side. This matched-length analysis prevents unequal segment counts from being the default explanation for the active/idle contrast. Alternative segment lengths and separate idle portions provide sensitivity checks, while the primary numerical decisions remain tied to the declared estimator.
+
+Hailo uses native 5-MS/s power, 10-s active prefixes and idle from the same recording. Welch estimation uses 1\,048\,576-sample Hann segments, 50\% overlap, constant segment detrending, one-sided density and mean averaging. Active and positive-excess frequency metrics are computed per recording before taking the median and empirical range across the 15 recordings of each workload. These are two descriptions of the same recordings, not two independent experiments.
+
+The paired-scope comparison retains a different estimator order: pointwise median active and idle spectra are subtracted and clipped. The active recordings use ten-second spans; each path also has eleven independent ten-second idle recordings. Native 5-MS/s analysis uses the same Hann segment length and overlap as the Hailo spectral calculation. Cumulative distributions are compared over the full 0--2.5-MHz band and after independent normalisation within 0--77 kHz. The latter changes the denominator; it describes conditional low-band shape rather than recovering variance removed by the acquisition path. These estimator orders and denominators are kept separate throughout.

@@ -1,0 +1,124 @@
+{
+  "audit_date": "2026-10-04",
+  "scope": "Curated transformation evidence only; source excerpts were inspected as inert data. No collector scripts were executed and no measurement/calibration/model was recomputed.",
+  "collector_identity": {
+    "version": "1.0.0",
+    "sha256": "a30e1fe6e4630eb4897d99de9e849411e488c1b4fe53817d846feaab92e11e9a",
+    "arguments": {
+      "profile": "memmert",
+      "root": [],
+      "with_twix": true,
+      "with_jetson": true,
+      "include_history": true,
+      "no_model_hashes": false,
+      "no_archives": false,
+      "out_parent": "/home/jwachsmuth/energy_analysis/provenance_reports",
+      "max_file_mib": 8,
+      "max_text_mib": 96,
+      "max_model_mib": 256,
+      "model_budget_mib": 1024,
+      "max_entries": 150000,
+      "max_seconds": 600,
+      "worker": false,
+      "verify": null
+    }
+  },
+  "export_normalization": "Collector evidence_text strips one terminal LF. The included YOLO YAML has one LF restored, then its whole-file SHA-256 was verified against collector sources.csv. Excerpt text has its own hash and does not claim the whole-source hash.",
+  "files": [
+    {
+      "path": "data/provenance/transformations/archived_ODS_formula_cells.csv",
+      "bytes": 5241,
+      "sha256": "0440851dc8300e43b2893c40d7205ed829c70ece6f747d759eac146509f1824b"
+    },
+    {
+      "path": "data/provenance/transformations/archived_ODS_identity.json",
+      "bytes": 588,
+      "sha256": "e08bf166bdc018c4514110c0636ed17647eaa91e8ac0c36dbd68e9a28e220006"
+    },
+    {
+      "path": "data/provenance/transformations/collected_config_scope_yolofp32.yaml",
+      "bytes": 3717,
+      "sha256": "e4fc61d9d35cb87ede980bd84488471878854a694744e812dc2a63210690b638"
+    },
+    {
+      "path": "data/provenance/transformations/collector_cache_run0_excerpts.jsonl",
+      "bytes": 3765,
+      "sha256": "60136c7d767f76e80ab9df6520bd1e3ba8b4e28d558fbc559864eded0c962e44"
+    },
+    {
+      "path": "data/provenance/transformations/collector_coverage_limitations.csv",
+      "bytes": 318,
+      "sha256": "6080226ebcf6e75a17d9a50ef22724192da77a353147dff814538e4141cfe9c3"
+    },
+    {
+      "path": "data/provenance/transformations/collector_selected_binding_and_versions.csv",
+      "bytes": 46982,
+      "sha256": "487c0905d7b9c3dfff6ec9a599e424190c3f31febe40d9bbd6df3b5851fa018c"
+    },
+    {
+      "path": "data/provenance/transformations/collector_selected_recorded_hash_references.csv",
+      "bytes": 44981,
+      "sha256": "8003263dca41cf447ac3b2301f9ea29fb838e93cb10baa585aa64933747ad96c"
+    },
+    {
+      "path": "data/provenance/transformations/collector_selected_sources.csv",
+      "bytes": 11071,
+      "sha256": "ecd650cf6f334d167d07a37d5a8cb624161f8032269c6dee1b690c32effd9d0e"
+    },
+    {
+      "path": "data/provenance/transformations/collector_selected_transformation_candidates.csv",
+      "bytes": 203946,
+      "sha256": "40537a3b73684e392ac0416c0afb95bbdbedc9ffb255c6273e01b6ae93465806"
+    },
+    {
+      "path": "data/provenance/transformations/frozen_YOLO_FP32_spectral_source_entry.json",
+      "bytes": 7691,
+      "sha256": "1346b922202a22b5d613f17fd3489bb8d9d420a8cb11a0d824d1e7728d2bd8dd"
+    },
+    {
+      "path": "data/provenance/transformations/frozen_current_binding.json",
+      "bytes": 2640,
+      "sha256": "4ebb806558bc6f67d2cad5007492a66f40f09629b5674c4ab753714ba7bc1c8e"
+    },
+    {
+      "path": "data/provenance/transformations/historic_urecs_duration_configuration.txt",
+      "bytes": 1038,
+      "sha256": "76ec92f94153407fd7edb05e06fd93d1cb481d499700babb73e722f595ee0006"
+    },
+    {
+      "path": "data/provenance/transformations/historical_YOLO_FP32_SCOPE_COMPARISON_SUMMARY.md",
+      "bytes": 5819,
+      "sha256": "1b16c27e20c3843cc6d7c8b176c45c8208bd1a1741ba51ae6c6c01803431591f"
+    },
+    {
+      "path": "data/provenance/transformations/legacy_duration_policy_operator.txt",
+      "bytes": 2415,
+      "sha256": "4238c317445010f790c26a428a650b4323cf720ab5b13bc438650265d47edde8"
+    },
+    {
+      "path": "data/provenance/transformations/live_Rust_Shelly_firmware_candidates.txt",
+      "bytes": 2003,
+      "sha256": "73142960f160b5b34f134db0a3a593db1c6b339b4b747d4e04529dd48f0ebc58"
+    },
+    {
+      "path": "data/provenance/transformations/live_Rust_environment_candidates.txt",
+      "bytes": 1276,
+      "sha256": "a937b07929b26e09a80845943ad267d15d692b623847f2592cba316d13c1207a"
+    },
+    {
+      "path": "data/provenance/transformations/scope_compare_operator.txt",
+      "bytes": 5285,
+      "sha256": "2cab4686072172b42322958bafedc7102fd46118ebcaac67d5402f7a6d875a8a"
+    },
+    {
+      "path": "data/provenance/transformations/transformationtable.csv",
+      "bytes": 9000,
+      "sha256": "7287264454c9f5c3e20ff563f09813c3061ab60a5cbd610fb8661fc20ac840e2"
+    },
+    {
+      "path": "data/provenance/transformations/voltage_model_operator.txt",
+      "bytes": 1030,
+      "sha256": "f987330c0e5ca32e17e4b513c5dd4c83531584c28a0f929c719404acd9db70d0"
+    }
+  ]
+}

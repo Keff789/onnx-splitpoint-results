@@ -1,0 +1,60 @@
+\section{Heterogeneous Journal Extension}
+\label{sec:extension}
+The existing Jetson and Hailo observations establish that the measurement objective, interval, and instrument response affect interpretation. The next stage is to test transfer under documented deployments and additional boundaries. This section specifies the extension so that incoming results can be integrated without changing the quantities or decision rules after seeing their values. Table~\ref{tab:extension-status} distinguishes available baseline evidence from outstanding empirical components.
+
+\begin{table*}[t]
+\caption{Journal development status. Available baseline findings are retained as such; the outstanding rows do not represent completed experiments.}
+\label{tab:extension-status}
+\centering\footnotesize
+\begin{tabularx}{\textwidth}{p{0.23\textwidth}YY}
+\toprule
+Component & Available evidence & Journal result still required \\
+\midrule
+Jetson energy and spectral baseline & Six-workload paired reconstruction; separate FP16 study; native scope spectra; direct and controlled observations & Complete reconstruction-code/configuration binding and planned offline sensitivity checks \\
+Matched Jetson/Hailo deployments & Workload labels and some collected execution records & Run-bound model/engine/HEF, input shape, batch, precision, runtime/build identity, completed work \\
+Hailo energy-rate decision & Native spectra, direct rate/duration and meter observations & Same-trace energy errors and $f_{\min,E}(T,\varepsilon)$ for the documented Hailo cohort \\
+Host and accelerator boundaries & Card/module input and wider AC observations & Separately acquired host, accelerator, and combined energies over aligned intervals \\
+Controlled activity patterns & A Jetson pause diagnostic and complementary rate control & Matched continuous and deterministic burst/pause workloads with completed work \\
+Dynamic telemetry & Long-window paired average differences & Update intervals, averaging/lag, event coverage, fixed-window energy error \\
+Discrete GPU & Historical direct-sweep exports retained in the source archive & Updated GPU measurements, final wiring boundary, deployment and calibration binding \\
+\bottomrule
+\end{tabularx}
+\end{table*}
+
+\subsection{Documenting Comparable Work}
+A shared workload name does not establish a shared experiment. The deployment register must bind each physical execution to the model or compiled artifact, input dimensions, batch, precision, preprocessing, executable/runtime version, effective options, and number of completed inferences. Where a compiler changes the graph, the relationship between the source model and the deployed artifact must be recorded. The same applies to warm-up, graph construction, data transfer, and host-side scheduling.
+
+The journal comparison should first establish equivalent intended work and an appropriate output-validity check. Energy per inference is then $E/N_{\mathrm{completed}}$ for a stated interval and boundary. A timeout argument alone does not supply $N_{\mathrm{completed}}$, and a TensorRT query count is not automatically an interchangeable Hailo inference count. Incompletely documented historical series remain useful within-series observations; they are not converted into cross-platform efficiency comparisons by assuming default shapes or batch sizes.
+
+\draftnote{A conservative deployment register is supplied with this draft. Several historical shape/build fields remain unavailable. Current collector findings are candidate records unless an execution-specific binding is present.}
+
+\subsection{Extending Same-Trace Reconstruction to Hailo}
+The Hailo extension will use the same energy quantity, unchanged window endpoints, offset construction, eligibility rule, and aggregation order as the Jetson comparison. The output should include per-recording errors, the hierarchical envelope, signed-error diagnostics, and the tested rate decisions for each duration and electrical boundary. A cross-platform figure can then place each result beside its measurement setup and physical repetition count.
+
+The existing Hailo spectral observations describe recorded dynamics and the direct sweeps describe separate executions. Neither provides the missing same-trace energy distribution. We therefore leave the Hailo rate/duration table empty until a verified export is available, rather than infer an energy rate from its $f_{99}$ or from agreement of separate long executions.
+
+\subsection{Measuring Host and Accelerator Energy}
+For a compatible DC boundary, the component accounting is
+\begin{equation}
+E_{\mathrm{combined}}=E_{\mathrm{accelerator}}+E_{\mathrm{host}}+E_{\mathrm{other}},
+\label{eq:boundary-sum}
+\end{equation}
+where the intervals and included components must match. The equality is an accounting definition; it is not a decomposition already measured by our AC/DC comparison. Conversion losses and differently powered peripherals require separate terms when the enclosing observation is AC-side.
+
+The planned measurements will acquire the host-only, accelerator-only, and combined observations with documented wiring and timing, and report both energy per completed inference and the host share under the selected activity pattern. An idle-host subtraction is valid only for the explicitly defined incremental quantity and observed configuration. It is not a generic replacement for the energy needed to service inference. This matters especially for M.2 and PCIe accelerators whose data movement and orchestration run on another processor.
+
+\draftnote{The available Shelly/card-input differences do not identify host energy separately. Quantitative component shares and a matched cross-platform efficiency comparison remain pending.}
+
+\subsection{Continuous, Burst, and Telemetry Measurements}
+The activity-pattern extension will define burst lengths and pauses before execution, retain energy during internal pauses, and record completed work. Both average power during activity and energy across the full schedule can then be reported. The existing short/long inter-execution-pause diagnostic supports controlling the initial state, but does not implement this matched multi-platform schedule.
+
+For telemetry, the reader polling interval, actual update interval, internal averaging behavior, and timestamp convention are distinct attributes. Event-marked workloads should be compared over the same stated electrical boundary and independently established time mapping. The quantitative outputs will be update-interval distributions, onset/offset delay, event coverage, and energy error over fixed windows. Lag can be described relative to a synchronised marker or reference transition; maximum correlation alone does not establish the electrical response or justify retroactive time shifting of historical measurements.
+
+The telemetry comparison should retain a wider reported-system observation when it is useful, while identifying it as a different quantity. A long-window average agreement can remain valid evidence for that window even when update cadence or lag prevents event-level attribution. This extension will therefore report both aggregate agreement and temporal limitations.
+
+\subsection{Discrete-GPU Integration}
+The additional GPU campaign will be integrated through a new versioned offline result snapshot after its raw sources and execution identities have been secured. The inputs needed for this section are the measured GPU and host identities, model/runtime configuration, completed work or actual timed protocol, sampling rates, repetitions, and the applied conversion/calibration settings. The electrical drawing must establish whether slot power and auxiliary supplies are included before any result is called total GPU-board power.
+
+Historical GPU direct-sweep exports are retained for provenance but are not used as the final journal GPU result. No NVML observations are inferred where the archived series contains only PicoScope measurements. The forthcoming analysis should apply the same interval policy and independently document any new telemetry path. It can then provide a useful platform extension without attributing a difference between unmatched campaigns to the accelerator architecture alone.
+
+\draftnote{GPU result tables and figures are intentionally pending. Their absence is a data-status marker, not a zero measurement.}

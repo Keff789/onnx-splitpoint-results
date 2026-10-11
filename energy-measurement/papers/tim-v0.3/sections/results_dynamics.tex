@@ -1,0 +1,51 @@
+\section{RQ2: Preserving Energy Does Not Preserve Fluctuations}
+\label{sec:dynamics}
+\subsection{The Same Recordings Support Different Measurement Objectives}
+The FP16 energy result and its spectrum describe the same experimental workload but very different outputs. At 2 kS/s, only about 4\% of the measured positive excess fluctuation variance lies below Nyquist, despite the small long-window energy error. The average can therefore be well represented while most recorded fluctuation variance lies outside the proposed observation band. A small integration error is not evidence of a faithful temporal description.
+
+\begin{figure*}[t]
+\centering
+\begin{minipage}[t]{.48\textwidth}\centering
+\includegraphics[width=\linewidth]{fp16_energy_objective.pdf}\\[-1mm]
+\small (a) Energy over a nominal 104-s interval
+\end{minipage}\hfill
+\begin{minipage}[t]{.48\textwidth}\centering
+\includegraphics[width=\linewidth]{fp16_fluctuation_coverage.pdf}\\[-1mm]
+\small (b) Positive-excess fluctuation coverage
+\end{minipage}
+\caption{Different objectives in the all-15-recording FP16 cohort. (a) Pooled Q95 and the largest observed energy error at three evaluated reconstruction rates, with 64 offsets per recording. (b) Measured variance above the candidate Nyquist frequency; markers show medians and bars empirical fifth--95th percentiles from matched active/idle intervals. The horizontal limits correspond to 95\% and 99\% coverage. The rate sets differ because the objectives differ; neither panel implies an untested minimum.}
+\label{fig:energy-spectrum}
+\end{figure*}
+
+At the evaluated 125 and 160 kS/s rates, the lower empirical coverage percentiles are about 97.5\% and 99.3\%, respectively. Those points meet the 95\% and 99\% objectives defined in Section~\ref{sec:spectral-method}. Their practical role is not to replace the low-rate energy result: they answer how much \emph{measured fluctuation variance} remains below Nyquist. The useful rates for these two questions differ by orders of magnitude.
+
+The distinction also clarifies the denominator of a spectral claim. Positive excess subtracts an idle spectrum, clips negative differences and retains the acquisition response. Matching active and idle segment lengths and testing alternative idle portions leave the FP16 coverage decisions intact, but they do not turn positive excess into a noise-free physical workload spectrum. The result is a robust observation for the declared estimator, rather than a universal analogue-bandwidth specification.
+
+For energy benchmarking, the implication is to select a rate for the integral and interval actually reported. For timing individual bursts or analysing fast power structure, that success is insufficient: the spectrum and acquisition path must be examined separately. Sampling more quickly can help the second task even when it changes the first task very little.
+
+\subsection{Agreement Within a Common Band Is a Different Result}
+The paired Jetson scopes make the acquisition dependence visible independently of a platform comparison. Their positive-excess cumulative power spectra differ by up to about 31 percentage points over the full recorded band. When each curve is normalised within 0--77 kHz, the largest differences fall to approximately 3 points (Fig.~\ref{fig:cdf}). The paths give much closer descriptions of how their measured low-band variance is distributed than of the fraction in the full band.
+
+\begin{figure}[t]
+\centering\includegraphics[width=\columnwidth]{native_cdf.pdf}
+\caption{Acquisition-path dependence of native Jetson power spectra. Bars show the maximum Tektronix/PicoScope cumulative-distribution difference across frequency. Independent normalisation within 0--77 kHz changes the denominator; closer conditional shape is not proof of equal total variance or a measured transfer function.}
+\label{fig:cdf}
+\end{figure}
+
+Conditional normalisation changes the denominator, so the improved agreement is not recovery of a true spectrum. The two paths can still measure different total variance. Their closer low-band shape is therefore useful only with its stated acquisition and normalisation conditions.
+
+\subsection{Hailo Makes the Spectral Question Workload-Specific}
+Hailo GEMM and YOLO have similar long-window card-input mean powers in their duration studies, but their spectral tails differ substantially. Figure~\ref{fig:hailo-spectra} uses separate 10-s active prefixes from 15 recordings of each workload. For GEMM, the median frequency enclosing 99\% of active variance is about 73 kHz, falling to about 27 kHz for positive active-minus-idle variance. For YOLO, the corresponding change is smaller, from about 105 to 95 kHz.
+
+\begin{figure}[t]
+\centering\includegraphics[width=\columnwidth]{hailo_spectral_tail.pdf}
+\caption{Hailo spectral tails: median $f_{99}$ for active and positive-excess power variance, with empirical fifth--95th percentile ranges across 15 recordings per workload. The nominal current-path bandwidth is contextual, not a hard cutoff. Idle subtraction changes the GEMM tail much more than the YOLO tail; neither is an energy-rate threshold.}
+\label{fig:hailo-spectra}
+\end{figure}
+
+The comparison has two implications. First, reporting a single bandwidth for ``Hailo inference'' would obscure workload-specific recorded dynamics. Second, the estimator matters: including the idle contribution changes GEMM's upper-tail description considerably. Positive excess is useful for separating an operational baseline from additional recorded variance, but clipping a difference spectrum is not a proof that noise has been removed. We therefore state the active/idle treatment rather than presenting $f_{99}$ as a hardware property.
+
+The 95-kHz YOLO tail also illustrates why the nominal 77-kHz analogue bandwidth is not a brick-wall cutoff. Measured content can remain above that nominal value, while the acquisition response still shapes the signal. These observations do not identify layers, frames or compiler operations as peak causes; the datasets do not provide the synchronous markers needed for that attribution.
+
+
+The combined spectral evidence therefore broadens rather than replaces the energy argument. Jetson demonstrates the separation between integrals and fluctuations, the paired scopes demonstrate acquisition-path dependence, and Hailo demonstrates workload dependence on another accelerator class. None supplies a Hailo or discrete-GPU energy-rate threshold without a corresponding unchanged-endpoint reconstruction. What can be carried to another platform is the measurement procedure; a numerical threshold requires its own evidence.

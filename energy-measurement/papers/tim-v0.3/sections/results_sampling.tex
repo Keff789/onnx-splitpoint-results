@@ -1,0 +1,35 @@
+\section{RQ1: Select the Energy Rate Together with the Interval}
+\label{sec:sampling}
+\subsection{A Fixed Embedded Rate Can Pass Long Intervals and Fail Short Ones}
+The six-workload Jetson study provides the quantitative starting point for a rate decision. Its 59 physical executions are observed through two acquisition paths, yielding 118 source traces. Every reconstruction error is measured against that same trace's reference integral, and~\eqref{eq:hierarchy} combines the recordings without counting derived windows as independent measurements. The study spans matrix multiplication, detection, language-model inference and image classification rather than relying on a single smooth load.
+
+Figure~\ref{fig:jetson-energy} shows how strongly the decision depends on duration. At a fixed 2 kS/s, the largest hierarchical Q95 error falls from about 11.2\% at 20 ms to 4.0\% at 100 ms, 1.2\% at 1 s and 0.43\% at 10 s. The rate passes the 1\% criterion at the tested 2-, 5- and 10-s intervals. It also passes 0.5\% at 10 s, but not at 5 s. These outcomes give a useful operating region for long energy measurements without implying that the same rate resolves individual short events.
+
+\begin{figure}[t]
+\centering\includegraphics[width=\columnwidth]{jetson_rate_duration.pdf}
+\caption{Jetson fixed-rate energy reconstruction. Each point is the largest hierarchical Q95 error across six workloads and two acquisition paths at 2 kS/s. Markers are tested durations; connecting segments guide the eye, not a guarantee at untested intervals. The 59 executions supply the physical repeats.}
+\label{fig:jetson-energy}
+\end{figure}
+
+This duration effect is not a statement that fewer samples always suffice. A long integral can average positive and negative deviations over repeated fluctuations, whereas short windows are more exposed to alignment with their local structure. The reference experiment keeps the execution fixed so this numerical effect is not confused with startup, completed work or changes in device state. It therefore answers whether the sampled representation preserves \emph{a specified integral}, not whether a requested benchmark duration is representative of deployment.
+
+\subsection{A Passing Operating Point Is Not a Universal Minimum}
+Table~\ref{tab:reference} reports all nine durations together with the persistent decisions from~\eqref{eq:persistent}. For a 1\% tolerance, the tested persistent minimum is 160 kS/s at 20 ms, 80 kS/s at 100 ms and 16 kS/s at 1 s. Longer windows lower the requirement further: 1.2 kS/s at 5 s and 680 S/s at 10 s. The stricter 0.5\% objective remains unattained at the two shortest durations within the evaluated grid.
+
+\begin{table}[t]
+\caption{Native Jetson energy reconstruction over all nine durations. Error is the hierarchical envelope at a fixed 2 kS/s. The two $f_{\min}$ columns require that rate and every higher eligible tested rate to pass. A dash means not attained up to 160 kS/s, not an inferred requirement beyond it.}
+\label{tab:reference}
+\centering\footnotesize
+\input{tables/jetson_reference.tex}
+\end{table}
+
+The 2-s result explains why both kinds of decision matter. Fixed 2 kS/s passes with an error of about 0.85\%, yet the tested 9.4-kS/s point rises just above 1\%. The persistent 1\% minimum is consequently 16 kS/s, not 2 kS/s. At 10 s, fixed 2 kS/s likewise passes 0.5\%, while that tolerance's persistent minimum remains 16 kS/s. Increasing a rate need not monotonically improve every finite-grid reconstruction because the sampled locations also change.
+
+For an instrument operating at a known fixed rate, the corresponding pointwise test answers the practical question. For a recommendation expressed as ``at least this rate'', the persistent rule retains the higher-rate failures that the wording would otherwise hide. Both results are meaningful; neither permits interpolation of an unmeasured threshold or unconditional transfer to another analogue front end.
+
+\subsection{Long-Window Energy Provides a Different Operating Point}
+The separate GEMM-FP16 cohort extends the duration perspective to nominal 104-s intervals. All 15 recordings are retained, with 64 offsets each at the three evaluated rates. Its pooled Q95 error is about $\FPFifty\%$ at 50 S/s, about 0.49\% at 85 S/s and about 0.09\% at 2 kS/s. This is a different cohort and aggregation from the six-workload hierarchy, but it makes the long-window consequence tangible: a much sparser grid can still preserve an execution's integrated energy.
+
+The percentile should not be read as a bound on every case. At 50 S/s, individual errors exceed 1\%; at 85 S/s, all 960 evaluated recording/offset cases remain below 1\%. Those are separate operational choices: tolerating a small upper tail of observed errors versus requiring every evaluated case to pass. Figure~\ref{fig:energy-spectrum}(a) retains both summaries rather than calling the percentile an absolute accuracy specification.
+
+The low-rate result applies to integration over the retained long interval. It does not establish the performance of a physical 50-S/s instrument, adequate timing of individual inferences, or preservation of the fluctuations within the interval. The next question tests precisely what the successful energy integral leaves unresolved.

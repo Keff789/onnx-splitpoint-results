@@ -1,0 +1,24 @@
+{
+  "sources": [
+    {
+      "file": "IEEE_TIM_v0.1_20261004_Clean_LaTeX.zip",
+      "bytes": 266773,
+      "sha256": "10471e8f7345e8cfdcd935e5b676d88acf47d71b2675e8c14414db3c8ce23aff"
+    },
+    {
+      "file": "IEEE_TIM_v0.1_20261004_Draft.pdf",
+      "bytes": 528798,
+      "sha256": "c8a15a3e6ba982a08a8c7d3f7e9c097ee9be8174815696b9d8d964de55ad4c33"
+    },
+    {
+      "file": "PARMA_v0151_Quellenpaket.zip",
+      "bytes": 40865517,
+      "sha256": "9493d4c055d95f8d90af26970242caff25df47aa6ea6658bbc19ab99855d5624"
+    }
+  ],
+  "repository": "Keff789/onnx-splitpoint-results",
+  "reference_commit": "85eb488587a51659239c45d966f930f7c7b72a6e",
+  "publication_status": "The new TIM package is local; the reference commit is not a TIM upload.",
+  "original_method_data_count": 79,
+  "pause_blob_verification": "bfc92d1b235ffbfd774e2953f3a08921b8855dfc"
+}

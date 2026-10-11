@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "version": "0.2",
+  "baseline_pages": 15,
+  "revised_total_pages": 10,
+  "figures": 7,
+  "tables": 4,
+  "bibliography_starts_page": 10,
+  "page_size_pt": [
+    612.0,
+    792.0
+  ],
+  "source_geometry_unchanged": true,
+  "overfull_boxes": 0,
+  "unresolved_references": 0,
+  "underfull_box_warnings": 13,
+  "shared_source_files_checked": 32,
+  "separate_clean_build": "PASS",
+  "full_export_regeneration": "PASS",
+  "all_pages_identical_clean_vs_full_text_and_render": true,
+  "page_checks": [
+    {
+      "page": 1,
+      "text_matches_clean": true,
+      "pixels_match_clean_at_108dpi": true,
+      "pixel_sha256": "6f14c49aa088798c3a19f1ad096188b4dad9d71a208785e80f09a3ccb8c9100c",
+      "width_pt": 612.0,
+      "height_pt": 792.0
+    },
+    {
+      "page": 2,
+      "text_matches_clean": true,
+      "pixels_match_clean_at_108dpi": true,
+      "pixel_sha256": "4542d4e4b1e209d43ef1ce0ba254e0615f22082a69c7f7293f32e59fc709f331",
+      "width_pt": 612.0,
+      "height_pt": 792.0
+    },
+    {
+      "page": 3,
+      "text_matches_clean": true,
+      "pixels_match_clean_at_108dpi": true,
+      "pixel_sha256": "e2c0aa4003c4119885f9927f5598f32adcd373d981e81a4313f655317754bc02",
+      "width_pt": 612.0,
+      "height_pt": 792.0
+    },
+    {
+      "page": 4,
+      "text_matches_clean": true,
+      "pixels_match_clean_at_108dpi": true,
+      "pixel_sha256": "cc61fbade1e4620e0bfb2945b2a9ab690898f0251cd14f8a446db7fd63f8e06d",
+      "width_pt": 612.0,
+      "height_pt": 792.0
+    },
+    {
+      "page": 5,
+      "text_matches_clean": true,
+      "pixels_match_clean_at_108dpi": true,
+      "pixel_sha256": "73cc9a119716bb147f24e0f677e9e05cae9a540541e3d04f41d3ffe6d33f5eb0",
+      "width_pt": 612.0,
+      "height_pt": 792.0
+    },
+    {
+      "page": 6,
+      "text_matches_clean": true,
+      "pixels_match_clean_at_108dpi": true,
+      "pixel_sha256": "8a5430420fd65194dd3ade975f1619c52d575bae7eb907ec1c3f644a68a7a653",
+      "width_pt": 612.0,
+      "height_pt": 792.0
+    },
+    {
+      "page": 7,
+      "text_matches_clean": true,
+      "pixels_match_clean_at_108dpi": true,
+      "pixel_sha256": "6c2324dce7c1174019c0e09958324938c7742e7096e078fe44f1c3aab77b0098",
+      "width_pt": 612.0,
+      "height_pt": 792.0
+    },
+    {
+      "page": 8,
+      "text_matches_clean": true,
+      "pixels_match_clean_at_108dpi": true,
+      "pixel_sha256": "db8c0742826d4888a1ee2def83739989bf0a9a3c31cf7f355f55547a8ca1d90f",
+      "width_pt": 612.0,
+      "height_pt": 792.0
+    },
+    {
+      "page": 9,
+      "text_matches_clean": true,
+      "pixels_match_clean_at_108dpi": true,
+      "pixel_sha256": "a3e1aa1b879571454e0d1d187aa70f672f102ba32eb884758c171db6c17b32a2",
+      "width_pt": 612.0,
+      "height_pt": 792.0
+    },
+    {
+      "page": 10,
+      "text_matches_clean": true,
+      "pixels_match_clean_at_108dpi": true,
+      "pixel_sha256": "ddc6292f881d457fe46b907d9d3b4fb613e44038f128663bbc7f311e582b7913",
+      "width_pt": 612.0,
+      "height_pt": 792.0
+    }
+  ],
+  "note": "Numeric charts regenerated from frozen exports. Bibliography underfull warnings reflect URL breaking/justification, not overfull or missing content. Visual sign-off stored separately."
+}

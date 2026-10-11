@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "baseline": "PARMA v0.14",
+  "files_compared": 92,
+  "different_files": [],
+  "new_measurements": false,
+  "raw_waveforms_recomputed": false
+}

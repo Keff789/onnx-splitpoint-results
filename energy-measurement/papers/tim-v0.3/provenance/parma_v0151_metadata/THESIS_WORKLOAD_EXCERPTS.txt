@@ -1,0 +1,323 @@
+7 Benchmarks & Messergebnisse
+
+Mithilfe der in Kapitel 5 vorgestellten Messsuite und der in Abschnitt 6.3 durchgeführten
+Kalibrierung werden in diesem Kapitel experimentelle Vergleiche auf einem NVIDIA-Jetson-
+Orin-NX-Modul durchgeführt. Dafür werden zunächst die verwendeten Benchmarks vor-
+gestellt, die unterschiedliche Edge-AI-Lastprofile abdecken. Anschließend wird untersucht,
+welchen Einfluss die Abtastrate auf die Energieintegration hat und wie stark die Messergeb-
+nisse verschiedener Messmethoden bei unterschiedlichen Benchmarklaufzeiten voneinander
+abweichen.
+
+
+
+
+7.1 Vorstellung der Benchmarks
+
+Für die in dieser Arbeit durchgeführten Messungen werden mehrere Benchmarks benötigt,
+die unterschiedliche Anwendungsszenarien abdecken und dabei unterschiedliche Last-Profile
+erzeugen sollen. Als synthetische und rechenintensive Last kommen GEMM-Berechnungen,
+als speicherintensive Last kommt ein Gemma3-LLM und als praxisnahes Bildverarbeitungs-
+szenario kommt ein YOLO-Netz zum Einsatz. Diese Benchmarks werden in den folgenden
+Unterkapiteln eingeführt.
+
+
+
+
+7.1.1 Synthetische Last (GEMM)
+
+
+Dieser Benchmark ist dafür konzipiert, um zum einen das Jetson Modul möglichst stark und
+konsistent auszulasten und zum anderen eine Basis zu schaffen, welche den Energieverbrauch
+mit einer bekannten Anzahl an Floating Point Operations (FLOPs) auf unterschiedlicher
+Hardware vergleicht. Dafür wurde ein neuronales Netzwerk konzipiert, welches mehrere
+Matrix-Matrix Berechnungen durchführt und damit GEMM-ähnliche Rechenlasten abbildet.
+(Siehe auch Kapitel 2.7)
+
+Die hier verwendete Netzstruktur wird in der Abbildung 7.1 dargestellt und hat acht zweidi-
+mensionale Faltungsschichten, acht ReLU-Schichten, eine zweidimensionale AvgPool-Schicht
+und zum Abschluss eine Faltungsschicht, welche sich wie eine voll-verbundene Schicht ver-
+hält. Die FLOP-Zählung folgt hier einer vereinfachten Konvention, bei der elementweise
+
+
+
+                                                                                        57
+7 Benchmarks & Messergebnisse
+
+
+                                        Repeat 8x
+
+                                       Conv2D                                      Conv2D
+                                     Kernel: (1,1)                               Kernel: (1,1)
+               Input                   Pads: 0                 Global Average      Pads: 0               Output
+                                                     ReLU
+     Shape: (512x2048x14x14)           Stride: 1                    Pool           Stride: 1     Shape: (512x2048x1x1)
+                                      Dilations: 1                                Dilations: 1
+                                    Channels: 2048                              Channels: 2048
+
+
+
+
+                         Abbildung 7.1: Netzwerkstruktur der synthetischen Last
+
+
+Operationen mit einer Operation pro Element berücksichtigt werden. Bei einer Batch-Größe
+von 512 lässt sich die folgende FLOP-Anzahl bestimmen:
+
+        Inputshape :(NBat ch , Cin , H, W )
+     Outputshape :(NBat ch , Cout , H f c , W f c )
+                  NBat ch = 512; Cin = Cout = 2048; KH ,KW = 1; H,W = 14 M = Cout = 2048
+                        K = Cin · KH · KW = 2048; N = NBat ch · H · W = 100352
+          FLOP C onv2D = 2 · M · N · K = 2 · 2048 · 2048 · 100352
+                               = 841 813 590 016 FLOP
+             FLOPRe LU = FLOPsAv g Pool = NBat ch · Cin · H · W = 512 · 2048 · 14 · 14
+                               = 205 520 896 FLOP
+               H f c ,W f c = 1; N f c = NBat ch · H f c · W f c = 512
+                FLOP f c = 2 · M · N f c · K = 2 · 2048 · 512 · 2048
+                               = 4 294 967 296 FLOP
+             FLOP t ot al = 8 · (FLOP C onv2d + FLOPReLU ) + FLOPAv g Pool + FLOP f c
+                               ≈ 6.74 × 1012 FLOP = 6.74 TFLOP
+
+Das Netz wurde in Python mit PyTorch geschrieben, als ONNX exportiert und final als 32-Bit
+Gleitkommazahl, 16-Bit Gleitkommazahl und 8-Bit Ganzzahl Version in einem TensorRT-
+kompatiblen Format gespeichert. Ausgeführt wird es im Anschluss mit dem trtexec-Befehl,
+der aus der TensorRT-Suite stammt.
+
+
+
+7.1.2 Large Language Model (Gemma3)
+
+Sprachmodelle sind derzeit allgegenwärtig und finden auch im Edge-Computing-Bereich
+Anwendung. Dazu gehört vorwiegend die Robotik, bei der nur begrenzte Rechenressourcen
+auf den Robotern selbst verbaut werden kann. Dementsprechend gibt es Versuche, kleinere
+Sprachmodelle zur Anwendung zu bringen. Beispielsweise versuchen Izzo et al. [17] mithilfe
+von kleinen Large Language Models (LLMs) dynamisch Verhaltensbäume zu erzeugen, um
+unterschiedliche Aufgaben mit einem Roboter zu lösen.
+Zudem sind Sprachmodelle meist eher speicherbandbreitenlimitiert (siehe Ma et al. [27])
+und könnten dadurch andere Leistungsprofile erzeugen, welche möglicherweise nur durch
+höhere Abtastraten abgebildet werden können.
+
+
+
+58
+                                                             7.1 Vorstellung der Benchmarks
+
+
+Umsetzung:    In dieser Arbeit wird zur Ausführung der LLM-Aufgaben das Framework ol-
+        1
+lama verwendet. Dieses stellt neben einem Command-Line-Interface (CLI)-Interface auch
+einen Server bereit, um mit unterschiedlichen Sprachmodellen zu interagieren. Das hier ver-
+wendete Sprachmodell ist das Gemma3-Modell mit 12 Milliarden Parametern von Google [41]
+und zum Zeitpunkt der Auswahl eines der beliebteren Modelle ohne Reasoning-Modus auf
+der Ollama-Plattform.
+In der ausgelieferten Version kann das LLM jedoch nicht als Benchmark verwendet werden,
+da die Ausgaben eine zu große Varianz aufweisen. Dies kann aber mithilfe von einigen
+Parametern beeinflusst werden: dem Seed des Zufallszahlengenerators, der Temperatur
+und dem top_k-Parameter des Modells. Diese sind folgendermaßen konfiguriert worden:
+Seed = 0, Temperatur = 0, top_k = 1. Für den hier verwendeten Prompt wird dadurch eine
+identische Ausgabe bei jedem Durchlauf erreicht. Auch wird der Modell-Kontext mit jeder
+Ausführung zurückgesetzt und keinerlei Caching durchgeführt, damit der vorherige Durchlauf
+keinen Einfluss auf den Benchmark hat.
+Aufgerufen wird der Benchmark über die Netzwerkschnittstelle des Ollama-Servers mit
+dem Prompt „Please write a Sudoku solver in Python. Keep it short“. Dies
+geschieht ohne ein spezifisches Token-Limit. Jedoch wird ein sogenannter „Dry-Run“ vor der
+ersten Messung ausgeführt, um zum einen das Modell in den Speicher zu laden und zum
+anderen ein „Warm-up“ durchzuführen. Dies hilft, alle benötigten Ressourcen zu initialisieren,
+damit dies keinen Einfluss auf die Energiemessung hat.
+
+
+7.1.3 Bildverarbeitung (YOLO)
+
+Ein weiteres häufig auftretendes Szenario im Edge-Computing ist die Bildverarbeitung.
+Dabei werden Aufgaben wie beispielsweise die Bildsegmentierung oder Objektdetektion
+gestellt. Für diese Aufgaben kommen oft Modelle aus der Familie der YOLO-Modelle (You
+Only Look Once) der Firma Ultralytics zum Einsatz, so auch in dieser Arbeit, bei der das
+YOLO11n-Modell [20] verwendet wird.
+Dieser Benchmark existiert in zwei unterschiedlichen Variationen: Eine läuft konsistent
+Iteration für Iteration und die andere hat pseudozufällig lange Laufzeiten und Pausen
+zwischen den Durchläufen.
+
+
+Periodische Ausführung:   Diese Version des Benchmarks funktioniert ähnlich wie der synthe-
+tische Benchmark. Hier wurde das von Ultralytics gelieferte Netz in ein TensorRT-kompatibles
+Format konvertiert und wird mit dem trtexec-Befehl ausgeführt. Dabei wird dies dreimal
+wiederholt, um drei unterschiedliche Zahlenformate zu erhalten: 32-Bit Gleitkommazahlen,
+16-Bit Gleitkommazahlen und 8-Bit Ganzzahlen.
+
+
+Variable Ausführung:   Dieser Benchmark versucht ein möglichst ungleichmäßiges Leistungs-
+profil zu erzeugen und trotzdem die Wiederholbarkeit beizubehalten. Dazu werden zufällige
+ 1
+     https://ollama.com/, zuletzt aufgerufen am 06.05.2026
+
+
+
+                                                                                           59
+7 Benchmarks & Messergebnisse
+
+
+Werte vorab generiert, welche die Pausen und Netzlaufzeiten bestimmen. Diese Werte haben
+einen Wertebereich zwischen 0.1 und 1.5 Sekunden und sind mit jedem Skriptdurchlauf
+immer gleich, da der Zufallszahlengenerator jedes Mal mit dem gleichen Seed initialisiert
+wird. Dieses Verhalten ist mit einem Bash-Skript umgesetzt worden und ist im Listing 7.1
+zu finden. Zusätzlich wird dem Skript die gewünschte Laufzeit in Sekunden mithilfe eines
+Arguments mitgegeben und mit diesem kontrolliert es nach jeder Pause, ob die gewünschte
+Laufzeit erreicht ist. Im Gegensatz zur konsistenten Ausführung liegt dieser Benchmark
+nur in einer Variante vor: Hier wird lediglich die 32-Bit Gleitkommazahlenvariante des
+YOLO-Netzes verwendet, um einen möglichst hohen Kontrast zwischen den Pausen und der
+Netzaktivität zu schaffen.
+
+
+
+
+               Listing 7.1: Skript zur Variablen Ausführung eines YOLO-Netzes
+# Random d u r a t i o n b e t w e e n 0 . 1 and 1 . 5 s e c o n d s
+RUNTIMES=($ (awk −v min=0.1 −v max=1.5 \
+’ BEGIN{ srand ( 4 2 ) ; f o r ( i =1; i <=1000;++ i ) p r i n t min+rand () * (max−min ) } ’ ) )
+PAUSES=($ (awk −v min=0.1 −v max=1 \
+’ BEGIN{ srand ( 4 2 0 ) ; f o r ( i =1; i <=1000;++ i ) p r i n t min+rand () * (max−min ) } ’ ) )
+
+DURATION=$1
+SECONDS=0
+f o r i in " $ { ! RUNTIMES[@] } " ; do
+    i f ( (SECONDS >= DURATION ) ) ; then
+        break
+    fi
+   RUNTIME=" ${RUNTIMES[ i ] } "
+   PAUSE=" ${PAUSES[ i ] } "
+    t i m e o u t " $RUNTIME " / u s r / s r c / t e n s o r r t / b i n / t r t e x e c \
+   −−l o a d En gine=/home/nx/ y o l o / yolo11n −\a c s { fp32 } . engine \
+   −−useSpinWait &
+    p i d=$ !
+    s l e e p " $RUNTIME "
+    k i l l $pid 2>/dev / n u l l
+    s l e e p " $PAUSE "
+done
+
+
+
+
+Zu beachten ist bei diesem Benchmark, dass die verwendeten sleep, timeout und kill-
+Befehle allen Scheduling-Effekten unterliegen und dadurch keine genauen Ausführungszeiten
+und exakte Lastenprofile zu erwarten sind. Dies ist jedoch für eine im Vorhinein geplante
+Inkonsistenz nicht direkt relevant, sofern keine Genauigkeiten im Millisekundenbereich
+erforderlich sind.
+
+
+
+60
+                                            7.2 Analyse von unterschiedlichen Abtastraten
+
+
+7.2 Analyse von unterschiedlichen Abtastraten
+
+Die vorgestellte Messsuite (Kapitel 5) und die Benchmarks (Kapitel 7.1) kommen nun zum
+Einsatz, um den Energieverbrauch mit unterschiedlichen Abtastraten des PicoScopes zu
+untersuchen. Dazu werden, sofern möglich, alle Benchmarks auf ungefähr 100 Sekunden
+Ausführungsdauer eingestellt. Erreicht wurde dies mit den folgenden Einstellungen:
+
+   • GEMM-FP32: 100 Iterationen des Netzes
+
+   • GEMM-FP16: 200 Iterationen des Netzes
+
+   • GEMM-INT8: 400 Iterationen des Netzes
+
+   • YOLO-FP32: 15 000 Iterationen des Netzes
+
+   • YOLO-FP16: 26 000 Iterationen des Netzes
+
+   • YOLO-INT8: 33 000 Iterationen des Netzes
+
+   • Variables YOLO: Eingabeparameter von 100
+
+   • LLM: Keine Einstellung direkt möglich
+
+Um vor den einzelnen Messungen zu verifizieren, dass die Benchmarks konsistente Laufzei-
+ten haben, wurde für jede Konfiguration zehnmal mithilfe des time-Befehls die gesamte
+Benchmarklaufzeit auf dem Jetson selbst gemessen. Diese Ergebnisse sind in der Tabel-
+le 7.1 eingetragen und zeigen, dass die Abweichung maximal bei 1.33 s liegt und durch die
+Laufzeitvarianz maximal eine Ergebnisunsicherheit von ca. 1.3 Prozent vorliegt.
+
+Bei diesen Laufzeiten fällt es auf, dass insbesondere die GEMM-FP32-Messung signifikant
+schneller ist als die von NVIDIA angegebenen 2.4 TFLOP/s bei FP32-CUDA-Berechnungen.
+Nach der obigen Berechnung umfasst eine Netzwerkiteration ca. 6.74 TFLOP, welche mit der
+hier gewählten Konfiguration innerhalb von etwa 0.98 s berechnet wird. Dadurch entsteht
+der Eindruck, dass ein Durchsatz von rund 6.9 TFLOP/s erreicht wurde. Dies liegt daran, dass
+trtexec standardmäßig die Tensor Cores verwendet, um FP32-Operationen durchzuführen,
+und somit keine IEEE-konformen FP32-Berechnungen durchgeführt werden. Deshalb sollte
+eher von einem Tensorfloat-Durchsatz in Höhe von 6.9 TTFLOP/s gesprochen werden. Die
+Ergebnisse der Energieaufnahme bleiben trotzdem relevant, da die Tensorcores eine höhere
+Leistungsaufnahme als reguläre FP32-CUDA-Berechnungen haben und somit weiterhin der
+gewünschte Effekt der maximalen Hardwareauslastung erfüllt wird.
+
+Für die Aufnahmen wird das PicoScope verwendet und Abtastraten von 50 Sample/s bis
+5 MS/s wurden ausgewählt. Dabei sind die Abstände zwischen den einzelnen Raten unge-
+fähr logarithmisch gewählt. Jedoch kann das Oszilloskop nicht mit jeder Rate messen und
+dementsprechend wurden die nächstbesten kompatiblen Abtastraten gewählt. Neben den
+realen Abtastraten werden die Raten 1 Sample/s, 5 Sample/s, 10 Sample/s und 25 Sample/s
+aus den 50 Sample/s-Daten errechnet. Diese Berechnung erfolgt mithilfe von Downsampling,
+welches in zwei Schritten geschieht: (1.) Es wird ein digitaler IIR-Filter erster Ordnung mit
+einer Grenzfrequenz, welche bei der Hälfte der gewünschten Abtastrate liegt, auf die Daten
+
+
+
+                                                                                          61
+7 Benchmarks & Messergebnisse
+
+
+Tabelle 7.1: Laufzeit-Konsistenz der Benchmarks mit den Einstellungen für die Analyse der
+             unterschiedlichen Abtastraten
+
+                GEMM                               YOLO
+ Durchlauf                                                                                 LLM       Variables YOLO
+                FP32/TF32   FP16      INT8         FP32         FP16             INT8
+ 1              1:36,97     1:41,73   1:43,11      1:40,49      1:39,85          1:38,48   2:13,91   1:40,03
+ 2              1:37,61     1:41,85   1:43,02      1:39,72      1:39,84          1:38,85   2:14,04   1:40,03
+ 3              1:38,00     1:41,69   1:43,33      1:40,05      1:40,20          1:38,24   2:14,09   1:40,04
+ 4              1:37,99     1:41,59   1:43,20      1:39,91      1:39,72          1:39,57   2:14,09   1:40,03
+ 5              1:37,78     1:41,81   1:43,50      1:39,97      1:40,38          1:39,42   2:14,11   1:40,03
+ 6              1:37,68     1:42,08   1:43,37      1:39,58      1:39,85          1:39,39   2:13,84   1:40,03
+ 7              1:37,66     1:41,75   1:43,69      1:40,01      1:39,97          1:38,75   2:13,99   1:40,04
+ 8              1:37,73     1:42,03   1:43,45      1:39,93      1:40,09          1:38,56   2:13,98   1:40,03
+ 9              1:37,97     1:41,85   1:43,78      1:39,57      1:40,15          1:38,93   2:13,80   1:40,04
+ 10             1:37,86     1:42,39   1:43,42      1:39,76      1:40,17          1:39,09   2:13,80   1:40,03
+ Stda,b         0.29 s      0.22 s    0.23 s       0.25 s       0.20 s           0.42 s    0.11 s    0.005 s
+ Median         1:37,76     1:41,83   1:43,40      1:39,93      1:40,09          1:38,89   2:13,99   1:40,03
+            a
+ Max Diff       1.03 s      0.8 s     0.76 s       0.92 s       0.66 s           1.33 s    0.31 s    0.01 s
+
+   Laufzeiten sind im Format mm:ss,ss angegeben
+ a
+   Standardabweichung und Max Diff sind in Sekunden angegeben
+ b
+   Std bezeichnet die Populationsstandardabweichung über zehn Durchläufe
+
+
+angewendet. (2.) Es werden mit dem Abstand N Datenpunkte ausgewählt, um die neue
+Datenreihe zu bilden. N wird dabei mit der folgenden Formel berechnet:
+                                               fS t ar t Abt ast r at e
+                                      N=                                ,N ∈ N
+                                                f Z iel Abt ast r at e
+
+Nachdem alle Einstellungen gefunden worden sind, ist eine Testmessung mithilfe einer
+elektronischen Last anstelle des Jetson Moduls erfolgt. Die Last ist auf 37 W eingestellt
+gewesen und lief konstant. Die Ergebnisse dieser Messung sind in Abbildung A.1 zu sehen.
+Wie zu erwarten hat hier die Abtastrate keinen Einfluss auf die Ergebnisse und es werden
+Energien mit einer maximalen Abweichung von ungefähr 4 J gemessen.
+
+
+Ergebnisse der Abtastraten-Analyse:          Nach dem Verifizieren der Messungen sind alle Bench-
+marks mit den gleichen schon vorher verwendeten Abtastraten untersucht worden. Die Er-
+gebnisse sind auf den Abbildungen A.2 bis A.9 zu sehen, wobei die Standardabweichung als
+Populationsstandardabweichung und die Quartilsabweichung der halbe Interquartilsabstand
+((Q 3 −Q 1 )/2) ist. Dabei lässt sich vor allem beobachten, dass die Messdifferenzen sehr niedrig
+sind. Dies gilt sowohl für die Abweichungen innerhalb der jeweiligen Abtastraten, als auch für
+die Abweichung zwischen den Abtastraten. Dabei liegt die maximale Standardabweichung
+innerhalb einer Abtastrate zu jeder Zeit unter 0.7 Prozent und die maximale Quartilsabwei-
+chung unter 0.45 Prozent. Auch zwischen den Abtastraten liegt die maximale Abweichung
+unter 3.5 Prozent und ohne die GEMM-INT8- und GEMM-FP16-Messung (Abbildungen A.3
+und A.4) sogar unter 2.5 Prozent. Die Tabelle 7.2 zeigt diese maximalen Abweichungen,
+aufgeschlüsselt für alle durchgeführten Benchmarks.
+
+
+
+62

@@ -1,0 +1,55 @@
+\section{Measurement Design}
+\label{sec:design}
+\subsection{Define the Quantity Before Comparing the Instruments}
+For a stated electrical boundary and interval $[t_0,t_1]$, we report delivered energy and mean power as
+\begin{equation}
+E=\int_{t_0}^{t_1}U(t)I(t)\,\mathrm{d}t,
+\qquad \overline P=\frac{E}{T},\quad T=t_1-t_0.
+\label{eq:quantity}
+\end{equation}
+The benchmark duration request controls the execution command; it is not substituted for $T$. This distinction is essential for short runs and for intervals containing pauses or padding. Recorded power is integrated with the trapezoidal rule using its timestamps or documented sample interval.
+
+Figure~\ref{fig:boundaries} separates the observed electrical domains. The Jetson measurement is at the DC input associated with the \urecs{}-mounted module. The Hailo measurement covers the complete M.2 card input, not the host that supplies data and schedules inference. Shelly observes the connected AC supply arrangement. This includes conversion and any auxiliaries powered inside that arrangement; it does not establish that every host component is included. Vendor telemetry retains the domain reported by its interface. The AC/DC difference consequently cannot be assigned directly to host energy or to an intrinsic meter error.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=.92\textwidth]{measurement_boundaries.pdf}
+\caption{Observation boundaries in the Jetson and Hailo experiments. External DC acquisition and embedded sensing address the selected module/card input; telemetry retains its reported domain and Shelly the connected AC supply boundary. The Hailo card observation excludes its host. This diagram is not a measured host/card energy decomposition.}
+\label{fig:boundaries}
+\end{figure*}
+
+\subsection{Acquisition Paths and Their Validation}
+The Jetson platform is an Orin NX 16 GB mounted on \urecs{}~\cite{recs2026,wachsmuth2026thesis}. Its documented direct-study configuration uses a nominal 19-V supply, JetPack 6.2.1 / Linux for Tegra 36.4.7 and fixed maximum clocks. These settings describe that study, not an assumed configuration of every control or waveform recording. Hailo-10 measurements use the separately observed M.2 card and the workload deployments recorded with each experiment.
+
+The external DC setup uses a 20-m$\Omega$ shunt, INA225 amplifier and PicoScope 4224A, streaming at up to 5 MS/s. Its nominal differential current-path bandwidth is approximately 77 kHz; the voltage-input bandwidth is 20 MHz. \urecs{} uses a nominally equivalent analogue path with an ADS7953 12-bit ADC at 2 kS/s. Jetson INA3221, HailoRT and the approximately 1-S/s Shelly Plus Plug S provide additional observations. The paired-scope study adds a Tektronix TCP0030A current-probe acquisition path and retains each path's recorded calibration and voltage treatment~\cite{energyResults2026}.
+
+The current paths were calibrated against an EA-EL 9080-60 DT electronic load and Fluke 179 reference, using endpoint gain and offset followed by a separate verification sweep~\cite{wachsmuth2026thesis}. The sweep covers 36 settings over 0--3.5 A using ten-second means. Across the nonzero settings, maximum absolute relative current deviations are about 2.0\% for PicoScope/INA225 and 0.44\% for \urecs{}. This verifies the static correction under the tested conditions. Dynamic power uncertainty is a different question, because bandwidth, timing and voltage treatment remain in the measurement chain.
+
+For paired-scope power, the documented current-dependent voltage model gives $\widehat P=I(a+bI)$ over a characterised 0--3.5-A range. Currents outside that range are extrapolated rather than clipped. YOLO-FP32 alone retains a workload-derived Tektronix offset correction; its dependence on the comparison path limits independent absolute-agreement claims. Other studies retain their recorded voltage measurements or estimates. In particular, the Jetson embedded path and Shelly comparisons retain setup-derived scaling, rather than being refitted to improve agreement here. Full coefficients, verification data and transformation order are in the source package~\cite{energyResults2026}.
+
+These checks have distinct roles. The static verification tests gain and offset after calibration; it does not establish the temporal fidelity of the complete power path. Faster Tektronix observations provide a separate spectral check: at 250 MS/s, the largest reported variance fraction above the 2.5-MHz Nyquist limit of a 5-MS/s recording is about 0.015\% across the six workloads. GEMM-FP32 uses active-only variance in this check, while the other workloads use active-minus-idle variance. This supports the chosen high-rate observation for these signals without treating a small spectral tail as an absolute power-accuracy bound~\cite{energyResults2026}.
+
+
+\subsection{Complementary Experiments, Not One Pooled Dataset}
+The experiments separate questions that cannot be answered by one set of repeats (Table~\ref{tab:cohorts}). The same-trace study contains ten paired executions each for GEMM-FP32, GEMM-INT8, YOLO-FP32, YOLO-INT8 and Gemma3-4B, and nine for ResNet-50 FP32: 59 executions observed through two paths. The FP16 illustration is a separate set of 15 long recordings with nominal 104-s energy intervals. Hailo spectral results use 15 GEMM and 15 YOLO recordings. These waveform studies are not counted as additional repeats of the duration or direct-rate studies.
+
+\begin{table*}[t]
+\caption{Experimental roles and physical units. Numerical offsets, multiple sensor observations and reused summaries are not additional independent executions. Detailed per-series identities and eligibility counts accompany the results.}
+\label{tab:cohorts}
+\centering\small
+\begin{tabularx}{\textwidth}{@{}p{.22\textwidth}p{.32\textwidth}Y@{}}
+\toprule
+Question & Observations & What is held fixed or compared \\
+\midrule
+Energy reconstruction & Six Jetson workloads: 59 Tek/Pico pairs; separate FP16: 15 recordings & Same recorded execution and endpoints; target grids vary \\
+Measured fluctuations & Native paired-scope spectra; 30 Hailo GEMM/YOLO recordings; FP16 active/idle segments & Active and idle descriptions retain their acquisition response \\
+Duration and deployed meters & Seven Jetson and three Hailo series; ten requests from 5 to 600 s & Recorded executions are paired within series; 150 executions at 300 s yield 450 comparator pairs \\
+Direct acquisition repeatability & Eight Jetson and four Hailo rate series; 323 groups, 4842 finite results & Different physical executions at configured rates \\
+Protocol controls & Twelve FP16 rate-order runs; six scored FP32 pause runs & Fixed completed queries; complementary rates or changed process pauses \\
+\bottomrule
+\end{tabularx}
+\end{table*}
+
+The direct studies include continuous GEMM and YOLO, variable YOLO activity and an LLM-labelled series. The Jetson direct LLM is Gemma3-12B; the paired-scope Gemma3-4B is a different workload. For Hailo, the retained model labels do not establish every compiled-model, input, batch or runtime parameter. They identify within-series measurement comparisons, not semantically matched cross-platform efficiency tests. No common inference count, missing precision or host share is inferred from a shared workload name.
+
+The direct-rate grid normally has 27 configured rates and 15 repetitions per rate; Jetson YOLO-FP32 has 26 rate groups. All finite results remain in the selected series. Three Hailo-LLM executions lack a valid load interval and are not replaced by zeros. The duration study has 450 finite Hailo and 1022 finite Jetson load results. Each of its 300-s meter comparisons contains all 15 paired executions per workload; shorter-duration groups retain their actual available counts.

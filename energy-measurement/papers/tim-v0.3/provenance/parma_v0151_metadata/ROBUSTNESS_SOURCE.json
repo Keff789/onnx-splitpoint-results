@@ -1,0 +1,57 @@
+{
+  "repository": "Keff789/onnx-splitpoint-results",
+  "commit": "9b4208c97420b1621a14b7dc91f051985e65e6f5",
+  "retrieved": "2026-10-09",
+  "files": [
+    {
+      "local_path": "data/robustness_20261009/scope_persistent_minima.csv",
+      "repository_path": "energy-measurement/2026-10-09-offline-robustness/review/scope_persistent_minima.csv",
+      "git_blob_sha": "e8c613bfd791fa0e25b2c6836d57a7a0b2ace1df",
+      "bytes": 3738,
+      "representation": "complete original file"
+    },
+    {
+      "local_path": "data/robustness_20261009/high_rate_coverage.md",
+      "repository_path": "energy-measurement/PSD_Analysis_multi_workload_documentation_artifacts/paper_artifacts/tables/table_cross_workload_high_rate_coverage.md",
+      "git_blob_sha": "9055f403f5059a972b91c65e9ca2a1435c036310",
+      "bytes": 666,
+      "representation": "complete original file"
+    },
+    {
+      "local_path": "data/robustness_20261009/scope_selected_envelope.csv",
+      "repository_path": "energy-measurement/2026-10-09-offline-robustness/scopes/scope_envelope.csv",
+      "git_blob_sha": "99f80a99d1c8c69c8b26045c010f29cfaa332351",
+      "representation": "six selected rows, four numerical fields; whole-source Git identity is not the excerpt identity",
+      "source_lines": [
+        120,
+        124,
+        137,
+        139,
+        158,
+        162
+      ]
+    },
+    {
+      "local_path": "data/robustness_20261009/fp16_energy_selection.csv",
+      "repository_path": "energy-measurement/2026-10-09-offline-robustness/fp16/fp16_energy_selection.csv",
+      "git_blob_sha": "d38ebe088f16d6931955798edbaf0032238f5bd4",
+      "bytes": 2861,
+      "representation": "complete original file"
+    },
+    {
+      "local_path": "data/robustness_20261009/fp16_psd_selection.json",
+      "repository_path": "energy-measurement/2026-10-09-offline-robustness/fp16/fp16_psd_selection.json",
+      "git_blob_sha": "85448a54821c9cba77ec49e7524f621f60845ba0",
+      "bytes": 3721,
+      "representation": "complete original file"
+    },
+    {
+      "local_path": "data/robustness_20261009/scopes_run_settings.json",
+      "repository_path": "energy-measurement/2026-10-09-offline-robustness/scopes/run_settings.json",
+      "git_blob_sha": "a87fe7a370242108d1fc6244cd621a98d28a1600",
+      "bytes": 903,
+      "representation": "complete original file"
+    }
+  ],
+  "scope": "Existing result exports; no waveform reads or new numerical sampling. Full record audits and critical comparison vectors remain at the pinned repository."
+}
