@@ -23,38 +23,108 @@
   "final_runtime_controller_changes": {
     "parent_freeze": "revision3:/final_implementation_20261008/IMPLEMENTATION_FREEZE.json",
     "parent_freeze_sha256": "f20b854cb9f5948e1ef57d3ff8d379a80390e6f3037bd129316eef700f6aa5ff",
-    "status": "bounded_controller_cohort_reader_tests_and_independent_review_pass",
-    "at": "2026-10-08T17:54:11.039138+00:00",
-    "source_dependencies_only_report": true,
+    "status": "scoped_controller_and_isolated_quality_source_changes_independently_reviewed",
+    "at": "2026-10-10T15:33:10.820703+00:00",
+    "source_dependencies_only_report": false,
     "DUT_files_changed": false,
     "snapshot_changed": false,
     "bundle_changed": false,
     "changes": [
       {
-        "path": "scripts/native_producer_final_report.py",
-        "before_sha256": "adbcc08dddf0705e96adbcdecbf2cfbf9627edfb84b15e9943d231cc1684129b",
-        "after_sha256": "bb1c017a9a12f4d89dc7c1097e0a703dfa41af60dce882d9732c560ccc24b482",
-        "candidate_path": "revision3:/operations/finalisation_native_20261008/bn6_controller_reporting/unchanged_origin/source_after/scripts/native_producer_final_report.py",
-        "scope": "controller_report_only; deployed original bytes retained"
+        "path": "onnx_splitpoint_tool/energy/caller_managed_reporting.py",
+        "before_sha256": "d774d0b88bdf91bd70ad01a5036433986cb6263aae77c0d4cda6b59cd538ba04",
+        "after_sha256": "b4c6ee6229cae53c06d72e00e30116ed327be8f9cfd72328040742cfb2d4fbe6",
+        "candidate_path": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/source_policy/local_controller_sources/onnx_splitpoint_tool/energy/caller_managed_reporting.py",
+        "scope": "controller_or_postflight"
+      },
+      {
+        "path": "onnx_splitpoint_tool/energy/collector.py",
+        "before_sha256": "bdb62da9dc196a01c2dc7a4eebf7db2e228b6cb451042b1a551f15e2d245b9e8",
+        "after_sha256": "2d0d51a2764fd8ebc72cc992a71751dbc0d514b93e82f9b999014251a2d43fff",
+        "candidate_path": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/source_policy/local_controller_sources/onnx_splitpoint_tool/energy/collector.py",
+        "scope": "controller_or_postflight"
+      },
+      {
+        "path": "onnx_splitpoint_tool/energy/recovery_accounting.py",
+        "before_sha256": "ac2f7121d30aaf8e55e06c415322664dd5f7e7255b47476d1f461c39ca8fe3b9",
+        "after_sha256": "c387ea8d159d6173a1f983f19b78a5877ac37bcb26fbb4aeff97ab5a56d3a2c3",
+        "candidate_path": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/source_policy/local_controller_sources/onnx_splitpoint_tool/energy/recovery_accounting.py",
+        "scope": "controller_or_postflight"
+      },
+      {
+        "path": "onnx_splitpoint_tool/energy/task_budget.py",
+        "before_sha256": "385bab95d8480b13390931c786c84a2c8f36806e1663d37c3689e48c3443549a",
+        "after_sha256": "677a42fedb34582b04a67b6dd457c4d60449ea291698bc8b64ac6cb36999b649",
+        "candidate_path": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/generic/h10_physical_recovery_staged/administrative_retry_staged/candidate/task_budget.py",
+        "scope": "controller_or_postflight"
+      },
+      {
+        "path": "onnx_splitpoint_tool/generic_energy_reporting.py",
+        "before_sha256": "1f58c67282551daae035efc9174915c68c1a52db5113a259cc0a3105d0088dad",
+        "after_sha256": "5ef08480b2c90f7ed7d6a316fa60323b75cc595ad05026b1639f8bf22113948c",
+        "candidate_path": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/source_policy/local_controller_sources/onnx_splitpoint_tool/generic_energy_reporting.py",
+        "scope": "controller_or_postflight"
+      },
+      {
+        "path": "onnx_splitpoint_tool/native_detection_postprocess.py",
+        "before_sha256": "e4999c38f46ed4736c83899d01d2ef220a8fb41b32d19d117d6d8d67fde1995b",
+        "after_sha256": "8c202f4237ec39316a54dda7ea8f71dd19bae4bb02e3311bbd8fed7be43214b8",
+        "candidate_path": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/source_policy/local_controller_sources/onnx_splitpoint_tool/native_detection_postprocess.py",
+        "scope": "controller_or_postflight"
+      },
+      {
+        "path": "onnx_splitpoint_tool/native_energy_reporting.py",
+        "before_sha256": "411b16b277a8f9781a9404c74692d492a01513a9edb7409069d77c79649a506f",
+        "after_sha256": "2a8a7b2d22716742a7447dd23537c0ad3ee1ba710bc61666c392b46b40ad63a9",
+        "candidate_path": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/source_policy/local_controller_sources/onnx_splitpoint_tool/native_energy_reporting.py",
+        "scope": "controller_or_postflight"
+      },
+      {
+        "path": "onnx_splitpoint_tool/resources/templates/benchmark_suite.py.txt",
+        "before_sha256": "75b8807f50f5523bfdccd048831ed15a332e1692ab731d6d48f15305c08e80f5",
+        "after_sha256": "2379a5354ff890a9694922d7221bf154266ab684644f486189c867a2ad809a04",
+        "candidate_path": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/source_policy/local_controller_sources/onnx_splitpoint_tool/resources/templates/benchmark_suite.py.txt",
+        "scope": "isolated_quality_template"
+      },
+      {
+        "path": "onnx_splitpoint_tool/resources/templates/run_split_onnxruntime.py.txt",
+        "before_sha256": "caffca0260f03db459fb7bd0fd98c132b5cdf17e94f0452c388e44492d413d87",
+        "after_sha256": "3b8e7342c72b3e091a6346a6d116d9d7f40196bf5001259e3e801553c0cf67d6",
+        "candidate_path": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/source_policy/local_controller_sources/onnx_splitpoint_tool/resources/templates/run_split_onnxruntime.py.txt",
+        "scope": "isolated_quality_template"
       },
       {
         "path": "onnx_splitpoint_tool/workflow/cross_runner_reporting.py",
         "before_sha256": "aa4fd0425c216877f125758468909e82b0bba47107a568b3e2ad37575a436358",
         "after_sha256": "abb5d9ffa26bba49420bbc180096c1947c4508d197966f909309a7e1d0bb9f13",
-        "candidate_path": "revision3:/operations/rev3_three_points_20261009/source_after/onnx_splitpoint_tool/workflow/cross_runner_reporting.py",
-        "scope": "controller_report_only; deployed original bytes retained"
+        "candidate_path": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/source_policy/local_controller_sources/onnx_splitpoint_tool/workflow/cross_runner_reporting.py",
+        "scope": "controller_or_postflight"
+      },
+      {
+        "path": "onnx_splitpoint_tool/workflow/generic_completed_task.py",
+        "before_sha256": "b85a7dbafd504b1c5aa0e5ceaa321f527bc297df60fbf6c638307a85dcb448d9",
+        "after_sha256": "ee443ca83f9e6a885d50b10159934dc43f6a99db4e7b992facd176b647cf5c79",
+        "candidate_path": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/source_policy/local_controller_sources/onnx_splitpoint_tool/workflow/generic_completed_task.py",
+        "scope": "controller_or_postflight"
       },
       {
         "path": "scripts/native_full_baseline_eval_runner.py",
         "before_sha256": "b7ae230927809cae6d031919c634725187809d15fca3ebef7c7db00e123245f2",
         "after_sha256": "c63cfed084f3134ee596f6655da73744ec3bf3710fe6e92737e864d803c9ba99",
-        "candidate_path": "revision3:/operations/controller_validator_snapshot_fix/reporting_final_20261008/source_after_strict_physical_hash/scripts/native_full_baseline_eval_runner.py",
-        "scope": "controller_report_only; deployed original bytes retained"
+        "candidate_path": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/source_policy/local_controller_sources/scripts/native_full_baseline_eval_runner.py",
+        "scope": "controller_or_postflight"
+      },
+      {
+        "path": "scripts/native_producer_final_report.py",
+        "before_sha256": "adbcc08dddf0705e96adbcdecbf2cfbf9627edfb84b15e9943d231cc1684129b",
+        "after_sha256": "89efa8f4bd821152b60446a9d5b99ed8d77c756a4b7c41bea96e2feb69e651f0",
+        "candidate_path": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/source_policy/local_controller_sources/scripts/native_producer_final_report.py",
+        "scope": "controller_or_postflight"
       }
     ],
     "full_baseline_other_functions_and_file_literals_unchanged": true,
     "local_guard_tests": "revision3:/operations/controller_validator_snapshot_fix/REPORTING_SCOPE_TESTS_20261008.xml",
-    "note": "Final179 and Native Current integrated; new bounded Generic cohort reader correction only. Original measured241 runtime and DUT bytes unchanged.",
+    "note": "Original final snapshot and measured Generic bundles unchanged. Controller/postflight corrections and isolated Quality templates separately classified; every bundle, remote source and scientific gate remains required.",
     "independent_sourceguard_review": {
       "at": "2026-10-08T17:56:09.031553+00:00",
       "reviewer": "finalise_legacy_usage",
@@ -145,6 +215,9 @@
           "after_sha256": "76dbc7ae3fbe964e403f11934be3cdec676b553a11d5d7bcaba307928a08b291"
         }
       ]
-    }
+    },
+    "scoped_local_source_changes": true,
+    "original_measured_bundles_changed": false,
+    "report_reader_original_implementation_test_receipt": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/generic/bn6_reader_staged/TESTS.xml"
   }
 }

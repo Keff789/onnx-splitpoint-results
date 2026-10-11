@@ -1,19 +1,19 @@
 {
   "schema": "revision3/public-progress-snapshot-v1",
-  "created_at": "2026-10-09T08:40:22.993619+00:00",
-  "status": "bounded_three_points_current_plan_energy_paper_archive_complete_public_review_closure",
-  "current_checkpoint_at": "2026-10-08T20:24:55.106351+00:00",
-  "native_new_performance_points": 232,
+  "created_at": "2026-10-11T05:20:07.119705+00:00",
+  "status": "continuous_revision3_in_progress_transport_diagnosis_and_offline_completion",
+  "current_checkpoint_at": "2026-10-11T05:20:02.756967+00:00",
+  "native_new_performance_points": 240,
   "native_verified_performance_reuse": 6,
-  "native_performance_not_measured": 8,
-  "native_normal_quality_points": 180,
-  "native_normal_claim_points": 169,
-  "normal_current_energy_points": 5,
+  "native_performance_not_measured": 0,
+  "native_normal_quality_points": 244,
+  "native_normal_claim_points": 235,
+  "normal_current_energy_points": 143,
   "generic_measured_points": 204,
   "generic_additional_points_not_measured": 0,
-  "generic_normal_quality_points": 148,
-  "generic_normal_claim_points": 148,
-  "generic_normal_energy_points": 0,
+  "generic_normal_quality_points": 204,
+  "generic_normal_claim_points": 204,
+  "generic_normal_energy_points": 9,
   "generic_current_points_require_final_bundle_confirmation": 0,
   "native_current_points_require_bounded_source_confirmation": 0,
   "historical_archive_modified": false,
@@ -36,9 +36,9 @@
     },
     {
       "path": "RESULT_REPORT.md",
-      "original_sha256": "bc1bd9417883cfc31102efc71c1b91ce0a73cfb46987f13de4101fecef12c739",
-      "public_sha256": "bc1bd9417883cfc31102efc71c1b91ce0a73cfb46987f13de4101fecef12c739",
-      "public_bytes": 3817,
+      "original_sha256": "2430cf60bea4d4bfdf2a2c6b2f944bff90caa55a83a0c9b1c4a3ab849b282308",
+      "public_sha256": "2430cf60bea4d4bfdf2a2c6b2f944bff90caa55a83a0c9b1c4a3ab849b282308",
+      "public_bytes": 17722,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
     {
@@ -57,9 +57,9 @@
     },
     {
       "path": "REMEASUREMENT_PLAN.csv",
-      "original_sha256": "62e186e2e82218b984a3326166d0eed654287591ee868db5b3a54944fbc37905",
-      "public_sha256": "9b16ffc3dcb1e5f4cb26107b22715b779b702d108f2b22a0b06053481c9af9ca",
-      "public_bytes": 1342444,
+      "original_sha256": "6ab6704b2f51a1267dbc29681c6649c241639b84d2dbc92f5eaf2b4527129848",
+      "public_sha256": "33b859da4ffd912d7d2487929b16c19df48b216d9cc734ef6ec47dfdede1c086",
+      "public_bytes": 1340745,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
     {
@@ -71,23 +71,23 @@
     },
     {
       "path": "FAIRNESS_MATRIX.csv",
-      "original_sha256": "43d64a985e1d723ed336cb2f00e81b50f7be8061889810ef2119f315cd608b82",
-      "public_sha256": "6e1bbf731cc4cd1bf914feb327da044facec2de7443f0b96ee0caf24e4eea7f1",
-      "public_bytes": 1603768,
+      "original_sha256": "7d15c030014ca89029a77eada0f3bec170c6f113c26ff5ac2487691be33bb5aa",
+      "public_sha256": "9007538b85ef30de66cfb11999d59d5f9ae59ceffebb379fd913aca217c7b1b8",
+      "public_bytes": 1667590,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
     {
       "path": "FAIRNESS_MATRIX_PROVENANCE.json",
-      "original_sha256": "1a399e394ceabc4ac9058c32fdc3b08c0f02299f23dc297dc96a1f54436d21f8",
-      "public_sha256": "1a399e394ceabc4ac9058c32fdc3b08c0f02299f23dc297dc96a1f54436d21f8",
-      "public_bytes": 620,
+      "original_sha256": "98d48702b43954e7e3d45ccc62c05c481d57d2a81e7c1a6ce04c73c9f51a4cdb",
+      "public_sha256": "98d48702b43954e7e3d45ccc62c05c481d57d2a81e7c1a6ce04c73c9f51a4cdb",
+      "public_bytes": 597,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
     {
       "path": "RESUME_STATE.json",
-      "original_sha256": "bdc962eecb33a1ea66e367a09e7186cc0adfd986606f69121afe9afda941ad2c",
-      "public_sha256": "fd1d8a65c78c446a90c14bcc9f3fe6f06db5f066152234f1dfaa8d926469cbf6",
-      "public_bytes": 46890,
+      "original_sha256": "34401efb42cffd768a4835686ba97ae51adb98d35722c4a03809a0bc851d8d13",
+      "public_sha256": "d9da0447e7a6715369fbd3fcd651cdcaabc2989ed801403b67724c39af84f386",
+      "public_bytes": 97644,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
     {
@@ -99,9 +99,9 @@
     },
     {
       "path": "REPORTING_SOURCE_SUPPLEMENT.json",
-      "original_sha256": "c0d2a42eea91f0339411563d2982cd5cf28d9f37a90835d1b49c4a874dbb1fec",
-      "public_sha256": "07ac11962ecd183461d7e8f14cbf4398f659408f8bebae44ff3c6bb2b3bee906",
-      "public_bytes": 9419,
+      "original_sha256": "2333854d4b509342ad01e79273f0d506134f2bfd4fdc6acf3c5f6a60bea5a7ef",
+      "public_sha256": "63d61db692c4da0cfab6c9511e505c177ca340c99123e9e50288216f3ed98f97",
+      "public_bytes": 14809,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
     {
@@ -141,9 +141,9 @@
     },
     {
       "path": "quality_transfer/CURRENT_FINALIZED.json",
-      "original_sha256": "da26473b96e7de765be0ab08f505ec86278e64794c40585ae7fa3e6f9f68df66",
-      "public_sha256": "31df0d79d1dd2a2142c6d6cf14298d224038be720b255e16d98258b0531c0430",
-      "public_bytes": 3732,
+      "original_sha256": "39203f8a00a2daaf42abcbe5c810d4b4e98bffdc805f7e08885666c337268148",
+      "public_sha256": "263c87f5e4ee0478bf99aee6ec09700fd40648b15efe2c45a0467c4a58874071",
+      "public_bytes": 3786,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
     {
@@ -218,23 +218,23 @@
     },
     {
       "path": "current_results/native_current.json",
-      "original_sha256": "384681eb004d25e1fe78b77e4d30b6b4ae9375b309b1f84ee51f72d8cc574b03",
-      "public_sha256": "005847437a4c9e2ef37783ec982141b240aee6edbe3832fee21f3ba3186f94f8",
-      "public_bytes": 2512023,
+      "original_sha256": "ad30c8103562fe15de0a34a8640c4da9e20eeb063040d80443496d6f8d202b7a",
+      "public_sha256": "62eac7e630820f7badd92ee143489871d9ebf9ce45b7a49d6f6d7aaa23e8f2f8",
+      "public_bytes": 3435823,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
     {
       "path": "current_results/native_repeats.csv",
-      "original_sha256": "619f1789cdca64b9321a63d2f424ccb2423deaebfef733a57890033ea140eb9d",
-      "public_sha256": "619f1789cdca64b9321a63d2f424ccb2423deaebfef733a57890033ea140eb9d",
-      "public_bytes": 570270,
+      "original_sha256": "3d48c21aa4546e7e9d130d89eece72af1e78c228a76a148e387a15d1873fd85c",
+      "public_sha256": "3d48c21aa4546e7e9d130d89eece72af1e78c228a76a148e387a15d1873fd85c",
+      "public_bytes": 589643,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
     {
       "path": "current_results/generic_current.json",
-      "original_sha256": "08a03b6beccd7a8c828d855ed7051345058703958e7e0120b00ed9415810bfaf",
-      "public_sha256": "99199240f5e85fd90d60ea5b458765a1a7c2069f010f6858cbd32d8e0c58f45b",
-      "public_bytes": 4905023,
+      "original_sha256": "1e63831e48b0ad5821cedeec1fff650c8dffbf6e6a6438fd4b1f1e261d914808",
+      "public_sha256": "9ea220fefaa0fe1fec4cfe96c394caac2a7d3e19d247cc6340536267b2b0ef56",
+      "public_bytes": 9630600,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
     {
@@ -253,58 +253,65 @@
     },
     {
       "path": "current_results/energy_acquisitions.json",
-      "original_sha256": "8f35006ca8e2618bce116f722b6b65d062ca0716df75de7aa393aad6c9aeb75e",
-      "public_sha256": "7b17c7e12af4a272425f28e0e762c10143c22c39a05aaf6c1a1b8cdd50e9f0e7",
-      "public_bytes": 65988,
+      "original_sha256": "6b2ddbe68bbc354dbf76829faf1854a8072dfa856fd3b9f3f8819cf774c7fa8a",
+      "public_sha256": "a2d0bcbcf9e8063560e6e5cb4e3bea73e657658fdaf2247bd94df987e9df9efa",
+      "public_bytes": 1146513,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
     {
       "path": "current_results/energy_acquisition_repeats.csv",
-      "original_sha256": "ea4f0f220bf9cda5d54ba0362f974aedd83b5f12ea0d9e75cfab591ce365751e",
-      "public_sha256": "ea4f0f220bf9cda5d54ba0362f974aedd83b5f12ea0d9e75cfab591ce365751e",
-      "public_bytes": 13167,
+      "original_sha256": "bdf4a10c69da647d200bf531ec392999d75ce978cfa7c8ed92d7454dbcc80b4d",
+      "public_sha256": "bdf4a10c69da647d200bf531ec392999d75ce978cfa7c8ed92d7454dbcc80b4d",
+      "public_bytes": 242567,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
     {
       "path": "current_results/ENERGY_PROJECTION_VERIFICATION.json",
-      "original_sha256": "6901a845983a9e6a0776e97ea0f3722a572e68ee8e3977d6ffaf83ff8a173233",
-      "public_sha256": "ca91e7fe9aa0d350725619c3d1782b695fa9311460f09915e5b915b1108545d1",
-      "public_bytes": 1264,
+      "original_sha256": "3036f308a3b0fc920ac0afd8706ea895bd29218cfc1017ea68fdb509b602b0a3",
+      "public_sha256": "576581c86766edfdbca7c3e33299e452947e9ac99fbde70b493fe74a3ccae34d",
+      "public_bytes": 1306,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
     {
       "path": "CURRENT_NORMAL_ENERGY.json",
-      "original_sha256": "a8b3f196b7033c6d112335a943f1c63be6c8e3c4ab2e0dde2784699b20064f71",
-      "public_sha256": "eda2330b4aee580050f8cd8306b96facfced318a8a610af2790e07b244f02f0d",
-      "public_bytes": 4625,
+      "original_sha256": "a731b022dd9f21e8a5892d131b30a4cbe58fd5542f392fed2be02542c51c5c6b",
+      "public_sha256": "45dfae155c23f07aec18bb5f5ed308189a1bbed9ae45c60b7afe5a81b44751c3",
+      "public_bytes": 14509,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
     {
-      "path": "reporting_caller_managed_energy/exports/20261008T115212814070Z/scientific_energy_rows.json",
-      "original_sha256": "7c7b1da34552088ea377037af6c6d1ff93f8c8033fe4a1869e4e61332ab0a33a",
-      "public_sha256": "a2f5b818a0f554b1151d7547b6c1b2a1c51870c1b86704c936ced0982890c91f",
-      "public_bytes": 57783,
+      "path": "reporting_caller_managed_energy/exports/20261011T044939029042Z/scientific_energy_rows.json",
+      "original_sha256": "2ed931adbcf966dc2cf35b00e4bc3ed3ca1331a40d4e3de5bc9df3141dd9cce6",
+      "public_sha256": "87a5868237d5ad14782a34d07ae8b7e216f2a7490265cf6afc05cb5d5aaea335",
+      "public_bytes": 1720534,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
     {
-      "path": "reporting_caller_managed_energy/exports/20261008T115212814070Z/native_energy_observations.json",
-      "original_sha256": "737f217626fab5c4b8bfcbcdd0247408c2d920ab6ecf3ab2ea7c2537f2e1daa6",
-      "public_sha256": "eaf6a416ce7941955343bc316bebf3f79d2a3cfa02504d119857b77beeac847e",
-      "public_bytes": 158166,
+      "path": "reporting_caller_managed_energy/exports/20261011T044939029042Z/native_energy_observations.json",
+      "original_sha256": "801359556a09f3e65e6a70a536d0e9ba9e854becdcdb0d3da32bbeca86980ffa",
+      "public_sha256": "02f909812e3a5cdef0353b91effe7446654d603bd2963ab564227270cf96f1fa",
+      "public_bytes": 5267280,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
     {
-      "path": "reporting_caller_managed_energy/exports/20261008T115212814070Z/exact_performance_energy_bindings.json",
-      "original_sha256": "4b0e0d37cad296f53ede101ee41f189080554024e1bd80d448384178459698c7",
-      "public_sha256": "a51879d3d5d06f83c5c242f1f391253784f8c1706214786761c53c7cd9676aa0",
-      "public_bytes": 302044,
+      "path": "reporting_caller_managed_energy/exports/20261011T044939029042Z/exact_performance_energy_bindings.json",
+      "original_sha256": "18952e65217ce3f2bd5afa8cc18dd14c82c6c717d85457a8fb43a0c71d8c03d1",
+      "public_sha256": "df8f42b3a42fda88882ad1777437c659f2095e0feb0a4e6164c8c0a4507ad767",
+      "public_bytes": 7844493,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained; repeated full producer row replaced by its canonical SHA256, exact original summary and raw bindings retained"
     },
     {
-      "path": "reporting_caller_managed_energy/exports/20261008T115212814070Z/RECEIPT.json",
-      "original_sha256": "b46aac52fdf79055a82aa3c0e950036c4e90b5b098057397a86a4df1a4cba6d5",
-      "public_sha256": "28322c9cf4388ff22f9fcfc2e5910c0b52685bf4cc95a4e3a80059125ea6ddc1",
-      "public_bytes": 4350,
+      "path": "reporting_caller_managed_energy/exports/20261011T044939029042Z/native_energy_pair_comparison.json",
+      "original_sha256": "c540168b4b4d56a9deecb88ed8692489337126a5b938d7e2e60259918afab5d4",
+      "public_sha256": "a86d4357225e3f102b75cf78c7211d6326d59a2bd554a68eec29a94c2813a6db",
+      "public_bytes": 2402486,
+      "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
+    },
+    {
+      "path": "reporting_caller_managed_energy/exports/20261011T044939029042Z/RECEIPT.json",
+      "original_sha256": "e3d08b8308c0f25686aee058372765cfb4a9e4a80b7df62bbdea51fc3a3f371c",
+      "public_sha256": "e04f30b222384d5a75c65bcdd264c33f599596c3eff6bb7e5c4fdc3be3a62145",
+      "public_bytes": 14225,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
     {
@@ -315,24 +322,24 @@
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
     {
-      "path": "quality_transfer/final_native_179_20261008/finalized_179_origin_verified/COMPOSITION_RECEIPT.json",
-      "original_sha256": "5266d8682fc44d978a1cee749bab5edc3ced9cd085b5053698a8d41568052a76",
-      "public_sha256": "57a728017f45c7d50c54a11f9f89982bca4a04b7433ab49868ae1cfe933a65f6",
-      "public_bytes": 475502,
+      "path": "quality_transfer/final_native_187_20261011/finalized_187_normal_full_context/COMPOSITION_RECEIPT.json",
+      "original_sha256": "b8d867488236c836060880d8d9f8d00df92d857f88eb686215bb1a9f63ac7347",
+      "public_sha256": "de868197506be3806ff287d7307ada252e5fe7dd8ab337ac2a8d87a20f6aa3f7",
+      "public_bytes": 3110,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
     {
-      "path": "quality_transfer/final_native_179_20261008/finalized_179_origin_verified/INDEPENDENT_COMPOSITION_REVIEW.json",
-      "original_sha256": "2db959f9e30b7f85142c841f8a2b818f571c8156a57c12ad42afe799665c92d2",
-      "public_sha256": "867d1a41c1f0c1c9b2daa9abd362acc8685c97c81635fe08c1a328c2bd6b8a2b",
-      "public_bytes": 13048,
+      "path": "operations/token_saving_batch_20261009/continuous_20261010/bn6/yolo26_prepare_staged/deepx_binding_staged/FULL_CONTEXT_REVIEW.json",
+      "original_sha256": "0432123715ea74a718ee8cea8703959674a70cc9e8e2da43ebb49f4f4d9f4d2e",
+      "public_sha256": "b1798e7baf110dc87d34c1209158c9c24b39ca24932660c749fe88ec86c8ac56",
+      "public_bytes": 1146,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
     {
-      "path": "quality_transfer/final_native_179_20261008/CANDIDATE_FINALIZED_179.json",
-      "original_sha256": "08b5d5c4719f9e2c0ba00750576496dfc95079a5cff855f0d82efda04196c221",
-      "public_sha256": "9528b17a5e3304abe36240fb95539c9ea2f8974ad94f56d095b4efe868412608",
-      "public_bytes": 3240,
+      "path": "quality_transfer/final_native_187_20261011/CANDIDATE_FINALIZED_187.json",
+      "original_sha256": "36820b02d0531459afdba5a6c4d63b11a8dcab969153ce35d8111ec80501d0f9",
+      "public_sha256": "2b14060effe60fe0b08cd69746d922c00b349863ca92ca5ced7070d9eec1695a",
+      "public_bytes": 3596,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
     {
@@ -351,22 +358,22 @@
     "controller_guard_commit": "6ca5b3cedf3fda0f69397ad0e7a3e7abbe0194ae",
     "controller_cohort_reader_commit": "b7c2094e329351dcbdbeef4d3fcac48eec9458f3",
     "controller_reporting_commit_scope": "Local Controller reporting and retained-origin reader corrections only; runtime241/DUT/bundle remain at the original freeze.",
-    "quality_generation": "revision3:/quality_transfer/final_native_179_20261008/finalized_179_origin_verified",
+    "quality_generation": "revision3:/quality_transfer/final_native_187_20261011/finalized_187_normal_full_context",
     "quality_row_counts": {
-      "split_report_rows": 148,
-      "full_report_rows": 31,
-      "all_report_rows": 179,
-      "all_report_rows_exact_quality_evidence_joined": 179,
-      "normal_quality_claim_verified_rows": 177,
-      "negative_report_quality_claim_rows": 2,
-      "normal_comparative_performance_claim_rows": 169,
-      "separate_original_H10_reuse_quality_rows": 3,
-      "all_current_positive_quality_rows_including_separate_H10reuse": 180,
-      "new_BN6_split_rows": 12,
-      "new_Hailo_rawFull_rows": 6,
-      "new_Hailo_rawFull_quality_claim_verified": 4,
       "Y26s_rawFull_negative_rows_preserved": 2,
-      "historical_DX_original_single_observation_contexts": 3
+      "all_current_positive_quality_rows_including_separate_H10reuse": 188,
+      "all_report_rows": 187,
+      "all_report_rows_exact_quality_evidence_joined": 187,
+      "full_report_rows": 39,
+      "historical_DX_original_single_observation_contexts": 3,
+      "negative_report_quality_claim_rows": 2,
+      "new_BN6_split_rows": 12,
+      "new_Hailo_rawFull_quality_claim_verified": 4,
+      "new_Hailo_rawFull_rows": 6,
+      "normal_comparative_performance_claim_rows": 181,
+      "normal_quality_claim_verified_rows": 185,
+      "separate_original_H10_reuse_quality_rows": 3,
+      "split_report_rows": 148
     },
     "private_full_quality_summaries_included": false,
     "quality_original_boundary": "Compact Current rows and finalized pointer are public; complete quality summaries and original dataset/CPU evidence remain private."

@@ -1,0 +1,75 @@
+{
+  "Current_pointer_modified": false,
+  "additional_completed_full_rows": 8,
+  "negative_quality_claims_preserved": true,
+  "negative_quality_rows": [
+    {
+      "backend": "native_full_hailo10h",
+      "case": "full",
+      "energy_claim_eligible": null,
+      "model": "yolo26s",
+      "numerical_similarity_value": 0.6428571428571429,
+      "performance_claim_eligible": true,
+      "quality_claim_result_verified": false,
+      "scientific_claim_eligible": null,
+      "setup_id": "orin_nx_hailo10_01"
+    },
+    {
+      "backend": "native_full_hailo8",
+      "case": "full",
+      "energy_claim_eligible": null,
+      "model": "yolo26s",
+      "numerical_similarity_value": 0.6428571428571429,
+      "performance_claim_eligible": true,
+      "quality_claim_result_verified": false,
+      "scientific_claim_eligible": null,
+      "setup_id": "orin_nx_hailo8_01"
+    }
+  ],
+  "new_Hardware_CPU_Dataset_inference": false,
+  "normal_counts": {
+    "ambiguous_performance_row_count": 0,
+    "duplicate_identity_count": 0,
+    "failed_performance_row_count": 0,
+    "missing_performance_row_count": 0,
+    "performance_row_count": 39,
+    "quality_row_count": 39,
+    "schema": "onnx-splitpoint/native-producer-validation-summary",
+    "schema_valid": true,
+    "schema_version": 10,
+    "source": "revision3:/quality_transfer/final_native_187_20261011/finalized_187_normal_full_context/full_native_producer_validation_summary.json",
+    "status": "loaded",
+    "unique_identity_count": 39,
+    "verified_performance_row_count": 39
+  },
+  "old_observations_and_commands_unchanged": true,
+  "original_full_rows": 31,
+  "sources": [
+    {
+      "path": "revision3:/quality_transfer/final_native_179_20261008/finalized_179_origin_verified/full_native_producer_summary.json",
+      "sha256": "98b0bb7a301deb7a5e302e08c4757b24fd981f104afa62f5c9e3905b6e142afe"
+    },
+    {
+      "path": "revision3:/quality_transfer/final_native_179_20261008/finalized_179_origin_verified/full_native_producer_validation_summary.json",
+      "sha256": "6ec06343e901a6a4722b16bc4330b015a6a89eeacdc72132853917e1b6d2992c"
+    },
+    {
+      "path": "revision3:/quality_transfer/bn6_yolo26_trt_20261011/finalized/full_native_producer_summary.json",
+      "sha256": "f15a506e5483bc7824ebe496609eb717e2209f9fbfbd5f3f9ca8f993bbb0c3c5"
+    },
+    {
+      "path": "revision3:/quality_transfer/bn6_yolo26_trt_20261011/finalized/full_native_producer_validation_summary.json",
+      "sha256": "4633a62150b42f705fe6b91d4da015ce2541f22b66bc4344b4d46d7d7c329161"
+    },
+    {
+      "path": "revision3:/quality_transfer/bn6_yolo26_deepx_vendor_20261011_original_binding_reentry/finalized/full_native_producer_summary.json",
+      "sha256": "c3eb35da99951466818123e7c225228e1f5af41fdb6dd460f11b9f4b24e53071"
+    },
+    {
+      "path": "revision3:/quality_transfer/bn6_yolo26_deepx_vendor_20261011_original_binding_reentry/finalized/full_native_producer_validation_summary.json",
+      "sha256": "5c176ae3cb61d78610f70da9f40701a814b725516a5c22054128f1e47cb773fe"
+    }
+  ],
+  "split_rows_retained": 148,
+  "status": "COMPLETE_NORMAL_FULL_CONTEXT"
+}

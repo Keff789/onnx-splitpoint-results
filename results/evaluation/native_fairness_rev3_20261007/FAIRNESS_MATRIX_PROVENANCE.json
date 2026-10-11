@@ -1,19 +1,18 @@
 {
-  "at": "2026-10-09T08:31:21.485557+00:00",
+  "at": "2026-10-11T04:56:06.133987+00:00",
   "rows": 450,
   "state": "in_progress",
   "current_native_points": {
-    "new_measurement": 232,
-    "reused_verified": 6,
-    "not_measured": 8
+    "new_measurement": 240,
+    "reused_verified": 6
   },
   "current_generic_points": {
     "completed": 204
   },
   "sources": {
-    "native_current.json": "384681eb004d25e1fe78b77e4d30b6b4ae9375b309b1f84ee51f72d8cc574b03",
-    "generic_current.json": "08a03b6beccd7a8c828d855ed7051345058703958e7e0120b00ed9415810bfaf",
-    "energy_acquisitions.json": "8f35006ca8e2618bce116f722b6b65d062ca0716df75de7aa393aad6c9aeb75e"
+    "native_current.json": "ad30c8103562fe15de0a34a8640c4da9e20eeb063040d80443496d6f8d202b7a",
+    "generic_current.json": "1e63831e48b0ad5821cedeec1fff650c8dffbf6e6a6438fd4b1f1e261d914808",
+    "energy_acquisitions.json": "6b2ddbe68bbc354dbf76829faf1854a8072dfa856fd3b9f3f8819cf774c7fa8a"
   },
   "normal_consumer_required_for_claim_promotion": true
 }

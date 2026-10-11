@@ -82,15 +82,14 @@ diagnostische Aufnahmen oder Offline-Reintegration sind keine neuen qualifiziert
 Hardwaremessungen. Generic-Energieanschluss und Matrixprojektion sind softwareseitig
 geprüft; diese Prüfung behauptet keine tatsächlich neue Generic-Sensoraufnahme.
 
-H10s einmal konkret autorisierte Fortsetzung bestätigte Quellenabschluss und
-Cleanup, wurde aber wegen 7936 fehlender Samples beziehungsweise 124 Paketen
-in einem Gap innerhalb des Commandfensters abgewiesen. Diese Freigabe ist
-verbraucht; kein automatischer Retry oder neuer Capture folgt daraus. Der ältere
-unbestätigte Quellenabschluss bleibt unverändert negative Historie. H8-Zero-Start,
-accepted-repeat-Blocker, physischer/source STOP und verbleibende Budgets stehen
-im aktuellen [Resume](../results/evaluation/native_fairness_rev3_20261007/RESUME_STATE.json).
-Freie Leases sind keine Aufnahmefreigabe. Normale DUT-Performance benötigt die
-aktuelle Ressourcenownership und normale Plan-/Sourcezulassung.
+Die fortlaufende Revision-3-Beauftragung vom10.10. ersetzt historische administrative
+Einmalgrants und Versuchskontingente für den vorhandenen Scope. Originalstarts,
+Fehlversuche und Zähler bleiben erhalten; wissenschaftliche Gates, Quellenabschluss
+und gegenseitiger Ressourcenbesitz bleiben erforderlich. Aktuell halten echte
+Paketverluste sowie unbestätigte jüngste H8/H10-Quellenabschlüsse weitere betroffene
+Aufnahmen an. Fehlender Diagnosezugriff ist ein technischer Zugriffspunkt, keine
+neue allgemeine Freigabeschleife. Der genaue aktuelle Stand steht im
+[Resume](../results/evaluation/native_fairness_rev3_20261007/RESUME_STATE.json).
 
 Die historische Generic-Nutzung wurde gezielt aus vorhandenen Katalogen und
 Originalreports geprüft. Raw, allgemeines Streaming, Multi-Tensor, `generic`,
@@ -111,10 +110,31 @@ Ein abschließendes Allmodell-Ranking wird nur für die tatsächlich zugelassene
 und vollständig bezeichnete Schnittmenge behauptet.
 
 
-Stand 2026-10-09: Der normale Current enthält232 neue Native-Kohorten, sechs historische Singles und acht technische Full-Ausschlüsse;180 Native-Qualitybindungen,169 Claims und fünf Energiepunkte. Generic204/612 Prozesse ist vollständig exportiert:204 technische Paare,148 Quality-/Claimpaare, keine Exportfehler und keine Generic-Energie. Zwölf vorhandene H8/H10-YOLO26-Vergleiche sind über den gebundenen normalen Native-Report geschlossen. Alle192 alten Paare und sämtliche ursprünglichen numerischen Kohorten-/Prozess-/Quellenwerte bleiben unverändert. Die56 DX-Classifier-Quality-Holds bleiben ausgeschlossen.
+Historischer Checkpoint 2026-10-09 (durch den folgenden aktuellen Stand ersetzt): Der normale Current enthält232 neue Native-Kohorten, sechs historische Singles und acht technische Full-Ausschlüsse;180 Native-Qualitybindungen,169 Claims und fünf Energiepunkte. Generic204/612 Prozesse ist vollständig exportiert:204 technische Paare,148 Quality-/Claimpaare, keine Exportfehler und keine Generic-Energie. Zwölf vorhandene H8/H10-YOLO26-Vergleiche sind über den gebundenen normalen Native-Report geschlossen. Alle192 alten Paare und sämtliche ursprünglichen numerischen Kohorten-/Prozess-/Quellenwerte bleiben unverändert. Die56 DX-Classifier-Quality-Holds bleiben ausgeschlossen.
 
 Der bestehende Plan-Updater trennt `native` und `generic_completed`:14 falsche Fertigmeldungen sowie204 falsch übernommene Generic-Quellbindungen wurden korrigiert. Native-b044/b066 besitzt Energie; die gleichnamigen Genericfälle besitzen keine. Lokaler Cohort-Readercommit: `b7c2094e329351dcbdbeef4d3fcac48eec9458f3`; gemessener Runtimefreeze/DUTs unverändert.26 fokussierte Tests und eine überlappende Generic-STOP-Planprobe bestanden; unabhängiger Review abgeschlossen.
 
 Energie bleibt offen:445 Matrixlücken, davon442 Delta-Fälle und drei historische H10-Screeningfälle außerhalb des Deltas.141 DX-Fälle besitzen vorbereitete Metadaten;145 Parents sind unvorbereitet,146 Fälle durch STOP, acht durch technische Bindung und zwei durch Repeat-Scope blockiert. Die nächsten14 DX-Kandidaten sind nur Metadaten-PASS; kein Parent/Capture gestartet.42 Minuten sind reine Lastzeit, keine ETA oder Freigabe. H10 benötigt neue konkrete Einzelfreigabe; alter Grant verbraucht und ursprünglicher Quellenabschluss unbekannt.
 
 Der bestehende private Paperworkflow wurde aus Current aktualisiert;18 Tests und Haupt-/Supplement-PDF bestehen. Die Kampagne bleibt wegen Energie-/Quality-/Full-Lücken in_progress. Kleine Current-/Source-/Receiptmetadaten und der normale Archivindex sind verifiziert; vorhandene Payloads werden wiederverwendet. Kein neuer Mess-, Build-, Runtimefreeze- oder Deploymentlauf. Das begrenzte Reviewpaket ist ein Metadatenpaket und kein vollständiger Rohdatennachweis. Private LaTeX-Quellen werden nicht veröffentlicht.
+
+
+Aktueller Checkpoint 2026-10-11: 246 Native-Fälle (240 neue Performancekohorten,
+sechs belegte historische Singles),244 Qualitybindungen und235 Performanceclaims;
+204 Generic-Fälle mit612 unabhängigen Prozessen und204 Quality-/Performanceclaimbindungen.
+Normale Native-Energie:152 dokumentierte Punkte, davon143 final zugelassen und
+neun unverändert diagnostisch. Generic-Energie:neun zugelassene Punkte. Zentrale
+Aufnahmensicht:161 Punkte/483 gültige Repeats;20 Fullpunkte/60 Modusbelege.
+Die62 fertigen H8-Punkte bleiben vollständig erhalten. DX56 besitzt jetzt passende
+numerische Qualitätsbelege; die alten Eingabeabweichungen bleiben negative Historie.
+Rest der zugelassenen Messqueue:285 Punkte (90Native/195Generic); zehn negative
+Native-Vergleichskontexte außerhalb der Queue bleiben wissenschaftlich ausgeschlossen.
+
+Der normale öffentliche Prüfer berücksichtigt getrennt gekennzeichnete diagnostische
+Zahlen samt Ausschlussbelegen; Manipulation von Claimflag, Diagnosekennzeichnung und
+Zahlen wird abgewiesen. Die private Ableitung besteht18 Tests und baut Haupt- und
+Supplement-PDF, bleibt aber wegen offener Messungen unvollständig und außerhalb Git.
+Controllercommit9468c55cbe756b9173df7e3587587bdeec9cef54 enthält die gezielte
+administrative Fortsetzung für einen zusätzlichen bereits geschlossenen DX-Repeatslot;
+kein DUT-Runtimewechsel und keine Umdeutung ungültiger Repeats. Kein neuer Capture
+folgt allein aus dieser Zulassung. Der laufende Gesamtauftrag ist nicht abgeschlossen.

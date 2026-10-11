@@ -1,0 +1,64 @@
+{
+  "Current_pointer_modified": false,
+  "composition_receipt": "revision3:/quality_transfer/final_native_187_20261011/finalized_187_normal_full_context/COMPOSITION_RECEIPT.json",
+  "composition_receipt_sha256": "b8d867488236c836060880d8d9f8d00df92d857f88eb686215bb1a9f63ac7347",
+  "counts": {
+    "Y26s_rawFull_negative_rows_preserved": 2,
+    "all_current_positive_quality_rows_including_separate_H10reuse": 188,
+    "all_report_rows": 187,
+    "all_report_rows_exact_quality_evidence_joined": 187,
+    "full_report_rows": 39,
+    "historical_DX_original_single_observation_contexts": 3,
+    "negative_report_quality_claim_rows": 2,
+    "new_BN6_split_rows": 12,
+    "new_Hailo_rawFull_quality_claim_verified": 4,
+    "new_Hailo_rawFull_rows": 6,
+    "normal_comparative_performance_claim_rows": 181,
+    "normal_quality_claim_verified_rows": 185,
+    "separate_original_H10_reuse_quality_rows": 3,
+    "split_report_rows": 148
+  },
+  "directory": "revision3:/quality_transfer/final_native_187_20261011/finalized_187_normal_full_context",
+  "files": [
+    {
+      "path": "revision3:/quality_transfer/final_native_187_20261011/finalized_187_normal_full_context/native_producer_summary.json",
+      "role": "native_producer_summary.json",
+      "sha256": "083ac8db0758f19d247e8dca1f5693c4138b4227d789281095d5e9f744a50519"
+    },
+    {
+      "path": "revision3:/quality_transfer/final_native_187_20261011/finalized_187_normal_full_context/native_producer_validation_summary.json",
+      "role": "native_producer_validation_summary.json",
+      "sha256": "12bf2227e6ec762a6a3daad5a599106050d4b8341f4548ef5f527a988b10851f"
+    },
+    {
+      "path": "revision3:/quality_transfer/final_native_187_20261011/finalized_187_normal_full_context/STATUS.json",
+      "role": "STATUS.json",
+      "sha256": "5092a2c894b6b548f04f640f6df3360b598c5d37cf1d08888ecf6d6354f28f23"
+    },
+    {
+      "path": "revision3:/quality_transfer/final_native_187_20261011/finalized_187_normal_full_context/full_native_producer_summary.json",
+      "role": "full_native_producer_summary.json",
+      "sha256": "7a77f0147907744ec609dc3a48f1539a526e5f5ecadf78046b9c96e4f19ccb89"
+    },
+    {
+      "path": "revision3:/quality_transfer/final_native_187_20261011/finalized_187_normal_full_context/full_native_producer_validation_summary.json",
+      "role": "full_native_producer_validation_summary.json",
+      "sha256": "5669e8739a8d2307e4f5c741b5e2d6ed270fcef4ffdf6727839ce96bc792be2e"
+    },
+    {
+      "path": "revision3:/quality_transfer/final_native_187_20261011/finalized_187_normal_full_context/full_STATUS.json",
+      "role": "full_STATUS.json",
+      "sha256": "3e49593e16bd0456405869cb2ad4b8315fa4225fc10eec505f0d99aa5601e840"
+    }
+  ],
+  "independent_composition_review_pending": false,
+  "independent_review": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/bn6/yolo26_prepare_staged/deepx_binding_staged/FULL_CONTEXT_REVIEW.json",
+  "independent_review_sha256": "0432123715ea74a718ee8cea8703959674a70cc9e8e2da43ebb49f4f4d9f4d2e",
+  "integrated_at": "2026-10-11T00:22:56.060056+00:00",
+  "negative_Y26s_quality_contexts_preserved": true,
+  "normal_comparative_performance_claim_eligible": 181,
+  "normal_retained_claim_promotions_proof": "revision3:/quality_transfer/final_native_179_20261008/finalized_179_origin_verified/NORMAL_GATE_PROMOTION_PROOF.json",
+  "normal_retained_claim_promotions_proof_sha256": "391edb2d10057d2ed006bb4ac66b8c72facf255d2cb46ce1b926567598a7e57f",
+  "separate_original_H10_reuse_contexts_preserved": true,
+  "status": "COMPLETE_NORMAL_CURRENT_QUALITY_JOIN"
+}

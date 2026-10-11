@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "reviewed_caller": "revision3:/quality_transfer/final_native_179_20261008/compose_full_existing_normal_context.py",
+  "reviewed_caller_sha256": "f2f36fcab42d44ac26ea6ccc13081bcce32a22e1ee96dff6b42ad41038171e2f",
+  "tests": {
+    "path": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/bn6/yolo26_prepare_staged/deepx_binding_staged/test_full_context_composition.py",
+    "log": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/bn6/yolo26_prepare_staged/deepx_binding_staged/full_context_tests.log",
+    "passed": 3,
+    "failed": 0
+  },
+  "checks": [
+    "Actual original31 plus exact new8 identities, policy and scientific inputs preserved",
+    "Duplicate, overlap, missing identity and policy drift rejected",
+    "Actual negative H8/H10 YOLO26s Vendor quality remains nonclaimable through normal Current projection",
+    "Latest original2 Full pointer SHA gates reviewed",
+    "Negative row receipt stores actual flags and numerical values"
+  ],
+  "normal_full39_execution_performed": false,
+  "dut_calls": 0,
+  "current_pointer_changes": 0,
+  "active_source_changes": 0
+}

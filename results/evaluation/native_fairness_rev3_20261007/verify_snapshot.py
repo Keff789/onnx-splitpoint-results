@@ -135,8 +135,31 @@ def main():
         close(row['tasks_per_j'], statistics.mean(r['tasks_per_joule'] for r in row['energy_repeats']))
         close(row['energy_comparison_per_task_j'], statistics.mean(r['joules_per_task'] for r in row['energy_comparison_repeats']))
         close(row['energy_comparison_tasks_per_j'], statistics.mean(r['tasks_per_joule'] for r in row['energy_comparison_repeats']))
+    pointer = read('CURRENT_NORMAL_ENERGY.json')
+    decisions = read(pointer['files']['native_energy_observations.json']['path'].replace('revision3:/', ''))
+    setup_ids = {'DeepX': 'orin_nx_deepx_m1_01', 'H8': 'orin_nx_hailo8_01', 'H10': 'orin_nx_hailo10_01'}
     for row in native:
-        if not row.get('normal_energy_eligible'):
+        if row.get('normal_energy_eligible'):
+            continue
+        if row.get('energy_diagnostic_only') is True:
+            proof = row['energy_provenance']
+            assert proof['normal_report_verified'] is True
+            assert proof['diagnostic_only'] is True and proof['claim_eligible'] is False
+            assert row['energy_efficiency_claim_eligible'] is False
+            assert proof['performance_summary_sha256'] == row['observation']['summary_sha256']
+            matches = [d for d in decisions
+                       if (d['model'], d['setup_id'], d['backend'], d['case']) ==
+                       (row['model_id'], setup_ids[row['setup_id']], row['backend'], row['case_id'])]
+            assert len(matches) == 1
+            decision = matches[0]
+            assert decision['diagnostic_only'] is True and decision['claim_eligible'] is False
+            assert decision['claim_exclusion_reasons']
+            assert proof['claim_exclusion_reasons'] == decision['claim_exclusion_reasons']
+            assert len(row['energy_repeats']) == 3
+            close(row['energy_per_task_j'], decision['energy_per_work_j'])
+            close(row['energy_per_task_j'], statistics.mean(r['joules_per_task'] for r in row['energy_repeats']))
+            close(row['tasks_per_j'], statistics.mean(r['tasks_per_joule'] for r in row['energy_repeats']))
+        else:
             assert row['energy_per_task_j'] is None and row['tasks_per_j'] is None
     generic_energies = [r for r in generic if r.get('normal_energy_eligible') is True]
     for row in generic_energies:
