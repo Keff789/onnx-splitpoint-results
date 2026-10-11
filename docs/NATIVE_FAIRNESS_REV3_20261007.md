@@ -43,7 +43,7 @@ werden weiterverwendet; ein geänderter Dateihash allein löst keine Neumessung 
 Softwaretests, tatsächliche Performance, normaler Datasetjoin und Vergleichsclaim
 bleiben eigenständige Belege. Überlappende Testläufe werden nicht addiert.
 
-Für 56 DX-Classifier-Splits ist der Datasettransfer konkret gesperrt: der Original-
+Historischer Ausschluss für 56 DX-Classifier-Splits: der ursprüngliche Datasettransfer war gesperrt: der Original-
 N5000-Runner rekonstruiert nach ImageNet-Float32 uint8 mittels Trunkierung;
 die aktuelle Runtime nimmt direkte RGB-Bytes. Ein bereits ausgeführter endlicher
 Gegenbeweis unterscheidet 137 von 768 Kanalwerten um 1 LSB. Gleiche Artefakte oder
@@ -53,8 +53,12 @@ als ungültige Diagnose erhalten. Der enge Reporter lehnt die vorhandene
 Übertragung ab; gültige aktuelle Performance und originale N5000-Daten bleiben
 unverändert. [Sourcebefund](../results/evaluation/native_fairness_rev3_20261007/quality_transfer/classifier_split_preparation_20261008/DX56_N5000_INPUT_SOURCE_REVIEW.json),
 [gebundene Holds](../results/evaluation/native_fairness_rev3_20261007/current_results/QUALITY_JOIN_REVIEW_HOLDS.json)
-und Resume nennen den jeweils konkreten Input-/Frozen-API-Blocker und die
-gezielte Readiness. Fehlende neue API-Zulassung wird nicht durch Qualityflags ersetzt.
+und die ursprünglichen Hold-Receipts dokumentieren diese negative Historie. Der
+aktuelle Stand hat56 separat mit passendem Direct-RGB-Pfad abgeschlossene
+N5000-Qualitätsfälle und verifizierte normale additive Joins an den erhaltenen
+Performancekohorten. Die vorhandenen kanonischen CPU-Referenzen wurden wiederverwendet.
+Current bindet die spätere Auflösung je Zeile; die ursprüngliche Eingabeabweichung
+wird dadurch weder gleichgesetzt noch aus der Historie gelöscht.
 
 Originale Vendor-DX/H10-Classifier-Full-Qualität kann an ihren tatsächlich
 unveränderten einzelnen Performancebeobachtungen gültig bleiben. Dieser

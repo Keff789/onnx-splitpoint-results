@@ -1,8 +1,8 @@
 {
   "schema": "revision3/public-progress-snapshot-v1",
-  "created_at": "2026-10-11T05:20:07.119705+00:00",
+  "created_at": "2026-10-11T05:37:28.988532+00:00",
   "status": "continuous_revision3_in_progress_transport_diagnosis_and_offline_completion",
-  "current_checkpoint_at": "2026-10-11T05:20:02.756967+00:00",
+  "current_checkpoint_at": "2026-10-11T05:37:24.626853+00:00",
   "native_new_performance_points": 240,
   "native_verified_performance_reuse": 6,
   "native_performance_not_measured": 0,
@@ -57,15 +57,15 @@
     },
     {
       "path": "REMEASUREMENT_PLAN.csv",
-      "original_sha256": "6ab6704b2f51a1267dbc29681c6649c241639b84d2dbc92f5eaf2b4527129848",
-      "public_sha256": "33b859da4ffd912d7d2487929b16c19df48b216d9cc734ef6ec47dfdede1c086",
-      "public_bytes": 1340745,
+      "original_sha256": "8de4c7d6d270e8bcddbde426816bc364bca965539111cc20b650b7d01705dc66",
+      "public_sha256": "f8e928c98443301f870aa0a9f745b9558cae95095a510c58567bb2bfce95e850",
+      "public_bytes": 1352136,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
     {
       "path": "REMEASUREMENT_PLAN_SUMMARY.json",
-      "original_sha256": "4c7b40baf7976ec7072af101e456c1b79a4cc2b7332f8fcd1424c4a87148978a",
-      "public_sha256": "0619b85f6c900b1e06d0780e74ddee3d6d38081ba51ed3cddd46ca8e10993570",
+      "original_sha256": "93c352ab3778247c878f18f677eb20e0541964b958a1fee8c93a794d83869978",
+      "public_sha256": "ab2bad38144184f93b4fac8c7d4e088e705aa8119f67bdabeb1beefdc28f9af3",
       "public_bytes": 3567,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
@@ -78,16 +78,16 @@
     },
     {
       "path": "FAIRNESS_MATRIX_PROVENANCE.json",
-      "original_sha256": "98d48702b43954e7e3d45ccc62c05c481d57d2a81e7c1a6ce04c73c9f51a4cdb",
-      "public_sha256": "98d48702b43954e7e3d45ccc62c05c481d57d2a81e7c1a6ce04c73c9f51a4cdb",
+      "original_sha256": "933eb3577b3d0e525a830ce7309fc360f991367a5f6231aba84db5b06f1b25ef",
+      "public_sha256": "933eb3577b3d0e525a830ce7309fc360f991367a5f6231aba84db5b06f1b25ef",
       "public_bytes": 597,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
     {
       "path": "RESUME_STATE.json",
-      "original_sha256": "34401efb42cffd768a4835686ba97ae51adb98d35722c4a03809a0bc851d8d13",
-      "public_sha256": "d9da0447e7a6715369fbd3fcd651cdcaabc2989ed801403b67724c39af84f386",
-      "public_bytes": 97644,
+      "original_sha256": "11507c55307415f2fb18e042f7939457b1f8e09077e169712a3e3a1f0d0072ef",
+      "public_sha256": "6906a195362408b2084b33e6bf594c2f7e04c3b881944348a5fac4046e34d351",
+      "public_bytes": 101031,
       "transformation": "private path/network labels replaced; LF line endings; numbers and scientific statuses retained"
     },
     {

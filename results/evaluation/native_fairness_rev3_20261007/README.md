@@ -1,6 +1,6 @@
 # Native/Generic fairness — Revision 3 Current snapshot
 
-This snapshot reports the actual selected Current rows at **2026-10-11T05:20:02.756967+00:00**.
+This snapshot reports the actual selected Current rows at **2026-10-11T05:37:24.626853+00:00**.
 Execution state: `continuous_revision3_in_progress_transport_diagnosis_and_offline_completion`. Counts below are derived from those rows;
 the finalized Quality pointer describes its own normal report generation separately.
 Missing values remain null/NA. This page does not declare the campaign complete.
@@ -43,9 +43,12 @@ and no new performance claim. The conflicted H10 historical physical Full contex
 
 The [DX56 input-source finding](quality_transfer/classifier_split_preparation_20261008/DX56_N5000_INPUT_SOURCE_REVIEW.json)
 records the original inverse-ImageNet-to-UINT8 truncation versus the final direct-RGB path.
-The unintegrated preliminary transfer is invalid; actual performance and valid original N5000 remain.
-Current holds and Resume carry the exact applicable input/consumer blocker and targeted API readiness.
-No Quality flag or hash-only dataset remeasurement resolves that difference.
+The preliminary roundtrip transfer remains invalid and its original hold is retained as historical
+negative evidence. All 56 cases now have separately completed N5000 Quality with the matching direct-RGB
+input and canonical CPU references. Current uses their normally verified additive joins and exact
+performance cohorts; it does not reinterpret the old mismatching input as equivalent. The retained
+hold file describes those original exclusions; each applicable Current row binds its verified later
+resolution in quality_provenance.postmeasurement_dataset_quality_join_evidence.
 
 | Normally admitted current energy row | Completed tasks/s, integer display | Raw system mJ/task | Tasks/J |
 |---|---:|---:|---:|

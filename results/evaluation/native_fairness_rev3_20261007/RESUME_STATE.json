@@ -8,7 +8,7 @@
   "archive_metadata_status": "PASS:YOLO11newcapture_data_and_selected_immediate_controller_Current_terminal_metadata_byte_verified",
   "archive_verified_file_count": 65147,
   "archive_verified_group_count": 377,
-  "at": "2026-10-11T05:20:02.756967+00:00",
+  "at": "2026-10-11T05:37:24.626853+00:00",
   "authorization": "operations/token_saving_batch_20261009/AUFTRAG_AKTUELL.txt",
   "authorization_received": true,
   "authorization_status": "Continuous Revision3 scope explicitly authorized; ordinary live resources, scientific gates and device protection mandatory. Previous organizational one-grant limits superseded; history retained.",
@@ -1147,13 +1147,16 @@
     "generic_additional_points": 0,
     "generic_current_points_to_confirm_after_final_duration_worker_change": 0,
     "generic_downstream_ranking_joins": 0,
-    "generic_energy_points_without_final_admission": 204,
+    "generic_energy_points_without_final_admission": 195,
     "generic_historical_points_requiring_final_bundle_confirmation": 0,
     "generic_missing_hardware_points": 0,
     "native_existing_points_requiring_bounded_normal_source_admission_confirmation": 0,
-    "native_required_energy_points_without_final_admission": 171,
-    "new_native_performance_points": 8,
-    "note": "Current-derived remainder retained until Phase C; selected batch work is independently running or terminal as state indicates."
+    "native_required_energy_points_without_final_admission": 90,
+    "new_native_performance_points": 0,
+    "note": "Actual Current plus existing queue:285 remaining admitted-scope points (90Native/195Generic); ten proven negative Native comparison contexts and three historical H10 screenings outside queue. See continuous_external_transport_prerequisite.",
+    "native_points_without_final_energy_including_exclusions": 103,
+    "native_scientifically_negative_comparison_contexts": 10,
+    "native_historical_h10_screenings_outside_delta": 3
   },
   "remaining_generic_comparison_exclusions": [],
   "remaining_generic_comparison_exclusions_count": 0,
@@ -2097,5 +2100,70 @@
     "acquisitions": 161,
     "tampered_diagnostic_negative_probes": "PASS",
     "raw_sensor_replay": false
+  },
+  "continuous_external_transport_prerequisite": {
+    "status": "MISSING_TECHNICAL_DIAGNOSTIC_ACCESS",
+    "sources": [
+      "DeepX-source",
+      "H8-source",
+      "H10-source"
+    ],
+    "controller": "Smartmirror2",
+    "nic": "enx00e04c41e514",
+    "missing_capability": "Permitted packet capture and kernel/link diagnostics, or existing supported management/physical diagnosis for u.RECS source boards; not additional campaign authorization",
+    "known_denials": [
+      "AF_PACKET: Operation not permitted",
+      "sudo -n requires password",
+      "kernel journal/log read unavailable",
+      "source TCP22/80/443 refused on .176/.197"
+    ],
+    "cause_localized": false,
+    "hardware_defect_proven": false,
+    "blind_repeat_series_allowed": false,
+    "normal_cleanup_proven": true,
+    "active_measurement_worker": false,
+    "h8_unclosed_operation": "capture-4097ade28b7a46fba3c7786c618314be",
+    "h10_unclosed_operation": "capture-81082f9b12fa4178a1b24aeb4a8f9217",
+    "deepx_last_three_actual_missing_samples": [
+      128,
+      128,
+      64
+    ],
+    "deepx_all_current_source_closures_verified": true,
+    "deepx_source_transport_failures_preserved": 18,
+    "diagnosis_paths": [
+      "revision3:/operations/token_saving_batch_20261009/continuous_20261010/generic/h10_resnet_physical_recovery_20261011/SOURCE_MANAGEMENT_ACCESS_CHECK.json",
+      "revision3:/operations/token_saving_batch_20261009/continuous_20261010/generic/h10_resnet_physical_recovery_20261011/CONTROLLER_UDP_DIAGNOSTIC_BASELINE.json",
+      "revision3:/operations/token_saving_batch_20261009/continuous_20261010/generic/h10_physical_recovery_staged/administrative_retry_staged/DIAGNOSIS.json"
+    ],
+    "resume_after_repair": "source:controller/.venv/bin/python -B revision3:/operations/token_saving_batch_20261009/batch.py resume",
+    "root_session_resume": "codex resume 01a11aa5-10f7-7cb1-8ad7-d2e6f226e52b"
+  },
+  "continuous_archive_parent_and_paper_metadata": {
+    "status": "COMPLETE",
+    "receipt": "revision3:/archive_receipts/_snapshots__continuous_current_metadata_20261011.json",
+    "files": 1816
+  },
+  "continuous_result_publication": {
+    "status": "PASS",
+    "commit": "74012c2c11274e551fe872b367c0c9a3c2b12d78",
+    "remote_head_verified": true,
+    "native_energy": 143,
+    "generic_energy": 9,
+    "task_complete": false
+  },
+  "continuous_plan_projection": {
+    "status": "PASS",
+    "tests": 20,
+    "actual_review": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/generic/plan_current_continuation_fix_20261011/ACTUAL_PLAN_PROJECTION_REVIEW.json",
+    "no_budget_or_scientific_edits": true,
+    "summary_plan_binding_current": true
+  },
+  "continuous_review_package_limit": {
+    "full_core_verification": "NOT_VERIFIABLE",
+    "missing_original": "revision3:/operations/finalisation_native_20261008/OPERATIONS_RECEIPT.json",
+    "required_original_sha256": "2d7cd3e7459c72662c3bf455179a9f2f9bab430bc8bebde0fe0b86d2b319f006",
+    "current_version_not_substituted": true,
+    "measurement_results_not_invalidated_or_remeasured": true
   }
 }
