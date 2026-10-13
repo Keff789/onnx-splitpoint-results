@@ -1,0 +1,2 @@
+# Matplotlib SVG path formatting is preserved for exact byte reproduction.
+results/figures/*.svg -whitespace
