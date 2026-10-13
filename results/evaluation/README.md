@@ -1,9 +1,10 @@
 # Evaluation evidence
 
-Current incomplete work is documented in
-[Native/Generic fairness Revision 3](native_fairness_rev3_20261007/README.md).
-It keeps new measurements, exact historical reuse and missing cases distinct;
-older dated evaluation directories retain their own scope.
+The [current consolidated Revision 3 analysis](rev3_consolidated_20261013/README.md)
+provides selection, scientific findings, limits, independent review and offline reproduction.
+The [13 October source snapshot](native_fairness_rev3_20261007/README.md)
+retains acquisition and projection evidence. All earlier dated evaluations below
+retain their original historical cohorts and findings.
 
 This directory receives:
 

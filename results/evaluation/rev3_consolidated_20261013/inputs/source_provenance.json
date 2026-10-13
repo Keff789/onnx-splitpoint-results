@@ -1,0 +1,30 @@
+[
+  {
+    "role": "current_results/native_current.json",
+    "source_sha256": "8eb119820f765cab18658a7371ae3d5ddbb03f891a821ee21467b8e6d2bb25e7"
+  },
+  {
+    "role": "current_results/generic_current.json",
+    "source_sha256": "54bbd182d24904ae1ec7a0cba2b5d58ee79d3d3b19e276b80868c4403c227d3f"
+  },
+  {
+    "role": "native_energy_pair_comparison.json",
+    "source_sha256": "e703b4f88372dafcf7aa59ec59cd6e0f8245d5bf05ba340cb4d944e87d868a72"
+  },
+  {
+    "role": "scientific_energy_rows.json",
+    "source_sha256": "0515fd438b04117057177a7ac24b0a96d468c18975cb61e68073c0c7673da736"
+  },
+  {
+    "role": "DELTA_CENTRAL_RESULTS.json",
+    "source_sha256": "4adeb7497367428042d9f576cf646ba2a84d5e277b58fe4ebaca6c7b2b6e9fcc"
+  },
+  {
+    "role": "current_results/generic_repeats.json",
+    "source_sha256": "6215cba31c7c959bfad8f9d5b02df5e8e855baf345adad039d3afec243a89147"
+  },
+  {
+    "role": "analysis_review/REDUCED_ACCEPTANCE_EVIDENCE.json",
+    "source_sha256": "d4b4a1b544c465ea6985c9274ada344e618e1438a7918ef860c3424663177eaa"
+  }
+]

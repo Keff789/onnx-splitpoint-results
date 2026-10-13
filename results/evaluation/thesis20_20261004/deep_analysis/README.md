@@ -1,5 +1,7 @@
 # THESIS20 deep scientific analysis — review edition
 
+> **Historical THESIS20 scientific analysis.** For the current scientific selection, analysis and reproduction, use the [consolidated Revision 3 entry point](../../rev3_consolidated_20261013/README.md). Original data and dated findings below retain their own scope.
+
 Separate exploratory analysis of the closed campaign, prepared 04 October 2026. No inference, measurement, quality campaign, engine compilation or tool release is performed. Original published outputs remain in the parent THESIS20 release.
 
 Start with `WISSENSCHAFTLICHE_ANALYSE.md` (German interpretation) and `PAPER_STORYLINE.md`. `DATEN_UND_KOHORTEN.md` defines exact populations. `CLAIM_EVIDENCE_MATRIX.csv` links every proposed finding to a table and row key. `CAPTIONS.md` gives English captions for six main and three supplement figures; vectors are in `figures/`, review PNGs in `previews/`, exact figure inputs in `tables/*_source.csv`.

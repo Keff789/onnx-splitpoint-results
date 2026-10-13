@@ -1,0 +1,110 @@
+{
+  "all_input_hashes_identical_in_fresh_guarded_restoration": true,
+  "archive_path_references": 92337,
+  "broad_reference_resolution": {
+    "bound_references_examined": 6259,
+    "remaining": 1450,
+    "resolved_in_existing_B": 4809,
+    "verification_levels": {
+      "current_target_SHA256": 4500,
+      "existing_B_source_index_plus_target_existence_not_new_content_hash": 309
+    }
+  },
+  "canonical_input_files": 16,
+  "copy_verification": "Each selected unique byte payload SHA-256 checked at source and canonical target; identical pre-existing B reused by verified target SHA.",
+  "direct_current_administrative_receipt_gaps": 17,
+  "entrypoints_SHA_verified": 49,
+  "historical_scope": {
+    "action_counts": {
+      "common_identical_value": 2,
+      "common_updated": 448
+    },
+    "current_axis_counts": {
+      "axis_actions": {
+        "energy": {
+          "preserve_current_exclusion_no_historical_fill": 13,
+          "select_exact_current_energy_binding": 437
+        },
+        "performance": {
+          "retain_historical_single": 6,
+          "select_qualified_rev3_cohort": 444
+        },
+        "quality": {
+          "retain_current_quality_exclusion": 2,
+          "select_current_bound_quality_including_negative": 448
+        }
+      },
+      "energy_cohorts": 437,
+      "energy_repeats": 1311,
+      "performance_historical_singles": 6,
+      "performance_observations": 1338,
+      "performance_repeated_cohorts": 444
+    },
+    "current_rows": 450,
+    "historical_axes": {
+      "coverage": 588,
+      "energy_cases": 246,
+      "energy_physical_attempts": 748,
+      "energy_repeats": 738,
+      "generic_cases": 204,
+      "generic_raw": 527,
+      "generic_short_predecessors": 12,
+      "native_cases": 246,
+      "performance_repeats": 1350,
+      "quality": 560
+    },
+    "historical_axes_overlap": {
+      "coverage": {
+        "B_only_historical_scope": 368,
+        "logical_common_distinct_generation": 220
+      },
+      "energy_cases": {
+        "logical_common_distinct_generation": 246
+      },
+      "energy_physical_attempts": {
+        "B_only_historical_scope": 1,
+        "logical_common_distinct_generation": 747
+      },
+      "generic_raw": {
+        "B_only_historical_scope": 307,
+        "logical_common_distinct_generation": 220
+      },
+      "generic_short_predecessors": {
+        "logical_common_distinct_generation": 12
+      },
+      "native_unsupported": {
+        "B_only_historical_scope": 228
+      },
+      "quality": {
+        "B_only_historical_scope": 314,
+        "logical_common_distinct_generation": 246
+      }
+    },
+    "historical_coverage_status": {
+      "build_failed": 37,
+      "completed": 527,
+      "policy_excluded": 24
+    },
+    "historical_generation_relations_not_inferred": 1691,
+    "historical_quality_classes": {
+      "accuracy_loss": 39,
+      "reference_close": 521
+    },
+    "historical_quality_policy": "560 original dataset observations retained as original cohorts; new quality bindings select Current at each of 450 result identities, not deletion/relabeling of old quality observations",
+    "historical_raw_generic_policy": "separate raw-endpoint regime, not replaced by completed-task Rev3; all original rows retained",
+    "performance_actions": {
+      "retain_single_observation": 6,
+      "select_qualified_rev3_generation": 444
+    },
+    "unresolved_scientific_identity_assignments_in_completed_task_450": 0
+  },
+  "inherited_source_gap_references": 21,
+  "new_payload_bytes": 19392124588,
+  "new_unique_payloads": 63022,
+  "path_guard": "Python audit hook with realpath resolution; rejects network, subprocess, historical /home namespace, neighbor F and original repository reads; not an OS sandbox",
+  "repeat_selection_created_additional_cohorts": 0,
+  "repeat_selection_created_payload_copies": 0,
+  "restoration_input_manifest_sha256": "6e6fa9b7536ca6d331595e94d7a6e4a7172b137143cc09eeb096519200076224",
+  "reuse_existing_B_unique": 185,
+  "unique_byte_payloads": 63207
+}

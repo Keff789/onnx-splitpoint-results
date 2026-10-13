@@ -1,0 +1,16 @@
+{
+  "case_id": "b044",
+  "historical_baseline_context": {
+    "historical_energy_per_task_j": 0.5495071738076326,
+    "historical_fps": 50.32300900493827
+  },
+  "metrics": {
+    "energy": {
+      "energy_per_completed_task_j": 0.5514843437277025
+    },
+    "fps_display": 49.12982270830348
+  },
+  "model": "yolov7_paper",
+  "role": "separate_diagnostic_single",
+  "setup_id": "DeepX"
+}

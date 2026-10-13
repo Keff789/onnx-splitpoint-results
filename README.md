@@ -1,24 +1,32 @@
 # ONNX Split-Point Results Archive
 
-## Revision 3 fairness audit — current incomplete snapshot, 7 October 2026
+## Current consolidated analysis — 13 October 2026
 
-The [current Revision 3 view](results/evaluation/native_fairness_rev3_20261007/README.md)
-contains 15 new Native performance points, nine verified performance reuses,
-nine Generic pairs and three normally admitted current energy points. Remaining
-measurements are explicit; a physical source STOP requires bounded recovery.
-Historical data is preserved and was inspected read-only. The prior YOLOv7 ZIP
-has now passed its supplied raw-evidence checker. See the
-[technical knowledge-base update](docs/NATIVE_FAIRNESS_REV3_20261007.md).
-The older dated sections below retain their original scope.
+The [current research entry point](results/evaluation/rev3_consolidated_20261013/README.md)
+contains the consolidated Revision 3 selection, new offline scientific analysis,
+methods, exclusions, independent review and reproducible tables and figures.
+Its 450 identities comprise 246 Native and 204 Generic results; 437 have normal
+energy admission. The 13 boundary cases and all 26 Native / 17 Generic quality-loss
+results remain visible. Seventeen administrative quality-receipt versions remain
+unresolved; the separate bound result leaves and exclusion sensitivity are documented.
+
+Twix restored the selected inputs from the canonical archive and reproduced the
+compact analysis offline. See [methods and limits](results/evaluation/rev3_consolidated_20261013/METHODS.md),
+[validation](results/evaluation/rev3_consolidated_20261013/validation/README.md)
+and the [repository map](docs/REPOSITORY_MAP.md).
+The [13 October source snapshot](results/evaluation/native_fairness_rev3_20261007/README.md)
+remains the dated acquisition/projection evidence. Older completed-task analyses
+below retain their historical generations. Independent
+[energy-measurement / PSD / TIM research](energy-measurement/README.md) retains its own navigation.
 
 This repository is the curated, Git-friendly result archive for the ONNX
 Split-Point evaluation project. It keeps compact measurement results,
 experiment scripts, acceptance evidence and explanatory documentation. Large
 runtime artefacts stay in a separate local raw archive and are not committed.
 
-## Current YOLOv7 performance — 7 October 2026
+## Historical YOLOv7 performance — 7 October 2026
 
-The [current completed-task results](results/evaluation/yolov7_native_completion_20261007/README.md)
+At that dated generation, the [completed-task results](results/evaluation/yolov7_native_completion_20261007/README.md)
 replace the nine YOLOv7 Native split throughput aggregates and six Full alternatives
 for current paper use. All three repeats are supplied, with explicit report-level
 provenance. H8 b066 reaches 2.17x and H10 b044 1.25x their fastest Full;
@@ -30,14 +38,14 @@ integration, so raw-evidence verification is still a local handoff task. See the
 [knowledge-base update](docs/YOLOV7_NATIVE_COMPLETION_20261007.md) for the measured
 software mechanism, host configuration and remaining work.
 
-## THESIS20 completed analysis — 4 October 2026
+## Historical THESIS20 analysis — 4 October 2026
 
 The reviewed [scientific deep analysis](results/evaluation/thesis20_20261004/deep_analysis/README.md)
 was integrated into `main` on 5 October 2026 at commit `82f0a257`.
 Read its [findings](results/evaluation/thesis20_20261004/deep_analysis/WISSENSCHAFTLICHE_ANALYSE.md),
 [cohort definitions](results/evaluation/thesis20_20261004/deep_analysis/DATEN_UND_KOHORTEN.md),
 and [figure captions](results/evaluation/thesis20_20261004/deep_analysis/CAPTIONS.md).
-See the [repository map](docs/REPOSITORY_MAP.md) for current entry points and historical evidence.
+See the [repository map](docs/REPOSITORY_MAP.md) for the current Revision 3 entry point and historical evidence.
 
 Start with [the paper handoff](results/evaluation/thesis20_20261004/START_HERE.md),
 [reproducible tables and figures](results/evaluation/thesis20_20261004/README.md), and
@@ -48,7 +56,7 @@ pairs and 246 complete energy rows. Negative scientific results are retained.
 
 [Tool release v2.92.0](https://github.com/Keff789/ONNX-Splitpoint-Tool/releases/tag/v2.92.0),
 main commit `d164aad6d7c7ef68c1b371c49a1fdea0a3b27dd7`, its annotated tag and both
-source archives are published and verified against the remote. Raw archive transfer remains in progress; compact public
+source archives were published and verified against the remote. At that historical report, raw archive transfer remained in progress; compact public
 inputs are not a replacement for the private original payloads. No new measurements
 were made for this analysis or release.
 
@@ -68,7 +76,7 @@ operation as of 5 October; a successful Git push does not certify the raw archiv
 ## Knowledge base
 
 The continuously maintained [project knowledge base](docs/KNOWLEDGEBASE.md)
-is the canonical entry point for methods, current scope, open items and historical
+provides methods, dated scope, documented limits and historical
 context. Its filename stays fixed; updates and older states are tracked by Git.
 The dated evidence directories below remain immutable records of their own runs.
 

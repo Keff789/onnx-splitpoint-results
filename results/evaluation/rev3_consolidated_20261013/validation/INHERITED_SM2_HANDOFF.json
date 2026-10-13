@@ -1,0 +1,48 @@
+{
+  "balance": {
+    "additional_normal_evidence_receipt": {
+      "bytes": 8621,
+      "relative_path": "diss_results_native_fairness_rev3_20261007/operations/sm2_twix_handoff_20261013/HANDOFF_EVIDENCE_ARCHIVE_RECEIPT.json",
+      "sha256": "c1b433d4581a7bc384bc81154fa157c6029e252532ccf7592f96a542dde89712"
+    },
+    "already_verified_selected_bytes": 3894372658,
+    "already_verified_selected_files": 1859,
+    "available_required_local_only_files": [],
+    "handoff_files": 3,
+    "historical_unavailable": [
+      "Historical Full-producer source SHA aae20edc6a4bb19c40d00f82707e333d8c931a2ace23b641c426d099fb3a3d0e, 21 references",
+      "Phase5AdapterBringup not available locally; no additional required measurement inferred"
+    ],
+    "new_administrative_evidence_bytes": 9893664,
+    "new_administrative_evidence_files": 21,
+    "new_or_changed_original_bytes": 2520744169,
+    "new_or_changed_original_files": 10747,
+    "new_research_group_including_mapping_bytes": 2533016868,
+    "new_research_group_including_mapping_files": 10748,
+    "other_existing_reuse": "Existing broader B/F positive receipts retained; EnergyMeasurements 7608 files metadata-rechecked, calibration subset603 checksum-rechecked;15 collector source files byte-compared; do not sum overlapping scopes or claim entire old extra backup complete",
+    "outside_checked_scope": [
+      "Whole home/system/venv/cache/Codex history backup",
+      "Disposable published build exports and software fixtures listed in source mapping exclusions",
+      "B-versus-F scientific overlap/consolidation, numerical re-analysis, Git publication and Twix replay",
+      "Any new hardware measurement or repair"
+    ],
+    "selected_original_files": 12606
+  },
+  "completion_conditions": {
+    "all_available_required_selected_originals_verified": true,
+    "cleanup_authorization": "No deletion performed and no general local deletion authorization implied.",
+    "evidence_transfer_exitcode": 0,
+    "git_publication": false,
+    "main_transfer_exitcode": 0,
+    "new_measurements": false,
+    "result_generation_or_current_pointer_changed": false,
+    "scientific_processing_on_sm2": false,
+    "selected_local_originals_stable": true,
+    "source_deletion": false,
+    "unfinished_own_transfer_jobs": 0
+  },
+  "handoff_sha256": "f25231a6193d05c6256867b53d53248b602dbf92f022469bc63797db84faa16d",
+  "inherited_not_reexecuted_on_Twix": true,
+  "note": "Twix copy and canonical restoration are separate evidence; inherited scopes overlap and must not be added.",
+  "status": "READY_FOR_TWIX"
+}

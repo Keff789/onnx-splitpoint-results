@@ -1,0 +1,12 @@
+{
+  "B_index_records": 434385,
+  "B_only_content_hashes": 60771,
+  "B_unique_hashes": 61016,
+  "B_unique_paths": 434385,
+  "F_checkpoint_records": 193640,
+  "F_checkpoint_unique_hashes": 142355,
+  "F_checkpoint_unique_paths": 193640,
+  "F_only_content_hashes": 152332,
+  "scope": "Recorded indexes plus handoff mappings; duplicate records/bytes are not scientific coverage; no full rescan/hash.",
+  "shared_content_hashes": 245
+}

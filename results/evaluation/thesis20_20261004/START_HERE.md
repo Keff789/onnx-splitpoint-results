@@ -1,5 +1,7 @@
 # Start here: final THESIS20 analysis
 
+> **Historical 4 October THESIS20 handoff.** For the current scientific selection, analysis and reproduction, use the [consolidated Revision 3 entry point](../rev3_consolidated_20261013/README.md). Original data and dated findings below retain their own scope.
+
 > **Current-view update, 7 October 2026:** [YOLOv7 native performance](../yolov7_native_completion_20261007/README.md)
 > supersedes the nine matching split and six Full throughput aggregates for paper use.
 > Their current energy values are unavailable. This dated directory and its

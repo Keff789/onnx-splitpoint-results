@@ -1,0 +1,17 @@
+{
+  "all_output_files_byte_identical": true,
+  "audit_guard_enabled": true,
+  "fresh_output_directory": true,
+  "fresh_process": true,
+  "input_files": 16,
+  "input_manifest_sha256": "6e6fa9b7536ca6d331595e94d7a6e4a7172b137143cc09eeb096519200076224",
+  "matplotlib": "3.8.4",
+  "numpy": "1.26.4",
+  "output_files": 37,
+  "output_manifest_sha256": "a494291dc037c87ba2ec3e1b716efec20894ef21f3ef6171c566f0eeda22f9cc",
+  "platform": "Twix Linux x86_64",
+  "python": "3.10.12",
+  "scipy": "1.13.1",
+  "scope": "compact numerical/figure reproduction; no raw trace reintegration, dataset evaluation, inference or hardware access",
+  "status": "PASS"
+}

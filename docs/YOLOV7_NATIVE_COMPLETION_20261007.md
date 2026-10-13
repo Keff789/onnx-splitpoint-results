@@ -1,5 +1,7 @@
 # YOLOv7: Native Completion, Performancekorrektur und Orin-Abgleich
 
+> **Historical YOLOv7 completion findings.** For the current scientific selection, analysis and reproduction, use the [consolidated Revision 3 entry point](../results/evaluation/rev3_consolidated_20261013/README.md). Original data and dated findings below retain their own scope.
+
 Dokumentationsstand: **07.10.2026**. Dieser Nachtrag ergänzt die eingefrorenen
 THESIS20-Ergebnisse; historische Messungen und Auswertungen bleiben erhalten.
 Die Zahlen stammen aus dem Bericht „YOLOv7: Split-Reparatur und Orin-Abgleich“.

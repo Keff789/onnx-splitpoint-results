@@ -1,6 +1,10 @@
 # ONNX Splitpoint Tool – Knowledge Base
 
-> **Revision 3, Finalisierung 08.10.2026 — Current-Checkpoint:**
+> **Aktueller wissenschaftlicher Einstieg, 13.10.2026:** Die [konsolidierte Revision-3-Analyse](../results/evaluation/rev3_consolidated_20261013/README.md) verbindet aktuelle Auswahl, neue Offlineauswertung, unabhängige Prüfung und Reproduktion. 450 Identitäten (246 Native / 204 Generic), 437 normale Energiebindungen, 13 Grenzfälle und 26/17 accuracy_loss-Befunde bleiben sichtbar. 17 direkte administrative MobileNet-/DeepX-Receiptversionen sind ungeklärt; normale Ergebnis-/Validation-Blätter sind separat exakt gebunden und eine Ausschlusssensitivität ist enthalten. Der historische Full-Producer-Quellhash bleibt ebenfalls eine Grenze. Twix verwendet den kanonischen `diss_results`-Bestand; frühere Kohorten und Originale sind erhalten. [Methoden](../results/evaluation/rev3_consolidated_20261013/METHODS.md) · [Prüfbelege](../results/evaluation/rev3_consolidated_20261013/validation/README.md).
+>
+> Alle folgenden 4.–8.-Oktober-Stände sind datierte Historie. Ihre damaligen offenen Mess-/Transferaufgaben sind keine aktuelle Arbeitsfreigabe. Eigenständige [PSD-/TIM-Forschung](../energy-measurement/README.md) behält ihren eigenen aktuellen Stand.
+
+> **Revision 3, 08.10.2026 — historischer Checkpoint:**
 > Aktuelle Mengen und Statusachsen stehen im [Publikationsmanifest](../results/evaluation/native_fairness_rev3_20261007/PUBLICATION_MANIFEST.json)
 > und den [Native-/Generic-Current-Daten](../results/evaluation/native_fairness_rev3_20261007/README.md).
 > Neue Performance, historische Einzelbeobachtungen, Datasetqualität,
@@ -89,7 +93,7 @@
 > fort. Aktuelle Aufgaben stehen in §12, die Übergabe in §16 und der Abschluss in §23.
 > Frühere Resume-/Messanweisungen sind datierte Historie, kein aktueller Auftrag.
 
-## Aktueller Stand
+## Historischer Stand vom 04.10.2026
 
 | Menge / Gegenstand | Live geprüfter Stand am 04.10.2026 |
 |---|---|

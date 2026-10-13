@@ -1,0 +1,9 @@
+{
+  "energy_relative_change": 0.003598078449767561,
+  "energy_single_j_per_task": 0.5514843437277025,
+  "fps_relative_change": -0.023710551499766308,
+  "fps_single": 49.12982270830348,
+  "historical_fps_median": 50.32300900493827,
+  "historical_mean_j_per_task": 0.5495071738076326,
+  "scope": "separate_diagnostic_single_no_generalization_or_CI_test"
+}

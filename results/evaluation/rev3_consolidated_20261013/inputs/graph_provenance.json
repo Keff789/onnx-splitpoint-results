@@ -1,0 +1,86 @@
+[
+  {
+    "file": "models/mobilenet_v3_large/analysis/analysis.json",
+    "model_id": "mobilenet_v3_large",
+    "model_sha256": "2f5e79b1e4280251e7b6eefe1d6161c4831e2fc27858e1e9fe2fac697f44489e",
+    "sha256": "6c30a811223cbf35f316b9e3d999c3efcfcfd61817e43a7376dd83b98ed178b2"
+  },
+  {
+    "file": "models/mobilenet_v3_large/analysis/candidate_ranking.json",
+    "model_id": "mobilenet_v3_large",
+    "model_sha256": "2f5e79b1e4280251e7b6eefe1d6161c4831e2fc27858e1e9fe2fac697f44489e",
+    "sha256": "6a51e08b3c25231a968c0d2fa4ab82b2148ceca1ec8c3ea7913df2d61f3d9b6a"
+  },
+  {
+    "file": "models/regnet_x_1_6gf/analysis/analysis.json",
+    "model_id": "regnet_x_1_6gf",
+    "model_sha256": "fba2c5b46ff63bd4b4bc65f1cf60fd86fa84e16e7432fcaa60d5efbd2c99b8f3",
+    "sha256": "e677427942934762e1f5a98be633a55b97210ba3710deb0f4dfd01475ec52cc2"
+  },
+  {
+    "file": "models/regnet_x_1_6gf/analysis/candidate_ranking.json",
+    "model_id": "regnet_x_1_6gf",
+    "model_sha256": "fba2c5b46ff63bd4b4bc65f1cf60fd86fa84e16e7432fcaa60d5efbd2c99b8f3",
+    "sha256": "6ebbe05bd3189ee4e3823fbc6fcc561b0cdd740fd5987662c0d12ab0d3feb7bf"
+  },
+  {
+    "file": "models/resnet50/analysis/analysis.json",
+    "model_id": "resnet50",
+    "model_sha256": "cebd9d5879ddd304a18f51e559ab74fba5cbd1f610b9359321bc5228acbe4f50",
+    "sha256": "9af9ff33f4b08ddf00092be5b754cb23f9e2ab80912e1762a7ab891417e4829c"
+  },
+  {
+    "file": "models/resnet50/analysis/candidate_ranking.json",
+    "model_id": "resnet50",
+    "model_sha256": "cebd9d5879ddd304a18f51e559ab74fba5cbd1f610b9359321bc5228acbe4f50",
+    "sha256": "ad8300277a6ff6c273ea98d5d54d8b2cca21953e5f658e507baf89f56a098277"
+  },
+  {
+    "file": "models/yolo11l/analysis/analysis.json",
+    "model_id": "yolo11l",
+    "model_sha256": "f0fcdf56a4ac24d87ec30c627170492ccad9db80486ec5694df6de65c1b3d147",
+    "sha256": "7774ad041be63ee9bbd9fee5326b36518fce82fc07a90969655dec3933f6ec67"
+  },
+  {
+    "file": "models/yolo11l/analysis/candidate_ranking.json",
+    "model_id": "yolo11l",
+    "model_sha256": "f0fcdf56a4ac24d87ec30c627170492ccad9db80486ec5694df6de65c1b3d147",
+    "sha256": "838c7484ef42eeab5d1c3dc00d320df66f81a0720ad57c35452cfd4b7abd942e"
+  },
+  {
+    "file": "models/yolo26m/analysis/analysis.json",
+    "model_id": "yolo26m",
+    "model_sha256": "d1c6a922dd92f896c69e2f6767ea3ca23fac0e53e5ac69681965eb8a74cda897",
+    "sha256": "160554fcea0a4f2f26f7349c734d4a007b2a8cacf29b15e91ba0eea13d0aa868"
+  },
+  {
+    "file": "models/yolo26m/analysis/candidate_ranking.json",
+    "model_id": "yolo26m",
+    "model_sha256": "d1c6a922dd92f896c69e2f6767ea3ca23fac0e53e5ac69681965eb8a74cda897",
+    "sha256": "19070b18cbe20deb1c3a2c7f83684a229c7cfcb3fae9ac59110808dc5dcc41a6"
+  },
+  {
+    "file": "models/yolo26s/analysis/analysis.json",
+    "model_id": "yolo26s",
+    "model_sha256": "4b8ff9dce56ca7058c53e1a08feca69a59f8504a8f2ef68c85c065ae837ce04a",
+    "sha256": "876255dc8167a1ab127b837f7d17e1d3ee6764e5d47641553aef765dd4b4d49c"
+  },
+  {
+    "file": "models/yolo26s/analysis/candidate_ranking.json",
+    "model_id": "yolo26s",
+    "model_sha256": "4b8ff9dce56ca7058c53e1a08feca69a59f8504a8f2ef68c85c065ae837ce04a",
+    "sha256": "f2a246111455dc990f6e12543dacfd1df0fc73bdac904246775d36a0bd533271"
+  },
+  {
+    "file": "models/yolov7_paper/analysis/analysis.json",
+    "model_id": "yolov7_paper",
+    "model_sha256": "7a13e66f91047cce0e251c05f64159646847e842af31d60441c63dcdfad7825d",
+    "sha256": "2ad6c1479ce79a8de40c3cc0d0ce2bdf654eca253a467d11c51f1ccf3d31bf0a"
+  },
+  {
+    "file": "models/yolov7_paper/analysis/candidate_ranking.json",
+    "model_id": "yolov7_paper",
+    "model_sha256": "7a13e66f91047cce0e251c05f64159646847e842af31d60441c63dcdfad7825d",
+    "sha256": "474991a6094c64e48c8dc1b62bfd9849c5338417a6b95cf6186efdb89185fff6"
+  }
+]

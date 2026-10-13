@@ -1,0 +1,7 @@
+quality_filter,energy_basis,splits,n_performance,faster_than_fastest_full,n_energy,lower_than_min_full,fastest_baseline_changes,lowest_energy_baseline_changes,speed_direction_changes,energy_direction_changes
+all_admitted,comparison,204,132,44,188,60,0,0,0,0
+all_admitted,raw,204,132,44,188,75,0,37,0,15
+both_reference_close,comparison,204,123,44,171,57,0,1,0,0
+both_reference_close,raw,204,123,44,171,72,0,38,0,15
+exclude_administrative_receipt_gaps,comparison,204,115,38,171,60,0,0,0,0
+exclude_administrative_receipt_gaps,raw,204,115,38,171,75,0,20,0,15

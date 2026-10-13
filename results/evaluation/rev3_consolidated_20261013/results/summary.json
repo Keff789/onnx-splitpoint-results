@@ -1,0 +1,74 @@
+{
+  "administrative_quality_receipt_gaps_native": 17,
+  "admitted_quality_loss": {
+    "generic": 17,
+    "native": 23
+  },
+  "boundaries": 13,
+  "cases": 450,
+  "diagnostic": {
+    "energy_relative_change": 0.003598078449767561,
+    "energy_single_j_per_task": 0.5514843437277025,
+    "fps_relative_change": -0.023710551499766308,
+    "fps_single": 49.12982270830348,
+    "historical_fps_median": 50.32300900493827,
+    "historical_mean_j_per_task": 0.5495071738076326,
+    "scope": "separate_diagnostic_single_no_generalization_or_CI_test"
+  },
+  "fastest_full_comparison": {
+    "faster": 44,
+    "speedup_max": 1.7052547123217439,
+    "speedup_median": 0.8980954081457642,
+    "speedup_min": 0.16725043466614725,
+    "speedup_q25": 0.645052839369814,
+    "speedup_q75": 1.087011375196355,
+    "splits": 132
+  },
+  "full_pair_gates": {
+    "claim_but_not_semantic": 28,
+    "claim_flag": 340,
+    "energy_admitted": 312,
+    "performance_admitted": 200,
+    "semantic_and_claim": 312,
+    "total": 396
+  },
+  "generic": 204,
+  "lowest_full_energy_comparison": {
+    "lower": 60,
+    "ratio_max": 4.6009340277395,
+    "ratio_median": 1.0716908916554329,
+    "ratio_min": 0.22258247864129754,
+    "ratio_q25": 0.9594691272540715,
+    "ratio_q75": 1.2875379569840053,
+    "splits": 188
+  },
+  "native": 246,
+  "native_generic": {
+    "both_better": 134,
+    "energy_lower": 154,
+    "energy_ratio_max": 1.061609095193167,
+    "energy_ratio_median": 0.755245694654413,
+    "energy_ratio_min": 0.21021946827491225,
+    "energy_ratio_q25": 0.624686146984802,
+    "energy_ratio_q75": 0.9955059204865577,
+    "faster": 139,
+    "fps_ratio_max": 6.040180237574431,
+    "fps_ratio_median": 1.3613348315788745,
+    "fps_ratio_min": 0.8935545445330563,
+    "fps_ratio_q25": 0.9706677596847336,
+    "fps_ratio_q75": 1.7491713674151197,
+    "n_energy": 198,
+    "n_joint": 198,
+    "n_pairs": 204,
+    "n_performance": 204
+  },
+  "normal_energy": 437,
+  "normalization_direction_changes": 34,
+  "pipeline_missing": 0,
+  "pipeline_rows": 720,
+  "posthoc_only": true,
+  "quality_loss": {
+    "generic": 17,
+    "native": 26
+  }
+}

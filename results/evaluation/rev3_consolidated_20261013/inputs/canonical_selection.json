@@ -1,0 +1,16 @@
+{
+  "historical": {
+    "coverage": "_analysis/final_20261004/analysis/public/inputs/coverage.csv",
+    "energy_cases": "_analysis/final_20261004/analysis/public/inputs/energy_cases.csv",
+    "energy_physical_attempts": "_analysis/final_20261004/analysis/public/inputs/energy_physical_attempts.csv",
+    "energy_repeats": "_analysis/final_20261004/analysis/public/inputs/energy_repeats.csv",
+    "generic_cases": "_analysis/final_20261004/analysis/public/inputs/generic_cases.csv",
+    "generic_raw": "_analysis/final_20261004/analysis/public/inputs/generic_raw.csv",
+    "generic_short_predecessors": "_analysis/final_20261004/analysis/public/inputs/generic_short_predecessors.csv",
+    "native_cases": "_analysis/final_20261004/analysis/public/inputs/native_cases.csv",
+    "performance_repeats": "_analysis/final_20261004/analysis/public/inputs/performance_repeats.csv",
+    "quality": "_analysis/final_20261004/analysis/public/inputs/quality.csv"
+  },
+  "precedence": "Rev3 replaces 450 completed-task result selections only. Broader historical quality/raw-endpoint/unsupported/diagnostic cohorts retain their own identities.",
+  "revision3": "_analysis/twix_20261013/public/inputs/cases.json"
+}
