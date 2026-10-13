@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-13T04:11:04.892637+00:00",
+  "version": "2.94.0",
+  "installed_commit": "db729b9fcde00e4bcadf9200d43282977d7bf1cc",
+  "source_commit": "db729b9fcde00e4bcadf9200d43282977d7bf1cc",
+  "remote_ref": "refs/heads/main",
+  "remote_commit": "db729b9fcde00e4bcadf9200d43282977d7bf1cc",
+  "installed_clean": true,
+  "source_clean": true,
+  "normal_build_and_install_receipt": "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/PRODUCT_PUBLICATION_AND_INSTALL.json",
+  "normal_build_and_install_receipt_sha256": "084f1ce21eb2e51e1d64322341213a9fa81cf75fdedd843d04b2fb7df07a335f",
+  "measurement_completed_before_final_check": true,
+  "new_version_release_created": false
+}

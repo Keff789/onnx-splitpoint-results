@@ -1,0 +1,231 @@
+{
+  "at": "2026-10-13T04:49:32.511300+00:00",
+  "status": "SCIENTIFIC_DELTA_AND_DATA_ARCHIVE_COMPLETE",
+  "phase_a": "COMPLETE",
+  "phase_b": "COMPLETE",
+  "phase_c_central": "COMPLETE",
+  "phase_c_archive": "COMPLETE",
+  "capture_scope": "Original 426 identities; only their 256 missing slots on86 identities. No additional groups authorized.",
+  "merge": {
+    "old_complete_points_reused": 340,
+    "old_valid_slots_preserved_exactly": 1022,
+    "partial_old_slots_preserved": 2,
+    "native_points_imported_without_capture_in_phase_a": 55
+  },
+  "capture": {
+    "queue_points": 426,
+    "original_valid_repeats_preserved_exactly": 1022,
+    "new_valid_slots": 256,
+    "valid_slots_now": 1278,
+    "missing_slots": 0,
+    "complete_points": 426,
+    "new_physical_starts": 260,
+    "new_failed_physical_starts": 4,
+    "new_unfinished_physical_starts": 0,
+    "new_preflight_only_attempts": 1,
+    "old_attempts_with_normal_accounting_changes": 1,
+    "new_attempts_outside_authorized_missing_slots": 0
+  },
+  "cumulative_queue_attempts": {
+    "points": 426,
+    "valid_slots": 1278,
+    "missing_slots": 0,
+    "complete_points": 426,
+    "partial_points": 0,
+    "zero_slot_points": 0,
+    "physical_starts": 1424,
+    "failed_physical_starts": 146,
+    "unfinished_physical_starts": 0,
+    "native_merge_candidates": 0
+  },
+  "central": {
+    "native": {
+      "rows": 246,
+      "normal_quality_eligible": 244,
+      "normal_claim_eligible": 235,
+      "normal_energy_eligible": 233,
+      "energy_efficiency_claim_eligible": 233,
+      "quality_classes": {
+        "reference_close": 220,
+        "accuracy_loss": 26
+      },
+      "energy_statuses": {
+        "normal_report_verified_current_configuration": 233,
+        "not_measured": 10,
+        "historical_screening_only_not_final_claim": 3
+      }
+    },
+    "generic_completed": {
+      "rows": 204,
+      "normal_quality_eligible": 204,
+      "normal_claim_eligible": 204,
+      "normal_energy_eligible": 204,
+      "energy_efficiency_claim_eligible": 204,
+      "quality_classes": {
+        "reference_close": 187,
+        "accuracy_loss": 17
+      },
+      "energy_statuses": {
+        "normal_report_verified_current_configuration": 204
+      }
+    }
+  },
+  "matrix_rows": 450,
+  "queue_rows": 426,
+  "outside_queue_rows": 24,
+  "outside_queue_normal_energy_rows": 11,
+  "outside_queue_unmeasured_or_screening_rows": 13,
+  "native_energy_pair_statuses": {
+    "claim_comparable": 340,
+    "ineligible_or_contract_mismatch": 56
+  },
+  "new_performance_cohorts": 0,
+  "new_n5000_evaluations": 0,
+  "all_performance_and_quality_fields_unchanged": true,
+  "deepx_resnet_b119": "Only repeat:1 added; original repeat:0 and repeat:2 retained unchanged.",
+  "software": {
+    "at": "2026-10-13T04:11:04.892637+00:00",
+    "version": "2.94.0",
+    "installed_commit": "db729b9fcde00e4bcadf9200d43282977d7bf1cc",
+    "source_commit": "db729b9fcde00e4bcadf9200d43282977d7bf1cc",
+    "remote_ref": "refs/heads/main",
+    "remote_commit": "db729b9fcde00e4bcadf9200d43282977d7bf1cc",
+    "installed_clean": true,
+    "source_clean": true,
+    "normal_build_and_install_receipt": "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/PRODUCT_PUBLICATION_AND_INSTALL.json",
+    "normal_build_and_install_receipt_sha256": "084f1ce21eb2e51e1d64322341213a9fa81cf75fdedd843d04b2fb7df07a335f",
+    "measurement_completed_before_final_check": true,
+    "new_version_release_created": false
+  },
+  "evidence": {
+    "PHASE_A_NORMAL_IMPORT_RESULTS.json": {
+      "path": "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/PHASE_A_NORMAL_IMPORT_RESULTS.json",
+      "sha256": "45f1702c09590eb7cb0f5b94240bf01627acb00e3dae9bb24c83ff566b3532a0"
+    },
+    "DELTA_JOURNAL_BALANCE.json": {
+      "path": "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/DELTA_JOURNAL_BALANCE.json",
+      "sha256": "3cf81159e2cd066fc4e521af87e04b92b620337a5906a96abbe6e935dfe3f073"
+    },
+    "FINAL_DELTA_COUNTER_REVIEW.json": {
+      "path": "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/FINAL_DELTA_COUNTER_REVIEW.json",
+      "sha256": "0b423ff9289c1b69c225ba376e77e2e593f850a0f91b6f70845ff960bd48507d"
+    },
+    "DELTA_CENTRAL_RESULTS.json": {
+      "path": "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/DELTA_CENTRAL_RESULTS.json",
+      "sha256": "4adeb7497367428042d9f576cf646ba2a84d5e277b58fe4ebaca6c7b2b6e9fcc"
+    },
+    "DELTA_RESULT_TABLE.csv": {
+      "path": "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/DELTA_RESULT_TABLE.csv",
+      "sha256": "afa6d54225d92f80b1723c958800d455e8f6ee286a8acabc9abed09f09e145d3"
+    },
+    "SCIENTIFIC_DELTA_PROFILE.json": {
+      "path": "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/SCIENTIFIC_DELTA_PROFILE.json",
+      "sha256": "0965d922d40892343e5e2b69eb6e8df1cea5fe4c87a2a78cc17e217f6da3bf98"
+    },
+    "PRODUCT_FINAL_VERIFICATION.json": {
+      "path": "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/PRODUCT_FINAL_VERIFICATION.json",
+      "sha256": "18b17d544f21c2a1a121c3d0023fe10fbc3dd2f929c9d560e9f5546b4a490d79"
+    }
+  },
+  "archive_target": "archive:revision3",
+  "archive_completion_claimed": true,
+  "further_hardware_authorized": false,
+  "archive_completion_receipt": {
+    "path": "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/ARCHIVE_COMPLETION_RECEIPT.json",
+    "sha256": "be2c00c4133d5dff1b6ce0420a538f38604c902d3dd17109ee165c1b4923ede1"
+  },
+  "reviewer_delivery": {
+    "schema": "private-compact-review-delivery/v1",
+    "at": "2026-10-13T04:51:12.338962+00:00",
+    "state": "PASS_BOUNDED_DELTA_METADATA_DELIVERY",
+    "delivery_complete": true,
+    "local_zip": "revision3:/review_package/delta_closeout_20261013/REV3_DELTA_ABSCHLUSS_20261013.zip",
+    "zip_sha256": "301070f953ce51e61ad37b586ef0a61427ecb17a7a34bbc9640509d450c37ede",
+    "zip_bytes": 3950469,
+    "included_unique_files": 204,
+    "verification": "revision3:/review_package/delta_closeout_20261013/PACKAGE_VERIFICATION.json",
+    "verification_sha256": "ee073ec932327dc1f5b5179747b3eddf3010abfc910f86553bb986257035a469",
+    "archive_target": "archive:revision3/delta_20261013/reviewer_delivery",
+    "normal_transfer_receipt": "revision3:/archive_receipts/delta_20261013__reviewer_delivery.json",
+    "normal_transfer_receipt_sha256": "685d8db43f3ef144b4ef89930b0e8d5fb3bfed8fecfb2bbaac2dda607ff61eeb",
+    "data_checkpoint": {
+      "source": "revision3:/archive_publication/checkpoint_20261013T044820Z",
+      "destination": "_snapshots/checkpoint_20261013T044820Z",
+      "manifest_sha256": "94118442b70a435938e48bdc40d3a05a7930abf840dd62d8be05872e91842ac5",
+      "previous_pointer": {
+        "source": "revision3:/archive_publication/checkpoint_20261012T055244Z",
+        "destination": "_snapshots/checkpoint_20261012T055244Z",
+        "manifest_sha256": "58ab2cc598ac17302b2127ef966f14cff113e6565c5ff9b5aff4b3d9eb470dce",
+        "previous_pointer": {
+          "source": "revision3:/archive_publication/checkpoint_20261011T212151Z",
+          "destination": "_snapshots/checkpoint_20261011T212151Z",
+          "manifest_sha256": "d61757163c8d8ea364e23f8b95216bfa057ff1f4855de4f2ba60490d86eba419",
+          "previous_pointer": {
+            "source": "revision3:/archive_publication/checkpoint_20261011T174022Z",
+            "destination": "_snapshots/checkpoint_20261011T174022Z",
+            "manifest_sha256": "1bb6f1809899b28d4900c1377dda6ab27586b149fa491fc3db7f56159400cc1b",
+            "previous_pointer": {
+              "source": "revision3:/archive_publication/checkpoint_20261011T153308Z",
+              "destination": "_snapshots/checkpoint_20261011T153308Z",
+              "manifest_sha256": "2f1f0359f798acc6d05d530237c986f0038d1fe77f78a52672737c3ed4edc5f0",
+              "previous_pointer": {
+                "source": "revision3:/archive_publication/checkpoint_20261011T144311Z",
+                "destination": "_snapshots/checkpoint_20261011T144311Z",
+                "manifest_sha256": "c9d1d554a4c420fc6d78573e047bbc030729da196f56af39de5d660786e06825",
+                "previous_pointer": {
+                  "source": "revision3:/archive_publication/checkpoint_20261011T114428Z",
+                  "destination": "_snapshots/checkpoint_20261011T114428Z",
+                  "manifest_sha256": "a47dac32c810f43f15882cace3bea2cb311236e33588db799a0c4051e08f0aba",
+                  "previous_pointer": {
+                    "source": "revision3:/archive_publication/checkpoint_20261011T095556Z",
+                    "destination": "_snapshots/checkpoint_20261011T095556Z",
+                    "manifest_sha256": "144e5433ff45330ba4f51484a051140168ad5a6d3bf4a379b46a00253f5144be",
+                    "previous_pointer": {
+                      "source": "revision3:/archive_publication/checkpoint_20261011T054201Z",
+                      "destination": "_snapshots/checkpoint_20261011T054201Z",
+                      "manifest_sha256": "0093661bdaa2636358464b2026e4da68bb7bc2352f7d889ed4ea2dba376a6d95",
+                      "previous_pointer": {
+                        "source": "revision3:/archive_publication/checkpoint_20261010T142545Z",
+                        "destination": "_snapshots/checkpoint_20261010T142545Z",
+                        "manifest_sha256": "c5b401081227ec923ae9c81f10c8c364cebec4543e2711465ad56292f0f26500",
+                        "previous_pointer": {
+                          "source": "revision3:/archive_publication/checkpoint_20261009T152557Z",
+                          "destination": "_snapshots/checkpoint_20261009T152557Z",
+                          "manifest_sha256": "d4528c6df8b91a2927887bfe8359d874ed50e8b120ce7968649bd9b6fd5d4fcf"
+                        },
+                        "verified_group_files": 65147,
+                        "verified_groups": 377
+                      },
+                      "verified_group_files": 92202,
+                      "verified_groups": 419
+                    },
+                    "verified_group_files": 94705,
+                    "verified_groups": 428
+                  },
+                  "verified_group_files": 98262,
+                  "verified_groups": 441
+                },
+                "verified_group_files": 104757,
+                "verified_groups": 491
+              },
+              "verified_group_files": 105688,
+              "verified_groups": 499
+            },
+            "verified_group_files": 112221,
+            "verified_groups": 523
+          },
+          "verified_group_files": 122481,
+          "verified_groups": 560
+        },
+        "verified_group_files": 141648,
+        "verified_groups": 614
+      },
+      "verified_group_files": 193588,
+      "verified_groups": 777
+    },
+    "verification_scope": "Included metadata hashes; scientific normal consumer receipts retained; no full raw/core replay.",
+    "previous_delivery": "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/before_phase_c/COMPACT_REVIEW_DELIVERY.json"
+  },
+  "phase_c_delivery": "COMPLETE",
+  "result_publication_status": "EXPORT_AND_PUSH_IN_PROGRESS"
+}

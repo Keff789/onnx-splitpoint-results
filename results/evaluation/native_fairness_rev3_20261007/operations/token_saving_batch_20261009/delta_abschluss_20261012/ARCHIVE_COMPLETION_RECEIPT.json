@@ -1,0 +1,1248 @@
+{
+  "at": "2026-10-13T04:48:46.123667+00:00",
+  "status": "PASS_DATA_ARCHIVE_COMPLETE",
+  "scope": "All existing and new authorized scientific delta acquisitions, failed attempts, directly bound metadata, normal imports and central results; compact delivery and public Git are separate final metadata steps.",
+  "checkpoint": {
+    "source": "revision3:/archive_publication/checkpoint_20261013T044820Z",
+    "destination": "_snapshots/checkpoint_20261013T044820Z",
+    "manifest_sha256": "94118442b70a435938e48bdc40d3a05a7930abf840dd62d8be05872e91842ac5",
+    "previous_pointer": {
+      "source": "revision3:/archive_publication/checkpoint_20261012T055244Z",
+      "destination": "_snapshots/checkpoint_20261012T055244Z",
+      "manifest_sha256": "58ab2cc598ac17302b2127ef966f14cff113e6565c5ff9b5aff4b3d9eb470dce",
+      "previous_pointer": {
+        "source": "revision3:/archive_publication/checkpoint_20261011T212151Z",
+        "destination": "_snapshots/checkpoint_20261011T212151Z",
+        "manifest_sha256": "d61757163c8d8ea364e23f8b95216bfa057ff1f4855de4f2ba60490d86eba419",
+        "previous_pointer": {
+          "source": "revision3:/archive_publication/checkpoint_20261011T174022Z",
+          "destination": "_snapshots/checkpoint_20261011T174022Z",
+          "manifest_sha256": "1bb6f1809899b28d4900c1377dda6ab27586b149fa491fc3db7f56159400cc1b",
+          "previous_pointer": {
+            "source": "revision3:/archive_publication/checkpoint_20261011T153308Z",
+            "destination": "_snapshots/checkpoint_20261011T153308Z",
+            "manifest_sha256": "2f1f0359f798acc6d05d530237c986f0038d1fe77f78a52672737c3ed4edc5f0",
+            "previous_pointer": {
+              "source": "revision3:/archive_publication/checkpoint_20261011T144311Z",
+              "destination": "_snapshots/checkpoint_20261011T144311Z",
+              "manifest_sha256": "c9d1d554a4c420fc6d78573e047bbc030729da196f56af39de5d660786e06825",
+              "previous_pointer": {
+                "source": "revision3:/archive_publication/checkpoint_20261011T114428Z",
+                "destination": "_snapshots/checkpoint_20261011T114428Z",
+                "manifest_sha256": "a47dac32c810f43f15882cace3bea2cb311236e33588db799a0c4051e08f0aba",
+                "previous_pointer": {
+                  "source": "revision3:/archive_publication/checkpoint_20261011T095556Z",
+                  "destination": "_snapshots/checkpoint_20261011T095556Z",
+                  "manifest_sha256": "144e5433ff45330ba4f51484a051140168ad5a6d3bf4a379b46a00253f5144be",
+                  "previous_pointer": {
+                    "source": "revision3:/archive_publication/checkpoint_20261011T054201Z",
+                    "destination": "_snapshots/checkpoint_20261011T054201Z",
+                    "manifest_sha256": "0093661bdaa2636358464b2026e4da68bb7bc2352f7d889ed4ea2dba376a6d95",
+                    "previous_pointer": {
+                      "source": "revision3:/archive_publication/checkpoint_20261010T142545Z",
+                      "destination": "_snapshots/checkpoint_20261010T142545Z",
+                      "manifest_sha256": "c5b401081227ec923ae9c81f10c8c364cebec4543e2711465ad56292f0f26500",
+                      "previous_pointer": {
+                        "source": "revision3:/archive_publication/checkpoint_20261009T152557Z",
+                        "destination": "_snapshots/checkpoint_20261009T152557Z",
+                        "manifest_sha256": "d4528c6df8b91a2927887bfe8359d874ed50e8b120ce7968649bd9b6fd5d4fcf"
+                      },
+                      "verified_group_files": 65147,
+                      "verified_groups": 377
+                    },
+                    "verified_group_files": 92202,
+                    "verified_groups": 419
+                  },
+                  "verified_group_files": 94705,
+                  "verified_groups": 428
+                },
+                "verified_group_files": 98262,
+                "verified_groups": 441
+              },
+              "verified_group_files": 104757,
+              "verified_groups": 491
+            },
+            "verified_group_files": 105688,
+            "verified_groups": 499
+          },
+          "verified_group_files": 112221,
+          "verified_groups": 523
+        },
+        "verified_group_files": 122481,
+        "verified_groups": 560
+      },
+      "verified_group_files": 141648,
+      "verified_groups": 614
+    },
+    "verified_group_files": 193588,
+    "verified_groups": 777
+  },
+  "checkpoint_pointer": "revision3:/CURRENT_ARCHIVE_PROGRESS_SNAPSHOT.json",
+  "snapshot_transfer_receipt": "revision3:/archive_receipts/_snapshots__checkpoint_20261013T044820Z.json",
+  "snapshot_transfer_receipt_sha256": "e7893d80745cedaacc8a884c895c78db2d1909dd5faefb399234029018797e26",
+  "payload_balance": {
+    "at": "2026-10-13T04:45:38.628562+00:00",
+    "status": "PASS_ALL_PLANNED_PAYLOADS_VERIFIED",
+    "old_checkpoint": "revision3:/archive_publication/checkpoint_20261012T055244Z",
+    "old_receipt_groups_reused": 614,
+    "old_index_entries_reused": 141648,
+    "new_groups": 161,
+    "new_files": 47765,
+    "new_bytes": 15415013057,
+    "receipts": [
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__central_generation.json",
+        "sha256": "4e62789533ef370920eff4f455084aa3cd5dda8595310701602a0a9e6576f2b1",
+        "target": "archive:revision3/delta_20261013/central_generation",
+        "files": 265,
+        "bytes": 852227027
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__changed_metadata.json",
+        "sha256": "ed0da3b6141dbb255dc056aa4d5eb19823da2305683c49b352462c5d49bdb09c",
+        "target": "archive:revision3/delta_20261013/changed_metadata",
+        "files": 15,
+        "bytes": 14132331
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_mobilenet_v3_large_b001_final_20261010.json",
+        "sha256": "5debfa6f463d0ba1d2a85ba092a7db0a1f6b58514bacaf891eeaf6898ef38d8a",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_mobilenet_v3_large_b001_final_20261010",
+        "files": 287,
+        "bytes": 32716966
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_mobilenet_v3_large_b010_final_20261010.json",
+        "sha256": "8e65cbd0182368332779d33f647e1db0332df1090147198f8857fe891458241a",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_mobilenet_v3_large_b010_final_20261010",
+        "files": 287,
+        "bytes": 32717162
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_mobilenet_v3_large_b019_final_20261010.json",
+        "sha256": "3187bf11792ea932d110fdf84a8e3235bb7f51ecaa5a4eaf9e6a8eb4820f76ee",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_mobilenet_v3_large_b019_final_20261010",
+        "files": 287,
+        "bytes": 32717428
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_mobilenet_v3_large_b027_final_20261010.json",
+        "sha256": "60bac2a03932d478d3f316cac92ee501d06d1e80070f1c780fdec4ac28767918",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_mobilenet_v3_large_b027_final_20261010",
+        "files": 284,
+        "bytes": 32512717
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_mobilenet_v3_large_b039_final_20261010.json",
+        "sha256": "baed95a28d263ea0f249aec5f18813fdcaec23481ad19046920091cfc3ba8c91",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_mobilenet_v3_large_b039_final_20261010",
+        "files": 284,
+        "bytes": 32686905
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_mobilenet_v3_large_b056_final_20261010.json",
+        "sha256": "616a6456767bdef97759c2d80c33b48658ad119e8c8964df377f485648c1e420",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_mobilenet_v3_large_b056_final_20261010",
+        "files": 284,
+        "bytes": 32513175
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_mobilenet_v3_large_b062_final_20261010.json",
+        "sha256": "6de7e0e44e0a42df0fb714d5ca92267603012ac4e11603bb1f58030bfd7ca094",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_mobilenet_v3_large_b062_final_20261010",
+        "files": 284,
+        "bytes": 32687265
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_mobilenet_v3_large_b068_final_20261010.json",
+        "sha256": "0a6cb1102e4a9e838eaacf120333b9fd9dde95e4fce02f566cf9402a283a7b05",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_mobilenet_v3_large_b068_final_20261010",
+        "files": 284,
+        "bytes": 32687602
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_mobilenet_v3_large_b074_final_20261010.json",
+        "sha256": "5017c5a42b59eadfddfa4b153ef1dad1c243974601d795925c2155c498541286",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_mobilenet_v3_large_b074_final_20261010",
+        "files": 284,
+        "bytes": 32512320
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_mobilenet_v3_large_b078_final_20261010.json",
+        "sha256": "a5aaeb3e13d290ff4d3cf26a9948281d18aaed9baaeeb6ed1022d48d5f145e7e",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_mobilenet_v3_large_b078_final_20261010",
+        "files": 284,
+        "bytes": 32688251
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_mobilenet_v3_large_b085_final_20261010.json",
+        "sha256": "c72c7de4746ed85a1f86c30f41814016e3dd7657cbbf8d52416e56e755425d05",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_mobilenet_v3_large_b085_final_20261010",
+        "files": 284,
+        "bytes": 32688033
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_mobilenet_v3_large_b097_final_20261010.json",
+        "sha256": "37bf3e76203e5d76cca920276738d481b6b756c2fff022e42c73dc8cdddc3a30",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_mobilenet_v3_large_b097_final_20261010",
+        "files": 284,
+        "bytes": 32686755
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_mobilenet_v3_large_b100_final_20261010.json",
+        "sha256": "c3bd0d1c8764f6b9940fabe9d567c5c22d86bf6cd49fee60734945b86f11b43f",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_mobilenet_v3_large_b100_final_20261010",
+        "files": 284,
+        "bytes": 32688522
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_mobilenet_v3_large_b108_final_20261010.json",
+        "sha256": "8d30954a869ae91021056cbdcbd850f4dee45a9a1404f8faf9a9f60bd2b83a63",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_mobilenet_v3_large_b108_final_20261010",
+        "files": 284,
+        "bytes": 32687989
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_mobilenet_v3_large_b120_final_20261010.json",
+        "sha256": "c9f1a4d886c8af1fd3848ca51a2e3c27b8ef886b2de31b526d16a96ad423a04e",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_mobilenet_v3_large_b120_final_20261010",
+        "files": 284,
+        "bytes": 32686902
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_mobilenet_v3_large_b132_final_20261010.json",
+        "sha256": "cdb80327b4efe57963c1591f56aa8ce35e08a590fb1a3d3f4088ed0142dbe58f",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_mobilenet_v3_large_b132_final_20261010",
+        "files": 284,
+        "bytes": 32686457
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_mobilenet_v3_large_b135_final_20261010.json",
+        "sha256": "de4adf7afa3c181bcc3386cf311ee6629917b2a2de340e7c9365fa3c124d5431",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_mobilenet_v3_large_b135_final_20261010",
+        "files": 284,
+        "bytes": 32509401
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_regnet_x_1_6gf_b001_final_20261010.json",
+        "sha256": "7ad8d29bf8134dea0688c7ea1778ab9d9e2659ae42d0173df75422d8ce9d2374",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_regnet_x_1_6gf_b001_final_20261010",
+        "files": 287,
+        "bytes": 32695879
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_regnet_x_1_6gf_b008_final_20261010.json",
+        "sha256": "bf79be12f9e71c5a56031607e6486437053ccd238c48f2b217c2a16a0cf50bb8",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_regnet_x_1_6gf_b008_final_20261010",
+        "files": 287,
+        "bytes": 32694872
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_regnet_x_1_6gf_b015_final_20261010.json",
+        "sha256": "ab2f3d0015f31537e64fca62280446525f0f8fdbd234cc14f0f7ed3c235a258d",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_regnet_x_1_6gf_b015_final_20261010",
+        "files": 287,
+        "bytes": 32694780
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_regnet_x_1_6gf_b023_final_20261010.json",
+        "sha256": "4ff08fd9c6406026b98b395f40e2cbfe29b7ac607bc25ec6fb14a463d5200ea3",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_regnet_x_1_6gf_b023_final_20261010",
+        "files": 287,
+        "bytes": 32519954
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_regnet_x_1_6gf_b030_final_20261010.json",
+        "sha256": "0e64544c665464bd6ee30261ddc71d7e464f2fe8a61da597819fb1aa1267ff55",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_regnet_x_1_6gf_b030_final_20261010",
+        "files": 284,
+        "bytes": 32665003
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_regnet_x_1_6gf_b037_final_20261010.json",
+        "sha256": "7af0c811463508caf2c47e89b72efd33e84af03e65557f55c8a48b934faef84b",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_regnet_x_1_6gf_b037_final_20261010",
+        "files": 284,
+        "bytes": 32665235
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_regnet_x_1_6gf_b044_final_20261010.json",
+        "sha256": "b6b570da8af2d4c1ba10479edda2d140c157da31c4d50ae451a78a8445ffedb4",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_regnet_x_1_6gf_b044_final_20261010",
+        "files": 284,
+        "bytes": 32665884
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_regnet_x_1_6gf_b052_final_20261010.json",
+        "sha256": "0876be7f87e197e149619537ea1de6e67c0bc680312aa726a15924570fc8063d",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_regnet_x_1_6gf_b052_final_20261010",
+        "files": 284,
+        "bytes": 32492137
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_regnet_x_1_6gf_b059_final_20261010.json",
+        "sha256": "2b51c3c6829262a011e215ba48584846463a3e5913cc588c18c43613cb08b699",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_regnet_x_1_6gf_b059_final_20261010",
+        "files": 284,
+        "bytes": 32665969
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_regnet_x_1_6gf_b066_final_20261010.json",
+        "sha256": "2ec6c4973da326e493155b8a09d9dd6b67425748eab447ab688e829bc516784b",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_regnet_x_1_6gf_b066_final_20261010",
+        "files": 349,
+        "bytes": 40375674
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_regnet_x_1_6gf_b073_final_20261010.json",
+        "sha256": "1d074ca487b810e425e06d865cf44505fdab56e8adc9ffbd17e5172c2f9a05bc",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_regnet_x_1_6gf_b073_final_20261010",
+        "files": 284,
+        "bytes": 32493035
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_regnet_x_1_6gf_b080_final_20261010.json",
+        "sha256": "c97138fcc70449a7b05a8c9302cc2bceeec543a1b71e63d406a5348931043526",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_regnet_x_1_6gf_b080_final_20261010",
+        "files": 284,
+        "bytes": 32667440
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_regnet_x_1_6gf_b087_final_20261010.json",
+        "sha256": "1ae8967a43268c98e9a44dbf2387750a8eb52ef96a4c74f3ba6203cdfe3ecb15",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_regnet_x_1_6gf_b087_final_20261010",
+        "files": 284,
+        "bytes": 32667438
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_regnet_x_1_6gf_b088_final_20261010.json",
+        "sha256": "b49f502c3624661f692313dad811a02fa919ca67522f13f1f1a9c99b4b465bc1",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_regnet_x_1_6gf_b088_final_20261010",
+        "files": 284,
+        "bytes": 32667789
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_regnet_x_1_6gf_b095_final_20261010.json",
+        "sha256": "e23e2abdc08c11087de444cd5ce8c5fcbe0bccaaa5995375d33695d035f8e7da",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_regnet_x_1_6gf_b095_final_20261010",
+        "files": 284,
+        "bytes": 32667963
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_regnet_x_1_6gf_b102_final_20261010.json",
+        "sha256": "3e81833499b1c1cf5ac2d457c7116116251e17dca3aa2aba891ea368f6bab3f5",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_regnet_x_1_6gf_b102_final_20261010",
+        "files": 284,
+        "bytes": 32667629
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_regnet_x_1_6gf_b109_final_20261010.json",
+        "sha256": "d864cc2e2dbaff8e98cb0a5e13dc63ff6aead7cccc1a3baf5622b70ef50fb316",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_regnet_x_1_6gf_b109_final_20261010",
+        "files": 284,
+        "bytes": 32667968
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_regnet_x_1_6gf_b115_final_20261010.json",
+        "sha256": "7f15cd39fb873503b179831faeb30fccd17de95f9b035de2c5220be7ef458cc6",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_regnet_x_1_6gf_b115_final_20261010",
+        "files": 284,
+        "bytes": 32668007
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_regnet_x_1_6gf_b123_final_20261010.json",
+        "sha256": "ca9416a3e93b73b09c5b16e8cda7a6457e76b571bb5163337ad002f6c4de6cc0",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_regnet_x_1_6gf_b123_final_20261010",
+        "files": 284,
+        "bytes": 32667445
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_regnet_x_1_6gf_b132_final_20261010.json",
+        "sha256": "097004de92b5bb1ed18bdd47efeb79e45111ce1123ba6c77264829d3df3c189f",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_regnet_x_1_6gf_b132_final_20261010",
+        "files": 284,
+        "bytes": 32475598
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_resnet50_b002_final_20261010.json",
+        "sha256": "81b9c7abbcf518172fd0429137fbb2f4999636f6b34c33a7884b754f4c4df276",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_resnet50_b002_final_20261010",
+        "files": 287,
+        "bytes": 32492893
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_resnet50_b009_final_20261010.json",
+        "sha256": "b63b2377b18ffaa737e1a0a57689e4dda5dec3863d51cc97b85913e3c803adf1",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_resnet50_b009_final_20261010",
+        "files": 287,
+        "bytes": 32665451
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_resnet50_b016_final_20261010.json",
+        "sha256": "0e78cecc96b01f422cdd588d64468af714f2a9a9aa3482d912c1ccaae72d775d",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_resnet50_b016_final_20261010",
+        "files": 287,
+        "bytes": 32665876
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_resnet50_b023_final_20261010.json",
+        "sha256": "a07bd445ebeb6faab78586b625976dabb34203d5fb51e327f450f45ae3d7ee4e",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_resnet50_b023_final_20261010",
+        "files": 287,
+        "bytes": 32666283
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_resnet50_b031_final_20261010.json",
+        "sha256": "1c24172d0f9debcd88f9ea4902248f325a6ebd33f7f30cda5f1b37c57127638e",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_resnet50_b031_final_20261010",
+        "files": 284,
+        "bytes": 32637266
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_resnet50_b038_final_20261010.json",
+        "sha256": "2cd4b6e87f32d45df416ad5398263edacf7de2ea50585cad52b15381d42a3cb5",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_resnet50_b038_final_20261010",
+        "files": 284,
+        "bytes": 32637056
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_resnet50_b045_final_20261010.json",
+        "sha256": "937e87b1ceacb092778e0f2b4bb083cfbd949cc80878688884c8668c83f2da7f",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_resnet50_b045_final_20261010",
+        "files": 349,
+        "bytes": 40322474
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_resnet50_b052_final_20261010.json",
+        "sha256": "8dbc40750559c420cf41bcf869958bad55176b7da42f7d2f2d00fc53b68d8ef0",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_resnet50_b052_final_20261010",
+        "files": 284,
+        "bytes": 32637180
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_resnet50_b060_final_20261010.json",
+        "sha256": "3c39a7cf2c7ade27a0712762b16bbb9943f427c14046a08871aad33ac1274f84",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_resnet50_b060_final_20261010",
+        "files": 284,
+        "bytes": 32464180
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_resnet50_b067_final_20261010.json",
+        "sha256": "b4e8148ec432c216c6762f6566b295f43f1684957a2346caa741f6d982da2731",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_resnet50_b067_final_20261010",
+        "files": 284,
+        "bytes": 32464213
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_resnet50_b068_final_20261010.json",
+        "sha256": "dcf242cef3ee695f3274e83e6a755e1fd01310d9a3e39f5d3499780258d9de4b",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_resnet50_b068_final_20261010",
+        "files": 284,
+        "bytes": 32638191
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_resnet50_b074_final_20261010.json",
+        "sha256": "aecf598a22badf2ebd49e37bb15145c0f86f392ea01f84674457acf1c4c74ef8",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_resnet50_b074_final_20261010",
+        "files": 284,
+        "bytes": 32637895
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_resnet50_b081_final_20261010.json",
+        "sha256": "fd53fe38e736196460e83922a59a98218afe55bc13c69496415a9a2860a23a9a",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_resnet50_b081_final_20261010",
+        "files": 284,
+        "bytes": 32637927
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_resnet50_b088_final_20261010.json",
+        "sha256": "c9e272782f45855f3024f095a5effd913f6f4c27a10cc6d4c405a0b3ced25cb6",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_resnet50_b088_final_20261010",
+        "files": 349,
+        "bytes": 40322709
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_resnet50_b095_final_20261010.json",
+        "sha256": "0e63e27483bcbba496c6b7b7e3c62babac093a539a2d5082ac29fd10fc12aa83",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_resnet50_b095_final_20261010",
+        "files": 284,
+        "bytes": 32637659
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_resnet50_b103_final_20261010.json",
+        "sha256": "80433c4b2202b8cbeeda14b12ba9a0d2606db4c7482f6fe5095aad7dd04ed296",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_resnet50_b103_final_20261010",
+        "files": 284,
+        "bytes": 32637915
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_resnet50_b104_final_20261010.json",
+        "sha256": "0c8c184ca978606b5b8c687135fdf58e7dc1b11896f17a7b17ba78934d54a4ef",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_resnet50_b104_final_20261010",
+        "files": 284,
+        "bytes": 32638078
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_resnet50_b110_final_20261010.json",
+        "sha256": "a8d0a0a0c04252f8ee17f6cab327ddaee7ecd2e0bd63c52188b3d363158993aa",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_resnet50_b110_final_20261010",
+        "files": 284,
+        "bytes": 32637920
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_resnet50_b119_final_20261010.json",
+        "sha256": "5a8c294e9b64be3fbdf7064aa357a81d7c6b80550f2484bc05dd5dacd078d988",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_resnet50_b119_final_20261010",
+        "files": 284,
+        "bytes": 32460619
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_yolo11l_b003_final_20261010.json",
+        "sha256": "b90fde115ed909d3cf3c3ca2ac13114e0216c93a251993988639eb24a6b6686b",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_yolo11l_b003_final_20261010",
+        "files": 352,
+        "bytes": 57774212
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_yolo11l_b062_final_20261010.json",
+        "sha256": "3559b91e2e1ae3895cf674d0cec3ff32a3842be157734f798eac1a83bc39a101",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_yolo11l_b062_final_20261010",
+        "files": 284,
+        "bytes": 50007985
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_yolo11l_b120_final_20261010.json",
+        "sha256": "f412d293e6119d216ed87605e08146a594afefc66998a993dd5502273a6e3cf4",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_yolo11l_b120_final_20261010",
+        "files": 284,
+        "bytes": 50127917
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_yolo26m_b003_final_20261010.json",
+        "sha256": "180cab244261b1ec4cb2fc57ed2186091fa3d97332cf5b2380d92bd39ea57e8d",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_yolo26m_b003_final_20261010",
+        "files": 287,
+        "bytes": 33311376
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_yolo26m_b038_final_20261010.json",
+        "sha256": "e16ac1f670f2e3fd8f44707d3cd1673228fc771db8ae5f626610d8d5d5bd7683",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_yolo26m_b038_final_20261010",
+        "files": 284,
+        "bytes": 33106780
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_yolo26m_b043_final_20261010.json",
+        "sha256": "f886ddd4e8ad6c6f1a02ed5f70b163321a41f8042ccb2d28b32dce350f7bbf34",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_yolo26m_b043_final_20261010",
+        "files": 284,
+        "bytes": 33090563
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_yolo26s_b003_final_20261010.json",
+        "sha256": "a3cd0c73df08b5df71065b9948726dccb96fe3a3cf0c05f95a71d552101629f0",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_yolo26s_b003_final_20261010",
+        "files": 287,
+        "bytes": 33288384
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_yolo26s_b021_final_20261010.json",
+        "sha256": "1c5e1d9c8aaef9a89e2fb82c259f28843f24d2534574cf01ae6b53d92fdd558a",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_yolo26s_b021_final_20261010",
+        "files": 287,
+        "bytes": 33120630
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__generic_completed__h10_yolo26s_b038_final_20261010.json",
+        "sha256": "54d6f0c29e014cf5836b36f316870c36eea7cee706b8eb2466bfd0c9e0716623",
+        "target": "archive:revision3/delta_20261013/data/energy/generic_completed/h10_yolo26s_b038_final_20261010",
+        "files": 284,
+        "bytes": 33191453
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__h10_classifier_resnet50_final_20261010__attempts.json",
+        "sha256": "9a2e8a10aeb8f5598d1496f1bc4a3b8a7b14b85e51db577e764fb5412b690abd",
+        "target": "archive:revision3/delta_20261013/data/energy/h10_classifier_resnet50_final_20261010/attempts",
+        "files": 4,
+        "bytes": 258774
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__h10_classifier_resnet50_final_20261010__inputs.json",
+        "sha256": "655023f2ed59cf40c7aa6bcddef20cac3330f61549b1b0c76a61a47fab89bd6a",
+        "target": "archive:revision3/delta_20261013/data/energy/h10_classifier_resnet50_final_20261010/inputs",
+        "files": 4,
+        "bytes": 60442797
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__h10_classifier_resnet50_final_20261010__measurement__resume_attempts__0bc3edb510a54cf984236da02db44c24.json",
+        "sha256": "bfc82283c2e3d15bc328d44a41dc05dc7a36b487d45f42d8f42469d44cf1b02e",
+        "target": "archive:revision3/delta_20261013/data/energy/h10_classifier_resnet50_final_20261010/measurement/resume_attempts/0bc3edb510a54cf984236da02db44c24",
+        "files": 479,
+        "bytes": 107279479
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__h10_classifier_resnet50_final_20261010__owner_preflight.json",
+        "sha256": "24eb6087317e7c106b14dc44f2ecb01b31b463d0cdcd975c716c1b11d7e3535a",
+        "target": "archive:revision3/delta_20261013/data/energy/h10_classifier_resnet50_final_20261010/owner_preflight",
+        "files": 2,
+        "bytes": 23799
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__h10_classifier_resnet50_final_20261010__plancheck.json",
+        "sha256": "bcca5cdf2a27a5e7794974f41a2bce88536c365f3db2463199a31425c9cb3b6e",
+        "target": "archive:revision3/delta_20261013/data/energy/h10_classifier_resnet50_final_20261010/plancheck",
+        "files": 2,
+        "bytes": 5514
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__h10_classifier_resnet50_final_20261010__prepare_attempts.json",
+        "sha256": "f2dfa625cd8ddb4d912a6376ad8757bb74e2bfe434bcd9f4ca27a409f4405a43",
+        "target": "archive:revision3/delta_20261013/data/energy/h10_classifier_resnet50_final_20261010/prepare_attempts",
+        "files": 752,
+        "bytes": 46441792
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__h10_classifier_resnet50_final_20261010__remote-process-leases.json",
+        "sha256": "76f60cba2a2c7cbe2a26a7a6bb87d87d3562a9c70fa795804b1cd142e76a977a",
+        "target": "archive:revision3/delta_20261013/data/energy/h10_classifier_resnet50_final_20261010/remote-process-leases",
+        "files": 421,
+        "bytes": 235402
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__h10_classifier_resnet50_final_20261010__resume_attempts.json",
+        "sha256": "22e4ee18dc6120da12b324b125f9decdb4d90340151847a04c4c861dd16aeabb",
+        "target": "archive:revision3/delta_20261013/data/energy/h10_classifier_resnet50_final_20261010/resume_attempts",
+        "files": 108,
+        "bytes": 1921089
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__native_dx_classifier_regnet_x_1_6gf_final_20261010.json",
+        "sha256": "8329f0de9e3cd8ec2b16efe89a15ae936bf1d246c48a1df173c172a37ecce9d6",
+        "target": "archive:revision3/delta_20261013/data/energy/native_dx_classifier_regnet_x_1_6gf_final_20261010",
+        "files": 4167,
+        "bytes": 806584029
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__native_dx_classifier_resnet50_final_20261010.json",
+        "sha256": "cc0b51c27fbae37b7ed8e5c2c68682e827f3f912b0c7662f6e94ee249da91965",
+        "target": "archive:revision3/delta_20261013/data/energy/native_dx_classifier_resnet50_final_20261010",
+        "files": 3991,
+        "bytes": 813069341
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__native_yolo11_h10_final_20261010.json",
+        "sha256": "9aecf21271379d2c9e45d3de686af7b655b872862b31aeccd99ab377041510f3",
+        "target": "archive:revision3/delta_20261013/data/energy/native_yolo11_h10_final_20261010",
+        "files": 809,
+        "bytes": 169312085
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__native_yolo26m_h10_final_20261010.json",
+        "sha256": "067b3a5686b0f3e57684792483dfe8738e27836cedfa40081ee169072697729c",
+        "target": "archive:revision3/delta_20261013/data/energy/native_yolo26m_h10_final_20261010",
+        "files": 808,
+        "bytes": 170897102
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__native_yolov7_h10_b009_fulls_final_20261010.json",
+        "sha256": "e857ccd7afe4913c81c24ac8deac8c21b83f52155c78d5dd34d821044742f7f3",
+        "target": "archive:revision3/delta_20261013/data/energy/native_yolov7_h10_b009_fulls_final_20261010",
+        "files": 680,
+        "bytes": 114389824
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__energy__native_yolov7_h10_b044_b066_final_20261010.json",
+        "sha256": "0418f27c218f4fc0e4ae6fde7325d488e18076d0390cad0c222e9977247574f3",
+        "target": "archive:revision3/delta_20261013/data/energy/native_yolov7_h10_b044_b066_final_20261010",
+        "files": 496,
+        "bytes": 97130590
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_classifier_resnet50_final_20261010.json",
+        "sha256": "f355f47c4205edfdc2f53c202e1c66c3b387dee2ecb5c065e0b5810cff4cb0d7",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_classifier_resnet50_final_20261010",
+        "files": 116,
+        "bytes": 861986617
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_mobilenet_v3_large_b001_final_20261010.json",
+        "sha256": "a0d20562a26011703d96c5d60a1bccd5800b00fccb33788e4f556301234bb70e",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_mobilenet_v3_large_b001_final_20261010",
+        "files": 3,
+        "bytes": 13045
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_mobilenet_v3_large_b010_final_20261010.json",
+        "sha256": "d1b2e780c24352155cca25ff1b31769f19a6be23b781d816c044a9f0f04e0511",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_mobilenet_v3_large_b010_final_20261010",
+        "files": 2,
+        "bytes": 6848
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_mobilenet_v3_large_b019_final_20261010.json",
+        "sha256": "05f52544a2d200022d556602f705a99114d1e60f5b1a9c6419a9f405f4c84b10",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_mobilenet_v3_large_b019_final_20261010",
+        "files": 2,
+        "bytes": 6849
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_mobilenet_v3_large_b027_final_20261010.json",
+        "sha256": "3f82ffa1dfc1a6945ac03608f7ccc7b86b1f259dd2b49bebcb72cd66c02bc505",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_mobilenet_v3_large_b027_final_20261010",
+        "files": 2,
+        "bytes": 6849
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_mobilenet_v3_large_b039_final_20261010.json",
+        "sha256": "e89b143841e50bc0e7c54ab9576108dfe66d0d8026a112d935d0069cb25703a6",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_mobilenet_v3_large_b039_final_20261010",
+        "files": 2,
+        "bytes": 6848
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_mobilenet_v3_large_b056_final_20261010.json",
+        "sha256": "bc0d4c2d5be6f42b23042807dd63e61776bf18225b3296f15b44a0f30422b09a",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_mobilenet_v3_large_b056_final_20261010",
+        "files": 2,
+        "bytes": 6849
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_mobilenet_v3_large_b062_final_20261010.json",
+        "sha256": "1cc9e3794c1a4482eb707092183bc97ae1e4726ce42373c8a940fe8c812829ec",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_mobilenet_v3_large_b062_final_20261010",
+        "files": 2,
+        "bytes": 6848
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_mobilenet_v3_large_b068_final_20261010.json",
+        "sha256": "497b5b6aef66a555efa2fb12e06137a28931c15d917d3864fc6da4042d892d9b",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_mobilenet_v3_large_b068_final_20261010",
+        "files": 2,
+        "bytes": 6848
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_mobilenet_v3_large_b074_final_20261010.json",
+        "sha256": "0e772838c6267398409ee53f392dc4d63988e55284f3eb84bdb0df84970bb28f",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_mobilenet_v3_large_b074_final_20261010",
+        "files": 2,
+        "bytes": 6848
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_mobilenet_v3_large_b078_final_20261010.json",
+        "sha256": "83f3681dc11e6485c11e352f24377784cd94968624cd15e061f46909a76e4d02",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_mobilenet_v3_large_b078_final_20261010",
+        "files": 2,
+        "bytes": 6848
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_mobilenet_v3_large_b085_final_20261010.json",
+        "sha256": "b87e83f2615fe6f9be0006167f5b3fa73dc1501c69d97b647425aead2b098280",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_mobilenet_v3_large_b085_final_20261010",
+        "files": 2,
+        "bytes": 6847
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_mobilenet_v3_large_b097_final_20261010.json",
+        "sha256": "94794f38ed929ee16e3f1a9cd4554233f750b9fc468bf79900120787753d2041",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_mobilenet_v3_large_b097_final_20261010",
+        "files": 2,
+        "bytes": 6845
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_mobilenet_v3_large_b100_final_20261010.json",
+        "sha256": "b422fc230e4c337df13ecb43a5b4f7a67d11d37796821ac363615c51d793214c",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_mobilenet_v3_large_b100_final_20261010",
+        "files": 2,
+        "bytes": 6848
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_mobilenet_v3_large_b108_final_20261010.json",
+        "sha256": "4588155eae34d91ad79770db7510112a9bcb4e0e4fe72e7af6649084bdcbd3ae",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_mobilenet_v3_large_b108_final_20261010",
+        "files": 2,
+        "bytes": 6848
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_mobilenet_v3_large_b120_final_20261010.json",
+        "sha256": "d0dbbcfebaddcc8c9c55b82da698f376648d483243303d4de48744ec44cdd832",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_mobilenet_v3_large_b120_final_20261010",
+        "files": 2,
+        "bytes": 6847
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_mobilenet_v3_large_b132_final_20261010.json",
+        "sha256": "b05863bc893ca865ff855b5666c03021ce0d3e1f1f6243457918d31d0531dc83",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_mobilenet_v3_large_b132_final_20261010",
+        "files": 2,
+        "bytes": 6848
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_mobilenet_v3_large_b135_final_20261010.json",
+        "sha256": "06e875c9fbe6874a858fc3452367f67938a0b257898091a80d79635a6ae26656",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_mobilenet_v3_large_b135_final_20261010",
+        "files": 2,
+        "bytes": 6848
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_regnet_x_1_6gf_b001_final_20261010.json",
+        "sha256": "c76e55c880020721605a79d77af5a4f16fbef3094362f913f83e38e10c92885f",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_regnet_x_1_6gf_b001_final_20261010",
+        "files": 2,
+        "bytes": 6768
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_regnet_x_1_6gf_b008_final_20261010.json",
+        "sha256": "ca3b29b88af1a5c9b6ad00f868b557a00a740199210c8f534607a0c114226b4c",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_regnet_x_1_6gf_b008_final_20261010",
+        "files": 2,
+        "bytes": 6768
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_regnet_x_1_6gf_b015_final_20261010.json",
+        "sha256": "a60b2e760a23ea3fffc6c0fdd1f8ebf99b93acc76b065cfcd2b3e84c7c9998b1",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_regnet_x_1_6gf_b015_final_20261010",
+        "files": 2,
+        "bytes": 6769
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_regnet_x_1_6gf_b023_final_20261010.json",
+        "sha256": "e20c273a2fb431dd65e0d3896f1fb32a783eb23173c5b209514a12232e2bbd9c",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_regnet_x_1_6gf_b023_final_20261010",
+        "files": 2,
+        "bytes": 6769
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_regnet_x_1_6gf_b030_final_20261010.json",
+        "sha256": "4b37f5a20e1ec8ef1422976ff69e7538c0f15e18ecc7a0692e8bcdc24861f3e8",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_regnet_x_1_6gf_b030_final_20261010",
+        "files": 2,
+        "bytes": 6769
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_regnet_x_1_6gf_b037_final_20261010.json",
+        "sha256": "10a6163cc0f126797d36535cce9581d0d1b29f5f7e7984bfb48b1eee33d4fb99",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_regnet_x_1_6gf_b037_final_20261010",
+        "files": 2,
+        "bytes": 6769
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_regnet_x_1_6gf_b044_final_20261010.json",
+        "sha256": "0db31f7b0860d9c1da576f29292cc1be5648578d6996fa8210726958cdc41926",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_regnet_x_1_6gf_b044_final_20261010",
+        "files": 2,
+        "bytes": 6768
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_regnet_x_1_6gf_b052_final_20261010.json",
+        "sha256": "e863f63d65cc80e18d6b4640318c785546f1310e624ce3ba92fb878deb7399e7",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_regnet_x_1_6gf_b052_final_20261010",
+        "files": 2,
+        "bytes": 6769
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_regnet_x_1_6gf_b059_final_20261010.json",
+        "sha256": "7581a312217603524a21143a53bf61317618bc62c75b8555c774fdf96bb45c60",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_regnet_x_1_6gf_b059_final_20261010",
+        "files": 2,
+        "bytes": 6768
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_regnet_x_1_6gf_b066_final_20261010.json",
+        "sha256": "2344ac5d62697697a11018066e186157d2527de3d9d6595e7b0d6834f1dab004",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_regnet_x_1_6gf_b066_final_20261010",
+        "files": 2,
+        "bytes": 6970
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_regnet_x_1_6gf_b073_final_20261010.json",
+        "sha256": "e3239045adb7d98067049597a71af209c7f16198b4662e20e20f3acc720f94c5",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_regnet_x_1_6gf_b073_final_20261010",
+        "files": 2,
+        "bytes": 6769
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_regnet_x_1_6gf_b080_final_20261010.json",
+        "sha256": "769678ddcbef779abb64c94e72c63628a92d3eb87a91fa1c79b5626e6502e4c4",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_regnet_x_1_6gf_b080_final_20261010",
+        "files": 2,
+        "bytes": 6767
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_regnet_x_1_6gf_b087_final_20261010.json",
+        "sha256": "054bc5a514e559c6488b388f50a342c018a10f0fe48f8bbc1b247e3cf0fc4596",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_regnet_x_1_6gf_b087_final_20261010",
+        "files": 2,
+        "bytes": 6769
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_regnet_x_1_6gf_b088_final_20261010.json",
+        "sha256": "79d2321db775de31792983ec726ed345beccbd1ef890c2ed92608184c0c01a29",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_regnet_x_1_6gf_b088_final_20261010",
+        "files": 2,
+        "bytes": 6769
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_regnet_x_1_6gf_b095_final_20261010.json",
+        "sha256": "de71478fd298593a4243733d0f80fa07e39b85beb63949839f1738769c46c4f6",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_regnet_x_1_6gf_b095_final_20261010",
+        "files": 2,
+        "bytes": 6767
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_regnet_x_1_6gf_b102_final_20261010.json",
+        "sha256": "a2fddce3fbb762a3f78b0458769aa0c4c9b3717caa7c55eb1af6a6ec8ef818ec",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_regnet_x_1_6gf_b102_final_20261010",
+        "files": 2,
+        "bytes": 6769
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_regnet_x_1_6gf_b109_final_20261010.json",
+        "sha256": "040eeb268c4197b8109551d6f7a36ce5600c054000202d3e80f9f7790be172e1",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_regnet_x_1_6gf_b109_final_20261010",
+        "files": 2,
+        "bytes": 6768
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_regnet_x_1_6gf_b115_final_20261010.json",
+        "sha256": "7c52bb12332e912fd0dd32e5dae43fee839a64c406bff08c20af4d074c06b6e2",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_regnet_x_1_6gf_b115_final_20261010",
+        "files": 2,
+        "bytes": 6768
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_regnet_x_1_6gf_b123_final_20261010.json",
+        "sha256": "45accd5b66779860e575008cadb4192e923c38ff1f15c2341dc887d14897b399",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_regnet_x_1_6gf_b123_final_20261010",
+        "files": 2,
+        "bytes": 6768
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_regnet_x_1_6gf_b132_final_20261010.json",
+        "sha256": "55bc943fa8b82e47b5423860cefa0ea9b1a91f9646ab9eedc2c0366fff9a8171",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_regnet_x_1_6gf_b132_final_20261010",
+        "files": 2,
+        "bytes": 6766
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_resnet50_b002_final_20261010.json",
+        "sha256": "e5b578d4188e2ac7b93e442f773289fca3fa74a9a51a8b7896fb6c442b7c778d",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_resnet50_b002_final_20261010",
+        "files": 2,
+        "bytes": 6654
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_resnet50_b009_final_20261010.json",
+        "sha256": "5701cc93f0cdf67e72e03698caf567f2c399b82604db68e480cd29641bacc2e3",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_resnet50_b009_final_20261010",
+        "files": 2,
+        "bytes": 6654
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_resnet50_b016_final_20261010.json",
+        "sha256": "712353303177127ce608e57b27c644d9e2236aa6cf2c009c2ab71f62529fd80c",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_resnet50_b016_final_20261010",
+        "files": 2,
+        "bytes": 6654
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_resnet50_b023_final_20261010.json",
+        "sha256": "d551712f5a301fd49af73d8a1f0e52233024a70741566791de99ebd7ac4a74a7",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_resnet50_b023_final_20261010",
+        "files": 2,
+        "bytes": 6654
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_resnet50_b031_final_20261010.json",
+        "sha256": "1a0df8ee20f9f19fbd5a4bf2c1670af36b113451133bda59f5ef0ea4fee4158c",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_resnet50_b031_final_20261010",
+        "files": 2,
+        "bytes": 6654
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_resnet50_b038_final_20261010.json",
+        "sha256": "a3b18824b18497a83599e0a19a4ac37b28ad5e6b8478e7b7400f19c7db3b4bef",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_resnet50_b038_final_20261010",
+        "files": 2,
+        "bytes": 6654
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_resnet50_b045_final_20261010.json",
+        "sha256": "b99a18e72062e44ff597ca9ffc2be25dbcb6d77c6d0d196c65d327836380ee93",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_resnet50_b045_final_20261010",
+        "files": 2,
+        "bytes": 6855
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_resnet50_b052_final_20261010.json",
+        "sha256": "d378c891bcb3674c883c7f363ec0fd126cfd1dc91c446e7352a6c82bb8932f27",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_resnet50_b052_final_20261010",
+        "files": 2,
+        "bytes": 6652
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_resnet50_b060_final_20261010.json",
+        "sha256": "f055f745160d219864b7381c99d8f7d052fb1a89bbdc3ba3323bdf30f8455be1",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_resnet50_b060_final_20261010",
+        "files": 2,
+        "bytes": 6654
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_resnet50_b067_final_20261010.json",
+        "sha256": "061ecc500c9ce26f2ce85f2a33d729ba97d019d9c566ed1e1a9bd3b582589a41",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_resnet50_b067_final_20261010",
+        "files": 2,
+        "bytes": 6655
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_resnet50_b068_final_20261010.json",
+        "sha256": "11b452a22e8ef5aac0c96246e21ba035cee1c6820836810651de78e4ca66a27c",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_resnet50_b068_final_20261010",
+        "files": 2,
+        "bytes": 6655
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_resnet50_b074_final_20261010.json",
+        "sha256": "75dc7c973fee564cb3516c23999bf14206a70a2492ecd761798a2af33553395e",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_resnet50_b074_final_20261010",
+        "files": 2,
+        "bytes": 6654
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_resnet50_b081_final_20261010.json",
+        "sha256": "ea3ecfff29767166b73f556dc639d6cdb50a0dc80adea28ee6c816050e294a61",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_resnet50_b081_final_20261010",
+        "files": 2,
+        "bytes": 6654
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_resnet50_b088_final_20261010.json",
+        "sha256": "00e02ab9f0515b373252732c382613475bc4fc775bd865508de7da378bb6363d",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_resnet50_b088_final_20261010",
+        "files": 2,
+        "bytes": 6854
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_resnet50_b095_final_20261010.json",
+        "sha256": "404822d1cd4936c7cb636f3fd451bc62e5f7f9324e31d0709d68f6c44ea7c3f4",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_resnet50_b095_final_20261010",
+        "files": 2,
+        "bytes": 6653
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_resnet50_b103_final_20261010.json",
+        "sha256": "0d9b24fa200505621b7715203fe40d467619b4dd711edb66d52967698a3cd36c",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_resnet50_b103_final_20261010",
+        "files": 2,
+        "bytes": 6654
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_resnet50_b104_final_20261010.json",
+        "sha256": "12381d5d116e942fcd4732e17f2d4f4c266c25f8abe1e7d7168c7cbdcb5a452f",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_resnet50_b104_final_20261010",
+        "files": 2,
+        "bytes": 6655
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_resnet50_b110_final_20261010.json",
+        "sha256": "e96e38a7054f94880bfd2270499bdf3e979b265da09c49a54c7811b3bc385516",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_resnet50_b110_final_20261010",
+        "files": 2,
+        "bytes": 6654
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_resnet50_b119_final_20261010.json",
+        "sha256": "7133282648e08cbbb951c0c0a4311d479776dd23afab9c3a359e31a4699d9b10",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_resnet50_b119_final_20261010",
+        "files": 2,
+        "bytes": 6654
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_yolo11l_b003_final_20261010.json",
+        "sha256": "88d861aae4c907f988302c8394fa180eaea053246bdeaf6c2d699e961cec6f07",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_yolo11l_b003_final_20261010",
+        "files": 2,
+        "bytes": 6834
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_yolo11l_b062_final_20261010.json",
+        "sha256": "9eafc1700612b022797763affec973b5973d1b5f05dff0105e7695dd4c9023b7",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_yolo11l_b062_final_20261010",
+        "files": 2,
+        "bytes": 6632
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_yolo11l_b120_final_20261010.json",
+        "sha256": "5a319b52ffc1365c6da76c407df867a15b268f12413e2ae91719b21358df99d9",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_yolo11l_b120_final_20261010",
+        "files": 2,
+        "bytes": 6632
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_yolo26m_b003_final_20261010.json",
+        "sha256": "2ffe9a903b6780e7d96d28825185b3c1a6e88f7db56819bd7a4e47d20e22eee5",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_yolo26m_b003_final_20261010",
+        "files": 2,
+        "bytes": 6639
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_yolo26m_b038_final_20261010.json",
+        "sha256": "4e379c7caf7a186e3b691d84fbeb401b53dbdc1f1c12c6ae7148976c8532e2d5",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_yolo26m_b038_final_20261010",
+        "files": 2,
+        "bytes": 6639
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_yolo26m_b043_final_20261010.json",
+        "sha256": "64f91ec09aa1c8d1b89ec21ccb273d3b56fd4f0bffd153d2ce3b4ba5419f9ff9",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_yolo26m_b043_final_20261010",
+        "files": 2,
+        "bytes": 6640
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_yolo26s_b003_final_20261010.json",
+        "sha256": "b4d2a0e3628d4931d802ca4ecb85a6717191e369c1b591e99fac8ef28fb4374b",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_yolo26s_b003_final_20261010",
+        "files": 2,
+        "bytes": 6639
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_yolo26s_b021_final_20261010.json",
+        "sha256": "59d920f7a4b0b5ac7789f36b02681ae004f2702adfd7c48b034846bac554748a",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_yolo26s_b021_final_20261010",
+        "files": 2,
+        "bytes": 6639
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__h10_yolo26s_b038_final_20261010.json",
+        "sha256": "f4b7f816d995bb19afca6bb383bb2e20264625ef369bba544f19a127346c33e6",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/h10_yolo26s_b038_final_20261010",
+        "files": 2,
+        "bytes": 6640
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__native_dx_classifier_regnet_x_1_6gf_final_20261010.json",
+        "sha256": "6b25f7a4b057da08ac219636f1ec009a1e70cfdb9de39ae849dbbdae838b7fb0",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/native_dx_classifier_regnet_x_1_6gf_final_20261010",
+        "files": 116,
+        "bytes": 1036385412
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__native_dx_classifier_resnet50_final_20261010.json",
+        "sha256": "5ec2a020e208f7f5ea02f708cb0b819b4c4ccb05c3d93a70342fe56196f051a5",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/native_dx_classifier_resnet50_final_20261010",
+        "files": 116,
+        "bytes": 1018563926
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__native_yolo11_h10_final_20261010.json",
+        "sha256": "11673ecddbb3175b0af1ace4ce1e0580ee277173582f829c5e422fc9d897fe8a",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/native_yolo11_h10_final_20261010",
+        "files": 31,
+        "bytes": 110729852
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__native_yolo26m_deepx_final_20261010.json",
+        "sha256": "19d753eb6c19e8ec4bad86691166f73bc08fa2eacced050334da4ac7296ab128",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/native_yolo26m_deepx_final_20261010",
+        "files": 31,
+        "bytes": 138850402
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__native_yolo26m_h10_final_20261010.json",
+        "sha256": "bf4074cc6560f01ea878d6b4b1758870ca536c6926e1f26ad98602d978b4b112",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/native_yolo26m_h10_final_20261010",
+        "files": 31,
+        "bytes": 114578389
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__native_yolo26m_h8_final_20261010.json",
+        "sha256": "19d7ffe6aaf398d95ae998d8c60b9eb10100197d5fbbfb6fe3d153b327b4ac93",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/native_yolo26m_h8_final_20261010",
+        "files": 41,
+        "bytes": 155605702
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__native_yolo26s_deepx_final_20261010.json",
+        "sha256": "0a8f39a51c002c93a6a134e9e3fb3f414bcc155279f5b44205c959cf60d742e6",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/native_yolo26s_deepx_final_20261010",
+        "files": 31,
+        "bytes": 136969845
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__native_yolov7_h10_b009_fulls_final_20261010.json",
+        "sha256": "6675abec16ea1b1eb38614394850e0bb59e1ab95f084dae2843139936d087bb3",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/native_yolov7_h10_b009_fulls_final_20261010",
+        "files": 21,
+        "bytes": 53348183
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__data__quality_transfer__qualified_energy_import__native_yolov7_h10_b044_b066_final_20261010.json",
+        "sha256": "ff2757ec7ead11a9f12bdeda7cbe44c7d5953a7e772d2e4080251da7ffcdb557",
+        "target": "archive:revision3/delta_20261013/data/quality_transfer/qualified_energy_import/native_yolov7_h10_b044_b066_final_20261010",
+        "files": 16,
+        "bytes": 47547722
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__direct_references.json",
+        "sha256": "da0763986a95d905d98feb7d559842002e05d14f75bc6d9ff823a00248c64942",
+        "target": "archive:revision3/delta_20261013/direct_references",
+        "files": 270,
+        "bytes": 5267839807
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__operations_evidence.json",
+        "sha256": "c443bd1c79c6a57dfdb110cce4403a5a5dbefca4641a4f2a8266527316890be6",
+        "target": "archive:revision3/delta_20261013/operations_evidence",
+        "files": 6058,
+        "bytes": 377379372
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__operations_evidence_remaining.json",
+        "sha256": "89e3f120874d7fecd5ae7725c43e45d300c937ae3dd5cec1c94ee2e26c351da9",
+        "target": "archive:revision3/delta_20261013/operations_evidence_remaining",
+        "files": 8964,
+        "bytes": 388236473
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__original_state_snapshot.json",
+        "sha256": "0925337a8f5dbac50e07ba61e977e7659e43a11d43839214a7ab0e30d4dee9c7",
+        "target": "archive:revision3/delta_20261013/original_state_snapshot",
+        "files": 22,
+        "bytes": 225578928
+      },
+      {
+        "path": "revision3:/archive_receipts/delta_20261013__quality_current_reference.json",
+        "sha256": "a495386254139cfcf095a7382cd92a2d96490fe07b3d47788de9c8dcb400af93",
+        "target": "archive:revision3/delta_20261013/quality_current_reference",
+        "files": 2,
+        "bytes": 19175879
+      }
+    ],
+    "source_paths_for_staged_files": "Explicit ORIGINAL_SOURCE_MAPPING.json files retained in corresponding archive groups.",
+    "scientific_data_deleted": false,
+    "checkpoint_or_complete_archive_claimed": false,
+    "additional_preexisting_verified_receipts_reused": {
+      "scope": "Existing normally verified receipts absent from previous index, reused without recopying; not new measurement work",
+      "files": 4175,
+      "receipts": [
+        {
+          "path": "revision3:/archive_receipts/_snapshots__checkpoint_20261012T055244Z.json",
+          "sha256": "1e8e030162399a095696545bb842517141a564e1177526502637b275561e2a23",
+          "files": 8,
+          "target": "archive:revision3/_snapshots/checkpoint_20261012T055244Z"
+        },
+        {
+          "path": "revision3:/archive_receipts/energy__native_dx_classifier_regnet_x_1_6gf_final_20261010.json",
+          "sha256": "fc72849e1cf07dfb7948558f20e5dc45915e1a435e3dfb32053f758baf91b1e2",
+          "files": 4167,
+          "target": "archive:revision3/energy/native_dx_classifier_regnet_x_1_6gf_final_20261010"
+        }
+      ]
+    }
+  },
+  "mapping_check": "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/ARCHIVE_MAPPING_FINAL_CHECK.json",
+  "missing_required_payloads": [],
+  "data_deletion_performed": false,
+  "further_hardware_authorized": false,
+  "independent_reference_review": "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/FINAL_ARCHIVE_REFERENCE_REVIEW.json"
+}

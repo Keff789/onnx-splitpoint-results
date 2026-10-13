@@ -1,9 +1,9 @@
 {
-  "at": "2026-10-11T04:59:46.467889+00:00",
+  "at": "2026-10-13T04:09:09.139840+00:00",
   "status": "PASS",
-  "normal_energy_points": 152,
-  "normal_claim_eligible_points": 143,
-  "verified_repeats": 456,
+  "normal_energy_points": 233,
+  "normal_claim_eligible_points": 233,
+  "verified_repeats": 699,
   "checks": [
     "actual normal consumers required",
     "exact current cohort join",
@@ -15,12 +15,12 @@
     "physical STOP retained"
   ],
   "unchanged_originals": {
-    "revision3:/energy/energy_task_budget.json": "b1bd3e8775757c217ffd9bfae7d99dc0df6fdf6580ae2e40ec1ff9cd872a90b4",
+    "revision3:/energy/energy_task_budget.json": "0fc109d60a6d11c24203d859294a503d19b0c88fd65c7ea790821d31516eb3e1",
     "revision3:/energy/native_full_remaining5_qualified/measurement/native_producer_energy_results.json": "7305e89458166b0b2a4bb0636f8066638f6ebacdaec7f157b9a60d46d2f6d31d",
     "revision3:/energy/native_full_remaining5_qualified/cleanup-status.json": "4c6311301f1019557e2e469b9a03beb5e23d09f34af11b98380800933cf08528"
   },
   "data_deletion_performed": false,
-  "projection_sha256": "45ecc66bcacfc2e24ac52c2dce35eb489096c2fe7af41fadf1f53d26c24a00cc",
-  "native_current_sha256": "ad30c8103562fe15de0a34a8640c4da9e20eeb063040d80443496d6f8d202b7a",
-  "normal_consumer_pointer_sha256": "a731b022dd9f21e8a5892d131b30a4cbe58fd5542f392fed2be02542c51c5c6b"
+  "projection_sha256": "f6d1ad11559a44050cb7ef49978459f1f42a514c4b662d992829d2a9b5b83a2f",
+  "native_current_sha256": "8eb119820f765cab18658a7371ae3d5ddbb03f891a821ee21467b8e6d2bb25e7",
+  "normal_consumer_pointer_sha256": "a462dd04777a91a9457499affff89877c155743429f803aaaee723a51ee3854a"
 }

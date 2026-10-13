@@ -1,0 +1,252 @@
+{
+  "status": "233_cases_normal_measurement_candidate_233_claim_eligible_with_original_group_stops_retained",
+  "created_utc": "2026-10-13T04:02:39.642207+00:00",
+  "module_sha256": "98ed97ef4a76edb33f2e2c3b091742edc3301bd2705f102006e9796f634a6d70",
+  "caller_managed_module_sha256": "b4c6ee6229cae53c06d72e00e30116ed327be8f9cfd72328040742cfb2d4fbe6",
+  "source_report": "revision3:/energy/native_full_remaining5_qualified/measurement/native_producer_energy_results.json",
+  "source_report_sha256": "7305e89458166b0b2a4bb0636f8066638f6ebacdaec7f157b9a60d46d2f6d31d",
+  "prior_receipt": "revision3:/quality_transfer/qualified_energy_import/native_full_remaining5_qualified/7305e89458166b0b2a4bb0636f8066638f6ebacdaec7f157b9a60d46d2f6d31d/RECEIPT.json",
+  "prior_receipt_sha256": "f5f53952567c07e8e37abea0d53ff313153938d148278dfff3150d0f4b4c876f",
+  "prior_receipt_unchanged": true,
+  "normal_view": "revision3:/quality_transfer/qualified_energy_import/native_full_remaining5_qualified/7305e89458166b0b2a4bb0636f8066638f6ebacdaec7f157b9a60d46d2f6d31d/normal_view",
+  "normal_original_summary": "revision3:/operations/energy_assembly/splits/reports/native_producer_summary.qualified_full_context_v5.json",
+  "normal_original_summary_sha256": "3b20da8cb74f16c9b3bef2da3d3282f7f749305810b427f898dec99f17736c01",
+  "completed_point_count": 233,
+  "group_cleanup": "revision3:/energy/native_full_remaining5_qualified/cleanup-status.json",
+  "group_cleanup_sha256": "4c6311301f1019557e2e469b9a03beb5e23d09f34af11b98380800933cf08528",
+  "group_cleanup_status": {
+    "at": "2026-10-07T11:53:52.681368+00:00",
+    "cleanup_proven": false,
+    "owned_remote_active": 0,
+    "owned_local_active": 0,
+    "errors": [
+      "stopped physical resources: ['controller:capture', 'controller:nic', 'dut:H10-DUT', 'source:H10-source']"
+    ],
+    "foreign_processes_stopped": false
+  },
+  "other_case_STOP_not_cleared": true,
+  "hardware_executed": false,
+  "files": {
+    "scientific_energy_rows.json": {
+      "path": "revision3:/reporting_caller_managed_energy/exports/20261013T040230950953Z/scientific_energy_rows.json",
+      "sha256": "0515fd438b04117057177a7ac24b0a96d468c18975cb61e68073c0c7673da736"
+    },
+    "native_energy_observations.json": {
+      "path": "revision3:/reporting_caller_managed_energy/exports/20261013T040230950953Z/native_energy_observations.json",
+      "sha256": "2037561813a7c67cc80e507b230f965000b0d48329b4b5987c70e426b20c6e87"
+    },
+    "exact_performance_energy_bindings.json": {
+      "path": "revision3:/reporting_caller_managed_energy/exports/20261013T040230950953Z/exact_performance_energy_bindings.json",
+      "sha256": "5a4f76827d9101d218e6f465d0b245d7f525aa95407e0c7b57c780889ad5b65e"
+    },
+    "native_energy_pair_comparison.json": {
+      "path": "revision3:/reporting_caller_managed_energy/exports/20261013T040230950953Z/native_energy_pair_comparison.json",
+      "sha256": "e703b4f88372dafcf7aa59ec59cd6e0f8245d5bf05ba340cb4d944e87d868a72"
+    }
+  },
+  "source_imports": [
+    {
+      "receipt": "revision3:/quality_transfer/qualified_energy_import/native_full_remaining5_qualified/7305e89458166b0b2a4bb0636f8066638f6ebacdaec7f157b9a60d46d2f6d31d/RECEIPT.json",
+      "receipt_sha256": "f5f53952567c07e8e37abea0d53ff313153938d148278dfff3150d0f4b4c876f",
+      "source_report": "revision3:/energy/native_full_remaining5_qualified/measurement/native_producer_energy_results.json",
+      "source_report_sha256": "7305e89458166b0b2a4bb0636f8066638f6ebacdaec7f157b9a60d46d2f6d31d",
+      "normal_original_summary": "revision3:/operations/energy_assembly/splits/reports/native_producer_summary.qualified_full_context_v5.json",
+      "normal_original_summary_sha256": "3b20da8cb74f16c9b3bef2da3d3282f7f749305810b427f898dec99f17736c01"
+    },
+    {
+      "receipt": "revision3:/quality_transfer/qualified_energy_import/final_dx_b044_b066_20261008_bound_context/079de5b187113b8ad794eaee7bc916ce5ef5bbcfc3c09f185b36125e4977bf07/RECEIPT.json",
+      "receipt_sha256": "195cfd4ffc3972c1d7a50c90e994dc3957a2044199d8483db52f084676cd4af9",
+      "source_report": "revision3:/energy/final_dx_b044_b066_20261008_bound_context/measurement/native_producer_energy_results.json",
+      "source_report_sha256": "079de5b187113b8ad794eaee7bc916ce5ef5bbcfc3c09f185b36125e4977bf07",
+      "normal_original_summary": "revision3:/operations/energy_assembly/final_quality_all9_20261008/splits_augmented/reports/native_producer_summary.qualified_final_dx_b044_b066_20261008.json",
+      "normal_original_summary_sha256": "d5ae69134bf46dc5d2da35ef48714e3acd3ca64fe755a418a9458defc3893624"
+    },
+    {
+      "receipt": "revision3:/quality_transfer/qualified_energy_import/final_dx_remaining13_20261008_final_current/bebb4e195cff9fed145a6a713a4ac8c737d81311601b46787a57d534267077ae/RECEIPT.json",
+      "receipt_sha256": "496df7b145a43f22f47fbba350d2999d72f577f120e04b98b7170c93cfbb5506",
+      "source_report": "revision3:/energy/final_dx_remaining13_20261008_final_current/measurement/native_producer_energy_results.json",
+      "source_report_sha256": "bebb4e195cff9fed145a6a713a4ac8c737d81311601b46787a57d534267077ae",
+      "normal_original_summary": "revision3:/operations/energy_assembly/final_dx_energy14_20261008/final_current_inputs/priority13/reports/native_producer_summary.json",
+      "normal_original_summary_sha256": "cb987ab59097dd8bb6b879e6254ae75609e3cf40ce48dc758ef5c80a4fe3ac69"
+    },
+    {
+      "receipt": "revision3:/quality_transfer/qualified_energy_import/final_dx_vendor_yolo11_20261008_final_current/8455c5942dc064b65a4708046a192f83cb46c48648eb840e1092a025e28ca5fa/RECEIPT.json",
+      "receipt_sha256": "6a8b11ed2b76761fddac860b4b2cb692bd3fbe2b10665890d1f52ab71afd75e6",
+      "source_report": "revision3:/energy/final_dx_vendor_yolo11_20261008_final_current/measurement/native_producer_energy_results.json",
+      "source_report_sha256": "8455c5942dc064b65a4708046a192f83cb46c48648eb840e1092a025e28ca5fa",
+      "normal_original_summary": "revision3:/operations/energy_assembly/final_dx_energy14_20261008/final_current_inputs/vendor_yolo11/reports/native_producer_summary.json",
+      "normal_original_summary_sha256": "c638ab7c2f11cef2146d93fea46b572250f7898a3c4008ca8031d1be5bd31e55"
+    },
+    {
+      "receipt": "revision3:/quality_transfer/qualified_energy_import/final_dx_yolo11_20261009_live_ready/9f5667ebb10324496ac5932d128caa05f4224a9d1d93676a4e1ba48436ccbeeb/RECEIPT.json",
+      "receipt_sha256": "7390f5c73ad149632be833041c42a3c8bdee57501dde0256d129c0d20ca648c1",
+      "source_report": "revision3:/energy/final_dx_yolo11_20261009_live_ready/measurement/native_producer_energy_results.json",
+      "source_report_sha256": "9f5667ebb10324496ac5932d128caa05f4224a9d1d93676a4e1ba48436ccbeeb",
+      "normal_original_summary": "revision3:/operations/energy_assembly/final_dx_energy14_20261008/final_current_inputs/yolo11_final_20261009/reports/native_producer_summary.json",
+      "normal_original_summary_sha256": "ad16d98fe124046f310e80aa2c571794bedbc24fcee1d10d7ae895e2ab64723a"
+    },
+    {
+      "receipt": "revision3:/quality_transfer/qualified_energy_import/token_batch_h8_mobilenet_v3_large_20261009/63d677f2abc28d61e2f113cad0cde9a94970f4f59769d399fa50a180c4b7f569/RECEIPT.json",
+      "receipt_sha256": "4327f87016cd361d10d59f4788eb9bba21c176cc362bfa902708583d1fa6e1b3",
+      "source_report": "revision3:/energy/token_batch_h8_mobilenet_v3_large_20261009/measurement/native_producer_energy_results.json",
+      "source_report_sha256": "63d677f2abc28d61e2f113cad0cde9a94970f4f59769d399fa50a180c4b7f569",
+      "normal_original_summary": "revision3:/operations/token_saving_batch_20261009/groups/mobilenet_v3_large/reports/native_producer_summary.json",
+      "normal_original_summary_sha256": "bab800f4d54d6cdf6d71e2cfaff71bb4682ece24b8568f6654f615ead72df6cd"
+    },
+    {
+      "receipt": "revision3:/quality_transfer/qualified_energy_import/token_batch_h8_regnet_x_1_6gf_20261009/74ea1ca9bb0fa2d34a5304f978a93b4c8a0ad54d20f739664566eb7ae8d93429/RECEIPT.json",
+      "receipt_sha256": "3ba83413045e1663d07f06e0cf5990c8e27ec89a85e748cd6dc9f14206ce1c33",
+      "source_report": "revision3:/energy/token_batch_h8_regnet_x_1_6gf_20261009/measurement/native_producer_energy_results.json",
+      "source_report_sha256": "74ea1ca9bb0fa2d34a5304f978a93b4c8a0ad54d20f739664566eb7ae8d93429",
+      "normal_original_summary": "revision3:/operations/token_saving_batch_20261009/groups/regnet_x_1_6gf/reports/native_producer_summary.json",
+      "normal_original_summary_sha256": "bf5772a5f7a6296ec616baa318298ff7ac70a810c2bc1dcf40146e777e2ab748"
+    },
+    {
+      "receipt": "revision3:/quality_transfer/qualified_energy_import/token_batch_h8_resnet50_20261009/d30eb4e93105ac13ee0f5a0a22fd85630da3529e30d734b658404a97c9e0fe0c/RECEIPT.json",
+      "receipt_sha256": "8aad2485bf01af343d7b629a3ce64f78f9eaea0705ee29e9ba7e04a7042252d1",
+      "source_report": "revision3:/energy/token_batch_h8_resnet50_20261009/measurement/native_producer_energy_results.json",
+      "source_report_sha256": "d30eb4e93105ac13ee0f5a0a22fd85630da3529e30d734b658404a97c9e0fe0c",
+      "normal_original_summary": "revision3:/operations/token_saving_batch_20261009/groups/resnet50/reports/native_producer_summary.json",
+      "normal_original_summary_sha256": "4f49358c84ab365213d3ec285f5caf5093784a71cfd0602d5f9b1c685f194015"
+    },
+    {
+      "receipt": "revision3:/quality_transfer/qualified_energy_import/h10_classifier_mobilenet_v3_large_final_20261010/0c8ada814643b87d05ed0c75d1ef68ceee6e3ce76505cff71a8fc9477bc603e6/RECEIPT.json",
+      "receipt_sha256": "b18a1877a74eb13100d06058eb97235165e314ba62e7a1d5a797e480b91bb459",
+      "source_report": "revision3:/energy/h10_classifier_mobilenet_v3_large_final_20261010/measurement/native_producer_energy_results.json",
+      "source_report_sha256": "0c8ada814643b87d05ed0c75d1ef68ceee6e3ce76505cff71a8fc9477bc603e6",
+      "normal_original_summary": "revision3:/operations/h10_energy_prepare_20261010/groups/mobilenet_v3_large/reports/native_producer_summary.json",
+      "normal_original_summary_sha256": "67d7dee3c51b9edc3f0d6efcfbe8d672add099ae97b65481e5190bf66a8048bd"
+    },
+    {
+      "receipt": "revision3:/quality_transfer/qualified_energy_import/h10_classifier_regnet_x_1_6gf_final_20261010/37413b5ec0abc2bf9ba2b2049032d26719a3269f4652e87d2c9624616ce37cb8/RECEIPT.json",
+      "receipt_sha256": "e9e030ae5e2bd131e001dcad1740af07484be1aa33b71b5640a771fe2e368b2c",
+      "source_report": "revision3:/energy/h10_classifier_regnet_x_1_6gf_final_20261010/measurement/native_producer_energy_results.json",
+      "source_report_sha256": "37413b5ec0abc2bf9ba2b2049032d26719a3269f4652e87d2c9624616ce37cb8",
+      "normal_original_summary": "revision3:/operations/h10_energy_prepare_20261010/groups/regnet_x_1_6gf/reports/native_producer_summary.json",
+      "normal_original_summary_sha256": "2194dca8dfd8efea0b51d02c6ff11e47a1552324e93a638c8a8386797f6316d5"
+    },
+    {
+      "receipt": "revision3:/quality_transfer/qualified_energy_import/h10_classifier_resnet50_final_20261010/3249558dcb787d92ce43483868b05c217867c3fbeea217d57b3abfc7c8124ae3/RECEIPT.json",
+      "receipt_sha256": "7078ba78c11395feaeed5c8c4cb0da194d76fd70d1b854ef1ebe7e0c307937aa",
+      "source_report": "revision3:/energy/h10_classifier_resnet50_final_20261010/measurement/native_producer_energy_results.json",
+      "source_report_sha256": "3249558dcb787d92ce43483868b05c217867c3fbeea217d57b3abfc7c8124ae3",
+      "normal_original_summary": "revision3:/operations/h10_energy_prepare_20261010/groups/resnet50/reports/native_producer_summary.json",
+      "normal_original_summary_sha256": "6e12110e6a305f078204606fda205b8e31f3402b000833aa1f5291e7935ab157"
+    },
+    {
+      "receipt": "revision3:/quality_transfer/qualified_energy_import/token_batch_h8_yolo11l_20261009/1ddf020133581066e2a68894b866d70d692fe9253a4d27183acfeaee580356f0/RECEIPT.json",
+      "receipt_sha256": "16ba5642a09ac8d266ceaaef0fb4f13c6337cc2290db900de3d25cd3dbf84ba3",
+      "source_report": "revision3:/energy/token_batch_h8_yolo11l_20261009/measurement/native_producer_energy_results.json",
+      "source_report_sha256": "1ddf020133581066e2a68894b866d70d692fe9253a4d27183acfeaee580356f0",
+      "normal_original_summary": "revision3:/operations/token_saving_batch_20261009/groups/yolo11l/reports/native_producer_summary.json",
+      "normal_original_summary_sha256": "f72e36159369cace260bb959a56c84eeffbd3bded4eba9a8505f9e4ba7ed75c1"
+    },
+    {
+      "receipt": "revision3:/quality_transfer/qualified_energy_import/native_yolov7_dx_b009_final_20261010/953cf69683cfcef86fd5e651fd0878ce64f343af7b5dc71d7090b48450f57bff/RECEIPT.json",
+      "receipt_sha256": "dc1670ce27fc9ae4fd8f51db365007d2c2ff48180fae2d3762ef86626cccf448",
+      "source_report": "revision3:/energy/native_yolov7_dx_b009_final_20261010/measurement/native_producer_energy_results.json",
+      "source_report_sha256": "953cf69683cfcef86fd5e651fd0878ce64f343af7b5dc71d7090b48450f57bff",
+      "normal_original_summary": "revision3:/operations/native_yolov7_energy_prepare_20261010/groups/dx_b009/reports/native_producer_summary.json",
+      "normal_original_summary_sha256": "f0e5f009195287004e8792b92f36e16bc29b5677ae88ade5479e5c08c2a1b527"
+    },
+    {
+      "receipt": "revision3:/quality_transfer/qualified_energy_import/native_dx_classifier_mobilenet_v3_large_final_20261010/a25e3505077a1439c4edac0b6b8cee995f32436f5c44d41f912f90caee25aeab/RECEIPT.json",
+      "receipt_sha256": "d039cc2d1bf2723bba3ba1b085d6ed74703fd80bab891bded6a2bb669448492f",
+      "source_report": "revision3:/energy/native_dx_classifier_mobilenet_v3_large_final_20261010/measurement/native_producer_energy_results.json",
+      "source_report_sha256": "a25e3505077a1439c4edac0b6b8cee995f32436f5c44d41f912f90caee25aeab",
+      "normal_original_summary": "revision3:/operations/native_dx_classifier_energy_prepare_20261010/groups/mobilenet_v3_large/reports/native_producer_summary.json",
+      "normal_original_summary_sha256": "e6f465aee1cd0671876ad729eed6a0dda4de1605c0783807709c78902aa16783"
+    },
+    {
+      "receipt": "revision3:/quality_transfer/qualified_energy_import/native_yolov7_h8_b009_full_final_20261010/50e77c48339e579b674fd9ee3ca6968925a9c54853cb670bf5b5dcf0dc2fe569/RECEIPT.json",
+      "receipt_sha256": "3b68c49d4d88bd6b6052913ede5dc9e010de4295e438b376dbd1b25cebf1db9a",
+      "source_report": "revision3:/energy/native_yolov7_h8_b009_full_final_20261010/measurement/native_producer_energy_results.json",
+      "source_report_sha256": "50e77c48339e579b674fd9ee3ca6968925a9c54853cb670bf5b5dcf0dc2fe569",
+      "normal_original_summary": "revision3:/operations/native_yolov7_energy_prepare_20261010/groups/h8_b009_full/reports/native_producer_summary.json",
+      "normal_original_summary_sha256": "8f10bf5f9b7c2c6779cd462a0c4d60cb10ebf9f0ab478fb7d085256cfc41b444"
+    },
+    {
+      "receipt": "revision3:/quality_transfer/qualified_energy_import/native_yolov7_h8_b044_b066_final_20261010/9e0a2df49fb154eb007bff400a4799d7e844f980cf5349852e1824eb5e711339/RECEIPT.json",
+      "receipt_sha256": "d7a4806745c8d9611fac056d40c9d72cf6f1c97ba6386eaf119aac1ef64c0a12",
+      "source_report": "revision3:/energy/native_yolov7_h8_b044_b066_final_20261010/measurement/native_producer_energy_results.json",
+      "source_report_sha256": "9e0a2df49fb154eb007bff400a4799d7e844f980cf5349852e1824eb5e711339",
+      "normal_original_summary": "revision3:/operations/native_yolov7_energy_prepare_20261010/groups/h8_b044_b066/reports/native_producer_summary.json",
+      "normal_original_summary_sha256": "ccd1db15e5d60002061332f766c3aaa9151c068bb3c0abadd501a7cf32b4ce03"
+    },
+    {
+      "receipt": "revision3:/quality_transfer/qualified_energy_import/native_yolo26m_h8_final_20261010/b53452841ab60f263d13566a8f8c3cc4c2bcf6e1a637d4d457faf1dfce6f30c4/RECEIPT.json",
+      "receipt_sha256": "1c279f0301023fe93a5610f216ff6de7bccea6f26b4538158d8917995b477e81",
+      "source_report": "revision3:/energy/native_yolo26m_h8_final_20261010/measurement/native_producer_energy_results.json",
+      "source_report_sha256": "b53452841ab60f263d13566a8f8c3cc4c2bcf6e1a637d4d457faf1dfce6f30c4",
+      "normal_original_summary": "revision3:/operations/native_yolo26_energy_prepare_20261010/groups/h8_yolo26m/reports/native_producer_summary.json",
+      "normal_original_summary_sha256": "6193032e405f8a0bf310bedd2d01cf79d899ec54632babecd8918ef3ae31b575"
+    },
+    {
+      "receipt": "revision3:/quality_transfer/qualified_energy_import/native_yolo26m_deepx_final_20261010/eaa7e1230f0f69e9c58e54c31746dc3028334fb15dfdee9088fb4fb05fbd710b/RECEIPT.json",
+      "receipt_sha256": "42f0efdcae19d50887493e2423e3a34d2a402153e828b9996c0ae5f0f369c58b",
+      "source_report": "revision3:/energy/native_yolo26m_deepx_final_20261010/measurement/native_producer_energy_results.json",
+      "source_report_sha256": "eaa7e1230f0f69e9c58e54c31746dc3028334fb15dfdee9088fb4fb05fbd710b",
+      "normal_original_summary": "revision3:/operations/native_yolo26_energy_prepare_20261010/groups/deepx_yolo26m/reports/native_producer_summary.json",
+      "normal_original_summary_sha256": "eb20df3e4a780d0a4a53732e75a5e00c48dec19347e93484ccfef3ae4a61a839"
+    },
+    {
+      "receipt": "revision3:/quality_transfer/qualified_energy_import/native_yolo26s_deepx_final_20261010/1ff117da0bbf611c064e585efc76bcb25af15fade2d7e2da0baf1220674085e7/RECEIPT.json",
+      "receipt_sha256": "7586105b9bf9bba780c52729a87d9cb00c0ca620a7aec17fe87efe6b29a83248",
+      "source_report": "revision3:/energy/native_yolo26s_deepx_final_20261010/measurement/native_producer_energy_results.json",
+      "source_report_sha256": "1ff117da0bbf611c064e585efc76bcb25af15fade2d7e2da0baf1220674085e7",
+      "normal_original_summary": "revision3:/operations/native_yolo26_energy_prepare_20261010/groups/deepx_yolo26s/reports/native_producer_summary.json",
+      "normal_original_summary_sha256": "eae266badd8ee8e414dc8b5cc60bf6be3bcb50e5fbdcdd9fb5bc3551462a5867"
+    },
+    {
+      "receipt": "revision3:/quality_transfer/qualified_energy_import/native_dx_classifier_regnet_x_1_6gf_final_20261010/6a2e1ea6374baa2263815c910d324829695c2f6461ebd1ae698a3a70e317b70c/RECEIPT.json",
+      "receipt_sha256": "2967ff0a48fb2f6c6e233a90c6f0085c6a4c9089f041e9e23f646ade3b4f10ea",
+      "source_report": "revision3:/energy/native_dx_classifier_regnet_x_1_6gf_final_20261010/measurement/native_producer_energy_results.json",
+      "source_report_sha256": "6a2e1ea6374baa2263815c910d324829695c2f6461ebd1ae698a3a70e317b70c",
+      "normal_original_summary": "revision3:/operations/native_dx_classifier_energy_prepare_20261010/regnet_x_1_6gf/groups/regnet_x_1_6gf/reports/native_producer_summary.json",
+      "normal_original_summary_sha256": "5593c83dcfdce69262f988e0d4380c639c530f6d375fb56d85293711791b5891"
+    },
+    {
+      "receipt": "revision3:/quality_transfer/qualified_energy_import/native_dx_classifier_resnet50_final_20261010/10894c9fb50c506d9152743b0f56a8cdf060bd8ed299abf7e001ea0fb64a37c1/RECEIPT.json",
+      "receipt_sha256": "5badbf2482ff85d598b4c7926389d052e731d107b6fd0d91e5e335b671bdef01",
+      "source_report": "revision3:/energy/native_dx_classifier_resnet50_final_20261010/measurement/native_producer_energy_results.json",
+      "source_report_sha256": "10894c9fb50c506d9152743b0f56a8cdf060bd8ed299abf7e001ea0fb64a37c1",
+      "normal_original_summary": "revision3:/operations/native_dx_classifier_energy_prepare_20261010/resnet50/groups/resnet50/reports/native_producer_summary.json",
+      "normal_original_summary_sha256": "6dfe71e5127fc7f8d58388cd4a96a33171dcc9f661eca3b3becd39b58aa1c4ce"
+    },
+    {
+      "receipt": "revision3:/quality_transfer/qualified_energy_import/native_yolov7_h10_b009_fulls_final_20261010/af32977d3029280d28ac478dd063508368ad089d56b4bde66114e7bd7c577127/RECEIPT.json",
+      "receipt_sha256": "45f318d4f46ef85f615f2fd130331b51e4c9f7c8083e2046dabb8b00ada18214",
+      "source_report": "revision3:/energy/native_yolov7_h10_b009_fulls_final_20261010/measurement/native_producer_energy_results.json",
+      "source_report_sha256": "af32977d3029280d28ac478dd063508368ad089d56b4bde66114e7bd7c577127",
+      "normal_original_summary": "revision3:/operations/native_yolov7_energy_prepare_20261010/groups/h10_b009_fulls/reports/native_producer_summary.json",
+      "normal_original_summary_sha256": "f2caf4ec31437fc3a9ff8da4b1aacce1b8ffecf88b120e02dce8ea08d6c40957"
+    },
+    {
+      "receipt": "revision3:/quality_transfer/qualified_energy_import/native_yolov7_h10_b044_b066_final_20261010/e1403c5ef1d8a3cfe7f8384c67bc4eeff937d453dcab7d2a1f6156ebe6ff4aa7/RECEIPT.json",
+      "receipt_sha256": "a38abbc41f06d0cc3ded649bdc26e4561c10badb466f05c9af100be1fafc1eaf",
+      "source_report": "revision3:/energy/native_yolov7_h10_b044_b066_final_20261010/measurement/native_producer_energy_results.json",
+      "source_report_sha256": "e1403c5ef1d8a3cfe7f8384c67bc4eeff937d453dcab7d2a1f6156ebe6ff4aa7",
+      "normal_original_summary": "revision3:/operations/native_yolov7_energy_prepare_20261010/groups/h10_b044_b066/reports/native_producer_summary.json",
+      "normal_original_summary_sha256": "22f7b4ddc0e00ce8b1462490a37bf28e34ec0de2e908a48bbf450b9c6975c9c4"
+    },
+    {
+      "receipt": "revision3:/quality_transfer/qualified_energy_import/native_yolo11_h10_final_20261010/dff6029ede94b41efb74d070afadd523d0d8ee048e54039004c297b938d9ed00/RECEIPT.json",
+      "receipt_sha256": "2e716dbaf260cda6860b1ae895eec277c76d2147afb4f3bfa7d9dc07379eeb93",
+      "source_report": "revision3:/energy/native_yolo11_h10_final_20261010/measurement/native_producer_energy_results.json",
+      "source_report_sha256": "dff6029ede94b41efb74d070afadd523d0d8ee048e54039004c297b938d9ed00",
+      "normal_original_summary": "revision3:/operations/native_yolo11_energy_prepare_20261010/groups/h10_yolo11l/reports/native_producer_summary.json",
+      "normal_original_summary_sha256": "119856092b54e303aadc9b9bc434c2465d5ebfec37f6161950b0ab0e880c44c0"
+    },
+    {
+      "receipt": "revision3:/quality_transfer/qualified_energy_import/native_yolo26m_h10_final_20261010/f7c4fb2d9f6d3df1bdcfdcb5da157e221e5d6eccc70e053d1a88467b94699aff/RECEIPT.json",
+      "receipt_sha256": "44f1c9da284e9ce23d7d0ebfdd9a1f5554912fa89f4eac791b13e18ed77aa176",
+      "source_report": "revision3:/energy/native_yolo26m_h10_final_20261010/measurement/native_producer_energy_results.json",
+      "source_report_sha256": "f7c4fb2d9f6d3df1bdcfdcb5da157e221e5d6eccc70e053d1a88467b94699aff",
+      "normal_original_summary": "revision3:/operations/native_yolo26_energy_prepare_20261010/groups/h10_yolo26m/reports/native_producer_summary.json",
+      "normal_original_summary_sha256": "35ad44b1de9ad9ac834428d806c1c724e2a2b5eb7b9b7a61e75d359484eb8cf0"
+    }
+  ],
+  "candidate_only": true,
+  "qualified_point_count": 233,
+  "diagnostic_point_count": 0
+}

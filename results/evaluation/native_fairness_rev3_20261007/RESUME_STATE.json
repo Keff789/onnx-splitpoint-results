@@ -1,1212 +1,24 @@
 {
-  "archive_completion_receipt": "operations/yolo11_final_20261009/ARCHIVE_COMPLETION_RECEIPT.json",
-  "archive_current_pointer": "CURRENT_ARCHIVE_PROGRESS_SNAPSHOT.json",
-  "archive_index_receipt": "See CURRENT_ARCHIVE_PROGRESS_SNAPSHOT.json for the latest normal checkpoint receipt",
-  "archive_latest_closed_batch": "operations/yolo11_final_20261009/ARCHIVE_COMPLETION_RECEIPT.json",
-  "archive_latest_metadata_group_receipt": "archive_receipts/_metadata__yolo11_final_cohort_20261009.json",
-  "archive_metadata_scope": "Only this new YOLO11parent and106directly relevant metadata/controller/test files; no old bulk backfill. Synthetic pytest symlinks excluded without deletion.",
-  "archive_metadata_status": "PASS:YOLO11newcapture_data_and_selected_immediate_controller_Current_terminal_metadata_byte_verified",
-  "archive_verified_file_count": 65147,
-  "archive_verified_group_count": 377,
-  "at": "2026-10-11T05:37:24.626853+00:00",
-  "authorization": "operations/token_saving_batch_20261009/AUFTRAG_AKTUELL.txt",
-  "authorization_received": true,
-  "authorization_status": "Continuous Revision3 scope explicitly authorized; ordinary live resources, scientific gates and device protection mandatory. Previous organizational one-grant limits superseded; history retained.",
-  "bounded_work_complete": false,
-  "budget_sha256": "34f2e7d5e0eb6bb41805977b4cb9cbf42e29ed83cad18fe6455992f0ac6718fe",
-  "budget_unchanged_since_terminal": false,
-  "budgets": [
-    {
-      "identity": [
-        "deepx_to_trt",
-        "yolov7_paper",
-        "b009",
-        "orin_nx_deepx_m1_01"
-      ],
-      "limits": {
-        "max_chains": 9,
-        "max_retries": 2,
-        "max_transport_failures": 20
-      },
-      "physical_starts": 3,
-      "remaining_chain_capacity": 6,
-      "reserved_chains": 3,
-      "stop_reason": "",
-      "valid_sensor_repeats": 3
-    },
-    {
-      "identity": [
-        "hailo10h_to_trt",
-        "yolov7_paper",
-        "b009",
-        "orin_nx_hailo10_01"
-      ],
-      "limits": {
-        "max_chains": 9,
-        "max_retries": 2,
-        "max_transport_failures": 20
-      },
-      "physical_starts": 4,
-      "remaining_chain_capacity": 5,
-      "reserved_chains": 4,
-      "stop_reason": "",
-      "valid_sensor_repeats": 3
-    },
-    {
-      "identity": [
-        "hailo8_to_trt",
-        "yolov7_paper",
-        "b009",
-        "orin_nx_hailo8_01"
-      ],
-      "limits": {
-        "max_chains": 9,
-        "max_retries": 2,
-        "max_transport_failures": 20
-      },
-      "physical_starts": 3,
-      "remaining_chain_capacity": 6,
-      "reserved_chains": 3,
-      "stop_reason": "",
-      "valid_sensor_repeats": 3
-    },
-    {
-      "identity": [
-        "native_full_hailo10h",
-        "yolov7_paper",
-        "full",
-        "orin_nx_hailo10_01"
-      ],
-      "limits": {
-        "max_chains": 9,
-        "max_retries": 2,
-        "max_transport_failures": 20
-      },
-      "physical_starts": 3,
-      "remaining_chain_capacity": 6,
-      "reserved_chains": 3,
-      "stop_reason": "",
-      "valid_sensor_repeats": 3
-    },
-    {
-      "identity": [
-        "native_full_deepx",
-        "yolov7_paper",
-        "full",
-        "orin_nx_deepx_m1_01"
-      ],
-      "limits": {
-        "max_chains": 9,
-        "max_retries": 2,
-        "max_transport_failures": 20
-      },
-      "physical_starts": 3,
-      "remaining_chain_capacity": 6,
-      "reserved_chains": 3,
-      "stop_reason": "",
-      "valid_sensor_repeats": 3
-    },
-    {
-      "identity": [
-        "native_full_hailo8",
-        "yolov7_paper",
-        "full",
-        "orin_nx_hailo8_01"
-      ],
-      "limits": {
-        "max_chains": 9,
-        "max_retries": 2,
-        "max_transport_failures": 20
-      },
-      "physical_starts": 3,
-      "remaining_chain_capacity": 6,
-      "reserved_chains": 3,
-      "stop_reason": "",
-      "valid_sensor_repeats": 3
-    },
-    {
-      "identity": [
-        "native_full_tensorrt",
-        "yolov7_paper",
-        "full",
-        "orin_nx_deepx_m1_01"
-      ],
-      "limits": {
-        "max_chains": 9,
-        "max_retries": 2,
-        "max_transport_failures": 20
-      },
-      "physical_starts": 3,
-      "remaining_chain_capacity": 6,
-      "reserved_chains": 3,
-      "stop_reason": "",
-      "valid_sensor_repeats": 3
-    },
-    {
-      "identity": [
-        "native_full_tensorrt",
-        "yolov7_paper",
-        "full",
-        "orin_nx_hailo10_01"
-      ],
-      "limits": {
-        "max_chains": 9,
-        "max_retries": 2,
-        "max_transport_failures": 20
-      },
-      "physical_starts": 2,
-      "remaining_chain_capacity": 7,
-      "reserved_chains": 2,
-      "stop_reason": "campaign_source_completion_unresolved",
-      "valid_sensor_repeats": 0
-    },
-    {
-      "identity": [
-        "native_full_tensorrt",
-        "yolov7_paper",
-        "full",
-        "orin_nx_hailo8_01"
-      ],
-      "limits": {
-        "max_chains": 9,
-        "max_retries": 2,
-        "max_transport_failures": 20
-      },
-      "physical_starts": 0,
-      "remaining_chain_capacity": 8,
-      "reserved_chains": 1,
-      "stop_reason": "task_execution_interrupted",
-      "valid_sensor_repeats": 0
-    },
-    {
-      "identity": [
-        "deepx_to_trt",
-        "yolov7_paper",
-        "b044",
-        "orin_nx_deepx_m1_01"
-      ],
-      "limits": {
-        "max_chains": 9,
-        "max_retries": 2,
-        "max_transport_failures": 20
-      },
-      "physical_starts": 4,
-      "remaining_chain_capacity": 5,
-      "reserved_chains": 4,
-      "stop_reason": "",
-      "valid_sensor_repeats": 3
-    },
-    {
-      "identity": [
-        "deepx_to_trt",
-        "yolov7_paper",
-        "b066",
-        "orin_nx_deepx_m1_01"
-      ],
-      "limits": {
-        "max_chains": 9,
-        "max_retries": 2,
-        "max_transport_failures": 20
-      },
-      "physical_starts": 3,
-      "remaining_chain_capacity": 6,
-      "reserved_chains": 3,
-      "stop_reason": "",
-      "valid_sensor_repeats": 3
-    }
+  "at": "2026-10-13T04:12:53.856198+00:00",
+  "task_status": "bounded_scientific_delta_complete",
+  "active_operations_order": {
+    "path": "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/CODEX_REV3_DELTA_ABSCHLUSS_20261012.txt",
+    "sha256": "26b33609e9b0cf948e013b79bb73fe3787b82f7f6909bbc629661bc19ca64439",
+    "status": "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/STATUS.json",
+    "scope": "Only the remaining authorized slots of the original 426-case queue; exact delta checklist; all broader orders remain superseded."
+  },
+  "phase": "C: joint archive checkpoint and publication",
+  "delta_closure": "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/DELTA_CLOSURE.json",
+  "historical_state_snapshots": [
+    "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/before_phase_c/RESUME_STATE.json",
+    "revision3:/plan_versions/delta_before_20261012T192158Z/RESUME_STATE.json"
   ],
-  "capture_scope_audit": "operations/recovery_full_h10_20261007/CAPTURE_SCOPE_AUDIT_20261008.json",
-  "completed_actions_this_block": [
-    "Exact five unchanged original rows assembled in one normal context",
-    "Bound vendor artifact root chosen; three normal comparison groups/five nondiagnostic planned captures",
-    "Four targeted normal-consumer tests PASS including missing vendor/quality negatives",
-    "Existing budget admission on isolated copy rejects15/15 accepted repeat slots; original budget unchanged",
-    "One independent read-only review confirms context and real contract blocker; zero physical starts"
-  ],
-  "completed_finalisation_checks": {
-    "exact_deepx_infer_signature": "implemented, focused tests passed, actual final three-process deployment confirmations complete",
-    "h10_layout_metadata": "implemented before timer with unchanged tensor bytes; final deployment and three confirmations complete",
-    "h8_classifier_domain": "Six exact HEFs/SDK contracts verified; corrected source in sole freeze;68 focused tests and one normal CPPwrapper build; all56splits and3Vendor/3TRTFull performance complete. All112H8/H10ClassifierSplit exact quality joins now integrated in Current.",
-    "historical_generic_original_report_and_runner": "opened_exact_original_bytes_verified_and_normal_readers_pass",
-    "native_cold_sync": "local_transport_tests_pass; all_three_actual_241_file_deployments_pass",
-    "offline_energy": "18_original_binary_calls_byte_identical_results; independent_trapezoid_and_student_t_pass",
-    "receipts": [
-      "generic_finalisation_tests/review_contract_correction.xml",
-      "operations/finalisation_native_20261008/RECEIPT.json",
-      "operations/finalisation_native_20261008/GENERIC_GATE_REVIEW.json",
-      "generic/legacy_acceptance_20261008.xml",
-      "archive_checks/offline_energy_20261008/RECEIPT.json"
-    ]
-  },
-  "concrete_profile": "operations/recovery_full_h10_20261007/one_workflow.yaml",
-  "continuous_20261010": {
-    "actual_h10_classifier_current_admission": "59_CAPTURE_SCOPE_PASS",
-    "actual_h10_yolov7_admission_before_completed_queue": "0_CORRECTLY_NOT_YET_ADMITTED",
-    "batch_launch_after_reader_fixes": "2026-10-10",
-    "batch_worker_terminal_cleanup_proven": true,
-    "bn6_benchmark_root_fix": "APPLIED_PLAN_ONLY_21_TESTS_PASS_NO_NEW_WORKLOAD",
-    "bn6_deepx_normal_group": "revision3:/operations/native_performance/plans/bn6_postflight_staging_fixed_20261010/DeepX_GROUP.json",
-    "bn6_next_action": "Live execute exactly existing three deployment/performance groups, stop and diagnose any actual error; no concurrent energy capture",
-    "bn6_repetition_reader": "APPLIED_22_TARGETED_TESTS_PASS",
-    "dx56_active_case": null,
-    "dx56_b010_source_log": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/dx56/source_mobilenet_b010_after_staging.log",
-    "dx56_completed_direct_native_joins": [
-      "mobilenet_v3_large:b001",
-      "mobilenet_v3_large:b010",
-      "mobilenet_v3_large:b019",
-      "mobilenet_v3_large:b027",
-      "mobilenet_v3_large:b039",
-      "mobilenet_v3_large:b056",
-      "mobilenet_v3_large:b062",
-      "mobilenet_v3_large:b068",
-      "mobilenet_v3_large:b074",
-      "mobilenet_v3_large:b078",
-      "mobilenet_v3_large:b085",
-      "mobilenet_v3_large:b097",
-      "mobilenet_v3_large:b100",
-      "mobilenet_v3_large:b108",
-      "mobilenet_v3_large:b120",
-      "mobilenet_v3_large:b132",
-      "mobilenet_v3_large:b135"
-    ],
-    "dx56_mobilenet_quality": "17_NORMAL_GENERIC_AND_NATIVE_JOINS_COMPLETE",
-    "dx56_new_source_archive": "12_COMPLETED_SOURCE_TREES_VERIFIED",
-    "dx56_remaining_direct_quality_points": 39,
-    "dx_mobile_native_energy_group_queued": true,
-    "dx_mobile_native_energy_normal_prepare": "19_NORMAL_PREPARED_NOT_STARTED",
-    "dx_mobile_native_energy_normal_prepare_pending": false,
-    "dx_mobile_native_energy_offline_ready_points": 19,
-    "dx_native_join_original_scientific_outputs_unchanged": true,
-    "dx_native_join_reporter_rebind": "TWO_NORMAL_CANONICAL_JOINS_AND_TARGETED_CURRENT_REFRESHED",
-    "dx_native_join_reporter_rebind_receipt": "revision3:/operations/native_dx_classifier_energy_prepare_20261010/CURRENT_JOIN_REFRESH_RECEIPT.json",
-    "energy_batch_queue_groups": 177,
-    "energy_batch_queue_points": 319,
-    "generic_observer_binding_refresh": "RUNNING_OFFLINE",
-    "generic_own_energy_points": 9,
-    "generic_prepared_not_queued_points": 34,
-    "generic_ready_preparation_blocked": 0,
-    "generic_ready_prepared_points": 140,
-    "generic_yolov7": "9_NORMAL_IMPORTED",
-    "generic_yolov7_h8_points": "3_NORMAL_IMPORTED",
-    "h10_classifier_normal_offline_ready_points": 59,
-    "h10_first_repaired_final_point": {
-      "case": "b001",
-      "environment_observation": "PASS_10_10_11_SAMPLES_WITH_ACTUAL_WORKER_IDS",
-      "model": "mobilenet_v3_large",
-      "old_invalid_repeats_preserved": 3,
-      "partial_results": "revision3:/energy/h10_classifier_mobilenet_v3_large_final_20261010/measurement/resume_attempts/9fd687ddbae048e59c18f4b76a0a3005/native_producer_energy_results.partial.json",
-      "valid_repeats": 3
-    },
-    "h10_mobile_b001_env_samples": "48_ACTUAL_SAMPLES_DUT_WORKER_ROOT_NOT_RECOGNIZED",
-    "h10_mobile_b001_final_rejection_reason": "required_during_window_DUT_worker_clock_resource_evidence_missing",
-    "h10_mobile_b001_final_valid_repeats": 0,
-    "h10_mobile_b001_original_captures_preserved": 3,
-    "h10_mobile_b001_primary_valid_3_but_final_ineligible": "REQUIRED_DURING_WINDOW_ENVIRONMENT_SAMPLES_MISSING",
-    "h10_mobile_b001_primary_valid_repeats": 3,
-    "h10_mobile_b001_three_captures_source_closed": true,
-    "h10_mobile_current_capture_progress": {
-      "at": "2026-10-10T20:01:48.631269+00:00",
-      "central_group_projection": "PENDING_NORMAL_GROUP_COMPLETION",
-      "completed_points": [
-        "b001",
-        "b010",
-        "b019",
-        "b027",
-        "b039",
-        "b056",
-        "b062",
-        "b068",
-        "b074",
-        "b078",
-        "b085",
-        "b097",
-        "b100",
-        "b108",
-        "b120"
-      ],
-      "failed_new_rows": 0,
-      "partial_results": "revision3:/energy/h10_classifier_mobilenet_v3_large_final_20261010/measurement/resume_attempts/9fd687ddbae048e59c18f4b76a0a3005/native_producer_energy_results.partial.json",
-      "selected_valid_repeats": 45,
-      "worker_pid": 3370821,
-      "worker_start_ticks": "38658716"
-    },
-    "h10_yolov7_current_admission_fix": "APPLIED_32_TARGETED_TESTS_PASS",
-    "h8_generic_b009": "NORMAL_IMPORTED_3_VALID_REUSED",
-    "h8_generic_b009_import": "PASS",
-    "h8_generic_b009_import_receipt": "revision3:/quality_transfer/qualified_energy_import/h8_yolov7_b009_final_20261010/LATEST.json",
-    "h8_yolo11_normal_offline_ready_points": 5,
-    "h8_yolo11_reader": "APPLIED_NORMAL_5_POINT_PREPARE_PASS",
-    "h8_yolo11_reader_patch": "APPLIED_NORMAL_PREPARE_PENDING",
-    "native_controller_binding_refresh_after_resume_fixes": "9_NORMAL_PREPARATIONS_PASS",
-    "native_env_exact_missing_script": "native_hailo10_trt_e2e_from_benchmarkset.py",
-    "native_h10_first_launch": "ZERO_CAPTURE_PREPARE_PUBLICATION_RACE",
-    "native_h10_first_launch_error_log": "revision3:/operations/token_saving_batch_20261009/h10_classifier_mobilenet_v3_large_final_20261010_run.log",
-    "native_observer_binding_refresh": "9_NORMAL_OPERATIONS_PASS",
-    "native_observer_recognition_fix": "APPLIED_19_TESTS_PASS",
-    "native_packaged_capture_prefix_fix": "APPLIED_30_PORTABLE_TESTS_PASS",
-    "native_resume_capture_prefix_fix": "APPLIED_9_TARGETED_TESTS_PASS",
-    "native_resume_latest_clean_predecessor": "3b4727d56dd24a49b52e4a1d06a4bdbb",
-    "native_resume_preflight_failure_new_physical_starts": 0,
-    "native_resume_zero_capture_predecessor_fix": "APPLIED_20_TARGETED_TESTS_PASS",
-    "native_yolo11_deepx_existing_final_energy_reused_points": 5,
-    "native_yolo11_h10_commands": "revision3:/operations/native_yolo11_energy_prepare_20261010/READY_GROUP_COMMANDS.json",
-    "native_yolo11_h10_offline_ready_points": 5,
-    "native_yolo11_h10_tests": "14_TARGETED_PASS",
-    "native_yolov7_existing_energy_reused_points": 5,
-    "native_yolov7_h10_cohort_authorization": "PASS_5_GROUPS_10_MISSING_POINTS",
-    "native_yolov7_ready_missing_points": 10,
-    "native_yolov7_remaining_points": 10,
-    "native_yolov7_reuse_context_patch": "APPLIED_11_TARGETED_TESTS_PASS",
-    "native_zero_start_binding_receipt": "revision3:/operations/native_yolov7_energy_prepare_20261010/refresh_existing_native_parents_after_context/FINAL_BINDING_CHECK.json",
-    "native_zero_start_race_resolved": "PASS_FOUR_EXACT_PREPARED_BINDINGS",
-    "next_action": "Apply tested Native capture-prefix and zero-capture predecessor result-binding fixes; finish normal prepared controller binding refresh, then resume existing queue under fresh admission. Preserve three final-ineligible H10 Mobile b001 physical captures.",
-    "normal_native_prepared_group_receipt_binding_refresh": "8_NORMAL_BINDINGS_UPDATED_ORIGINALS_PRESERVED",
-    "normal_native_resume_commands_added": 12,
-    "qualified_native_parent_bindings": "9_NORMAL_REFRESH_PASS_CURRENT_CE75",
-    "quality_b010_evaluation": "COMPLETE_NORMAL_GENERIC_AND_NATIVE_JOIN",
-    "quality_b010_request": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/dx56/source_results/mobilenet_v3_large/b010/task_quality_inputs/composed_request.json",
-    "queue_native_h10_classifier_points_added": 59,
-    "queued_additional_generic_prepared_points": 106,
-    "source_git_progress": {
-      "at": "2026-10-10T18:08:27.694561+00:00",
-      "branch": "rev3-fairness-final-20261008",
-      "commit": "438567b044e2b413711eeb250060a8588d381ebe",
-      "old_measured_runtime_bindings_preserved": true,
-      "remote_head_verified": true,
-      "scope": "tested Revision3 source corrections; campaign results/paper/archive closure still pending"
-    },
-    "updated_at": "2026-10-10T19:19:56.105212+00:00",
-    "whole_campaign_complete": false
-  },
-  "continuous_execution_authorization": {
-    "at": "2026-10-10T14:24:02.189840+00:00",
-    "historical_measurement_and_start_counters_preserved": true,
-    "prior_one_shot_and_administrative_limits_superseded": true,
-    "resources": "Existing Revision3 own DeepX/H8/H10 setups only",
-    "scientific_policy_unchanged": true,
-    "source": "revision3:/operations/token_saving_batch_20261009/AUFTRAG_AKTUELL.txt"
-  },
-  "continuous_progress": {
-    "active_generic_parent": {
-      "path": "revision3:/energy/generic_completed/deepx_yolov7_b009_final_20261010",
-      "pid": 3216148,
-      "session": "generic-energy-a148840b371443c0b98684322cd7ecbd",
-      "tool_session": 39775
-    },
-    "at": "2026-10-11T00:33:16.665200+00:00",
-    "bn6_ready": {
-      "commands": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/bn6/integration/reentry_bn6_20261010/NEXT_COMMANDS.json",
-      "hardware_started": false,
-      "offline_tests": "34 PASS",
-      "points": 8
-    },
-    "dx56_dataset": {
-      "log": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/dx56/stage_dataset_fixed.log",
-      "old_failed_attempt_inputs_preserved": true,
-      "required_action": "one common existing N5000 dataset batch transfer; existing all-source, CPUref and direct-input gates unchanged",
-      "stage_first_status": "STOP before SDK; old dataset path missing, current Native root only one JPEG",
-      "state": "PASS: common N5000 staged, first direct source complete, evaluation running"
-    },
-    "dx56_first_normal_quality_import": {
-      "case": "b001",
-      "log": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/dx56/import_first_quality.log",
-      "model": "mobilenet_v3_large",
-      "native_quality_join": "held_existing_normal_context",
-      "normal_quality_status": "normal_bound_own_generic_dataset_quality",
-      "status": "PASS"
-    },
-    "dx56_first_normal_quality_join": {
-      "case": "b001",
-      "historical_selection_and_negative_evidence_preserved": true,
-      "model": "mobilenet_v3_large",
-      "normal_claim_eligible": true,
-      "normal_quality_eligible": true,
-      "receipt": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/dx56/quality_management/mobilenet_v3_large/b001/native_join/NATIVE_DATASET_JOIN.json",
-      "status": "PASS"
-    },
-    "dx56_first_source": {
-      "case": "b001",
-      "cleanup_proven": true,
-      "handoff": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/dx56/source_results/mobilenet_v3_large/b001/HANDOFF.json",
-      "inference_invocations": 1,
-      "model": "mobilenet_v3_large",
-      "normal_evaluation_log": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/dx56/evaluate_first.log",
-      "record_count": 5000
-    },
-    "dx56_normal_current_bindings_complete": 56,
-    "energy_projection_regression": {
-      "no_PASS_receipt_fabricated": true,
-      "no_scientific_gate_failed": true,
-      "required_final_retry": "current_results/verify_energy_projection.py once budget idle",
-      "status": "SCIENTIFIC_CHECKS_PASSED_FINAL_BUDGET_IMMUTABILITY_ASSERT_FAILED_DURING_ACTIVE_CAPTURES"
-    },
-    "generic_completed_energy_points": 3,
-    "generic_dx56_all56_prepared": true,
-    "generic_first_active": null,
-    "generic_first_capture": {
-      "attempt": "revision3:/energy/generic_completed/deepx_yolov7_b009_final_20261010/resume_attempts/9eb8668363054a6c99263cd7b6d83d4a",
-      "consumer_status": "single-capture aggregation fix passed 63 tests; reconstruct valid descriptor before two missing repeats",
-      "environment": "PASS",
-      "physical_starts": 3,
-      "source_closed": true,
-      "valid_repeats": 3
-    },
-    "generic_first_import": {
-      "claim_reason": "original case retains historical Native comparison; no artificial claim transfer",
-      "energy_comparison_claim": false,
-      "new_acquisition_required": false,
-      "normal_energy_eligible": true,
-      "receipt": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/GENERIC_FIRST_CURRENT_IMPORT_PASS.json",
-      "state": "PASS",
-      "valid_repeats": 3
-    },
-    "generic_first_point": "prepare in progress",
-    "generic_next_prepared_groups": {
-      "points": 8,
-      "queue": "revision3:/operations/token_saving_batch_20261009/queue.json",
-      "status": "8 PREPARED; guarded final-source admission passed; dataset transfer before worker launch"
-    },
-    "generic_resnet_final8_append_receipt": "operations/token_saving_batch_20261009/continuous_20261010/generic/APPENDED_DX56_RESNET_FINAL_READY.json",
-    "h10_detector_cumulative_reporting": {
-      "new_claims_created": 0,
-      "normal_completed_parent_and_all_existing_import_gates_required": true,
-      "receipt": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/generic/native_h10_y11_y26_reporting_staged/RESULT.json",
-      "scope": [
-        "native_yolo11_h10_final_20261010",
-        "native_yolo26m_h10_final_20261010"
-      ],
-      "status": "APPLIED_TESTS_AND_REVIEW_PASS"
-    },
-    "h10_regnet_central_energy_views": {
-      "acquisitions": 129,
-      "full_points": 19,
-      "normal_completion_verified": 127,
-      "verified_modes": 57,
-      "verified_repeats": 387
-    },
-    "h10_regnet_current_capture": {
-      "at": "2026-10-11T00:37:25.735376+00:00",
-      "invalid_finished_preserved": 1,
-      "normal_repeat_selection_unchanged": true,
-      "physical_collector_starts": 48,
-      "valid_source_closed": 46,
-      "worker_pid": 3534547,
-      "worker_start_ticks": "40294498"
-    },
-    "h10_regnet_import": {
-      "invalid_retained": 1,
-      "physical_starts": 64,
-      "points": 21,
-      "review": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/generic/NORMAL_ENERGY_H10_REGNET_CANDIDATE_REVIEW.json",
-      "status": "NORMAL_IMPORTED_AND_CUMULATIVE_CURRENT_PUBLISHED",
-      "valid_repeats": 63
-    },
-    "h10_resnet_current_capture": {
-      "at": "2026-10-11T02:05:10.668398+00:00",
-      "invalid_preserved": 1,
-      "parent_pid": 3588563,
-      "parent_start_ticks": "40881018",
-      "physical_starts": 41,
-      "planned_valid_repeats": 60,
-      "valid_source_closed": 39,
-      "worker_pid": 3534547,
-      "worker_start_ticks": "40294498"
-    },
-    "h10_yolov7_prepare_bindings_reconciled": true,
-    "h8_62": "normal uptake and verified archive PASS",
-    "h8_generic_environment_fix": {
-      "decoder_tests_passed": 8,
-      "difference": "only PATH",
-      "independent_review": "PASS",
-      "next": "normal parent controller refresh then existing batch resume",
-      "original_attempt_collector_started": false,
-      "source_supplement_tests_passed": 9,
-      "status": "TESTED_AND_LIVE_PROBED_PASS",
-      "targeted_tests_passed": 92
-    },
-    "independent_native_dx_execution": {
-      "at": "2026-10-10T23:37:40.056587+00:00",
-      "cleanup": {
-        "at": "2026-10-10T23:37:40.024094+00:00",
-        "cleanup_proven": true,
-        "errors": [],
-        "foreign_processes_stopped": false,
-        "owned_local_active": 0,
-        "owned_remote_active": 0
-      },
-      "coordinator_pid": null,
-      "coordinator_start_ticks": null,
-      "handoff": "revision3:/operations/token_saving_batch_20261009/native_yolo26m_deepx_final_20261010_independent_handoff.json",
-      "new_captures": 0,
-      "next_action": "Use the existing serial normal batch; do not bypass controller work exclusivity.",
-      "parent": "revision3:/energy/native_yolo26m_deepx_final_20261010",
-      "parent_pid": null,
-      "parent_returncode": 1,
-      "production_start_exists": false,
-      "source": "DeepX-source",
-      "status": "ZERO_START_HELD_BY_NORMAL_CONTROLLER_EXCLUSIVITY"
-    },
-    "matrix_current": {
-      "generic_energy": 9,
-      "generic_performance": 204,
-      "native_claim": 235,
-      "native_energy": 111,
-      "native_quality": 244,
-      "rows": 450,
-      "status": "NORMAL_UPDATED"
-    },
-    "native_current_export": {
-      "all56_dx_joins": true,
-      "all_eight_full_quality_joins": true,
-      "both_negative_vendor_quality_exclusions_preserved": true,
-      "completed": 56,
-      "error": "load_native_join derives live Current context instead of receipt-bound byte-identical original context",
-      "log": "operations/token_saving_batch_20261009/continuous_20261010/bn6/yolo26_prepare_staged/root_native_current_bound_context_20261011.log",
-      "measurement_repeat_required": false,
-      "metadata_tool_session": null,
-      "metadata_workers": [],
-      "new_measurement": 240,
-      "normal_energy_eligible": 111,
-      "normal_resume_command": "source:controller/.venv/bin/python -B revision3:/operations/native_dx_classifier_energy_prepare_20261010/rederive_native_joins.py --all56-comparison-context-rebind",
-      "reader_review": "PASS",
-      "reused_verified": 6,
-      "rows": 246,
-      "scientific_projection_bytes_unchanged": true,
-      "scientific_projection_change": false,
-      "status": "NORMAL_NATIVE_CURRENT_COMPLETE",
-      "targeted_tests_passed": 11,
-      "tool_session": null,
-      "worker": null
-    },
-    "native_dx_all_three_context_reprepares_complete": true,
-    "native_dx_mobile_context_reprepare": {
-      "capture_starts": 0,
-      "historical_prepared_snapshot": "revision3:/operations/native_dx_classifier_energy_prepare_20261010/before_comparison_context_reprepare_20261011/mobilenet_v3_large",
-      "parent_config_sha256": "83343a8ccde2489916c424446e19757a1dccbaa45ef62fcc6db68ec99c3be271",
-      "points": 19,
-      "queue_identity_and_resume_command_unchanged": true,
-      "status": "NORMAL_PREPARED",
-      "summary_sha256": "e6f465aee1cd0671876ad729eed6a0dda4de1605c0783807709c78902aa16783"
-    },
-    "native_dx_mobile_final_metadata_prepare": {
-      "new_captures": 0,
-      "parent": "revision3:/energy/native_dx_classifier_mobilenet_v3_large_final_20261010",
-      "points": 19,
-      "receipt": "operations/native_dx_classifier_energy_prepare_20261010/PREPARE_STATUS.json",
-      "status": "NORMAL_PREPARED_NOT_STARTED"
-    },
-    "native_dx_regnet_context_reprepare": {
-      "capture_starts": 0,
-      "parent_config_sha256": "3436c0cd0e667be8e22b180f2ba78e52a6b8a3ddd08ba7c0a579135f14ecb08d",
-      "points": 22,
-      "queue_identity_and_resume_command_unchanged": true,
-      "status": "NORMAL_PREPARED",
-      "summary_sha256": "5593c83dcfdce69262f988e0d4380c639c530f6d375fb56d85293711791b5891"
-    },
-    "native_dx_remaining_prepare_worker": {
-      "complete": true,
-      "hardware_captures": 0,
-      "models": [
-        "regnet_x_1_6gf",
-        "resnet50"
-      ],
-      "pid": null,
-      "start_ticks": null
-    },
-    "native_dx_resnet_context_reprepare": {
-      "capture_starts": 0,
-      "parent_config_sha256": "a9a118ddcedb916275213bd767813cc802f8a18477d81534f7e58a27d44ccdbb",
-      "points": 21,
-      "queue_identity_and_resume_command_unchanged": true,
-      "status": "NORMAL_PREPARED",
-      "summary_sha256": "6dfe71e5127fc7f8d58388cd4a96a33171dcc9f661eca3b3becd39b58aa1c4ce",
-      "worker": null
-    },
-    "native_full_frozen_source_regression": "23 PASS",
-    "native_prepared_queue": {
-      "groups": 223,
-      "new_after_worker_launch": {
-        "groups": 4,
-        "points": 53
-      },
-      "points": 426,
-      "resume_when_existing_worker_terminal": true
-    },
-    "native_yolo26m_h8_h10_new_captures": 0,
-    "native_yolo26m_h8_h10_normal_prepared_points": 10,
-    "quality_dx56": "direct numerical path repair in progress",
-    "rest_batch_active": {
-      "active_parent": "revision3:/energy/generic_completed/deepx_yolov7_b044_final_20261010",
-      "active_regime": "generic_completed",
-      "active_setup": "orin_nx_deepx_m1_01",
-      "status": "RUNNING",
-      "updated_at": "2026-10-10T15:57:23.658583+00:00",
-      "worker_pid": 3264548,
-      "worker_start_ticks": "37607049"
-    },
-    "rest_batch_wrapper": "integration in progress",
-    "scoped_source_supplement": {
-      "guard_tests": "9 PASS",
-      "independent_review": "PASS",
-      "original_final_snapshot_and_measured_bundles_unchanged": true,
-      "receipt": "revision3:/REPORTING_SOURCE_SUPPLEMENT.json"
-    },
-    "source_continuation_receipt": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/source_policy/APPLIED_RECEIPT.json",
-    "source_remote_head_verified": "deff746c335fe254a150eed8b0f592cd3b55b60c"
-  },
-  "controller_reference_commit": "ec68097d0ca161a75380da158a257ad495296d90",
-  "controller_report_commit": "6ca5b3cedf3fda0f69397ad0e7a3e7abbe0194ae",
-  "controller_reporting_integration": {
-    "all_dirty_files_controller_mirror_or_tests": true,
-    "committed_controller_files": 8,
-    "controller_commit": "5e742b34862a7d0e0760474a1ff3e4826854f20e",
-    "controller_guard_commit": "6ca5b3cedf3fda0f69397ad0e7a3e7abbe0194ae",
-    "controller_guard_committed_files": 4,
-    "deployment_required_or_performed": false,
-    "further_source_commit_completed": true,
-    "measured_DUT_bytes_changed": false,
-    "original_snapshot_changed": false,
-    "runtime_freeze": "final_implementation_20261008/IMPLEMENTATION_FREEZE.json",
-    "source_head": "6ca5b3cedf3fda0f69397ad0e7a3e7abbe0194ae",
-    "status": "two_generic_consumer_fixes34_tests_and_independent_review_pass_normal_current204_complete",
-    "supplement": "REPORTING_SOURCE_SUPPLEMENT.json",
-    "worktree_dirty_files": 0
-  },
-  "controller_source_supplement": "REPORTING_SOURCE_SUPPLEMENT.json",
-  "controller_source_worktree_status": "7targeted_controller_files_changed;git_patch_and_source_snapshot_saved_no_commit;measured_DUT_runtime_unchanged",
-  "current_constraints": {
-    "H10_new_stop_grant": false,
-    "builds_deployments_runtimefreeze": false,
-    "large_archive_transfers": false,
-    "max_subagents": 1,
-    "measurement_scope": "Only authorized YOLO11l five cases; no starts while budget contract blocked",
-    "small_targeted_metadata_transfers": true,
-    "subagent_role": "One targeted independent review completed"
-  },
-  "current_controller_hardware_scope": {
-    "automatic_retry": false,
-    "build_allowed": false,
-    "capture_allowed_in_this_scope": false,
-    "cases_h10": 6,
-    "cases_h8": 6,
-    "commands": "operations/finalisation_generic_20261008/BN6_GENERIC_HARDWARE_COMMANDS.txt",
-    "completed_tasks": 1000,
-    "h10_bn6_session": 51225,
-    "h10_cleanup_proven": true,
-    "h10_completion_receipt": "operations/finalisation_generic_20261008/H10_BN6_GENERIC_COMPLETION.json",
-    "h10_owned_local_remaining": 0,
-    "h10_owned_remote_remaining": 0,
-    "h10_yolov7_command": "operations/finalisation_generic_20261008/H10_Y7_FINAL_GENERIC_HARDWARE_COMMAND.txt",
-    "h10_yolov7_completion_receipt": "operations/finalisation_generic_20261008/H10_YOLO7_FINAL_GENERIC_COMPLETION.json",
-    "h10_yolov7_readiness": "operations/finalisation_generic_20261008/H10_Y7_FINAL_GENERIC_READINESS.json",
-    "h10_yolov7_start": "completed_three_cases_nine_independent_processes",
-    "h8_cleanup_proven": true,
-    "h8_completion_receipt": "operations/finalisation_generic_20261008/H8_BN6_GENERIC_COMPLETION.json",
-    "h8_owned_local_remaining": 0,
-    "h8_owned_remote_remaining": 0,
-    "independent_plan_review": "operations/finalisation_generic_20261008/BN6_GENERIC_PREPARATION_INDEPENDENT_REVIEW.json",
-    "owner": "finalise_generic",
-    "processes_per_case": 3,
-    "readiness": "operations/finalisation_generic_20261008/BN6_GENERIC_GROUPS_READINESS.json",
-    "state": "all_hardware_and_current_exports_terminal_no_active_owned_jobs",
-    "warmups": 100
-  },
-  "current_export_snapshot_at": "2026-10-08T18:14:36.829458+00:00",
-  "current_generic_claim_pairs": 136,
-  "current_generic_counts": {
-    "claim_pairs": 148,
-    "completed": 204,
-    "energy_points": 9,
-    "quality_pairs": 148,
-    "repeats": 612,
-    "technical_pairs": 204
-  },
-  "current_generic_export_snapshot_at": "2026-10-08T20:18:00.371825+00:00",
-  "current_generic_quality_pairs": 136,
-  "current_native_counts": {
-    "new_measurement": 240,
-    "normal_claim_eligible": 235,
-    "normal_energy_eligible": 111,
-    "normal_quality_eligible": 244,
-    "reused_verified": 6
-  },
-  "current_phase_constraints": {
-    "large_archive_transfers_allowed": false,
-    "max_concurrent_subagents": 1,
-    "new_hardware_or_energy_measurements_allowed": "only after all normal gates; currently blocked",
-    "repeat_passed_unchanged_tests_allowed": false,
-    "scope": "YOLO11l exact5points, conditional final cohort max15selected valid repeats"
-  },
-  "current_publication_commit": "2f9e856a6d127fd3ef62f21029379740a18c9de0",
-  "current_publication_remote_head_verified": true,
-  "current_quality_join": "revision3:/quality_transfer/final_native_187_20261011/finalized_187_normal_full_context",
-  "current_quality_pointer": "revision3:/quality_transfer/CURRENT_FINALIZED.json",
-  "current_source_commit": "deff746c335fe254a150eed8b0f592cd3b55b60c",
-  "current_source_review_snapshot": "operations/token_saving_batch_20261009/continuous_20261010/bn6/yolo26_prepare_staged/deepx_binding_staged/RESULT.json",
-  "current_task_file": "revision3:/operations/token_saving_batch_20261009/AUFTRAG_AKTUELL.txt",
-  "data_deletion_performed": false,
-  "deferred_original_next_actions": [
-    "Actual new energy capture only after renewed bounded authorization, live normal preparation/admission and global controller/DUT/source handoff. No old H10 grant reuse.",
-    "Resolve genuine DX56 dataset input mismatch, eight BN6 Full runtime-attestation exclusions and unavailable final-energy scopes only in a separately authorized block. Existing negative scientific results and budgets remain authoritative."
-  ],
-  "deferred_resume_command": "source:controller/.venv/bin/python -B revision3:/operations/energy_parent_qualified.py prepare --summary revision3:/operations/energy_assembly/final_dx_energy14_20261008/final_current_inputs/yolo11_final_20261009/reports/native_producer_summary.json --validation-summary revision3:/operations/energy_assembly/final_dx_energy14_20261008/final_current_inputs/yolo11_final_20261009/reports/native_validation/native_producer_validation_summary.json --run-dir revision3:/energy/final_dx_yolo11_20261009_live_ready --phase final --setup orin_nx_deepx_m1_01 --registry private-home:/.onnx_splitpoint_tool/hardware_setups.yaml --capture-limit 5 --remote-root dut-home:/Reports/native-fairness-rev3-20261007/energy_assembly/yolo11l__orin_nx_deepx_m1_01__native_full_deepx__full__final20261008_staged_inputfiles/sealed_root",
-  "deferred_resume_preconditions": [
-    "Regular final-purpose/generation admission preserving original task identity and cumulative budgets",
-    "Functional time-bound DUT environment and worker observation",
-    "Normal live resource/source and import-chain admission"
-  ],
-  "dx14_energy_20261009": {
-    "STOPs_retained": true,
-    "acquired_points": 14,
-    "acquisition_receipt": "operations/dx14_energy_20261009/ACQUISITION_RECEIPT.json",
-    "archive_completion_receipt": "operations/dx14_energy_20261009/ARCHIVE_COMPLETION_RECEIPT.json",
-    "archive_data_receipt": "operations/dx14_energy_20261009/ARCHIVE_DATA_RECEIPT.json",
-    "archive_metadata_receipt": "archive_receipts/_metadata__dx14_energy_20261009.json",
-    "archive_not_started": false,
-    "archive_status": "PASS new block capture data and consumer metadata; final status snapshot recorded separately",
-    "authorization_file": "private-home:/Downloads/CODEX_REV3_DX14_ENERGIEMESSUNG_20261009.txt",
-    "automatic_extension_authorized": false,
-    "budgets_retained": true,
-    "claim_exclusion_reason": "screening_energy_policy_nonclaimable",
-    "existing_energy_points_retained": 5,
-    "failed_physical_attempts": 0,
-    "independent_acquisition_review": "operations/dx14_energy_20261009/INDEPENDENT_REVIEW.json",
-    "independent_integration_review": "operations/dx14_energy_20261009/INDEPENDENT_INTEGRATION_REVIEW.json",
-    "integration_receipt": "operations/dx14_energy_20261009/INTEGRATION_RECEIPT.json",
-    "new_capture_remaining": 0,
-    "new_claim_eligible_energy_points": 0,
-    "new_diagnostic_energy_points": 14,
-    "normal_claim_eligible_energy_points": 5,
-    "normal_measurement_points": 19,
-    "parents": [
-      "revision3:/energy/final_dx_remaining13_20261008_final_current",
-      "revision3:/energy/final_dx_vendor_yolo11_20261008_final_current"
-    ],
-    "physical_starts": 42,
-    "policy_clarification": {
-      "caller_final_prepare_run_resume_guard": "implemented,14offline_tests_PASS,independent_review_PASS",
-      "current_reexported": false,
-      "findings": "operations/dx14_energy_20261009/policy_clarification/POLICY_FINDINGS.md",
-      "new_energy_claims": 0,
-      "new_repeat_slots": 0,
-      "next_final_start_requirement": "Full normal qualified pairing/context before start; resolved non-diagnostic admission and original resources/clock/environment capture evidence; separate bounded authorization and unchanged logical-slot/budget rules",
-      "original_diagnostic_capture_repeat_count": 42,
-      "original_measure_command_diagnostic_only_count": 14,
-      "physical_starts_in_offline_task": 0,
-      "points_remaining_diagnostic": 14,
-      "receipt": "operations/dx14_energy_20261009/policy_clarification/POLICY_CAUSE_RECEIPT.json",
-      "small_evidence_archive_receipt": "archive_receipts/_metadata__dx14_energy_policy_20261009.json",
-      "small_evidence_set": "operations/dx14_energy_20261009/policy_clarification/DX14_POLICY_EVIDENCE_20261009.zip",
-      "source_first_downgrade": "native_producer_energy_plan._native_runtime_observation_admission after missing pair context",
-      "status": "complete_B_diagnostic_original_captures_nontransferable",
-      "updated_at": "2026-10-09T11:57:02.027723+00:00",
-      "visible_before_capture": true
-    },
-    "resume_commands": "revision3:/operations/dx14_energy_20261009/RESUME_COMMANDS.txt",
-    "reused_DX14_points": 0,
-    "scope_identities": [
-      [
-        "deepx_to_trt",
-        "yolo11l",
-        "b003",
-        "orin_nx_deepx_m1_01"
-      ],
-      [
-        "deepx_to_trt",
-        "yolo11l",
-        "b062",
-        "orin_nx_deepx_m1_01"
-      ],
-      [
-        "deepx_to_trt",
-        "yolo11l",
-        "b120",
-        "orin_nx_deepx_m1_01"
-      ],
-      [
-        "deepx_to_trt",
-        "yolo26m",
-        "b003",
-        "orin_nx_deepx_m1_01"
-      ],
-      [
-        "deepx_to_trt",
-        "yolo26m",
-        "b038",
-        "orin_nx_deepx_m1_01"
-      ],
-      [
-        "deepx_to_trt",
-        "yolo26m",
-        "b043",
-        "orin_nx_deepx_m1_01"
-      ],
-      [
-        "deepx_to_trt",
-        "yolo26s",
-        "b003",
-        "orin_nx_deepx_m1_01"
-      ],
-      [
-        "deepx_to_trt",
-        "yolo26s",
-        "b021",
-        "orin_nx_deepx_m1_01"
-      ],
-      [
-        "deepx_to_trt",
-        "yolo26s",
-        "b038",
-        "orin_nx_deepx_m1_01"
-      ],
-      [
-        "native_full_tensorrt",
-        "mobilenet_v3_large",
-        "full",
-        "orin_nx_deepx_m1_01"
-      ],
-      [
-        "native_full_tensorrt",
-        "regnet_x_1_6gf",
-        "full",
-        "orin_nx_deepx_m1_01"
-      ],
-      [
-        "native_full_tensorrt",
-        "resnet50",
-        "full",
-        "orin_nx_deepx_m1_01"
-      ],
-      [
-        "native_full_tensorrt",
-        "yolo11l",
-        "full",
-        "orin_nx_deepx_m1_01"
-      ],
-      [
-        "native_full_deepx",
-        "yolo11l",
-        "full",
-        "orin_nx_deepx_m1_01"
-      ]
-    ],
-    "selected_valid_repeats": 42,
-    "selected_valid_repeats_limit": 42,
-    "start_admitted_points": 14,
-    "start_preflight": "revision3:/operations/dx14_energy_20261009/START_PREFLIGHT.json",
-    "status": "complete_no_DX14_capture_resume_needed_claims_diagnostic",
-    "status_snapshot_receipt": "archive_receipts/_metadata__dx14_energy_20261009_status_v2.json",
-    "terminal_resources": "operations/dx14_energy_20261009/TERMINAL_RESOURCE_BUDGET_CHECK.json",
-    "updated_at": "2026-10-09T10:46:23.593560+00:00"
-  },
-  "dx56_current_dataset_quality_blocker": {
-    "at": "2026-10-10T23:14:45.226076+00:00",
-    "comparison_context_rebind_completed": 56,
-    "completed": 56,
-    "consumer_metadata_rebind_pending": false,
-    "existing_completed_sources_not_repeated": true,
-    "local_worker_pid": null,
-    "metadata_rebind_completed": 56,
-    "metadata_rebind_receipt": "operations/native_dx_classifier_energy_prepare_20261010/VALIDATOR_CONSUMER_REBIND_PROGRESS.json",
-    "metadata_rebind_worker_pid": null,
-    "metadata_rebind_worker_start_ticks": null,
-    "normal_source_receipts": "operations/token_saving_batch_20261009/continuous_20261010/dx56/source_results",
-    "pending": 0,
-    "progress": "operations/token_saving_batch_20261009/continuous_20261010/dx56/prepared/dataset_fixed/DX56_NEXT_COMMANDS.json",
-    "repeated_measurements_required": false,
-    "scientific_evaluations_complete": 56,
-    "start_time_ticks": null,
-    "status": "ALL56_NORMAL_QUALITY_NATIVE_JOINS_AND_CURRENT_CONSUMER_BINDINGS_COMPLETE",
-    "worker": null
-  },
-  "dx_b044_quality": {
-    "central_evaluation": "operations/finalisation_generic_20261008/dx_b044_quality_corrected_execution/quality_management/CENTRAL_EVALUATION.json",
-    "corrected_handoff": "operations/finalisation_generic_20261008/dx_b044_quality_corrected_execution/HANDOFF.json",
-    "corrected_one_run_authorized": true,
-    "corrected_one_run_status": "SOURCE_AND_CENTRAL_EVALUATION_AND_NORMAL_CURRENT_EXPORT_COMPLETE_REFERENCE_CLOSE_5000_B1000",
-    "corrected_preflight": "PASS, no-SDK complete export admission fixture; fixture must not be evaluated",
-    "device_handoff": "DeepX returned to Native acquisition at12:31:05 UTC; no active Generic DUT worker",
-    "first_attempt": "5000 inferences, export failed missing original suite declaration; no predictions recoverable; retained",
-    "next_command": "No repeated source inference or quality evaluation required.",
-    "quality_decision": "reference_close",
-    "relative_loss": 0.0014127162518591978
-  },
-  "dx_final_split_energy": {
-    "cases": [
-      "b044",
-      "b066"
-    ],
-    "cleanup_proven": true,
-    "invalid_retained_repeats": 1,
-    "normal_energy_pointer": "CURRENT_NORMAL_ENERGY.json",
-    "physical_starts": 7,
-    "points": 2,
-    "receipt": "energy/final_dx_b044_b066_20261008_bound_context/REPEAT_OBSERVATIONS.json",
-    "selected_valid_repeats": 6
-  },
-  "dx_vendor_classifier_quality_reuse": {
-    "context": "quality_transfer/final_dx_vendor_classifier_reuse_20261008/QUALITY_REUSE_CONTEXT_RECEIPT.json",
-    "new_performance_claims": false,
-    "performance_observations_each": 1,
-    "points": 3,
-    "separate_new_energy_capture_pending": true
-  },
-  "energy_remaining": {
-    "at": "2026-10-10T20:55:58.028105+00:00",
-    "generic": 195,
-    "native_audited_delta": 153,
-    "native_historical_h10_classifier_screening_outside_delta": 3,
-    "normal_current_generic_energy_eligible": 9,
-    "normal_current_native_energy_eligible": 90,
-    "prepared_queue_pending_points": 236,
-    "total_audited_delta": 348
-  },
-  "execution_policy": "continuous_revision3_completion_20261010",
-  "final_block_status": "PASS:exact5YOLO11points_15final_repeats_3comparison_groups_10current_final_energy_points",
-  "final_implementation_freeze": "final_implementation_20261008/IMPLEMENTATION_FREEZE.json",
-  "final_source_commit": "8346d43d526221bd9d138943122206b658d56cbf",
-  "finalized_at": "2026-10-09T08:48:24.878466+00:00",
-  "generic_capture_parent_receipt": "operations/generic_energy_parent/RECEIPT.json",
-  "generic_capture_parent_status": "Both Generic technical-energy consumer and existing four Native attachment consumers independently passed. Existing prior unstarted parents remain stale; fresh existing normal parent preparation follows final Current export and global quiet handoff; no capture started.",
-  "generic_duration_software_status": "integrated_and_offline_verified; no_hardware_energy_started",
-  "generic_final_confirmations": {
-    "DeepX": "three_complete_actual_three_processes_each",
-    "H10": "three_complete_actual_three_processes_each_final_bundle_a837bd56",
-    "H8": "three_complete_actual_three_processes_each",
-    "claim_transfers_verified": 0,
-    "h10_blocker": "resolved; original failed metadata binding receipt retained; current normal closure in operations/finalisation_generic_20261008/H10_YOLO7_FINAL_GENERIC_COMPLETION.json",
-    "own_dataset_quality_results_verified": 1,
-    "quality_pairs_verified": 6,
-    "quality_transfers_verified": 5
-  },
-  "generic_followup_progress": "Current204 complete/612repeats/errors0; technicalpairs192;Q/Claim136;56DX Qualityexclusions preserved;12 H8/H10 YOLO26 Native-ranking projection exclusions deferred.",
-  "generic_hardware_terminal": {
-    "fresh_points": 204,
-    "historical_points": 0,
-    "integrated_as_current": true,
-    "last_group_receipts": [
-      "operations/finalisation_generic_20261008/H8_BN6_GENERIC_COMPLETION.json",
-      "operations/finalisation_generic_20261008/H10_BN6_GENERIC_COMPLETION.json",
-      "operations/finalisation_generic_20261008/H10_YOLO7_FINAL_GENERIC_COMPLETION.json"
-    ],
-    "scope": "All204 final-bundle actual cases closed; three prior H10 observations preserved and explicitly superseded. Still distinct from last normal Current95 export.",
-    "selected_independent_processes": 612,
-    "technical_points": 204
-  },
-  "h10_authorized_continuation_result": {
-    "additional_repeats_started": false,
-    "attempt": "energy/native_full_remaining5_qualified/attempts/energy-resume-02532533fd67482cbfa37049df31192f",
-    "automatic_retry": false,
-    "cleanup_proven": true,
-    "completed_tasks": 3165,
-    "missing_samples_in_command_window": 7936,
-    "original_source_completion_verified": false,
-    "repeat_0_attempt_slots_remaining": 1,
-    "repeat_1_attempt_slots_remaining": 3,
-    "repeat_2_attempt_slots_remaining": 3,
-    "source_completion_verified": true,
-    "status": "failed_repeat_0_invalid_command_window_immediate_stop"
-  },
-  "h10_final_confirmations": "operations/finalisation_native_20261008/H10_FINAL_CONFIRMATIONS.json",
-  "h10_vendor_classifier_quality_reuse": {
-    "context": "quality_transfer/final_h10_vendor_classifier_reuse_20261008/QUALITY_REUSE_CONTEXT_RECEIPT.json",
-    "energy_stop_unchanged": true,
-    "new_performance_claims": false,
-    "performance_observations_each": 1,
-    "points": 3,
-    "source_branch_equivalence_reverified": true
-  },
-  "h8_62_closeout": {
-    "archive_receipt": "revision3:/operations/token_saving_batch_20261009/closure_20261010/ARCHIVE_COMPLETION_RECEIPT.json",
-    "archive_status": "PASS",
-    "batch_resume_required": false,
-    "energy_status": "PASS",
-    "integration_receipt": "revision3:/operations/token_saving_batch_20261009/closure_20261010/INTEGRATION_RECEIPT.json",
-    "invalid_retained": 4,
-    "new_captures_authorized": false,
-    "overall_revision3_complete": false,
-    "physical_starts": 190,
-    "points": 62,
-    "resume_commands": "revision3:/operations/token_saving_batch_20261009/closure_20261010/RESUME_COMMANDS.txt",
-    "status": "PASS",
-    "valid_selected_repeats": 186
-  },
-  "h8_classifier_domain": {
-    "affected_native_splits": 56,
-    "affected_vendor_fulls": 3,
-    "current_vendor_full_performance": "three_points_complete_nine_actual_processes_corrected_input",
-    "current_vendor_full_quality": "three corrected Vendor plus threeTRT classification Full normal quality joins complete; MobileVendor accuracy_loss retained; same-setup comparative eligibility from normal consumer",
-    "engines_hefs_dxnn_rebuilt": 0,
-    "historical_vendor_full_observations_retained": 3,
-    "normal_cpp_wrapper_build": "operations/h8_classifier_domain_20261008/CPP_WRAPPER_READY.json",
-    "normal_cpp_wrapper_build_count": 1,
-    "quality_blocker": "operations/h8_classifier_domain_20261008/CURRENT_FULL_QUALITY_BLOCKER_20261008.json",
-    "sdk_inspection": "operations/h8_classifier_domain_20261008/SDK_INSPECTION.json",
-    "split_inventory": "operations/h8_classifier_domain_20261008/IMPACT_SPLIT_INVENTORY.json",
-    "status": "concrete_hef_domain_verified_corrected_source_frozen_68_tests_pass_hardware_and_current112_hailo_split_quality_complete",
-    "unchanged_historical_full_reuse_points": 6
-  },
-  "h8_cpp_rate_reader": {
-    "receipt": "operations/finalisation_native_20261008/H8_CPP_RATE_SERIALIZATION_RECEIPT.json",
-    "runtime_or_plan_changed": false,
-    "status": "narrow verified CPP fixed-six-decimal reader corrected and independently reviewed; old b097 repeat1 preserved, only missing2/3 executed; cohort complete"
-  },
-  "historical_archive_read_only": true,
-  "metadata_review_package": {
-    "bytes": 1918342,
-    "full_raw_or_core_closure": false,
-    "path": "review_package/rev3_three_points_metadata_20261009.zip",
-    "status": "PASS_INCLUDED_METADATA_BYTES_ONLY",
-    "verification": "operations/rev3_three_points_20261009/PACKAGE_VERIFY.json"
-  },
-  "metadata_review_package_scope": "Current/plan/source/diff/tests/energy/archive receipts only, existing private-review-inputs-v1 schema. Full original cohort reports, large normal quality aggregates and raw payloads explicitly external; no full raw-data closure claim.",
-  "native_bn6_full_runtime_blocker": {
-    "archived_performance_groups": 8,
-    "cases": 8,
-    "completed_mobile_quality_archive": "operations/token_saving_batch_20261009/continuous_20261010/dx56/ARCHIVED_COMPLETED_MOBILE_REMAINDER.json",
-    "final_energy_prepared": 20,
-    "logs": "operations/token_saving_batch_20261009/continuous_20261010/bn6/LIVE_EXECUTION_PROGRESS.json",
-    "metadata_admission": "Four H8/H10 TRT metadata seals PASS; four remaining DX seals running normal CLI, no SDK capture",
-    "negative_original_h8_h10_yolo26s_preserved": true,
-    "next_commands": "operations/token_saving_batch_20261009/continuous_20261010/bn6/yolo26_prepare_staged/NORMAL_COMMANDS.json",
-    "normal_current_export_published": true,
-    "normal_deepx_quality": "quality_transfer/bn6_yolo26_deepx_vendor_20261011_original_binding_reentry/finalized",
-    "normal_full39_context": {
-      "Current_pointer_published": true,
-      "directory": "quality_transfer/final_native_187_20261011/finalized_187_normal_full_context",
-      "full_rows": 39,
-      "negative_quality_rows": 2,
-      "normal_composition_returncode": 0,
-      "publish_after_remaining_normal_preparation": true,
-      "quality_claims": 37,
-      "retained_split_rows": 148
-    },
-    "normal_metadata_projection": "operations/token_saving_batch_20261009/continuous_20261010/bn6/energy_metadata_staged/trt_input_staged/assembly/full_projected/reports/native_producer_summary.json",
-    "normal_negative_vendor_s_decision": "Actual H8/H10s normal planner: five original contexts, positive four capture-prefix proposed, pair_count=0 and all four diagnostic_only/energy_claim_eligible=false due unchanged Vendor9/14 sentinel failure; no grants/captures and no gate relaxation",
-    "normal_negative_vendor_s_evidence": "operations/token_saving_batch_20261009/continuous_20261010/bn6/yolo26_prepare_staged/CONTEXT_ONLY_PROBE.json",
-    "normal_trt_quality": "quality_transfer/bn6_yolo26_trt_20261011/finalized",
-    "staged_integration_review": "Six-file consumer/planner integration APPLIED_BY_ROOT after quality owner release; 28 targeted tests PASS",
-    "status": "ALL8_ACTUAL_PERFORMANCE_AND_NORMAL_FULL_QUALITY_COMPLETE",
-    "valid_processes": 24
-  },
-  "native_bn6_split_report_blocker": {
-    "actual12_independent_review": "quality_transfer/final_detector_splits_20261008/bn6_location_caller/ACTUAL12_INDEPENDENT_REVIEW.json",
-    "affected_points": 12,
-    "controller_reporter_modified": true,
-    "existing_implementation_receipt": "operations/finalisation_native_20261008/bn6_controller_reporting/IMPLEMENTATION_RECEIPT.json",
-    "negative_quality_count": 0,
-    "normal_negative_generation": "quality_transfer/final_detector_splits_20261008/bn6_controller_20261008",
-    "original_runtime_or_snapshot_modified": false,
-    "original_snapshot_or_dut_modified": false,
-    "rate_projection_limitation": "Initial negative generations retained; actual12 positive normal output independently reviewed. Currentpointer161 remains until all161 retained science fields survive final179 normal composition.",
-    "scope": "six H8 and six H10 YOLO26 detector splits",
-    "status": "Resolved: actual12 plus original6DX rate preservation, all161 prior science and179composition independently PASS. Pointer179 integrated; normalNativeCurrentexport in progress.",
-    "verified_evidence_join_count_is_not_quality_or_numeric_fps_pass": true
-  },
-  "native_current_independent_review": "quality_transfer/final_native_179_20261008/INDEPENDENT_NATIVE_CURRENT_INTEGRATION_REVIEW.json",
-  "native_current_independent_review_status": "PASS_246_observations_original696_repeats_180Q_169claims_5unchanged_energy",
-  "native_dx_energy14_preparation": "operations/energy_assembly/final_dx_energy14_20261008/final_current_inputs/ASSEMBLY_RECEIPT.json",
-  "native_dx_energy14_preparation_status": "local_metadata_assembly_complete_normal_parent_prepare_not_started_waiting_final_GenericCurrent_and_global_quiet",
-  "native_h10_missing_acquisition": "operations/finalisation_native_20261008/H10_MISSING_ACQUISITION.json",
-  "native_h10_missing_commands": "operations/finalisation_native_20261008/H10_MISSING_GROUP_COMMANDS.txt",
-  "native_performance_terminal": {
-    "actual_selected_repeats": 696,
-    "concrete_frozen_BN6_full_exclusions": 8,
-    "h10_terminal_receipt": "operations/finalisation_native_20261008/H10_MISSING_ACQUISITION.json",
-    "h8_terminal_receipt": "operations/finalisation_native_20261008/H8_RESNET_CLOSED_COHORT.json",
-    "historical_single_observation_reuses": 6,
-    "new_points": 232
-  },
-  "native_rows_without_current_final_energy": 156,
-  "native_rows_without_current_final_energy_admission": 156,
-  "next_actions": [
-    "Finish existing H8-62 archive job without duplicate transfer.",
-    "Repair existing rest-group sequencing and normal Generic capture/import integration.",
-    "Resolve DX56 numeric-path quality, missing Full baselines and source recovery within authorized campaign.",
-    "Complete remaining normal captures, Current, archive, paper and result Git.",
-    "Continue the authorized Revision3 campaign; inspect normal group results and repair NEEDS_CODEX internally.",
-    "After normal imports, update central results, archive verified captures and continue remaining prepared groups."
-  ],
-  "next_read_only_command": "source:controller/.venv/bin/python -B revision3:/quality_transfer/import_qualified_energy.py --cohort revision3:/energy/final_dx_yolo11_20261009_live_ready --final-cohort final_dx_yolo11_20261009_live_ready --require-complete-point",
-  "normal_claim_points": 111,
-  "normal_energy_generation": "revision3:/reporting_caller_managed_energy/exports/20261011T010706968366Z",
-  "normal_energy_measurement_points": 120,
-  "normal_energy_pointer": "revision3:/CURRENT_NORMAL_ENERGY.json",
-  "normal_energy_points": 120,
-  "normal_quality_points": 180,
-  "overall_campaign_complete": false,
-  "own_measurement_processes_at_last_terminal_check": 0,
-  "paper_current_status": "PASS_CURRENT_DERIVATION_AND_MAIN_SUPPLEMENT_BUILD; campaign in_progress",
-  "paper_receipt": "revision3:/operations/rev3_three_points_20261009/PAPER_RECEIPT.json",
-  "pending_current_export": false,
-  "plan": "operations/recovery_full_h10_20261007/PLAN.json",
-  "planned_existing_energy_commands": "operations/energy_assembly/final_dx_energy14_20261008/FINAL_ENERGY_COMMAND_SELECTION_20261008.json",
-  "private_paper_status": "incomplete_current_view_built_and_reproduced",
-  "raw_detector_full_quality_pending_current": false,
-  "remaining": {
-    "generic_additional_points": 0,
-    "generic_current_points_to_confirm_after_final_duration_worker_change": 0,
-    "generic_downstream_ranking_joins": 0,
-    "generic_energy_points_without_final_admission": 195,
-    "generic_historical_points_requiring_final_bundle_confirmation": 0,
-    "generic_missing_hardware_points": 0,
-    "native_existing_points_requiring_bounded_normal_source_admission_confirmation": 0,
-    "native_required_energy_points_without_final_admission": 90,
-    "new_native_performance_points": 0,
-    "note": "Actual Current plus existing queue:285 remaining admitted-scope points (90Native/195Generic); ten proven negative Native comparison contexts and three historical H10 screenings outside queue. See continuous_external_transport_prerequisite.",
-    "native_points_without_final_energy_including_exclusions": 103,
-    "native_scientifically_negative_comparison_contexts": 10,
-    "native_historical_h10_screenings_outside_delta": 3
-  },
-  "remaining_generic_comparison_exclusions": [],
-  "remaining_generic_comparison_exclusions_count": 0,
-  "remaining_generic_quality_exclusions": 56,
-  "remaining_native_performance_exclusions": 8,
-  "required_authorization": "Revision3 continuous user authorization; scientific gates, live ownership and device protections remain mandatory.",
-  "required_authorization_question": "previous_specific_three_repeat_workflow_authorized_and_consumed; no_new_question_pending",
-  "resource_scope": {
-    "all_dut_performance": "All existing hardware cohorts terminal. Targeted reporting fixes and one Currentexport terminal. No hardware/capture/bulk started in token-saving phase.",
-    "controller_bulk_archive": "Batch14 terminal; last15Generic groups target-byte verified; no active own bulk transport.",
-    "h10_sensor_capture": "blocked_fresh_post_stop_authorization_and_concrete_continuation_adapter_required",
-    "no_budget_reset": true,
-    "other_sensor_capture": "Deferred by explicit user token-saving instruction; no new capture/parent hardware preparation in this phase. Original STOPs and budgets retained.",
-    "physical_quarantines": "released_by_explicitly_authorized_normal_recovery; no_new_quarantines_on_cleanly_closed_failed_continuation"
-  },
-  "resume_command_document": "revision3:/operations/yolo11_final_20261009/cohort_fix_20261009/RESUME_COMMANDS.txt",
-  "source_deployment_status": {
-    "DeepX": "deployment_final_20261008/orin_nx_deepx_m1_01/DEPLOYED.json",
-    "H10": "deployment_final_20261008/orin_nx_hailo10_01/DEPLOYED.json",
-    "H8": "deployment_final_20261008/orin_nx_hailo8_01/DEPLOYED.json"
-  },
-  "source_transport_budget": {
-    "H10-source": {
-      "max_transport_failures": 20,
-      "remaining_transport_failures": 17,
-      "stop_reason": "campaign_source_completion_unresolved",
-      "transport_failures": 3
-    },
-    "DeepX-source": {
-      "max_transport_failures": 20,
-      "remaining_transport_failures": 19,
-      "stop_reason": "",
-      "transport_failures": 1
-    },
-    "H8-source": {
-      "max_transport_failures": 20,
-      "remaining_transport_failures": 20,
-      "stop_reason": "",
-      "transport_failures": 0
-    }
-  },
-  "task_status": "continuous_revision3_in_progress_transport_diagnosis_and_offline_completion",
   "token_saving_batch": {
-    "state": "revision3:/operations/token_saving_batch_20261009/state.json",
-    "queue": "revision3:/operations/token_saving_batch_20261009/queue.json",
-    "status": "NEEDS_CODEX",
-    "started_at": "2026-10-11T03:35:43.005024+00:00",
-    "updated_at": "2026-10-11T04:47:30.131405+00:00",
-    "worker_pid": 3670746,
-    "worker_start_ticks": "41796991",
+    "status": "COMPLETE",
+    "started_at": "2026-10-12T21:44:13.750465+00:00",
+    "updated_at": "2026-10-13T04:01:05.922833+00:00",
+    "worker_pid": 872488,
+    "worker_start_ticks": "56968052",
     "session": "rev3-token-batch-20261009",
     "completed_groups": [
       {
@@ -1278,892 +90,1120 @@
         "parent": "revision3:/energy/native_yolov7_dx_b009_final_20261010",
         "regime": "native",
         "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/token_batch_h8_yolo11l_20261009",
+        "regime": "native",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/native_yolov7_h8_b009_full_final_20261010",
+        "regime": "native",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/native_yolov7_h8_b044_b066_final_20261010",
+        "regime": "native",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/native_dx_classifier_mobilenet_v3_large_final_20261010",
+        "regime": "native",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_mobilenet_v3_large_b001_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_yolo11l_b003_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_yolo26m_b003_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_yolo26s_b003_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_yolo26s_b021_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_yolo26m_b038_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_yolo26s_b038_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_yolo26m_b043_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_yolo11l_b062_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_yolo11l_b120_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_mobilenet_v3_large_b001_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_regnet_x_1_6gf_b001_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_resnet50_b002_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_yolo11l_b003_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_yolo26m_b003_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_yolo26s_b003_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_regnet_x_1_6gf_b008_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_resnet50_b009_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_mobilenet_v3_large_b010_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_regnet_x_1_6gf_b015_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_resnet50_b016_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_mobilenet_v3_large_b019_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_yolo26s_b021_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_regnet_x_1_6gf_b023_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_resnet50_b023_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_mobilenet_v3_large_b027_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_regnet_x_1_6gf_b030_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_resnet50_b031_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_regnet_x_1_6gf_b037_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_resnet50_b038_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_yolo26m_b038_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_yolo26s_b038_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_mobilenet_v3_large_b039_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_yolo26m_b043_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_regnet_x_1_6gf_b044_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_resnet50_b045_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_regnet_x_1_6gf_b052_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_resnet50_b052_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_mobilenet_v3_large_b056_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_regnet_x_1_6gf_b059_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_resnet50_b060_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_mobilenet_v3_large_b062_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_yolo11l_b062_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_regnet_x_1_6gf_b066_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_resnet50_b067_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_mobilenet_v3_large_b068_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_resnet50_b068_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_regnet_x_1_6gf_b073_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_mobilenet_v3_large_b074_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_resnet50_b074_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_mobilenet_v3_large_b078_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_regnet_x_1_6gf_b080_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_resnet50_b081_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_mobilenet_v3_large_b085_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_regnet_x_1_6gf_b087_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_regnet_x_1_6gf_b088_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_resnet50_b088_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_regnet_x_1_6gf_b095_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_resnet50_b095_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_mobilenet_v3_large_b097_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_mobilenet_v3_large_b100_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_regnet_x_1_6gf_b102_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_resnet50_b103_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_resnet50_b104_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_mobilenet_v3_large_b108_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_regnet_x_1_6gf_b109_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_resnet50_b110_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_regnet_x_1_6gf_b115_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_resnet50_b119_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_mobilenet_v3_large_b120_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_yolo11l_b120_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_regnet_x_1_6gf_b123_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_mobilenet_v3_large_b132_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_regnet_x_1_6gf_b132_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h8_mobilenet_v3_large_b135_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_mobilenet_v3_large_b010_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_mobilenet_v3_large_b019_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_mobilenet_v3_large_b027_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_mobilenet_v3_large_b039_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_mobilenet_v3_large_b056_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_mobilenet_v3_large_b062_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_mobilenet_v3_large_b068_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_mobilenet_v3_large_b074_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_mobilenet_v3_large_b078_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_mobilenet_v3_large_b085_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_mobilenet_v3_large_b097_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_mobilenet_v3_large_b100_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_mobilenet_v3_large_b108_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_mobilenet_v3_large_b120_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_mobilenet_v3_large_b132_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_mobilenet_v3_large_b135_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_regnet_x_1_6gf_b001_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_regnet_x_1_6gf_b008_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_regnet_x_1_6gf_b015_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_regnet_x_1_6gf_b023_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_regnet_x_1_6gf_b030_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_regnet_x_1_6gf_b037_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_regnet_x_1_6gf_b044_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_regnet_x_1_6gf_b052_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_regnet_x_1_6gf_b059_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_regnet_x_1_6gf_b066_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_regnet_x_1_6gf_b073_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_regnet_x_1_6gf_b080_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_regnet_x_1_6gf_b087_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_regnet_x_1_6gf_b088_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_regnet_x_1_6gf_b095_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_regnet_x_1_6gf_b102_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_regnet_x_1_6gf_b109_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_regnet_x_1_6gf_b115_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_regnet_x_1_6gf_b123_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_regnet_x_1_6gf_b132_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_resnet50_b002_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_resnet50_b009_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_resnet50_b016_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_resnet50_b023_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_resnet50_b031_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_resnet50_b038_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_resnet50_b045_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_resnet50_b052_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_resnet50_b060_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_resnet50_b067_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_resnet50_b068_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_resnet50_b074_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_resnet50_b081_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_resnet50_b088_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_resnet50_b095_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_resnet50_b103_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_resnet50_b104_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_resnet50_b110_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/deepx_resnet50_b119_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/native_yolo26m_h8_final_20261010",
+        "regime": "native",
+        "setup": "orin_nx_hailo8_01"
+      },
+      {
+        "parent": "revision3:/energy/native_yolo26m_deepx_final_20261010",
+        "regime": "native",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/native_yolo26s_deepx_final_20261010",
+        "regime": "native",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/native_dx_classifier_regnet_x_1_6gf_final_20261010",
+        "regime": "native",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/native_dx_classifier_resnet50_final_20261010",
+        "regime": "native",
+        "setup": "orin_nx_deepx_m1_01"
+      },
+      {
+        "parent": "revision3:/energy/h10_classifier_resnet50_final_20261010",
+        "regime": "native",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/native_yolov7_h10_b009_fulls_final_20261010",
+        "regime": "native",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/native_yolov7_h10_b044_b066_final_20261010",
+        "regime": "native",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/native_yolo11_h10_final_20261010",
+        "regime": "native",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_mobilenet_v3_large_b001_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_regnet_x_1_6gf_b001_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_resnet50_b002_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_yolo11l_b003_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_yolo26m_b003_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_yolo26s_b003_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_regnet_x_1_6gf_b008_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_resnet50_b009_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_mobilenet_v3_large_b010_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_regnet_x_1_6gf_b015_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_resnet50_b016_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_mobilenet_v3_large_b019_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_yolo26s_b021_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_regnet_x_1_6gf_b023_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_resnet50_b023_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_mobilenet_v3_large_b027_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_regnet_x_1_6gf_b030_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_resnet50_b031_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_regnet_x_1_6gf_b037_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_resnet50_b038_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_yolo26m_b038_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_yolo26s_b038_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_mobilenet_v3_large_b039_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_yolo26m_b043_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_regnet_x_1_6gf_b044_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_resnet50_b045_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_regnet_x_1_6gf_b052_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_resnet50_b052_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_mobilenet_v3_large_b056_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_regnet_x_1_6gf_b059_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_resnet50_b060_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_mobilenet_v3_large_b062_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_yolo11l_b062_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_regnet_x_1_6gf_b066_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_resnet50_b067_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_mobilenet_v3_large_b068_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_resnet50_b068_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_regnet_x_1_6gf_b073_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_mobilenet_v3_large_b074_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_resnet50_b074_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_mobilenet_v3_large_b078_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_regnet_x_1_6gf_b080_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_resnet50_b081_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_mobilenet_v3_large_b085_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_regnet_x_1_6gf_b087_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_regnet_x_1_6gf_b088_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_resnet50_b088_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_regnet_x_1_6gf_b095_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_resnet50_b095_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_mobilenet_v3_large_b097_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_mobilenet_v3_large_b100_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_regnet_x_1_6gf_b102_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_resnet50_b103_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_resnet50_b104_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_mobilenet_v3_large_b108_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_regnet_x_1_6gf_b109_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_resnet50_b110_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_regnet_x_1_6gf_b115_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_resnet50_b119_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_mobilenet_v3_large_b120_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_yolo11l_b120_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_regnet_x_1_6gf_b123_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_mobilenet_v3_large_b132_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_regnet_x_1_6gf_b132_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/generic_completed/h10_mobilenet_v3_large_b135_final_20261010",
+        "regime": "generic_completed",
+        "setup": "orin_nx_hailo10_01"
+      },
+      {
+        "parent": "revision3:/energy/native_yolo26m_h10_final_20261010",
+        "regime": "native",
+        "setup": "orin_nx_hailo10_01"
       }
     ],
-    "blocked_groups": [
-      {
-        "group": {
-          "parent": "revision3:/energy/token_batch_h8_yolo11l_20261009",
-          "regime": "native",
-          "setup": "orin_nx_hailo8_01"
-        },
-        "source": "H8-source",
-        "reasons": [
-          {
-            "identity": [
-              "hailo8_to_trt",
-              "yolo11l",
-              "b003",
-              "orin_nx_hailo8_01"
-            ],
-            "reason": "campaign_source_completion_unresolved"
-          },
-          {
-            "identity": [
-              "hailo8_to_trt",
-              "yolo11l",
-              "b062",
-              "orin_nx_hailo8_01"
-            ],
-            "reason": "campaign_source_completion_unresolved"
-          },
-          {
-            "identity": [
-              "hailo8_to_trt",
-              "yolo11l",
-              "b120",
-              "orin_nx_hailo8_01"
-            ],
-            "reason": "campaign_source_completion_unresolved"
-          },
-          {
-            "identity": [
-              "native_full_tensorrt",
-              "yolo11l",
-              "full",
-              "orin_nx_hailo8_01"
-            ],
-            "reason": "campaign_source_completion_unresolved"
-          },
-          {
-            "identity": [
-              "native_full_hailo8",
-              "yolo11l",
-              "full",
-              "orin_nx_hailo8_01"
-            ],
-            "reason": "campaign_source_completion_unresolved"
-          }
-        ],
-        "checked_at": "2026-10-11T03:35:43.016657+00:00"
-      },
-      {
-        "group": {
-          "parent": "revision3:/energy/native_yolov7_h8_b009_full_final_20261010",
-          "regime": "native",
-          "setup": "orin_nx_hailo8_01"
-        },
-        "source": "H8-source",
-        "reasons": [
-          {
-            "identity": [
-              "hailo8_to_trt",
-              "yolov7_paper",
-              "b009",
-              "orin_nx_hailo8_01"
-            ],
-            "reason": "campaign_source_completion_unresolved"
-          },
-          {
-            "identity": [
-              "native_full_tensorrt",
-              "yolov7_paper",
-              "full",
-              "orin_nx_hailo8_01"
-            ],
-            "reason": "campaign_source_completion_unresolved"
-          }
-        ],
-        "checked_at": "2026-10-11T03:43:30.303861+00:00"
-      },
-      {
-        "group": {
-          "parent": "revision3:/energy/native_yolov7_h8_b044_b066_final_20261010",
-          "regime": "native",
-          "setup": "orin_nx_hailo8_01"
-        },
-        "source": "H8-source",
-        "reasons": [
-          {
-            "identity": [
-              "hailo8_to_trt",
-              "yolov7_paper",
-              "b044",
-              "orin_nx_hailo8_01"
-            ],
-            "reason": "campaign_source_completion_unresolved"
-          },
-          {
-            "identity": [
-              "hailo8_to_trt",
-              "yolov7_paper",
-              "b066",
-              "orin_nx_hailo8_01"
-            ],
-            "reason": "campaign_source_completion_unresolved"
-          }
-        ],
-        "checked_at": "2026-10-11T03:43:30.311964+00:00"
-      }
-    ],
-    "active_parent": "revision3:/energy/native_dx_classifier_mobilenet_v3_large_final_20261010",
-    "source": "DeepX-source",
-    "recovery_receipt": "revision3:/operations/token_saving_batch_20261009/recovery_integration_20261009/RECOVERY_APPLIED.json",
-    "stage": "TERMINAL",
-    "active_model": "mobilenet_v3_large",
-    "active_regime": "native",
-    "active_setup": "orin_nx_deepx_m1_01",
-    "parent_command": [
-      "source:controller/.venv/bin/python",
-      "-B",
-      "revision3:/operations/energy_parent_qualified.py",
-      "run",
-      "--run-dir",
-      "revision3:/energy/native_dx_classifier_mobilenet_v3_large_final_20261010",
-      "--slot-handoff",
-      "revision3:/operations/token_saving_batch_20261009/native_dx_classifier_mobilenet_v3_large_final_20261010_handoff.json"
-    ],
-    "parent_pid": null,
-    "parent_start_ticks": null,
-    "parent_returncode": 1,
-    "error": "Normal parent returned 1; see revision3:/operations/token_saving_batch_20261009/native_dx_classifier_mobilenet_v3_large_final_20261010_run.log"
-  },
-  "yolo11_final_20261009": {
-    "actual_captures_final_import": "pending",
-    "archive_receipt": "archive_receipts/_metadata__yolo11_final_context_20261009.json",
-    "assembly_result": "revision3:/operations/yolo11_final_20261009/ASSEMBLY_RESULT.json",
-    "at": "2026-10-09T12:52:03.524671+00:00",
-    "blocked_slots": 15,
-    "blocker_function": "EnergyTaskBudget.allowed",
-    "blocker_reason": "energy_repeat_already_valid:repeat:0..2",
-    "cohort": "final_dx_yolo11_20261009_live_ready",
-    "comparison_groups": 3,
-    "counts_per_point": {
-      "begun_chains": 3,
-      "max_chains": 9,
-      "max_retries": 2
-    },
-    "environment_capture_integration_complete": true,
-    "failed_offline_prepare_preserved": "revision3:/energy/final_dx_yolo11_20261009",
-    "historical_not_current": true,
-    "independent_review": "revision3:/operations/yolo11_final_20261009/INDEPENDENT_REVIEW.json",
-    "live_preparation_executed": false,
-    "live_read_only_prerequisites": "PASS",
-    "new_final_energy_claims": 0,
-    "new_physical_starts": 0,
-    "new_repeat_slots": 0,
-    "normal_comparison_groups": 3,
-    "normal_current_unchanged": true,
-    "normal_prepared_nondiagnostic_captures": 5,
-    "original_budget_unchanged": true,
-    "parent": "revision3:/energy/final_dx_yolo11_20261009_live_ready",
-    "planned_non_diagnostic_captures": 5,
-    "prepared_parent": "revision3:/energy/final_dx_yolo11_20261009_bound_context",
-    "production_session": "energy-4ab73bd0cec04edfb32af622330cdef9",
-    "qualified_plan_captures": 5,
-    "resources_acquired": false,
-    "resume_commands": "revision3:/operations/yolo11_final_20261009/cohort_fix_20261009/RESUME_COMMANDS.txt",
-    "scope_expansion": false,
-    "status": "RUNNING",
-    "superseded_by": "yolo11_final_cohort_20261009",
-    "technical_repeat_management_fixed": true,
-    "tests_passed": 31
-  },
-  "yolo11_final_cohort_20261009": {
-    "DUT_runtime_changed": false,
-    "STOPs_lifted": false,
-    "all42DX14_original_diagnostic_repeats_retained": true,
-    "archive_capture_receipt": "revision3:/archive_receipts/energy__final_dx_yolo11_20261009_live_ready.json",
-    "archive_metadata_receipt": "revision3:/archive_receipts/_metadata__yolo11_final_cohort_20261009.json",
-    "archive_verification": "Separate normal archive receipts are authoritative; no new archive mechanism.",
-    "archive_verified": true,
-    "at": "2026-10-09T15:21:53.201221+00:00",
-    "budget_final": "revision3:/operations/yolo11_final_20261009/cohort_fix_20261009/BUDGET_FINAL.json",
-    "budgets_reset": false,
-    "cleanup": {
-      "at": "2026-10-09T15:11:37.354193+00:00",
-      "cleanup_proven": true,
-      "errors": [],
-      "foreign_processes_stopped": false,
-      "owned_local_active": 0,
-      "owned_remote_active": 0
-    },
-    "cohort_id": "final_dx_yolo11_20261009_live_ready",
-    "comparison_groups": 3,
-    "controller_source_snapshot": "revision3:/operations/yolo11_final_20261009/cohort_fix_20261009/source_final",
-    "current_diagnostic_points": 9,
-    "current_final_eligible_points": 10,
-    "current_unique_points": 19,
-    "five_prior_final_observations_unchanged": true,
-    "independent_final_review": "revision3:/operations/yolo11_final_20261009/FINAL_INDEPENDENT_REVIEW.json",
-    "independent_review": "revision3:/operations/yolo11_final_20261009/cohort_fix_20261009/INDEPENDENT_REVIEW.json",
-    "invalid_attempts_retained": 4,
-    "measured_DUT_source": "8346d43d526221bd9d138943122206b658d56cbf",
-    "native_energy_completion_categories": {
-      "blocked_existing_repeat_scope": 2,
-      "blocked_stop": 78,
-      "blocked_technical_binding": 8,
-      "historical_screening_preserved": 3,
-      "new_capture_metadata_prepared": 59,
-      "new_capture_parent_unprepared": 77,
-      "reuse_diagnostic_energy": 9,
-      "reuse_final_energy": 10
-    },
-    "new_captures_authorized_now": false,
-    "new_physical_starts": 19,
-    "normal_claim_comparable_baseline_pairs": 6,
-    "normal_current_generation": "revision3:/reporting_caller_managed_energy/exports/20261009T151245704791Z",
-    "normal_import": "revision3:/quality_transfer/qualified_energy_import/final_dx_yolo11_20261009_live_ready/9f5667ebb10324496ac5932d128caa05f4224a9d1d93676a4e1ba48436ccbeeb",
-    "normal_pair_report": "revision3:/operations/yolo11_final_20261009/cohort_fix_20261009/normal_energy_report/native_energy_pair_comparison.json",
-    "remaining_generic_energy": 204,
-    "remaining_native_required_energy": 233,
-    "results": [
-      {
-        "backend": "deepx_to_trt",
-        "campaign_cohort": "final_dx_yolo11_20261009_live_ready",
-        "case": "b003",
-        "claim_eligible": true,
-        "claim_exclusion_reasons": [],
-        "completion_pairing_eligible": true,
-        "completion_pairing_status": "strict_fast_postflight_completion_verified",
-        "diagnostic_only": false,
-        "energy_per_work_j": 0.7000793859220925,
-        "energy_per_work_j_ci_high": 0.7051954397083026,
-        "energy_per_work_j_ci_low": 0.6949633321358825,
-        "energy_quality_qualified": true,
-        "energy_repeat_requested_n": 3,
-        "energy_repeat_valid_n": 3,
-        "environment_observation_status": "pass",
-        "model": "yolo11l",
-        "quality_claim_result_verified": true,
-        "setup_id": "orin_nx_deepx_m1_01"
-      },
-      {
-        "backend": "deepx_to_trt",
-        "campaign_cohort": "final_dx_yolo11_20261009_live_ready",
-        "case": "b062",
-        "claim_eligible": true,
-        "claim_exclusion_reasons": [],
-        "completion_pairing_eligible": true,
-        "completion_pairing_status": "strict_fast_postflight_completion_verified",
-        "diagnostic_only": false,
-        "energy_per_work_j": 0.5460048888088526,
-        "energy_per_work_j_ci_high": 0.5494717758050172,
-        "energy_per_work_j_ci_low": 0.542538001812688,
-        "energy_quality_qualified": true,
-        "energy_repeat_requested_n": 3,
-        "energy_repeat_valid_n": 3,
-        "environment_observation_status": "pass",
-        "model": "yolo11l",
-        "quality_claim_result_verified": true,
-        "setup_id": "orin_nx_deepx_m1_01"
-      },
-      {
-        "backend": "deepx_to_trt",
-        "campaign_cohort": "final_dx_yolo11_20261009_live_ready",
-        "case": "b120",
-        "claim_eligible": true,
-        "claim_exclusion_reasons": [],
-        "completion_pairing_eligible": true,
-        "completion_pairing_status": "strict_fast_postflight_completion_verified",
-        "diagnostic_only": false,
-        "energy_per_work_j": 0.7056285862919626,
-        "energy_per_work_j_ci_high": 0.7316652970636089,
-        "energy_per_work_j_ci_low": 0.6795918755203162,
-        "energy_quality_qualified": true,
-        "energy_repeat_requested_n": 3,
-        "energy_repeat_valid_n": 3,
-        "environment_observation_status": "pass",
-        "model": "yolo11l",
-        "quality_claim_result_verified": true,
-        "setup_id": "orin_nx_deepx_m1_01"
-      },
-      {
-        "backend": "native_full_tensorrt",
-        "campaign_cohort": "final_dx_yolo11_20261009_live_ready",
-        "case": "full",
-        "claim_eligible": true,
-        "claim_exclusion_reasons": [],
-        "completion_pairing_eligible": true,
-        "completion_pairing_status": "strict_completed_detection_endpoint_verified",
-        "diagnostic_only": false,
-        "energy_per_work_j": 0.6754672467758062,
-        "energy_per_work_j_ci_high": 0.6781162892871331,
-        "energy_per_work_j_ci_low": 0.6728182042644792,
-        "energy_quality_qualified": true,
-        "energy_repeat_requested_n": 3,
-        "energy_repeat_valid_n": 3,
-        "environment_observation_status": "pass",
-        "model": "yolo11l",
-        "quality_claim_result_verified": true,
-        "setup_id": "orin_nx_deepx_m1_01"
-      },
-      {
-        "backend": "native_full_deepx",
-        "campaign_cohort": "final_dx_yolo11_20261009_live_ready",
-        "case": "full",
-        "claim_eligible": true,
-        "claim_exclusion_reasons": [],
-        "completion_pairing_eligible": true,
-        "completion_pairing_status": "strict_completed_detection_endpoint_verified",
-        "diagnostic_only": false,
-        "energy_per_work_j": 0.756063476655983,
-        "energy_per_work_j_ci_high": 0.7620690301938026,
-        "energy_per_work_j_ci_low": 0.7500579231181633,
-        "energy_quality_qualified": true,
-        "energy_repeat_requested_n": 3,
-        "energy_repeat_valid_n": 3,
-        "environment_observation_status": "pass",
-        "model": "yolo11l",
-        "quality_claim_result_verified": true,
-        "setup_id": "orin_nx_deepx_m1_01"
-      }
-    ],
-    "revision3_overall_complete": false,
-    "scope": "exact5YOLO11l_final_energy_points_on_orin_nx_deepx_m1_01",
-    "selected_valid_final_repeats": 15,
-    "source_commit": "b7c2094e329351dcbdbeef4d3fcac48eec9458f3",
-    "status": "PASS",
-    "tests": "31 initial focused tests PASS;4 point1/import tests PASS;4 final resume tests PASS;actual all5 import,all-row live preflight,normal Current projection PASS"
-  },
-  "zero_start_recovery_status": "84_tests_23_bound_evidence_files_passed; isolated_not_applied",
-  "continuous_h10_resnet_stop": {
-    "status": "REPEATED_REAL_SOURCE_FAILURE_DIAGNOSIS_REQUIRED",
-    "parent": "revision3:/energy/h10_classifier_resnet50_final_20261010",
-    "operation": "capture-81082f9b12fa4178a1b24aeb4a8f9217",
+    "blocked_groups": [],
+    "active_parent": null,
     "source": "H10-source",
-    "valid_original_repeats": 51,
-    "completed_original_points": 17,
-    "physical_original_chains": 54,
-    "original_failed_source_completion_verified": false,
-    "next_missing_points": [
-      {
-        "identity": [
-          "hailo10h_to_trt",
-          "resnet50",
-          "b110",
-          "orin_nx_hailo10_01"
-        ],
-        "missing_valid_repeats": 3
-      },
-      {
-        "identity": [
-          "hailo10h_to_trt",
-          "resnet50",
-          "b119",
-          "orin_nx_hailo10_01"
-        ],
-        "missing_valid_repeats": 3
-      },
-      {
-        "identity": [
-          "native_full_tensorrt",
-          "resnet50",
-          "full",
-          "orin_nx_hailo10_01"
-        ],
-        "missing_valid_repeats": 3
-      }
-    ],
-    "authorization": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/generic/h10_resnet_physical_recovery_20261011/AUTHORIZATION.json",
-    "worker_alive": false,
-    "integration": "Exact continuous Source-STOP / recovered parent handoff being repaired; no manual STOP deletion",
-    "physical_recovery": {
-      "measurements_started": 0,
-      "old_attempt_validated": false,
-      "operation_id": "capture-bb92b90787b849dbbc4cb3a2d26620ae",
-      "original_resources": {
-        "controller:capture": {
-          "lock_owner": {
-            "acquired_at": "2026-10-11T02:22:31.101421+00:00",
-            "hostname": "Smartmirror2",
-            "operation_id": "capture-bb92b90787b849dbbc4cb3a2d26620ae",
-            "owner_pid": 3631691,
-            "pgid": 3534547,
-            "physical_resource": "controller:capture",
-            "pid": 3588563,
-            "ppid": 3534547,
-            "run_dir": "private-home:/.onnx_splitpoint_tool/locks/resource-1801cda9fcba52421757d41feabb7667b5fea70208c3767f1991f14edce68525",
-            "run_id": "h10_classifier_resnet50_final_20261010",
-            "schema": "onnx-splitpoint/evaluation-run-lock",
-            "schema_version": 1,
-            "session_id": "energy-a81ac9bccfc44154a6b6be1eee17ea7c",
-            "state": "running"
-          },
-          "quarantine": {
-            "owner": {
-              "reason": "campaign_source_completion_unresolved",
-              "resource_request": {
-                "attempt_dir": "revision3:/energy/h10_classifier_resnet50_final_20261010/measurement/measurements/hailo10h_to_trt__resnet50__b110__orin_nx_hailo10_01__fe0367e109ac/plan_8653d09f2f2048818e0841256349e361/attempt_7224a137817240df8276532bf1ccfdad/run_000",
-                "collector_pid": 3631716,
-                "collector_start_ticks": "41357816",
-                "continuation": null,
-                "operation_id": "capture-bb92b90787b849dbbc4cb3a2d26620ae",
-                "owner_pid": 3631691,
-                "owner_start_ticks": "41357386",
-                "phase": "FINALIZING",
-                "process_started": true,
-                "purpose": "capture",
-                "run_id": "h10_classifier_resnet50_final_20261010",
-                "sequence": 3,
-                "session_id": "energy-a81ac9bccfc44154a6b6be1eee17ea7c",
-                "setup_id": "orin_nx_hailo10_01",
-                "token": "98cc7afff5dd4b82b62e9cc18edef4f1"
-              },
-              "source_completion_unproven": true
-            },
-            "quarantined_at": "2026-10-11T02:23:36.985336+00:00",
-            "run_dir": "private-home:/.onnx_splitpoint_tool/locks/resource-1801cda9fcba52421757d41feabb7667b5fea70208c3767f1991f14edce68525",
-            "run_id": "resource-1801cda9fcba52421757d41feabb7667b5fea70208c3767f1991f14edce68525",
-            "schema": "onnx-splitpoint/evaluation-run-lock-quarantine",
-            "schema_version": 1,
-            "state": "quarantined"
-          }
-        },
-        "controller:nic": {
-          "lock_owner": {
-            "acquired_at": "2026-10-11T02:22:31.104917+00:00",
-            "hostname": "Smartmirror2",
-            "operation_id": "capture-bb92b90787b849dbbc4cb3a2d26620ae",
-            "owner_pid": 3631691,
-            "pgid": 3534547,
-            "physical_resource": "controller:nic",
-            "pid": 3588563,
-            "ppid": 3534547,
-            "run_dir": "private-home:/.onnx_splitpoint_tool/locks/resource-1e2c684be730a113b67ac439b3b2c678653420acacf974b57816c286b4c79d78",
-            "run_id": "h10_classifier_resnet50_final_20261010",
-            "schema": "onnx-splitpoint/evaluation-run-lock",
-            "schema_version": 1,
-            "session_id": "energy-a81ac9bccfc44154a6b6be1eee17ea7c",
-            "state": "running"
-          },
-          "quarantine": {
-            "owner": {
-              "reason": "campaign_source_completion_unresolved",
-              "resource_request": {
-                "attempt_dir": "revision3:/energy/h10_classifier_resnet50_final_20261010/measurement/measurements/hailo10h_to_trt__resnet50__b110__orin_nx_hailo10_01__fe0367e109ac/plan_8653d09f2f2048818e0841256349e361/attempt_7224a137817240df8276532bf1ccfdad/run_000",
-                "collector_pid": 3631716,
-                "collector_start_ticks": "41357816",
-                "continuation": null,
-                "operation_id": "capture-bb92b90787b849dbbc4cb3a2d26620ae",
-                "owner_pid": 3631691,
-                "owner_start_ticks": "41357386",
-                "phase": "FINALIZING",
-                "process_started": true,
-                "purpose": "capture",
-                "run_id": "h10_classifier_resnet50_final_20261010",
-                "sequence": 3,
-                "session_id": "energy-a81ac9bccfc44154a6b6be1eee17ea7c",
-                "setup_id": "orin_nx_hailo10_01",
-                "token": "98cc7afff5dd4b82b62e9cc18edef4f1"
-              },
-              "source_completion_unproven": true
-            },
-            "quarantined_at": "2026-10-11T02:23:36.970330+00:00",
-            "run_dir": "private-home:/.onnx_splitpoint_tool/locks/resource-1e2c684be730a113b67ac439b3b2c678653420acacf974b57816c286b4c79d78",
-            "run_id": "resource-1e2c684be730a113b67ac439b3b2c678653420acacf974b57816c286b4c79d78",
-            "schema": "onnx-splitpoint/evaluation-run-lock-quarantine",
-            "schema_version": 1,
-            "state": "quarantined"
-          }
-        },
-        "dut:H10-DUT": {
-          "lock_owner": {
-            "acquired_at": "2026-10-11T02:22:31.108442+00:00",
-            "hostname": "Smartmirror2",
-            "operation_id": "capture-bb92b90787b849dbbc4cb3a2d26620ae",
-            "owner_pid": 3631691,
-            "pgid": 3534547,
-            "physical_resource": "dut:H10-DUT",
-            "pid": 3588563,
-            "ppid": 3534547,
-            "run_dir": "private-home:/.onnx_splitpoint_tool/locks/resource-85bf66e6ddff5883c8f7f37a2429594c64fe747792457e69f7e1ba744cfd2dd1",
-            "run_id": "h10_classifier_resnet50_final_20261010",
-            "schema": "onnx-splitpoint/evaluation-run-lock",
-            "schema_version": 1,
-            "session_id": "energy-a81ac9bccfc44154a6b6be1eee17ea7c",
-            "state": "running"
-          },
-          "quarantine": {
-            "owner": {
-              "reason": "campaign_source_completion_unresolved",
-              "resource_request": {
-                "attempt_dir": "revision3:/energy/h10_classifier_resnet50_final_20261010/measurement/measurements/hailo10h_to_trt__resnet50__b110__orin_nx_hailo10_01__fe0367e109ac/plan_8653d09f2f2048818e0841256349e361/attempt_7224a137817240df8276532bf1ccfdad/run_000",
-                "collector_pid": 3631716,
-                "collector_start_ticks": "41357816",
-                "continuation": null,
-                "operation_id": "capture-bb92b90787b849dbbc4cb3a2d26620ae",
-                "owner_pid": 3631691,
-                "owner_start_ticks": "41357386",
-                "phase": "FINALIZING",
-                "process_started": true,
-                "purpose": "capture",
-                "run_id": "h10_classifier_resnet50_final_20261010",
-                "sequence": 3,
-                "session_id": "energy-a81ac9bccfc44154a6b6be1eee17ea7c",
-                "setup_id": "orin_nx_hailo10_01",
-                "token": "98cc7afff5dd4b82b62e9cc18edef4f1"
-              },
-              "source_completion_unproven": true
-            },
-            "quarantined_at": "2026-10-11T02:23:36.958086+00:00",
-            "run_dir": "private-home:/.onnx_splitpoint_tool/locks/resource-85bf66e6ddff5883c8f7f37a2429594c64fe747792457e69f7e1ba744cfd2dd1",
-            "run_id": "resource-85bf66e6ddff5883c8f7f37a2429594c64fe747792457e69f7e1ba744cfd2dd1",
-            "schema": "onnx-splitpoint/evaluation-run-lock-quarantine",
-            "schema_version": 1,
-            "state": "quarantined"
-          }
-        },
-        "source:H10-source": {
-          "lock_owner": {
-            "acquired_at": "2026-10-11T02:22:31.111755+00:00",
-            "hostname": "Smartmirror2",
-            "operation_id": "capture-bb92b90787b849dbbc4cb3a2d26620ae",
-            "owner_pid": 3631691,
-            "pgid": 3534547,
-            "physical_resource": "source:H10-source",
-            "pid": 3588563,
-            "ppid": 3534547,
-            "run_dir": "private-home:/.onnx_splitpoint_tool/locks/resource-71617333f3befd16f491957ee43f2d852ae510119aaee8b0c39e030b57f0a08c",
-            "run_id": "h10_classifier_resnet50_final_20261010",
-            "schema": "onnx-splitpoint/evaluation-run-lock",
-            "schema_version": 1,
-            "session_id": "energy-a81ac9bccfc44154a6b6be1eee17ea7c",
-            "state": "running"
-          },
-          "quarantine": {
-            "owner": {
-              "reason": "campaign_source_completion_unresolved",
-              "resource_request": {
-                "attempt_dir": "revision3:/energy/h10_classifier_resnet50_final_20261010/measurement/measurements/hailo10h_to_trt__resnet50__b110__orin_nx_hailo10_01__fe0367e109ac/plan_8653d09f2f2048818e0841256349e361/attempt_7224a137817240df8276532bf1ccfdad/run_000",
-                "collector_pid": 3631716,
-                "collector_start_ticks": "41357816",
-                "continuation": null,
-                "operation_id": "capture-bb92b90787b849dbbc4cb3a2d26620ae",
-                "owner_pid": 3631691,
-                "owner_start_ticks": "41357386",
-                "phase": "FINALIZING",
-                "process_started": true,
-                "purpose": "capture",
-                "run_id": "h10_classifier_resnet50_final_20261010",
-                "sequence": 3,
-                "session_id": "energy-a81ac9bccfc44154a6b6be1eee17ea7c",
-                "setup_id": "orin_nx_hailo10_01",
-                "token": "98cc7afff5dd4b82b62e9cc18edef4f1"
-              },
-              "source_completion_unproven": true
-            },
-            "quarantined_at": "2026-10-11T02:23:36.949576+00:00",
-            "run_dir": "private-home:/.onnx_splitpoint_tool/locks/resource-71617333f3befd16f491957ee43f2d852ae510119aaee8b0c39e030b57f0a08c",
-            "run_id": "resource-71617333f3befd16f491957ee43f2d852ae510119aaee8b0c39e030b57f0a08c",
-            "schema": "onnx-splitpoint/evaluation-run-lock-quarantine",
-            "schema_version": 1,
-            "state": "quarantined"
-          }
-        }
-      },
-      "ownership_observation": {
-        "controller": {
-          "cleanup_proven": false,
-          "exclusive_start_permission": false,
-          "live_product_leases": [],
-          "ok": true,
-          "processes": [],
-          "read_only": true,
-          "recorded_owners": [
-            {
-              "observed_start_time_ticks": null,
-              "pid": 3588563,
-              "start_time_ticks": "40881018",
-              "state": "absent"
-            },
-            {
-              "observed_start_time_ticks": null,
-              "pid": 3631691,
-              "start_time_ticks": "41357386",
-              "state": "absent"
-            },
-            {
-              "observed_start_time_ticks": null,
-              "pid": 3631716,
-              "start_time_ticks": "41357816",
-              "state": "absent"
-            }
-          ],
-          "status": "no_known_competing_work_seen",
-          "visibility_errors": []
-        },
-        "ok": true,
-        "remote": {
-          "cleanup_proven": false,
-          "exclusive_start_permission": false,
-          "live_product_leases": [],
-          "ok": true,
-          "processes": [],
-          "read_only": true,
-          "recorded_owners": [],
-          "status": "no_known_competing_work_seen",
-          "visibility_errors": []
-        }
-      },
-      "released_at": "2026-10-11T02:29:56.500642+00:00",
-      "resources": [
-        "controller:capture",
-        "controller:nic",
-        "dut:H10-DUT",
-        "source:H10-source"
-      ],
-      "retry_authorization": {
-        "authorize_new_attempt": true,
-        "authorized_at": "2026-10-11T02:29:55.530644+00:00",
-        "new_workflow_profile": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/generic/h10_resnet_physical_recovery_20261011/one_workflow.yaml",
-        "operator": "Codex coordinator applying the user-authorized continuous Revision-3 campaign",
-        "reason": "Apply the existing explicit continuous campaign authorization AUFTRAG_AKTUELL.txt section 2 to this exact new physical STOP. Old completion remains unproven; normal current ownership and admission required.",
-        "scope": "one_new_workflow",
-        "source": "source:H10-source",
-        "source_completion_unproven": true
-      },
-      "run_id": "h10_classifier_resnet50_final_20261010",
-      "session_id": "energy-a81ac9bccfc44154a6b6be1eee17ea7c",
-      "started_at": "2026-10-11T02:29:56.479396+00:00",
-      "status": "released"
-    },
-    "current_source_network": "3/3 ICMP replies, no packet loss; this does not verify historical protocol completion or new capture eligibility",
-    "scientific_projection_verification": "PASS current_results/ENERGY_PROJECTION_VERIFICATION.json,120points360repeats while budget idle",
-    "remaining_controller_refresh": "Small existing fresh-environment Reader followup; no capture yet",
-    "source_commit": "f6dc6913e3fab719d46b1e7492a67630091c2e56",
-    "remote_head_verified": true,
-    "actual_resume_attempt": "revision3:/energy/h10_classifier_resnet50_final_20261010/resume_attempts/ea8d638530fe4a33b13c601b5b604e4f",
-    "worker_pid": 3645294,
-    "worker_start_ticks": "41518211",
-    "parent_pid": 3645304,
-    "parent_start_ticks": "41518226",
-    "normal_resume_command": [
-      "source:controller/.venv/bin/python",
-      "-B",
-      "revision3:/operations/energy_parent_qualified.py",
-      "resume",
+    "recovery_receipt": "revision3:/operations/token_saving_batch_20261009/recovery_integration_20261009/RECOVERY_APPLIED.json",
+    "active_model": "yolo26m",
+    "active_regime": "native",
+    "active_setup": "orin_nx_hailo10_01",
+    "parent_command": [
+      "source:controller/.venv/bin/onnx-splitpoint-complete-evaluation",
       "--run-dir",
-      "revision3:/energy/h10_classifier_resnet50_final_20261010",
-      "--previous-attempt",
-      "revision3:/energy/h10_classifier_resnet50_final_20261010",
-      "--slot-handoff",
-      "revision3:/operations/token_saving_batch_20261009/h10_classifier_resnet50_final_20261010_handoff.json"
+      "revision3:/energy/native_yolo26m_h10_final_20261010"
     ],
-    "failed_original_chains": 3,
-    "current_budget_stop_retained": true,
-    "physical_resources_released": true,
-    "diagnosis": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/generic/h10_resnet_physical_recovery_20261011/capture-81082f9b12fa4178a1b24aeb4a8f9217/DIAGNOSIS_STATUS.json",
-    "next_action": "Continue normally admitted independent H8/DX groups via same existing batch; diagnose H10 before any third blind capture"
-  },
-  "continuous_archive_remaining_quality_h10_regnet": {
-    "status": "COMPLETE",
-    "receipt": "operations/token_saving_batch_20261009/continuous_20261010/generic/ARCHIVE_REMAINING_QUALITY_H10_REGNET_20261011.json",
-    "groups": 4,
-    "verified_files": 8987,
-    "archive_pointer_not_yet_advanced": true
-  },
-  "budget_original_counters_and_limits_preserved": true,
-  "continuous_archive_dx_join_rebindings": {
-    "status": "COMPLETE",
-    "receipt": "operations/token_saving_batch_20261009/continuous_20261010/generic/ARCHIVE_DX_JOIN_REBINDINGS_20261011.json",
-    "groups": 2,
-    "verified_files": 1344
-  },
-  "continuous_independent_source_continuation": {
-    "updated_utc": "2026-10-11T04:47:33.629125+00:00",
-    "status": "NEEDS_CODEX",
-    "worker_pid": 3670746,
-    "worker_start_ticks": "41796991",
-    "parent": "revision3:/energy/native_dx_classifier_mobilenet_v3_large_final_20261010",
+    "parent_entry_sha256": "11647f78685f1389a8ced2055ee11fb480a9d88cd36f409df919197ee1829d4c",
+    "stage": "TERMINAL",
     "parent_pid": null,
     "parent_start_ticks": null,
-    "source": "DeepX-source",
-    "h8_stop": "capture-4097ade28b7a46fba3c7786c618314be",
-    "h10_stop": "capture-81082f9b12fa4178a1b24aeb4a8f9217",
-    "queue_unchanged": true,
-    "source_stops_retained": true,
-    "valid_repeats": 32,
-    "physical_starts": 42,
-    "invalid_repeats": 10,
-    "normal_cleanup_proven": true,
-    "source_completion_all_current_chains_verified": true,
-    "stop_reason": "task_logical_retry_limit",
-    "transport_diagnosis_pending": true,
-    "worker_active": false,
-    "historical_stop_reason": "task_logical_retry_limit",
-    "effective_administrative_stop": false,
-    "normal_resume_held_for_transport_diagnosis": true
+    "parent_returncode": 0
   },
-  "continuous_h8_y11_stop": {
-    "status": "SOURCE_STOP_HELD_PHYSICAL_RECOVERY_COMPLETE",
-    "operation": "capture-4097ade28b7a46fba3c7786c618314be",
-    "source": "H8-source",
-    "parent": "revision3:/energy/token_batch_h8_yolo11l_20261009",
-    "original_valid_repeats": 12,
-    "physical_chains": 15,
-    "invalid_chains": 3,
-    "normal_imported_complete_points": 4,
-    "missing_valid_repeats": 3,
-    "missing_identity": [
-      "native_full_hailo8",
-      "yolo11l",
-      "full",
-      "orin_nx_hailo8_01"
-    ],
-    "original_source_completion_verified": false,
-    "physical_resources_released": true,
-    "current_source_budget_stop_retained": true,
-    "receive_diagnosis": "Last failed trace111488samples,24192missingSamples,lastdatagram67.906s,silenceTimeoutat73.002s,protocolendunverified. Linux NIC driver rx_errors16/rx_missed0 unchanged since H10 failure. No proven device/network root cause.",
-    "recovery_authorization": "operations/token_saving_batch_20261009/continuous_20261010/generic/h8_yolo11_physical_recovery_20261011/AUTHORIZATION.json",
-    "next_action": "Continue independent DeepX through normal fresh admission after Generic metadata refresh is complete. No new blind H8 capture."
+  "active_parent": null,
+  "worker_pid": null,
+  "own_measurement_processes_at_last_terminal_check": 0,
+  "normal_resume_authorized": false,
+  "automatic_resume_allowed": false,
+  "overall_campaign_complete": false,
+  "bounded_work_complete": false,
+  "current_product_source_commit": "db729b9fcde00e4bcadf9200d43282977d7bf1cc",
+  "normal_energy_generation": "revision3:/reporting_caller_managed_energy/exports/20261013T040230950953Z",
+  "normal_energy_points": 233,
+  "generic_normal_energy_points": 204,
+  "normal_quality_points": 244,
+  "normal_claim_points": 235,
+  "queue_normal_imported_points": 426,
+  "queue_valid_source_closed_repeats": 1278,
+  "preserved_original_valid_repeats": 1022,
+  "missing_original_slots": 0,
+  "budget_sha256": "0fc109d60a6d11c24203d859294a503d19b0c88fd65c7ea790821d31516eb3e1",
+  "remaining": {
+    "native_required_energy_points_without_final_admission": 0,
+    "generic_energy_points_without_final_admission": 0,
+    "generic_current_points_to_confirm_after_final_duration_worker_change": 0,
+    "native_existing_points_requiring_bounded_normal_source_admission_confirmation": 0,
+    "native_points_without_final_energy_including_exclusions": 13,
+    "native_historical_h10_screenings_outside_delta": 3,
+    "native_scientifically_negative_comparison_contexts": 10,
+    "note": "Original426-point queue complete.13 outside-scope Native contexts retained without capture authorization."
   },
-  "continuous_generic_controller_refresh": {
-    "status": "COMPLETE",
-    "parents": 130,
-    "normal_cli": "operations/generic_energy_parent/adapter.py refresh-controller",
-    "receipt": "operations/token_saving_batch_20261009/continuous_20261010/generic/CONTROLLER_REFRESH_GENERIC_INDEPENDENT_RECOVERY_20261011.json",
-    "hardware_starts": 0
+  "energy_remaining": {
+    "prepared_queue_pending_points": 0,
+    "missing_valid_slots": 0,
+    "normal_current_native_energy_eligible": 233,
+    "normal_current_generic_energy_eligible": 204,
+    "outside_scope_unmeasured_or_screening": 13
   },
-  "continuous_normal_energy_partial_import": {
-    "status": "PUBLISHED_AND_PROJECTED",
-    "points": 152,
-    "energy_eligible": 143,
-    "diagnostic": 9,
-    "old120_unchanged": true,
-    "source_stops_retained": true,
-    "review": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/generic/NORMAL_ENERGY_PARTIAL_RESNET_H8_Y11_CANDIDATE_REVIEW_20261011.json",
-    "acquisitions": 161,
-    "verified_repeats": 483,
-    "full_points": 20,
-    "full_modes": 60,
-    "projection_review": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/generic/NORMAL_CURRENT_152_ENERGY_PROJECTION_REVIEW_20261011.json",
-    "projection_regression": "PASS152points456repeats; original budget/pointer/rawgroup unchanged during regression"
-  },
-  "continuous_closed_administrative_retry": {
-    "status": "AUTHORIZED_ONE_ADDITIONAL_CLOSED_RETRY",
-    "record": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/generic/h10_physical_recovery_staged/administrative_retry_staged/AUTHORIZE_APPLIED.json",
-    "source": "DeepX-source",
-    "row": "[\"deepx_to_trt\",\"mobilenet_v3_large\",\"b085\",\"orin_nx_deepx_m1_01\"]",
-    "existing_cohort": "native_dx_classifier_mobilenet_v3_large_final_20261010",
-    "logical_repeat": "repeat:2",
-    "additional_slots": 1,
-    "original_limits_and_counts_preserved": true,
-    "capture_started": false,
-    "prerequisite": "normal resume after technical transport prerequisite or supported diagnostic action"
-  },
-  "continuous_private_paper": {
-    "status": "PASS",
-    "tests": 18,
-    "main_pdf": "revision3:/paper_private/MLSys_Split_Selection_20261005/main.pdf",
-    "supplement_pdf": "revision3:/paper_private/MLSys_Split_Selection_20261005/supplement.pdf",
-    "current_native_energy_points": 152,
-    "admitted_energy_points": 143,
-    "diagnostic_excluded": 9,
-    "campaign_incomplete": true
-  },
-  "continuous_archive_partial_measurements": {
-    "at": "2026-10-11T05:03:24.211939+00:00",
-    "records": [
-      {
-        "group": "energy/h10_classifier_resnet50_final_20261010/measurement",
-        "returncode": 0,
-        "receipt": "revision3:/archive_receipts/energy__h10_classifier_resnet50_final_20261010__measurement.json"
-      },
-      {
-        "group": "energy/token_batch_h8_yolo11l_20261009/measurement",
-        "returncode": 0,
-        "receipt": "revision3:/archive_receipts/energy__token_batch_h8_yolo11l_20261009__measurement.json"
-      },
-      {
-        "group": "energy/native_dx_classifier_mobilenet_v3_large_final_20261010/measurement",
-        "returncode": 0,
-        "receipt": "revision3:/archive_receipts/energy__native_dx_classifier_mobilenet_v3_large_final_20261010__measurement.json"
-      }
-    ],
-    "complete": true,
-    "only_original_measurement_trees": "stable when resumed into new UUID subdirectories; current parent metadata deferred to final metadata snapshot"
-  },
-  "continuous_source_commit": "9468c55cbe756b9173df7e3587587bdeec9cef54",
-  "continuous_source_remote_head_verified": true,
-  "continuous_queue_case_balance": {
-    "scope": 450,
-    "native_scope": 246,
-    "generic_scope": 204,
-    "current_native_energy_eligible": 143,
-    "current_generic_energy_eligible": 9,
-    "queue_groups": 223,
-    "queue_points": 426,
-    "remaining_queue_points": 285,
-    "remaining_native": 90,
-    "remaining_generic": 195,
-    "two_valid_b085_repeats_retained_outside_current": true,
-    "scientific_negative_comparison_contexts_excluded_from_queue": 10,
-    "historical_h10_screenings_outside_delta": 3
-  },
-  "continuous_public_verifier": {
-    "status": "PASS",
-    "native_admitted": 143,
-    "generic_admitted": 9,
-    "documented_native": 152,
-    "diagnostic_native": 9,
-    "acquisitions": 161,
-    "tampered_diagnostic_negative_probes": "PASS",
-    "raw_sensor_replay": false
-  },
-  "continuous_external_transport_prerequisite": {
-    "status": "MISSING_TECHNICAL_DIAGNOSTIC_ACCESS",
-    "sources": [
-      "DeepX-source",
-      "H8-source",
-      "H10-source"
-    ],
-    "controller": "Smartmirror2",
-    "nic": "enx00e04c41e514",
-    "missing_capability": "Permitted packet capture and kernel/link diagnostics, or existing supported management/physical diagnosis for u.RECS source boards; not additional campaign authorization",
-    "known_denials": [
-      "AF_PACKET: Operation not permitted",
-      "sudo -n requires password",
-      "kernel journal/log read unavailable",
-      "source TCP22/80/443 refused on .176/.197"
-    ],
-    "cause_localized": false,
-    "hardware_defect_proven": false,
-    "blind_repeat_series_allowed": false,
-    "normal_cleanup_proven": true,
-    "active_measurement_worker": false,
-    "h8_unclosed_operation": "capture-4097ade28b7a46fba3c7786c618314be",
-    "h10_unclosed_operation": "capture-81082f9b12fa4178a1b24aeb4a8f9217",
-    "deepx_last_three_actual_missing_samples": [
-      128,
-      128,
-      64
-    ],
-    "deepx_all_current_source_closures_verified": true,
-    "deepx_source_transport_failures_preserved": 18,
-    "diagnosis_paths": [
-      "revision3:/operations/token_saving_batch_20261009/continuous_20261010/generic/h10_resnet_physical_recovery_20261011/SOURCE_MANAGEMENT_ACCESS_CHECK.json",
-      "revision3:/operations/token_saving_batch_20261009/continuous_20261010/generic/h10_resnet_physical_recovery_20261011/CONTROLLER_UDP_DIAGNOSTIC_BASELINE.json",
-      "revision3:/operations/token_saving_batch_20261009/continuous_20261010/generic/h10_physical_recovery_staged/administrative_retry_staged/DIAGNOSIS.json"
-    ],
-    "resume_after_repair": "source:controller/.venv/bin/python -B revision3:/operations/token_saving_batch_20261009/batch.py resume",
-    "root_session_resume": "codex resume 01a11aa5-10f7-7cb1-8ad7-d2e6f226e52b"
-  },
-  "continuous_archive_parent_and_paper_metadata": {
-    "status": "COMPLETE",
-    "receipt": "revision3:/archive_receipts/_snapshots__continuous_current_metadata_20261011.json",
-    "files": 1816
-  },
-  "continuous_result_publication": {
-    "status": "PASS",
-    "commit": "74012c2c11274e551fe872b367c0c9a3c2b12d78",
-    "remote_head_verified": true,
-    "native_energy": 143,
-    "generic_energy": 9,
-    "task_complete": false
-  },
-  "continuous_plan_projection": {
-    "status": "PASS",
-    "tests": 20,
-    "actual_review": "revision3:/operations/token_saving_batch_20261009/continuous_20261010/generic/plan_current_continuation_fix_20261011/ACTUAL_PLAN_PROJECTION_REVIEW.json",
-    "no_budget_or_scientific_edits": true,
-    "summary_plan_binding_current": true
-  },
-  "continuous_review_package_limit": {
-    "full_core_verification": "NOT_VERIFIABLE",
-    "missing_original": "revision3:/operations/finalisation_native_20261008/OPERATIONS_RECEIPT.json",
-    "required_original_sha256": "2d7cd3e7459c72662c3bf455179a9f2f9bab430bc8bebde0fe0b86d2b319f006",
-    "current_version_not_substituted": true,
-    "measurement_results_not_invalidated_or_remeasured": true
-  }
+  "current_constraints": [
+    "No further hardware starts.",
+    "No change to scientific/quality gates or old attempts.",
+    "Diagnostic hardware acceptance remains separate."
+  ],
+  "next_actions": [
+    "Finish sanitized result publication and final metadata checkpoint; stop."
+  ],
+  "next_read_only_command": "source:controller/.venv/bin/python -I -B revision3:/operations/token_saving_batch_20261009/batch.py status",
+  "data_deletion_performed": false,
+  "archive_completion_receipt": "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/ARCHIVE_COMPLETION_RECEIPT.json",
+  "data_archive_complete": true,
+  "scientific_delta_complete": true,
+  "reviewer_delivery_complete": true,
+  "compact_review_delivery": "revision3:/COMPACT_REVIEW_DELIVERY.json",
+  "result_publication_status": "EXPORT_AND_PUSH_IN_PROGRESS"
 }

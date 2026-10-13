@@ -27,7 +27,7 @@
   "energy_policy": "No old J/task joined to new FPS. Actual completed counts and system sensor interval required. Historical screening values keep their tier.",
   "historical_archive_read_only": true,
   "plan_file": "revision3:/REMEASUREMENT_PLAN.csv",
-  "plan_sha256": "8de4c7d6d270e8bcddbde426816bc364bca965539111cc20b650b7d01705dc66",
+  "plan_sha256": "82c098b57fc17f2ba7a316515aa3d98a557f4bd5ca151903617a567c9cd70bfb",
   "plan_revision_evidence": "revision3:/native_audit/classification_full_branch/RESULT.json",
   "separate_performance_energy_revision_evidence": {
     "path": "revision3:/native_audit/CLASSIFICATION_FULL_REUSE.json",

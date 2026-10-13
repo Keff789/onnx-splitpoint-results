@@ -1,0 +1,171 @@
+{
+  "schema": "independent_final_delta_journal_counter_review_v1",
+  "at": "2026-10-13T04:08:52.449776+00:00",
+  "reviewer": "/root/delta_recovery_review",
+  "decision": "PASS_FINAL_BOUNDED_JOURNAL_COUNTERS; normal scientific admission and archive completion remain separate",
+  "method": "Independently parse SHA-pinned original budget and original queue, index chains by parsed scientific identity/run path, derive original missing slots from original valid chains and count final chains directly. Do not invoke build_delta_balance.main or any production writer. Compare every426 reported row and all261 new chain records after independent derivation.",
+  "input_sha256": {
+    "revision3:/plan_versions/delta_before_20261012T192158Z/energy/energy_task_budget.json": "b4c0dccfe3b2fcd124602dff55b8b5a9a4a9e3580d3b23d735a63434d08cdbf0",
+    "revision3:/energy/energy_task_budget.json": "0fc109d60a6d11c24203d859294a503d19b0c88fd65c7ea790821d31516eb3e1",
+    "revision3:/operations/token_saving_batch_20261009/queue.json": "2f90faad7e10ef5f172db933e146b725b765ac679ad4f0b93a6aa9d0483c3920",
+    "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/DELTA_JOURNAL_BALANCE.json": "3cf81159e2cd066fc4e521af87e04b92b620337a5906a96abbe6e935dfe3f073",
+    "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/REV3_BESTAND_UND_SLOTPLAN_20261012.json": "9068608b4d434ef27baab75deeb61cf35b3c18e7562af4a958194e68584393b3",
+    "revision3:/operations/token_saving_batch_20261009/state.json": "e3d22dc9d1878c8cfe609619e722df65cc0e71969c25a422b759d8dd278429d2",
+    "revision3:/energy/native_yolo26m_h10_final_20261010/cleanup-status.json": "68458b8b20f664d2ce337838b1b48d2e4c481350764bd8c1ab481fe9eb5d9311"
+  },
+  "independent_counts": {
+    "queue_points": 426,
+    "original_valid_repeats_preserved_exactly": 1022,
+    "new_valid_slots": 256,
+    "valid_slots_now": 1278,
+    "missing_slots": 0,
+    "complete_points": 426,
+    "new_physical_starts": 260,
+    "new_failed_physical_starts": 4,
+    "new_unfinished_physical_starts": 0,
+    "new_preflight_only_attempts": 1,
+    "old_attempts_with_normal_accounting_changes": 1,
+    "new_attempts_outside_authorized_missing_slots": 0
+  },
+  "crosschecks": {
+    "original_incomplete_points": 86,
+    "original_missing_slots": 256,
+    "no_original_chain_removed": true,
+    "all_original_valid_chain_objects_unchanged_globally": true,
+    "all_original_invalid_chains_remain_scientifically_invalid": true,
+    "no_duplicate_valid_logical_slots": true,
+    "all_new_attempts_in_exact_original_queue_parent_and_missing_slot": true,
+    "all426_balance_rows_exactly_equal_independent_values": true,
+    "all261_new_chain_records_match_reported_evidence": true,
+    "all372_existing_task_limits_and_physical_source_ids_unchanged": true,
+    "new_task_records": 65,
+    "all_new_task_limits_are_original3repeat_2retry_20transport_limits": true,
+    "global_campaign_and_transport_limit_unchanged": true,
+    "physical_start_identity": {
+      "valid": 256,
+      "failed": 4,
+      "unfinished": 0,
+      "sum": 260
+    },
+    "historical_valid_attempt_reuse_not_counted_as_new": true,
+    "budget_and_balance_stable_across_audit": true
+  },
+  "historical_accounting_change": {
+    "identity": [
+      "deepx_to_trt",
+      "resnet50",
+      "b119",
+      "orin_nx_deepx_m1_01"
+    ],
+    "run_directory": "revision3:/energy/native_dx_classifier_resnet50_final_20261010/measurement/measurements/deepx_to_trt__resnet50__b119__orin_nx_deepx_m1_01__0e9688d83606/plan_60a632b992fb47d6a3f1f2c21c3ea97b/attempt_eaa00d41f4d049cfb0261cd30e77f5d3/repeat_retry_attempts/repeat_001/attempt_02/run_000",
+    "before_scientifically_valid": false,
+    "after_scientifically_valid": false,
+    "changed_fields": [
+      "finished",
+      "source_completion",
+      "source_completion_verified",
+      "status",
+      "transport_reasons",
+      "valid",
+      "workload_started"
+    ]
+  },
+  "new_failed_physical_attempts": [
+    {
+      "identity": [
+        "generic_completed:hailo10h",
+        "yolo11l",
+        "b003",
+        "orin_nx_hailo10_01"
+      ],
+      "run_directory": "revision3:/energy/generic_completed/h10_yolo11l_b003_final_20261010/measurement/capture_2/run_000",
+      "logical_repeat": "repeat:1",
+      "collector_started": true,
+      "finished": true,
+      "valid": false,
+      "source_completion_verified": true
+    },
+    {
+      "identity": [
+        "generic_completed:hailo10h",
+        "resnet50",
+        "b045",
+        "orin_nx_hailo10_01"
+      ],
+      "run_directory": "revision3:/energy/generic_completed/h10_resnet50_b045_final_20261010/measurement/capture_3/run_000",
+      "logical_repeat": "repeat:2",
+      "collector_started": true,
+      "finished": true,
+      "valid": false,
+      "source_completion_verified": true
+    },
+    {
+      "identity": [
+        "generic_completed:hailo10h",
+        "regnet_x_1_6gf",
+        "b066",
+        "orin_nx_hailo10_01"
+      ],
+      "run_directory": "revision3:/energy/generic_completed/h10_regnet_x_1_6gf_b066_final_20261010/measurement/capture_2/run_000",
+      "logical_repeat": "repeat:1",
+      "collector_started": true,
+      "finished": true,
+      "valid": false,
+      "source_completion_verified": true
+    },
+    {
+      "identity": [
+        "generic_completed:hailo10h",
+        "resnet50",
+        "b088",
+        "orin_nx_hailo10_01"
+      ],
+      "run_directory": "revision3:/energy/generic_completed/h10_resnet50_b088_final_20261010/measurement/capture_3/run_000",
+      "logical_repeat": "repeat:2",
+      "collector_started": true,
+      "finished": true,
+      "valid": false,
+      "source_completion_verified": true
+    }
+  ],
+  "new_preflight_only_attempts": [
+    {
+      "identity": [
+        "native_full_hailo10h",
+        "yolov7_paper",
+        "full",
+        "orin_nx_hailo10_01"
+      ],
+      "run_directory": "revision3:/energy/native_yolov7_h10_b009_fulls_final_20261010/measurement/measurements/native_full_hailo10h__yolov7_paper__full__orin_nx_hailo10_01__d2b179c690cf/plan_fd9872f7c8174811a5e843ab7d4e99f7/attempt_1b9836596c7643a09483fa88fbf3b798/run_000",
+      "logical_repeat": "repeat:0",
+      "collector_started": false,
+      "finished": true,
+      "valid": false,
+      "source_completion_verified": null
+    }
+  ],
+  "terminal_state": {
+    "status": "COMPLETE",
+    "completed_groups": 223,
+    "exact_queue_groups": 223,
+    "active_parent": null,
+    "own_worker_pid": 872488,
+    "own_worker_pid_absent": true,
+    "last_native_cleanup_proven": true,
+    "owned_remote_active": 0,
+    "owned_local_active": 0,
+    "cleanup_errors": []
+  },
+  "limits": [
+    "This proves journal bookkeeping and bounded slot completion. It does not infer normal scientific admission from valid budget flags; normal candidate export, Current projection and archive verification remain their existing separate checks.",
+    "No full sensor-raw rehash, model/runtime audit, new measurement, recovery, budget reset or Current mutation was performed."
+  ],
+  "actions": {
+    "hardware_or_recovery_started": false,
+    "budget_or_current_written": false,
+    "production_balance_helper_invoked": false,
+    "sensor_raw_payloads_read_or_hashed": false,
+    "git_or_install_invoked": false,
+    "only_persistent_write": "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/FINAL_DELTA_COUNTER_REVIEW.json"
+  }
+}

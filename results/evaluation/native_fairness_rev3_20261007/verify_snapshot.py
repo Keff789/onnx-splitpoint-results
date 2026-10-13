@@ -69,7 +69,8 @@ def main():
         assert versions['runtime_freeze_commit'] == freeze['base_commit']
         assert versions['runtime_file_count'] == len(freeze['runtime_files'])
         assert versions['canonical_cpu_reference_commit'] == reference['source_versioning']['commit']
-        assert versions['controller_reporting_commit'] == reporting['controller_commit']['commit']
+        reporting_commit = reporting['controller_commit']
+        assert versions['controller_reporting_commit'] == (reporting_commit['commit'] if isinstance(reporting_commit, dict) else reporting_commit)
         assert versions['controller_guard_commit'] == reporting['controller_guard_commit']['commit']
     for rows, fields in ((native, {'native_normal_quality_points': 'normal_quality_eligible',
                                   'native_normal_claim_points': 'normal_claim_eligible'}),
@@ -180,7 +181,7 @@ def main():
                       'generic_process_repeats': len(generic_repeats),
                       'sensor_acquisitions': len(acquisitions), 'normal_energy_points': len(energies),
                       'generic_normal_energy_points': len(generic_energies),
-                      'raw_sensor_or_model_verification': False, 'task_complete': False}))
+                      'raw_sensor_or_model_verification': False, 'full_campaign_completion_verified_by_this_checker': False}))
 
 
 if __name__ == '__main__':
