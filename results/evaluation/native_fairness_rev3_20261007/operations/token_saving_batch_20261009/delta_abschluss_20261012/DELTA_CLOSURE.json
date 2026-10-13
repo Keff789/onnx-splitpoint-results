@@ -1,6 +1,6 @@
 {
-  "at": "2026-10-13T04:49:32.511300+00:00",
-  "status": "SCIENTIFIC_DELTA_AND_DATA_ARCHIVE_COMPLETE",
+  "at": "2026-10-13T04:54:05.088751+00:00",
+  "status": "COMPLETE",
   "phase_a": "COMPLETE",
   "phase_b": "COMPLETE",
   "phase_c_central": "COMPLETE",
@@ -227,5 +227,42 @@
     "previous_delivery": "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/before_phase_c/COMPACT_REVIEW_DELIVERY.json"
   },
   "phase_c_delivery": "COMPLETE",
-  "result_publication_status": "EXPORT_AND_PUSH_IN_PROGRESS"
+  "result_publication_status": "PUBLISHED_REMOTE_VERIFIED",
+  "phase_c": "COMPLETE",
+  "result_data_publication": {
+    "at": "2026-10-13T04:52:55.741562+00:00",
+    "status": "PASS",
+    "repository": "Keff789/onnx-splitpoint-results",
+    "branch": "main",
+    "commit": "aebbdf5f2885df8c7080c74263c1cc26af2e82f6",
+    "remote_commit": "aebbdf5f2885df8c7080c74263c1cc26af2e82f6",
+    "working_tree_clean": true,
+    "previous_commit": "fd12600949398e0ad4940a9628d6a728d793f101",
+    "normal_export": "revision3:/publishing/export_public.py",
+    "publication_manifest_sha256": "758486da8ffbbfb0e1b5244f7b8e95707bc4547ff77f1726603ee6e4006c5052",
+    "public_verification": {
+      "status": "PASS",
+      "verified_public_files": 55,
+      "native_new": 240,
+      "native_reused": 6,
+      "generic_process_repeats": 612,
+      "sensor_acquisitions": 251,
+      "normal_energy_points": 233,
+      "generic_normal_energy_points": 204,
+      "raw_sensor_or_model_verification": false,
+      "full_campaign_completion_verified_by_this_checker": false
+    },
+    "privacy_check": {
+      "status": "PASS",
+      "fatal": 0,
+      "review": 0,
+      "log": "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/PUBLIC_PRIVACY_CHECK.log"
+    },
+    "raw_sensor_models_device_profiles_or_manuscripts_published": false
+  },
+  "independent_archive_review": {
+    "path": "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/FINAL_ARCHIVE_REFERENCE_REVIEW.json",
+    "sha256": "c17275efecbdef2e6313fbf245503efcbdedabae84e5f96bfac78317d0f2a770"
+  },
+  "final_metadata_checkpoint_pointer": "revision3:/CURRENT_ARCHIVE_PROGRESS_SNAPSHOT.json"
 }

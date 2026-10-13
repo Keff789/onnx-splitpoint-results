@@ -1,13 +1,13 @@
 {
-  "at": "2026-10-13T04:12:53.856198+00:00",
-  "task_status": "bounded_scientific_delta_complete",
+  "at": "2026-10-13T04:54:05.088751+00:00",
+  "task_status": "bounded_delta_complete",
   "active_operations_order": {
     "path": "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/CODEX_REV3_DELTA_ABSCHLUSS_20261012.txt",
     "sha256": "26b33609e9b0cf948e013b79bb73fe3787b82f7f6909bbc629661bc19ca64439",
     "status": "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/STATUS.json",
     "scope": "Only the remaining authorized slots of the original 426-case queue; exact delta checklist; all broader orders remain superseded."
   },
-  "phase": "C: joint archive checkpoint and publication",
+  "phase": "COMPLETE",
   "delta_closure": "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/DELTA_CLOSURE.json",
   "historical_state_snapshots": [
     "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/before_phase_c/RESUME_STATE.json",
@@ -1161,7 +1161,7 @@
   "normal_resume_authorized": false,
   "automatic_resume_allowed": false,
   "overall_campaign_complete": false,
-  "bounded_work_complete": false,
+  "bounded_work_complete": true,
   "current_product_source_commit": "db729b9fcde00e4bcadf9200d43282977d7bf1cc",
   "normal_energy_generation": "revision3:/reporting_caller_managed_energy/exports/20261013T040230950953Z",
   "normal_energy_points": 233,
@@ -1195,9 +1195,7 @@
     "No change to scientific/quality gates or old attempts.",
     "Diagnostic hardware acceptance remains separate."
   ],
-  "next_actions": [
-    "Finish sanitized result publication and final metadata checkpoint; stop."
-  ],
+  "next_actions": [],
   "next_read_only_command": "source:controller/.venv/bin/python -I -B revision3:/operations/token_saving_batch_20261009/batch.py status",
   "data_deletion_performed": false,
   "archive_completion_receipt": "revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012/ARCHIVE_COMPLETION_RECEIPT.json",
@@ -1205,5 +1203,8 @@
   "scientific_delta_complete": true,
   "reviewer_delivery_complete": true,
   "compact_review_delivery": "revision3:/COMPACT_REVIEW_DELIVERY.json",
-  "result_publication_status": "EXPORT_AND_PUSH_IN_PROGRESS"
+  "result_publication_status": "PUBLISHED_REMOTE_VERIFIED",
+  "result_data_publication_commit": "aebbdf5f2885df8c7080c74263c1cc26af2e82f6",
+  "result_publication_receipt": "revision3:/RESULTS_GIT_REV3_PROGRESS_PUBLISHED.json",
+  "final_archive_pointer": "revision3:/CURRENT_ARCHIVE_PROGRESS_SNAPSHOT.json"
 }

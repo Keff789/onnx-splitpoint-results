@@ -1,7 +1,7 @@
 # Native/Generic fairness — Revision 3 Current snapshot
 
-This snapshot reports the actual selected Current rows at **2026-10-13T04:12:53.856198+00:00**.
-Execution state: `bounded_scientific_delta_complete`. Counts below are derived from those rows;
+This snapshot reports the actual selected Current rows at **2026-10-13T04:54:05.088751+00:00**.
+Execution state: `bounded_delta_complete`. Counts below are derived from those rows;
 the finalized Quality pointer describes its own normal report generation separately.
 Missing values remain null/NA. This page does not declare the campaign complete.
 

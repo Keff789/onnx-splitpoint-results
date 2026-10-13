@@ -1,5 +1,5 @@
 Revision 3 – begrenzter wissenschaftlicher Deltaabschluss
-Stand: 2026-10-13T04:12:53.856198+00:00. Messungen, zentrale Übernahme und Datenarchiv abgeschlossen. Kompakte Reviewerlieferung verifiziert; Ergebnis-Git wird aktualisiert.
+Stand: 2026-10-13T04:54:05.088751+00:00. Messungen, zentrale Übernahme und Datenarchiv abgeschlossen. Kompakte Reviewerlieferung verifiziert; Ergebnisdaten regulär committed, gepusht und remote bestätigt.
 
 A) Wiederverwendung und Merge
 340 vollständige Queuekohorten und 1.022 gültige alte Slots unverändert erhalten. Ein Teilpunkt besaß zwei gültige Slots. 55 Native-Punkte in Phase A normal importiert/projiziert, ohne sie neu aufzunehmen.
@@ -31,7 +31,7 @@ Die diagnostische 21-Zellen-Abnahme bleibt separat. Die deskriptive YOLOv7/DeepX
 
 D) Archiv
 Datenarchiv verifiziert am bestehenden Sprite-Ziel archive:revision3 (echter SSHFS-Mount). 614 alte Checkpoint-Gruppen / 141.648 Einträge unverändert erhalten; zwei zusätzlich vorhandene normale Receipts mit 4.175 Dateien ohne erneute Kopie eingebunden. Neu übertragen: 161 Gruppen / 47,765 Dateien / 15,415,013,057 Bytes. Gemeinsamer Datencheckpoint: revision3:/archive_publication/checkpoint_20261013T044820Z, 777 gebundene Gruppen / 193,588 Dateieinträge. Manifest-SHA256: 94118442b70a435938e48bdc40d3a05a7930abf840dd62d8be05872e91842ac5.
-Alle ausgewählten Messruns, Fehlversuche und direkten aktuellen Import-/Qualitätsreferenzen gedeckt; historische und aktuelle Fassungen bleiben getrennt hashgebunden. ARCHIVE_COMPLETION_RECEIPT.json und die normalen archive_receipts belegen die tatsächlichen Zielhashprüfungen. Kompakte Reviewerlieferung: revision3:/review_package/delta_closeout_20261013/REV3_DELTA_ABSCHLUSS_20261013.zip (3,950,469 Bytes), SHA256 301070f953ce51e61ad37b586ef0a61427ecb17a7a34bbc9640509d450c37ede; 204 enthaltene Originaldateien bytegeprüft und Paket normal archiviert. Dies ist eine Metadatenlieferung; Rohdaten bleiben im vollständigen Datenarchiv. Der abschließende Metadatencheckpoint bindet zusätzlich Ergebnis-Git und Lieferreceipt.
+Alle ausgewählten Messruns, Fehlversuche und direkten aktuellen Import-/Qualitätsreferenzen gedeckt; historische und aktuelle Fassungen bleiben getrennt hashgebunden. ARCHIVE_COMPLETION_RECEIPT.json und die normalen archive_receipts belegen die tatsächlichen Zielhashprüfungen. Kompakte Reviewerlieferung: revision3:/review_package/delta_closeout_20261013/REV3_DELTA_ABSCHLUSS_20261013.zip (3,950,469 Bytes), SHA256 301070f953ce51e61ad37b586ef0a61427ecb17a7a34bbc9640509d450c37ede; 204 enthaltene Originaldateien bytegeprüft und Paket normal archiviert. Dies ist eine Metadatenlieferung; Rohdaten bleiben im vollständigen Datenarchiv. Aktueller gemeinsamer Metadatencheckpoint: R/CURRENT_ARCHIVE_PROGRESS_SNAPSHOT.json; er bindet zusätzlich Ergebnis-Git und Lieferreceipt. Verifizierter Ergebnisdatencommit: aebbdf5f2885df8c7080c74263c1cc26af2e82f6. Der abschließende Publikationsbeleg steht in RESULTS_GIT_REV3_PROGRESS_PUBLISHED.json.
 
 E) Bedienung und Software
 Tatsächlich benutzter normaler Batch-Resumeaufruf:
@@ -43,4 +43,4 @@ Installierte Version 2.94.0 und Remote main: db729b9fcde00e4bcadf9200d43282977d7
 
 Belege: revision3:/operations/token_saving_batch_20261009/delta_abschluss_20261012
 DELTA_RESULT_TABLE.csv: alle 450 Ergebniszeilen; DELTA_CENTRAL_RESULTS.json: Werte/Quellen/Qualität; DELTA_JOURNAL_BALANCE.json und FINAL_DELTA_COUNTER_REVIEW.json: sämtliche Slot-/Attemptabgleiche.
-Nach Archiv- und Ergebnis-Git-Abschluss endet dieser Auftrag. Keine weitere Messgruppe freigegeben.
+Alle drei Phasen des begrenzten Deltaauftrags abgeschlossen. Keine offenen Pflichtslots oder fehlenden Archivobjekte. Es läuft keine eigene Messinstanz. Keine weitere Messgruppe freigegeben; die restliche Kampagne bleibt pausiert.
