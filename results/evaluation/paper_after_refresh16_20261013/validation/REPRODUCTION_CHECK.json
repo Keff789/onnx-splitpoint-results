@@ -1,22 +1,51 @@
 {
+  "baseline_preservation": {
+    "baseline_commit": "fc57876b0a6ba69e90723e3a9209b72b36cbaa51",
+    "byte_equal_files": 99,
+    "changed": [],
+    "counts": {
+      "existing_tables": 50,
+      "nontradeoff_figures": 42,
+      "selected_data_and_summary": 7
+    },
+    "missing": [],
+    "status": "PASS"
+  },
   "edge_tests": "EDGE_TESTS.json",
+  "first_output": "/homes/kmika/edge-ai-publication-work/pareto-checks/final-v1",
+  "host": "twix",
   "independent_check": "INDEPENDENT_CHECK.json",
   "input_extraction_reproduction": {
+    "historical_evidence_not_rerun_for_pareto_extension": true,
     "input_manifest_sha256": "452f915b388e4c725fc37b8d905109fe3cbc221312b2e36aa9465918609d3e02",
     "matching_input_files": 15,
     "scope": "Second fresh extractor process; selected compact files and selected existing quality projection identical; no new evaluation",
     "status": "PASS"
   },
   "latex_assets": "LATEX_ASSET_CHECK.json",
-  "matching_output_files": 134,
-  "output_manifest_sha256": "879248edd42819e3b30c2e4dd9442c5e9c7b930f1ed81cdcc4c03a096b896ddc",
+  "matching_output_files": 136,
+  "output_manifest_sha256": "71dc8bd7c324bf92167b901ea3726d2bae0dd3086bec102f801f019a94631dfb",
   "packages": {
     "matplotlib": "3.8.4",
     "numpy": "1.26.4",
     "scipy": "1.13.1"
   },
   "python": "3.10.12",
+  "reference_update_basis": "Independent pairwise and exact-coordinate checker, targeted tests, and baseline byte-preservation checks passed before reference outputs were replaced",
   "status": "PASS",
-  "verification": "Second complete CLI process with --verify, including figures and ZIP archives; byte-for-byte output equality",
+  "tested_command": [
+    "/homes/kmika/edge-ai-publication-work/local-preparation/split-venv/bin/python",
+    "-I",
+    "-B",
+    "scripts/reproduce.py",
+    "--output",
+    "/homes/kmika/edge-ai-publication-work/pareto-checks/final-v2",
+    "--verify"
+  ],
+  "tested_environment": {
+    "MPLCONFIGDIR": "/homes/kmika/edge-ai-publication-work/pareto-checks/matplotlib"
+  },
+  "tested_working_directory": "/homes/kmika/edge-ai-publication-work/pareto-results-work/results/evaluation/paper_after_refresh16_20261013",
+  "verification": "Two fresh complete CLI processes after the final renderer change; second process with --verify passes all 21 tests, independent pairwise fronts and byte equality of every generated artifact, including figures and both ZIP archives",
   "visual_review": "VISUAL_REVIEW.md"
 }

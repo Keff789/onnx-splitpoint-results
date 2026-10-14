@@ -6,6 +6,7 @@ The compact original observations are the numerical authority for this check.
 """
 import argparse
 import collections
+import csv
 import json
 import math
 from pathlib import Path
@@ -27,6 +28,78 @@ def unique(rows, field='uid'):
     mapped = {r[field]: r for r in rows}
     assert len(mapped) == len(rows), ('Duplicate identity', field)
     return mapped
+
+
+def finite_number(value):
+    return isinstance(value, (int, float)) and not isinstance(value, bool) and math.isfinite(value)
+
+
+def check_pareto(paper, output):
+    """Independent exhaustive comparison; never import the sweep implementation."""
+    exported = unique(read(output/'tables/PARETO_POINTS.json'))
+    assert set(exported) == set(paper), 'Pareto export changed selected population'
+    groups = collections.defaultdict(list)
+    for uid, row in paper.items():
+        point = exported[uid]
+        for field, source_field in [('model','model_id'), ('setup','setup_id'), ('case','case_id'),
+                                    ('runner','runner'), ('kind','kind'), ('backend','backend')]:
+            assert point[field] == row[source_field], ('Pareto grouping/identity', uid, field)
+        reasons = []
+        for field in ['fps', 'energy_mj_per_image']:
+            value = row.get(field)
+            if value is None:
+                reasons.append('missing_' + field)
+            elif not isinstance(value, (int, float)) or isinstance(value, bool):
+                reasons.append('invalid_' + field)
+            elif not math.isfinite(value):
+                reasons.append('nonfinite_' + field)
+            assert point[field] == (value if finite_number(value) else None), ('Exact Pareto coordinate', uid, field)
+        assert point['included'] is (not reasons), ('Pareto numeric-only inclusion', uid)
+        assert point['omission_reason'] == (';'.join(reasons) or None), ('Pareto omission reason', uid)
+        q = row.get('quality_value')
+        assert point['quality_value'] == (q if finite_number(q) else None), ('Exact Pareto quality', uid)
+        assert point['quality_percent'] == (100*q if finite_number(q) else None), ('Exact Pareto color', uid)
+        assert point['quality_metric'] == row.get('quality_metric'), ('Pareto quality metric', uid)
+        if not reasons:
+            groups[(row['model_id'], row['setup_id'])].append(uid)
+        else:
+            assert all(point[k] is None for k in ['pareto_all','pareto_native','pareto_generic','dominated_by_uid'])
+
+    def dominators(uid, population):
+        a = paper[uid]
+        return sorted(other for other in population
+                      if paper[other]['fps'] >= a['fps']
+                      and paper[other]['energy_mj_per_image'] <= a['energy_mj_per_image']
+                      and (paper[other]['fps'] > a['fps']
+                           or paper[other]['energy_mj_per_image'] < a['energy_mj_per_image']))
+
+    front_sizes = []
+    for (model, setup), population in sorted(groups.items()):
+        for uid in population:
+            witnesses = dominators(uid, population)
+            assert exported[uid]['pareto_all'] is (not witnesses), ('Pairwise Pareto mismatch', uid)
+            assert exported[uid]['dominated_by_uid'] == (witnesses[0] if witnesses else None), ('Pareto witness', uid)
+        for runner in ['native', 'generic']:
+            splits = [u for u in population if paper[u]['kind'] == 'split' and paper[u]['runner'] == runner]
+            for uid in population:
+                expected = not dominators(uid, splits) if uid in splits else None
+                assert exported[uid]['pareto_' + runner] is expected, ('Runner Pareto mismatch', uid, runner)
+        front = [u for u in population if not dominators(u, population)]
+        front_sizes.append({'model': model, 'setup': setup, 'observations': len(population),
+                            'front_uids': sorted(front), 'front_size': len(front),
+                            'front_coordinates': len({(paper[u]['fps'],paper[u]['energy_mj_per_image']) for u in front}),
+                            'native_split_front_size': sum(exported[u]['pareto_native'] is True for u in population),
+                            'generic_split_front_size': sum(exported[u]['pareto_generic'] is True for u in population)})
+    with (output/'tables/PARETO_POINTS.csv').open(newline='') as handle:
+        csv_points = unique(list(csv.DictReader(handle)))
+    assert set(csv_points) == set(exported), 'CSV/JSON Pareto population differs'
+    for uid, point in exported.items():
+        assert set(csv_points[uid]) == set(point), ('CSV/JSON Pareto fields', uid)
+        for field, value in point.items():
+            assert csv_points[uid][field] == ('' if value is None else str(value)), ('CSV/JSON Pareto value', uid, field)
+    return exported, {'points': len(exported), 'included': sum(p['included'] for p in exported.values()),
+                      'groups': len(groups), 'front_sizes': front_sizes,
+                      'algorithm': 'exhaustive pairwise comparison of original unrounded PAPER_DATASET coordinates'}
 
 
 def check(inputs, output):
@@ -186,6 +259,7 @@ def check(inputs, output):
     assert summary['all_runner_split_full']['n_pairs']==len(pairs)
     assert summary['historical_strict_excluded_pairs_retained']==len(required28)
     assert summary['nonclaim_performance_full_values_retained']==sum(r['kind']=='full' and not r['normal_performance_claim'] and fps[u] is not None for u,r in source.items())
+    pareto, pareto_report = check_pareto(paper, output)
 
     # Figures retain an explicit payload of the points actually drawn. Check its
     # identities and values against this independently reconstructed population.
@@ -218,13 +292,56 @@ def check(inputs, output):
         for model in sorted(models):
             ids={u for u,r in source.items() if r['model_id']==model}
             f=figures['04_tradeoff_'+model]
-            assert set(f['scope_uids'])==ids and {r['uid'] for r in f['points']}==ids
-            assert not f['omitted_uids']
+            plotted={u for u in ids if pareto[u]['included']}
+            assert set(f['scope_uids'])==ids and set(unique(f['points']))==plotted
+            assert set(f['omitted_uids'])==ids-plotted
+            assert unique(f['omitted_points'])=={u:pareto[u] for u in ids-plotted}
             for point in f['points']:
+                assert all(point[k]==v for k,v in pareto[point['uid']].items()), ('Exact plot/export point',point['uid'])
                 close(point['fps'],fps[point['uid']],'figure tradeoff FPS')
                 close(point['energy_mj_per_image'],1000*energy[point['uid']],'figure tradeoff energy')
                 q=paper[point['uid']].get('quality_value')
                 close(point['quality_percent'],100*q if q is not None else None,'figure tradeoff quality')
+            front_payload=f['pareto_front']
+            assert front_payload['grouping']==['model','setup']
+            assert front_payload['objectives']=={'fps':'maximize','energy_mj_per_image':'minimize'}
+            assert front_payload['quality_filter'] is False
+            groups={(g['model'],g['setup']):g for g in front_payload['groups']}
+            assert len(groups)==len(front_payload['groups'])
+            assert set(groups)=={(model,paper[u]['setup_id']) for u in ids}
+            expected_annotations=set()
+            for (m,setup),group in groups.items():
+                population={u for u in plotted if paper[u]['setup_id']==setup}
+                front={u for u in population if pareto[u]['pareto_all']}
+                coordinates=sorted({(paper[u]['fps'],paper[u]['energy_mj_per_image']) for u in front})
+                assert sorted(group['front_uids'])==sorted(front), ('Figure front UIDs',m,setup)
+                assert group['front_coordinates']==[{'fps':x,'energy_mj_per_image':y} for x,y in coordinates]
+                assert group['n_observations']==len(population)
+                assert group['n_front_uids']==len(front)
+                assert group['n_front_coordinates']==len(coordinates)
+                assert group['line_drawn'] is (len(coordinates)>1), ('Singleton front must have no line',m,setup)
+                for uid in population:
+                    if paper[uid]['kind']=='full':
+                        label='TRT Full' if paper[uid]['backend']=='native_full_tensorrt' else 'Vendor Full'
+                        expected_annotations.add((uid,label))
+                for runner in ['native','generic']:
+                    candidates=[u for u in population if paper[u]['kind']=='split' and paper[u]['runner']==runner]
+                    if not candidates:
+                        continue
+                    fastest=min(candidates,key=lambda u:(-paper[u]['fps'],u))
+                    lowest=min(candidates,key=lambda u:(paper[u]['energy_mj_per_image'],u))
+                    prefix=runner[0].upper()+' '
+                    if fastest==lowest:
+                        expected_annotations.add((fastest,prefix+'F=E '+paper[fastest]['case_id']))
+                    else:
+                        expected_annotations.add((fastest,prefix+'F '+paper[fastest]['case_id']))
+                        expected_annotations.add((lowest,prefix+'E '+paper[lowest]['case_id']))
+            annotations=f['annotations']
+            assert {(a['uid'],a['label']) for a in annotations}==expected_annotations, ('Figure F/E/Full annotations',model)
+            assert len(annotations)==len(expected_annotations), ('Duplicate plot annotation',model)
+            for a in annotations:
+                assert a['model']==model and a['setup']==paper[a['uid']]['setup_id']
+                assert len(a['text_offset_points'])==2 and all(finite_number(v) for v in a['text_offset_points'])
             qf=figures['06_quality_'+model]
             assert set(qf['scope_uids'])==ids
             for point in qf['points']:
@@ -250,6 +367,7 @@ def check(inputs, output):
             'preserved_quality_and_original_gate_rows':len(source),
             'full_configurations':sum(map(len,fulls.values())), 'table2_model_rows':len(table2),'table3_rows':len(table3),
             'native_generic_pairs':len(ng),'split_full_pairs':len(pairs),'figure_payloads_checked':figure_count,
+            'pareto':pareto_report,
             'restored_full_pairs_checked':len(required28), 'restored_h10_trt_classifier_values_checked':len(required3)}
 
 

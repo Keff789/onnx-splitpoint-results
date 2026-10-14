@@ -3,17 +3,37 @@
   "manuscripts_modified": false,
   "packages": [
     {
-      "archive": "Dissertation_assets.zip",
+      "archive": "MLSys_assets.zip",
+      "archive_sha256": "228ea9076f2088a41f8417b4f5be5ff45bd8576cb887e1ecfd3657d6b81a618c",
       "compile_exit_code": 0,
       "overfull_or_undefined_errors": [],
-      "pages": 23
+      "pages": 9,
+      "review_pages": {
+        "quality": 8,
+        "regnet": 6
+      }
     },
     {
-      "archive": "MLSys_assets.zip",
+      "archive": "Dissertation_assets.zip",
+      "archive_sha256": "23d959f0c812000006e2a458961bb1cd2e37db64fb8123d5917060a0e63b47fa",
       "compile_exit_code": 0,
       "overfull_or_undefined_errors": [],
-      "pages": 8
+      "pages": 23,
+      "review_pages": {
+        "detector": 11,
+        "quality": 15,
+        "regnet": 8
+      }
     }
   ],
-  "status": "PASS"
+  "status": "PASS",
+  "vector_figures_without_embedded_raster": [
+    "04_tradeoff_mobilenet_v3_large",
+    "04_tradeoff_regnet_x_1_6gf",
+    "04_tradeoff_resnet50",
+    "04_tradeoff_yolo11l",
+    "04_tradeoff_yolo26m",
+    "04_tradeoff_yolo26s",
+    "04_tradeoff_yolov7_paper"
+  ]
 }

@@ -15,6 +15,16 @@ from legacy_energy_methods import quantile
 
 HOSTS = {'DeepX': 'orin_nx_deepx_m1_01', 'H8': 'orin_nx_hailo8_01', 'H10': 'orin_nx_hailo10_01'}
 IDENTITY = ('model_id', 'setup_id', 'backend', 'case_id', 'runner')
+PARETO_DEFINITION = {
+    'dominance': 'B dominates A iff FPS_B >= FPS_A and energy_B <= energy_A, with at least one strict inequality',
+    'grouping': ['model', 'setup'],
+    'objectives': {'fps': 'maximize', 'energy_mj_per_image': 'minimize'},
+    'population': 'all observed deployments with finite FPS and energy, including both Full alternatives',
+    'quality_filter': False,
+    'runner_front_scope': 'Native or Generic splits only, within the same model/setup',
+    'equal_coordinates': 'retain every UID; equal coordinates do not dominate each other',
+    'connection': 'straight segments between distinct front coordinates sorted by FPS; no interpolation claim',
+}
 
 
 def read(p):
@@ -56,6 +66,79 @@ def numeric(x):
 
 def positive(x):
     return numeric(x) and x > 0
+
+
+def _pareto_front_uids(points):
+    """Sweep exact coordinates from high FPS to low; retain all tied UIDs."""
+    front = set()
+    best_energy = math.inf
+    previous = None
+    coordinate_on_front = False
+    for point in sorted(points, key=lambda r: (-r['fps'], r['energy_mj_per_image'], r['uid'])):
+        coordinate = (point['fps'], point['energy_mj_per_image'])
+        if coordinate != previous:
+            coordinate_on_front = point['energy_mj_per_image'] < best_energy
+            best_energy = min(best_energy, point['energy_mj_per_image'])
+            previous = coordinate
+        if coordinate_on_front:
+            front.add(point['uid'])
+    return front
+
+
+def pareto_points(rows):
+    """Export every selected row and its empirical two-objective front flags.
+
+    Only missing/nonfinite/nonnumeric coordinates omit a point. Quality and all
+    original admission/contract flags are deliberately absent from selection.
+    This descriptive model/setup front includes Full deployments regardless of
+    recorded work differences. The older boundary-specific table is unchanged.
+    Nonfinite inputs become JSON null with an explicit reason, never zero.
+    """
+    points = []
+    for row in sorted(rows, key=lambda r: r['uid']):
+        reasons = []
+        for field in ['fps', 'energy_mj_per_image']:
+            value = row.get(field)
+            if value is None:
+                reasons.append('missing_' + field)
+            elif not isinstance(value, (int, float)) or isinstance(value, bool):
+                reasons.append('invalid_' + field)
+            elif not math.isfinite(value):
+                reasons.append('nonfinite_' + field)
+        quality = row.get('quality_value')
+        points.append({
+            'uid': row['uid'], 'model': row['model_id'], 'setup': row['setup_id'],
+            'runner': row['runner'], 'kind': row['kind'], 'backend': row['backend'],
+            'case': row['case_id'],
+            'fps': row.get('fps') if numeric(row.get('fps')) else None,
+            'energy_mj_per_image': row.get('energy_mj_per_image') if numeric(row.get('energy_mj_per_image')) else None,
+            'quality_value': quality if numeric(quality) else None,
+            'quality_percent': 100 * quality if numeric(quality) else None,
+            'quality_metric': row.get('quality_metric'),
+            'included': not reasons, 'omission_reason': ';'.join(reasons) or None,
+            'pareto_all': None, 'pareto_native': None, 'pareto_generic': None,
+            'dominated_by_uid': None,
+        })
+    assert len({r['uid'] for r in points}) == len(points), 'duplicate Pareto point identity'
+    for _, group in grouped([r for r in points if r['included']], ['model', 'setup']):
+        front = _pareto_front_uids(group)
+        for row in group:
+            row['pareto_all'] = row['uid'] in front
+            if not row['pareto_all']:
+                # A deterministic, independently inspectable witness, not a
+                # quality rank or a substitute for the complete front.
+                row['dominated_by_uid'] = min(
+                    other['uid'] for other in group
+                    if other['fps'] >= row['fps']
+                    and other['energy_mj_per_image'] <= row['energy_mj_per_image']
+                    and (other['fps'] > row['fps']
+                         or other['energy_mj_per_image'] < row['energy_mj_per_image']))
+        for runner in ['native', 'generic']:
+            splits = [r for r in group if r['kind'] == 'split' and r['runner'] == runner]
+            runner_front = _pareto_front_uids(splits)
+            for row in splits:
+                row['pareto_' + runner] = row['uid'] in runner_front
+    return points
 
 
 def mean(v):
@@ -240,6 +323,7 @@ def build(inputs, output, config):
                             'mixed_generations': len({d.get(x+'_generation') for x in ['performance','energy','quality']})>1})
     M = {r['uid']:r for r in data}
     emit(O/'PAPER_DATASET', data)
+    emit(T/'PARETO_POINTS', pareto_points(data))
     emit(O/'METRIC_SOURCES', sources)
     emit(O/'MEASUREMENT_GENERATIONS', generations)
     emit(T/'repeat_uncertainty', uncertainty)

@@ -1,3 +1,13 @@
+test_full_alternatives_and_runner_fronts_have_different_populations (__main__.ParetoEdgeCases) ... ok
+test_maximize_fps_minimize_energy_and_deterministic_witness (__main__.ParetoEdgeCases) ... ok
+test_missing_nonfinite_and_invalid_axes_are_never_zero_filled (__main__.ParetoEdgeCases) ... ok
+test_missing_quality_and_old_flags_never_filter_or_change_front (__main__.ParetoEdgeCases) ... ok
+test_model_and_setup_fronts_are_separate (__main__.ParetoEdgeCases) ... ok
+test_real_tradeoffs_are_all_front_without_rounding (__main__.ParetoEdgeCases) ... ok
+test_same_energy_only_higher_fps_is_front (__main__.ParetoEdgeCases) ... ok
+test_same_fps_only_lower_energy_is_front (__main__.ParetoEdgeCases) ... ok
+test_singleton_front_is_one_observation (__main__.ParetoEdgeCases) ... ok
+test_tied_coordinates_keep_every_uid_without_mutating_inputs (__main__.ParetoEdgeCases) ... ok
 test_build_preserves_fps_only_bad_quality_and_same_full_energy (__main__.ScientificEdgeCases) ... ok
 test_energy_denominator_must_be_positive (__main__.ScientificEdgeCases) ... ok
 test_energy_means_reciprocal_and_pooled_are_distinct (__main__.ScientificEdgeCases) ... ok
@@ -11,6 +21,6 @@ test_single_repeat_has_no_invented_ci_or_stdev (__main__.ScientificEdgeCases) ..
 test_zero_accuracy_and_negative_relative_loss_are_real_observations (__main__.ScientificEdgeCases) ... ok
 
 ----------------------------------------------------------------------
-Ran 11 tests in 0.044s
+Ran 21 tests in 0.056s
 
 OK

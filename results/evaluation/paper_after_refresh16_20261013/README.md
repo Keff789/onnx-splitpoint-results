@@ -16,11 +16,17 @@ The command reads the compact checked-in inputs, verifies their existing manifes
 
 The configuration is in [config.json](config.json). Broad observation selection and calibrated raw J/image are the required primary analysis. Optional original strict flags, reference-close quality, administrative-receipt and existing comparison-energy sensitivities are separate outputs. `--numeric-only` is a development option and does not produce the complete deliverable. The [independent checker and targeted tests](validation/README.md) recalculate the core quantities separately.
 
+The seven `04_tradeoff_<model>` figures show all selected numerical observations in separate H8, H10 and DeepX panels. Marker shapes identify Native, Generic, TensorRT Full and Vendor Full; color shows the selected dataset quality on a common scale within each model. The empirical two-dimensional front maximizes FPS and minimizes calibrated host-inclusive mJ/image within each model/setup, including both Full alternatives. Quality and historical admission flags do not filter this population. Equal coordinates retain every UID; a singleton front is a point without a line. Straight segments between distinct front observations make no claim about attainable intermediate configurations.
+
+[PARETO_POINTS.csv](results/tables/PARETO_POINTS.csv) and its JSON counterpart export every selected row, exact coordinates, quality, common and runner-specific front flags, omission reasons and a deterministic dominating witness. [FIGURE_DATA.json](results/figures/FIGURE_DATA.json) additionally records plotted identities, front definitions and coordinates, color scales and annotations. The older `tables/pareto.*` retains its separate recorded-work sensitivity definition. The 14 October Pareto extension preserves the previous PAPER_DATASET and all previous numeric table files byte for byte; see [validation](validation/README.md).
+
 The reader, serialization/statistical conventions, existing reproduction verifier, audit guard and legacy quantile implementation extend the previous Twix analysis. The Current-aware `scripts/extract_canonical.py` can restore these compact inputs from the private canonical archive. That restoration is not needed for public reproduction. Raw sensor traces, models, datasets and private manuscripts are excluded from this package.
 
 ## Manuscript assets
 
 [MLSys and Dissertation packages](results/assets/README.md) contain LaTeX Tables 2/3, supplemental tables, PDF/SVG figures, PNG previews, captions, methods and claim evidence. Each archive has a standalone `preview.tex`. No existing manuscript is overwritten or submitted.
+
+The MLSys package includes the RegNet performance–energy figure; the Dissertation package includes all seven model figures. Both retain the existing numerical quality figure and include the Pareto tables and complete figure payload. After extracting either archive, compile its preview with `pdflatex -interaction=nonstopmode -halt-on-error preview.tex`.
 
 ## Interpretive limits
 

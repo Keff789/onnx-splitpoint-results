@@ -8,6 +8,12 @@
   "equal_model_aggregation": "median_points_per_model_setup_then_mean_setups_per_model_then_mean_models",
   "hash_veto": false,
   "metric_fallback": "only_latest_completed_positive_metric_matching_exact_identity; never replace_valid_current_by_older",
+  "pareto_objectives": {
+    "energy_mj_per_image": "minimize",
+    "fps": "maximize"
+  },
+  "pareto_quality_veto": false,
+  "pareto_scope": "model_setup_all_observed_deployments",
   "performance_aggregation": "stored_cohort_median",
   "point_summary": "median",
   "quality_veto": false,

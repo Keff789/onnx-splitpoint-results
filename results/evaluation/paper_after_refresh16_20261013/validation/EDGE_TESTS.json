@@ -12,14 +12,24 @@
     "test_build_preserves_fps_only_bad_quality_and_same_full_energy",
     "test_energy_denominator_must_be_positive",
     "test_energy_means_reciprocal_and_pooled_are_distinct",
+    "test_full_alternatives_and_runner_fronts_have_different_populations",
     "test_large_observed_variation_is_retained",
     "test_latest_matching_completed_value_not_fastest_or_mtime",
+    "test_maximize_fps_minimize_energy_and_deterministic_witness",
     "test_metric_specific_historical_fallback_fills_only_real_gap",
+    "test_missing_nonfinite_and_invalid_axes_are_never_zero_filled",
+    "test_missing_quality_and_old_flags_never_filter_or_change_front",
+    "test_model_and_setup_fronts_are_separate",
     "test_models_are_not_point_weighted",
     "test_new_worse_dataset_quality_wins_by_measurement_time",
+    "test_real_tradeoffs_are_all_front_without_rounding",
     "test_reexport_is_not_an_independent_repeat",
+    "test_same_energy_only_higher_fps_is_front",
+    "test_same_fps_only_lower_energy_is_front",
     "test_single_repeat_has_no_invented_ci_or_stdev",
+    "test_singleton_front_is_one_observation",
+    "test_tied_coordinates_keep_every_uid_without_mutating_inputs",
     "test_zero_accuracy_and_negative_relative_loss_are_real_observations"
   ],
-  "tests_executed": 11
+  "tests_executed": 21
 }

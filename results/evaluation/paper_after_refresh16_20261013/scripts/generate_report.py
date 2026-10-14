@@ -47,6 +47,12 @@ All ratios are computed from unrounded inputs. Native/Generic pairs match model,
 
 Point-pooled summaries are separate from equal-model summaries. The latter first take the point median within each model/setup, then average setups within each model, then average those model values. Classifiers with many cuts therefore receive no extra model weight. Fastest and lowest-energy splits are selected within each model/setup/runner. Shared optima are one configuration; groups with a single candidate are distinguished from multiple-candidate groups. All optimum and Top-2 selections are retrospective, with no prediction or causal interpretation.
 
+## Empirical performance–energy fronts
+
+The seven `04_tradeoff_<model>` figures show every observed finite FPS/energy point in separate H8, H10 and DeepX panels, including both host-specific Full alternatives. The empirical two-objective front maximizes unrounded FPS and minimizes calibrated host-inclusive mJ/image within exactly one model/setup. B dominates A only when B has at least as much FPS and at most as much energy, with at least one strict inequality. Equal coordinates do not dominate each other; all associated UIDs are retained. Dataset quality determines color, not admission or dominance. Missing quality is neutral gray; missing/nonfinite FPS or energy is recorded with an omission reason, never replaced by zero.
+
+Front points have an extra outline. A thin line joins distinct front coordinates in FPS order only when there are at least two; a singleton has no line. Lines guide the eye between discrete observations and imply no attainable intermediate configuration. `tables/PARETO_POINTS.csv` and `.json` contain exact values, grouping, joint-front flags, separate Native/Generic split-only front flags and a deterministic dominating UID where one exists. `figures/FIGURE_DATA.json` records plotted identities, front coordinates and label selections. The older `tables/pareto.*` remains an unchanged, separately scoped recorded-work-cohort sensitivity. Neither view establishes equal quality or equal timed work.
+
 ## Dataset quality and source inconsistencies
 
 Top-1 accuracy and COCO mAP@[.50:.95] are distinct metrics. Numerical metrics, reference values, sample counts and existing bootstrap intervals are copied from the selected completed quality evidence. Output parity/PASS is not dataset accuracy. Relative loss (reference-candidate)/reference and percentage-point differences 100*(candidate-reference) are separately named. Vendor-Full and split quality are shown even when Hailo Full quality is substantially below the model reference.
@@ -57,7 +63,7 @@ For {len(mismatches)} Native DeepX classifier rows, the selected quality summary
 
 All 36 Native detector split configurations record `fast_oracle_outside_timing`, whereas the 36 corresponding Generic detector splits record `decoded_nms`. The refreshed YOLO26s Native path explicitly records `native_three_stage_fast_oracle_outside_timing`: its correctness oracle runs outside the timed loop. For the refreshed YOLO26s Full paths, H8/H10 Vendor Full records `frozen_host_tail` with dense outputs and host decoding/NMS. TRT Full records integrated accelerator execution plus frozen normalization, including prepared-input H2D, engine execution, D2H synchronization, filtering, class-aware NMS and inverse letterbox. The per-configuration completion modes and execution notes retain the other models' recorded boundaries. These actual implementation differences remain in the data and captions even where a comparison-endpoint declaration matches. A missing or different administrative hash alone establishes neither equal nor different work and does not remove an observation. The deployment ratios therefore do not isolate the causal effect of graph splitting at equal executed work.
 
-Other recorded completion modes, prepared-input geometry and work boundaries are retained per identity. Missing contract hashes alone are not evidence of different executed work; unknown entries remain unknown. The exact old clock profiles for Refresh16 cases 11-13 remain undocumented; the handoff reports 96 current before/after snapshots without profile mismatch. Contextual comparisons are retained. Strict historical claim/provenance and reference-close views are optional sensitivities, never the hidden main selection. Broad plots show raw throughput, host-inclusive energy and quality. Any descriptive Pareto table explicitly names its two objectives and recorded work cohort; it is not an equal-quality or universal endpoint-equivalence claim.
+Other recorded completion modes, prepared-input geometry and work boundaries are retained per identity. Missing contract hashes alone are not evidence of different executed work; unknown entries remain unknown. The exact old clock profiles for Refresh16 cases 11-13 remain undocumented; the handoff reports 96 current before/after snapshots without profile mismatch. Contextual comparisons are retained. Strict historical claim/provenance and reference-close views are optional sensitivities, never the hidden main selection. Broad plots show raw throughput, host-inclusive energy and quality. The historical Pareto table retains its recorded-work cohorts; the new empirical front uses the model/setup population defined above. Neither establishes equal quality or universal endpoint equivalence.
 '''
     (out/'METHODS.md').write_text(methods)
     claims = [
@@ -102,6 +108,7 @@ See [Table 2](tables/table2_full.md), [Table 3](tables/table3_top2_native.md), [
                  'Dataset Top-1 accuracy or COCO mAP is reused from the selected existing evidence and shown separately. '
                  'Table 3 ranks Native splits retrospectively against the fastest measured Full on the same host and uses that exact Full for both speedup and energy gain. '
                  'Source generations and numerical quality/cache discrepancies are recorded per metric. '
+                 'Empirical performance--energy fronts maximize throughput and minimize host-inclusive energy within each model/setup, including both Full alternatives; quality is shown by color and is not a dominance objective. '
                  'Native detector splits record a correctness oracle outside timing, whereas Generic detector splits record decoded NMS; refreshed YOLO26s Full paths include their recorded host-tail or integrated normalization work. These ratios compare observed deployments and do not isolate a causal effect of splitting at identical work.')
     (out/'METHODS_PARAGRAPH.tex').write_text(tex(paragraph)+'\n')
     index=read(out/'figures/INDEX.json')
@@ -109,6 +116,8 @@ See [Table 2](tables/table2_full.md), [Table 3](tables/table3_top2_native.md), [
     for name, selected in [('MLSys', [r for r in index if r['main_paper']]), ('Dissertation', index)]:
         contents={}
         for f in ['tables/table2_full.tex','tables/table3_top2_native.tex','CLAIM_EVIDENCE.tex','CLAIM_EVIDENCE.md','CLAIM_EVIDENCE.csv','METHODS.md','METHODS_PARAGRAPH.tex','CAPTIONS.md']:
+            contents[f]=(out/f).read_bytes()
+        for f in ['tables/PARETO_POINTS.csv','tables/PARETO_POINTS.json','figures/FIGURE_DATA.json']:
             contents[f]=(out/f).read_bytes()
         for p in sorted((out/'tables').glob('*')):
             if p.suffix in ['.tex', '.md']:
@@ -128,7 +137,7 @@ See [Table 2](tables/table2_full.md), [Table 3](tables/table3_top2_native.md), [
             for path, payload in sorted(contents.items()):
                 zi=zipfile.ZipInfo(path,(2026,10,14,0,0,0));zi.compress_type=zipfile.ZIP_DEFLATED;zi.external_attr=0o100644<<16
                 z.writestr(zi,payload,compress_type=zipfile.ZIP_DEFLATED,compresslevel=9)
-    (assets/'README.md').write_text('# Manuscript asset packages\n\n[MLSys](MLSys_assets.zip) contains the compact main-paper figure selection; [Dissertation](Dissertation_assets.zip) contains all model views. Both include standalone LaTeX Tables 2/3, figures in PDF/SVG/PNG, captions, methods and the claim-to-evidence table. Unpack and compile `preview.tex`. Private manuscripts are not part of these packages.\n')
+    (assets/'README.md').write_text('# Manuscript asset packages\n\n[MLSys](MLSys_assets.zip) contains the compact main-paper figure selection including the RegNet performance–energy/Pareto view; [Dissertation](Dissertation_assets.zip) contains all seven model trade-off/front views and their existing quality figures. Both include standalone LaTeX Tables 2/3, figures in PDF/SVG/PNG, captions, methods, exact plotted values in `figures/FIGURE_DATA.json`, `tables/PARETO_POINTS.csv`/`.json` and the claim-to-evidence table. Unpack and compile `preview.tex` with `pdflatex -halt-on-error -interaction=nonstopmode preview.tex`. Private manuscripts are not part of these packages.\n')
 
 if __name__ == '__main__':
     import argparse

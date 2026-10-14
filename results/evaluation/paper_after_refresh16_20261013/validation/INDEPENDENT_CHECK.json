@@ -5,6 +5,276 @@
   "fps_cohort_checks": 450,
   "full_configurations": 42,
   "native_generic_pairs": 204,
+  "pareto": {
+    "algorithm": "exhaustive pairwise comparison of original unrounded PAPER_DATASET coordinates",
+    "front_sizes": [
+      {
+        "front_coordinates": 1,
+        "front_size": 1,
+        "front_uids": [
+          "generic|mobilenet_v3_large|DeepX|deepx_to_trt|b056"
+        ],
+        "generic_split_front_size": 1,
+        "model": "mobilenet_v3_large",
+        "native_split_front_size": 3,
+        "observations": 36,
+        "setup": "DeepX"
+      },
+      {
+        "front_coordinates": 3,
+        "front_size": 3,
+        "front_uids": [
+          "native|mobilenet_v3_large|H10|hailo10h_to_trt|b074",
+          "native|mobilenet_v3_large|H10|hailo10h_to_trt|b078",
+          "native|mobilenet_v3_large|H10|hailo10h_to_trt|b085"
+        ],
+        "generic_split_front_size": 1,
+        "model": "mobilenet_v3_large",
+        "native_split_front_size": 3,
+        "observations": 36,
+        "setup": "H10"
+      },
+      {
+        "front_coordinates": 1,
+        "front_size": 1,
+        "front_uids": [
+          "native|mobilenet_v3_large|H8|hailo8_to_trt|b027"
+        ],
+        "generic_split_front_size": 2,
+        "model": "mobilenet_v3_large",
+        "native_split_front_size": 1,
+        "observations": 36,
+        "setup": "H8"
+      },
+      {
+        "front_coordinates": 1,
+        "front_size": 1,
+        "front_uids": [
+          "generic|regnet_x_1_6gf|DeepX|deepx_to_trt|b052"
+        ],
+        "generic_split_front_size": 1,
+        "model": "regnet_x_1_6gf",
+        "native_split_front_size": 1,
+        "observations": 42,
+        "setup": "DeepX"
+      },
+      {
+        "front_coordinates": 1,
+        "front_size": 1,
+        "front_uids": [
+          "native|regnet_x_1_6gf|H10|hailo10h_to_trt|b123"
+        ],
+        "generic_split_front_size": 5,
+        "model": "regnet_x_1_6gf",
+        "native_split_front_size": 1,
+        "observations": 42,
+        "setup": "H10"
+      },
+      {
+        "front_coordinates": 1,
+        "front_size": 1,
+        "front_uids": [
+          "native|regnet_x_1_6gf|H8|hailo8_to_trt|b073"
+        ],
+        "generic_split_front_size": 1,
+        "model": "regnet_x_1_6gf",
+        "native_split_front_size": 1,
+        "observations": 42,
+        "setup": "H8"
+      },
+      {
+        "front_coordinates": 4,
+        "front_size": 4,
+        "front_uids": [
+          "generic|resnet50|DeepX|deepx_to_trt|b119",
+          "native|resnet50|DeepX|deepx_to_trt|b119",
+          "native|resnet50|DeepX|native_full_deepx|full",
+          "native|resnet50|DeepX|native_full_tensorrt|full"
+        ],
+        "generic_split_front_size": 2,
+        "model": "resnet50",
+        "native_split_front_size": 2,
+        "observations": 40,
+        "setup": "DeepX"
+      },
+      {
+        "front_coordinates": 1,
+        "front_size": 1,
+        "front_uids": [
+          "native|resnet50|H10|hailo10h_to_trt|b095"
+        ],
+        "generic_split_front_size": 1,
+        "model": "resnet50",
+        "native_split_front_size": 1,
+        "observations": 40,
+        "setup": "H10"
+      },
+      {
+        "front_coordinates": 2,
+        "front_size": 2,
+        "front_uids": [
+          "native|resnet50|H8|hailo8_to_trt|b038",
+          "native|resnet50|H8|hailo8_to_trt|b060"
+        ],
+        "generic_split_front_size": 2,
+        "model": "resnet50",
+        "native_split_front_size": 2,
+        "observations": 40,
+        "setup": "H8"
+      },
+      {
+        "front_coordinates": 1,
+        "front_size": 1,
+        "front_uids": [
+          "native|yolo11l|DeepX|deepx_to_trt|b062"
+        ],
+        "generic_split_front_size": 1,
+        "model": "yolo11l",
+        "native_split_front_size": 1,
+        "observations": 8,
+        "setup": "DeepX"
+      },
+      {
+        "front_coordinates": 1,
+        "front_size": 1,
+        "front_uids": [
+          "native|yolo11l|H10|hailo10h_to_trt|b120"
+        ],
+        "generic_split_front_size": 2,
+        "model": "yolo11l",
+        "native_split_front_size": 1,
+        "observations": 8,
+        "setup": "H10"
+      },
+      {
+        "front_coordinates": 1,
+        "front_size": 1,
+        "front_uids": [
+          "native|yolo11l|H8|hailo8_to_trt|b120"
+        ],
+        "generic_split_front_size": 1,
+        "model": "yolo11l",
+        "native_split_front_size": 1,
+        "observations": 8,
+        "setup": "H8"
+      },
+      {
+        "front_coordinates": 1,
+        "front_size": 1,
+        "front_uids": [
+          "native|yolo26m|DeepX|native_full_tensorrt|full"
+        ],
+        "generic_split_front_size": 2,
+        "model": "yolo26m",
+        "native_split_front_size": 2,
+        "observations": 8,
+        "setup": "DeepX"
+      },
+      {
+        "front_coordinates": 1,
+        "front_size": 1,
+        "front_uids": [
+          "native|yolo26m|H10|hailo10h_to_trt|b043"
+        ],
+        "generic_split_front_size": 2,
+        "model": "yolo26m",
+        "native_split_front_size": 1,
+        "observations": 8,
+        "setup": "H10"
+      },
+      {
+        "front_coordinates": 4,
+        "front_size": 4,
+        "front_uids": [
+          "generic|yolo26m|H8|hailo8_to_trt|b043",
+          "native|yolo26m|H8|hailo8_to_trt|b038",
+          "native|yolo26m|H8|hailo8_to_trt|b043",
+          "native|yolo26m|H8|native_full_tensorrt|full"
+        ],
+        "generic_split_front_size": 1,
+        "model": "yolo26m",
+        "native_split_front_size": 2,
+        "observations": 8,
+        "setup": "H8"
+      },
+      {
+        "front_coordinates": 1,
+        "front_size": 1,
+        "front_uids": [
+          "native|yolo26s|DeepX|native_full_tensorrt|full"
+        ],
+        "generic_split_front_size": 1,
+        "model": "yolo26s",
+        "native_split_front_size": 1,
+        "observations": 8,
+        "setup": "DeepX"
+      },
+      {
+        "front_coordinates": 1,
+        "front_size": 1,
+        "front_uids": [
+          "native|yolo26s|H10|hailo10h_to_trt|b021"
+        ],
+        "generic_split_front_size": 1,
+        "model": "yolo26s",
+        "native_split_front_size": 1,
+        "observations": 8,
+        "setup": "H10"
+      },
+      {
+        "front_coordinates": 1,
+        "front_size": 1,
+        "front_uids": [
+          "native|yolo26s|H8|hailo8_to_trt|b021"
+        ],
+        "generic_split_front_size": 2,
+        "model": "yolo26s",
+        "native_split_front_size": 1,
+        "observations": 8,
+        "setup": "H8"
+      },
+      {
+        "front_coordinates": 2,
+        "front_size": 2,
+        "front_uids": [
+          "generic|yolov7_paper|DeepX|deepx_to_trt|b044",
+          "native|yolov7_paper|DeepX|deepx_to_trt|b044"
+        ],
+        "generic_split_front_size": 1,
+        "model": "yolov7_paper",
+        "native_split_front_size": 1,
+        "observations": 8,
+        "setup": "DeepX"
+      },
+      {
+        "front_coordinates": 1,
+        "front_size": 1,
+        "front_uids": [
+          "native|yolov7_paper|H10|hailo10h_to_trt|b044"
+        ],
+        "generic_split_front_size": 1,
+        "model": "yolov7_paper",
+        "native_split_front_size": 1,
+        "observations": 8,
+        "setup": "H10"
+      },
+      {
+        "front_coordinates": 1,
+        "front_size": 1,
+        "front_uids": [
+          "native|yolov7_paper|H8|hailo8_to_trt|b066"
+        ],
+        "generic_split_front_size": 1,
+        "model": "yolov7_paper",
+        "native_split_front_size": 1,
+        "observations": 8,
+        "setup": "H8"
+      }
+    ],
+    "groups": 21,
+    "included": 450,
+    "points": 450
+  },
   "preserved_quality_and_original_gate_rows": 450,
   "refresh_replacements": 16,
   "restored_full_pairs_checked": 28,

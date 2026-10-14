@@ -25,7 +25,10 @@ def validate_config(c):
                 'baseline_selection':'fastest_observed_full_same_model_and_host',
                 'point_summary':'median',
                 'equal_model_aggregation':'median_points_per_model_setup_then_mean_setups_per_model_then_mean_models',
-                'tie_break':'uid_ascending'}
+                'tie_break':'uid_ascending',
+                'pareto_scope':'model_setup_all_observed_deployments',
+                'pareto_objectives':{'fps':'maximize','energy_mj_per_image':'minimize'},
+                'pareto_quality_veto':False}
     for k,v in expected.items():
         if c.get(k)!=v:
             raise ValueError(f'Unsupported {k}={c.get(k)!r}; this package implements {v!r}')

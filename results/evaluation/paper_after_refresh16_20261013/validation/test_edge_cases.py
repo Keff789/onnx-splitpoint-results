@@ -144,6 +144,11 @@ class ScientificEdgeCases(unittest.TestCase):
             self.assertEqual(summary['energy_coverage'],5)
             self.assertEqual(summary['native_generic']['n_performance'],1)
             self.assertEqual(summary['native_generic']['n_energy'],0)
+            pareto={r['uid']:r for r in json.loads((a/'tables/PARETO_POINTS.json').read_text())}
+            self.assertEqual(set(pareto),set(data))
+            self.assertFalse(pareto[no_energy]['included'])
+            self.assertEqual(pareto[no_energy]['omission_reason'],'missing_energy_mj_per_image')
+            self.assertTrue(pareto[second]['included'])
             opts=json.loads((a/'tables/model_setup_optima.json').read_text())
             singleton=next(r for r in opts if r['runner']=='generic')
             self.assertEqual(singleton['candidate_count'],1)
@@ -152,6 +157,111 @@ class ScientificEdgeCases(unittest.TestCase):
             for path in a.rglob('*'):
                 if path.is_file():
                     self.assertEqual(path.read_bytes(),(b/path.relative_to(a)).read_bytes(),str(path.relative_to(a)))
+
+
+class ParetoEdgeCases(unittest.TestCase):
+    @staticmethod
+    def point(uid, fps, energy, **changes):
+        row = dict(uid=uid, model_id='model', setup_id='H8', runner='native',
+                   kind='split', backend='split_backend', case_id=uid, fps=fps,
+                   energy_mj_per_image=energy, quality_value=.7, quality_metric='top1')
+        row.update(changes)
+        return row
+
+    def calculate(self, rows):
+        return {r['uid']:r for r in tool.pareto_points(rows)}
+
+    def test_maximize_fps_minimize_energy_and_deterministic_witness(self):
+        rows = [self.point('slow_hot', 1, 10), self.point('z_fast_cool', 9, 2),
+                self.point('a_fast_cool', 10, 1)]
+        p = self.calculate(rows)
+        self.assertEqual({u for u,r in p.items() if r['pareto_all']}, {'a_fast_cool'})
+        self.assertEqual(p['slow_hot']['dominated_by_uid'], 'a_fast_cool')
+        self.assertIsNone(p['a_fast_cool']['dominated_by_uid'])
+        self.assertEqual(tool.pareto_points(rows), tool.pareto_points(list(reversed(rows))))
+
+    def test_tied_coordinates_keep_every_uid_without_mutating_inputs(self):
+        rows = [self.point('a', 10, 2), self.point('b', 10, 2), self.point('c', 5, 3)]
+        original = copy.deepcopy(rows)
+        p = self.calculate(rows)
+        self.assertEqual({u for u,r in p.items() if r['pareto_all']}, {'a','b'})
+        self.assertEqual(p['c']['dominated_by_uid'], 'a')
+        self.assertEqual(rows, original)
+
+    def test_same_fps_only_lower_energy_is_front(self):
+        p = self.calculate([self.point('cool', 10, 1), self.point('hot', 10, 2)])
+        self.assertTrue(p['cool']['pareto_all'])
+        self.assertFalse(p['hot']['pareto_all'])
+
+    def test_same_energy_only_higher_fps_is_front(self):
+        p = self.calculate([self.point('slow', 5, 1), self.point('fast', 10, 1)])
+        self.assertTrue(p['fast']['pareto_all'])
+        self.assertFalse(p['slow']['pareto_all'])
+
+    def test_singleton_front_is_one_observation(self):
+        p = self.calculate([self.point('single', 10, 2)])['single']
+        self.assertTrue(p['pareto_all'])
+        self.assertTrue(p['pareto_native'])
+        self.assertIsNone(p['pareto_generic'])
+        self.assertIsNone(p['dominated_by_uid'])
+        self.assertEqual(tool.pareto_points([]), [])
+
+    def test_real_tradeoffs_are_all_front_without_rounding(self):
+        rows = [self.point('low', 1, 1), self.point('middle', 2, 2),
+                self.point('high', 3, 3), self.point('rounded_tie', 1.0000000001, 1)]
+        p = self.calculate(rows)
+        self.assertEqual({u for u,r in p.items() if r['pareto_all']},
+                         {'middle','high','rounded_tie'})
+        self.assertEqual(p['low']['dominated_by_uid'], 'rounded_tie')
+
+    def test_model_and_setup_fronts_are_separate(self):
+        p = self.calculate([self.point('strong', 100, 1),
+                            self.point('other_model', 2, 20, model_id='other'),
+                            self.point('other_setup', 2, 20, setup_id='DeepX')])
+        self.assertTrue(all(r['pareto_all'] for r in p.values()))
+
+    def test_full_alternatives_and_runner_fronts_have_different_populations(self):
+        p = self.calculate([self.point('n', 10, 5), self.point('g', 8, 4, runner='generic'),
+                            self.point('trt', 15, 3, kind='full', backend='native_full_tensorrt'),
+                            self.point('vendor', 20, 2, kind='full', backend='native_full_hailo8')])
+        self.assertEqual({u for u,r in p.items() if r['pareto_all']}, {'vendor'})
+        self.assertTrue(p['n']['pareto_native'])
+        self.assertTrue(p['g']['pareto_generic'])
+        self.assertIsNone(p['n']['pareto_generic'])
+        self.assertIsNone(p['g']['pareto_native'])
+        self.assertIsNone(p['trt']['pareto_native'])
+        self.assertIsNone(p['vendor']['pareto_native'])
+
+    def test_missing_quality_and_old_flags_never_filter_or_change_front(self):
+        rows = [self.point('poor', 10, 1, quality_value=0, quality_class='accuracy_loss',
+                           quality_relative_loss=.99, normal_performance_claim=False,
+                           energy_claim=False, included_joint=False, contract_sha256=None),
+                self.point('missing', 12, 2, quality_value=None),
+                self.point('nonfinite', 15, 3, quality_value=float('nan'))]
+        p = self.calculate(rows)
+        self.assertTrue(all(r['included'] and r['pareto_all'] for r in p.values()))
+        self.assertEqual(p['poor']['quality_percent'], 0)
+        self.assertIsNone(p['missing']['quality_percent'])
+        self.assertIsNone(p['nonfinite']['quality_percent'])
+        json.dumps(list(p.values()), allow_nan=False)
+
+    def test_missing_nonfinite_and_invalid_axes_are_never_zero_filled(self):
+        rows = [self.point('missing', None, 1), self.point('nan', float('nan'), 1),
+                self.point('infinite', 10, float('inf')), self.point('boolean', True, 1),
+                self.point('text', 10, '1'), self.point('both', None, None)]
+        p = self.calculate(rows)
+        self.assertTrue(all(not r['included'] for r in p.values()))
+        self.assertTrue(all(r['pareto_all'] is None and r['dominated_by_uid'] is None
+                            for r in p.values()))
+        self.assertEqual(p['missing']['omission_reason'], 'missing_fps')
+        self.assertEqual(p['nan']['omission_reason'], 'nonfinite_fps')
+        self.assertEqual(p['infinite']['omission_reason'], 'nonfinite_energy_mj_per_image')
+        self.assertEqual(p['boolean']['omission_reason'], 'invalid_fps')
+        self.assertEqual(p['text']['omission_reason'], 'invalid_energy_mj_per_image')
+        self.assertEqual(p['both']['omission_reason'], 'missing_fps;missing_energy_mj_per_image')
+        self.assertIsNone(p['nan']['fps'])
+        self.assertIsNone(p['infinite']['energy_mj_per_image'])
+        json.dumps(list(p.values()), allow_nan=False)
 
 
 if __name__ == '__main__':
