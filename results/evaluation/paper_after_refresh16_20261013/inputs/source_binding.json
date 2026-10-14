@@ -1,0 +1,11 @@
+{
+  "baseline_cases_sha256": "31bc9acc6e5c01a12f09bddc21e94e909f0585d5af5b0b2a5e916cc150b1ea49",
+  "generation": "refresh16_20261013",
+  "measurement_starts": 0,
+  "projection": "CURRENT-selected exact compact observations plus existing selected quality summaries",
+  "quality_cached_loss_disagreements": 53,
+  "quality_evaluations_started": 0,
+  "quality_numeric_coverage": 450,
+  "selected_input_manifest_sha256": "b610e60cc3fa659bebe60527a6962b6923e627069fe5b6668f754378acd644f4",
+  "selected_inputs": "_updates/refresh16_20261013/inputs"
+}

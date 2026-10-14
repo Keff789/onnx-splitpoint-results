@@ -1,0 +1,260 @@
+{
+  "broad_full_pairs_previously_semantic_excluded": [
+    {
+      "baseline_uid": "native|yolov7_paper|DeepX|native_full_deepx|full",
+      "original_semantic_comparison_reasons": [
+        "decoder_contract_sha256_identity_differs_or_missing",
+        "nms_contract_sha256_identity_differs_or_missing"
+      ],
+      "split_uid": "native|yolov7_paper|DeepX|deepx_to_trt|b044"
+    },
+    {
+      "baseline_uid": "native|yolov7_paper|DeepX|native_full_tensorrt|full",
+      "original_semantic_comparison_reasons": [
+        "decoder_contract_sha256_identity_differs_or_missing",
+        "nms_contract_sha256_identity_differs_or_missing"
+      ],
+      "split_uid": "native|yolov7_paper|DeepX|deepx_to_trt|b044"
+    },
+    {
+      "baseline_uid": "native|yolov7_paper|DeepX|native_full_deepx|full",
+      "original_semantic_comparison_reasons": [
+        "decoder_contract_sha256_identity_differs_or_missing",
+        "nms_contract_sha256_identity_differs_or_missing"
+      ],
+      "split_uid": "native|yolov7_paper|DeepX|deepx_to_trt|b066"
+    },
+    {
+      "baseline_uid": "native|yolov7_paper|DeepX|native_full_tensorrt|full",
+      "original_semantic_comparison_reasons": [
+        "decoder_contract_sha256_identity_differs_or_missing",
+        "nms_contract_sha256_identity_differs_or_missing"
+      ],
+      "split_uid": "native|yolov7_paper|DeepX|deepx_to_trt|b066"
+    },
+    {
+      "baseline_uid": "native|yolo11l|DeepX|native_full_deepx|full",
+      "original_semantic_comparison_reasons": [
+        "decoder_contract_sha256_identity_differs_or_missing",
+        "nms_contract_sha256_identity_differs_or_missing"
+      ],
+      "split_uid": "native|yolo11l|DeepX|deepx_to_trt|b003"
+    },
+    {
+      "baseline_uid": "native|yolo11l|DeepX|native_full_deepx|full",
+      "original_semantic_comparison_reasons": [
+        "decoder_contract_sha256_identity_differs_or_missing",
+        "nms_contract_sha256_identity_differs_or_missing"
+      ],
+      "split_uid": "native|yolo11l|DeepX|deepx_to_trt|b062"
+    },
+    {
+      "baseline_uid": "native|yolo11l|DeepX|native_full_deepx|full",
+      "original_semantic_comparison_reasons": [
+        "decoder_contract_sha256_identity_differs_or_missing",
+        "nms_contract_sha256_identity_differs_or_missing"
+      ],
+      "split_uid": "native|yolo11l|DeepX|deepx_to_trt|b120"
+    },
+    {
+      "baseline_uid": "native|yolo11l|DeepX|native_full_tensorrt|full",
+      "original_semantic_comparison_reasons": [
+        "decoder_contract_sha256_identity_differs_or_missing",
+        "nms_contract_sha256_identity_differs_or_missing"
+      ],
+      "split_uid": "native|yolo11l|DeepX|deepx_to_trt|b120"
+    },
+    {
+      "baseline_uid": "native|yolo26m|DeepX|native_full_deepx|full",
+      "original_semantic_comparison_reasons": [
+        "decoder_contract_sha256_identity_differs_or_missing",
+        "nms_contract_sha256_identity_differs_or_missing"
+      ],
+      "split_uid": "native|yolo26m|DeepX|deepx_to_trt|b003"
+    },
+    {
+      "baseline_uid": "native|yolo26m|DeepX|native_full_deepx|full",
+      "original_semantic_comparison_reasons": [
+        "decoder_contract_sha256_identity_differs_or_missing",
+        "nms_contract_sha256_identity_differs_or_missing"
+      ],
+      "split_uid": "native|yolo26m|DeepX|deepx_to_trt|b038"
+    },
+    {
+      "baseline_uid": "native|yolo26m|DeepX|native_full_deepx|full",
+      "original_semantic_comparison_reasons": [
+        "decoder_contract_sha256_identity_differs_or_missing",
+        "nms_contract_sha256_identity_differs_or_missing"
+      ],
+      "split_uid": "native|yolo26m|DeepX|deepx_to_trt|b043"
+    },
+    {
+      "baseline_uid": "native|yolo26s|DeepX|native_full_deepx|full",
+      "original_semantic_comparison_reasons": [
+        "decoder_contract_sha256_identity_differs_or_missing",
+        "nms_contract_sha256_identity_differs_or_missing"
+      ],
+      "split_uid": "native|yolo26s|DeepX|deepx_to_trt|b003"
+    },
+    {
+      "baseline_uid": "native|yolo26s|DeepX|native_full_deepx|full",
+      "original_semantic_comparison_reasons": [
+        "decoder_contract_sha256_identity_differs_or_missing",
+        "nms_contract_sha256_identity_differs_or_missing"
+      ],
+      "split_uid": "native|yolo26s|DeepX|deepx_to_trt|b021"
+    },
+    {
+      "baseline_uid": "native|yolo26s|DeepX|native_full_deepx|full",
+      "original_semantic_comparison_reasons": [
+        "decoder_contract_sha256_identity_differs_or_missing",
+        "nms_contract_sha256_identity_differs_or_missing"
+      ],
+      "split_uid": "native|yolo26s|DeepX|deepx_to_trt|b038"
+    },
+    {
+      "baseline_uid": "native|yolo26s|DeepX|native_full_tensorrt|full",
+      "original_semantic_comparison_reasons": [
+        "decoder_contract_sha256_identity_differs_or_missing",
+        "nms_contract_sha256_identity_differs_or_missing"
+      ],
+      "split_uid": "native|yolo26s|DeepX|deepx_to_trt|b038"
+    },
+    {
+      "baseline_uid": "native|yolo11l|H8|native_full_hailo8|full",
+      "original_semantic_comparison_reasons": [
+        "decoder_contract_sha256_identity_differs_or_missing",
+        "nms_contract_sha256_identity_differs_or_missing"
+      ],
+      "split_uid": "native|yolo11l|H8|hailo8_to_trt|b120"
+    },
+    {
+      "baseline_uid": "native|yolo11l|H8|native_full_tensorrt|full",
+      "original_semantic_comparison_reasons": [
+        "decoder_contract_sha256_identity_differs_or_missing",
+        "nms_contract_sha256_identity_differs_or_missing"
+      ],
+      "split_uid": "native|yolo11l|H8|hailo8_to_trt|b120"
+    },
+    {
+      "baseline_uid": "native|yolov7_paper|DeepX|native_full_deepx|full",
+      "original_semantic_comparison_reasons": [
+        "decoder_contract_sha256_identity_differs_or_missing",
+        "nms_contract_sha256_identity_differs_or_missing"
+      ],
+      "split_uid": "native|yolov7_paper|DeepX|deepx_to_trt|b009"
+    },
+    {
+      "baseline_uid": "native|yolov7_paper|H8|native_full_hailo8|full",
+      "original_semantic_comparison_reasons": [
+        "decoder_contract_sha256_identity_differs_or_missing",
+        "nms_contract_sha256_identity_differs_or_missing"
+      ],
+      "split_uid": "native|yolov7_paper|H8|hailo8_to_trt|b044"
+    },
+    {
+      "baseline_uid": "native|yolov7_paper|H8|native_full_tensorrt|full",
+      "original_semantic_comparison_reasons": [
+        "decoder_contract_sha256_identity_differs_or_missing",
+        "nms_contract_sha256_identity_differs_or_missing"
+      ],
+      "split_uid": "native|yolov7_paper|H8|hailo8_to_trt|b044"
+    },
+    {
+      "baseline_uid": "native|yolov7_paper|H8|native_full_hailo8|full",
+      "original_semantic_comparison_reasons": [
+        "decoder_contract_sha256_identity_differs_or_missing",
+        "nms_contract_sha256_identity_differs_or_missing"
+      ],
+      "split_uid": "native|yolov7_paper|H8|hailo8_to_trt|b066"
+    },
+    {
+      "baseline_uid": "native|yolov7_paper|H8|native_full_tensorrt|full",
+      "original_semantic_comparison_reasons": [
+        "decoder_contract_sha256_identity_differs_or_missing",
+        "nms_contract_sha256_identity_differs_or_missing"
+      ],
+      "split_uid": "native|yolov7_paper|H8|hailo8_to_trt|b066"
+    },
+    {
+      "baseline_uid": "native|yolov7_paper|H10|native_full_hailo10h|full",
+      "original_semantic_comparison_reasons": [
+        "decoder_contract_sha256_identity_differs_or_missing",
+        "nms_contract_sha256_identity_differs_or_missing"
+      ],
+      "split_uid": "native|yolov7_paper|H10|hailo10h_to_trt|b044"
+    },
+    {
+      "baseline_uid": "native|yolov7_paper|H10|native_full_tensorrt|full",
+      "original_semantic_comparison_reasons": [
+        "decoder_contract_sha256_identity_differs_or_missing",
+        "nms_contract_sha256_identity_differs_or_missing"
+      ],
+      "split_uid": "native|yolov7_paper|H10|hailo10h_to_trt|b044"
+    },
+    {
+      "baseline_uid": "native|yolov7_paper|H10|native_full_hailo10h|full",
+      "original_semantic_comparison_reasons": [
+        "decoder_contract_sha256_identity_differs_or_missing",
+        "nms_contract_sha256_identity_differs_or_missing"
+      ],
+      "split_uid": "native|yolov7_paper|H10|hailo10h_to_trt|b066"
+    },
+    {
+      "baseline_uid": "native|yolov7_paper|H10|native_full_tensorrt|full",
+      "original_semantic_comparison_reasons": [
+        "decoder_contract_sha256_identity_differs_or_missing",
+        "nms_contract_sha256_identity_differs_or_missing"
+      ],
+      "split_uid": "native|yolov7_paper|H10|hailo10h_to_trt|b066"
+    },
+    {
+      "baseline_uid": "native|yolo11l|H10|native_full_hailo10h|full",
+      "original_semantic_comparison_reasons": [
+        "decoder_contract_sha256_identity_differs_or_missing",
+        "nms_contract_sha256_identity_differs_or_missing"
+      ],
+      "split_uid": "native|yolo11l|H10|hailo10h_to_trt|b120"
+    },
+    {
+      "baseline_uid": "native|yolo11l|H10|native_full_tensorrt|full",
+      "original_semantic_comparison_reasons": [
+        "decoder_contract_sha256_identity_differs_or_missing",
+        "nms_contract_sha256_identity_differs_or_missing"
+      ],
+      "split_uid": "native|yolo11l|H10|hailo10h_to_trt|b120"
+    }
+  ],
+  "canonical_rows": 450,
+  "complete_non_target_rows_unchanged": 434,
+  "current_sha256": "9e9e9bc9aca7119177bc2abf6e798f83d9bddf04a29b1d15976163aa7dfa8efe",
+  "h10_classifier_trt_values_previously_claim_excluded": [
+    {
+      "fps": 709.8515002062785,
+      "original_performance_claim": false,
+      "performance_n": 3,
+      "uid": "native|mobilenet_v3_large|H10|native_full_tensorrt|full"
+    },
+    {
+      "fps": 315.813603397234,
+      "original_performance_claim": false,
+      "performance_n": 3,
+      "uid": "native|regnet_x_1_6gf|H10|native_full_tensorrt|full"
+    },
+    {
+      "fps": 521.6308269581693,
+      "original_performance_claim": false,
+      "performance_n": 3,
+      "uid": "native|resnet50|H10|native_full_tensorrt|full"
+    }
+  ],
+  "method": "median(completed_frames/measured_duration) and mean(calibrated energy_total_j/energy_work_units_used); no sensor reprocessing",
+  "new_quality_evaluations": 0,
+  "original_raw_energy_unit": "J/completed_image",
+  "quality_and_original_gates_unchanged": 450,
+  "raw_energy_reports_recalculated": 48,
+  "raw_performance_reports_recalculated": 48,
+  "source": "Private pre-navigation read-only check against handoff Current, historical compact snapshot and the 96 selected original JSON reports; no sensor reprocessing.",
+  "status": "PASS",
+  "target_replacements": 16
+}

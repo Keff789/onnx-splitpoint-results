@@ -1,0 +1,17 @@
+{
+  "dataset_cases": 450,
+  "energy_repeat_checks": 1350,
+  "figure_payloads_checked": 21,
+  "fps_cohort_checks": 450,
+  "full_configurations": 42,
+  "native_generic_pairs": 204,
+  "preserved_quality_and_original_gate_rows": 450,
+  "refresh_replacements": 16,
+  "restored_full_pairs_checked": 28,
+  "restored_h10_trt_classifier_values_checked": 3,
+  "split_full_pairs": 816,
+  "status": "PASS",
+  "table2_model_rows": 7,
+  "table3_rows": 14,
+  "unchanged_complete_non_target_rows": 434
+}

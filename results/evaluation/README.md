@@ -1,7 +1,8 @@
 # Evaluation evidence
 
-The [current consolidated Revision 3 analysis](rev3_consolidated_20261013/README.md)
+The [current Refresh16 paper analysis](paper_after_refresh16_20261013/README.md)
 provides selection, scientific findings, limits, independent review and offline reproduction.
+The [13 October analysis](rev3_consolidated_20261013/README.md) is historical.
 The [13 October source snapshot](native_fairness_rev3_20261007/README.md)
 retains acquisition and projection evidence. All earlier dated evaluations below
 retain their original historical cohorts and findings.

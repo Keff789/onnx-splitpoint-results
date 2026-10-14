@@ -1,0 +1,25 @@
+{
+  "command": [
+    "python",
+    "-I",
+    "-B",
+    "validation/test_edge_cases.py"
+  ],
+  "output": "EDGE_TESTS.txt",
+  "returncode": 0,
+  "status": "PASS",
+  "test_names": [
+    "test_build_preserves_fps_only_bad_quality_and_same_full_energy",
+    "test_energy_denominator_must_be_positive",
+    "test_energy_means_reciprocal_and_pooled_are_distinct",
+    "test_large_observed_variation_is_retained",
+    "test_latest_matching_completed_value_not_fastest_or_mtime",
+    "test_metric_specific_historical_fallback_fills_only_real_gap",
+    "test_models_are_not_point_weighted",
+    "test_new_worse_dataset_quality_wins_by_measurement_time",
+    "test_reexport_is_not_an_independent_repeat",
+    "test_single_repeat_has_no_invented_ci_or_stdev",
+    "test_zero_accuracy_and_negative_relative_loss_are_real_observations"
+  ],
+  "tests_executed": 11
+}

@@ -1,0 +1,16 @@
+test_build_preserves_fps_only_bad_quality_and_same_full_energy (__main__.ScientificEdgeCases) ... ok
+test_energy_denominator_must_be_positive (__main__.ScientificEdgeCases) ... ok
+test_energy_means_reciprocal_and_pooled_are_distinct (__main__.ScientificEdgeCases) ... ok
+test_large_observed_variation_is_retained (__main__.ScientificEdgeCases) ... ok
+test_latest_matching_completed_value_not_fastest_or_mtime (__main__.ScientificEdgeCases) ... ok
+test_metric_specific_historical_fallback_fills_only_real_gap (__main__.ScientificEdgeCases) ... ok
+test_models_are_not_point_weighted (__main__.ScientificEdgeCases) ... ok
+test_new_worse_dataset_quality_wins_by_measurement_time (__main__.ScientificEdgeCases) ... ok
+test_reexport_is_not_an_independent_repeat (__main__.ScientificEdgeCases) ... ok
+test_single_repeat_has_no_invented_ci_or_stdev (__main__.ScientificEdgeCases) ... ok
+test_zero_accuracy_and_negative_relative_loss_are_real_observations (__main__.ScientificEdgeCases) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.044s
+
+OK

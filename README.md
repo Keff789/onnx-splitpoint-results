@@ -1,23 +1,32 @@
 # ONNX Split-Point Results Archive
 
-## Current consolidated analysis — 13 October 2026
+## Current paper analysis — 14 October 2026
 
-The [current research entry point](results/evaluation/rev3_consolidated_20261013/README.md)
-contains the consolidated Revision 3 selection, new offline scientific analysis,
-methods, exclusions, independent review and reproducible tables and figures.
-Its 450 identities comprise 246 Native and 204 Generic results; 437 have normal
-energy admission. The 13 boundary cases and all 26 Native / 17 Generic quality-loss
-results remain visible. Seventeen administrative quality-receipt versions remain
-unresolved; the separate bound result leaves and exclusion sensitivity are documented.
+The [Refresh16 paper analysis](results/evaluation/paper_after_refresh16_20261013/README.md)
+contains the broad measured selection, Tables 2/3, all model/setup comparisons,
+reproducible figures, methods and manuscript assets. All 450 identities have FPS,
+host-inclusive energy and existing numerical dataset quality; all 42 Full
+configurations are retained. Sixteen Native identities have new 3+3 cohorts;
+434 other rows and all original quality selections/flags remain unchanged.
 
-Twix restored the selected inputs from the canonical archive and reproduced the
-compact analysis offline. See [methods and limits](results/evaluation/rev3_consolidated_20261013/METHODS.md),
-[validation](results/evaluation/rev3_consolidated_20261013/validation/README.md)
+Native exceeds Generic throughput at 139/204 points and uses less energy at
+160/204; 94/204 Native splits exceed the fastest same-host Full. These are
+observed deployment comparisons, with real timed-work and quality differences
+visible. No automatic 5%/claim/hash filter is applied. Energy is J/image or
+mJ/image. The 53 differences between cached quality losses and selected numerical
+quality reports remain explicit.
+
+Read [findings](results/evaluation/paper_after_refresh16_20261013/results/FINDINGS.md),
+[methods](results/evaluation/paper_after_refresh16_20261013/results/METHODS.md),
+[validation](results/evaluation/paper_after_refresh16_20261013/validation/README.md),
+[MLSys/Dissertation assets](results/evaluation/paper_after_refresh16_20261013/results/assets/README.md)
 and the [repository map](docs/REPOSITORY_MAP.md).
-The [13 October source snapshot](results/evaluation/native_fairness_rev3_20261007/README.md)
-remains the dated acquisition/projection evidence. Older completed-task analyses
-below retain their historical generations. Independent
-[energy-measurement / PSD / TIM research](energy-measurement/README.md) retains its own navigation.
+[CURRENT.json](CURRENT.json) and [PAPER_CURRENT.json](PAPER_CURRENT.json) point to this same generation.
+The [13 October analysis](results/evaluation/rev3_consolidated_20261013/README.md)
+and [acquisition snapshot](results/evaluation/native_fairness_rev3_20261007/README.md)
+remain dated history. Independent [PSD/TIM research](energy-measurement/README.md)
+retains its own navigation. No new acquisition, build or quality evaluation was
+performed for this offline analysis; private manuscripts are not included.
 
 This repository is the curated, Git-friendly result archive for the ONNX
 Split-Point evaluation project. It keeps compact measurement results,

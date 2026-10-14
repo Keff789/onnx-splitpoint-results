@@ -1,0 +1,38 @@
+[
+  {
+    "aggregation": "median_points_per_model_setup_then_mean_setups_per_model_then_mean_models",
+    "energy_ratio": 0.8194678627976979,
+    "fps_ratio": 1.440056201383714,
+    "n_energy_models": 7,
+    "n_models": 7,
+    "n_performance_models": 7,
+    "setup": "all"
+  },
+  {
+    "aggregation": "median_points_per_model_setup_then_mean_setups_per_model_then_mean_models",
+    "energy_ratio": 1.0068604195055806,
+    "fps_ratio": 0.9489038616317138,
+    "n_energy_models": 7,
+    "n_models": 7,
+    "n_performance_models": 7,
+    "setup": "DeepX"
+  },
+  {
+    "aggregation": "median_points_per_model_setup_then_mean_setups_per_model_then_mean_models",
+    "energy_ratio": 0.6184681395442356,
+    "fps_ratio": 2.1373559308261183,
+    "n_energy_models": 7,
+    "n_models": 7,
+    "n_performance_models": 7,
+    "setup": "H10"
+  },
+  {
+    "aggregation": "median_points_per_model_setup_then_mean_setups_per_model_then_mean_models",
+    "energy_ratio": 0.8330750293432775,
+    "fps_ratio": 1.2339088116933095,
+    "n_energy_models": 7,
+    "n_models": 7,
+    "n_performance_models": 7,
+    "setup": "H8"
+  }
+]

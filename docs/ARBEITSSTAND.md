@@ -1,5 +1,7 @@
 # Arbeitsstand – THESIS20 wissenschaftliche Reviewableitung
 
+> **Aktuell, 14.10.2026:** [Paperauswertung nach Refresh16](../results/evaluation/paper_after_refresh16_20261013/README.md), vollständige breite Daten, Tabellen 2/3, Grafiken und MLSys-/Diss-Assets. Keine neue Messung oder Qualitätsauswertung. Die folgenden Arbeitsstände sind datierte Historie und keine aktive Messfreigabe.
+
 ## Revision 3 — Current-Checkpoint der Finalisierung am 08.10.2026
 
 Die aktuellen Zahlen werden aus den ausgewählten Native-/Generic-Current-Zeilen

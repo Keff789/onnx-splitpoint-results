@@ -1,0 +1,19 @@
+{
+  "engine": "pdfTeX 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian)",
+  "manuscripts_modified": false,
+  "packages": [
+    {
+      "archive": "Dissertation_assets.zip",
+      "compile_exit_code": 0,
+      "overfull_or_undefined_errors": [],
+      "pages": 23
+    },
+    {
+      "archive": "MLSys_assets.zip",
+      "compile_exit_code": 0,
+      "overfull_or_undefined_errors": [],
+      "pages": 8
+    }
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,5 @@
+setup,n_models,n_performance_models,n_energy_models,fps_ratio,energy_ratio,aggregation
+all,7,7,7,1.440056201383714,0.8194678627976979,median_points_per_model_setup_then_mean_setups_per_model_then_mean_models
+DeepX,7,7,7,0.9489038616317138,1.0068604195055806,median_points_per_model_setup_then_mean_setups_per_model_then_mean_models
+H10,7,7,7,2.1373559308261183,0.6184681395442356,median_points_per_model_setup_then_mean_setups_per_model_then_mean_models
+H8,7,7,7,1.2339088116933095,0.8330750293432775,median_points_per_model_setup_then_mean_setups_per_model_then_mean_models

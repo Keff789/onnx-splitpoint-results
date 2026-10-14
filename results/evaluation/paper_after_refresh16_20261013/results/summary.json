@@ -1,0 +1,170 @@
+{
+  "all_runner_split_full": {
+    "both_better": 345,
+    "energy_lower": 409,
+    "energy_ratio_max": 4.996656591944934,
+    "energy_ratio_median": 0.9995420034574574,
+    "energy_ratio_min": 0.15198625209522032,
+    "energy_ratio_q25": 0.7877925323356476,
+    "energy_ratio_q75": 1.2687382247529146,
+    "faster": 466,
+    "fps_ratio_max": 11.845805335274706,
+    "fps_ratio_median": 1.0735963446951349,
+    "fps_ratio_min": 0.14646212534451672,
+    "fps_ratio_q25": 0.7831036872642392,
+    "fps_ratio_q75": 1.5981860395950784,
+    "n_energy": 816,
+    "n_joint": 816,
+    "n_pairs": 816,
+    "n_performance": 816
+  },
+  "cases": 450,
+  "display_energy_unit": "mJ/image",
+  "energy_coverage": 450,
+  "energy_unit": "J/image",
+  "fastest_full_comparison": {
+    "faster": 94,
+    "speedup_max": 4.328858760580097,
+    "speedup_median": 0.970975789964323,
+    "speedup_min": 0.16725043466614725,
+    "speedup_q25": 0.6846127489537792,
+    "speedup_q75": 1.2108622859250378,
+    "splits": 204
+  },
+  "full_coverage": {
+    "configurations": 42,
+    "energy": 42,
+    "performance": 42
+  },
+  "generations": {
+    "energy": {
+      "refresh16_20261013": 16,
+      "rev3_consolidated_20261013": 434
+    },
+    "performance": {
+      "refresh16_20261013": 16,
+      "rev3_consolidated_20261013": 434
+    },
+    "quality": {
+      "pre_refresh16_selected_evidence_reused": 450
+    }
+  },
+  "generic": 204,
+  "historical_strict_excluded_pairs_retained": 28,
+  "joint_coverage": 450,
+  "lowest_full_energy_comparison": {
+    "lower": 82,
+    "ratio_max": 4.185051369545188,
+    "ratio_median": 1.0359024776270895,
+    "ratio_min": 0.2561067315317073,
+    "ratio_q25": 0.8999571741640452,
+    "ratio_q75": 1.2434094578270827,
+    "splits": 204
+  },
+  "missing_fields": {
+    "energy_uids": [],
+    "performance_uids": [],
+    "quality_uids": []
+  },
+  "native": 246,
+  "native_generic": {
+    "both_better": 138,
+    "energy_lower": 160,
+    "energy_ratio_max": 1.0616090951931672,
+    "energy_ratio_median": 0.755245694654413,
+    "energy_ratio_min": 0.21021946827491225,
+    "energy_ratio_q25": 0.6211218583637874,
+    "energy_ratio_q75": 0.995216599846275,
+    "faster": 139,
+    "fps_ratio_max": 6.040180237574431,
+    "fps_ratio_median": 1.3636669799087018,
+    "fps_ratio_min": 0.8935545445330563,
+    "fps_ratio_q25": 0.9706677596847336,
+    "fps_ratio_q75": 1.7491713674151197,
+    "n_energy": 204,
+    "n_joint": 204,
+    "n_pairs": 204,
+    "n_performance": 204
+  },
+  "native_generic_equal_model": [
+    {
+      "aggregation": "median_points_per_model_setup_then_mean_setups_per_model_then_mean_models",
+      "energy_ratio": 0.8194678627976979,
+      "fps_ratio": 1.440056201383714,
+      "n_energy_models": 7,
+      "n_models": 7,
+      "n_performance_models": 7,
+      "setup": "all"
+    },
+    {
+      "aggregation": "median_points_per_model_setup_then_mean_setups_per_model_then_mean_models",
+      "energy_ratio": 1.0068604195055806,
+      "fps_ratio": 0.9489038616317138,
+      "n_energy_models": 7,
+      "n_models": 7,
+      "n_performance_models": 7,
+      "setup": "DeepX"
+    },
+    {
+      "aggregation": "median_points_per_model_setup_then_mean_setups_per_model_then_mean_models",
+      "energy_ratio": 0.6184681395442356,
+      "fps_ratio": 2.1373559308261183,
+      "n_energy_models": 7,
+      "n_models": 7,
+      "n_performance_models": 7,
+      "setup": "H10"
+    },
+    {
+      "aggregation": "median_points_per_model_setup_then_mean_setups_per_model_then_mean_models",
+      "energy_ratio": 0.8330750293432775,
+      "fps_ratio": 1.2339088116933095,
+      "n_energy_models": 7,
+      "n_models": 7,
+      "n_performance_models": 7,
+      "setup": "H8"
+    }
+  ],
+  "native_split_full": {
+    "both_better": 221,
+    "energy_lower": 250,
+    "energy_ratio_max": 4.185051369545188,
+    "energy_ratio_median": 0.9287956445818726,
+    "energy_ratio_min": 0.15198625209522032,
+    "energy_ratio_q25": 0.5886760658095213,
+    "energy_ratio_q75": 1.0914880435072103,
+    "faster": 278,
+    "fps_ratio_max": 11.845805335274706,
+    "fps_ratio_median": 1.2273745165211523,
+    "fps_ratio_min": 0.16725043466614725,
+    "fps_ratio_q25": 0.9019669141104989,
+    "fps_ratio_q75": 1.9742118318377828,
+    "n_energy": 408,
+    "n_joint": 408,
+    "n_pairs": 408,
+    "n_performance": 408
+  },
+  "negative_numeric_quality_over_5_percent": 43,
+  "new_quality_evaluations": 0,
+  "nonclaim_performance_full_values_retained": 11,
+  "normalization_direction_changes": 35,
+  "optima": {
+    "groups": 21,
+    "multi_candidate_conflicts": 6,
+    "multi_candidate_groups": 21,
+    "multi_candidate_same": 15,
+    "single_candidate_groups": 0
+  },
+  "performance_coverage": 450,
+  "posthoc_only": true,
+  "quality_cached_loss_disagreements": 53,
+  "quality_loss": {
+    "generic": 17,
+    "native": 26
+  },
+  "quality_numeric_coverage": 450,
+  "refresh16_cases": 16,
+  "selection": "broad numeric observations; original flags and work differences retained",
+  "table3_max_speedup": 4.328858760580097,
+  "table3_rows": 14,
+  "unchanged_cases": 434
+}

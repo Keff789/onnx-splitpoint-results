@@ -1,6 +1,6 @@
 # Native/Generic Revision 3 — Current-Evidenz und Prüfgrenzen
 
-> **Dated technical history.** For the current scientific selection, analysis and reproduction, use the [consolidated Revision 3 entry point](../results/evaluation/rev3_consolidated_20261013/README.md). Original data and dated findings below retain their own scope.
+> **Dated technical history.** For the current scientific selection, analysis and reproduction, use the [Refresh16 paper entry point](../results/evaluation/paper_after_refresh16_20261013/README.md). Original data and dated findings below retain their own scope.
 
 Der Datenstand des begrenzten wissenschaftlichen Energie-Deltas vom 12./13.10.2026 steht im [Publikationsmanifest](../results/evaluation/native_fairness_rev3_20261007/PUBLICATION_MANIFEST.json), im [Abschlussbericht](../results/evaluation/native_fairness_rev3_20261007/RESULT_REPORT.md) und in der [450-Zeilen-Ergebnistabelle](../results/evaluation/native_fairness_rev3_20261007/operations/token_saving_batch_20261009/delta_abschluss_20261012/DELTA_RESULT_TABLE.csv). Der dort ausgewiesene Archiv- und Veröffentlichungsstatus ist maßgeblich. Frühere Zwischenstände bleiben in Git und den privaten Originalen erhalten.
 

@@ -1,6 +1,6 @@
 # THESIS20 deep scientific analysis — review edition
 
-> **Historical THESIS20 scientific analysis.** For the current scientific selection, analysis and reproduction, use the [consolidated Revision 3 entry point](../../rev3_consolidated_20261013/README.md). Original data and dated findings below retain their own scope.
+> **Historical THESIS20 scientific analysis.** For the current scientific selection, analysis and reproduction, use the [Refresh16 paper entry point](../../paper_after_refresh16_20261013/README.md). Original data and dated findings below retain their own scope.
 
 Separate exploratory analysis of the closed campaign, prepared 04 October 2026. No inference, measurement, quality campaign, engine compilation or tool release is performed. Original published outputs remain in the parent THESIS20 release.
 

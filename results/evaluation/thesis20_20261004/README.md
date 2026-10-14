@@ -1,6 +1,6 @@
 # THESIS20 completed analysis, 4 October 2026
 
-> **Historical 4 October THESIS20 cohort.** For the current scientific selection, analysis and reproduction, use the [consolidated Revision 3 entry point](../rev3_consolidated_20261013/README.md). Original data and dated findings below retain their own scope.
+> **Historical 4 October THESIS20 cohort.** For the current scientific selection, analysis and reproduction, use the [Refresh16 paper entry point](../paper_after_refresh16_20261013/README.md). Original data and dated findings below retain their own scope.
 
 > **Current-view update, 7 October 2026:** [YOLOv7 native performance](../yolov7_native_completion_20261007/README.md)
 > supersedes the nine matching split and six Full throughput aggregates for paper use.

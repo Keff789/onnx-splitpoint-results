@@ -1,0 +1,13 @@
+{
+  "analysis": "results/evaluation/paper_after_refresh16_20261013",
+  "analysis_date": "2026-10-14",
+  "dataset": "results/evaluation/paper_after_refresh16_20261013/results/PAPER_DATASET.json",
+  "display_energy_unit": "mJ/image",
+  "energy_unit": "J/image",
+  "generation": "refresh16_20261013",
+  "manuscript_assets": "results/evaluation/paper_after_refresh16_20261013/results/assets/README.md",
+  "previous_analysis": "results/evaluation/rev3_consolidated_20261013",
+  "selection": "broad_numeric_observations",
+  "source_binding": "results/evaluation/paper_after_refresh16_20261013/inputs/source_binding.json",
+  "validation": "results/evaluation/paper_after_refresh16_20261013/validation/README.md"
+}

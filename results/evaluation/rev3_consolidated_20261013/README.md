@@ -1,5 +1,7 @@
 # Revision 3 consolidated offline analysis
 
+> **Historical 13 October analysis.** The current [Refresh16 paper analysis](../paper_after_refresh16_20261013/README.md) uses the refreshed selection and broad observation policy. All dated data and generated outputs below retain their original scope.
+
 This is the current scientific analysis of the selected 13 October 2026 Revision 3 generation. It retains all 450 identities, negative quality observations and excluded comparison contexts. The dated source snapshot remains in `../native_fairness_rev3_20261007/` when this directory is viewed in the Results repository.
 
 Read [the scientific analysis](results/WISSENSCHAFTLICHE_ANALYSE.md), [the machine-readable findings](results/summary.json), [cohorts and methods](METHODS.md), [consolidation and historical scope](CONSOLIDATION.md) and [the independent review](validation/INDEPENDENT_REVIEW.md). Full tables and figures are in `results/`.

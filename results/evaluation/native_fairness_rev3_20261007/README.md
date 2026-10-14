@@ -1,6 +1,6 @@
 # Native/Generic fairness — Revision 3 Current snapshot
 
-> **Dated source snapshot, completed 13 October 2026.** For the current scientific selection, analysis and reproduction, use the [consolidated Revision 3 entry point](../rev3_consolidated_20261013/README.md). Original data and dated findings below retain their own scope.
+> **Dated source snapshot, completed 13 October 2026.** For the current scientific selection, analysis and reproduction, use the [Refresh16 paper entry point](../paper_after_refresh16_20261013/README.md). Original data and dated findings below retain their own scope.
 
 This snapshot reports the actual selected Current rows at **2026-10-13T04:54:05.088751+00:00**.
 Execution state: `bounded_delta_complete`. Counts below are derived from those rows;

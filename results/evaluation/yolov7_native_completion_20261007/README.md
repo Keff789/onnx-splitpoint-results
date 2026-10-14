@@ -1,6 +1,6 @@
 # Current YOLOv7 native performance: completed-task results
 
-> **Historical 7 October performance generation.** For the current scientific selection, analysis and reproduction, use the [consolidated Revision 3 entry point](../rev3_consolidated_20261013/README.md). Original data and dated findings below retain their own scope.
+> **Historical 7 October performance generation.** For the current scientific selection, analysis and reproduction, use the [Refresh16 paper entry point](../paper_after_refresh16_20261013/README.md). Original data and dated findings below retain their own scope.
 
 Integrated 7 October 2026. This directory provides the current compact YOLOv7
 performance projection for the paper. It supersedes the throughput aggregates
